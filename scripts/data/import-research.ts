@@ -6,8 +6,12 @@ import { z } from "zod";
 import { parseCsvRecords } from "../../src/lib/csv.ts";
 import {
   BudgetLaw,
+  CampaignPromise,
+  CofogDivision,
   Government,
   Legislature,
+  Party,
+  PromiseCatalogStatus,
   Series,
   Source,
   type SourceLink,
@@ -238,6 +242,64 @@ async function sources() {
     });
 }
 
+// Un gruppo entra nel sito solo dopo la verifica indipendente di ogni riga e il controllo di
+// simmetria fra i gruppi (D-010): fino ad allora le promesse sono validate ma non pubblicate.
+const PUBLISHED_PROMISE_GROUPS: string[] = [];
+const PROMISE_GROUPS = ["a", "b", "c"];
+const CAMPAIGN_PERIOD = { dal: "2026-01-01", al: SNAPSHOT };
+
+function isVerified(status: string) {
+  return status.includes("✓") && !/DA RIMUOVERE|NON VERIFICABILE|NUOVA|riserva/i.test(status);
+}
+
+function urlOrNull(s: string) {
+  return /^https?:\/\//.test(s.trim()) ? s.trim() : null;
+}
+
+async function campaignPromises() {
+  const parties = new Map<string, z.infer<typeof Party>>();
+  const verified: { group: string; promise: z.infer<typeof CampaignPromise> }[] = [];
+  let censite = 0;
+  for (const group of PROMISE_GROUPS) {
+    for (const r of await readRecords(`promesse-campagna-gruppo-${group}`)) {
+      const partitoId = r.id.split("-")[1];
+      if (!parties.has(partitoId)) parties.set(partitoId, Party.parse({ id: partitoId, nome: r.partito, coalizione: r.coalizione }));
+      censite++;
+      // Le righe non ancora verificate possono essere incomplete: si contano, non si validano.
+      if (!isVerified(r.stato_verifica)) continue;
+      const stimaUrl = urlOrNull(r.fonte_stima_url);
+      const promise = CampaignPromise.parse({
+        id: r.id,
+        partitoId,
+        dichiarante: r.dichiarante,
+        ruoloDichiarante: r.ruolo_dichiarante,
+        data: r.data,
+        testoLetterale: r.testo_letterale.trim(),
+        parafrasiNeutra: r.parafrasi_neutra.trim(),
+        tipoFonte: r.tipo_fonte,
+        fonte: { url: r.fonte_url.trim() },
+        archivioUrl: urlOrNull(r.archivio_url),
+        cofog: CofogDivision.parse(r.tema_cofog.trim().slice(0, 2)),
+        misurabile: r.misurabile,
+        costoDichiarato: r.costo_dichiarato_proponente.trim() || null,
+        stimaTerzi: r.stima_terzi.trim() && stimaUrl ? { testo: r.stima_terzi.trim(), fonte: { url: stimaUrl } } : null,
+        note: r.note.trim(),
+        verifica: verification(r.stato_verifica),
+      });
+      verified.push({ group, promise });
+    }
+  }
+  const published = verified.filter(({ group }) => PUBLISHED_PROMISE_GROUPS.includes(group)).map(({ promise }) => promise);
+  const status = PromiseCatalogStatus.parse({
+    periodo: CAMPAIGN_PERIOD,
+    censite,
+    verificate: verified.length,
+    pubblicate: published.length,
+    gruppiPubblicati: PUBLISHED_PROMISE_GROUPS,
+  });
+  return { parties: [...parties.values()], published, status };
+}
+
 async function write(name: string, value: unknown) {
   await writeFile(join(OUT, `${name}.json`), JSON.stringify(value, null, 2) + "\n", "utf8");
 }
@@ -247,6 +309,7 @@ const govs = await governments();
 const laws = await budgetLaws(govs);
 const allSeries = await series();
 const srcs = await sources();
+const campaign = await campaignPromises();
 
 await mkdir(join(OUT, "serie"), { recursive: true });
 await write("legislature", legs);
@@ -254,6 +317,9 @@ await write("governi", govs);
 await write("leggi-bilancio", laws);
 await write("fonti", srcs);
 for (const s of allSeries) await write(join("serie", s.id), s);
+await write("partiti", campaign.parties);
+await write("promesse", campaign.published);
+await write("promesse-stato", campaign.status);
 
 const count = (xs: { verifica: Verification }[]) =>
   Object.entries(Object.groupBy(xs, (x) => x.verifica.livello)).map(([k, v]) => `${k}=${v?.length}`).join(" ");
@@ -262,3 +328,4 @@ console.log(`governi ${govs.length} (${count(govs)})`);
 console.log(`leggi-bilancio ${laws.length} (${count(laws)}), senza governo collegato: ${laws.filter((l) => !l.governoProponenteId).length}`);
 console.log(`serie ${allSeries.map((s) => `${s.id}:${s.punti.length}`).join(" ")}`);
 console.log(`fonti ${srcs.length}`);
+console.log(`promesse censite ${campaign.status.censite}, verificate ${campaign.status.verificate}, pubblicate ${campaign.status.pubblicate}, partiti ${campaign.parties.length}`);

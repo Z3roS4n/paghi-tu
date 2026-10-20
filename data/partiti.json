@@ -1,0 +1,72 @@
+[
+  {
+    "id": "FDI",
+    "nome": "Fratelli d'Italia",
+    "coalizione": "centrodestra"
+  },
+  {
+    "id": "LEGA",
+    "nome": "Lega",
+    "coalizione": "centrodestra"
+  },
+  {
+    "id": "FI",
+    "nome": "Forza Italia",
+    "coalizione": "centrodestra"
+  },
+  {
+    "id": "NM",
+    "nome": "Noi Moderati",
+    "coalizione": "centrodestra"
+  },
+  {
+    "id": "PD",
+    "nome": "Partito Democratico",
+    "coalizione": "centrosinistra / alleanza progressista (coalizione non ancora formalizzata)"
+  },
+  {
+    "id": "M5S",
+    "nome": "MoVimento 5 Stelle",
+    "coalizione": "centrosinistra / alleanza progressista (coalizione non ancora formalizzata)"
+  },
+  {
+    "id": "AVS",
+    "nome": "Alleanza Verdi e Sinistra (Europa Verde + Sinistra Italiana)",
+    "coalizione": "centrosinistra / alleanza progressista (coalizione non ancora formalizzata)"
+  },
+  {
+    "id": "CSX",
+    "nome": "PD, M5S, AVS, IV, +Europa (risoluzione unitaria)",
+    "coalizione": "centrosinistra / alleanza progressista (coalizione non ancora formalizzata)"
+  },
+  {
+    "id": "AZ",
+    "nome": "Azione",
+    "coalizione": "polo di centro autonomo (con Picierno e liberaldemocratici; non in coalizione con centrodestra o centrosinistra al 2026-10-20)"
+  },
+  {
+    "id": "IV",
+    "nome": "Italia Viva",
+    "coalizione": "centrosinistra (lista Casa Riformista; coalizione non ancora formalizzata)"
+  },
+  {
+    "id": "PE",
+    "nome": "+Europa",
+    "coalizione": "centrosinistra (coalizione non ancora formalizzata)"
+  },
+  {
+    "id": "FN",
+    "nome": "Futuro Nazionale",
+    "coalizione": "non definita al 2026-10-20 (corsa autonoma o accordo con il centrodestra non documentati)"
+  },
+  {
+    "id": "PLD",
+    "nome": "Partito Liberaldemocratico",
+    "coalizione": "polo di centro con Azione (non formalizzato)"
+  },
+  {
+    "id": "SVP",
+    "nome": "Südtiroler Volkspartei (SVP)",
+    "coalizione": "non definita al 2026-10-20"
+  }
+]

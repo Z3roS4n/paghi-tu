@@ -3,6 +3,7 @@ import Link from "next/link";
 const NAV = [
   { href: "/governi", label: "Governi" },
   { href: "/leggi-di-bilancio", label: "Leggi di bilancio" },
+  { href: "/promesse", label: "Promesse" },
   { href: "/metodo", label: "Metodo" },
   { href: "/fonti", label: "Fonti" },
 ] as const;
@@ -10,11 +11,11 @@ const NAV = [
 export function SiteHeader() {
   return (
     <header className="border-b border-rule">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-6 px-4 md:px-6">
-        <Link href="/" className="font-mono text-lg font-semibold tracking-tight">
+      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-3 px-4 py-4 md:h-16 md:flex-nowrap md:px-6 md:py-0">
+        <Link href="/" className="shrink-0 font-mono text-lg font-semibold tracking-tight whitespace-nowrap">
           Paghi Tu
         </Link>
-        <nav aria-label="Sezioni principali" className="min-w-0 overflow-x-auto">
+        <nav aria-label="Sezioni principali" className="w-full min-w-0 overflow-x-auto md:w-auto">
           <ul className="flex gap-5 text-sm whitespace-nowrap text-ink-soft">
             {NAV.map((item) => (
               <li key={item.href}>

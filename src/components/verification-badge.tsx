@@ -31,7 +31,7 @@ export function VerificationBadge({ verifica, compact = false }: { verifica: Ver
   if (compact) return <LevelTag level={verifica.livello} />;
   return (
     <details className="group text-sm">
-      <summary className="flex cursor-pointer list-none items-center gap-2 text-ink-soft hover:text-ink">
+      <summary className="flex cursor-pointer list-none flex-wrap items-center gap-x-2 gap-y-1 text-ink-soft hover:text-ink">
         <LevelTag level={verifica.livello} />
         <span>{LABEL[verifica.livello]}</span>
         <span className="text-ink-faint group-open:hidden">(dettagli)</span>

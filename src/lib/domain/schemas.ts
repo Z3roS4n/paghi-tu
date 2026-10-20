@@ -103,3 +103,66 @@ export const Series = z.object({
   verifica: Verification,
 });
 export type Series = z.infer<typeof Series>;
+
+export const COFOG_DIVISIONS = {
+  "01": "Servizi generali delle amministrazioni pubbliche",
+  "02": "Difesa",
+  "03": "Ordine pubblico e sicurezza",
+  "04": "Affari economici",
+  "05": "Protezione dell'ambiente",
+  "06": "Abitazioni e assetto territoriale",
+  "07": "Sanità",
+  "08": "Attività ricreative, culturali e di culto",
+  "09": "Istruzione",
+  "10": "Protezione sociale",
+} as const;
+export const CofogDivision = z.enum(Object.keys(COFOG_DIVISIONS) as [keyof typeof COFOG_DIVISIONS]);
+export type CofogDivision = z.infer<typeof CofogDivision>;
+
+export const Party = z.object({
+  id: z.string().regex(/^[A-Z0-9]+$/),
+  nome: z.string(),
+  coalizione: z.string(),
+});
+export type Party = z.infer<typeof Party>;
+
+export const PromiseSourceType = z.enum([
+  "programma",
+  "documento_partito",
+  "sito_ufficiale",
+  "social_ufficiale",
+  "discorso",
+  "video",
+  "intervista",
+  "stenografico",
+  "atto_parlamentare",
+]);
+
+// Citazione breve ex art. 70 L. 633/1941: oltre i 320 caratteri si riassume, non si cita.
+export const CampaignPromise = z.object({
+  id: z.string().regex(/^C27-[A-Z0-9]+-\d{3}$/),
+  partitoId: z.string(),
+  dichiarante: z.string(),
+  ruoloDichiarante: z.string(),
+  data: isoDate,
+  testoLetterale: z.string().min(1).max(320),
+  parafrasiNeutra: z.string().min(1),
+  tipoFonte: PromiseSourceType,
+  fonte: SourceLink,
+  archivioUrl: z.url().nullable(),
+  cofog: CofogDivision,
+  misurabile: z.enum(["si", "parziale", "no"]),
+  costoDichiarato: z.string().nullable(),
+  stimaTerzi: z.object({ testo: z.string(), fonte: SourceLink }).nullable(),
+  note: z.string(),
+  verifica: Verification,
+});
+export type CampaignPromise = z.infer<typeof CampaignPromise>;
+
+export const PromiseCatalogStatus = z.object({
+  periodo: z.object({ dal: isoDate, al: isoDate }),
+  censite: z.number().int().nonnegative(),
+  verificate: z.number().int().nonnegative(),
+  pubblicate: z.number().int().nonnegative(),
+  gruppiPubblicati: z.array(z.string()),
+});

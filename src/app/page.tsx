@@ -32,7 +32,7 @@ const SECTIONS = [
     status: "Online",
   },
   {
-    href: "/metodo",
+    href: "/promesse",
     title: "Promesse per le politiche 2027",
     body: "Cosa promettono i partiti, con la frase esatta e la fonte. Stesse regole per tutti.",
     status: "In verifica",

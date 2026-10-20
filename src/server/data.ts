@@ -7,7 +7,19 @@ import sourcesJson from "../../data/fonti.json";
 import gdpJson from "../../data/serie/pil-nominale.json";
 import populationJson from "../../data/serie/popolazione-residente.json";
 import foiJson from "../../data/serie/prezzi-consumo-foi.json";
-import { BudgetLaw, Government, Legislature, Series, Source } from "@/lib/domain/schemas";
+import partiesJson from "../../data/partiti.json";
+import promisesJson from "../../data/promesse.json";
+import promiseStatusJson from "../../data/promesse-stato.json";
+import {
+  BudgetLaw,
+  CampaignPromise,
+  Government,
+  Legislature,
+  Party,
+  PromiseCatalogStatus,
+  Series,
+  Source,
+} from "@/lib/domain/schemas";
 
 export const DATA_SNAPSHOT = "2026-10-20";
 
@@ -23,6 +35,10 @@ export const series = {
   foi: Series.parse(foiJson),
 };
 
+export const parties = z.array(Party).parse(partiesJson);
+export const promises = z.array(CampaignPromise).parse(promisesJson);
+export const promiseStatus = PromiseCatalogStatus.parse(promiseStatusJson);
+
 export function getGovernment(id: string) {
   return governments.find((g) => g.id === id);
 }
@@ -37,4 +53,14 @@ export function budgetLawsProposedBy(governmentId: string) {
 
 export function governmentsOf(legislatureId: string) {
   return governments.filter((g) => g.legislaturaId === legislatureId);
+}
+
+const collator = new Intl.Collator("it-IT", { sensitivity: "base", ignorePunctuation: true });
+
+// Ordine alfabetico: nessun partito viene prima per peso elettorale o numero di promesse.
+export function promisesByParty() {
+  return parties
+    .map((party) => ({ party, items: promises.filter((p) => p.partitoId === party.id).toSorted((a, b) => b.data.localeCompare(a.data)) }))
+    .filter((g) => g.items.length > 0)
+    .toSorted((a, b) => collator.compare(a.party.nome, b.party.nome));
 }
