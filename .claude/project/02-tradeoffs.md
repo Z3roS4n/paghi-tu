@@ -118,7 +118,7 @@
 - **Data:** 2026-10-20
 
 ### D-012 — Gli atti parlamentari non sono promesse elettorali
-- **Stato:** PROPOSTA — da confermare con il titolare (dalla verifica L2 del gruppo B, 2026-10-20)
+- **Stato:** IN PARTE SUPERATA da D-015 (scelta S1 del titolare, 2026-10-21). Gli atti parlamentari con contenuto di policy, di maggioranza e di opposizione, restano nel catalogo con l'etichetta di veicolo e orizzonte. Resta applicata a tutti i gruppi, da confermare, la regola di perimetro qui sotto (atti procedurali, impegni non di policy, doppioni, testi fuori periodo).
 - **Contesto:** 13 righe del gruppo B venivano dalla risoluzione unitaria 6-00294 (PD, M5S, AVS, IV, +Europa), che impegna il Governo in carica ed è stata preclusa senza voto il 13/10/2026. Lo stesso censimento escludeva per questo motivo altre proposte rivolte al Governo.
 - **Scelta proposta:** risoluzioni, mozioni ed emendamenti, di maggioranza o di opposizione, vanno in una categoria a parte ("atto parlamentare"), collegabile ai partiti firmatari; diventano promesse solo se ripresi in un programma o in una dichiarazione per le politiche.
 - **Da decidere insieme:** la regola gemella per le proposte dei partiti di maggioranza sulla legge di bilancio 2027 (gruppo A, campo `orizzonte` proposto). Le due regole vanno approvate insieme perché valgano uguali per maggioranza e opposizione.
@@ -141,7 +141,7 @@
 - **Data:** 2026-10-21
 
 ### D-015 — Orizzonte e veicolo come colonne, non come cancellazioni
-- **Stato:** PROPOSTA — da confermare con il titolare (controllo di simmetria, `research/2026-10-21.controllo-simmetria-promesse.md`)
+- **Stato:** DECISA dal titolare il 2026-10-21: scenario **S1**. Il catalogo contiene tutte le righe valide, con `orizzonte` e `veicolo` mostrati su ogni promessa; nessun registro separato. Nell'import: `PROMISE_SCOPE_RULE = "tutte"` (controllo di simmetria, `research/2026-10-21.controllo-simmetria-promesse.md`).
 - **Contesto:** R-ORIZZONTE (gruppo A) e D-012 (gruppi B e C) toglievano dal catalogo, con formulazioni diverse, le proposte legate alla legislatura in corso. A ne marcava 40 righe, B le 13 della risoluzione CSX, C ne teneva alcune.
 - **Scelta proposta:**
   - ogni riga dei tre CSV ha `orizzonte` (prossima_legislatura, legislatura_in_corso, non_specificato) e `veicolo` (10 valori), assegnati dal testo con gli stessi criteri per tutti;

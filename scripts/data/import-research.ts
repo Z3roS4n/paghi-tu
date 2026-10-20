@@ -247,8 +247,8 @@ async function sources() {
 // Un gruppo entra nel sito solo dopo la verifica indipendente di ogni riga e il controllo di
 // simmetria fra i gruppi (D-010): fino ad allora le promesse sono validate ma non pubblicate.
 const PUBLISHED_PROMISE_GROUPS: string[] = [];
-// Scenari S1/S2 della nota di simmetria (D-012, D-015): null finché il titolare non sceglie.
-const PROMISE_SCOPE_RULE: "tutte" | "solo_fuori_legislatura_in_corso" | null = null;
+// Scenari S1/S2 della nota di simmetria: il titolare ha scelto S1 il 2026-10-21 (D-015).
+const PROMISE_SCOPE_RULE: "tutte" | "solo_fuori_legislatura_in_corso" | null = "tutte";
 if (PUBLISHED_PROMISE_GROUPS.length > 0 && PROMISE_SCOPE_RULE === null) {
   throw new Error("Promesse: scegliere PROMISE_SCOPE_RULE prima di pubblicare un gruppo");
 }

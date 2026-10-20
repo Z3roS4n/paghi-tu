@@ -24,6 +24,25 @@ const SOURCE_TYPE: Record<CampaignPromise["tipoFonte"], string> = {
   atto_parlamentare: "Atto parlamentare",
 };
 
+const HORIZON: Record<CampaignPromise["orizzonte"], string> = {
+  prossima_legislatura: "Per la prossima legislatura",
+  legislatura_in_corso: "Nella legislatura in corso",
+  non_specificato: "Tempi non indicati",
+};
+
+const VEHICLE: Record<CampaignPromise["veicolo"], string> = {
+  programma: "Programma",
+  documento_partito: "Documento del partito",
+  dichiarazione: "Dichiarazione",
+  proposta_di_legge: "Proposta di legge",
+  emendamento: "Emendamento",
+  risoluzione_mozione: "Risoluzione o mozione",
+  richiesta_legge_bilancio: "Richiesta sulla legge di bilancio",
+  richiesta_decreto: "Richiesta su un decreto",
+  appello_raccolta_firme: "Appello con raccolta firme",
+  altro: "Altro",
+};
+
 function PromiseItem({ p }: { p: CampaignPromise }) {
   const fonti = [
     { url: p.fonte.url, etichetta: SOURCE_TYPE[p.tipoFonte] },
@@ -67,6 +86,9 @@ function PromiseItem({ p }: { p: CampaignPromise }) {
       </div>
       <div className="space-y-3 text-sm">
         <p className="text-ink-soft">{COFOG_DIVISIONS[p.cofog]}</p>
+        <p className="font-mono text-xs text-ink-faint">
+          {HORIZON[p.orizzonte]} · {VEHICLE[p.veicolo]}
+        </p>
         <SourceLinks fonti={fonti} />
         <VerificationBadge verifica={p.verifica} />
       </div>

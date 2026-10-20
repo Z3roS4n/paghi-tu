@@ -73,8 +73,10 @@ export default function MethodPage() {
       <p>
         Censiamo le promesse sui canali ufficiali dei partiti e dei loro leader, con la frase esatta. Ogni riga passa
         un secondo controllo indipendente sulla fonte. Pubblichiamo tutti i partiti insieme, dopo aver controllato che
-        la ricerca abbia avuto la stessa profondità per ciascuno. Risoluzioni e mozioni in Parlamento non contano come
-        promesse elettorali.
+        la ricerca abbia avuto la stessa profondità per ciascuno. Ogni promessa dice se riguarda la legislatura in corso o
+        la prossima, e con quale strumento è stata presentata: programma, proposta di legge, richiesta sulla legge di
+        bilancio, risoluzione in Parlamento. Non contiamo come promesse gli slogan, gli atti solo procedurali e gli
+        impegni che non riguardano politiche pubbliche, come candidature e alleanze.
       </p>
 
       <h2>Cosa possiamo mostrare, per periodo</h2>
