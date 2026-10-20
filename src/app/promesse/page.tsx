@@ -96,6 +96,30 @@ function PromiseItem({ p }: { p: CampaignPromise }) {
   );
 }
 
+const COVERAGE = [
+  "Al 21 ottobre 2026 solo alcuni partiti hanno pubblicato un documento programmatico per le politiche. Per gli altri le promesse vengono da proposte di legge, richieste sulla legge di bilancio, dichiarazioni e interviste dei leader: per questo il numero di righe dipende anche da quanto ogni partito ha messo per iscritto.",
+  "Molte proposte riguardano la legge di bilancio 2027 o leggi in discussione ora: sono indicate come «Nella legislatura in corso», per la maggioranza come per l'opposizione.",
+  "Partito Democratico: il sito nazionale non è leggibile dai nostri strumenti; sette passaggi del discorso del 18 ottobre restano fuori finché non li confrontiamo con il video ufficiale.",
+  "Forza Italia: dal 19 marzo 2026 il sito del partito non ha pubblicato notizie; le righe vengono da interviste del segretario e di altri dirigenti, in parte ripubblicate sul sito del Ministero degli Esteri.",
+  "Per i partiti con programmi molto lunghi il censimento può non essere completo. Le formazioni minori entrano se hanno annunciato una lista nazionale con fonte verificabile.",
+];
+
+function Coverage() {
+  return (
+    <details className="group mt-8 border border-rule bg-paper-raised p-5 text-sm">
+      <summary className="cursor-pointer list-none font-semibold">
+        Copertura e limiti di questo censimento{" "}
+        <span className="font-normal text-ink-faint group-open:hidden">(apri)</span>
+      </summary>
+      <ul className="mt-4 list-disc space-y-2 pl-5 text-ink-soft">
+        {COVERAGE.map((line) => (
+          <li key={line}>{line}</li>
+        ))}
+      </ul>
+    </details>
+  );
+}
+
 function Pending() {
   const steps = [
     {
@@ -152,8 +176,8 @@ export default function PromisesPage() {
     <div className="mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
       <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">Promesse per le politiche 2027</h1>
       <p className="mt-4 max-w-[62ch] text-lg text-ink-soft">
-        Cosa propongono i partiti per la prossima legislatura: la frase esatta, chi l'ha detta, quando e dove. Non diamo
-        giudizi e non facciamo classifiche. Il costo è quello dichiarato da chi propone, oppure una stima di un ente
+        Cosa propongono i partiti in vista delle politiche 2027: la frase esatta, chi l'ha detta, quando e dove, e se
+        riguarda la prossima legislatura o quella in corso. Non diamo giudizi e non facciamo classifiche. Il costo è quello dichiarato da chi propone, oppure una stima di un ente
         indipendente, con la fonte.
       </p>
 
@@ -176,6 +200,7 @@ export default function PromisesPage() {
               ))}
             </ul>
           </nav>
+          <Coverage />
           <div className="mt-12 space-y-16">
             {groups.map(({ party, items }) => (
               <section key={party.id} id={`p-${party.id}`} aria-labelledby={`h-${party.id}`} className="scroll-mt-6">
