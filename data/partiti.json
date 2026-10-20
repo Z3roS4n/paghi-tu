@@ -72,7 +72,7 @@
   {
     "id": "ORA",
     "nome": "Ora!",
-    "coalizione": "non definita al 2026-10-21 (alleanze dichiarate possibili con tutti tranne Lega, M5S, AVS e Potere al Popolo; intesa con il PLD per le comunali 2027)"
+    "coalizione": "non definita al 2026-10-21"
   },
   {
     "id": "CAPI",
@@ -82,31 +82,31 @@
   {
     "id": "PAP",
     "nome": "Potere al Popolo",
-    "coalizione": "corsa autonoma annunciata (fuori da centrodestra e centrosinistra)"
+    "coalizione": "non definita al 2026-10-21"
   },
   {
     "id": "PSI",
     "nome": "Avanti PSI (Partito Socialista Italiano)",
-    "coalizione": "centrosinistra (coalizione non ancora formalizzata)"
+    "coalizione": "centrosinistra (coalizione per le politiche 2027 non ancora formalizzata al 2026-10-21)"
   },
   {
     "id": "PCIT",
     "nome": "Progetto Civico Italia",
-    "coalizione": "centrosinistra (campo largo; coalizione non ancora formalizzata)"
+    "coalizione": "centrosinistra (coalizione per le politiche 2027 non ancora formalizzata al 2026-10-21)"
   },
   {
     "id": "MAIE",
     "nome": "MAIE (Movimento Associativo Italiani all'Estero)",
-    "coalizione": "non definita al 2026-10-21 (circoscrizione Estero; alla Camera nel gruppo Noi Moderati-MAIE)"
+    "coalizione": "non definita al 2026-10-21"
   },
   {
     "id": "SCN",
     "nome": "Sud chiama Nord",
-    "coalizione": "non definita al 2026-10-21 (lista propria annunciata; intesa con il centrodestra riportata dalla stampa)"
+    "coalizione": "centrodestra (coalizione per le politiche 2027 non ancora formalizzata al 2026-10-21)"
   },
   {
     "id": "NOVAX",
     "nome": "Movimento Politico NoVax",
-    "coalizione": "non definita al 2026-10-21 (distanza dichiarata da Futuro Nazionale)"
+    "coalizione": "non definita al 2026-10-21"
   }
 ]
