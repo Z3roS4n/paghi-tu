@@ -8,7 +8,7 @@
 
 | Integrazione | Tipo | Stato | Scheda |
 |---|---|---|---|
-| <servizio> | API / webhook | 🔜 pianificata | [_template.md](_template.md) |
+| Vercel | hosting statico | ✅ attiva (produzione pubblica dal 2026-10-21) | [vercel.md](vercel.md) |
 
 ## Webhook in entrata (endpoint esposti dalla nostra app)
 
