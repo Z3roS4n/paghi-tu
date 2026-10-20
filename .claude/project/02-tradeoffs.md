@@ -1,7 +1,7 @@
 # Paghi Tu — Decisioni & trade-off (ADR)
 
 > Ogni decisione non ovvia va registrata qui con un ID `D-00X`. Le decisioni aperte in fondo.
-> Le decisioni D-001…D-010 sono proposte uscite dalla ricerca del 2026-10-20 (sintesi: `research/2026-10-20.sintesi-e-verifica-incrociata.md`). Nessuna è adottata finché Antonio non la conferma.
+> Le decisioni D-001…D-010 sono proposte uscite dalla ricerca del 2026-10-20 (sintesi: `research/2026-10-20.sintesi-e-verifica-incrociata.md`). Nessuna è adottata finché il titolare non la conferma. D-011 è una scelta di sviluppo, anch'essa da confermare.
 
 ## Registro decisioni
 
@@ -106,6 +106,15 @@
 - **Scelta:** A, più controlli automatici sui CSV (chiavi, date nel mandato, somme, unità) e controllo di simmetria fra forze politiche.
 - **Motivo:** per un sito sulla spesa pubblica e sulle promesse, un errore di attribuzione è anche un rischio di neutralità e di diffamazione.
 - **Conseguenze:** stato di verifica per ogni record (V1, V2, NV, verificato da, data); niente pubblicazione da sola fonte secondaria.
+- **Data:** 2026-10-20
+
+### D-011 — Palette senza colori di partito
+- **Stato:** APPLICATA nello sviluppo — da confermare con il titolare
+- **Contesto:** in Italia rosso, blu, azzurro, verde, giallo, arancione-viola e tricolore sono associati a partiti o coalizioni. Un colore di accento può far sembrare il sito vicino a una parte.
+- **Opzioni:** A) palette neutra carta/inchiostro con un solo accento; B) colori diversi per partito (come i siti di risultati elettorali); C) nessun colore.
+- **Scelta:** A. Carta e inchiostro, accento arancione bruciato (#c2410c, tema scuro #fb923c) usato solo per azioni e stato "in verifica"; nessun colore associato a un partito nelle schede, nei grafici o nei badge. Livelli di verifica (grigio V1, ambra V2, rosso NV) distinti anche da etichetta testuale: descrivono solo lo stato del dato e valgono uguali per ogni partito.
+- **Motivo:** nessun partito deve poter leggere un'affinità cromatica; il colore non deve trasmettere giudizi (niente rosso/verde per "male/bene").
+- **Conseguenze:** i grafici per partito useranno una scala neutra di grigi con etichette dirette, non legende colorate; nuovi colori solo con voce in questo registro.
 - **Data:** 2026-10-20
 
 ## Decisioni aperte

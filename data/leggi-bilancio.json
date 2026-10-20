@@ -1,0 +1,3174 @@
+[
+  {
+    "id": "1946-47-1947-48-esercizio-provvisorio",
+    "annoEsercizio": "1946-47 / 1947-48",
+    "annoInizio": 1946,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "autorizzazioni all'esercizio provvisorio per decreto legislativo (estremi NV), ratificate con L. n. 34 del 16/01/1952",
+    "governoProponenteId": null,
+    "governoProponenteAttribuzione": "incerta",
+    "governoProponenteTesto": "NV",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1952-01-16;34"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 esistenza (titolo L. 34/1952); estremi NV || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione || V1✓ verificatore 2026-10-20: titolo L. 34/1952 riletto su Normattiva"
+    }
+  },
+  {
+    "id": "1946-47-bilancio-di-previsione",
+    "annoEsercizio": "1946-47",
+    "annoInizio": 1946,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "stati di previsione per Ministero adottati con decreti legislativi del Governo (estremi singoli NV); ratifica con L. n. 34 del 16/01/1952",
+    "governoProponenteId": null,
+    "governoProponenteAttribuzione": "incerta",
+    "governoProponenteTesto": "De Gasperi I / De Gasperi II (NV)",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1952-01-16;34"
+      },
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo.luogotenenziale:1946-03-16;98"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 modalita (DLL 98/1946 art. 3; L. 34/1952); estremi decreti NV; governo NV || verificatore 2026-10-20: controllato, nessuna correzione"
+    }
+  },
+  {
+    "id": "1947-48-bilancio-di-previsione",
+    "annoEsercizio": "1947-48",
+    "annoInizio": 1947,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "stati di previsione per Ministero adottati con decreti legislativi del Governo (estremi singoli NV); ratifica con L. n. 34 del 16/01/1952",
+    "governoProponenteId": null,
+    "governoProponenteAttribuzione": "incerta",
+    "governoProponenteTesto": "De Gasperi III / De Gasperi IV (NV)",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1952-01-16;34"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 modalita; estremi decreti NV; governo NV || verificatore 2026-10-20: controllato, nessuna correzione"
+    }
+  },
+  {
+    "id": "1948-49-esercizio-provvisorio",
+    "annoEsercizio": "1948-49",
+    "annoInizio": 1948,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "atto C.19 del 12/06/1948 (estremi legge NV)",
+    "governoProponenteId": "g1",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "De Gasperi V",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac01_19"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto (rif_governo g1); legge NV || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione"
+    }
+  },
+  {
+    "id": "1948-49-bilancio-di-previsione",
+    "annoEsercizio": "1948-49",
+    "annoInizio": 1948,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "leggi di approvazione dei singoli stati di previsione (entrata e spesa per Ministero); esercizio 1 luglio-30 giugno; estremi NV",
+    "governoProponenteId": "g1",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "De Gasperi V",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac01_2"
+      },
+      {
+        "url": "https://dati.camera.it/sparql"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 modalita (titoli atti Camera leg. I); estremi NV; governo V1 (atto C.2, Ministro Pella, V Governo De Gasperi, 12/06/1948) || verificatore 2026-10-20: controllato, nessuna correzione"
+    }
+  },
+  {
+    "id": "1949-50-esercizio-provvisorio",
+    "annoEsercizio": "1949-50",
+    "annoInizio": 1949,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "atto S.481/C.641 del 24/06/1949 (estremi legge NV)",
+    "governoProponenteId": "g1",
+    "governoProponenteAttribuzione": "inferita",
+    "governoProponenteTesto": "De Gasperi V (INF)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac01_641"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto; governo INF; legge NV || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione"
+    }
+  },
+  {
+    "id": "1949-50-bilancio-di-previsione",
+    "annoEsercizio": "1949-50",
+    "annoInizio": 1949,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "leggi di approvazione dei singoli stati di previsione (entrata e spesa per Ministero); esercizio 1 luglio-30 giugno; estremi NV",
+    "governoProponenteId": "g1",
+    "governoProponenteAttribuzione": "inferita",
+    "governoProponenteTesto": "De Gasperi V (INF)",
+    "fonti": [
+      {
+        "url": "https://dati.camera.it/sparql"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 modalita (titoli atti Camera leg. I); estremi NV; governo INF || verificatore 2026-10-20: controllato, nessuna correzione"
+    }
+  },
+  {
+    "id": "1950-51-esercizio-provvisorio",
+    "annoEsercizio": "1950-51",
+    "annoInizio": 1950,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "L. n. 377 del 30/06/1950",
+    "governoProponenteId": "g2",
+    "governoProponenteAttribuzione": "inferita",
+    "governoProponenteTesto": "De Gasperi VI (INF)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac01_1391"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1 legge (dati.camera.it ocd:legge); governo INF || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione || V1✓ verificatore 2026-10-20: legge 1950-06-30;377 riletta su Normattiva (titolo coerente)"
+    }
+  },
+  {
+    "id": "1950-51-bilancio-di-previsione",
+    "annoEsercizio": "1950-51",
+    "annoInizio": 1950,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "leggi di approvazione dei singoli stati di previsione (entrata e spesa per Ministero); esercizio 1 luglio-30 giugno; estremi NV",
+    "governoProponenteId": "g2",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "De Gasperi VI",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac01_1059"
+      },
+      {
+        "url": "https://dati.camera.it/sparql"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 modalita (titoli atti Camera leg. I); estremi NV; governo V1 (atto C.1059 rif_governo g2, 30/01/1950) || verificatore 2026-10-20: controllato, nessuna correzione"
+    }
+  },
+  {
+    "id": "1951-52-esercizio-provvisorio",
+    "annoEsercizio": "1951-52",
+    "annoInizio": 1951,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "L. n. 458 del 29/06/1951",
+    "governoProponenteId": "g2",
+    "governoProponenteAttribuzione": "inferita",
+    "governoProponenteTesto": "De Gasperi VI (INF)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac01_2041"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1 legge; governo INF || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione || V1✓ verificatore 2026-10-20: legge 1951-06-29;458 riletta su Normattiva (titolo coerente)"
+    }
+  },
+  {
+    "id": "1951-52-bilancio-di-previsione",
+    "annoEsercizio": "1951-52",
+    "annoInizio": 1951,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "leggi di approvazione dei singoli stati di previsione (entrata e spesa per Ministero); esercizio 1 luglio-30 giugno; estremi NV",
+    "governoProponenteId": "g2",
+    "governoProponenteAttribuzione": "inferita",
+    "governoProponenteTesto": "De Gasperi VI (INF)",
+    "fonti": [
+      {
+        "url": "https://dati.camera.it/sparql"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 modalita (titoli atti Camera leg. I); estremi NV; governo INF (S.1556) || verificatore 2026-10-20: controllato, nessuna correzione"
+    }
+  },
+  {
+    "id": "1952-53-esercizio-provvisorio",
+    "annoEsercizio": "1952-53",
+    "annoInizio": 1952,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "L. n. 676 del 27/06/1952",
+    "governoProponenteId": "g3",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "De Gasperi VII",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac01_2787"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1 legge; governo V1 (rif_governo g3) || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione || V1✓ verificatore 2026-10-20: legge 1952-06-27;676 riletta su Normattiva (titolo coerente)"
+    }
+  },
+  {
+    "id": "1952-53-bilancio-di-previsione",
+    "annoEsercizio": "1952-53",
+    "annoInizio": 1952,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "leggi di approvazione dei singoli stati di previsione (entrata e spesa per Ministero); esercizio 1 luglio-30 giugno; estremi NV",
+    "governoProponenteId": null,
+    "governoProponenteAttribuzione": "incerta",
+    "governoProponenteTesto": "NV",
+    "fonti": [
+      {
+        "url": "https://dati.camera.it/sparql"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 modalita (titoli atti Camera leg. I); estremi NV; governo NV || verificatore 2026-10-20: controllato, nessuna correzione"
+    }
+  },
+  {
+    "id": "1953-54-esercizio-provvisorio",
+    "annoEsercizio": "1953-54",
+    "annoInizio": 1953,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "L. n. 462 del 28/06/1953 (proroga al 31/10/1953, atto C.70 leg. II)",
+    "governoProponenteId": null,
+    "governoProponenteAttribuzione": "incerta",
+    "governoProponenteTesto": "De Gasperi VII (presentazione) / De Gasperi VIII (proroga)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac02_2"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac02_70"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1 (titoli atti Camera, rif_governo g3/g4) || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione || V1✓ verificatore 2026-10-20: legge 1953-06-28;462 riletta su Normattiva (titolo coerente)"
+    }
+  },
+  {
+    "id": "1953-54-bilancio-di-previsione",
+    "annoEsercizio": "1953-54",
+    "annoInizio": 1953,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "leggi di approvazione dei singoli stati di previsione (entrata e spesa per Ministero); esercizio 1 luglio-30 giugno; estremi NV",
+    "governoProponenteId": null,
+    "governoProponenteAttribuzione": "incerta",
+    "governoProponenteTesto": "NV",
+    "fonti": [
+      {
+        "url": "https://dati.camera.it/sparql"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 modalita (titoli atti Camera leg. I); estremi NV; governo NV || verificatore 2026-10-20: controllato, nessuna correzione"
+    }
+  },
+  {
+    "id": "1954-55-esercizio-provvisorio",
+    "annoEsercizio": "1954-55",
+    "annoInizio": 1954,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "L. n. 341 del 26/06/1954 (proroga al 31/10/1954, atto C.1062)",
+    "governoProponenteId": "g7",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Scelba",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac02_971"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac02_1062"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1 (titoli atti Camera, rif_governo g7) || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione || V1✓ verificatore 2026-10-20: legge 1954-06-26;341 riletta su Normattiva (titolo coerente)"
+    }
+  },
+  {
+    "id": "1954-55-bilancio-di-previsione",
+    "annoEsercizio": "1954-55",
+    "annoInizio": 1954,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "leggi di approvazione dei singoli stati di previsione (entrata e spesa per Ministero); esercizio 1 luglio-30 giugno; estremi NV",
+    "governoProponenteId": null,
+    "governoProponenteAttribuzione": "incerta",
+    "governoProponenteTesto": "NV",
+    "fonti": [
+      {
+        "url": "https://dati.camera.it/sparql"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 modalita (titoli atti Camera leg. I); estremi NV; governo NV || verificatore 2026-10-20: controllato, nessuna correzione"
+    }
+  },
+  {
+    "id": "1955-56-esercizio-provvisorio",
+    "annoEsercizio": "1955-56",
+    "annoInizio": 1955,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "L. n. 508 del 24/06/1955 (atto S.1097/C.1699)",
+    "governoProponenteId": "g7",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Scelba",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac02_1699"
+      },
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1955-06-24;508"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter (Iter delle leggi 1948-1990)"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto; legge NV; governo NV || V1✓ verificatore 2026-10-20: presentazione (20/06/1955) e promulgazione (24/06/1955) sotto Scelba"
+    }
+  },
+  {
+    "id": "1955-56-bilancio-di-previsione",
+    "annoEsercizio": "1955-56",
+    "annoInizio": 1955,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "leggi di approvazione dei singoli stati di previsione (entrata e spesa per Ministero); esercizio 1 luglio-30 giugno; estremi NV",
+    "governoProponenteId": null,
+    "governoProponenteAttribuzione": "incerta",
+    "governoProponenteTesto": "NV",
+    "fonti": [
+      {
+        "url": "https://dati.camera.it/sparql"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 modalita (titoli atti Camera leg. I); estremi NV; governo NV || verificatore 2026-10-20: controllato, nessuna correzione"
+    }
+  },
+  {
+    "id": "1956-57-esercizio-provvisorio",
+    "annoEsercizio": "1956-57",
+    "annoInizio": 1956,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "atto S.1541/C.2335 (estremi legge NV)",
+    "governoProponenteId": "g8",
+    "governoProponenteAttribuzione": "inferita",
+    "governoProponenteTesto": "Segni I (INF)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac02_2335"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto; legge NV || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione"
+    }
+  },
+  {
+    "id": "1956-57-bilancio-di-previsione",
+    "annoEsercizio": "1956-57",
+    "annoInizio": 1956,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "leggi di approvazione dei singoli stati di previsione (entrata e spesa per Ministero); esercizio 1 luglio-30 giugno; estremi NV",
+    "governoProponenteId": null,
+    "governoProponenteAttribuzione": "incerta",
+    "governoProponenteTesto": "NV",
+    "fonti": [
+      {
+        "url": "https://dati.camera.it/sparql"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 modalita (titoli atti Camera leg. I); estremi NV; governo NV || verificatore 2026-10-20: controllato, nessuna correzione"
+    }
+  },
+  {
+    "id": "1957-58-esercizio-provvisorio",
+    "annoEsercizio": "1957-58",
+    "annoInizio": 1957,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "L. n. 449 del 27/06/1957 (atto S.2011/C.2966)",
+    "governoProponenteId": "g9",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Zoli",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac02_2966"
+      },
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1957-06-27;449"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter (Iter delle leggi 1948-1990)"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto; legge NV || V1✓ verificatore 2026-10-20: S.2011 presentato 29/05/1957 (Min. Tesoro Medici), dopo il giuramento di Zoli (20/05/1957): INF promossa a V1"
+    }
+  },
+  {
+    "id": "1957-58-bilancio-di-previsione",
+    "annoEsercizio": "1957-58",
+    "annoInizio": 1957,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "leggi di approvazione dei singoli stati di previsione (entrata e spesa per Ministero); esercizio 1 luglio-30 giugno; estremi NV",
+    "governoProponenteId": null,
+    "governoProponenteAttribuzione": "incerta",
+    "governoProponenteTesto": "NV",
+    "fonti": [
+      {
+        "url": "https://dati.camera.it/sparql"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 modalita (titoli atti Camera leg. I); estremi NV; governo NV || verificatore 2026-10-20: controllato, nessuna correzione"
+    }
+  },
+  {
+    "id": "1958-59-esercizio-provvisorio",
+    "annoEsercizio": "1958-59",
+    "annoInizio": 1958,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "atto C.1 leg. III del 12/06/1958 (estremi legge NV)",
+    "governoProponenteId": "g9",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Zoli",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac03_1"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto (rif_governo g9); legge NV || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione"
+    }
+  },
+  {
+    "id": "1958-59-bilancio-di-previsione",
+    "annoEsercizio": "1958-59",
+    "annoInizio": 1958,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "leggi di approvazione dei singoli stati di previsione (entrata e spesa per Ministero); esercizio 1 luglio-30 giugno; estremi NV",
+    "governoProponenteId": null,
+    "governoProponenteAttribuzione": "incerta",
+    "governoProponenteTesto": "NV",
+    "fonti": [
+      {
+        "url": "https://dati.camera.it/sparql"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 modalita (titoli atti Camera leg. I); estremi NV; governo NV || verificatore 2026-10-20: controllato, nessuna correzione"
+    }
+  },
+  {
+    "id": "1959-60-esercizio-provvisorio",
+    "annoEsercizio": "1959-60",
+    "annoInizio": 1959,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "atto S.604/C.1362 (estremi legge NV)",
+    "governoProponenteId": "g11",
+    "governoProponenteAttribuzione": "inferita",
+    "governoProponenteTesto": "Segni II (INF)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac03_1362"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto; legge NV || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione"
+    }
+  },
+  {
+    "id": "1959-60-bilancio-di-previsione",
+    "annoEsercizio": "1959-60",
+    "annoInizio": 1959,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "leggi di approvazione dei singoli stati di previsione (entrata e spesa per Ministero); esercizio 1 luglio-30 giugno; estremi NV",
+    "governoProponenteId": null,
+    "governoProponenteAttribuzione": "incerta",
+    "governoProponenteTesto": "NV",
+    "fonti": [
+      {
+        "url": "https://dati.camera.it/sparql"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 modalita (titoli atti Camera leg. I); estremi NV; governo NV || verificatore 2026-10-20: controllato, nessuna correzione"
+    }
+  },
+  {
+    "id": "1960-61-esercizio-provvisorio",
+    "annoEsercizio": "1960-61",
+    "annoInizio": 1960,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "atto C.2274 del 24/06/1960 (estremi legge NV)",
+    "governoProponenteId": "g12",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Tambroni",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac03_2274"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto (rif_governo g12); legge NV || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione"
+    }
+  },
+  {
+    "id": "1960-61-bilancio-di-previsione",
+    "annoEsercizio": "1960-61",
+    "annoInizio": 1960,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "leggi di approvazione dei singoli stati di previsione (entrata e spesa per Ministero); esercizio 1 luglio-30 giugno; estremi NV",
+    "governoProponenteId": null,
+    "governoProponenteAttribuzione": "incerta",
+    "governoProponenteTesto": "NV",
+    "fonti": [
+      {
+        "url": "https://dati.camera.it/sparql"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 modalita (titoli atti Camera leg. I); estremi NV; governo NV || verificatore 2026-10-20: controllato, nessuna correzione"
+    }
+  },
+  {
+    "id": "1961-62-esercizio-provvisorio",
+    "annoEsercizio": "1961-62",
+    "annoInizio": 1961,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "atto S.1609/C.3123 (estremi legge NV)",
+    "governoProponenteId": "g13",
+    "governoProponenteAttribuzione": "inferita",
+    "governoProponenteTesto": "Fanfani III (INF)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac03_3123"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto; legge NV || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione"
+    }
+  },
+  {
+    "id": "1961-62-bilancio-di-previsione",
+    "annoEsercizio": "1961-62",
+    "annoInizio": 1961,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "leggi di approvazione dei singoli stati di previsione (entrata e spesa per Ministero); esercizio 1 luglio-30 giugno; estremi NV",
+    "governoProponenteId": null,
+    "governoProponenteAttribuzione": "incerta",
+    "governoProponenteTesto": "NV",
+    "fonti": [
+      {
+        "url": "https://dati.camera.it/sparql"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 modalita (titoli atti Camera leg. I); estremi NV; governo NV || verificatore 2026-10-20: controllato, nessuna correzione"
+    }
+  },
+  {
+    "id": "1962-63-esercizio-provvisorio",
+    "annoEsercizio": "1962-63",
+    "annoInizio": 1962,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "atto C.3889 del 20/06/1962 (estremi legge NV)",
+    "governoProponenteId": "g14",
+    "governoProponenteAttribuzione": "inferita",
+    "governoProponenteTesto": "Fanfani IV (INF)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac03_3889"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1 atto; ATTENZIONE rif_governo Camera = g56 (De Gasperi II), errore del dato; governo INF || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione"
+    }
+  },
+  {
+    "id": "1962-63-bilancio-di-previsione",
+    "annoEsercizio": "1962-63",
+    "annoInizio": 1962,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "leggi di approvazione dei singoli stati di previsione (entrata e spesa per Ministero); esercizio 1 luglio-30 giugno; estremi NV",
+    "governoProponenteId": null,
+    "governoProponenteAttribuzione": "incerta",
+    "governoProponenteTesto": "NV",
+    "fonti": [
+      {
+        "url": "https://dati.camera.it/sparql"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 modalita (titoli atti Camera leg. I); estremi NV; governo NV || verificatore 2026-10-20: controllato, nessuna correzione"
+    }
+  },
+  {
+    "id": "1963-64-esercizio-provvisorio",
+    "annoEsercizio": "1963-64",
+    "annoInizio": 1963,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "L. n. 859 del 28/06/1963 (atto S.34/C.142 leg. IV)",
+    "governoProponenteId": "g14",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Fanfani IV",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac04_142"
+      },
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1963-06-28;859"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter (Iter delle leggi 1948-1990)"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto; legge NV || CORRETTO verificatore 2026-10-20: proponente Fanfani IV dimissionario (S.34 presentato 19/06/1963, Min. Tesoro Tremelloni), non Leone I; legge promulgata sotto Leone I; estremi V1 Normattiva"
+    }
+  },
+  {
+    "id": "1963-64-bilancio-di-previsione",
+    "annoEsercizio": "1963-64",
+    "annoInizio": 1963,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "leggi di approvazione dei singoli stati di previsione (entrata e spesa per Ministero); esercizio 1 luglio-30 giugno; estremi NV",
+    "governoProponenteId": null,
+    "governoProponenteAttribuzione": "incerta",
+    "governoProponenteTesto": "NV",
+    "fonti": [
+      {
+        "url": "https://dati.camera.it/sparql"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 modalita (titoli atti Camera leg. I); estremi NV; governo NV || verificatore 2026-10-20: controllato, nessuna correzione"
+    }
+  },
+  {
+    "id": "1964-1-31-bilancio-di-previsione",
+    "annoEsercizio": "1964 (1 luglio-31 dicembre)",
+    "annoInizio": 1964,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "bilancio per il periodo 1 luglio-31 dicembre 1964 (atto S.5020/C.1450; estremi legge NV); passaggio ad anno solare con L. n. 62 del 01/03/1964",
+    "governoProponenteId": "g16",
+    "governoProponenteAttribuzione": "inferita",
+    "governoProponenteTesto": "Moro I (INF)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac04_1450"
+      },
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1964-03-01;62"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto e L. 62/1964; estremi legge NV; governo INF || verificatore 2026-10-20: controllato, nessuna correzione || V1✓ verificatore 2026-10-20: L. 62/1964 riletta su Normattiva (titolo coerente)"
+    }
+  },
+  {
+    "id": "1965-esercizio-provvisorio",
+    "annoEsercizio": "1965",
+    "annoInizio": 1965,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "atto S.910/C.1928 (estremi legge NV)",
+    "governoProponenteId": "g17",
+    "governoProponenteAttribuzione": "inferita",
+    "governoProponenteTesto": "Moro II (INF)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac04_1928"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto; legge NV || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione"
+    }
+  },
+  {
+    "id": "1965-bilancio-di-previsione",
+    "annoEsercizio": "1965",
+    "annoInizio": 1965,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 49 del 27/02/1965 (legge unica di bilancio)",
+    "governoProponenteId": "g17",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Moro II",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac04_1686"
+      },
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1965-02-27;49"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto Camera; estremi legge NV; governo V1 (rif_governo g17, C.1686 30/09/1964) || V1✓ verificatore 2026-10-20: estremi L. 49/1965 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1965\")"
+    }
+  },
+  {
+    "id": "1966-esercizio-provvisorio",
+    "annoEsercizio": "1966",
+    "annoInizio": 1966,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "L. n. 1389 del 20/12/1965; proroga al 30/04/1966 con L. n. 63 del 18/02/1966",
+    "governoProponenteId": "g17",
+    "governoProponenteAttribuzione": "inferita",
+    "governoProponenteTesto": "Moro II (INF)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac04_2838"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac04_2970"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1 leggi (ocd:legge); governo INF || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione || V1✓ verificatore 2026-10-20: legge 1965-12-20;1389 riletta su Normattiva (titolo coerente)"
+    }
+  },
+  {
+    "id": "1966-bilancio-di-previsione",
+    "annoEsercizio": "1966",
+    "annoInizio": 1966,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 218 del 23/04/1966 (legge unica di bilancio)",
+    "governoProponenteId": "g17",
+    "governoProponenteAttribuzione": "inferita",
+    "governoProponenteTesto": "Moro II (INF)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac04_2811"
+      },
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1966-04-23;218"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto Camera; estremi legge NV; governo INF (S.1343) || V1✓ verificatore 2026-10-20: estremi L. 218/1966 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1966\")"
+    }
+  },
+  {
+    "id": "1967-esercizio-provvisorio",
+    "annoEsercizio": "1967",
+    "annoInizio": 1967,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "atto C.3628 del 06/12/1966 (estremi legge NV)",
+    "governoProponenteId": "g18",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Moro III",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac04_3628"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto (rif_governo g18); legge NV || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione"
+    }
+  },
+  {
+    "id": "1967-bilancio-di-previsione",
+    "annoEsercizio": "1967",
+    "annoInizio": 1967,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 230 del 29/04/1967 (legge unica di bilancio)",
+    "governoProponenteId": "g18",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Moro III",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac04_3389"
+      },
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1967-04-29;230"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto Camera; estremi legge NV; governo V1 (rif_governo g18, C.3389 31/07/1966) || V1✓ verificatore 2026-10-20: estremi L. 230/1967 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1967\")"
+    }
+  },
+  {
+    "id": "1968-esercizio-provvisorio",
+    "annoEsercizio": "1968",
+    "annoInizio": 1968,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "atto S.2600/C.4676 (estremi legge NV)",
+    "governoProponenteId": "g18",
+    "governoProponenteAttribuzione": "inferita",
+    "governoProponenteTesto": "Moro III (INF)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac04_4676"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto; legge NV || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione"
+    }
+  },
+  {
+    "id": "1968-bilancio-di-previsione",
+    "annoEsercizio": "1968",
+    "annoInizio": 1968,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 81 del 29/02/1968 (legge unica di bilancio)",
+    "governoProponenteId": "g18",
+    "governoProponenteAttribuzione": "inferita",
+    "governoProponenteTesto": "Moro III (INF)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac04_4691"
+      },
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1968-02-29;81"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto Camera; estremi legge NV; governo INF (S.2394) || V1✓ verificatore 2026-10-20: estremi L. 81/1968 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1968\")"
+    }
+  },
+  {
+    "id": "1969-esercizio-provvisorio",
+    "annoEsercizio": "1969",
+    "annoInizio": 1969,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "L. n. 1273 del 24/12/1968 (atto S.370/C.781)",
+    "governoProponenteId": "g20",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Rumor I",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac05_781"
+      },
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1968-12-24;1273"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter (Iter delle leggi 1948-1990)"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto; legge NV; governo NV || V1✓ verificatore 2026-10-20: S.370 presentato 16/12/1968 sotto Rumor I (giurato 13/12/1968)"
+    }
+  },
+  {
+    "id": "1969-bilancio-di-previsione",
+    "annoEsercizio": "1969",
+    "annoInizio": 1969,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 21 del 28/02/1969 (legge unica di bilancio)",
+    "governoProponenteId": "g19",
+    "governoProponenteAttribuzione": "inferita",
+    "governoProponenteTesto": "Leone II (INF)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac05_311"
+      },
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1969-02-28;21"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto Camera; estremi legge NV; governo INF (C.311 31/07/1968, rif_governo assente) || V1✓ verificatore 2026-10-20: estremi L. 21/1969 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1969\")"
+    }
+  },
+  {
+    "id": "1970-bilancio-di-previsione",
+    "annoEsercizio": "1970",
+    "annoInizio": 1970,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 986 del 24/12/1969 (legge unica di bilancio)",
+    "governoProponenteId": "g20",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Rumor I",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac05_1987"
+      },
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1969-12-24;986"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter (Iter delle leggi 1948-1990)"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto Camera; estremi legge NV; governo INF (S.815) || V1✓ verificatore 2026-10-20: estremi L. 986/1969 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1970\") || CORRETTO verificatore 2026-10-20: governo proponente Rumor I (non Rumor II): S.815 presentato il 31/07/1969 dal Ministro del Tesoro Colombo (bdp.camera.it), Rumor II giura il 06/08/1969; la legge e promulgata sotto Rumor II"
+    }
+  },
+  {
+    "id": "1971-esercizio-provvisorio",
+    "annoEsercizio": "1971",
+    "annoInizio": 1971,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "atto C.2917 del 15/12/1970 (estremi legge NV)",
+    "governoProponenteId": "g23",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Colombo",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac05_2917"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto (rif_governo g23); legge NV || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione"
+    }
+  },
+  {
+    "id": "1971-bilancio-di-previsione",
+    "annoEsercizio": "1971",
+    "annoInizio": 1971,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 206 del 30/04/1971 (legge unica di bilancio)",
+    "governoProponenteId": "g22",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Rumor III",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac05_2687"
+      },
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1971-04-30;206"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto Camera; estremi legge NV; governo V1 (rif_governo g22, C.2687 31/07/1970; il governo cessa il 06/08/1970) || V1✓ verificatore 2026-10-20: estremi L. 206/1971 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1971\")"
+    }
+  },
+  {
+    "id": "1972-esercizio-provvisorio",
+    "annoEsercizio": "1972",
+    "annoInizio": 1972,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "atto S.1988/C.3840 (estremi legge NV)",
+    "governoProponenteId": "g23",
+    "governoProponenteAttribuzione": "inferita",
+    "governoProponenteTesto": "Colombo (INF)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac05_3840"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto; legge NV || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione"
+    }
+  },
+  {
+    "id": "1972-bilancio-di-previsione",
+    "annoEsercizio": "1972",
+    "annoInizio": 1972,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 54 del 11/03/1972 (legge unica di bilancio)",
+    "governoProponenteId": "g23",
+    "governoProponenteAttribuzione": "inferita",
+    "governoProponenteTesto": "Colombo (INF)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac05_3841"
+      },
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1972-03-11;54"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto Camera; estremi legge NV; governo INF (S.1861) || V1✓ verificatore 2026-10-20: estremi L. 54/1972 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1972\")"
+    }
+  },
+  {
+    "id": "1973-esercizio-provvisorio",
+    "annoEsercizio": "1973",
+    "annoInizio": 1973,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "L. n. 824 del 23/12/1972",
+    "governoProponenteId": "g25",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Andreotti II",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac06_1317"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1 legge (ocd:legge); governo V1 (rif_governo g25) || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione || V1✓ verificatore 2026-10-20: legge 1972-12-23;824 riletta su Normattiva (titolo coerente)"
+    }
+  },
+  {
+    "id": "1973-bilancio-di-previsione",
+    "annoEsercizio": "1973",
+    "annoInizio": 1973,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 18 del 27/02/1973 (legge unica di bilancio)",
+    "governoProponenteId": "g25",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Andreotti II",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac06_620"
+      },
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1973-02-27;18"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto Camera; estremi legge NV; governo V1 (rif_governo g25, C.620 31/07/1972) || V1✓ verificatore 2026-10-20: estremi L. 18/1973 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1973\")"
+    }
+  },
+  {
+    "id": "1974-esercizio-provvisorio",
+    "annoEsercizio": "1974",
+    "annoInizio": 1974,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "atto C.2574 del 06/12/1973 (estremi legge NV)",
+    "governoProponenteId": "g26",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Rumor IV",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac06_2574"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto (rif_governo g26); legge NV || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione"
+    }
+  },
+  {
+    "id": "1974-bilancio-di-previsione",
+    "annoEsercizio": "1974",
+    "annoInizio": 1974,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 24 del 23/02/1974 (legge unica di bilancio)",
+    "governoProponenteId": "g26",
+    "governoProponenteAttribuzione": "inferita",
+    "governoProponenteTesto": "Rumor IV (INF)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac06_2529"
+      },
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1974-02-23;24"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto Camera; estremi legge NV; governo INF (S.1226) || V1✓ verificatore 2026-10-20: estremi L. 24/1974 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1974\")"
+    }
+  },
+  {
+    "id": "1975-esercizio-provvisorio",
+    "annoEsercizio": "1975",
+    "annoInizio": 1975,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "atto C.3327 del 14/12/1974 (estremi legge NV)",
+    "governoProponenteId": "g28",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Moro IV",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac06_3327"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto (rif_governo g28); legge NV || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione"
+    }
+  },
+  {
+    "id": "1975-bilancio-di-previsione",
+    "annoEsercizio": "1975",
+    "annoInizio": 1975,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 132 del 26/04/1975 (legge unica di bilancio)",
+    "governoProponenteId": "g27",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Rumor V",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac06_3159"
+      },
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1975-04-26;132"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto Camera; estremi legge NV; governo V1 (rif_governo g27, C.3159 31/07/1974) || V1✓ verificatore 2026-10-20: estremi L. 132/1975 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1975\")"
+    }
+  },
+  {
+    "id": "1976-bilancio-di-previsione",
+    "annoEsercizio": "1976",
+    "annoInizio": 1976,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 702 del 22/12/1975 (legge unica di bilancio)",
+    "governoProponenteId": "g28",
+    "governoProponenteAttribuzione": "inferita",
+    "governoProponenteTesto": "Moro IV (INF)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac06_4131-bis"
+      },
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1975-12-22;702"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto Camera; estremi legge NV; governo INF (C.4131-bis 25/11/1975) || V1✓ verificatore 2026-10-20: estremi L. 702/1975 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1976\")"
+    }
+  },
+  {
+    "id": "1977-bilancio-di-previsione",
+    "annoEsercizio": "1977",
+    "annoInizio": 1977,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 874 del 23/12/1976 (legge unica di bilancio)",
+    "governoProponenteId": "g29",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Moro V",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac07_203"
+      },
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1976-12-23;874"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto Camera; estremi legge NV; governo V1 (rif_governo g29, C.203 29/07/1976, stesso giorno della nomina di Andreotti III) || V1✓ verificatore 2026-10-20: estremi L. 874/1976 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1977\")"
+    }
+  },
+  {
+    "id": "1978-esercizio-provvisorio",
+    "annoEsercizio": "1978",
+    "annoInizio": 1978,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "L. n. 934 del 23/12/1977; proroga al 30/04/1978 (atto S.1136/C.2077)",
+    "governoProponenteId": "g30",
+    "governoProponenteAttribuzione": "inferita",
+    "governoProponenteTesto": "Andreotti III (INF)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac07_1940"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac07_2077"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1 (titolo atto Camera cita L. 934/1977); governo INF || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione || V1✓ verificatore 2026-10-20: legge 1977-12-23;934 riletta su Normattiva (titolo coerente)"
+    }
+  },
+  {
+    "id": "1978-bilancio-di-previsione",
+    "annoEsercizio": "1978",
+    "annoInizio": 1978,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 143 del 27/04/1978",
+    "governoProponenteId": "g30",
+    "governoProponenteAttribuzione": "inferita",
+    "governoProponenteTesto": "Andreotti III (INF)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac07_2103"
+      },
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1978-04-27;143"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1 estremi (dati.camera.it ocd:legge L. 143/1978); governo INF (S.912) || verificatore 2026-10-20: controllato, nessuna correzione || V1✓ verificatore 2026-10-20: legge 1978-04-27;143 riletta su Normattiva (titolo coerente)"
+    }
+  },
+  {
+    "id": "1979-esercizio-provvisorio",
+    "annoEsercizio": "1979",
+    "annoInizio": 1979,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "atto S.1500/C.2611 del 19/12/1978 (estremi legge NV)",
+    "governoProponenteId": "g31",
+    "governoProponenteAttribuzione": "inferita",
+    "governoProponenteTesto": "Andreotti IV (INF)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac07_2611"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto; legge NV || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione"
+    }
+  },
+  {
+    "id": "1979-legge-finanziaria",
+    "annoEsercizio": "1979",
+    "annoInizio": 1979,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 843 del 21/12/1978",
+    "governoProponenteId": "g31",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Andreotti IV",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1978-12-21;843"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac07_2433"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; governo coerente con data di presentazione dell'atto Camera e calendario governi (dati.camera.it); nessuna correzione"
+    }
+  },
+  {
+    "id": "1980-esercizio-provvisorio",
+    "annoEsercizio": "1980",
+    "annoInizio": 1980,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "L. n. 647 del 24/12/1979 (atto S.569/C.1163)",
+    "governoProponenteId": "g33",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Cossiga I",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1979-12-24;647"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter (Iter delle leggi 1948-1990)"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1✓ verificatore 2026-10-20: L. 647/1979 \"Disposizioni per esercitare, in via provvisoria, il bilancio dello Stato per l'anno finanziario 1980\" (Normattiva); iter su bdp.camera.it (S.569 presentato 11/12/1979). Il titolo non contiene \"esercizio provvisorio\", per questo la ricerca sugli atti Camera non lo trovava || prima: NV"
+    }
+  },
+  {
+    "id": "1980-legge-finanziaria",
+    "annoEsercizio": "1980",
+    "annoInizio": 1980,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 146 del 24/04/1980",
+    "governoProponenteId": "g33",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Cossiga I",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1980-04-24;146"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac08_1491"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione"
+    }
+  },
+  {
+    "id": "1981-esercizio-provvisorio",
+    "annoEsercizio": "1981",
+    "annoInizio": 1981,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "atto C.2195 del 12/12/1980 (estremi legge NV)",
+    "governoProponenteId": "g35",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Forlani",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac08_2195"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto (rif_governo g35); legge NV || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione"
+    }
+  },
+  {
+    "id": "1981-legge-finanziaria",
+    "annoEsercizio": "1981",
+    "annoInizio": 1981,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 119 del 30/03/1981",
+    "governoProponenteId": "g34",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Cossiga II",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1981-03-30;119"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac08_2037"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera); presentata dal Cossiga II (30/09/1980), approvata sotto Forlani || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; governo coerente con data di presentazione dell'atto Camera e calendario governi (dati.camera.it); nessuna correzione"
+    }
+  },
+  {
+    "id": "1982-esercizio-provvisorio",
+    "annoEsercizio": "1982",
+    "annoInizio": 1982,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "L. n. 779 del 26/12/1981; proroga al 30/04/1982 (atto S.1825/C.3279)",
+    "governoProponenteId": "g36",
+    "governoProponenteAttribuzione": "inferita",
+    "governoProponenteTesto": "Spadolini I (INF)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac08_3039"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac08_3279"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1 (titolo atto Camera cita L. 779/1981); governo INF || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione || V1✓ verificatore 2026-10-20: legge 1981-12-26;779 riletta su Normattiva (titolo coerente)"
+    }
+  },
+  {
+    "id": "1982-legge-finanziaria",
+    "annoEsercizio": "1982",
+    "annoInizio": 1982,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 181 del 26/04/1982",
+    "governoProponenteId": "g36",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Spadolini I",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1982-04-26;181"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac08_3043"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione"
+    }
+  },
+  {
+    "id": "1983-esercizio-provvisorio",
+    "annoEsercizio": "1983",
+    "annoInizio": 1983,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "atto C.3801 del 14/12/1982 (estremi legge NV)",
+    "governoProponenteId": "g38",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Fanfani V",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac08_3801"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atto (rif_governo g38); legge NV || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione"
+    }
+  },
+  {
+    "id": "1983-legge-finanziaria",
+    "annoEsercizio": "1983",
+    "annoInizio": 1983,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 130 del 26/04/1983",
+    "governoProponenteId": "g36",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Spadolini I",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1983-04-26;130"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac08_3629"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera); presentata dallo Spadolini I (05/08/1982), approvata sotto Fanfani V || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; governo coerente con data di presentazione dell'atto Camera e calendario governi (dati.camera.it); nessuna correzione"
+    }
+  },
+  {
+    "id": "1984-legge-finanziaria",
+    "annoEsercizio": "1984",
+    "annoInizio": 1984,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 730 del 27/12/1983",
+    "governoProponenteId": "g39",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Craxi I",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1983-12-27;730"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac09_927"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione"
+    }
+  },
+  {
+    "id": "1985-bilancio-di-previsione",
+    "annoEsercizio": "1985",
+    "annoInizio": 1985,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 888 del 22/12/1984",
+    "governoProponenteId": "g39",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Craxi I",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1984-12-22;888"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; governo coerente con data di presentazione dell'atto Camera e calendario governi (dati.camera.it); nessuna correzione"
+    }
+  },
+  {
+    "id": "1985-legge-finanziaria",
+    "annoEsercizio": "1985",
+    "annoInizio": 1985,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 887 del 22/12/1984",
+    "governoProponenteId": "g39",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Craxi I",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1984-12-22;887"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac09_2105"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; governo coerente con data di presentazione dell'atto Camera e calendario governi (dati.camera.it); nessuna correzione"
+    }
+  },
+  {
+    "id": "1986-esercizio-provvisorio",
+    "annoEsercizio": "1986",
+    "annoInizio": 1986,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "atto C.3352 del 16/12/1985; proroga (atto S.1656/C.3440) (estremi leggi NV)",
+    "governoProponenteId": "g39",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Craxi I",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac09_3352"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac09_3440"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "V1 atti (rif_governo g39); leggi NV || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione"
+    }
+  },
+  {
+    "id": "1986-bilancio-di-previsione",
+    "annoEsercizio": "1986",
+    "annoInizio": 1986,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 42 del 28/02/1986",
+    "governoProponenteId": "g39",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Craxi I",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1986-02-28;42"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; governo coerente con data di presentazione dell'atto Camera e calendario governi (dati.camera.it); nessuna correzione"
+    }
+  },
+  {
+    "id": "1986-legge-finanziaria",
+    "annoEsercizio": "1986",
+    "annoInizio": 1986,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 41 del 28/02/1986",
+    "governoProponenteId": "g39",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Craxi I",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1986-02-28;41"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac09_3335"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione"
+    }
+  },
+  {
+    "id": "1987-bilancio-di-previsione",
+    "annoEsercizio": "1987",
+    "annoInizio": 1987,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 911 del 22/12/1986",
+    "governoProponenteId": "g40",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Craxi II",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1986-12-22;911"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; governo coerente con data di presentazione dell'atto Camera e calendario governi (dati.camera.it); nessuna correzione"
+    }
+  },
+  {
+    "id": "1987-legge-finanziaria",
+    "annoEsercizio": "1987",
+    "annoInizio": 1987,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 910 del 22/12/1986",
+    "governoProponenteId": "g40",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Craxi II",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1986-12-22;910"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac09_4016"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; governo coerente con data di presentazione dell'atto Camera e calendario governi (dati.camera.it); nessuna correzione"
+    }
+  },
+  {
+    "id": "1988-esercizio-provvisorio",
+    "annoEsercizio": "1988",
+    "annoInizio": 1988,
+    "tipoAtto": "esercizio provvisorio",
+    "tipoAttoOriginale": "esercizio provvisorio",
+    "estremi": "L. n. 525 del 24/12/1987; proroga al 31/03/1988 (atto S.873/C.2386)",
+    "governoProponenteId": "g42",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Goria",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac10_2051"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac10_2386"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1 (titolo atto Camera cita L. 525/1987; rif_governo g42) || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione || V1✓ verificatore 2026-10-20: legge 1987-12-24;525 riletta su Normattiva (titolo coerente)"
+    }
+  },
+  {
+    "id": "1988-legge-finanziaria",
+    "annoEsercizio": "1988",
+    "annoInizio": 1988,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 67 del 11/03/1988",
+    "governoProponenteId": "g42",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Goria",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1988-03-11;67"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac10_2043"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione"
+    }
+  },
+  {
+    "id": "1989-bilancio-di-previsione",
+    "annoEsercizio": "1989",
+    "annoInizio": 1989,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 542 del 24/12/1988",
+    "governoProponenteId": "g43",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "De Mita",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1988-12-24;542"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; governo coerente con data di presentazione dell'atto Camera e calendario governi (dati.camera.it); nessuna correzione"
+    }
+  },
+  {
+    "id": "1989-legge-finanziaria",
+    "annoEsercizio": "1989",
+    "annoInizio": 1989,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 541 del 24/12/1988",
+    "governoProponenteId": "g43",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "De Mita",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1988-12-24;541"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac10_3196"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; governo coerente con data di presentazione dell'atto Camera e calendario governi (dati.camera.it); nessuna correzione"
+    }
+  },
+  {
+    "id": "1990-bilancio-di-previsione",
+    "annoEsercizio": "1990",
+    "annoInizio": 1990,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 409 del 27/12/1989",
+    "governoProponenteId": "g44",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Andreotti VI",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1989-12-27;409"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: S.1849 presentato 31/07/1989 (Min. Tesoro Carli), dopo il giuramento di Andreotti VI (23/07/1989), bdp.camera.it; nessuna correzione"
+    }
+  },
+  {
+    "id": "1990-legge-finanziaria",
+    "annoEsercizio": "1990",
+    "annoInizio": 1990,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 407 del 27/12/1989",
+    "governoProponenteId": "g44",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Andreotti VI",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1989-12-27;407"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac10_4362"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione"
+    }
+  },
+  {
+    "id": "1991-bilancio-di-previsione",
+    "annoEsercizio": "1991",
+    "annoInizio": 1991,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 406 del 29/12/1990",
+    "governoProponenteId": "g44",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Andreotti VI",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1990-12-29;406"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; governo coerente con data di presentazione dell'atto Camera e calendario governi (dati.camera.it); nessuna correzione"
+    }
+  },
+  {
+    "id": "1991-legge-finanziaria",
+    "annoEsercizio": "1991",
+    "annoInizio": 1991,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 405 del 29/12/1990",
+    "governoProponenteId": "g44",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Andreotti VI",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1990-12-29;405"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac10_5106"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; governo coerente con data di presentazione dell'atto Camera e calendario governi (dati.camera.it); nessuna correzione"
+    }
+  },
+  {
+    "id": "1992-bilancio-di-previsione",
+    "annoEsercizio": "1992",
+    "annoInizio": 1992,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 416 del 31/12/1991",
+    "governoProponenteId": "g45",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Andreotti VII",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1991-12-31;416"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; governo coerente con data di presentazione dell'atto Camera e calendario governi (dati.camera.it); nessuna correzione"
+    }
+  },
+  {
+    "id": "1992-legge-finanziaria",
+    "annoEsercizio": "1992",
+    "annoInizio": 1992,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 415 del 31/12/1991",
+    "governoProponenteId": "g45",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Andreotti VII",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1991-12-31;415"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac10_6115"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione"
+    }
+  },
+  {
+    "id": "1993-bilancio-di-previsione",
+    "annoEsercizio": "1993",
+    "annoInizio": 1993,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 501 del 23/12/1992",
+    "governoProponenteId": "g46",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Amato I",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1992-12-23;501"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; governo coerente con data di presentazione dell'atto Camera e calendario governi (dati.camera.it); nessuna correzione"
+    }
+  },
+  {
+    "id": "1993-legge-finanziaria",
+    "annoEsercizio": "1993",
+    "annoInizio": 1993,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 500 del 23/12/1992",
+    "governoProponenteId": "g46",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Amato I",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1992-12-23;500"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac11_1650"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; governo coerente con data di presentazione dell'atto Camera e calendario governi (dati.camera.it); nessuna correzione"
+    }
+  },
+  {
+    "id": "1994-bilancio-di-previsione",
+    "annoEsercizio": "1994",
+    "annoInizio": 1994,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 539 del 24/12/1993",
+    "governoProponenteId": "g47",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Ciampi",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1993-12-24;539"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; governo coerente con data di presentazione dell'atto Camera e calendario governi (dati.camera.it); nessuna correzione"
+    }
+  },
+  {
+    "id": "1994-legge-finanziaria",
+    "annoEsercizio": "1994",
+    "annoInizio": 1994,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 538 del 24/12/1993",
+    "governoProponenteId": "g47",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Ciampi",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1993-12-24;538"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac11_3341"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione"
+    }
+  },
+  {
+    "id": "1995-bilancio-di-previsione",
+    "annoEsercizio": "1995",
+    "annoInizio": 1995,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 726 del 23/12/1994",
+    "governoProponenteId": "g48",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Berlusconi I",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1994-12-23;726"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; governo coerente con data di presentazione dell'atto Camera e calendario governi (dati.camera.it); nessuna correzione"
+    }
+  },
+  {
+    "id": "1995-legge-finanziaria",
+    "annoEsercizio": "1995",
+    "annoInizio": 1995,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 725 del 23/12/1994",
+    "governoProponenteId": "g48",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Berlusconi I",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1994-12-23;725"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac12_1364"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera); promulgata 23/12/1994 durante la crisi del Berlusconi I || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; governo coerente con data di presentazione dell'atto Camera e calendario governi (dati.camera.it); nessuna correzione"
+    }
+  },
+  {
+    "id": "1996-bilancio-di-previsione",
+    "annoEsercizio": "1996",
+    "annoInizio": 1996,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 551 del 28/12/1995",
+    "governoProponenteId": "g49",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Dini",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1995-12-28;551"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; governo coerente con data di presentazione dell'atto Camera e calendario governi (dati.camera.it); nessuna correzione"
+    }
+  },
+  {
+    "id": "1996-legge-finanziaria",
+    "annoEsercizio": "1996",
+    "annoInizio": 1996,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 550 del 28/12/1995",
+    "governoProponenteId": "g49",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Dini",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1995-12-28;550"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac12_3448"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione"
+    }
+  },
+  {
+    "id": "1997-bilancio-di-previsione",
+    "annoEsercizio": "1997",
+    "annoInizio": 1997,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 664 del 23/12/1996",
+    "governoProponenteId": "g50",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Prodi I",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1996-12-23;664"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo: dati.senato.it osr:Ddl della stessa sessione di bilancio (C.2371 30/09/1996, Prodi-I)"
+    }
+  },
+  {
+    "id": "1997-legge-finanziaria",
+    "annoEsercizio": "1997",
+    "annoInizio": 1997,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 663 del 23/12/1996",
+    "governoProponenteId": "g50",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Prodi I",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1996-12-23;663"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (C.2371 30/09/1996, iniziativa: Prodi-I) -> INFERENZA promossa a V1"
+    }
+  },
+  {
+    "id": "1998-legge-finanziaria",
+    "annoEsercizio": "1998",
+    "annoInizio": 1998,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 450 del 27/12/1997",
+    "governoProponenteId": "g50",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Prodi I",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1997-12-27;450"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac13_4356"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (S.2792 30/09/1997, iniziativa: Prodi-I) -> INFERENZA promossa a V1"
+    }
+  },
+  {
+    "id": "1999-legge-finanziaria",
+    "annoEsercizio": "1999",
+    "annoInizio": 1999,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 449 del 23/12/1998",
+    "governoProponenteId": "g50",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Prodi I",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1998-12-23;449"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac13_5266-bis"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione); iter iniziato col Prodi I, approvata sotto D'Alema I || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (C.5266-BIS 30/09/1998, iniziativa: Prodi-I) -> INFERENZA promossa a V1"
+    }
+  },
+  {
+    "id": "2000-bilancio-di-previsione",
+    "annoEsercizio": "2000",
+    "annoInizio": 2000,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 489 del 23/12/1999",
+    "governoProponenteId": "g51",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "D'Alema I",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1999-12-23;489"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo: dati.senato.it osr:Ddl della stessa sessione di bilancio (S.4236 30/09/1999, D'Alema-I)"
+    }
+  },
+  {
+    "id": "2000-legge-finanziaria",
+    "annoEsercizio": "2000",
+    "annoInizio": 2000,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 488 del 23/12/1999",
+    "governoProponenteId": "g51",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "D'Alema I",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1999-12-23;488"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac13_6558"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (S.4236 30/09/1999, iniziativa: D'Alema-I) -> INFERENZA promossa a V1"
+    }
+  },
+  {
+    "id": "2001-bilancio-di-previsione",
+    "annoEsercizio": "2001",
+    "annoInizio": 2001,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 389 del 23/12/2000",
+    "governoProponenteId": "g53",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Amato II",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2000-12-23;389"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo: dati.senato.it osr:Ddl della stessa sessione di bilancio (C.7329 30/09/2000, Amato-II)"
+    }
+  },
+  {
+    "id": "2001-legge-finanziaria",
+    "annoEsercizio": "2001",
+    "annoInizio": 2001,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 388 del 23/12/2000",
+    "governoProponenteId": "g53",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Amato II",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2000-12-23;388"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac13_7328-bis"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (C.7328 30/09/2000, iniziativa: Amato-II) -> INFERENZA promossa a V1"
+    }
+  },
+  {
+    "id": "2002-bilancio-di-previsione",
+    "annoEsercizio": "2002",
+    "annoInizio": 2002,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 449 del 28/12/2001",
+    "governoProponenteId": "g54",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Berlusconi II",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2001-12-28;449"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo: dati.senato.it osr:Ddl della stessa sessione di bilancio (S.699 29/09/2001, Berlusconi-II)"
+    }
+  },
+  {
+    "id": "2002-legge-finanziaria",
+    "annoEsercizio": "2002",
+    "annoInizio": 2002,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 448 del 28/12/2001",
+    "governoProponenteId": "g54",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Berlusconi II",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2001-12-28;448"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac14_1984"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (S.699 29/09/2001, iniziativa: Berlusconi-II)"
+    }
+  },
+  {
+    "id": "2003-bilancio-di-previsione",
+    "annoEsercizio": "2003",
+    "annoInizio": 2003,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 290 del 27/12/2002",
+    "governoProponenteId": "g54",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Berlusconi II",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2002-12-27;290"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo: dati.senato.it osr:Ddl della stessa sessione di bilancio (C.3200 30/09/2002, Berlusconi-II)"
+    }
+  },
+  {
+    "id": "2003-legge-finanziaria",
+    "annoEsercizio": "2003",
+    "annoInizio": 2003,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 289 del 27/12/2002",
+    "governoProponenteId": "g54",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Berlusconi II",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2002-12-27;289"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac14_3200"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (C.3200 30/09/2002, iniziativa: Berlusconi-II)"
+    }
+  },
+  {
+    "id": "2004-bilancio-di-previsione",
+    "annoEsercizio": "2004",
+    "annoInizio": 2004,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 351 del 24/12/2003",
+    "governoProponenteId": "g54",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Berlusconi II",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2003-12-24;351"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo: dati.senato.it osr:Ddl della stessa sessione di bilancio (S.2512 30/09/2003, Berlusconi-II)"
+    }
+  },
+  {
+    "id": "2004-legge-finanziaria",
+    "annoEsercizio": "2004",
+    "annoInizio": 2004,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 350 del 24/12/2003",
+    "governoProponenteId": "g54",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Berlusconi II",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2003-12-24;350"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac14_4489"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (S.2512 30/09/2003, iniziativa: Berlusconi-II)"
+    }
+  },
+  {
+    "id": "2005-bilancio-di-previsione",
+    "annoEsercizio": "2005",
+    "annoInizio": 2005,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 312 del 30/12/2004",
+    "governoProponenteId": "g54",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Berlusconi II",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2004-12-30;312"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo: dati.senato.it osr:Ddl della stessa sessione di bilancio (C.5310-BIS 30/09/2004, Berlusconi-II)"
+    }
+  },
+  {
+    "id": "2005-legge-finanziaria",
+    "annoEsercizio": "2005",
+    "annoInizio": 2005,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 311 del 30/12/2004",
+    "governoProponenteId": "g54",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Berlusconi II",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2004-12-30;311"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac14_5310"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (C.5310-BIS 30/09/2004, iniziativa: Berlusconi-II) -> INFERENZA promossa a V1"
+    }
+  },
+  {
+    "id": "2006-bilancio-di-previsione",
+    "annoEsercizio": "2006",
+    "annoInizio": 2006,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 267 del 23/12/2005",
+    "governoProponenteId": "g59",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Berlusconi III",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2005-12-23;267"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo: dati.senato.it osr:Ddl della stessa sessione di bilancio (S.3613 30/09/2005, Berlusconi-III)"
+    }
+  },
+  {
+    "id": "2006-legge-finanziaria",
+    "annoEsercizio": "2006",
+    "annoInizio": 2006,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 266 del 23/12/2005",
+    "governoProponenteId": "g59",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Berlusconi III",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2005-12-23;266"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac14_6177"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (S.3613 30/09/2005, iniziativa: Berlusconi-III) -> INFERENZA promossa a V1"
+    }
+  },
+  {
+    "id": "2007-bilancio-di-previsione",
+    "annoEsercizio": "2007",
+    "annoInizio": 2007,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 298 del 27/12/2006",
+    "governoProponenteId": "g60",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Prodi II",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2006-12-27;298"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo: dati.senato.it osr:Ddl della stessa sessione di bilancio (C.1746 01/10/2006, Prodi-II)"
+    }
+  },
+  {
+    "id": "2007-legge-finanziaria",
+    "annoEsercizio": "2007",
+    "annoInizio": 2007,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 296 del 27/12/2006",
+    "governoProponenteId": "g60",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Prodi II",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2006-12-27;296"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac15_1746"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1* (rif_governo malformato); rif_governo Camera malformato (\"gII Governo Prodi\") || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (C.1746 01/10/2006, iniziativa: Prodi-II)"
+    }
+  },
+  {
+    "id": "2008-bilancio-di-previsione",
+    "annoEsercizio": "2008",
+    "annoInizio": 2008,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 245 del 24/12/2007",
+    "governoProponenteId": "g60",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Prodi II",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2007-12-24;245"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo: dati.senato.it osr:Ddl della stessa sessione di bilancio (S.1817 01/10/2007, Prodi-II)"
+    }
+  },
+  {
+    "id": "2008-legge-finanziaria",
+    "annoEsercizio": "2008",
+    "annoInizio": 2008,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 244 del 24/12/2007",
+    "governoProponenteId": "g60",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Prodi II",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2007-12-24;244"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac15_3256"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1* (rif_governo malformato); rif_governo Camera malformato || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (S.1817 01/10/2007, iniziativa: Prodi-II)"
+    }
+  },
+  {
+    "id": "2009-bilancio-di-previsione",
+    "annoEsercizio": "2009",
+    "annoInizio": 2009,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 204 del 22/12/2008",
+    "governoProponenteId": "g61",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Berlusconi IV",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2008-12-22;204"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo: dati.senato.it osr:Ddl della stessa sessione di bilancio (C.1714 30/09/2008, Berlusconi-IV)"
+    }
+  },
+  {
+    "id": "2009-legge-finanziaria",
+    "annoEsercizio": "2009",
+    "annoInizio": 2009,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 203 del 22/12/2008",
+    "governoProponenteId": "g61",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Berlusconi IV",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2008-12-22;203"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac16_1713"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (C.1713 30/09/2008, iniziativa: Berlusconi-IV)"
+    }
+  },
+  {
+    "id": "2010-bilancio-di-previsione",
+    "annoEsercizio": "2010",
+    "annoInizio": 2010,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 192 del 23/12/2009",
+    "governoProponenteId": "g61",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Berlusconi IV",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2009-12-23;192"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo: dati.senato.it osr:Ddl della stessa sessione di bilancio (S.1791 29/09/2009, Berlusconi-IV)"
+    }
+  },
+  {
+    "id": "2010-legge-finanziaria",
+    "annoEsercizio": "2010",
+    "annoInizio": 2010,
+    "tipoAtto": "legge finanziaria",
+    "tipoAttoOriginale": "legge finanziaria",
+    "estremi": "L. n. 191 del 23/12/2009",
+    "governoProponenteId": "g61",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Berlusconi IV",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2009-12-23;191"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac16_2936"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (S.1790 29/09/2009, iniziativa: Berlusconi-IV)"
+    }
+  },
+  {
+    "id": "2011-bilancio-di-previsione",
+    "annoEsercizio": "2011",
+    "annoInizio": 2011,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 221 del 13/12/2010",
+    "governoProponenteId": "g61",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Berlusconi IV",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2010-12-13;221"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo: dati.senato.it osr:Ddl della stessa sessione di bilancio (C.3779 15/10/2010, Berlusconi-IV)"
+    }
+  },
+  {
+    "id": "2011-legge-di-stabilità",
+    "annoEsercizio": "2011",
+    "annoInizio": 2011,
+    "tipoAtto": "legge di stabilità",
+    "tipoAttoOriginale": "legge di stabilità",
+    "estremi": "L. n. 220 del 13/12/2010",
+    "governoProponenteId": "g61",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Berlusconi IV",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2010-12-13;220"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac16_3778"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (C.3778 15/10/2010, iniziativa: Berlusconi-IV)"
+    }
+  },
+  {
+    "id": "2012-bilancio-di-previsione",
+    "annoEsercizio": "2012",
+    "annoInizio": 2012,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 184 del 12/11/2011",
+    "governoProponenteId": "g61",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Berlusconi IV",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2011-11-12;184"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo: dati.senato.it osr:Ddl della stessa sessione di bilancio (S.2969 18/10/2011, Berlusconi-IV)"
+    }
+  },
+  {
+    "id": "2012-legge-di-stabilità",
+    "annoEsercizio": "2012",
+    "annoInizio": 2012,
+    "tipoAtto": "legge di stabilità",
+    "tipoAttoOriginale": "legge di stabilità",
+    "estremi": "L. n. 183 del 12/11/2011",
+    "governoProponenteId": "g61",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Berlusconi IV",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2011-11-12;183"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac16_4773"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera); promulgata 12/11/2011; governo Monti dal 16/11/2011 || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (S.2968 18/10/2011, iniziativa: Berlusconi-IV)"
+    }
+  },
+  {
+    "id": "2013-bilancio-di-previsione",
+    "annoEsercizio": "2013",
+    "annoInizio": 2013,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 229 del 24/12/2012",
+    "governoProponenteId": "g62",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Monti",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2012-12-24;229"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo: dati.senato.it osr:Ddl della stessa sessione di bilancio (C.5535 16/10/2012, Monti-I)"
+    }
+  },
+  {
+    "id": "2013-legge-di-stabilità",
+    "annoEsercizio": "2013",
+    "annoInizio": 2013,
+    "tipoAtto": "legge di stabilità",
+    "tipoAttoOriginale": "legge di stabilità",
+    "estremi": "L. n. 228 del 24/12/2012",
+    "governoProponenteId": "g62",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Monti",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2012-12-24;228"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac16_5534"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (C.5534 16/10/2012, iniziativa: Monti-I)"
+    }
+  },
+  {
+    "id": "2014-bilancio-di-previsione",
+    "annoEsercizio": "2014",
+    "annoInizio": 2014,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 148 del 27/12/2013",
+    "governoProponenteId": "g82",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Letta",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2013-12-27;148"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo: dati.senato.it osr:Ddl della stessa sessione di bilancio (S.1120 21/10/2013, Letta-I)"
+    }
+  },
+  {
+    "id": "2014-legge-di-stabilità",
+    "annoEsercizio": "2014",
+    "annoInizio": 2014,
+    "tipoAtto": "legge di stabilità",
+    "tipoAttoOriginale": "legge di stabilità",
+    "estremi": "L. n. 147 del 27/12/2013",
+    "governoProponenteId": "g82",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Letta",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2013-12-27;147"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac17_1865"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (S.1120 21/10/2013, iniziativa: Letta-I)"
+    }
+  },
+  {
+    "id": "2015-bilancio-di-previsione",
+    "annoEsercizio": "2015",
+    "annoInizio": 2015,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 191 del 23/12/2014",
+    "governoProponenteId": "g102",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Renzi",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;191"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo: dati.senato.it osr:Ddl della stessa sessione di bilancio (C.2680 23/10/2014, Renzi-I)"
+    }
+  },
+  {
+    "id": "2015-legge-di-stabilità",
+    "annoEsercizio": "2015",
+    "annoInizio": 2015,
+    "tipoAtto": "legge di stabilità",
+    "tipoAttoOriginale": "legge di stabilità",
+    "estremi": "L. n. 190 del 23/12/2014",
+    "governoProponenteId": "g102",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Renzi",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac17_2679"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (C.2679 23/10/2014, iniziativa: Renzi-I)"
+    }
+  },
+  {
+    "id": "2016-bilancio-di-previsione",
+    "annoEsercizio": "2016",
+    "annoInizio": 2016,
+    "tipoAtto": "bilancio di previsione",
+    "tipoAttoOriginale": "bilancio di previsione",
+    "estremi": "L. n. 209 del 28/12/2015",
+    "governoProponenteId": "g102",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Renzi",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2015-12-28;209"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo: dati.senato.it osr:Ddl della stessa sessione di bilancio (S.2112 25/10/2015, Renzi-I)"
+    }
+  },
+  {
+    "id": "2016-legge-di-stabilità",
+    "annoEsercizio": "2016",
+    "annoInizio": 2016,
+    "tipoAtto": "legge di stabilità",
+    "tipoAttoOriginale": "legge di stabilità",
+    "estremi": "L. n. 208 del 28/12/2015",
+    "governoProponenteId": "g102",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Renzi",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2015-12-28;208"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac17_3444"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (S.2111 25/10/2015, iniziativa: Renzi-I)"
+    }
+  },
+  {
+    "id": "2017-legge-di-bilancio",
+    "annoEsercizio": "2017",
+    "annoInizio": 2017,
+    "tipoAtto": "legge di bilancio",
+    "tipoAttoOriginale": "legge di bilancio",
+    "estremi": "L. n. 232 del 11/12/2016",
+    "governoProponenteId": "g102",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Renzi",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2016-12-11;232"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac17_4127"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera); promulgata 11/12/2016; Gentiloni giura il 12/12/2016 || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (C.4127-BIS 29/10/2016, iniziativa: Renzi-I)"
+    }
+  },
+  {
+    "id": "2018-legge-di-bilancio",
+    "annoEsercizio": "2018",
+    "annoInizio": 2018,
+    "tipoAtto": "legge di bilancio",
+    "tipoAttoOriginale": "legge di bilancio",
+    "estremi": "L. n. 205 del 27/12/2017",
+    "governoProponenteId": "g122",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Gentiloni",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2017-12-27;205"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac17_4768"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (S.2960 29/10/2017, iniziativa: Gentiloni Silveri-I)"
+    }
+  },
+  {
+    "id": "2019-legge-di-bilancio",
+    "annoEsercizio": "2019",
+    "annoInizio": 2019,
+    "tipoAtto": "legge di bilancio",
+    "tipoAttoOriginale": "legge di bilancio",
+    "estremi": "L. n. 145 del 30/12/2018",
+    "governoProponenteId": "g142",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Conte I",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2018-12-30;145"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac18_1334"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (C.1334 31/10/2018, iniziativa: Conte-I)"
+    }
+  },
+  {
+    "id": "2020-legge-di-bilancio",
+    "annoEsercizio": "2020",
+    "annoInizio": 2020,
+    "tipoAtto": "legge di bilancio",
+    "tipoAttoOriginale": "legge di bilancio",
+    "estremi": "L. n. 160 del 27/12/2019",
+    "governoProponenteId": "g162",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Conte II",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2019-12-27;160"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac18_2305"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (S.1586 02/11/2019, iniziativa: Conte-II)"
+    }
+  },
+  {
+    "id": "2021-legge-di-bilancio",
+    "annoEsercizio": "2021",
+    "annoInizio": 2021,
+    "tipoAtto": "legge di bilancio",
+    "tipoAttoOriginale": "legge di bilancio",
+    "estremi": "L. n. 178 del 30/12/2020",
+    "governoProponenteId": "g162",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Conte II",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2020-12-30;178"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac18_2790"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (C.2790-BIS 18/11/2020, iniziativa: Conte-II)"
+    }
+  },
+  {
+    "id": "2022-legge-di-bilancio",
+    "annoEsercizio": "2022",
+    "annoInizio": 2022,
+    "tipoAtto": "legge di bilancio",
+    "tipoAttoOriginale": "legge di bilancio",
+    "estremi": "L. n. 234 del 30/12/2021",
+    "governoProponenteId": "g182",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Draghi",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2021-12-30;234"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac18_3424"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo V1 (rif_governo atto Camera) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (S.2448 11/11/2021, iniziativa: Draghi-I)"
+    }
+  },
+  {
+    "id": "2023-legge-di-bilancio",
+    "annoEsercizio": "2023",
+    "annoInizio": 2023,
+    "tipoAtto": "legge di bilancio",
+    "tipoAttoOriginale": "legge di bilancio",
+    "estremi": "L. n. 197 del 29/12/2022",
+    "governoProponenteId": "g202",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Meloni",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2022-12-29;197"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac19_643"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (C.643 29/11/2022, iniziativa: Meloni-I) -> INFERENZA promossa a V1"
+    }
+  },
+  {
+    "id": "2024-legge-di-bilancio",
+    "annoEsercizio": "2024",
+    "annoInizio": 2024,
+    "tipoAtto": "legge di bilancio",
+    "tipoAttoOriginale": "legge di bilancio",
+    "estremi": "L. n. 213 del 30/12/2023",
+    "governoProponenteId": "g202",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Meloni",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2023-12-30;213"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac19_1627"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (S.926 30/10/2023, iniziativa: Meloni-I) -> INFERENZA promossa a V1"
+    }
+  },
+  {
+    "id": "2025-legge-di-bilancio",
+    "annoEsercizio": "2025",
+    "annoInizio": 2025,
+    "tipoAtto": "legge di bilancio",
+    "tipoAttoOriginale": "legge di bilancio",
+    "estremi": "L. n. 207 del 30/12/2024",
+    "governoProponenteId": "g202",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Meloni",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac19_2112"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (C.2112-bis 23/10/2024, iniziativa: Meloni-I) -> INFERENZA promossa a V1"
+    }
+  },
+  {
+    "id": "2026-legge-di-bilancio",
+    "annoEsercizio": "2026",
+    "annoInizio": 2026,
+    "tipoAtto": "legge di bilancio",
+    "tipoAttoOriginale": "legge di bilancio",
+    "estremi": "L. n. 199 del 30/12/2025",
+    "governoProponenteId": "g202",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Meloni",
+    "fonti": [
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac19_2750"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (S.1689 22/10/2025, iniziativa: Meloni-I) -> INFERENZA promossa a V1"
+    }
+  },
+  {
+    "id": "2027-legge-di-bilancio",
+    "annoEsercizio": "2027",
+    "annoInizio": 2027,
+    "tipoAtto": "legge di bilancio",
+    "tipoAttoOriginale": "legge di bilancio",
+    "estremi": "DDL non ancora presentato alle Camere al 20/10/2026 (DPB 2027 approvato dal CdM n. 192 del 13/10/2026)",
+    "governoProponenteId": "g202",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Meloni",
+    "fonti": [
+      {
+        "url": "https://pagellapolitica.it/articoli/governo-dpb-legge-bilancio-2027"
+      },
+      {
+        "url": "https://www.governo.it/it/articolo/consiglio-dei-ministri-n-192/32830"
+      },
+      {
+        "url": "https://www.governo.it/it/articolo/convocazione-del-consiglio-dei-ministri-n-193/32876"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "dettaglio": "NV (fonti secondarie); da riverificare dopo la presentazione || verificatore 2026-10-20: DPB 2027 approvato dal CdM n. 192 del 13/10/2026 = V1✓ (comunicato governo.it); DDL non presentato al 20/10/2026 = V1✓ (nessun atto \"anno finanziario 2027\" negli open data Camera leg. XIX e Senato; ordine del giorno del CdM n. 193 del 20/10/2026 senza DDL di bilancio); importo della manovra resta V2"
+    }
+  }
+]

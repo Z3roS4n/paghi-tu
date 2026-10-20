@@ -1,0 +1,370 @@
+{
+  "id": "pil-nominale",
+  "titolo": "PIL nominale",
+  "unita": "milioni di euro correnti (lire/1936,27)",
+  "fonti": [
+    {
+      "url": "https://www.bancaditalia.it/statistiche/tematiche/stat-storiche/stat-storiche-economia/NA150_2.0.zip"
+    },
+    {
+      "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,92_506_DF_DCCN_PILN_1,1.0/A.IT.B1GQ_B_W2_S1..../ALL/"
+    }
+  ],
+  "avvertenze": [
+    "1946–1994: Banca d'Italia NA150 v2.0, livelli SEC2010 ricostruiti dagli autori; 1995–2025: ISTAT edizione 2026M9.",
+    "Per raccordare 1946–1994 all'edizione ISTAT 2026M9 si moltiplica per 1,005622 (rapporto 1995): il raccordo è una nostra elaborazione e va mostrato separato dal valore della fonte."
+  ],
+  "punti": [
+    {
+      "anno": 1946,
+      "valore": 1859.2
+    },
+    {
+      "anno": 1947,
+      "valore": 3596.6
+    },
+    {
+      "anno": 1948,
+      "valore": 4234.3
+    },
+    {
+      "anno": 1949,
+      "valore": 4474.4
+    },
+    {
+      "anno": 1950,
+      "valore": 5061.8
+    },
+    {
+      "anno": 1951,
+      "valore": 6011.1
+    },
+    {
+      "anno": 1952,
+      "valore": 6505.3
+    },
+    {
+      "anno": 1953,
+      "valore": 7227.5
+    },
+    {
+      "anno": 1954,
+      "valore": 7727.1
+    },
+    {
+      "anno": 1955,
+      "valore": 8533
+    },
+    {
+      "anno": 1956,
+      "valore": 9320.1
+    },
+    {
+      "anno": 1957,
+      "valore": 10036.3
+    },
+    {
+      "anno": 1958,
+      "valore": 10849.3
+    },
+    {
+      "anno": 1959,
+      "valore": 11552
+    },
+    {
+      "anno": 1960,
+      "valore": 12639.6
+    },
+    {
+      "anno": 1961,
+      "valore": 14261.1
+    },
+    {
+      "anno": 1962,
+      "valore": 16071.9
+    },
+    {
+      "anno": 1963,
+      "valore": 18524.7
+    },
+    {
+      "anno": 1964,
+      "valore": 20431.3
+    },
+    {
+      "anno": 1965,
+      "valore": 22084.3
+    },
+    {
+      "anno": 1966,
+      "valore": 24128.7
+    },
+    {
+      "anno": 1967,
+      "valore": 26791.5
+    },
+    {
+      "anno": 1968,
+      "valore": 29122.4
+    },
+    {
+      "anno": 1969,
+      "valore": 32206.4
+    },
+    {
+      "anno": 1970,
+      "valore": 36374.2
+    },
+    {
+      "anno": 1971,
+      "valore": 39725.9
+    },
+    {
+      "anno": 1972,
+      "valore": 43557.2
+    },
+    {
+      "anno": 1973,
+      "valore": 52521.8
+    },
+    {
+      "anno": 1974,
+      "valore": 66422.1
+    },
+    {
+      "anno": 1975,
+      "valore": 76111.4
+    },
+    {
+      "anno": 1976,
+      "valore": 95572.9
+    },
+    {
+      "anno": 1977,
+      "valore": 116144.3
+    },
+    {
+      "anno": 1978,
+      "valore": 136750.8
+    },
+    {
+      "anno": 1979,
+      "valore": 167354.5
+    },
+    {
+      "anno": 1980,
+      "valore": 209020.8
+    },
+    {
+      "anno": 1981,
+      "valore": 250544.4
+    },
+    {
+      "anno": 1982,
+      "valore": 295826.4
+    },
+    {
+      "anno": 1983,
+      "valore": 344771.4
+    },
+    {
+      "anno": 1984,
+      "valore": 394405.1
+    },
+    {
+      "anno": 1985,
+      "valore": 442950.4
+    },
+    {
+      "anno": 1986,
+      "valore": 490629.2
+    },
+    {
+      "anno": 1987,
+      "valore": 537443.1
+    },
+    {
+      "anno": 1988,
+      "valore": 597924.4
+    },
+    {
+      "anno": 1989,
+      "valore": 657019.8
+    },
+    {
+      "anno": 1990,
+      "valore": 726795
+    },
+    {
+      "anno": 1991,
+      "valore": 794168.2
+    },
+    {
+      "anno": 1992,
+      "valore": 836206
+    },
+    {
+      "anno": 1993,
+      "valore": 861957.8
+    },
+    {
+      "anno": 1994,
+      "valore": 911901.3
+    },
+    {
+      "anno": 1995,
+      "valore": 990520.9
+    },
+    {
+      "anno": 1996,
+      "valore": 1047745.4
+    },
+    {
+      "anno": 1997,
+      "valore": 1095091.6
+    },
+    {
+      "anno": 1998,
+      "valore": 1141256.8
+    },
+    {
+      "anno": 1999,
+      "valore": 1177549.7,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    },
+    {
+      "anno": 2000,
+      "valore": 1244744.2,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    },
+    {
+      "anno": 2001,
+      "valore": 1308623.1,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    },
+    {
+      "anno": 2002,
+      "valore": 1355522.3,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    },
+    {
+      "anno": 2003,
+      "valore": 1399386,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    },
+    {
+      "anno": 2004,
+      "valore": 1457356.2,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    },
+    {
+      "anno": 2005,
+      "valore": 1499073.1,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    },
+    {
+      "anno": 2006,
+      "valore": 1559864.2,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    },
+    {
+      "anno": 2007,
+      "valore": 1621714.5,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    },
+    {
+      "anno": 2008,
+      "valore": 1643718.8,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    },
+    {
+      "anno": 2009,
+      "valore": 1584106.8,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    },
+    {
+      "anno": 2010,
+      "valore": 1615671.1,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024; OBS_STATUS=b"
+    },
+    {
+      "anno": 2011,
+      "valore": 1655357.1,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    },
+    {
+      "anno": 2012,
+      "valore": 1630709.8,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    },
+    {
+      "anno": 2013,
+      "valore": 1618965,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    },
+    {
+      "anno": 2014,
+      "valore": 1633104.1,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    },
+    {
+      "anno": 2015,
+      "valore": 1660512.5,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    },
+    {
+      "anno": 2016,
+      "valore": 1701884.8,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    },
+    {
+      "anno": 2017,
+      "valore": 1741307.4,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    },
+    {
+      "anno": 2018,
+      "valore": 1774453.9,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    },
+    {
+      "anno": 2019,
+      "valore": 1800281.8,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    },
+    {
+      "anno": 2020,
+      "valore": 1665979.4,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    },
+    {
+      "anno": 2021,
+      "valore": 1838674.8,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    },
+    {
+      "anno": 2022,
+      "valore": 1998269.1,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    },
+    {
+      "anno": 2023,
+      "valore": 2141760.8,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    },
+    {
+      "anno": 2024,
+      "valore": 2210594.7,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    },
+    {
+      "anno": 2025,
+      "valore": 2265002.5,
+      "nota": "milioni di euro correnti; ISTAT dataflow 92_506_DF_DCCN_PILN_1 B1GQ prezzi correnti (VALUATION=V) edizione 2026M9; SEC2010 revisione benchmark 2024"
+    }
+  ],
+  "verifica": {
+    "livello": "V1",
+    "dettaglio": "Verifica livello 2 del 2026-10-20: tutte le righe ricontrollate sui file ufficiali riscaricati, 0 scarti."
+  }
+}

@@ -1,0 +1,339 @@
+{
+  "id": "prezzi-consumo-foi",
+  "titolo": "Indice dei prezzi al consumo FOI (base 1913 = 1)",
+  "unita": "numero indice FOI base 1913=1 media annua",
+  "fonti": [
+    {
+      "url": "https://www.istat.it/wp-content/uploads/2026/07/Nota-informativa30luglio2026.pdf"
+    }
+  ],
+  "avvertenze": [
+    "Dal 1992 FOI al netto dei tabacchi. ISTAT: valori per sole finalità di analisi storica."
+  ],
+  "punti": [
+    {
+      "anno": 1946,
+      "valore": 122.716
+    },
+    {
+      "anno": 1947,
+      "valore": 198.875
+    },
+    {
+      "anno": 1948,
+      "valore": 210.569
+    },
+    {
+      "anno": 1949,
+      "valore": 213.655
+    },
+    {
+      "anno": 1950,
+      "valore": 210.786
+    },
+    {
+      "anno": 1951,
+      "valore": 231.26
+    },
+    {
+      "anno": 1952,
+      "valore": 241.085
+    },
+    {
+      "anno": 1953,
+      "valore": 245.779
+    },
+    {
+      "anno": 1954,
+      "valore": 252.387
+    },
+    {
+      "anno": 1955,
+      "valore": 259.472
+    },
+    {
+      "anno": 1956,
+      "valore": 272.383
+    },
+    {
+      "anno": 1957,
+      "valore": 277.643
+    },
+    {
+      "anno": 1958,
+      "valore": 290.945
+    },
+    {
+      "anno": 1959,
+      "valore": 289.728
+    },
+    {
+      "anno": 1960,
+      "valore": 297.422
+    },
+    {
+      "anno": 1961,
+      "valore": 306.116
+    },
+    {
+      "anno": 1962,
+      "valore": 321.728
+    },
+    {
+      "anno": 1963,
+      "valore": 345.911
+    },
+    {
+      "anno": 1964,
+      "valore": 366.421
+    },
+    {
+      "anno": 1965,
+      "valore": 382.339
+    },
+    {
+      "anno": 1966,
+      "valore": 389.992
+    },
+    {
+      "anno": 1967,
+      "valore": 397.792
+    },
+    {
+      "anno": 1968,
+      "valore": 402.862
+    },
+    {
+      "anno": 1969,
+      "valore": 414.172
+    },
+    {
+      "anno": 1970,
+      "valore": 435.231
+    },
+    {
+      "anno": 1971,
+      "valore": 456.993
+    },
+    {
+      "anno": 1972,
+      "valore": 482.671
+    },
+    {
+      "anno": 1973,
+      "valore": 532.723
+    },
+    {
+      "anno": 1974,
+      "valore": 636.308
+    },
+    {
+      "anno": 1975,
+      "valore": 745.551
+    },
+    {
+      "anno": 1976,
+      "valore": 868.721
+    },
+    {
+      "anno": 1977,
+      "valore": 1025.96
+    },
+    {
+      "anno": 1978,
+      "valore": 1153.661
+    },
+    {
+      "anno": 1979,
+      "valore": 1335.224
+    },
+    {
+      "anno": 1980,
+      "valore": 1617.559
+    },
+    {
+      "anno": 1981,
+      "valore": 1920.043
+    },
+    {
+      "anno": 1982,
+      "valore": 2233.849
+    },
+    {
+      "anno": 1983,
+      "valore": 2568.684
+    },
+    {
+      "anno": 1984,
+      "valore": 2840.434
+    },
+    {
+      "anno": 1985,
+      "valore": 3084.685
+    },
+    {
+      "anno": 1986,
+      "valore": 3272.851
+    },
+    {
+      "anno": 1987,
+      "valore": 3424
+    },
+    {
+      "anno": 1988,
+      "valore": 3593.658
+    },
+    {
+      "anno": 1989,
+      "valore": 3831.179
+    },
+    {
+      "anno": 1990,
+      "valore": 4064.881
+    },
+    {
+      "anno": 1991,
+      "valore": 4325.401
+    },
+    {
+      "anno": 1992,
+      "valore": 4559.372
+    },
+    {
+      "anno": 1993,
+      "valore": 4750.866
+    },
+    {
+      "anno": 1994,
+      "valore": 4937.8
+    },
+    {
+      "anno": 1995,
+      "valore": 5202.243
+    },
+    {
+      "anno": 1996,
+      "valore": 5405.13
+    },
+    {
+      "anno": 1997,
+      "valore": 5498.771
+    },
+    {
+      "anno": 1998,
+      "valore": 5597.613
+    },
+    {
+      "anno": 1999,
+      "valore": 5686.052
+    },
+    {
+      "anno": 2000,
+      "valore": 5831.714
+    },
+    {
+      "anno": 2001,
+      "valore": 5987.782
+    },
+    {
+      "anno": 2002,
+      "valore": 6133.444
+    },
+    {
+      "anno": 2003,
+      "valore": 6284.31
+    },
+    {
+      "anno": 2004,
+      "valore": 6409.163
+    },
+    {
+      "anno": 2005,
+      "valore": 6518.41
+    },
+    {
+      "anno": 2006,
+      "valore": 6648.467
+    },
+    {
+      "anno": 2007,
+      "valore": 6762.916
+    },
+    {
+      "anno": 2008,
+      "valore": 6981.41
+    },
+    {
+      "anno": 2009,
+      "valore": 7033.433
+    },
+    {
+      "anno": 2010,
+      "valore": 7142.68
+    },
+    {
+      "anno": 2011,
+      "valore": 7335.532
+    },
+    {
+      "anno": 2012,
+      "valore": 7556.955
+    },
+    {
+      "anno": 2013,
+      "valore": 7642.667
+    },
+    {
+      "anno": 2014,
+      "valore": 7656.953
+    },
+    {
+      "anno": 2015,
+      "valore": 7649.81
+    },
+    {
+      "anno": 2016,
+      "valore": 7642.16
+    },
+    {
+      "anno": 2017,
+      "valore": 7726.308
+    },
+    {
+      "anno": 2018,
+      "valore": 7810.456
+    },
+    {
+      "anno": 2019,
+      "valore": 7848.705
+    },
+    {
+      "anno": 2020,
+      "valore": 7825.756
+    },
+    {
+      "anno": 2021,
+      "valore": 7971.102
+    },
+    {
+      "anno": 2022,
+      "valore": 8613.686
+    },
+    {
+      "anno": 2023,
+      "valore": 9080.324
+    },
+    {
+      "anno": 2024,
+      "valore": 9156.822
+    },
+    {
+      "anno": 2025,
+      "valore": 9286.869
+    }
+  ],
+  "verifica": {
+    "livello": "V1",
+    "dettaglio": "Verifica livello 2 del 2026-10-20: tutte le righe ricontrollate sui file ufficiali riscaricati, 0 scarti."
+  }
+}

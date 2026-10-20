@@ -1,0 +1,2204 @@
+[
+  {
+    "id": "g55",
+    "ordine": 1,
+    "nome": "Governo De Gasperi I",
+    "presidente": "Alcide De Gasperi",
+    "legislaturaId": "AC",
+    "inizio": "1945-12-10",
+    "fine": "1946-07-14",
+    "maggioranza": "DC-PCI-PSIUP-PLI-PdA-PDL",
+    "tipo": "provvisorio (pre-Costituente, Luogotenenza)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g55"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ordinamento-provvisorio-25-luglio-1943-23-maggio-1948-assemblea-3"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "data V1 (Camera/governo.it, nomina=inizio) | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") | nominato prima della Costituente (25.06.1946) e del referendum (02.06.1946); Camera lo collega alla legislatura \"costituente\" || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); governo.it scheda indica fine 01.07.1946 (dimissioni), CSV usa giuramento successore; partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g56",
+    "ordine": 2,
+    "nome": "Governo De Gasperi II",
+    "presidente": "Alcide De Gasperi",
+    "legislaturaId": "AC",
+    "inizio": "1946-07-14",
+    "fine": "1947-02-02",
+    "maggioranza": "DC-PCI-PSIUP-PRI",
+    "tipo": "provvisorio (periodo Costituente)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g56"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ordinamento-provvisorio-25-luglio-1943-23-maggio-1948-assemblea-2"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1946-07-13 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g57",
+    "ordine": 3,
+    "nome": "Governo De Gasperi III",
+    "presidente": "Alcide De Gasperi",
+    "legislaturaId": "AC",
+    "inizio": "1947-02-02",
+    "fine": "1947-06-01",
+    "maggioranza": "DC-PCI-PSI",
+    "tipo": "provvisorio (periodo Costituente)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g57"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ordinamento-provvisorio-25-luglio-1943-23-maggio-1948-assemblea-1"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1947-02-02 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g58",
+    "ordine": 4,
+    "nome": "Governo De Gasperi IV",
+    "presidente": "Alcide De Gasperi",
+    "legislaturaId": "AC",
+    "inizio": "1947-06-01",
+    "fine": "1948-05-24",
+    "maggioranza": "DC-PLI-PSLI-PRI",
+    "tipo": "provvisorio (periodo Costituente)",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g58"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ordinamento-provvisorio-25-luglio-1943-23-maggio-1948-assemblea-0"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1947-05-31 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") | composizione variata in corso di governo NV || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g1",
+    "ordine": 5,
+    "nome": "Governo De Gasperi V",
+    "presidente": "Alcide De Gasperi",
+    "legislaturaId": "I",
+    "inizio": "1948-05-24",
+    "fine": "1950-01-27",
+    "maggioranza": "DC-PSLI-PRI-PLI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g1"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/i-legislatura-8-maggio-1948-4-aprile-1953/governo-de-gasperi-v/3228"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1948-05-23 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g2",
+    "ordine": 6,
+    "nome": "Governo De Gasperi VI",
+    "presidente": "Alcide De Gasperi",
+    "legislaturaId": "I",
+    "inizio": "1950-01-27",
+    "fine": "1951-07-26",
+    "maggioranza": "DC-PRI-PSLI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g2"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/i-legislatura-8-maggio-1948-4-aprile-1953/governo-de-gasperi-vi/3227"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1950-01-27 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g3",
+    "ordine": 7,
+    "nome": "Governo De Gasperi VII",
+    "presidente": "Alcide De Gasperi",
+    "legislaturaId": "I",
+    "inizio": "1951-07-26",
+    "fine": "1953-07-16",
+    "maggioranza": "DC-PRI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g3"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/i-legislatura-8-maggio-1948-4-aprile-1953/governo-de-gasperi-vii/3226"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1951-07-26 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g4",
+    "ordine": 8,
+    "nome": "Governo De Gasperi VIII",
+    "presidente": "Alcide De Gasperi",
+    "legislaturaId": "II",
+    "inizio": "1953-07-16",
+    "fine": "1953-08-17",
+    "maggioranza": "DC",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g4"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ii-legislatura-25-giugno-1953-14-marzo-1958/governo-de-gasperi-viii/3224"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1953-07-16 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g5",
+    "ordine": 9,
+    "nome": "Governo Pella",
+    "presidente": "Giuseppe Pella",
+    "legislaturaId": "II",
+    "inizio": "1953-08-17",
+    "fine": "1954-01-19",
+    "maggioranza": "DC-Indipendenti",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g5"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ii-legislatura-25-giugno-1953-14-marzo-1958/governo-pella/3223"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1953-08-17 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g6",
+    "ordine": 10,
+    "nome": "Governo Fanfani I",
+    "presidente": "Amintore Fanfani",
+    "legislaturaId": "II",
+    "inizio": "1954-01-19",
+    "fine": "1954-02-10",
+    "maggioranza": "DC",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g6"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ii-legislatura-25-giugno-1953-14-marzo-1958/governo-fanfani/3222"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1954-01-18 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g7",
+    "ordine": 11,
+    "nome": "Governo Scelba",
+    "presidente": "Mario Scelba",
+    "legislaturaId": "II",
+    "inizio": "1954-02-10",
+    "fine": "1955-07-06",
+    "maggioranza": "DC-PSDI-PLI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g7"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ii-legislatura-25-giugno-1953-14-marzo-1958/governo-scelba/3221"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1954-02-10 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g8",
+    "ordine": 12,
+    "nome": "Governo Segni I",
+    "presidente": "Antonio Segni",
+    "legislaturaId": "II",
+    "inizio": "1955-07-06",
+    "fine": "1957-05-20",
+    "maggioranza": "DC-PSDI-PLI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g8"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ii-legislatura-25-giugno-1953-14-marzo-1958/governo-segni/3220"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1955-07-06 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g9",
+    "ordine": 13,
+    "nome": "Governo Zoli",
+    "presidente": "Adone Zoli",
+    "legislaturaId": "II",
+    "inizio": "1957-05-20",
+    "fine": "1958-07-02",
+    "maggioranza": "DC",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g9"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ii-legislatura-25-giugno-1953-14-marzo-1958/governo-zoli/3219"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1957-05-19 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g10",
+    "ordine": 14,
+    "nome": "Governo Fanfani II",
+    "presidente": "Amintore Fanfani",
+    "legislaturaId": "III",
+    "inizio": "1958-07-02",
+    "fine": "1959-02-16",
+    "maggioranza": "DC-PSDI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g10"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-fanfani-ii/3217"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1958-07-01 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g11",
+    "ordine": 15,
+    "nome": "Governo Segni II",
+    "presidente": "Antonio Segni",
+    "legislaturaId": "III",
+    "inizio": "1959-02-16",
+    "fine": "1960-03-26",
+    "maggioranza": "DC (appoggio esterno: PLI-PNM-PMP-MSI)",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g11"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-segni-ii/3216"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V2",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V2"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1959-02-15 | fine=giuramento successore (V2) | partiti V2 (Wikipedia); NV su fonte primaria || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti: composizione ministeriale V1✓ (ministri alla nomina tutti DC: 15 deputati gruppo DC + 6 senatori DC; dati.camera.it membroGoverno+adesioneGruppo, dati.senato.it); appoggio esterno PLI-PNM-PMP-MSI resta V2"
+    }
+  },
+  {
+    "id": "g12",
+    "ordine": 16,
+    "nome": "Governo Tambroni",
+    "presidente": "Fernando Tambroni",
+    "legislaturaId": "III",
+    "inizio": "1960-03-26",
+    "fine": "1960-07-27",
+    "maggioranza": "DC",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g12"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-tambroni/3215"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1960-03-25 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g13",
+    "ordine": 17,
+    "nome": "Governo Fanfani III",
+    "presidente": "Amintore Fanfani",
+    "legislaturaId": "III",
+    "inizio": "1960-07-27",
+    "fine": "1962-02-22",
+    "maggioranza": "DC",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g13"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-fanfani-iii/3214"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1960-07-26 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g14",
+    "ordine": 18,
+    "nome": "Governo Fanfani IV",
+    "presidente": "Amintore Fanfani",
+    "legislaturaId": "III",
+    "inizio": "1962-02-22",
+    "fine": "1963-06-22",
+    "maggioranza": "DC-PRI-PSDI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g14"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-fanfani-iv/3213"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1962-02-21 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g15",
+    "ordine": 19,
+    "nome": "Governo Leone I",
+    "presidente": "Giovanni Leone",
+    "legislaturaId": "IV",
+    "inizio": "1963-06-22",
+    "fine": "1963-12-05",
+    "maggioranza": "DC",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g15"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iv-legislatura-16-maggio-1963-11-marzo-1968/governo-leone/3211"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1963-06-21 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g16",
+    "ordine": 20,
+    "nome": "Governo Moro I",
+    "presidente": "Aldo Moro",
+    "legislaturaId": "IV",
+    "inizio": "1963-12-05",
+    "fine": "1964-07-23",
+    "maggioranza": "DC-PSI-PSDI-PRI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g16"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iv-legislatura-16-maggio-1963-11-marzo-1968/governo-moro-i/3210"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1963-12-04 | fine=giuramento successore (V2) | partiti V2 (Wikipedia); NV su fonte primaria || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (ministri alla nomina: DC, PSI, PSDI + O. Reale PRI nel gruppo Misto; dati.camera.it + dati.senato.it)"
+    }
+  },
+  {
+    "id": "g17",
+    "ordine": 21,
+    "nome": "Governo Moro II",
+    "presidente": "Aldo Moro",
+    "legislaturaId": "IV",
+    "inizio": "1964-07-23",
+    "fine": "1966-02-24",
+    "maggioranza": "DC-PSI-PSDI-PRI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g17"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iv-legislatura-16-maggio-1963-11-marzo-1968/governo-moro-ii/3209"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1964-07-22 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g18",
+    "ordine": 22,
+    "nome": "Governo Moro III",
+    "presidente": "Aldo Moro",
+    "legislaturaId": "IV",
+    "inizio": "1966-02-24",
+    "fine": "1968-06-25",
+    "maggioranza": "DC-PSI-PSDI-PRI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g18"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iv-legislatura-16-maggio-1963-11-marzo-1968/governo-moro-iii/3208"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1966-02-23 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g19",
+    "ordine": 23,
+    "nome": "Governo Leone II",
+    "presidente": "Giovanni Leone",
+    "legislaturaId": "V",
+    "inizio": "1968-06-25",
+    "fine": "1968-12-13",
+    "maggioranza": "DC",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g19"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/v-legislatura-5-giugno-1968-28-febbraio-1972/governo-leone-ii/3206"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1968-06-24 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g20",
+    "ordine": 24,
+    "nome": "Governo Rumor I",
+    "presidente": "Mariano Rumor",
+    "legislaturaId": "V",
+    "inizio": "1968-12-13",
+    "fine": "1969-08-06",
+    "maggioranza": "DC-PSI-PRI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g20"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/v-legislatura-5-giugno-1968-28-febbraio-1972/governo-rumor/3205"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1968-12-12 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g21",
+    "ordine": 25,
+    "nome": "Governo Rumor II",
+    "presidente": "Mariano Rumor",
+    "legislaturaId": "V",
+    "inizio": "1969-08-06",
+    "fine": "1970-03-28",
+    "maggioranza": "DC",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g21"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/v-legislatura-5-giugno-1968-28-febbraio-1972/governo-rumor-ii/3204"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1969-08-05 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g22",
+    "ordine": 26,
+    "nome": "Governo Rumor III",
+    "presidente": "Mariano Rumor",
+    "legislaturaId": "V",
+    "inizio": "1970-03-28",
+    "fine": "1970-08-06",
+    "maggioranza": "DC-PSI-PSDI-PRI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g22"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/v-legislatura-5-giugno-1968-28-febbraio-1972/governo-rumor-iii/3203"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1970-03-27 | fine=giuramento successore (V2) | partiti V2 (Wikipedia); NV su fonte primaria || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (ministri alla nomina: DC, PSI, PSU/PSDI, PRI [Reale]; dati.camera.it + dati.senato.it)"
+    }
+  },
+  {
+    "id": "g23",
+    "ordine": 27,
+    "nome": "Governo Colombo",
+    "presidente": "Emilio Colombo",
+    "legislaturaId": "V",
+    "inizio": "1970-08-06",
+    "fine": "1972-02-18",
+    "maggioranza": "DC-PSI-PSDI-PRI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g23"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/v-legislatura-5-giugno-1968-28-febbraio-1972/governo-colombo/3202"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "NV",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "NV"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1970-08-06 | fine=giuramento successore (V2) | partiti V2 (Wikipedia); NV su fonte primaria || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (ministri alla nomina: DC, PSI, PSU/PSDI, PRI [Reale]; dati.camera.it + dati.senato.it); uscita PRI 1971 NV"
+    }
+  },
+  {
+    "id": "g24",
+    "ordine": 28,
+    "nome": "Governo Andreotti I",
+    "presidente": "Giulio Andreotti",
+    "legislaturaId": "V",
+    "inizio": "1972-02-18",
+    "fine": "1972-06-26",
+    "maggioranza": "DC",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g24"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/v-legislatura-5-giugno-1968-28-febbraio-1972/governo-andreotti/3201"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1972-02-17 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g25",
+    "ordine": 29,
+    "nome": "Governo Andreotti II",
+    "presidente": "Giulio Andreotti",
+    "legislaturaId": "VI",
+    "inizio": "1972-06-26",
+    "fine": "1973-07-08",
+    "maggioranza": "DC-PLI-PSDI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g25"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/vi-legislatura-25-maggio-1972-1-maggio-1976/governo-andreotti-ii/3199"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1972-06-26 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g26",
+    "ordine": 30,
+    "nome": "Governo Rumor IV",
+    "presidente": "Mariano Rumor",
+    "legislaturaId": "VI",
+    "inizio": "1973-07-08",
+    "fine": "1974-03-15",
+    "maggioranza": "DC-PSI-PSDI-PRI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g26"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/vi-legislatura-25-maggio-1972-1-maggio-1976/governo-rumor-iv/3196"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1973-07-07 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g27",
+    "ordine": 31,
+    "nome": "Governo Rumor V",
+    "presidente": "Mariano Rumor",
+    "legislaturaId": "VI",
+    "inizio": "1974-03-15",
+    "fine": "1974-11-23",
+    "maggioranza": "DC-PSI-PSDI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g27"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/vi-legislatura-25-maggio-1972-1-maggio-1976/governo-rumor-v/3195"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1974-03-14 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g28",
+    "ordine": 32,
+    "nome": "Governo Moro IV",
+    "presidente": "Aldo Moro",
+    "legislaturaId": "VI",
+    "inizio": "1974-11-23",
+    "fine": "1976-02-12",
+    "maggioranza": "DC-PRI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g28"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/vi-legislatura-25-maggio-1972-1-maggio-1976/governo-moro-iv/3194"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1974-11-23 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g29",
+    "ordine": 33,
+    "nome": "Governo Moro V",
+    "presidente": "Aldo Moro",
+    "legislaturaId": "VI",
+    "inizio": "1976-02-12",
+    "fine": "1976-07-30",
+    "maggioranza": "DC",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g29"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/vi-legislatura-25-maggio-1972-1-maggio-1976/governo-moro-v/3193"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1976-02-12 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g30",
+    "ordine": 34,
+    "nome": "Governo Andreotti III",
+    "presidente": "Giulio Andreotti",
+    "legislaturaId": "VII",
+    "inizio": "1976-07-30",
+    "fine": "1978-03-13",
+    "maggioranza": "DC",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g30"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/vii-legislatura-5-luglio-1976-2-aprile-1979/governo-andreotti-iii/3191"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1976-07-29 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g31",
+    "ordine": 35,
+    "nome": "Governo Andreotti IV",
+    "presidente": "Giulio Andreotti",
+    "legislaturaId": "VII",
+    "inizio": "1978-03-13",
+    "fine": "1979-03-21",
+    "maggioranza": "DC",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g31"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/vii-legislatura-5-luglio-1976-2-aprile-1979/governo-andreotti-iv/3190"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1978-03-11 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g32",
+    "ordine": 36,
+    "nome": "Governo Andreotti V",
+    "presidente": "Giulio Andreotti",
+    "legislaturaId": "VII",
+    "inizio": "1979-03-21",
+    "fine": "1979-08-05",
+    "maggioranza": "DC-PRI-PSDI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g32"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/vii-legislatura-5-luglio-1976-2-aprile-1979/governo-andreotti-v/3189"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1979-03-20 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g33",
+    "ordine": 37,
+    "nome": "Governo Cossiga I",
+    "presidente": "Francesco Cossiga",
+    "legislaturaId": "VIII",
+    "inizio": "1979-08-05",
+    "fine": "1980-04-04",
+    "maggioranza": "DC-PSDI-PLI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g33"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/viii-legislatura-20-giugno-1979-4-maggio-1983/governo-cossiga/3187"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1979-08-04 | fine=giuramento successore (V2) | partiti V2 (Wikipedia); NV su fonte primaria || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (ministri alla nomina: DC, PSDI, PLI [Altissimo] + 4 non parlamentari; dati.camera.it + dati.senato.it)"
+    }
+  },
+  {
+    "id": "g34",
+    "ordine": 38,
+    "nome": "Governo Cossiga II",
+    "presidente": "Francesco Cossiga",
+    "legislaturaId": "VIII",
+    "inizio": "1980-04-04",
+    "fine": "1980-10-18",
+    "maggioranza": "DC-PSI-PRI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g34"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/viii-legislatura-20-giugno-1979-4-maggio-1983/governo-cossiga-ii/3186"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1980-04-04 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g35",
+    "ordine": 39,
+    "nome": "Governo Forlani",
+    "presidente": "Arnaldo Forlani",
+    "legislaturaId": "VIII",
+    "inizio": "1980-10-18",
+    "fine": "1981-06-28",
+    "maggioranza": "DC-PSI-PSDI-PRI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g35"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/viii-legislatura-20-giugno-1979-4-maggio-1983/governo-forlani/3185"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1980-10-18 | fine=giuramento successore (V2) | partiti V2 (Wikipedia); NV su fonte primaria || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (ministri alla nomina: DC, PSI, PSDI, PRI; dati.camera.it + dati.senato.it)"
+    }
+  },
+  {
+    "id": "g36",
+    "ordine": 40,
+    "nome": "Governo Spadolini I",
+    "presidente": "Giovanni Spadolini",
+    "legislaturaId": "VIII",
+    "inizio": "1981-06-28",
+    "fine": "1982-08-23",
+    "maggioranza": "DC-PSI-PSDI-PRI-PLI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g36"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/viii-legislatura-20-giugno-1979-4-maggio-1983/governo-spadolini/3183"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1981-06-28 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g37",
+    "ordine": 41,
+    "nome": "Governo Spadolini II",
+    "presidente": "Giovanni Spadolini",
+    "legislaturaId": "VIII",
+    "inizio": "1982-08-23",
+    "fine": "1982-12-01",
+    "maggioranza": "DC-PSI-PSDI-PRI-PLI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g37"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/viii-legislatura-20-giugno-1979-4-maggio-1983/governo-spadolini-ii/3182"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1982-08-23 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g38",
+    "ordine": 42,
+    "nome": "Governo Fanfani V",
+    "presidente": "Amintore Fanfani",
+    "legislaturaId": "VIII",
+    "inizio": "1982-12-01",
+    "fine": "1983-08-04",
+    "maggioranza": "DC-PSI-PSDI-PLI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g38"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/viii-legislatura-20-giugno-1979-4-maggio-1983/governo-fanfani-v/3181"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1982-12-01 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g39",
+    "ordine": 43,
+    "nome": "Governo Craxi I",
+    "presidente": "Bettino Craxi",
+    "legislaturaId": "IX",
+    "inizio": "1983-08-04",
+    "fine": "1986-08-01",
+    "maggioranza": "DC-PSI-PSDI-PRI-PLI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g39"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ix-legislatura-12-luglio-1983-28-aprile-1987/governo-craxi/3178"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1983-08-04 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g40",
+    "ordine": 44,
+    "nome": "Governo Craxi II",
+    "presidente": "Bettino Craxi",
+    "legislaturaId": "IX",
+    "inizio": "1986-08-01",
+    "fine": "1987-04-18",
+    "maggioranza": "DC-PSI-PSDI-PRI-PLI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g40"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ix-legislatura-12-luglio-1983-28-aprile-1987/governo-craxi-ii/3177"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1986-08-01 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g41",
+    "ordine": 45,
+    "nome": "Governo Fanfani VI",
+    "presidente": "Amintore Fanfani",
+    "legislaturaId": "IX",
+    "inizio": "1987-04-18",
+    "fine": "1987-07-29",
+    "maggioranza": "DC-Indipendenti",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g41"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ix-legislatura-12-luglio-1983-28-aprile-1987/governo-fanfani-vi/3176"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1987-04-17 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g42",
+    "ordine": 46,
+    "nome": "Governo Goria",
+    "presidente": "Giovanni Goria",
+    "legislaturaId": "X",
+    "inizio": "1987-07-29",
+    "fine": "1988-04-13",
+    "maggioranza": "DC-PSI-PSDI-PRI-PLI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g42"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/x-legislatura-2-luglio-1987-2-febbraio-1992/governo-goria/3174"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1987-07-28 | fine=giuramento successore (V2) | partiti V2 (Wikipedia); NV su fonte primaria || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (ministri alla nomina: DC, PSI, PSDI, PRI, PLI; dati.camera.it; 5 ministri senatori non risolti per blocco dati.senato.it)"
+    }
+  },
+  {
+    "id": "g43",
+    "ordine": 47,
+    "nome": "Governo De Mita",
+    "presidente": "Ciriaco De Mita",
+    "legislaturaId": "X",
+    "inizio": "1988-04-13",
+    "fine": "1989-07-23",
+    "maggioranza": "DC-PSI-PSDI-PRI-PLI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g43"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/x-legislatura-2-luglio-1987-2-febbraio-1992/governo-de-mita/3173"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V2",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V2"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1988-04-13 | fine=giuramento successore (V2) | partiti V2 (Wikipedia); NV su fonte primaria || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti: DC, PSI, PRI, PLI V1✓ (ministri deputati alla nomina, dati.camera.it); PSDI non rilevato tra i ministri deputati (13 ministri senatori/non parlamentari non risolti: dati.senato.it 403) -> PSDI resta V2"
+    }
+  },
+  {
+    "id": "g44",
+    "ordine": 48,
+    "nome": "Governo Andreotti VI",
+    "presidente": "Giulio Andreotti",
+    "legislaturaId": "X",
+    "inizio": "1989-07-23",
+    "fine": "1991-04-13",
+    "maggioranza": "DC-PSI-PSDI-PRI-PLI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g44"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/x-legislatura-2-luglio-1987-2-febbraio-1992/governo-andreotti-vi/3172"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1989-07-22 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g45",
+    "ordine": 49,
+    "nome": "Governo Andreotti VII",
+    "presidente": "Giulio Andreotti",
+    "legislaturaId": "X",
+    "inizio": "1991-04-13",
+    "fine": "1992-06-28",
+    "maggioranza": "DC-PSI-PSDI-PLI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g45"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/x-legislatura-2-luglio-1987-2-febbraio-1992/governo-andreotti-vii/3171"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1991-04-12 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g46",
+    "ordine": 50,
+    "nome": "Governo Amato I",
+    "presidente": "Giuliano Amato",
+    "legislaturaId": "XI",
+    "inizio": "1992-06-28",
+    "fine": "1993-04-29",
+    "maggioranza": "DC-PSI-PSDI-PLI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g46"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xi-legislatura-23-aprile-1992-16-gennaio-1994/governo-amato/3169"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1992-06-28 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g47",
+    "ordine": 51,
+    "nome": "Governo Ciampi",
+    "presidente": "Carlo Azeglio Ciampi",
+    "legislaturaId": "XI",
+    "inizio": "1993-04-29",
+    "fine": "1994-05-11",
+    "maggioranza": "DC-PSI-PSDI-PLI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g47"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xi-legislatura-23-aprile-1992-16-gennaio-1994/governo-ciampi/2968"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1993-04-28 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g48",
+    "ordine": 52,
+    "nome": "Governo Berlusconi I",
+    "presidente": "Silvio Berlusconi",
+    "legislaturaId": "XII",
+    "inizio": "1994-05-11",
+    "fine": "1995-01-17",
+    "maggioranza": "FI-LN-AN-CCD-UDC",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g48"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/legislatura-xii-15-aprile-1994-16-febbraio-1996/governo-berlusconi-i/2961"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1994-05-10 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g49",
+    "ordine": 53,
+    "nome": "Governo Dini",
+    "presidente": "Lamberto Dini",
+    "legislaturaId": "XII",
+    "inizio": "1995-01-17",
+    "fine": "1996-05-18",
+    "maggioranza": "Indipendenti",
+    "tipo": "tecnico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g49"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/legislatura-xii-15-aprile-1994-16-febbraio-1996/governo-dini/2959"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1995-01-17 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g50",
+    "ordine": 54,
+    "nome": "Governo Prodi I",
+    "presidente": "Romano Prodi",
+    "legislaturaId": "XIII",
+    "inizio": "1996-05-18",
+    "fine": "1998-10-21",
+    "maggioranza": "Ulivo-Indipendenti",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g50"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xiii-legislatura-9-maggio-1996-9-marzo-2001/governo-prodi/2944"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1996-05-17 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g51",
+    "ordine": 55,
+    "nome": "Governo D'Alema I",
+    "presidente": "Massimo D'Alema",
+    "legislaturaId": "XIII",
+    "inizio": "1998-10-21",
+    "fine": "1999-12-22",
+    "maggioranza": "Ulivo-PdCI-UDR-Indipendenti",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g51"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xiii-legislatura-9-maggio-1996-9-marzo-2001/governo-dalema/2943"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1998-10-21 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g52",
+    "ordine": 56,
+    "nome": "Governo D'Alema II",
+    "presidente": "Massimo D'Alema",
+    "legislaturaId": "XIII",
+    "inizio": "1999-12-22",
+    "fine": "2000-04-26",
+    "maggioranza": "Ulivo-PdCI-UDR-Indipendenti",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g52"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xiii-legislatura-9-maggio-1996-9-marzo-2001/governo-dalema-ii/341"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1999-12-22 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g53",
+    "ordine": 57,
+    "nome": "Governo Amato II",
+    "presidente": "Giuliano Amato",
+    "legislaturaId": "XIII",
+    "inizio": "2000-04-26",
+    "fine": "2001-06-11",
+    "maggioranza": "Ulivo-PdCI-UDEUR-Indipendenti",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g53"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xiii-legislatura-9-maggio-1996-9-marzo-2001/governo-amato-ii/340"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 2000-04-25 | fine=giuramento successore (V1) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); governo.it: fine 11 giugno 2001; partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g54",
+    "ordine": 58,
+    "nome": "Governo Berlusconi II",
+    "presidente": "Silvio Berlusconi",
+    "legislaturaId": "XIV",
+    "inizio": "2001-06-11",
+    "fine": "2005-04-23",
+    "maggioranza": "FI-AN-LN-UDC-NPSI-PRI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g54"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xiv-legislatura-30-maggio-2001-27-aprile-2006/governo-berlusconi-ii/338"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V2",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V2"
+      },
+      "dettaglio": "giuramento V1 (governo.it) | fine=giuramento successore (V1) | partiti V2 (Wikipedia); NV su fonte primaria || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento confermato su governo.it (scheda/pagina legislature); partiti: FI, AN, LN, CCD-CDU V1✓ (gruppi dei ministri deputati alla nomina, dati.camera.it); NPSI e PRI non tra i ministri -> sostegno parlamentare V2"
+    }
+  },
+  {
+    "id": "g59",
+    "ordine": 59,
+    "nome": "Governo Berlusconi III",
+    "presidente": "Silvio Berlusconi",
+    "legislaturaId": "XIV",
+    "inizio": "2005-04-23",
+    "fine": "2006-05-17",
+    "maggioranza": "FI-AN-LN-UDC-NPSI-PRI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g59"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xiv-legislatura-30-maggio-2001-27-aprile-2006/governo-berlusconi-iii/337"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V2",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V2"
+      },
+      "dettaglio": "giuramento V1 (governo.it) | fine=giuramento successore (V1) | partiti V2 (Wikipedia); NV su fonte primaria || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento confermato su governo.it (scheda/pagina legislature); partiti: FI, AN, LN, CCD-CDU/UDC, PRI [La Malfa, gruppo Misto] V1✓ (dati.camera.it); NPSI [Caldoro, non deputato] V2"
+    }
+  },
+  {
+    "id": "g60",
+    "ordine": 60,
+    "nome": "Governo Prodi II",
+    "presidente": "Romano Prodi",
+    "legislaturaId": "XV",
+    "inizio": "2006-05-17",
+    "fine": "2008-05-08",
+    "maggioranza": "coalizione L'Unione (DS-DL/PD-PRC-RnP-PdCI-IdV-FdV-UDEUR e altri)",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g60"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xv-legislatura-28-aprile-2006-6-febbraio-2008/governo-prodi-ii/335"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V2",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V2"
+      },
+      "dettaglio": "giuramento V1 (governo.it) | fine=giuramento successore (V1) | partiti V2 (Wikipedia); NV su fonte primaria || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento confermato su governo.it (scheda/pagina legislature); partiti: Ulivo (DS-DL), PRC, IdV, RnP [Bonino] e Verdi [Pecoraro Scanio] (gruppo Misto) V1✓ (ministri deputati, dati.camera.it); UDEUR, PdCI e altri (ministri senatori non risolti) V2"
+    }
+  },
+  {
+    "id": "g61",
+    "ordine": 61,
+    "nome": "Governo Berlusconi IV",
+    "presidente": "Silvio Berlusconi",
+    "legislaturaId": "XVI",
+    "inizio": "2008-05-08",
+    "fine": "2011-11-16",
+    "maggioranza": "PdL-Lega Nord-MpA",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g61"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xvi-legislatura-dal-29-aprile-2008-al-23-dicembre-2012/governo-berlusconi"
+      }
+    ],
+    "verifica": {
+      "livello": "V1",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V1"
+      },
+      "dettaglio": "giuramento V1 (governo.it) | fine=giuramento successore (V1) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento confermato su governo.it (scheda/pagina legislature); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+    }
+  },
+  {
+    "id": "g62",
+    "ordine": 62,
+    "nome": "Governo Monti",
+    "presidente": "Mario Monti",
+    "legislaturaId": "XVI",
+    "inizio": "2011-11-16",
+    "fine": "2013-04-28",
+    "maggioranza": "tecnico; sostegno parlamentare PdL-PD-UdC-FLI e altri",
+    "tipo": "tecnico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g62"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xvi-legislatura-dal-29-aprile-2008-al-23-dicembre-2012/governo-monti/332"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V2",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V2"
+      },
+      "dettaglio": "giuramento V1 (governo.it) | fine=giuramento successore (V1) | partiti V2 (Wikipedia); NV su fonte primaria || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento confermato su governo.it (scheda/pagina legislature); tipo/partiti: nessun ministro deputato alla nomina (dati.camera.it) -> governo tecnico V1✓; sostegno parlamentare V2"
+    }
+  },
+  {
+    "id": "g82",
+    "ordine": 63,
+    "nome": "Governo Letta",
+    "presidente": "Enrico Letta",
+    "legislaturaId": "XVII",
+    "inizio": "2013-04-28",
+    "fine": "2014-02-22",
+    "maggioranza": "PD-PdL/NCD-SC-UdC e altri",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g82"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xvii-legislatura-dal-15032013/governo-letta/330"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V2",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V2"
+      },
+      "dettaglio": "giuramento V1 (governo.it) | fine=giuramento successore (V1) | partiti V2 (Wikipedia); NV su fonte primaria || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento confermato su governo.it (scheda/pagina legislature); partiti: PD, PdL, SC V1✓ (ministri deputati alla nomina, dati.camera.it); UdC [D'Alia nel gruppo SC] e altri V2"
+    }
+  },
+  {
+    "id": "g102",
+    "ordine": 64,
+    "nome": "Governo Renzi",
+    "presidente": "Matteo Renzi",
+    "legislaturaId": "XVII",
+    "inizio": "2014-02-22",
+    "fine": "2016-12-12",
+    "maggioranza": "PD-NCD-UdC-SC-PSI e altri",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g102"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xvii-legislatura-dal-15032013/governo-renzi-dal-22022014/329"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V2",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V2"
+      },
+      "dettaglio": "giuramento V1 (governo.it) | fine=giuramento successore (V1) | partiti V2 (Wikipedia); NV su fonte primaria || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento confermato su governo.it (scheda/pagina legislature); partiti: PD, NCD V1✓ (ministri deputati alla nomina, dati.camera.it); UdC, SC, PSI e altri V2"
+    }
+  },
+  {
+    "id": "g122",
+    "ordine": 65,
+    "nome": "Governo Gentiloni",
+    "presidente": "Paolo Gentiloni Silveri",
+    "legislaturaId": "XVII",
+    "inizio": "2016-12-12",
+    "fine": "2018-06-01",
+    "maggioranza": "PD-NCD/AP-CpE-DemoS-CD-PSI",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g122"
+      },
+      {
+        "url": "https://www.governo.it/it/governo-gentiloni-dal-12122016/6290"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V2",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V2"
+      },
+      "dettaglio": "giuramento V1 (governo.it) | fine=giuramento successore (V1) | partiti V2 (Wikipedia); NV su fonte primaria || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento confermato su governo.it (scheda/pagina legislature); partiti: PD, NCD/AP V1✓ (ministri deputati alla nomina, dati.camera.it); altri V2"
+    }
+  },
+  {
+    "id": "g142",
+    "ordine": 66,
+    "nome": "Governo Conte I",
+    "presidente": "Giuseppe Conte",
+    "legislaturaId": "XVIII",
+    "inizio": "2018-06-01",
+    "fine": "2019-09-05",
+    "maggioranza": "M5S-Lega-MAIE",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g142"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xviii-legislatura-dal-23-marzo-2018/governo-conte/9468"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V2",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V2"
+      },
+      "dettaglio": "giuramento V1 (governo.it) | fine=giuramento successore (V1) | partiti V2 (Wikipedia); NV su fonte primaria || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento confermato su governo.it (scheda/pagina legislature); partiti: M5S, Lega V1✓ (ministri deputati alla nomina, dati.camera.it); MAIE V2 (nessun ministro rilevato)"
+    }
+  },
+  {
+    "id": "g162",
+    "ordine": 67,
+    "nome": "Governo Conte II",
+    "presidente": "Giuseppe Conte",
+    "legislaturaId": "XVIII",
+    "inizio": "2019-09-05",
+    "fine": "2021-02-13",
+    "maggioranza": "M5S-PD-LeU-IV e altri",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g162"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xviii-legislatura-dal-23-marzo-2018/governo-conte-ii/12715"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V2",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V2"
+      },
+      "dettaglio": "giuramento V1 (governo.it) | fine=giuramento successore (V1) | partiti V2 (Wikipedia); NV su fonte primaria || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento confermato su governo.it (scheda/pagina legislature); partiti: M5S, PD, LeU V1✓ (ministri deputati alla nomina, dati.camera.it); IV nata dopo la nomina (scissione PD, settembre 2019, V2): composizione cambiata in corso di governo"
+    }
+  },
+  {
+    "id": "g182",
+    "ordine": 68,
+    "nome": "Governo Draghi",
+    "presidente": "Mario Draghi",
+    "legislaturaId": "XVIII",
+    "inizio": "2021-02-13",
+    "fine": "2022-10-22",
+    "maggioranza": "Lega-M5S-FI-PD-IV-LeU/Art.1 e altri",
+    "tipo": "unità nazionale",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g182"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xviii-legislatura-dal-23-marzo-2018/governo-draghi/16211"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V2",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V2"
+      },
+      "dettaglio": "giuramento V1 (governo.it) | fine=giuramento successore (V1) | partiti V2 (Wikipedia); NV su fonte primaria || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento confermato su governo.it (scheda/pagina legislature); partiti: Lega, M5S, FI, PD, LeU V1✓ (ministri deputati alla nomina, dati.camera.it); IV V2 (ministra Bonetti non parlamentare)"
+    }
+  },
+  {
+    "id": "g202",
+    "ordine": 69,
+    "nome": "Governo Meloni",
+    "presidente": "Giorgia Meloni",
+    "legislaturaId": "XIX",
+    "inizio": "2022-10-22",
+    "fine": null,
+    "maggioranza": "FdI-Lega-FI-NM",
+    "tipo": "politico",
+    "fonti": [
+      {
+        "url": "http://dati.camera.it/ocd/governo.rdf/g202"
+      },
+      {
+        "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/governo-meloni/20727"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      }
+    ],
+    "verifica": {
+      "livello": "V2",
+      "campi": {
+        "inizio": "V1",
+        "presidente": "V1",
+        "legislatura": "V1",
+        "maggioranza": "V2"
+      },
+      "dettaglio": "giuramento V1 (governo.it) | in carica al 2026-10-20 (V1 governo.it) | partiti V2 (Wikipedia); NV su fonte primaria || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento confermato su governo.it (scheda/pagina legislature); partiti: FdI, FI, Lega V1✓ (ministri deputati alla nomina, dati.camera.it); NM V2 (nessun ministro deputato rilevato)"
+    }
+  }
+]

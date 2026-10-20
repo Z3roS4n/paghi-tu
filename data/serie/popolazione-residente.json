@@ -1,0 +1,363 @@
+{
+  "id": "popolazione-residente",
+  "titolo": "Popolazione residente al 1° gennaio",
+  "unita": "persone al 1 gennaio",
+  "fonti": [
+    {
+      "url": "https://www.bancaditalia.it/statistiche/tematiche/stat-storiche/stat-storiche-economia/NA150_2.0.zip"
+    },
+    {
+      "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_346_DF_DCIS_RICPOPRES1971_1,1.0/"
+    },
+    {
+      "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_347_DF_DCIS_RICPOPRES1981_1,1.0/"
+    },
+    {
+      "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_279_DF_DCIS_RICPOPRES1991_1,1.0/"
+    },
+    {
+      "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_305_DF_DCIS_RICPOPRES2001_1,1.0/"
+    },
+    {
+      "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_164_DF_DCIS_RICPOPRES2011_1,1.0/"
+    },
+    {
+      "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,22_289_DF_DCIS_POPRES1_1,1.0/"
+    }
+  ],
+  "avvertenze": [
+    "1946–1951: Banca d'Italia NA150, arrotondata alle migliaia; dal 1952: ISTAT.",
+    "Il dato 2026 è una stima ISTAT."
+  ],
+  "punti": [
+    {
+      "anno": 1946,
+      "valore": 45540000
+    },
+    {
+      "anno": 1947,
+      "valore": 45910000
+    },
+    {
+      "anno": 1948,
+      "valore": 46210000
+    },
+    {
+      "anno": 1949,
+      "valore": 46552000
+    },
+    {
+      "anno": 1950,
+      "valore": 46914000
+    },
+    {
+      "anno": 1951,
+      "valore": 47295000
+    },
+    {
+      "anno": 1952,
+      "valore": 47538945
+    },
+    {
+      "anno": 1953,
+      "valore": 47792111
+    },
+    {
+      "anno": 1954,
+      "valore": 48122579
+    },
+    {
+      "anno": 1955,
+      "valore": 48476569
+    },
+    {
+      "anno": 1956,
+      "valore": 48788543
+    },
+    {
+      "anno": 1957,
+      "valore": 49053642
+    },
+    {
+      "anno": 1958,
+      "valore": 49312765
+    },
+    {
+      "anno": 1959,
+      "valore": 49640101
+    },
+    {
+      "anno": 1960,
+      "valore": 50025465
+    },
+    {
+      "anno": 1961,
+      "valore": 50373814
+    },
+    {
+      "anno": 1962,
+      "valore": 50698797
+    },
+    {
+      "anno": 1963,
+      "valore": 51060076
+    },
+    {
+      "anno": 1964,
+      "valore": 51443801
+    },
+    {
+      "anno": 1965,
+      "valore": 51906790
+    },
+    {
+      "anno": 1966,
+      "valore": 52317887
+    },
+    {
+      "anno": 1967,
+      "valore": 52719977
+    },
+    {
+      "anno": 1968,
+      "valore": 53080907
+    },
+    {
+      "anno": 1969,
+      "valore": 53390482
+    },
+    {
+      "anno": 1970,
+      "valore": 53685118
+    },
+    {
+      "anno": 1971,
+      "valore": 53958474
+    },
+    {
+      "anno": 1972,
+      "valore": 54188579
+    },
+    {
+      "anno": 1973,
+      "valore": 54574111
+    },
+    {
+      "anno": 1974,
+      "valore": 54928700
+    },
+    {
+      "anno": 1975,
+      "valore": 55293036
+    },
+    {
+      "anno": 1976,
+      "valore": 55588966
+    },
+    {
+      "anno": 1977,
+      "valore": 55847553
+    },
+    {
+      "anno": 1978,
+      "valore": 56063269
+    },
+    {
+      "anno": 1979,
+      "valore": 56247017
+    },
+    {
+      "anno": 1980,
+      "valore": 56388480
+    },
+    {
+      "anno": 1981,
+      "valore": 56479285
+    },
+    {
+      "anno": 1982,
+      "valore": 56524064
+    },
+    {
+      "anno": 1983,
+      "valore": 56563031
+    },
+    {
+      "anno": 1984,
+      "valore": 56565117
+    },
+    {
+      "anno": 1985,
+      "valore": 56588319
+    },
+    {
+      "anno": 1986,
+      "valore": 56597823
+    },
+    {
+      "anno": 1987,
+      "valore": 56594487
+    },
+    {
+      "anno": 1988,
+      "valore": 56609375
+    },
+    {
+      "anno": 1989,
+      "valore": 56649201
+    },
+    {
+      "anno": 1990,
+      "valore": 56694360
+    },
+    {
+      "anno": 1991,
+      "valore": 56744119
+    },
+    {
+      "anno": 1992,
+      "valore": 56772923
+    },
+    {
+      "anno": 1993,
+      "valore": 56821250
+    },
+    {
+      "anno": 1994,
+      "valore": 56842392
+    },
+    {
+      "anno": 1995,
+      "valore": 56844408
+    },
+    {
+      "anno": 1996,
+      "valore": 56844197
+    },
+    {
+      "anno": 1997,
+      "valore": 56876364
+    },
+    {
+      "anno": 1998,
+      "valore": 56904379
+    },
+    {
+      "anno": 1999,
+      "valore": 56909109
+    },
+    {
+      "anno": 2000,
+      "valore": 56923524
+    },
+    {
+      "anno": 2001,
+      "valore": 56960692
+    },
+    {
+      "anno": 2002,
+      "valore": 56993270
+    },
+    {
+      "anno": 2003,
+      "valore": 57186378
+    },
+    {
+      "anno": 2004,
+      "valore": 57611990
+    },
+    {
+      "anno": 2005,
+      "valore": 58044368
+    },
+    {
+      "anno": 2006,
+      "valore": 58288996
+    },
+    {
+      "anno": 2007,
+      "valore": 58510725
+    },
+    {
+      "anno": 2008,
+      "valore": 59001769
+    },
+    {
+      "anno": 2009,
+      "valore": 59420592
+    },
+    {
+      "anno": 2010,
+      "valore": 59690316
+    },
+    {
+      "anno": 2011,
+      "valore": 59948497
+    },
+    {
+      "anno": 2012,
+      "valore": 60105185
+    },
+    {
+      "anno": 2013,
+      "valore": 60277309
+    },
+    {
+      "anno": 2014,
+      "valore": 60345917
+    },
+    {
+      "anno": 2015,
+      "valore": 60295497
+    },
+    {
+      "anno": 2016,
+      "valore": 60163712
+    },
+    {
+      "anno": 2017,
+      "valore": 60066734
+    },
+    {
+      "anno": 2018,
+      "valore": 59937769
+    },
+    {
+      "anno": 2019,
+      "valore": 59816673
+    },
+    {
+      "anno": 2020,
+      "valore": 59641488
+    },
+    {
+      "anno": 2021,
+      "valore": 59236213
+    },
+    {
+      "anno": 2022,
+      "valore": 59030133
+    },
+    {
+      "anno": 2023,
+      "valore": 58997201
+    },
+    {
+      "anno": 2024,
+      "valore": 58971230
+    },
+    {
+      "anno": 2025,
+      "valore": 58943464
+    },
+    {
+      "anno": 2026,
+      "valore": 58942828,
+      "nota": "persone al 1 gennaio; ISTAT 22_289_DF_DCIS_POPRES1_1 - Popolazione residente al 1 gennaio; Italia; totale sessi; OBS_STATUS=e (valore stimato; aggiunto dal verificatore 2026-10-20)"
+    }
+  ],
+  "verifica": {
+    "livello": "V1",
+    "dettaglio": "Verifica livello 2 del 2026-10-20: tutte le righe ricontrollate sui file ufficiali riscaricati, 0 scarti."
+  }
+}

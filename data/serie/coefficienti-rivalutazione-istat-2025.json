@@ -1,0 +1,339 @@
+{
+  "id": "coefficienti-rivalutazione-istat-2025",
+  "titolo": "Coefficienti ISTAT di rivalutazione in valori 2025",
+  "unita": "coefficiente K per tradurre valori dell'anno in valori 2025 (stessa valuta; poi lire/1936,27)",
+  "fonti": [
+    {
+      "url": "https://www.istat.it/wp-content/uploads/2026/07/Tavole30luglio2026.zip"
+    }
+  ],
+  "avvertenze": [
+    "Per sole finalità di analisi storica: non valgono per rivalutazioni a fini legali."
+  ],
+  "punti": [
+    {
+      "anno": 1946,
+      "valore": 75.6777
+    },
+    {
+      "anno": 1947,
+      "valore": 46.697
+    },
+    {
+      "anno": 1948,
+      "valore": 44.1037
+    },
+    {
+      "anno": 1949,
+      "valore": 43.4667
+    },
+    {
+      "anno": 1950,
+      "valore": 44.0583
+    },
+    {
+      "anno": 1951,
+      "valore": 40.1577
+    },
+    {
+      "anno": 1952,
+      "valore": 38.5211
+    },
+    {
+      "anno": 1953,
+      "valore": 37.7854
+    },
+    {
+      "anno": 1954,
+      "valore": 36.7961
+    },
+    {
+      "anno": 1955,
+      "valore": 35.7914
+    },
+    {
+      "anno": 1956,
+      "valore": 34.0949
+    },
+    {
+      "anno": 1957,
+      "valore": 33.449
+    },
+    {
+      "anno": 1958,
+      "valore": 31.9197
+    },
+    {
+      "anno": 1959,
+      "valore": 32.0538
+    },
+    {
+      "anno": 1960,
+      "valore": 31.2246
+    },
+    {
+      "anno": 1961,
+      "valore": 30.3377
+    },
+    {
+      "anno": 1962,
+      "valore": 28.8656
+    },
+    {
+      "anno": 1963,
+      "valore": 26.8476
+    },
+    {
+      "anno": 1964,
+      "valore": 25.3448
+    },
+    {
+      "anno": 1965,
+      "valore": 24.2896
+    },
+    {
+      "anno": 1966,
+      "valore": 23.813
+    },
+    {
+      "anno": 1967,
+      "valore": 23.346
+    },
+    {
+      "anno": 1968,
+      "valore": 23.0522
+    },
+    {
+      "anno": 1969,
+      "valore": 22.4227
+    },
+    {
+      "anno": 1970,
+      "valore": 21.3378
+    },
+    {
+      "anno": 1971,
+      "valore": 20.3217
+    },
+    {
+      "anno": 1972,
+      "valore": 19.2406
+    },
+    {
+      "anno": 1973,
+      "valore": 17.4328
+    },
+    {
+      "anno": 1974,
+      "valore": 14.5949
+    },
+    {
+      "anno": 1975,
+      "valore": 12.4564
+    },
+    {
+      "anno": 1976,
+      "valore": 10.6903
+    },
+    {
+      "anno": 1977,
+      "valore": 9.0519
+    },
+    {
+      "anno": 1978,
+      "valore": 8.0499
+    },
+    {
+      "anno": 1979,
+      "valore": 6.9553
+    },
+    {
+      "anno": 1980,
+      "valore": 5.7413
+    },
+    {
+      "anno": 1981,
+      "valore": 4.8368
+    },
+    {
+      "anno": 1982,
+      "valore": 4.1573
+    },
+    {
+      "anno": 1983,
+      "valore": 3.6154
+    },
+    {
+      "anno": 1984,
+      "valore": 3.2695
+    },
+    {
+      "anno": 1985,
+      "valore": 3.0106
+    },
+    {
+      "anno": 1986,
+      "valore": 2.8375
+    },
+    {
+      "anno": 1987,
+      "valore": 2.7123
+    },
+    {
+      "anno": 1988,
+      "valore": 2.5842
+    },
+    {
+      "anno": 1989,
+      "valore": 2.424
+    },
+    {
+      "anno": 1990,
+      "valore": 2.2847
+    },
+    {
+      "anno": 1991,
+      "valore": 2.1471
+    },
+    {
+      "anno": 1992,
+      "valore": 2.0369
+    },
+    {
+      "anno": 1993,
+      "valore": 1.9548
+    },
+    {
+      "anno": 1994,
+      "valore": 1.8808
+    },
+    {
+      "anno": 1995,
+      "valore": 1.7852
+    },
+    {
+      "anno": 1996,
+      "valore": 1.7182
+    },
+    {
+      "anno": 1997,
+      "valore": 1.6889
+    },
+    {
+      "anno": 1998,
+      "valore": 1.6591
+    },
+    {
+      "anno": 1999,
+      "valore": 1.6333
+    },
+    {
+      "anno": 2000,
+      "valore": 1.5925
+    },
+    {
+      "anno": 2001,
+      "valore": 1.551
+    },
+    {
+      "anno": 2002,
+      "valore": 1.5141
+    },
+    {
+      "anno": 2003,
+      "valore": 1.4778
+    },
+    {
+      "anno": 2004,
+      "valore": 1.449
+    },
+    {
+      "anno": 2005,
+      "valore": 1.4247
+    },
+    {
+      "anno": 2006,
+      "valore": 1.3968
+    },
+    {
+      "anno": 2007,
+      "valore": 1.3732
+    },
+    {
+      "anno": 2008,
+      "valore": 1.3302
+    },
+    {
+      "anno": 2009,
+      "valore": 1.3204
+    },
+    {
+      "anno": 2010,
+      "valore": 1.3002
+    },
+    {
+      "anno": 2011,
+      "valore": 1.266
+    },
+    {
+      "anno": 2012,
+      "valore": 1.2289
+    },
+    {
+      "anno": 2013,
+      "valore": 1.2151
+    },
+    {
+      "anno": 2014,
+      "valore": 1.2129
+    },
+    {
+      "anno": 2015,
+      "valore": 1.214
+    },
+    {
+      "anno": 2016,
+      "valore": 1.2152
+    },
+    {
+      "anno": 2017,
+      "valore": 1.202
+    },
+    {
+      "anno": 2018,
+      "valore": 1.189
+    },
+    {
+      "anno": 2019,
+      "valore": 1.1832
+    },
+    {
+      "anno": 2020,
+      "valore": 1.1867
+    },
+    {
+      "anno": 2021,
+      "valore": 1.1651
+    },
+    {
+      "anno": 2022,
+      "valore": 1.0782
+    },
+    {
+      "anno": 2023,
+      "valore": 1.0227
+    },
+    {
+      "anno": 2024,
+      "valore": 1.0142
+    },
+    {
+      "anno": 2025,
+      "valore": 1
+    }
+  ],
+  "verifica": {
+    "livello": "V1",
+    "dettaglio": "Verifica livello 2 del 2026-10-20: tutte le righe ricontrollate sui file ufficiali riscaricati, 0 scarti."
+  }
+}
