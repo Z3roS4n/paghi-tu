@@ -130,6 +130,12 @@
 - **Motivo:** pubblicare un partito prima degli altri, o con standard diversi, sarebbe di per sé una scelta di parte.
 - **Data:** 2026-10-20
 
+### D-014 — Lo scostamento si mostra solo con omogeneità dichiarata
+- **Stato:** APPLICATA nello sviluppo — da confermare con il titolare (proposta della nota `research/2026-10-20.costo-delle-misure-previsto-vs-consuntivo.md`)
+- **Scelta:** ogni confronto previsto/consuntivo ha `omogeneita` (omogeneo, parzialmente omogeneo, non omogeneo), `confidenza` A–D e `tipoOnere` (stima o tetto), assegnati nell'import (`COMPARISONS` in `scripts/data/import-research.ts`) dalle note di metodo verificate. Lo scostamento è sempre calcolato (consuntivo meno previsto), mai inserito a mano; con basi non omogenee non si calcola. Si dichiara se l'ha calcolato la fonte (oggi solo UPB su Quota 100 2019-21) o Paghi Tu.
+- **Motivo:** senza questa regola il sito suggerirebbe "risparmi" o "sforamenti" impropri (tetti di spesa RdC e ADI; Superbonus con onere potenziale ENEA contro effetti sui saldi).
+- **Data:** 2026-10-21
+
 ## Decisioni aperte
 - **OA-1** — ~~Nome del progetto e dominio~~ → nome deciso il 2026-10-20: **Paghi Tu** (provocatorio verso politica e cittadini, senza attribuire condotte a nessuno). Dominio candidato `paghitu.it` (libero al controllo DNS del 2026-10-20, da confermare all'acquisto).
 - **OA-2** — Editore: il titolare del progetto, persona fisica. **Decisione del titolare (2026-10-20): nome e dati personali NON pubblicati sul sito**; il sito si presenta come "Paghi Tu" con un recapito dedicato (email del progetto). Da validare con l'avvocato prima del lancio: (a) se art. 2 L. 47/1948 (richiamato da art. 1 c. 3 L. 62/2001) e art. 7 D.Lgs. 70/2003 impongono l'indicazione dell'editore a un sito non periodico e non commerciale; (b) identità del titolare del trattamento richiesta dall'art. 13 GDPR se il sito tratta dati dei visitatori (log, analytics, form) — si minimizza con zero cookie, zero analytics con IP, nessun form; (c) alternativa: associazione (es. APS/ETS) come editore, così sul sito compare l'ente e non la persona; (d) responsabilità personale e polizza RC. L'anonimato verso il pubblico non elimina la responsabilità: l'editore resta identificabile da hosting e registro del dominio.
