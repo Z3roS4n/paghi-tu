@@ -1,0 +1,5 @@
+.claude
+scripts
+*.md
+!README.md
+.env*
