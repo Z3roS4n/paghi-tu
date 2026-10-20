@@ -60,6 +60,23 @@ export default function MethodPage() {
         l'indice ISTAT dei prezzi al consumo restano disponibili come opzione, con le cautele che ISTAT stessa indica.
       </p>
 
+      <h2>Costo previsto e costo effettivo</h2>
+      <p>
+        Il previsto viene dalla relazione tecnica della legge o dal limite di spesa che la legge fissa. Il consuntivo
+        viene da chi misura la spesa dopo: INPS, Dipartimento delle Finanze, ENEA, Ministero dell'Interno, Ufficio
+        parlamentare di bilancio. La differenza la calcoliamo solo se le due cifre misurano la stessa cosa, e diciamo
+        sempre se l'ha calcolata la fonte o noi. Se il consuntivo include modifiche arrivate dopo la legge, o misura
+        una grandezza diversa, mostriamo le due cifre senza differenza.
+      </p>
+
+      <h2>Promesse della campagna in corso</h2>
+      <p>
+        Censiamo le promesse sui canali ufficiali dei partiti e dei loro leader, con la frase esatta. Ogni riga passa
+        un secondo controllo indipendente sulla fonte. Pubblichiamo tutti i partiti insieme, dopo aver controllato che
+        la ricerca abbia avuto la stessa profondità per ciascuno. Risoluzioni e mozioni in Parlamento non contano come
+        promesse elettorali.
+      </p>
+
       <h2>Cosa possiamo mostrare, per periodo</h2>
       <dl className="divide-y divide-rule border-y border-rule">
         {PERIODS.map(([period, text]) => (

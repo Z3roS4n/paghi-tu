@@ -8,8 +8,10 @@ import {
   BudgetLaw,
   CampaignPromise,
   CofogDivision,
+  CostComparison,
   Government,
   Legislature,
+  Measure,
   Party,
   PromiseCatalogStatus,
   Series,
@@ -300,6 +302,109 @@ async function campaignPromises() {
   return { parties: [...parties.values()], published, status };
 }
 
+const MEASURES: Record<string, { titolo: string; governi: string[] }> = {
+  quota_100: { titolo: "Quota 100", governi: ["Conte I"] },
+  reddito_di_cittadinanza: { titolo: "Reddito e pensione di cittadinanza", governi: ["Conte I"] },
+  superbonus_110: { titolo: "Superbonus 110%", governi: ["Conte II", "Draghi", "Meloni"] },
+  assegno_unico_universale: { titolo: "Assegno unico universale", governi: ["Draghi"] },
+  bonus_80_euro: { titolo: "Bonus 80 euro", governi: ["Renzi"] },
+  abolizione_ici_prima_casa: { titolo: "Abolizione dell'ICI sulla prima casa", governi: ["Berlusconi IV", "Prodi II"] },
+  salvaguardie_esodati_chiuse: { titolo: "Salvaguardie «esodati» già chiuse", governi: ["Monti", "Letta"] },
+  assegno_di_inclusione: { titolo: "Assegno di inclusione", governi: ["Meloni"] },
+  esonero_contributivo_assunzioni_2015: { titolo: "Esonero contributivo per le assunzioni 2015", governi: ["Renzi"] },
+  riduzione_strutturale_cuneo_fiscale: { titolo: "Riduzione strutturale del cuneo fiscale", governi: ["Meloni"] },
+};
+
+type ComparisonMeta = Pick<z.infer<typeof CostComparison>, "periodo" | "tipoOnere" | "omogeneita" | "confidenza"> & {
+  proiezione?: boolean;
+  scostamentoDellaFonte?: boolean;
+};
+
+// Classificazione di ogni riga del CSV secondo le regole della nota "costo delle misure"
+// (omogeneità, confidenza A–D, tetto o stima), ricavata dalle note di metodo verificate.
+const COMPARISONS: [string, ComparisonMeta][] = [
+  ["quota_100", { periodo: "2019–2021", tipoOnere: "stima", omogeneita: "omogeneo", confidenza: "A", scostamentoDellaFonte: true }],
+  ["quota_100", { periodo: "2019–2025, con proiezione UPB", tipoOnere: "stima", omogeneita: "parzialmente_omogeneo", confidenza: "D", proiezione: true }],
+  ["reddito_di_cittadinanza", { periodo: "2019 (aprile–dicembre)", tipoOnere: "tetto", omogeneita: "non_omogeneo", confidenza: "C" }],
+  ["reddito_di_cittadinanza", { periodo: "2020", tipoOnere: "tetto", omogeneita: "parzialmente_omogeneo", confidenza: "B" }],
+  ["reddito_di_cittadinanza", { periodo: "2021", tipoOnere: "tetto", omogeneita: "non_omogeneo", confidenza: "C" }],
+  ["reddito_di_cittadinanza", { periodo: "2022", tipoOnere: "tetto", omogeneita: "non_omogeneo", confidenza: "C" }],
+  ["superbonus_110", { periodo: "Intero periodo", tipoOnere: "stima", omogeneita: "non_omogeneo", confidenza: "C" }],
+  ["assegno_unico_universale", { periodo: "2022 (marzo–dicembre)", tipoOnere: "stima", omogeneita: "parzialmente_omogeneo", confidenza: "C" }],
+  ["assegno_unico_universale", { periodo: "2023", tipoOnere: "stima", omogeneita: "non_omogeneo", confidenza: "C" }],
+  ["assegno_unico_universale", { periodo: "2024", tipoOnere: "stima", omogeneita: "non_omogeneo", confidenza: "C" }],
+  ["assegno_unico_universale", { periodo: "2025", tipoOnere: "stima", omogeneita: "non_omogeneo", confidenza: "C" }],
+  ["bonus_80_euro", { periodo: "2014 (maggio–dicembre)", tipoOnere: "stima", omogeneita: "parzialmente_omogeneo", confidenza: "B" }],
+  ["bonus_80_euro", { periodo: "2015, a regime", tipoOnere: "stima", omogeneita: "parzialmente_omogeneo", confidenza: "C" }],
+  ["abolizione_ici_prima_casa", { periodo: "2008", tipoOnere: "stima", omogeneita: "parzialmente_omogeneo", confidenza: "B" }],
+  ["salvaguardie_esodati_chiuse", { periodo: "Salvaguardie chiuse", tipoOnere: "tetto", omogeneita: "omogeneo", confidenza: "B" }],
+  ["assegno_di_inclusione", { periodo: "2024", tipoOnere: "tetto", omogeneita: "parzialmente_omogeneo", confidenza: "B" }],
+  ["esonero_contributivo_assunzioni_2015", { periodo: "2015–2018", tipoOnere: "stima", omogeneita: "parzialmente_omogeneo", confidenza: "C" }],
+  ["riduzione_strutturale_cuneo_fiscale", { periodo: "2025", tipoOnere: "stima", omogeneita: "omogeneo", confidenza: "D" }],
+];
+
+function cleanNote(s: string) {
+  return s.replace(/\[Verificatore: ([^\]]*)\]/g, "$1").trim();
+}
+
+async function measures(govs: ReturnType<typeof Government.parse>[]) {
+  const byName = new Map(govs.map((g) => [g.nome.replace(/^Governo\s+/, ""), g.id]));
+  const rows = await readRecords("casi-studio-misure");
+  if (rows.length !== COMPARISONS.length) throw new Error(`casi studio: ${rows.length} righe, ${COMPARISONS.length} classificate`);
+  const out = new Map<string, z.infer<typeof Measure>>();
+  rows.forEach((r, i) => {
+    const [misura, meta] = COMPARISONS[i];
+    if (r.misura !== misura) throw new Error(`casi studio riga ${i + 1}: attesa ${misura}, trovata ${r.misura}`);
+    const previsto = Number(r.costo_previsto_eur);
+    const consuntivo = r.costo_consuntivo_eur.trim() === "" ? null : Number(r.costo_consuntivo_eur);
+    const diff = consuntivo === null || meta.omogeneita === "non_omogeneo" ? null : consuntivo - previsto;
+    const comparison = CostComparison.parse({
+      id: `${misura}-${(out.get(misura)?.confronti.length ?? 0) + 1}`,
+      periodo: meta.periodo,
+      tipoOnere: meta.tipoOnere,
+      previsto: { importoEur: previsto, descrizione: r.periodo_previsione, fonte: { url: r.fonte_previsto_url } },
+      consuntivo:
+        consuntivo === null
+          ? null
+          : {
+              importoEur: consuntivo,
+              descrizione: r.periodo_consuntivo,
+              fonte: { url: r.fonte_consuntivo_url },
+              proiezione: meta.proiezione ?? false,
+            },
+      ...(consuntivo === null ? { consuntivoAssente: r.periodo_consuntivo } : {}),
+      omogeneita: meta.omogeneita,
+      confidenza: meta.confidenza,
+      scostamento:
+        diff === null
+          ? null
+          : { eur: diff, pct: (diff / previsto) * 100, calcolatoDa: meta.scostamentoDellaFonte ? "fonte" : "paghi_tu" },
+      noteMetodo: cleanNote(r.note_metodo),
+      verifica: verification(r.stato_verifica),
+    });
+    const existing = out.get(misura);
+    if (existing) {
+      existing.confronti.push(comparison);
+      return;
+    }
+    const info = MEASURES[misura];
+    out.set(misura, {
+      id: misura.replaceAll("_", "-"),
+      titolo: info.titolo,
+      attoIstitutivo: r.atto_istitutivo,
+      governoTesto: r.governo,
+      governiIds: info.governi.map((name) => {
+        const id = byName.get(name);
+        if (!id) throw new Error(`governo sconosciuto per ${misura}: ${name}`);
+        return id;
+      }),
+      annoAvvio: Number(r.anno_avvio),
+      confronti: [comparison],
+    });
+  });
+  return [...out.values()].map((m) => Measure.parse(m));
+}
+
 async function write(name: string, value: unknown) {
   await writeFile(join(OUT, `${name}.json`), JSON.stringify(value, null, 2) + "\n", "utf8");
 }
@@ -310,6 +415,7 @@ const laws = await budgetLaws(govs);
 const allSeries = await series();
 const srcs = await sources();
 const campaign = await campaignPromises();
+const allMeasures = await measures(govs);
 
 await mkdir(join(OUT, "serie"), { recursive: true });
 await write("legislature", legs);
@@ -320,6 +426,7 @@ for (const s of allSeries) await write(join("serie", s.id), s);
 await write("partiti", campaign.parties);
 await write("promesse", campaign.published);
 await write("promesse-stato", campaign.status);
+await write("misure", allMeasures);
 
 const count = (xs: { verifica: Verification }[]) =>
   Object.entries(Object.groupBy(xs, (x) => x.verifica.livello)).map(([k, v]) => `${k}=${v?.length}`).join(" ");
@@ -328,4 +435,5 @@ console.log(`governi ${govs.length} (${count(govs)})`);
 console.log(`leggi-bilancio ${laws.length} (${count(laws)}), senza governo collegato: ${laws.filter((l) => !l.governoProponenteId).length}`);
 console.log(`serie ${allSeries.map((s) => `${s.id}:${s.punti.length}`).join(" ")}`);
 console.log(`fonti ${srcs.length}`);
+console.log(`misure ${allMeasures.length}, confronti ${allMeasures.reduce((n, m) => n + m.confronti.length, 0)}`);
 console.log(`promesse censite ${campaign.status.censite}, verificate ${campaign.status.verificate}, pubblicate ${campaign.status.pubblicate}, partiti ${campaign.parties.length}`);

@@ -4,6 +4,7 @@ const NAV = [
   { href: "/governi", label: "Governi" },
   { href: "/leggi-di-bilancio", label: "Leggi di bilancio" },
   { href: "/promesse", label: "Promesse" },
+  { href: "/misure", label: "Misure" },
   { href: "/metodo", label: "Metodo" },
   { href: "/fonti", label: "Fonti" },
 ] as const;

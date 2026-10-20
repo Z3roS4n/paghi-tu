@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SourceLinks } from "@/components/source-links";
 import { VerificationBadge } from "@/components/verification-badge";
-import { budgetLawsProposedBy, getGovernment, getLegislature, governments } from "@/server/data";
+import { budgetLawsProposedBy, getGovernment, getLegislature, governments, measuresOf } from "@/server/data";
 import { governmentDurationDays } from "@/server/stats";
 import { formatDate, formatInt } from "@/lib/format";
 
@@ -21,6 +21,7 @@ export default async function GovernmentPage({ params }: PageProps<"/governi/[id
   if (!g) notFound();
   const leg = getLegislature(g.legislaturaId);
   const laws = budgetLawsProposedBy(g.id).toSorted((a, b) => a.annoInizio - b.annoInizio);
+  const linkedMeasures = measuresOf(g.id);
   const prev = governments.find((x) => x.ordine === g.ordine - 1);
   const next = governments.find((x) => x.ordine === g.ordine + 1);
 
@@ -73,6 +74,22 @@ export default async function GovernmentPage({ params }: PageProps<"/governi/[id
               ))}
             </ul>
           )}
+
+          {linkedMeasures.length > 0 ? (
+            <>
+              <h2 className="mt-12 text-xl font-semibold">Misure con costo previsto e consuntivo</h2>
+              <ul className="mt-4 divide-y divide-rule border-y border-rule">
+                {linkedMeasures.map((m) => (
+                  <li key={m.id} className="py-3">
+                    <Link href={`/misure#${m.id}`} className="hover:text-accent">
+                      {m.titolo}
+                    </Link>
+                    <span className="block text-sm text-ink-soft">{m.governoTesto}</span>
+                  </li>
+                ))}
+              </ul>
+            </>
+          ) : null}
         </div>
 
         <aside className="space-y-8">

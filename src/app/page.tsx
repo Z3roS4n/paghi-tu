@@ -38,10 +38,10 @@ const SECTIONS = [
     status: "In verifica",
   },
   {
-    href: "/metodo",
+    href: "/misure",
     title: "Quanto costano le misure",
     body: "Costo stimato all'approvazione contro costo effettivo, per Quota 100, Superbonus, RdC e altre.",
-    status: "In verifica",
+    status: "Online",
   },
 ] as const;
 

@@ -7,6 +7,7 @@ import sourcesJson from "../../data/fonti.json";
 import gdpJson from "../../data/serie/pil-nominale.json";
 import populationJson from "../../data/serie/popolazione-residente.json";
 import foiJson from "../../data/serie/prezzi-consumo-foi.json";
+import measuresJson from "../../data/misure.json";
 import partiesJson from "../../data/partiti.json";
 import promisesJson from "../../data/promesse.json";
 import promiseStatusJson from "../../data/promesse-stato.json";
@@ -15,6 +16,7 @@ import {
   CampaignPromise,
   Government,
   Legislature,
+  Measure,
   Party,
   PromiseCatalogStatus,
   Series,
@@ -35,6 +37,7 @@ export const series = {
   foi: Series.parse(foiJson),
 };
 
+export const measures = z.array(Measure).parse(measuresJson).toSorted((a, b) => a.annoAvvio - b.annoAvvio);
 export const parties = z.array(Party).parse(partiesJson);
 export const promises = z.array(CampaignPromise).parse(promisesJson);
 export const promiseStatus = PromiseCatalogStatus.parse(promiseStatusJson);
@@ -49,6 +52,10 @@ export function getLegislature(id: string) {
 
 export function budgetLawsProposedBy(governmentId: string) {
   return budgetLaws.filter((l) => l.governoProponenteId === governmentId);
+}
+
+export function measuresOf(governmentId: string) {
+  return measures.filter((m) => m.governiIds.includes(governmentId));
 }
 
 export function governmentsOf(legislatureId: string) {

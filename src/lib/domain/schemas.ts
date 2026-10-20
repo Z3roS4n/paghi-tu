@@ -166,3 +166,43 @@ export const PromiseCatalogStatus = z.object({
   pubblicate: z.number().int().nonnegative(),
   gruppiPubblicati: z.array(z.string()),
 });
+
+// Regole della nota "costo delle misure": lo scostamento si deriva, non si scrive a mano, e
+// con basi non omogenee si mostrano i due numeri affiancati senza percentuale.
+export const Homogeneity = z.enum(["omogeneo", "parzialmente_omogeneo", "non_omogeneo"]);
+export const Confidence = z.enum(["A", "B", "C", "D"]);
+
+export const CostFigure = z.object({
+  importoEur: z.number().nonnegative(),
+  descrizione: z.string(),
+  fonte: SourceLink,
+});
+
+export const CostComparison = z.object({
+  id: z.string(),
+  periodo: z.string(),
+  // Un tetto di spesa non è una stima: spendere meno del tetto non è un "risparmio".
+  tipoOnere: z.enum(["stima", "tetto"]),
+  previsto: CostFigure,
+  consuntivo: CostFigure.extend({ proiezione: z.boolean() }).nullable(),
+  consuntivoAssente: z.string().optional(),
+  omogeneita: Homogeneity,
+  confidenza: Confidence,
+  scostamento: z
+    .object({ eur: z.number(), pct: z.number().nullable(), calcolatoDa: z.enum(["fonte", "paghi_tu"]) })
+    .nullable(),
+  noteMetodo: z.string(),
+  verifica: Verification,
+});
+export type CostComparison = z.infer<typeof CostComparison>;
+
+export const Measure = z.object({
+  id: z.string(),
+  titolo: z.string(),
+  attoIstitutivo: z.string(),
+  governoTesto: z.string(),
+  governiIds: z.array(z.string().regex(/^g\d+$/)).min(1),
+  annoAvvio: z.number().int(),
+  confronti: z.array(CostComparison).min(1),
+});
+export type Measure = z.infer<typeof Measure>;

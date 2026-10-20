@@ -1,0 +1,664 @@
+[
+  {
+    "id": "quota-100",
+    "titolo": "Quota 100",
+    "attoIstitutivo": "DL 4/2019 art. 14 (conv. L. 26/2019)",
+    "governoTesto": "Conte I",
+    "governiIds": [
+      "g142"
+    ],
+    "annoAvvio": 2019,
+    "confronti": [
+      {
+        "id": "quota_100-1",
+        "periodo": "2019–2021",
+        "tipoOnere": "stima",
+        "previsto": {
+          "importoEur": 18550000000,
+          "descrizione": "2019-2021, RT DL 4/2019 (3.453+7.334+7.763 mln), spesa pensionistica",
+          "fonte": {
+            "url": "https://www.upbilancio.it/wp-content/uploads/2022/06/Nota-di-lavoro_Quota-100_per-sito-UPB.pdf"
+          }
+        },
+        "consuntivo": {
+          "importoEur": 11843000000,
+          "descrizione": "2019-2021, risultanze monitoraggio INPS (1.794+4.901+5.148 mln)",
+          "fonte": {
+            "url": "https://www.upbilancio.it/wp-content/uploads/2022/06/Nota-di-lavoro_Quota-100_per-sito-UPB.pdf"
+          },
+          "proiezione": false
+        },
+        "omogeneita": "omogeneo",
+        "confidenza": "A",
+        "scostamento": {
+          "eur": -6707000000,
+          "pct": -36.15633423180593,
+          "calcolatoDa": "fonte"
+        },
+        "noteMetodo": "UPB NdL 1/2022 Tab. 18 p. 46 (PDF). Scostamento -6.707 mln (-36,2%). RT al netto delle revisioni NADEF 2019 e LB 2020 = 14.050 mln (scostamento -2.207). Causa indicata da UPB: take-up inferiore; importi medi simili (Tab. 19). Onere valutato, non tetto.",
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1 ✓ CONFERMATA verificatore 2026-10-20 (UPB NdL 1/2022 Tab. 18 p. 46: 18.550 / 14.050 / 11.843 / 6.707 / 2.207; -36,2% ricalcolato -36,16%; vs RT corretta -15,7% INFERENZA)"
+        }
+      },
+      {
+        "id": "quota_100-2",
+        "periodo": "2019–2025, con proiezione UPB",
+        "tipoOnere": "stima",
+        "previsto": {
+          "importoEur": 33469000000,
+          "descrizione": "2019-2025, stanziamento RT DL 4/2019",
+          "fonte": {
+            "url": "https://www.upbilancio.it/wp-content/uploads/2022/06/Nota-di-lavoro_Quota-100_per-sito-UPB.pdf"
+          }
+        },
+        "consuntivo": {
+          "importoEur": 23198000000,
+          "descrizione": "2019-2025: consuntivo 2019-2021 + proiezione UPB 2022-2025",
+          "fonte": {
+            "url": "https://www.upbilancio.it/wp-content/uploads/2022/06/Nota-di-lavoro_Quota-100_per-sito-UPB.pdf"
+          },
+          "proiezione": true
+        },
+        "omogeneita": "parzialmente_omogeneo",
+        "confidenza": "D",
+        "scostamento": {
+          "eur": -10271000000,
+          "pct": -30.688099435298337,
+          "calcolatoDa": "paghi_tu"
+        },
+        "noteMetodo": "UPB NdL 1/2022 Tab. 20 p. 47 (PDF). Il consuntivo contiene una PROIEZIONE (domande giacenti incluse). Differenza -10.272 mln; -5.772 mln rispetto alla RT corretta (28.969).",
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1-proiezione ✓ CONFERMATA verificatore 2026-10-20 (Tab. 20 p. 47; -30,7% vs RT, -19,9% vs RT corretta: INFERENZA)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "reddito-di-cittadinanza",
+    "titolo": "Reddito e pensione di cittadinanza",
+    "attoIstitutivo": "DL 4/2019 art. 12 c. 1 (conv. L. 26/2019)",
+    "governoTesto": "Conte I",
+    "governiIds": [
+      "g142"
+    ],
+    "annoAvvio": 2019,
+    "confronti": [
+      {
+        "id": "reddito_di_cittadinanza-1",
+        "periodo": "2019 (aprile–dicembre)",
+        "tipoOnere": "tetto",
+        "previsto": {
+          "importoEur": 5906800000,
+          "descrizione": "2019, limite di spesa testo convertito (originario 5.894 mln)",
+          "fonte": {
+            "url": "https://documenti.camera.it/leg18/dossier/Testi/D19004c.htm"
+          }
+        },
+        "consuntivo": {
+          "importoEur": 3900671234,
+          "descrizione": "apr-dic 2019, importi erogati RdC+PdC",
+          "fonte": {
+            "url": "https://www.inps.it/content/dam/inps-site/pdf/dati-analisi-bilanci/osservatori-statistici/Report_trimestrale_RdC_Aprile_2019-Dicembre_2023.pdf"
+          },
+          "proiezione": false
+        },
+        "omogeneita": "non_omogeneo",
+        "confidenza": "C",
+        "scostamento": null,
+        "noteMetodo": "Tetto di spesa, non stima puntuale. Il limite include REI (gen-mar 2019), misure art. 13 cc. 1-2 e incentivi art. 8; l'erogato INPS no. Consuntivo = somma mensile della colonna RdC+PdC della Tavola 1.4 (pp. 21-22 PDF), calcolo nostro. il valore originario 3.256.599.519 era errato; la somma apr-dic 2019 della Tav. 1.4 dà 3.900.671.234 euro. Scostamento -34,0% (INFERENZA; prima indicato -45%).",
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1 ✓ CORRETTA verificatore 2026-10-20 (consuntivo 2019 ricalcolato sulla Tav. 1.4 INPS: 3.256,6 -> 3.900,7 mln)"
+        }
+      },
+      {
+        "id": "reddito_di_cittadinanza-2",
+        "periodo": "2020",
+        "tipoOnere": "tetto",
+        "previsto": {
+          "importoEur": 7166900000,
+          "descrizione": "2020, limite di spesa testo convertito (originario 7.131 mln); Normattiva, testo vigente al 15/04/2019: 7.166,9 mln (il dossier D19004c riporta 7.160,9: refuso del dossier)",
+          "fonte": {
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2019-01-28;4~art12!vig=2019-04-15"
+          }
+        },
+        "consuntivo": {
+          "importoEur": 7143417878,
+          "descrizione": "2020, importi erogati RdC+PdC",
+          "fonte": {
+            "url": "https://www.inps.it/content/dam/inps-site/pdf/dati-analisi-bilanci/osservatori-statistici/Report_trimestrale_RdC_Aprile_2019-Dicembre_2023.pdf"
+          },
+          "proiezione": false
+        },
+        "omogeneita": "parzialmente_omogeneo",
+        "confidenza": "B",
+        "scostamento": {
+          "eur": -23482122,
+          "pct": -0.3276468487072514,
+          "calcolatoDa": "paghi_tu"
+        },
+        "noteMetodo": "Limite poi incrementato da DL 34/2020 (art. 84 c. 13 +72; art. 85 c. 3 +8,3; art. 94 c. 1 +57,6 mln; note di aggiornamento Normattiva): limite aggiornato 7.304,8 mln (INFERENZA). Consuntivo = somma Tav. 1.4. Scostamento -0,3% sul limite convertito, -2,2% sul limite aggiornato (INFERENZA). discrepanza 7.160,9 vs 7.166,9 risolta su Normattiva a favore di 7.166,9.",
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1 ✓ CORRETTA verificatore 2026-10-20 (previsto 7.160,9 -> 7.166,9 su Normattiva)"
+        }
+      },
+      {
+        "id": "reddito_di_cittadinanza-3",
+        "periodo": "2021",
+        "tipoOnere": "tetto",
+        "previsto": {
+          "importoEur": 7391000000,
+          "descrizione": "2021, limite di spesa testo convertito (originario 7.355 mln)",
+          "fonte": {
+            "url": "https://documenti.camera.it/leg18/dossier/Testi/D19004c.htm"
+          }
+        },
+        "consuntivo": {
+          "importoEur": 8827466740,
+          "descrizione": "2021, importi erogati RdC+PdC",
+          "fonte": {
+            "url": "https://www.inps.it/content/dam/inps-site/pdf/dati-analisi-bilanci/osservatori-statistici/Report_trimestrale_RdC_Aprile_2019-Dicembre_2023.pdf"
+          },
+          "proiezione": false
+        },
+        "omogeneita": "non_omogeneo",
+        "confidenza": "C",
+        "scostamento": null,
+        "noteMetodo": "Limite incrementato da L. 178/2020 art. 1 c. 371 (+196,3), DL 41/2021 art. 11 cc. 1-2 (+1.000; +10), DL 146/2021 art. 11 c. 13 (+200 mln): limite aggiornato 8.797,3 mln (INFERENZA). Consuntivo +0,3% sul limite aggiornato (INFERENZA). Confronto con il limite originario non omogeneo.",
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1 ✓ CONFERMATA verificatore 2026-10-20 (incrementi verificati sulle note di aggiornamento Normattiva)"
+        }
+      },
+      {
+        "id": "reddito_di_cittadinanza-4",
+        "periodo": "2022",
+        "tipoOnere": "tetto",
+        "previsto": {
+          "importoEur": 7245900000,
+          "descrizione": "dal 2022, limite di spesa testo convertito (originario 7.210 mln)",
+          "fonte": {
+            "url": "https://documenti.camera.it/leg18/dossier/Testi/D19004c.htm"
+          }
+        },
+        "consuntivo": {
+          "importoEur": 8031557080,
+          "descrizione": "2022, importi erogati RdC+PdC",
+          "fonte": {
+            "url": "https://www.inps.it/content/dam/inps-site/pdf/dati-analisi-bilanci/osservatori-statistici/Report_trimestrale_RdC_Aprile_2019-Dicembre_2023.pdf"
+          },
+          "proiezione": false
+        },
+        "omogeneita": "non_omogeneo",
+        "confidenza": "C",
+        "scostamento": null,
+        "noteMetodo": "Limite 2022 incrementato da L. 178/2020 art. 1 c. 371 (+473,7 mln) e da L. 234/2021 art. 1 c. 73 (+1.065,3 mln): limite aggiornato 8.784,9 mln (INFERENZA); erogato 2022 -8,6% sul limite aggiornato (INFERENZA). il valore 8.311,2 ometteva i +473,7 mln della L. 178/2020. Misura abrogata dal 1/1/2024; erogato 2023 = 6.646.794.733 euro (somma Tav. 1.4, confermata).",
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1 ✓ CORRETTA verificatore 2026-10-20 (limite aggiornato 2022: 8.311,2 -> 8.784,9 mln)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "superbonus-110",
+    "titolo": "Superbonus 110%",
+    "attoIstitutivo": "DL 34/2020 art. 119 e modifiche (DL 104/2020, LB 2021, DL 59/2021, DL 77/2021, LB 2022, DL 50/2022, DL 176/2022, LB 2023)",
+    "governoTesto": "Conte II (modifiche successive: Draghi, Meloni)",
+    "governiIds": [
+      "g162",
+      "g182",
+      "g202"
+    ],
+    "annoAvvio": 2020,
+    "confronti": [
+      {
+        "id": "superbonus_110-1",
+        "periodo": "Intero periodo",
+        "tipoOnere": "stima",
+        "previsto": {
+          "importoEur": 35000000000,
+          "descrizione": "intero periodo di validità: costo lordo cumulato delle RT; effetto netto -33.579,8 mln 2020-2036",
+          "fonte": {
+            "url": "https://www.upbilancio.it/wp-content/uploads/2023/03/Audizione-incentivi-fisc_edil.pdf"
+          }
+        },
+        "consuntivo": {
+          "importoEur": 131558610980,
+          "descrizione": "detrazioni maturate per lavori conclusi al 30/06/2026 (ENEA)",
+          "fonte": {
+            "url": "https://www.efficienzaenergetica.enea.it/images/detrazioni/Avvisi/Report_30_06_2026.pdf"
+          },
+          "proiezione": false
+        },
+        "omogeneita": "non_omogeneo",
+        "confidenza": "C",
+        "scostamento": null,
+        "noteMetodo": "UPB aud. 16/3/2023 p. 12 e Tab. 2 p. 13. NADEF 2022 aveva rivisto a 61,2 mld (p. 14). ENEA = onere potenziale a carico dello Stato (aliquote 110/90/70/65), non impatto annuo sull'indebitamento netto; perimetro SuperEcobonus (sismabonus escluso: NV). Rapporto circa 3,8x (INFERENZA). confermati 33.579,8 (Tab. 2 p. 13), 'circa 35 miliardi' e 'quasi 1,5 miliardi' (p. 12), 61,2 mld (p. 14); ENEA p. 1: detrazioni maturate per lavori conclusi 131.558.610.980,03 ('Onere a carico dello Stato'), investimenti ammessi 124.862.255.985,52, 502.388 edifici. Rapporto 3,76x. Nella Tab. 2 UPB il contributo maggiore all'onere stimato viene dalla LB 2022 (governo Draghi: -15.294,9 mln), poi dal DL 34/2020 (Conte II: -12.224,6 mln): non attribuire l'intero onere al solo Conte II.",
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1 ✓ CONFERMATA verificatore 2026-10-20 (confronto non omogeneo: onere potenziale ENEA vs effetti RT sui saldi)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "assegno-unico-universale",
+    "titolo": "Assegno unico universale",
+    "attoIstitutivo": "D.Lgs. 230/2021",
+    "governoTesto": "Draghi",
+    "governiIds": [
+      "g182"
+    ],
+    "annoAvvio": 2022,
+    "confronti": [
+      {
+        "id": "assegno_unico_universale-1",
+        "periodo": "2022 (marzo–dicembre)",
+        "tipoOnere": "stima",
+        "previsto": {
+          "importoEur": 14219500000,
+          "descrizione": "2022 (mar-dic), art. 1-8, al netto della componente assorbita dal RdC",
+          "fonte": {
+            "url": "https://documenti.camera.it/apps/nuovosito/attigoverno/Schedalavori/getTesto.ashx?file=0333_F001.pdf&leg=XVIII"
+          }
+        },
+        "consuntivo": {
+          "importoEur": 13200000000,
+          "descrizione": "2022, competenza, incluse integrazioni AUU su RdC",
+          "fonte": {
+            "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/comunicati-stampa/2025/04/Allegati/3732_Cs_Osservatorio-Assegno-Unico-Universale.pdf"
+          },
+          "proiezione": false
+        },
+        "omogeneita": "parzialmente_omogeneo",
+        "confidenza": "C",
+        "scostamento": {
+          "eur": -1019500000,
+          "pct": -7.16973170645944,
+          "calcolatoDa": "paghi_tu"
+        },
+        "noteMetodo": "RT bollinata RGS 24/11/2021, tabella p. 13 PDF. Il totale art. 13 di 15.122,5 mln include art. 11 (ANF transitori 463 + assegno temporaneo 440). Base non perfettamente omogenea (inclusione integrazioni RdC).",
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1 ✓ CONFERMATA verificatore 2026-10-20 (RT p. 13 PDF e art. 13 p. 17 PDF confermati (15.122,5 = 14.219,5 + 463 + 440); CS INPS 16/4/2025: 13,2 mld di competenza 2022; -7,2% INFERENZA)"
+        }
+      },
+      {
+        "id": "assegno_unico_universale-2",
+        "periodo": "2023",
+        "tipoOnere": "stima",
+        "previsto": {
+          "importoEur": 18222200000,
+          "descrizione": "2023",
+          "fonte": {
+            "url": "https://documenti.camera.it/apps/nuovosito/attigoverno/Schedalavori/getTesto.ashx?file=0333_F001.pdf&leg=XVIII"
+          }
+        },
+        "consuntivo": {
+          "importoEur": 18200000000,
+          "descrizione": "2023, erogato",
+          "fonte": {
+            "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/comunicati-stampa/2025/04/Allegati/3732_Cs_Osservatorio-Assegno-Unico-Universale.pdf"
+          },
+          "proiezione": false
+        },
+        "omogeneita": "non_omogeneo",
+        "confidenza": "C",
+        "scostamento": null,
+        "noteMetodo": "Il consuntivo include le maggiorazioni introdotte da leggi successive (es. LB 2023), assenti nella RT: confronto non omogeneo.",
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1 ✓ CONFERMATA verificatore 2026-10-20 (CS INPS 16/4/2025: 18,2 mld; -0,1% INFERENZA)"
+        }
+      },
+      {
+        "id": "assegno_unico_universale-3",
+        "periodo": "2024",
+        "tipoOnere": "stima",
+        "previsto": {
+          "importoEur": 18694600000,
+          "descrizione": "2024",
+          "fonte": {
+            "url": "https://documenti.camera.it/apps/nuovosito/attigoverno/Schedalavori/getTesto.ashx?file=0333_F001.pdf&leg=XVIII"
+          }
+        },
+        "consuntivo": {
+          "importoEur": 19800000000,
+          "descrizione": "2024, erogato (comunicato INPS apr. 2025; 19,9 mld in aggiornamenti successivi)",
+          "fonte": {
+            "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/comunicati-stampa/2025/04/Allegati/3732_Cs_Osservatorio-Assegno-Unico-Universale.pdf"
+          },
+          "proiezione": false
+        },
+        "omogeneita": "non_omogeneo",
+        "confidenza": "C",
+        "scostamento": null,
+        "noteMetodo": "Come sopra: consuntivo comprensivo di modifiche normative successive.",
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1 ✓ CONFERMATA verificatore 2026-10-20 (CS INPS 16/4/2025: 19,8 mld; +5,9% INFERENZA; il valore 19,9 mld di aggiornamenti successivi non è stato verificato)"
+        }
+      },
+      {
+        "id": "assegno_unico_universale-4",
+        "periodo": "2025",
+        "tipoOnere": "stima",
+        "previsto": {
+          "importoEur": 18914800000,
+          "descrizione": "2025",
+          "fonte": {
+            "url": "https://documenti.camera.it/apps/nuovosito/attigoverno/Schedalavori/getTesto.ashx?file=0333_F001.pdf&leg=XVIII"
+          }
+        },
+        "consuntivo": {
+          "importoEur": 19773400000,
+          "descrizione": "2025, mesi di competenza",
+          "fonte": {
+            "url": "https://www.inps.it/content/dam/inps-site/pdf/dati-analisi-bilanci/osservatori-statistici/osservatorio-auu/Appendice_statistica_aprile_2026_anni_2025_2026.pdf"
+          },
+          "proiezione": false
+        },
+        "omogeneita": "non_omogeneo",
+        "confidenza": "C",
+        "scostamento": null,
+        "noteMetodo": "Appendice INPS apr. 2026, Tavola 3 p. 6. +4,5% (INFERENZA) su base non omogenea.",
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1 ✓ CONFERMATA verificatore 2026-10-20 (Appendice INPS apr. 2026, Tav. 3 p. 6: 12 mesi di competenza = 19.773,4 mln (lettura dati 23/4/2026); +4,5% INFERENZA)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "bonus-80-euro",
+    "titolo": "Bonus 80 euro",
+    "attoIstitutivo": "DL 66/2014 art. 1 (conv. L. 89/2014)",
+    "governoTesto": "Renzi",
+    "governiIds": [
+      "g102"
+    ],
+    "annoAvvio": 2014,
+    "confronti": [
+      {
+        "id": "bonus_80_euro-1",
+        "periodo": "2014 (maggio–dicembre)",
+        "tipoOnere": "stima",
+        "previsto": {
+          "importoEur": 6655300000,
+          "descrizione": "2014 (mag-dic), competenza = indebitamento netto; SNF/fabbisogno 5.823,4 (2014) + 831,9 (2015)",
+          "fonte": {
+            "url": "https://documenti.camera.it/leg17/dossier/pdf/VQ2433.pdf"
+          }
+        },
+        "consuntivo": {
+          "importoEur": 6100000000,
+          "descrizione": "anno d'imposta 2014, bonus spettante da dichiarazioni (erogato dai sostituti circa 6,0 mld)",
+          "fonte": {
+            "url": "https://www1.finanze.gov.it/finanze/analisi_stat/public/v_4_0_0/contenuti/analisi_dati_2014_irpef.pdf"
+          },
+          "proiezione": false
+        },
+        "omogeneita": "parzialmente_omogeneo",
+        "confidenza": "B",
+        "scostamento": {
+          "eur": -555300000,
+          "pct": -8.343726052920228,
+          "calcolatoDa": "paghi_tu"
+        },
+        "noteMetodo": "VQ2433 pp. 16-17 PDF; DF AI2014 p. 31 ('circa 6,1 miliardi'). Nel conto PA 2014 l'importo è 5.850 mln (MEF 2/3/2015; ISTAT lo classifica come spesa). -8% sullo spettante (INFERENZA).",
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1 ✓ CONFERMATA verificatore 2026-10-20 (VQ2433 pp. 16-17 PDF; DF AI2014 p. 31: spettante circa 6,1 mld, erogato circa 6 mld; -8,3% INFERENZA)"
+        }
+      },
+      {
+        "id": "bonus_80_euro-2",
+        "periodo": "2015, a regime",
+        "tipoOnere": "stima",
+        "previsto": {
+          "importoEur": 9503000000,
+          "descrizione": "annuo 2015-2017: 9.503 mln di maggiori spese (stima ufficiale del DDL di stabilità 2015 riportata nella tabella UPB della manovra, slide 2)",
+          "fonte": {
+            "url": "https://www.upbilancio.it/wp-content/uploads/2014/11/Slides_Incontro_stampa_04_11_2014.pdf"
+          }
+        },
+        "consuntivo": {
+          "importoEur": 9000000000,
+          "descrizione": "anno d'imposta 2015, bonus spettante ('circa 9 miliardi'), 11,2 mln beneficiari",
+          "fonte": {
+            "url": "https://www1.finanze.gov.it/finanze/analisi_stat/public/v_4_0_0/contenuti/analisi_dati_2015_irpef.pdf?d=1595352600"
+          },
+          "proiezione": false
+        },
+        "omogeneita": "parzialmente_omogeneo",
+        "confidenza": "C",
+        "scostamento": {
+          "eur": -503000000,
+          "pct": -5.293065347784911,
+          "calcolatoDa": "paghi_tu"
+        },
+        "noteMetodo": "DF AI2015 p. 27: spettante 'circa 9 miliardi', 11,2 mln beneficiari. -5,3% (INFERENZA). la frase 'circa 9,5 miliardi annui' attribuita al dossier Camera ID0014s1 NON compare nel dossier aperto; l'importo è ricondotto alla tabella UPB 4/11/2014 (9.503 mln, maggiori spese, 2015-2017, dati del DDL). RT originale non aperta.",
+        "verifica": {
+          "livello": "V2",
+          "dettaglio": "CORRETTA verificatore 2026-10-20: previsto V2 (UPB riporta la stima ufficiale; RT non aperta) / consuntivo V1"
+        }
+      }
+    ]
+  },
+  {
+    "id": "abolizione-ici-prima-casa",
+    "titolo": "Abolizione dell'ICI sulla prima casa",
+    "attoIstitutivo": "DL 93/2008 art. 1 (conv. L. 126/2008)",
+    "governoTesto": "Berlusconi IV (904 mln di copertura già stanziati dalla L. 244/2007, governo Prodi II)",
+    "governiIds": [
+      "g61",
+      "g60"
+    ],
+    "annoAvvio": 2008,
+    "confronti": [
+      {
+        "id": "abolizione_ici_prima_casa-1",
+        "periodo": "2008",
+        "tipoOnere": "stima",
+        "previsto": {
+          "importoEur": 2604000000,
+          "descrizione": "2008: rimborsi ai Comuni (904 mln L. 244/2007 + 1.700 mln DL 93/2008)",
+          "fonte": {
+            "url": "https://finanzalocale.interno.gov.it/docum/studi/varie/soppressione_ici.pdf"
+          }
+        },
+        "consuntivo": {
+          "importoEur": 3364846993,
+          "descrizione": "minor gettito ICI 2008 certificato dai Comuni (DM 1/4/2009)",
+          "fonte": {
+            "url": "https://finanzalocale.interno.gov.it/docum/studi/varie/soppressione_ici.pdf"
+          },
+          "proiezione": false
+        },
+        "omogeneita": "parzialmente_omogeneo",
+        "confidenza": "B",
+        "scostamento": {
+          "eur": 760846993,
+          "pct": 29.21839450844854,
+          "calcolatoDa": "paghi_tu"
+        },
+        "noteMetodo": "Min. Interno, audizione 22/4/2010, pp. 1-4. Previsto 2.604 = 904 (L. 244/2007, finanziaria 2008, governo Prodi II, per l'aumento della detrazione) + 1.700 (DL 93/2008, Berlusconi IV). Stanziamento 2008 portato a 2.864 mln (DL 154/2008) e a 3.020 mln (L. 191/2009); 3.364 mln annui dal 2009. Il totale certificato ricalcolato a p. 4 è 3.364.556.281,09. +29,2% (INFERENZA).",
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1 ✓ CONFERMATA verificatore 2026-10-20 (cifre confermate; precisate l'attribuzione dei 904 mln e le pagine)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "salvaguardie-esodati-chiuse",
+    "titolo": "Salvaguardie «esodati» già chiuse",
+    "attoIstitutivo": "DL 201/2011 art. 24 c. 14; DL 95/2012; L. 228/2012; DL 102/2013; L. 147/2013 (salvaguardie 1-5, esclusa la prima categoria della seconda)",
+    "governoTesto": "Monti / Letta",
+    "governiIds": [
+      "g62",
+      "g82"
+    ],
+    "annoAvvio": 2012,
+    "confronti": [
+      {
+        "id": "salvaguardie_esodati_chiuse-1",
+        "periodo": "Salvaguardie chiuse",
+        "tipoOnere": "tetto",
+        "previsto": {
+          "importoEur": 8800000000,
+          "descrizione": "spesa programmata per le salvaguardie già chiuse (118.130 soggetti): prime cinque, esclusa la prima categoria della seconda",
+          "fonte": {
+            "url": "https://www.upbilancio.it/wp-content/uploads/2016/02/Focus_2_20161.pdf"
+          }
+        },
+        "consuntivo": {
+          "importoEur": 6500000000,
+          "descrizione": "spesa rendicontata ('circa 6,5') per 89.112 beneficiari effettivi",
+          "fonte": {
+            "url": "https://www.upbilancio.it/wp-content/uploads/2016/02/Focus_2_20161.pdf"
+          },
+          "proiezione": false
+        },
+        "omogeneita": "omogeneo",
+        "confidenza": "B",
+        "scostamento": {
+          "eur": -2300000000,
+          "pct": -26.136363636363637,
+          "calcolatoDa": "paghi_tu"
+        },
+        "noteMetodo": "UPB Focus 2/2016 p. 12 (riquadro): dati della RT della L. 208/2015 riportati da UPB. Tetti di spesa e contingenti numerici. -2,3 mld (-26,1%). il Focus indica come chiuse 'le prime cinque salvaguardie fatta eccezione per la prima categoria della seconda'; la sesta (L. 147/2014, governo Renzi) era 'ancora aperta'. Corretti perimetro, atti e governi (Renzi escluso).",
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1 ✓ CORRETTA verificatore 2026-10-20 (perimetro: prime sei -> prime cinque; governi: Monti/Letta/Renzi -> Monti/Letta)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "assegno-di-inclusione",
+    "titolo": "Assegno di inclusione",
+    "attoIstitutivo": "DL 48/2023 art. 13 c. 8 lett. a (conv. L. 85/2023)",
+    "governoTesto": "Meloni",
+    "governiIds": [
+      "g202"
+    ],
+    "annoAvvio": 2024,
+    "confronti": [
+      {
+        "id": "assegno_di_inclusione-1",
+        "periodo": "2024",
+        "tipoOnere": "tetto",
+        "previsto": {
+          "importoEur": 5573800000,
+          "descrizione": "2024, limite di spesa beneficio economico (dopo le modifiche del Senato)",
+          "fonte": {
+            "url": "https://documenti.camera.it/leg19/dossier/testi/VQ1238.htm"
+          }
+        },
+        "consuntivo": {
+          "importoEur": 4529138051,
+          "descrizione": "2024, importi erogati ADI gen-dic 2024 (somma mensile Tavola 1.2, Osservatorio INPS ADI-SFL)",
+          "fonte": {
+            "url": "https://www.inps.it/content/dam/inps-site/pdf/dati-analisi-bilanci/osservatori-statistici/osservatorio-adi-sfl/Appendice%20Statistica%20ADI%20SFL%20Gennaio%202026.pdf"
+          },
+          "proiezione": false
+        },
+        "omogeneita": "parzialmente_omogeneo",
+        "confidenza": "B",
+        "scostamento": {
+          "eur": -1044661949,
+          "pct": -18.742365154831532,
+          "calcolatoDa": "paghi_tu"
+        },
+        "noteMetodo": "Tetto di spesa (VQ1238: 5.573,8 mln per il beneficio, artt. 1-4 e art. 10 c. 6, su 5.660,8 complessivi). Consuntivo primario INPS: Appendice statistica ADI-SFL gennaio 2026, Tav. 1.2 p. 4: somma gen-dic 2024 = 4.529.138.051 euro (media mensile 377.428.171). -18,7% (INFERENZA). Il dato 4.442 mln (+260 SFL) da bilancio consuntivo INPS è riportato solo dalla stampa (ANSA 1/7/2025, V2); il comunicato INPS-CIV del 1/7/2025 non lo contiene. La differenza fra erogato mensile e dato di rendiconto non è spiegata (NV). Con 4.442: -20,3%.",
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1 ✓ CORRETTA verificatore 2026-10-20: previsto V1 (VQ1238) / consuntivo portato a V1 (INPS Osservatorio ADI, 4.529,1 mln)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "esonero-contributivo-assunzioni-2015",
+    "titolo": "Esonero contributivo per le assunzioni 2015",
+    "attoIstitutivo": "L. 190/2014 art. 1 cc. 118-124",
+    "governoTesto": "Renzi",
+    "governiIds": [
+      "g102"
+    ],
+    "annoAvvio": 2015,
+    "confronti": [
+      {
+        "id": "esonero_contributivo_assunzioni_2015-1",
+        "periodo": "2015–2018",
+        "tipoOnere": "stima",
+        "previsto": {
+          "importoEur": 14703000000,
+          "descrizione": "2015-2018: 1.886 / 4.885 / 5.030 / 2.902 mln (stime ufficiali; 2015-2017 nella tabella UPB della manovra, 'Totale decontribuzione per assunzioni a tempo indeterminato'); 1,0 mln di contratti agevolati attesi nel 2015 (INFERENZA da UPB 2015)",
+          "fonte": {
+            "url": "https://www.upbilancio.it/wp-content/uploads/2014/11/Slides_Incontro_stampa_04_11_2014.pdf"
+          }
+        },
+        "consuntivo": {
+          "importoEur": 16605645934,
+          "descrizione": "2015-2018, costo effettivo da bilanci annuali INPS (elaborazione Osservatorio statistico Consulenti del Lavoro, 2021)",
+          "fonte": {
+            "url": "https://www.bollettinoadapt.it/wp-content/uploads/2021/02/Report_sgravi.pdf"
+          },
+          "proiezione": false
+        },
+        "omogeneita": "parzialmente_omogeneo",
+        "confidenza": "C",
+        "scostamento": {
+          "eur": 1902645934,
+          "pct": 12.940528694824186,
+          "calcolatoDa": "paghi_tu"
+        },
+        "noteMetodo": "UPB aud. DDL stabilità 2016, pp. 38-39: proiezione INPS a 1,2 mln di contratti, '200.000 contratti in più rispetto a quelli attesi nelle stime ufficiali'. Consuntivo in euro (aggiunto dal verificatore): 16.605,6 mln contro 14.703 previsti (+12,9%, INFERENZA), da prospetto dei Consulenti del Lavoro su bilanci INPS (fonte di parte terza, V2); 1.531.533 rapporti agevolati. Previsto 2015-2017 V1 sulla tabella UPB (dati del DDL, effetto su indebitamento netto); 2018 (2.902) solo V2. Da sostituire con i rendiconti INPS 2015-2018.",
+        "verifica": {
+          "livello": "V2",
+          "dettaglio": "CORRETTA verificatore 2026-10-20: previsto V1 (2015-17) / consuntivo in euro V2 (Consulenti del Lavoro su bilanci INPS)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "riduzione-strutturale-cuneo-fiscale",
+    "titolo": "Riduzione strutturale del cuneo fiscale",
+    "attoIstitutivo": "L. 207/2024 (LB 2025), commi su bonus e ulteriore detrazione per lavoratori dipendenti",
+    "governoTesto": "Meloni",
+    "governiIds": [
+      "g202"
+    ],
+    "annoAvvio": 2025,
+    "confronti": [
+      {
+        "id": "riduzione_strutturale_cuneo_fiscale-1",
+        "periodo": "2025",
+        "tipoOnere": "stima",
+        "previsto": {
+          "importoEur": 12853100000,
+          "descrizione": "2025, effetto di cassa: IRPEF (ulteriore detrazione) -8.439,5 + bonus -4.413,6 = -12.853,1 mln; 2026 -12.982,9 e dal 2027 -12.971,8 (con addizionali); competenza annua a regime -12.971,8 (RT DDL bilancio 2025, art. 2 cc. 3-8, p. 3)",
+          "fonte": {
+            "url": "https://lentepubblica.it/?p=386012"
+          }
+        },
+        "consuntivo": null,
+        "consuntivoAssente": "non ancora disponibile (dichiarazioni AI 2025)",
+        "omogeneita": "omogeneo",
+        "confidenza": "D",
+        "scostamento": null,
+        "noteMetodo": "ambiguità risolta sulla RT bollinata RGS del DDL di bilancio 2025 (A.C. 2112, XIX leg., numero atto da fonte secondaria; copia integrale ospitata da lentepubblica.it; l'originale senato.it DF/440976 ha risposto 403). La lettura 'circa 8.439,5 mln annui 2025-27' della Tab. 3.4 UPB era imprecisa: nella tabella UPB (conto PA) la voce 'Cuneo fiscale - Irpef' vale -8.439,5 / -8.569,3 / -8.558,2 nel 2025-27 perché dal 2026 include le addizionali; 'Cuneo fiscale - Bonus' -4.413,6 annui (UPB aud. DDLB 2025 Tab. 3.4 p. 31). Il bonus è maggiore spesa, l'ulteriore detrazione minore entrata. Importi del DDL, non della L. 207/2024 approvata (eventuali modifiche parlamentari NV). La RT del DDL di bilancio è prevista dall'art. 21 c. 12-bis L. 196/2009.",
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "CORRETTA verificatore 2026-10-20: previsto V1 (RT in copia di terzi + UPB Tab. 3.4) / consuntivo n.d."
+        }
+      }
+    ]
+  }
+]
