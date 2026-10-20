@@ -122,6 +122,10 @@
 - **Contesto:** 13 righe del gruppo B venivano dalla risoluzione unitaria 6-00294 (PD, M5S, AVS, IV, +Europa), che impegna il Governo in carica ed è stata preclusa senza voto il 13/10/2026. Lo stesso censimento escludeva per questo motivo altre proposte rivolte al Governo.
 - **Scelta proposta:** risoluzioni, mozioni ed emendamenti, di maggioranza o di opposizione, vanno in una categoria a parte ("atto parlamentare"), collegabile ai partiti firmatari; diventano promesse solo se ripresi in un programma o in una dichiarazione per le politiche.
 - **Da decidere insieme:** la regola gemella per le proposte dei partiti di maggioranza sulla legge di bilancio 2027 (gruppo A, campo `orizzonte` proposto). Le due regole vanno approvate insieme perché valgano uguali per maggioranza e opposizione.
+- **Regola di perimetro applicata dalla verifica L2 del gruppo C (2026-10-21), da estendere a tutti i gruppi:**
+  - restano le richieste al governo in carica solo se hanno un contenuto di policy, presentato dal partito come proposta propria;
+  - escono gli atti procedurali (per esempio "portare in Parlamento il ddl X"), gli impegni non di policy (candidature, liste, alleanze, ruoli personali), gli atti personali nella legislatura in corso, gli appelli con raccolta firme limitati alla legislatura in corso e i doppioni;
+  - escono i testi ripubblicati nel periodo ma scritti prima (data della prima pubblicazione fuori periodo).
 - **Data:** 2026-10-20
 
 ### D-013 — Pubblicazione delle promesse tutta insieme, dopo il controllo di simmetria
