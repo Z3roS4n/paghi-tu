@@ -1,10 +1,11 @@
 {
   "periodo": {
     "dal": "2026-01-01",
-    "al": "2026-10-20"
+    "al": "2026-10-21"
   },
-  "censite": 233,
-  "verificate": 153,
+  "censite": 322,
+  "verificate": 206,
   "pubblicate": 0,
-  "gruppiPubblicati": []
+  "gruppiPubblicati": [],
+  "regolaPerimetro": null
 }

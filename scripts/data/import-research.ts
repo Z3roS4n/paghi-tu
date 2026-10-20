@@ -247,8 +247,18 @@ async function sources() {
 // Un gruppo entra nel sito solo dopo la verifica indipendente di ogni riga e il controllo di
 // simmetria fra i gruppi (D-010): fino ad allora le promesse sono validate ma non pubblicate.
 const PUBLISHED_PROMISE_GROUPS: string[] = [];
-const PROMISE_GROUPS = ["a", "b", "c"];
-const CAMPAIGN_PERIOD = { dal: "2026-01-01", al: SNAPSHOT };
+// Scenari S1/S2 della nota di simmetria (D-012, D-015): null finché il titolare non sceglie.
+const PROMISE_SCOPE_RULE: "tutte" | "solo_fuori_legislatura_in_corso" | null = null;
+if (PUBLISHED_PROMISE_GROUPS.length > 0 && PROMISE_SCOPE_RULE === null) {
+  throw new Error("Promesse: scegliere PROMISE_SCOPE_RULE prima di pubblicare un gruppo");
+}
+const PROMISE_FILES: Record<string, string> = {
+  a: "2026-10-20.promesse-campagna-gruppo-a",
+  b: "2026-10-20.promesse-campagna-gruppo-b",
+  c: "2026-10-20.promesse-campagna-gruppo-c",
+  "c-integrazione": "2026-10-21.promesse-campagna-gruppo-c-integrazione",
+};
+const CAMPAIGN_PERIOD = { dal: "2026-01-01", al: "2026-10-21" };
 
 function isVerified(status: string) {
   return status.includes("✓") && !/DA RIMUOVERE|NON VERIFICABILE|NUOVA|riserva/i.test(status);
@@ -262,8 +272,8 @@ async function campaignPromises() {
   const parties = new Map<string, z.infer<typeof Party>>();
   const verified: { group: string; promise: z.infer<typeof CampaignPromise> }[] = [];
   let censite = 0;
-  for (const group of PROMISE_GROUPS) {
-    for (const r of await readRecords(`promesse-campagna-gruppo-${group}`)) {
+  for (const [group, file] of Object.entries(PROMISE_FILES)) {
+    for (const r of parseCsvRecords(await readFile(join(RESEARCH, `${file}.csv`), "utf8"))) {
       const partitoId = r.id.split("-")[1];
       if (!parties.has(partitoId)) parties.set(partitoId, Party.parse({ id: partitoId, nome: r.partito, coalizione: r.coalizione }));
       censite++;
@@ -279,6 +289,8 @@ async function campaignPromises() {
         testoLetterale: r.testo_letterale.trim(),
         parafrasiNeutra: r.parafrasi_neutra.trim(),
         tipoFonte: r.tipo_fonte,
+        orizzonte: r.orizzonte,
+        veicolo: r.veicolo,
         fonte: { url: r.fonte_url.trim() },
         archivioUrl: urlOrNull(r.archivio_url),
         cofog: CofogDivision.parse(r.tema_cofog.trim().slice(0, 2)),
@@ -291,13 +303,17 @@ async function campaignPromises() {
       verified.push({ group, promise });
     }
   }
-  const published = verified.filter(({ group }) => PUBLISHED_PROMISE_GROUPS.includes(group)).map(({ promise }) => promise);
+  const published = verified
+    .filter(({ group }) => PUBLISHED_PROMISE_GROUPS.includes(group))
+    .filter(({ promise }) => PROMISE_SCOPE_RULE === "tutte" || promise.orizzonte !== "legislatura_in_corso")
+    .map(({ promise }) => promise);
   const status = PromiseCatalogStatus.parse({
     periodo: CAMPAIGN_PERIOD,
     censite,
     verificate: verified.length,
     pubblicate: published.length,
     gruppiPubblicati: PUBLISHED_PROMISE_GROUPS,
+    regolaPerimetro: PROMISE_SCOPE_RULE,
   });
   return { parties: [...parties.values()], published, status };
 }

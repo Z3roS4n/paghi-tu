@@ -140,6 +140,17 @@
 - **Motivo:** senza questa regola il sito suggerirebbe "risparmi" o "sforamenti" impropri (tetti di spesa RdC e ADI; Superbonus con onere potenziale ENEA contro effetti sui saldi).
 - **Data:** 2026-10-21
 
+### D-015 — Orizzonte e veicolo come colonne, non come cancellazioni
+- **Stato:** PROPOSTA — da confermare con il titolare (controllo di simmetria, `research/2026-10-21.controllo-simmetria-promesse.md`)
+- **Contesto:** R-ORIZZONTE (gruppo A) e D-012 (gruppi B e C) toglievano dal catalogo, con formulazioni diverse, le proposte legate alla legislatura in corso. A ne marcava 40 righe, B le 13 della risoluzione CSX, C ne teneva alcune.
+- **Scelta proposta:**
+  - ogni riga dei tre CSV ha `orizzonte` (prossima_legislatura, legislatura_in_corso, non_specificato) e `veicolo` (10 valori), assegnati dal testo con gli stessi criteri per tutti;
+  - nei casi dubbi vale `non_specificato`, con la motivazione in nota;
+  - lo stato_verifica non decide più il perimetro («PERIMETRO: orizzonte/veicolo (vedi colonne)»);
+  - il titolare sceglie fra S1 (tutte le righe valide, 206) e S2 (fuori legislatura_in_corso, 137), oppure una variante (fuori risoluzioni ed emendamenti, 189).
+- **Conseguenze:** l'import oggi conta S1. Quando la scelta sarà fatta, il filtro va applicato in `scripts/data/import-research.ts`, insieme a D-012 e R-ORIZZONTE.
+- **Data:** 2026-10-21
+
 ## Decisioni aperte
 - **OA-1** — ~~Nome del progetto e dominio~~ → nome deciso il 2026-10-20: **Paghi Tu** (provocatorio verso politica e cittadini, senza attribuire condotte a nessuno). Dominio candidato `paghitu.it` (libero al controllo DNS del 2026-10-20, da confermare all'acquisto).
 - **OA-2** — Editore: il titolare del progetto, persona fisica. **Decisione del titolare (2026-10-20): nome e dati personali NON pubblicati sul sito**; il sito si presenta come "Paghi Tu" con un recapito dedicato (email del progetto). Da validare con l'avvocato prima del lancio: (a) se art. 2 L. 47/1948 (richiamato da art. 1 c. 3 L. 62/2001) e art. 7 D.Lgs. 70/2003 impongono l'indicazione dell'editore a un sito non periodico e non commerciale; (b) identità del titolare del trattamento richiesta dall'art. 13 GDPR se il sito tratta dati dei visitatori (log, analytics, form) — si minimizza con zero cookie, zero analytics con IP, nessun form; (c) alternativa: associazione (es. APS/ETS) come editore, così sul sito compare l'ente e non la persona; (d) responsabilità personale e polizza RC. L'anonimato verso il pubblico non elimina la responsabilità: l'editore resta identificabile da hosting e registro del dominio.

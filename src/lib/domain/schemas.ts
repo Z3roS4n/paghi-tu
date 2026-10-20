@@ -138,6 +138,20 @@ export const PromiseSourceType = z.enum([
   "atto_parlamentare",
 ]);
 
+export const PromiseHorizon = z.enum(["prossima_legislatura", "legislatura_in_corso", "non_specificato"]);
+export const PromiseVehicle = z.enum([
+  "programma",
+  "documento_partito",
+  "dichiarazione",
+  "proposta_di_legge",
+  "emendamento",
+  "risoluzione_mozione",
+  "richiesta_legge_bilancio",
+  "richiesta_decreto",
+  "appello_raccolta_firme",
+  "altro",
+]);
+
 // Citazione breve ex art. 70 L. 633/1941: oltre i 320 caratteri si riassume, non si cita.
 export const CampaignPromise = z.object({
   id: z.string().regex(/^C27-[A-Z0-9]+-\d{3}$/),
@@ -148,6 +162,8 @@ export const CampaignPromise = z.object({
   testoLetterale: z.string().min(1).max(320),
   parafrasiNeutra: z.string().min(1),
   tipoFonte: PromiseSourceType,
+  orizzonte: PromiseHorizon,
+  veicolo: PromiseVehicle,
   fonte: SourceLink,
   archivioUrl: z.url().nullable(),
   cofog: CofogDivision,
@@ -165,6 +181,7 @@ export const PromiseCatalogStatus = z.object({
   verificate: z.number().int().nonnegative(),
   pubblicate: z.number().int().nonnegative(),
   gruppiPubblicati: z.array(z.string()),
+  regolaPerimetro: z.enum(["tutte", "solo_fuori_legislatura_in_corso"]).nullable(),
 });
 
 // Regole della nota "costo delle misure": lo scostamento si deriva, non si scrive a mano, e
