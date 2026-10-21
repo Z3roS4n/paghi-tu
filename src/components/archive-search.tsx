@@ -163,7 +163,7 @@ export function ArchiveSearch() {
               <button
                 type="button"
                 onClick={() => setLimit((l) => l + PAGE)}
-                className="mt-5 inline-flex min-h-12 items-center rounded-ctl border-[1.5px] border-rule bg-paper-raised px-5 font-bold transition-[transform,border-color] hover:border-ink-faint active:translate-y-px"
+                className="mt-5 flex min-h-12 w-full items-center justify-center rounded-ctl sm:inline-flex sm:w-auto border-[1.5px] border-rule bg-paper-raised px-5 font-bold transition-[transform,border-color] hover:border-ink-faint active:translate-y-px"
               >
                 Mostra altri {Math.min(PAGE, results.length - limit)}
               </button>

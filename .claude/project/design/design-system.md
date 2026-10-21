@@ -122,7 +122,9 @@ Metodo, Fonti, Correzioni, Chi siamo, Note legali, GitHub e i crediti delle inci
 - Le funzioni (`format`) passano solo fra componenti server; ai client si passano dati e ReactNode.
 
 ## Movimento
-Solo dentro `prefers-reduced-motion: no-preference` e `@supports (animation-timeline: view())`: entrata dei blocchi
-(`.reveal`), barre che crescono (`.reveal-bars .bar`), linee che si disegnano e aree che si scoprono legate allo
-scroll del grafico (`.chart-frame`), incisione d'apertura che si allontana, barra di avanzamento. Il racconto dei 100 €
-usa IntersectionObserver (centro dello schermo) e transizioni CSS. Nessun listener di scroll.
+Tutto dentro `prefers-reduced-motion: no-preference`; senza JavaScript o con meno movimento il contenuto resta fermo e completo.
+- **Legato allo scroll** (`animation-timeline`): entrata dei blocchi (`.reveal`), incisione d'apertura che si allontana, barra di avanzamento della pagina.
+- **Grafici e barre**: partono quando entrano nello schermo (`InViewMarker` mette `data-inview`, una sola volta) e si completano da soli in circa un secondo, così si leggono per intero. Lo stato nascosto vale solo con la classe `js`, messa da uno script in `<head>`.
+- **Racconto dei 100 € e scontrino**: ogni binario è una `view-timeline` (`--step-N`, condivise con `timeline-scope`); i quadretti del passo si accendono uno per uno, il segmento di avanzamento si riempie e lo scontrino si stampa seguendo lo scroll. Invito «Scorri» con freccia sul primo passo e sullo scontrino. Senza timeline di scroll i passi cambiano a stati fissi.
+- Nessun listener di scroll.
+- **Bottoni**: da mobile prendono tutta la larghezza (due affiancati se le etichette sono corte, altrimenti uno per riga); da `sm` tornano alla larghezza del testo.

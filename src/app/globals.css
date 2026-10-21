@@ -160,34 +160,6 @@ h3 {
       animation-timeline: view();
       animation-range: entry 0% entry 70%;
     }
-    .reveal-bars {
-      view-timeline: --bars block;
-    }
-    .reveal-bars .bar {
-      transform-origin: var(--origin, left);
-      animation: grow-x linear both;
-      animation-timeline: --bars;
-      animation-range: entry 20% cover 45%;
-    }
-    .chart-frame {
-      view-timeline: --chart block;
-    }
-    .chart-frame .chart-line {
-      stroke-dasharray: 1;
-      animation: draw linear both;
-      animation-timeline: --chart;
-      animation-range: entry 30% cover 55%;
-    }
-    .chart-frame .chart-area {
-      animation: uncover linear both;
-      animation-timeline: --chart;
-      animation-range: entry 30% cover 55%;
-    }
-    .chart-frame .chart-late {
-      animation: appear linear both;
-      animation-timeline: --chart;
-      animation-range: cover 48% cover 56%;
-    }
     .hero-image img {
       animation: drift linear both;
       animation-timeline: view();
@@ -202,6 +174,38 @@ h3 {
       animation: grow-x linear both;
       animation-timeline: scroll(root);
     }
+  }
+}
+
+/* Grafici e barre: partono quando entrano nello schermo (InViewMarker) e si completano da soli.
+   Senza JavaScript o con prefers-reduced-motion restano disegnati per intero. */
+@media (prefers-reduced-motion: no-preference) {
+  .js .reveal-bars .bar {
+    transform-origin: var(--origin, left);
+  }
+  .js .reveal-bars:not([data-inview]) .bar {
+    transform: scaleX(0);
+  }
+  .js .reveal-bars[data-inview] .bar {
+    animation: grow-x 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  }
+  .js .chart-frame .chart-line {
+    stroke-dasharray: 1;
+  }
+  .js .chart-frame:not([data-inview]) .chart-line {
+    stroke-dashoffset: 1;
+  }
+  .js .chart-frame:not([data-inview]) :is(.chart-area, .chart-late) {
+    opacity: 0;
+  }
+  .js .chart-frame[data-inview] .chart-line {
+    animation: draw 1.2s cubic-bezier(0.45, 0.05, 0.35, 1) both;
+  }
+  .js .chart-frame[data-inview] .chart-area {
+    animation: uncover 1.2s cubic-bezier(0.45, 0.05, 0.35, 1) both;
+  }
+  .js .chart-frame[data-inview] .chart-late {
+    animation: appear 0.4s ease-out 1s both;
   }
 }
 
@@ -251,5 +255,56 @@ h3 {
   .sheet,
   .sheet::backdrop {
     transition: none;
+  }
+}
+
+/* Racconto dei 100 €: senza timeline di scroll (o con meno movimento) i passi cambiano a stati fissi;
+   con le timeline, quadretti, avanzamento e scontrino seguono lo scroll del binario attivo. */
+.waffle-on {
+  background: var(--accent);
+  transform: scale(0.9);
+}
+.story-seg {
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+.story-seg[data-on] {
+  transform: none;
+}
+@keyframes waffle-fill {
+  from { background: var(--paper-sunk); transform: none; }
+  to { background: var(--accent); transform: scale(0.9); }
+}
+@keyframes print {
+  from { clip-path: inset(0 0 100% 0); transform: translateY(-16px); }
+  to { clip-path: inset(0 0 0 0); transform: none; }
+}
+@keyframes fade-out {
+  to { opacity: 0; }
+}
+@keyframes nudge {
+  0%, 100% { transform: translateY(-2px); }
+  50% { transform: translateY(3px); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .scroll-nudge {
+    animation: nudge 1.4s ease-in-out infinite;
+  }
+  @supports (animation-timeline: view()) and (timeline-scope: none) {
+    .waffle-on {
+      animation: waffle-fill linear both;
+      transition: none;
+    }
+    .story-seg {
+      animation: grow-x linear both;
+      transition: none;
+    }
+    .receipt-print {
+      animation: print linear both;
+    }
+    .hint-print {
+      animation: fade-out linear both;
+    }
   }
 }

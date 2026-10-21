@@ -44,7 +44,7 @@ export default function Home() {
               per ogni residente nel {h.anno}, fra Stato, regioni, comuni ed enti di previdenza. Sono {euro(h.spesa / 365)} al giorno,
               neonati compresi.
             </p>
-            <div className="mt-4.5 flex flex-wrap gap-2.5">
+            <div className="mt-4.5 grid grid-cols-2 gap-2.5 sm:flex sm:flex-wrap">
               <ButtonLink href="#t-cento">Dove vanno</ButtonLink>
               <ButtonLink href="/metodo" tone="outline">
                 Il metodo
@@ -106,7 +106,7 @@ export default function Home() {
               I dati li raccoglie un&apos;intelligenza artificiale e li ricontrolla un secondo agente, sulla fonte. Se un numero non ti torna,
               segnalalo: ogni correzione resta nel registro pubblico, con il valore di prima e il motivo.
             </p>
-            <div className="mt-4.5 flex flex-wrap gap-2.5">
+            <div className="mt-4.5 grid gap-2.5 sm:flex sm:flex-wrap">
               <ButtonLink href="/correzioni" tone="light">
                 Come segnalarlo
               </ButtonLink>

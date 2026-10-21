@@ -65,7 +65,7 @@ const BUTTON = {
 } as const;
 
 export function ButtonLink({ href, children, tone = "solid", external }: { href: string; children: React.ReactNode; tone?: keyof typeof BUTTON; external?: boolean }) {
-  const cls = `inline-flex min-h-12 items-center gap-2 rounded-ctl px-5 font-bold whitespace-nowrap transition-[transform,filter,border-color] active:translate-y-px ${BUTTON[tone]}`;
+  const cls = `inline-flex min-h-12 items-center justify-center gap-2 rounded-ctl px-5 font-bold whitespace-nowrap transition-[transform,filter,border-color] active:translate-y-px ${BUTTON[tone]}`;
   if (external)
     return (
       <a href={href} target="_blank" rel="noopener noreferrer" className={cls}>

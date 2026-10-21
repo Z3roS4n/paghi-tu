@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Bricolage_Grotesque, Courier_Prime, Figtree } from "next/font/google";
+import { InViewMarker } from "@/components/in-view";
 import { MobileDock } from "@/components/mobile-dock";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import "./globals.css";
@@ -29,12 +30,17 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="it" className={`${figtree.variable} ${bricolage.variable} ${courier.variable} h-full antialiased`}>
+    // La classe `js` arriva prima del primo disegno: le animazioni nascondono il contenuto solo se poi c'è chi lo rivela.
+    <html lang="it" suppressHydrationWarning className={`${figtree.variable} ${bricolage.variable} ${courier.variable} h-full antialiased`}>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
+      </head>
       <body className="flex min-h-full flex-col font-sans text-[17px] leading-relaxed">
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />
         <MobileDock />
+        <InViewMarker />
       </body>
     </html>
   );
