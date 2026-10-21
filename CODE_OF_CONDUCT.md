@@ -10,4 +10,6 @@ Paghi Tu esiste per mettere i numeri pubblici a disposizione di tutti, qualunque
 
 Commenti e segnalazioni che non rispettano queste regole vengono nascosti o chiusi, con una riga che spiega quale regola non è stata rispettata. Chi le viola più volte non può più partecipare.
 
+Alcune violazioni portano al blocco immediato, senza avvisi: fonti inventate o manipolate, campagne coordinate di segnalazioni, minacce, molestie, pubblicazione di dati personali di altri.
+
 Per segnalare un comportamento scorretto, apri una issue con l'etichetta `condotta` o usa l'opzione «Report content» di GitHub.

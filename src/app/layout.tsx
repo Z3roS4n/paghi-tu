@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Bricolage_Grotesque, Courier_Prime, Figtree } from "next/font/google";
 import { InViewMarker } from "@/components/in-view";
 import { MobileDock } from "@/components/mobile-dock";
+import { SiteAnalytics } from "@/components/site-analytics";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import "./globals.css";
 
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <SiteFooter />
         <MobileDock />
         <InViewMarker />
+        <SiteAnalytics />
       </body>
     </html>
   );

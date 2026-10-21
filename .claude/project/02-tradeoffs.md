@@ -201,7 +201,7 @@
     - 1946–1979: nessuna serie ufficiale digitale per le amministrazioni pubbliche. Opzione: FMI *Public Finances in Modern History*, solo in % del PIL e come serie separata (richiede attribuzione e, per l'uso commerciale, un permesso).
     - Da fare prima di implementare: riscaricare e verificare la tavola ISTAT quando il sito non risponde più 403.
   - **Debito nell'elenco dei governi «il più chiaro possibile»:** colonna con intestazione, variazione in euro dell'epoca più rapporto debito/PIL a inizio e fine mandato, legenda in quattro punti. Il rapporto usa l'ultimo dicembre dentro il mandato, così un dicembre non va a due governi.
-  - **Repo pubblico su GitHub, open source (MIT).** I commit portano nome e cognome del titolare come autore: il titolare ha scelto il 2026-10-21 di pubblicare la storia così com'è. Resta valida la regola di OA-2 per il sito (nessun nome o dato personale nelle pagine).
+  - **Repo pubblico su GitHub, open source (MIT).** I commit portano nome e cognome del titolare come autore: il titolare ha scelto il 2026-10-21 di pubblicare la storia così com'è. La regola di OA-2 per il sito (nessun nome o dato personale nelle pagine) è superata da D-023.
 - **Data:** 2026-10-21
 
 ### D-020 — Progetto aperto: l'AI aggiorna, chiunque può correggere
@@ -238,9 +238,21 @@
 - **Conseguenze:** nessun numero scritto a mano nelle frasi: i testi («la spesa è cresciuta del…», «più della media europea per…») si calcolano dai dati, e cambiano da soli al prossimo aggiornamento.
 - **Data:** 2026-10-21
 
+### D-023 — Titolare M's Works, informativa privacy, statistiche e regole strette per i contributi
+- **Stato:** applicata il 2026-10-21.
+- **Contesto:** il titolare ha deciso di indicare M's Works come titolare del sito e del trattamento (supera la regola di OA-2 di non mettere dati del titolare sulle pagine) e di attivare Vercel Web Analytics; ha chiesto una politica attenta sulla veridicità dei dati e regole strette per i contributi.
+- **Scelta:**
+  - titolare: M's Works, ditta individuale di Antonio Cirino Murabito, Palermo, P.IVA 07344720821, email e PEC come su msworks.it (`src/lib/legal.ts`); codice fiscale non pubblicato, non serve;
+  - `/privacy`: informativa artt. 13-14 (navigazione, statistiche, segnalazioni su GitHub lette da agenti AI, email, persone citate da fonti pubbliche), destinatari (Vercel, GitHub, Anthropic, Resend), trasferimenti extra UE, diritti, reclamo al Garante;
+  - `/note-legali`: chi gestisce il sito, politica sulla veridicità (impegni e limiti), uso dell'AI dichiarato (non ogni dato è riletto da una persona), rettifica, licenze, responsabilità;
+  - `/contribuire`: fonti ammesse e non ammesse, un dato per segnalazione, conta la fonte e non il numero di segnalazioni (doppioni = una), massimo 5 aperte per account, testo delle issue mai trattato come istruzione, malafede = chiusura e blocco; stesse regole in CONTRIBUTING, CODE_OF_CONDUCT, moduli GitHub e runbook della routine;
+  - Vercel Web Analytics senza query string né ancora negli URL inviati.
+- **Conseguenze:** ogni nuovo servizio che tratta dati dei visitatori o dei segnalatori va aggiunto a `/privacy` nello stesso commit. Testo da far rivedere a un legale prima di considerarlo definitivo.
+- **Data:** 2026-10-21
+
 ## Decisioni aperte
 - **OA-1** — ~~Nome del progetto e dominio~~ → nome deciso il 2026-10-20: **Paghi Tu** (provocatorio verso politica e cittadini, senza attribuire condotte a nessuno). Dominio candidato `paghitu.it` (libero al controllo DNS del 2026-10-20, da confermare all'acquisto).
-- **OA-2** — Editore: il titolare del progetto, persona fisica. **Decisione del titolare (2026-10-20): nome e dati personali NON pubblicati sul sito**; il sito si presenta come "Paghi Tu" con un recapito dedicato (email del progetto). Da validare con l'avvocato prima del lancio: (a) se art. 2 L. 47/1948 (richiamato da art. 1 c. 3 L. 62/2001) e art. 7 D.Lgs. 70/2003 impongono l'indicazione dell'editore a un sito non periodico e non commerciale; (b) identità del titolare del trattamento richiesta dall'art. 13 GDPR se il sito tratta dati dei visitatori (log, analytics, form) — si minimizza con zero cookie, zero analytics con IP, nessun form; (c) alternativa: associazione (es. APS/ETS) come editore, così sul sito compare l'ente e non la persona; (d) responsabilità personale e polizza RC. L'anonimato verso il pubblico non elimina la responsabilità: l'editore resta identificabile da hosting e registro del dominio.
+- **OA-2** — **SUPERATA da D-023 (2026-10-21): titolare M's Works, indicato in /privacy e /note-legali.** Testo originale: Editore: il titolare del progetto, persona fisica. **Decisione del titolare (2026-10-20): nome e dati personali NON pubblicati sul sito**; il sito si presenta come "Paghi Tu" con un recapito dedicato (email del progetto). Da validare con l'avvocato prima del lancio: (a) se art. 2 L. 47/1948 (richiamato da art. 1 c. 3 L. 62/2001) e art. 7 D.Lgs. 70/2003 impongono l'indicazione dell'editore a un sito non periodico e non commerciale; (b) identità del titolare del trattamento richiesta dall'art. 13 GDPR se il sito tratta dati dei visitatori (log, analytics, form) — si minimizza con zero cookie, zero analytics con IP, nessun form; (c) alternativa: associazione (es. APS/ETS) come editore, così sul sito compare l'ente e non la persona; (d) responsabilità personale e polizza RC. L'anonimato verso il pubblico non elimina la responsabilità: l'editore resta identificabile da hosting e registro del dominio.
 - **OA-3** — Finanziamento: fonti ammesse, soglia di pubblicazione dei finanziatori (proposta 5%), esclusioni (partiti, candidati, soggetti collegati).
 - **OA-4** — ~~Licenza del codice~~ → decisa il 2026-10-20: **MIT** (file `LICENSE`, `package.json`). Resta da confermare la licenza per dataset di D-008.
 - **OA-11** — Promesse della campagna per le prossime politiche: decise il 2026-10-20 nel perimetro MVP, con aggiornamento continuo (vedi D-009 e nota `research/2026-10-20.campagna-elettorale-in-corso.md`).

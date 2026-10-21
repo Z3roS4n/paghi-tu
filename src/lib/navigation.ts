@@ -21,6 +21,7 @@ export const MORE_NAV = [
   { href: "/metodo", label: "Metodo", hint: "come verifichiamo, cosa vogliono dire V1 e V2" },
   { href: "/fonti", label: "Fonti", hint: "da dove vengono i numeri" },
   { href: "/correzioni", label: "Correzioni", hint: "il registro di cosa abbiamo cambiato" },
+  { href: "/contribuire", label: "Regole per contribuire", hint: "fonti ammesse e come verifichiamo" },
   { href: "/chi-siamo", label: "Chi siamo", hint: "un progetto aperto" },
 ] as const;
 

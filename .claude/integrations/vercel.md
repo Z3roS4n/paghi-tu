@@ -1,6 +1,6 @@
 # Vercel
 
-> Hosting del sito statico. Non è un'integrazione a runtime: l'app non chiama API Vercel e non usa variabili d'ambiente.
+> Hosting del sito statico e statistiche di visita (Vercel Web Analytics, dal 2026-10-21). L'app non chiama API Vercel e non usa variabili d'ambiente.
 
 ## Scopo
 Build (`next build`) e distribuzione delle 83 pagine prerenderizzate su CDN.
@@ -31,4 +31,5 @@ Piano del team `msworks-project`. Sito statico senza funzioni a runtime.
 ## Note / TODO
 - Dominio proprio (OA-1, `paghitu.it` candidato) da collegare dopo l'acquisto.
 - CI: valutare il collegamento al repository Git, così da avere un deploy a ogni push dopo lint, test e build.
-- Analytics Vercel: NON attivarle. La pagina note legali dichiara che il sito non raccoglie statistiche che identificano i visitatori.
+- **Web Analytics (attiva dal 2026-10-21, D-023):** pacchetto `@vercel/analytics@2.0.1`, componente `src/components/site-analytics.tsx` nel layout, con `beforeSend` che toglie query string e ancora dall'URL (la ricerca dell'archivio mette il testo cercato in `?q=`). Senza cookie, visitatore riconosciuto da un hash scartato dopo 24 ore, solo dati aggregati (doc Vercel «Privacy and Compliance»). Va abilitata anche dalla dashboard: progetto `paghi-tu` → Analytics → Enable; finché non lo è, lo script non registra niente. Descritta in `/privacy`: se cambia la configurazione, aggiornare l'informativa nello stesso commit.
+- Trasferimenti: Vercel è certificata EU-U.S. Data Privacy Framework e usa le clausole contrattuali standard (kb «Is Vercel certified under DPF?», docs «Security & Compliance»). Il Data Processing Addendum è su vercel.com/legal/dpa: verificare che copra il piano del team.

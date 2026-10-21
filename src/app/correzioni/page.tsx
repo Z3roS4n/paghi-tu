@@ -31,7 +31,8 @@ export default function CorrectionsPage() {
         <li>Scrivi cosa è sbagliato e qual è il valore giusto.</li>
         <li>
           Indica la fonte: un documento ufficiale, una banca dati pubblica, il testo originale di una dichiarazione.
-          Senza fonte la segnalazione non si può verificare.
+          Senza fonte la segnalazione non si può verificare. Quali fonti valgono e cosa non accettiamo è scritto nelle{" "}
+          <Link href="/contribuire">regole per contribuire</Link>.
         </li>
       </ol>
       <p>
@@ -53,7 +54,11 @@ export default function CorrectionsPage() {
           Se la fonte conferma, il dato viene corretto, la correzione compare in questa pagina e la segnalazione viene
           chiusa con il link alla modifica.
         </li>
-        <li>Se non conferma, la risposta spiega perché, in pubblico, sotto la segnalazione.</li>
+        <li>Se non conferma, la segnalazione è respinta e la risposta spiega perché, in pubblico, sotto la segnalazione.</li>
+        <li>
+          Se la fonte si può leggere in due modi o il tema è delicato, la segnalazione resta aperta come «da decidere»
+          finché non la esamina una persona.
+        </li>
         <li>
           Valgono le stesse regole per tutti: si correggono fatti con una fonte, non opinioni. Le regole sono nel{" "}
           <Link href="/metodo">metodo</Link>.

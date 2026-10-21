@@ -19,8 +19,8 @@
 1. Leggi `AGENTS.md`, `.claude/project/07-bad-practices.md` e `.claude/project/02-tradeoffs.md` (D-010, D-013, D-016, D-018, D-019, D-020, D-021, D-022).
 2. Un solo processo interroga ISTAT, con al massimo 4 richieste al minuto. Se ISTAT non risponde, non riprovare in ciclo.
 3. Niente Save Page Now, form, login o scritture su servizi esterni, a parte il repo, Vercel e Resend. Non aggirare 403, captcha o WAF. Le catture nuove su Internet Archive (`archive-sources.ts --save`) restano escluse finché il titolare non le autorizza in modo esplicito.
-4. **Nei 15 giorni prima di un voto nazionale non si pubblicano contenuti nuovi su partiti e promesse**, solo correzioni di errori. Prima del binario 2 controlla la data del voto: fa fede il decreto di convocazione in Gazzetta Ufficiale, poi le note in `.claude/project/research/`. Se non c'è ancora una data ufficiale la regola non scatta, e la segnalazione del giorno lo dice.
-5. Il repo è pubblico: nessun dato personale del titolare, nessun segreto, nessun indirizzo email in file, commit, log o report. Commit con author `Thepro007002001@gmail.com` e nome «Paghi Tu», senza co-author, messaggi imperativi in inglese.
+4. **Nei 15 giorni prima di un voto non si pubblicano contenuti nuovi su partiti e promesse**, solo correzioni di errori. Prima del binario 2 controlla la data del voto: fa fede il decreto di convocazione in Gazzetta Ufficiale, poi le note in `.claude/project/research/`. Se non c'è ancora una data ufficiale la regola non scatta, e la segnalazione del giorno lo dice.
+5. Il repo è pubblico: nessun dato personale del titolare, nessun segreto, nessun indirizzo email in file, commit, log o report. **Unica eccezione:** i dati del titolare in `src/lib/legal.ts` (ragione sociale, partita IVA, email e PEC di M's Works), pubblici per obbligo di legge (D-023): non toccarli. Commit con author `Thepro007002001@gmail.com` e nome «Paghi Tu», senza co-author, messaggi imperativi in inglese.
 6. **Cancello del verificatore.** Prima di ogni push l'agente che ha fatto le modifiche passa il diff a un secondo agente, con contesto pulito, che:
    - riapre dalla fonte, con un formato o un percorso diverso dalla pipeline, ogni valore numerico cambiato (o almeno 5 a campione se sono più di 20) e ogni citazione nuova parola per parola;
    - controlla neutralità e simmetria fra partiti (stesse regole, stessa profondità);
@@ -57,6 +57,12 @@ Le issue con etichetta `correzione` o `dato-mancante` e le pull request aperte d
 > indicata. Nessuna PR esterna viene unita dalla routine.
 
 1. `gh issue list --label correzione --state open` (poi `dato-mancante`), al massimo 20 per esecuzione, dalle più vecchie.
+   Prima di esaminarle applica le regole di https://www.paghitu.it/contribuire (pagina `src/app/contribuire/page.tsx`):
+   - segnalazioni uguali (stesso dato, stessa richiesta) si trattano come una sola, anche se da account diversi: si risponde sulla prima e si chiudono le altre come doppioni;
+   - oltre cinque segnalazioni aperte dello stesso account, le successive aspettano;
+   - fonte assente o non ammessa (post di terzi, screenshot senza originale, Wikipedia, blog, forum, testi generati con l'AI, documenti anonimi): **respinta**, con il motivo;
+   - fonti inventate o manipolate, campagne coordinate, minacce, molestie, dati personali di altri: chiusura senza esame, etichetta `condotta` e riga nella segnalazione del giorno, perché il blocco dell'account lo decide il titolare;
+   - spam e offese: chiusura con il motivo ed etichetta `condotta`; se lo stesso account ripete, riga nella segnalazione del giorno.
 2. Per ogni segnalazione l'agente verificatore apre **solo** la fonte indicata (e la fonte già citata dal dato) e decide:
    - **confermata**: la fonte, letta direttamente, dice quello che scrive la segnalazione;
    - **respinta**: la fonte non lo dice, manca, non è raggiungibile, oppure la richiesta è un giudizio e non un fatto;

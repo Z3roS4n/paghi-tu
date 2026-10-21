@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { REPO_URL } from "@/lib/contribute";
+import { CONTROLLER } from "@/lib/legal";
 import { ProsePage } from "@/components/prose-page";
 
 export const metadata: Metadata = {
@@ -30,8 +31,9 @@ export default function AboutPage() {
       </ul>
       <h2>Un progetto aperto</h2>
       <p>
-        I dati li raccoglie e li verifica un sistema di agenti AI, ogni giorno, con un secondo agente che ricontrolla
-        tutto sulle fonti prima della pubblicazione. L&apos;AI però sbaglia, e una fonte può sfuggire: per questo chiunque
+        I dati li raccoglie e li verifica un sistema di agenti AI, ogni giorno. Prima della pubblicazione un secondo
+        agente ricontrolla ogni novità: tutte le citazioni sulle fonti e i numeri a campione, oltre ai controlli
+        automatici fra fonti diverse. L&apos;AI però sbaglia, e una fonte può sfuggire: per questo chiunque
         può segnalare un errore o proporre una correzione, e ogni modifica resta in un registro pubblico.
       </p>
       <p>
@@ -43,8 +45,9 @@ export default function AboutPage() {
       </p>
       <h2>Contatti</h2>
       <p>
-        Le segnalazioni passano dal modulo pubblico su GitHub. Per chi non ha un account, un indirizzo dedicato al
-        progetto è in attivazione.
+        Paghi Tu è gestito da {CONTROLLER.name} ({CONTROLLER.city}). Le segnalazioni passano dal modulo pubblico su
+        GitHub, con le <Link href="/contribuire">regole per contribuire</Link>. Chi non ha un account può scrivere a{" "}
+        <a href={`mailto:${CONTROLLER.email}`}>{CONTROLLER.email}</a>.
       </p>
     </ProsePage>
   );

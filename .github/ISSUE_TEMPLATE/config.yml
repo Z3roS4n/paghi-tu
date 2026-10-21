@@ -1,5 +1,8 @@
-blank_issues_enabled: true
+blank_issues_enabled: false
 contact_links:
+  - name: Regole per contribuire
+    url: https://www.paghitu.it/contribuire
+    about: Fonti ammesse, cosa non accettiamo, come verifichiamo.
   - name: Come verifichiamo i dati
     url: https://www.paghitu.it/metodo
     about: Livelli di verifica, regole uguali per tutti, cosa si corregge e cosa no.

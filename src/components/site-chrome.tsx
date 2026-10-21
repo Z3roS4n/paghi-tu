@@ -24,8 +24,10 @@ const FOOTER_LINKS = [
   { href: "/metodo", label: "Metodo" },
   { href: "/fonti", label: "Fonti" },
   { href: "/correzioni", label: "Correzioni" },
+  { href: "/contribuire", label: "Regole per contribuire" },
   { href: "/chi-siamo", label: "Chi siamo" },
-  { href: "/note-legali", label: "Note legali e privacy" },
+  { href: "/note-legali", label: "Note legali" },
+  { href: "/privacy", label: "Privacy" },
 ] as const;
 
 export function SiteFooter() {

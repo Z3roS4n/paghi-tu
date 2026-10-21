@@ -8,6 +8,7 @@ body:
       value: |
         Le promesse si registrano per tutti i partiti con lo stesso criterio: dichiarazione verificabile, testo esatto, fonte ufficiale o testata.
         Prima di essere pubblicato, ogni dato nuovo passa dalla verifica indipendente e dal controllo di simmetria fra partiti.
+        Fonti ammesse e cosa non accettiamo: https://www.paghitu.it/contribuire. La segnalazione è pubblica.
   - type: dropdown
     id: tipo
     attributes:
@@ -40,4 +41,6 @@ body:
       label: Prima di inviare
       options:
         - label: La segnalazione riguarda un fatto verificabile, non un giudizio su un partito o una persona.
+          required: true
+        - label: La fonte è tra quelle ammesse in https://www.paghitu.it/contribuire.
           required: true

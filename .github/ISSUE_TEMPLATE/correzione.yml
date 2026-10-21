@@ -7,8 +7,9 @@ body:
     attributes:
       value: |
         Grazie. Ogni segnalazione viene ricontrollata sulla fonte da un agente verificatore e riceve una risposta pubblica qui sotto.
-        Si correggono fatti con una fonte, non opinioni: le regole sono in https://www.paghitu.it/metodo.
-        Non scrivere dati personali tuoi o di altri.
+        Si correggono fatti con una fonte, non opinioni. Un dato per segnalazione.
+        Fonti ammesse e cosa non accettiamo: https://www.paghitu.it/contribuire
+        La segnalazione è pubblica: non scrivere dati personali tuoi o di altri.
   - type: input
     id: pagina
     attributes:
@@ -40,7 +41,7 @@ body:
     id: fonte
     attributes:
       label: Fonte
-      description: Link a un documento ufficiale, a una banca dati pubblica o al testo originale della dichiarazione.
+      description: Link diretto a un documento ufficiale, a una banca dati pubblica o al testo originale della dichiarazione. Non valgono post di terzi, screenshot senza l'originale, Wikipedia, blog o testi generati con l'AI.
       placeholder: https://
     validations:
       required: true
@@ -55,6 +56,8 @@ body:
       label: Prima di inviare
       options:
         - label: La correzione riguarda un fatto verificabile sulla fonte indicata, non un giudizio.
+          required: true
+        - label: La fonte è tra quelle ammesse in https://www.paghitu.it/contribuire e ho indicato il punto preciso.
           required: true
         - label: Ho letto le regole di partecipazione (CODE_OF_CONDUCT.md).
           required: true
