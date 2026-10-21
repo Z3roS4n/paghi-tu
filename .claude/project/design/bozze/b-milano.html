@@ -1,0 +1,682 @@
+<!doctype html>
+<!--
+  Bozza B · «Milano modernista». Idea: il sito come la segnaletica della metropolitana di Milano e i
+  manifesti Olivetti/Pirelli: griglia rigida, grotesque grandi, campiture piene, forme geometriche, e i
+  governi disegnati come una linea della metro con le sue fermate, in ordine di data.
+  Palette: carta #F2ECDF · carta chiara #FBF8F1 · nero #171615 · inchiostro 2 #4B463F · ocra #D9A23A ·
+  terracotta #A9431F · salvia #A3B39C. Nessun colore domina: ognuno ha una sezione o un ruolo.
+  Font: Archivo (variabile, larghezza 62–125: stretta per i titoli, normale per il testo) e IBM Plex Mono
+  (scontrino, date, codici). Mobile: barra in basso con 4 voci + «Menu» a portata di pollice (le sezioni
+  più usate a un tocco, tutte le altre in un pannello che sale dal basso); corpo 17px, tocchi ≥ 48px.
+-->
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Paghi Tu · Milano</title>
+<meta name="description" content="Quanto spende lo Stato con i nostri soldi: spesa, governi, promesse, con le fonti.">
+<meta name="theme-color" content="#F2ECDF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --carta:#F2ECDF; --carta-2:#FBF8F1; --nero:#171615; --ink:#171615; --ink-2:#4B463F;
+  --rule:rgba(23,22,21,.18); --ocra:#D9A23A; --terra:#A9431F; --salvia:#A3B39C; --su-terra:#FBF8F1;
+  --bg:var(--carta); --surface:var(--carta-2); --focus:#171615;
+  --sans:"Archivo",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+  --gutter:16px; --max:1200px; --nav-h:64px;
+  --ease:cubic-bezier(.2,.7,.1,1);
+}
+@media (prefers-color-scheme:dark){
+  :root{ --bg:#141311; --surface:#1E1C19; --ink:#EFE9DC; --ink-2:#BDB5A6; --rule:rgba(239,233,220,.18); --focus:#EFE9DC; }
+  .dark{background:#24221E}
+  .s-debt{box-shadow:inset 0 0 0 2px #3A3733}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.5;
+  font-variation-settings:"wdth" 100;padding-bottom:calc(var(--nav-h) + env(safe-area-inset-bottom))}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-underline-offset:.18em;text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.mono{font-family:var(--mono)}
+.tab{font-variant-numeric:tabular-nums}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:8px;top:-60px;background:var(--nero);color:var(--carta);padding:12px 16px;z-index:100}
+.skip:focus{top:8px}
+
+/* ---------- testata ---------- */
+.top{border-bottom:2px solid var(--ink);background:var(--bg)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;min-height:60px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:22px;letter-spacing:-.02em;min-height:48px}
+.logo-mark{width:34px;height:34px;background:var(--nero);display:grid;place-items:center;flex:none}
+.logo-mark i{width:20px;height:20px;border-radius:50%;background:var(--ocra);display:block}
+.tagline{font-family:var(--mono);font-size:13px;color:var(--ink-2);text-align:right;line-height:1.3}
+.topnav{display:none}
+
+/* ---------- segnale di sezione (stile metropolitana) ---------- */
+.sign{display:flex;align-items:stretch;background:var(--nero);color:var(--carta);min-height:48px;margin:0 0 24px;
+  font-weight:700;font-size:16px;letter-spacing:.02em;text-transform:uppercase}
+.sign b{background:var(--ocra);color:var(--nero);width:48px;display:grid;place-items:center;font-family:var(--mono);font-weight:600;flex:none}
+.sign span{display:flex;align-items:center;padding:0 14px}
+.sign svg{width:22px;height:22px;margin-left:auto;margin-right:14px;align-self:center;flex:none}
+.on-ocra .sign b{background:var(--carta-2)}
+h2{font-weight:800;font-variation-settings:"wdth" 82;font-size:clamp(2rem,8.5vw,3.6rem);line-height:.98;letter-spacing:-.02em;margin:0 0 16px;text-wrap:balance}
+.lead{font-size:18px;max-width:38em;margin:0 0 28px;color:var(--ink-2)}
+section{padding:48px 0 56px;scroll-margin-top:16px}
+.src{font-family:var(--mono);font-size:14px;color:var(--ink-2);margin:20px 0 0}
+
+/* ---------- apertura ---------- */
+.hero{padding-top:28px}
+.kicker{font-family:var(--mono);font-size:14px;letter-spacing:.04em;text-transform:uppercase;margin:0 0 14px;display:flex;gap:10px;align-items:center}
+.kicker::before{content:"";width:14px;height:14px;background:var(--terra);border-radius:50%}
+.hero h1{font-weight:850;font-variation-settings:"wdth" 78;font-size:clamp(2.7rem,12.4vw,6.6rem);line-height:.9;letter-spacing:-.025em;margin:0 0 24px;text-wrap:balance}
+.poster{display:grid;grid-template-columns:repeat(6,1fr);gap:4px;margin:0 0 28px}
+.tile{aspect-ratio:1;position:relative;overflow:hidden}
+.tile i{position:absolute;display:block}
+.t1{background:var(--ocra)} .t1 i{inset:0;background:var(--nero);border-radius:100% 0 0 0;left:22%;top:22%}
+.t2{background:var(--carta-2);box-shadow:inset 0 0 0 2px var(--nero)} .t2 i{inset:18%;border-radius:50%;background:var(--terra)}
+.t3{background:var(--nero)} .t3 i{left:0;right:0;bottom:-50%;height:100%;border-radius:50%;background:var(--carta)}
+.t4{background:var(--salvia)} .t4 i{width:38%;height:38%;left:31%;top:31%;background:var(--nero)}
+.t5{background:var(--terra)} .t5 i{inset:0;background:repeating-linear-gradient(90deg,var(--carta) 0 12%,transparent 12% 25%)}
+.t6{background:var(--ocra)} .t6 i{inset:16%;border-radius:50%;box-shadow:inset 0 0 0 6px var(--nero)}
+.t7{background:var(--nero)} .t7 i{inset:0;background:var(--ocra);clip-path:polygon(0 100%,100% 100%,100% 0)}
+.t8{background:var(--carta-2);box-shadow:inset 0 0 0 2px var(--nero)} .t8 i{left:0;top:0;width:50%;height:100%;background:var(--salvia)}
+.t9{background:var(--terra)} .t9 i{width:50%;height:50%;left:25%;top:25%;border-radius:50%;background:var(--carta-2)}
+.xl-only{display:none}
+.figure-eyebrow{font-family:var(--mono);font-size:14px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-2);margin:0}
+.big{font-weight:900;font-variation-settings:"wdth" 86;font-size:clamp(4.2rem,21vw,10.5rem);line-height:.88;letter-spacing:-.04em;margin:6px 0 14px;white-space:nowrap}
+.big small{font-size:.5em;letter-spacing:0;margin-left:.06em}
+.hero-row{display:flex;gap:16px;align-items:center;margin:0 0 28px}
+.hero-row p{margin:0;font-size:18px}
+.coin{flex:none;width:112px;height:112px;border-radius:50%;background:var(--ocra);color:var(--nero);display:grid;place-content:center;text-align:center;line-height:1}
+.coin strong{font-size:34px;font-weight:850;font-variation-settings:"wdth" 80;letter-spacing:-.02em}
+.coin em{font-style:normal;font-size:14px;font-weight:600;margin-top:4px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:4px;list-style:none;padding:0;margin:0}
+.stat{padding:14px 14px 16px;min-height:132px;display:flex;flex-direction:column;gap:10px}
+.stat h3{font-size:15px;font-weight:700;margin:0;text-transform:uppercase;letter-spacing:.03em;line-height:1.2}
+.stat .n{font-weight:850;font-variation-settings:"wdth" 82;font-size:clamp(2rem,9vw,2.8rem);line-height:1;letter-spacing:-.02em;white-space:nowrap}
+.stat p{margin:0;font-size:15px;line-height:1.35}
+.s-in{background:var(--surface);box-shadow:inset 0 0 0 2px var(--ink)}
+.s-gap{background:var(--terra);color:var(--su-terra)}
+.s-int{background:var(--salvia);color:var(--nero);grid-column:1/-1;min-height:0}
+.s-debt{background:var(--nero);color:var(--carta);grid-column:1/-1}
+.s-debt .n{font-size:clamp(2.8rem,14vw,4.4rem)}
+
+/* ---------- scontrino ---------- */
+.dark{background:var(--nero);color:var(--carta);--focus:var(--carta)}
+.dark .sign{background:var(--carta);color:var(--nero)}
+.dark .lead,.dark .src{color:#CFC7B8}
+.printer{max-width:420px;margin:0 auto}
+.slot{height:18px;background:#000;border-radius:9px;box-shadow:0 0 0 4px #2C2A27;position:relative;z-index:2}
+.feed{overflow:hidden;margin:-9px 14px 0;padding-bottom:14px}
+.receipt{background:#FFFDF8;color:#171615;font-family:var(--mono);font-size:16px;line-height:1.45;padding:28px 18px 26px;position:relative;
+  filter:drop-shadow(0 10px 18px rgba(0,0,0,.35));
+  -webkit-mask:linear-gradient(#000 0 0) top/100% calc(100% - 10px) no-repeat,conic-gradient(from 135deg at 50% 0,#000 90deg,#0000 0) bottom/16px 10px repeat-x;
+  mask:linear-gradient(#000 0 0) top/100% calc(100% - 10px) no-repeat,conic-gradient(from 135deg at 50% 0,#000 90deg,#0000 0) bottom/16px 10px repeat-x}
+.r-head{text-align:center;border-bottom:2px dashed #171615;padding-bottom:14px;margin-bottom:12px}
+.r-head strong{display:block;font-family:var(--sans);font-weight:900;font-size:28px;letter-spacing:-.02em}
+.r-head span{display:block;font-size:14px;text-transform:uppercase;letter-spacing:.06em}
+.r-list{list-style:none;margin:0;padding:0}
+.r-list li{display:grid;grid-template-columns:1fr auto;gap:12px;padding:6px 0;align-items:baseline}
+.r-list li span:last-child{white-space:nowrap;font-weight:500}
+.r-sum{border-top:2px dashed #171615;margin-top:10px;padding-top:10px}
+.r-sum div{display:grid;grid-template-columns:1fr auto;gap:12px;padding:4px 0}
+.r-tot{font-weight:600;font-size:19px}
+.r-who{margin-top:16px;border-top:2px solid #171615;border-bottom:2px solid #171615;padding:10px 0;display:flex;justify-content:space-between;align-items:baseline}
+.r-who b{font-family:var(--sans);font-weight:900;font-size:40px;line-height:1;letter-spacing:-.02em}
+.r-note{font-size:14px;margin:14px 0 0;text-align:center}
+
+/* ---------- barre ---------- */
+.bars{list-style:none;padding:0;margin:0;display:grid;gap:18px}
+.bar-top{display:flex;justify-content:space-between;gap:16px;align-items:baseline}
+.bar-top span:first-child{font-weight:600}
+.bar-top .pct{font-family:var(--mono);font-weight:600;white-space:nowrap}
+.track{height:22px;margin-top:6px;background:rgba(23,22,21,.07)}
+@media (prefers-color-scheme:dark){.track{background:rgba(239,233,220,.08)}}
+.fill{height:100%;background:var(--ink);transform-origin:left;width:var(--w)}
+.bar-eur{font-family:var(--mono);font-size:14px;color:var(--ink-2);margin-top:4px}
+
+/* ---------- grafico ---------- */
+.chart-box{margin:56px 0 0;border-top:2px solid var(--ink);padding-top:20px}
+.chart-box h3{font-size:22px;font-weight:800;margin:0 0 4px;letter-spacing:-.01em}
+.chart-box .sub{margin:0 0 20px;color:var(--ink-2);font-size:16px}
+.chart{position:relative;height:240px;margin-left:44px;margin-right:6px}
+.chart svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.grid-l{stroke:var(--rule);stroke-width:1}
+.line{fill:none;stroke:var(--terra);stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+@media (prefers-color-scheme:dark){.line{stroke:#E0835C}}
+.brk{stroke:var(--ink-2);stroke-width:1;stroke-dasharray:3 4}
+.yl{position:absolute;left:-44px;width:38px;text-align:right;font-family:var(--mono);font-size:13px;color:var(--ink-2);transform:translateY(-50%)}
+.xl{display:flex;justify-content:space-between;margin:10px 6px 0 44px;font-family:var(--mono);font-size:13px;color:var(--ink-2)}
+.pt{position:absolute;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--terra);transform:translate(-50%,-50%)}
+.pt-l{position:absolute;font-family:var(--mono);font-size:13px;font-weight:600;white-space:nowrap;transform:translate(-50%,-150%);background:var(--bg);padding:0 3px}
+.brk-l{position:absolute;bottom:4px;font-family:var(--mono);font-size:12px;color:var(--ink-2);transform:translateX(6px);white-space:nowrap}
+
+/* ---------- governi: linea della metro ---------- */
+.on-ocra{background:var(--ocra);color:var(--nero);--focus:var(--nero)}
+.on-ocra .lead{color:#2B2720}
+.metro{list-style:none;margin:8px 0 32px;padding:0;position:relative}
+.stop:not(:last-child)::before{content:"";position:absolute;left:15px;top:20px;height:100%;width:8px;background:var(--nero);transform-origin:top}
+.stop{position:relative;padding:0 0 26px 56px;min-height:64px}
+.stop:last-child{padding-bottom:0}
+.dot{position:absolute;left:3px;top:4px;width:32px;height:32px;border-radius:50%;background:var(--carta-2);box-shadow:inset 0 0 0 7px var(--nero)}
+.stop h3{margin:0;font-size:22px;font-weight:800;line-height:1.15;letter-spacing:-.01em}
+.stop p{margin:2px 0 0;font-family:var(--mono);font-size:14px}
+.stop.now .dot{background:var(--nero);box-shadow:inset 0 0 0 7px var(--nero),0 0 0 4px var(--carta-2)}
+.stop.now .dot::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:3px solid var(--nero)}
+.stop.now h3::after{content:"in carica";margin-left:10px;font-family:var(--mono);font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;background:var(--nero);color:var(--carta);padding:3px 7px;vertical-align:3px}
+.gov-card{background:var(--carta-2);color:var(--nero)}
+.gov-head{background:var(--nero);color:var(--carta);padding:14px 16px;display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
+.gov-head h3{margin:0;font-size:22px;font-weight:800}
+.gov-head span{font-family:var(--mono);font-size:14px}
+.gov-body{padding:18px 16px 20px}
+.gov-nums{display:grid;gap:18px;margin:0 0 18px}
+.gov-nums dt{font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:.03em}
+.gov-nums dd{margin:2px 0 0;font-weight:850;font-variation-settings:"wdth" 82;font-size:clamp(2rem,9vw,2.6rem);line-height:1.05;letter-spacing:-.02em}
+.gov-nums dd small{font-size:16px;font-weight:500;font-variation-settings:"wdth" 100;letter-spacing:0;display:block;margin-top:2px;color:#4B463F}
+.arrow{display:inline-block;margin:0 .15em;color:#4B463F;font-weight:500}
+.caveat{border-left:6px solid var(--terra);padding:4px 0 4px 14px;margin:0 0 18px;font-size:18px;font-weight:600}
+.gov-foot{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;justify-content:space-between}
+
+/* ---------- livello e link ---------- */
+.lvl{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:14px}
+.lvl b{display:inline-grid;place-items:center;min-width:36px;height:28px;padding:0 6px;border:2px solid currentColor;font-weight:600}
+.lvl.v1 b{background:var(--nero);color:var(--carta-2);border-color:var(--nero)}
+.lnk{display:inline-flex;align-items:center;gap:8px;min-height:48px;font-weight:700;text-decoration:underline}
+.lnk svg{width:18px;height:18px;flex:none}
+
+/* ---------- promesse ---------- */
+.cards{display:grid;gap:20px}
+.card{background:var(--surface);box-shadow:inset 0 0 0 2px var(--ink);display:flex;flex-direction:column}
+.card-head{background:var(--ink);color:var(--bg);padding:12px 16px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
+.card-head strong{font-size:16px;text-transform:uppercase;letter-spacing:.03em}
+.card-head span{font-family:var(--mono);font-size:13px}
+.card-body{padding:18px 16px 8px;display:flex;flex-direction:column;flex:1}
+.card h3{margin:0 0 14px;font-size:20px;font-weight:800;line-height:1.2;letter-spacing:-.01em;text-wrap:pretty}
+.card blockquote{margin:0 0 18px;padding:0 0 0 14px;border-left:6px solid var(--ocra);font-size:18px;line-height:1.45}
+.card dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0 0 14px;font-size:16px}
+.card dt{font-family:var(--mono);font-size:14px;color:var(--ink-2);padding-top:2px}
+.card dd{margin:0}
+.card-links{margin-top:auto;border-top:1px solid var(--rule);display:flex;flex-wrap:wrap;gap:0 20px}
+.fn{font-size:15px;color:var(--ink-2);margin:18px 0 0}
+
+/* ---------- progetto aperto ---------- */
+.open{background:var(--terra);color:var(--su-terra);--focus:var(--su-terra)}
+.open .sign{background:var(--su-terra);color:var(--nero)}
+.open h2{max-width:14em}
+.steps{list-style:none;padding:0;margin:0 0 28px;display:grid;gap:16px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:56px 1fr;gap:14px;align-items:center;font-size:18px}
+.steps i{width:56px;height:56px;border-radius:50%;background:var(--su-terra);color:var(--terra);display:grid;place-items:center}
+.steps i svg{width:26px;height:26px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 20px;font-weight:800;text-decoration:none;font-size:17px;transition:transform .2s var(--ease)}
+.btn:hover{transform:translateY(-2px)}
+.btn-a{background:var(--su-terra);color:var(--nero)}
+.btn-b{box-shadow:inset 0 0 0 2px var(--su-terra);color:var(--su-terra)}
+.btn svg{width:20px;height:20px}
+
+/* ---------- piede ---------- */
+.foot{background:var(--nero);color:var(--carta);padding:40px 0 32px;--focus:var(--carta)}
+.foot .logo-mark{background:var(--carta)}
+.foot p{color:#CFC7B8;max-width:34em}
+.foot-nav{display:grid;grid-template-columns:1fr 1fr;gap:0 16px;list-style:none;padding:0;margin:24px 0}
+.foot-nav a{display:flex;align-items:center;min-height:48px;text-decoration:none;border-bottom:1px solid #3A3733;font-weight:600}
+.foot small{font-family:var(--mono);font-size:13px;color:#A59D8F;display:block;line-height:1.6}
+
+/* ---------- barra in basso (mobile) ---------- */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--nero);color:var(--carta);padding-bottom:env(safe-area-inset-bottom);
+  display:grid;grid-template-columns:repeat(5,1fr);border-top:4px solid var(--ocra)}
+.dock a,.dock button{all:unset;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;height:var(--nav-h);font-size:13px;font-weight:600;position:relative;text-align:center}
+.dock svg{width:24px;height:24px}
+.dock a[aria-current="true"]::before{content:"";position:absolute;top:0;left:30%;right:30%;height:4px;background:var(--carta)}
+.dock a:focus-visible,.dock button:focus-visible{outline:3px solid var(--carta);outline-offset:-5px}
+.sheet-bg{position:fixed;inset:0;background:rgba(10,9,8,.55);z-index:50;opacity:0;pointer-events:none;transition:opacity .3s}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:51;background:var(--carta-2);color:var(--nero);padding:10px var(--gutter) calc(20px + env(safe-area-inset-bottom));
+  transform:translateY(105%);transition:transform .38s var(--ease);visibility:hidden;max-height:85vh;overflow:auto}
+.sheet.open{transform:none;visibility:visible}
+.sheet-bg.open{opacity:1;pointer-events:auto}
+.grab{width:44px;height:5px;border-radius:3px;background:#B9B1A2;margin:0 auto 12px}
+.sheet-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.sheet-top strong{font-size:22px;font-weight:800}
+.x{all:unset;cursor:pointer;width:48px;height:48px;display:grid;place-items:center}
+.x:focus-visible{outline:3px solid var(--nero)}
+.x svg{width:24px;height:24px}
+.lines{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.lines a{display:flex;align-items:center;gap:10px;min-height:56px;padding:0 12px;background:var(--carta);text-decoration:none;font-weight:700;font-size:17px}
+.lines a b{font-family:var(--mono);font-size:13px;width:28px;height:28px;display:grid;place-items:center;background:var(--nero);color:var(--carta);flex:none}
+.lines li:nth-child(3n+1) a b{background:var(--ocra);color:var(--nero)}
+.lines li:nth-child(3n+2) a b{background:var(--terra);color:var(--su-terra)}
+.lines li:nth-child(3n) a b{background:var(--salvia);color:var(--nero)}
+@media (prefers-reduced-motion:reduce){.sheet,.sheet-bg{transition:none}}
+
+/* ---------- animazioni (solo con html.motion) ---------- */
+.motion .rv{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.motion .rv.in{opacity:1;transform:none}
+.motion .tile i{transform:scale(0) rotate(-30deg);transition:transform .9s var(--ease)}
+.motion .poster.in .tile i{transform:none}
+.motion .poster .tile:nth-child(2) i{transition-delay:.08s}.motion .poster .tile:nth-child(3) i{transition-delay:.16s}
+.motion .poster .tile:nth-child(4) i{transition-delay:.24s}.motion .poster .tile:nth-child(5) i{transition-delay:.32s}
+.motion .poster .tile:nth-child(6) i{transition-delay:.4s}.motion .poster .tile:nth-child(7) i{transition-delay:.48s}
+.motion .poster .tile:nth-child(8) i{transition-delay:.56s}.motion .poster .tile:nth-child(9) i{transition-delay:.64s}
+.motion .t8 i{transform:scaleY(0);transform-origin:bottom}
+.motion .t5 i{transform:scaleX(0);transform-origin:left}
+.motion .receipt{clip-path:inset(0 0 100% 0);transform:translateY(-12px)}
+.motion .printer.in .receipt{clip-path:inset(0 0 0 0);transform:none;transition:clip-path 2.2s steps(20,end),transform 2.2s steps(20,end)}
+.motion .r-list li,.motion .r-sum,.motion .r-who{opacity:0}
+.motion .printer.in .r-list li,.motion .printer.in .r-sum,.motion .printer.in .r-who{opacity:1;transition:opacity .2s;transition-delay:calc(var(--i,0)*.16s + .35s)}
+.motion .fill{transform:scaleX(0)}
+.motion .bars.in .fill{transform:none;transition:transform 1.1s var(--ease);transition-delay:calc(var(--i,0)*.09s)}
+.motion .chart svg{clip-path:inset(0 100% 0 0)}
+.motion .chart.in svg{clip-path:inset(0 0 0 0);transition:clip-path 2s var(--ease)}
+.motion .pt,.motion .pt-l{opacity:0}
+.motion .chart.in .pt,.motion .chart.in .pt-l{opacity:1;transition:opacity .4s 1.6s}
+.motion .stop::before{transform:scaleY(0)}
+.motion .metro.in .stop::before{transform:none;transition:transform .5s var(--ease);transition-delay:calc(var(--i,0)*.25s + .35s)}
+.motion .stop>*{opacity:0}
+.motion .metro.in .stop>*{opacity:1;transition:opacity .4s,transform .4s var(--ease);transition-delay:calc(var(--i,0)*.25s + .2s)}
+.motion .metro.in .stop.now .dot::after{animation:ring 2.4s var(--ease) 1.6s 3}
+@keyframes ring{0%{transform:scale(1);opacity:1}100%{transform:scale(1.9);opacity:0}}
+
+/* ---------- desktop ---------- */
+@media (min-width:640px){
+  :root{--gutter:28px}
+  .stats{grid-template-columns:repeat(4,1fr)}
+  .s-debt,.s-int{grid-column:auto}
+  .s-int{min-height:132px}
+  .s-debt .n{font-size:clamp(2rem,4.6vw,2.8rem)}
+  .cards{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .steps li{grid-template-columns:1fr;align-items:start}
+  .foot-nav{grid-template-columns:repeat(4,1fr)}
+}
+@media (min-width:960px){
+  :root{--gutter:40px}
+  body{padding-bottom:0}
+  .dock,.sheet,.sheet-bg{display:none}
+  .top{position:sticky;top:0;z-index:30}
+  .tagline{display:none}
+  .topnav{display:flex;list-style:none;margin:0;padding:0;gap:2px}
+  .topnav a{display:flex;align-items:center;min-height:48px;padding:0 12px;text-decoration:none;font-weight:600;font-size:16px;position:relative}
+  .topnav a::after{content:"";position:absolute;left:12px;right:12px;bottom:6px;height:3px;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform .25s var(--ease)}
+  .topnav a:hover::after,.topnav a[aria-current="true"]::after{transform:none}
+  section{padding:80px 0 88px;scroll-margin-top:64px}
+  .hero{padding-top:56px}
+  .hero-grid{display:grid;grid-template-columns:7fr 5fr;grid-template-areas:"text poster" "fig fig";column-gap:56px;align-items:start}
+  .h-text{grid-area:text}
+  .h-fig{grid-area:fig;display:grid;grid-template-columns:auto 1fr;column-gap:48px;align-items:end;margin-top:16px}
+  .h-fig .figure-eyebrow{grid-column:1/-1}
+  .h-fig .big{margin-bottom:0}
+  .h-fig .hero-row{margin:0 0 14px}
+  .poster{grid-area:poster;grid-template-columns:repeat(3,1fr);gap:6px;margin:8px 0 0}
+  .xl-only{display:block}
+  .hero-row{margin-bottom:40px}
+  .stats{margin-top:8px}
+  .split{display:grid;grid-template-columns:5fr 6fr;gap:64px;align-items:start}
+  .printer{margin:0}
+  .metro{display:grid;grid-template-columns:repeat(5,1fr);margin:24px 0 40px}
+  .stop:not(:last-child)::before{left:16px;top:12px;width:100%;height:8px;transform-origin:left}
+  .motion .stop::before{transform:scaleX(0)}
+  .spesa-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+  .spesa-grid .chart-box{margin:0}
+  .stop{padding:56px 16px 0 0}
+  .dot{left:0;top:0}
+  .stop.now h3::after{display:block;width:max-content;margin:8px 0 0}
+  .gov-body{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:24px}
+  .gov-nums{margin:0}
+  .gov-side{display:flex;flex-direction:column;justify-content:space-between;gap:16px}
+  .chart{height:300px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Vai al contenuto</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-spesa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5a4.5 4.5 0 1 0 0 7M7 11h6M7 13.5h6"/></symbol>
+  <symbol id="i-governi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M2 12h20"/><circle cx="5" cy="12" r="2.6" fill="currentColor"/><circle cx="12" cy="12" r="2.6" fill="currentColor"/><circle cx="19" cy="12" r="3.4" fill="none"/></symbol>
+  <symbol id="i-promesse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="miter"><path d="M3 4h18v12H10l-5 4v-4H3z"/></symbol>
+  <symbol id="i-misure" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="8" width="20" height="8"/><path d="M6 8v4M10 8v3M14 8v4M18 8v3"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7.5" height="7.5"/><rect x="13.5" y="3" width="7.5" height="7.5"/><rect x="3" y="13.5" width="7.5" height="7.5"/><circle cx="17.25" cy="17.25" r="3.9"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 5l14 14M19 5L5 19"/></symbol>
+  <symbol id="i-out" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 5h10v10M19 5L6 18"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 21V4h12l-2 4 2 4H5"/></symbol>
+  <symbol id="i-arc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="3" y="4" width="18" height="5"/><path d="M5 9v11h14V9M10 13h4"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 3"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M4 12.5l5 5L20 6.5"/></symbol>
+  <symbol id="i-hand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 20l4-4M14 4l6 6-9 9-6-6z"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#main" aria-label="Paghi Tu, inizio pagina"><span class="logo-mark" aria-hidden="true"><i></i></span>Paghi Tu</a>
+    <p class="tagline">Apartitico<br>con le fonti</p>
+    <nav aria-label="Principale">
+      <ul class="topnav">
+        <li><a href="#spesa" data-spy="spesa">Spesa</a></li>
+        <li><a href="#governi" data-spy="governi">Governi</a></li>
+        <li><a href="/leggi-di-bilancio">Leggi di bilancio</a></li>
+        <li><a href="#promesse" data-spy="promesse">Promesse</a></li>
+        <li><a href="/misure">Misure</a></li>
+        <li><a href="/archivio">Archivio</a></li>
+        <li><a href="/metodo">Metodo</a></li>
+        <li><a href="/fonti">Fonti</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" aria-labelledby="h-hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="h-text">
+        <p class="kicker">Conti pubblici · 2025</p>
+        <h1 id="h-hero">Quanto spende lo Stato con i nostri soldi?</h1>
+      </div>
+      <div class="poster" aria-hidden="true" data-io>
+        <div class="tile t1"><i></i></div><div class="tile t2"><i></i></div><div class="tile t3"><i></i></div>
+        <div class="tile t4"><i></i></div><div class="tile t5"><i></i></div><div class="tile t6"><i></i></div>
+        <div class="tile t7 xl-only"><i></i></div><div class="tile t8 xl-only"><i></i></div><div class="tile t9 xl-only"><i></i></div>
+      </div>
+      <div class="h-fig">
+        <p class="figure-eyebrow">Per ogni residente, nel 2025</p>
+        <p class="big tab"><span data-count="19633">19.633</span><small>€</small></p>
+        <div class="hero-row">
+          <div class="coin" aria-hidden="true"><strong class="tab"><span data-count="54">54</span> €</strong><em>al giorno</em></div>
+          <p>spesi da Stato, regioni, comuni ed enti di previdenza. <strong>Sono 54 € al giorno</strong> per ciascuno di noi.</p>
+        </div>
+      </div>
+    </div>
+
+    <ul class="stats">
+      <li class="stat s-in rv"><h3>Entrate</h3><span class="n tab"><span data-count="18450">18.450</span> €</span><p>a testa, tra tasse e contributi</p></li>
+      <li class="stat s-gap rv"><h3>Disavanzo</h3><span class="n tab"><span data-count="1183">1.183</span> €</span><p>per residente: la spesa oltre le entrate</p></li>
+      <li class="stat s-int rv"><h3>Interessi sul debito</h3><span class="n tab"><span data-count="1479">1.479</span> €</span><p>per residente</p></li>
+      <li class="stat s-debt rv"><h3>Debito pubblico</h3><span class="n tab"><span data-count="54304">54.304</span> €</span><p>per residente: 3.201 miliardi in tutto. Fine agosto 2026, dato provvisorio.</p></li>
+    </ul>
+    <p class="src">Fonte: Eurostat (conti 2025) e Banca d'Italia (debito).</p>
+  </div>
+</section>
+
+<section class="dark" id="scontrino" aria-labelledby="h-scontrino">
+  <div class="wrap split">
+    <div>
+      <div class="sign"><b>01</b><span>Lo scontrino</span><svg aria-hidden="true"><use href="#i-spesa"/></svg></div>
+      <h2 id="h-scontrino">Il conto di un anno, voce per voce</h2>
+      <p class="lead">Ecco la spesa pubblica del 2024 divisa per residente, come uno scontrino. Il dettaglio per voce arriva fino al 2024: per questo il totale è diverso da quello del 2025.</p>
+    </div>
+    <div class="printer" data-io>
+      <div class="slot" aria-hidden="true"></div>
+      <div class="feed">
+        <div class="receipt">
+          <div class="r-head"><strong>PAGHI TU</strong><span>Spesa pubblica 2024</span><span>per residente</span></div>
+          <ul class="r-list tab">
+            <li style="--i:0"><span>Vecchiaia e superstiti (soprattutto pensioni)</span><span>6.099 €</span></li>
+            <li style="--i:1"><span>Sanità</span><span>2.478 €</span></li>
+            <li style="--i:2"><span>Affari economici</span><span>1.906 €</span></li>
+            <li style="--i:3"><span>Altra protezione sociale</span><span>1.841 €</span></li>
+            <li style="--i:4"><span>Istruzione</span><span>1.513 €</span></li>
+            <li style="--i:5"><span>Interessi e altre spese sul debito pubblico</span><span>1.489 €</span></li>
+            <li style="--i:6"><span>Altri servizi generali</span><span>1.401 €</span></li>
+            <li style="--i:7"><span>Tutto il resto</span><span>2.086 €</span></li>
+          </ul>
+          <div class="r-sum tab" style="--i:8">
+            <div class="r-tot"><span>TOTALE</span><span>18.813 €</span></div>
+            <div><span>di cui oltre le entrate</span><span>1.269 €</span></div>
+          </div>
+          <div class="r-who" style="--i:9"><span>Chi paga:</span><b>TU</b></div>
+          <p class="r-note">Popolazione media 2024: 59,0 milioni</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="spesa" aria-labelledby="h-spesa">
+  <div class="wrap">
+    <div class="sign"><b>02</b><span>Spesa</span><svg aria-hidden="true"><use href="#i-misure"/></svg></div>
+    <h2 id="h-spesa">Dove vanno i soldi</h2>
+    <p class="lead">Ogni barra è la quota sul totale della spesa pubblica 2024. Le pensioni da sole valgono quasi un terzo.</p>
+    <div class="spesa-grid">
+    <div>
+    <ul class="bars" data-io>
+      <li style="--i:0"><div class="bar-top"><span>Vecchiaia e superstiti</span><span class="pct">32,4%</span></div><div class="track"><div class="fill" style="--w:100%"></div></div><div class="bar-eur">6.099 € a testa</div></li>
+      <li style="--i:1"><div class="bar-top"><span>Sanità</span><span class="pct">13,2%</span></div><div class="track"><div class="fill" style="--w:40.7%"></div></div><div class="bar-eur">2.478 € a testa</div></li>
+      <li style="--i:2"><div class="bar-top"><span>Affari economici</span><span class="pct">10,1%</span></div><div class="track"><div class="fill" style="--w:31.2%"></div></div><div class="bar-eur">1.906 € a testa</div></li>
+      <li style="--i:3"><div class="bar-top"><span>Altra protezione sociale</span><span class="pct">9,8%</span></div><div class="track"><div class="fill" style="--w:30.2%"></div></div><div class="bar-eur">1.841 € a testa</div></li>
+      <li style="--i:4"><div class="bar-top"><span>Istruzione</span><span class="pct">8,0%</span></div><div class="track"><div class="fill" style="--w:24.8%"></div></div><div class="bar-eur">1.513 € a testa</div></li>
+      <li style="--i:5"><div class="bar-top"><span>Interessi sul debito</span><span class="pct">7,9%</span></div><div class="track"><div class="fill" style="--w:24.4%"></div></div><div class="bar-eur">1.489 € a testa</div></li>
+      <li style="--i:6"><div class="bar-top"><span>Altri servizi generali</span><span class="pct">7,4%</span></div><div class="track"><div class="fill" style="--w:22.8%"></div></div><div class="bar-eur">1.401 € a testa</div></li>
+      <li style="--i:7"><div class="bar-top"><span>Tutto il resto</span><span class="pct">11,1%</span></div><div class="track"><div class="fill" style="--w:34.2%"></div></div><div class="bar-eur">2.086 € a testa · difesa, ordine pubblico, ambiente, casa, cultura</div></li>
+    </ul>
+    <p class="src">Fonte: Eurostat, spesa delle amministrazioni pubbliche per funzione (COFOG), 2024.</p>
+    </div>
+
+    <figure class="chart-box" aria-labelledby="h-chart">
+      <h3 id="h-chart">La spesa pubblica in % del PIL</h3>
+      <p class="sub">Dal 1995 al 2025. Per ogni 100 € prodotti in Italia, quanti ne spende il settore pubblico.</p>
+      <div class="chart" data-io role="img" aria-label="Linea della spesa pubblica in percentuale del PIL: 51,4% nel 1995, minimo 46,4% nel 2000, massimo 56,9% nel 2020, 51,1% nel 2025.">
+        <span class="yl" style="top:7.14%">57%</span>
+        <span class="yl" style="top:35.71%">53%</span>
+        <span class="yl" style="top:64.29%">49%</span>
+        <span class="yl" style="top:92.86%">45%</span>
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <line class="grid-l" x1="0" x2="100" y1="7.14" y2="7.14" vector-effect="non-scaling-stroke"/>
+          <line class="grid-l" x1="0" x2="100" y1="35.71" y2="35.71" vector-effect="non-scaling-stroke"/>
+          <line class="grid-l" x1="0" x2="100" y1="64.29" y2="64.29" vector-effect="non-scaling-stroke"/>
+          <line class="grid-l" x1="0" x2="100" y1="92.86" y2="92.86" vector-effect="non-scaling-stroke"/>
+          <line class="brk" x1="50" x2="50" y1="0" y2="100" vector-effect="non-scaling-stroke"/>
+          <path class="line" vector-effect="non-scaling-stroke" d="M0.00 47.14 L3.33 47.86 L6.67 62.14 L10.00 71.43 L13.33 77.86 L16.67 82.86 L20.00 77.86 L23.33 82.14 L26.67 78.57 L30.00 80.71 L33.33 77.86 L36.67 74.29 L40.00 81.43 L43.33 72.86 L46.67 49.29 L50.00 57.86 L53.33 63.57 L56.67 52.86 L60.00 50.00 L63.33 51.43 L66.67 55.00 L70.00 63.57 L73.33 65.00 L76.67 68.57 L80.00 67.14 L83.33 7.86 L86.67 12.86 L90.00 22.14 L93.33 31.43 L96.67 55.00 L100.00 49.29"/>
+        </svg>
+        <span class="pt" style="left:16.67%;top:82.86%"></span><span class="pt-l" style="left:16.67%;top:82.86%">46,4%</span>
+        <span class="pt" style="left:83.33%;top:7.86%"></span><span class="pt-l" style="left:83.33%;top:7.86%">56,9%</span>
+        <span class="pt" style="left:100%;top:49.29%"></span><span class="pt-l" style="left:96%;top:49.29%">51,1%</span>
+        <span class="brk-l" style="left:50%">2010: nuova serie</span>
+      </div>
+      <div class="xl" aria-hidden="true"><span>1995</span><span>2005</span><span>2015</span><span>2025</span></div>
+      <figcaption class="src">Fonte: Eurostat, conti principali delle amministrazioni pubbliche (gov_10a_main). Dal 2010 Eurostat segnala un'interruzione di serie.</figcaption>
+    </figure>
+    </div>
+  </div>
+</section>
+
+<section class="on-ocra" id="governi" aria-labelledby="h-governi">
+  <div class="wrap">
+    <div class="sign"><b>03</b><span>Governi</span><svg aria-hidden="true"><use href="#i-governi"/></svg></div>
+    <h2 id="h-governi">La linea dei governi</h2>
+    <p class="lead">Gli ultimi cinque governi, come fermate di una linea, in ordine di data. Nessuna classifica: ogni fermata ha i suoi conti.</p>
+    <ol class="metro" data-io>
+      <li class="stop" style="--i:0"><span class="dot" aria-hidden="true"></span><h3>Gentiloni</h3><p>dal 12 dic 2016<br>al 1 giu 2018<br>536 giorni</p></li>
+      <li class="stop" style="--i:1"><span class="dot" aria-hidden="true"></span><h3>Conte I</h3><p>dal 1 giu 2018<br>al 5 set 2019<br>461 giorni</p></li>
+      <li class="stop" style="--i:2"><span class="dot" aria-hidden="true"></span><h3>Conte II</h3><p>dal 5 set 2019<br>al 13 feb 2021<br>527 giorni</p></li>
+      <li class="stop" style="--i:3"><span class="dot" aria-hidden="true"></span><h3>Draghi</h3><p>dal 13 feb 2021<br>al 22 ott 2022<br>616 giorni</p></li>
+      <li class="stop now" style="--i:4"><span class="dot" aria-hidden="true"></span><h3>Meloni</h3><p>dal 22 ott 2022<br>1.460 giorni finora</p></li>
+    </ol>
+
+    <article class="gov-card rv" aria-labelledby="h-meloni">
+      <div class="gov-head"><h3 id="h-meloni">Governo Meloni</h3><span>Giurato il 22 ottobre 2022 · in carica</span></div>
+      <div class="gov-body">
+        <dl class="gov-nums">
+          <div><dt>Debito nel mandato</dt><dd class="tab">+454,1 mld €<small>finora</small></dd></div>
+          <div><dt>Debito / PIL</dt><dd class="tab">146,1%<span class="arrow" aria-label="diventa">→</span>136,7%<small>dall'inizio del mandato all'ultimo dato</small></dd></div>
+        </dl>
+        <div class="gov-side">
+          <p class="caveat">Questi numeri non dicono di chi è il merito o la colpa.</p>
+          <div class="gov-foot">
+            <span class="lvl"><b>V2</b>una parte del dato viene da fonte secondaria</span>
+            <a class="lnk" href="/governi">Tutti i governi <svg aria-hidden="true"><use href="#i-out"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="promesse" aria-labelledby="h-promesse">
+  <div class="wrap">
+    <div class="sign"><b>04</b><span>Promesse 2027</span><svg aria-hidden="true"><use href="#i-promesse"/></svg></div>
+    <h2 id="h-promesse">Cosa promettono, con le loro parole</h2>
+    <p class="lead">Due coalizioni diverse, due proposte sulla stessa imposta: la cedolare secca sugli affitti a canone concordato. In ordine di data.</p>
+    <div class="cards">
+      <article class="card rv">
+        <div class="card-head"><strong>Centrodestra · Noi Moderati</strong><span>C27-NM-002</span></div>
+        <div class="card-body">
+          <h3>Cedolare secca al 5% per le locazioni a lungo termine a canone concordato.</h3>
+          <blockquote>«nella prossima legge di bilancio proporremo di fissare una cedolare secca del 5% per chi sceglie di mettere il proprio immobile sul mercato degli affitti a lungo termine e a canone concordato.»</blockquote>
+          <dl>
+            <dt>Chi</dt><dd>Noi Moderati (sito ufficiale del partito)</dd>
+            <dt>Quando</dt><dd>5 ottobre 2026</dd>
+            <dt>Fonte</dt><dd>Sito ufficiale</dd>
+            <dt>Costo</dt><dd>non dichiarato</dd>
+            <dt>Verifica</dt><dd><span class="lvl v1"><b>V1</b>letto sulla fonte primaria</span></dd>
+          </dl>
+          <div class="card-links">
+            <a class="lnk" href="https://noimoderati.it/news-e-media/66" rel="noopener">Fonte <svg aria-hidden="true"><use href="#i-out"/></svg></a>
+            <a class="lnk" href="http://web.archive.org/web/20261006215705/https://www.noimoderati.it/news-e-media/66" rel="noopener">Copia archiviata <svg aria-hidden="true"><use href="#i-arc"/></svg></a>
+            <a class="lnk" href="https://github.com/Z3roS4n/paghi-tu/issues/new?template=correzione.yml">Segnala un errore <svg aria-hidden="true"><use href="#i-flag"/></svg></a>
+          </div>
+        </div>
+      </article>
+      <article class="card rv">
+        <div class="card-head"><strong>Centrosinistra · Alleanza Verdi e Sinistra</strong><span>C27-AVS-012</span></div>
+        <div class="card-body">
+          <h3>Cedolare secca al 5% (invece del 10%) per chi affitta a canone concordato per almeno quattro anni a studenti fuori sede, giovani coppie e lavoratori under 35.</h3>
+          <blockquote>«Proponiamo una cedolare secca al 5%, al posto del 10% di oggi, per chi affitta a canone concordato»</blockquote>
+          <dl>
+            <dt>Chi</dt><dd>Alleanza Verdi e Sinistra (proposta ufficiale sulla piattaforma Decidiamo)</dd>
+            <dt>Quando</dt><dd>11 ottobre 2026</dd>
+            <dt>Fonte</dt><dd>Sito ufficiale</dd>
+            <dt>Costo</dt><dd>non dichiarato</dd>
+            <dt>Verifica</dt><dd><span class="lvl v1"><b>V1</b>letto sulla fonte primaria</span></dd>
+          </dl>
+          <div class="card-links">
+            <a class="lnk" href="https://decidiamo.com/processes/luoghi-che-chiamiamo-casa/f/53/proposals/2010" rel="noopener">Fonte <svg aria-hidden="true"><use href="#i-out"/></svg></a>
+            <a class="lnk" href="https://github.com/Z3roS4n/paghi-tu/issues/new?template=correzione.yml">Segnala un errore <svg aria-hidden="true"><use href="#i-flag"/></svg></a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <p class="fn">Le coalizioni per le politiche 2027 non sono ancora formalizzate (dato al 20 ottobre 2026). Stessa scheda, stessi colori per tutti.</p>
+  </div>
+</section>
+
+<section class="open" aria-labelledby="h-open">
+  <div class="wrap">
+    <div class="sign"><b>05</b><span>Progetto aperto</span><svg aria-hidden="true"><use href="#i-code"/></svg></div>
+    <h2 id="h-open">L'AI aggiorna, chiunque può correggere</h2>
+    <ol class="steps">
+      <li class="rv"><i aria-hidden="true"><svg><use href="#i-bolt"/></svg></i><span>L'AI raccoglie i dati dalle fonti ufficiali e li tiene aggiornati.</span></li>
+      <li class="rv"><i aria-hidden="true"><svg><use href="#i-check"/></svg></i><span>Ogni dato porta il suo livello di verifica e il link per controllarlo.</span></li>
+      <li class="rv"><i aria-hidden="true"><svg><use href="#i-hand"/></svg></i><span>Trovi un errore? Segnalalo: ogni correzione resta pubblica.</span></li>
+    </ol>
+    <div class="btns">
+      <a class="btn btn-a" href="/correzioni"><svg aria-hidden="true"><use href="#i-flag"/></svg>Correzioni</a>
+      <a class="btn btn-b" href="https://github.com/Z3roS4n/paghi-tu" rel="noopener"><svg aria-hidden="true"><use href="#i-code"/></svg>Codice e dati su GitHub</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <a class="logo" href="#main"><span class="logo-mark" aria-hidden="true"><i></i></span>Paghi Tu</a>
+    <p>Paghi Tu non esprime giudizi. Mostra cosa dicono i documenti ufficiali, con il link per controllare.</p>
+    <ul class="foot-nav">
+      <li><a href="#spesa">Spesa</a></li><li><a href="#governi">Governi</a></li>
+      <li><a href="/leggi-di-bilancio">Leggi di bilancio</a></li><li><a href="#promesse">Promesse</a></li>
+      <li><a href="/misure">Misure</a></li><li><a href="/archivio">Archivio</a></li>
+      <li><a href="/metodo">Metodo</a></li><li><a href="/fonti">Fonti</a></li>
+      <li><a href="/correzioni">Correzioni</a></li><li><a href="/chi-siamo">Chi siamo</a></li>
+      <li><a href="/note-legali">Note legali</a></li><li><a href="https://github.com/Z3roS4n/paghi-tu" rel="noopener">GitHub</a></li>
+    </ul>
+    <small>paghitu.it · sito apartitico, senza pubblicità<br>Dati: Eurostat, Banca d'Italia, ISTAT, Camera dei deputati, siti ufficiali dei partiti</small>
+  </div>
+</footer>
+
+<nav class="dock" aria-label="Navigazione rapida">
+  <a href="#spesa" data-spy="spesa"><svg aria-hidden="true"><use href="#i-spesa"/></svg>Spesa</a>
+  <a href="#governi" data-spy="governi"><svg aria-hidden="true"><use href="#i-governi"/></svg>Governi</a>
+  <a href="#promesse" data-spy="promesse"><svg aria-hidden="true"><use href="#i-promesse"/></svg>Promesse</a>
+  <a href="/misure"><svg aria-hidden="true"><use href="#i-misure"/></svg>Misure</a>
+  <button type="button" aria-expanded="false" aria-controls="sheet" id="menu-btn"><svg aria-hidden="true"><use href="#i-menu"/></svg>Menu</button>
+</nav>
+<div class="sheet-bg" id="sheet-bg"></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-t">
+  <div class="grab" aria-hidden="true"></div>
+  <div class="sheet-top"><strong id="sheet-t">Tutte le sezioni</strong><button class="x" type="button" id="sheet-x" aria-label="Chiudi il menu"><svg aria-hidden="true"><use href="#i-x"/></svg></button></div>
+  <ul class="lines">
+    <li><a href="#spesa"><b>1</b>Spesa</a></li>
+    <li><a href="#governi"><b>2</b>Governi</a></li>
+    <li><a href="/leggi-di-bilancio"><b>3</b>Leggi di bilancio</a></li>
+    <li><a href="#promesse"><b>4</b>Promesse</a></li>
+    <li><a href="/misure"><b>5</b>Misure</a></li>
+    <li><a href="/archivio"><b>6</b>Archivio</a></li>
+    <li><a href="/metodo"><b>7</b>Metodo</a></li>
+    <li><a href="/fonti"><b>8</b>Fonti</a></li>
+  </ul>
+</div>
+
+<script>
+(() => {
+  const root = document.documentElement;
+  const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const fmt = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+
+  const sheet = document.getElementById('sheet'), bg = document.getElementById('sheet-bg'), btn = document.getElementById('menu-btn');
+  const setSheet = open => {
+    sheet.classList.toggle('open', open); bg.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', String(open));
+    if (open) document.getElementById('sheet-x').focus(); else btn.focus({preventScroll:true});
+  };
+  btn.addEventListener('click', () => setSheet(true));
+  bg.addEventListener('click', () => setSheet(false));
+  document.getElementById('sheet-x').addEventListener('click', () => setSheet(false));
+  sheet.addEventListener('click', e => { if (e.target.closest('a')) setSheet(false); });
+  addEventListener('keydown', e => { if (e.key === 'Escape' && sheet.classList.contains('open')) setSheet(false); });
+
+  const spy = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      document.querySelectorAll('[data-spy]').forEach(a => a.setAttribute('aria-current', String(a.dataset.spy === en.target.id)));
+    });
+  }, {rootMargin:'-45% 0px -50% 0px'});
+  ['spesa','governi','promesse'].forEach(id => spy.observe(document.getElementById(id)));
+
+  if (still || !('IntersectionObserver' in window)) return;
+  root.classList.add('motion');
+
+  const count = el => {
+    const end = +el.dataset.count, t0 = performance.now(), d = end > 1000 ? 1400 : 900;
+    const step = t => {
+      const p = Math.min(1, (t - t0) / d), e = 1 - Math.pow(1 - p, 4);
+      el.textContent = fmt(Math.round(end * e));
+      if (p < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  };
+  const counters = document.querySelectorAll('[data-count]');
+  counters.forEach(el => el.textContent = '0');
+
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      en.target.classList.add('in');
+      en.target.querySelectorAll('[data-count]').forEach(count);
+      if (en.target.dataset.count) count(en.target);
+      io.unobserve(en.target);
+    });
+  }, {threshold:.2});
+  document.querySelectorAll('[data-io], .rv').forEach(el => io.observe(el));
+  counters.forEach(el => { if (!el.closest('.rv,[data-io]')) io.observe(el); });
+
+})();
+</script>
+</body>
+</html>
