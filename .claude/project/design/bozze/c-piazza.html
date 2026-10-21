@@ -1,508 +1,264 @@
 <!doctype html>
 <!--
-  Bozza C «PIAZZA» — Paghi Tu. I conti pubblici raccontati come una chiacchierata in piazza: muri d'intonaco,
-  travertino, terracotta, la tenda a righe della bottega, l'insegna dipinta a mano e lo scontrino del bar.
-  Palette: intonaco #F2E6D6 · travertino #FBF5EC · scontrino #FFFDF7 · inchiostro #2A1F18 / #5A4636 ·
-  terracotta #A9481F (testo #9C421C) · ocra #C9922E (solo decoro) · bottega scura #3A2A20. Scuro: #1C1612 / #E8936A.
-  Font (Google): Fraunces (titoli, asse SOFT morbido), Figtree (testo, 17 px), Courier Prime (scontrino).
-  Mobile: barra in basso a portata di pollice con Spesa, Governi, Promesse, Misure + «Altro» (foglio che sale dal
-  basso con le altre 4 voci e le correzioni): sono le quattro domande da cui si parte, il resto è consultazione.
-  Bersagli ≥ 48 px, grafico che si «sfoglia» col dito, niente scroll orizzontale, prefers-reduced-motion rispettato.
+  Bozza C, «Piazza». La più vicina a un'app: si apre su piazza Montecitorio incisa da Giuseppe Vasi nel 1752,
+  poi lo scontrino della spesa di un anno, il grafico da sfogliare col dito, le schede delle promesse.
+  Caratteri: Bricolage Grotesque per titoli e cifre, Figtree per il testo, Courier Prime solo nello scontrino.
+  Palette: ardesia chiara #ECEEEE, superfici #F8F9F9, inchiostro #1F2427, un solo accento terracotta #A4461F
+  (scuro #E9875C). Regola delle forme: schede e immagini 16 px, bottoni e etichette a pillola, scontrino dritto.
+  Mobile: barra in basso con Spesa, Governi, Promesse, Misure e Altro (foglio dal basso). Bersagli da 48 px.
 -->
 <html lang="it">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Paghi Tu</title>
-<meta name="description" content="Quanto spende lo Stato con i nostri soldi? Conti pubblici italiani per residente, governi, promesse elettorali 2027.">
-<meta name="theme-color" content="#F2E6D6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#1C1612" media="(prefers-color-scheme: dark)">
+<meta name="description" content="Quanto spende lo Stato con i nostri soldi? Conti pubblici italiani per residente, governi, promesse per le politiche 2027.">
+<meta name="theme-color" content="#ECEEEE" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14181A" media="(prefers-color-scheme: dark)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Figtree:ital,wght@0,400..800;1,400..600&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..800,0..100;1,9..144,300..800,0..100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Courier+Prime:wght@400;700&family=Figtree:ital,wght@0,400..800;1,400..600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
 <style>
 :root{
-  --intonaco:#F2E6D6;
-  --travertino:#FBF5EC;
-  --pietra:#E7D7C2;
-  --filetto:#D9C3A6;
-  --scontrino:#FFFDF7;
-  --ink:#2A1F18;
-  --ink-2:#5A4636;
-  --ink-3:#6B5747;
-  --terra:#A9481F;
-  --terra-testo:#9C421C;
-  --terra-tenue:#EBC9B2;
-  --ocra:#C9922E;
-  --bottega:#3A2A20;
-  --bottega-ink:#F2E6D6;
-  --bottega-acc:#E8B07A;
-  --ombra:0 1px 0 rgba(58,42,32,.06), 0 10px 30px -12px rgba(58,42,32,.28);
-  --ombra-forte:0 2px 0 rgba(58,42,32,.05), 0 24px 48px -20px rgba(58,42,32,.45);
-  --r-s:12px; --r-m:20px; --r-l:28px;
-  --serif:"Fraunces", Georgia, "Times New Roman", serif;
-  --sans:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --mono:"Courier Prime", "Courier New", monospace;
-  --nav-h:68px;
-  --gutter:16px;
+  --fondo:#ECEEEE; --sup:#F8F9F9; --sup-2:#E1E5E6; --ink:#1F2427; --ink-2:#465055; --ink-3:#5E686D; --filetto:#CDD3D5;
+  --acc:#A4461F; --acc-chiaro:#F3DDD2; --scuro:#232A2E; --scuro-ink:#EEF0F0;
+  --v2:#7A5300; --v2-fondo:#F2E7CF;
+  --ombra:0 1px 2px rgb(31 36 39 / .06), 0 12px 32px -16px rgb(31 36 39 / .28);
+  --r:16px;
+  --titoli:"Bricolage Grotesque", system-ui, sans-serif;
+  --testo:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --cassa:"Courier Prime", "Courier New", monospace;
+  --gutter:16px; --dock:64px;
   color-scheme:light dark;
 }
 @media (prefers-color-scheme: dark){
   :root{
-    --intonaco:#1C1612; --travertino:#261E18; --pietra:#30261E; --filetto:#46382C;
-    --ink:#F3E9DC; --ink-2:#CDBBA8; --ink-3:#B9A691;
-    --terra:#E8936A; --terra-testo:#E8936A; --terra-tenue:#4A2E20; --ocra:#D9A441;
-    --bottega:#120E0B; --bottega-ink:#F3E9DC; --bottega-acc:#E8B07A;
-    --ombra:0 1px 0 rgba(0,0,0,.3), 0 10px 30px -12px rgba(0,0,0,.6);
-    --ombra-forte:0 24px 48px -20px rgba(0,0,0,.8);
+    --fondo:#14181A; --sup:#1D2326; --sup-2:#262E32; --ink:#E9ECED; --ink-2:#B4BDC1; --ink-3:#939DA2; --filetto:#344045;
+    --acc:#E9875C; --acc-chiaro:#3D2A22; --scuro:#0F1213; --scuro-ink:#E9ECED;
+    --v2:#F2C66B; --v2-fondo:#3A2F17;
+    --ombra:0 1px 2px rgb(0 0 0 / .3), 0 12px 32px -16px rgb(0 0 0 / .7);
   }
 }
 *,*::before,*::after{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:80px}
-body{
-  margin:0;background:var(--intonaco);color:var(--ink);
-  font:400 17px/1.6 var(--sans);
-  padding-bottom:calc(var(--nav-h) + env(safe-area-inset-bottom) + 8px);
-  overflow-x:hidden;
-}
-body::before{
-  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
-  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .35  0 0 0 0 .24  0 0 0 0 .15  0 0 0 .09 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
-}
-@media (prefers-color-scheme: dark){ body::before{opacity:.35} }
-main,header,footer{position:relative;z-index:1}
-img,svg{display:block;max-width:100%}
-a{color:var(--terra-testo);text-underline-offset:3px;text-decoration-thickness:1.5px}
-a:hover{text-decoration-thickness:2.5px}
-:focus-visible{outline:3px solid var(--ocra);outline-offset:3px;border-radius:8px}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--fondo);color:var(--ink);font:400 17px/1.6 var(--testo);
+  padding-bottom:calc(var(--dock) + env(safe-area-inset-bottom) + 8px);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--acc);text-underline-offset:3px;text-decoration-thickness:1.5px}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:6px}
+p{margin:0}
 .wrap{max-width:1180px;margin:0 auto;padding:0 var(--gutter)}
-.tab{font-variant-numeric:tabular-nums}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-h1,h2,h3{text-wrap:balance;font-family:var(--serif);font-variation-settings:"SOFT" 100;font-weight:600;line-height:1.12;margin:0;letter-spacing:-.01em}
+.num{font-variant-numeric:tabular-nums}
+h1,h2,h3{font-family:var(--titoli);font-weight:700;margin:0;line-height:1.08;letter-spacing:-.02em;text-wrap:balance}
 
-/* ---------- testata ---------- */
-.testata{
-  position:sticky;top:0;z-index:30;
-  background:color-mix(in srgb, var(--intonaco) 88%, transparent);
-  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
-  transition:box-shadow .3s ease;
-}
-.testata.scrolled{box-shadow:0 1px 0 var(--filetto), 0 8px 20px -14px rgba(58,42,32,.4)}
-.testata .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
-.insegna{
-  display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);min-height:48px;
-}
-.insegna-targa{
-  font-family:var(--serif);font-style:italic;font-weight:700;font-size:21px;letter-spacing:.01em;
-  font-variation-settings:"SOFT" 100, "opsz" 72;
-  color:#FFF8EE;background:#A9481F;padding:5px 14px 6px;border-radius:10px;white-space:nowrap;
-  box-shadow:inset 0 0 0 2px #A9481F, inset 0 0 0 3.5px rgba(255,236,200,.75), 0 2px 0 rgba(58,42,32,.25);
-}
-.insegna small{font-size:13px;line-height:1.25;color:var(--ink-2);max-width:9.5em}
-.nav-top{display:none}
-.nav-top a{
-  color:var(--ink);text-decoration:none;font-weight:600;font-size:15.5px;
-  padding:10px 12px;border-radius:999px;min-height:44px;display:inline-flex;align-items:center;
-  transition:background .2s ease,color .2s ease;
-}
-.nav-top a:hover{background:var(--pietra)}
-.nav-top a[aria-current]{background:var(--ink);color:var(--intonaco)}
-.btn-fonti{
-  display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 14px;border-radius:999px;
-  border:1.5px solid var(--filetto);color:var(--ink);text-decoration:none;font-weight:600;font-size:15px;
-  background:var(--travertino);
-}
+/* testata */
+.testata{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--fondo) 90%, transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);transition:box-shadow .25s}
+.testata.staccata{box-shadow:0 1px 0 var(--filetto)}
+.testata .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px}
+.marchio{display:inline-flex;align-items:center;gap:8px;min-height:44px;text-decoration:none;color:var(--ink);font-family:var(--titoli);font-weight:800;font-size:22px;letter-spacing:-.02em}
+.marchio i{color:var(--acc);font-size:26px}
+.nav-alto{display:none}
+.nav-alto a{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border-radius:999px;text-decoration:none;color:var(--ink);font-weight:600;font-size:15px;transition:background .2s}
+.nav-alto a:hover{background:var(--sup-2)}
+.nav-alto a[aria-current]{background:var(--ink);color:var(--fondo)}
 
-/* tenda a righe della bottega */
-.tenda{
-  height:30px;position:relative;z-index:2;
-  background:repeating-linear-gradient(90deg,#A9481F 0 26px,#F6E8D4 26px 52px);
-  -webkit-mask:radial-gradient(13px 12px at 13px 0,#000 98%,transparent) 0 18px/26px 12px repeat-x, linear-gradient(#000,#000) 0 0/100% 18px no-repeat;
-  mask:radial-gradient(13px 12px at 13px 0,#000 98%,transparent) 0 18px/26px 12px repeat-x, linear-gradient(#000,#000) 0 0/100% 18px no-repeat;
-  transform-origin:top center;
-  filter:drop-shadow(0 3px 2px rgba(58,42,32,.2));
-}
-@media (prefers-color-scheme: dark){ .tenda{background:repeating-linear-gradient(90deg,#9C421C 0 26px,#D9C3A6 26px 52px);opacity:.9} }
+/* apertura */
+.apertura{padding:8px 0 28px}
+.copertina{margin:0;border-radius:var(--r);overflow:hidden;background:var(--sup-2)}
+.copertina img{width:100%;aspect-ratio:4/3;object-fit:cover}
+@media (prefers-color-scheme: dark){ .copertina img{filter:brightness(.82) contrast(1.05)} }
+.didascalia{font-size:13.5px;line-height:1.45;color:var(--ink-3);margin-top:8px}
+.scheda-cifra{position:relative;margin:-56px 10px 0;background:var(--sup);border-radius:var(--r);box-shadow:var(--ombra);padding:20px 18px 22px}
+.apertura h1{font-size:clamp(1.9rem,7.6vw,3.4rem)}
+.cifra{margin-top:14px;font-family:var(--titoli);font-weight:800;font-size:clamp(3.6rem,18vw,6.6rem);line-height:.9;letter-spacing:-.04em;display:flex;align-items:baseline;gap:.08em}
+.cifra small{font-size:.45em;color:var(--acc);letter-spacing:0}
+.sotto{margin-top:10px;color:var(--ink-2);font-size:17.5px;max-width:30em}
+.azioni{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.bottone{display:inline-flex;align-items:center;gap:8px;min-height:50px;padding:0 22px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;white-space:nowrap;transition:transform .15s, background .2s}
+.bottone.pieno{background:var(--acc);color:#fff}
+@media (prefers-color-scheme: dark){ .bottone.pieno{color:#1F1410} }
+.bottone.pieno:hover{filter:brightness(1.08)}
+.bottone.vuoto{border:1.5px solid var(--filetto);color:var(--ink);background:var(--sup)}
+.bottone:active{transform:scale(.97)}
 
-/* ---------- hero ---------- */
-.hero{padding-top:28px;padding-bottom:24px}
-.occhiello{
-  display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;
-  color:var(--terra-testo);
-}
-.occhiello::before{content:"";width:22px;height:2px;background:currentColor;border-radius:2px}
-.hero h1{font-size:clamp(2.15rem,9.2vw,4.4rem);margin:12px 0 20px;font-weight:600;font-variation-settings:"SOFT" 100,"opsz" 144}
-.hero h1 em{font-style:italic;color:var(--terra-testo);font-weight:500}
-.cifra{
-  background:var(--travertino);border-radius:var(--r-l);padding:22px 20px 20px;box-shadow:var(--ombra);
-  position:relative;overflow:hidden;
-}
-.cifra::after{
-  content:"";position:absolute;right:-40px;top:-40px;width:160px;height:160px;border-radius:50%;
-  background:radial-gradient(circle,rgba(201,146,46,.22),transparent 70%);
-}
-.cifra-num{
-  font-family:var(--serif);font-weight:700;font-variation-settings:"SOFT" 100,"opsz" 144;
-  font-size:clamp(3.4rem,17vw,6.6rem);line-height:.95;letter-spacing:-.03em;font-variant-numeric:lining-nums;
-  display:flex;align-items:baseline;gap:.12em;
-}
-.cifra-num .eur{font-size:.5em;color:var(--terra-testo);font-weight:600}
-.cifra p{margin:10px 0 0;font-size:17px;color:var(--ink-2);max-width:32em}
-.cifra p strong{color:var(--ink)}
-.cartellino{
-  margin-top:16px;display:inline-flex;align-items:center;gap:10px;
-  background:var(--ink);color:var(--intonaco);border-radius:10px 999px 999px 10px;padding:8px 18px 8px 12px;
-  font-weight:700;font-size:16px;transform:rotate(-1.5deg);position:relative;
-}
-.cartellino::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--intonaco);opacity:.9}
-.cartellino b{font-family:var(--serif);font-size:22px;font-variation-settings:"SOFT" 100}
+/* numeri chiave */
+.chiave{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.tessera{background:var(--sup);border-radius:var(--r);padding:14px 14px 15px;min-width:0}
+.tessera .l{font-size:14px;font-weight:600;color:var(--ink-2)}
+.tessera .v{display:block;font-family:var(--titoli);font-weight:700;font-size:clamp(1.5rem,6.4vw,2rem);line-height:1.15;letter-spacing:-.02em}
+.tessera .n{display:block;font-size:13.5px;color:var(--ink-3);line-height:1.35}
+.tessera:nth-child(3){grid-column:1/-1}
+.tessera.debito{grid-column:1/-1;background:var(--scuro);color:var(--scuro-ink)}
+.tessera.debito .l,.tessera.debito .n{color:color-mix(in srgb, var(--scuro-ink) 70%, var(--scuro))}
+.tessera.debito .v{font-size:clamp(2rem,9vw,2.8rem)}
+.fonte{font-size:13.5px;color:var(--ink-3);line-height:1.5;margin-top:10px}
 
-.voci{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
-.voce{
-  background:var(--travertino);border-radius:var(--r-m);padding:14px 14px 13px;box-shadow:var(--ombra);
-  display:flex;flex-direction:column;gap:2px;min-width:0;
-}
-.voce .lab{font-size:14px;line-height:1.3;color:var(--ink-2);font-weight:600}
-.voce .val{font-family:var(--serif);font-weight:700;font-size:clamp(1.45rem,6.4vw,1.9rem);line-height:1.15;font-variation-settings:"SOFT" 100;font-variant-numeric:lining-nums}
-.voce .nota{font-size:14px;color:var(--ink-3);line-height:1.35}
-.voce.largo{grid-column:1/-1;flex-direction:row;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:2px 12px}
-.voce.largo .lab{flex:1 1 100%}
-.voce.debito{grid-column:1/-1;background:var(--bottega);color:var(--bottega-ink)}
-.voce.debito .lab{color:var(--bottega-acc)}
-.voce.debito .nota{color:#D9C3A6}
-.voce.debito .val{font-size:clamp(1.9rem,8.5vw,2.6rem)}
-.fonte{font-size:14px;color:var(--ink-3);margin:12px 2px 0;line-height:1.45}
-.fonte b{font-weight:700;color:var(--ink-2)}
-
-.contatore{
-  margin-top:16px;border:1.5px dashed var(--filetto);border-radius:var(--r-m);padding:14px 16px;
-  display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;
-}
-.contatore .k{font-size:15px;color:var(--ink-2);flex:1 1 100%}
-.contatore .v{font-family:var(--serif);font-weight:700;font-size:26px;font-variation-settings:"SOFT" 100;color:var(--terra-testo)}
-.contatore .s{font-size:14px;color:var(--ink-3)}
-
-/* ---------- sezioni ---------- */
 section{padding:36px 0}
-.cartello{
-  display:inline-block;font-family:var(--serif);font-style:italic;font-weight:600;font-size:15px;
-  font-variation-settings:"SOFT" 100;color:var(--terra-testo);
-  border:1.5px solid currentColor;border-radius:999px;padding:3px 14px;margin-bottom:12px;background:var(--travertino);
-}
-.sez-titolo{font-size:clamp(1.85rem,7.4vw,2.9rem);margin-bottom:10px}
-.sez-intro{margin:0 0 20px;color:var(--ink-2);max-width:36em}
+.sez-h2{font-size:clamp(1.8rem,7vw,2.8rem)}
+.testo{margin-top:10px;color:var(--ink-2);max-width:34em}
 
 /* scontrino */
-.cassa{max-width:400px;margin:0 auto;position:relative}
-.fessura{
-  height:16px;border-radius:999px;background:linear-gradient(#1a130f,#3A2A20);margin:0 -10px;position:relative;z-index:2;
-  box-shadow:0 3px 0 rgba(255,255,255,.35) inset, 0 6px 12px -6px rgba(0,0,0,.5);
-}
-.carta{margin-top:-8px;overflow:hidden;padding:0 4px 18px}
-.scontrino{
-  background:var(--scontrino);color:#2A1F18;font-family:var(--mono);font-size:16px;line-height:1.45;
-  padding:26px 20px 30px;position:relative;box-shadow:var(--ombra-forte);
-  -webkit-mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/14px 100%;
-  mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/14px 100%;
-  padding-bottom:36px;
-}
-.scontrino .intest{text-align:center;border-bottom:1.5px dashed #BFA98E;padding-bottom:12px;margin-bottom:12px}
-.scontrino .intest strong{display:block;font-size:20px;letter-spacing:.14em}
-.scontrino .intest span{display:block;color:#6B5747;font-size:15px}
-.riga{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:end;padding:5px 0}
-.riga .n{position:relative;overflow:hidden}
-.riga .n::after{content:" ............................................................";color:#BFA98E;white-space:nowrap;position:absolute;padding-left:4px}
-.riga .p{white-space:nowrap;font-weight:700}
-.scontrino hr{border:0;border-top:1.5px dashed #BFA98E;margin:10px 0}
-.riga.tot{font-size:19px;font-weight:700}
-.riga.oltre{color:#9C421C}
-.chi-paga{text-align:center;margin-top:18px;position:relative}
-.timbro{
-  display:inline-block;font-family:var(--serif);font-weight:800;font-size:30px;letter-spacing:.04em;
-  color:#9C421C;border:3px solid #9C421C;border-radius:12px;padding:4px 18px;transform:rotate(-6deg);
-  font-variation-settings:"SOFT" 100;mix-blend-mode:multiply;
-}
-.timbro small{display:block;font-family:var(--mono);font-size:13px;font-weight:700;letter-spacing:.12em;margin-bottom:-2px}
-.scontrino .piede{margin-top:16px;text-align:center;color:#6B5747;font-size:14px;line-height:1.4}
+.cassa{max-width:380px;margin:22px auto 0}
+.fessura{height:14px;border-radius:999px;background:var(--scuro);margin:0 -8px;position:relative;z-index:2}
+.carta{margin-top:-7px;overflow:hidden;padding:0 6px 16px}
+.scontrino{background:#FFFEFA;color:#22201C;font:400 15.5px/1.5 var(--cassa);padding:22px 18px 34px;box-shadow:0 18px 30px -18px rgb(0 0 0 / .45);
+  -webkit-mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/14px 100%;mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/14px 100%}
+.scontrino .intest{text-align:center;border-bottom:1.5px dashed #A9A49A;padding-bottom:10px;margin-bottom:10px}
+.scontrino .intest b{display:block;font-size:19px;letter-spacing:.12em}
+.riga{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:end;padding:3px 0}
+.riga .n{overflow:hidden;position:relative}
+.riga .n::after{content:" ..................................................";position:absolute;white-space:nowrap;color:#A9A49A;padding-left:4px}
+.riga .p{font-weight:700;white-space:nowrap}
+.scontrino hr{border:0;border-top:1.5px dashed #A9A49A;margin:8px 0}
+.riga.tot{font-size:18px;font-weight:700}
+.scontrino .piede-s{margin-top:14px;text-align:center;font-size:13.5px;color:#5C574E}
 
-@media (max-width:400px){ .carta{padding:0 0 18px} .scontrino{padding-left:15px;padding-right:15px} .fessura{margin:0 -6px} }
-
-/* barre */
-.su100{
-  font-family:var(--serif);font-size:clamp(1.3rem,5.6vw,1.75rem);line-height:1.3;font-variation-settings:"SOFT" 100;
-  margin:0 0 18px;font-weight:500;
-}
-.su100 b{color:var(--terra-testo);font-weight:700}
-.barre{list-style:none;margin:0;padding:0;display:grid;gap:14px}
-.barra .top{display:flex;justify-content:space-between;gap:12px;align-items:baseline;font-size:16px;line-height:1.35}
-.barra .top span:first-child{font-weight:600}
-.barra .top span:last-child{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
-.barra .top small{display:block;font-weight:400;color:var(--ink-3);font-size:14px}
-.pista{height:14px;border-radius:999px;background:var(--pietra);margin-top:6px;overflow:hidden}
-.pista i{
-  display:block;height:100%;width:var(--w);border-radius:999px;background:var(--terra);
-  transform-origin:left center;
-}
-.barre-nota{font-size:14px;color:var(--ink-3);margin-top:14px}
+/* quote */
+.quote{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:12px}
+.quota{display:grid;grid-template-columns:4.6em 1fr;gap:12px;align-items:center}
+.quota b{white-space:nowrap;font-family:var(--titoli);font-size:28px;font-weight:800;letter-spacing:-.03em;color:var(--acc);line-height:1}
+.quota span{font-size:16px;line-height:1.35}
+.quota small{display:block;color:var(--ink-3);font-size:14px}
 
 /* grafico */
-.scheda{background:var(--travertino);border-radius:var(--r-l);padding:20px 18px;box-shadow:var(--ombra)}
-.grafico-testa{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;margin-bottom:14px}
-.grafico-testa h3{font-size:22px}
-.lettura{
-  margin-left:auto;text-align:right;
-  font-family:var(--serif);font-weight:700;font-size:30px;line-height:1;color:var(--terra-testo);
-  font-variation-settings:"SOFT" 100;font-variant-numeric:tabular-nums;
-}
-.lettura small{display:block;font-family:var(--sans);font-size:14px;color:var(--ink-3);font-weight:600;margin-bottom:4px;text-align:right}
-.grafico{position:relative;padding-left:38px;padding-bottom:28px}
-.area{position:relative;height:210px;touch-action:pan-y;cursor:crosshair;border-radius:6px}
+.carta-grafico{margin:22px 0 0;background:var(--sup);border-radius:var(--r);padding:18px 16px 16px}
+.grafico-testa{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-bottom:12px}
+.grafico-testa h3{font-family:var(--testo);font-size:15px;font-weight:700;letter-spacing:0}
+.lettura{text-align:right;font-family:var(--titoli);font-weight:800;font-size:32px;line-height:1;color:var(--acc);letter-spacing:-.02em}
+.lettura small{display:block;font-family:var(--testo);font-size:13px;font-weight:600;color:var(--ink-3);margin-bottom:4px;letter-spacing:0}
+.grafico{position:relative;padding:0 0 26px 32px}
+.area{position:relative;height:210px;touch-action:pan-y;cursor:crosshair}
 .area svg{width:100%;height:100%;overflow:visible}
-.area .linea{fill:none;stroke:var(--terra);stroke-width:2px;vector-effect:non-scaling-stroke;stroke-linejoin:round;stroke-linecap:round}
-.area .riemp{fill:var(--terra);opacity:.1}
-.area .griglia{stroke:var(--filetto);stroke-width:1px;vector-effect:non-scaling-stroke}
-.area .rottura{stroke:var(--ink-3);stroke-width:1px;vector-effect:non-scaling-stroke;stroke-dasharray:3 4}
-.disegno{clip-path:inset(0 0 0 0)}
-.ylab{position:absolute;left:-38px;width:32px;text-align:right;font-size:13px;color:var(--ink-3);transform:translateY(-50%);font-variant-numeric:tabular-nums}
-.xlab{position:absolute;bottom:-26px;font-size:13px;color:var(--ink-3);transform:translateX(-50%);font-variant-numeric:tabular-nums}
-.xlab:last-child{transform:translateX(-80%)}
-.punto{
-  position:absolute;width:14px;height:14px;border-radius:50%;background:var(--travertino);border:3px solid var(--terra);
-  transform:translate(-50%,-50%);pointer-events:none;transition:left .12s ease, top .12s ease;
-}
-.guida{position:absolute;top:0;bottom:0;width:0;border-left:1px solid var(--ink-3);opacity:.35;pointer-events:none;transition:left .12s ease}
-.etich{
-  position:absolute;font-size:13px;font-weight:700;color:var(--ink-2);background:var(--travertino);padding:0 4px;border-radius:4px;
-  transform:translate(-50%,-140%);white-space:nowrap;pointer-events:none;
-}
-.suggerimento{font-size:14px;color:var(--ink-3);margin:4px 0 0}
+.linea{fill:none;stroke:var(--acc);stroke-width:2px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
+.riemp{fill:var(--acc);opacity:.1}
+.griglia{stroke:var(--filetto);stroke-width:1px;vector-effect:non-scaling-stroke}
+.rottura{stroke:var(--ink-3);stroke-dasharray:3 4;stroke-width:1px;vector-effect:non-scaling-stroke}
+.ylab{position:absolute;left:-32px;width:26px;text-align:right;font-size:12.5px;color:var(--ink-3);transform:translateY(-50%)}
+.xlab{position:absolute;bottom:-24px;font-size:12.5px;color:var(--ink-3)}
+.punto{position:absolute;width:14px;height:14px;border-radius:50%;background:var(--sup);border:3px solid var(--acc);transform:translate(-50%,-50%);pointer-events:none}
+.guida{position:absolute;top:0;bottom:0;border-left:1px solid var(--ink-3);opacity:.35;pointer-events:none}
+.suggerimento{font-size:14px;color:var(--ink-3);margin-top:4px}
 
 /* governo */
-.governo{display:flex;flex-direction:column;gap:14px}
-.gov-testa{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
-.gov-testa h3{font-size:28px}
-.gov-testa p{margin:4px 0 0;color:var(--ink-2);font-size:16px}
-.stato{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:14px;color:var(--ink-2)}
-.stato::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--ocra);box-shadow:0 0 0 0 rgba(201,146,46,.6);animation:pulsa 2.4s ease-out infinite}
-@keyframes pulsa{0%{box-shadow:0 0 0 0 rgba(201,146,46,.55)}70%,100%{box-shadow:0 0 0 9px rgba(201,146,46,0)}}
-.livello{
-  flex:none;display:inline-flex;align-items:center;gap:6px;min-height:32px;padding:0 12px;border-radius:999px;
-  font-weight:800;font-size:14px;color:#7A4F0E;background:#F5E3BF;border:1.5px solid #E0C089;
-}
-@media (prefers-color-scheme: dark){ .livello{color:#F5D9A4;background:#3A2C15;border-color:#6B5226} }
-.gov-dati{display:grid;grid-template-columns:1fr;gap:10px}
-.gov-dato{background:var(--intonaco);border-radius:var(--r-m);padding:14px 16px}
-.gov-dato .lab{font-size:14px;color:var(--ink-2);font-weight:600}
-.gov-dato .val{font-family:var(--serif);font-weight:700;font-size:30px;font-variation-settings:"SOFT" 100;line-height:1.15}
-.gov-dato .nota{font-size:14px;color:var(--ink-3)}
-.freccia{display:flex;align-items:center;gap:8px;flex-wrap:nowrap;font-size:clamp(1.45rem,6.6vw,1.9rem)}
-.freccia span small{display:block;font-family:var(--sans);font-size:13px;color:var(--ink-3);font-weight:600}
-.freccia svg{width:34px;height:14px;color:var(--terra)}
-.avvertenza{
-  margin:0;padding:14px 16px;border-radius:var(--r-m);background:var(--terra-tenue);color:var(--ink);
-  font-family:var(--serif);font-style:italic;font-size:19px;line-height:1.4;font-variation-settings:"SOFT" 100;
-}
-@media (prefers-color-scheme: dark){ .avvertenza{color:#F3E9DC} }
-.link-freccia{
-  display:inline-flex;align-items:center;gap:8px;min-height:48px;font-weight:700;text-decoration:none;color:var(--terra-testo);
-}
-.link-freccia::after{content:"→";transition:transform .2s ease}
-.link-freccia:hover::after{transform:translateX(4px)}
+.governo{background:var(--sup);border-radius:var(--r);overflow:hidden;margin-top:22px}
+.governo img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:60% 60%}
+@media (prefers-color-scheme: dark){ .governo img{filter:brightness(.8)} }
+.governo .corpo{padding:18px 16px 8px}
+.gov-testa{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.gov-testa h3{font-size:26px}
+.gov-testa p{font-size:15px;color:var(--ink-2);margin-top:2px}
+.livello{flex:none;display:inline-flex;align-items:center;min-height:30px;padding:0 12px;border-radius:999px;font-size:13.5px;font-weight:700}
+.livello.v2{color:var(--v2);background:var(--v2-fondo)}
+.livello.v1{color:var(--ink);background:var(--sup-2)}
+.dati-gov{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}
+.dati-gov div{background:var(--fondo);border-radius:12px;padding:12px 14px}
+.dati-gov .v{display:block;font-family:var(--titoli);font-weight:700;font-size:clamp(1.3rem,5.4vw,1.75rem);line-height:1.15;letter-spacing:-.02em}
+.dati-gov .l{font-size:13.5px;color:var(--ink-2);line-height:1.35}
+.cautela{font-size:15.5px;color:var(--ink-2)}
+.vai{display:inline-flex;align-items:center;gap:8px;min-height:48px;font-weight:700;text-decoration:none}
+.vai i{transition:transform .2s}
+.vai:hover i{transform:translateX(3px)}
 
 /* promesse */
-.promesse{display:grid;gap:16px}
-.promessa{background:var(--travertino);border-radius:var(--r-l);padding:20px 18px 14px;box-shadow:var(--ombra);display:flex;flex-direction:column;gap:12px;position:relative}
-.promessa .chi{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.etichetta{
-  display:inline-flex;align-items:center;min-height:30px;padding:0 12px;border-radius:999px;font-size:14px;font-weight:700;
-  background:var(--pietra);color:var(--ink);
-}
-.etichetta.vuota{background:transparent;border:1.5px solid var(--filetto);color:var(--ink-2);font-weight:600}
-.promessa h3{font-size:22px;line-height:1.25;font-weight:600}
-.citazione{
-  margin:0;padding:12px 0 12px 16px;border-left:3px solid var(--ocra);
-  font-size:17px;line-height:1.55;color:var(--ink);
-}
-.citazione::before{content:"«"}
-.citazione::after{content:"»"}
-.meta{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin:0;font-size:15px}
-.meta dt{color:var(--ink-3);font-weight:600}
-.meta dd{margin:0;color:var(--ink)}
-.promessa .azioni{display:flex;flex-wrap:wrap;gap:6px 18px;border-top:1.5px dashed var(--filetto);padding-top:4px;margin-top:2px}
-.promessa .azioni a{min-height:48px;display:inline-flex;align-items:center;font-weight:700;font-size:15.5px}
-.promessa .azioni a.segnala{color:var(--ink-2)}
-.promessa .azioni a.segnala::before{content:"";width:16px;height:16px;margin-right:6px;background:currentColor;
-  -webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><path d='M5 21V4'/><path d='M5 4h11l-2 4 2 4H5'/></svg>") center/contain no-repeat;
-  mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><path d='M5 21V4'/><path d='M5 4h11l-2 4 2 4H5'/></svg>") center/contain no-repeat;}
+.promesse{display:grid;gap:14px;margin-top:22px}
+.promessa{background:var(--sup);border-radius:var(--r);padding:18px 16px 6px;display:flex;flex-direction:column;gap:10px}
+.promessa .testa{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.etichetta{display:inline-flex;align-items:center;min-height:30px;padding:0 12px;border-radius:999px;background:var(--sup-2);font-size:13.5px;font-weight:700}
+.promessa .testa .livello{margin-left:auto}
+.promessa h3{font-family:var(--testo);font-size:18px;font-weight:700;line-height:1.35;letter-spacing:0}
+.promessa blockquote{margin:0;font-size:16.5px;line-height:1.55;padding-left:14px;border-left:3px solid var(--acc)}
+.promessa .chi{font-size:14.5px;color:var(--ink-2)}
+.costo-box{background:var(--acc-chiaro);border-radius:12px;padding:12px 14px;font-size:15px;line-height:1.5}
+.promessa .link{display:flex;flex-wrap:wrap;gap:0 18px;border-top:1px solid var(--filetto)}
+.promessa .link a{display:inline-flex;align-items:center;gap:6px;min-height:48px;font-weight:700;font-size:15px;text-decoration:none}
+.promessa .link a.segnala{color:var(--ink-2)}
 
-/* progetto aperto */
-.aperto{
-  background:var(--bottega);color:var(--bottega-ink);border-radius:var(--r-l);padding:26px 20px;position:relative;overflow:hidden;
-}
-.aperto::before{
-  content:"";position:absolute;inset:0;opacity:.07;pointer-events:none;
-  background:repeating-linear-gradient(90deg,#F2E6D6 0 2px,transparent 2px 22px);
-}
-.aperto .cartello{background:transparent;color:var(--bottega-acc)}
-.aperto h2{font-size:clamp(1.7rem,7vw,2.5rem);color:var(--bottega-ink)}
-.aperto h2 em{color:var(--bottega-acc);font-weight:500}
-.passi{list-style:none;padding:0;margin:18px 0 20px;display:grid;gap:12px;counter-reset:p}
-.passi li{display:grid;grid-template-columns:36px 1fr;gap:12px;align-items:start;counter-increment:p;color:#E9DCCB}
-.passi li::before{
-  content:counter(p);width:36px;height:36px;border-radius:50%;display:grid;place-items:center;
-  font-family:var(--serif);font-weight:700;font-size:18px;background:rgba(232,176,122,.16);color:var(--bottega-acc);
-}
-.passi b{color:var(--bottega-ink)}
-.bottoni{display:flex;flex-wrap:wrap;gap:10px}
-.bottone{
-  display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:0 22px;border-radius:999px;
-  font-weight:700;text-decoration:none;font-size:16px;transition:transform .15s ease, background .2s ease;
-}
-.bottone:active{transform:scale(.97)}
-.bottone.pieno{background:#F2E6D6;color:#2A1F18}
-.bottone.pieno:hover{background:#FFF8EE}
-.bottone.vuoto{border:1.5px solid rgba(242,230,214,.5);color:#F2E6D6}
-.bottone.vuoto:hover{background:rgba(242,230,214,.1)}
+/* errori */
+.errori{background:var(--scuro);color:var(--scuro-ink);border-radius:var(--r);padding:24px 18px}
+.errori .testo{color:color-mix(in srgb, var(--scuro-ink) 76%, var(--scuro))}
+.errori .bottone.vuoto{background:transparent;border-color:color-mix(in srgb, var(--scuro-ink) 40%, transparent);color:var(--scuro-ink)}
+.errori .bottone.pieno{background:var(--scuro-ink);color:var(--scuro)}
 
-/* footer */
-.piede-sito{padding:36px 0 28px;border-top:1.5px solid var(--filetto);margin-top:20px}
-.piede-sito .righe{display:grid;gap:22px}
-.piede-sito p{margin:10px 0 0;color:var(--ink-2);font-size:15.5px;max-width:30em}
-.piede-sito nav ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
-.piede-sito nav a{display:flex;align-items:center;min-height:44px;color:var(--ink);text-decoration:none;font-weight:600}
-.piede-sito nav a:hover{color:var(--terra-testo)}
-.piede-sito .fine{margin-top:22px;font-size:14px;color:var(--ink-3)}
+/* piede */
+.piede{padding:12px 0 32px}
+.piede p{color:var(--ink-2);font-size:15px;margin-top:8px;max-width:32em}
+.piede ul{list-style:none;margin:14px 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+.piede ul a{display:flex;align-items:center;min-height:44px;color:var(--ink);text-decoration:none;font-weight:600}
+.crediti{font-size:13px;color:var(--ink-3);line-height:1.5}
 
-/* ---------- barra in basso (mobile) ---------- */
-.dock{
-  position:fixed;left:0;right:0;bottom:0;z-index:40;
-  padding:6px 8px calc(6px + env(safe-area-inset-bottom));
-  background:color-mix(in srgb, var(--travertino) 94%, transparent);
-  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
-  border-top:1.5px solid var(--filetto);
-  box-shadow:0 -10px 24px -18px rgba(58,42,32,.5);
-}
+/* dock */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:4px 8px env(safe-area-inset-bottom);background:color-mix(in srgb, var(--sup) 94%, transparent);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-top:1px solid var(--filetto)}
 .dock ul{list-style:none;margin:0 auto;padding:0;display:grid;grid-template-columns:repeat(5,1fr);max-width:520px}
-.dock a,.dock button{
-  appearance:none;border:0;background:none;font:inherit;color:var(--ink-2);cursor:pointer;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;
-  min-height:56px;width:100%;text-decoration:none;font-size:12.5px;font-weight:700;letter-spacing:.01em;
-  -webkit-tap-highlight-color:transparent;
-}
-.dock .ico{
-  width:52px;height:30px;border-radius:999px;display:grid;place-items:center;transition:background .25s ease, transform .2s ease;
-}
-.dock svg{width:23px;height:23px}
+.dock a,.dock button{appearance:none;background:none;border:0;font:700 12px var(--testo);color:var(--ink-2);width:100%;min-height:var(--dock);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-decoration:none;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.dock .ico{width:52px;height:30px;border-radius:999px;display:grid;place-items:center;font-size:22px;transition:background .25s, transform .15s}
 .dock a:active .ico,.dock button:active .ico{transform:scale(.9)}
-.dock [aria-current] {color:var(--ink)}
-.dock [aria-current] .ico{background:var(--terra-tenue);color:var(--terra-testo)}
-
-/* foglio «Altro» */
-.velo{position:fixed;inset:0;z-index:50;background:rgba(28,22,18,.45);opacity:0;pointer-events:none;transition:opacity .3s ease}
-.foglio{
-  position:fixed;left:0;right:0;bottom:0;z-index:51;max-width:560px;margin:0 auto;
-  background:var(--travertino);border-radius:26px 26px 0 0;padding:10px 16px calc(18px + env(safe-area-inset-bottom));
-  transform:translateY(105%);transition:transform .38s cubic-bezier(.2,.8,.2,1);box-shadow:0 -20px 40px -20px rgba(0,0,0,.4);
-  visibility:hidden;
-}
-.foglio .maniglia{width:44px;height:5px;border-radius:99px;background:var(--filetto);margin:0 auto 12px}
-.foglio h2{font-size:22px;margin:0 4px 6px}
+.dock [aria-current]{color:var(--ink)}
+.dock [aria-current] .ico{background:var(--acc-chiaro);color:var(--acc)}
+.velo{position:fixed;inset:0;z-index:30;background:rgb(15 18 19 / .45);opacity:0;pointer-events:none;transition:opacity .3s}
+.foglio{position:fixed;left:0;right:0;bottom:0;z-index:31;max-width:560px;margin:0 auto;background:var(--sup);border-radius:24px 24px 0 0;padding:10px 16px calc(16px + env(safe-area-inset-bottom));
+  transform:translateY(105%);visibility:hidden;transition:transform .38s cubic-bezier(.2,.8,.2,1), visibility 0s .38s}
+.maniglia{width:44px;height:5px;border-radius:99px;background:var(--filetto);margin:0 auto 10px}
+.foglio h2{font-size:22px;margin:0 4px 4px}
 .foglio ul{list-style:none;margin:0;padding:0}
-.foglio li a{
-  display:flex;justify-content:space-between;align-items:center;min-height:56px;padding:0 6px;
-  color:var(--ink);text-decoration:none;font-weight:600;font-size:17px;border-bottom:1.5px solid var(--pietra);
-}
-.foglio li a small{display:block;font-weight:400;font-size:14px;color:var(--ink-3)}
-.foglio li a::after{content:"→";color:var(--terra-testo);font-weight:700}
-.foglio .chiudi{
-  margin-top:12px;width:100%;min-height:50px;border-radius:999px;border:1.5px solid var(--filetto);background:transparent;
-  font:700 16px var(--sans);color:var(--ink);cursor:pointer;
-}
+.foglio a{display:flex;justify-content:space-between;align-items:center;min-height:56px;padding:0 4px;color:var(--ink);text-decoration:none;font-weight:600;border-bottom:1px solid var(--filetto)}
+.foglio a small{display:block;font-weight:400;font-size:14px;color:var(--ink-3)}
+.foglio a i{color:var(--acc)}
+.chiudi{margin-top:12px;width:100%;min-height:50px;border-radius:999px;border:1.5px solid var(--filetto);background:transparent;font:700 16px var(--testo);color:var(--ink);cursor:pointer}
 body.foglio-aperto .velo{opacity:1;pointer-events:auto}
-body.foglio-aperto .foglio{transform:none;visibility:visible}
+body.foglio-aperto .foglio{transform:none;visibility:visible;transition:transform .38s cubic-bezier(.2,.8,.2,1)}
 body.foglio-aperto{overflow:hidden}
 
-/* ---------- animazioni (solo con JS e movimento consentito) ---------- */
 @media (prefers-reduced-motion: no-preference){
-  .js .entra{opacity:0;transform:translateY(22px);transition:opacity .7s ease, transform .8s cubic-bezier(.2,.8,.2,1)}
+  .js .entra{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .7s cubic-bezier(.2,.8,.2,1)}
   .js .entra.visto{opacity:1;transform:none}
-  .js .entra[data-ritardo="1"]{transition-delay:.08s}
-  .js .entra[data-ritardo="2"]{transition-delay:.16s}
-  .js .entra[data-ritardo="3"]{transition-delay:.24s}
-  .js .entra[data-ritardo="4"]{transition-delay:.32s}
-  .js .tenda{animation:srotola .9s cubic-bezier(.3,1.4,.5,1) both .1s}
-  @keyframes srotola{from{transform:scaleY(0)}to{transform:scaleY(1)}}
-  .js .carta .scontrino{transform:translateY(-101%);transition:transform 2.2s cubic-bezier(.45,.05,.35,1)}
+  .js .entra.d1{transition-delay:.08s} .js .entra.d2{transition-delay:.16s}
+  .js .copertina img{transform:scale(1.06);transition:transform 1.6s cubic-bezier(.2,.8,.2,1)}
+  .js .copertina.visto img{transform:none}
+  .js .carta .scontrino{transform:translateY(-101%);transition:transform 2s cubic-bezier(.45,.05,.35,1)}
   .js .carta.visto .scontrino{transform:none}
-  .js .carta .timbro{opacity:0;transform:rotate(-6deg) scale(1.9)}
-  .js .carta.timbrato .timbro{opacity:1;transform:rotate(-6deg) scale(1);transition:transform .35s cubic-bezier(.3,1.6,.5,1), opacity .2s ease}
-  .js .barra .pista i{transform:scaleX(0);transition:transform 1.1s cubic-bezier(.2,.8,.2,1)}
-  .js .barre.visto .pista i{transform:scaleX(1)}
-  .js .barre.visto li:nth-child(2) i{transition-delay:.07s}
-  .js .barre.visto li:nth-child(3) i{transition-delay:.14s}
-  .js .barre.visto li:nth-child(4) i{transition-delay:.21s}
-  .js .barre.visto li:nth-child(5) i{transition-delay:.28s}
-  .js .barre.visto li:nth-child(6) i{transition-delay:.35s}
-  .js .barre.visto li:nth-child(7) i{transition-delay:.42s}
-  .js .barre.visto li:nth-child(8) i{transition-delay:.49s}
-  .js .disegno{clip-path:inset(0 100% 0 0);transition:clip-path 1.8s cubic-bezier(.45,.05,.35,1)}
-  .js .grafico.visto .disegno{clip-path:inset(-10px -10px -10px 0)}
-  .js .grafico .punto,.js .grafico .guida{opacity:0;transition:opacity .4s ease 1.6s, left .12s ease, top .12s ease}
+  .js .disegno{clip-path:inset(0 100% 0 0);transition:clip-path 1.6s cubic-bezier(.45,.05,.35,1)}
+  .js .grafico.visto .disegno{clip-path:inset(-10px)}
+  .js .grafico .punto{opacity:0;transition:opacity .3s 1.4s}
   .js .grafico.visto .punto{opacity:1}
-  .js .grafico.visto .guida{opacity:.35}
 }
-@media (prefers-reduced-motion: reduce){
-  html{scroll-behavior:auto}
-  .foglio,.velo{transition:none}
-  .stato::before{animation:none}
-}
+@media (prefers-reduced-motion: reduce){ .foglio,.velo{transition:none} }
 
-/* ---------- da tablet in su ---------- */
 @media (min-width:720px){
   :root{--gutter:28px}
-  .voci{grid-template-columns:repeat(3,1fr)}
-  .voce.largo{grid-column:auto;flex-direction:column;align-items:stretch}
-  .voce.largo .lab{flex:none}
-  .voce.debito{grid-column:auto / span 3}
-  .gov-dati{grid-template-columns:1fr 1fr}
+  .chiave{grid-template-columns:repeat(3,1fr)}
+  .tessera:nth-child(3){grid-column:auto}
   .promesse{grid-template-columns:1fr 1fr}
-  .area{height:260px}
-  .piede-sito .righe{grid-template-columns:1.2fr 1fr}
+  .errori{padding:36px 40px;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+  .piede-righe{display:grid;grid-template-columns:1fr 1fr;gap:28px}
 }
 @media (min-width:1000px){
   body{padding-bottom:0}
   .dock,.foglio,.velo{display:none}
-  .nav-top{display:flex;gap:2px}
-  .btn-fonti{display:none}
-  .testata .wrap{min-height:76px}
-  .hero{padding-top:52px;padding-bottom:40px}
-  .hero-griglia{display:grid;grid-template-columns:1.08fr .92fr;gap:40px;align-items:start}
-  .hero h1{margin-top:16px;margin-bottom:32px;max-width:15em;font-size:clamp(3rem,5.2vw,4.4rem)}
-  .hero-griglia{align-items:stretch}
-  .tempo .gov-dati{grid-template-columns:1fr}
-  .voci{grid-template-columns:1fr 1fr;margin-top:0}
-  .voce.debito,.voce.largo{grid-column:1/-1}
-  .voce.largo{flex-direction:row;align-items:baseline}
-  .voce.largo .lab{flex:1 1 100%}
-  section{padding:56px 0}
-  .conto{display:grid;grid-template-columns:420px 1fr;gap:56px;align-items:start}
-  .cassa{margin:0;position:sticky;top:100px}
-  .tempo{display:grid;grid-template-columns:1.25fr 1fr;gap:28px;align-items:stretch}
-  .scheda{padding:28px 28px 24px}
-  .aperto{padding:44px 48px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-  .aperto .passi{margin:0}
+  .nav-alto{display:flex;gap:2px}
+  .apertura{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;padding:20px 0 40px}
+  .apertura .copertina{order:2}
+  .apertura .copertina img{aspect-ratio:7/5}
+  .scheda-cifra{margin:0;box-shadow:none;background:transparent;padding:0}
+  .apertura .didascalia{order:3;grid-column:2;margin-top:-18px}
+  .chiave{grid-template-columns:repeat(3,1fr) 1.5fr}
+  .tessera.debito{grid-column:auto}
+  section{padding:52px 0}
+  .conto{display:grid;grid-template-columns:400px 1fr;gap:56px;align-items:start}
+  .conto .cassa{margin:0;position:sticky;top:90px}
+  .tempo{display:grid;grid-template-columns:1.3fr 1fr;gap:28px;align-items:start}
 }
+.rapporto{white-space:nowrap;font-size:clamp(1.25rem,4.6vw,1.6rem)!important}
+.rapporto i{font-size:.7em;vertical-align:.08em}
 </style>
 </head>
 <body>
 
 <header class="testata" id="testata">
   <div class="wrap">
-    <a class="insegna" href="#" aria-label="Paghi Tu, pagina iniziale">
-      <span class="insegna-targa">Paghi Tu</span>
-      <small>i conti pubblici, detti chiari</small>
-    </a>
-    <nav class="nav-top" aria-label="Sezioni">
+    <a class="marchio" href="#"><i class="ph-fill ph-receipt" aria-hidden="true"></i>Paghi Tu</a>
+    <nav class="nav-alto" aria-label="Sezioni">
       <a href="#spesa" aria-current="page">Spesa</a>
       <a href="#governi">Governi</a>
       <a href="#">Leggi di bilancio</a>
@@ -510,252 +266,159 @@ body.foglio-aperto{overflow:hidden}
       <a href="#">Misure</a>
       <a href="#">Archivio</a>
       <a href="#">Metodo</a>
-      <a href="#">Fonti</a>
     </nav>
-    <a class="btn-fonti" href="#">Fonti</a>
   </div>
 </header>
-<div class="tenda" aria-hidden="true"></div>
+<div id="sentinella" aria-hidden="true"></div>
 
 <main id="spesa">
-  <!-- HERO -->
-  <div class="wrap hero">
-    <span class="occhiello entra">Spesa pubblica 2025</span>
-    <h1 class="entra" data-ritardo="1">Quanto spende lo Stato <em>con i nostri soldi?</em></h1>
-    <div class="hero-griglia">
-      <div>
-        <div class="cifra entra" data-ritardo="2">
-          <div class="cifra-num tab" aria-label="19.633 euro"><span data-conta="19633">19.633</span><span class="eur">€</span></div>
-          <p>spesi nel 2025 da <strong>Stato, regioni, comuni ed enti di previdenza</strong> per ogni residente.</p>
-          <span class="cartellino">cioè <b><span data-conta="54">54</span> €</b> al giorno</span>
-        </div>
-        <div class="contatore entra" data-ritardo="3" aria-live="off">
-          <span class="k">In tutta Italia, da quando hai aperto questa pagina:</span>
-          <span class="v tab" id="corsa">circa 36.700 € al secondo</span>
-          <span class="s">stima: spesa 2025 divisa per i secondi dell'anno</span>
+  <div class="wrap">
+    <div class="apertura">
+      <figure class="copertina entra" style="margin:0">
+        <img src="img/vasi-piazza-montecitorio.jpg" width="1302" height="926" alt="Incisione del 1752: piazza di Monte Citorio con il palazzo al centro, carrozze e passanti sul selciato.">
+      </figure>
+      <div class="scheda-cifra entra d1">
+        <h1>Quanto spende lo Stato con i nostri soldi?</h1>
+        <p class="cifra num" aria-label="19.633 euro"><span data-conta="19633">19.633</span><small>€</small></p>
+        <p class="sotto">per ogni residente nel 2025, fra Stato, regioni, comuni ed enti di previdenza. Sono 54 € al giorno, neonati compresi.</p>
+        <div class="azioni">
+          <a class="bottone pieno" href="#conto">Vedi lo scontrino</a>
+          <a class="bottone vuoto" href="#">Il metodo</a>
         </div>
       </div>
-      <div>
-        <div class="voci">
-          <div class="voce entra" data-ritardo="1">
-            <span class="lab">Entrate</span>
-            <span class="val tab"><span data-conta="18450">18.450</span> €</span>
-            <span class="nota">a testa</span>
-          </div>
-          <div class="voce entra" data-ritardo="2">
-            <span class="lab">Disavanzo</span>
-            <span class="val tab"><span data-conta="1183">1.183</span> €</span>
-            <span class="nota">per residente</span>
-          </div>
-          <div class="voce largo entra" data-ritardo="3">
-            <span class="lab">Interessi sul debito</span>
-            <span class="val tab"><span data-conta="1479">1.479</span> €</span>
-            <span class="nota">per residente</span>
-          </div>
-          <div class="voce debito entra" data-ritardo="4">
-            <span class="lab">Debito pubblico, fine agosto 2026</span>
-            <span class="val tab"><span data-conta="54304">54.304</span> € a testa</span>
-            <span class="nota">3.201 miliardi in tutto · dato provvisorio</span>
-          </div>
-        </div>
-        <p class="fonte"><b>Fonte:</b> Eurostat (conti delle amministrazioni pubbliche) e Banca d'Italia (debito mensile). Dati scaricati il 21 ottobre 2026.</p>
-      </div>
+      <p class="didascalia">Piazza di Monte Citorio, incisa da Giuseppe Vasi nel 1752. Oggi nel palazzo c'è la Camera. Pubblico dominio.</p>
     </div>
+
+    <div class="chiave">
+      <div class="tessera entra"><span class="l">Entrate</span><span class="v num">18.450 €</span><span class="n">a testa, fra tasse e contributi</span></div>
+      <div class="tessera entra d1"><span class="l">Disavanzo</span><span class="v num">1.183 €</span><span class="n">quello che le entrate non coprono</span></div>
+      <div class="tessera entra d2"><span class="l">Interessi sul debito</span><span class="v num">1.479 €</span><span class="n">per residente</span></div>
+      <div class="tessera debito entra"><span class="l">Debito pubblico</span><span class="v num">54.304 € a testa</span><span class="n">3.201 miliardi a fine agosto 2026, dato provvisorio</span></div>
+    </div>
+    <p class="fonte">Eurostat per i conti 2025, Banca d'Italia per il debito.</p>
   </div>
 
-  <!-- SCONTRINO + BARRE -->
-  <section aria-labelledby="t-conto">
+  <section id="conto" aria-labelledby="t-conto">
     <div class="wrap conto">
-      <div>
-        <span class="cartello entra">Lo scontrino</span>
-        <h2 class="sez-titolo entra" id="t-conto">Il conto di un anno, voce per voce</h2>
-        <p class="sez-intro entra">Se la spesa pubblica fosse un conto al bar, per ognuno di noi sarebbe questo.</p>
-        <div class="cassa">
-          <div class="fessura" aria-hidden="true"></div>
-          <div class="carta" id="carta">
-            <div class="scontrino" role="table" aria-label="Spesa pubblica 2024 per residente, per voce">
-              <div class="intest">
-                <strong>PAGHI TU</strong>
-                <span>spesa pubblica 2024, per residente</span>
-              </div>
-              <div class="riga" role="row"><span class="n" role="cell">Vecchiaia e superstiti (soprattutto pensioni)</span><span class="p" role="cell">6.099 €</span></div>
-              <div class="riga" role="row"><span class="n" role="cell">Sanità</span><span class="p" role="cell">2.478 €</span></div>
-              <div class="riga" role="row"><span class="n" role="cell">Affari economici</span><span class="p" role="cell">1.906 €</span></div>
-              <div class="riga" role="row"><span class="n" role="cell">Altra protezione sociale</span><span class="p" role="cell">1.841 €</span></div>
-              <div class="riga" role="row"><span class="n" role="cell">Istruzione</span><span class="p" role="cell">1.513 €</span></div>
-              <div class="riga" role="row"><span class="n" role="cell">Interessi e altre spese sul debito pubblico</span><span class="p" role="cell">1.489 €</span></div>
-              <div class="riga" role="row"><span class="n" role="cell">Altri servizi generali</span><span class="p" role="cell">1.401 €</span></div>
-              <div class="riga" role="row"><span class="n" role="cell">Tutto il resto</span><span class="p" role="cell">2.086 €</span></div>
-              <hr>
-              <div class="riga tot" role="row"><span class="n" role="cell">TOTALE</span><span class="p" role="cell">18.813 €</span></div>
-              <div class="riga oltre" role="row"><span class="n" role="cell">di cui oltre le entrate</span><span class="p" role="cell">1.269 €</span></div>
-              <div class="chi-paga">
-                <span class="timbro"><small>CHI PAGA</small>TU</span>
-              </div>
-              <div class="piede">Popolazione media 2024: 59,0 milioni<br>Fonte: Eurostat, spesa per funzione (COFOG)</div>
-            </div>
+      <div class="cassa">
+        <div class="fessura" aria-hidden="true"></div>
+        <div class="carta" id="carta">
+          <div class="scontrino" role="table" aria-label="Spesa pubblica 2024 per residente, per voce">
+            <div class="intest"><b>PAGHI TU</b>spesa pubblica 2024<br>per residente</div>
+            <div class="riga" role="row"><span class="n" role="cell">Vecchiaia e superstiti</span><span class="p" role="cell">6.099 €</span></div>
+            <div class="riga" role="row"><span class="n" role="cell">Sanità</span><span class="p" role="cell">2.478 €</span></div>
+            <div class="riga" role="row"><span class="n" role="cell">Affari economici</span><span class="p" role="cell">1.906 €</span></div>
+            <div class="riga" role="row"><span class="n" role="cell">Altra protezione sociale</span><span class="p" role="cell">1.841 €</span></div>
+            <div class="riga" role="row"><span class="n" role="cell">Istruzione</span><span class="p" role="cell">1.513 €</span></div>
+            <div class="riga" role="row"><span class="n" role="cell">Interessi sul debito</span><span class="p" role="cell">1.489 €</span></div>
+            <div class="riga" role="row"><span class="n" role="cell">Altri servizi generali</span><span class="p" role="cell">1.401 €</span></div>
+            <div class="riga" role="row"><span class="n" role="cell">Tutto il resto</span><span class="p" role="cell">2.086 €</span></div>
+            <hr>
+            <div class="riga tot" role="row"><span class="n" role="cell">TOTALE</span><span class="p" role="cell">18.813 €</span></div>
+            <div class="riga" role="row"><span class="n" role="cell">oltre le entrate</span><span class="p" role="cell">1.269 €</span></div>
+            <p class="piede-s">Popolazione media 2024: 59,0 milioni<br>Eurostat, spesa per funzione (COFOG)</p>
           </div>
         </div>
       </div>
-
       <div>
-        <span class="cartello entra">Dove vanno i soldi</span>
-        <h2 class="sez-titolo entra">Su 100 € di spesa pubblica…</h2>
-        <p class="su100 entra">…<b>32&nbsp;€</b> vanno a vecchiaia e superstiti, soprattutto pensioni, <b>13&nbsp;€</b> alla sanità, <b>10&nbsp;€</b> agli affari economici.</p>
-        <ul class="barre" id="barre">
-          <li class="barra"><div class="top"><span>Vecchiaia e superstiti<small>soprattutto pensioni</small></span><span>32,4 %</span></div><div class="pista"><i style="--w:100%"></i></div></li>
-          <li class="barra"><div class="top"><span>Sanità</span><span>13,2 %</span></div><div class="pista"><i style="--w:40.7%"></i></div></li>
-          <li class="barra"><div class="top"><span>Affari economici</span><span>10,1 %</span></div><div class="pista"><i style="--w:31.2%"></i></div></li>
-          <li class="barra"><div class="top"><span>Altra protezione sociale</span><span>9,8 %</span></div><div class="pista"><i style="--w:30.2%"></i></div></li>
-          <li class="barra"><div class="top"><span>Istruzione</span><span>8,0 %</span></div><div class="pista"><i style="--w:24.8%"></i></div></li>
-          <li class="barra"><div class="top"><span>Interessi sul debito pubblico</span><span>7,9 %</span></div><div class="pista"><i style="--w:24.4%"></i></div></li>
-          <li class="barra"><div class="top"><span>Altri servizi generali</span><span>7,4 %</span></div><div class="pista"><i style="--w:23%"></i></div></li>
-          <li class="barra"><div class="top"><span>Tutto il resto</span><span>11,1 %</span></div><div class="pista"><i style="--w:34.2%"></i></div></li>
+        <h2 class="sez-h2 entra" id="t-conto">Lo scontrino del 2024</h2>
+        <p class="testo entra">Il dettaglio per voce più recente è quello del 2024, quindi il totale è 18.813 € per residente e non 19.633.</p>
+        <ul class="quote entra">
+          <li class="quota"><b class="num">32 €</b><span>su 100 vanno a vecchiaia e superstiti<small>soprattutto pensioni</small></span></li>
+          <li class="quota"><b class="num">13 €</b><span>alla sanità</span></li>
+          <li class="quota"><b class="num">10 €</b><span>agli affari economici<small>trasporti, energia, agricoltura, industria</small></span></li>
+          <li class="quota"><b class="num">8 €</b><span>agli interessi sul debito, quasi quanto all'istruzione</span></li>
         </ul>
-        <p class="barre-nota">Quote sul totale di 18.813 € per residente, 2024. Le barre sono in scala con la voce più grande.</p>
       </div>
     </div>
   </section>
 
-  <!-- NEL TEMPO + GOVERNO -->
-  <section aria-labelledby="t-tempo" id="governi">
+  <section id="governi" aria-labelledby="t-tempo">
     <div class="wrap">
-      <span class="cartello entra">Nel tempo</span>
-      <h2 class="sez-titolo entra" id="t-tempo">Trent'anni di spesa, governo dopo governo</h2>
-      <p class="sez-intro entra">Quanto pesa la spesa pubblica sulla ricchezza prodotta in un anno (il PIL).</p>
+      <h2 class="sez-h2 entra" id="t-tempo">Dal 1995 a oggi</h2>
+      <p class="testo entra">La spesa pubblica è sempre rimasta vicina alla metà del PIL. Il minimo è il 2000, con il 46,4%. Il massimo è il 2020, l'anno del Covid, con il 56,9%.</p>
       <div class="tempo">
-        <figure class="scheda entra" style="margin:0">
+        <figure class="carta-grafico entra">
           <div class="grafico-testa">
-            <h3>Spesa pubblica in % del PIL</h3>
-            <div class="lettura" aria-hidden="true"><small id="anno-letto">2025</small><span id="valore-letto">51,1 %</span></div>
+            <h3>Spesa pubblica, % del PIL</h3>
+            <div class="lettura num" aria-hidden="true"><small id="anno-letto">2025</small><span id="valore-letto">51,1%</span></div>
           </div>
           <div class="grafico" id="grafico">
             <div class="area" id="area" tabindex="0" role="slider" aria-label="Anno del grafico" aria-valuemin="1995" aria-valuemax="2025" aria-valuenow="2025" aria-valuetext="2025: 51,1 per cento del PIL">
-              <span class="ylab" style="top:21.4%">55</span>
-              <span class="ylab" style="top:57.1%">50</span>
-              <span class="ylab" style="top:92.9%">45</span>
+              <span class="ylab" style="top:21.4%">55</span><span class="ylab" style="top:57.1%">50</span><span class="ylab" style="top:92.9%">45</span>
               <svg viewBox="0 0 300 140" preserveAspectRatio="none" aria-hidden="true">
-                <line class="griglia" x1="0" x2="300" y1="30" y2="30"/>
-                <line class="griglia" x1="0" x2="300" y1="80" y2="80"/>
-                <line class="griglia" x1="0" x2="300" y1="130" y2="130"/>
+                <line class="griglia" x1="0" x2="300" y1="30" y2="30"/><line class="griglia" x1="0" x2="300" y1="80" y2="80"/><line class="griglia" x1="0" x2="300" y1="130" y2="130"/>
                 <line class="rottura" x1="150" x2="150" y1="0" y2="140"/>
                 <g class="disegno">
                   <path class="riemp" d="M0,66 L10,67 L20,87 L30,100 L40,109 L50,116 L60,109 L70,115 L80,110 L90,113 L100,109 L110,104 L120,114 L130,102 L140,69 L150,81 L160,89 L170,74 L180,70 L190,72 L200,77 L210,89 L220,91 L230,96 L240,94 L250,11 L260,18 L270,31 L280,44 L290,77 L300,69 L300,140 L0,140 Z"/>
                   <path class="linea" d="M0,66 L10,67 L20,87 L30,100 L40,109 L50,116 L60,109 L70,115 L80,110 L90,113 L100,109 L110,104 L120,114 L130,102 L140,69 L150,81 L160,89 L170,74 L180,70 L190,72 L200,77 L210,89 L220,91 L230,96 L240,94 L250,11 L260,18 L270,31 L280,44 L290,77 L300,69"/>
                 </g>
               </svg>
-              <span class="etich" style="left:83.3%;top:7.9%">2020 · 56,9 %</span>
               <span class="guida" id="guida" style="left:100%"></span>
               <span class="punto" id="punto" style="left:100%;top:49.3%"></span>
-              <span class="xlab" style="left:0%">1995</span>
-              <span class="xlab" style="left:50%">2010</span>
-              <span class="xlab" style="left:100%">2025</span>
+              <span class="xlab" style="left:0">1995</span><span class="xlab" style="left:50%;transform:translateX(-50%)">2010</span><span class="xlab" style="left:100%;transform:translateX(-100%)">2025</span>
             </div>
           </div>
           <p class="suggerimento" id="suggerimento">Scorri il dito sul grafico per leggere ogni anno.</p>
-          <figcaption class="fonte"><b>Fonte:</b> Eurostat gov_10a_main. La linea tratteggiata segna il 2010, anno in cui la fonte indica una rottura di serie. L'asse parte da 44 %, non da zero.</figcaption>
+          <figcaption class="fonte">Eurostat, gov_10a_main. La linea tratteggiata è il 2010, quando Eurostat cambia il modo di contare. L'asse parte dal 44%.</figcaption>
         </figure>
 
-        <article class="scheda governo entra" data-ritardo="1" aria-labelledby="t-meloni">
-          <div class="gov-testa">
-            <div>
-              <h3 id="t-meloni">Governo Meloni</h3>
-              <p>Giurato il 22 ottobre 2022</p>
-              <span class="stato">In carica</span>
+        <article class="governo entra d1" aria-labelledby="t-gov">
+          <img src="img/anesi-piazza-colonna.jpg" width="934" height="670" loading="lazy" alt="Incisione del 1750 circa di piazza Colonna: al centro la colonna di Marco Aurelio, a destra il lungo palazzo Chigi.">
+          <div class="corpo">
+            <div class="gov-testa">
+              <div><h3 id="t-gov">Governo Meloni</h3><p>In carica dal 22 ottobre 2022</p></div>
+              <span class="livello v2" title="Una parte del dato viene da una fonte secondaria">V2</span>
             </div>
-            <span class="livello" title="Almeno una parte del dato viene da una fonte secondaria affidabile">V2</span>
+            <div class="dati-gov">
+              <div><span class="v num">+454,1 mld €</span><span class="l">debito in più dall'inizio del mandato</span></div>
+              <div><span class="v num rapporto">146,1% <i class="ph ph-arrow-right" aria-label="poi"></i> 136,7%</span><span class="l">debito sul PIL, 2021 e 2025</span></div>
+            </div>
+            <p class="cautela">Il debito di un periodo dipende anche da decisioni prese prima e da fatti che nessun governo controlla. Qui c'è solo cosa è successo durante il mandato.</p>
+            <a class="vai" href="#">Tutti i governi <i class="ph-bold ph-arrow-right" aria-hidden="true"></i></a>
+            <p class="didascalia" style="margin-bottom:12px">Sopra: piazza Colonna verso il 1750, a destra Palazzo Chigi, oggi sede del governo. Statens Museum for Kunst, pubblico dominio.</p>
           </div>
-          <div class="gov-dati">
-            <div class="gov-dato">
-              <div class="lab">Debito nel mandato</div>
-              <div class="val tab">+454,1 mld €</div>
-              <div class="nota">finora</div>
-            </div>
-            <div class="gov-dato">
-              <div class="lab">Debito in % del PIL</div>
-              <div class="val freccia tab">
-                <span>146,1 %<small>2021</small></span>
-                <svg viewBox="0 0 34 14" aria-hidden="true"><path d="M1 7h29M24 1.5 31 7l-7 5.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                <span>136,7 %<small>2025</small></span>
-              </div>
-            </div>
-          </div>
-          <p class="avvertenza">Questi numeri non dicono di chi è il merito o la colpa: descrivono il periodo, non le cause.</p>
-          <a class="link-freccia" href="#">Tutti i governi, in ordine di data</a>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- PROMESSE -->
-  <section aria-labelledby="t-promesse" id="promesse">
+  <section id="promesse" aria-labelledby="t-prom">
     <div class="wrap">
-      <span class="cartello entra">Promesse 2027</span>
-      <h2 class="sez-titolo entra" id="t-promesse">Cosa promettono, con le loro parole</h2>
-      <p class="sez-intro entra">Riportiamo le frasi così come sono state dette, con la fonte. Non le giudichiamo: le contiamo e le verifichiamo.</p>
+      <h2 class="sez-h2 entra" id="t-prom">Le promesse per il 2027</h2>
+      <p class="testo entra">Ogni scheda riporta la frase esatta, chi l'ha detta, quando e dove. Se chi propone indica un costo all'anno, lo dividiamo per i residenti.</p>
       <div class="promesse">
         <article class="promessa entra">
-          <div class="chi">
-            <span class="etichetta">Forza Italia</span>
-            <span class="etichetta vuota">centrodestra</span>
-            <span class="livello" style="margin-left:auto" title="Almeno una parte del dato viene da una fonte secondaria affidabile">V2</span>
-          </div>
-          <h3>Aumento delle pensioni minime ad almeno 800-850 euro al mese con un intervento «mirato e selettivo», nella legge di bilancio 2027.</h3>
-          <blockquote class="citazione">Con un intervento mirato e selettivo possiamo portarle ad almeno 800/850 euro, con una spesa stimata in circa 1 miliardo di euro. Vanno adeguate subito al costo della vita.</blockquote>
-          <dl class="meta">
-            <dt>Chi</dt><dd>Alessandro Cattaneo, responsabile dei Dipartimenti di Forza Italia</dd>
-            <dt>Quando</dt><dd>10 settembre 2026</dd>
-            <dt>Fonte</dt><dd>Intervista</dd>
-            <dt>Costo</dt><dd>circa 1 miliardo di euro (indicato dal proponente)</dd>
-          </dl>
-          <div class="azioni">
-            <a href="https://www.fanpage.it/politica/pensioni-forza-italia-vuole-alzare-le-minime-a-850-euro-nella-legge-di-bilancio-2027/" rel="noopener noreferrer">Leggi la fonte</a>
-            <a class="segnala" href="https://github.com/Z3roS4n/paghi-tu/issues/new/choose" rel="noopener noreferrer">Segnala un errore</a>
-          </div>
+          <div class="testa"><span class="etichetta">Forza Italia</span><span class="livello v2" title="Una parte del dato viene da una fonte secondaria">V2</span></div>
+          <h3>Pensioni minime ad almeno 800-850 euro al mese, con un intervento «mirato e selettivo» nella legge di bilancio 2027.</h3>
+          <blockquote>«Con un intervento mirato e selettivo possiamo portarle ad almeno 800/850 euro, con una spesa stimata in circa 1 miliardo di euro. Vanno adeguate subito al costo della vita.»</blockquote>
+          <p class="chi">Alessandro Cattaneo, responsabile dei Dipartimenti di Forza Italia. Intervista del 10 settembre 2026.</p>
+          <p class="costo-box"><b>Circa 1 miliardo</b>, secondo chi propone. La frase non dice per quanti anni, quindi non lo dividiamo per residente.</p>
+          <div class="link"><a href="#">Leggi la fonte <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a><a class="segnala" href="#"><i class="ph ph-flag" aria-hidden="true"></i>Segnala un errore</a></div>
         </article>
-
-        <article class="promessa entra" data-ritardo="1">
-          <div class="chi">
-            <span class="etichetta">Partito Democratico</span>
-            <span class="etichetta vuota">centrosinistra</span>
-            <span class="livello" style="margin-left:auto" title="Almeno una parte del dato viene da una fonte secondaria affidabile">V2</span>
-          </div>
-          <h3>Regolare gli affitti brevi con regole uniformi e il coinvolgimento dei sindaci.</h3>
-          <blockquote class="citazione">E poi gli affitti brevi: non vanno criminalizzati, ma regolati. […] Servono regole chiare e uguali per tutti, con il pieno coinvolgimento dei sindaci</blockquote>
-          <dl class="meta">
-            <dt>Chi</dt><dd>Elly Schlein, segretaria nazionale PD, deputata</dd>
-            <dt>Quando</dt><dd>21 settembre 2026</dd>
-            <dt>Fonte</dt><dd>Video</dd>
-            <dt>Costo</dt><dd>non indicato</dd>
-          </dl>
-          <div class="azioni">
-            <a href="https://www.agi.it/vista-tv/video/2026-09-21/schlein-faremo-un-grande-piano-casa-come-ai-tempi-di-fanfani-39164621/" rel="noopener noreferrer">Leggi la fonte</a>
-            <a class="segnala" href="https://github.com/Z3roS4n/paghi-tu/issues/new/choose" rel="noopener noreferrer">Segnala un errore</a>
-          </div>
+        <article class="promessa entra d1">
+          <div class="testa"><span class="etichetta">Alleanza Verdi e Sinistra</span><span class="livello v1" title="Letta sulla fonte primaria">V1</span></div>
+          <h3>Cedolare secca al 5% invece del 10% per chi affitta a canone concordato per almeno quattro anni a studenti fuori sede, giovani coppie e under 35.</h3>
+          <blockquote>«Proponiamo una cedolare secca al 5%, al posto del 10% di oggi, per chi affitta a canone concordato»</blockquote>
+          <p class="chi">Proposta ufficiale sulla piattaforma Decidiamo, 11 ottobre 2026.</p>
+          <p class="costo-box">Nessun costo indicato da chi propone.</p>
+          <div class="link"><a href="#">Leggi la fonte <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a><a class="segnala" href="#"><i class="ph ph-flag" aria-hidden="true"></i>Segnala un errore</a></div>
         </article>
       </div>
-      <p class="fonte" style="margin-top:16px">Le coalizioni per le politiche 2027 non sono ancora formalizzate. Le schede sono in ordine di data.</p>
-      <a class="link-freccia" href="#">Tutte le promesse</a>
+      <p class="fonte" style="margin-top:14px">Le coalizioni per le politiche 2027 non sono ancora formalizzate.</p>
+      <a class="vai" href="#">Tutte le promesse <i class="ph-bold ph-arrow-right" aria-hidden="true"></i></a>
     </div>
   </section>
 
-  <!-- PROGETTO APERTO -->
-  <section aria-labelledby="t-aperto">
+  <section aria-labelledby="t-err">
     <div class="wrap">
-      <div class="aperto entra">
+      <div class="errori entra">
+        <h2 class="sez-h2" id="t-err">Hai trovato un errore?</h2>
         <div>
-          <span class="cartello">Progetto aperto</span>
-          <h2 id="t-aperto">L'AI aggiorna, <em>chiunque può correggere</em></h2>
-        </div>
-        <div>
-          <ol class="passi">
-            <li><span><b>L'AI raccoglie i dati</b> dalle fonti ufficiali e li aggiorna.</span></li>
-            <li><span><b>Un secondo agente ricontrolla</b> ogni dato sulla fonte, e gli dà un livello: V1 o V2.</span></li>
-            <li><span><b>Hai trovato un errore?</b> Segnalalo. Ogni correzione resta in un registro pubblico.</span></li>
-          </ol>
-          <div class="bottoni">
-            <a class="bottone pieno" href="#">Correzioni</a>
-            <a class="bottone vuoto" href="https://github.com/Z3roS4n/paghi-tu" rel="noopener noreferrer">Codice su GitHub</a>
+          <p class="testo">I dati li raccoglie un'intelligenza artificiale e li ricontrolla un secondo agente, sulla fonte. Se un numero non ti torna, segnalalo: ogni correzione resta nel registro pubblico, con il valore di prima e il motivo.</p>
+          <div class="azioni">
+            <a class="bottone pieno" href="#">Come segnalarlo</a>
+            <a class="bottone vuoto" href="https://github.com/Z3roS4n/paghi-tu"><i class="ph ph-github-logo" aria-hidden="true"></i>GitHub</a>
           </div>
         </div>
       </div>
@@ -763,148 +426,112 @@ body.foglio-aperto{overflow:hidden}
   </section>
 </main>
 
-<footer class="piede-sito">
+<footer class="piede">
   <div class="wrap">
-    <div class="righe">
+    <div class="piede-righe">
       <div>
-        <a class="insegna" href="#" aria-label="Paghi Tu, pagina iniziale"><span class="insegna-targa">Paghi Tu</span></a>
-        <p>Sito apartitico sui conti pubblici italiani. Dati da Eurostat, Banca d'Italia, Istat e Camera dei deputati. Codice e dati aperti, licenza MIT.</p>
+        <a class="marchio" href="#"><i class="ph-fill ph-receipt" aria-hidden="true"></i>Paghi Tu</a>
+        <p>Sito apartitico sui conti pubblici italiani. Ogni numero ha una fonte e un livello di verifica. Codice e dati con licenza MIT.</p>
       </div>
-      <nav aria-label="Tutte le pagine">
-        <ul>
-          <li><a href="#spesa">Spesa</a></li>
-          <li><a href="#governi">Governi</a></li>
-          <li><a href="#">Leggi di bilancio</a></li>
-          <li><a href="#promesse">Promesse</a></li>
-          <li><a href="#">Misure</a></li>
-          <li><a href="#">Archivio</a></li>
-          <li><a href="#">Metodo</a></li>
-          <li><a href="#">Fonti</a></li>
-          <li><a href="#">Correzioni</a></li>
-          <li><a href="#">Chi siamo</a></li>
-        </ul>
-      </nav>
+      <ul>
+        <li><a href="#">Metodo</a></li><li><a href="#">Fonti</a></li>
+        <li><a href="#">Correzioni</a></li><li><a href="#">Chi siamo</a></li>
+        <li><a href="#">Note legali</a></li><li><a href="https://github.com/Z3roS4n/paghi-tu">GitHub</a></li>
+      </ul>
     </div>
-    <p class="fine">paghitu.it · Le cifre descrivono i conti, non danno voti a nessuno.</p>
+    <p class="crediti">Incisioni da Wikimedia Commons, in pubblico dominio: Giuseppe Vasi, piazza di Monte Citorio (1752); piazza Colonna (1750 circa, Statens Museum for Kunst).</p>
   </div>
 </footer>
 
 <nav class="dock" aria-label="Navigazione principale">
   <ul>
-    <li><a href="#spesa" aria-current="page"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-2-1.4L14 21l-2-1.4L10 21l-2-1.4L6 21z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></span>Spesa</a></li>
-    <li><a href="#governi"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span>Governi</a></li>
-    <li><a href="#promesse"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 4v-4h0A1.5 1.5 0 0 1 4 14.5z"/><path d="M8.5 8.5h7M8.5 11.5h4"/></svg></span>Promesse</a></li>
-    <li><a href="#"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="8" width="19" height="8" rx="1.6"/><path d="M6.5 8v3M10.5 8v4.5M14.5 8v3M18.5 8v4.5"/></svg></span>Misure</a></li>
-    <li><button type="button" id="apri-altro" aria-haspopup="dialog" aria-expanded="false" aria-controls="foglio"><span class="ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="5.5" cy="12" r="1.9"/><circle cx="12" cy="12" r="1.9"/><circle cx="18.5" cy="12" r="1.9"/></svg></span>Altro</button></li>
+    <li><a href="#spesa" aria-current="page"><span class="ico"><i class="ph ph-receipt" aria-hidden="true"></i></span>Spesa</a></li>
+    <li><a href="#governi"><span class="ico"><i class="ph ph-bank" aria-hidden="true"></i></span>Governi</a></li>
+    <li><a href="#promesse"><span class="ico"><i class="ph ph-quotes" aria-hidden="true"></i></span>Promesse</a></li>
+    <li><a href="#"><span class="ico"><i class="ph ph-scales" aria-hidden="true"></i></span>Misure</a></li>
+    <li><button type="button" id="apri-altro" aria-haspopup="dialog" aria-expanded="false" aria-controls="foglio"><span class="ico"><i class="ph ph-dots-three" aria-hidden="true"></i></span>Altro</button></li>
   </ul>
 </nav>
-<div class="velo" id="velo" aria-hidden="true"></div>
+<div class="velo" id="velo"></div>
 <div class="foglio" id="foglio" role="dialog" aria-modal="true" aria-labelledby="t-altro">
   <div class="maniglia" aria-hidden="true"></div>
   <h2 id="t-altro">Altro</h2>
   <ul>
-    <li><a href="#"><span>Leggi di bilancio<small>le manovre anno per anno</small></span></a></li>
-    <li><a href="#"><span>Archivio<small>cerca fra dati e documenti</small></span></a></li>
-    <li><a href="#"><span>Metodo<small>come lavoriamo, i livelli V1 e V2</small></span></a></li>
-    <li><a href="#"><span>Fonti<small>da dove vengono i numeri</small></span></a></li>
-    <li><a href="#"><span>Correzioni<small>il registro pubblico delle modifiche</small></span></a></li>
+    <li><a href="#"><span>Leggi di bilancio<small>le manovre anno per anno</small></span><i class="ph ph-caret-right" aria-hidden="true"></i></a></li>
+    <li><a href="#"><span>Archivio<small>cerca fra dati e documenti</small></span><i class="ph ph-caret-right" aria-hidden="true"></i></a></li>
+    <li><a href="#"><span>Metodo<small>come verifichiamo, cosa vogliono dire V1 e V2</small></span><i class="ph ph-caret-right" aria-hidden="true"></i></a></li>
+    <li><a href="#"><span>Fonti<small>da dove vengono i numeri</small></span><i class="ph ph-caret-right" aria-hidden="true"></i></a></li>
+    <li><a href="#"><span>Correzioni<small>il registro di cosa abbiamo cambiato</small></span><i class="ph ph-caret-right" aria-hidden="true"></i></a></li>
   </ul>
   <button type="button" class="chiudi" id="chiudi-altro">Chiudi</button>
 </div>
 
 <script>
 (function(){
-  var doc = document.documentElement;
-  doc.classList.add('js');
-  var calmo = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var fmt = {format:function(n){ return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, '.'); }};
+  var statico = /statico/.test(location.search);
+  if (!statico) document.documentElement.classList.add('js');
+  var calmo = statico || matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var migliaia = new Intl.NumberFormat('it-IT');
+  var dec = new Intl.NumberFormat('it-IT', {minimumFractionDigits:1, maximumFractionDigits:1});
 
   var testata = document.getElementById('testata');
-  var suScroll = function(){ testata.classList.toggle('scrolled', window.scrollY > 8); };
-  window.addEventListener('scroll', suScroll, {passive:true}); suScroll();
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function(v){ testata.classList.toggle('staccata', !v[0].isIntersecting); }).observe(document.getElementById('sentinella'));
+  }
 
   function conta(el){
-    var fine = +el.dataset.conta;
-    if (calmo) { el.textContent = fmt.format(fine); return; }
-    var durata = fine > 1000 ? 1400 : 900, t0 = null;
+    var fine = +el.dataset.conta, t0 = null;
     function passo(t){
-      if (!t0) t0 = t;
-      var k = Math.min(1, (t - t0) / durata), e = 1 - Math.pow(1 - k, 3);
-      el.textContent = fmt.format(Math.round(fine * e));
+      t0 = t0 || t;
+      var k = Math.min(1, (t - t0) / 1300);
+      el.textContent = migliaia.format(Math.round(fine * (1 - Math.pow(1 - k, 3))));
       if (k < 1) requestAnimationFrame(passo);
     }
-    el.textContent = '0';
     requestAnimationFrame(passo);
   }
-
-  var carta = document.getElementById('carta');
-  function quandoVisto(el){
-    el.classList.add('visto');
-    el.querySelectorAll('[data-conta]').forEach(conta);
-    if (el === carta && !calmo) setTimeout(function(){ carta.classList.add('timbrato'); }, 2100);
-  }
-  var bersagli = document.querySelectorAll('.entra, #carta, #barre, #grafico');
+  var bersagli = document.querySelectorAll('.entra, #carta, #grafico');
   if ('IntersectionObserver' in window && !calmo) {
     var io = new IntersectionObserver(function(voci){
-      voci.forEach(function(v){ if (v.isIntersecting) { quandoVisto(v.target); io.unobserve(v.target); } });
-    }, {threshold:.18, rootMargin:'0px 0px -6% 0px'});
+      voci.forEach(function(v){
+        if (!v.isIntersecting) return;
+        v.target.classList.add('visto');
+        v.target.querySelectorAll('[data-conta]').forEach(conta);
+        io.unobserve(v.target);
+      });
+    }, {threshold:.18});
     bersagli.forEach(function(el){ io.observe(el); });
-  } else {
-    bersagli.forEach(function(el){ el.classList.add('visto'); });
-    carta.classList.add('timbrato');
-  }
-
-  var corsa = document.getElementById('corsa');
-  if (!calmo) {
-    var alSecondo = 1157239e6 / (365 * 86400), inizio = performance.now();
-    (function gira(){
-      var euro = (performance.now() - inizio) / 1000 * alSecondo;
-      corsa.textContent = fmt.format(Math.round(euro)) + ' €';
-      requestAnimationFrame(gira);
-    })();
-  }
+  } else bersagli.forEach(function(el){ el.classList.add('visto'); });
 
   var serie = [51.4,51.3,49.3,48,47.1,46.4,47.1,46.5,47,46.7,47.1,47.6,46.6,47.8,51.1,49.9,49.1,50.6,51,50.8,50.3,49.1,48.9,48.4,48.6,56.9,56.2,54.9,53.6,50.3,51.1];
   var area = document.getElementById('area'), punto = document.getElementById('punto'), guida = document.getElementById('guida');
-  var annoLetto = document.getElementById('anno-letto'), valLetto = document.getElementById('valore-letto');
-  var dec = new Intl.NumberFormat('it-IT', {minimumFractionDigits:1, maximumFractionDigits:1});
-  var indice = serie.length - 1;
-  function mostra(i){
-    indice = Math.max(0, Math.min(serie.length - 1, i));
-    var v = serie[indice], anno = 1995 + indice, x = indice / (serie.length - 1) * 100, y = (58 - v) / 14 * 100;
-    punto.style.left = x + '%'; punto.style.top = y + '%'; guida.style.left = x + '%';
-    annoLetto.textContent = anno; valLetto.textContent = dec.format(v) + ' %';
-    area.setAttribute('aria-valuenow', anno);
-    area.setAttribute('aria-valuetext', anno + ': ' + dec.format(v) + ' per cento del PIL');
+  var anno = document.getElementById('anno-letto'), valore = document.getElementById('valore-letto'), i = serie.length - 1;
+  function mostra(n){
+    i = Math.max(0, Math.min(serie.length - 1, n));
+    var x = i / (serie.length - 1) * 100, y = (58 - serie[i]) / 14 * 100;
+    punto.style.left = guida.style.left = x + '%'; punto.style.top = y + '%';
+    anno.textContent = 1995 + i; valore.textContent = dec.format(serie[i]) + '%';
+    area.setAttribute('aria-valuenow', 1995 + i);
+    area.setAttribute('aria-valuetext', (1995 + i) + ': ' + dec.format(serie[i]) + ' per cento del PIL');
   }
-  function daPuntatore(e){
-    var r = area.getBoundingClientRect();
-    mostra(Math.round((e.clientX - r.left) / r.width * (serie.length - 1)));
-  }
+  function daPuntatore(e){ var r = area.getBoundingClientRect(); mostra(Math.round((e.clientX - r.left) / r.width * (serie.length - 1))); }
   area.addEventListener('pointerdown', daPuntatore);
   area.addEventListener('pointermove', function(e){ if (e.pointerType === 'mouse' || e.buttons) daPuntatore(e); });
   area.addEventListener('keydown', function(e){
-    var mappa = {ArrowLeft:-1, ArrowDown:-1, ArrowRight:1, ArrowUp:1};
-    if (e.key in mappa) { mostra(indice + mappa[e.key]); e.preventDefault(); }
-    if (e.key === 'Home') { mostra(0); e.preventDefault(); }
-    if (e.key === 'End') { mostra(serie.length - 1); e.preventDefault(); }
+    var passi = {ArrowLeft:-1, ArrowDown:-1, ArrowRight:1, ArrowUp:1};
+    if (e.key in passi) { mostra(i + passi[e.key]); e.preventDefault(); }
   });
-  if (window.matchMedia('(hover: hover)').matches) document.getElementById('suggerimento').textContent = 'Passa il mouse sul grafico, o usa le frecce, per leggere ogni anno.';
+  if (matchMedia('(hover: hover)').matches) document.getElementById('suggerimento').textContent = 'Passa il mouse sul grafico, o usa le frecce, per leggere ogni anno.';
 
-  var apri = document.getElementById('apri-altro'), chiudi = document.getElementById('chiudi-altro'),
-      velo = document.getElementById('velo'), foglio = document.getElementById('foglio');
-  function apriFoglio(){
-    document.body.classList.add('foglio-aperto'); apri.setAttribute('aria-expanded','true');
+  var apri = document.getElementById('apri-altro'), foglio = document.getElementById('foglio');
+  function chiudi(){ document.body.classList.remove('foglio-aperto'); apri.setAttribute('aria-expanded', 'false'); apri.focus(); }
+  apri.addEventListener('click', function(){
+    document.body.classList.add('foglio-aperto'); apri.setAttribute('aria-expanded', 'true');
     setTimeout(function(){ foglio.querySelector('a').focus(); }, calmo ? 0 : 200);
-  }
-  function chiudiFoglio(){
-    document.body.classList.remove('foglio-aperto'); apri.setAttribute('aria-expanded','false'); apri.focus();
-  }
-  apri.addEventListener('click', apriFoglio);
-  chiudi.addEventListener('click', chiudiFoglio);
-  velo.addEventListener('click', chiudiFoglio);
-  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && document.body.classList.contains('foglio-aperto')) chiudiFoglio(); });
-  foglio.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', chiudiFoglio); });
+  });
+  document.getElementById('chiudi-altro').addEventListener('click', chiudi);
+  document.getElementById('velo').addEventListener('click', chiudi);
+  foglio.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', chiudi); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && document.body.classList.contains('foglio-aperto')) chiudi(); });
 })();
 </script>
 </body>

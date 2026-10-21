@@ -21,6 +21,13 @@ piccolo per l'interazione, tutto il resto server.
 I governi si mostrano in ordine cronologico, mai in classifica. Ogni blocco di conti per governo porta
 l'avvertenza che le cifre descrivono il periodo e non attribuiscono cause.
 
+## D-UI-05 — Bozze del redesign: testi semplici, immagini in pubblico dominio (2026-10-21)
+Il proprietario ha giudicato le prime tre bozze troppo «da AI». Rifatte con testi in frasi piane (niente slogan,
+niente trattini lunghi, niente etichette su ogni sezione), un solo colore di accento per bozza, icone Phosphor e
+nessun Fraunces. Le immagini sono incisioni del Settecento e foto da Wikimedia Commons in pubblico dominio
+(elenco e fonti in `bozze/img/CREDITI.md`); le foto moderne vanno in bianco e nero, così il tricolore resta fuori
+dalla palette (D-011). La didascalia cita sempre autore e licenza.
+
 <!--
 Template voce successiva:
 
