@@ -258,53 +258,39 @@ h3 {
   }
 }
 
-/* Racconto dei 100 €: senza timeline di scroll (o con meno movimento) i passi cambiano a stati fissi;
-   con le timeline, quadretti, avanzamento e scontrino seguono lo scroll del binario attivo. */
+/* Racconto dei 100 €: i quadretti del passo si accendono uno dopo l'altro e lo scontrino si stampa,
+   a tempo, quando il passo diventa attivo. Con meno movimento passano subito allo stato finale. */
 .waffle-on {
   background: var(--accent);
-  transform: scale(0.9);
 }
 .story-seg {
   transform-origin: left;
   transform: scaleX(0);
-  transition: transform 0.3s;
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 .story-seg[data-on] {
   transform: none;
 }
 @keyframes waffle-fill {
-  from { background: var(--paper-sunk); transform: none; }
-  to { background: var(--accent); transform: scale(0.9); }
+  from { background: var(--paper-sunk); }
+  to { background: var(--accent); }
 }
 @keyframes print {
   from { clip-path: inset(0 0 100% 0); transform: translateY(-16px); }
   to { clip-path: inset(0 0 0 0); transform: none; }
-}
-@keyframes fade-out {
-  to { opacity: 0; }
 }
 @keyframes nudge {
   0%, 100% { transform: translateY(-2px); }
   50% { transform: translateY(3px); }
 }
 @media (prefers-reduced-motion: no-preference) {
+  .waffle-on {
+    animation: waffle-fill 0.3s ease-out both;
+  }
+  .receipt-print {
+    animation: print 1.1s cubic-bezier(0.2, 0.8, 0.2, 1) 0.15s both;
+  }
   .scroll-nudge {
     animation: nudge 1.4s ease-in-out infinite;
-  }
-  @supports (animation-timeline: view()) and (timeline-scope: none) {
-    .waffle-on {
-      animation: waffle-fill linear both;
-      transition: none;
-    }
-    .story-seg {
-      animation: grow-x linear both;
-      transition: none;
-    }
-    .receipt-print {
-      animation: print linear both;
-    }
-    .hint-print {
-      animation: fade-out linear both;
-    }
   }
 }

@@ -62,6 +62,12 @@ export function SiteFooter() {
           (1750 circa, Statens Museum for Kunst); Giovanni Battista Piranesi, Palazzo Montecitorio (XVIII secolo); il
           Ministero delle Finanze da «Roma italiana, 1870-1895».
         </p>
+        <p className="border-t border-rule pt-4 text-[13.5px] text-ink-faint md:col-span-2">
+          Progettato e sviluppato da{" "}
+          <a href="https://www.msworks.it" target="_blank" rel="noopener noreferrer" className="font-semibold text-ink-soft underline underline-offset-2 hover:text-accent">
+            msworks.it
+          </a>
+        </p>
       </div>
     </footer>
   );
