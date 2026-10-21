@@ -1250,6 +1250,156 @@
     }
   },
   {
+    "id": "C27-LEGA-018",
+    "partitoId": "LEGA",
+    "dichiarante": "Lega",
+    "ruoloDichiarante": "partito – newsletter ufficiale",
+    "data": "2026-09-27",
+    "testoLetterale": "registro degli enti e dei luoghi di culto, con regole e controlli più stringenti;",
+    "parafrasiNeutra": "Istituire un registro degli enti e dei luoghi di culto, con regole e controlli più stringenti.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "proposta_di_legge",
+    "fonte": {
+      "url": "https://legaonline.it/la-settimana-leghista-38/"
+    },
+    "archivioUrl": null,
+    "cofog": "08",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «registro degli enti e dei luoghi di culto» del pacchetto di C27-LEGA-009; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Pacchetto Lega sui luoghi di culto (8 voci; già registrate C27-LEGA-009 e C27-LEGA-010). Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); registro con oggetto definito: strumento identificabile.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-LEGA-019",
+    "partitoId": "LEGA",
+    "dichiarante": "Lega",
+    "ruoloDichiarante": "partito – newsletter ufficiale",
+    "data": "2026-09-27",
+    "testoLetterale": "trasparenza sui finanziamenti provenienti dall’estero destinati a moschee, centri e associazioni;",
+    "parafrasiNeutra": "Trasparenza sui finanziamenti provenienti dall'estero destinati a moschee, centri e associazioni.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "proposta_di_legge",
+    "fonte": {
+      "url": "https://legaonline.it/la-settimana-leghista-38/"
+    },
+    "archivioUrl": null,
+    "cofog": "08",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «trasparenza sui finanziamenti dall'estero» del pacchetto di C27-LEGA-009; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Pacchetto Lega sui luoghi di culto (8 voci; già registrate C27-LEGA-009 e C27-LEGA-010). Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); supera il criterio: meccanismo descritto (trasparenza su un flusso definito, i finanziamenti esteri agli enti di culto), come C27-FDI-007 («maggiore trasparenza sui finanziamenti»).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CORRETTA: parafrasi («Obblighi di trasparenza» → «Trasparenza»: il testo non nomina obblighi) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-LEGA-020",
+    "partitoId": "LEGA",
+    "dichiarante": "Lega",
+    "ruoloDichiarante": "partito – newsletter ufficiale",
+    "data": "2026-09-27",
+    "testoLetterale": "individuazione dei responsabili legali degli enti di culto e sottoscrizione di una Carta dei valori vincolante;",
+    "parafrasiNeutra": "Individuare i responsabili legali degli enti di culto e prevedere la sottoscrizione di una Carta dei valori vincolante.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "proposta_di_legge",
+    "fonte": {
+      "url": "https://legaonline.it/la-settimana-leghista-38/"
+    },
+    "archivioUrl": null,
+    "cofog": "08",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «responsabili legali e Carta dei valori» del pacchetto di C27-LEGA-009; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Pacchetto Lega sui luoghi di culto (8 voci; già registrate C27-LEGA-009 e C27-LEGA-010). Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); obbligo nominato (Carta dei valori vincolante): strumento identificabile.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CORRETTA: parafrasi (il testo non dice chi sottoscrive la Carta) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-LEGA-021",
+    "partitoId": "LEGA",
+    "dichiarante": "Lega",
+    "ruoloDichiarante": "partito – newsletter ufficiale",
+    "data": "2026-09-27",
+    "testoLetterale": "censimento e contrasto dei luoghi di culto abusivi;",
+    "parafrasiNeutra": "Censire i luoghi di culto abusivi e contrastarli.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "proposta_di_legge",
+    "fonte": {
+      "url": "https://legaonline.it/la-settimana-leghista-38/"
+    },
+    "archivioUrl": null,
+    "cofog": "03",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «censimento dei luoghi di culto abusivi» del pacchetto di C27-LEGA-009; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Pacchetto Lega sui luoghi di culto (8 voci; già registrate C27-LEGA-009 e C27-LEGA-010). Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); supera il criterio per il censimento (operazione identificabile e verificabile); il «contrasto» da solo non basterebbe.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-LEGA-024",
+    "partitoId": "LEGA",
+    "dichiarante": "Lega",
+    "ruoloDichiarante": "partito – newsletter ufficiale",
+    "data": "2026-01-25",
+    "testoLetterale": "Poi, è necessaria una stretta per i coltelli, il cui uso si sta diffondendo tra i giovanissimi […] Ci saranno provvedimenti severi per sradicare la tendenza di portare con sé delle lame, ovviamente senza colpire i cittadini perbene che le hanno per giustificati motivi (per esempio professionali).",
+    "parafrasiNeutra": "Inasprire le norme sul porto di coltelli e lame, salvo giustificati motivi (per esempio professionali).",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_decreto",
+    "fonte": {
+      "url": "https://legaonline.it/la-settimana-leghista-9/"
+    },
+    "archivioUrl": "http://web.archive.org/web/20260613085023/https://legaonline.it/la-settimana-leghista-9/",
+    "cofog": "03",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «stretta sui coltelli» del pacchetto di C27-LEGA-014; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Nuovo pacchetto sicurezza (titolo: «liberare le case occupate e stretta sui coltelli»). Tagliato con «[…]» per il limite di lunghezza l'inciso «(in particolare stranieri o di seconda generazione)». Pre-valutazione slogan (criterio uniforme 2026-10-21): probabile esclusione (direzione senza parametro, scadenza o strumento identificabile). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); caso limite: supera il criterio perché descrive la condotta e il perimetro del divieto (portare con sé lame, salvo giustificati motivi, la stessa formula del porto ingiustificato già punito dalla legge), con la stessa regola applicata a C27-FDI-005 (inasprire un reato già definito). Il taglio «[…]» dell'inciso «(in particolare stranieri o di seconda generazione)» riguarda chi usa le lame, non la misura: non cambia il senso; serve per il limite di 320 caratteri (testo integrale circa 350).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CORRETTA: misurabile no → parziale (come C27-FDI-005); caso limite deciso: supera il criterio | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-FI-015",
+    "partitoId": "FI",
+    "dichiarante": "Antonio Tajani",
+    "ruoloDichiarante": "segretario nazionale Forza Italia, deputato; vicepresidente del Consiglio e ministro degli Affari esteri",
+    "data": "2026-07-27",
+    "testoLetterale": "Pensiamo ad agevolazioni per le start up (niente tasse per i primi 5 anni) e per chi ci investe",
+    "parafrasiNeutra": "Agevolazioni per chi investe nelle start up.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.esteri.it/it/sala_stampa/archivionotizie/interviste/2026/07/tajani-ecco-il-nostro-piano-per-abbassare-le-tasse-agli-italiani-libero/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «agevolazioni per chi investe nelle start up» del pacchetto di C27-FI-007; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Segmento «e per chi ci investe» della stessa frase di C27-FI-007 (start up), che copre solo le imprese. Pre-valutazione slogan (criterio uniforme 2026-10-21): caso limite, da decidere in verifica. (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); caso limite: supera il criterio perché l'agevolazione è legata a un atto definito (investire in start up), con la stessa struttura di C27-FI-008 (agevolazioni per chi assume under 35). Formulazione dubitativa («Pensiamo ad»), come C27-FI-007.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-21 — CORRETTA: misurabile no → parziale (come C27-FI-008); caso limite deciso: supera il criterio. Parte secondaria: testo da esteri.it, ripubblicazione ministeriale dell'intervista a Libero, non canale di partito | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
     "id": "C27-PD-008",
     "partitoId": "PD",
     "dichiarante": "Partito Democratico (documento nazionale presentato da Marina Sereni)",
@@ -3775,6 +3925,106 @@
     }
   },
   {
+    "id": "C27-CSX-016",
+    "partitoId": "CSX",
+    "dichiarante": "Guerra, Torto, Grimaldi, Faraone, Magi (firmatari)",
+    "ruoloDichiarante": "deputati firmatari per i gruppi di opposizione (ruolo individuale non verificato)",
+    "data": "2026-10-13",
+    "testoLetterale": "a destinare le risorse, pari a circa 14,4 miliardi nel biennio 2027-2028, derivanti dall'attivazione della clausola nazionale in materia di energia, al potenziamento delle misure di efficientamento e riqualificazione energetica del patrimonio edilizio pubblico e dell'edilizia residenziale pubblica, […]",
+    "parafrasiNeutra": "Destinare circa 14,4 miliardi nel 2027-2028, liberati dalla clausola nazionale sull'energia, a efficienza energetica di edifici pubblici ed edilizia residenziale pubblica, Conto Termico, conversione produttiva delle imprese, Fondo per reti metropolitane, reti elettriche, accumuli e ricarica.",
+    "tipoFonte": "atto_parlamentare",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "risoluzione_mozione",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0726/allegato_a.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «punto 3 del dispositivo» del pacchetto di C27-CSX-001; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Risoluzione 6-00294 sul DPFP 2026, Camera, seduta n. 726 del 13/10/2026, Allegato A; punto 3 del dispositivo; impegno rivolto al Governo in carica. Riga unica per i cinque partiti firmatari. Le altre destinazioni del punto, tagliate con «[…]» per il limite di lunghezza (Conto Termico, conversione dei processi produttivi, Fondo unico per reti metropolitane, reti elettriche, accumuli, batterie e ricarica), sono in parafrasi perché fanno parte dello stesso impegno di spesa. Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); importo (circa 14,4 miliardi 2027-2028) e fonte delle risorse (clausola nazionale sull'energia): supera il criterio.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-CSX-017",
+    "partitoId": "CSX",
+    "dichiarante": "Guerra, Torto, Grimaldi, Faraone, Magi (firmatari)",
+    "ruoloDichiarante": "deputati firmatari per i gruppi di opposizione (ruolo individuale non verificato)",
+    "data": "2026-10-13",
+    "testoLetterale": "a rafforzare l'autonomia e l'indipendenza energetica del paese, rafforzando il percorso di sviluppo delle fonti rinnovabili e le misure di contrasto alla povertà energetica […] a rivedere il sistema di tassazione sull'energia elettrica, oggi più elevata rispetto a quella sul gas",
+    "parafrasiNeutra": "Rafforzare rinnovabili e contrasto alla povertà energetica e rivedere la tassazione dell'energia elettrica, oggi più alta di quella sul gas.",
+    "tipoFonte": "atto_parlamentare",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "risoluzione_mozione",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0726/allegato_a.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «punto 4 del dispositivo» del pacchetto di C27-CSX-001; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Risoluzione 6-00294 sul DPFP 2026, Camera, seduta n. 726 del 13/10/2026, Allegato A; punto 4 del dispositivo; impegno rivolto al Governo in carica. Riga unica per i cinque partiti firmatari. Nello stesso punto, non scorporati: revisione del prezzo applicato ai clienti vulnerabili e rafforzamento dei bonus sociali. Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); supera il criterio per la revisione della tassazione dell'energia elettrica (imposta identificata, con il gas come termine di confronto); il rafforzamento delle rinnovabili da solo non basterebbe. Il «[…]» omette la tutela dei clienti vulnerabili e i bonus sociali (già in nota), senza cambiare il senso. COFOG 04 mantenuto come misura mista (alternativa 01 per la parte fiscale), come C27-LEGA-011.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-CSX-018",
+    "partitoId": "CSX",
+    "dichiarante": "Guerra, Torto, Grimaldi, Faraone, Magi (firmatari)",
+    "ruoloDichiarante": "deputati firmatari per i gruppi di opposizione (ruolo individuale non verificato)",
+    "data": "2026-10-13",
+    "testoLetterale": "ad adottare iniziative urgenti in sede di europea volte a promuovere una revisione integrale del patto di stabilità […] a sostenere un piano di investimenti comuni sul modello di NextGenerationEU, anche ricorrendo a debito comune, […] lo scorporo dal calcolo degli indicatori sul deficit per gli investimenti nazionali",
+    "parafrasiNeutra": "Promuovere in sede Ue la revisione integrale del Patto di stabilità, un piano di investimenti comuni sul modello NextGenerationEU anche con debito comune e lo scorporo degli investimenti nazionali dal calcolo del deficit.",
+    "tipoFonte": "atto_parlamentare",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "risoluzione_mozione",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0726/allegato_a.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «punto 5 del dispositivo» del pacchetto di C27-CSX-001; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Risoluzione 6-00294 sul DPFP 2026, Camera, seduta n. 726 del 13/10/2026, Allegato A; punto 5 del dispositivo; impegno rivolto al Governo in carica. Riga unica per i cinque partiti firmatari. Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); strumenti nominati: revisione del Patto di stabilità, piano di investimenti comuni sul modello NextGenerationEU con debito comune, scorporo degli investimenti dal calcolo del deficit. «in sede di europea» è nella fonte.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-CSX-019",
+    "partitoId": "CSX",
+    "dichiarante": "Guerra, Torto, Grimaldi, Faraone, Magi (firmatari)",
+    "ruoloDichiarante": "deputati firmatari per i gruppi di opposizione (ruolo individuale non verificato)",
+    "data": "2026-10-13",
+    "testoLetterale": "ad adoperarsi, altresì, per la revisione delle regole fiscali comprese nel Patto di stabilità e crescita, […] prevedendo percorsi di rientro dal debito più realistici che tengano conto delle specificità degli Stati membri e del loro quadro macroeconomico complessivo",
+    "parafrasiNeutra": "Rivedere le regole fiscali del Patto di stabilità e crescita, con percorsi di rientro dal debito che tengano conto delle specificità degli Stati.",
+    "tipoFonte": "atto_parlamentare",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "risoluzione_mozione",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0726/allegato_a.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «punto 6 del dispositivo» del pacchetto di C27-CSX-001; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Risoluzione 6-00294 sul DPFP 2026, Camera, seduta n. 726 del 13/10/2026, Allegato A; punto 6 del dispositivo; impegno rivolto al Governo in carica. Riga unica per i cinque partiti firmatari. Si sovrappone in parte al punto 5 (C27-CSX-018). Pre-valutazione slogan (criterio uniforme 2026-10-21): caso limite, da decidere in verifica. (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); caso limite deciso: supera il criterio (modifica di una norma nominata, le regole fiscali del Patto di stabilità e crescita). La fonte lo presenta come punto distinto dal 5 (C27-CSX-018); il contenuto si sovrappone in parte: segnalato per il titolare, non è un doppione di una riga già registrata.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
     "id": "C27-AZ-001",
     "partitoId": "AZ",
     "dichiarante": "Azione (sito ufficiale)",
@@ -5775,6 +6025,656 @@
     }
   },
   {
+    "id": "C27-AZ-029",
+    "partitoId": "AZ",
+    "dichiarante": "Azione (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale",
+    "data": "2026-02-12",
+    "testoLetterale": "Prevedere il riconoscimento formale, a livello nazionale, dei servizi educativi per la prima infanzia realizzati in ambito aziendale come parte del sistema integrato di educazione e istruzione. Per questo occorre modificare il d.lgs. 13 aprile 2017, n. 65, […]",
+    "parafrasiNeutra": "Riconoscere i nidi aziendali come parte del sistema integrato di educazione e istruzione, modificando il d.lgs. 65/2017.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "proposta_di_legge",
+    "fonte": {
+      "url": "https://www.azione.it/asili-nido-aziendali/"
+    },
+    "archivioUrl": "http://web.archive.org/web/20260317033226/https://www.azione.it/asili-nido-aziendali/",
+    "cofog": "09",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «Integrare i nidi aziendali nel sistema nazionale» del pacchetto di C27-AZ-014; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Proposta di legge Azione-PLD sui nidi aziendali; la stessa voce prevede una nuova tipologia di servizio per i bambini da 3 a 36 mesi in contesto aziendale (tagliata per il limite di lunghezza). Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); modifica di una norma nominata (d.lgs. 65/2017): supera il criterio.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CORRETTA: tipo_fonte da documento_partito a sito_ufficiale, come la riga sorella (§3 uniformità: articolo HTML su azione.it) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-AZ-030",
+    "partitoId": "AZ",
+    "dichiarante": "Azione (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale",
+    "data": "2026-02-12",
+    "testoLetterale": "Stabilire requisiti essenziali validi su tutto il territorio nazionale, prevedendo una deroga puntuale alla disciplina regionale dove necessario.",
+    "parafrasiNeutra": "Fissare requisiti minimi nazionali per i nidi aziendali, con deroga alla disciplina regionale dove necessario.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "proposta_di_legge",
+    "fonte": {
+      "url": "https://www.azione.it/asili-nido-aziendali/"
+    },
+    "archivioUrl": "http://web.archive.org/web/20260317033226/https://www.azione.it/asili-nido-aziendali/",
+    "cofog": "09",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «Definire standard minimi nazionali» del pacchetto di C27-AZ-014; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Proposta di legge Azione-PLD sui nidi aziendali. Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); requisiti nazionali con deroga alla disciplina regionale (modifica di norme): supera il criterio.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CORRETTA: tipo_fonte da documento_partito a sito_ufficiale, come la riga sorella (§3 uniformità: articolo HTML su azione.it) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-AZ-031",
+    "partitoId": "AZ",
+    "dichiarante": "Azione (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale",
+    "data": "2026-02-12",
+    "testoLetterale": "Agevolare la gestione dei nidi aziendali tramite modelli organizzativi flessibili, come CRAL aziendali e interaziendali o consorzi tra imprese, favorendo al tempo stesso la collaborazione tra PMI, grandi imprese ed enti pubblici per condividere risorse e costi",
+    "parafrasiNeutra": "Favorire la gestione dei nidi aziendali con modelli flessibili (CRAL aziendali e interaziendali, consorzi tra imprese) e la collaborazione tra PMI, grandi imprese ed enti pubblici.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "proposta_di_legge",
+    "fonte": {
+      "url": "https://www.azione.it/asili-nido-aziendali/"
+    },
+    "archivioUrl": "http://web.archive.org/web/20260317033226/https://www.azione.it/asili-nido-aziendali/",
+    "cofog": "09",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «Promuovere modelli organizzativi flessibili e condivisi» del pacchetto di C27-AZ-014; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Proposta di legge Azione-PLD sui nidi aziendali. Pre-valutazione slogan (criterio uniforme 2026-10-21): caso limite, da decidere in verifica. (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); caso limite: supera il criterio perché nomina le forme di gestione (CRAL aziendali e interaziendali, consorzi tra imprese); «agevolare» da solo non basterebbe.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CORRETTA: tipo_fonte da documento_partito a sito_ufficiale, come la riga sorella (§3 uniformità: articolo HTML su azione.it); caso limite deciso: supera il criterio | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-AZ-032",
+    "partitoId": "AZ",
+    "dichiarante": "Azione (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale",
+    "data": "2026-06-24",
+    "testoLetterale": "Affidare all’Autorità per le garanzie nelle comunicazioni specifiche funzioni di regolazione, indirizzo, vigilanza e sanzione in materia di accesso e utilizzo dei chatbot da parte dei minori. […] sanzioni amministrative pecuniarie […] con un importo minimo di 10.000 euro e fino al 2% del fatturato annuo",
+    "parafrasiNeutra": "Affidare ad AGCOM regolazione, vigilanza e sanzioni sull'uso dei chatbot da parte dei minori, con sanzioni da almeno 10.000 euro fino al 2% del fatturato annuo.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "proposta_di_legge",
+    "fonte": {
+      "url": "https://www.azione.it/limitare-la-memoria-delle-chatbot-per-i-piu-piccoli/"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «Rafforzare la tutela dei minori» del pacchetto di C27-AZ-016; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Proposta di legge sui chatbot e minori. Nella stessa voce, non scorporati: verifica dell'età, linee guida, trasparenza. Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); organismo (AGCOM) e sanzioni con importo (minimo 10.000 euro, fino al 2% del fatturato): supera il criterio.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CORRETTA: tipo_fonte da documento_partito a sito_ufficiale, come la riga sorella (§3 uniformità: articolo HTML su azione.it) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-AZ-033",
+    "partitoId": "AZ",
+    "dichiarante": "Azione (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale",
+    "data": "2026-06-24",
+    "testoLetterale": "Avviare campagne informative a livello nazionale, in collaborazione con il Dipartimento per le politiche della famiglia e il Ministero dell’Istruzione, per informare cittadini, famiglie, scuole e studenti sui rischi connessi all’uso dei chatbot, soprattutto in giovane età.",
+    "parafrasiNeutra": "Campagne informative nazionali sui rischi dei chatbot, con il Dipartimento per le politiche della famiglia e il Ministero dell'Istruzione.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "proposta_di_legge",
+    "fonte": {
+      "url": "https://www.azione.it/limitare-la-memoria-delle-chatbot-per-i-piu-piccoli/"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «Promuovere campagne di sensibilizzazione e monitorare il fenomeno» del pacchetto di C27-AZ-016; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Proposta di legge sui chatbot e minori. Pre-valutazione slogan (criterio uniforme 2026-10-21): caso limite, da decidere in verifica. (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); caso limite: supera il criterio perché è un'azione identificabile (campagne informative nazionali) con soggetti nominati (Dipartimento per le politiche della famiglia, Ministero dell'Istruzione), non una direzione su un aggregato.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CORRETTA: tipo_fonte da documento_partito a sito_ufficiale, come la riga sorella (§3 uniformità: articolo HTML su azione.it); caso limite deciso: supera il criterio | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-AZ-034",
+    "partitoId": "AZ",
+    "dichiarante": "Azione (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale",
+    "data": "2026-07-20",
+    "testoLetterale": "Chiediamo che la responsabilità si applichi a chiunque diffonda i contenuti vietati, senza lasciare zone grigie. […] Il divieto deve colpire anche le entità speculari, create apposta per aggirare i blocchi mantenendo contenuti, marchio o infrastruttura del soggetto sanzionato.",
+    "parafrasiNeutra": "Estendere la responsabilità a chiunque diffonda i contenuti di propaganda russa vietati e applicare il divieto alle entità speculari create per aggirare i blocchi.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "proposta_di_legge",
+    "fonte": {
+      "url": "https://www.azione.it/stop-alla-propaganda-russa-in-italia/"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «Definire in modo chiaro chi è responsabile» del pacchetto di C27-AZ-017; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Proposta di legge contro la propaganda russa (attuazione del Regolamento UE 833/2014). Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); divieto e regime di responsabilità con oggetto definito: supera il criterio.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CORRETTA: tipo_fonte da documento_partito a sito_ufficiale, come la riga sorella (§3 uniformità: articolo HTML su azione.it) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-AZ-035",
+    "partitoId": "AZ",
+    "dichiarante": "Azione (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale",
+    "data": "2026-07-20",
+    "testoLetterale": "Per gli eventi fisici, come proiezioni, incontri e manifestazioni, la competenza deve passare alle prefetture, che potranno vietare l’iniziativa o farla cessare se già in corso, con sanzioni da 10.000 a 100.000 euro a carico degli organizzatori.",
+    "parafrasiNeutra": "Attribuire alle prefetture il potere di vietare o interrompere gli eventi di propaganda vietata, con sanzioni da 10.000 a 100.000 euro per gli organizzatori.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "proposta_di_legge",
+    "fonte": {
+      "url": "https://www.azione.it/stop-alla-propaganda-russa-in-italia/"
+    },
+    "archivioUrl": null,
+    "cofog": "03",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «Un sistema sanzionatorio a doppio binario (eventi fisici)» del pacchetto di C27-AZ-017; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Proposta di legge contro la propaganda russa; il binario online/TV è C27-AZ-017. Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); organismo (prefetture), potere di divieto e sanzioni da 10.000 a 100.000 euro: supera il criterio.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CORRETTA: tipo_fonte da documento_partito a sito_ufficiale, come la riga sorella (§3 uniformità: articolo HTML su azione.it) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-AZ-036",
+    "partitoId": "AZ",
+    "dichiarante": "Azione (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale",
+    "data": "2026-07-20",
+    "testoLetterale": "Devono restare espressamente escluse dal divieto la cronaca giornalistica, la critica e discussione politica, la ricerca accademica e indipendente. […] ogni anno AGCOM e Ministero dell’interno dovranno riferire alle Camere sulle violazioni accertate e le sanzioni applicate.",
+    "parafrasiNeutra": "Escludere dal divieto cronaca, critica politica e ricerca; relazione annuale di AGCOM e Ministero dell'interno alle Camere su violazioni e sanzioni.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "proposta_di_legge",
+    "fonte": {
+      "url": "https://www.azione.it/stop-alla-propaganda-russa-in-italia/"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «Tutelare la libertà di informazione, senza nuovi costi per lo Stato» del pacchetto di C27-AZ-017; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Proposta di legge contro la propaganda russa; la stessa voce prevede l'assenza di nuovi oneri per lo Stato. Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); esclusioni dal divieto e obbligo di relazione annuale alle Camere: supera il criterio.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CORRETTA: tipo_fonte da documento_partito a sito_ufficiale, come la riga sorella (§3 uniformità: articolo HTML su azione.it) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-AZ-037",
+    "partitoId": "AZ",
+    "dichiarante": "Azione (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale",
+    "data": "2026-01-29",
+    "testoLetterale": "Ogni proposta di modifica ai requisiti o alle modalità di accesso alle pensioni deve essere subordinata alla copertura finanziaria strutturale e permanente, rispettando il principio di saldo zero o positivo della spesa pensionistica complessiva.",
+    "parafrasiNeutra": "Subordinare ogni modifica dei requisiti o dell'accesso alla pensione a una copertura strutturale e permanente, a saldo zero o positivo sulla spesa pensionistica.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "risoluzione_mozione",
+    "fonte": {
+      "url": "https://www.azione.it/mozione-sulla-previdenza/"
+    },
+    "archivioUrl": "http://web.archive.org/web/20260514065346/https://www.azione.it/mozione-sulla-previdenza/",
+    "cofog": "10",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «Garantire la copertura finanziaria di ogni intervento previdenziale» del pacchetto di C27-AZ-013; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Mozione Azione sulla previdenza. Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); vincolo di copertura a saldo zero o positivo: supera il criterio.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CORRETTA: tipo_fonte da documento_partito a sito_ufficiale, come la riga sorella (§3 uniformità: articolo HTML su azione.it) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-AZ-038",
+    "partitoId": "AZ",
+    "dichiarante": "Azione (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale",
+    "data": "2026-01-29",
+    "testoLetterale": "Vogliamo potenziare la previdenza complementare come strumento integrativo al regime di base, attraverso: incentivi fiscali mirati, modalità di adesione più efficaci, maggiore diffusione di informazione previdenziale.",
+    "parafrasiNeutra": "Potenziare la previdenza complementare con incentivi fiscali mirati, modalità di adesione più efficaci e più informazione previdenziale.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "risoluzione_mozione",
+    "fonte": {
+      "url": "https://www.azione.it/mozione-sulla-previdenza/"
+    },
+    "archivioUrl": "http://web.archive.org/web/20260514065346/https://www.azione.it/mozione-sulla-previdenza/",
+    "cofog": "10",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «Rafforzare la previdenza complementare» del pacchetto di C27-AZ-013; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Mozione Azione sulla previdenza. Le voci dell'elenco puntato della fonte sono unite in una riga. Pre-valutazione slogan (criterio uniforme 2026-10-21): caso limite, da decidere in verifica. (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); caso limite: supera il criterio perché gli incentivi fiscali sono legati a un atto definito (l'adesione alla previdenza complementare, istituto nominato); stessa regola di C27-FI-015. La fonte aggiunge che la misura è rivolta in particolare a lavoratori giovani, con carriere discontinue o a basso reddito.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CORRETTA: tipo_fonte da documento_partito a sito_ufficiale, come la riga sorella (§3 uniformità: articolo HTML su azione.it); parafrasi ristretta al testo_letterale (la platea giovani, carriere discontinue, bassi redditi è nella frase successiva della fonte); caso limite deciso: supera il criterio | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-AZ-040",
+    "partitoId": "AZ",
+    "dichiarante": "Azione (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale",
+    "data": "2026-05-09",
+    "testoLetterale": "Rafforzare l’integrazione europea attraverso cooperazioni rafforzate […] Consentire agli Stati membri che condividono obiettivi comuni di procedere più velocemente verso forme più strette di integrazione politica, economica e militare, utilizzando gli strumenti istituzionali disponibili",
+    "parafrasiNeutra": "Consentire agli Stati Ue che lo vogliono di integrarsi più strettamente sul piano politico, economico e militare tramite cooperazioni rafforzate.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "appello_raccolta_firme",
+    "fonte": {
+      "url": "https://www.azione.it/abolire-il-diritto-di-veto-in-europa/"
+    },
+    "archivioUrl": "http://web.archive.org/web/20260801173924/https://www.azione.it/abolire-il-diritto-di-veto-in-europa/",
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «Rafforzare l'integrazione europea attraverso cooperazioni rafforzate» del pacchetto di C27-AZ-018; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Petizione Azione sul diritto di veto; la prima parte del testo è il titolo della voce. Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); strumento dei trattati nominato (cooperazioni rafforzate): supera il criterio.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-AZ-041",
+    "partitoId": "AZ",
+    "dichiarante": "Carlo Calenda",
+    "ruoloDichiarante": "Segretario di Azione, senatore",
+    "data": "2026-04-27",
+    "testoLetterale": "due diligence su fondi non spesi PNRR e ampliare rimborsi ETS",
+    "parafrasiNeutra": "Verificare i fondi PNRR non spesi e ampliare i rimborsi ETS.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://www.azione.it/meno-distrazione-piu-azione/"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «due diligence PNRR e rimborsi ETS» del pacchetto di C27-AZ-022; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Piano «Cose da fare» inviato al governo in carica (Meloni) nella newsletter firmata da Carlo Calenda. Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); azioni identificabili (due diligence sui fondi PNRR non spesi, ampliamento dei rimborsi ETS): supera il criterio.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-AZ-042",
+    "partitoId": "AZ",
+    "dichiarante": "Carlo Calenda",
+    "ruoloDichiarante": "Segretario di Azione, senatore",
+    "data": "2026-04-27",
+    "testoLetterale": "con la stessa fonte (PNRR), fare un piano automotive. Assimilare costo energia automotive a energivori. Contratti lunghi su consumo da fonte idro e carbone",
+    "parafrasiNeutra": "Con i fondi PNRR, un piano automotive: costo dell'energia del settore equiparato a quello degli energivori e contratti lunghi su energia idroelettrica e da carbone.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://www.azione.it/meno-distrazione-piu-azione/"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «piano automotive» del pacchetto di C27-AZ-022; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Piano «Cose da fare» inviato al governo in carica (Meloni) nella newsletter firmata da Carlo Calenda. Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); piano con fonte di finanziamento (PNRR) e leve nominate (equiparazione agli energivori, contratti lunghi): supera il criterio.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-AZ-043",
+    "partitoId": "AZ",
+    "dichiarante": "Carlo Calenda",
+    "ruoloDichiarante": "Segretario di Azione, senatore",
+    "data": "2026-04-27",
+    "testoLetterale": "riaprire brindisi e Civitavecchia con rimborso ETS per imprese 70 euro MWH",
+    "parafrasiNeutra": "Riaprire gli impianti di Brindisi e Civitavecchia, con un rimborso ETS alle imprese di 70 euro per MWh.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://www.azione.it/meno-distrazione-piu-azione/"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «riapertura di Brindisi e Civitavecchia» del pacchetto di C27-AZ-022; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Piano «Cose da fare» inviato al governo in carica (Meloni) nella newsletter firmata da Carlo Calenda. Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); impianti nominati e parametro (rimborso ETS di 70 euro/MWh): supera il criterio.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-AZ-045",
+    "partitoId": "AZ",
+    "dichiarante": "Carlo Calenda",
+    "ruoloDichiarante": "Segretario di Azione, senatore",
+    "data": "2026-04-27",
+    "testoLetterale": "provvedimento mobile su accise, non più 500 milioni a botta",
+    "parafrasiNeutra": "Un meccanismo mobile sulle accise al posto di interventi da 500 milioni alla volta.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://www.azione.it/meno-distrazione-piu-azione/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «accise mobili» del pacchetto di C27-AZ-022; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Piano «Cose da fare» inviato al governo in carica (Meloni) nella newsletter firmata da Carlo Calenda. Voce della parte «Cosa fare SUCCESSIVAMENTE». La nota di C27-CSX-001 riferisce che le «accise mobili» sono state escluse altrove per la regola sugli atti rivolti al Governo in carica: qui il veicolo è lo stesso delle righe sorelle valide. Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); meccanismo nominato (accisa mobile) con il termine di confronto (interventi da 500 milioni): supera il criterio.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-PE-015",
+    "partitoId": "PE",
+    "dichiarante": "+Europa (pagina di campagna)",
+    "ruoloDichiarante": "Partito - canale ufficiale",
+    "data": "2026-10-11",
+    "testoLetterale": "Una federazione democratica, con un Parlamento europeo dotato di pieni poteri legislativi e di bilancio, e liste transnazionali che permettano ai cittadini di scegliere rappresentanti su scala europea.",
+    "parafrasiNeutra": "Un'Ue federale con un Parlamento europeo dotato di pieni poteri legislativi e di bilancio e con liste transnazionali.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "non_specificato",
+    "veicolo": "appello_raccolta_firme",
+    "fonte": {
+      "url": "https://www.piueuropa.eu/per_gli_stati_uniti_d_europa"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «01 Una federazione democratica» del pacchetto di C27-PE-005; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Appello «Con Emma per gli Stati Uniti d'Europa»; voce 03 = C27-PE-005. Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); leve nominate (pieni poteri legislativi e di bilancio del Parlamento europeo, liste transnazionali): supera il criterio.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-PE-019",
+    "partitoId": "PE",
+    "dichiarante": "Riccardo Magi",
+    "ruoloDichiarante": "Segretario di +Europa, deputato",
+    "data": "2026-07-14",
+    "testoLetterale": "introduzione della raccolta digitale delle firme per la presentazione di liste elettorali mediante piattaforma pubblica già esistente per i referendum con firma elettronica qualificata",
+    "parafrasiNeutra": "Raccolta digitale delle firme per presentare le liste elettorali, tramite la piattaforma pubblica dei referendum con firma elettronica qualificata.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "emendamento",
+    "fonte": {
+      "url": "https://www.piueuropa.eu/legge_elettorale_magi_da_mattarellum_a_firme_digitali_gli_emendamenti_di_europa"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «raccolta digitale delle firme per le liste» del pacchetto di C27-PE-011; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Emendamenti di +Europa alla legge elettorale in discussione nella legislatura in corso; la legge risulta poi approvata in via definitiva (webtv.camera.it, seduta 723): esito degli emendamenti da verificare. Stesso impegno citato nell'intervista all'Unità del 26/6/2026 (estensione della firma digitale alle liste). Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); meccanismo descritto (piattaforma pubblica dei referendum, firma elettronica qualificata): supera il criterio. Non è un doppione di C27-PE-011: il testo_letterale di quella riga non contiene la raccolta digitale (solo la parafrasi, segnalato in §2 dell'uniformità).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-PE-020",
+    "partitoId": "PE",
+    "dichiarante": "Riccardo Magi",
+    "ruoloDichiarante": "Segretario di +Europa, deputato",
+    "data": "2026-07-14",
+    "testoLetterale": "introduzione di una clausola transitoria volta ad applicare il principio della stabilità del diritto elettorale sancito dalla Commissione di Venezia, che esclude l’applicazione della nuova legge elettorale in caso di elezioni a meno di un anno dall’approvazione della legge elettorale",
+    "parafrasiNeutra": "Clausola transitoria: la nuova legge elettorale non si applica a elezioni tenute entro un anno dalla sua approvazione.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "emendamento",
+    "fonte": {
+      "url": "https://www.piueuropa.eu/legge_elettorale_magi_da_mattarellum_a_firme_digitali_gli_emendamenti_di_europa"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «clausola transitoria» del pacchetto di C27-PE-011; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Emendamenti di +Europa alla legge elettorale; esito da verificare. Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); clausola con parametro (elezioni a meno di un anno dall'approvazione): supera il criterio.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-PE-021",
+    "partitoId": "PE",
+    "dichiarante": "Riccardo Magi",
+    "ruoloDichiarante": "Segretario di +Europa, deputato",
+    "data": "2026-07-14",
+    "testoLetterale": "riforma dell’accesso alla competizione elettorale con norma sull’esenzione dalla raccolta firme più giusta ed equa, che tiene conto del criterio dei voti ottenuti alle ultime elezioni",
+    "parafrasiNeutra": "Rivedere l'esenzione dalla raccolta firme per presentare le liste, tenendo conto dei voti ottenuti alle ultime elezioni.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "emendamento",
+    "fonte": {
+      "url": "https://www.piueuropa.eu/legge_elettorale_magi_da_mattarellum_a_firme_digitali_gli_emendamenti_di_europa"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «esenzione dalla raccolta firme» del pacchetto di C27-PE-011; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Emendamenti di +Europa alla legge elettorale; esito da verificare. Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); norma nominata (esenzione dalla raccolta firme) con criterio: supera il criterio.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CORRETTA: parafrasi («in base ai voti» → «tenendo conto dei voti», come il testo) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-PE-022",
+    "partitoId": "PE",
+    "dichiarante": "Riccardo Magi",
+    "ruoloDichiarante": "Segretario di +Europa, deputato",
+    "data": "2026-06-26",
+    "testoLetterale": "da riformatori poniamo il tema di una gestione dei flussi migratori che superi la legge attuale, la Bossi-Fini, il miglior regalo all’irregolarità che porta allo sfruttamento e alla mancanza di sicurezza per tutti",
+    "parafrasiNeutra": "Superare la legge Bossi-Fini con una diversa gestione dei flussi migratori.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.unita.it/2026/06/26/alleanza-parliamo-prima-di-democrazia-vogliono-escluderci-dalle-elezioni-parla-riccardo-magi/"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «superamento della Bossi-Fini» del pacchetto di C27-PE-013; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Elenco «da riformatori…» dell'intervista all'Unità; voci già registrate: C27-PE-013, C27-PE-014; cannabis in C27-PE-002 e federalismo europeo in C27-PE-004/005 (altre fonti). Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); supera il criterio: superamento di una legge nominata (Bossi-Fini). Livello: la riga sorella C27-PE-013 era V1 («testo integrale leggibile su unita.it»), mentre C27-PD-014 e C27-FI-008 (interviste in testata) sono V2; qui applico la regola V2 per i testi di testata, segnalando l'incoerenza al titolare.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-21 — CONFERMATA. Parte secondaria: intervista pubblicata da una testata (unita.it), non dal canale del partito | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-PE-023",
+    "partitoId": "PE",
+    "dichiarante": "Riccardo Magi",
+    "ruoloDichiarante": "Segretario di +Europa, deputato",
+    "data": "2026-06-26",
+    "testoLetterale": "da riformatori poniamo il problema dei salari bassi e del lavoro povero sostenendo il salario minimo",
+    "parafrasiNeutra": "Sostenere l'introduzione del salario minimo.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.unita.it/2026/06/26/alleanza-parliamo-prima-di-democrazia-vogliono-escluderci-dalle-elezioni-parla-riccardo-magi/"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «salario minimo» del pacchetto di C27-PE-013; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Elenco «da riformatori…» dell'intervista all'Unità. Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); supera il criterio: istituto nominato (salario minimo), come C27-PD-013. Livello V2: vedi nota di C27-PE-022.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-21 — CONFERMATA. Parte secondaria: intervista pubblicata da una testata (unita.it), non dal canale del partito | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-PE-024",
+    "partitoId": "PE",
+    "dichiarante": "Riccardo Magi",
+    "ruoloDichiarante": "Segretario di +Europa, deputato",
+    "data": "2026-06-26",
+    "testoLetterale": "sostenendo il salario minimo ma anche sgravi fiscali significativi per agli aumenti salariali dovuti al rinnovo dei contratti",
+    "parafrasiNeutra": "Sgravi fiscali sugli aumenti salariali derivanti dai rinnovi contrattuali.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.unita.it/2026/06/26/alleanza-parliamo-prima-di-democrazia-vogliono-escluderci-dalle-elezioni-parla-riccardo-magi/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «sgravi sugli aumenti da rinnovo contrattuale» del pacchetto di C27-PE-013; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Elenco «da riformatori…» dell'intervista all'Unità; «per agli» è nella fonte. Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); supera il criterio: sgravio fiscale su una base definita (aumenti salariali da rinnovo contrattuale); stessa regola di C27-FI-015. Livello V2: vedi nota di C27-PE-022.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-21 — CONFERMATA. Parte secondaria: intervista pubblicata da una testata (unita.it), non dal canale del partito | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-PLD-008",
+    "partitoId": "PLD",
+    "dichiarante": "Partito Liberaldemocratico (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale; segretario Luigi Marattin",
+    "data": "2026-09-05",
+    "testoLetterale": "Abolizione dell’IRAP",
+    "parafrasiNeutra": "Abolire l'IRAP.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://partitoliberaldemocratico.com/ridurre-la-spesa-pubblica-per-tagliare-le-tasse-il-piano-del-pld/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «Abolizione dell'IRAP» del pacchetto di C27-PLD-002; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Una delle «quattro priorità» del piano PLD di taglio della spesa (C27-PLD-002). Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); imposta nominata (IRAP) ed esito (abolizione): supera il criterio.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-PLD-009",
+    "partitoId": "PLD",
+    "dichiarante": "Partito Liberaldemocratico (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale; segretario Luigi Marattin",
+    "data": "2026-09-05",
+    "testoLetterale": "Azzeramento dell’IRES sugli utili reinvestiti in azienda",
+    "parafrasiNeutra": "Azzerare l'IRES sugli utili reinvestiti in azienda.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://partitoliberaldemocratico.com/ridurre-la-spesa-pubblica-per-tagliare-le-tasse-il-piano-del-pld/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «Azzeramento dell'IRES sugli utili reinvestiti» del pacchetto di C27-PLD-002; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Una delle «quattro priorità» del piano PLD (C27-PLD-002). Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); imposta nominata, base e valore di arrivo (IRES a zero sugli utili reinvestiti): supera il criterio.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-PLD-010",
+    "partitoId": "PLD",
+    "dichiarante": "Partito Liberaldemocratico (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale; segretario Luigi Marattin",
+    "data": "2026-09-05",
+    "testoLetterale": "Riduzione dell’IRPEF per il ceto medio e per le società di persone",
+    "parafrasiNeutra": "Ridurre l'IRPEF per il ceto medio e per le società di persone.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://partitoliberaldemocratico.com/ridurre-la-spesa-pubblica-per-tagliare-le-tasse-il-piano-del-pld/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «Riduzione dell'IRPEF per il ceto medio» del pacchetto di C27-PLD-002; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Una delle «quattro priorità» del piano PLD (C27-PLD-002); l'aliquota al 33% tra 50 e 60 mila euro è in C27-PLD-001 (altra fonte). Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); imposta nominata (IRPEF) e platee (ceto medio, società di persone): supera il criterio. La parte sul ceto medio si sovrappone a C27-PLD-001 (aliquota 33% tra 50 e 60 mila euro, altra fonte); le società di persone sono un elemento nuovo: non è un doppione.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-PLD-011",
+    "partitoId": "PLD",
+    "dichiarante": "Partito Liberaldemocratico (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale; segretario Luigi Marattin",
+    "data": "2026-09-05",
+    "testoLetterale": "Semplificazione e taglio della tassazione sui risparmi",
+    "parafrasiNeutra": "Semplificare e ridurre la tassazione sui risparmi.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://partitoliberaldemocratico.com/ridurre-la-spesa-pubblica-per-tagliare-le-tasse-il-piano-del-pld/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «Semplificazione e taglio della tassazione sui risparmi» del pacchetto di C27-PLD-002; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Una delle «quattro priorità» del piano PLD (C27-PLD-002). Pre-valutazione slogan (criterio uniforme 2026-10-21): caso limite, da decidere in verifica. (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); caso limite: supera il criterio perché nomina la tassazione di una base definita (i redditi da risparmio), a differenza del «cuneo fiscale» di C27-FN-005, che è un aggregato di imposte e contributi.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA; caso limite deciso: supera il criterio | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
     "id": "C27-ORA-001",
     "partitoId": "ORA",
     "dichiarante": "ORA! e Michele Boldrin",
@@ -7047,6 +7947,56 @@
     "verifica": {
       "livello": "V2",
       "dettaglio": "V2✓ verificatore 2026-10-21 — CORRETTA: da NV a V2 (virgolettato diretto in testata, legenda V2); orizzonte da prossima_legislatura a non_specificato; coalizione da «non definita» a centrodestra (accordo con FdI dichiarato da De Luca l'08/10/2026)"
+    }
+  },
+  {
+    "id": "C27-PAP-010",
+    "partitoId": "PAP",
+    "dichiarante": "Potere al Popolo (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale",
+    "data": "2026-04-12",
+    "testoLetterale": "Prima mossa. Approvazione rapida della legge sul salario minimo. Non quello delle opposizioni, ma quello da noi proposto nel 2022, ossia un salario minimo agganciato all’inflazione, che permetta a milioni di lavoratori e lavoratrici povere di avere un ritorno immediato in busta paga",
+    "parafrasiNeutra": "Approvare rapidamente un salario minimo indicizzato all'inflazione, secondo la proposta di Potere al Popolo del 2022.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "altro",
+    "fonte": {
+      "url": "https://poterealpopolo.org/notizie/approfondimenti/2026/04/12/quattro-mosse-difenderci-guerra-carovita/"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «Prima mossa» del pacchetto di C27-PAP-007; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Testo «Quattro mosse per difenderci da guerra e carovita»; seconda, terza e quarta mossa = C27-PAP-007, 008, 009. Possibile sovrapposizione con C27-PAP-001 (salario minimo a 12 euro, altra fonte): qui l'elemento distinto è l'indicizzazione all'inflazione. Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); istituto nominato (salario minimo) e meccanismo (aggancio all'inflazione): supera il criterio. Non è un doppione di C27-PAP-001 (12 euro, altra fonte): l'elemento distinto è l'indicizzazione.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-ORA-021",
+    "partitoId": "ORA",
+    "dichiarante": "Laura Scalfi",
+    "ruoloDichiarante": "Componente della Segreteria nazionale ORA! (delega Scuola), con il Gruppo Istruzione ORA!-Emilia Romagna",
+    "data": "2026-08-14",
+    "testoLetterale": "Fondi vincolati per reti territoriali e patti educativi di comunità: l’inclusione non si fa solo in classe. Chiediamo investimenti strutturali per progetti extrascolastici (doposcuola gratuiti, attività sportive e laboratori culturali) che mettano in rete la scuola, gli enti locali e il Terzo Settore,",
+    "parafrasiNeutra": "Fondi vincolati per reti territoriali e patti educativi di comunità, con investimenti strutturali in progetti extrascolastici (doposcuola gratuiti, sport, laboratori culturali) in rete tra scuola, enti locali e Terzo settore.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://ora-italia.it/linee-guida-sugli-alunni-stranieri-dal-ministero-solo-propaganda-ideologica-sulla-pelle-dei-bambini-ora-propone-tre-soluzioni-reali-per-la-scuola/"
+    },
+    "archivioUrl": null,
+    "cofog": "09",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «Fondi vincolati per reti territoriali e patti educativi di comunità» del pacchetto di C27-ORA-014; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Terza delle «tre proposte concrete» del comunicato ORA! sulla scuola; prima e seconda = C27-ORA-014 e C27-ORA-015. Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); strumento nominato (fondi vincolati con oggetto definito): supera il criterio.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-21 — CORRETTA: parafrasi completata («patti educativi di comunità», «investimenti strutturali») | PERIMETRO: orizzonte/veicolo (vedi colonne)"
     }
   }
 ]
