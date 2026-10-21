@@ -6,8 +6,8 @@ import { SourceLinks } from "@/components/source-links";
 import { VerificationBadge } from "@/components/verification-badge";
 import { budgetLawsProposedBy, getGovernment, getLegislature, governments, measuresOf } from "@/server/data";
 import { governmentDurationDays } from "@/server/stats";
-import { formatDate, formatDecimal, formatEuroMillions, formatInt } from "@/lib/format";
-import { debtGdpSeries, governmentFinance } from "@/server/finance";
+import { formatDate, formatDecimal, formatEuroMillions, formatInt, formatMonth } from "@/lib/format";
+import { debtGdpSeries, governmentFinance, isProvisionalDebt } from "@/server/finance";
 
 export function generateStaticParams() {
   return governments.map((g) => ({ id: g.id }));
@@ -121,8 +121,7 @@ export default async function GovernmentPage({ params }: PageProps<"/governi/[id
   );
 }
 
-const MONTHS = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
-const monthLabel = (m: string) => `fine ${MONTHS[Number(m.slice(5, 7)) - 1]} ${m.slice(0, 4)}`;
+const monthLabel = (m: string) => `fine ${formatMonth(m)}`;
 const pct = (n: number) => `${formatDecimal(n, 1)}%`;
 
 function PublicAccounts({
@@ -153,7 +152,10 @@ function PublicAccounts({
         <div className="bg-paper-raised p-5">
           <dt className="text-sm text-ink-soft">{d.fine.parziale ? "Debito all'ultimo dato" : "Debito alla fine"}</dt>
           <dd className="mt-1 text-2xl font-semibold">{formatEuroMillions(d.fine.valore)}</dd>
-          <dd className="text-sm text-ink-faint">{monthLabel(d.fine.mese)}</dd>
+          <dd className="text-sm text-ink-faint">
+            {monthLabel(d.fine.mese)}
+            {isProvisionalDebt(d.fine.mese) ? ", dato provvisorio" : ""}
+          </dd>
         </div>
         <div className="bg-paper-raised p-5">
           <dt className="text-sm text-ink-soft">Variazione {d.fine.parziale ? "finora" : "nel mandato"}</dt>

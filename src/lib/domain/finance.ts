@@ -6,7 +6,7 @@ type DebtPoint = PublicFinance["debitoMensile"][number];
 // Righe dello scontrino: si escludono a vicenda e sommano al totale della spesa per funzione.
 // Pensioni e interessi escono dalla loro divisione COFOG perché da soli pesano quanto intere funzioni.
 export const RECEIPT_LINES: { id: string; etichetta: string; importo: (v: Voci) => number }[] = [
-  { id: "pensioni", etichetta: "Pensioni di vecchiaia e ai superstiti", importo: (v) => v.GF1002 + v.GF1003 },
+  { id: "pensioni", etichetta: "Vecchiaia e superstiti (soprattutto pensioni)", importo: (v) => v.GF1002 + v.GF1003 },
   { id: "sanita", etichetta: COFOG_DIVISIONS["07"], importo: (v) => v.GF07 },
   { id: "altra-protezione", etichetta: "Altra protezione sociale", importo: (v) => v.GF10 - v.GF1002 - v.GF1003 },
   { id: "affari-economici", etichetta: COFOG_DIVISIONS["04"], importo: (v) => v.GF04 },

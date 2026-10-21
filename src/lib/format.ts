@@ -22,3 +22,10 @@ export function formatEuroMillions(millions: number): string {
   if (Math.abs(millions) >= 1000) return `${formatDecimal(millions / 1000, 1)} mld €`;
   return `${formatInt(millions)} mln €`;
 }
+
+const monthFmt = new Intl.DateTimeFormat("it-IT", { month: "long", year: "numeric", timeZone: "UTC" });
+
+/** "2026-08" → "agosto 2026". */
+export function formatMonth(month: string): string {
+  return monthFmt.format(new Date(`${month}-01T00:00:00Z`));
+}

@@ -33,7 +33,8 @@ const SOURCES = [
     file: "eurostat/gov_10dd_edpt1.csv",
     url: `${EUROSTAT}/gov_10dd_edpt1/A.MIO_NAC+PC_GDP.S13.GD.IT?format=SDMX-CSV`,
   },
-  // Pubblicazione FPI: zip di zip. Serve solo la tavola TCCE0325 (debito lordo delle AP, mensile dal 1861).
+  // Pubblicazione FPI: zip di zip. Serve la tavola TCCE0325 (debito delle AP per vita residua, mensile dal 1861):
+  // si usa solo la colonna del debito lordo totale.
   { file: "bancaditalia/TCCE0325.csv", url: BANKITALIA, zipEntry: "TCCE0325_IT.zip" },
 ] as const;
 

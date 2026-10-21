@@ -28,6 +28,7 @@ function table(rows: Record<string, string>[], key: (r: Record<string, string>) 
   return out;
 }
 const mainT = table(main, (r) => `${r.unit}|${r.na_item}`);
+const breaks = new Set(main.filter((r) => r.unit === "MIO_NAC" && r.na_item === "TE" && r.OBS_FLAG.includes("b")).map((r) => Number(r.TIME_PERIOD)));
 const expT = table(exp, (r) => r.cofog99);
 const edpT = table(edp, (r) => r.unit);
 const years = (rows: Record<string, string>[]) => [...new Set(rows.map((r) => Number(r.TIME_PERIOD)))].toSorted((a, b) => a - b);
@@ -51,6 +52,7 @@ const conti = years(main)
       pil: { spesa: v("PC_GDP", "TE"), entrate: v("PC_GDP", "TR"), saldo: v("PC_GDP", "B9"), interessi: v("PC_GDP", "D41PAY") },
       // Popolazione media dell'anno: media fra il 1° gennaio dell'anno e quello dell'anno dopo.
       popolazioneMedia: a !== undefined && b !== undefined ? Math.round((a + b) / 2) : null,
+      rotturaDiSerie: breaks.has(anno),
     };
   });
 

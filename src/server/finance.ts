@@ -8,6 +8,11 @@ const population = new Map(series.population.punti.map((p) => [p.anno, p.valore]
 const coefficients = new Map(series.coefficients.punti.map((p) => [p.anno, p.valore]));
 
 export const debtGdpSeries = debtToGdp(finance, gdp);
+export const seriesBreaks = finance.conti.filter((c) => c.rotturaDiSerie).map((c) => c.anno);
+
+// Banca d'Italia segna come provvisori i mesi dopo l'ultimo dicembre già notificato a Eurostat.
+const lastNotifiedYear = Math.max(...finance.debitoPil.map((d) => d.anno));
+export const isProvisionalDebt = (mese: string) => Number(mese.slice(0, 4)) > lastNotifiedYear;
 
 function accountsWithPopulation() {
   return finance.conti.filter((c): c is typeof c & { popolazioneMedia: number } => c.popolazioneMedia !== null);
@@ -27,7 +32,13 @@ export function headline() {
     saldo: perResident(c.saldo, pop),
     interessi: perResident(c.interessi, pop),
     pil: c.pil,
-    debito: { mese: lastDebt.mese, totale: lastDebt.valore, perResidente: perResident(lastDebt.valore, debtPop), popolazioneAnno: debtYear },
+    debito: {
+      mese: lastDebt.mese,
+      totale: lastDebt.valore,
+      perResidente: perResident(lastDebt.valore, debtPop),
+      popolazioneAnno: debtYear,
+      provvisorio: isProvisionalDebt(lastDebt.mese),
+    },
   };
 }
 

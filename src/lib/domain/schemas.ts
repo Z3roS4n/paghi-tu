@@ -233,6 +233,8 @@ export const PublicAccountsYear = z.object({
   interessi: z.number(),
   pil: z.object({ spesa: z.number(), entrate: z.number(), saldo: z.number(), interessi: z.number() }),
   popolazioneMedia: z.number().nullable(),
+  // Flag "b" di Eurostat: la serie cambia metodo da quest'anno, gli anni prima non sono confrontabili alla pari.
+  rotturaDiSerie: z.boolean(),
 });
 export type PublicAccountsYear = z.infer<typeof PublicAccountsYear>;
 

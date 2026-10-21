@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ChartFigure } from "@/components/chart-figure";
 import { VerificationBadge } from "@/components/verification-badge";
-import { formatDecimal, formatInt } from "@/lib/format";
+import { formatDecimal, formatInt, formatMonth } from "@/lib/format";
 import { finance } from "@/server/data";
-import { accountsSeries, debtGdpSeries, headline, latestReceipt, spendingPerResidentReal } from "@/server/finance";
+import { accountsSeries, debtGdpSeries, headline, latestReceipt, seriesBreaks, spendingPerResidentReal } from "@/server/finance";
 
 export const metadata: Metadata = {
   title: "Quanto spendiamo",
@@ -12,8 +12,6 @@ export const metadata: Metadata = {
     "Quanto spendono ogni anno Stato, regioni, comuni ed enti di previdenza per ogni residente, dove vanno i soldi e quanto pesa il debito. Dati Eurostat e Banca d'Italia.",
 };
 
-const MONTHS = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
-const monthLabel = (m: string) => `${MONTHS[Number(m.slice(5, 7)) - 1]} ${m.slice(0, 4)}`;
 const euro = (n: number) => `${formatInt(n)} €`;
 const pct = (n: number) => `${formatDecimal(n, 1)}%`;
 
@@ -36,7 +34,7 @@ export default function SpendingPage() {
     <div className="mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
       <p className="font-mono text-sm text-ink-faint">Conti delle amministrazioni pubbliche, {h.anno}</p>
       <h1 className="mt-3 max-w-[20ch] text-4xl font-semibold tracking-tight md:text-6xl">
-        Quanto spende lo Stato per ognuno di noi
+        Quanto spende il settore pubblico per ognuno di noi
       </h1>
 
       <section aria-labelledby="totale" className="mt-10 grid gap-10 md:grid-cols-[1.1fr_1fr] md:items-end">
@@ -45,28 +43,31 @@ export default function SpendingPage() {
           <p className="text-6xl font-semibold tracking-tight md:text-8xl">{euro(h.spesa)}</p>
           <p className="mt-4 max-w-[46ch] text-lg text-ink-soft">
             spesi nel {h.anno} per ogni persona residente in Italia, neonati compresi: {euro(h.spesa / 365)} al giorno.
-            È il {pct(h.pil.spesa)} di tutto quello che il Paese ha prodotto in un anno.
+            Equivale al {pct(h.pil.spesa)} del PIL, il valore di quanto il Paese ha prodotto nell&apos;anno: è un
+            rapporto, non una fetta del PIL, perché buona parte della spesa sono pensioni, interessi e altri trasferimenti.
           </p>
         </div>
         <p className="max-w-[52ch] text-sm text-ink-soft md:pb-2">
-          Comprende Stato, regioni, comuni, INPS e gli altri enti pubblici, cioè il settore delle amministrazioni
-          pubbliche dei conti europei. Ogni cifra per residente divide il totale per la popolazione media dell&apos;anno
-          ({formatDecimal(h.popolazione / 1e6, 1)} milioni). È una media, non quello che paga una persona.
+          Comprende Stato, regioni, comuni, INPS e gli altri enti che ISTAT classifica fra le amministrazioni pubbliche;
+          restano fuori le imprese pubbliche. Le cifre per residente dividono il totale dell&apos;anno per la popolazione
+          media dell&apos;anno ({formatDecimal(h.popolazione / 1e6, 1)} milioni nel {h.anno}); il debito, che è un valore a
+          una data, si divide per i residenti al 1° gennaio {h.debito.popolazioneAnno}. Sono medie, non quello che paga una
+          persona.
         </p>
       </section>
 
       <dl className="mt-12 grid gap-px border border-rule bg-rule sm:grid-cols-2 lg:grid-cols-4">
         <Stat label="Entrate per residente" value={euro(h.entrate)} note={`imposte, contributi e altre entrate, ${h.anno}`} />
         <Stat
-          label="Spesa oltre le entrate"
+          label="Disavanzo (spesa oltre le entrate)"
           value={euro(-h.saldo)}
-          note={`per residente nel ${h.anno}, coperta con nuovo debito`}
+          note={`per residente nel ${h.anno}: l'indebitamento netto, finanziato soprattutto con nuovo debito`}
         />
         <Stat label="Interessi sul debito" value={euro(h.interessi)} note={`per residente nel ${h.anno}`} />
         <Stat
           label="Debito pubblico per residente"
           value={euro(h.debito.perResidente)}
-          note={`a fine ${monthLabel(h.debito.mese)}, ${formatInt(h.debito.totale / 1000)} miliardi in tutto`}
+          note={`a fine ${formatMonth(h.debito.mese)}${h.debito.provvisorio ? " (dato provvisorio)" : ""}, ${formatInt(h.debito.totale / 1000)} miliardi in tutto, diviso per i residenti al 1° gennaio ${h.debito.popolazioneAnno}`}
         />
       </dl>
 
@@ -99,13 +100,23 @@ export default function SpendingPage() {
           </li>
         </ul>
         <p className="mt-3 text-xs text-ink-faint">
-          Fonte: Eurostat, gov_10a_exp. «Altra protezione sociale» comprende malattia e invalidità, famiglia, disoccupazione,
-          casa ed esclusione sociale. Gli interessi sono la voce COFOG 01.7, operazioni sul debito pubblico.
+          Fonte: Eurostat, gov_10a_exp. «Vecchiaia e superstiti» sono le voci COFOG 10.2 e 10.3: pensioni di vecchiaia,
+          anticipate e ai superstiti, più assistenza e servizi agli anziani. «Altra protezione sociale» comprende malattia e
+          invalidità (con le pensioni di invalidità), famiglia e figli, disoccupazione, casa, esclusione sociale e altre spese
+          non classificate. La riga sul debito è la voce COFOG 01.7, operazioni relative al debito pubblico: interessi e oneri
+          di emissione.
         </p>
       </section>
 
       <section aria-labelledby="tempo" className="mt-20">
         <h2 id="tempo" className="text-2xl font-semibold tracking-tight md:text-3xl">Come è cambiata dal 1995</h2>
+        {seriesBreaks.length > 0 ? (
+          <p className="mt-3 max-w-[70ch] text-sm text-ink-soft">
+            Dal {seriesBreaks.join(", ")} i dati incorporano la revisione dei conti nazionali ISTAT più recente; gli anni
+            precedenti non sono ancora stati ricostruiti. Fra il {seriesBreaks[0] - 1} e il {seriesBreaks[0]} c&apos;è quindi
+            una rottura di serie (Eurostat la segnala con il flag «b»): il confronto fra i due periodi va letto con cautela.
+          </p>
+        ) : null}
         <div className="mt-8 grid gap-14 lg:grid-cols-2">
           <ChartFigure
             title="Spesa pubblica per residente, in euro del 2025"
@@ -122,7 +133,7 @@ export default function SpendingPage() {
           />
           <ChartFigure
             title="Saldo dei conti pubblici in % del PIL"
-            note="Sotto lo zero le spese superano le entrate e la differenza si copre con nuovo debito."
+            note="Sotto lo zero le spese superano le entrate (indebitamento netto). La differenza si finanzia soprattutto con nuovo debito, ma la variazione del debito non coincide con il disavanzo: contano anche la liquidità del Tesoro e i pagamenti di cassa."
             source="Eurostat gov_10a_main, indebitamento netto (B9)."
             unit="pct"
             points={accountsSeries("saldo").map((p) => ({ x: p.anno, label: String(p.anno), value: p.valore, display: pct(p.valore) }))}
@@ -137,7 +148,9 @@ export default function SpendingPage() {
       </section>
 
       <section aria-labelledby="debito" className="mt-20">
-        <h2 id="debito" className="text-2xl font-semibold tracking-tight md:text-3xl">Il debito dal 1945</h2>
+        <h2 id="debito" className="text-2xl font-semibold tracking-tight md:text-3xl">
+          Il debito dal {debtGdpSeries[0].anno}
+        </h2>
         <div className="mt-8">
           <ChartFigure
             title="Debito pubblico in % del PIL, a fine anno"

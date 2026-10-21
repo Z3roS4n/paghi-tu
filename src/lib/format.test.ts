@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { daysBetween, formatDate, formatEuroMillions } from "./format.ts";
+import { daysBetween, formatDate, formatEuroMillions, formatMonth } from "./format.ts";
 
 describe("format", () => {
   it("formatta le date in italiano senza slittare di fuso", () => {
@@ -13,5 +13,11 @@ describe("format", () => {
   it("passa ai miliardi sopra i mille milioni", () => {
     expect(formatEuroMillions(2_265_002.5)).toBe("2.265,0 mld €");
     expect(formatEuroMillions(904)).toBe("904 mln €");
+  });
+});
+
+describe("formatMonth", () => {
+  it("scrive mese e anno per esteso", () => {
+    expect(formatMonth("2026-08")).toBe("agosto 2026");
   });
 });

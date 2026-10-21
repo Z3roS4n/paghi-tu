@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRightIcon, MagnifyingGlassIcon } from "@phosphor-icons/react/ssr";
 import { LevelTag } from "@/components/verification-badge";
-import { formatDecimal, formatInt } from "@/lib/format";
+import { formatDecimal, formatInt, formatMonth } from "@/lib/format";
 import { headline, latestReceipt } from "@/server/finance";
 import { homeStats } from "@/server/stats";
 
@@ -68,8 +68,9 @@ export default function Home() {
           </h1>
           <p className="mt-8 text-6xl font-semibold tracking-tight md:text-7xl">{euro(h.spesa)}</p>
           <p className="mt-3 max-w-[46ch] text-lg leading-relaxed text-ink-soft">
-            per ogni residente nel {h.anno}: {euro(h.spesa / 365)} al giorno. Le entrate sono state {euro(h.entrate)} a
-            testa; il resto è nuovo debito, che oggi vale {euro(h.debito.perResidente)} per residente.
+            spesi nel {h.anno} da Stato, regioni, comuni ed enti di previdenza per ogni residente: {euro(h.spesa / 365)} al
+            giorno. Le entrate sono state {euro(h.entrate)} a testa; il disavanzo si finanzia soprattutto con nuovo debito,
+            che a fine {formatMonth(h.debito.mese)} vale {euro(h.debito.perResidente)} per residente.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link

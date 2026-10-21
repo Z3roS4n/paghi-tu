@@ -161,6 +161,8 @@
   - copie grezze in `data/raw/` con manifest (URL, data, sha256); `build-public-finance.ts` fa 5 controlli incrociati (somma COFOG, spesa nelle due tavole, identità del saldo, debito Banca d'Italia contro Eurostat, % PIL contro PIL ISTAT) e si ferma se uno fallisce;
   - livello V1: fonte primaria più controlli fra fonti indipendenti; in più una verifica L2 a campione (`research/2026-10-21.verifica-l2-finanza-pubblica.md`);
   - prima del 1995 il debito/PIL è un nostro calcolo (debito di dicembre / PIL della serie) ed è etichettato così.
+  - il flag Eurostat «b» (rottura di serie, oggi nel 2010 per la revisione ISTAT 2026) si salva per anno e la pagina lo segnala; il debito dei mesi dopo l'ultimo dicembre notificato è «dato provvisorio».
+  - verifica L2 del 2026-10-21: tutti i numeri confermati su JSON-stat e sul PDF Banca d'Italia del 15/10/2026; corretti 7 testi (perimetro, rapporto col PIL, disavanzo, etichetta pensioni).
 - **Conseguenze:** nessun numero di spesa scritto a mano nelle pagine; il debito per governo usa l'ultima fine mese prima dell'insediamento e l'ultima prima della chiusura (nessun mese contato due volte), con l'avvertenza che non attribuisce cause.
 - **Data:** 2026-10-21
 
