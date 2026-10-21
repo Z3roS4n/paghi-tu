@@ -69,7 +69,11 @@ export function governmentFinance(g: Pick<Government, "inizio" | "fine">) {
   const startYear = Number(g.inizio.slice(0, 4));
   const endYear = Number((g.fine ?? finance.scaricato).slice(0, 4));
   const ratio = new Map(debtGdpSeries.map((d) => [d.anno, d]));
-  const lastRatio = debtGdpSeries.findLast((d) => d.anno <= endYear && d.anno >= startYear) ?? null;
+  // Il rapporto è di fine anno: conta l'ultimo dicembre che cade dentro il mandato, con la stessa
+  // regola delle fine mese del debito, così un dicembre non va a due governi.
+  const endMonth = debt?.fine.mese ?? `${endYear}-12`;
+  const lastDecember = Number(endMonth.slice(0, 4)) - (endMonth.endsWith("-12") ? 0 : 1);
+  const lastRatio = debtGdpSeries.findLast((d) => d.anno <= lastDecember && d.anno >= startYear) ?? null;
   return {
     debito: debt,
     debitoPil: { prima: ratio.get(startYear - 1) ?? null, fine: lastRatio },

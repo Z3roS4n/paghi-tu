@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { parseCsv, parseCsvRecords } from "./csv.ts";
+import { formatCsv, parseCsv, parseCsvRecords } from "./csv.ts";
 
 describe("parseCsv", () => {
   it("gestisce virgolette, virgole e a capo nei campi", () => {
@@ -22,5 +22,10 @@ describe("parseCsv", () => {
 
   it("segnala righe con numero di campi errato", () => {
     expect(() => parseCsvRecords("a,b\n1")).toThrow(/riga 2/);
+  });
+
+  it("riscrive un CSV nello stesso formato in cui lo legge", () => {
+    const text = '"a","b"\n"x, ""y""","riga\nnuova"\n';
+    expect(formatCsv(parseCsv(text))).toBe(text);
   });
 });

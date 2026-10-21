@@ -47,6 +47,15 @@ function promiseVerification(text: string): Verification {
   return head ? { livello: head[1] as VerificationLevel, dettaglio: text.trim() } : verification(text);
 }
 
+// D-019: un'intervista pubblicata da una testata vale come fonte primaria. Restano V2 le righe che
+// lo sono per un altro motivo: ruolo preso da fonti secondarie, pagina originale letta solo in copia.
+const INTERVIEW_V2_OTHER_REASON = new Set(["C27-NM-012", "C27-FI-009"]);
+
+function interviewAsPrimary(id: string, tipoFonte: string, v: Verification): Verification {
+  if (tipoFonte !== "intervista" || v.livello !== "V2" || INTERVIEW_V2_OTHER_REASON.has(id)) return v;
+  return { livello: "V1", dettaglio: `${v.dettaglio} | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo` };
+}
+
 const LEVEL_ORDER: VerificationLevel[] = ["NV", "V2", "V1"];
 function lowest(levels: VerificationLevel[]): VerificationLevel {
   return LEVEL_ORDER.find((l) => levels.includes(l)) ?? "NV";
@@ -304,7 +313,7 @@ async function campaignPromises() {
         costoDichiarato: r.costo_dichiarato_proponente.trim() || null,
         stimaTerzi: r.stima_terzi.trim() && stimaUrl ? { testo: r.stima_terzi.trim(), fonte: { url: stimaUrl } } : null,
         note: r.note.trim(),
-        verifica: promiseVerification(r.stato_verifica),
+        verifica: interviewAsPrimary(r.id, r.tipo_fonte, promiseVerification(r.stato_verifica)),
       });
       verified.push({ group, promise });
     }

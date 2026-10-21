@@ -42,6 +42,11 @@ export function parseCsv(text: string, delimiter = ","): string[][] {
   return rows.filter((r) => !(r.length === 1 && r[0] === ""));
 }
 
+// Scrive come i CSV di ricerca: ogni campo fra virgolette, a capo LF, a capo finale.
+export function formatCsv(rows: string[][]): string {
+  return rows.map((r) => r.map((f) => `"${f.replaceAll('"', '""')}"`).join(",")).join("\n") + "\n";
+}
+
 export function parseCsvRecords(text: string, delimiter = ","): Record<string, string>[] {
   const [header, ...rows] = parseCsv(text, delimiter);
   if (!header) return [];

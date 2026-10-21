@@ -173,15 +173,27 @@
 - **Data:** 2026-10-21
 
 ### D-018 — Routine su cloud per l'aggiornamento automatico
-- **Stato:** PROPOSTA, da confermare con il titolare prima di attivarla.
+- **Stato:** decisa dal titolare il 2026-10-21; da attivare su un altro account, dopo la pubblicazione del repo su GitHub.
 - **Contesto:** il titolare vuole una routine su cloud che aggiorni dati e fonti in autonomia, con agenti verificatori.
-- **Scelta proposta:** due binari, perché hanno rischi diversi.
+- **Decisioni del titolare (2026-10-21):** esecuzione **ogni giorno**; modifiche **pubblicate subito, ma solo dopo la conferma di un secondo agente AI** che non le ha scritte e le ricontrolla sulle fonti (`CONFERMATO` / `RESPINTO`), senza PR da approvare a mano; **segnalazioni via email con Resend** (`scripts/notify.ts`, scheda `integrations/resend.md`), con destinatario, mittente e chiave solo nei segreti della routine perché il repo è pubblico.
+- **Scelta:** due binari, perché hanno rischi diversi.
   1. **Dati numerici da API ufficiali** (Eurostat, Banca d'Italia; poi RGS e ISTAT): `npm run data:update`, test, build. Se tutti i controlli incrociati passano, commit e deploy in automatico; se un controllo fallisce, niente pubblicazione e una segnalazione.
   2. **Contenuti editoriali** (promesse, misure, governi): agenti di ricerca → verificatore L2 indipendente → controllo di simmetria fra partiti → import. Va online solo ciò che passa tutti i cancelli, tutti i partiti insieme (D-013); ogni modifica resta nel registro delle correzioni.
-  - Vincoli fissi: un solo processo che interroga ISTAT; niente Save Page Now o scritture su servizi esterni oltre al repo e a Vercel; niente aggiramento di blocchi; **nei 15 giorni prima di un voto la routine non pubblica contenuti nuovi su partiti e promesse** (regola in `/metodo`).
+  - Vincoli fissi: un solo processo che interroga ISTAT; niente Save Page Now o scritture su servizi esterni oltre al repo, a Vercel e a Resend; niente aggiramento di blocchi; **nei 15 giorni prima di un voto la routine non pubblica contenuti nuovi su partiti e promesse** (regola in `/metodo`).
 - **Runbook:** `.claude/routines/aggiornamento-dati.md` (istruzioni passo per passo per l'agente schedulato).
-- **Prerequisito mancante:** il repo non ha ancora un remote GitHub; la routine su cloud deve poterlo clonare.
-- **Da decidere:** frequenza (proposta: dati settimanale, promesse ogni 2-3 giorni in campagna), se il binario 2 apre una PR da approvare o pubblica da solo, dove ricevere le segnalazioni.
+- **Prerequisito mancante:** il repo non ha ancora un remote GitHub; la routine su cloud deve poterlo clonare (vedi D-019).
+- **Data:** 2026-10-21
+
+### D-019 — Decisioni del titolare su promesse, archivi e debito per governo
+- **Stato:** applicata il 2026-10-21, salvo dove indicato.
+- **Scelte:**
+  - **Interviste pubblicate da una testata = fonte primaria (V1)**, se la citazione è verificata sul testo. Applicata in `import-research.ts` (`interviewAsPrimary`). Restano V2 `C27-NM-012` (ruolo di partito preso da fonti secondarie) e `C27-FI-009` (pagina originale letta solo nella copia Wayback). Discorsi riportati e video restano V2: la decisione riguarda le interviste.
+  - **Nessun tetto di righe per partito:** ogni misura di un pacchetto è una riga (Azione 40, +Europa 18 restano così). Il numero di righe non misura quanto propone un partito, e la pagina lo dice.
+  - **C27-LEGA-024:** il titolare non ha una preferenza. Scelta di Paghi Tu: reintegrare l'inciso «(in particolare stranieri o di seconda generazione)» e tagliare invece l'attacco «Poi,» e l'esempio finale. Regola generale: un taglio «[…]» non toglie mai le parole con cui il proponente descrive un gruppo di persone, perché la dichiarazione risulterebbe diversa da come è stata fatta.
+  - **Ogni fonte deve avere una copia d'archivio.** `scripts/data/archive-sources.ts` cerca le copie Wayback esistenti (sola lettura); con `--save` chiederebbe catture nuove (scheda `integrations/internet-archive.md`). Al 2026-10-21: 6 copie esistenti trovate e salvate; le catture nuove restano escluse finché il titolare non autorizza in modo esplicito le scritture verso Internet Archive.
+  - **Spesa 1946–1994:** si usa la fonte più attendibile; scelta in corso (nota `research/2026-10-21.fonte-spesa-1946-1994.md`, DI-01).
+  - **Debito nell'elenco dei governi «il più chiaro possibile»:** colonna con intestazione, variazione in euro dell'epoca più rapporto debito/PIL a inizio e fine mandato, legenda in quattro punti. Il rapporto usa l'ultimo dicembre dentro il mandato, così un dicembre non va a due governi.
+  - **Repo pubblico su GitHub, open source (MIT).** I commit esistenti portano nome e cognome del titolare come autore: prima del push il titolare sceglie se riscrivere la storia o pubblicare un solo commit iniziale.
 - **Data:** 2026-10-21
 
 ## Decisioni aperte

@@ -12,6 +12,8 @@
     "data:fetch": "node scripts/data/fetch-public-finance.ts",
     "data:finance": "node scripts/data/build-public-finance.ts",
     "data:update": "npm run data:fetch && npm run data:finance",
+    "data:archive": "node scripts/data/archive-sources.ts",
+    "notify": "node scripts/notify.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

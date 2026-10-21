@@ -3,7 +3,7 @@ import Link from "next/link";
 import { VerificationBadge } from "@/components/verification-badge";
 import { legislatures, governmentsOf } from "@/server/data";
 import { governmentDurationDays } from "@/server/stats";
-import { formatDate, formatEuroMillions, formatInt } from "@/lib/format";
+import { formatDate, formatDecimal, formatEuroMillions, formatInt } from "@/lib/format";
 import { governmentFinance } from "@/server/finance";
 
 export const metadata: Metadata = {
@@ -24,11 +24,27 @@ export default function GovernmentsPage() {
       <p className="mt-4 max-w-[62ch] text-lg text-ink-soft">
         Date di inizio e presidenti da dati.camera.it. Per ogni governo il livello di verifica è indicato campo per campo.
       </p>
-      <p className="mt-3 max-w-[62ch] text-sm text-ink-soft">
-        La colonna sul debito pubblico mostra di quanto è cambiato durante il mandato, in euro correnti (Banca d&apos;Italia).
-        Gli importi di epoche lontane non sono confrontabili e il debito dipende anche da economia, tassi e decisioni
-        precedenti: il dettaglio è nella pagina di ogni governo.
-      </p>
+      <div className="mt-6 max-w-[68ch] border-l-2 border-accent pl-4 text-sm text-ink-soft">
+        <p className="font-medium text-ink">Come leggere la colonna «Debito nel mandato»</p>
+        <ul className="mt-2 list-disc space-y-1 pl-5">
+          <li>
+            La cifra in alto è di quanto è cresciuto (o sceso) il debito pubblico fra l&apos;ultimo fine mese prima del
+            giuramento e l&apos;ultimo fine mese prima della fine del governo. Fonte: Banca d&apos;Italia.
+          </li>
+          <li>
+            È in euro dell&apos;epoca (le lire sono convertite al cambio fisso): 1 miliardo del 1960 non vale 1 miliardo di
+            oggi, quindi questa cifra non serve a confrontare governi lontani nel tempo.
+          </li>
+          <li>
+            Per confrontare usa la riga sotto, il debito in rapporto al PIL: alla fine dell&apos;anno prima del giuramento e
+            all&apos;ultimo dicembre del mandato. I governi che non arrivano a un dicembre non ce l&apos;hanno.
+          </li>
+          <li>
+            Il debito dipende anche dall&apos;economia, dai tassi e dalle decisioni dei governi precedenti: questi numeri non
+            dicono di chi è il merito o la colpa. Il dettaglio è nella pagina di ogni governo.
+          </li>
+        </ul>
+      </div>
 
       <div className="mt-12 space-y-14">
         {ordered.map((leg) => {
@@ -47,8 +63,18 @@ export default function GovernmentsPage() {
                 <p className="py-4 text-ink-soft">Nessun governo collegato a questa legislatura nei dati.</p>
               ) : (
                 <ul className="divide-y divide-rule">
+                  <li
+                    aria-hidden
+                    className="hidden py-2 text-xs text-ink-faint md:grid md:grid-cols-[2fr_1.4fr_1fr_11.5rem_auto] md:gap-6"
+                  >
+                    <span>Governo</span>
+                    <span>Maggioranza</span>
+                    <span>Giuramento</span>
+                    <span className="text-right">Debito nel mandato</span>
+                    <span className="w-[1.625rem]" />
+                  </li>
                   {govs.map((g) => (
-                    <li key={g.id} className="grid gap-2 py-4 md:grid-cols-[2fr_1.4fr_1fr_8rem_auto] md:items-center md:gap-6">
+                    <li key={g.id} className="grid gap-2 py-4 md:grid-cols-[2fr_1.4fr_1fr_11.5rem_auto] md:items-center md:gap-6">
                       <Link href={`/governi/${g.id}`} className="font-medium hover:text-accent">
                         {g.nome.replace(/^Governo\s+/, "")}
                         <span className="block text-sm font-normal text-ink-soft">{g.presidente}</span>
@@ -75,13 +101,23 @@ export default function GovernmentsPage() {
 }
 
 function DebtChange({ g }: { g: { inizio: string; fine: string | null } }) {
-  const d = governmentFinance(g).debito;
+  const {
+    debito: d,
+    debitoPil: { prima, fine },
+  } = governmentFinance(g);
   if (!d) return <span />;
+  const pct = (n: number) => `${formatDecimal(n, 1)}%`;
   return (
-    <p className="tabular font-mono text-sm md:text-right">
-      {d.variazione >= 0 ? "+" : "−"}
-      {formatEuroMillions(Math.abs(d.variazione))}
-      <span className="block text-ink-faint">{d.fine.parziale ? "di debito, finora" : "di debito"}</span>
-    </p>
+    <div className="text-sm md:text-right">
+      <p className="text-xs text-ink-faint md:hidden">Debito nel mandato</p>
+      <p className="tabular font-mono">
+        {d.variazione >= 0 ? "+" : "−"}
+        {formatEuroMillions(Math.abs(d.variazione))}
+        <span className="text-ink-faint">{d.fine.parziale ? " finora" : ""}</span>
+      </p>
+      <p className="tabular font-mono text-xs text-ink-faint">
+        {prima && fine ? `${pct(prima.valore)} → ${pct(fine.valore)} del PIL` : "nessun dicembre nel mandato"}
+      </p>
+    </div>
   );
 }

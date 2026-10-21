@@ -31,6 +31,11 @@ export default function MethodPage() {
         Un record prende sempre il livello del suo campo meno verificato. Un governo con date confermate ma
         maggioranza da fonte secondaria risulta V2, non V1.
       </p>
+      <p>
+        Per le promesse, un&apos;intervista pubblicata da un giornale conta come fonte primaria: le parole sono del
+        dichiarante e le controlliamo sul testo dell&apos;intervista. Restano V2 i discorsi riportati da un articolo e le
+        righe in cui un&apos;altra parte del dato, per esempio il ruolo nel partito, viene da una fonte secondaria.
+      </p>
 
       <h2>Come lavoriamo</h2>
       <p>
