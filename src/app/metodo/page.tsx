@@ -70,8 +70,8 @@ export default function MethodPage() {
       <h2>Quanto costerebbe una promessa</h2>
       <p>
         Non stimiamo noi il costo delle promesse. Quando chi propone dichiara una cifra all&apos;anno, la traduciamo in
-        euro per residente e la mettiamo accanto a quanto spende oggi il settore pubblico per la stessa funzione: è solo
-        aritmetica sulla cifra del proponente. Se la cifra non dice per quanti anni vale, non la dividiamo.
+        euro per residente e, se è una spesa, la mettiamo accanto a quanto ha speso il settore pubblico per la stessa
+        funzione nell&apos;ultimo anno disponibile: è solo aritmetica sulla cifra del proponente. Se la cifra non dice per quanti anni vale, non la dividiamo.
       </p>
       <p>
         Quando lo strumento proposto è dello stesso tipo di una misura già fatta (per esempio un&apos;uscita anticipata dal

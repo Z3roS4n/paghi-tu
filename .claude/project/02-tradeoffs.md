@@ -215,7 +215,7 @@
 - **Contesto:** il titolare vuole stimare il possibile costo delle promesse incrociandolo con quello che è successo in passato. Oggi solo 23 promesse su 320 hanno una cifra dichiarata e nessuna ha una stima indipendente; le 10 misure passate hanno scostamenti nei due sensi (Quota 100 −36%, abolizione ICI +29%).
 - **Scelta:**
   - nessuna stima di Paghi Tu del costo di una promessa: si usa la cifra del proponente, strutturata (`research/2026-10-21.costi-precedenti.csv`: natura, importo minimo e massimo, periodo) senza ipotesi; un totale senza anni non diventa annuo;
-  - la cifra annua si traduce in euro per residente (popolazione media dell'ultimo anno) e in quota della spesa pubblica per la stessa funzione COFOG (ultimo anno con il dettaglio);
+  - la cifra annua si traduce in euro per residente (popolazione media dell'ultimo anno, «in media»; per le entrate in più la pagina precisa che non è quanto pagherebbe ciascuno) e, solo per la spesa, in quota della spesa pubblica per la stessa funzione COFOG (ultimo anno con il dettaglio);
   - famiglie di precedenti definite per strumento e beneficiari (`src/lib/domain/promise-cost.ts`), assegnate da due codificatori indipendenti (codifiche A e B nella stessa cartella): 23 costi concordi, 3 famiglie discordi lasciate vuote, 5 righe con precedenti;
   - il calcolo «se andasse come quelle misure» applica lo scostamento minimo e massimo dei soli confronti `stima` con basi omogenee o in parte omogenee; etichettato come calcolo, non previsione;
   - nessuna somma dei costi per partito.

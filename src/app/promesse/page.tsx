@@ -47,7 +47,7 @@ const VEHICLE: Record<CampaignPromise["veicolo"], string> = {
 
 const mln = (n: number) => `${formatInt(n)} milioni`;
 const span = (r: readonly [number, number], f: (n: number) => string) =>
-  Math.round(r[0]) === Math.round(r[1]) ? f(r[0]) : `tra ${f(r[0])} e ${f(r[1])}`;
+  f(r[0]) === f(r[1]) ? f(r[0]) : `tra ${f(r[0])} e ${f(r[1])}`;
 const NATURE_LABEL = {
   spesa: "Costo dichiarato",
   minor_gettito: "Entrate in meno dichiarate",
@@ -67,7 +67,7 @@ function CostContext({ p }: { p: CampaignPromise }) {
           per residente all&apos;anno
           {v.natura === "maggior_gettito" ? " (una media su tutti i residenti, non quanto pagherebbe ciascuno)" : ""}
           {v.quotaFunzione
-            ? `, ${span(v.quotaFunzione, (n) => `${formatDecimal(n * 100, 1)}%`)} di quanto il settore pubblico spende oggi per «${COFOG_DIVISIONS[p.cofog]}» (${costBase.annoFunzioni})`
+            ? `, ${span(v.quotaFunzione, (n) => `${formatDecimal(n * 100, 1)}%`)} di quanto il settore pubblico ha speso nel ${costBase.annoFunzioni} per «${COFOG_DIVISIONS[p.cofog]}»`
             : ""}
           .
         </p>

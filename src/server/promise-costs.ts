@@ -28,7 +28,8 @@ export function promiseCostView(id: string, cofog: CofogDivision) {
     annuo: annual,
     perResidente: annual ? ([eurPerResident(annual[0], pop), eurPerResident(annual[1], pop)] as const) : null,
     quotaFunzione:
-      annual && functionSpending && (c.costo?.natura === "spesa" || c.costo?.natura === "minor_gettito")
+      // Solo per la spesa: una minore entrata confrontata con la spesa di una funzione dice poco.
+      annual && functionSpending && c.costo?.natura === "spesa"
         ? ([annual[0] / functionSpending, annual[1] / functionSpending] as const)
         : null,
     famiglia: c.famiglia ? PRECEDENT_FAMILIES[c.famiglia].etichetta : null,
