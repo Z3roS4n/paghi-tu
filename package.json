@@ -9,6 +9,9 @@
     "lint": "eslint",
     "test": "vitest run",
     "data:import": "node scripts/data/import-research.ts",
+    "data:fetch": "node scripts/data/fetch-public-finance.ts",
+    "data:finance": "node scripts/data/build-public-finance.ts",
+    "data:update": "npm run data:fetch && npm run data:finance",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

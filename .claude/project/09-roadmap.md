@@ -14,14 +14,18 @@
 - [x] Leggi di bilancio con estremi e governo proponente (attribuzione documentata/inferita/incerta)
 - [x] Pagine Metodo, Fonti, Chi siamo, Correzioni, Note legali (provvisorie)
 - [x] Promesse della campagna 2027: 282 righe verificate pubblicate il 2026-10-21, tutti i partiti insieme (D-013, D-015)
-- [ ] Verifica L2 delle 52 righe «NUOVA da uniformità» e pubblicazione con lo stesso cancello
+- [x] Verifica L2 delle 52 righe «NUOVA da uniformità»: 38 valide, catalogo a 320 promesse (2026-10-21)
 - [x] Misure caso studio (previsto contro effettivo) → pagina `/misure` (10 misure, 18 confronti)
-- [ ] Serie % PIL e euro costanti nei grafici (palette neutra)
+- [x] Serie % PIL e euro costanti nei grafici (palette neutra): `/spesa`, conti per governo (2026-10-21)
+- [x] Archivio con ricerca `/archivio` (D-017)
 - [ ] Recapito del progetto, revisione legale (OA-2, OA-6), dominio (OA-1)
 - **Verifica:** ogni record pubblicato V1 o V2 con fonte; nessun NV visibile senza etichetta; controllo di simmetria superato.
 
 ## Fase 2 — Spesa dello Stato
-- [ ] Debito pubblico (Banca d'Italia, citazione, valori non modificati)
+- [x] Debito pubblico mensile dal 1945 (Banca d'Italia TCCE0325, valori non modificati) e debito/PIL (D-016)
+- [x] Conti delle AP 1995–2025 e spesa per funzione COFOG 1995–2024 (Eurostat, MIO_NAC) con 5 controlli incrociati
+- [ ] Spesa ed entrate 1946–1994 (DI-01)
+- [ ] Routine su cloud (D-018, da confermare)
 - [ ] Spesa per funzione (BDAP/RGS, dopo risposta sulla licenza)
 - [ ] Conti della PA ISTAT (ritentare l'accesso, un solo job alla volta)
 

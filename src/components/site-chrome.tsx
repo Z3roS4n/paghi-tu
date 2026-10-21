@@ -1,10 +1,12 @@
 import Link from "next/link";
 
 const NAV = [
+  { href: "/spesa", label: "Spesa" },
   { href: "/governi", label: "Governi" },
   { href: "/leggi-di-bilancio", label: "Leggi di bilancio" },
   { href: "/promesse", label: "Promesse" },
   { href: "/misure", label: "Misure" },
+  { href: "/archivio", label: "Archivio" },
   { href: "/metodo", label: "Metodo" },
   { href: "/fonti", label: "Fonti" },
 ] as const;

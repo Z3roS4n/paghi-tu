@@ -14,6 +14,12 @@ describe("parseCsv", () => {
     expect(parseCsvRecords("﻿anno,valore\n1946,1")).toEqual([{ anno: "1946", valore: "1" }]);
   });
 
+  it("accetta un separatore diverso dalla virgola", () => {
+    expect(parseCsvRecords('"DATA_OSS";"v"\n"2026/08/31";"3200847,7"', ";")).toEqual([
+      { DATA_OSS: "2026/08/31", v: "3200847,7" },
+    ]);
+  });
+
   it("segnala righe con numero di campi errato", () => {
     expect(() => parseCsvRecords("a,b\n1")).toThrow(/riga 2/);
   });

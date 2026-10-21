@@ -49,7 +49,7 @@ function PromiseItem({ p }: { p: CampaignPromise }) {
     ...(p.archivioUrl ? [{ url: p.archivioUrl, etichetta: "Copia d'archivio" }] : []),
   ];
   return (
-    <li className="grid gap-4 py-6 md:grid-cols-[1fr_16rem] md:gap-10">
+    <li id={p.id} className="grid scroll-mt-6 gap-4 py-6 md:grid-cols-[1fr_16rem] md:gap-10">
       <div className="min-w-0">
         <p className="text-lg leading-snug">{p.parafrasiNeutra}</p>
         <blockquote className="mt-3 border-l-2 border-rule pl-4 text-ink-soft">

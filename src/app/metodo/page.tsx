@@ -60,6 +60,20 @@ export default function MethodPage() {
         l'indice ISTAT dei prezzi al consumo restano disponibili come opzione, con le cautele che ISTAT stessa indica.
       </p>
 
+      <h2>Spesa, entrate e debito</h2>
+      <p>
+        I conti delle amministrazioni pubbliche (Stato, regioni, comuni, enti di previdenza) vengono da Eurostat, il debito
+        mese per mese da Banca d&apos;Italia. Scarichiamo i file direttamente dagli enti e ne conserviamo una copia. A ogni
+        aggiornamento i dati vengono incrociati fra fonti diverse: se il debito di Banca d&apos;Italia e quello di Eurostat non
+        coincidono, o le voci di spesa non sommano al totale, l&apos;aggiornamento non va online.
+      </p>
+      <p>
+        Le cifre per residente dividono il totale per la popolazione media dell&apos;anno: sono medie, non quello che paga una
+        singola persona. Per i governi mostriamo il debito all&apos;ultima fine mese prima dell&apos;insediamento e all&apos;ultima
+        fine mese prima della chiusura, così nessun mese viene contato per due governi. È una descrizione di cosa è successo durante il mandato, non un giudizio su chi lo ha
+        causato.
+      </p>
+
       <h2>Costo previsto e costo effettivo</h2>
       <p>
         Il previsto viene dalla relazione tecnica della legge o dal limite di spesa che la legge fissa. Il consuntivo

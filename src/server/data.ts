@@ -7,6 +7,8 @@ import sourcesJson from "../../data/fonti.json";
 import gdpJson from "../../data/serie/pil-nominale.json";
 import populationJson from "../../data/serie/popolazione-residente.json";
 import foiJson from "../../data/serie/prezzi-consumo-foi.json";
+import coefficientsJson from "../../data/serie/coefficienti-rivalutazione-istat-2025.json";
+import financeJson from "../../data/finanza-pubblica.json";
 import measuresJson from "../../data/misure.json";
 import partiesJson from "../../data/partiti.json";
 import promisesJson from "../../data/promesse.json";
@@ -19,6 +21,7 @@ import {
   Measure,
   Party,
   PromiseCatalogStatus,
+  PublicFinance,
   Series,
   Source,
 } from "@/lib/domain/schemas";
@@ -35,7 +38,9 @@ export const series = {
   gdp: Series.parse(gdpJson),
   population: Series.parse(populationJson),
   foi: Series.parse(foiJson),
+  coefficients: Series.parse(coefficientsJson),
 };
+export const finance = PublicFinance.parse(financeJson);
 
 export const measures = z.array(Measure).parse(measuresJson).toSorted((a, b) => a.annoAvvio - b.annoAvvio);
 export const parties = z.array(Party).parse(partiesJson);

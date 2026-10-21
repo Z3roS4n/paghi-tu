@@ -151,6 +151,37 @@
 - **Conseguenze:** l'import oggi conta S1. Quando la scelta sarà fatta, il filtro va applicato in `scripts/data/import-research.ts`, insieme a D-012 e R-ORIZZONTE.
 - **Data:** 2026-10-21
 
+### D-016 — Conti pubblici da Eurostat e Banca d'Italia, con controlli incrociati automatici
+- **Stato:** applicata il 2026-10-21 (pagina `/spesa`, home, conti per governo).
+- **Contesto:** il sito deve rispondere a «quanto spendiamo», con numeri che una routine possa aggiornare da sola.
+- **Scelta:**
+  - spesa, entrate, saldo e interessi delle amministrazioni pubbliche (S13) da Eurostat `gov_10a_main`, spesa per funzione da `gov_10a_exp` (COFOG), debito/PIL da `gov_10dd_edpt1`; debito lordo mensile dal 1861 da Banca d'Italia, tavola TCCE0325;
+  - unità `MIO_NAC` e non `MIO_EUR` (prima del 1999 `MIO_EUR` usa i cambi ECU dell'anno: vedi `07-bad-practices.md`);
+  - le cifre per residente dividono per la popolazione media dell'anno (media fra due 1° gennaio); sono medie, e la pagina lo dice;
+  - copie grezze in `data/raw/` con manifest (URL, data, sha256); `build-public-finance.ts` fa 5 controlli incrociati (somma COFOG, spesa nelle due tavole, identità del saldo, debito Banca d'Italia contro Eurostat, % PIL contro PIL ISTAT) e si ferma se uno fallisce;
+  - livello V1: fonte primaria più controlli fra fonti indipendenti; in più una verifica L2 a campione (`research/2026-10-21.verifica-l2-finanza-pubblica.md`);
+  - prima del 1995 il debito/PIL è un nostro calcolo (debito di dicembre / PIL della serie) ed è etichettato così.
+- **Conseguenze:** nessun numero di spesa scritto a mano nelle pagine; il debito per governo usa l'ultima fine mese prima dell'insediamento e l'ultima prima della chiusura (nessun mese contato due volte), con l'avvertenza che non attribuisce cause.
+- **Data:** 2026-10-21
+
+### D-017 — Archivio con ricerca su indice statico
+- **Stato:** applicata il 2026-10-21 (`/archivio`).
+- **Scelta:** un indice JSON (`/archivio/indice.json`) prerenderizzato in build da tutti i dataset; la ricerca gira nel browser (parole tutte presenti, senza accenti, più recenti prima), con filtri per tipo e partito e la ricerca nell'URL. Nessun servizio di ricerca esterno, nessun dato dell'utente salvato.
+- **Conseguenze:** l'indice si rigenera a ogni build, quindi ogni aggiornamento della routine lo aggiorna da solo. Se l'indice supera qualche MB si passa a un indice per tipo o a una libreria di ricerca full-text.
+- **Data:** 2026-10-21
+
+### D-018 — Routine su cloud per l'aggiornamento automatico
+- **Stato:** PROPOSTA, da confermare con il titolare prima di attivarla.
+- **Contesto:** il titolare vuole una routine su cloud che aggiorni dati e fonti in autonomia, con agenti verificatori.
+- **Scelta proposta:** due binari, perché hanno rischi diversi.
+  1. **Dati numerici da API ufficiali** (Eurostat, Banca d'Italia; poi RGS e ISTAT): `npm run data:update`, test, build. Se tutti i controlli incrociati passano, commit e deploy in automatico; se un controllo fallisce, niente pubblicazione e una segnalazione.
+  2. **Contenuti editoriali** (promesse, misure, governi): agenti di ricerca → verificatore L2 indipendente → controllo di simmetria fra partiti → import. Va online solo ciò che passa tutti i cancelli, tutti i partiti insieme (D-013); ogni modifica resta nel registro delle correzioni.
+  - Vincoli fissi: un solo processo che interroga ISTAT; niente Save Page Now o scritture su servizi esterni oltre al repo e a Vercel; niente aggiramento di blocchi; **nei 15 giorni prima di un voto la routine non pubblica contenuti nuovi su partiti e promesse** (regola in `/metodo`).
+- **Runbook:** `.claude/routines/aggiornamento-dati.md` (istruzioni passo per passo per l'agente schedulato).
+- **Prerequisito mancante:** il repo non ha ancora un remote GitHub; la routine su cloud deve poterlo clonare.
+- **Da decidere:** frequenza (proposta: dati settimanale, promesse ogni 2-3 giorni in campagna), se il binario 2 apre una PR da approvare o pubblica da solo, dove ricevere le segnalazioni.
+- **Data:** 2026-10-21
+
 ## Decisioni aperte
 - **OA-1** — ~~Nome del progetto e dominio~~ → nome deciso il 2026-10-20: **Paghi Tu** (provocatorio verso politica e cittadini, senza attribuire condotte a nessuno). Dominio candidato `paghitu.it` (libero al controllo DNS del 2026-10-20, da confermare all'acquisto).
 - **OA-2** — Editore: il titolare del progetto, persona fisica. **Decisione del titolare (2026-10-20): nome e dati personali NON pubblicati sul sito**; il sito si presenta come "Paghi Tu" con un recapito dedicato (email del progetto). Da validare con l'avvocato prima del lancio: (a) se art. 2 L. 47/1948 (richiamato da art. 1 c. 3 L. 62/2001) e art. 7 D.Lgs. 70/2003 impongono l'indicazione dell'editore a un sito non periodico e non commerciale; (b) identità del titolare del trattamento richiesta dall'art. 13 GDPR se il sito tratta dati dei visitatori (log, analytics, form) — si minimizza con zero cookie, zero analytics con IP, nessun form; (c) alternativa: associazione (es. APS/ETS) come editore, così sul sito compare l'ente e non la persona; (d) responsabilità personale e polizza RC. L'anonimato verso il pubblico non elimina la responsabilità: l'editore resta identificabile da hosting e registro del dominio.

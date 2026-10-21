@@ -1,0 +1,31 @@
+[
+  {
+    "file": "eurostat/gov_10a_main.csv",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10a_main/A.MIO_NAC+PC_GDP.S13.TE+TR+B9+D41PAY.IT?format=SDMX-CSV",
+    "scaricato": "2026-10-21T13:11:09.458Z",
+    "sha256": "d74dc29276d8ab57447083dd1e167ee02a8a79e531568e27cf6ecacb0ac527ac",
+    "righe": 249
+  },
+  {
+    "file": "eurostat/gov_10a_exp.csv",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10a_exp/A.MIO_NAC.S13.TOTAL+GF01+GF02+GF03+GF04+GF05+GF06+GF07+GF08+GF09+GF10+GF0107+GF1001+GF1002+GF1003.TE.IT?format=SDMX-CSV",
+    "scaricato": "2026-10-21T13:11:09.458Z",
+    "sha256": "41eed9e46b981012cce84a30bef25a888c0cb7c16881e7da31bd221fd74c4937",
+    "righe": 427
+  },
+  {
+    "file": "eurostat/gov_10dd_edpt1.csv",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10dd_edpt1/A.MIO_NAC+PC_GDP.S13.GD.IT?format=SDMX-CSV",
+    "scaricato": "2026-10-21T13:11:09.458Z",
+    "sha256": "c363020fd0bf23b7d39f78a97071ce7cb811ad709e5be9389d192f5ad82f15e5",
+    "righe": 63
+  },
+  {
+    "file": "bancaditalia/TCCE0325.csv",
+    "url": "https://a2a.bancaditalia.it/infostat/dataservices/export/IT/CSV/DATA/PUBLICATION/BANKITALIA/DIFF/FPI",
+    "fileOrigine": "20261014_110405-TIMESERIES-MULTICUBE.csv",
+    "scaricato": "2026-10-21T13:11:09.458Z",
+    "sha256": "85167e7428836fe0337d891110f6d53e98cd9383a14417ba27bc3c17216136c0",
+    "righe": 1978
+  }
+]

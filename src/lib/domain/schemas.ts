@@ -223,3 +223,41 @@ export const Measure = z.object({
   confronti: z.array(CostComparison).min(1),
 });
 export type Measure = z.infer<typeof Measure>;
+
+// Conti delle amministrazioni pubbliche (settore S13): importi in milioni di euro correnti.
+export const PublicAccountsYear = z.object({
+  anno: z.number().int(),
+  spesa: z.number(),
+  entrate: z.number(),
+  saldo: z.number(),
+  interessi: z.number(),
+  pil: z.object({ spesa: z.number(), entrate: z.number(), saldo: z.number(), interessi: z.number() }),
+  popolazioneMedia: z.number().nullable(),
+});
+export type PublicAccountsYear = z.infer<typeof PublicAccountsYear>;
+
+export const SpendingByFunctionYear = z.object({
+  anno: z.number().int(),
+  totale: z.number(),
+  voci: z.record(z.string().regex(/^GF\d{2,4}$/), z.number()),
+});
+export type SpendingByFunctionYear = z.infer<typeof SpendingByFunctionYear>;
+
+export const FinanceCheck = z.object({
+  id: z.string(),
+  descrizione: z.string(),
+  superato: z.boolean(),
+  dettaglio: z.string(),
+});
+
+export const PublicFinance = z.object({
+  scaricato: z.iso.datetime(),
+  fonti: z.array(SourceLink.extend({ aggiornamentoFonte: z.string() })),
+  conti: z.array(PublicAccountsYear).min(1),
+  funzioni: z.array(SpendingByFunctionYear).min(1),
+  debitoMensile: z.array(z.object({ mese: z.string().regex(/^\d{4}-\d{2}$/), valore: z.number() })).min(1),
+  debitoPil: z.array(z.object({ anno: z.number().int(), valore: z.number() })).min(1),
+  controlli: z.array(FinanceCheck).min(1),
+  verifica: Verification,
+});
+export type PublicFinance = z.infer<typeof PublicFinance>;

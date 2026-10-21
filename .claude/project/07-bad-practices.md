@@ -25,3 +25,11 @@
   `cacheComponents`.
 - ❌ `images.domains`, `next/legacy/image`: deprecati → `images.remotePatterns`, `next/image`.
 - ❌ Contare su `scroll-behavior: smooth` automatico: serve `data-scroll-behavior="smooth"` su `<html>`.
+
+### Dati di finanza pubblica
+- ❌ Eurostat in `MIO_EUR` per anni prima del 1999: converte le lire al cambio ECU dell'anno (debito 1995
+  più basso del 7%). Usare `MIO_NAC`, che applica il tasso fisso di 1.936,27 come Banca d'Italia e ISTAT
+  (scoperto dal controllo `debito-bdi-eurostat`, 2026-10-21).
+- ❌ Trattare come zero un anno senza `OBS_VALUE`: è un dato mancante.
+- ❌ Pubblicare un aggiornamento automatico se un controllo incrociato di `build-public-finance.ts` fallisce.
+- ❌ Interrogare ISTAT da più processi insieme: limite di 5 query al minuto per IP, blocco di 1-2 giorni.

@@ -38,7 +38,7 @@ export default function BudgetLawsPage() {
                 {rows.map((l) => {
                   const g = l.governoProponenteId ? getGovernment(l.governoProponenteId) : undefined;
                   return (
-                    <li key={l.id} className="grid gap-2 py-4 md:grid-cols-[7rem_1.6fr_1fr_auto] md:items-start md:gap-6">
+                    <li key={l.id} id={l.id} className="scroll-mt-6 grid gap-2 py-4 md:grid-cols-[7rem_1.6fr_1fr_auto] md:items-start md:gap-6">
                       <span className="tabular font-mono">{l.annoEsercizio}</span>
                       <div>
                         <p className="text-sm text-ink-soft">{l.tipoAttoOriginale}</p>

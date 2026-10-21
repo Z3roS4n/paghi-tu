@@ -1,4 +1,4 @@
-export function parseCsv(text: string): string[][] {
+export function parseCsv(text: string, delimiter = ","): string[][] {
   const rows: string[][] = [];
   let row: string[] = [];
   let field = "";
@@ -22,7 +22,7 @@ export function parseCsv(text: string): string[][] {
     }
     if (ch === '"') {
       quoted = true;
-    } else if (ch === ",") {
+    } else if (ch === delimiter) {
       row.push(field);
       field = "";
     } else if (ch === "\n" || ch === "\r") {
@@ -42,8 +42,8 @@ export function parseCsv(text: string): string[][] {
   return rows.filter((r) => !(r.length === 1 && r[0] === ""));
 }
 
-export function parseCsvRecords(text: string): Record<string, string>[] {
-  const [header, ...rows] = parseCsv(text);
+export function parseCsvRecords(text: string, delimiter = ","): Record<string, string>[] {
+  const [header, ...rows] = parseCsv(text, delimiter);
   if (!header) return [];
   return rows.map((r, line) => {
     if (r.length !== header.length) {

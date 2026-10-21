@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ChartFigure } from "@/components/chart-figure";
 import { SourceLinks } from "@/components/source-links";
 import { VerificationBadge } from "@/components/verification-badge";
 import { budgetLawsProposedBy, getGovernment, getLegislature, governments, measuresOf } from "@/server/data";
 import { governmentDurationDays } from "@/server/stats";
-import { formatDate, formatInt } from "@/lib/format";
+import { formatDate, formatDecimal, formatEuroMillions, formatInt } from "@/lib/format";
+import { debtGdpSeries, governmentFinance } from "@/server/finance";
 
 export function generateStaticParams() {
   return governments.map((g) => ({ id: g.id }));
@@ -24,6 +26,7 @@ export default async function GovernmentPage({ params }: PageProps<"/governi/[id
   const linkedMeasures = measuresOf(g.id);
   const prev = governments.find((x) => x.ordine === g.ordine - 1);
   const next = governments.find((x) => x.ordine === g.ordine + 1);
+  const money = governmentFinance(g);
 
   return (
     <article className="mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
@@ -46,6 +49,8 @@ export default async function GovernmentPage({ params }: PageProps<"/governi/[id
           </div>
         ))}
       </dl>
+
+      <PublicAccounts g={g} money={money} />
 
       <section className="mt-12 grid gap-10 md:grid-cols-[1.4fr_1fr]">
         <div>
@@ -113,5 +118,111 @@ export default async function GovernmentPage({ params }: PageProps<"/governi/[id
         {next ? <Link href={`/governi/${next.id}`} className="text-right hover:text-accent">{next.nome}</Link> : <span />}
       </nav>
     </article>
+  );
+}
+
+const MONTHS = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
+const monthLabel = (m: string) => `fine ${MONTHS[Number(m.slice(5, 7)) - 1]} ${m.slice(0, 4)}`;
+const pct = (n: number) => `${formatDecimal(n, 1)}%`;
+
+function PublicAccounts({
+  g,
+  money,
+}: {
+  g: { inizio: string; fine: string | null };
+  money: ReturnType<typeof governmentFinance>;
+}) {
+  const d = money.debito;
+  if (!d) return null;
+  const from = Number(g.inizio.slice(0, 4)) + (Number(g.inizio.slice(5, 7)) - 1) / 12;
+  const to = g.fine ? Number(g.fine.slice(0, 4)) + (Number(g.fine.slice(5, 7)) - 1) / 12 : 9999;
+  const ratioNote = (r: { calcolatoDa: "fonte" | "paghi_tu" } | null) => (r?.calcolatoDa === "paghi_tu" ? " (calcolo Paghi Tu)" : "");
+  return (
+    <section aria-labelledby="conti" className="mt-12 border-t border-rule pt-10">
+      <h2 id="conti" className="text-xl font-semibold">I conti pubblici durante il governo</h2>
+      <p className="mt-2 max-w-[70ch] text-sm text-ink-soft">
+        Il debito cambia anche per decisioni prese prima, per l&apos;andamento dell&apos;economia e per i tassi di interesse. Queste
+        cifre descrivono cosa è successo durante il mandato; non dicono quanta parte dipende dal governo.
+      </p>
+      <dl className="mt-6 grid gap-px border border-rule bg-rule sm:grid-cols-3">
+        <div className="bg-paper-raised p-5">
+          <dt className="text-sm text-ink-soft">Debito all&apos;insediamento</dt>
+          <dd className="mt-1 text-2xl font-semibold">{formatEuroMillions(d.inizio.valore)}</dd>
+          <dd className="text-sm text-ink-faint">{monthLabel(d.inizio.mese)}</dd>
+        </div>
+        <div className="bg-paper-raised p-5">
+          <dt className="text-sm text-ink-soft">{d.fine.parziale ? "Debito all'ultimo dato" : "Debito alla fine"}</dt>
+          <dd className="mt-1 text-2xl font-semibold">{formatEuroMillions(d.fine.valore)}</dd>
+          <dd className="text-sm text-ink-faint">{monthLabel(d.fine.mese)}</dd>
+        </div>
+        <div className="bg-paper-raised p-5">
+          <dt className="text-sm text-ink-soft">Variazione {d.fine.parziale ? "finora" : "nel mandato"}</dt>
+          <dd className="mt-1 text-2xl font-semibold">
+            {d.variazione >= 0 ? "+" : "−"}
+            {formatEuroMillions(Math.abs(d.variazione))}
+          </dd>
+          <dd className="text-sm text-ink-faint">euro correnti, non confrontabili fra epoche lontane</dd>
+        </div>
+      </dl>
+      {money.debitoPil.prima && money.debitoPil.fine ? (
+        <p className="mt-4 text-sm text-ink-soft">
+          Debito in rapporto al PIL: {pct(money.debitoPil.prima.valore)} a fine {money.debitoPil.prima.anno}
+          {ratioNote(money.debitoPil.prima)}, {pct(money.debitoPil.fine.valore)} a fine {money.debitoPil.fine.anno}
+          {ratioNote(money.debitoPil.fine)}.
+        </p>
+      ) : null}
+
+      {money.anni.length > 0 ? (
+        <div className="mt-8 overflow-x-auto">
+          <table className="w-full min-w-[28rem] text-left text-sm">
+            <caption className="mb-2 text-left text-ink-soft">
+              Anni in cui il governo è stato in carica, anche solo in parte. La manovra di un anno è approvata
+              nell&apos;autunno precedente, spesso da un altro governo.
+            </caption>
+            <thead className="text-ink-faint">
+              <tr className="border-b border-rule">
+                <th scope="col" className="py-2 font-normal">Anno</th>
+                <th scope="col" className="py-2 text-right font-normal">Spesa, % PIL</th>
+                <th scope="col" className="py-2 text-right font-normal">Entrate, % PIL</th>
+                <th scope="col" className="py-2 text-right font-normal">Saldo, % PIL</th>
+                <th scope="col" className="py-2 text-right font-normal">Interessi, % PIL</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-rule">
+              {money.anni.map((a) => (
+                <tr key={a.anno}>
+                  <td className="tabular py-2">{a.anno}</td>
+                  <td className="tabular py-2 text-right">{pct(a.pil.spesa)}</td>
+                  <td className="tabular py-2 text-right">{pct(a.pil.entrate)}</td>
+                  <td className="tabular py-2 text-right">{pct(a.pil.saldo)}</td>
+                  <td className="tabular py-2 text-right">{pct(a.pil.interessi)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <p className="mt-2 text-xs text-ink-faint">Fonte: Eurostat gov_10a_main. Dati annuali disponibili dal 1995.</p>
+        </div>
+      ) : null}
+
+      <div className="mt-10">
+        <ChartFigure
+          title="Debito pubblico in % del PIL, a fine anno"
+          note="La fascia grigia è il periodo del governo."
+          source="Banca d'Italia, tavola TCCE0325; Eurostat gov_10dd_edpt1. Prima del 1995 calcolo Paghi Tu sul PIL della nostra serie."
+          unit="pct"
+          highlight={{ from, to, label: "in carica" }}
+          points={debtGdpSeries.map((p) => ({
+            x: p.anno,
+            label: `${p.anno}${p.calcolatoDa === "paghi_tu" ? " (calcolo Paghi Tu)" : ""}`,
+            value: p.valore,
+            display: pct(p.valore),
+          }))}
+        />
+      </div>
+      <p className="mt-4 text-xs text-ink-faint">
+        Debito: Banca d&apos;Italia, debito lordo delle amministrazioni pubbliche, tavola TCCE0325. Valori di fine mese: l&apos;ultimo
+        prima dell&apos;insediamento e l&apos;ultimo prima della fine del governo, così nessun mese è contato due volte. <Link href="/spesa" className="underline underline-offset-2">Tutti i conti pubblici</Link>
+      </p>
+    </section>
   );
 }
