@@ -67,6 +67,22 @@ export default function MethodPage() {
         l'indice ISTAT dei prezzi al consumo restano disponibili come opzione, con le cautele che ISTAT stessa indica.
       </p>
 
+      <h2>Quanto costerebbe una promessa</h2>
+      <p>
+        Non stimiamo noi il costo delle promesse. Quando chi propone dichiara una cifra all&apos;anno, la traduciamo in
+        euro per residente e la mettiamo accanto a quanto spende oggi il settore pubblico per la stessa funzione: è solo
+        aritmetica sulla cifra del proponente. Se la cifra non dice per quanti anni vale, non la dividiamo.
+      </p>
+      <p>
+        Quando lo strumento proposto è dello stesso tipo di una misura già fatta (per esempio un&apos;uscita anticipata dal
+        lavoro e Quota 100), mostriamo quanto quella misura doveva costare e quanto è costata davvero, solo se i due numeri
+        sono confrontabili. Da qui il calcolo «se andasse come quelle misure», che applica gli stessi scostamenti alla
+        cifra dichiarata: un riferimento, non una previsione. Gli scostamenti del passato vanno in tutte e due le
+        direzioni, e un tetto di spesa non è una stima. Ogni promessa è stata classificata da due agenti in modo
+        indipendente; dove non erano d&apos;accordo, non mostriamo precedenti. Non sommiamo i costi per partito: le cifre
+        dichiarate sono poche e diverse fra loro, e la somma sembrerebbe una classifica.
+      </p>
+
       <h2>Spesa, entrate e debito</h2>
       <p>
         I conti delle amministrazioni pubbliche (Stato, regioni, comuni, enti di previdenza) vengono da Eurostat, il debito

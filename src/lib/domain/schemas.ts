@@ -278,3 +278,30 @@ export const Correction = z.object({
   segnalazione: z.url().nullable(),
 });
 export type Correction = z.infer<typeof Correction>;
+
+// D-021: costo dichiarato reso confrontabile (solo quello che il testo dice) e famiglia di misure
+// passate con lo stesso strumento. Doppia codifica indipendente; nei casi discordi vale il vuoto.
+export const PromiseCost = z.object({
+  id: z.string(),
+  famiglia: z
+    .enum([
+      "pensionamento_anticipato",
+      "sostegno_reddito_poveri",
+      "bonus_edilizi",
+      "assegni_figli",
+      "taglio_tasse_lavoro_dipendente",
+      "tasse_prima_casa",
+      "incentivi_assunzioni",
+    ])
+    .nullable(),
+  costo: z
+    .object({
+      natura: z.enum(["spesa", "minor_gettito", "maggior_gettito", "riallocazione", "costo_zero", "non_strutturabile"]),
+      minMln: z.number().nonnegative().nullable(),
+      maxMln: z.number().nonnegative().nullable(),
+      periodo: z.enum(["annuo", "totale", "non_indicato"]),
+      anni: z.number().int().positive().nullable(),
+    })
+    .nullable(),
+});
+export type PromiseCost = z.infer<typeof PromiseCost>;

@@ -4,8 +4,9 @@ import Link from "next/link";
 import { SourceLinks } from "@/components/source-links";
 import { VerificationBadge } from "@/components/verification-badge";
 import { COFOG_DIVISIONS, type CampaignPromise } from "@/lib/domain/schemas";
-import { formatDate, formatInt } from "@/lib/format";
+import { formatDate, formatDecimal, formatInt } from "@/lib/format";
 import { promiseStatus, promisesByParty } from "@/server/data";
+import { costBase, promiseCostView } from "@/server/promise-costs";
 
 export const metadata: Metadata = {
   title: "Promesse per le politiche 2027",
@@ -43,6 +44,54 @@ const VEHICLE: Record<CampaignPromise["veicolo"], string> = {
   appello_raccolta_firme: "Appello con raccolta firme",
   altro: "Altro",
 };
+
+const mln = (n: number) => `${formatInt(n)} milioni`;
+const span = (r: readonly [number, number], f: (n: number) => string) =>
+  Math.round(r[0]) === Math.round(r[1]) ? f(r[0]) : `tra ${f(r[0])} e ${f(r[1])}`;
+const NATURE_LABEL = {
+  spesa: "Costo dichiarato",
+  minor_gettito: "Entrate in meno dichiarate",
+  maggior_gettito: "Entrate in più dichiarate",
+} as const;
+
+// D-021: traduzione aritmetica della cifra del proponente e confronto con misure dello stesso tipo.
+function CostContext({ p }: { p: CampaignPromise }) {
+  const v = promiseCostView(p.id, p.cofog);
+  if (!v || (!v.annuo && !v.famiglia)) return null;
+  const label = v.natura && v.natura in NATURE_LABEL ? NATURE_LABEL[v.natura as keyof typeof NATURE_LABEL] : null;
+  return (
+    <div className="mt-4 space-y-2 border-l-2 border-accent pl-4 text-sm text-ink-soft">
+      {v.annuo && v.perResidente && label ? (
+        <p>
+          {label}: {span(v.annuo, mln)} di euro l&apos;anno, in media {span(v.perResidente, (n) => `${formatInt(n)} €`)}{" "}
+          per residente all&apos;anno
+          {v.natura === "maggior_gettito" ? " (una media su tutti i residenti, non quanto pagherebbe ciascuno)" : ""}
+          {v.quotaFunzione
+            ? `, ${span(v.quotaFunzione, (n) => `${formatDecimal(n * 100, 1)}%`)} di quanto il settore pubblico spende oggi per «${COFOG_DIVISIONS[p.cofog]}» (${costBase.annoFunzioni})`
+            : ""}
+          .
+        </p>
+      ) : null}
+      {v.famiglia ? (
+        <p>
+          Misure dello stesso tipo ({v.famiglia}) già fatte in passato:{" "}
+          {v.precedenti.length > 0
+            ? v.precedenti
+                .map((c) => `${c.titolo}, ${c.periodo}: ${formatDecimal(Math.abs(c.pct), 0)}% ${c.pct < 0 ? "in meno" : "in più"} della stima`)
+                .join("; ")
+            : "nessuna con un confronto omogeneo fra stima e costo effettivo"}
+          . <Link href="/misure" className="underline underline-offset-2">Dettagli</Link>
+        </p>
+      ) : null}
+      {v.sePrecedenti ? (
+        <p>
+          Se andasse come quelle misure: {span(v.sePrecedenti, mln)} di euro l&apos;anno. È un calcolo di Paghi Tu,
+          non una previsione.
+        </p>
+      ) : null}
+    </div>
+  );
+}
 
 function PromiseItem({ p }: { p: CampaignPromise }) {
   const fonti = [
@@ -84,6 +133,7 @@ function PromiseItem({ p }: { p: CampaignPromise }) {
             ) : null}
           </dl>
         ) : null}
+        <CostContext p={p} />
       </div>
       <div className="space-y-3 text-sm">
         <p className="text-ink-soft">{COFOG_DIVISIONS[p.cofog]}</p>

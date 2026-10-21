@@ -14,6 +14,7 @@ import {
   Measure,
   Party,
   PromiseCatalogStatus,
+  PromiseCost,
   Series,
   Source,
   type SourceLink,
@@ -440,6 +441,29 @@ async function measures(govs: ReturnType<typeof Government.parse>[]) {
   return [...out.values()].map((m) => Measure.parse(m));
 }
 
+const PROMISE_COSTS = "2026-10-21.costi-precedenti";
+const num = (s: string) => (s.trim() === "" ? null : Number(s));
+
+async function promiseCosts(published: z.infer<typeof CampaignPromise>[]) {
+  const byId = new Map(published.map((p) => [p.id, p]));
+  const rows = parseCsvRecords(await readFile(join(RESEARCH, `${PROMISE_COSTS}.csv`), "utf8"));
+  return rows.flatMap((r) => {
+    const p = byId.get(r.id);
+    if (!p) return [];
+    if (r.natura && !p.costoDichiarato?.includes(r.cifra_testuale)) {
+      throw new Error(`${r.id}: la cifra «${r.cifra_testuale}» non è nel costo dichiarato`);
+    }
+    const c = PromiseCost.parse({
+      id: r.id,
+      famiglia: r.famiglia || null,
+      costo: r.natura
+        ? { natura: r.natura, minMln: num(r.importo_mln_min), maxMln: num(r.importo_mln_max), periodo: r.periodo, anni: num(r.anni) }
+        : null,
+    });
+    return c.famiglia || c.costo ? [c] : [];
+  });
+}
+
 async function write(name: string, value: unknown) {
   await writeFile(join(OUT, `${name}.json`), JSON.stringify(value, null, 2) + "\n", "utf8");
 }
@@ -451,6 +475,7 @@ const allSeries = await series();
 const srcs = await sources();
 const campaign = await campaignPromises();
 const allMeasures = await measures(govs);
+const costs = await promiseCosts(campaign.published);
 
 await mkdir(join(OUT, "serie"), { recursive: true });
 await write("legislature", legs);
@@ -461,6 +486,7 @@ for (const s of allSeries) await write(join("serie", s.id), s);
 await write("partiti", campaign.parties);
 await write("promesse", campaign.published);
 await write("promesse-stato", campaign.status);
+await write("promesse-costi", costs);
 await write("misure", allMeasures);
 
 const count = (xs: { verifica: Verification }[]) =>
@@ -471,4 +497,5 @@ console.log(`leggi-bilancio ${laws.length} (${count(laws)}), senza governo colle
 console.log(`serie ${allSeries.map((s) => `${s.id}:${s.punti.length}`).join(" ")}`);
 console.log(`fonti ${srcs.length}`);
 console.log(`misure ${allMeasures.length}, confronti ${allMeasures.reduce((n, m) => n + m.confronti.length, 0)}`);
+console.log(`costi delle promesse ${costs.filter((c) => c.costo).length}, con precedenti ${costs.filter((c) => c.famiglia).length}`);
 console.log(`promesse censite ${campaign.status.censite}, verificate ${campaign.status.verificate}, pubblicate ${campaign.status.pubblicate}, partiti ${campaign.parties.length}`);

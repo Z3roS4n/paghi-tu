@@ -1,0 +1,275 @@
+[
+  {
+    "id": "C27-LEGA-001",
+    "famiglia": "pensionamento_anticipato",
+    "costo": {
+      "natura": "spesa",
+      "minMln": 1600,
+      "maxMln": 1600,
+      "periodo": "annuo",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-LEGA-003",
+    "famiglia": null,
+    "costo": {
+      "natura": "maggior_gettito",
+      "minMln": 5000,
+      "maxMln": null,
+      "periodo": "non_indicato",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-FI-009",
+    "famiglia": null,
+    "costo": {
+      "natura": "spesa",
+      "minMln": 1000,
+      "maxMln": 1000,
+      "periodo": "non_indicato",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-NM-008",
+    "famiglia": null,
+    "costo": {
+      "natura": "costo_zero",
+      "minMln": 0,
+      "maxMln": 0,
+      "periodo": "non_indicato",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-PD-008",
+    "famiglia": null,
+    "costo": {
+      "natura": "spesa",
+      "minMln": 20000,
+      "maxMln": null,
+      "periodo": "non_indicato",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-M5S-005",
+    "famiglia": "pensionamento_anticipato",
+    "costo": null
+  },
+  {
+    "id": "C27-M5S-014",
+    "famiglia": null,
+    "costo": {
+      "natura": "riallocazione",
+      "minMln": 13500,
+      "maxMln": 13500,
+      "periodo": "totale",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-AVS-003",
+    "famiglia": null,
+    "costo": {
+      "natura": "spesa",
+      "minMln": 2000,
+      "maxMln": 2000,
+      "periodo": "annuo",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-AVS-007",
+    "famiglia": null,
+    "costo": {
+      "natura": "non_strutturabile",
+      "minMln": null,
+      "maxMln": null,
+      "periodo": "non_indicato",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-AVS-010",
+    "famiglia": null,
+    "costo": {
+      "natura": "maggior_gettito",
+      "minMln": 16000,
+      "maxMln": 16000,
+      "periodo": "annuo",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-AVS-011",
+    "famiglia": null,
+    "costo": {
+      "natura": "minor_gettito",
+      "minMln": 22500,
+      "maxMln": 22500,
+      "periodo": "non_indicato",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-AVS-017",
+    "famiglia": null,
+    "costo": {
+      "natura": "spesa",
+      "minMln": 2500,
+      "maxMln": 2500,
+      "periodo": "annuo",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-AVS-019",
+    "famiglia": null,
+    "costo": {
+      "natura": "maggior_gettito",
+      "minMln": 3000,
+      "maxMln": 7000,
+      "periodo": "annuo",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-AVS-026",
+    "famiglia": null,
+    "costo": {
+      "natura": "spesa",
+      "minMln": 1000,
+      "maxMln": 1000,
+      "periodo": "annuo",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-AVS-037",
+    "famiglia": null,
+    "costo": {
+      "natura": "riallocazione",
+      "minMln": 14700,
+      "maxMln": 14700,
+      "periodo": "totale",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-AVS-038",
+    "famiglia": null,
+    "costo": {
+      "natura": "non_strutturabile",
+      "minMln": null,
+      "maxMln": null,
+      "periodo": "non_indicato",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-CSX-008",
+    "famiglia": "pensionamento_anticipato",
+    "costo": null
+  },
+  {
+    "id": "C27-AZ-010",
+    "famiglia": null,
+    "costo": {
+      "natura": "non_strutturabile",
+      "minMln": null,
+      "maxMln": null,
+      "periodo": "non_indicato",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-AZ-017",
+    "famiglia": null,
+    "costo": {
+      "natura": "costo_zero",
+      "minMln": 0,
+      "maxMln": 0,
+      "periodo": "non_indicato",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-AZ-022",
+    "famiglia": null,
+    "costo": {
+      "natura": "non_strutturabile",
+      "minMln": null,
+      "maxMln": null,
+      "periodo": "non_indicato",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-AZ-026",
+    "famiglia": null,
+    "costo": {
+      "natura": "spesa",
+      "minMln": 8000,
+      "maxMln": 8000,
+      "periodo": "non_indicato",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-IV-009",
+    "famiglia": null,
+    "costo": {
+      "natura": "non_strutturabile",
+      "minMln": null,
+      "maxMln": null,
+      "periodo": "non_indicato",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-FN-001",
+    "famiglia": "pensionamento_anticipato",
+    "costo": null
+  },
+  {
+    "id": "C27-FN-002",
+    "famiglia": "pensionamento_anticipato",
+    "costo": null
+  },
+  {
+    "id": "C27-ORA-002",
+    "famiglia": null,
+    "costo": {
+      "natura": "non_strutturabile",
+      "minMln": null,
+      "maxMln": null,
+      "periodo": "non_indicato",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-ORA-007",
+    "famiglia": null,
+    "costo": {
+      "natura": "minor_gettito",
+      "minMln": 700,
+      "maxMln": 2200,
+      "periodo": "annuo",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-PCIT-001",
+    "famiglia": null,
+    "costo": {
+      "natura": "spesa",
+      "minMln": null,
+      "maxMln": 500,
+      "periodo": "non_indicato",
+      "anni": null
+    }
+  }
+]

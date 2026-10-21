@@ -210,6 +210,18 @@
 - **Conseguenze:** per segnalare serve un account GitHub gratuito; per chi non ce l'ha resta da attivare un indirizzo del progetto (OA-2). Il binario 3 apre una superficie di attacco (prompt injection, spam): il runbook la limita con regole fisse e un tetto di 20 segnalazioni per esecuzione.
 - **Data:** 2026-10-21
 
+### D-021 — Costo delle promesse: la cifra del proponente, tradotta e messa accanto ai precedenti
+- **Stato:** applicata il 2026-10-21.
+- **Contesto:** il titolare vuole stimare il possibile costo delle promesse incrociandolo con quello che è successo in passato. Oggi solo 23 promesse su 320 hanno una cifra dichiarata e nessuna ha una stima indipendente; le 10 misure passate hanno scostamenti nei due sensi (Quota 100 −36%, abolizione ICI +29%).
+- **Scelta:**
+  - nessuna stima di Paghi Tu del costo di una promessa: si usa la cifra del proponente, strutturata (`research/2026-10-21.costi-precedenti.csv`: natura, importo minimo e massimo, periodo) senza ipotesi; un totale senza anni non diventa annuo;
+  - la cifra annua si traduce in euro per residente (popolazione media dell'ultimo anno) e in quota della spesa pubblica per la stessa funzione COFOG (ultimo anno con il dettaglio);
+  - famiglie di precedenti definite per strumento e beneficiari (`src/lib/domain/promise-cost.ts`), assegnate da due codificatori indipendenti (codifiche A e B nella stessa cartella): 23 costi concordi, 3 famiglie discordi lasciate vuote, 5 righe con precedenti;
+  - il calcolo «se andasse come quelle misure» applica lo scostamento minimo e massimo dei soli confronti `stima` con basi omogenee o in parte omogenee; etichettato come calcolo, non previsione;
+  - nessuna somma dei costi per partito.
+- **Conseguenze:** la sezione cresce con le stime indipendenti (UPB, Osservatorio CPI) e con nuove misure in `/misure`; la routine deve codificare due volte le righe nuove con lo stesso schema.
+- **Data:** 2026-10-21
+
 ## Decisioni aperte
 - **OA-1** — ~~Nome del progetto e dominio~~ → nome deciso il 2026-10-20: **Paghi Tu** (provocatorio verso politica e cittadini, senza attribuire condotte a nessuno). Dominio candidato `paghitu.it` (libero al controllo DNS del 2026-10-20, da confermare all'acquisto).
 - **OA-2** — Editore: il titolare del progetto, persona fisica. **Decisione del titolare (2026-10-20): nome e dati personali NON pubblicati sul sito**; il sito si presenta come "Paghi Tu" con un recapito dedicato (email del progetto). Da validare con l'avvocato prima del lancio: (a) se art. 2 L. 47/1948 (richiamato da art. 1 c. 3 L. 62/2001) e art. 7 D.Lgs. 70/2003 impongono l'indicazione dell'editore a un sito non periodico e non commerciale; (b) identità del titolare del trattamento richiesta dall'art. 13 GDPR se il sito tratta dati dei visitatori (log, analytics, form) — si minimizza con zero cookie, zero analytics con IP, nessun form; (c) alternativa: associazione (es. APS/ETS) come editore, così sul sito compare l'ente e non la persona; (d) responsabilità personale e polizza RC. L'anonimato verso il pubblico non elimina la responsabilità: l'editore resta identificabile da hosting e registro del dominio.
