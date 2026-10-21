@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Come verifichiamo i dati
+    url: https://paghi-tu.vercel.app/metodo
+    about: Livelli di verifica, regole uguali per tutti, cosa si corregge e cosa no.
+  - name: Registro delle correzioni
+    url: https://paghi-tu.vercel.app/correzioni
+    about: Ogni modifica a un dato già pubblicato, con il valore di prima e il motivo.

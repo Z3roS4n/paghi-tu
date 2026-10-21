@@ -1,0 +1,60 @@
+name: Correzione
+description: Un dato pubblicato su Paghi Tu è sbagliato, incompleto o senza la fonte giusta.
+title: "Correzione: "
+labels: ["correzione"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie. Ogni segnalazione viene ricontrollata sulla fonte da un agente verificatore e riceve una risposta pubblica qui sotto.
+        Si correggono fatti con una fonte, non opinioni: le regole sono in https://paghi-tu.vercel.app/metodo.
+        Non scrivere dati personali tuoi o di altri.
+  - type: input
+    id: pagina
+    attributes:
+      label: Pagina
+      description: Indirizzo della pagina del sito dove si trova il dato.
+      placeholder: https://paghi-tu.vercel.app/promesse#C27-PD-001
+    validations:
+      required: true
+  - type: input
+    id: dato
+    attributes:
+      label: Dato
+      description: Codice della promessa (per esempio C27-PD-001), nome del governo o della voce, anno.
+  - type: textarea
+    id: errore
+    attributes:
+      label: Cosa è sbagliato
+      description: Il valore o il testo pubblicato, così come compare sul sito.
+    validations:
+      required: true
+  - type: textarea
+    id: corretto
+    attributes:
+      label: Cosa dovrebbe esserci
+      description: Il valore o il testo corretto.
+    validations:
+      required: true
+  - type: input
+    id: fonte
+    attributes:
+      label: Fonte
+      description: Link a un documento ufficiale, a una banca dati pubblica o al testo originale della dichiarazione.
+      placeholder: https://
+    validations:
+      required: true
+  - type: textarea
+    id: note
+    attributes:
+      label: Note
+      description: Pagina del PDF, tabella, minuto del video, o qualunque cosa aiuti a trovare il punto nella fonte.
+  - type: checkboxes
+    id: regole
+    attributes:
+      label: Prima di inviare
+      options:
+        - label: La correzione riguarda un fatto verificabile sulla fonte indicata, non un giudizio.
+          required: true
+        - label: Ho letto le regole di partecipazione (CODE_OF_CONDUCT.md).
+          required: true

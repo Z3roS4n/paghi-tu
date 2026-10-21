@@ -13,9 +13,11 @@ import measuresJson from "../../data/misure.json";
 import partiesJson from "../../data/partiti.json";
 import promisesJson from "../../data/promesse.json";
 import promiseStatusJson from "../../data/promesse-stato.json";
+import correctionsJson from "../../data/correzioni.json";
 import {
   BudgetLaw,
   CampaignPromise,
+  Correction,
   Government,
   Legislature,
   Measure,
@@ -46,6 +48,7 @@ export const measures = z.array(Measure).parse(measuresJson).toSorted((a, b) => 
 export const parties = z.array(Party).parse(partiesJson);
 export const promises = z.array(CampaignPromise).parse(promisesJson);
 export const promiseStatus = PromiseCatalogStatus.parse(promiseStatusJson);
+export const corrections = z.array(Correction).parse(correctionsJson).toSorted((a, b) => b.id.localeCompare(a.id));
 
 export function getGovernment(id: string) {
   return governments.find((g) => g.id === id);

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { correctionUrl } from "@/lib/contribute";
 import Link from "next/link";
 import { SourceLinks } from "@/components/source-links";
 import { VerificationBadge } from "@/components/verification-badge";
@@ -91,6 +92,14 @@ function PromiseItem({ p }: { p: CampaignPromise }) {
         </p>
         <SourceLinks fonti={fonti} />
         <VerificationBadge verifica={p.verifica} />
+        <a
+          href={correctionUrl(`/promesse#${p.id}`, p.id)}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block text-xs text-ink-faint underline underline-offset-2 hover:text-ink"
+        >
+          Segnala un errore
+        </a>
       </div>
     </li>
   );

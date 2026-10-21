@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { REPO_URL } from "@/lib/contribute";
 
 const NAV = [
   { href: "/spesa", label: "Spesa" },
@@ -39,12 +40,18 @@ export function SiteFooter() {
     <footer className="mt-24 border-t border-rule">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 text-sm text-ink-soft md:grid-cols-[2fr_1fr_1fr] md:px-6">
         <p className="max-w-[55ch]">
-          Paghi Tu pubblica solo dati con fonte, con lo stesso metodo per ogni governo e ogni partito.
-          Codice con licenza MIT; i dati hanno la licenza indicata per ciascuna fonte.
+          Paghi Tu pubblica solo dati con fonte, con lo stesso metodo per ogni governo e ogni partito. È un progetto
+          aperto: chiunque può segnalare un errore o proporre una correzione. Codice con licenza MIT; i dati hanno la
+          licenza indicata per ciascuna fonte.
         </p>
         <ul className="space-y-2">
           <li><Link href="/chi-siamo" className="hover:text-ink">Chi siamo</Link></li>
-          <li><Link href="/correzioni" className="hover:text-ink">Correzioni</Link></li>
+          <li><Link href="/correzioni" className="hover:text-ink">Segnala un errore</Link></li>
+          <li>
+            <a href={REPO_URL} target="_blank" rel="noopener noreferrer" className="hover:text-ink">
+              Codice e dati su GitHub
+            </a>
+          </li>
         </ul>
         <ul className="space-y-2">
           <li><Link href="/note-legali" className="hover:text-ink">Note legali e privacy</Link></li>

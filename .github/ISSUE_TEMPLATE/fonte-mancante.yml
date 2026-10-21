@@ -1,0 +1,43 @@
+name: Dato o fonte mancante
+description: Una promessa, una misura o una fonte ufficiale che Paghi Tu non ha ancora.
+title: "Manca: "
+labels: ["dato-mancante"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Le promesse si registrano per tutti i partiti con lo stesso criterio: dichiarazione verificabile, testo esatto, fonte ufficiale o testata.
+        Prima di essere pubblicato, ogni dato nuovo passa dalla verifica indipendente e dal controllo di simmetria fra partiti.
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo
+      options:
+        - Promessa elettorale
+        - Misura o legge (costo previsto e costo effettivo)
+        - Dato di finanza pubblica
+        - Fonte ufficiale da usare
+        - Altro
+    validations:
+      required: true
+  - type: textarea
+    id: descrizione
+    attributes:
+      label: Cosa manca
+      description: Per una promessa, chi l'ha fatta, quando, e la frase esatta.
+    validations:
+      required: true
+  - type: input
+    id: fonte
+    attributes:
+      label: Fonte
+      placeholder: https://
+    validations:
+      required: true
+  - type: checkboxes
+    id: regole
+    attributes:
+      label: Prima di inviare
+      options:
+        - label: La segnalazione riguarda un fatto verificabile, non un giudizio su un partito o una persona.
+          required: true

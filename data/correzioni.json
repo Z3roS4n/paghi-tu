@@ -1,0 +1,38 @@
+[
+  {
+    "id": "COR-0001",
+    "data": "2026-10-21",
+    "tipo": "correzione",
+    "dato": "Promessa C27-LEGA-024, citazione",
+    "pagina": "/promesse#C27-LEGA-024",
+    "prima": "«Poi, è necessaria una stretta per i coltelli, il cui uso si sta diffondendo tra i giovanissimi […] Ci saranno provvedimenti severi per sradicare la tendenza di portare con sé delle lame, ovviamente senza colpire i cittadini perbene che le hanno per giustificati motivi (per esempio professionali).»",
+    "dopo": "«[…] è necessaria una stretta per i coltelli, il cui uso si sta diffondendo tra i giovanissimi (in particolare stranieri o di seconda generazione). Ci saranno provvedimenti severi per sradicare la tendenza di portare con sé delle lame, ovviamente senza colpire i cittadini perbene che le hanno per giustificati motivi […]»",
+    "motivo": "Il taglio toglieva l'inciso con cui il proponente descrive un gruppo di persone. Una citazione non toglie quelle parole: i tagli ora cadono su parti che non cambiano la misura né i destinatari.",
+    "fonte": { "url": "https://legaonline.it/la-settimana-leghista-9/" },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0002",
+    "data": "2026-10-21",
+    "tipo": "correzione",
+    "dato": "Promessa C27-FI-013, tipo di fonte",
+    "pagina": "/promesse#C27-FI-013",
+    "prima": "Intervista",
+    "dopo": "Discorso",
+    "motivo": "L'articolo riporta una dichiarazione fatta alla Camera dei deputati, non un'intervista. Il livello resta V2.",
+    "fonte": { "url": "https://www.hdmotori.it/bollo-tajani-estendere-esenzione-prime-auto/" },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0003",
+    "data": "2026-10-21",
+    "tipo": "metodo",
+    "dato": "Livello di verifica di 23 promesse tratte da interviste",
+    "pagina": "/metodo",
+    "prima": "V2: un'intervista pubblicata da un giornale contava come fonte secondaria.",
+    "dopo": "V1: un'intervista pubblicata da un giornale conta come fonte primaria, se la citazione è verificata sul testo.",
+    "motivo": "Le parole sono del dichiarante e si controllano sul testo dell'intervista. La regola vale per tutti i partiti; i discorsi riportati da un articolo restano V2.",
+    "fonte": null,
+    "segnalazione": null
+  }
+]

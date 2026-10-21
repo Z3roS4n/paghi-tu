@@ -263,3 +263,18 @@ export const PublicFinance = z.object({
   verifica: Verification,
 });
 export type PublicFinance = z.infer<typeof PublicFinance>;
+
+// Registro pubblico delle modifiche a dati già pubblicati (D-020): mai cancellato, solo esteso.
+export const Correction = z.object({
+  id: z.string().regex(/^COR-\d{4}$/),
+  data: isoDate,
+  tipo: z.enum(["correzione", "metodo"]),
+  dato: z.string(),
+  pagina: z.string().startsWith("/"),
+  prima: z.string(),
+  dopo: z.string(),
+  motivo: z.string(),
+  fonte: SourceLink.nullable(),
+  segnalazione: z.url().nullable(),
+});
+export type Correction = z.infer<typeof Correction>;

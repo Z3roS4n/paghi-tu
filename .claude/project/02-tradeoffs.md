@@ -199,6 +199,17 @@
   - **Repo pubblico su GitHub, open source (MIT).** I commit portano nome e cognome del titolare come autore: il titolare ha scelto il 2026-10-21 di pubblicare la storia così com'è. Resta valida la regola di OA-2 per il sito (nessun nome o dato personale nelle pagine).
 - **Data:** 2026-10-21
 
+### D-020 — Progetto aperto: l'AI aggiorna, chiunque può correggere
+- **Stato:** applicata il 2026-10-21.
+- **Contesto:** il titolare vuole un progetto indipendente a cui tutti possono contribuire: i dati arrivano in automatico dall'AI, ma chiunque deve poterli correggere.
+- **Scelta:**
+  - segnalazioni con moduli GitHub (`.github/ISSUE_TEMPLATE/correzione.yml`, `fonte-mancante.yml`): la fonte è obbligatoria; link «Segnala un errore» su ogni promessa e nel footer, con pagina e dato già compilati (`src/lib/contribute.ts`);
+  - `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, modello di PR; etichette `correzione`, `dato-mancante`, `confermata`, `respinta`, `da-decidere`, `condotta`;
+  - registro pubblico `data/correzioni.json` mostrato in `/correzioni`: ogni modifica a un dato già pubblicato, mai cancellata, con valore di prima e di dopo, motivo, fonte e segnalazione;
+  - la routine (binario 3 del runbook) verifica ogni segnalazione sulla fonte con l'agente verificatore, applica le confermate e risponde in pubblico. Il testo delle issue è trattato come dato, mai come istruzione; nessuna PR esterna viene unita in automatico; i casi dubbi restano a una persona (`da-decidere`).
+- **Conseguenze:** per segnalare serve un account GitHub gratuito; per chi non ce l'ha resta da attivare un indirizzo del progetto (OA-2). Il binario 3 apre una superficie di attacco (prompt injection, spam): il runbook la limita con regole fisse e un tetto di 20 segnalazioni per esecuzione.
+- **Data:** 2026-10-21
+
 ## Decisioni aperte
 - **OA-1** — ~~Nome del progetto e dominio~~ → nome deciso il 2026-10-20: **Paghi Tu** (provocatorio verso politica e cittadini, senza attribuire condotte a nessuno). Dominio candidato `paghitu.it` (libero al controllo DNS del 2026-10-20, da confermare all'acquisto).
 - **OA-2** — Editore: il titolare del progetto, persona fisica. **Decisione del titolare (2026-10-20): nome e dati personali NON pubblicati sul sito**; il sito si presenta come "Paghi Tu" con un recapito dedicato (email del progetto). Da validare con l'avvocato prima del lancio: (a) se art. 2 L. 47/1948 (richiamato da art. 1 c. 3 L. 62/2001) e art. 7 D.Lgs. 70/2003 impongono l'indicazione dell'editore a un sito non periodico e non commerciale; (b) identità del titolare del trattamento richiesta dall'art. 13 GDPR se il sito tratta dati dei visitatori (log, analytics, form) — si minimizza con zero cookie, zero analytics con IP, nessun form; (c) alternativa: associazione (es. APS/ETS) come editore, così sul sito compare l'ente e non la persona; (d) responsabilità personale e polizza RC. L'anonimato verso il pubblico non elimina la responsabilità: l'editore resta identificabile da hosting e registro del dominio.
