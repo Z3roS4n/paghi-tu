@@ -196,7 +196,7 @@
     - 1946–1979: nessuna serie ufficiale digitale per le amministrazioni pubbliche. Opzione: FMI *Public Finances in Modern History*, solo in % del PIL e come serie separata (richiede attribuzione e, per l'uso commerciale, un permesso).
     - Da fare prima di implementare: riscaricare e verificare la tavola ISTAT quando il sito non risponde più 403.
   - **Debito nell'elenco dei governi «il più chiaro possibile»:** colonna con intestazione, variazione in euro dell'epoca più rapporto debito/PIL a inizio e fine mandato, legenda in quattro punti. Il rapporto usa l'ultimo dicembre dentro il mandato, così un dicembre non va a due governi.
-  - **Repo pubblico su GitHub, open source (MIT).** I commit esistenti portano nome e cognome del titolare come autore: prima del push il titolare sceglie se riscrivere la storia o pubblicare un solo commit iniziale.
+  - **Repo pubblico su GitHub, open source (MIT).** I commit portano nome e cognome del titolare come autore: il titolare ha scelto il 2026-10-21 di pubblicare la storia così com'è. Resta valida la regola di OA-2 per il sito (nessun nome o dato personale nelle pagine).
 - **Data:** 2026-10-21
 
 ## Decisioni aperte
