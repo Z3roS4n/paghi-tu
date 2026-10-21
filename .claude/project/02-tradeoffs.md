@@ -191,7 +191,10 @@
   - **Nessun tetto di righe per partito:** ogni misura di un pacchetto è una riga (Azione 40, +Europa 18 restano così). Il numero di righe non misura quanto propone un partito, e la pagina lo dice.
   - **C27-LEGA-024:** il titolare non ha una preferenza. Scelta di Paghi Tu: reintegrare l'inciso «(in particolare stranieri o di seconda generazione)» e tagliare invece l'attacco «Poi,» e l'esempio finale. Regola generale: un taglio «[…]» non toglie mai le parole con cui il proponente descrive un gruppo di persone, perché la dichiarazione risulterebbe diversa da come è stata fatta.
   - **Ogni fonte deve avere una copia d'archivio.** `scripts/data/archive-sources.ts` cerca le copie Wayback esistenti (sola lettura); con `--save` chiederebbe catture nuove (scheda `integrations/internet-archive.md`). Al 2026-10-21: 6 copie esistenti trovate e salvate; le catture nuove restano escluse finché il titolare non autorizza in modo esplicito le scritture verso Internet Archive.
-  - **Spesa 1946–1994:** si usa la fonte più attendibile; scelta in corso (nota `research/2026-10-21.fonte-spesa-1946-1994.md`, DI-01).
+  - **Spesa 1946–1994:** si usa la fonte più attendibile (nota `research/2026-10-21.fonte-spesa-1946-1994.md`, DI-01). Proposta:
+    - 1980–1994: ISTAT, *L'Italia in 150 anni*, tavola 12.17 (amministrazioni pubbliche, SEC95, CC BY 4.0), con rottura di serie dichiarata sul 1995 (scarto con Eurostat sulla spesa +2%); le % del PIL dalla tavola 12.19 della stessa edizione.
+    - 1946–1979: nessuna serie ufficiale digitale per le amministrazioni pubbliche. Opzione: FMI *Public Finances in Modern History*, solo in % del PIL e come serie separata (richiede attribuzione e, per l'uso commerciale, un permesso).
+    - Da fare prima di implementare: riscaricare e verificare la tavola ISTAT quando il sito non risponde più 403.
   - **Debito nell'elenco dei governi «il più chiaro possibile»:** colonna con intestazione, variazione in euro dell'epoca più rapporto debito/PIL a inizio e fine mandato, legenda in quattro punti. Il rapporto usa l'ultimo dicembre dentro il mandato, così un dicembre non va a due governi.
   - **Repo pubblico su GitHub, open source (MIT).** I commit esistenti portano nome e cognome del titolare come autore: prima del push il titolare sceglie se riscrivere la storia o pubblicare un solo commit iniziale.
 - **Data:** 2026-10-21
