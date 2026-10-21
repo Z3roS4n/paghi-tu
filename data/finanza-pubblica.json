@@ -1,5 +1,5 @@
 {
-  "scaricato": "2026-10-21T13:11:09.458Z",
+  "scaricato": "2026-10-21T15:26:32.584Z",
   "fonti": [
     {
       "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10a_main/A.MIO_NAC+PC_GDP.S13.TE+TR+B9+D41PAY.IT?format=SDMX-CSV",
@@ -14,6 +14,26 @@
     {
       "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10dd_edpt1/A.MIO_NAC+PC_GDP.S13.GD.IT?format=SDMX-CSV",
       "etichetta": "Eurostat gov_10dd_edpt1, debito pubblico (notifica EDP)",
+      "aggiornamentoFonte": "21/10/26 11:00:00"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10q_ggnfa/Q.MIO_EUR.NSA.S13.TE+TR+B9+D41PAY.IT?format=SDMX-CSV&startPeriod=2019-Q1",
+      "etichetta": "Eurostat gov_10q_ggnfa, conti trimestrali delle amministrazioni pubbliche",
+      "aggiornamentoFonte": "21/10/26 11:00:00"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10a_exp/A.PC_GDP.S13.TOTAL+GF04+GF07+GF09+GF0107+GF1002+GF1003.TE.IT+DE+FR+ES+EU27_2020?format=SDMX-CSV&startPeriod=2019",
+      "etichetta": "Eurostat gov_10a_exp, spesa per funzione in % del PIL: Italia, Germania, Francia, Spagna, UE",
+      "aggiornamentoFonte": "21/10/26 23:00:00"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10a_main/A.PC_GDP.S13.TE+TR+B9+D41PAY.IT+DE+FR+ES+EU27_2020?format=SDMX-CSV&startPeriod=2019",
+      "etichetta": "Eurostat gov_10a_main, conti principali in % del PIL: Italia, Germania, Francia, Spagna, UE",
+      "aggiornamentoFonte": "21/10/26 11:00:00"
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10dd_edpt1/A.PC_GDP.S13.GD.IT+DE+FR+ES+EU27_2020?format=SDMX-CSV&startPeriod=2019",
+      "etichetta": "Eurostat gov_10dd_edpt1, debito in % del PIL: Italia, Germania, Francia, Spagna, UE",
       "aggiornamentoFonte": "21/10/26 11:00:00"
     },
     {
@@ -487,6 +507,218 @@
       },
       "popolazioneMedia": 58943146,
       "rotturaDiSerie": false
+    }
+  ],
+  "trimestri": [
+    {
+      "periodo": "2019-Q1",
+      "spesa": 201774,
+      "entrate": 170172.3,
+      "saldo": -31601.4,
+      "interessi": 12328
+    },
+    {
+      "periodo": "2019-Q2",
+      "spesa": 211388.9,
+      "entrate": 216675.9,
+      "saldo": 5287.4,
+      "interessi": 17980
+    },
+    {
+      "periodo": "2019-Q3",
+      "spesa": 205038.3,
+      "entrate": 194135.3,
+      "saldo": -10903.1,
+      "interessi": 14100
+    },
+    {
+      "periodo": "2019-Q4",
+      "spesa": 256033.8,
+      "entrate": 266537.5,
+      "saldo": 10504.1,
+      "interessi": 15771
+    },
+    {
+      "periodo": "2020-Q1",
+      "spesa": 210596.4,
+      "entrate": 164180.6,
+      "saldo": -46416.1,
+      "interessi": 12518
+    },
+    {
+      "periodo": "2020-Q2",
+      "spesa": 232314.5,
+      "entrate": 189527,
+      "saldo": -42788.4,
+      "interessi": 15579
+    },
+    {
+      "periodo": "2020-Q3",
+      "spesa": 225588.9,
+      "entrate": 182610.1,
+      "saldo": -42979.4,
+      "interessi": 14382
+    },
+    {
+      "periodo": "2020-Q4",
+      "spesa": 279325.2,
+      "entrate": 255419.3,
+      "saldo": -23905.7,
+      "interessi": 14649
+    },
+    {
+      "periodo": "2021-Q1",
+      "spesa": 237495.1,
+      "entrate": 170369.1,
+      "saldo": -67125.6,
+      "interessi": 13728
+    },
+    {
+      "periodo": "2021-Q2",
+      "spesa": 253487.4,
+      "entrate": 216109.3,
+      "saldo": -37377.9,
+      "interessi": 16942
+    },
+    {
+      "periodo": "2021-Q3",
+      "spesa": 240938.2,
+      "entrate": 205388.5,
+      "saldo": -35549.4,
+      "interessi": 14861
+    },
+    {
+      "periodo": "2021-Q4",
+      "spesa": 301301.3,
+      "entrate": 277373.1,
+      "saldo": -23928.1,
+      "interessi": 17465
+    },
+    {
+      "periodo": "2022-Q1",
+      "spesa": 246097.6,
+      "entrate": 186915.4,
+      "saldo": -59182,
+      "interessi": 16461
+    },
+    {
+      "periodo": "2022-Q2",
+      "spesa": 260617.8,
+      "entrate": 236407.2,
+      "saldo": -24211,
+      "interessi": 22006
+    },
+    {
+      "periodo": "2022-Q3",
+      "spesa": 267148.6,
+      "entrate": 217800.5,
+      "saldo": -49348.4,
+      "interessi": 18481
+    },
+    {
+      "periodo": "2022-Q4",
+      "spesa": 323356,
+      "entrate": 294910.9,
+      "saldo": -28444.6,
+      "interessi": 24659
+    },
+    {
+      "periodo": "2023-Q1",
+      "spesa": 262580.8,
+      "entrate": 199655.1,
+      "saldo": -62925.9,
+      "interessi": 15334
+    },
+    {
+      "periodo": "2023-Q2",
+      "spesa": 269796.6,
+      "entrate": 247090.7,
+      "saldo": -22705.7,
+      "interessi": 22252
+    },
+    {
+      "periodo": "2023-Q3",
+      "spesa": 269868.8,
+      "entrate": 234179.5,
+      "saldo": -35688.7,
+      "interessi": 18505
+    },
+    {
+      "periodo": "2023-Q4",
+      "spesa": 346240.8,
+      "entrate": 315595.6,
+      "saldo": -30645.7,
+      "interessi": 21682
+    },
+    {
+      "periodo": "2024-Q1",
+      "spesa": 258461.8,
+      "entrate": 208487.5,
+      "saldo": -49974.6,
+      "interessi": 18047
+    },
+    {
+      "periodo": "2024-Q2",
+      "spesa": 270011.7,
+      "entrate": 254893.5,
+      "saldo": -15118.2,
+      "interessi": 23932
+    },
+    {
+      "periodo": "2024-Q3",
+      "spesa": 261982.6,
+      "entrate": 243159,
+      "saldo": -18823.4,
+      "interessi": 21489
+    },
+    {
+      "periodo": "2024-Q4",
+      "spesa": 321240.9,
+      "entrate": 330321.9,
+      "saldo": 9081.3,
+      "interessi": 22007
+    },
+    {
+      "periodo": "2025-Q1",
+      "spesa": 270250.4,
+      "entrate": 219984.1,
+      "saldo": -50266.1,
+      "interessi": 19926
+    },
+    {
+      "periodo": "2025-Q2",
+      "spesa": 278925.4,
+      "entrate": 267185.8,
+      "saldo": -11739.7,
+      "interessi": 23941
+    },
+    {
+      "periodo": "2025-Q3",
+      "spesa": 272851.9,
+      "entrate": 249060.1,
+      "saldo": -23791.9,
+      "interessi": 21118
+    },
+    {
+      "periodo": "2025-Q4",
+      "spesa": 335211.3,
+      "entrate": 351273,
+      "saldo": 16061.7,
+      "interessi": 22174
+    },
+    {
+      "periodo": "2026-Q1",
+      "spesa": 276995.4,
+      "entrate": 227931.9,
+      "saldo": -49063.3,
+      "interessi": 19028
+    },
+    {
+      "periodo": "2026-Q2",
+      "spesa": 290792.8,
+      "entrate": 279240.8,
+      "saldo": -11552.1,
+      "interessi": 28656
     }
   ],
   "funzioni": [
@@ -5115,6 +5347,103 @@
       "valore": 136.7
     }
   ],
+  "confrontoUe": {
+    "funzioni": {
+      "anno": 2024,
+      "valori": {
+        "IT": {
+          "TOTAL": 50.4,
+          "GF04": 5.1,
+          "GF07": 6.6,
+          "GF09": 4,
+          "GF0107": 4,
+          "GF1002": 13.9,
+          "GF1003": 2.4
+        },
+        "DE": {
+          "TOTAL": 49.4,
+          "GF04": 5.4,
+          "GF07": 7.6,
+          "GF09": 4.5,
+          "GF0107": 1.1,
+          "GF1002": 9.9,
+          "GF1003": 1.9
+        },
+        "FR": {
+          "TOTAL": 57.3,
+          "GF04": 5.7,
+          "GF07": 8.9,
+          "GF09": 5.1,
+          "GF0107": 2,
+          "GF1002": 13.4,
+          "GF1003": 1.4
+        },
+        "ES": {
+          "TOTAL": 45.5,
+          "GF04": 5.1,
+          "GF07": 6.5,
+          "GF09": 4.1,
+          "GF0107": 2.5,
+          "GF1002": 10.4,
+          "GF1003": 2.2
+        },
+        "EU27_2020": {
+          "TOTAL": 48.8,
+          "GF04": 5.3,
+          "GF07": 7.3,
+          "GF09": 4.7,
+          "GF0107": 1.9,
+          "GF1002": 10.6,
+          "GF1003": 1.4
+        }
+      }
+    },
+    "conti": {
+      "anno": 2025,
+      "valori": {
+        "IT": {
+          "spesa": 51.1,
+          "entrate": 48,
+          "saldo": -3.1,
+          "interessi": 3.8
+        },
+        "DE": {
+          "spesa": 50.1,
+          "entrate": 47.2,
+          "saldo": -2.9,
+          "interessi": 1.1
+        },
+        "FR": {
+          "spesa": 57.3,
+          "entrate": 52.2,
+          "saldo": -5.1,
+          "interessi": 2.2
+        },
+        "ES": {
+          "spesa": 45.3,
+          "entrate": 42.9,
+          "saldo": -2.4,
+          "interessi": 2.4
+        },
+        "EU27_2020": {
+          "spesa": 49.4,
+          "entrate": 46.3,
+          "saldo": -3.1,
+          "interessi": 1.9
+        }
+      }
+    },
+    "debito": {
+      "anno": 2025,
+      "valori": {
+        "IT": 136.7,
+        "DE": 62.8,
+        "FR": 115.7,
+        "ES": 100.5,
+        "EU27_2020": 81.5
+      }
+    }
+  },
   "controlli": [
     {
       "id": "somma-funzioni",
@@ -5141,6 +5470,18 @@
       "dettaglio": "31 confronti; scarto massimo 0 % (1995); soglia 0,5 %"
     },
     {
+      "id": "trimestri-anno",
+      "descrizione": "I quattro trimestri sommano alla spesa e alle entrate dell'anno",
+      "superato": true,
+      "dettaglio": "14 confronti; scarto massimo -0 % (2023 entrate); soglia 0,5 %"
+    },
+    {
+      "id": "confronto-ue-italia",
+      "descrizione": "Nel confronto UE i valori dell'Italia coincidono con le tavole nazionali",
+      "superato": true,
+      "dettaglio": "5 confronti; scarto massimo 0 punti % (spesa 2025); soglia 0,05 punti %"
+    },
+    {
       "id": "pil-istat-eurostat",
       "descrizione": "Spesa in % del PIL: valore Eurostat contro spesa Eurostat divisa per il PIL ISTAT della nostra serie",
       "superato": true,
@@ -5149,6 +5490,6 @@
   ],
   "verifica": {
     "livello": "V1",
-    "dettaglio": "Scaricati dalle fonti primarie il 2026-10-21 e incrociati in automatico: le dieci funzioni cofog sommano al totale della spesa per funzione; spesa totale uguale nelle due tavole eurostat (conti principali e spesa per funzione); saldo uguale a entrate meno spese; debito di fine anno: banca d'italia contro eurostat; spesa in % del pil: valore eurostat contro spesa eurostat divisa per il pil istat della nostra serie. Tutti i controlli superati."
+    "dettaglio": "Scaricati dalle fonti primarie il 2026-10-21 e incrociati in automatico: le dieci funzioni cofog sommano al totale della spesa per funzione; spesa totale uguale nelle due tavole eurostat (conti principali e spesa per funzione); saldo uguale a entrate meno spese; debito di fine anno: banca d'italia contro eurostat; i quattro trimestri sommano alla spesa e alle entrate dell'anno; nel confronto ue i valori dell'italia coincidono con le tavole nazionali; spesa in % del pil: valore eurostat contro spesa eurostat divisa per il pil istat della nostra serie. Tutti i controlli superati."
   }
 }

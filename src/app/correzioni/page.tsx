@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ProsePage } from "@/components/prose-page";
+import { Tag } from "@/components/ui";
 import { REPO_URL, correctionUrl } from "@/lib/contribute";
 import { formatDate } from "@/lib/format";
 import { corrections } from "@/server/data";
@@ -61,37 +62,51 @@ export default function CorrectionsPage() {
 
       <h2>Registro</h2>
       {corrections.length === 0 ? (
-        <p>Nessuna correzione a dati pubblicati, finora.</p>
+        <p className="rounded-card bg-paper-raised px-4 py-4 md:px-6">Nessuna correzione a dati pubblicati, finora.</p>
       ) : (
-        <ol className="!list-none !pl-0 space-y-8">
+        <div role="list" className="grid gap-2.5">
           {corrections.map((c) => (
-            <li key={c.id} id={c.id} className="scroll-mt-6 border-t border-rule pt-6">
-              <p className="font-mono text-xs !text-ink-faint">
-                {c.id} · {formatDate(c.data)} · {KIND[c.tipo]}
-              </p>
-              <p className="mt-1 font-medium !text-ink">
+            <article
+              role="listitem"
+              key={c.id}
+              id={c.id}
+              className="scroll-mt-[calc(var(--header-h)+16px)] rounded-card bg-paper-raised px-4 py-4.5 md:px-6 md:py-5.5"
+            >
+              <div className="flex flex-wrap items-center gap-2">
+                <Tag tone={c.tipo === "metodo" ? "plain" : "accent"}>{KIND[c.tipo]}</Tag>
+                <span className="tabular text-sm font-semibold text-ink-faint">
+                  {c.id} · {formatDate(c.data)}
+                </span>
+              </div>
+              <h3 className="!mt-2.5 text-lg leading-snug font-bold">
                 <Link href={c.pagina}>{c.dato}</Link>
-              </p>
-              <dl className="mt-3 grid gap-2 text-sm md:grid-cols-[6rem_1fr]">
-                <dt className="!text-ink-faint">Prima</dt>
-                <dd>{c.prima}</dd>
-                <dt className="!text-ink-faint">Dopo</dt>
-                <dd>{c.dopo}</dd>
-                <dt className="!text-ink-faint">Motivo</dt>
-                <dd>{c.motivo}</dd>
+              </h3>
+              <dl className="mt-3 grid gap-2 sm:grid-cols-2">
+                <div className="min-w-0 rounded-ctl bg-paper px-3.5 py-3">
+                  <dt className="text-[13.5px] font-semibold text-ink-faint">Prima</dt>
+                  <dd className="mt-0.5 break-words text-ink-soft line-through decoration-ink-faint/60">{c.prima}</dd>
+                </div>
+                <div className="min-w-0 rounded-ctl bg-accent-soft px-3.5 py-3">
+                  <dt className="text-[13.5px] font-semibold text-accent">Dopo</dt>
+                  <dd className="mt-0.5 font-semibold break-words text-ink">{c.dopo}</dd>
+                </div>
+              </dl>
+              <dl className="mt-3 grid gap-2 text-[15px] sm:grid-cols-[7.5rem_1fr]">
+                <dt className="font-semibold text-ink-faint">Motivo</dt>
+                <dd className="text-ink-soft">{c.motivo}</dd>
                 {c.fonte ? (
                   <>
-                    <dt className="!text-ink-faint">Fonte</dt>
-                    <dd>
+                    <dt className="font-semibold text-ink-faint">Fonte</dt>
+                    <dd className="min-w-0">
                       <a href={c.fonte.url} target="_blank" rel="noopener noreferrer" className="break-all">
-                        {c.fonte.url}
+                        {c.fonte.etichetta ?? c.fonte.url}
                       </a>
                     </dd>
                   </>
                 ) : null}
                 {c.segnalazione ? (
                   <>
-                    <dt className="!text-ink-faint">Segnalazione</dt>
+                    <dt className="font-semibold text-ink-faint">Segnalazione</dt>
                     <dd>
                       <a href={c.segnalazione} target="_blank" rel="noopener noreferrer">
                         apri su GitHub
@@ -100,9 +115,9 @@ export default function CorrectionsPage() {
                   </>
                 ) : null}
               </dl>
-            </li>
+            </article>
           ))}
-        </ol>
+        </div>
       )}
     </ProsePage>
   );

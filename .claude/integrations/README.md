@@ -10,6 +10,7 @@
 |---|---|---|---|
 | Vercel | hosting statico | ✅ attiva (produzione pubblica dal 2026-10-21) | [vercel.md](vercel.md) |
 | Resend | email di segnalazione della routine | 🟡 pronta, da configurare sull'account della routine | [resend.md](resend.md) |
+| Eurostat (SDMX) | dati dei conti pubblici, senza chiave | ✅ attiva (pipeline `data:update`) | [eurostat.md](eurostat.md) |
 | Internet Archive (Wayback) | copie d'archivio delle fonti | 🟡 ricerca delle copie attiva; nuove catture in attesa di permesso | [internet-archive.md](internet-archive.md) |
 
 ## Webhook in entrata (endpoint esposti dalla nostra app)

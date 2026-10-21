@@ -2,29 +2,57 @@
   {
     "file": "eurostat/gov_10a_main.csv",
     "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10a_main/A.MIO_NAC+PC_GDP.S13.TE+TR+B9+D41PAY.IT?format=SDMX-CSV",
-    "scaricato": "2026-10-21T13:11:09.458Z",
+    "scaricato": "2026-10-21T15:26:32.584Z",
     "sha256": "d74dc29276d8ab57447083dd1e167ee02a8a79e531568e27cf6ecacb0ac527ac",
     "righe": 249
   },
   {
     "file": "eurostat/gov_10a_exp.csv",
     "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10a_exp/A.MIO_NAC.S13.TOTAL+GF01+GF02+GF03+GF04+GF05+GF06+GF07+GF08+GF09+GF10+GF0107+GF1001+GF1002+GF1003.TE.IT?format=SDMX-CSV",
-    "scaricato": "2026-10-21T13:11:09.458Z",
+    "scaricato": "2026-10-21T15:26:32.584Z",
     "sha256": "41eed9e46b981012cce84a30bef25a888c0cb7c16881e7da31bd221fd74c4937",
     "righe": 427
   },
   {
     "file": "eurostat/gov_10dd_edpt1.csv",
     "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10dd_edpt1/A.MIO_NAC+PC_GDP.S13.GD.IT?format=SDMX-CSV",
-    "scaricato": "2026-10-21T13:11:09.458Z",
+    "scaricato": "2026-10-21T15:26:32.584Z",
     "sha256": "c363020fd0bf23b7d39f78a97071ce7cb811ad709e5be9389d192f5ad82f15e5",
     "righe": 63
+  },
+  {
+    "file": "eurostat/gov_10q_ggnfa.csv",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10q_ggnfa/Q.MIO_EUR.NSA.S13.TE+TR+B9+D41PAY.IT?format=SDMX-CSV&startPeriod=2019-Q1",
+    "scaricato": "2026-10-21T15:26:32.584Z",
+    "sha256": "32ed8a4e0e6ebea13f777c72e07908b1264b7fb310416fb5246d7bf3fd9cc480",
+    "righe": 121
+  },
+  {
+    "file": "eurostat/ue_gov_10a_exp.csv",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10a_exp/A.PC_GDP.S13.TOTAL+GF04+GF07+GF09+GF0107+GF1002+GF1003.TE.IT+DE+FR+ES+EU27_2020?format=SDMX-CSV&startPeriod=2019",
+    "scaricato": "2026-10-21T15:26:32.584Z",
+    "sha256": "3a6ed543abc09042d4cf8db1dd2d60e82edde8d95f1c77db419f9bef23ddff90",
+    "righe": 211
+  },
+  {
+    "file": "eurostat/ue_gov_10a_main.csv",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10a_main/A.PC_GDP.S13.TE+TR+B9+D41PAY.IT+DE+FR+ES+EU27_2020?format=SDMX-CSV&startPeriod=2019",
+    "scaricato": "2026-10-21T15:26:32.584Z",
+    "sha256": "1d7068ae190a77fc2465a40f3559305568249516901e3863fbfdde2bb493ecf2",
+    "righe": 141
+  },
+  {
+    "file": "eurostat/ue_gov_10dd_edpt1.csv",
+    "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10dd_edpt1/A.PC_GDP.S13.GD.IT+DE+FR+ES+EU27_2020?format=SDMX-CSV&startPeriod=2019",
+    "scaricato": "2026-10-21T15:26:32.584Z",
+    "sha256": "4aafdf2c62d46ed88ee5193e6f5f500f25749767217c84369ce8a3a3ce57a6ff",
+    "righe": 36
   },
   {
     "file": "bancaditalia/TCCE0325.csv",
     "url": "https://a2a.bancaditalia.it/infostat/dataservices/export/IT/CSV/DATA/PUBLICATION/BANKITALIA/DIFF/FPI",
     "fileOrigine": "20261014_110405-TIMESERIES-MULTICUBE.csv",
-    "scaricato": "2026-10-21T13:11:09.458Z",
+    "scaricato": "2026-10-21T15:26:32.584Z",
     "sha256": "85167e7428836fe0337d891110f6d53e98cd9383a14417ba27bc3c17216136c0",
     "righe": 1978
   }

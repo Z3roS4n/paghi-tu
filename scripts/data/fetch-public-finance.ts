@@ -20,6 +20,8 @@ const COFOG_CODES = [
   "GF1003",
 ];
 
+const EU_GEOS = "IT+DE+FR+ES+EU27_2020";
+
 const SOURCES = [
   {
     file: "eurostat/gov_10a_main.csv",
@@ -32,6 +34,23 @@ const SOURCES = [
   {
     file: "eurostat/gov_10dd_edpt1.csv",
     url: `${EUROSTAT}/gov_10dd_edpt1/A.MIO_NAC+PC_GDP.S13.GD.IT?format=SDMX-CSV`,
+  },
+  // Trimestri non destagionalizzati: dal 1999 MIO_EUR e MIO_NAC coincidono.
+  {
+    file: "eurostat/gov_10q_ggnfa.csv",
+    url: `${EUROSTAT}/gov_10q_ggnfa/Q.MIO_EUR.NSA.S13.TE+TR+B9+D41PAY.IT?format=SDMX-CSV&startPeriod=2019-Q1`,
+  },
+  {
+    file: "eurostat/ue_gov_10a_exp.csv",
+    url: `${EUROSTAT}/gov_10a_exp/A.PC_GDP.S13.TOTAL+GF04+GF07+GF09+GF0107+GF1002+GF1003.TE.${EU_GEOS}?format=SDMX-CSV&startPeriod=2019`,
+  },
+  {
+    file: "eurostat/ue_gov_10a_main.csv",
+    url: `${EUROSTAT}/gov_10a_main/A.PC_GDP.S13.TE+TR+B9+D41PAY.${EU_GEOS}?format=SDMX-CSV&startPeriod=2019`,
+  },
+  {
+    file: "eurostat/ue_gov_10dd_edpt1.csv",
+    url: `${EUROSTAT}/gov_10dd_edpt1/A.PC_GDP.S13.GD.${EU_GEOS}?format=SDMX-CSV&startPeriod=2019`,
   },
   // Pubblicazione FPI: zip di zip. Serve la tavola TCCE0325 (debito delle AP per vita residua, mensile dal 1861):
   // si usa solo la colonna del debito lordo totale.

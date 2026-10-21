@@ -1,66 +1,113 @@
 @import "tailwindcss";
 
-/* Palette volutamente estranea ai colori dei partiti italiani (rosso, blu, verde, giallo,
-   tricolore): carta da scontrino, inchiostro, un solo accento arancione. Vedi D-011. */
+/* Ardesia e terracotta: palette estranea ai colori dei partiti italiani (rosso, blu, verde, giallo,
+   tricolore). Un solo accento. Vedi D-011 e design/decisions.md D-UI-06. */
 :root {
-  --paper: #f4f4f1;
-  --paper-raised: #fbfbf9;
-  --ink: #18181b;
-  --ink-soft: #52525b;
-  --ink-faint: #71717a;
-  --rule: #d4d4d8;
-  --accent: #c2410c;
-  --accent-ink: #fbfbf9;
-  --level-v1: #3f3f46;
-  --level-v2: #a16207;
+  --paper: #eceeee;
+  --paper-raised: #f8f9f9;
+  --paper-sunk: #e1e5e6;
+  --ink: #1f2427;
+  --ink-soft: #465055;
+  --ink-faint: #5e686d;
+  --rule: #cdd3d5;
+  --accent: #a4461f;
+  --accent-soft: #f3ddd2;
+  --accent-ink: #ffffff;
+  --neutral: #7c878c;
+  --night: #232a2e;
+  --night-ink: #eef0f0;
+  --level-v1: #3f474b;
+  --level-v2: #7a5300;
+  --level-v2-bg: #f2e7cf;
   --level-nv: #b91c1c;
+  --shadow: 0 1px 2px rgb(31 36 39 / 0.06), 0 14px 34px -18px rgb(31 36 39 / 0.3);
+  --header-h: 60px;
+  --dock-h: 64px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --paper: #111113;
-    --paper-raised: #1b1b1e;
-    --ink: #ececee;
-    --ink-soft: #a1a1aa;
-    --ink-faint: #8b8b94;
-    --rule: #34343a;
-    --accent: #fb923c;
-    --accent-ink: #111113;
-    --level-v1: #d4d4d8;
-    --level-v2: #fbbf24;
+    --paper: #14181a;
+    --paper-raised: #1d2326;
+    --paper-sunk: #262e32;
+    --ink: #e9eced;
+    --ink-soft: #b4bdc1;
+    --ink-faint: #939da2;
+    --rule: #344045;
+    --accent: #e9875c;
+    --accent-soft: #3d2a22;
+    --accent-ink: #1f1410;
+    --neutral: #8a959a;
+    --night: #0f1213;
+    --night-ink: #e9eced;
+    --level-v1: #d4d9db;
+    --level-v2: #f2c66b;
+    --level-v2-bg: #3a2f17;
     --level-nv: #f87171;
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 14px 34px -18px rgb(0 0 0 / 0.7);
   }
 }
 
 @theme inline {
   --color-paper: var(--paper);
   --color-paper-raised: var(--paper-raised);
+  --color-paper-sunk: var(--paper-sunk);
   --color-ink: var(--ink);
   --color-ink-soft: var(--ink-soft);
   --color-ink-faint: var(--ink-faint);
   --color-rule: var(--rule);
   --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
   --color-accent-ink: var(--accent-ink);
+  --color-neutral: var(--neutral);
+  --color-night: var(--night);
+  --color-night-ink: var(--night-ink);
   --color-level-v1: var(--level-v1);
   --color-level-v2: var(--level-v2);
+  --color-level-v2-bg: var(--level-v2-bg);
   --color-level-nv: var(--level-nv);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-figtree);
+  --font-display: var(--font-bricolage);
+  --font-mono: var(--font-courier);
+  --radius-card: 6px;
+  --radius-ctl: 4px;
+  --shadow-card: var(--shadow);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   background: var(--paper);
   color: var(--ink);
+  padding-bottom: calc(var(--dock-h) + env(safe-area-inset-bottom) + 8px);
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding-bottom: 0;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-bricolage);
+  letter-spacing: -0.02em;
+  text-wrap: balance;
 }
 
 /* Lo scontrino resta carta chiara anche in tema scuro: è un oggetto, non una superficie. */
 .receipt {
-  --paper-raised: #fbfbf9;
-  --ink: #18181b;
-  --ink-faint: #71717a;
-  --accent: #c2410c;
-  background: #fbfbf9;
-  color: #18181b;
+  --paper-raised: #fffefa;
+  --ink: #22201c;
+  --ink-faint: #5c574e;
+  background: #fffefa;
+  color: #22201c;
+  font-family: var(--font-courier);
+  -webkit-mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50% / 12px 100%;
+  mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50% / 12px 100%;
 }
 
 .tabular {
@@ -68,6 +115,141 @@ body {
 }
 
 :focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Movimento legato allo scroll. Dove il browser non supporta le timeline, il contenuto è semplicemente
+   visibile; con prefers-reduced-motion resta fermo. */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(32px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes draw {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
+}
+@keyframes uncover {
+  from { clip-path: inset(0 100% 0 0); }
+  to { clip-path: inset(0 0 0 0); }
+}
+@keyframes appear {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes grow-x {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+@keyframes drift {
+  to { transform: scale(1.14) translateY(4%); filter: saturate(0.6); }
+}
+@keyframes lift {
+  to { transform: translateY(-36px); opacity: 0.25; }
+}
+
+.chart-line {
+  stroke-dasharray: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .reveal {
+      animation: rise linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 70%;
+    }
+    .reveal-bars {
+      view-timeline: --bars block;
+    }
+    .reveal-bars .bar {
+      transform-origin: var(--origin, left);
+      animation: grow-x linear both;
+      animation-timeline: --bars;
+      animation-range: entry 20% cover 45%;
+    }
+    .chart-frame {
+      view-timeline: --chart block;
+    }
+    .chart-frame .chart-line {
+      stroke-dasharray: 1;
+      animation: draw linear both;
+      animation-timeline: --chart;
+      animation-range: entry 30% cover 55%;
+    }
+    .chart-frame .chart-area {
+      animation: uncover linear both;
+      animation-timeline: --chart;
+      animation-range: entry 30% cover 55%;
+    }
+    .chart-frame .chart-late {
+      animation: appear linear both;
+      animation-timeline: --chart;
+      animation-range: cover 48% cover 56%;
+    }
+    .hero-image img {
+      animation: drift linear both;
+      animation-timeline: view();
+      animation-range: exit 0% exit 100%;
+    }
+    .hero-card {
+      animation: lift linear both;
+      animation-timeline: view();
+      animation-range: exit 0% exit 90%;
+    }
+    .scroll-progress {
+      animation: grow-x linear both;
+      animation-timeline: scroll(root);
+    }
+  }
+}
+
+.scroll-progress {
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+@supports not (animation-timeline: scroll()) {
+  .scroll-progress {
+    display: none;
+  }
+}
+
+/* Foglio «Altro» del dock: sale dal basso. allow-discrete fa animare anche l'apertura del <dialog>. */
+.sheet {
+  transform: translateY(105%);
+  transition:
+    transform 0.38s cubic-bezier(0.2, 0.8, 0.2, 1),
+    overlay 0.38s allow-discrete,
+    display 0.38s allow-discrete;
+}
+.sheet[open] {
+  transform: none;
+}
+@starting-style {
+  .sheet[open] {
+    transform: translateY(105%);
+  }
+}
+.sheet::backdrop {
+  opacity: 0;
+  transition:
+    opacity 0.38s,
+    overlay 0.38s allow-discrete,
+    display 0.38s allow-discrete;
+}
+.sheet[open]::backdrop {
+  opacity: 1;
+}
+@starting-style {
+  .sheet[open]::backdrop {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sheet,
+  .sheet::backdrop {
+    transition: none;
+  }
 }

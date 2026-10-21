@@ -12,36 +12,43 @@ componente/servizio toccato durante il redesign.
 
 ## Scope attuale
 Sito pubblico, senza login, desktop e mobile con la stessa pagina (reflow ai breakpoint Tailwind).
-Redesign del 2026-10-21: la domanda guida è **«quanto spende lo Stato con i nostri soldi?»**. Ogni pagina
-porta il numero principale in testa, poi il dettaglio, poi fonti e controlli. Pagine: home (cifra per
-residente + scontrino), `/spesa`, `/governi/[id]` (conti durante il mandato), `/archivio` (ricerca).
+Redesign del 2026-10-21 (direzione C, bozza `bozze/c2-piazza.html`, D-UI-06/07): la domanda guida è **«quanto spende
+lo Stato con i nostri soldi?»**. Ogni pagina porta il numero principale in testa, poi il dettaglio, poi fonti e
+controlli. Tutte le pagine sono sul nuovo design.
 
 ## Palette — token
-Definita in `src/app/globals.css` (D-011: nessun colore di partito — niente rosso, blu, verde, giallo o
-tricolore come colore di identità). Tema chiaro e scuro seguono `prefers-color-scheme`.
+Definita in `src/app/globals.css`: ardesia e terracotta (D-011: nessun colore di partito — niente rosso,
+blu, verde, giallo o tricolore come colore di identità). Tema chiaro e scuro seguono `prefers-color-scheme`.
 
 | Token | Utility | Chiaro | Scuro |
 |---|---|---|---|
-| carta | `bg-paper` | `#f4f4f1` | `#111113` |
-| carta rialzata | `bg-paper-raised` | `#fbfbf9` | `#1b1b1e` |
-| inchiostro | `text-ink` | `#18181b` | `#ececee` |
-| inchiostro secondario | `text-ink-soft` | `#52525b` | `#a1a1aa` |
-| inchiostro tenue | `text-ink-faint` | `#71717a` | `#8b8b94` |
-| filetto | `border-rule` | `#d4d4d8` | `#34343a` |
-| accento (unico) | `bg-accent` / `text-accent` | `#c2410c` | `#fb923c` |
-| livelli V1/V2/NV | `text-level-*` | `#3f3f46` / `#a16207` / `#b91c1c` | `#d4d4d8` / `#fbbf24` / `#f87171` |
+| carta | `bg-paper` | `#eceeee` | `#14181a` |
+| carta rialzata (schede) | `bg-paper-raised` | `#f8f9f9` | `#1d2326` |
+| carta incassata (segmenti, quadretti) | `bg-paper-sunk` | `#e1e5e6` | `#262e32` |
+| inchiostro | `text-ink` | `#1f2427` | `#e9eced` |
+| inchiostro secondario | `text-ink-soft` | `#465055` | `#b4bdc1` |
+| inchiostro tenue | `text-ink-faint` | `#5e686d` | `#939da2` |
+| filetto | `border-rule` | `#cdd3d5` | `#344045` |
+| accento (unico) | `bg-accent` / `text-accent` | `#a4461f` | `#e9875c` |
+| accento chiaro | `bg-accent-soft` | `#f3ddd2` | `#3d2a22` |
+| neutro dei grafici (secondo termine) | `bg-neutral` | `#7c878c` | `#8a959a` |
+| notte (tessera debito, blocco errori) | `bg-night` / `text-night-ink` | `#232a2e` | `#0f1213` |
+| livelli V1/V2/NV | `text-level-*` | `#3f474b` / `#7a5300` / `#b91c1c` | `#d4d9db` / `#f2c66b` / `#f87171` |
 
 Lo scontrino (`.receipt`) resta carta chiara anche in tema scuro: è un oggetto, non una superficie.
-I colori di livello sono stati di verifica, non si riusano per le serie dei grafici.
+I colori di livello sono stati di verifica, non si riusano per le serie dei grafici. Nei grafici: accento per
+l'Italia, l'ultimo periodo o la serie principale; neutro per il termine di confronto.
 
 ## Tipografia
-Geist (testo e titoli) e Geist Mono (etichette, date, scontrino) via `next/font`. Titoli `font-semibold
-tracking-tight`; cifra principale 6xl–8xl, stesso sans, cifre proporzionali. `tabular-nums` (classe
-`.tabular`) solo dove i numeri si allineano in colonna: tabelle, assi, scontrino.
+Via `next/font/google`: **Bricolage Grotesque** per titoli e cifre grandi (`font-display`, automatico su h1–h3),
+**Figtree** per il testo (`font-sans`, corpo 17 px), **Courier Prime** solo nello scontrino (`font-mono`).
+Titoli `font-extrabold` con `clamp()` (h1 2,1–3,8 rem, h2 1,8–2,8 rem). `tabular-nums` (classe `.tabular`)
+dove i numeri si allineano: tabelle, assi, barre, tessere.
 
 ## Forma & elevazione
-Tutto squadrato (radius 0) tranne la punta delle barre (4px). Gruppi con filetti `border-rule`/`divide-y`,
-non card. Unica ombra: lo scontrino della home.
+Angoli poco tondi (scelta del proprietario): **schede 6 px** (`rounded-card`), **bottoni, etichette, campi 4 px**
+(`rounded-ctl`). Le superfici sono schede `bg-paper-raised` su carta; ombra (`shadow-card`) solo per la scheda
+della cifra in apertura su mobile e per lo scontrino. Bersagli tattili almeno 44 px (bottoni 48).
 
 ## Icone
 `@phosphor-icons/react` (import `/ssr` nei server component), una sola famiglia, `weight="bold"` nei bottoni.
@@ -93,17 +100,29 @@ in place** preservando ogni state/handler/azione — non riscrivere la logica du
 Non serve: il sito non ha schermate dietro login. Le verifiche visive si fanno sul server locale (porta 3311).
 
 ## Responsive
-Una sola pagina per desktop e mobile. Larghezza minima verificata 500 px (Edge headless non scende sotto):
-nessuno scroll orizzontale della pagina; le tabelle larghe scorrono dentro il loro contenitore.
+Una sola pagina per desktop e mobile, verificata a 390 e 1280 px, chiaro e scuro, con scroll reale (CDP su Edge
+headless, `Emulation.setDeviceMetricsOverride`). Nessuno scroll orizzontale della pagina; le tabelle larghe scorrono
+dentro il loro contenitore. Il racconto dei 100 € usa un pannello alto quanto lo schermo meno intestazione e dock
+(`--header-h`, `--dock-h`): testo e quadretti stanno sempre insieme.
 
 ## Shell (riferimento rapido)
-Intestazione con logo e menu (Spesa, Governi, Leggi di bilancio, Promesse, Misure, Archivio, Metodo, Fonti);
-su mobile il menu scorre in orizzontale. La ricerca vive in `/archivio` (link anche dalla home). Piè di pagina
-con Chi siamo, Correzioni, Note legali, Metodo.
+Intestazione fissa con marchio e, da 1024 px, menu (Spesa, Governi, Leggi di bilancio, Promesse, Misure,
+Archivio, Metodo) con barra di avanzamento dello scroll. Sotto i 1024 px un **dock in basso** a 5 voci (Spesa,
+Governi, Promesse, Misure, Altro); «Altro» apre un foglio `<dialog>` con le altre sezioni. Piè di pagina con
+Metodo, Fonti, Correzioni, Chi siamo, Note legali, GitHub e i crediti delle incisioni. Voci in `src/lib/navigation.ts`.
 
 ## Grafici
-- Una serie per grafico, colore accento, linea 2px, area al 10%, griglia a filetti pieni. Mai due assi:
-  misure diverse → grafici diversi affiancati.
-- `ChartFigure` (server) dà titolo, nota, fonte e **tabella dei dati** sempre disponibile; `LineChart` (client)
-  dà crocino e tooltip con mouse e frecce della tastiera.
-- Barre orizzontali con valore in punta, una sola tinta. Nessuna palette per categorie finché non serve davvero.
+- Componenti in `src/components/charts/`: `SeriesChart` (client, linee con lettura dell'anno, trascinamento col dito,
+  frecce e Home/Fine; tratteggio per i nostri calcoli; una fascia evidenziata per il governo scelto), `ChartFigure`
+  (server: titolo, nota, fonte e **tabella dei dati** sempre disponibile; con `views` un selettore euro di oggi /
+  % del PIL), `bars.tsx` (coppie prima/dopo, barre orizzontali, scostamenti centrati sullo zero, spostamenti
+  1995→ultimo anno, sparkline), `EuCompare` (Italia contro un paese a scelta), `GovernmentDebt` (grafico + scheda
+  del governo dell'anno scelto).
+- Mai due assi: misure diverse → grafici diversi. Linee 2,5 px, griglia a filetti, legenda sempre con due serie.
+- Le funzioni (`format`) passano solo fra componenti server; ai client si passano dati e ReactNode.
+
+## Movimento
+Solo dentro `prefers-reduced-motion: no-preference` e `@supports (animation-timeline: view())`: entrata dei blocchi
+(`.reveal`), barre che crescono (`.reveal-bars .bar`), linee che si disegnano e aree che si scoprono legate allo
+scroll del grafico (`.chart-frame`), incisione d'apertura che si allontana, barra di avanzamento. Il racconto dei 100 €
+usa IntersectionObserver (centro dello schermo) e transizioni CSS. Nessun listener di scroll.

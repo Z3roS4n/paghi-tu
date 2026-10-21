@@ -87,3 +87,70 @@ export function toEuro2025(value: number, year: number, coefficients: Map<number
   const k = coefficients.get(year);
   return k === undefined ? null : value * k;
 }
+
+type Quarter = PublicFinance["trimestri"][number];
+const QUARTER_LABEL = ["primo trimestre", "primo semestre", "primi nove mesi", "anno intero"];
+
+/**
+ * Ultimo anno coi trimestri pubblicati contro gli stessi trimestri dell'anno prima: i dati non sono
+ * destagionalizzati e la spesa si concentra a fine anno, quindi si confronta solo periodo con periodo.
+ */
+export function sameQuartersComparison(quarters: Quarter[]) {
+  const last = quarters.at(-1)!;
+  const year = Number(last.periodo.slice(0, 4));
+  const count = Number(last.periodo.slice(-1));
+  const sum = (y: number, key: "spesa" | "entrate" | "saldo" | "interessi") => {
+    const qs = quarters.filter((q) => q.periodo.startsWith(`${y}-`) && Number(q.periodo.slice(-1)) <= count);
+    if (qs.length !== count) throw new Error(`mancano trimestri del ${y}`);
+    return qs.reduce((s, q) => s + q[key], 0);
+  };
+  const keys = ["spesa", "entrate", "interessi", "saldo"] as const;
+  return {
+    anno: year,
+    periodo: QUARTER_LABEL[count - 1],
+    voci: keys.map((key) => {
+      const prima = sum(year - 1, key);
+      const dopo = sum(year, key);
+      return { id: key, prima, dopo, variazionePct: ((dopo - prima) / Math.abs(prima)) * 100 };
+    }),
+  };
+}
+
+/**
+ * Quadretti su 100 €: una voce per ognuna delle prime `keep` righe dello scontrino, il resto insieme.
+ * Gli arrotondamenti all'euro possono far sommare a 99 o 101: si dichiara, non si aggiusta a mano.
+ */
+export function waffleSteps(r: ReturnType<typeof receipt>, keep: number) {
+  const items = [
+    ...r.righe.slice(0, keep).map((x) => ({ id: x.id, etichetta: x.etichetta, quota: x.quota, euro: x.euro })),
+    {
+      id: "resto",
+      etichetta: "Tutto il resto",
+      quota: r.righe.slice(keep).reduce((s, x) => s + x.quota, 0),
+      euro: r.righe.slice(keep).reduce((s, x) => s + x.euro, 0),
+    },
+  ];
+  let start = 0;
+  return items.map((it) => {
+    const su100 = Math.round(it.quota * 100);
+    const step = { ...it, su100, da: start };
+    start += su100;
+    return step;
+  });
+}
+
+/** Quota di ogni divisione COFOG sulla spesa per funzione, in euro su 100. */
+export function functionShares(year: SpendingByFunctionYear) {
+  return Object.fromEntries(
+    Object.entries(year.voci)
+      .filter(([code]) => code.length === 4)
+      .map(([code, mln]) => [code, (mln / year.totale) * 100]),
+  );
+}
+
+/** Data ISO come anno con decimali (1° luglio ≈ anno + 0,5), per disegnare i periodi sull'asse degli anni. */
+export function fractionalYear(iso: string) {
+  const d = new Date(`${iso}T00:00:00Z`);
+  const start = Date.UTC(d.getUTCFullYear(), 0, 1);
+  return d.getUTCFullYear() + (d.getTime() - start) / (Date.UTC(d.getUTCFullYear() + 1, 0, 1) - start);
+}

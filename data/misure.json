@@ -599,7 +599,7 @@
         "tipoOnere": "stima",
         "previsto": {
           "importoEur": 14703000000,
-          "descrizione": "2015-2018: 1.886 / 4.885 / 5.030 / 2.902 mln (stime ufficiali; 2015-2017 nella tabella UPB della manovra, 'Totale decontribuzione per assunzioni a tempo indeterminato'); 1,0 mln di contratti agevolati attesi nel 2015 (INFERENZA da UPB 2015)",
+          "descrizione": "2015-2018: 1.886 / 4.885 / 5.030 / 2.902 mln (stime ufficiali; 2015-2017 nella tabella UPB della manovra, 'Totale decontribuzione per assunzioni a tempo indeterminato'); 1,0 mln di contratti agevolati attesi nel 2015 (dedotto da noi dalla stima UPB 2015)",
           "fonte": {
             "url": "https://www.upbilancio.it/wp-content/uploads/2014/11/Slides_Incontro_stampa_04_11_2014.pdf"
           }

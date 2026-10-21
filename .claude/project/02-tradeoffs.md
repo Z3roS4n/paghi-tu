@@ -222,6 +222,17 @@
 - **Conseguenze:** la sezione cresce con le stime indipendenti (UPB, Osservatorio CPI) e con nuove misure in `/misure`; la routine deve codificare due volte le righe nuove con lo stesso schema.
 - **Data:** 2026-10-21
 
+### D-022 — Dati 2026: trimestri Eurostat e confronto con l'Europa
+- **Stato:** applicata il 2026-10-21 (home, `/spesa`).
+- **Contesto:** il proprietario chiedeva dati più recenti del 2024. La spesa per funzione 2025 esce solo a febbraio; i conti annuali arrivano al 2025.
+- **Scelta:**
+  - trimestri non destagionalizzati da `gov_10q_ggnfa` (dal 2019): si confronta solo un periodo con lo stesso periodo dell'anno prima, perché la spesa si concentra a fine anno; la home mostra il primo semestre 2026 contro il primo semestre 2025;
+  - debito mensile Banca d'Italia fino all'ultimo mese, con «dato provvisorio» dopo l'ultimo dicembre notificato;
+  - confronto con Germania, Francia, Spagna e media UE solo in % del PIL, sull'ultimo anno in cui tutti i paesi hanno il dato;
+  - due controlli in più nella pipeline: i quattro trimestri sommano all'anno (tolleranza 0,5%) e i valori italiani del confronto UE coincidono con le tavole nazionali (0,05 punti).
+- **Conseguenze:** nessun numero scritto a mano nelle frasi: i testi («la spesa è cresciuta del…», «più della media europea per…») si calcolano dai dati, e cambiano da soli al prossimo aggiornamento.
+- **Data:** 2026-10-21
+
 ## Decisioni aperte
 - **OA-1** — ~~Nome del progetto e dominio~~ → nome deciso il 2026-10-20: **Paghi Tu** (provocatorio verso politica e cittadini, senza attribuire condotte a nessuno). Dominio candidato `paghitu.it` (libero al controllo DNS del 2026-10-20, da confermare all'acquisto).
 - **OA-2** — Editore: il titolare del progetto, persona fisica. **Decisione del titolare (2026-10-20): nome e dati personali NON pubblicati sul sito**; il sito si presenta come "Paghi Tu" con un recapito dedicato (email del progetto). Da validare con l'avvocato prima del lancio: (a) se art. 2 L. 47/1948 (richiamato da art. 1 c. 3 L. 62/2001) e art. 7 D.Lgs. 70/2003 impongono l'indicazione dell'editore a un sito non periodico e non commerciale; (b) identità del titolare del trattamento richiesta dall'art. 13 GDPR se il sito tratta dati dei visitatori (log, analytics, form) — si minimizza con zero cookie, zero analytics con IP, nessun form; (c) alternativa: associazione (es. APS/ETS) come editore, così sul sito compare l'ente e non la persona; (d) responsabilità personale e polizza RC. L'anonimato verso il pubblico non elimina la responsabilità: l'editore resta identificabile da hosting e registro del dominio.

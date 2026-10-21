@@ -30,8 +30,8 @@ function Chip({ active, onClick, children }: { active: boolean; onClick: () => v
       type="button"
       aria-pressed={active}
       onClick={onClick}
-      className={`border px-3 py-1.5 text-sm transition-transform active:scale-[0.98] ${
-        active ? "border-ink bg-ink text-paper" : "border-rule hover:border-ink"
+      className={`min-h-11 rounded-ctl border-[1.5px] px-3.5 text-[15px] font-bold whitespace-nowrap transition-[transform,border-color,background-color] active:translate-y-px ${
+        active ? "border-accent bg-accent-soft text-accent" : "border-rule bg-paper-raised text-ink-soft hover:border-ink-faint hover:text-ink"
       }`}
     >
       {children}
@@ -80,7 +80,7 @@ export function ArchiveSearch() {
       <label htmlFor="archivio-q" className="sr-only">
         Cerca nell&apos;archivio
       </label>
-      <div className="flex items-center gap-3 border border-ink bg-paper-raised px-4 focus-within:outline-2 focus-within:outline-accent">
+      <div className="flex min-h-12 items-center gap-3 rounded-ctl border-[1.5px] border-rule bg-paper-raised px-4 focus-within:border-accent focus-within:outline-3 focus-within:outline-offset-2 focus-within:outline-accent">
         <MagnifyingGlassIcon size={20} aria-hidden className="shrink-0 text-ink-faint" />
         <input
           id="archivio-q"
@@ -89,7 +89,7 @@ export function ArchiveSearch() {
           onChange={(e) => update({ q: e.target.value })}
           placeholder="Cerca: pensioni, Draghi, Superbonus, 2019…"
           autoComplete="off"
-          className="w-full bg-transparent py-4 text-lg outline-none placeholder:text-ink-faint"
+          className="w-full min-w-0 bg-transparent py-3.5 text-lg outline-none placeholder:text-ink-faint focus-visible:outline-none"
         />
       </div>
 
@@ -121,11 +121,12 @@ export function ArchiveSearch() {
         {failed ? (
           <p className="text-ink-soft">L&apos;archivio non si è caricato. Ricarica la pagina per riprovare.</p>
         ) : entries === null ? (
-          <ul className="divide-y divide-rule border-y border-rule" aria-hidden>
+          <ul className="grid gap-2" aria-hidden>
             {Array.from({ length: 5 }, (_, i) => (
-              <li key={i} className="py-4">
-                <span className="block h-4 w-2/3 bg-rule" />
-                <span className="mt-2 block h-3 w-1/3 bg-rule/60" />
+              <li key={i} className="rounded-card bg-paper-raised px-4 py-4">
+                <span className="block h-3 w-20 rounded-ctl bg-paper-sunk" />
+                <span className="mt-2.5 block h-4 w-2/3 rounded-ctl bg-paper-sunk" />
+                <span className="mt-2 block h-3 w-1/3 rounded-ctl bg-paper-sunk" />
               </li>
             ))}
           </ul>
@@ -135,17 +136,24 @@ export function ArchiveSearch() {
           </p>
         ) : (
           <>
-            <p className="font-mono text-xs text-ink-faint">
+            <p className="text-sm font-semibold text-ink-faint">
               {results.length.toLocaleString("it-IT")} {results.length === 1 ? "risultato" : "risultati"}
             </p>
-            <ul className="mt-3 divide-y divide-rule border-y border-rule">
+            <ul className="mt-3 grid gap-2">
               {results.slice(0, limit).map((e) => (
                 <li key={e.href}>
-                  <Link href={e.href} className="group grid gap-1 py-4 md:grid-cols-[9rem_1fr] md:gap-6">
-                    <span className="font-mono text-xs text-ink-faint md:pt-1">{ARCHIVE_KINDS[e.tipo]}</span>
-                    <span>
-                      <span className="block group-hover:text-accent">{e.titolo}</span>
-                      <span className="mt-1 block text-sm text-ink-soft">{e.dettaglio}</span>
+                  <Link
+                    href={e.href}
+                    className="group grid min-w-0 gap-1.5 rounded-card bg-paper-raised px-4 py-3.5 transition-colors hover:bg-paper-sunk md:grid-cols-[9rem_1fr] md:gap-6 md:px-5"
+                  >
+                    <span className="md:pt-0.5">
+                      <span className="inline-flex min-h-6 items-center rounded-ctl bg-paper-sunk px-2 text-[13px] font-bold text-ink-soft group-hover:bg-paper">
+                        {ARCHIVE_KINDS[e.tipo]}
+                      </span>
+                    </span>
+                    <span className="min-w-0">
+                      <span className="block font-bold break-words group-hover:text-accent">{e.titolo}</span>
+                      <span className="mt-0.5 block text-[15px] break-words text-ink-soft">{e.dettaglio}</span>
                     </span>
                   </Link>
                 </li>
@@ -155,7 +163,7 @@ export function ArchiveSearch() {
               <button
                 type="button"
                 onClick={() => setLimit((l) => l + PAGE)}
-                className="mt-6 border border-ink px-5 py-3 font-medium transition-transform active:scale-[0.98]"
+                className="mt-5 inline-flex min-h-12 items-center rounded-ctl border-[1.5px] border-rule bg-paper-raised px-5 font-bold transition-[transform,border-color] hover:border-ink-faint active:translate-y-px"
               >
                 Mostra altri {Math.min(PAGE, results.length - limit)}
               </button>

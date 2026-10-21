@@ -36,6 +36,14 @@ con il governo dell'anno evidenziato e il previsto contro lo speso delle misure 
 spesa a parte). Le animazioni usano `animation-timeline` dove c'è, IntersectionObserver altrove, nessun listener di scroll.
 La spesa per voce del 2025 non c'è ancora: Eurostat la pubblica di solito a febbraio, quindi i 100 € restano sul 2024.
 
+## D-UI-07 — Racconto dei 100 € in un pannello unico, design C su tutto il sito (2026-10-21)
+Da mobile il testo dei passi restava sbiadito finché non passava sotto i quadretti, e i quadretti erano piccoli. Ora
+quadretti, testo e avanzamento stanno in un solo pannello fisso alto quanto lo schermo; lo scroll scorre su «binari»
+invisibili sotto il pannello e il passo cambia quando un binario passa al centro. I quadretti occupano la larghezza
+disponibile (circa 36 px a 390 px). Il design C è applicato a tutte le pagine con mattoni comuni (`components/ui.tsx`)
+e blocchi condivisi fra home e `/spesa` (`components/sections/finance.tsx`). Le note di lavoro dei verificatori non
+sono più testo visibile: restano, per trasparenza, nel pannello chiuso «Registro tecnico della verifica».
+
 <!--
 Template voce successiva:
 

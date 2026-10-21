@@ -1,156 +1,123 @@
+import Image from "next/image";
 import Link from "next/link";
-import { ArrowRightIcon, MagnifyingGlassIcon } from "@phosphor-icons/react/ssr";
-import { LevelTag } from "@/components/verification-badge";
-import { formatDecimal, formatInt, formatMonth } from "@/lib/format";
-import { headline, latestReceipt } from "@/server/finance";
+import { ArrowRightIcon, GithubLogoIcon } from "@phosphor-icons/react/ssr";
+import { AccountsTimeline, DebtByGovernment, EuropeBlock, MeasureGaps, MoneyStory, SemesterCard, WhatChanged } from "@/components/sections/finance";
+import { BigNumber, ButtonLink, SourceNote, Tile, Wrap } from "@/components/ui";
+import { REPO_URL } from "@/lib/contribute";
+import { formatInt, formatMonth } from "@/lib/format";
+import { headline } from "@/server/finance";
 import { homeStats } from "@/server/stats";
+import vasi from "../../public/img/vasi-piazza-montecitorio.jpg";
 
-const RECEIPT_ROWS = 7;
 const euro = (n: number) => `${formatInt(n)} €`;
-
-function ReceiptRow({ label, value, strong }: { label: string; value: string; strong?: boolean }) {
-  return (
-    <div className={`flex items-baseline gap-2 py-1.5 ${strong ? "font-semibold" : ""}`}>
-      <span className="shrink">{label}</span>
-      <span aria-hidden className="min-w-4 flex-1 translate-y-[-3px] border-b border-dotted border-ink-faint" />
-      <span className="tabular shrink-0">{value}</span>
-    </div>
-  );
-}
 
 export default function Home() {
   const h = headline();
-  const r = latestReceipt();
   const s = homeStats();
-  const shown = r.righe.slice(0, RECEIPT_ROWS);
-  const rest = r.righe.slice(RECEIPT_ROWS).reduce((sum, x) => sum + x.euro, 0);
 
   const sections = [
-    {
-      href: "/spesa",
-      title: "Quanto spendiamo",
-      body: `Spesa, entrate, deficit e debito pubblico per residente, anno per anno dal 1995. Il debito dal 1945.`,
-    },
-    {
-      href: "/governi",
-      title: "Governi",
-      body: `I ${s.governmentCount} governi da De Gasperi a oggi: date, maggioranze, manovre e debito pubblico durante il mandato.`,
-    },
-    {
-      href: "/leggi-di-bilancio",
-      title: "Leggi di bilancio",
-      body: `${s.budgetLawCount} atti di bilancio con gli estremi su Normattiva e il governo che li ha presentati.`,
-    },
-    {
-      href: "/promesse",
-      title: "Promesse per le politiche 2027",
-      body: "Cosa promettono i partiti, con la frase esatta e la fonte. Stesse regole per tutti.",
-    },
-    {
-      href: "/misure",
-      title: "Quanto costano le misure",
-      body: "Costo stimato all'approvazione contro costo effettivo, per Quota 100, Superbonus, RdC e altre.",
-    },
-    {
-      href: "/archivio",
-      title: "Archivio",
-      body: "Cerca fra governi, manovre, misure e promesse in un solo posto.",
-    },
+    { href: "/spesa", title: "Spesa", body: "Spesa, entrate, disavanzo e debito per residente, anno per anno, con le fonti e i controlli." },
+    { href: "/governi", title: "Governi", body: `I ${s.governmentCount} governi dal 1945: date, maggioranze, manovre e debito durante il mandato.` },
+    { href: "/leggi-di-bilancio", title: "Leggi di bilancio", body: `${s.budgetLawCount} atti di bilancio con gli estremi su Normattiva e il governo che li ha presentati.` },
+    { href: "/promesse", title: "Promesse per il 2027", body: "Cosa promettono i partiti, con la frase esatta e la fonte. Stesse regole per tutti." },
+    { href: "/misure", title: "Misure", body: "Costo stimato all'approvazione contro costo effettivo, per Quota 100, Superbonus, RdC e altre." },
+    { href: "/archivio", title: "Archivio", body: "Cerca fra governi, manovre, misure e promesse in un solo posto." },
   ];
 
   return (
     <>
-      <section className="mx-auto grid max-w-6xl gap-12 px-4 pt-12 pb-16 md:grid-cols-[1.15fr_1fr] md:items-start md:px-6 md:pt-20">
-        <div>
-          <p className="font-mono text-sm text-ink-faint">Conti pubblici {h.anno}, fonte Eurostat</p>
-          <h1 className="mt-4 text-4xl leading-[1.05] font-semibold tracking-tight md:text-6xl">
-            Quanto spende lo Stato con i nostri soldi?
-          </h1>
-          <p className="mt-8 text-6xl font-semibold tracking-tight md:text-7xl">{euro(h.spesa)}</p>
-          <p className="mt-3 max-w-[46ch] text-lg leading-relaxed text-ink-soft">
-            spesi nel {h.anno} da Stato, regioni, comuni ed enti di previdenza per ogni residente: {euro(h.spesa / 365)} al
-            giorno. Le entrate sono state {euro(h.entrate)} a testa; il disavanzo si finanzia soprattutto con nuovo debito,
-            che a fine {formatMonth(h.debito.mese)} vale {euro(h.debito.perResidente)} per residente.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link
-              href="/spesa"
-              className="inline-flex items-center gap-2 bg-accent px-5 py-3 font-medium whitespace-nowrap text-accent-ink transition-transform active:scale-[0.98]"
-            >
-              Guarda dove vanno
-              <ArrowRightIcon size={16} weight="bold" aria-hidden />
-            </Link>
-            <Link
-              href="/archivio"
-              className="inline-flex items-center gap-2 border border-ink px-5 py-3 font-medium whitespace-nowrap transition-transform active:scale-[0.98]"
-            >
-              <MagnifyingGlassIcon size={16} weight="bold" aria-hidden />
-              Cerca nell&apos;archivio
-            </Link>
+      <Wrap>
+        <div className="grid pt-2 pb-6 lg:grid-cols-2 lg:items-center lg:gap-x-7 lg:pt-5 lg:pb-9">
+          <figure className="hero-image m-0 overflow-hidden rounded-card bg-paper-sunk lg:order-2">
+            <Image
+              src={vasi}
+              alt="Incisione del 1752: piazza di Monte Citorio con il palazzo al centro, carrozze e passanti sul selciato."
+              priority
+              sizes="(min-width: 1024px) 560px, 100vw"
+              className="aspect-[4/3] w-full object-cover lg:aspect-[7/5] dark:brightness-[0.82] dark:contrast-[1.05]"
+            />
+          </figure>
+          <div className="hero-card relative mx-2.5 -mt-12 rounded-card bg-paper-raised px-4.5 pt-5 pb-5.5 shadow-card lg:order-1 lg:m-0 lg:bg-transparent lg:p-0 lg:shadow-none">
+            <h1 className="text-[clamp(1.9rem,7.6vw,3.4rem)] leading-[1.04] font-extrabold">Quanto spende lo Stato con i nostri soldi?</h1>
+            <BigNumber value={formatInt(h.spesa)} unit="€" className="mt-3.5 text-[clamp(3.6rem,18vw,6.6rem)]" />
+            <p className="mt-2.5 max-w-[30em] text-[17.5px] text-ink-soft">
+              per ogni residente nel {h.anno}, fra Stato, regioni, comuni ed enti di previdenza. Sono {euro(h.spesa / 365)} al giorno,
+              neonati compresi.
+            </p>
+            <div className="mt-4.5 flex flex-wrap gap-2.5">
+              <ButtonLink href="#t-cento">Dove vanno</ButtonLink>
+              <ButtonLink href="/metodo" tone="outline">
+                Il metodo
+              </ButtonLink>
+            </div>
           </div>
+          <p className="mt-2 text-[13.5px] leading-snug text-ink-faint lg:order-3 lg:col-start-2 lg:-mt-4">
+            Piazza di Monte Citorio, incisa da Giuseppe Vasi nel 1752. Oggi nel palazzo c&apos;è la Camera. Pubblico dominio.
+          </p>
         </div>
 
-        <figure className="receipt mx-auto w-full max-w-sm px-6 py-7 font-mono text-[13px] shadow-[0_18px_40px_-24px_rgb(24_24_27/0.45)] md:rotate-[1.2deg]">
-          <div className="text-center">
-            <p className="text-base font-semibold">PAGHI TU</p>
-            <p className="text-ink-faint">spesa pubblica {r.anno}, per residente</p>
-          </div>
-          <div className="my-4 border-t border-dashed border-ink-faint" />
-          {shown.map((x) => (
-            <ReceiptRow key={x.id} label={x.etichetta} value={euro(x.euro)} />
-          ))}
-          <ReceiptRow label="Tutto il resto" value={euro(rest)} />
-          <div className="my-3 border-t border-dashed border-ink-faint" />
-          <ReceiptRow label="Totale" value={euro(r.totaleEuro)} strong />
-          <ReceiptRow label="di cui oltre le entrate" value={euro(r.oltreLeEntrate)} />
-          <div className="my-4 border-t border-dashed border-ink-faint" />
-          <div className="flex items-baseline justify-between text-base font-semibold">
-            <span>Chi paga</span>
-            <span className="text-accent">TU</span>
-          </div>
-          <figcaption className="mt-4 text-[11px] leading-snug text-ink-faint">
-            Eurostat, spesa delle amministrazioni pubbliche per funzione. Totale diviso per la popolazione media del{" "}
-            {r.anno} ({formatDecimal(r.popolazione / 1e6, 1)} milioni).
-          </figcaption>
-        </figure>
-      </section>
+        <div className="grid grid-cols-2 gap-2.5 md:grid-cols-3 lg:grid-cols-[1fr_1fr_1fr_1.5fr]">
+          <Tile label={`Entrate ${h.anno}`} value={euro(h.entrate)} note="a testa, fra tasse e contributi" />
+          <Tile label={`Disavanzo ${h.anno}`} value={euro(-h.saldo)} note="quello che le entrate non coprono" />
+          <Tile className="col-span-2 md:col-span-1" label={`Interessi sul debito ${h.anno}`} value={euro(h.interessi)} note="per residente" />
+          <Tile
+            dark
+            className="col-span-2 md:col-span-3 lg:col-span-1"
+            label={`Debito pubblico, ${formatMonth(h.debito.mese)}`}
+            value={`${euro(h.debito.perResidente)} a testa`}
+            note={`${formatInt(h.debito.totale / 1000)} miliardi in tutto${h.debito.provvisorio ? ", dato provvisorio" : ""}`}
+          />
+        </div>
+        <SourceNote>Eurostat per i conti {h.anno}, Banca d&apos;Italia per il debito.</SourceNote>
 
-      <section className="border-y border-rule bg-paper-raised">
-        <div className="mx-auto max-w-6xl px-4 py-16 md:px-6">
-          <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">Cosa trovi qui</h2>
-          <ul className="mt-8 grid gap-px bg-rule md:grid-cols-2 lg:grid-cols-3">
+        <SemesterCard />
+        <MoneyStory />
+        <AccountsTimeline />
+        <WhatChanged />
+        <EuropeBlock />
+        <DebtByGovernment />
+        <MeasureGaps more />
+
+        <section aria-labelledby="t-sezioni" className="mt-16 md:mt-24">
+          <h2 id="t-sezioni" className="reveal text-[clamp(1.8rem,7vw,2.8rem)] leading-[1.05] font-extrabold">
+            Cosa trovi qui
+          </h2>
+          <ul className="mt-6 grid gap-2.5 md:grid-cols-2 lg:grid-cols-3">
             {sections.map((sec) => (
-              <li key={sec.title} className="bg-paper-raised">
-                <Link href={sec.href} className="group flex h-full flex-col gap-3 p-6 hover:bg-paper">
-                  <h3 className="flex items-center justify-between gap-4 text-lg font-semibold">
+              <li key={sec.href} className="reveal">
+                <Link href={sec.href} className="group flex h-full flex-col gap-1.5 rounded-card bg-paper-raised px-4.5 py-4.5 transition-colors hover:bg-paper-sunk">
+                  <span className="flex items-center justify-between gap-4 text-xl font-bold">
                     {sec.title}
-                    <ArrowRightIcon size={16} aria-hidden className="text-ink-faint group-hover:text-accent" />
-                  </h3>
-                  <p className="max-w-[48ch] text-ink-soft">{sec.body}</p>
+                    <ArrowRightIcon size={18} weight="bold" aria-hidden className="text-accent transition-transform group-hover:translate-x-0.5" />
+                  </span>
+                  <span className="text-[15.5px] text-ink-soft">{sec.body}</span>
                 </Link>
               </li>
             ))}
           </ul>
-        </div>
-      </section>
+        </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-16 md:px-6">
-        <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">Ogni dato porta il suo livello di verifica</h2>
-        <dl className="mt-8 grid gap-8 md:grid-cols-3">
+        <section aria-labelledby="t-err" className="reveal mt-16 rounded-card bg-night px-4.5 py-6 text-night-ink md:mt-24 md:grid md:grid-cols-2 md:items-center md:gap-8 md:px-10 md:py-9">
+          <h2 id="t-err" className="text-[clamp(1.8rem,7vw,2.8rem)] leading-[1.05] font-extrabold">
+            Hai trovato un errore?
+          </h2>
           <div>
-            <dt className="flex items-center gap-2 font-medium"><LevelTag level="V1" /> Fonte primaria</dt>
-            <dd className="mt-2 text-ink-soft">Controllato due volte, in modo indipendente, sul documento ufficiale: legge, bilancio, banca dati dell&apos;ente.</dd>
+            <p className="mt-2.5 text-night-ink/75 md:mt-0">
+              I dati li raccoglie un&apos;intelligenza artificiale e li ricontrolla un secondo agente, sulla fonte. Se un numero non ti torna,
+              segnalalo: ogni correzione resta nel registro pubblico, con il valore di prima e il motivo.
+            </p>
+            <div className="mt-4.5 flex flex-wrap gap-2.5">
+              <ButtonLink href="/correzioni" tone="light">
+                Come segnalarlo
+              </ButtonLink>
+              <ButtonLink href={REPO_URL} tone="ghost" external>
+                <GithubLogoIcon size={18} aria-hidden />
+                GitHub
+              </ButtonLink>
+            </div>
           </div>
-          <div>
-            <dt className="flex items-center gap-2 font-medium"><LevelTag level="V2" /> Verifica parziale</dt>
-            <dd className="mt-2 text-ink-soft">Almeno un campo viene da una fonte secondaria. Lo diciamo, campo per campo.</dd>
-          </div>
-          <div>
-            <dt className="flex items-center gap-2 font-medium"><LevelTag level="NV" /> Da verificare</dt>
-            <dd className="mt-2 text-ink-soft">Dato non ancora confermato. Resta visibile come tale, mai presentato come certo.</dd>
-          </div>
-        </dl>
-      </section>
+        </section>
+      </Wrap>
     </>
   );
 }

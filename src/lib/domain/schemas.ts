@@ -252,13 +252,40 @@ export const FinanceCheck = z.object({
   dettaglio: z.string(),
 });
 
+// Trimestri non destagionalizzati, milioni di euro: si confrontano solo con lo stesso trimestre di un altro anno.
+export const PublicAccountsQuarter = z.object({
+  periodo: z.string().regex(/^\d{4}-Q[1-4]$/),
+  spesa: z.number(),
+  entrate: z.number(),
+  saldo: z.number(),
+  interessi: z.number(),
+});
+export type PublicAccountsQuarter = z.infer<typeof PublicAccountsQuarter>;
+
+export const EU_GEOS = ["IT", "DE", "FR", "ES", "EU27_2020"] as const;
+export const EuGeo = z.enum(EU_GEOS);
+export type EuGeo = z.infer<typeof EuGeo>;
+
+// Valori in % del PIL, ultimo anno in cui tutti i paesi hanno il dato.
+export const EuComparison = z.object({
+  funzioni: z.object({ anno: z.number().int(), valori: z.record(EuGeo, z.record(z.string().regex(/^(TOTAL|GF\d{2,4})$/), z.number())) }),
+  conti: z.object({
+    anno: z.number().int(),
+    valori: z.record(EuGeo, z.object({ spesa: z.number(), entrate: z.number(), saldo: z.number(), interessi: z.number() })),
+  }),
+  debito: z.object({ anno: z.number().int(), valori: z.record(EuGeo, z.number()) }),
+});
+export type EuComparison = z.infer<typeof EuComparison>;
+
 export const PublicFinance = z.object({
   scaricato: z.iso.datetime(),
   fonti: z.array(SourceLink.extend({ aggiornamentoFonte: z.string() })),
   conti: z.array(PublicAccountsYear).min(1),
+  trimestri: z.array(PublicAccountsQuarter).min(4),
   funzioni: z.array(SpendingByFunctionYear).min(1),
   debitoMensile: z.array(z.object({ mese: z.string().regex(/^\d{4}-\d{2}$/), valore: z.number() })).min(1),
   debitoPil: z.array(z.object({ anno: z.number().int(), valore: z.number() })).min(1),
+  confrontoUe: EuComparison,
   controlli: z.array(FinanceCheck).min(1),
   verifica: Verification,
 });

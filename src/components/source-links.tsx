@@ -19,7 +19,7 @@ export function SourceLinks({ fonti }: { fonti: SourceLink[] }) {
             href={f.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 border border-rule bg-paper-raised px-2 py-1 font-mono text-xs text-ink-soft hover:border-ink hover:text-ink"
+            className="inline-flex min-h-9 items-center gap-1 rounded-ctl border border-rule bg-paper-raised px-2.5 text-[13.5px] font-semibold text-ink-soft hover:border-ink-faint hover:text-ink"
           >
             {f.etichetta ?? hostLabel(f.url)}
             <ArrowUpRightIcon size={12} weight="bold" aria-hidden />

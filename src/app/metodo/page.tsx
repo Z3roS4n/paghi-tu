@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   description: "Come Paghi Tu raccoglie, verifica e presenta i dati: livelli di verifica, regole di neutralità, limiti per periodo storico.",
 };
 
+const LEVELS = [
+  ["V1", "Il dato è stato letto sulla fonte primaria (legge, banca dati dell'ente, documento ufficiale) e ricontrollato in modo indipendente."],
+  ["V2", "Almeno una parte del dato viene da una fonte secondaria affidabile. Indichiamo quale parte."],
+  ["NV", "Il dato non è ancora confermato. Resta visibile solo con questa etichetta."],
+] as const;
+
 const PERIODS = [
   ["1946-1964", "Governi e leggi completi. Spesa dello Stato frammentaria (mancano online i rendiconti 1953-1965). Debito disponibile dal 1861."],
   ["1965-1994", "Rendiconti dello Stato solo in PDF scansionati. Conti di tutta la pubblica amministrazione da ISTAT dal 1980."],
@@ -22,11 +28,14 @@ export default function MethodPage() {
       intro="Paghi Tu non esprime giudizi. Mostra cosa dicono i documenti ufficiali, con il link per controllare."
     >
       <h2>Tre livelli di verifica</h2>
-      <ul className="!list-none !pl-0 space-y-4">
-        <li className="flex gap-3"><LevelTag level="V1" /><span>Il dato è stato letto sulla fonte primaria (legge, banca dati dell'ente, documento ufficiale) e ricontrollato in modo indipendente.</span></li>
-        <li className="flex gap-3"><LevelTag level="V2" /><span>Almeno una parte del dato viene da una fonte secondaria affidabile. Indichiamo quale parte.</span></li>
-        <li className="flex gap-3"><LevelTag level="NV" /><span>Il dato non è ancora confermato. Resta visibile solo con questa etichetta.</span></li>
-      </ul>
+      <div className="grid gap-2.5" role="list">
+        {LEVELS.map(([level, text]) => (
+          <div key={level} role="listitem" className="flex items-start gap-3 rounded-card bg-paper-raised px-4 py-3.5 md:px-5">
+            <LevelTag level={level} />
+            <span className="text-ink-soft">{text}</span>
+          </div>
+        ))}
+      </div>
       <p>
         Un record prende sempre il livello del suo campo meno verificato. Un governo con date confermate ma
         maggioranza da fonte secondaria risulta V2, non V1.
@@ -117,10 +126,10 @@ export default function MethodPage() {
       </p>
 
       <h2>Cosa possiamo mostrare, per periodo</h2>
-      <dl className="divide-y divide-rule border-y border-rule">
+      <dl className="grid gap-2.5">
         {PERIODS.map(([period, text]) => (
-          <div key={period} className="grid gap-1 py-4 sm:grid-cols-[8rem_1fr] sm:gap-6">
-            <dt className="tabular font-mono">{period}</dt>
+          <div key={period} className="grid gap-1 rounded-card bg-paper-raised px-4 py-3.5 sm:grid-cols-[8rem_1fr] sm:gap-6 md:px-5">
+            <dt className="font-display tabular text-lg font-bold">{period}</dt>
             <dd className="text-ink-soft">{text}</dd>
           </div>
         ))}
@@ -128,7 +137,7 @@ export default function MethodPage() {
 
       <h2>Errori</h2>
       <p>
-        Ogni correzione resta pubblica nel <Link href="/correzioni" className="underline">registro delle correzioni</Link>,
+        Ogni correzione resta pubblica nel <Link href="/correzioni">registro delle correzioni</Link>,
         con il valore precedente, quello nuovo e il motivo. Distinguiamo i nostri errori dalle revisioni fatte dalle fonti.
       </p>
     </ProsePage>

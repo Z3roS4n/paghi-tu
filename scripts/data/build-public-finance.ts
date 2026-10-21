@@ -3,7 +3,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { parseCsvRecords } from "../../src/lib/csv.ts";
-import { PublicFinance, Series } from "../../src/lib/domain/schemas.ts";
+import { EU_GEOS, PublicFinance, Series } from "../../src/lib/domain/schemas.ts";
 
 const RAW = "data/raw";
 const DEBT_FROM = "1945-01";
@@ -18,6 +18,10 @@ const main = await raw("eurostat/gov_10a_main.csv");
 const exp = await raw("eurostat/gov_10a_exp.csv");
 const edp = await raw("eurostat/gov_10dd_edpt1.csv");
 const bdi = await raw("bancaditalia/TCCE0325.csv", ";");
+const quarterly = await raw("eurostat/gov_10q_ggnfa.csv");
+const euExp = await raw("eurostat/ue_gov_10a_exp.csv");
+const euMain0 = await raw("eurostat/ue_gov_10a_main.csv");
+const euEdp = await raw("eurostat/ue_gov_10dd_edpt1.csv");
 const population = new Map((await serie("popolazione-residente")).punti.map((p) => [p.anno, p.valore]));
 const gdp = new Map((await serie("pil-nominale")).punti.map((p) => [p.anno, p.valore]));
 
@@ -76,6 +80,40 @@ const debitoPil = years(edp)
   .filter((anno) => edpT.has(`PC_GDP|${anno}`))
   .map((anno) => ({ anno, valore: edpT.get(`PC_GDP|${anno}`)! }));
 
+const quarterT = table(quarterly, (r) => r.na_item);
+const trimestri = [...new Set(quarterly.map((r) => r.TIME_PERIOD))]
+  .toSorted()
+  .filter((periodo) => ["TE", "TR", "B9", "D41PAY"].every((i) => quarterT.has(`${i}|${periodo}`)))
+  .map((periodo) => ({
+    periodo,
+    spesa: quarterT.get(`TE|${periodo}`)!,
+    entrate: quarterT.get(`TR|${periodo}`)!,
+    saldo: quarterT.get(`B9|${periodo}`)!,
+    interessi: quarterT.get(`D41PAY|${periodo}`)!,
+  }));
+
+// Per il confronto serve lo stesso anno per tutti: si prende l'ultimo in cui nessun paese manca.
+function latestComplete(rows: Record<string, string>[], key: (r: Record<string, string>) => string, keys: string[]) {
+  const t = table(rows, (r) => `${r.geo}|${key(r)}`);
+  const anno = years(rows).findLast((y) => EU_GEOS.every((g) => keys.every((k) => t.has(`${g}|${k}|${y}`))));
+  if (anno === undefined) throw new Error("confronto UE: nessun anno con tutti i paesi");
+  const value = (g: string, k: string) => t.get(`${g}|${k}|${anno}`)!;
+  return { anno, value };
+}
+const EU_COFOG = ["TOTAL", "GF04", "GF07", "GF09", "GF0107", "GF1002", "GF1003"];
+const EU_ITEMS = { spesa: "TE", entrate: "TR", saldo: "B9", interessi: "D41PAY" } as const;
+const euFun = latestComplete(euExp, (r) => r.cofog99, EU_COFOG);
+const euMain = latestComplete(euMain0, (r) => r.na_item, Object.values(EU_ITEMS));
+const euDebt = latestComplete(euEdp, () => "GD", ["GD"]);
+const confrontoUe = {
+  funzioni: { anno: euFun.anno, valori: Object.fromEntries(EU_GEOS.map((g) => [g, Object.fromEntries(EU_COFOG.map((c) => [c, euFun.value(g, c)]))])) },
+  conti: {
+    anno: euMain.anno,
+    valori: Object.fromEntries(EU_GEOS.map((g) => [g, Object.fromEntries(Object.entries(EU_ITEMS).map(([k, i]) => [k, euMain.value(g, i)]))])),
+  },
+  debito: { anno: euDebt.anno, valori: Object.fromEntries(EU_GEOS.map((g) => [g, euDebt.value(g, "GD")])) },
+};
+
 function check(id: string, descrizione: string, deviations: { label: string; value: number }[], limit: number, unit: string) {
   const worst = deviations.reduce((a, b) => (Math.abs(b.value) > Math.abs(a.value) ? b : a));
   const fmt = (n: number) => n.toLocaleString("it-IT", { maximumFractionDigits: 3 });
@@ -128,6 +166,33 @@ const controlli = [
     "%",
   ),
   check(
+    "trimestri-anno",
+    "I quattro trimestri sommano alla spesa e alle entrate dell'anno",
+    conti.flatMap((c) => {
+      const q = trimestri.filter((t) => t.periodo.startsWith(`${c.anno}-`));
+      if (q.length !== 4) return [];
+      return [
+        { label: `${c.anno} spesa`, value: pct(q.reduce((s, t) => s + t.spesa, 0), c.spesa) },
+        { label: `${c.anno} entrate`, value: pct(q.reduce((s, t) => s + t.entrate, 0), c.entrate) },
+      ];
+    }),
+    0.5,
+    "%",
+  ),
+  check(
+    "confronto-ue-italia",
+    "Nel confronto UE i valori dell'Italia coincidono con le tavole nazionali",
+    [
+      ...(["spesa", "entrate", "saldo", "interessi"] as const).flatMap((k) => {
+        const c = conti.find((x) => x.anno === confrontoUe.conti.anno);
+        return c ? [{ label: `${k} ${c.anno}`, value: confrontoUe.conti.valori.IT[k] - c.pil[k] }] : [];
+      }),
+      ...debitoPil.filter((d) => d.anno === confrontoUe.debito.anno).map((d) => ({ label: `debito ${d.anno}`, value: confrontoUe.debito.valori.IT - d.valore })),
+    ],
+    0.05,
+    "punti %",
+  ),
+  check(
     "pil-istat-eurostat",
     "Spesa in % del PIL: valore Eurostat contro spesa Eurostat divisa per il PIL ISTAT della nostra serie",
     conti.flatMap((c) => {
@@ -152,11 +217,19 @@ const etichette: Record<string, string> = {
   "eurostat/gov_10a_exp.csv": "Eurostat gov_10a_exp, spesa delle amministrazioni pubbliche per funzione (COFOG)",
   "eurostat/gov_10dd_edpt1.csv": "Eurostat gov_10dd_edpt1, debito pubblico (notifica EDP)",
   "bancaditalia/TCCE0325.csv": "Banca d'Italia, Finanza pubblica: fabbisogno e debito, tavola TCCE0325",
+  "eurostat/gov_10q_ggnfa.csv": "Eurostat gov_10q_ggnfa, conti trimestrali delle amministrazioni pubbliche",
+  "eurostat/ue_gov_10a_exp.csv": "Eurostat gov_10a_exp, spesa per funzione in % del PIL: Italia, Germania, Francia, Spagna, UE",
+  "eurostat/ue_gov_10a_main.csv": "Eurostat gov_10a_main, conti principali in % del PIL: Italia, Germania, Francia, Spagna, UE",
+  "eurostat/ue_gov_10dd_edpt1.csv": "Eurostat gov_10dd_edpt1, debito in % del PIL: Italia, Germania, Francia, Spagna, UE",
 };
 const aggiornamenti: Record<string, string> = {
   "eurostat/gov_10a_main.csv": lastUpdate(main),
   "eurostat/gov_10a_exp.csv": lastUpdate(exp),
   "eurostat/gov_10dd_edpt1.csv": lastUpdate(edp),
+  "eurostat/gov_10q_ggnfa.csv": lastUpdate(quarterly),
+  "eurostat/ue_gov_10a_exp.csv": lastUpdate(euExp),
+  "eurostat/ue_gov_10a_main.csv": lastUpdate(euMain0),
+  "eurostat/ue_gov_10dd_edpt1.csv": lastUpdate(euEdp),
   "bancaditalia/TCCE0325.csv": bdiFile.fileOrigine
     ? `estrazione del ${bdiFile.fileOrigine.replace(/^(\d{4})(\d{2})(\d{2}).*/, "$3/$2/$1")}`
     : "n.d.",
@@ -166,9 +239,11 @@ const out = PublicFinance.parse({
   scaricato,
   fonti: manifest.map((m) => ({ url: m.url, etichetta: etichette[m.file], aggiornamentoFonte: aggiornamenti[m.file] })),
   conti,
+  trimestri,
   funzioni,
   debitoMensile,
   debitoPil,
+  confrontoUe,
   controlli,
   verifica: {
     livello: "V1",

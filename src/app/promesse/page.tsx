@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { correctionUrl } from "@/lib/contribute";
 import Link from "next/link";
-import { SourceLinks } from "@/components/source-links";
-import { VerificationBadge } from "@/components/verification-badge";
+import { ArrowUpRightIcon, FlagIcon } from "@phosphor-icons/react/ssr";
+import { Card, PageHead, SectionHead, Tag, Wrap } from "@/components/ui";
+import { LevelTag, VerificationBadge } from "@/components/verification-badge";
+import { correctionUrl } from "@/lib/contribute";
 import { COFOG_DIVISIONS, type CampaignPromise } from "@/lib/domain/schemas";
 import { formatDate, formatDecimal, formatInt } from "@/lib/format";
 import { promiseStatus, promisesByParty } from "@/server/data";
@@ -45,6 +46,9 @@ const VEHICLE: Record<CampaignPromise["veicolo"], string> = {
   altro: "Altro",
 };
 
+// Alcune citazioni hanno già le loro virgolette (frase citata seguita dal testo dell'articolo): non si raddoppiano.
+const quoted = (text: string) => (/[«»]/.test(text) ? text : `«${text}»`);
+
 const mln = (n: number) => `${formatInt(n)} milioni`;
 const span = (r: readonly [number, number], f: (n: number) => string) =>
   f(r[0]) === f(r[1]) ? f(r[0]) : `tra ${f(r[0])} e ${f(r[1])}`;
@@ -60,11 +64,13 @@ function CostContext({ p }: { p: CampaignPromise }) {
   if (!v || (!v.annuo && !v.famiglia)) return null;
   const label = v.natura && v.natura in NATURE_LABEL ? NATURE_LABEL[v.natura as keyof typeof NATURE_LABEL] : null;
   return (
-    <div className="mt-4 space-y-2 border-l-2 border-accent pl-4 text-sm text-ink-soft">
+    <div className="grid gap-1.5 rounded-ctl bg-accent-soft px-3.5 py-3 text-[15px] leading-normal">
       {v.annuo && v.perResidente && label ? (
         <p>
-          {label}: {span(v.annuo, mln)} di euro l&apos;anno, in media {span(v.perResidente, (n) => `${formatInt(n)} €`)}{" "}
-          per residente all&apos;anno
+          <b>
+            {label}: {span(v.annuo, mln)} di euro l&apos;anno
+          </b>
+          , in media {span(v.perResidente, (n) => `${formatInt(n)} €`)} per residente all&apos;anno
           {v.natura === "maggior_gettito" ? " (una media su tutti i residenti, non quanto pagherebbe ciascuno)" : ""}
           {v.quotaFunzione
             ? `, ${span(v.quotaFunzione, (n) => `${formatDecimal(n * 100, 1)}%`)} di quanto il settore pubblico ha speso nel ${costBase.annoFunzioni} per «${COFOG_DIVISIONS[p.cofog]}»`
@@ -73,85 +79,92 @@ function CostContext({ p }: { p: CampaignPromise }) {
         </p>
       ) : null}
       {v.famiglia ? (
-        <p>
+        <p className="text-sm text-ink-soft">
           Misure dello stesso tipo ({v.famiglia}) già fatte in passato:{" "}
           {v.precedenti.length > 0
             ? v.precedenti
                 .map((c) => `${c.titolo}, ${c.periodo}: ${formatDecimal(Math.abs(c.pct), 0)}% ${c.pct < 0 ? "in meno" : "in più"} della stima`)
                 .join("; ")
             : "nessuna con un confronto omogeneo fra stima e costo effettivo"}
-          . <Link href="/misure" className="underline underline-offset-2">Dettagli</Link>
+          .{" "}
+          <Link href="/misure" className="font-semibold text-ink underline underline-offset-2">
+            Dettagli
+          </Link>
         </p>
       ) : null}
       {v.sePrecedenti ? (
-        <p>
-          Se andasse come quelle misure: {span(v.sePrecedenti, mln)} di euro l&apos;anno. È un calcolo di Paghi Tu,
-          non una previsione.
+        <p className="text-sm text-ink-soft">
+          Se andasse come quelle misure: {span(v.sePrecedenti, mln)} di euro l&apos;anno. È un calcolo di Paghi Tu, non una previsione.
         </p>
       ) : null}
     </div>
   );
 }
 
-function PromiseItem({ p }: { p: CampaignPromise }) {
-  const fonti = [
-    { url: p.fonte.url, etichetta: SOURCE_TYPE[p.tipoFonte] },
-    ...(p.archivioUrl ? [{ url: p.archivioUrl, etichetta: "Copia d'archivio" }] : []),
-  ];
+const LINK = "inline-flex min-h-12 items-center gap-1.5 text-[15px] font-bold";
+
+function PromiseItem({ p, party }: { p: CampaignPromise; party: string }) {
   return (
-    <li id={p.id} className="grid scroll-mt-6 gap-4 py-6 md:grid-cols-[1fr_16rem] md:gap-10">
-      <div className="min-w-0">
-        <p className="text-lg leading-snug">{p.parafrasiNeutra}</p>
-        <blockquote className="mt-3 border-l-2 border-rule pl-4 text-ink-soft">
-          <p>«{p.testoLetterale}»</p>
-          <footer className="mt-2 text-sm text-ink-faint">
-            {p.dichiarante}, {p.ruoloDichiarante} · {formatDate(p.data)}
-          </footer>
-        </blockquote>
-        {p.costoDichiarato || p.stimaTerzi ? (
-          <dl className="mt-4 grid gap-2 text-sm sm:grid-cols-2">
-            {p.costoDichiarato ? (
-              <div>
-                <dt className="text-ink-faint">Costo secondo chi propone</dt>
-                <dd className="tabular">{p.costoDichiarato}</dd>
-              </div>
-            ) : null}
-            {p.stimaTerzi ? (
-              <div>
-                <dt className="text-ink-faint">Stima indipendente</dt>
-                <dd className="tabular">
-                  <a
-                    href={p.stimaTerzi.fonte.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline underline-offset-2"
-                  >
-                    {p.stimaTerzi.testo}
-                  </a>
-                </dd>
-              </div>
-            ) : null}
-          </dl>
-        ) : null}
-        <CostContext p={p} />
+    <Card as="li" className="reveal flex flex-col gap-2.5 pb-0!">
+      <div id={p.id} className="flex scroll-mt-24 flex-wrap items-center gap-1.5">
+        <Tag tone="plain">{party}</Tag>
+        <span className="ml-auto">
+          <LevelTag level={p.verifica.livello} />
+        </span>
       </div>
-      <div className="space-y-3 text-sm">
-        <p className="text-ink-soft">{COFOG_DIVISIONS[p.cofog]}</p>
-        <p className="font-mono text-xs text-ink-faint">
-          {HORIZON[p.orizzonte]} · {VEHICLE[p.veicolo]}
-        </p>
-        <SourceLinks fonti={fonti} />
-        <VerificationBadge verifica={p.verifica} />
-        <a
-          href={correctionUrl(`/promesse#${p.id}`, p.id)}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block text-xs text-ink-faint underline underline-offset-2 hover:text-ink"
-        >
+      <h3 className="font-sans text-lg leading-snug font-bold tracking-normal">{p.parafrasiNeutra}</h3>
+      <blockquote className="m-0 border-l-[3px] border-accent pl-3.5 text-[16.5px] leading-relaxed">
+        <p>{quoted(p.testoLetterale)}</p>
+      </blockquote>
+      <p className="text-[14.5px] text-ink-soft">
+        {p.dichiarante}, {p.ruoloDichiarante}. {SOURCE_TYPE[p.tipoFonte]}, {formatDate(p.data)}.
+      </p>
+      {p.costoDichiarato || p.stimaTerzi ? (
+        <dl className="grid gap-2 rounded-ctl bg-accent-soft px-3.5 py-3 text-[15px] sm:grid-cols-2">
+          {p.costoDichiarato ? (
+            <div>
+              <dt className="text-sm text-ink-soft">Costo secondo chi propone</dt>
+              <dd className="tabular font-bold">{p.costoDichiarato}</dd>
+            </div>
+          ) : null}
+          {p.stimaTerzi ? (
+            <div>
+              <dt className="text-sm text-ink-soft">Stima indipendente</dt>
+              <dd className="tabular">
+                <a href={p.stimaTerzi.fonte.url} target="_blank" rel="noopener noreferrer" className="font-bold underline underline-offset-2">
+                  {p.stimaTerzi.testo}
+                </a>
+              </dd>
+            </div>
+          ) : null}
+        </dl>
+      ) : null}
+      <CostContext p={p} />
+      <ul className="flex flex-wrap gap-1.5 text-[13.5px]" aria-label="Classificazione">
+        {[COFOG_DIVISIONS[p.cofog], HORIZON[p.orizzonte], VEHICLE[p.veicolo]].map((t) => (
+          <li key={t} className="rounded-ctl bg-paper-sunk px-2 py-1 text-ink-soft">
+            {t}
+          </li>
+        ))}
+      </ul>
+      <VerificationBadge verifica={p.verifica} />
+      <div className="mt-auto flex flex-wrap gap-x-4.5 border-t border-rule">
+        <a href={p.fonte.url} target="_blank" rel="noopener noreferrer" className={`${LINK} hover:text-accent`}>
+          Leggi la fonte
+          <ArrowUpRightIcon size={16} weight="bold" aria-hidden />
+        </a>
+        {p.archivioUrl ? (
+          <a href={p.archivioUrl} target="_blank" rel="noopener noreferrer" className={`${LINK} hover:text-accent`}>
+            Copia d&apos;archivio
+            <ArrowUpRightIcon size={16} weight="bold" aria-hidden />
+          </a>
+        ) : null}
+        <a href={correctionUrl(`/promesse#${p.id}`, p.id)} target="_blank" rel="noopener noreferrer" className={`${LINK} text-ink-soft hover:text-ink`}>
+          <FlagIcon size={16} aria-hidden />
           Segnala un errore
         </a>
       </div>
-    </li>
+    </Card>
   );
 }
 
@@ -166,12 +179,12 @@ const COVERAGE = [
 
 function Coverage() {
   return (
-    <details className="group mt-8 border border-rule bg-paper-raised p-5 text-sm">
-      <summary className="cursor-pointer list-none font-semibold">
-        Copertura e limiti di questo censimento{" "}
-        <span className="font-normal text-ink-faint group-open:hidden">(apri)</span>
+    <details className="group reveal mt-4 rounded-card bg-paper-raised px-4 md:px-6">
+      <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 font-bold [&::-webkit-details-marker]:hidden">
+        Copertura e limiti di questo censimento
+        <span className="text-sm font-normal text-ink-faint underline underline-offset-2 group-open:hidden">apri</span>
       </summary>
-      <ul className="mt-4 list-disc space-y-2 pl-5 text-ink-soft">
+      <ul className="mb-4 list-disc space-y-2 pl-5 text-[15px] text-ink-soft">
         {COVERAGE.map((line) => (
           <li key={line}>{line}</li>
         ))}
@@ -200,28 +213,22 @@ function Pending() {
   ];
   return (
     <section aria-labelledby="stato" className="mt-12">
-      <h2 id="stato" className="text-2xl font-semibold tracking-tight">
-        A che punto siamo
-      </h2>
-      <ol className="mt-6 divide-y divide-rule border-y border-rule">
+      <SectionHead id="stato" title="A che punto siamo" />
+      <ol className="mt-6 grid gap-2.5 md:grid-cols-3">
         {steps.map((s, i) => (
-          <li key={s.title} className="grid gap-2 py-5 md:grid-cols-[3rem_1fr_8rem] md:gap-6">
-            <span className="font-mono text-sm text-ink-faint">{String(i + 1).padStart(2, "0")}</span>
-            <div>
-              <h3 className="font-semibold">{s.title}</h3>
-              <p className="mt-1 max-w-[65ch] text-ink-soft">{s.body}</p>
+          <Card as="li" key={s.title} className="reveal">
+            <div className="flex items-center justify-between gap-3">
+              <span className="font-display tabular text-2xl font-extrabold text-ink-faint">{String(i + 1).padStart(2, "0")}</span>
+              <Tag tone={s.state === "Fatto" ? "plain" : "accent"}>{s.state}</Tag>
             </div>
-            <span
-              className={`font-mono text-xs md:text-right ${s.state === "Fatto" ? "text-ink-soft" : "text-accent"}`}
-            >
-              {s.state}
-            </span>
-          </li>
+            <h3 className="mt-2 font-sans text-lg font-bold tracking-normal">{s.title}</h3>
+            <p className="mt-1 text-[15.5px] text-ink-soft">{s.body}</p>
+          </Card>
         ))}
       </ol>
       <p className="mt-6 max-w-[65ch] text-ink-soft">
         Pubblichiamo le promesse di tutti i partiti insieme, non uno alla volta. Il metodo è descritto in{" "}
-        <Link href="/metodo" className="underline underline-offset-2">
+        <Link href="/metodo" className="font-semibold text-accent underline underline-offset-2">
           Metodo
         </Link>
         .
@@ -233,26 +240,27 @@ function Pending() {
 export default function PromisesPage() {
   const groups = promisesByParty();
   return (
-    <div className="mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
-      <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">Promesse per le politiche 2027</h1>
-      <p className="mt-4 max-w-[62ch] text-lg text-ink-soft">
-        Cosa propongono i partiti in vista delle politiche 2027: la frase esatta, chi l'ha detta, quando e dove, e se
-        riguarda la prossima legislatura o quella in corso. Non diamo giudizi e non facciamo classifiche. Il costo è quello dichiarato da chi propone, oppure una stima di un ente
-        indipendente, con la fonte.
-      </p>
+    <Wrap>
+      <PageHead kicker="Elezioni politiche 2027" title="Promesse per le politiche 2027">
+        <p>
+          Cosa propongono i partiti in vista delle politiche 2027: la frase esatta, chi l&apos;ha detta, quando e dove, e se riguarda la
+          prossima legislatura o quella in corso. Non diamo giudizi e non facciamo classifiche. Il costo è quello dichiarato da chi
+          propone, oppure una stima di un ente indipendente, con la fonte.
+        </p>
+      </PageHead>
 
       {groups.length === 0 ? (
         <Pending />
       ) : (
         <>
-          <nav aria-label="Partiti" className="mt-10 border-y border-rule py-4">
-            <p className="font-mono text-xs text-ink-faint">Partiti in ordine alfabetico</p>
-            <ul className="mt-3 flex flex-wrap gap-2">
+          <nav aria-label="Partiti" className="mt-8">
+            <p className="text-sm font-semibold text-ink-soft">Partiti in ordine alfabetico</p>
+            <ul className="mt-2 flex flex-wrap gap-2">
               {groups.map(({ party }) => (
                 <li key={party.id}>
                   <a
                     href={`#p-${party.id}`}
-                    className="inline-block border border-rule px-3 py-1.5 text-sm hover:border-ink"
+                    className="inline-flex min-h-11 items-center rounded-ctl border-[1.5px] border-rule bg-paper-raised px-3.5 text-[15px] font-semibold hover:border-ink-faint"
                   >
                     {party.nome}
                   </a>
@@ -261,18 +269,18 @@ export default function PromisesPage() {
             </ul>
           </nav>
           <Coverage />
-          <div className="mt-12 space-y-16">
+          <div className="mt-12 space-y-14 md:mt-16 md:space-y-20">
             {groups.map(({ party, items }) => (
-              <section key={party.id} id={`p-${party.id}`} aria-labelledby={`h-${party.id}`} className="scroll-mt-6">
-                <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 border-b border-ink pb-3">
-                  <h2 id={`h-${party.id}`} className="text-2xl font-semibold tracking-tight">
+              <section key={party.id} id={`p-${party.id}`} aria-labelledby={`h-${party.id}`} className="scroll-mt-24">
+                <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+                  <h2 id={`h-${party.id}`} className="reveal text-[clamp(1.6rem,6vw,2.4rem)] leading-tight font-extrabold">
                     {party.nome}
                   </h2>
-                  <p className="font-mono text-xs text-ink-faint">{party.coalizione}</p>
+                  <p className="text-sm text-ink-faint">{party.coalizione}</p>
                 </div>
-                <ul className="divide-y divide-rule">
+                <ul className="mt-4 grid gap-3.5 md:grid-cols-2">
                   {items.map((p) => (
-                    <PromiseItem key={p.id} p={p} />
+                    <PromiseItem key={p.id} p={p} party={party.nome} />
                   ))}
                 </ul>
               </section>
@@ -280,6 +288,6 @@ export default function PromisesPage() {
           </div>
         </>
       )}
-    </div>
+    </Wrap>
   );
 }
