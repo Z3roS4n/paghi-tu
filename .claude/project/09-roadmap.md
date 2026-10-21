@@ -13,7 +13,8 @@
 - [x] Governi 1946–oggi con livello di verifica per campo
 - [x] Leggi di bilancio con estremi e governo proponente (attribuzione documentata/inferita/incerta)
 - [x] Pagine Metodo, Fonti, Chi siamo, Correzioni, Note legali (provvisorie)
-- [ ] Promesse della campagna 2027: schema, import con cancello di pubblicazione e pagina `/promesse` fatti; verifica L2 gruppo B fatta, A e C in corso → controllo di simmetria → pubblicazione (D-013)
+- [x] Promesse della campagna 2027: 282 righe verificate pubblicate il 2026-10-21, tutti i partiti insieme (D-013, D-015)
+- [ ] Verifica L2 delle 52 righe «NUOVA da uniformità» e pubblicazione con lo stesso cancello
 - [x] Misure caso studio (previsto contro effettivo) → pagina `/misure` (10 misure, 18 confronti)
 - [ ] Serie % PIL e euro costanti nei grafici (palette neutra)
 - [ ] Recapito del progetto, revisione legale (OA-2, OA-6), dominio (OA-1)

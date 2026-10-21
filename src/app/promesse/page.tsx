@@ -101,6 +101,7 @@ const COVERAGE = [
   "Molte proposte riguardano la legge di bilancio 2027 o leggi in discussione ora: sono indicate come «Nella legislatura in corso», per la maggioranza come per l'opposizione.",
   "Partito Democratico: il sito nazionale non è leggibile dai nostri strumenti; sette passaggi del discorso del 18 ottobre restano fuori finché non li confrontiamo con il video ufficiale.",
   "Forza Italia: dal 19 marzo 2026 il sito del partito non ha pubblicato notizie; le righe vengono da interviste del segretario e di altri dirigenti, in parte ripubblicate sul sito del Ministero degli Esteri.",
+  "Altre 52 dichiarazioni trovate nell'ultimo controllo di uniformità sono ancora in verifica e non compaiono qui. Le aggiungiamo dopo il secondo controllo sulla fonte, per tutti i partiti insieme.",
   "Per i partiti con programmi molto lunghi il censimento può non essere completo. Le formazioni minori entrano se hanno annunciato una lista nazionale con fonte verificabile.",
 ];
 

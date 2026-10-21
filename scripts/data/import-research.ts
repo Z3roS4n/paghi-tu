@@ -41,6 +41,12 @@ function verification(text: string): Verification {
   return { livello: lowestLevel(text), dettaglio: text.trim() };
 }
 
+// Nelle promesse l'esito sta in testa («V1✓ …»): il resto della nota può citare livelli superati.
+function promiseVerification(text: string): Verification {
+  const head = text.trim().match(/^(NV|V2|V1)✓/);
+  return head ? { livello: head[1] as VerificationLevel, dettaglio: text.trim() } : verification(text);
+}
+
 const LEVEL_ORDER: VerificationLevel[] = ["NV", "V2", "V1"];
 function lowest(levels: VerificationLevel[]): VerificationLevel {
   return LEVEL_ORDER.find((l) => levels.includes(l)) ?? "NV";
@@ -246,7 +252,7 @@ async function sources() {
 
 // Un gruppo entra nel sito solo dopo la verifica indipendente di ogni riga e il controllo di
 // simmetria fra i gruppi (D-010): fino ad allora le promesse sono validate ma non pubblicate.
-const PUBLISHED_PROMISE_GROUPS: string[] = [];
+const PUBLISHED_PROMISE_GROUPS: string[] = ["a", "b", "c", "c-integrazione"];
 // Scenari S1/S2 della nota di simmetria: il titolare ha scelto S1 il 2026-10-21 (D-015).
 const PROMISE_SCOPE_RULE: "tutte" | "solo_fuori_legislatura_in_corso" | null = "tutte";
 if (PUBLISHED_PROMISE_GROUPS.length > 0 && PROMISE_SCOPE_RULE === null) {
@@ -298,13 +304,14 @@ async function campaignPromises() {
         costoDichiarato: r.costo_dichiarato_proponente.trim() || null,
         stimaTerzi: r.stima_terzi.trim() && stimaUrl ? { testo: r.stima_terzi.trim(), fonte: { url: stimaUrl } } : null,
         note: r.note.trim(),
-        verifica: verification(r.stato_verifica),
+        verifica: promiseVerification(r.stato_verifica),
       });
       verified.push({ group, promise });
     }
   }
   const published = verified
     .filter(({ group }) => PUBLISHED_PROMISE_GROUPS.includes(group))
+    .filter(({ promise }) => promise.verifica.livello !== "NV")
     .filter(({ promise }) => PROMISE_SCOPE_RULE === "tutte" || promise.orizzonte !== "legislatura_in_corso")
     .map(({ promise }) => promise);
   const status = PromiseCatalogStatus.parse({

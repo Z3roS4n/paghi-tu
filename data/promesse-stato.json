@@ -3,9 +3,14 @@
     "dal": "2026-01-01",
     "al": "2026-10-21"
   },
-  "censite": 322,
-  "verificate": 293,
-  "pubblicate": 0,
-  "gruppiPubblicati": [],
+  "censite": 374,
+  "verificate": 282,
+  "pubblicate": 282,
+  "gruppiPubblicati": [
+    "a",
+    "b",
+    "c",
+    "c-integrazione"
+  ],
   "regolaPerimetro": "tutte"
 }
