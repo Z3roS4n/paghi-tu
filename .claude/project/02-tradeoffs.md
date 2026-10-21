@@ -173,7 +173,7 @@
 - **Data:** 2026-10-21
 
 ### D-018 — Routine su cloud per l'aggiornamento automatico
-- **Stato:** decisa dal titolare il 2026-10-21; da attivare su un altro account, dopo la pubblicazione del repo su GitHub.
+- **Stato:** decisa dal titolare il 2026-10-21; routine creata il 2026-10-21 e **spenta** finché non c'è il suo ambiente cloud con i segreti.
 - **Contesto:** il titolare vuole una routine su cloud che aggiorni dati e fonti in autonomia, con agenti verificatori.
 - **Decisioni del titolare (2026-10-21):** esecuzione **ogni giorno**; modifiche **pubblicate subito, ma solo dopo la conferma di un secondo agente AI** che non le ha scritte e le ricontrolla sulle fonti (`CONFERMATO` / `RESPINTO`), senza PR da approvare a mano; **segnalazioni via email con Resend** (`scripts/notify.ts`, scheda `integrations/resend.md`), con destinatario, mittente e chiave solo nei segreti della routine perché il repo è pubblico.
 - **Scelta:** due binari, perché hanno rischi diversi.
@@ -181,7 +181,12 @@
   2. **Contenuti editoriali** (promesse, misure, governi): agenti di ricerca → verificatore L2 indipendente → controllo di simmetria fra partiti → import. Va online solo ciò che passa tutti i cancelli, tutti i partiti insieme (D-013); ogni modifica resta nel registro delle correzioni.
   - Vincoli fissi: un solo processo che interroga ISTAT; niente Save Page Now o scritture su servizi esterni oltre al repo, a Vercel e a Resend; niente aggiramento di blocchi; **nei 15 giorni prima di un voto la routine non pubblica contenuti nuovi su partiti e promesse** (regola in `/metodo`).
 - **Runbook:** `.claude/routines/aggiornamento-dati.md` (istruzioni passo per passo per l'agente schedulato).
-- **Prerequisito mancante:** il repo non ha ancora un remote GitHub; la routine su cloud deve poterlo clonare (vedi D-019).
+- **Attivazione (2026-10-21):**
+  - il titolare ha scelto di far girare la routine **sull'account di sviluppo**, non su un account separato;
+  - ogni giorno alle 06:00 UTC (07:00 con l'ora solare, 08:00 con l'ora legale), modello Opus 5.5, nessun connettore: solo il repo, la shell, la ricerca web e i subagenti per il verificatore;
+  - ambiente cloud dedicato, perché i segreti di un ambiente sono visibili a ogni sessione che lo usa; serve accesso di rete completo (Eurostat, Banca d'Italia, ISTAT, Resend, Vercel);
+  - il deploy usa `VERCEL_TOKEN` con `VERCEL_ORG_ID` e `VERCEL_PROJECT_ID`, perché sul cloud non c'è il login della CLI;
+  - `npm run check:pages` controlla il testo visibile delle pagine generate: nessun «NaN», «undefined», «Infinity», nessuna nota interna fuori dai pannelli chiusi.
 - **Data:** 2026-10-21
 
 ### D-019 — Decisioni del titolare su promesse, archivi e debito per governo

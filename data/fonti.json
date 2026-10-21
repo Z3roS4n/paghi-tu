@@ -16,7 +16,7 @@
     "dataset": "Rendiconti digitalizzati (F-06)",
     "copertura": "esercizi 1924-25…1952-53; 1966–2004",
     "accesso": "PDF da scansione (OCR)",
-    "licenza": "non indicata; rendiconti approvati per legge (art. 5 L. 633/1941, INFERENZA)",
+    "licenza": "non indicata; rendiconti approvati per legge (art. 5 L. 633/1941, nostra lettura della norma)",
     "riuso": "si",
     "aggiornamento": "una tantum",
     "fonteDiVeritaPer": "Spesa dello Stato a consuntivo 1966–2004 (buco 1953–1965)"
@@ -115,7 +115,7 @@
     "dataset": "DEF/NADEF/PSB/DPB/DFP (F-23)",
     "copertura": "DPB 2014–; DFP 2025–",
     "accesso": "PDF",
-    "licenza": "NV (documenti ufficiali, art. 5 INFERENZA)",
+    "licenza": "NV (documenti ufficiali, art. 5, nostra lettura della norma)",
     "riuso": "con_citazione",
     "aggiornamento": "annuale",
     "fonteDiVeritaPer": "Giustificazioni ufficiali e quadro programmatico"
@@ -146,7 +146,7 @@
     "id": "R-14",
     "ente": "FMI",
     "dataset": "Public Finances in Modern History, HPD, GDD (F-37; E-20, E-21)",
-    "copertura": "Italia 1861/62–2024; rottura Stato → AP 1967/1968 (INFERENZA)",
+    "copertura": "Italia 1861/62–2024; rottura Stato → AP 1967/1968 (nostra deduzione)",
     "accesso": "API SDMX/DataMapper",
     "licenza": "attribuzione, trasformazioni dichiarate, uso commerciale su permesso, vietato scaricamento automatico massivo senza permesso",
     "riuso": "con_permesso",
@@ -236,7 +236,7 @@
     "dataset": "Relazioni tecniche ex art. 17 L. 196/2009, dossier, verifiche delle quantificazioni (costo; F-07)",
     "copertura": "RT sistematiche dal 1988 (art. 11-ter L. 468/1978)",
     "accesso": "PDF, HTML",
-    "licenza": "atti parlamentari (art. 5, INFERENZA); Senato: riproduzione consentita citando la fonte",
+    "licenza": "atti parlamentari (art. 5, nostra lettura della norma); Senato: riproduzione consentita citando la fonte",
     "riuso": "con_citazione",
     "aggiornamento": "per atto",
     "fonteDiVeritaPer": "StimaCosto ex ante (onere per anno e per saldo)"

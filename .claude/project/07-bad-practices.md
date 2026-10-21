@@ -33,3 +33,9 @@
 - ❌ Trattare come zero un anno senza `OBS_VALUE`: è un dato mancante.
 - ❌ Pubblicare un aggiornamento automatico se un controllo incrociato di `build-public-finance.ts` fallisce.
 - ❌ Interrogare ISTAT da più processi insieme: limite di 5 query al minuto per IP, blocco di 1-2 giorni.
+
+### Controlli sulle pagine generate
+- ❌ Cercare «undefined» con un grep sull'HTML di `.next/`: i dati interni di React contengono `$undefined`
+  su ogni pagina. Usare `npm run check:pages`, che guarda solo il testo visibile (2026-10-21).
+- ❌ Lasciare marcatori di lavoro («INFERENZA», `V1✓`) nelle colonne mostrate in pagina: /fonti ne aveva
+  quattro nella licenza e nella copertura, riformulati alla fonte (2026-10-21).

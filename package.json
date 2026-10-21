@@ -14,6 +14,7 @@
     "data:update": "npm run data:fetch && npm run data:finance",
     "data:archive": "node scripts/data/archive-sources.ts",
     "notify": "node scripts/notify.ts",
+    "check:pages": "node scripts/check-pages.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
