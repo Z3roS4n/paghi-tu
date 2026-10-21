@@ -196,7 +196,7 @@
     "note": "Intervista alla Festa de Il Tempo pubblicata il 25/9/2026; spaziatura del testo normalizzata ('dalnostro' nella fonte). Promessa di status quo: mantenuta se nessuna imposta patrimoniale viene introdotta. (controllo di simmetria 2026-10-21) Veste dell'intervista: «Presidente», «il nostro governo» (spostato da ruolo_dichiarante). (controllo di simmetria 2026-10-21) Orizzonte/veicolo: non_specificato: la frase non nomina un atto né il prossimo mandato («un governo diverso dal nostro»). (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su camera.it (scheda deputato XIX legislatura) e dati.camera.it il 2026-10-21.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V2✓ verificatore 2026-10-20 — CORRETTA: testo verificato (Il Tempo, intervista di Daniele Capezzone alla Festa de Il Tempo, 25/9/2026); parafrasi resa meno assertiva (la frase è una battuta polemica: «un governo diverso dal nostro, ammesso che arriverà»); ruolo: parla come capo del governo | PERIMETRO: orizzonte/veicolo (vedi colonne) (orizzonte non_specificato; veste istituzionale da marcare) | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo"
+      "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-20 — CORRETTA: testo verificato (Il Tempo, intervista di Daniele Capezzone alla Festa de Il Tempo, 25/9/2026); parafrasi resa meno assertiva (la frase è una battuta polemica: «un governo diverso dal nostro, ammesso che arriverà»); ruolo: parla come capo del governo | PERIMETRO: orizzonte/veicolo (vedi colonne) (orizzonte non_specificato; veste istituzionale da marcare)"
     }
   },
   {
@@ -771,7 +771,7 @@
     "note": "Intervista a Libero ripubblicata sul sito del Ministero degli Esteri (data = pubblicazione sul sito). Rilanciata a Mattino 5 il 16/10/2026 (QuiFinanza). Money.it indica che dopo la legge di bilancio 2026 l'aliquota del 33% si applica già tra 28.000 e 50.000 euro. Costi circolati senza fonte indipendente: ~2,7 mld (QuiFinanza), ~3 mld (Money.it), ~1,2 mld (La Sicilia). (verificatore) Contesto verificato sul testo integrale (esteri.it, scaricato con curl: HTTP 200, testo completo, nessun blocco): Tajani dice «Stiamo lavorando per mettere sul tavolo della coalizione una serie di proposte che in parte possono essere realizzate subito, in parte sono da mettere in agenda per la prossima legislatura» e, sulla scelta tra manovra e programma elettorale, «Ne parleremo con gli alleati e decideremo anche in base ai conti pubblici». L'orizzonte quindi non è la sola legge di bilancio 2027. La pagina è una ripubblicazione del Ministero degli Esteri (canale istituzionale del ministro, non di partito) con autore Fabio Rubini e testata Libero. (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su camera.it (scheda deputato XIX legislatura) e dati.camera.it il 2026-10-21.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V2✓ verificatore 2026-10-20 — CORRETTA: citazione verificata parola per parola sul testo integrale; ruolo (carica di governo aggiunta); tolta la nota «Proposta riferita alla legge di bilancio 2027», contraddetta dal testo | PERIMETRO: orizzonte/veicolo (vedi colonne) (orizzonte non_specificato) | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo"
+      "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-20 — CORRETTA: citazione verificata parola per parola sul testo integrale; ruolo (carica di governo aggiunta); tolta la nota «Proposta riferita alla legge di bilancio 2027», contraddetta dal testo | PERIMETRO: orizzonte/veicolo (vedi colonne) (orizzonte non_specificato)"
     }
   },
   {
@@ -796,7 +796,7 @@
     "note": "Intervista a Il Messaggero (10/10/2026) ripresa dal sito del Ministero degli Esteri. Nell'intervista a Libero (27/7/2026): detassare «al 100% le più basse». Soglie e platea non definite. Proposta riferita alla legge di bilancio 2027 (XIX legislatura, ultimo bilancio prima delle politiche); se recepita in un atto del governo diventa attuazione, da tracciare separatamente. (verificatore) Contesto verificato sul testo integrale (esteri.it, curl HTTP 200; autore Mario Ajello, testata Il Messaggero, 10/10/2026): risposta alla domanda «Insomma che manovra sarà?». (verificatore) Spostati dalla parafrasi in nota, perché non sono nella fonte citata: «totale per quelle di importo più basso» (Libero, 27/7: «al 100% le più basse») e l'estensione ai pensionati (convention di Milano, fonte secondaria). (controllo di simmetria 2026-10-21) Orizzonte/veicolo: legislatura_in_corso: risposta alla domanda «Insomma che manovra sarà?». (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su camera.it (scheda deputato XIX legislatura) e dati.camera.it il 2026-10-21.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V2✓ verificatore 2026-10-20 — CORRETTA: citazione verificata; la parafrasi conteneva elementi di altre fonti (Libero, convention): ristretta alla fonte citata; ruolo | PERIMETRO: orizzonte/veicolo (vedi colonne) [orizzonte: legge di bilancio 2027] | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo"
+      "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-20 — CORRETTA: citazione verificata; la parafrasi conteneva elementi di altre fonti (Libero, convention): ristretta alla fonte citata; ruolo | PERIMETRO: orizzonte/veicolo (vedi colonne) [orizzonte: legge di bilancio 2027]"
     }
   },
   {
@@ -821,7 +821,7 @@
     "note": "Età massima e soglie di reddito riportate in modo non uniforme dalle fonti (Lacapitalenews 12/10; QuiFinanza 16/10). Proposta riferita alla legge di bilancio 2027 (XIX legislatura, ultimo bilancio prima delle politiche); se recepita in un atto del governo diventa attuazione, da tracciare separatamente. (verificatore) Contesto verificato sul testo integrale (esteri.it, curl HTTP 200; autore Mario Ajello, testata Il Messaggero, 10/10/2026): risposta alla domanda «Insomma che manovra sarà?». (verificatore) Spostati dalla parafrasi in nota: «fino a 35 anni» (convention di Milano) ed «esenzione fiscale totale per i lavoratori fino a 30-35 anni» (QuiFinanza 16/10). (controllo di simmetria 2026-10-21) Orizzonte/veicolo: legislatura_in_corso: risposta alla domanda «Insomma che manovra sarà?». (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su camera.it (scheda deputato XIX legislatura) e dati.camera.it il 2026-10-21.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V2✓ verificatore 2026-10-20 — CORRETTA: citazione verificata; parafrasi ristretta alla fonte citata; ruolo | PERIMETRO: orizzonte/veicolo (vedi colonne) [orizzonte: legge di bilancio 2027] | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo"
+      "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-20 — CORRETTA: citazione verificata; parafrasi ristretta alla fonte citata; ruolo | PERIMETRO: orizzonte/veicolo (vedi colonne) [orizzonte: legge di bilancio 2027]"
     }
   },
   {
@@ -846,7 +846,7 @@
     "note": "Formulata anche come 'cashback' del 19% su pagamenti tracciabili da Maurizio Casasco (Milano Finanza, 25/8/2026). Proposta riferita alla legge di bilancio 2027 (XIX legislatura, ultimo bilancio prima delle politiche); se recepita in un atto del governo diventa attuazione, da tracciare separatamente. (verificatore) Contesto verificato sul testo integrale (esteri.it, curl HTTP 200; autore Mario Ajello, testata Il Messaggero, 10/10/2026): risposta alla domanda «Insomma che manovra sarà?». (verificatore) Spostata in nota la «Carta Sanità» per i pensionati (QuiFinanza 16/10, Mattino 5), che non è nella fonte citata. La stessa proposta è nell'intervista a Libero del 27/7: «portare le detrazioni delle spese sanitarie nell’anno in cui vengono sostenute». (controllo di simmetria 2026-10-21) COFOG da 07 a 01: detrazione fiscale → 01. (controllo di simmetria 2026-10-21) Orizzonte/veicolo: legislatura_in_corso: risposta alla domanda «Insomma che manovra sarà?». (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su camera.it (scheda deputato XIX legislatura) e dati.camera.it il 2026-10-21.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V2✓ verificatore 2026-10-20 — CORRETTA: citazione verificata (il punto nella fonte è fuori dalle virgolette); parafrasi ristretta alla fonte citata; ruolo | PERIMETRO: orizzonte/veicolo (vedi colonne) [orizzonte: legge di bilancio 2027] | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo"
+      "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-20 — CORRETTA: citazione verificata (il punto nella fonte è fuori dalle virgolette); parafrasi ristretta alla fonte citata; ruolo | PERIMETRO: orizzonte/veicolo (vedi colonne) [orizzonte: legge di bilancio 2027]"
     }
   },
   {
@@ -871,7 +871,7 @@
     "note": "Il DL n. 162/2026 del governo ha introdotto un'esenzione per i versamenti in scadenza nel 2027, limitata a un veicolo per persona e ad auto fino a 80 kW (Money.it): da tracciare come attuazione parziale. Mancato gettito per l'abolizione integrale: circa 6,5 mld l'anno secondo una stima 'richiamata nel dibattito della maggioranza' (La Sicilia, 20/8/2026); 7,5 mld nel titolo di un articolo QuiFinanza non aperto. Nessuna stima di ente indipendente. (verificatore) Contesto verificato sul testo integrale (esteri.it, scaricato con curl: HTTP 200, testo completo, nessun blocco): Tajani dice «Stiamo lavorando per mettere sul tavolo della coalizione una serie di proposte che in parte possono essere realizzate subito, in parte sono da mettere in agenda per la prossima legislatura» e, sulla scelta tra manovra e programma elettorale, «Ne parleremo con gli alleati e decideremo anche in base ai conti pubblici». L'orizzonte quindi non è la sola legge di bilancio 2027. La pagina è una ripubblicazione del Ministero degli Esteri (canale istituzionale del ministro, non di partito) con autore Fabio Rubini e testata Libero. (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su camera.it (scheda deputato XIX legislatura) e dati.camera.it il 2026-10-21.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V2✓ verificatore 2026-10-20 — CORRETTA: citazione verificata; ruolo; formulazione dubitativa nella fonte («L’altra idea sulla quale stiamo lavorando») | PERIMETRO: orizzonte/veicolo (vedi colonne) (orizzonte non_specificato) | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo"
+      "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-20 — CORRETTA: citazione verificata; ruolo; formulazione dubitativa nella fonte («L’altra idea sulla quale stiamo lavorando») | PERIMETRO: orizzonte/veicolo (vedi colonne) (orizzonte non_specificato)"
     }
   },
   {
@@ -896,7 +896,7 @@
     "note": "Intervista a Milano Finanza. Coperture indicate genericamente (revisione di spesa assistenziale e tax expenditures), senza quantificazione del costo. Proposta riferita alla legge di bilancio 2027 (XIX legislatura, ultimo bilancio prima delle politiche); se recepita in un atto del governo diventa attuazione, da tracciare separatamente. (verificatore) Corretta l'affermazione precedente che il 5% fosse «ipotesi da definire in base alle coperture»: il testo dice «introduce una flat tax incrementale strutturale al 5%». Casasco è indicato come «deputato di Forza Italia e responsabile economico del partito», e la pagina forzaitalia.it/dipartimenti lo elenca come responsabile del Dipartimento Economia. Milano Finanza scaricata con curl (HTTP 200, testo completo).",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V2✓ verificatore 2026-10-20 — CORRETTA: citazione verificata parola per parola su Milano Finanza; nota e parafrasi corrette sul 5% (non è un'ipotesi nella fonte) | PERIMETRO: orizzonte/veicolo (vedi colonne) [orizzonte: «la proposta economica di Forza Italia per la prossima manovra»] | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo"
+      "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-20 — CORRETTA: citazione verificata parola per parola su Milano Finanza; nota e parafrasi corrette sul 5% (non è un'ipotesi nella fonte) | PERIMETRO: orizzonte/veicolo (vedi colonne) [orizzonte: «la proposta economica di Forza Italia per la prossima manovra»]"
     }
   },
   {
@@ -921,7 +921,7 @@
     "note": "(verificatore) Contesto verificato sul testo integrale (esteri.it, scaricato con curl: HTTP 200, testo completo, nessun blocco): Tajani dice «Stiamo lavorando per mettere sul tavolo della coalizione una serie di proposte che in parte possono essere realizzate subito, in parte sono da mettere in agenda per la prossima legislatura» e, sulla scelta tra manovra e programma elettorale, «Ne parleremo con gli alleati e decideremo anche in base ai conti pubblici». L'orizzonte quindi non è la sola legge di bilancio 2027. La pagina è una ripubblicazione del Ministero degli Esteri (canale istituzionale del ministro, non di partito) con autore Fabio Rubini e testata Libero. (controllo di simmetria 2026-10-21) COFOG da 04 a 01: esenzione fiscale → 01. (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su camera.it (scheda deputato XIX legislatura) e dati.camera.it il 2026-10-21.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V2✓ verificatore 2026-10-20 — CORRETTA: citazione verificata; ruolo; tolta la nota sulla legge di bilancio 2027; formulazione dubitativa («Pensiamo ad») | PERIMETRO: orizzonte/veicolo (vedi colonne) (orizzonte non_specificato) | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo"
+      "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-20 — CORRETTA: citazione verificata; ruolo; tolta la nota sulla legge di bilancio 2027; formulazione dubitativa («Pensiamo ad») | PERIMETRO: orizzonte/veicolo (vedi colonne) (orizzonte non_specificato)"
     }
   },
   {
@@ -946,7 +946,7 @@
     "note": "Entità dell'agevolazione non indicata. Proposta riferita alla legge di bilancio 2027 (XIX legislatura, ultimo bilancio prima delle politiche); se recepita in un atto del governo diventa attuazione, da tracciare separatamente. (controllo di simmetria 2026-10-21) COFOG 04 mantenuto: la fonte non dice se l'agevolazione è fiscale o contributiva.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V2✓ verificatore 2026-10-20 — CONFERMATA: citazione verificata parola per parola su Milano Finanza (curl, testo completo) | PERIMETRO: orizzonte/veicolo (vedi colonne) [orizzonte: legge di bilancio 2027] | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo"
+      "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-20 — CONFERMATA: citazione verificata parola per parola su Milano Finanza (curl, testo completo) | PERIMETRO: orizzonte/veicolo (vedi colonne) [orizzonte: legge di bilancio 2027]"
     }
   },
   {
@@ -996,7 +996,7 @@
     "note": "La frase si riferisce alla patrimoniale attribuita alla sinistra nella frase precedente dell'intervista. Contrarietà ribadita alla convention di Milano (Lacapitalenews, 12/10/2026). (verificatore) Contesto verificato sul testo integrale (esteri.it, scaricato con curl: HTTP 200, testo completo, nessun blocco): Tajani dice «Stiamo lavorando per mettere sul tavolo della coalizione una serie di proposte che in parte possono essere realizzate subito, in parte sono da mettere in agenda per la prossima legislatura» e, sulla scelta tra manovra e programma elettorale, «Ne parleremo con gli alleati e decideremo anche in base ai conti pubblici». L'orizzonte quindi non è la sola legge di bilancio 2027. La pagina è una ripubblicazione del Ministero degli Esteri (canale istituzionale del ministro, non di partito) con autore Fabio Rubini e testata Libero. (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su camera.it (scheda deputato XIX legislatura) e dati.camera.it il 2026-10-21.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V2✓ verificatore 2026-10-20 — CORRETTA: citazione verificata (il punto finale nella fonte è fuori dalle virgolette); ruolo | PERIMETRO: orizzonte/veicolo (vedi colonne) (orizzonte non_specificato; status quo) | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo"
+      "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-20 — CORRETTA: citazione verificata (il punto finale nella fonte è fuori dalle virgolette); ruolo | PERIMETRO: orizzonte/veicolo (vedi colonne) (orizzonte non_specificato; status quo)"
     }
   },
   {
@@ -1021,7 +1021,7 @@
     "note": "Risposta a una domanda sulla tassazione degli extraprofitti bancari proposta dalla Lega (vedi C27-LEGA-003): posizioni divergenti nella coalizione. (verificatore) Contesto verificato sul testo integrale (esteri.it, curl HTTP 200; autore Mario Ajello, testata Il Messaggero, 10/10/2026): risposta alla domanda «Insomma che manovra sarà?». (controllo di simmetria 2026-10-21) Orizzonte/veicolo: legislatura_in_corso: risposta alla domanda «Insomma che manovra sarà?». (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su camera.it (scheda deputato XIX legislatura) e dati.camera.it il 2026-10-21.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V2✓ verificatore 2026-10-20 — CORRETTA: citazione verificata; la parafrasi aggiungeva «contributo del settore solo tramite accordo», non detto nella fonte | PERIMETRO: orizzonte/veicolo (vedi colonne) [orizzonte: legge di bilancio 2027] | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo"
+      "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-20 — CORRETTA: citazione verificata; la parafrasi aggiungeva «contributo del settore solo tramite accordo», non detto nella fonte | PERIMETRO: orizzonte/veicolo (vedi colonne) [orizzonte: legge di bilancio 2027]"
     }
   },
   {
@@ -1032,7 +1032,7 @@
     "data": "2026-10-16",
     "testoLetterale": "Si può cercare di estendere anche l’esenzione bollo dell’auto a tutte le prime auto. Bisogna aspettare la decisione della Commissione europea per fare questo.",
     "parafrasiNeutra": "Estensione dell'esenzione dal bollo auto a tutte le prime auto, indipendentemente dalla potenza, subordinata a una decisione della Commissione europea.",
-    "tipoFonte": "intervista",
+    "tipoFonte": "discorso",
     "orizzonte": "non_specificato",
     "veicolo": "dichiarazione",
     "fonte": {
@@ -1043,10 +1043,10 @@
     "misurabile": "si",
     "costoDichiarato": null,
     "stimaTerzi": null,
-    "note": "Intervista a Mattino 5 riportata in forma indiretta da QuiFinanza; testo letterale e perimetro (bollo o altre imposte) non chiariti. (verificatore) Testo letterale trovato su HDmotori (16/10/2026, Andrea Tomelleri): Tajani «parlando alla Camera dei Deputati». La misura riguarda il bollo (chiarito il perimetro) ed è collegata dalla fonte agli emendamenti di maggioranza al DL del Governo che esenta per il 2027 i veicoli fino a 80 kW: vedi C27-FI-005. La stessa fonte riporta un emendamento FdI (primo firmatario Marco Osnato) per un contributo pari al bollo, fino a 490,20 euro, per le famiglie con più di tre figli (veicoli da 6 a 9 posti fino a 160 kW): non registrato, perché è un emendamento a un atto del Governo (registro legislatura corrente). Fonte precedente: https://quifinanza.it/politica/manovra-2027-tajani-tasse-giovani-ceto-medio-pensionati/1020073/. (controllo di simmetria 2026-10-21) Orizzonte/veicolo: non_specificato e dichiarazione: la stessa fonte (HDmotori) scrive che la proposta di Tajani «resta un indirizzo politico legato alle decisioni di Bruxelles», distinta dagli emendamenti di maggioranza al DL sul bollo; la verifica L2 la legava a quegli emendamenti. (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su camera.it (scheda deputato XIX legislatura) e dati.camera.it il 2026-10-21.",
+    "note": "Intervista a Mattino 5 riportata in forma indiretta da QuiFinanza; testo letterale e perimetro (bollo o altre imposte) non chiariti. (verificatore) Testo letterale trovato su HDmotori (16/10/2026, Andrea Tomelleri): Tajani «parlando alla Camera dei Deputati». La misura riguarda il bollo (chiarito il perimetro) ed è collegata dalla fonte agli emendamenti di maggioranza al DL del Governo che esenta per il 2027 i veicoli fino a 80 kW: vedi C27-FI-005. La stessa fonte riporta un emendamento FdI (primo firmatario Marco Osnato) per un contributo pari al bollo, fino a 490,20 euro, per le famiglie con più di tre figli (veicoli da 6 a 9 posti fino a 160 kW): non registrato, perché è un emendamento a un atto del Governo (registro legislatura corrente). Fonte precedente: https://quifinanza.it/politica/manovra-2027-tajani-tasse-giovani-ceto-medio-pensionati/1020073/. (controllo di simmetria 2026-10-21) Orizzonte/veicolo: non_specificato e dichiarazione: la stessa fonte (HDmotori) scrive che la proposta di Tajani «resta un indirizzo politico legato alle decisioni di Bruxelles», distinta dagli emendamenti di maggioranza al DL sul bollo; la verifica L2 la legava a quegli emendamenti. (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su camera.it (scheda deputato XIX legislatura) e dati.camera.it il 2026-10-21. (revisione D-019, 2026-10-21) tipo_fonte da intervista a discorso: HDmotori riporta una dichiarazione fatta alla Camera («parlando alla Camera dei Deputati»), non un'intervista; resta V2.",
     "verifica": {
-      "livello": "V1",
-      "dettaglio": "V2✓ verificatore 2026-10-20 — CORRETTA: trovato il testo letterale (HDmotori, 16/10/2026) al posto della sola riformulazione di QuiFinanza; parafrasi, perimetro (bollo) e misurabile aggiornati; ruolo. terzo controllo 2026-10-21: testo e data (16/10/2026, Andrea Tomelleri) confermati su HDmotori; la fonte la descrive come «indirizzo politico legato alle decisioni di Bruxelles», distinto dagli emendamenti (vedi colonne orizzonte e veicolo) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo L2 «emendamenti al DL del Governo sul bollo» non confermato al terzo controllo] | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo"
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-20 — CORRETTA: trovato il testo letterale (HDmotori, 16/10/2026) al posto della sola riformulazione di QuiFinanza; parafrasi, perimetro (bollo) e misurabile aggiornati; ruolo. terzo controllo 2026-10-21: testo e data (16/10/2026, Andrea Tomelleri) confermati su HDmotori; la fonte la descrive come «indirizzo politico legato alle decisioni di Bruxelles», distinto dagli emendamenti (vedi colonne orizzonte e veicolo) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo L2 «emendamenti al DL del Governo sul bollo» non confermato al terzo controllo]"
     }
   },
   {
@@ -1396,7 +1396,7 @@
     "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «agevolazioni per chi investe nelle start up» del pacchetto di C27-FI-007; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Segmento «e per chi ci investe» della stessa frase di C27-FI-007 (start up), che copre solo le imprese. Pre-valutazione slogan (criterio uniforme 2026-10-21): caso limite, da decidere in verifica. (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); caso limite: supera il criterio perché l'agevolazione è legata a un atto definito (investire in start up), con la stessa struttura di C27-FI-008 (agevolazioni per chi assume under 35). Formulazione dubitativa («Pensiamo ad»), come C27-FI-007.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V2✓ verificatore 2026-10-21 — CORRETTA: misurabile no → parziale (come C27-FI-008); caso limite deciso: supera il criterio. Parte secondaria: testo da esteri.it, ripubblicazione ministeriale dell'intervista a Libero, non canale di partito | PERIMETRO: orizzonte/veicolo (vedi colonne) | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo"
+      "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-21 — CORRETTA: misurabile no → parziale (come C27-FI-008); caso limite deciso: supera il criterio. Parte secondaria: testo da esteri.it, ripubblicazione ministeriale dell'intervista a Libero, non canale di partito | PERIMETRO: orizzonte/veicolo (vedi colonne)"
     }
   },
   {
@@ -1546,7 +1546,7 @@
     "note": "Intervista a Il Messaggero del 07/08/2026, risposta testuale tra virgolette. Risposta alla domanda «Che altro?» sulle priorità di governo; COFOG 04 per il salario minimo (componente sanità coperta da C27-PD-001/008). Intervista ripubblicata su partitodemocratico.it (non consultabile). (verificatore L2) Al limite della definizione: la componente «sanità pubblica» non è un impegno specifico; misurabile solo la parte salario minimo. (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su camera.it (scheda deputato XIX legislatura) e dati.camera.it il 2026-10-21.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V2✓ verificatore 2026-10-20 — CORRETTA: la parafrasi aggiungeva «di governo», «rafforzamento», «introduzione» (Il Messaggero 07/08/2026 (datePublished 2026-08-07T00:05+02:00), risposta testuale nell'intervista) | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo"
+      "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-20 — CORRETTA: la parafrasi aggiungeva «di governo», «rafforzamento», «introduzione» (Il Messaggero 07/08/2026 (datePublished 2026-08-07T00:05+02:00), risposta testuale nell'intervista)"
     }
   },
   {
@@ -1571,7 +1571,7 @@
     "note": "Intervista a Il Messaggero del 07/08/2026, risposta testuale tra virgolette. Si veda anche C27-CSX-004. (verificatore L2) È il richiamo a una proposta esistente («non partiamo da zero: abbiamo fatto tante proposte comuni»), non un impegno formulato al futuro. (controllo di simmetria 2026-10-21) Orizzonte/veicolo: legislatura_in_corso e altro: richiamo a «proposte comuni» già fatte dalle opposizioni, tipo di atto non indicato. (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su camera.it (scheda deputato XIX legislatura) e dati.camera.it il 2026-10-21.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V2✓ verificatore 2026-10-20 — CORRETTA: parafrasi resa descrittiva (richiamo a proposta esistente) (Il Messaggero 07/08/2026 (datePublished 2026-08-07T00:05+02:00), risposta testuale nell'intervista) | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo"
+      "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-20 — CORRETTA: parafrasi resa descrittiva (richiamo a proposta esistente) (Il Messaggero 07/08/2026 (datePublished 2026-08-07T00:05+02:00), risposta testuale nell'intervista)"
     }
   },
   {
@@ -1596,7 +1596,7 @@
     "note": "Intervista a Il Messaggero del 07/08/2026, risposta testuale tra virgolette. Risposta alla domanda «Sul fronte della Sicurezza cosa farebbe da premier?». (controllo di simmetria 2026-10-21) Orizzonte/veicolo: prossima_legislatura: risposta alla domanda «Sul fronte della Sicurezza cosa farebbe da premier?». (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su camera.it (scheda deputato XIX legislatura) e dati.camera.it il 2026-10-21.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V2✓ verificatore 2026-10-20 — CONFERMATA (Il Messaggero 07/08/2026 (datePublished 2026-08-07T00:05+02:00), risposta testuale nell'intervista; cifre 800 mln e 22.000 sono dichiarazioni della proponente) | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo"
+      "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-20 — CONFERMATA (Il Messaggero 07/08/2026 (datePublished 2026-08-07T00:05+02:00), risposta testuale nell'intervista; cifre 800 mln e 22.000 sono dichiarazioni della proponente)"
     }
   },
   {
@@ -1646,7 +1646,7 @@
     "note": "Intervista a Il Messaggero del 07/08/2026, risposta testuale tra virgolette. (controllo di simmetria 2026-10-21) Riga derivata da C27-PD-016 per granularità: segmento della stessa citazione. (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su camera.it (scheda deputato XIX legislatura) e dati.camera.it il 2026-10-21.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V2✓ verificatore 2026-10-21 — CORRETTA: parafrasi: «ogni nuovo impianto» non è nella fonte («Se fai un impianto»); aggiunto il contesto rinnovabili come nella riga madre (riga derivata); frase ritrovata parola per parola su ilmessaggero.it | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo"
+      "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-21 — CORRETTA: parafrasi: «ogni nuovo impianto» non è nella fonte («Se fai un impianto»); aggiunto il contesto rinnovabili come nella riga madre (riga derivata); frase ritrovata parola per parola su ilmessaggero.it"
     }
   },
   {
@@ -1671,7 +1671,7 @@
     "note": "Intervista a Il Messaggero del 07/08/2026, risposta testuale tra virgolette. Posizione espressa, senza un obiettivo di spesa alternativo. (controllo di simmetria 2026-10-21) Riga derivata da C27-PD-017 per granularità: segmento della stessa citazione. (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su camera.it (scheda deputato XIX legislatura) e dati.camera.it il 2026-10-21.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V2✓ verificatore 2026-10-21 — CONFERMATA (riga derivata); frase ritrovata parola per parola su ilmessaggero.it; posizione distinta dalla difesa europea di C27-PD-017 | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo"
+      "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-21 — CONFERMATA (riga derivata); frase ritrovata parola per parola su ilmessaggero.it; posizione distinta dalla difesa europea di C27-PD-017"
     }
   },
   {
@@ -4671,7 +4671,7 @@
     "note": "Intervista Il Messaggero 02/10/2026 (E. Menicucci), letta sulla ripubblicazione ufficiale su matteorenzi.it; citazione riportata da Il Foglio 02/10/2026. Categorie su più divisioni COFOG (09, 07, 03). Secondo orizzontescuola.it (27/09/2026, da Repubblica) il libro di Renzi indica per il 'decreto Ceto Medio' risorse pari al 2% del Pil e un aumento di oltre 100 euro: cifre di pacchetto, V2, non attribuibili alla sola quattordicesima. Decorrenza dal 2028 secondo fonti di stampa (V2).",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V2✓ verificatore 2026-10-20 — CORRETTA: costo_dichiarato_proponente svuotato: le cifre non sono nella fonte citata (intervista Il Messaggero). Il '2% del Pil' riguarda l'intero 'decreto Ceto Medio' del libro 'Quando c'era lei' (orizzontescuola.it 27/09/2026, che cita Repubblica), non la sola quattordicesima. Citazione riscontrata anche su Il Foglio 02/10/2026 | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo"
+      "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-20 — CORRETTA: costo_dichiarato_proponente svuotato: le cifre non sono nella fonte citata (intervista Il Messaggero). Il '2% del Pil' riguarda l'intero 'decreto Ceto Medio' del libro 'Quando c'era lei' (orizzontescuola.it 27/09/2026, che cita Repubblica), non la sola quattordicesima. Citazione riscontrata anche su Il Foglio 02/10/2026"
     }
   },
   {
@@ -6521,7 +6521,7 @@
     "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «superamento della Bossi-Fini» del pacchetto di C27-PE-013; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Elenco «da riformatori…» dell'intervista all'Unità; voci già registrate: C27-PE-013, C27-PE-014; cannabis in C27-PE-002 e federalismo europeo in C27-PE-004/005 (altre fonti). Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); supera il criterio: superamento di una legge nominata (Bossi-Fini). Livello: la riga sorella C27-PE-013 era V1 («testo integrale leggibile su unita.it»), mentre C27-PD-014 e C27-FI-008 (interviste in testata) sono V2; qui applico la regola V2 per i testi di testata, segnalando l'incoerenza al titolare.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V2✓ verificatore 2026-10-21 — CONFERMATA. Parte secondaria: intervista pubblicata da una testata (unita.it), non dal canale del partito | PERIMETRO: orizzonte/veicolo (vedi colonne) | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo"
+      "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-21 — CONFERMATA. Parte secondaria: intervista pubblicata da una testata (unita.it), non dal canale del partito | PERIMETRO: orizzonte/veicolo (vedi colonne)"
     }
   },
   {
@@ -6546,7 +6546,7 @@
     "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «salario minimo» del pacchetto di C27-PE-013; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Elenco «da riformatori…» dell'intervista all'Unità. Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); supera il criterio: istituto nominato (salario minimo), come C27-PD-013. Livello V2: vedi nota di C27-PE-022.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V2✓ verificatore 2026-10-21 — CONFERMATA. Parte secondaria: intervista pubblicata da una testata (unita.it), non dal canale del partito | PERIMETRO: orizzonte/veicolo (vedi colonne) | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo"
+      "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-21 — CONFERMATA. Parte secondaria: intervista pubblicata da una testata (unita.it), non dal canale del partito | PERIMETRO: orizzonte/veicolo (vedi colonne)"
     }
   },
   {
@@ -6571,7 +6571,7 @@
     "note": "Riga aggiunta per uniformità di granularità (2026-10-21): voce «sgravi sugli aumenti da rinnovo contrattuale» del pacchetto di C27-PE-013; partito, dichiarante, data, fonte, orizzonte e veicolo copiati dalla riga sorella. Elenco «da riformatori…» dell'intervista all'Unità; «per agli» è nella fonte. Pre-valutazione slogan (criterio uniforme 2026-10-21): supera (strumento o parametro nominato). (verifica L2 2026-10-21) citazione ritrovata parola per parola nella fonte (curl GET, HTTP 200, confronto automatico a meno di spazi e apostrofi tipografici); supera il criterio: sgravio fiscale su una base definita (aumenti salariali da rinnovo contrattuale); stessa regola di C27-FI-015. Livello V2: vedi nota di C27-PE-022.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V2✓ verificatore 2026-10-21 — CONFERMATA. Parte secondaria: intervista pubblicata da una testata (unita.it), non dal canale del partito | PERIMETRO: orizzonte/veicolo (vedi colonne) | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo"
+      "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-21 — CONFERMATA. Parte secondaria: intervista pubblicata da una testata (unita.it), non dal canale del partito | PERIMETRO: orizzonte/veicolo (vedi colonne)"
     }
   },
   {
@@ -7796,7 +7796,7 @@
     "note": "Intervista ripubblicata sul sito ufficiale. Impegno formulato in forma implicita (costo di un piano, senza un 'faremo' esplicito). (verificatore L2 2026-10-21) Coalizione: campo largo; coalizione non ancora formalizzata. (verificatore L2 2026-10-21) Testata originale identificata: Il Foglio, 07/09/2026, Ruggiero Montenegro (https://www.ilfoglio.it/politica/2026/09/07/news/laltro-centro-di-onorato-renzi-impossibile-un-accordo-siamo-noi-la-vera-novita-aiuteremo-il-campo-largo--406727); passaggio ritrovato anche lì. (verificatore L2 2026-10-21) Nell'intervista la misura è presentata come una delle «128 proposte di legge» elaborate da PCI e da portare al tavolo del programma del campo largo: è una proposta del partito, non solo un'indicazione di costo.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V2✓ verificatore 2026-10-21 — CORRETTA: testata originale identificata (Il Foglio 07/09/2026); natura della proposta precisata in nota | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo"
+      "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-21 — CORRETTA: testata originale identificata (Il Foglio 07/09/2026); natura della proposta precisata in nota"
     }
   },
   {
@@ -7821,7 +7821,7 @@
     "note": "Intervista ripubblicata sul sito ufficiale. (verificatore L2 2026-10-21) Coalizione: campo largo; coalizione non ancora formalizzata. (verificatore L2 2026-10-21) Testata originale identificata: Il Foglio, 07/09/2026, Ruggiero Montenegro (https://www.ilfoglio.it/politica/2026/09/07/news/laltro-centro-di-onorato-renzi-impossibile-un-accordo-siamo-noi-la-vera-novita-aiuteremo-il-campo-largo--406727); passaggio ritrovato anche lì. (verificatore L2 2026-10-21) Formulazione al condizionale («Servirebbero»).",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V2✓ verificatore 2026-10-21 — CORRETTA: testata originale identificata (Il Foglio 07/09/2026), citazione ritrovata | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo"
+      "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-21 — CORRETTA: testata originale identificata (Il Foglio 07/09/2026), citazione ritrovata"
     }
   },
   {

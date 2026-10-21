@@ -36,8 +36,10 @@ export default function GovernmentsPage() {
             oggi, quindi questa cifra non serve a confrontare governi lontani nel tempo.
           </li>
           <li>
-            Per confrontare usa la riga sotto, il debito in rapporto al PIL: alla fine dell&apos;anno prima del giuramento e
-            all&apos;ultimo dicembre del mandato. I governi che non arrivano a un dicembre non ce l&apos;hanno.
+            Per confrontare usa la riga sotto, il debito in rapporto al PIL: a fine dicembre dell&apos;anno prima del
+            giuramento e all&apos;ultima fine di dicembre che cade dentro il mandato. I governi che non arrivano a una fine
+            di dicembre non ce l&apos;hanno. Dal 1995 il rapporto è il dato Eurostat; prima è un nostro calcolo (debito
+            Banca d&apos;Italia diviso per il PIL).
           </li>
           <li>
             Il debito dipende anche dall&apos;economia, dai tassi e dalle decisioni dei governi precedenti: questi numeri non

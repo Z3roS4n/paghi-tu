@@ -53,7 +53,10 @@ const INTERVIEW_V2_OTHER_REASON = new Set(["C27-NM-012", "C27-FI-009"]);
 
 function interviewAsPrimary(id: string, tipoFonte: string, v: Verification): Verification {
   if (tipoFonte !== "intervista" || v.livello !== "V2" || INTERVIEW_V2_OTHER_REASON.has(id)) return v;
-  return { livello: "V1", dettaglio: `${v.dettaglio} | V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo` };
+  return {
+    livello: "V1",
+    dettaglio: `V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: ${v.dettaglio}`,
+  };
 }
 
 const LEVEL_ORDER: VerificationLevel[] = ["NV", "V2", "V1"];

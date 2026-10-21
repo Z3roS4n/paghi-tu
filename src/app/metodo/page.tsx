@@ -33,8 +33,10 @@ export default function MethodPage() {
       </p>
       <p>
         Per le promesse, un&apos;intervista pubblicata da un giornale conta come fonte primaria: le parole sono del
-        dichiarante e le controlliamo sul testo dell&apos;intervista. Restano V2 i discorsi riportati da un articolo e le
-        righe in cui un&apos;altra parte del dato, per esempio il ruolo nel partito, viene da una fonte secondaria.
+        dichiarante e le controlliamo sul testo dell&apos;intervista, sul giornale o sulla ripubblicazione integrale in un
+        canale del dichiarante (sito del partito, del ministero o personale). Restano V2 i discorsi e le dichiarazioni
+        riportati da un articolo, le righe il cui testo abbiamo potuto leggere solo in una copia d&apos;archivio, e quelle in
+        cui un&apos;altra parte del dato, per esempio il ruolo nel partito, viene da una fonte secondaria.
       </p>
 
       <h2>Come lavoriamo</h2>
