@@ -122,21 +122,19 @@ section{padding:44px 0}
 .tessera.debito .l,.tessera.debito .n{color:color-mix(in srgb, var(--scuro-ink) 70%, var(--scuro))}
 .tessera.debito .v{font-size:clamp(2rem,9vw,2.8rem)}
 
-/* racconto dei 100 euro */
-.racconto{display:grid;gap:0;margin-top:22px}
-.visuale{position:sticky;top:calc(var(--testata) + 8px);z-index:2;background:var(--fondo);padding:8px 0 12px}
-.visuale-dentro{position:relative;max-width:420px;margin:0 auto}
-.quadretti{display:grid;grid-template-columns:repeat(10,1fr);gap:3px;width:min(100%,300px);margin:0 auto;transition:opacity .45s, transform .45s}
-.quadretti span{aspect-ratio:1;border-radius:2px;background:var(--sup-2);transition:background .35s ease, transform .35s cubic-bezier(.2,.8,.2,1)}
+/* racconto dei 100 euro: senza JS è una lista; con JS un pannello fisso alto quanto lo schermo, testo e quadretti
+   insieme, e lo scroll sui binari sottostanti sceglie il passo */
+.racconto{margin-top:22px;position:relative}
+.schermo{display:grid;gap:18px}
+.visuale{position:relative;display:grid;place-items:center}
+.quadretti{display:grid;grid-template-columns:repeat(10,1fr);gap:4px;width:min(100%,380px);transition:opacity .45s, transform .45s}
+.quadretti span{aspect-ratio:1;border-radius:3px;background:var(--sup-2);transition:background .35s ease, transform .35s cubic-bezier(.2,.8,.2,1)}
 .quadretti span.tutti{background:var(--neutro)}
 .quadretti span.acceso{background:var(--acc);transform:scale(.9)}
-.contatore{display:flex;align-items:baseline;justify-content:center;gap:8px;margin-top:10px;min-height:44px}
-.contatore b{font-family:var(--titoli);font-size:40px;line-height:1;color:var(--acc);letter-spacing:-.03em}
-.contatore span{font-size:15px;color:var(--ink-2);font-weight:600}
-.cassa{position:absolute;inset:0;display:flex;justify-content:center;align-items:flex-start;opacity:0;transform:translateY(24px);pointer-events:none;transition:opacity .5s, transform .6s cubic-bezier(.2,.8,.2,1)}
+.cassa{position:absolute;inset:0;display:flex;justify-content:center;align-items:center;opacity:0;transform:translateY(24px);pointer-events:none;transition:opacity .5s, transform .6s cubic-bezier(.2,.8,.2,1)}
 .racconto.conto .cassa{opacity:1;transform:none}
-.racconto.conto .quadretti,.racconto.conto .contatore{opacity:0;transform:scale(.96)}
-.scontrino{width:min(100%,330px);background:#FFFEFA;color:#22201C;font:400 14px/1.45 var(--cassa);padding:16px 14px 26px;box-shadow:0 18px 30px -18px rgb(0 0 0 / .45);
+.racconto.conto .quadretti{opacity:0;transform:scale(.94)}
+.scontrino{width:min(100%,340px);background:#FFFEFA;color:#22201C;font:400 14.5px/1.45 var(--cassa);padding:16px 14px 26px;box-shadow:0 18px 30px -18px rgb(0 0 0 / .45);
   -webkit-mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/12px 100%;mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/12px 100%}
 .scontrino .intest{text-align:center;border-bottom:1.5px dashed #A9A49A;padding-bottom:8px;margin-bottom:8px}
 .scontrino .intest b{display:block;font-size:17px;letter-spacing:.12em}
@@ -145,15 +143,33 @@ section{padding:44px 0}
 .riga .n::after{content:" ..................................................";position:absolute;white-space:nowrap;color:#A9A49A;padding-left:4px}
 .riga .p{font-weight:700;white-space:nowrap}
 .scontrino hr{border:0;border-top:1.5px dashed #A9A49A;margin:6px 0}
-.riga.tot{font-size:16px;font-weight:700}
-.passi{position:relative;z-index:1}
-.passo{min-height:62vh;padding:8px 0 0}
-.passo:last-child{min-height:48vh}
-.passo .carta{width:100%;max-width:30em;margin:0 auto;box-shadow:var(--ombra);transition:opacity .4s, transform .4s}
-.passo:not(.attivo) .carta{opacity:.45}
-.passo h3{font-size:22px;margin-bottom:6px}
-.passo p{color:var(--ink-2)}
+.riga.tot{font-size:16.5px;font-weight:700}
+.testi{display:grid;gap:22px}
+.passo{max-width:30em}
+.passo .quanto{font-family:var(--titoli);font-weight:800;font-size:clamp(2.6rem,12vw,3.6rem);line-height:1;letter-spacing:-.04em;color:var(--acc)}
+.passo .quanto small{font-size:.42em;letter-spacing:0;color:var(--ink-2);font-weight:700;margin-left:.2em}
+.passo h3{font-size:clamp(1.45rem,6vw,1.9rem);margin:6px 0 6px}
+.passo p{color:var(--ink-2);font-size:18px;line-height:1.5}
 .passo p b{color:var(--ink)}
+.avanzamento{display:none}
+.binari{display:none}
+
+.js .schermo{position:sticky;top:var(--testata);height:calc(100dvh - var(--testata) - var(--dock) - env(safe-area-inset-bottom));
+  grid-template-rows:minmax(0,1fr) auto auto;gap:14px;padding:12px 0 10px}
+.js .visuale{min-height:0}
+.js .quadretti{width:min(100%,calc(100dvh - var(--testata) - var(--dock) - 300px))}
+.js .scontrino{max-height:100%;overflow:hidden}
+.js .testi{gap:0}
+.js .passo{grid-area:1/1;opacity:0;transform:translateY(14px);transition:opacity .35s ease, transform .45s cubic-bezier(.2,.8,.2,1);pointer-events:none}
+.js .passo.attivo{opacity:1;transform:none;pointer-events:auto}
+.js .avanzamento{display:flex;gap:4px}
+.avanzamento button{appearance:none;flex:1;border:0;background:none;padding:10px 0;cursor:pointer}
+.avanzamento button::before{content:"";display:block;height:4px;border-radius:2px;background:var(--sup-2);transition:background .3s}
+.avanzamento button[aria-current="step"]::before,.avanzamento button.fatto::before{background:var(--acc)}
+.js .binari{display:block;margin-top:calc(-1 * (100dvh - var(--testata) - var(--dock)))}
+.binario{height:62vh}
+.binario:last-child{height:calc(100dvh - var(--testata) - var(--dock))}
+@media (prefers-reduced-motion: reduce){ .js .passo{transition:none} }
 
 /* grafici */
 .grafico-carta{margin-top:22px;background:var(--sup);border-radius:var(--r);padding:16px 14px 14px;view-timeline:--grafico block}
@@ -356,8 +372,7 @@ body.foglio-aperto{overflow:hidden}
 @keyframes compare{from{opacity:0}to{opacity:1}}
 @keyframes scopri{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
 @media (prefers-reduced-motion: reduce){ .foglio,.velo,.quadretti span,.cassa,.quadretti{transition:none} }
-.statico .passo{min-height:0;padding:10px 0}
-.statico .visuale{position:static;height:auto}
+
 
 @media (min-width:720px){
   :root{--gutter:28px}
@@ -390,11 +405,13 @@ body.foglio-aperto{overflow:hidden}
   .novita-griglia{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:start}
   .mesi{margin-top:0;border-top:0;padding-top:0}
   section{padding:60px 0}
-  .racconto{grid-template-columns:1fr 1fr;gap:48px}
-  .visuale{top:calc(var(--testata) + 40px);height:min(520px,calc(100vh - 140px));padding-top:20px;align-self:start}
-  .quadretti{width:min(100%,400px);gap:4px}
-  .passo{min-height:78vh;display:flex;align-items:center}
-  .passo .carta{margin:0}
+  .js .schermo{height:calc(100dvh - var(--testata));grid-template-columns:1fr 1fr;grid-template-rows:1fr auto;column-gap:56px;padding:28px 0 20px}
+  .js .visuale{grid-row:1/3}
+  .js .quadretti{width:min(100%,calc(100dvh - 160px),460px)}
+  .js .testi{align-self:center}
+  .js .binari{margin-top:calc(-1 * (100dvh - var(--testata)))}
+  .binario:last-child{height:calc(100dvh - var(--testata))}
+  .passo p{font-size:19px}
   .due{grid-template-columns:1.2fr 1fr;gap:28px}
   .gov-griglia{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:24px;align-items:start}
   .governo .dati-gov{grid-template-columns:1fr}
@@ -471,12 +488,11 @@ body.foglio-aperto{overflow:hidden}
   <section id="cento" aria-labelledby="t-cento">
     <div class="wrap">
       <h2 class="sez-h2 entra" id="t-cento">Dove vanno 100 € di spesa pubblica</h2>
-      <p class="testo entra">Dati 2024, l'ultimo anno con il dettaglio per voce: Eurostat pubblica il 2025 a febbraio. Scorri: ogni quadretto è un euro.</p>
+      <p class="testo entra">Dati 2024, l'ultimo anno con il dettaglio per voce: Eurostat pubblica il 2025 a febbraio. Ogni quadretto è un euro, scorri per vedere dove va.</p>
       <div class="racconto" id="racconto">
-        <div class="visuale" aria-hidden="true">
-          <div class="visuale-dentro">
+        <div class="schermo">
+          <div class="visuale" aria-hidden="true">
             <div class="quadretti" id="quadretti"></div>
-            <div class="contatore"><b id="cont-n">100</b><span id="cont-t">euro su 100</span></div>
             <div class="cassa">
               <div class="scontrino">
                 <div class="intest"><b>PAGHI TU</b>spesa pubblica 2024, per residente</div>
@@ -494,18 +510,20 @@ body.foglio-aperto{overflow:hidden}
               </div>
             </div>
           </div>
+          <div class="testi" id="testi" aria-live="polite">
+            <article class="passo" data-da="0" data-n="100" data-tutti="1"><p class="quanto num">100 €<small>spesi</small></p><h3>Tutta la spesa pubblica</h3><p>Stato, regioni, comuni ed enti di previdenza insieme. Vediamo dove finisce ogni euro.</p></article>
+            <article class="passo" data-da="0" data-n="32"><p class="quanto num">32 €<small>ogni 100</small></p><h3>Vecchiaia e superstiti</h3><p>Soprattutto pensioni. È la voce più grande: <b>un euro su tre</b>.</p></article>
+            <article class="passo" data-da="32" data-n="13"><p class="quanto num">13 €<small>ogni 100</small></p><h3>Sanità</h3><p>Ospedali, medici di base, farmaci.</p></article>
+            <article class="passo" data-da="45" data-n="10"><p class="quanto num">10 €<small>ogni 100</small></p><h3>Affari economici</h3><p>Trasporti, energia, agricoltura, industria.</p></article>
+            <article class="passo" data-da="55" data-n="10"><p class="quanto num">10 €<small>ogni 100</small></p><h3>Altra protezione sociale</h3><p>Famiglie, disoccupazione, malattia e disabilità, casa.</p></article>
+            <article class="passo" data-da="65" data-n="8"><p class="quanto num">8 €<small>ogni 100</small></p><h3>Istruzione</h3><p>Dalla scuola dell'infanzia all'università.</p></article>
+            <article class="passo" data-da="73" data-n="8"><p class="quanto num">8 €<small>ogni 100</small></p><h3>Interessi sul debito</h3><p>Quasi quanto l'istruzione. Nel 1995 gli interessi si prendevano <b>21,5 €</b> ogni 100 spesi.</p></article>
+            <article class="passo" data-da="81" data-n="18"><p class="quanto num">18 €<small>ogni 100</small></p><h3>Tutto il resto</h3><p>Servizi generali, difesa, ordine pubblico, ambiente, casa, cultura. Le quote sono arrotondate, la somma fa 99.</p></article>
+            <article class="passo" data-conto="1"><p class="quanto num">18.813 €<small>a testa</small></p><h3>Il conto del 2024</h3><p>È la spesa per ogni residente. Di questi, 1.269 € sono stati spesi oltre le entrate.</p></article>
+          </div>
+          <div class="avanzamento" id="avanzamento" aria-label="Passi del racconto"></div>
         </div>
-        <div class="passi">
-          <div class="passo" data-da="0" data-n="100" data-tutti="1"><div class="carta"><h3>100 € spesi</h3><p>Stato, regioni, comuni ed enti di previdenza insieme. Vediamo dove finisce ogni euro.</p></div></div>
-          <div class="passo" data-da="0" data-n="32"><div class="carta"><h3>32 € a vecchiaia e superstiti</h3><p>Soprattutto pensioni. È la voce più grande: <b>un euro su tre</b>.</p></div></div>
-          <div class="passo" data-da="32" data-n="13"><div class="carta"><h3>13 € alla sanità</h3><p>Ospedali, medici di base, farmaci.</p></div></div>
-          <div class="passo" data-da="45" data-n="10"><div class="carta"><h3>10 € agli affari economici</h3><p>Trasporti, energia, agricoltura, industria.</p></div></div>
-          <div class="passo" data-da="55" data-n="10"><div class="carta"><h3>10 € all'altra protezione sociale</h3><p>Famiglie, disoccupazione, malattia e disabilità, casa.</p></div></div>
-          <div class="passo" data-da="65" data-n="8"><div class="carta"><h3>8 € all'istruzione</h3><p>Dalla scuola dell'infanzia all'università.</p></div></div>
-          <div class="passo" data-da="73" data-n="8"><div class="carta"><h3>8 € di interessi sul debito</h3><p>Quasi quanto l'istruzione. Nel 1995 gli interessi si prendevano <b>21,5 €</b> ogni 100 spesi.</p></div></div>
-          <div class="passo" data-da="81" data-n="18"><div class="carta"><h3>Restano 18 €</h3><p>Servizi generali, difesa, ordine pubblico, ambiente, casa, cultura. Le quote sono arrotondate, la somma fa 99.</p></div></div>
-          <div class="passo" data-conto="1"><div class="carta"><h3>Il conto per ogni residente</h3><p>Nel 2024 fa <b>18.813 €</b>. Di questi, 1.269 € sono stati spesi oltre le entrate.</p></div></div>
-        </div>
+        <div class="binari" id="binari" aria-hidden="true"></div>
       </div>
       <p class="fonte">Eurostat, spesa delle amministrazioni pubbliche per funzione (COFOG), 2024. Popolazione media 59,0 milioni.</p>
     </div>
@@ -781,25 +799,38 @@ body.foglio-aperto{overflow:hidden}
   /* racconto dei 100 euro */
   var griglia = document.getElementById('quadretti'), celle = [];
   for (var k = 0; k < 100; k++) { var c = document.createElement('span'); griglia.appendChild(c); celle.push(c); }
-  var racconto = document.getElementById('racconto'), contN = document.getElementById('cont-n'), contT = document.getElementById('cont-t');
-  function passo(p){
-    document.querySelectorAll('.passo').forEach(function(x){ x.classList.toggle('attivo', x === p); });
-    if (p.dataset.conto) { racconto.classList.add('conto'); return; }
-    racconto.classList.remove('conto');
+  var racconto = document.getElementById('racconto'), passiEl = [].slice.call(document.querySelectorAll('.passo'));
+  var binari = document.getElementById('binari'), avanz = document.getElementById('avanzamento'), attuale = -1;
+  function passo(i){
+    if (i === attuale) return;
+    attuale = i;
+    var p = passiEl[i];
+    passiEl.forEach(function(x, j){ x.classList.toggle('attivo', j === i); });
+    [].forEach.call(avanz.children, function(b, j){ b.classList.toggle('fatto', j < i); if (j === i) b.setAttribute('aria-current', 'step'); else b.removeAttribute('aria-current'); });
+    racconto.classList.toggle('conto', !!p.dataset.conto);
+    if (p.dataset.conto) return;
     var da = +p.dataset.da, n = +p.dataset.n, tutti = !!p.dataset.tutti;
     celle.forEach(function(c, j){
-      c.style.transitionDelay = calmo ? '0s' : (Math.abs(j - da) * 7) + 'ms';
+      c.style.transitionDelay = calmo ? '0s' : (Math.abs(j - da) * 6) + 'ms';
       c.classList.toggle('tutti', tutti);
       c.classList.toggle('acceso', !tutti && j >= da && j < da + n);
     });
-    contN.textContent = n; contT.textContent = tutti ? 'euro su 100' : 'euro ogni 100';
   }
-  var passiEl = document.querySelectorAll('.passo');
-  passo(passiEl[statico ? 1 : 0]);
-  var osservaPasso = new IntersectionObserver(function(v){
-    v.forEach(function(e){ if (e.isIntersecting) passo(e.target); });
-  }, {rootMargin: matchMedia('(min-width:1000px)').matches ? '-48% 0px -48% 0px' : '-72% 0px -24% 0px'});
-  passiEl.forEach(function(p){ osservaPasso.observe(p); });
+  if (statico) {
+    passo(1);
+  } else {
+    passiEl.forEach(function(p, j){
+      var b = document.createElement('div'); b.className = 'binario'; binari.appendChild(b);
+      var t = document.createElement('button'); t.type = 'button'; t.setAttribute('aria-label', 'Passo ' + (j + 1) + ': ' + p.querySelector('h3').textContent);
+      t.addEventListener('click', function(){ binari.children[j].scrollIntoView({behavior: calmo ? 'auto' : 'smooth', block: 'center'}); });
+      avanz.appendChild(t);
+    });
+    passo(0);
+    var osservaPasso = new IntersectionObserver(function(v){
+      v.forEach(function(e){ if (e.isIntersecting) passo([].indexOf.call(binari.children, e.target)); });
+    }, {rootMargin: '-50% 0px -50% 0px'});
+    [].forEach.call(binari.children, function(b){ osservaPasso.observe(b); });
+  }
 
   /* grafico a linee riusabile: misura la tela, disegna in pixel veri, si ridisegna al resize */
   function grafico(tela, o){
