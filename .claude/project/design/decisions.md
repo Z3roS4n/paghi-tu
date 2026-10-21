@@ -44,6 +44,13 @@ disponibile (circa 36 px a 390 px). Il design C è applicato a tutte le pagine c
 e blocchi condivisi fra home e `/spesa` (`components/sections/finance.tsx`). Le note di lavoro dei verificatori non
 sono più testo visibile: restano, per trasparenza, nel pannello chiuso «Registro tecnico della verifica».
 
+## D-UI-08 — Marchio: il timbro «TU» (2026-10-21)
+Tre direzioni su Claude Design (lo scontrino, il timbro, il quadretto); il proprietario ha scelto **il timbro**: «Paghi»
+più un timbro d'ufficio con «TU», il destinatario del conto. Sostituisce l'icona Phosphor dello scontrino nella testata
+e nel piè di pagina. Un solo colore (terracotta, D-011), lettere del timbro in tracciati perché favicon e anteprime non
+caricano i caratteri del sito. L'ironia resta nel nome e nel timbro, mai nei contenuti: il timbro non compare accanto a
+partiti, persone o dati.
+
 <!--
 Template voce successiva:
 

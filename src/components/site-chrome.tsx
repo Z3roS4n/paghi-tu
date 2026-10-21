@@ -1,15 +1,14 @@
 import Link from "next/link";
-import { ReceiptIcon } from "@phosphor-icons/react/ssr";
 import { REPO_URL } from "@/lib/contribute";
+import { Wordmark } from "./brand-mark";
 import { NavLinks } from "./nav-links";
 
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-30 border-b border-rule bg-paper/90 backdrop-blur-md">
       <div className="mx-auto flex h-[var(--header-h)] max-w-6xl items-center justify-between gap-6 px-4 md:px-7">
-        <Link href="/" className="font-display inline-flex min-h-11 shrink-0 items-center gap-2 text-[22px] font-extrabold tracking-tight">
-          <ReceiptIcon size={26} weight="fill" className="text-accent" aria-hidden />
-          Paghi Tu
+        <Link href="/" className="font-display inline-flex min-h-11 shrink-0 items-center font-extrabold tracking-tight">
+          <Wordmark size={22} />
         </Link>
         <nav aria-label="Sezioni principali" className="hidden lg:block">
           <NavLinks />
@@ -35,9 +34,8 @@ export function SiteFooter() {
     <footer className="mt-20 border-t border-rule">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-2 md:px-7">
         <div>
-          <Link href="/" className="font-display inline-flex items-center gap-2 text-xl font-extrabold tracking-tight">
-            <ReceiptIcon size={22} weight="fill" className="text-accent" aria-hidden />
-            Paghi Tu
+          <Link href="/" className="font-display inline-flex min-h-11 items-center font-extrabold tracking-tight">
+            <Wordmark size={20} />
           </Link>
           <p className="mt-3 max-w-[48ch] text-[15px] text-ink-soft">
             Sito apartitico sui conti pubblici italiani. Ogni numero ha una fonte e un livello di verifica, con lo stesso

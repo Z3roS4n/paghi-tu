@@ -13,6 +13,9 @@ const courier = Courier_Prime({ variable: "--font-courier", subsets: ["latin"], 
 export const ensureStatic = "navigation";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.paghitu.it"),
+  openGraph: { siteName: "Paghi Tu", locale: "it_IT", type: "website" },
+  twitter: { card: "summary_large_image" },
   title: {
     default: "Paghi Tu: spese dello Stato e promesse elettorali, con le fonti",
     template: "%s | Paghi Tu",

@@ -45,6 +45,14 @@ Via `next/font/google`: **Bricolage Grotesque** per titoli e cifre grandi (`font
 Titoli `font-extrabold` con `clamp()` (h1 2,1–3,8 rem, h2 1,8–2,8 rem). `tabular-nums` (classe `.tabular`)
 dove i numeri si allineano: tabelle, assi, barre, tessere.
 
+## Marchio
+**Il timbro** (D-UI-08): «Paghi» in Bricolage Grotesque ExtraBold e il timbro «TU» in terracotta, inclinato di 6°,
+con le lettere disegnate come tracciati (non dipendono dal carattere caricato). Componente `Wordmark` e simbolo
+`StampMark` in `src/components/brand-mark.tsx`; il timbro è alto 1,36 volte il corpo del testo e sotto i 40 px perde
+la cornice interna. Icone del sito in `src/app/`: `favicon.ico` (16/32/48), `icon.svg`, `apple-icon.png` (180),
+`opengraph-image.png` (1200×630). Tavole e varianti (monocromo, negativo su terracotta, scuro, misure minime) nel
+canvas Claude Design «Paghi Tu — Brand». Il timbro si usa solo come firma del sito: mai su dati, partiti o persone.
+
 ## Forma & elevazione
 Angoli poco tondi (scelta del proprietario): **schede 6 px** (`rounded-card`), **bottoni, etichette, campi 4 px**
 (`rounded-ctl`). Le superfici sono schede `bg-paper-raised` su carta; ombra (`shadow-card`) solo per la scheda
