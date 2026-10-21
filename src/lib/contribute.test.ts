@@ -6,7 +6,7 @@ describe("correctionUrl", () => {
     const url = new URL(correctionUrl("/promesse#C27-PD-001", "C27-PD-001"));
     expect(url.pathname).toBe("/Z3roS4n/paghi-tu/issues/new");
     expect(url.searchParams.get("template")).toBe("correzione.yml");
-    expect(url.searchParams.get("pagina")).toBe("https://paghi-tu.vercel.app/promesse#C27-PD-001");
+    expect(url.searchParams.get("pagina")).toBe("https://www.paghitu.it/promesse#C27-PD-001");
     expect(url.searchParams.get("dato")).toBe("C27-PD-001");
   });
 

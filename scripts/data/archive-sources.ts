@@ -9,7 +9,7 @@ import { formatCsv, parseCsv } from "../../src/lib/csv.ts";
 const RESEARCH = ".claude/project/research";
 const SAVE = process.argv.includes("--save");
 const SAVE_PAUSE_MS = 20_000;
-const UA = "PaghiTu-archivio/1.0 (+https://paghi-tu.vercel.app/metodo)";
+const UA = "PaghiTu-archivio/1.0 (+https://www.paghitu.it/metodo)";
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 const ymd = (date: string) => date.replaceAll("-", "");

@@ -15,7 +15,7 @@ Per un dato che manca (una promessa, una misura, una fonte ufficiale) c'è il mo
 ### Cosa succede dopo
 
 - Ogni giorno la routine legge le segnalazioni aperte. Un agente verificatore, diverso da quello che ha scritto il dato, la ricontrolla sulla fonte indicata.
-- **Confermata**: il dato viene corretto, la modifica entra nel [registro delle correzioni](https://paghi-tu.vercel.app/correzioni) e la segnalazione viene chiusa con il link al commit.
+- **Confermata**: il dato viene corretto, la modifica entra nel [registro delle correzioni](https://www.paghitu.it/correzioni) e la segnalazione viene chiusa con il link al commit.
 - **Non confermata**: la risposta spiega perché, sotto la segnalazione. Se non sei d'accordo puoi rispondere con un'altra fonte.
 - I casi dubbi (una fonte che si può leggere in due modi, un tema delicato) restano aperti con l'etichetta `da-decidere` finché un umano non li guarda.
 
@@ -38,7 +38,7 @@ Le pull request che toccano dati vengono verificate sulla fonte come le segnalaz
 - **Niente dati personali** di privati, e niente dati personali tuoi nelle segnalazioni.
 - **Nei 15 giorni prima di un voto** non si pubblicano dati nuovi su partiti e promesse: solo correzioni di errori.
 
-Le regole complete sono nel [Metodo](https://paghi-tu.vercel.app/metodo) e nel [codice di comportamento](CODE_OF_CONDUCT.md).
+Le regole complete sono nel [Metodo](https://www.paghitu.it/metodo) e nel [codice di comportamento](CODE_OF_CONDUCT.md).
 
 ## Etichette
 

@@ -2,13 +2,13 @@
 
 **Quanto spende lo Stato con i nostri soldi?** Paghi Tu mette in fila, con la fonte accanto a ogni numero, la spesa pubblica italiana per residente, i conti durante ogni governo, le leggi di bilancio, il costo previsto ed effettivo delle misure e le promesse dei partiti per le politiche 2027.
 
-Sito: https://paghi-tu.vercel.app
+Sito: https://www.paghitu.it
 
 ## Un progetto aperto
 
 - **Apartitico.** Stesso metodo, stessa profondità e stesse regole per ogni governo e ogni partito. Niente classifiche, giudizi o indicazioni di voto.
 - **Ogni dato ha una fonte** e un livello di verifica (V1 fonte primaria, V2 verifica parziale, NV da verificare).
-- **Aggiornato dall'AI, corretto da tutti.** Una routine di agenti AI aggiorna dati e fonti ogni giorno; un secondo agente ricontrolla tutto sulle fonti prima della pubblicazione. Chiunque può segnalare un errore o proporre una correzione: ogni modifica a un dato pubblicato resta nel [registro delle correzioni](https://paghi-tu.vercel.app/correzioni).
+- **Aggiornato dall'AI, corretto da tutti.** Una routine di agenti AI aggiorna dati e fonti ogni giorno; un secondo agente ricontrolla tutto sulle fonti prima della pubblicazione. Chiunque può segnalare un errore o proporre una correzione: ogni modifica a un dato pubblicato resta nel [registro delle correzioni](https://www.paghitu.it/correzioni).
 
 Hai trovato un errore? [Apri una correzione](https://github.com/Z3roS4n/paghi-tu/issues/new?template=correzione.yml). Vuoi contribuire al codice o ai dati? Leggi [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -23,7 +23,7 @@ Hai trovato un errore? [Apri una correzione](https://github.com/Z3roS4n/paghi-tu
 | Popolazione, PIL storico, prezzi | ISTAT, Banca d'Italia |
 | Promesse elettorali | canali ufficiali dei partiti, interviste pubblicate dalle testate |
 
-Il dettaglio di ogni fonte, con licenza e condizioni di riuso, è nella pagina [Fonti](https://paghi-tu.vercel.app/fonti); il metodo in [Metodo](https://paghi-tu.vercel.app/metodo).
+Il dettaglio di ogni fonte, con licenza e condizioni di riuso, è nella pagina [Fonti](https://www.paghitu.it/fonti); il metodo in [Metodo](https://www.paghitu.it/metodo).
 
 ## Come è fatto
 

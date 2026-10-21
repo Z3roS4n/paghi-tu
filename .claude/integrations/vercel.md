@@ -7,7 +7,7 @@ Build (`next build`) e distribuzione delle 83 pagine prerenderizzate su CDN.
 
 ## Progetto
 - Team: `msworks-project`. Progetto: `paghi-tu` (`.vercel/project.json`, non versionato).
-- Produzione: https://paghi-tu.vercel.app. Pubblica: il titolare ha scelto di lasciarla visibile, il 2026-10-21.
+- Produzione: https://www.paghitu.it. Pubblica: il titolare ha scelto di lasciarla visibile, il 2026-10-21.
 - I deploy successivi sono anteprime protette da login Vercel, salvo `--prod`. Gli URL di anteprima contengono il nome del team.
 - Il primo deploy (2026-10-21) è andato in produzione in automatico, perché era il primo del progetto.
 

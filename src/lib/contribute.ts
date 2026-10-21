@@ -1,5 +1,5 @@
 export const REPO_URL = "https://github.com/Z3roS4n/paghi-tu";
-export const SITE_URL = "https://paghi-tu.vercel.app";
+export const SITE_URL = "https://www.paghitu.it";
 
 // Apre il modulo «Correzione» del repo con la pagina (e il dato, se c'è) già compilati.
 export function correctionUrl(pagina: string, dato?: string) {
