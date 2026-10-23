@@ -191,7 +191,7 @@
   - il titolare ha scelto di far girare la routine **sull'account di sviluppo**, non su un account separato;
   - ogni giorno alle 06:00 UTC (07:00 con l'ora solare, 08:00 con l'ora legale), modello Opus 5.5, nessun connettore: solo il repo, la shell, la ricerca web e i subagenti per il verificatore;
   - ambiente cloud dedicato, perché i segreti di un ambiente sono visibili a ogni sessione che lo usa; serve accesso di rete completo (Eurostat, Banca d'Italia, ISTAT, Resend, Vercel);
-  - il deploy usa `VERCEL_TOKEN` con `VERCEL_ORG_ID` e `VERCEL_PROJECT_ID`, perché sul cloud non c'è il login della CLI;
+  - il deploy usa `VERCEL_TOKEN` con `VERCEL_ORG_ID` e `VERCEL_PROJECT_ID`, perché sul cloud non c'è il login della CLI. **Aggiornamento 2026-10-24:** il repo è collegato a Vercel e ogni push su `main` va in produzione da solo; la routine aspetta il deploy del commit e usa il token solo di riserva;
   - `npm run check:pages` controlla il testo visibile delle pagine generate: nessun «NaN», «undefined», «Infinity», nessuna nota interna fuori dai pannelli chiusi.
 - **Data:** 2026-10-21
 

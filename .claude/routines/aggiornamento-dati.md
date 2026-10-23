@@ -7,8 +7,8 @@
 > Prerequisiti: clone del repo GitHub pubblico con permesso di push su `main`, Node ≥ 24, e questi segreti
 > nell'ambiente della routine (mai nel repo):
 > - `GH_TOKEN`: push su `main`, issue e pull request del repo;
-> - `VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`: deploy in produzione senza login (sul cloud non c'è
->   la cartella `.vercel/` locale);
+> - `VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`: solo di riserva. Il deploy lo fa Vercel a ogni push su
+>   `main`; il token serve se Vercel non crea il deploy di un commit (sul cloud non c'è la cartella `.vercel/`);
 > - `RESEND_API_KEY`, `PAGHITU_NOTIFY_TO`, `PAGHITU_NOTIFY_FROM`: segnalazione del giorno (vedi
 >   `.claude/integrations/resend.md`).
 >
@@ -136,10 +136,14 @@ Formato, tono, voce e regole sono in `.claude/reels/README.md`; il piano in `.cl
    link alla scheda su GitHub.
 
 ## Pubblicazione
-Solo se almeno un binario ha qualcosa di `CONFERMATO`. Se è cambiato solo `.claude/reels/`, basta il push: niente
-deploy e niente controllo delle pagine.
+Solo se almeno un binario ha qualcosa di `CONFERMATO`. **Il push su `main` pubblica:** il progetto Vercel è collegato
+al repo e ogni push su `main` va in produzione da solo. Se è cambiato solo `.claude/reels/`, basta il push, senza
+controllo delle pagine.
 1. `git push origin main`.
-2. Deploy in produzione: `npx --yes vercel@64.7.0 deploy --prod --yes --token "$VERCEL_TOKEN"`, con `VERCEL_ORG_ID` e `VERCEL_PROJECT_ID` nell'ambiente.
+2. Aspetta il deploy del commit: `gh api repos/Z3roS4n/paghi-tu/commits/<sha>/status`, contesto `Vercel`, stato
+   `success` (un controllo ogni 30 secondi, al massimo 15 minuti). Con `failure`, `error` o tempo scaduto:
+   segnalazione con il link del deploy. Il deploy a mano con la CLI e `VERCEL_TOKEN` serve solo se Vercel non ha
+   creato nessun deploy per il commit.
 3. Controllo HTTP 200 di `/`, `/spesa`, `/governi`, `/promesse`, `/archivio/indice.json` su https://www.paghitu.it. Se uno fallisce: segnalazione con l'output.
 4. Report breve in `.claude/project/reports/` (`node .claude/scripts/new-report.mjs "aggiornamento <data>"`) con cosa è cambiato, esito del verificatore e controlli fatti, committato con il resto, senza dati personali.
 

@@ -3,7 +3,7 @@
 Ogni giorno alle 07:00 UTC, dopo la routine dei dati (D-027). Controlla le PR aperte su `main`, scrive l'esito
 sulla PR, aggiorna lo stato delle PR e delle issue collegate (etichette, chiusura delle PR respinte) e manda il
 riepilogo al titolare. **Non unisce, non approva e non modifica il codice delle PR**, e non fa push: l'unione la
-decide il titolare.
+decide il titolare. Unire una PR la pubblica subito: Vercel va in produzione a ogni push su `main`.
 
 > Prerequisiti: clone del repo, Node ≥ 24 e i segreti dell'ambiente Paghi Tu: `GH_TOKEN` (commenti ed
 > etichette), `RESEND_API_KEY`, `PAGHITU_NOTIFY_TO`, `PAGHITU_NOTIFY_FROM` (riepilogo). Mai stampare i valori.
