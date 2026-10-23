@@ -101,7 +101,8 @@ for (const src of SOURCES) {
     if (!inner) throw new Error(`${src.zipEntry} non trovato nella pubblicazione FPI`);
     [sourceFile, body] = single(unzip(inner));
   }
-  const text = body.toString("utf8").replace(/^﻿/, "");
+  // git normalizza i fine riga (text=auto): l'hash si calcola sul testo con LF, come viene salvato.
+  const text = body.toString("utf8").replace(/^﻿/, "").replace(/\r\n/g, "\n");
   if (!/^(DATAFLOW|"DATA_OSS")/.test(text)) throw new Error(`${src.file}: intestazione inattesa «${text.slice(0, 80)}»`);
   await mkdir(join(RAW, src.file, ".."), { recursive: true });
   await writeFile(join(RAW, src.file), text);

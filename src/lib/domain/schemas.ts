@@ -15,7 +15,7 @@ export const Verification = z.object({
 export type Verification = z.infer<typeof Verification>;
 
 export const SourceLink = z.object({
-  url: z.url(),
+  url: z.url().regex(/^https?:\/\/\S+$/),
   etichetta: z.string().optional(),
 });
 export type SourceLink = z.infer<typeof SourceLink>;
