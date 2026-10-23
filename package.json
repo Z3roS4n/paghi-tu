@@ -15,7 +15,8 @@
     "data:archive": "node scripts/data/archive-sources.ts",
     "notify": "node scripts/notify.ts",
     "check:pages": "node scripts/check-pages.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "evals:build": "node agent/evals/build.ts"
   },
   "dependencies": {
     "@phosphor-icons/react": "2.1.10",

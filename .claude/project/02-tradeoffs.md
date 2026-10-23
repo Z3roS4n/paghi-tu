@@ -250,6 +250,13 @@
 - **Conseguenze:** ogni nuovo servizio che tratta dati dei visitatori o dei segnalatori va aggiunto a `/privacy` nello stesso commit. Testo da far rivedere a un legale prima di considerarlo definitivo.
 - **Data:** 2026-10-21
 
+### D-024 — Golden set dell'agente generato dai dati
+- **Stato:** proposta il 2026-10-23, in revisione.
+- **Contesto:** l'agente conversazionale su Vertex AI Search va misurato prima di andare online. Il progetto non ha un golden set; i dati del sito sono la fonte del grounding.
+- **Scelta:** il set si genera da `data/` con `agent/evals/golden-set.ts` (selezione deterministica e distribuita, valori letti dai record, mai ricopiati), più casi scritti a mano in `casi-manuali.json` per par condicio, fuori scope e trappole. Le promesse si scelgono in ordine alfabetico di sigla, almeno una per partito. La revisione del titolare sta in `revisione.json` e sopravvive alle rigenerazioni.
+- **Conseguenze:** dopo una correzione ai dati si rigenera con `npm run evals:build`; il test fallisce se `domande.jsonl` non è allineato. Le soglie restano ipotesi finché il titolare non le conferma.
+- **Data:** 2026-10-23
+
 ## Decisioni aperte
 - **OA-1** — ~~Nome del progetto e dominio~~ → nome deciso il 2026-10-20: **Paghi Tu** (provocatorio verso politica e cittadini, senza attribuire condotte a nessuno). Dominio candidato `paghitu.it` (libero al controllo DNS del 2026-10-20, da confermare all'acquisto).
 - **OA-2** — **SUPERATA da D-023 (2026-10-21): titolare M's Works, indicato in /privacy e /note-legali.** Testo originale: Editore: il titolare del progetto, persona fisica. **Decisione del titolare (2026-10-20): nome e dati personali NON pubblicati sul sito**; il sito si presenta come "Paghi Tu" con un recapito dedicato (email del progetto). Da validare con l'avvocato prima del lancio: (a) se art. 2 L. 47/1948 (richiamato da art. 1 c. 3 L. 62/2001) e art. 7 D.Lgs. 70/2003 impongono l'indicazione dell'editore a un sito non periodico e non commerciale; (b) identità del titolare del trattamento richiesta dall'art. 13 GDPR se il sito tratta dati dei visitatori (log, analytics, form) — si minimizza con zero cookie, zero analytics con IP, nessun form; (c) alternativa: associazione (es. APS/ETS) come editore, così sul sito compare l'ente e non la persona; (d) responsabilità personale e polizza RC. L'anonimato verso il pubblico non elimina la responsabilità: l'editore resta identificabile da hosting e registro del dominio.
