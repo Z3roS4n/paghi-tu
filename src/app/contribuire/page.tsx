@@ -111,8 +111,8 @@ export default function ContributePage() {
         </li>
         <li>Nessuna modifica esterna al codice viene unita in automatico: la rivede una persona.</li>
         <li>
-          Nei 15 giorni prima di un voto non si pubblicano contenuti nuovi su partiti e promesse: solo correzioni di
-          errori.
+          Nei 15 giorni prima delle elezioni politiche o di un referendum nazionale non si pubblicano contenuti nuovi
+          su partiti e promesse: solo correzioni di errori.
         </li>
       </ul>
 

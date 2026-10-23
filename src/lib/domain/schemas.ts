@@ -184,6 +184,14 @@ export const PromiseCatalogStatus = z.object({
   regolaPerimetro: z.enum(["tutte", "solo_fuori_legislatura_in_corso"]).nullable(),
 });
 
+// D-013: un partito i cui canali ufficiali non si leggono non blocca gli altri, ma lo si dice in pubblico.
+export const UnreadableChannel = z.object({
+  partito: z.string(),
+  canali: z.array(z.string()).min(1),
+  dal: isoDate,
+  ultimoControlloRiuscito: isoDate.nullable(),
+});
+
 // Regole della nota "costo delle misure": lo scostamento si deriva, non si scrive a mano, e
 // con basi non omogenee si mostrano i due numeri affiancati senza percentuale.
 export const Homogeneity = z.enum(["omogeneo", "parzialmente_omogeneo", "non_omogeneo"]);

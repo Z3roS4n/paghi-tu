@@ -133,6 +133,12 @@
 - **Scelta:** l'import valida e conta tutte le righe, ma pubblica solo i gruppi elencati in `PUBLISHED_PROMISE_GROUPS` (oggi nessuno). Un gruppo entra quando tutti e tre hanno passato la verifica L2 e il controllo di simmetria. Restano fuori le righe "DA RIMUOVERE", "NON VERIFICABILE", "NUOVA" e quelle "con riserva" (per esempio il discorso di Schlein del 18/10, da confrontare con il video).
 - **Motivo:** pubblicare un partito prima degli altri, o con standard diversi, sarebbe di per sé una scelta di parte.
 - **Data:** 2026-10-20
+- **Modifica del 2026-10-22 (titolare):** le esecuzioni del 21 e 22 ottobre si sono fermate perché alcuni siti
+  rispondono con un blocco anti-bot e due formazioni non hanno un canale ufficiale leggibile. Da ora un partito
+  **tecnicamente** non leggibile, dopo i canali alternativi del runbook, non blocca gli altri: si pubblicano i partiti
+  controllati e /promesse dice quali canali non si leggono e da quando (`data/canali-non-leggibili.json`). Dopo 3
+  esecuzioni di fila la segnalazione chiede un controllo a mano. Un partito saltato per errore blocca ancora tutti.
+  Le protezioni anti-bot non si aggirano.
 
 ### D-014 — Lo scostamento si mostra solo con omogeneità dichiarata
 - **Stato:** APPLICATA nello sviluppo — da confermare con il titolare (proposta della nota `research/2026-10-20.costo-delle-misure-previsto-vs-consuntivo.md`)
@@ -249,6 +255,33 @@
   - Vercel Web Analytics senza query string né ancora negli URL inviati.
 - **Conseguenze:** ogni nuovo servizio che tratta dati dei visitatori o dei segnalatori va aggiunto a `/privacy` nello stesso commit. Testo da far rivedere a un legale prima di considerarlo definitivo.
 - **Data:** 2026-10-21
+
+### D-025 — La regola dei 15 giorni vale per politiche e referendum nazionali
+- **Stato:** applicata il 2026-10-22, decisione del titolare.
+- **Contesto:** la routine ha chiesto se la suppletiva di Chieti del 15-16 novembre 2026 fa scattare il blocco dei
+  contenuti nuovi su partiti e promesse dal 31 ottobre.
+- **Scelta:** il blocco vale solo nei 15 giorni prima delle elezioni politiche o di un referendum nazionale.
+  Suppletive, regionali e amministrative non lo fanno scattare. Testo aggiornato in /metodo, /contribuire,
+  CONTRIBUTING, runbook e regole dei Reel.
+- **Data:** 2026-10-22
+
+### D-024 — Reel Instagram pianificati nel repo, idee settimanali dalla routine
+- **Stato:** applicata il 2026-10-22.
+- **Contesto:** dopo il primo video il titolare vuole tre Reel a settimana di circa un minuto, con la voce Giulio e il
+  montaggio in Animatio, e vuole che la routine proponga le idee nuove.
+- **Scelta:**
+  - cartella `.claude/reels/` con regole e formato (`README.md`), calendario e una scheda per video in `idee/`;
+  - i primi quattro video (26 ottobre-2 novembre) li prepara il titolare; altre otto schede restano in riserva;
+  - binario 4 della routine: a ogni esecuzione, se restano meno di sei uscite future, aggiunge una settimana di
+    idee nate dalle notizie dei giorni prima e spiegate con i numeri del sito (una cifra della notizia solo dalla
+    sua fonte primaria); aggiorna le schede non ancora pubblicate quando cambiano i dati; un secondo agente
+    controlla le cifre;
+  - tono: una domanda per video, ogni cifra spiegata, un fatto che sorprende, voce da racconto (README dei Reel);
+  - stesse regole del sito: nessun partito o governo nominato fuori dai video sul metodo, nessun giudizio, niente
+    video su partiti e promesse nei 15 giorni prima di un voto.
+- **Conseguenze:** il repo è pubblico, quindi anche il piano dei video lo è. Le schede servono da copione, ma il
+  giorno del montaggio le cifre vanno ricontrollate sul sito.
+- **Data:** 2026-10-22
 
 ## Decisioni aperte
 - **OA-1** — ~~Nome del progetto e dominio~~ → nome deciso il 2026-10-20: **Paghi Tu** (provocatorio verso politica e cittadini, senza attribuire condotte a nessuno). Dominio candidato `paghitu.it` (libero al controllo DNS del 2026-10-20, da confermare all'acquisto).

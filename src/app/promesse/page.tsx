@@ -6,7 +6,7 @@ import { LevelTag, VerificationBadge } from "@/components/verification-badge";
 import { correctionUrl } from "@/lib/contribute";
 import { COFOG_DIVISIONS, type CampaignPromise } from "@/lib/domain/schemas";
 import { formatDate, formatDecimal, formatInt } from "@/lib/format";
-import { promiseStatus, promisesByParty } from "@/server/data";
+import { parties, promiseStatus, promisesByParty, unreadableChannels } from "@/server/data";
 import { costBase, promiseCostView } from "@/server/promise-costs";
 
 export const metadata: Metadata = {
@@ -177,6 +177,12 @@ const COVERAGE = [
   "Per i partiti con programmi molto lunghi il censimento può non essere completo. Le formazioni minori entrano se hanno annunciato una lista nazionale con fonte verificabile.",
 ];
 
+function unreadableLine(c: (typeof unreadableChannels)[number]) {
+  const name = parties.find((p) => p.id === c.partito)?.nome ?? c.partito;
+  const last = c.ultimoControlloRiuscito ? `l'ultimo controllo riuscito è del ${formatDate(c.ultimoControlloRiuscito)}` : "finora nessun controllo è riuscito";
+  return `${name}: dal ${formatDate(c.dal)} i canali ufficiali (${c.canali.join(", ")}) non sono leggibili dai nostri strumenti; ${last}. Le promesse nuove di questo partito arrivano dopo un controllo a mano.`;
+}
+
 function Coverage() {
   return (
     <details className="group reveal mt-4 rounded-card bg-paper-raised px-4 md:px-6">
@@ -185,7 +191,7 @@ function Coverage() {
         <span className="text-sm font-normal text-ink-faint underline underline-offset-2 group-open:hidden">apri</span>
       </summary>
       <ul className="mb-4 list-disc space-y-2 pl-5 text-[15px] text-ink-soft">
-        {COVERAGE.map((line) => (
+        {[...COVERAGE, ...unreadableChannels.map(unreadableLine)].map((line) => (
           <li key={line}>{line}</li>
         ))}
       </ul>

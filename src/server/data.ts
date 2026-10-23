@@ -14,6 +14,7 @@ import partiesJson from "../../data/partiti.json";
 import promisesJson from "../../data/promesse.json";
 import promiseStatusJson from "../../data/promesse-stato.json";
 import correctionsJson from "../../data/correzioni.json";
+import unreadableChannelsJson from "../../data/canali-non-leggibili.json";
 import promiseCostsJson from "../../data/promesse-costi.json";
 import {
   BudgetLaw,
@@ -28,6 +29,7 @@ import {
   PublicFinance,
   Series,
   Source,
+  UnreadableChannel,
 } from "@/lib/domain/schemas";
 
 export const DATA_SNAPSHOT = "2026-10-20";
@@ -50,6 +52,7 @@ export const measures = z.array(Measure).parse(measuresJson).toSorted((a, b) => 
 export const parties = z.array(Party).parse(partiesJson);
 export const promises = z.array(CampaignPromise).parse(promisesJson);
 export const promiseStatus = PromiseCatalogStatus.parse(promiseStatusJson);
+export const unreadableChannels = z.array(UnreadableChannel).parse(unreadableChannelsJson);
 export const promiseCosts = z.array(PromiseCost).parse(promiseCostsJson);
 export const corrections = z.array(Correction).parse(correctionsJson).toSorted((a, b) => b.id.localeCompare(a.id));
 

@@ -66,7 +66,7 @@ export default function MethodPage() {
         <li>Nessun sondaggio, classifica tra partiti o voto degli utenti.</li>
         <li>Le promesse si citano con la frase esatta e la fonte, mai riassunte in forma più forte.</li>
         <li>Una promessa riceve un esito (attuata, parzialmente attuata, non attuata) solo con un atto documentato e alla scadenza dichiarata.</li>
-        <li>Nei 15 giorni prima di un voto non pubblichiamo contenuti nuovi su partiti e promesse. Correggiamo solo errori.</li>
+        <li>Nei 15 giorni prima delle elezioni politiche o di un referendum nazionale non pubblichiamo contenuti nuovi su partiti e promesse. Correggiamo solo errori.</li>
       </ul>
 
       <h2>Confrontare cifre di epoche diverse</h2>

@@ -44,7 +44,7 @@ Le pull request che toccano dati vengono verificate sulla fonte come le segnalaz
 - **Niente dati personali** di privati, e niente dati personali tuoi nelle segnalazioni: su GitHub tutto è pubblico (vedi [paghitu.it/privacy](https://www.paghitu.it/privacy)).
 - **Malafede = blocco.** Fonti false o manipolate, campagne coordinate, minacce, molestie, dati personali di altri: chiusura senza esame e blocco immediato dell'account dal repository. Spam e offese: chiusura e, se si ripetono, esclusione.
 - **Diritti.** Inviando un contributo dichiari che è tuo o che puoi condividerlo; codice e testi del repository sono pubblicati con licenza MIT.
-- **Nei 15 giorni prima di un voto** non si pubblicano contenuti nuovi su partiti e promesse: solo correzioni di errori.
+- **Nei 15 giorni prima delle elezioni politiche o di un referendum nazionale** non si pubblicano contenuti nuovi su partiti e promesse: solo correzioni di errori.
 
 Le regole complete sono nel [Metodo](https://www.paghitu.it/metodo) e nel [codice di comportamento](CODE_OF_CONDUCT.md).
 
