@@ -2,7 +2,7 @@
 
 > Versioni pinnate alla prima installazione; aggiornare qui a ogni upgrade.
 
-**Versioni installate (2026-10-20):** Next.js 16.4.0 · React 19.3.0 ·
+**Versioni installate (2026-10-20; Next.js aggiornato il 2026-10-24):** Next.js 16.4.3 · React 19.3.0 ·
 TypeScript 5.9.3 · Tailwind 4.3.3 · Node 24.14.0
 *(lette da `package.json` allo scaffold; `<n/d>` = non presente, completare a mano)*
 
