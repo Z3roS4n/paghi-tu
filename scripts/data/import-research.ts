@@ -83,7 +83,10 @@ function links(field: string): SourceLink[] {
     .split(/\s;\s|\s+(?=https?:\/\/)/)
     .map((s) => s.trim())
     .filter((s) => /^https?:\/\//.test(s))
-    .map((url) => ({ url }));
+    .map((s) => {
+      const m = s.match(/^(\S+)\s+\((.+)\)$/);
+      return m ? { url: m[1], etichetta: m[2] } : { url: s };
+    });
 }
 
 const ROMAN: Record<string, number> = { I: 1, V: 5, X: 10 };
