@@ -4,273 +4,273 @@
   "fonti": [
     {
       "url": "http://dati.camera.it/ocd/attocamera.rdf/ac01_1391",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac01_1391",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 3741
     },
     {
       "url": "http://dati.camera.it/ocd/attocamera.rdf/ac01_2787",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac01_2787",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 4386
     },
     {
       "url": "http://dati.camera.it/ocd/attocamera.rdf/ac02_2",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac02_2",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 4347
     },
     {
       "url": "http://dati.camera.it/ocd/attocamera.rdf/ac02_70",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac02_70",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 4596
     },
     {
       "url": "http://dati.camera.it/ocd/attocamera.rdf/ac05_781",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac05_781",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 3830
     },
     {
       "url": "http://dati.camera.it/ocd/attocamera.rdf/ac07_1940",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac07_1940",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 3839
     },
     {
       "url": "http://dati.camera.it/ocd/attocamera.rdf/ac07_2077",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac07_2077",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 3911
     },
     {
       "url": "http://dati.camera.it/ocd/attocamera.rdf/ac08_3039",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac08_3039",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 3839
     },
     {
       "url": "http://dati.camera.it/ocd/attocamera.rdf/ac08_3279",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac08_3279",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 4077
     },
     {
       "url": "http://dati.camera.it/ocd/attocamera.rdf/ac10_2043",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac10_2043",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 4906
     },
     {
       "url": "http://dati.camera.it/ocd/attocamera.rdf/ac12_3448",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac12_3448",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 4758
     },
     {
       "url": "http://dati.camera.it/ocd/attocamera.rdf/ac14_5310",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac14_5310",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 3647
     },
     {
       "url": "http://dati.camera.it/ocd/attocamera.rdf/ac16_5534",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac16_5534",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 5543
     },
     {
       "url": "http://dati.camera.it/ocd/attocamera.rdf/ac19_2750",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac19_2750",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 15297
     },
     {
       "url": "http://dati.camera.it/ocd/governo.rdf/g11",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/governo.rdf/g11",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 11273
     },
     {
       "url": "http://dati.camera.it/ocd/governo.rdf/g13",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/governo.rdf/g13",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 10710
     },
     {
       "url": "http://dati.camera.it/ocd/governo.rdf/g202",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/governo.rdf/g202",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 15522
     },
     {
       "url": "http://dati.camera.it/ocd/governo.rdf/g21",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/governo.rdf/g21",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 12512
     },
     {
       "url": "http://dati.camera.it/ocd/governo.rdf/g23",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/governo.rdf/g23",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 13263
     },
     {
       "url": "http://dati.camera.it/ocd/governo.rdf/g30",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/governo.rdf/g30",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 11672
     },
     {
       "url": "http://dati.camera.it/ocd/governo.rdf/g38",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/governo.rdf/g38",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 12475
     },
     {
       "url": "http://dati.camera.it/ocd/governo.rdf/g46",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/governo.rdf/g46",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 12040
     },
     {
       "url": "http://dati.camera.it/ocd/governo.rdf/g5",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/governo.rdf/g5",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 9494
     },
     {
       "url": "http://dati.camera.it/ocd/governo.rdf/g55",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/governo.rdf/g55",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 10286
     },
     {
       "url": "http://dati.camera.it/ocd/governo.rdf/g61",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/governo.rdf/g61",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 17418
     },
     {
       "url": "http://dati.camera.it/ocd/governo.rdf/g82",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/governo.rdf/g82",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 12263
     },
     {
       "url": "http://dati.camera.it/ocd/legislatura.rdf/repubblica_01",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/legislatura.rdf/repubblica_01",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 10104
     },
     {
       "url": "http://dati.camera.it/ocd/legislatura.rdf/repubblica_07",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/legislatura.rdf/repubblica_07",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 8992
     },
     {
       "url": "http://dati.camera.it/ocd/legislatura.rdf/repubblica_14",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/legislatura.rdf/repubblica_14",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 10396
     },
     {
       "url": "http://dati.camera.it/ocd/legislatura.rdf/repubblica_19",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 500,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/ocd/legislatura.rdf/repubblica_19",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 4421
     },
     {
       "url": "https://a2a.bancaditalia.it/infostat/dataservices/export/IT/CSV/DATA/PUBLICATION/BANKITALIA/DIFF/FPI",
@@ -283,12 +283,12 @@
     },
     {
       "url": "https://dati.camera.it/sparql",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 502,
+      "http": 200,
       "urlLetto": "https://dati.camera.it/sparql",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 2102
     },
     {
       "url": "https://decidiamo.com/processes/energia-pulita-e-popolare/f/52/proposals/2003",
@@ -415,7 +415,7 @@
       "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_164_DF_DCIS_RICPOPRES2011_1,1.0/",
       "tipo": "binario",
       "caratteri": 0,
-      "errore": "TypeError: fetch failed"
+      "errore": "saltato"
     },
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_279_DF_DCIS_RICPOPRES1991_1,1.0/",
@@ -425,7 +425,7 @@
       "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_279_DF_DCIS_RICPOPRES1991_1,1.0/",
       "tipo": "binario",
       "caratteri": 0,
-      "errore": "TypeError: fetch failed"
+      "errore": "saltato"
     },
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_305_DF_DCIS_RICPOPRES2001_1,1.0/",
@@ -435,7 +435,7 @@
       "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_305_DF_DCIS_RICPOPRES2001_1,1.0/",
       "tipo": "binario",
       "caratteri": 0,
-      "errore": "TypeError: fetch failed"
+      "errore": "saltato"
     },
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_346_DF_DCIS_RICPOPRES1971_1,1.0/",
@@ -445,7 +445,7 @@
       "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_346_DF_DCIS_RICPOPRES1971_1,1.0/",
       "tipo": "binario",
       "caratteri": 0,
-      "errore": "TypeError: fetch failed"
+      "errore": "saltato"
     },
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_347_DF_DCIS_RICPOPRES1981_1,1.0/",
@@ -455,7 +455,7 @@
       "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_347_DF_DCIS_RICPOPRES1981_1,1.0/",
       "tipo": "binario",
       "caratteri": 0,
-      "errore": "TypeError: fetch failed"
+      "errore": "saltato"
     },
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,22_289_DF_DCIS_POPRES1_1,1.0/",
@@ -465,7 +465,7 @@
       "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,22_289_DF_DCIS_POPRES1_1,1.0/",
       "tipo": "binario",
       "caratteri": 0,
-      "errore": "TypeError: fetch failed"
+      "errore": "saltato"
     },
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,92_506_DF_DCCN_PILN_1,1.0/A.IT.B1GQ_B_W2_S1..../ALL/",
@@ -475,7 +475,7 @@
       "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,92_506_DF_DCCN_PILN_1,1.0/A.IT.B1GQ_B_W2_S1..../ALL/",
       "tipo": "binario",
       "caratteri": 0,
-      "errore": "TypeError: fetch failed"
+      "errore": "saltato"
     },
     {
       "url": "https://finanzalocale.interno.gov.it/docum/studi/varie/soppressione_ici.pdf",
@@ -556,7 +556,7 @@
       "http": 200,
       "urlLetto": "https://www.noimoderati.it/news-e-media/42",
       "tipo": "html",
-      "caratteri": 2825
+      "caratteri": 2826
     },
     {
       "url": "https://noimoderati.it/news-e-media/86",
@@ -700,7 +700,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/articolo/convocazione-del-consiglio-dei-ministri-n-193/32876",
       "tipo": "html",
-      "caratteri": 10381
+      "caratteri": 10383
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/governo-meloni/20727",
@@ -709,7 +709,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/governo-meloni/20727",
       "tipo": "html",
-      "caratteri": 15779
+      "caratteri": 15781
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/i-governi-nelle-legislature/192",
@@ -718,7 +718,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/i-governi-nelle-legislature/192",
       "tipo": "html",
-      "caratteri": 16698
+      "caratteri": 16696
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ii-legislatura-25-giugno-1953-14-marzo-1958/governo-pella/3223",
@@ -727,7 +727,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ii-legislatura-25-giugno-1953-14-marzo-1958/governo-pella/3223",
       "tipo": "html",
-      "caratteri": 14230
+      "caratteri": 14232
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-fanfani-iii/3214",
@@ -736,7 +736,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-fanfani-iii/3214",
       "tipo": "html",
-      "caratteri": 14878
+      "caratteri": 14874
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-segni-ii/3216",
@@ -745,7 +745,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-segni-ii/3216",
       "tipo": "html",
-      "caratteri": 15007
+      "caratteri": 15009
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ordinamento-provvisorio-25-luglio-1943-23-maggio-1948-assemblea-3",
@@ -754,7 +754,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ordinamento-provvisorio-25-luglio-1943-23-maggio-1948-assemblea-3",
       "tipo": "html",
-      "caratteri": 15649
+      "caratteri": 15651
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/v-legislatura-5-giugno-1968-28-febbraio-1972/governo-colombo/3202",
@@ -763,7 +763,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/v-legislatura-5-giugno-1968-28-febbraio-1972/governo-colombo/3202",
       "tipo": "html",
-      "caratteri": 15207
+      "caratteri": 15205
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/v-legislatura-5-giugno-1968-28-febbraio-1972/governo-rumor-ii/3204",
@@ -772,7 +772,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/v-legislatura-5-giugno-1968-28-febbraio-1972/governo-rumor-ii/3204",
       "tipo": "html",
-      "caratteri": 14819
+      "caratteri": 14823
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/vii-legislatura-5-luglio-1976-2-aprile-1979/governo-andreotti-iii/3191",
@@ -781,7 +781,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/vii-legislatura-5-luglio-1976-2-aprile-1979/governo-andreotti-iii/3191",
       "tipo": "html",
-      "caratteri": 16115
+      "caratteri": 16113
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/viii-legislatura-20-giugno-1979-4-maggio-1983/governo-fanfani-v/3181",
@@ -790,7 +790,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/viii-legislatura-20-giugno-1979-4-maggio-1983/governo-fanfani-v/3181",
       "tipo": "html",
-      "caratteri": 15170
+      "caratteri": 15174
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xi-legislatura-23-aprile-1992-16-gennaio-1994/governo-amato/3169",
@@ -808,7 +808,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xvi-legislatura-dal-29-aprile-2008-al-23-dicembre-2012/governo-berlusconi",
       "tipo": "html",
-      "caratteri": 17861
+      "caratteri": 17857
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xvii-legislatura-dal-15032013/governo-letta/330",
@@ -817,7 +817,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xvii-legislatura-dal-15032013/governo-letta/330",
       "tipo": "html",
-      "caratteri": 15859
+      "caratteri": 15857
     },
     {
       "url": "https://www.hdmotori.it/bollo-tajani-estendere-esenzione-prime-auto/",
@@ -884,12 +884,13 @@
     },
     {
       "url": "https://www.istat.it/wp-content/uploads/2026/07/Nota-informativa30luglio2026.pdf",
-      "esito": "ok",
+      "esito": "ko",
       "via": "diretto",
-      "http": 200,
+      "http": 0,
       "urlLetto": "https://www.istat.it/wp-content/uploads/2026/07/Nota-informativa30luglio2026.pdf",
-      "tipo": "pdf",
-      "caratteri": 10275
+      "tipo": "binario",
+      "caratteri": 0,
+      "errore": "saltato"
     },
     {
       "url": "https://www.lasicilia.it/news/politica/3052972/mezzogiorno-protagonista-de-luca-rilancia-l-autonomia-e-la-super-zes-contro-il-romanocentrismo.html",
@@ -934,7 +935,7 @@
       "http": 200,
       "urlLetto": "https://www.milanofinanza.it/news/manovra-casasco-forza-italia-flat-tax-per-tutti-202608251910269198",
       "tipo": "html",
-      "caratteri": 45333
+      "caratteri": 45290
     },
     {
       "url": "https://www.movimento5stelle.eu/wp-content/uploads/2026/09/NOVA_20_PUNTI.pdf",
@@ -1424,8 +1425,8 @@
         {
           "campo": "inizio",
           "esito": "trovato",
-          "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/viii-legislatura-20-giugno-1979-4-maggio-1983/governo-fanfani-v/3181",
-          "forma": "01.12.1982"
+          "url": "http://dati.camera.it/ocd/governo.rdf/g38",
+          "forma": "19821201"
         }
       ]
     },
@@ -1448,8 +1449,8 @@
         {
           "campo": "inizio",
           "esito": "trovato",
-          "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xi-legislatura-23-aprile-1992-16-gennaio-1994/governo-amato/3169",
-          "forma": "28.06.1992"
+          "url": "http://dati.camera.it/ocd/governo.rdf/g46",
+          "forma": "19920628"
         }
       ]
     },
@@ -1466,14 +1467,14 @@
         {
           "campo": "nome",
           "esito": "trovato",
-          "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ii-legislatura-25-giugno-1953-14-marzo-1958/governo-pella/3223",
+          "url": "http://dati.camera.it/ocd/governo.rdf/g5",
           "forma": "governo pella"
         },
         {
           "campo": "inizio",
           "esito": "trovato",
-          "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ii-legislatura-25-giugno-1953-14-marzo-1958/governo-pella/3223",
-          "forma": "17.08.1953"
+          "url": "http://dati.camera.it/ocd/governo.rdf/g5",
+          "forma": "19530817"
         }
       ]
     },
@@ -1496,8 +1497,8 @@
         {
           "campo": "inizio",
           "esito": "trovato",
-          "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ordinamento-provvisorio-25-luglio-1943-23-maggio-1948-assemblea-3",
-          "forma": "10.12.1945"
+          "url": "http://dati.camera.it/ocd/governo.rdf/g55",
+          "forma": "19451210"
         }
       ]
     },
@@ -1520,8 +1521,8 @@
         {
           "campo": "inizio",
           "esito": "trovato",
-          "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xvi-legislatura-dal-29-aprile-2008-al-23-dicembre-2012/governo-berlusconi",
-          "forma": "8 maggio 2008"
+          "url": "http://dati.camera.it/ocd/governo.rdf/g61",
+          "forma": "20080508"
         }
       ]
     },
@@ -1802,8 +1803,8 @@
         {
           "campo": "inizio",
           "esito": "trovato",
-          "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/i-governi-nelle-legislature/192",
-          "forma": "8 maggio 1948"
+          "url": "http://dati.camera.it/ocd/legislatura.rdf/repubblica_01",
+          "forma": "19480508"
         }
       ]
     },
@@ -1817,7 +1818,9 @@
         },
         {
           "campo": "inizio",
-          "esito": "non_trovato"
+          "esito": "trovato",
+          "url": "http://dati.camera.it/ocd/legislatura.rdf/repubblica_07",
+          "forma": "19760705"
         }
       ]
     },
@@ -1831,7 +1834,9 @@
         },
         {
           "campo": "inizio",
-          "esito": "non_trovato"
+          "esito": "trovato",
+          "url": "http://dati.camera.it/ocd/legislatura.rdf/repubblica_14",
+          "forma": "20010530"
         }
       ]
     },
@@ -1845,7 +1850,9 @@
         },
         {
           "campo": "inizio",
-          "esito": "non_trovato"
+          "esito": "trovato",
+          "url": "http://dati.camera.it/ocd/legislatura.rdf/repubblica_19",
+          "forma": "20221013"
         }
       ]
     },
@@ -2001,7 +2008,7 @@
           "campo": "consuntivo",
           "esito": "trovato",
           "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/comunicati-stampa/2025/04/Allegati/3732_Cs_Osservatorio-Assegno-Unico-Universale.pdf",
-          "forma": "13,2"
+          "forma": "13,2 miliardi"
         },
         {
           "campo": "scostamento",
@@ -2031,7 +2038,7 @@
           "campo": "consuntivo",
           "esito": "trovato",
           "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/comunicati-stampa/2025/04/Allegati/3732_Cs_Osservatorio-Assegno-Unico-Universale.pdf",
-          "forma": "18,2"
+          "forma": "18,2 miliardi"
         },
         {
           "campo": "confidenza",
@@ -2053,7 +2060,7 @@
           "campo": "consuntivo",
           "esito": "trovato",
           "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/comunicati-stampa/2025/04/Allegati/3732_Cs_Osservatorio-Assegno-Unico-Universale.pdf",
-          "forma": "19,8"
+          "forma": "19,8 miliardi"
         },
         {
           "campo": "confidenza",
@@ -2409,9 +2416,7 @@
       "valori": [
         {
           "campo": "dichiarante",
-          "esito": "trovato",
-          "url": "https://decidiamo.com/processes/energia-pulita-e-popolare/f/52/proposals/2003",
-          "forma": "sinistra"
+          "esito": "non_trovato"
         },
         {
           "campo": "data",
@@ -3077,9 +3082,7 @@
       "valori": [
         {
           "campo": "prezzi-consumo-foi",
-          "esito": "trovato",
-          "url": "https://www.istat.it/wp-content/uploads/2026/07/Nota-informativa30luglio2026.pdf",
-          "forma": "9286,869"
+          "esito": "non_trovato"
         }
       ]
     }

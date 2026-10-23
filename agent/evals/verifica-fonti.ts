@@ -26,6 +26,9 @@ const DEFAULT_INTERVAL_MS = 1_000;
 const OFFLINE_DATASETS = ["finanza-pubblica"];
 // --dump <cartella>: salva il testo normalizzato di ogni fonte, per rileggere a mano un valore non trovato.
 const DUMP = process.argv.includes("--dump") ? process.argv[process.argv.indexOf("--dump") + 1] : null;
+// --salta-host <regex>: nessuna richiesta verso gli host che corrispondono (per esempio ISTAT dopo un blocco, D-004).
+// Le loro fonti risultano «ko» con errore «saltato», quindi i test che ne dipendono restano rossi.
+const SKIP = process.argv.includes("--salta-host") ? new RegExp(process.argv[process.argv.indexOf("--salta-host") + 1]) : null;
 
 try {
   execFileSync("pdftotext", ["-v"], { stdio: "ignore" });
@@ -98,6 +101,7 @@ const texts = new Map<string, string>();
 if (DUMP) await mkdir(DUMP, { recursive: true });
 const dumpName = (url: string) => `${createHash("sha256").update(url).digest("hex").slice(0, 12)}.txt`;
 async function check(url: string): Promise<SourceResult> {
+  if (SKIP?.test(new URL(url).hostname)) return { url, esito: "ko", via: "diretto", http: 0, urlLetto: url, tipo: "binario", caratteri: 0, errore: "saltato" };
   let direct: Fetched | null = null;
   let error = "";
   try {

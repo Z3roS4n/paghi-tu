@@ -14,11 +14,12 @@
     "maggioranza": "Sigle dei partiti composte da Paghi Tu dalla coalizione indicata dalla fonte."
   },
   "valori": {
-    "PRO-C27-AZ-026|dichiarante": "Da completare nei dati: la pagina citata non nomina Carlo Calenda; secondo la nota del record il nome sta nella newsletter firmata, che non è fra le fonti del record.",
-    "PRO-C27-FN-016|data": "La data 24/08/2026 è quella del PDF della Base programmatica citato nella nota del record, non della pagina /programma/ citata come fonte.",
-    "PRO-C27-M5S-018|data": "La data è l'apertura della votazione degli iscritti (18-20/09/2026), documentata in Risultati-votazioni-NOVA-2026.pdf, non nel PDF citato.",
+    "PRO-C27-AZ-026|dichiarante": "La pagina non nomina Calenda nel testo visibile: la newsletter è in prima persona, ha la parola chiave «Carlo Calenda» nei metadati e cita «il mio ultimo libro \"Difendere la libertà\"» (Calenda, Piemme 2026). Nota del record corretta in PR #2.",
+    "PRO-C27-FN-016|data": "La data 24/08/2026 sta nel nome del PDF ufficiale della B.I.P., non nel suo testo né nella pagina /programma/. Con PR #2 la fonte del record diventa il PDF (COR-0006).",
+    "PRO-C27-M5S-018|data": "La data è quella di pubblicazione del PDF, «a partire da oggi 18 settembre», nella pagina https://www.movimento5stelle.eu/nova-20-punti-una-alleanza-per-la-costituzione/ (citata nella nota del record da PR #2), non nel testo del PDF.",
     "MAN-COR-02|Promessa C27-FI-013, tipo di fonte": "Valore del registro delle correzioni di Paghi Tu (classificazione del tipo di fonte), non della fonte esterna; il test «nel record citato» lo riscontra con COR-0002.",
-    "MAN-COR-03|Livello di verifica di 23 promesse tratte da interviste": "Regola di metodo del registro delle correzioni (D-019), non un dato di una fonte esterna; il test «nel record citato» lo riscontra con COR-0003."
+    "MAN-COR-03|Livello di verifica di 23 promesse tratte da interviste": "Regola di metodo del registro delle correzioni (D-019), non un dato di una fonte esterna; il test «nel record citato» lo riscontra con COR-0003.",
+    "PRO-C27-AVS-003|dichiarante": "La piattaforma «Decidiamo» di AVS scrive «Alleanza Verdi Sinistra», senza la «e» del nome ufficiale «Alleanza Verdi e Sinistra» usato nei dati."
   },
   "somme": {
     "MIS-reddito_di_cittadinanza-1|consuntivo": {

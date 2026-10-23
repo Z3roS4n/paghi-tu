@@ -68,6 +68,8 @@ export function numberForms(value: number, unit?: string): string[] {
         const scaled = Number((abs / scale).toFixed(digits));
         if (!exactAt(abs, scaled, scale)) continue;
         forms.push(it(scaled, digits), it(scaled, digits, false));
+        // Le tabelle in milioni scrivono due decimali fissi: «18.914,80».
+        if (digits > 0 && digits < 3) forms.push(scaled.toLocaleString("it-IT", { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
       }
     }
   }

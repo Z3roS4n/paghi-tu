@@ -34,7 +34,7 @@ npx vitest run agent/evals          # decide: determinismo, record citati, fonti
 - scostamenti e percentuali si ricalcolano dai valori;
 - un'eccezione non più necessaria fa fallire il test.
 
-Le richieste rispettano D-004: una coda per host, 16 secondi fra due richieste a ISTAT, 3 a Camera, 1 alle altre fonti. Se una fonte è giù il test resta rosso: si rilancia `evals:verify` più tardi, non si scrive un'eccezione.
+Le richieste rispettano D-004: una coda per host, 16 secondi fra due richieste a ISTAT, 3 a Camera, 1 alle altre fonti. Se una fonte è giù il test resta rosso: si rilancia `evals:verify` più tardi, non si scrive un'eccezione. Dopo un blocco di un host, `npm run evals:verify -- --salta-host 'istat\.it$'` non gli manda richieste: le sue fonti risultano «ko» con errore «saltato» e i test che ne dipendono restano rossi.
 
 I valori attesi si leggono dai record al momento della build, quindi dopo una correzione ai dati basta rigenerare. Il test fallisce se `domande.jsonl` non è allineato ai dati.
 

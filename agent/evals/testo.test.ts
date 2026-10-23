@@ -32,6 +32,12 @@ describe("ricerca dei numeri", () => {
     expect(findNumber("previsti 18.550,7 milioni", 18_550_000_000, "euro")).toBeNull();
   });
 
+  it("trova i milioni con due decimali fissi, ma non un decimale diverso", () => {
+    // Relazione tecnica dell'assegno unico (AG 333, XVIII): «18.914,80 milioni di euro per l'anno 2025».
+    expect(findNumber("18.914,80 milioni di euro per l'anno 2025", 18_914_800_000, "euro")).toBe("18.914,80");
+    expect(findNumber("18.914,81 milioni", 18_914_800_000, "euro")).toBeNull();
+  });
+
   it("accetta gli zeri decimali del CSV Eurostat e il valore assoluto di uno scostamento", () => {
     expect(findNumber("IT,1995,-71303.0,,", -71303)).toBe("-71303");
     expect(findNumber("minori spese per 10.271 milioni", -10_271_000_000, "euro")).toBe("10.271");
