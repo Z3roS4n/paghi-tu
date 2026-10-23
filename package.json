@@ -15,7 +15,7 @@
     "data:archive": "node scripts/data/archive-sources.ts",
     "notify": "node scripts/notify.ts",
     "check:pages": "node scripts/check-pages.ts",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "next typegen && tsc --noEmit",
     "evals:build": "node agent/evals/build.ts"
   },
   "dependencies": {
