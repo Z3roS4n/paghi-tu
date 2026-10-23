@@ -48,7 +48,7 @@ Ogni giorno una routine verifica le pull request aperte: conflitti, controlli te
 
 - **Fatti, non opinioni.** Si correggono numeri, date, citazioni, fonti, attribuzioni. Non si aggiungono giudizi su partiti, governi o persone, e non si tolgono dati veri perché sgraditi.
 - **Stesse regole per tutti.** Una regola nuova (per esempio su cosa conta come promessa) si applica a tutti i partiti insieme, mai a uno solo.
-- **Citazioni esatte.** Il testo di una dichiarazione si copia parola per parola. Un taglio «[…]» non toglie mai le parole con cui chi parla descrive un gruppo di persone.
+- **Citazioni esatte.** Il testo di una dichiarazione si copia parola per parola. Un taglio «[…]» non toglie mai le parole con cui chi parla descrive un gruppo di persone. Due frasi separate solo da un inciso di chi scrive («ha spiegato») si uniscono con «[…]».
 - **Niente dati personali** di privati, e niente dati personali tuoi nelle segnalazioni: su GitHub tutto è pubblico (vedi [paghitu.it/privacy](https://www.paghitu.it/privacy)).
 - **Malafede = blocco.** Fonti false o manipolate, campagne coordinate, minacce, molestie, dati personali di altri: chiusura senza esame e blocco immediato dell'account dal repository. Spam e offese: chiusura e, se si ripetono, esclusione.
 - **Diritti.** Inviando un contributo dichiari che è tuo o che puoi condividerlo; codice e testi del repository sono pubblicati con licenza MIT.
