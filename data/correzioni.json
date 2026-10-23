@@ -58,5 +58,17 @@
     "motivo": "L'indirizzo conteneva uno spazio e del testo, quindi il link non era valido. Lo schema ora rifiuta gli indirizzi con spazi.",
     "fonte": { "url": "https://bdp.camera.it/init/iter" },
     "segnalazione": null
+  },
+  {
+    "id": "COR-0006",
+    "data": "2026-10-23",
+    "tipo": "correzione",
+    "dato": "Promessa C27-FN-016, fonte",
+    "pagina": "/promesse#C27-FN-016",
+    "prima": "https://futuronazionale.it/programma/",
+    "dopo": "https://futuronazionale.it/wp-content/uploads/2026/09/GIUSTIFICATO_SLOT-1-e-2_Base-Programmatica-di-Futuro-Nazionale-24-agosto-2026.pdf",
+    "motivo": "La data della promessa (24/08/2026) è quella della Base Ideologica e Programmatica, indicata nel file ufficiale e non nella pagina «Programma». Il PDF contiene anche il testo citato.",
+    "fonte": { "url": "https://futuronazionale.it/wp-content/uploads/2026/09/GIUSTIFICATO_SLOT-1-e-2_Base-Programmatica-di-Futuro-Nazionale-24-agosto-2026.pdf" },
+    "segnalazione": null
   }
 ]

@@ -2143,7 +2143,7 @@
     "misurabile": "si",
     "costoDichiarato": null,
     "stimaTerzi": null,
-    "note": "Documento «Una alleanza per la Costituzione» (Nova, 20 punti), pubblicato per la votazione degli iscritti del 18-20/09/2026 e approvato; proposta del M5S «al tavolo della coalizione progressista». Cap. 14. (controllo di simmetria 2026-10-21) Orizzonte/veicolo: prossima_legislatura: cornice del documento («Cosa deve fare il governo nei prossimi cinque anni»).",
+    "note": "Documento «Una alleanza per la Costituzione» (Nova, 20 punti), pubblicato per la votazione degli iscritti del 18-20/09/2026 e approvato (annuncio con il PDF, «a partire da oggi 18 settembre»: https://www.movimento5stelle.eu/nova-20-punti-una-alleanza-per-la-costituzione/); proposta del M5S «al tavolo della coalizione progressista». Cap. 14. (controllo di simmetria 2026-10-21) Orizzonte/veicolo: prossima_legislatura: cornice del documento («Cosa deve fare il governo nei prossimi cinque anni»).",
     "verifica": {
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-20 — CONFERMATA (PDF NOVA_20_PUNTI; capitolo verificato; proposta approvata nella consultazione 18-20/09/2026 (Risultati-votazioni-NOVA-2026.pdf, tutte >84% sì))"
@@ -4593,7 +4593,7 @@
     "misurabile": "si",
     "costoDichiarato": "8 mld (in scostamento di bilancio, indicato dal proponente)",
     "stimaTerzi": null,
-    "note": "Piano 'Cose da fare' inviato al governo in carica (Meloni) nella newsletter firmata da Carlo Calenda: proposta rivolta al governo in carica, non impegno per il prossimo mandato in senso stretto. (controllo di simmetria 2026-10-21) Orizzonte/veicolo: richiesta_legge_bilancio: piano «Cose da fare» inviato alla presidente del Consiglio prima dello scostamento. (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su dati.senato.it (open data ufficiale del Senato; senato.it risponde 403/202 ai client automatici) il 2026-10-21.",
+    "note": "Piano 'Cose da fare' inviato al governo in carica (Meloni) nella newsletter di Azione scritta in prima persona da Carlo Calenda (pagina nella categoria Newsletter, parola chiave «Carlo Calenda»; il testo cita «il mio ultimo libro “Difendere la libertà”», il libro di Calenda edito da Piemme nel 2026): proposta rivolta al governo in carica, non impegno per il prossimo mandato in senso stretto. (controllo di simmetria 2026-10-21) Orizzonte/veicolo: richiesta_legge_bilancio: piano «Cose da fare» inviato alla presidente del Consiglio prima dello scostamento. (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su dati.senato.it (open data ufficiale del Senato; senato.it risponde 403/202 ai client automatici) il 2026-10-21.",
     "verifica": {
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-20 — nota integrata (destinatario: governo in carica)"
@@ -5686,14 +5686,14 @@
     "orizzonte": "prossima_legislatura",
     "veicolo": "programma",
     "fonte": {
-      "url": "https://futuronazionale.it/programma/"
+      "url": "https://futuronazionale.it/wp-content/uploads/2026/09/GIUSTIFICATO_SLOT-1-e-2_Base-Programmatica-di-Futuro-Nazionale-24-agosto-2026.pdf"
     },
     "archivioUrl": null,
     "cofog": "02",
     "misurabile": "si",
     "costoDichiarato": null,
     "stimaTerzi": null,
-    "note": "Base Ideologica e Programmatica (B.I.P.) 2027-2037, datata 24/08/2026; PDF: https://futuronazionale.it/wp-content/uploads/2026/09/GIUSTIFICATO_SLOT-1-e-2_Base-Programmatica-di-Futuro-Nazionale-24-agosto-2026.pdf (controllo di simmetria 2026-10-21) Orizzonte/veicolo: prossima_legislatura: cornice del documento (B.I.P. «2027–2037»).",
+    "note": "Base Ideologica e Programmatica (B.I.P.) 2027-2037, datata 24/08/2026 (data nel nome del file ufficiale); testo anche su https://futuronazionale.it/programma/ (controllo di simmetria 2026-10-21) Orizzonte/veicolo: prossima_legislatura: cornice del documento (B.I.P. «2027–2037»).",
     "verifica": {
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-20"
