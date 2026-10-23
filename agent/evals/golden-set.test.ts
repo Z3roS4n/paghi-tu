@@ -54,6 +54,48 @@ describe("golden set dell'agente", () => {
     }
   });
 
+  it("ogni valore e ogni URL attesi stanno nel record citato", () => {
+    const finance = data.finanzaPubblica as Record<string, unknown> & { fonti: unknown; confrontoUe: Record<string, unknown> };
+    const keyOf: Record<string, string> = { conti: "anno", funzioni: "anno", debitoPil: "anno", trimestri: "periodo", debitoMensile: "mese" };
+    const byId = (list: unknown, id: string) => (list as { id: string }[]).find((r) => r.id === id);
+    const resolve = (dataset: string, record: string): unknown => {
+      if (dataset === "misure") {
+        return (data.misure as { confronti: { id: string }[] }[]).flatMap((m) => m.confronti).find((c) => c.id === record);
+      }
+      if (dataset === "finanza-pubblica") {
+        const [section, key, extra] = record.split("/");
+        if (section === "confrontoUe") return { valori: finance.confrontoUe[key], fonti: finance.fonti, extra };
+        const row = (finance[section] as Record<string, unknown>[]).find((r) => String(r[keyOf[section]]) === key);
+        return row && { row, fonti: finance.fonti };
+      }
+      if (dataset.startsWith("serie/")) {
+        const s = data.serie[dataset.slice(6)] as { punti: { anno: number }[]; fonti: unknown };
+        const point = s.punti.find((p) => String(p.anno) === record);
+        return point && { point, fonti: s.fonti };
+      }
+      const lists: Record<string, unknown> = {
+        governi: data.governi, legislature: data.legislature, "leggi-bilancio": data.leggiBilancio,
+        promesse: data.promesse, correzioni: data.correzioni,
+      };
+      return byId(lists[dataset], record);
+    };
+    const problems: string[] = [];
+    for (const c of cases.filter((x) => x.citazioniAttese.length)) {
+      const records = c.citazioniAttese.map((cit) => {
+        const r = resolve(cit.dataset, cit.record);
+        if (!r) problems.push(`${c.id}: record ${cit.dataset}/${cit.record} inesistente`);
+        const blob = JSON.stringify(r ?? null);
+        for (const url of cit.urlAccettati) if (!blob.includes(url)) problems.push(`${c.id}: ${url} non è nel record`);
+        return blob;
+      });
+      const all = records.join(" ");
+      for (const v of c.valoriAttesi) {
+        if (v.valore !== null && !all.includes(JSON.stringify(v.valore))) problems.push(`${c.id}: ${v.campo}=${v.valore} non è nel record`);
+      }
+    }
+    expect(problems).toEqual([]);
+  });
+
   it("le astensioni non si aspettano valori", () => {
     expect(cases.filter((c) => c.esitoAtteso === "astensione" && c.valoriAttesi.length).map((c) => c.id)).toEqual([]);
   });

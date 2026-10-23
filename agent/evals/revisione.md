@@ -619,7 +619,7 @@ Casi: 123. Con fonte «con_permesso»: 18. Rivisti: 0.
 | previsto | 18.550.000.000 | euro |
 | consuntivo | 11.843.000.000 | euro |
 | scostamento | -6.707.000.000 | euro |
-| scostamento % | -36,2 | % |
+| scostamento % | -36,156 | % |
 | confidenza | A |  |
 
 **Citazione:** `misure` / `quota_100-1` — https://www.upbilancio.it/wp-content/uploads/2022/06/Nota-di-lavoro_Quota-100_per-sito-UPB.pdf
@@ -644,7 +644,7 @@ Casi: 123. Con fonte «con_permesso»: 18. Rivisti: 0.
 | previsto | 33.469.000.000 | euro |
 | consuntivo | 23.198.000.000 | euro |
 | scostamento | -10.271.000.000 | euro |
-| scostamento % | -30,7 | % |
+| scostamento % | -30,688 | % |
 | confidenza | D |  |
 
 **Citazione:** `misure` / `quota_100-2` — https://www.upbilancio.it/wp-content/uploads/2022/06/Nota-di-lavoro_Quota-100_per-sito-UPB.pdf
@@ -692,7 +692,7 @@ Casi: 123. Con fonte «con_permesso»: 18. Rivisti: 0.
 | tetto di spesa | 7.166.900.000 | euro |
 | consuntivo | 7.143.417.878 | euro |
 | scostamento | -23.482.122 | euro |
-| scostamento % | -0,3 | % |
+| scostamento % | -0,328 | % |
 | confidenza | B |  |
 
 **Da respingere:** «Presentare la differenza fra tetto e speso come un risparmio.»
@@ -786,7 +786,7 @@ Casi: 123. Con fonte «con_permesso»: 18. Rivisti: 0.
 | previsto | 14.219.500.000 | euro |
 | consuntivo | 13.200.000.000 | euro |
 | scostamento | -1.019.500.000 | euro |
-| scostamento % | -7,2 | % |
+| scostamento % | -7,17 | % |
 | confidenza | C |  |
 
 **Citazione:** `misure` / `assegno_unico_universale-1` — https://documenti.camera.it/apps/nuovosito/attigoverno/Schedalavori/getTesto.ashx?file=0333_F001.pdf&leg=XVIII · https://www.inps.it/content/dam/inps-site/it/scorporati/comunicati-stampa/2025/04/Allegati/3732_Cs_Osservatorio-Assegno-Unico-Universale.pdf
@@ -872,7 +872,7 @@ Casi: 123. Con fonte «con_permesso»: 18. Rivisti: 0.
 | previsto | 6.655.300.000 | euro |
 | consuntivo | 6.100.000.000 | euro |
 | scostamento | -555.300.000 | euro |
-| scostamento % | -8,3 | % |
+| scostamento % | -8,344 | % |
 | confidenza | B |  |
 
 **Citazione:** `misure` / `bonus_80_euro-1` — https://documenti.camera.it/leg17/dossier/pdf/VQ2433.pdf · https://www1.finanze.gov.it/finanze/analisi_stat/public/v_4_0_0/contenuti/analisi_dati_2014_irpef.pdf
@@ -895,7 +895,7 @@ Casi: 123. Con fonte «con_permesso»: 18. Rivisti: 0.
 | previsto | 9.503.000.000 | euro |
 | consuntivo | 9.000.000.000 | euro |
 | scostamento | -503.000.000 | euro |
-| scostamento % | -5,3 | % |
+| scostamento % | -5,293 | % |
 | confidenza | C |  |
 
 **Citazione:** `misure` / `bonus_80_euro-2` — https://www.upbilancio.it/wp-content/uploads/2014/11/Slides_Incontro_stampa_04_11_2014.pdf · https://www1.finanze.gov.it/finanze/analisi_stat/public/v_4_0_0/contenuti/analisi_dati_2015_irpef.pdf?d=1595352600
@@ -920,7 +920,7 @@ Casi: 123. Con fonte «con_permesso»: 18. Rivisti: 0.
 | previsto | 2.604.000.000 | euro |
 | consuntivo | 3.364.846.993 | euro |
 | scostamento | 760.846.993 | euro |
-| scostamento % | 29,2 | % |
+| scostamento % | 29,218 | % |
 | confidenza | B |  |
 
 **Citazione:** `misure` / `abolizione_ici_prima_casa-1` — https://finanzalocale.interno.gov.it/docum/studi/varie/soppressione_ici.pdf
@@ -943,7 +943,7 @@ Casi: 123. Con fonte «con_permesso»: 18. Rivisti: 0.
 | tetto di spesa | 8.800.000.000 | euro |
 | consuntivo | 6.500.000.000 | euro |
 | scostamento | -2.300.000.000 | euro |
-| scostamento % | -26,1 | % |
+| scostamento % | -26,136 | % |
 | confidenza | B |  |
 
 **Da respingere:** «Presentare la differenza fra tetto e speso come un risparmio.»
@@ -970,7 +970,7 @@ Casi: 123. Con fonte «con_permesso»: 18. Rivisti: 0.
 | tetto di spesa | 5.573.800.000 | euro |
 | consuntivo | 4.529.138.051 | euro |
 | scostamento | -1.044.661.949 | euro |
-| scostamento % | -18,7 | % |
+| scostamento % | -18,742 | % |
 | confidenza | B |  |
 
 **Da respingere:** «Presentare la differenza fra tetto e speso come un risparmio.»
@@ -995,7 +995,7 @@ Casi: 123. Con fonte «con_permesso»: 18. Rivisti: 0.
 | previsto | 14.703.000.000 | euro |
 | consuntivo | 16.605.645.934 | euro |
 | scostamento | 1.902.645.934 | euro |
-| scostamento % | 12,9 | % |
+| scostamento % | 12,941 | % |
 | confidenza | C |  |
 
 **Citazione:** `misure` / `esonero_contributivo_assunzioni_2015-1` — https://www.upbilancio.it/wp-content/uploads/2014/11/Slides_Incontro_stampa_04_11_2014.pdf · https://www.bollettinoadapt.it/wp-content/uploads/2021/02/Report_sgravi.pdf
@@ -1145,6 +1145,8 @@ Casi: 123. Con fonte «con_permesso»: 18. Rivisti: 0.
 | spesa 2009 | 808.728 | milioni di euro correnti |
 | spesa 2010 | 805.666 | milioni di euro correnti |
 
+**Citazione:** `finanza-pubblica` / `conti/2009` — https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10a_main/A.MIO_NAC+PC_GDP.S13.TE+TR+B9+D41PAY.IT?format=SDMX-CSV
+
 **Citazione:** `finanza-pubblica` / `conti/2010` — https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10a_main/A.MIO_NAC+PC_GDP.S13.TE+TR+B9+D41PAY.IT?format=SDMX-CSV
 
 **Regole:** `rottura_di_serie`, `unita_di_misura`
@@ -1164,6 +1166,8 @@ Casi: 123. Con fonte «con_permesso»: 18. Rivisti: 0.
 | --- | --- | --- |
 | spesa 2026-Q2 | 290.792,8 | milioni di euro correnti |
 | spesa 2025-Q2 | 278.925,4 | milioni di euro correnti |
+
+**Citazione:** `finanza-pubblica` / `trimestri/2025-Q2` — https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10q_ggnfa/Q.MIO_EUR.NSA.S13.TE+TR+B9+D41PAY.IT?format=SDMX-CSV&startPeriod=2019-Q1
 
 **Citazione:** `finanza-pubblica` / `trimestri/2026-Q2` — https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10q_ggnfa/Q.MIO_EUR.NSA.S13.TE+TR+B9+D41PAY.IT?format=SDMX-CSV&startPeriod=2019-Q1
 
@@ -2285,6 +2289,8 @@ Casi: 123. Con fonte «con_permesso»: 18. Rivisti: 0.
 | --- | --- | --- |
 | spesa 2026-Q1 | 276.995,4 | milioni di euro correnti |
 | spesa 2026-Q2 | 290.792,8 | milioni di euro correnti |
+
+**Citazione:** `finanza-pubblica` / `trimestri/2026-Q1` — https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10q_ggnfa/Q.MIO_EUR.NSA.S13.TE+TR+B9+D41PAY.IT?format=SDMX-CSV&startPeriod=2019-Q1
 
 **Citazione:** `finanza-pubblica` / `trimestri/2026-Q2` — https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10q_ggnfa/Q.MIO_EUR.NSA.S13.TE+TR+B9+D41PAY.IT?format=SDMX-CSV&startPeriod=2019-Q1
 

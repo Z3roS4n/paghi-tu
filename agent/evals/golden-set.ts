@@ -300,7 +300,7 @@ function comparisonValues(c: CostComparison): ExpectedValue[] {
   if (c.scostamento) {
     values.push({ campo: "scostamento", valore: c.scostamento.eur, unita: "euro" });
     if (c.scostamento.pct !== null && c.omogeneita !== "non_omogeneo") {
-      values.push({ campo: "scostamento %", valore: Math.round(c.scostamento.pct * 10) / 10, unita: "%" });
+      values.push({ campo: "scostamento %", valore: c.scostamento.pct, unita: "%" });
     }
   }
   values.push({ campo: "confidenza", valore: c.confidenza });
@@ -413,7 +413,7 @@ function financeCases(f: PublicFinance): GoldenCase[] {
           { campo: `spesa ${prev.anno}`, valore: prev.spesa, unita: MONEY_UNIT },
           { campo: `spesa ${brk.anno}`, valore: brk.spesa, unita: MONEY_UNIT },
         ],
-        citazioniAttese: cite(`conti/${brk.anno}`, MAIN),
+        citazioniAttese: [...cite(`conti/${prev.anno}`, MAIN), ...cite(`conti/${brk.anno}`, MAIN)],
         regole: ["rottura_di_serie", "unita_di_misura"],
         notaRevisore: `Eurostat segna una rottura di serie nel ${brk.anno}: gli anni prima non sono confrontabili alla pari.`,
       }),
@@ -436,7 +436,7 @@ function financeCases(f: PublicFinance): GoldenCase[] {
           { campo: `spesa ${lastQ.periodo}`, valore: lastQ.spesa, unita: MONEY_UNIT },
           { campo: `spesa ${sameQ.periodo}`, valore: sameQ.spesa, unita: MONEY_UNIT },
         ],
-        citazioniAttese: cite(`trimestri/${lastQ.periodo}`, QUARTERLY),
+        citazioniAttese: [...cite(`trimestri/${sameQ.periodo}`, QUARTERLY), ...cite(`trimestri/${lastQ.periodo}`, QUARTERLY)],
         regole: ["unita_di_misura"],
         notaRevisore: "",
       }),
@@ -452,7 +452,7 @@ function financeCases(f: PublicFinance): GoldenCase[] {
         { campo: `spesa ${prevQ.periodo}`, valore: prevQ.spesa, unita: MONEY_UNIT },
         { campo: `spesa ${lastQ.periodo}`, valore: lastQ.spesa, unita: MONEY_UNIT },
       ],
-      citazioniAttese: cite(`trimestri/${lastQ.periodo}`, QUARTERLY),
+      citazioniAttese: [...cite(`trimestri/${prevQ.periodo}`, QUARTERLY), ...cite(`trimestri/${lastQ.periodo}`, QUARTERLY)],
       regole: ["solo_stesso_trimestre", "unita_di_misura"],
       notaRevisore: "Trimestri non destagionalizzati: può dare i due valori, ma non dire che la spesa è salita o scesa.",
     }),
