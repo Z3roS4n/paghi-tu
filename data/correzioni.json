@@ -34,5 +34,29 @@
     "motivo": "Le parole sono del dichiarante e si controllano sul testo dell'intervista. La regola vale per tutti i partiti; i discorsi riportati da un articolo restano V2.",
     "fonte": null,
     "segnalazione": null
+  },
+  {
+    "id": "COR-0004",
+    "data": "2026-10-23",
+    "tipo": "correzione",
+    "dato": "Promessa C27-FI-009, citazione",
+    "pagina": "/promesse#C27-FI-009",
+    "prima": "«Con un intervento mirato e selettivo possiamo portarle ad almeno 800/850 euro, con una spesa stimata in circa 1 miliardo di euro. Vanno adeguate subito al costo della vita.»",
+    "dopo": "«Con un intervento mirato e selettivo possiamo portarle ad almeno 800/850 euro, con una spesa stimata in circa 1 miliardo di euro […] Vanno adeguate subito al costo della vita.»",
+    "motivo": "Nell'articolo le due frasi sono separate da un inciso del giornalista («ha spiegato»): la citazione le univa senza segnare il taglio.",
+    "fonte": { "url": "http://web.archive.org/web/20260911101757/https://www.fanpage.it/politica/pensioni-forza-italia-vuole-alzare-le-minime-a-850-euro-nella-legge-di-bilancio-2027/" },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0005",
+    "data": "2026-10-23",
+    "tipo": "correzione",
+    "dato": "Fonti di 6 leggi di bilancio (1955-56, 1957-58, 1963-64, 1969, 1970, 1980)",
+    "pagina": "/leggi-di-bilancio",
+    "prima": "Link «https://bdp.camera.it/init/iter (Iter delle leggi 1948-1990)», con il nome della banca dati dentro l'indirizzo.",
+    "dopo": "Link «https://bdp.camera.it/init/iter» con etichetta «Iter delle leggi 1948-1990».",
+    "motivo": "L'indirizzo conteneva uno spazio e del testo, quindi il link non era valido. Lo schema ora rifiuta gli indirizzi con spazi.",
+    "fonte": { "url": "https://bdp.camera.it/init/iter" },
+    "segnalazione": null
   }
 ]
