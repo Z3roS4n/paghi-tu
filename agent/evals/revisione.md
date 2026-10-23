@@ -578,7 +578,7 @@ Casi: 123. Con fonte «con_permesso»: 18. Rivisti: 0.
 | governoProponenteAttribuzione | documentata |  |
 | estremi | L. n. 1273 del 24/12/1968 (atto S.370/C.781) |  |
 
-**Citazione:** `leggi-bilancio` / `1969-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac05_781 · https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1968-12-24;1273 · https://bdp.camera.it/init/iter (Iter delle leggi 1948-1990)
+**Citazione:** `leggi-bilancio` / `1969-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac05_781 · https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1968-12-24;1273
 
 **Regole:** `dichiara_non_verificato`
 

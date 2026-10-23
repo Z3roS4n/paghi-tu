@@ -11,11 +11,30 @@ Domande con la risposta e la citazione che l'agente conversazionale di Paghi Tu 
 | `revisione.json` | esito della revisione di Antonio per id: `ok`, `da_correggere`, `da_togliere` | sì |
 | `domande.jsonl` | il golden set, un caso per riga | no, si rigenera |
 | `revisione.md` | lo stesso set in forma leggibile, per la revisione | no, si rigenera |
+| `testo.ts` | normalizzazione del testo e forme accettate per numeri, date, nomi e costi | sì, con un test in `testo.test.ts` |
+| `verifica-fonti.ts` | legge ogni fonte attesa online e cerca citazioni e valori (D-025) | sì |
+| `verifica-fonti.json` | registro dell'ultima verifica online: fonti lette, citazioni e valori trovati | no, lo scrive `evals:verify` |
+| `eccezioni-fonti.json` | ragioni scritte per ciò che non si trova nella fonte, e somme con i loro addendi | sì, una ragione per voce |
+| `verifica.test.ts` | i controlli deterministici: decide se il set è coerente con le fonti | sì |
 
 ```bash
 npm run evals:build                 # rigenera domande.jsonl e revisione.md dai dati
-npx vitest run agent/evals          # controlli: determinismo, verbatim, URL presenti nei dati
+npm run evals:verify                # legge le fonti online e scrive verifica-fonti.json (serve pdftotext)
+npx vitest run agent/evals          # decide: determinismo, record citati, fonti, verbatim, valori, data/raw
 ```
+
+## Verifica contro le fonti
+
+`evals:verify` non decide niente: scrive cosa ha trovato, dove e in che forma. Decidono i test offline:
+
+- ogni URL atteso è ben formato ed è stato letto, direttamente o dalla copia d'archivio del record;
+- ogni citazione verbatim sta nella fonte parola per parola; i tagli si scrivono «[…]»;
+- ogni valore di finanza pubblica è la cella esatta della copia Eurostat o Banca d'Italia in `data/raw/`, e le copie hanno l'impronta del manifest;
+- ogni altro valore è nella fonte in una delle forme di `testo.ts`, oppure è una somma dichiarata in `eccezioni-fonti.json` con addendi trovati nella fonte, oppure ha una ragione scritta;
+- scostamenti e percentuali si ricalcolano dai valori;
+- un'eccezione non più necessaria fa fallire il test.
+
+Le richieste rispettano D-004: una coda per host, 16 secondi fra due richieste a ISTAT, 3 a Camera, 1 alle altre fonti. Se una fonte è giù il test resta rosso: si rilancia `evals:verify` più tardi, non si scrive un'eccezione.
 
 I valori attesi si leggono dai record al momento della build, quindi dopo una correzione ai dati basta rigenerare. Il test fallisce se `domande.jsonl` non è allineato ai dati.
 

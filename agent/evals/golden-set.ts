@@ -17,6 +17,7 @@ import {
   type SourceLink,
   type VerificationLevel,
 } from "../../src/lib/domain/schemas.ts";
+import { isWellFormedUrl } from "./testo.ts";
 
 export const CATEGORIES = [
   "governi",
@@ -141,8 +142,9 @@ export function spread<T>(items: T[], k: number): T[] {
   return Array.from({ length: k }, (_, i) => items[Math.round((i * (items.length - 1)) / (k - 1))]);
 }
 
+// Un URL malformato nei dati (per esempio con l'etichetta dentro) non diventa una citazione attesa.
 function urls(links: SourceLink[]): string[] {
-  return links.map((l) => l.url);
+  return links.map((l) => l.url).filter(isWellFormedUrl);
 }
 
 function needsPermission(urlList: string[]): boolean {
@@ -610,7 +612,7 @@ function promiseCase(p: CampaignPromise, party: Party, withTopic: boolean, extra
     valoriAttesi: values,
     testoVerbatim: p.testoLetterale,
     risposteErrate: [p.parafrasiNeutra],
-    citazioniAttese: [{ dataset: "promesse", record: p.id, urlAccettati: [p.fonte.url] }],
+    citazioniAttese: [{ dataset: "promesse", record: p.id, urlAccettati: urls([p.fonte]) }],
     regole: ["verbatim", ...levelRules(level), ...extra],
     livelloVerifica: level,
     notaRevisore: note,
@@ -657,8 +659,8 @@ function manualCase(m: ManualCase, ctx: { corrections: Correction[]; promises: C
     if (!cor) throw new Error(`${m.id}: correzione ${m.riferimento.record} inesistente`);
     const promiseId = cor.pagina.startsWith("/promesse#") ? cor.pagina.split("#")[1] : null;
     const promise = promiseId ? ctx.promises.find((p) => p.id === promiseId) : undefined;
-    const citations: ExpectedCitation[] = [{ dataset: "correzioni", record: cor.id, urlAccettati: cor.fonte ? [cor.fonte.url] : [] }];
-    if (promise) citations.push({ dataset: "promesse", record: promise.id, urlAccettati: [promise.fonte.url] });
+    const citations: ExpectedCitation[] = [{ dataset: "correzioni", record: cor.id, urlAccettati: cor.fonte ? urls([cor.fonte]) : [] }];
+    if (promise) citations.push({ dataset: "promesse", record: promise.id, urlAccettati: urls([promise.fonte]) });
     return makeCase({
       id: m.id,
       categoria: m.categoria,
