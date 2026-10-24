@@ -1,7 +1,7 @@
 {
   "fonti": {},
   "citazioni": {
-    "PRO-C27-FI-009": "Difetto nei dati, da correggere in data/promesse.json: nella fonte (copia d'archivio fanpage.it) le due frasi sono separate da «, ha spiegato. »; il record le unisce senza il segno di taglio «[…]»."
+    "PRO-C27-SVP-003": "Il record è fedele alla fonte: nell'HTML della Camera «iter» è in corsivo (l'<em>iter</em>) e il testo estratto diventa «l' iter», con uno spazio che la fonte non ha. Il resto della citazione si ritrova parola per parola."
   },
   "campi": {
     "confidenza": "Giudizio di Paghi Tu sulla qualità del confronto (A-D), non un dato della fonte.",

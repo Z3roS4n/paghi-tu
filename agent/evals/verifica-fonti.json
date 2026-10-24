@@ -1,6 +1,6 @@
 {
-  "domandeSha256": "1aebde93cadd50953f8fb9d9d5f628e033268f484c76ab725b1084bf1f668ba9",
-  "verificatoIl": "2026-10-23",
+  "domandeSha256": "f5bc27d797a80501e0cf31c7d80343032e8ac127c4232515d5899c9a2f57acc0",
+  "verificatoIl": "2026-10-24",
   "fonti": [
     {
       "url": "http://dati.camera.it/ocd/attocamera.rdf/ac01_1391",
@@ -282,6 +282,15 @@
       "caratteri": 0
     },
     {
+      "url": "https://bdp.camera.it/init/iter",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://bdp.camera.it/init/iter",
+      "tipo": "html",
+      "caratteri": 6506
+    },
+    {
       "url": "https://dati.camera.it/sparql",
       "esito": "ok",
       "via": "diretto",
@@ -297,7 +306,7 @@
       "http": 200,
       "urlLetto": "https://decidiamo.com/processes/energia-pulita-e-popolare/f/52/proposals/2003",
       "tipo": "html",
-      "caratteri": 24742
+      "caratteri": 24744
     },
     {
       "url": "https://documenti.camera.it/apps/nuovosito/attigoverno/Schedalavori/getTesto.ashx?file=0333_F001.pdf&leg=XVIII",
@@ -343,6 +352,24 @@
       "urlLetto": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0726/allegato_a.htm",
       "tipo": "html",
       "caratteri": 344900
+    },
+    {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm",
+      "tipo": "html",
+      "caratteri": 594614
+    },
+    {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0732/allegato_b.htm",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0732/allegato_b.htm",
+      "tipo": "html",
+      "caratteri": 124396
     },
     {
       "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10a_exp/A.MIO_NAC.S13.TOTAL+GF01+GF02+GF03+GF04+GF05+GF06+GF07+GF08+GF09+GF10+GF0107+GF1001+GF1002+GF1003.TE.IT?format=SDMX-CSV",
@@ -415,7 +442,7 @@
       "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_164_DF_DCIS_RICPOPRES2011_1,1.0/",
       "tipo": "binario",
       "caratteri": 0,
-      "errore": "saltato"
+      "errore": "TypeError: fetch failed"
     },
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_279_DF_DCIS_RICPOPRES1991_1,1.0/",
@@ -425,7 +452,7 @@
       "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_279_DF_DCIS_RICPOPRES1991_1,1.0/",
       "tipo": "binario",
       "caratteri": 0,
-      "errore": "saltato"
+      "errore": "TypeError: fetch failed"
     },
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_305_DF_DCIS_RICPOPRES2001_1,1.0/",
@@ -435,7 +462,7 @@
       "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_305_DF_DCIS_RICPOPRES2001_1,1.0/",
       "tipo": "binario",
       "caratteri": 0,
-      "errore": "saltato"
+      "errore": "TypeError: fetch failed"
     },
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_346_DF_DCIS_RICPOPRES1971_1,1.0/",
@@ -445,7 +472,7 @@
       "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_346_DF_DCIS_RICPOPRES1971_1,1.0/",
       "tipo": "binario",
       "caratteri": 0,
-      "errore": "saltato"
+      "errore": "TypeError: fetch failed"
     },
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_347_DF_DCIS_RICPOPRES1981_1,1.0/",
@@ -455,7 +482,7 @@
       "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_347_DF_DCIS_RICPOPRES1981_1,1.0/",
       "tipo": "binario",
       "caratteri": 0,
-      "errore": "saltato"
+      "errore": "TypeError: fetch failed"
     },
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,22_289_DF_DCIS_POPRES1_1,1.0/",
@@ -465,7 +492,7 @@
       "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,22_289_DF_DCIS_POPRES1_1,1.0/",
       "tipo": "binario",
       "caratteri": 0,
-      "errore": "saltato"
+      "errore": "TypeError: fetch failed"
     },
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,92_506_DF_DCCN_PILN_1,1.0/A.IT.B1GQ_B_W2_S1..../ALL/",
@@ -475,7 +502,7 @@
       "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,92_506_DF_DCCN_PILN_1,1.0/A.IT.B1GQ_B_W2_S1..../ALL/",
       "tipo": "binario",
       "caratteri": 0,
-      "errore": "saltato"
+      "errore": "TypeError: fetch failed"
     },
     {
       "url": "https://finanzalocale.interno.gov.it/docum/studi/varie/soppressione_ici.pdf",
@@ -487,13 +514,13 @@
       "caratteri": 10323
     },
     {
-      "url": "https://futuronazionale.it/programma/",
+      "url": "https://futuronazionale.it/wp-content/uploads/2026/09/GIUSTIFICATO_SLOT-1-e-2_Base-Programmatica-di-Futuro-Nazionale-24-agosto-2026.pdf",
       "esito": "ok",
       "via": "diretto",
       "http": 200,
-      "urlLetto": "https://futuronazionale.it/programma/",
-      "tipo": "html",
-      "caratteri": 410047
+      "urlLetto": "https://futuronazionale.it/wp-content/uploads/2026/09/GIUSTIFICATO_SLOT-1-e-2_Base-Programmatica-di-Futuro-Nazionale-24-agosto-2026.pdf",
+      "tipo": "pdf",
+      "caratteri": 383165
     },
     {
       "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana",
@@ -547,7 +574,7 @@
       "http": 200,
       "urlLetto": "https://www.noimoderati.it/news-e-media/12",
       "tipo": "html",
-      "caratteri": 6653
+      "caratteri": 6652
     },
     {
       "url": "https://noimoderati.it/news-e-media/42",
@@ -565,7 +592,7 @@
       "http": 200,
       "urlLetto": "https://www.noimoderati.it/news-e-media/86",
       "tipo": "html",
-      "caratteri": 3191
+      "caratteri": 3192
     },
     {
       "url": "https://ora-italia.it/previdenza-complementare-e-venture-capital/",
@@ -622,6 +649,15 @@
       "caratteri": 5755
     },
     {
+      "url": "https://www.alanews.it/2026/10/23/politica/bonus-ai-genitori-proposta-salvini",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://www.alanews.it/2026/10/23/politica/bonus-ai-genitori-proposta-salvini",
+      "tipo": "html",
+      "caratteri": 15000
+    },
+    {
       "url": "https://www.azione.it/le-nostre-proposte-immigrazione/",
       "esito": "ok",
       "via": "diretto",
@@ -637,7 +673,7 @@
       "http": 200,
       "urlLetto": "https://www.azione.it/meno-distrazione-piu-azione/",
       "tipo": "html",
-      "caratteri": 9503
+      "caratteri": 9496
     },
     {
       "url": "https://www.bancaditalia.it/statistiche/tematiche/stat-storiche/stat-storiche-economia/NA150_2.0.zip",
@@ -709,7 +745,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/governo-meloni/20727",
       "tipo": "html",
-      "caratteri": 15781
+      "caratteri": 15779
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/i-governi-nelle-legislature/192",
@@ -718,7 +754,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/i-governi-nelle-legislature/192",
       "tipo": "html",
-      "caratteri": 16696
+      "caratteri": 16694
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ii-legislatura-25-giugno-1953-14-marzo-1958/governo-pella/3223",
@@ -727,7 +763,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ii-legislatura-25-giugno-1953-14-marzo-1958/governo-pella/3223",
       "tipo": "html",
-      "caratteri": 14232
+      "caratteri": 14230
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-fanfani-iii/3214",
@@ -745,7 +781,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-segni-ii/3216",
       "tipo": "html",
-      "caratteri": 15009
+      "caratteri": 15007
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ordinamento-provvisorio-25-luglio-1943-23-maggio-1948-assemblea-3",
@@ -781,7 +817,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/vii-legislatura-5-luglio-1976-2-aprile-1979/governo-andreotti-iii/3191",
       "tipo": "html",
-      "caratteri": 16113
+      "caratteri": 16117
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/viii-legislatura-20-giugno-1979-4-maggio-1983/governo-fanfani-v/3181",
@@ -790,7 +826,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/viii-legislatura-20-giugno-1979-4-maggio-1983/governo-fanfani-v/3181",
       "tipo": "html",
-      "caratteri": 15174
+      "caratteri": 15172
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xi-legislatura-23-aprile-1992-16-gennaio-1994/governo-amato/3169",
@@ -799,7 +835,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xi-legislatura-23-aprile-1992-16-gennaio-1994/governo-amato/3169",
       "tipo": "html",
-      "caratteri": 15182
+      "caratteri": 15180
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xvi-legislatura-dal-29-aprile-2008-al-23-dicembre-2012/governo-berlusconi",
@@ -835,7 +871,16 @@
       "http": 200,
       "urlLetto": "https://www.ilgiornale.it/news/interni/fdi-reato-di-associazione-a-delinquere-per-chi-devasta-e-aggredisce-le-forze-dellordine/",
       "tipo": "html",
-      "caratteri": 8676
+      "caratteri": 8675
+    },
+    {
+      "url": "https://www.ilgiornale.it/news/politica-economica/manovra-casasco-fi-no-tax-area-under-30-riduzione-irpef-e-sostegno-alla-sanita-per-gli-anziani-le-priorita-di-forza-italia/",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://www.ilgiornale.it/news/politica-economica/manovra-casasco-fi-no-tax-area-under-30-riduzione-irpef-e-sostegno-alla-sanita-per-gli-anziani-le-priorita-di-forza-italia/",
+      "tipo": "html",
+      "caratteri": 6846
     },
     {
       "url": "https://www.ilmessaggero.it/politica/schlein_programma_governo_energia_sanita_lavoro_sicurezza_giorgia_meloni-9694413.html",
@@ -844,7 +889,7 @@
       "http": 200,
       "urlLetto": "https://www.ilmessaggero.it/politica/schlein_programma_governo_energia_sanita_lavoro_sicurezza_giorgia_meloni-9694413.html",
       "tipo": "html",
-      "caratteri": 46805
+      "caratteri": 46604
     },
     {
       "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/comunicati-stampa/2025/04/Allegati/3732_Cs_Osservatorio-Assegno-Unico-Universale.pdf",
@@ -884,13 +929,12 @@
     },
     {
       "url": "https://www.istat.it/wp-content/uploads/2026/07/Nota-informativa30luglio2026.pdf",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 0,
+      "http": 200,
       "urlLetto": "https://www.istat.it/wp-content/uploads/2026/07/Nota-informativa30luglio2026.pdf",
-      "tipo": "binario",
-      "caratteri": 0,
-      "errore": "saltato"
+      "tipo": "pdf",
+      "caratteri": 10275
     },
     {
       "url": "https://www.lasicilia.it/news/politica/3052972/mezzogiorno-protagonista-de-luca-rilancia-l-autonomia-e-la-super-zes-contro-il-romanocentrismo.html",
@@ -908,7 +952,7 @@
       "http": 200,
       "urlLetto": "https://www.lavocedelpatriota.it/forteto-liniziativa-di-fdi-risarcimento-a-tutte-le-vittime/",
       "tipo": "html",
-      "caratteri": 16557
+      "caratteri": 16456
     },
     {
       "url": "https://www.maiemondiale.com/index.php/2026/02/24/maie-svolta-sul-voto-estero-proposta-di-legge-per-piu-sicurezza-e-sostegno-al-si-al-referendum/",
@@ -935,7 +979,7 @@
       "http": 200,
       "urlLetto": "https://www.milanofinanza.it/news/manovra-casasco-forza-italia-flat-tax-per-tutti-202608251910269198",
       "tipo": "html",
-      "caratteri": 45290
+      "caratteri": 45343
     },
     {
       "url": "https://www.movimento5stelle.eu/wp-content/uploads/2026/09/NOVA_20_PUNTI.pdf",
@@ -1025,7 +1069,7 @@
       "http": 200,
       "urlLetto": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2026-10-09;180",
       "tipo": "html",
-      "caratteri": 99518
+      "caratteri": 99641
     },
     {
       "url": "https://www.partitocapibara.it/it/istruzione-gratis",
@@ -2074,7 +2118,9 @@
       "valori": [
         {
           "campo": "previsto",
-          "esito": "non_trovato"
+          "esito": "trovato",
+          "url": "https://documenti.camera.it/apps/nuovosito/attigoverno/Schedalavori/getTesto.ashx?file=0333_F001.pdf&leg=XVIII",
+          "forma": "18.914,80"
         },
         {
           "campo": "consuntivo",
@@ -2427,6 +2473,28 @@
       ]
     },
     {
+      "id": "PRO-C27-AVS-046",
+      "verbatim": {
+        "trovato": true,
+        "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm",
+        "mancanti": []
+      },
+      "valori": [
+        {
+          "campo": "dichiarante",
+          "esito": "trovato",
+          "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm",
+          "forma": "angelo bonelli"
+        },
+        {
+          "campo": "data",
+          "esito": "trovato",
+          "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm",
+          "forma": "20261021"
+        }
+      ]
+    },
+    {
       "id": "PRO-C27-AZ-006",
       "verbatim": {
         "trovato": true,
@@ -2609,11 +2677,9 @@
     {
       "id": "PRO-C27-FI-009",
       "verbatim": {
-        "trovato": false,
+        "trovato": true,
         "url": "https://www.fanpage.it/politica/pensioni-forza-italia-vuole-alzare-le-minime-a-850-euro-nella-legge-di-bilancio-2027/",
-        "mancanti": [
-          "con un intervento mirato e selettivo possiamo portarle ad almeno 800/850 euro, con una spesa stimata in circa 1 miliardo di euro. vanno adeguate subito al costo della vita."
-        ]
+        "mancanti": []
       },
       "valori": [
         {
@@ -2653,17 +2719,39 @@
       ]
     },
     {
-      "id": "PRO-C27-FN-016",
+      "id": "PRO-C27-FI-017",
       "verbatim": {
         "trovato": true,
-        "url": "https://futuronazionale.it/programma/",
+        "url": "https://www.ilgiornale.it/news/politica-economica/manovra-casasco-fi-no-tax-area-under-30-riduzione-irpef-e-sostegno-alla-sanita-per-gli-anziani-le-priorita-di-forza-italia/",
         "mancanti": []
       },
       "valori": [
         {
           "campo": "dichiarante",
           "esito": "trovato",
-          "url": "https://futuronazionale.it/programma/",
+          "url": "https://www.ilgiornale.it/news/politica-economica/manovra-casasco-fi-no-tax-area-under-30-riduzione-irpef-e-sostegno-alla-sanita-per-gli-anziani-le-priorita-di-forza-italia/",
+          "forma": "maurizio casasco"
+        },
+        {
+          "campo": "data",
+          "esito": "trovato",
+          "url": "https://www.ilgiornale.it/news/politica-economica/manovra-casasco-fi-no-tax-area-under-30-riduzione-irpef-e-sostegno-alla-sanita-per-gli-anziani-le-priorita-di-forza-italia/",
+          "forma": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "PRO-C27-FN-016",
+      "verbatim": {
+        "trovato": true,
+        "url": "https://futuronazionale.it/wp-content/uploads/2026/09/GIUSTIFICATO_SLOT-1-e-2_Base-Programmatica-di-Futuro-Nazionale-24-agosto-2026.pdf",
+        "mancanti": []
+      },
+      "valori": [
+        {
+          "campo": "dichiarante",
+          "esito": "trovato",
+          "url": "https://futuronazionale.it/wp-content/uploads/2026/09/GIUSTIFICATO_SLOT-1-e-2_Base-Programmatica-di-Futuro-Nazionale-24-agosto-2026.pdf",
           "forma": "futuro nazionale"
         },
         {
@@ -2745,6 +2833,28 @@
       ]
     },
     {
+      "id": "PRO-C27-LEGA-025",
+      "verbatim": {
+        "trovato": true,
+        "url": "https://www.alanews.it/2026/10/23/politica/bonus-ai-genitori-proposta-salvini",
+        "mancanti": []
+      },
+      "valori": [
+        {
+          "campo": "dichiarante",
+          "esito": "trovato",
+          "url": "https://www.alanews.it/2026/10/23/politica/bonus-ai-genitori-proposta-salvini",
+          "forma": "matteo salvini"
+        },
+        {
+          "campo": "data",
+          "esito": "trovato",
+          "url": "https://www.alanews.it/2026/10/23/politica/bonus-ai-genitori-proposta-salvini",
+          "forma": "2026-10-23"
+        }
+      ]
+    },
+    {
       "id": "PRO-C27-M5S-018",
       "verbatim": {
         "trovato": true,
@@ -2761,6 +2871,28 @@
         {
           "campo": "data",
           "esito": "non_trovato"
+        }
+      ]
+    },
+    {
+      "id": "PRO-C27-M5S-046",
+      "verbatim": {
+        "trovato": true,
+        "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm",
+        "mancanti": []
+      },
+      "valori": [
+        {
+          "campo": "dichiarante",
+          "esito": "trovato",
+          "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm",
+          "forma": "giuseppe conte"
+        },
+        {
+          "campo": "data",
+          "esito": "trovato",
+          "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm",
+          "forma": "20261021"
         }
       ]
     },
@@ -2969,6 +3101,50 @@
       ]
     },
     {
+      "id": "PRO-C27-PD-028",
+      "verbatim": {
+        "trovato": true,
+        "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm",
+        "mancanti": []
+      },
+      "valori": [
+        {
+          "campo": "dichiarante",
+          "esito": "trovato",
+          "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm",
+          "forma": "elly schlein"
+        },
+        {
+          "campo": "data",
+          "esito": "trovato",
+          "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm",
+          "forma": "20261021"
+        }
+      ]
+    },
+    {
+      "id": "PRO-C27-PD-029",
+      "verbatim": {
+        "trovato": true,
+        "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm",
+        "mancanti": []
+      },
+      "valori": [
+        {
+          "campo": "dichiarante",
+          "esito": "trovato",
+          "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm",
+          "forma": "elly schlein"
+        },
+        {
+          "campo": "data",
+          "esito": "trovato",
+          "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm",
+          "forma": "20261021"
+        }
+      ]
+    },
+    {
       "id": "PRO-C27-PE-002",
       "verbatim": {
         "trovato": true,
@@ -2987,6 +3163,50 @@
           "esito": "trovato",
           "url": "https://www.piueuropa.eu/cannabis_magi_legalizzazione_sia_in_programma_centrosinistra_in_svizzera_prosciugato_mercato_nero",
           "forma": "06/05/2026"
+        }
+      ]
+    },
+    {
+      "id": "PRO-C27-PE-025",
+      "verbatim": {
+        "trovato": true,
+        "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm",
+        "mancanti": []
+      },
+      "valori": [
+        {
+          "campo": "dichiarante",
+          "esito": "trovato",
+          "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm",
+          "forma": "riccardo magi"
+        },
+        {
+          "campo": "data",
+          "esito": "trovato",
+          "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm",
+          "forma": "20261021"
+        }
+      ]
+    },
+    {
+      "id": "PRO-C27-PE-026",
+      "verbatim": {
+        "trovato": true,
+        "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm",
+        "mancanti": []
+      },
+      "valori": [
+        {
+          "campo": "dichiarante",
+          "esito": "trovato",
+          "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm",
+          "forma": "riccardo magi"
+        },
+        {
+          "campo": "data",
+          "esito": "trovato",
+          "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm",
+          "forma": "20261021"
         }
       ]
     },
@@ -3057,6 +3277,30 @@
       ]
     },
     {
+      "id": "PRO-C27-SVP-003",
+      "verbatim": {
+        "trovato": false,
+        "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0732/allegato_b.htm",
+        "mancanti": [
+          "favorendo, per quanto di competenza, l'iter delle iniziative legislative presentate per l'adozione di un codice dei crimini internazionali"
+        ]
+      },
+      "valori": [
+        {
+          "campo": "dichiarante",
+          "esito": "trovato",
+          "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0732/allegato_b.htm",
+          "forma": "boldrini; della vedova; zanella; francesco silvestri; amendola; giachetti; fratoianni; provenzano; magi; porta; scotto; ferrari; bakkali; berruto; ghio; schullian; zaratti; bonelli; borrelli; dori; ghirra; grimaldi; mari; piccolotti; ascari; carotenuto"
+        },
+        {
+          "campo": "data",
+          "esito": "trovato",
+          "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0732/allegato_b.htm",
+          "forma": "20261023"
+        }
+      ]
+    },
+    {
       "id": "SER-pil-nominale-2025",
       "verbatim": null,
       "valori": [
@@ -3082,7 +3326,9 @@
       "valori": [
         {
           "campo": "prezzi-consumo-foi",
-          "esito": "non_trovato"
+          "esito": "trovato",
+          "url": "https://www.istat.it/wp-content/uploads/2026/07/Nota-informativa30luglio2026.pdf",
+          "forma": "9286,869"
         }
       ]
     }

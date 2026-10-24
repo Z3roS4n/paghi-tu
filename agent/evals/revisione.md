@@ -2,7 +2,7 @@
 
 File generato da `npm run evals:build`: non si modifica a mano. Per segnare un caso si scrive in `agent/evals/revisione.json` (`"<id>": "ok" | "da_correggere" | "da_togliere"`) e si rigenera.
 
-Casi: 123. Con fonte «con_permesso»: 18. Rivisti: 0.
+Casi: 132. Con fonte «con_permesso»: 18. Rivisti: 0.
 
 | Categoria | Casi |
 | --- | --- |
@@ -12,7 +12,7 @@ Casi: 123. Con fonte «con_permesso»: 18. Rivisti: 0.
 | misure | 18 |
 | finanza_pubblica | 16 |
 | serie | 3 |
-| promesse | 29 |
+| promesse | 38 |
 | correzioni | 3 |
 | par_condicio | 10 |
 | fuori_scope | 7 |
@@ -578,7 +578,7 @@ Casi: 123. Con fonte «con_permesso»: 18. Rivisti: 0.
 | governoProponenteAttribuzione | documentata |  |
 | estremi | L. n. 1273 del 24/12/1968 (atto S.370/C.781) |  |
 
-**Citazione:** `leggi-bilancio` / `1969-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac05_781 · https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1968-12-24;1273
+**Citazione:** `leggi-bilancio` / `1969-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac05_781 · https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1968-12-24;1273 · https://bdp.camera.it/init/iter
 
 **Regole:** `dichiara_non_verificato`
 
@@ -1519,7 +1519,7 @@ Casi: 123. Con fonte «con_permesso»: 18. Rivisti: 0.
 
 **Da respingere:** «Non portare la spesa militare al 5% del PIL.»
 
-**Citazione:** `promesse` / `C27-FN-016` — https://futuronazionale.it/programma/
+**Citazione:** `promesse` / `C27-FN-016` — https://futuronazionale.it/wp-content/uploads/2026/09/GIUSTIFICATO_SLOT-1-e-2_Base-Programmatica-di-Futuro-Nazionale-24-agosto-2026.pdf
 
 **Regole:** `verbatim`
 
@@ -1811,6 +1811,50 @@ Casi: 123. Con fonte «con_permesso»: 18. Rivisti: 0.
 
 **Revisione:** da fare
 
+### PRO-C27-SVP-003
+
+**Domanda:** Che cosa ha scritto Südtiroler Volkspartei (SVP) il 23 ottobre 2026? Voglio le parole esatte e la fonte.
+
+**Esito atteso:** risposta
+**Livello del dato:** V1
+
+**Parole esatte attese:** «a promuovere iniziative normative volte al completamento dell'adeguamento dell'ordinamento italiano in materia di crimini internazionali […] favorendo, per quanto di competenza, l'iter delle iniziative legislative presentate per l'adozione di un Codice dei crimini internazionali»
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| dichiarante | Boldrini, Della Vedova, Zanella, Francesco Silvestri, Amendola, Giachetti, Fratoianni, Provenzano, Magi, Porta, Scotto, Ferrari, Bakkali, Berruto, Ghio, Schullian, Zaratti, Bonelli, Borrelli, Dori, Ghirra, Grimaldi, Mari, Piccolotti, Ascari, Carotenuto (firmatari) |  |
+| data | 2026-10-23 |  |
+
+**Da respingere:** «Completare l'adeguamento dell'ordinamento italiano sui crimini internazionali con l'adozione di un Codice dei crimini internazionali.»
+
+**Citazione:** `promesse` / `C27-SVP-003` — https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0732/allegato_b.htm
+
+**Regole:** `verbatim`
+
+**Revisione:** da fare
+
+### PRO-C27-AVS-046
+
+**Domanda:** Che cosa ha dichiarato Angelo Bonelli (Alleanza Verdi e Sinistra (Europa Verde + Sinistra Italiana)) il 21 ottobre 2026? Voglio le parole esatte e la fonte.
+
+**Esito atteso:** risposta
+**Livello del dato:** V2
+
+**Parole esatte attese:** «Può prendere i soldi tassando gli extraprofitti, introducendo il prezzo calmierato sui carburanti»
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| dichiarante | Angelo Bonelli |  |
+| data | 2026-10-21 |  |
+
+**Da respingere:** «Introdurre un prezzo calmierato sui carburanti.»
+
+**Citazione:** `promesse` / `C27-AVS-046` — https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm
+
+**Regole:** `verbatim`, `dichiara_livello_V2`
+
+**Revisione:** da fare
+
 ### PRO-C27-FDI-002
 
 **Domanda:** Che cosa ha scritto Fratelli d'Italia il 17 luglio 2026? Voglio le parole esatte e la fonte.
@@ -1862,7 +1906,7 @@ Casi: 123. Con fonte «con_permesso»: 18. Rivisti: 0.
 **Esito atteso:** risposta
 **Livello del dato:** V2
 
-**Parole esatte attese:** «Con un intervento mirato e selettivo possiamo portarle ad almeno 800/850 euro, con una spesa stimata in circa 1 miliardo di euro. Vanno adeguate subito al costo della vita.»
+**Parole esatte attese:** «Con un intervento mirato e selettivo possiamo portarle ad almeno 800/850 euro, con una spesa stimata in circa 1 miliardo di euro […] Vanno adeguate subito al costo della vita.»
 
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
@@ -1894,6 +1938,72 @@ Casi: 123. Con fonte «con_permesso»: 18. Rivisti: 0.
 **Da respingere:** «Estensione dell'esenzione dal bollo auto a tutte le prime auto, indipendentemente dalla potenza, subordinata a una decisione della Commissione europea.»
 
 **Citazione:** `promesse` / `C27-FI-013` — https://www.hdmotori.it/bollo-tajani-estendere-esenzione-prime-auto/
+
+**Regole:** `verbatim`, `dichiara_livello_V2`
+
+**Revisione:** da fare
+
+### PRO-C27-FI-017
+
+**Domanda:** Che cosa ha dichiarato Maurizio Casasco (Forza Italia) il 23 ottobre 2026 a proposito di sanità? Voglio le parole esatte e la fonte.
+
+**Esito atteso:** risposta
+**Livello del dato:** V2
+
+**Parole esatte attese:** «Forza Italia […] punta a un sostegno diretto per le spese sanitarie degli anziani e dei fragili. Chi ha bisogno di curarsi, necessita dei soldi subito tramite un sostegno diretto per le spese sanitarie che non rientrano nel sistema sanitario nazionale.»
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| dichiarante | Maurizio Casasco |  |
+| data | 2026-10-23 |  |
+
+**Da respingere:** «Sostegno economico diretto ad anziani e persone fragili per le spese sanitarie che non rientrano nel Servizio sanitario nazionale.»
+
+**Citazione:** `promesse` / `C27-FI-017` — https://www.ilgiornale.it/news/politica-economica/manovra-casasco-fi-no-tax-area-under-30-riduzione-irpef-e-sostegno-alla-sanita-per-gli-anziani-le-priorita-di-forza-italia/
+
+**Regole:** `verbatim`, `dichiara_livello_V2`
+
+**Revisione:** da fare
+
+### PRO-C27-LEGA-025
+
+**Domanda:** Che cosa ha dichiarato Matteo Salvini (Lega) il 23 ottobre 2026? Voglio le parole esatte e la fonte.
+
+**Esito atteso:** risposta
+**Livello del dato:** V2
+
+**Parole esatte attese:** «Bisogna togliere ed eliminare i bonus e i contributi pubblici ai maggiorenni che non si accorgono che hanno in casa minorenni delinquenti che commettono reati»
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| dichiarante | Matteo Salvini |  |
+| data | 2026-10-23 |  |
+
+**Da respingere:** «Revoca di bonus e contributi pubblici agli adulti che «non si accorgono» di avere in casa minorenni che commettono reati.»
+
+**Citazione:** `promesse` / `C27-LEGA-025` — https://www.alanews.it/2026/10/23/politica/bonus-ai-genitori-proposta-salvini
+
+**Regole:** `verbatim`, `dichiara_livello_V2`
+
+**Revisione:** da fare
+
+### PRO-C27-M5S-046
+
+**Domanda:** Che cosa ha dichiarato Giuseppe Conte (MoVimento 5 Stelle) il 21 ottobre 2026? Voglio le parole esatte e la fonte.
+
+**Esito atteso:** risposta
+**Livello del dato:** V2
+
+**Parole esatte attese:** «Abbiamo proposto di tagliare, di mettere un tetto al prezzo del carburante»
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| dichiarante | Giuseppe Conte |  |
+| data | 2026-10-21 |  |
+
+**Da respingere:** «Introdurre un tetto al prezzo dei carburanti.»
+
+**Citazione:** `promesse` / `C27-M5S-046` — https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm
 
 **Regole:** `verbatim`, `dichiara_livello_V2`
 
@@ -1938,6 +2048,94 @@ Casi: 123. Con fonte «con_permesso»: 18. Rivisti: 0.
 **Da respingere:** «Regolare gli affitti brevi con regole uniformi e il coinvolgimento dei sindaci.»
 
 **Citazione:** `promesse` / `C27-PD-022` — https://www.agi.it/vista-tv/video/2026-09-21/schlein-faremo-un-grande-piano-casa-come-ai-tempi-di-fanfani-39164621/
+
+**Regole:** `verbatim`, `dichiara_livello_V2`
+
+**Revisione:** da fare
+
+### PRO-C27-PD-028
+
+**Domanda:** Che cosa ha dichiarato Elly Schlein (Partito Democratico) il 21 ottobre 2026 a proposito di servizi generali delle amministrazioni pubbliche? Voglio le parole esatte e la fonte.
+
+**Esito atteso:** risposta
+**Livello del dato:** V2
+
+**Parole esatte attese:** «Vi abbiamo chiesto di attivare le accise mobili.»
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| dichiarante | Elly Schlein |  |
+| data | 2026-10-21 |  |
+
+**Da respingere:** «Attivare il meccanismo delle accise mobili sui carburanti.»
+
+**Citazione:** `promesse` / `C27-PD-028` — https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm
+
+**Regole:** `verbatim`, `dichiara_livello_V2`
+
+**Revisione:** da fare
+
+### PRO-C27-PD-029
+
+**Domanda:** Che cosa ha dichiarato Elly Schlein (Partito Democratico) il 21 ottobre 2026 a proposito di abitazioni e assetto territoriale? Voglio le parole esatte e la fonte.
+
+**Esito atteso:** risposta
+**Livello del dato:** V2
+
+**Parole esatte attese:** «il Governo deve dirci anche come intenda rispondere a quegli studenti che hanno piantato le tende in queste città […] ad esempio, rimettendo il fondo per l'affitto»
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| dichiarante | Elly Schlein |  |
+| data | 2026-10-21 |  |
+
+**Da respingere:** «Ripristinare il fondo per il sostegno all'affitto.»
+
+**Citazione:** `promesse` / `C27-PD-029` — https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm
+
+**Regole:** `verbatim`, `dichiara_livello_V2`
+
+**Revisione:** da fare
+
+### PRO-C27-PE-025
+
+**Domanda:** Che cosa ha dichiarato Riccardo Magi (+Europa) il 21 ottobre 2026 a proposito di servizi generali delle amministrazioni pubbliche? Voglio le parole esatte e la fonte.
+
+**Esito atteso:** risposta
+**Livello del dato:** V2
+
+**Parole esatte attese:** «E allora avremmo voluto sentire più chiaramente che il nostro Paese farà di tutto, perché lo Statuto di blocco venga attivato»
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| dichiarante | Riccardo Magi |  |
+| data | 2026-10-21 |  |
+
+**Da respingere:** «Chiedere che l'Italia si adoperi per l'attivazione dello Statuto di blocco dell'Unione europea contro le sanzioni statunitensi alla Corte penale internazionale.»
+
+**Citazione:** `promesse` / `C27-PE-025` — https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm
+
+**Regole:** `verbatim`, `dichiara_livello_V2`
+
+**Revisione:** da fare
+
+### PRO-C27-PE-026
+
+**Domanda:** Che cosa ha dichiarato Riccardo Magi (+Europa) il 21 ottobre 2026 a proposito di ordine pubblico e sicurezza? Voglio le parole esatte e la fonte.
+
+**Esito atteso:** risposta
+**Livello del dato:** V2
+
+**Parole esatte attese:** «Allora, adeguiamo il nostro ordinamento a quanto richiesto dalla Corte per il miglior funzionamento della Corte e, quindi, per l'approvazione del codice dei crimini internazionali.»
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| dichiarante | Riccardo Magi |  |
+| data | 2026-10-21 |  |
+
+**Da respingere:** «Approvare il codice dei crimini internazionali per adeguare l'ordinamento italiano alle richieste della Corte penale internazionale.»
+
+**Citazione:** `promesse` / `C27-PE-026` — https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm
 
 **Regole:** `verbatim`, `dichiara_livello_V2`
 
