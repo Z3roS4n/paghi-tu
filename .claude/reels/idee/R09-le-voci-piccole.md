@@ -36,13 +36,14 @@ Fonte: Eurostat, spesa per funzione (COFOG), 2024.
 del sito, da far ricontrollare prima di pubblicare; se non si vuole aggiungere un calcolo, togliere la frase.
 
 ## Voce (Giulio)
+Come nel prompt (cifre alternate, «…» e MAIUSCOLO per l'intonazione):
 ```
-Quanto spende lo Stato per la difesa, per ogni residente? [pausa breve] Quattrocentottanta euro all'anno. Nel duemilaventiquattro.
-[pausa] Per l'ordine pubblico e la sicurezza, seicentosessantatré.
-Per l'ambiente, trecentotrentasei. [pausa breve] Per cultura, sport e culto, trecentodiciotto.
+Quanto spende lo Stato per la difesa, per ogni residente? … Quattrocentottanta euro all'anno. Nel duemilaventiquattro.
+Per l'ordine pubblico e la sicurezza, più di seicento.
+Per l'ambiente e per cultura, sport e culto, poco più di trecento ciascuna.
 Per la casa e il territorio, duecentottantotto.
-[pausa] Sono le voci di cui si discute di più. [pausa breve] Ma messe insieme pesano meno della sola sanità, che vale duemila quattrocentosettantotto euro a testa.
-[pausa] Sono medie per residente. [pausa breve] Tutte le voci, con le fonti, su paghitu punto it.
+Sono le voci di cui si discute di più. Ma messe insieme… pesano MENO della sola sanità, che vale duemilaquattrocentosettantotto euro a testa.
+Sono medie per residente. Tutte le voci, con le fonti, su paghitu punto it.
 ```
 
 ## Immagini

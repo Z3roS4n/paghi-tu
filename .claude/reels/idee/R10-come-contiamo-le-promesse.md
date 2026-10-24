@@ -51,14 +51,15 @@ Nessun numero di righe per partito: la pagina stessa dice che non misura niente.
 - **54-60 s** Chiusura con il timbro e «paghitu.it/promesse».
 
 ## Voce (Giulio)
+Come nel prompt (cifre alternate, «…» e MAIUSCOLO per l'intonazione):
 ```
-Chi promette cosa, per le politiche del duemilaventisette? [pausa breve] Prima di risponderti, ti diciamo come lavoriamo.
+Chi promette cosa, per le politiche del duemilaventisette? … Prima di risponderti, ti diciamo come lavoriamo.
 I partiti sono in ordine alfabetico, e le regole sono le stesse per tutti.
-Per ogni promessa c'è la frase esatta, chi l'ha detta, quando e dove. [pausa breve] E se riguarda la legislatura in corso, o la prossima.
-[pausa] Il costo? Solo quello dichiarato da chi propone, o la stima di un ente indipendente. [pausa breve] Noi non ne inventiamo.
+Per ogni promessa c'è la frase esatta, chi l'ha detta, quando e dove. E se riguarda la legislatura in corso, o la prossima.
+Il costo? Solo quello dichiarato da chi propone, o la stima di un ente indipendente. Noi non ne inventiamo.
 Una promessa risulta mantenuta solo con un atto ufficiale, e solo alla scadenza che si era data.
-[pausa] E attenzione a contare le righe. Al ventuno ottobre solo alcuni partiti avevano pubblicato un programma: per gli altri le promesse vengono da proposte di legge e interviste. E quando una proposta contiene cinque misure, diventano cinque righe. [pausa breve] Più righe non vuol dire più promesse.
-[pausa] Nessuna classifica, nessun giudizio. Le trovi tutte su paghitu punto it.
+E attenzione a contare le righe. Al ventuno ottobre solo alcuni partiti avevano pubblicato un programma: per gli altri le promesse vengono da proposte di legge e interviste. E quando una proposta contiene cinque misure, diventano cinque righe. Più righe… NON vuol dire più promesse.
+Nessuna classifica, nessun giudizio. Le trovi tutte su paghitu punto it.
 ```
 Circa 125 parole.
 

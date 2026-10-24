@@ -13,13 +13,20 @@ giornaliera (passo «Idee per i Reel» in `.claude/routines/aggiornamento-dati.m
 ## Come lavora Animatio (dal primo video)
 - Voce Giulio letta in un passaggio unico, senza tag di emozione (i tag `[pausa]` diventano silenzi di 2 s), poi
   tagliata per scena sulle pause. Giulio legge lento: circa 120-130 parole fanno 60-70 secondi.
-- **Parlato arrotondato, schermo esatto:** Giulio dice «quasi ventimila», a schermo c'è «19.633 €» con la fonte.
+- **Voce parlata, schermo esatto:** a schermo «19.633 €» con la fonte; a voce la cifra chiave intera, le altre arrotondate (vedi sotto).
   Una persona non legge le slide.
 - Le grafiche si agganciano alla parola della trascrizione che le nomina.
 - Componenti del brand già pronti: `scontrino` e `cento-quadretti`; il timbro «TU» va salvato come `timbro`.
 - Immagini: `immagine_genera` (gemini-3-pro-image) con lo stile comune dei prompt, poi bicromia del brand;
   `scontorna` per le foto-oggetto; `video_genera` solo per clip brevi di oggetti, con il primo fotogramma.
 - Quello che mancava al primo video: foto dimostrative e oggetti riconoscibili accanto ai grafici.
+- Correzioni del titolare sul video del disavanzo (22/10/2026), da rispettare in ogni copione e prompt:
+  - Giulio con eleven_v3, stabilità 0,5, stile 0,4: intonazione guidata da «…» prima delle cifre chiave e da una o
+    due parole in MAIUSCOLO;
+  - cifre a voce alternate: la cifra che regge il video intera, le altre arrotondate, mai decimali, «quasi» e
+    «più di» al massimo una volta ogni due cifre;
+  - niente transizioni a spinta o swipe in su o in giù: morph con un elemento grafico che cambia forma (massimo 2
+    per video), altrimenti taglio.
 - Stati: `idea` → `in lavorazione` → `pubblicato` (con data e link al post), oppure `scartato` (con il motivo).
   `riserva`: scheda pronta senza data, da usare quando una settimana non ha notizie adatte.
 
