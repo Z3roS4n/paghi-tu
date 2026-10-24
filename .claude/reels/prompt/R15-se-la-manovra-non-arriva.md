@@ -22,7 +22,7 @@ DALLE CORREZIONI DEI VIDEO PRECEDENTI (paghi-tu/01-04: valgono qui)
 - Musica nuova della famiglia del primo video (elettronica minimale, pulse a 100 BPM, piano e sub morbido), 14 dB sotto la voce; agganciala con sync_musica in modo che l'accordo largo arrivi sulla chiusura.
 - Immagini: scene con gemini-3-pro-image a 2K; oggetti isolati con gpt-image-1.5 e «trasparente» (la chiave verde con gemini è uscita rovinata nel 03). Poi bicromia del brand.
 - Nota per le cifre a testa: «Medie per residente, non quanto paga ogni persona.»
-- Due versioni: con sottotitoli e senza (copia del progetto senza /sopra, come 03 e 04; c'è il modello «paghi-tu-reel-dati»). Didascalia scritta nel progetto. Copertina come tavola del canvas «Copertina» del progetto, con un layout diverso da quelle dei video 01 e 03.
+- Due versioni: con sottotitoli e senza (copia del progetto senza /sopra, come 03 e 04). Didascalia scritta nel progetto. Copertina come tavola del canvas «Copertina» del progetto, con un layout diverso da quelle dei video 01 e 03.
 - Prima del render: foglio, fotogrammi dei momenti chiave, progetto_controlla senza avvisi. Poi i due render. Niente consegna e niente programmazione su Instagram: le fa il titolare.
 
 L'IDEA
@@ -49,7 +49,7 @@ Riassumendo: c'è un calendario, e se salta c'è un paracadute di quattro mesi a
 SCENE (tempi indicativi: comanda la voce)
 
 1 · GANCIO (su «Cosa succede… trentuno dicembre?»)
-- Fondo notte #14181A. Clip V1: calendario da tavolo a fogli strappabili, i fogli si staccano fino al «31». Sopra, Bricolage 800 bianco: «E se la manovra non arriva entro il 31 dicembre?», «31 dicembre» in terracotta.
+- Fondo notte #14181A. Clip V1: calendario da tavolo a fogli strappabili, i fogli si staccano fino al «31». Sopra, Bricolage 800 in #E9ECED: «E se la manovra non arriva entro il 31 dicembre?», «31 dicembre» in accento notte #E9875C.
 
 2 · COS'È (da «La manovra è…» a «l'anno dopo»)
 - Fondo carta #ECEEEE. Foto F1 (faldone legato con nastro) in bicromia al 25%, parallasse lento.

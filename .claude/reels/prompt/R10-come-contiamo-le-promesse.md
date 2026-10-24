@@ -22,7 +22,7 @@ DALLE CORREZIONI DEI VIDEO PRECEDENTI (paghi-tu/01-04: valgono qui)
 - Musica nuova della famiglia del primo video (elettronica minimale, pulse a 100 BPM, piano e sub morbido), 14 dB sotto la voce; agganciala con sync_musica in modo che l'accordo largo arrivi sulla chiusura.
 - Immagini: scene con gemini-3-pro-image a 2K; oggetti isolati con gpt-image-1.5 e «trasparente» (la chiave verde con gemini è uscita rovinata nel 03). Poi bicromia del brand.
 - Nota per le cifre a testa: «Medie per residente, non quanto paga ogni persona.»
-- Due versioni: con sottotitoli e senza (copia del progetto senza /sopra, come 03 e 04; c'è il modello «paghi-tu-reel-dati»). Didascalia scritta nel progetto. Copertina come tavola del canvas «Copertina» del progetto, con un layout diverso da quelle dei video 01 e 03.
+- Due versioni: con sottotitoli e senza (copia del progetto senza /sopra, come 03 e 04). Didascalia scritta nel progetto. Copertina come tavola del canvas «Copertina» del progetto, con un layout diverso da quelle dei video 01 e 03.
 - Prima del render: foglio, fotogrammi dei momenti chiave, progetto_controlla senza avvisi. Poi i due render. Niente consegna e niente programmazione su Instagram: le fa il titolare.
 
 L'IDEA
@@ -78,7 +78,7 @@ Stile comune: «Editorial still-life photograph, soft north-window daylight, sha
 - F3 · urna (1:1, per la copertina): «An empty transparent ballot box on a plain table, three-quarter view, no markings.»
 
 COPERTINA (1080×1920)
-F3 in bicromia; in alto, Bricolage 800: «Le regole per le promesse»; sotto, in grigio, «stesse per tutti».
+F3 in bicromia; in alto, Bricolage 800: «Le regole per le promesse»; sotto, in inchiostro, «stesse per tutti».
 
 CONTROLLI PRIMA DEL RENDER
 - Riaprire paghitu.it/promesse: l'elenco dei partiti a schermo deve essere identico a quello della pagina quel giorno, completo e nello stesso ordine.

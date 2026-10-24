@@ -22,7 +22,7 @@ DALLE CORREZIONI DEI VIDEO PRECEDENTI (paghi-tu/01-04: valgono qui)
 - Musica nuova della famiglia del primo video (elettronica minimale, pulse a 100 BPM, piano e sub morbido), 14 dB sotto la voce; agganciala con sync_musica in modo che l'accordo largo arrivi sulla chiusura.
 - Immagini: scene con gemini-3-pro-image a 2K; oggetti isolati con gpt-image-1.5 e «trasparente» (la chiave verde con gemini è uscita rovinata nel 03). Poi bicromia del brand.
 - Nota per le cifre a testa: «Medie per residente, non quanto paga ogni persona.»
-- Due versioni: con sottotitoli e senza (copia del progetto senza /sopra, come 03 e 04; c'è il modello «paghi-tu-reel-dati»). Didascalia scritta nel progetto. Copertina come tavola del canvas «Copertina» del progetto, con un layout diverso da quelle dei video 01 e 03.
+- Due versioni: con sottotitoli e senza (copia del progetto senza /sopra, come 03 e 04). Didascalia scritta nel progetto. Copertina come tavola del canvas «Copertina» del progetto, con un layout diverso da quelle dei video 01 e 03.
 - Prima del render: foglio, fotogrammi dei momenti chiave, progetto_controlla senza avvisi. Poi i due render. Niente consegna e niente programmazione su Instagram: le fa il titolare.
 
 L'IDEA
