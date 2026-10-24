@@ -12,7 +12,7 @@ Domande con la risposta e la citazione che l'agente conversazionale di Paghi Tu 
 | `domande.jsonl` | il golden set, un caso per riga | no, si rigenera |
 | `revisione.md` | lo stesso set in forma leggibile, per la revisione | no, si rigenera |
 | `testo.ts` | normalizzazione del testo e forme accettate per numeri, date, nomi e costi | sì, con un test in `testo.test.ts` |
-| `verifica-fonti.ts` | legge ogni fonte attesa online e cerca citazioni e valori (D-025) | sì |
+| `verifica-fonti.ts` | legge ogni fonte attesa online e cerca citazioni e valori (D-028) | sì |
 | `verifica-fonti.json` | registro dell'ultima verifica online: fonti lette, citazioni e valori trovati | no, lo scrive `evals:verify` |
 | `eccezioni-fonti.json` | ragioni scritte per ciò che non si trova nella fonte, e somme con i loro addendi | sì, una ragione per voce |
 | `verifica.test.ts` | i controlli deterministici: decide se il set è coerente con le fonti | sì |

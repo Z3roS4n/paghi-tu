@@ -18,7 +18,8 @@ Per un dato che manca (una promessa, una misura, una fonte ufficiale) c'è il mo
 
 ### Cosa succede dopo
 
-- Ogni giorno la routine legge le segnalazioni aperte. Un agente verificatore, diverso da quello che ha scritto il dato, la ricontrolla sulla fonte indicata.
+- Ogni giorno la routine legge le segnalazioni aperte. Senza fonte, con una fonte non ammessa o senza un motivo chiaro, la segnalazione viene respinta subito.
+- Le altre passano due controlli, fatti da due agenti diversi da quello che ha scritto il dato: il primo verifica la correzione sulla fonte, il secondo prova a smentirla. Vale solo se il primo la conferma e il secondo non riesce a smentirla.
 - **Confermata**: il dato viene corretto, la modifica entra nel [registro delle correzioni](https://www.paghitu.it/correzioni) e la segnalazione viene chiusa con il link al commit.
 - **Respinta**: la risposta spiega perché, sotto la segnalazione. Se non sei d'accordo puoi rispondere con un'altra fonte.
 - I casi dubbi (una fonte che si può leggere in due modi, un tema delicato) restano aperti con l'etichetta `da-decidere` finché un umano non li guarda.
@@ -34,7 +35,14 @@ Per un dato che manca (una promessa, una misura, una fonte ufficiale) c'è il mo
 3. Lancia `npm run typecheck && npm run lint && npm test && npm run build`.
 4. Apri la pull request con il modello proposto: cosa cambia, fonte, controlli.
 
-Le pull request che toccano dati vengono verificate sulla fonte come le segnalazioni. **La routine non unisce mai codice esterno da sola**: applica di nuovo la modifica ai dati dopo la verifica, e le modifiche al codice le rivede una persona.
+Ogni giorno una routine verifica le pull request aperte: conflitti, controlli tecnici, file generati e, per ogni correzione ai dati, gli stessi due controlli delle segnalazioni. Scrive l'esito in un commento e mette l'etichetta:
+
+- `pronta`: tutto torna, la decide il titolare;
+- `da-sistemare`: c'è un difetto preciso, indicato nel commento;
+- `da-decidere`: serve una persona;
+- `respinta`: almeno una correzione è senza fonte, con una fonte non ammessa, fatta senza criterio, o non regge alla verifica. La pull request viene chiusa; il commento dice quali correzioni hanno retto, così puoi riproporle con la fonte.
+
+**La routine non unisce e non approva mai**: le pull request le unisce il titolare. Se la pull request chiude una segnalazione («Fixes #n»), la segnalazione prende l'etichetta `in-pr` finché la pull request è aperta.
 
 ## Regole che valgono per tutti
 
@@ -44,7 +52,7 @@ Le pull request che toccano dati vengono verificate sulla fonte come le segnalaz
 - **Niente dati personali** di privati, e niente dati personali tuoi nelle segnalazioni: su GitHub tutto è pubblico (vedi [paghitu.it/privacy](https://www.paghitu.it/privacy)).
 - **Malafede = blocco.** Fonti false o manipolate, campagne coordinate, minacce, molestie, dati personali di altri: chiusura senza esame e blocco immediato dell'account dal repository. Spam e offese: chiusura e, se si ripetono, esclusione.
 - **Diritti.** Inviando un contributo dichiari che è tuo o che puoi condividerlo; codice e testi del repository sono pubblicati con licenza MIT.
-- **Nei 15 giorni prima di un voto** non si pubblicano contenuti nuovi su partiti e promesse: solo correzioni di errori.
+- **Nei 15 giorni prima delle elezioni politiche o di un referendum nazionale** non si pubblicano contenuti nuovi su partiti e promesse: solo correzioni di errori.
 
 Le regole complete sono nel [Metodo](https://www.paghitu.it/metodo) e nel [codice di comportamento](CODE_OF_CONDUCT.md).
 
@@ -54,6 +62,9 @@ Le regole complete sono nel [Metodo](https://www.paghitu.it/metodo) e nel [codic
 |---|---|
 | `correzione` | segnalazione di un dato sbagliato |
 | `dato-mancante` | proposta di un dato o di una fonte nuova |
-| `confermata` | il verificatore ha confermato, correzione applicata |
-| `respinta` | la fonte non conferma: motivo nel commento |
+| `confermata` | correzione verificata, non smentita e applicata |
+| `respinta` | senza fonte, fonte non ammessa, fatta senza criterio, o smentita: motivo nel commento |
 | `da-decidere` | serve una persona |
+| `in-pr` | segnalazione legata a una pull request aperta |
+| `pronta` | pull request verificata, in attesa del titolare |
+| `da-sistemare` | pull request con un difetto da correggere, indicato nel commento |
