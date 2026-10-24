@@ -11,6 +11,9 @@ routine, a partire dalle notizie della settimana (binario 4 del runbook).
 | R02 | mer 28/10/2026 | [La voce che cresce più in fretta](idee/R02-interessi.md) · [prompt](prompt/R02-interessi.md) | /spesa | in lavorazione |
 | R03 | ven 30/10/2026 | [Previsto contro speso](idee/R03-previsto-e-speso.md) · [prompt](prompt/R03-previsto-e-speso.md) | /misure | in lavorazione |
 | R04 | lun 02/11/2026 | [Il debito in ottant'anni](idee/R04-debito-dal-1946.md) | /spesa | idea |
+| R13 | mer 04/11/2026 | [Tre virgola uno: cosa vuol dire il disavanzo](idee/R13-tre-virgola-uno.md) | /, /spesa | idea |
+| R14 | ven 06/11/2026 | [Il 3 e il 60: i conti dell'Italia accanto all'Europa](idee/R14-il-3-e-il-60.md) | /spesa | idea |
+| R15 | lun 09/11/2026 | [Se la manovra non arriva in tempo](idee/R15-se-la-manovra-non-arriva.md) | /leggi-di-bilancio | idea |
 
 Quando un video esce: stato `pubblicato`, data vera e link al post.
 
