@@ -19,7 +19,7 @@ Documenti essenziali per uno sviluppo coerente. **Leggerli prima di implementare
 | `roadmap-frontend.md` *(sibling di `design/`)* | Avanzamento del redesign UI per fase/sezione |
 
 ## Convenzioni operative
-- Commit: author `Thepro007002001@gmail.com`, **niente co-author**.
+- Commit: author `antonio.murabito@msworks.it`, **niente co-author**.
 - Dopo ogni task completato con successo: report in `reports/`.
 - Ogni integrazione esterna documentata in `.claude/integrations/` (stesso incremento).
 - Se il progetto include un redesign/nuovo design UI, la documentazione di stile/decisioni/gap vive

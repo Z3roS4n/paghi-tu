@@ -12,7 +12,10 @@ Build (`next build`) e distribuzione delle 83 pagine prerenderizzate su CDN.
 - Il primo deploy (2026-10-21) è andato in produzione in automatico, perché era il primo del progetto.
 
 ## Deploy
-- CLI: `npx vercel@64.7.0 deploy --yes` per un'anteprima, aggiungendo `--prod` per la produzione. Va lanciata dalla radice del repo.
+- **Il repo GitHub `Z3roS4n/paghi-tu` è collegato al progetto** (verificato il 2026-10-24): ogni push su `main` va
+  in produzione da solo, gli altri branch e le PR diventano anteprime protette da login. Unire una PR la pubblica
+  subito. Lo stato del deploy compare sul commit in GitHub (contesto `Vercel`).
+- CLI, solo per casi particolari: `npx vercel@64.7.0 deploy --yes` per un'anteprima, aggiungendo `--prod` per la produzione. Va lanciata dalla radice del repo.
 - La build NON esegue `npm run data:import`: pubblica i `data/*.json` così come sono nel working tree. Prima di un deploy, rigenerarli e committarli.
 - `.vercelignore` esclude `.claude/`, `scripts/`, i file `.md` (tranne README) e `.env*`.
 
@@ -30,6 +33,5 @@ Piano del team `msworks-project`. Sito statico senza funzioni a runtime.
 
 ## Note / TODO
 - Dominio proprio (OA-1, `paghitu.it` candidato) da collegare dopo l'acquisto.
-- CI: valutare il collegamento al repository Git, così da avere un deploy a ogni push dopo lint, test e build.
 - **Web Analytics (attiva dal 2026-10-21, D-023):** pacchetto `@vercel/analytics@2.0.1`, componente `src/components/site-analytics.tsx` nel layout, con `beforeSend` che toglie query string e ancora dall'URL (la ricerca dell'archivio mette il testo cercato in `?q=`). Senza cookie, visitatore riconosciuto da un hash scartato dopo 24 ore, solo dati aggregati (doc Vercel «Privacy and Compliance»). Va abilitata anche dalla dashboard: progetto `paghi-tu` → Analytics → Enable; finché non lo è, lo script non registra niente. Descritta in `/privacy`: se cambia la configurazione, aggiornare l'informativa nello stesso commit.
 - Trasferimenti: Vercel è certificata EU-U.S. Data Privacy Framework e usa le clausole contrattuali standard (kb «Is Vercel certified under DPF?», docs «Security & Compliance»). Il Data Processing Addendum è su vercel.com/legal/dpa: verificare che copra il piano del team.

@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "partito": "IV",
+    "canali": ["italiaviva.it (pagine, feed e API)", "matteorenzi.it"],
+    "dal": "2026-10-22",
+    "ultimoControlloRiuscito": "2026-10-20"
+  },
+  {
+    "partito": "SCN",
+    "canali": ["sudchiamanord.it (dominio non raggiungibile)", "catenodeluca.it", "nessun canale Telegram ufficiale individuato"],
+    "dal": "2026-10-21",
+    "ultimoControlloRiuscito": null
+  },
+  {
+    "partito": "NOVAX",
+    "canali": ["partitonovax.it e varianti (domini non raggiungibili)", "nessun altro canale ufficiale individuato"],
+    "dal": "2026-10-21",
+    "ultimoControlloRiuscito": null
+  }
+]

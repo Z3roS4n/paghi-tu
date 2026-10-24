@@ -7,8 +7,8 @@
 > Prerequisiti: clone del repo GitHub pubblico con permesso di push su `main`, Node ≥ 24, e questi segreti
 > nell'ambiente della routine (mai nel repo):
 > - `GH_TOKEN`: push su `main`, issue e pull request del repo;
-> - `VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`: deploy in produzione senza login (sul cloud non c'è
->   la cartella `.vercel/` locale);
+> - `VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`: solo di riserva. Il deploy lo fa Vercel a ogni push su
+>   `main`; il token serve se Vercel non crea il deploy di un commit (sul cloud non c'è la cartella `.vercel/`);
 > - `RESEND_API_KEY`, `PAGHITU_NOTIFY_TO`, `PAGHITU_NOTIFY_FROM`: segnalazione del giorno (vedi
 >   `.claude/integrations/resend.md`).
 >
@@ -20,7 +20,7 @@
 2. Un solo processo interroga ISTAT, con al massimo 4 richieste al minuto. Se ISTAT non risponde, non riprovare in ciclo.
 3. Niente Save Page Now, form, login o scritture su servizi esterni, a parte il repo, Vercel e Resend. Non aggirare 403, captcha o WAF. Le catture nuove su Internet Archive (`archive-sources.ts --save`) restano escluse finché il titolare non le autorizza in modo esplicito.
 4. **Nei 15 giorni prima delle elezioni politiche o di un referendum nazionale non si pubblicano contenuti nuovi su partiti e promesse**, solo correzioni di errori (D-025). Suppletive, regionali e amministrative non fanno scattare la regola. Prima del binario 2 controlla la data del voto: fa fede il decreto di convocazione in Gazzetta Ufficiale, poi le note in `.claude/project/research/`. Se non c'è ancora una data ufficiale la regola non scatta, e la segnalazione del giorno lo dice.
-5. Il repo è pubblico: nessun dato personale del titolare, nessun segreto, nessun indirizzo email in file, commit, log o report. **Unica eccezione:** i dati del titolare in `src/lib/legal.ts` (ragione sociale, partita IVA, email e PEC di M's Works), pubblici per obbligo di legge (D-023): non toccarli. Commit con author `Thepro007002001@gmail.com` e nome «Paghi Tu», senza co-author, messaggi imperativi in inglese.
+5. Il repo è pubblico: nessun dato personale del titolare, nessun segreto, nessun indirizzo email in file, commit, log o report (a parte l’email dei commit qui sotto). **Unica eccezione:** i dati del titolare in `src/lib/legal.ts` (ragione sociale, partita IVA, email e PEC di M's Works), pubblici per obbligo di legge (D-023): non toccarli. Commit con nome «Antonio Murabito» ed email `antonio.murabito@msworks.it`, senza co-author, messaggi imperativi in inglese.
 6. **Cancello del verificatore.** Prima di ogni push l'agente che ha fatto le modifiche passa il diff a un secondo agente, con contesto pulito, che:
    - riapre dalla fonte, con un formato o un percorso diverso dalla pipeline, ogni valore numerico cambiato (o almeno 5 a campione se sono più di 20) e ogni citazione nuova parola per parola;
    - controlla neutralità e simmetria fra partiti (stesse regole, stessa profondità);
@@ -55,7 +55,7 @@
    residenziali, rotazione di IP o altri trucchi per farsi passare per una persona. Se nessun canale alternativo
    funziona, il partito resta non controllato e la segnalazione del giorno indica il sito, così il titolare può
    leggerlo a mano.
-2. Un agente diverso fa la verifica L2 riga per riga (stesso schema di `2026-10-21.verifica-l2-righe-nuove.md`): citazione parola per parola sulla fonte, criterio slogan, livello in testa all'esito (`V1✓`, `V2✓`). Un'intervista pubblicata da una testata vale come fonte primaria (D-019). I tagli «[…]» non tolgono mai le parole con cui il proponente descrive un gruppo di persone.
+2. Un agente diverso fa la verifica L2 riga per riga (stesso schema di `2026-10-21.verifica-l2-righe-nuove.md`): citazione parola per parola sulla fonte, criterio slogan, livello in testa all'esito (`V1✓`, `V2✓`). Un'intervista pubblicata da una testata vale come fonte primaria (D-019). I tagli «[…]» non tolgono mai le parole con cui il proponente descrive un gruppo di persone. Due frasi separate solo da un inciso di chi scrive («ha spiegato») si uniscono con «[…]».
 3. Controllo di simmetria sulle righe nuove: stessa procedura e stessa profondità per tutti i partiti (D-013).
    Un partito i cui canali ufficiali non si leggono nemmeno con i canali alternativi del passo 1 **non blocca gli
    altri** (decisione del titolare del 2026-10-22):
@@ -136,10 +136,14 @@ Formato, tono, voce e regole sono in `.claude/reels/README.md`; il piano in `.cl
    link alla scheda su GitHub.
 
 ## Pubblicazione
-Solo se almeno un binario ha qualcosa di `CONFERMATO`. Se è cambiato solo `.claude/reels/`, basta il push: niente
-deploy e niente controllo delle pagine.
+Solo se almeno un binario ha qualcosa di `CONFERMATO`. **Il push su `main` pubblica:** il progetto Vercel è collegato
+al repo e ogni push su `main` va in produzione da solo. Se è cambiato solo `.claude/reels/`, basta il push, senza
+controllo delle pagine.
 1. `git push origin main`.
-2. Deploy in produzione: `npx --yes vercel@64.7.0 deploy --prod --yes --token "$VERCEL_TOKEN"`, con `VERCEL_ORG_ID` e `VERCEL_PROJECT_ID` nell'ambiente.
+2. Aspetta il deploy del commit: `gh api repos/Z3roS4n/paghi-tu/commits/<sha>/status`, contesto `Vercel`, stato
+   `success` (un controllo ogni 30 secondi, al massimo 15 minuti). Con `failure`, `error` o tempo scaduto:
+   segnalazione con il link del deploy. Il deploy a mano con la CLI e `VERCEL_TOKEN` serve solo se Vercel non ha
+   creato nessun deploy per il commit.
 3. Controllo HTTP 200 di `/`, `/spesa`, `/governi`, `/promesse`, `/archivio/indice.json` su https://www.paghitu.it. Se uno fallisce: segnalazione con l'output.
 4. Report breve in `.claude/project/reports/` (`node .claude/scripts/new-report.mjs "aggiornamento <data>"`) con cosa è cambiato, esito del verificatore e controlli fatti, committato con il resto, senza dati personali.
 

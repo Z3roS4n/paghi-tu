@@ -83,7 +83,10 @@ function links(field: string): SourceLink[] {
     .split(/\s;\s|\s+(?=https?:\/\/)/)
     .map((s) => s.trim())
     .filter((s) => /^https?:\/\//.test(s))
-    .map((url) => ({ url }));
+    .map((s) => {
+      const m = s.match(/^(\S+)\s+\((.+)\)$/);
+      return m ? { url: m[1], etichetta: m[2] } : { url: s };
+    });
 }
 
 const ROMAN: Record<string, number> = { I: 1, V: 5, X: 10 };
@@ -277,7 +280,7 @@ const PROMISE_FILES: Record<string, string> = {
   c: "2026-10-20.promesse-campagna-gruppo-c",
   "c-integrazione": "2026-10-21.promesse-campagna-gruppo-c-integrazione",
 };
-const CAMPAIGN_PERIOD = { dal: "2026-01-01", al: "2026-10-21" };
+const CAMPAIGN_PERIOD = { dal: "2026-01-01", al: "2026-10-24" };
 
 function isVerified(status: string) {
   return status.includes("✓") && !/DA RIMUOVERE|NON VERIFICABILE|NUOVA|riserva/i.test(status);
