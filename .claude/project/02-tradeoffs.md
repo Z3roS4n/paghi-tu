@@ -283,11 +283,26 @@
   giorno del montaggio le cifre vanno ricontrollate sul sito.
 - **Data:** 2026-10-22
 
+### D-026 — Golden set dell'agente generato dai dati
+- **Stato:** proposta il 2026-10-23, in revisione.
+- **Contesto:** l'agente conversazionale su Vertex AI Search va misurato prima di andare online. Il progetto non ha un golden set; i dati del sito sono la fonte del grounding.
+- **Scelta:** il set si genera da `data/` con `agent/evals/golden-set.ts` (selezione deterministica e distribuita, valori letti dai record, mai ricopiati), più casi scritti a mano in `casi-manuali.json` per par condicio, fuori scope e trappole. Le promesse si scelgono in ordine alfabetico di sigla, almeno una per partito. La revisione del titolare sta in `revisione.json` e sopravvive alle rigenerazioni.
+- **Conseguenze:** dopo una correzione ai dati si rigenera con `npm run evals:build`; il test fallisce se `domande.jsonl` non è allineato. Le soglie restano ipotesi finché il titolare non le conferma.
+- **Data:** 2026-10-23
+
 ### D-027 — Le pull request le verifica una routine a parte, e le unisce il titolare
 - **Stato:** applicata il 2026-10-23, su richiesta del titolare.
 - **Contesto:** arrivano le prime PR di un collaboratore, con codice e correzioni ai dati. Il binario 3 della routine dei dati le trattava come segnalazioni e riapplicava i dati confermati con un suo commit (D-020), ma non controllava il codice, i conflitti o i file generati.
 - **Scelta:** una routine cloud separata (`.claude/routines/verifica-pr.md`, ogni giorno alle 07:00 UTC, dopo quella dei dati) controlla ogni PR aperta su `main`: unione con main e numerazione di decisioni e correzioni, typecheck, lint, test, build e controllo delle pagine, file generati riprodotti dai loro script, regole del progetto e ambito. Ogni correzione ai dati passa due controlli fatti da due agenti diversi: una verifica sulla fonte primaria, poi un tentativo di smentirla che non vede l'esito del primo. È vera solo se la verifica la conferma e il tentativo di smentita fallisce. Una correzione senza fonte, con una fonte non ammessa o fatta senza criterio si respinge subito. Le decisioni del titolare scritte sulla PR (marcatore `<!-- decisione-titolare -->`) non si riaprono. Due frasi separate solo da un inciso di chi scrive («ha spiegato») si uniscono con «[…]» (decisioni del titolare del 2026-10-24, nate dalla PR #2). Scrive l'esito sulla PR (RESPINTA, SERVE UNA DECISIONE DEL TITOLARE, DA SISTEMARE, PRONTA), ne aggiorna l'etichetta, chiude le respinte, tiene allineate le issue collegate (etichetta `in-pr`, che la routine dei dati salta) e manda il riepilogo al titolare. Non unisce e non approva. Il codice della PR gira solo se l'autore ha permesso di scrittura sul repo, senza segreti e senza script di installazione. La routine dei dati non tocca più le PR.
 - **Conseguenze:** le correzioni proposte con una PR arrivano sul sito quando il titolare la unisce, non più con un commit della routine. I commenti sono pubblici e partono dall'account del token.
+- **Data:** 2026-10-23
+
+### D-028 — Verifica deterministica del golden set contro le fonti
+- **Stato:** proposta il 2026-10-23, in revisione.
+- **Contesto:** un controllo a mano sulle fonti del golden set ha trovato errori che i test non vedevano (percentuali arrotondate, record citati a metà, un URL con l'etichetta dentro, una citazione che unisce due frasi). Per un agente su dati politici l'errore non è ammesso: la verifica deve essere ripetibile e decisa dal codice.
+- **Scelta:** due livelli. `npm run evals:verify` (`agent/evals/verifica-fonti.ts`) va in rete con la coda per host di D-004, legge ogni URL atteso (HTML, PDF con `pdftotext`, copia d'archivio del record se la fonte è chiusa) e scrive i fatti in `verifica-fonti.json`, che si committa. I test offline (`verifica.test.ts`, `testo.test.ts`) decidono: ogni fonte letta, ogni citazione trovata parola per parola, ogni valore trovato nella fonte o nelle copie di `data/raw/` cella per cella, oppure con una ragione scritta in `eccezioni-fonti.json`. Le somme calcolate da Paghi Tu si dichiarano con gli addendi, che devono stare nella fonte e tornare al valore. Un'eccezione non più necessaria fa fallire il test.
+- **Motivo:** la rete non è deterministica, il registro sì: lo stesso registro dà sempre lo stesso esito, e chi rilegge vede cosa è stato trovato, dove e in che forma. Le forme accettate sono strette (niente miliardi arrotondati senza la parola, niente cognome da solo per un nome di più di due parole) perché un falso riscontro è peggio di un valore non trovato.
+- **Conseguenze:** dopo ogni `evals:build` che cambia `domande.jsonl` si rilancia `evals:verify` (il test confronta l'impronta). Il registro non scade da solo: la data è nel file e va riletta prima di ogni eval dell'agente.
 - **Data:** 2026-10-23
 
 ## Decisioni aperte
