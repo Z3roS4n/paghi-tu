@@ -277,8 +277,8 @@
     sua fonte primaria); aggiorna le schede non ancora pubblicate quando cambiano i dati; un secondo agente
     controlla le cifre;
   - tono: una domanda per video, ogni cifra spiegata, un fatto che sorprende, voce da racconto (README dei Reel);
-  - stesse regole del sito: nessun partito o governo nominato fuori dai video sul metodo, nessun giudizio, niente
-    video su partiti e promesse nei 15 giorni prima di un voto.
+  - stesse regole del sito: nessun giudizio, niente video su partiti e promesse nei 15 giorni prima di un voto
+    (la regola sui nomi dei partiti è cambiata con D-028).
 - **Conseguenze:** il repo è pubblico, quindi anche il piano dei video lo è. Le schede servono da copione, ma il
   giorno del montaggio le cifre vanno ricontrollate sul sito.
 - **Data:** 2026-10-22
@@ -289,6 +289,16 @@
 - **Scelta:** una routine cloud separata (`.claude/routines/verifica-pr.md`, ogni giorno alle 07:00 UTC, dopo quella dei dati) controlla ogni PR aperta su `main`: unione con main e numerazione di decisioni e correzioni, typecheck, lint, test, build e controllo delle pagine, file generati riprodotti dai loro script, regole del progetto e ambito. Ogni correzione ai dati passa due controlli fatti da due agenti diversi: una verifica sulla fonte primaria, poi un tentativo di smentirla che non vede l'esito del primo. È vera solo se la verifica la conferma e il tentativo di smentita fallisce. Una correzione senza fonte, con una fonte non ammessa o fatta senza criterio si respinge subito. Le decisioni del titolare scritte sulla PR (marcatore `<!-- decisione-titolare -->`) non si riaprono. Due frasi separate solo da un inciso di chi scrive («ha spiegato») si uniscono con «[…]» (decisioni del titolare del 2026-10-24, nate dalla PR #2). Scrive l'esito sulla PR (RESPINTA, SERVE UNA DECISIONE DEL TITOLARE, DA SISTEMARE, PRONTA), ne aggiorna l'etichetta, chiude le respinte, tiene allineate le issue collegate (etichetta `in-pr`, che la routine dei dati salta) e manda il riepilogo al titolare. Non unisce e non approva. Il codice della PR gira solo se l'autore ha permesso di scrittura sul repo, senza segreti e senza script di installazione. La routine dei dati non tocca più le PR.
 - **Conseguenze:** le correzioni proposte con una PR arrivano sul sito quando il titolare la unisce, non più con un commit della routine. I commenti sono pubblici e partono dall'account del token.
 - **Data:** 2026-10-23
+
+### D-028 — Reel: niente idee ripetitive; i partiti si possono nominare, senza preferenze
+- **Stato:** applicata il 2026-10-24, su richiesta del titolare.
+- **Contesto:** le idee aggiunte dalla routine il 24 ottobre (R13, R14) riprendevano i concetti del primo video e di R01-R02 (disavanzo, interessi, debito, confronto con l'Europa). Il divieto di nominare partiti e politici, in D-024, era più stretto del necessario.
+- **Scelta:**
+  - nel README dei Reel la sezione «Non ripetersi» con la tabella «Già raccontato»: ogni video ha una domanda e una cifra principale nuove, un dato già usato torna solo come paragone, non due video di fila con la stessa scena principale; il secondo agente della routine respinge le idee ripetitive;
+  - R04, R13 e R14 scartate; R15, R09 e R10 in calendario per il 2, 4 e 6 novembre, con il prompt per Animatio;
+  - partiti, governi e politici si possono nominare, ma senza preferenze né a favore né contro, solo con fatti veri e con fonte (niente fatti non verificati, intenzioni o motivi attribuiti: diffamazione); se ne compaiono più d'uno, stesso spazio e ordine alfabetico. Nelle immagini restano esclusi volti, simboli e colori di partito (D-011).
+- **Conseguenze:** binario 4 della routine dei dati e README dei Reel aggiornati. La regola dei 15 giorni (D-025) non cambia.
+- **Data:** 2026-10-24
 
 ## Decisioni aperte
 - **OA-1** — ~~Nome del progetto e dominio~~ → nome deciso il 2026-10-20: **Paghi Tu** (provocatorio verso politica e cittadini, senza attribuire condotte a nessuno). Dominio candidato `paghitu.it` (libero al controllo DNS del 2026-10-20, da confermare all'acquisto).

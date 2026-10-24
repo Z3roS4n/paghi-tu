@@ -1,7 +1,7 @@
 # R14 — Il 3 e il 60: i conti dell'Italia accanto all'Europa
 
 - **Uscita prevista:** venerdì 6 novembre 2026
-- **Stato:** idea
+- **Stato:** scartato il 24/10/2026: ripete concetti già al centro di video usciti o in lavorazione (vedi `calendario.md`)
 - **Pagine:** https://www.paghitu.it/spesa («L'Italia e gli altri paesi», grafico «Debito pubblico in % del PIL,
   2025»)
 - **Perché adesso:** il 21 ottobre Eurostat ha pubblicato la seconda notifica 2026 su disavanzo e debito di tutti i

@@ -1,7 +1,7 @@
 # R09 — Le voci piccole del conto
 
-- **Uscita prevista:** in riserva, senza data
-- **Stato:** riserva
+- **Uscita prevista:** mercoledì 4 novembre 2026
+- **Stato:** in lavorazione (prompt in `prompt/`)
 - **Pagine:** https://www.paghitu.it/spesa («Dove vanno i soldi»)
 - **Perché adesso:** difesa, sicurezza e cultura sono temi di cui si parla molto, ma pochi sanno quanto pesano
   davvero sul conto.
@@ -10,7 +10,7 @@
 «Quanto spende lo Stato per la difesa, per ogni residente?» Un attimo di schermo vuoto, poi il contatore sale e si
 ferma su «480 €».
 
-## Numeri (copiati dal sito il 22/10/2026)
+## Numeri (copiati dal sito il 22/10/2026, ricontrollati il 24/10/2026)
 | Voce, spesa per residente 2024 | Euro | Quota sul totale | Pagina |
 |---|---|---|---|
 | Ordine pubblico e sicurezza | 663 € | 3,5% | /spesa |
@@ -18,7 +18,6 @@ ferma su «480 €».
 | Protezione dell'ambiente | 336 € | 1,8% | /spesa |
 | Attività ricreative, culturali e di culto | 318 € | 1,7% | /spesa |
 | Abitazioni e assetto territoriale | 288 € | 1,5% | /spesa |
-| Per confronto: vecchiaia e superstiti | 6.099 € | 32,4% | /spesa |
 | Per confronto: sanità | 2.478 € | 13,2% | /spesa |
 | Totale | 18.813 € | | /spesa |
 
@@ -28,8 +27,9 @@ Fonte: Eurostat, spesa per funzione (COFOG), 2024.
 - **0-8 s** La domanda e il contatore.
 - **8-38 s** Cinque scontrini piccoli, uno per voce, che si stampano uno dopo l'altro: nome della voce e cifra. Sotto
   ogni scontrino, la quota sul totale.
-- **38-50 s** I cinque scontrini si mettono in fila accanto a quello di vecchiaia e superstiti, che è molto più
-  lungo. Testo: «Insieme fanno meno della sanità».
+- **38-50 s** I cinque scontrini si mettono in fila accanto a quello della sanità, che da solo è più lungo di tutti e
+  cinque. Testo: «Insieme fanno meno della sanità». Nessun riferimento a vecchiaia e superstiti: è stata al centro
+  del primo video (regola «Non ripetersi»).
 - **50-60 s** Chiusura con il timbro e «medie per residente».
 
 «Insieme fanno meno della sanità»: 663 + 480 + 336 + 318 + 288 = 2.085 €, contro 2.478 €. È una somma di numeri
@@ -41,8 +41,7 @@ Quanto spende lo Stato per la difesa, per ogni residente? [pausa breve] Quattroc
 [pausa] Per l'ordine pubblico e la sicurezza, seicentosessantatré.
 Per l'ambiente, trecentotrentasei. [pausa breve] Per cultura, sport e culto, trecentodiciotto.
 Per la casa e il territorio, duecentottantotto.
-[pausa] Sono le voci di cui si discute di più. [pausa breve] Ma messe insieme pesano meno della sanità, che vale duemila quattrocentosettantotto euro a testa.
-E molto meno della voce più grande: vecchiaia e superstiti, seimila novantanove euro.
+[pausa] Sono le voci di cui si discute di più. [pausa breve] Ma messe insieme pesano meno della sola sanità, che vale duemila quattrocentosettantotto euro a testa.
 [pausa] Sono medie per residente. [pausa breve] Tutte le voci, con le fonti, su paghitu punto it.
 ```
 

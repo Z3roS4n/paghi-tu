@@ -50,6 +50,31 @@ Dalla settimana del 4 novembre le idee nascono dalle notizie: la routine guarda 
 tema di cui parlano tutti) e lo collega ai numeri del sito. La notizia è lo spunto; la spiegazione la danno i dati.
 Ogni scheda nata da una notizia ha una sezione «La notizia» con fonte, data e link.
 
+## Non ripetersi
+Le idee del 24 ottobre riprendevano quasi tutte i concetti del primo video (decisione del titolare, D-028). Prima di
+scrivere un'idea si legge l'elenco «Già raccontato» qui sotto e le schede `in lavorazione` e `pubblicato`.
+- **Domanda nuova, cifra nuova.** Il gancio e il momento «non lo sapevo» non possono stare su un numero o un concetto
+  che è già stato al centro di un video uscito o in lavorazione.
+- Un dato già usato può tornare una volta sola, come termine di paragone, mai come protagonista.
+- Una notizia che ripete un concetto già spiegato si usa solo con un angolo davvero nuovo; altrimenti si passa.
+- Cambia anche la forma: non due video di fila con la stessa scena principale (scontrino, griglia dei 100 €, linea
+  del tempo, confronto con l'Europa, barre).
+- Meglio pescare dalle parti del sito che i video non hanno ancora toccato: governi, leggi di bilancio, misure,
+  promesse, archivio, metodo, voci piccole della spesa.
+
+### Già raccontato
+| Video | Concetti al centro |
+|---|---|
+| R00 Il conto lo paghi tu | spesa per residente (19.633 €), ogni 100 € di spesa, interessi ogni 100 € 1995-2024, debito in % del PIL dal 1946 e debito a testa, Italia contro media UE (debito e interessi), previsto contro speso (Quota 100) |
+| R01 Lo Stato spende più di quanto incassa | entrate contro uscite per residente, disavanzo a testa, saldo in % del PIL dal 1995 |
+| R02 La voce che corre più di tutte | crescita degli interessi nel semestre, interessi a testa, interessi ogni 100 € dal 1995, interessi Italia contro UE |
+| R03 Previsto contro speso | stima della relazione tecnica contro consuntivo delle misure |
+| R15 Se la manovra non arriva in tempo | calendario della legge di bilancio, esercizio provvisorio |
+| R09 Le voci piccole del conto | difesa, sicurezza, ambiente, cultura, casa per residente |
+| R10 Le regole per le promesse | come il sito raccoglie le promesse, partiti in ordine alfabetico |
+
+Quando un video passa a `in lavorazione` si aggiunge la sua riga.
+
 ## Immagini
 - Incisioni del Settecento già nel repo (`public/img/`), in pubblico dominio, trattate in bicromia con un velo
   terracotta e parallasse lento.
@@ -69,9 +94,12 @@ Ogni scheda nata da una notizia ha una sezione «La notizia» con fonte, data e 
    apposta per il video. Nella voce le cifre si scrivono in lettere, così Giulio non le legge male.
 2. **Il giorno del montaggio** si riaprono le pagine indicate nella scheda e si ricontrolla ogni cifra: la routine
    aggiorna i dati, e il video deve dire quello che dice il sito quel giorno.
-3. **Neutralità:** nessun partito, governo o politico citato o mostrato, salvo nei video sul metodo, dove compaiono
-   tutti insieme e alla pari. Nessun giudizio («spreco», «scandalo», «colpa», «finalmente»). Nessuna spiegazione
-   delle cause che il sito non dà.
+3. **Neutralità:** partiti, governi e politici si possono nominare, ma senza mai esprimere una preferenza, né a
+   favore né contro, per un partito, una coalizione o una persona. Su di loro solo fatti veri con la fonte (una
+   misura, un atto, una frase citata com'è), mai fatti non verificati, intenzioni o motivi attribuiti: sarebbe
+   diffamazione. Quando ne compare più d'uno, stesse regole e stesso spazio per tutti, in ordine alfabetico. Nessun
+   giudizio («spreco», «scandalo», «colpa», «finalmente»). Nessuna spiegazione delle cause che il sito non dà.
+   Nelle immagini restano esclusi volti di politici, simboli e colori di partito.
 4. Le cifre per residente sono medie: quando compaiono, a schermo c'è «medie per residente».
 5. **Nei 15 giorni prima delle elezioni politiche o di un referendum nazionale** niente video nuovi su partiti e promesse (stessa regola del sito).
 6. Fonti in piccolo su ogni scena con un numero; in chiusura «paghitu.it» e l'invito a segnalare gli errori.

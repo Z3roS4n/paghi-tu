@@ -1,7 +1,7 @@
 # R13 — Tre virgola uno: cosa vuol dire il disavanzo
 
 - **Uscita prevista:** mercoledì 4 novembre 2026
-- **Stato:** idea
+- **Stato:** scartato il 24/10/2026: ripete concetti già al centro di video usciti o in lavorazione (vedi `calendario.md`)
 - **Pagine:** https://www.paghitu.it/ (riquadri «Entrate 2025», «Disavanzo 2025», «Interessi sul debito 2025») ·
   https://www.paghitu.it/spesa (stessi riquadri, con la nota sulle cifre per residente)
 - **Perché adesso:** il 21 ottobre l'ISTAT ha pubblicato la notifica di ottobre: «deficit al 3,1%» è il titolo che
