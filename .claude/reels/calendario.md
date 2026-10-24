@@ -10,11 +10,12 @@ routine, a partire dalle notizie della settimana (binario 4 del runbook).
 | R01 | lun 26/10/2026 | [Lo Stato spende più di quanto incassa](idee/R01-entrate-e-uscite.md) · [prompt](prompt/R01-entrate-e-uscite.md) | /, /spesa | in lavorazione |
 | R02 | mer 28/10/2026 | [La voce che cresce più in fretta](idee/R02-interessi.md) · [prompt](prompt/R02-interessi.md) | /spesa | in lavorazione |
 | R03 | ven 30/10/2026 | [Previsto contro speso](idee/R03-previsto-e-speso.md) · [prompt](prompt/R03-previsto-e-speso.md) | /misure | in lavorazione |
-| R15 | lun 02/11/2026 | [Se la manovra non arriva in tempo](idee/R15-se-la-manovra-non-arriva.md) · [prompt](prompt/R15-se-la-manovra-non-arriva.md) | /leggi-di-bilancio | in lavorazione |
-| R09 | mer 04/11/2026 | [Le voci piccole del conto](idee/R09-le-voci-piccole.md) · [prompt](prompt/R09-le-voci-piccole.md) | /spesa | in lavorazione |
-| R10 | ven 06/11/2026 | [Le regole per le promesse](idee/R10-come-contiamo-le-promesse.md) · [prompt](prompt/R10-come-contiamo-le-promesse.md) | /promesse, /metodo | in lavorazione |
+| R15 | lun 02/11/2026 | [Se la manovra non arriva in tempo](idee/R15-se-la-manovra-non-arriva.md) · [prompt](prompt/R15-se-la-manovra-non-arriva.md) | /leggi-di-bilancio | programmato |
+| R09 | mer 04/11/2026 | [Le voci piccole del conto](idee/R09-le-voci-piccole.md) · [prompt](prompt/R09-le-voci-piccole.md) | /spesa | programmato |
+| R10 | ven 06/11/2026 | [Le regole per le promesse](idee/R10-come-contiamo-le-promesse.md) · [prompt](prompt/R10-come-contiamo-le-promesse.md) | /promesse, /metodo | programmato |
 
-Quando un video esce: stato `pubblicato`, data vera e link al post.
+Quando il titolare mette un video in coda su Instagram: stato `programmato`. Quando esce: stato `pubblicato`, data vera
+e link al post.
 
 ## In riserva
 Schede già scritte, senza data. La routine le usa solo se in una settimana non trova notizie adatte, e prima le
