@@ -1400,6 +1400,306 @@
     }
   },
   {
+    "id": "C27-FDI-019",
+    "partitoId": "FDI",
+    "dichiarante": "Marco Osnato",
+    "ruoloDichiarante": "presidente della Commissione Finanze della Camera; responsabile economico FdI",
+    "data": "2026-10-21",
+    "testoLetterale": "Rendere definitiva l’abolizione del bollo auto, già prevista per il 2027 per un veicolo a persona, fino a 80 kW per le autovetture a benzina e diesel, comprese le ibride ammesse, senza limiti ISEE.",
+    "parafrasiNeutra": "Rendere permanente l’esenzione dal bollo auto prevista per il 2027 (un veicolo per persona, autovetture a benzina e diesel e ibride ammesse fino a 80 kW), senza limiti ISEE.",
+    "tipoFonte": "intervista",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://www.affaritaliani.it/politica/manovra-osnato-fdi-la-priorita-e-difendere-il-potere-dacquisto-delle-famiglie-le-banche-aiutino-chi-soffre-il-caro-vita.html"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervista di Chiara Feleppa a Marco Osnato, Affaritaliani, 21/10/2026 (datePublished 2026-10-21T11:20Z; «riepiloga in un’intervista ad Affaritaliani»), letta per intero con curl e confrontata parola per parola. Ruolo dal sommario della testata («Il responsabile economico di Fratelli d’Italia»), coerente con la nota del gruppo A (Osnato responsabile economico): dichiarante autorizzato sul proprio tema. Risposta alla domanda sul beneficio della manovra per un lavoratore medio, preceduta da «Nella prossima manovra continueremo a ridurre le tasse sul lavoro» e da «Ma c’è anche un impegno che riguarda milioni di famiglie italiane». La fonte dà platea e beneficio, non un costo: «Parliamo di una platea potenziale di oltre 24 milioni di cittadini. Una famiglia con un’utilitaria di 70 kW potrebbe risparmiare circa 180 euro all’anno, a seconda della Regione» (costo_dichiarato vuoto). L’esenzione per il 2027 è indicata come «già prevista»: la riga riguarda solo la sua messa a regime. Collegata per tema a C27-FI-005 e C27-FI-013 (bollo, FI). Nella stessa intervista la conferma del 5% sugli aumenti contrattuali è doppione di C27-FDI-012 (già censita). Orizzonte/veicolo: legislatura_in_corso e richiesta_legge_bilancio (contesto «prossima manovra»). Pre-valutazione slogan: OK (strumento, platea e parametri nominati). (verifica L2 2026-10-24) Intervista di Chiara Feleppa, Affaritaliani, article:published_time 2026-10-21T11:20Z; risposta alla domanda «A un lavoratore medio, quale beneficio concreto intendete assicurare con questa manovra?»; citazione ritrovata parola per parola. Intervista pubblicata da una testata con citazione verificata: V1 (D-019). Osnato non ha cariche di governo: non è un annuncio di governo (diverso da C27-FDI-012). Non è doppione di C27-FI-005/FI-013 (altro partito).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CORRETTA: ruolo nella forma unica del catalogo (C27-FDI-010, 011, 013) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: richiesta sulla legge di bilancio]"
+    }
+  },
+  {
+    "id": "C27-FI-017",
+    "partitoId": "FI",
+    "dichiarante": "Maurizio Casasco",
+    "ruoloDichiarante": "responsabile economico Forza Italia",
+    "data": "2026-10-23",
+    "testoLetterale": "Forza Italia […] punta a un sostegno diretto per le spese sanitarie degli anziani e dei fragili. Chi ha bisogno di curarsi, necessita dei soldi subito tramite un sostegno diretto per le spese sanitarie che non rientrano nel sistema sanitario nazionale.",
+    "parafrasiNeutra": "Sostegno economico diretto ad anziani e persone fragili per le spese sanitarie che non rientrano nel Servizio sanitario nazionale.",
+    "tipoFonte": "discorso",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://www.ilgiornale.it/news/politica-economica/manovra-casasco-fi-no-tax-area-under-30-riduzione-irpef-e-sostegno-alla-sanita-per-gli-anziani-le-priorita-di-forza-italia/"
+    },
+    "archivioUrl": null,
+    "cofog": "07",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Dichiarazione di Casasco («Lo afferma il deputato di Forza Italia, e responsabile Economia») riportata integralmente tra virgolette da il Giornale (Luca Romano, 23/10/2026 15:58, datePublished 2026-10-23T13:58Z); nessuna copia sui canali FI (forzaitalia.it fermo al 19/3/2026): V2. tipo_fonte «discorso» come C27-FI-013 (dichiarazione riportata da testata, non intervista). Testo scaricato con curl e confrontato parola per parola. Distinta da C27-FI-004 (detrazione delle spese sanitarie nell'anno della spesa). Il taglio «[…]» toglie la frase «Chi ha bisogno di curarsi, necessita dei soldi subito tramite un sostegno diretto per le spese sanitarie che non rientrano nel sistema sanitario nazionale.»; nessun gruppo di persone tolto. Orizzonte/veicolo: legislatura_in_corso e richiesta_legge_bilancio, perché la stessa dichiarazione dice «Sostenere i pensionati attraverso la sanità e i giovani […] è un’attenzione che Forza Italia vuol fornire in manovra». COFOG 07 (alternativa 10 se erogato come trasferimento sociale). Pre-valutazione slogan: OK (strumento e platea nominati). (verifica L2 2026-10-24) Metodo: fonte riaperta con curl GET (HTTP 200), testo estratto dall'HTML/PDF e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Data 23/10 (datePublished 2026-10-23T13:58Z). Dichiarazione tra virgolette di Casasco, «deputato di Forza Italia, e responsabile Economia»: responsabile nazionale di settore sul proprio tema, stesso criterio di C27-FI-008, C27-FDI-013 e C27-PD-008. Il testo precedente tagliava con «[…]» la frase che limita il sostegno alle spese fuori SSN, poi usata nella parafrasi: ora è nel testo_letterale (tolto solo l'inciso «come da sempre sostenuto da Antonio Tajani»). Esempi di spese indicati dalla fonte: visite odontoiatriche, protesi, sostegno domiciliare, farmaci e ticket sanitari «o altre spese». Slogan: «sostegno» da solo non basterebbe; supera come agevolazione legata a una base definita (sotto-regola del §4 della verifica L2 del 2026-10-21). Orizzonte/veicolo confermati («vuol fornire in manovra»).",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-24 — CORRETTA: testo_letterale riportato alla frase sulle spese «che non rientrano nel sistema sanitario nazionale», che la parafrasi usava ma il taglio toglieva; elenco delle spese spostato in nota; caso limite superato (sostegno diretto legato a una base definita: spese sanitarie fuori SSN, con platea) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: richiesta sulla legge di bilancio]"
+    }
+  },
+  {
+    "id": "C27-FI-018",
+    "partitoId": "FI",
+    "dichiarante": "Maurizio Casasco",
+    "ruoloDichiarante": "responsabile economico Forza Italia",
+    "data": "2026-10-23",
+    "testoLetterale": "Una riduzione dell’aliquota Irpef del 33% a favore del ceto medio, anche oltre i 50mila euro, ottenuta l’anno scorso, è un tema che Tajani ha portato sul tavolo del Governo anche da realizzarsi in due fasi, con 55mila euro quest’anno e 60mila il prossimo.",
+    "parafrasiNeutra": "Estensione dell'aliquota Irpef del 33% ai redditi oltre 50.000 euro, anche in due fasi: fino a 55.000 euro «quest'anno» e fino a 60.000 euro «il prossimo».",
+    "tipoFonte": "discorso",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://www.ilgiornale.it/news/politica-economica/manovra-casasco-fi-no-tax-area-under-30-riduzione-irpef-e-sostegno-alla-sanita-per-gli-anziani-le-priorita-di-forza-italia/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Dichiarazione di Casasco («Lo afferma il deputato di Forza Italia, e responsabile Economia») riportata integralmente tra virgolette da il Giornale (Luca Romano, 23/10/2026 15:58, datePublished 2026-10-23T13:58Z); nessuna copia sui canali FI (forzaitalia.it fermo al 19/3/2026): V2. tipo_fonte «discorso» come C27-FI-013 (dichiarazione riportata da testata, non intervista). Testo scaricato con curl e confrontato parola per parola. Collegata a C27-FI-001 (Irpef al 33% fino a 60.000 euro, Tajani 27/7/2026): qui compaiono le due fasi e la soglia intermedia di 55.000 euro; da decidere se riga collegata o aggiornamento di FI-001. Lo stesso scenario «in due tempi» è riportato da il Giornale il 22/10/2026 (https://www.ilgiornale.it/news/politica-economica/proposta-di-fi-tajani-irpef-al-33-fino-a-55mila-euro/) come resoconto di una riunione interna, senza virgolettato completo di Tajani: non usato come fonte. Orizzonte/veicolo: legislatura_in_corso e richiesta_legge_bilancio («portato sul tavolo del Governo», dichiarazione sulla manovra). Pre-valutazione slogan: OK (aliquota e soglie). (verifica L2 2026-10-24) Metodo: fonte riaperta con curl GET (HTTP 200), testo estratto dall'HTML/PDF e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Data 23/10 confermata. Stesso dichiarante e criterio di FI-017. Collegamento: C27-FI-001 (Tajani, 27/7/2026, 33% fino a 60.000 euro, orizzonte non_specificato) resta la riga madre; questa conta come riga collegata perché aggiunge la soglia intermedia e la richiesta sulla manovra (come C27-PLD-010 / PLD-001). L'articolo del Giornale del 22/10 (riunione interna, virgolettato parziale) non è usato. La parafrasi precedente presentava le due fasi come certe; il testo dice «anche da realizzarsi in due fasi».",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-24 — CORRETTA: parafrasi («anche» in due fasi: le fasi sono un'opzione); riga collegata a C27-FI-001, non doppione: riaffermazione dell'Irpef al 33% fino a 60.000 euro con un elemento nuovo (prima fase a 55.000 euro nella manovra) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: richiesta sulla legge di bilancio]"
+    }
+  },
+  {
+    "id": "C27-FI-019",
+    "partitoId": "FI",
+    "dichiarante": "Maurizio Casasco",
+    "ruoloDichiarante": "responsabile economico Forza Italia",
+    "data": "2026-10-23",
+    "testoLetterale": "Tra gli incentivi alle aziende, l’estensione dell’iperammortamento ai software potrebbe sostenere la necessaria innovazione digitale delle imprese, in particolare delle pmi",
+    "parafrasiNeutra": "Estensione dell'iperammortamento agli investimenti in software, indicata tra gli incentivi alle imprese (secondo il dichiarante «potrebbe sostenere» l'innovazione digitale, in particolare delle PMI).",
+    "tipoFonte": "discorso",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://www.ilgiornale.it/news/politica-economica/manovra-casasco-fi-no-tax-area-under-30-riduzione-irpef-e-sostegno-alla-sanita-per-gli-anziani-le-priorita-di-forza-italia/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Dichiarazione di Casasco («Lo afferma il deputato di Forza Italia, e responsabile Economia») riportata integralmente tra virgolette da il Giornale (Luca Romano, 23/10/2026 15:58, datePublished 2026-10-23T13:58Z); nessuna copia sui canali FI (forzaitalia.it fermo al 19/3/2026): V2. tipo_fonte «discorso» come C27-FI-013 (dichiarazione riportata da testata, non intervista). Testo scaricato con curl e confrontato parola per parola. Formulazione condizionale («potrebbe sostenere»): da valutare se impegno o ipotesi. Orizzonte/veicolo: legislatura_in_corso e richiesta_legge_bilancio (dichiarazione sulle priorità di FI per la manovra). COFOG 04 (alternativa 01, misura fiscale; per la regola «imposte e agevolazioni fiscali → 01» il verificatore può preferire 01). Pre-valutazione slogan: LIM (strumento nominato, ma in forma ipotetica). (verifica L2 2026-10-24) Metodo: fonte riaperta con curl GET (HTTP 200), testo estratto dall'HTML/PDF e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Data e dichiarante come FI-017. «Potrebbe sostenere» riguarda l'effetto atteso sull'innovazione; la misura è indicata «tra gli incentivi alle aziende» nella dichiarazione sulle priorità di FI per la manovra: supera il criterio (strumento nominato, iperammortamento, con base definita: software). COFOG 01 (alternativa 04 in nota).",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-24 — CORRETTA: COFOG 04 → 01 (regola «imposte e agevolazioni fiscali → 01», come C27-AZ-012); parafrasi («potrebbe» riferito all'effetto, non alla proposta) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: richiesta sulla legge di bilancio]"
+    }
+  },
+  {
+    "id": "C27-FI-022",
+    "partitoId": "FI",
+    "dichiarante": "Enrico Costa, Davide Bellomo, Pietro Pittalis, Fabio Roscioli (firmatari)",
+    "ruoloDichiarante": "primo firmatario Enrico Costa, capogruppo FI alla Camera",
+    "data": "2026-10-21",
+    "testoLetterale": "Modifiche alla legge 13 aprile 1988, n. 117, al codice di procedura penale e alle norme di attuazione, di coordinamento e transitorie del medesimo codice, in materia di […] equa riparazione per l'applicazione di misure cautelari o l'esercizio palesemente infondato dell'azione penale in caso di proscioglimento",
+    "parafrasiNeutra": "Proposta di legge in materia di equa riparazione per chi, prosciolto, ha subito misure cautelari o un'azione penale palesemente infondata (testo non ancora stampato).",
+    "tipoFonte": "atto_parlamentare",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "proposta_di_legge",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0731/allegato_a.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "03",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Proposta di legge C. 3158 (Enrico Costa, Bellomo, Pittalis, Roscioli), presentata il 21/10/2026, annunciata nell'Allegato A alla seduta n. 731 del 22/10/2026 (firmatari dalla scheda camera.it/leg19/126?leg=19&idDocumento=3158, letta il 24/10). Enrico Costa è indicato come membro per Forza Italia della Conferenza dei presidenti di gruppo (camera.it/leg19/99?shadow_organo_parlamentare=3601, letta il 24/10): capogruppo FI alla Camera, da verificare. Testo letterale = titolo (articolato non ancora stampato); il titolo ha tre oggetti distinti, una riga ciascuno (regola dei pacchetti). Orizzonte/veicolo: legislatura_in_corso e proposta_di_legge (PdL depositata). Pre-valutazione slogan: OK (istituto nominato, platea definita: prosciolti). COFOG 03 (alternativa 01). (verifica L2 2026-10-24) Titolo ritrovato nell'Allegato A, seduta 731; presentata il 21/10/2026 (scheda C. 3158). Regola uniforme sulle PdL con solo titolo: supera il criterio perché il titolo descrive la misura (riparazione per una fattispecie nuova, platea definita) senza bisogno dell'articolato; l'equa riparazione per ingiusta detenzione (art. 314 c.p.p.) copre oggi solo la custodia cautelare. Da ricontrollare sullo stampato.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CORRETTA: ruolo (Costa capogruppo FI, Conferenza dei presidenti di gruppo); parafrasi («prevede» → «in materia di», testo non ancora stampato); caso limite superato: il titolo nomina un istituto che oggi non esiste (equa riparazione per l'esercizio palesemente infondato dell'azione penale e per le misure cautelari) e la platea (prosciolti) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: proposta di legge C. 3158]"
+    }
+  },
+  {
+    "id": "C27-LEGA-025",
+    "partitoId": "LEGA",
+    "dichiarante": "Matteo Salvini",
+    "ruoloDichiarante": "leader della Lega, segretario federale dimissionario dal 12/10/2026 e ricandidato al congresso del 24-25/10/2026, senatore; vicepresidente del Consiglio e ministro delle Infrastrutture e dei Trasporti",
+    "data": "2026-10-23",
+    "testoLetterale": "Bisogna togliere ed eliminare i bonus e i contributi pubblici ai maggiorenni che non si accorgono che hanno in casa minorenni delinquenti che commettono reati",
+    "parafrasiNeutra": "Revoca di bonus e contributi pubblici agli adulti che «non si accorgono» di avere in casa minorenni che commettono reati.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.alanews.it/2026/10/23/politica/bonus-ai-genitori-proposta-salvini"
+    },
+    "archivioUrl": null,
+    "cofog": "10",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Dichiarazione a Antenna 3 (emittente televisiva) del 23/10/2026, riportata da alanews (Giulia Camuffo, datePublished 2026-10-23T12:46Z); video originale e canali Lega non leggibili (legaonline.it 403): V2. La fonte scrive che è «una proposta su cui la Lega starebbe lavorando» e che non specifica quali sostegni né quali reati; riporta anche una seconda frase: «Bisogna togliere i contributi pubblici a quei genitori che hanno in casa dei teppisti». Collegata per tema a C27-FDI-014 (revoca automatica dei sussidi, FdI). Ruolo: Il Fatto Quotidiano del 12/10/2026 titola «Salvini si dimette» in vista del congresso straordinario del 24-25/10; le testate del 23-24/10 lo indicano ancora come segretario: da verificare. Orizzonte/veicolo: non_specificato e dichiarazione (nessun atto nominato). Pre-valutazione slogan: OK (strumento: revoca di bonus e contributi pubblici a una platea definita). (verifica L2 2026-10-24) Metodo: fonte riaperta con curl GET (HTTP 200), testo estratto dall'HTML/PDF e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Data 23/10 confermata (datePublished 2026-10-23T12:46Z; «ha dichiarato venerdì 23 ottobre»). Ruolo: Il Post e LaPresse del 12/10/2026 riportano le dimissioni di Salvini da segretario (Di Rubba vicesegretario vicario fino al congresso del 24-25/10); il 23/10 Salvini è il leader dimissionario e candidato alla rielezione: dichiarante autorizzato come leader, stesso criterio applicato a tutti i partiti. tipo_fonte: la fonte non è un'intervista pubblicata da una testata ma un resoconto di agenzia di una dichiarazione ad Antenna 3 (video non letto): «discorso» come C27-FI-013, così l'import non la promuove a V1. Slogan: supera (revoca di bonus e contributi pubblici a una platea descritta), come C27-FDI-014; la fonte avverte che non specifica quali sostegni né quali reati. COFOG 10 come FDI-014.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-24 — CORRETTA: ruolo (Salvini dimesso da segretario il 12/10/2026, ricandidato al congresso del 24-25/10: leader del partito); tipo_fonte intervista → discorso (dichiarazione TV riportata da agenzia, non intervista pubblicata: resta V2, D-019); parafrasi ristretta al testo («non si accorgono») | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
+    }
+  },
+  {
+    "id": "C27-LEGA-026",
+    "partitoId": "LEGA",
+    "dichiarante": "Matteo Salvini",
+    "ruoloDichiarante": "leader della Lega, segretario federale dimissionario dal 12/10/2026 e ricandidato al congresso del 24-25/10/2026, senatore; vicepresidente del Consiglio e ministro delle Infrastrutture e dei Trasporti",
+    "data": "2026-10-22",
+    "testoLetterale": "mi auguro che in Parlamento nessuno dirà di “no” alla nostra proposta di revoca della cittadinanza per chi delinque e alla non concessione della stessa per i minori che hanno la fedina penale sporca o che non dimostrano di essersi integrati",
+    "parafrasiNeutra": "Revoca della cittadinanza italiana a chi commette reati (proposta della Lega).",
+    "tipoFonte": "intervista",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.liberoquotidiano.it/news/politica/49430969/matteo-salvini-temo-la-saldatura-tra-gli-estremisti-di-sinistra-e-il-radicalismo-islamico-/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervista di Fabio Rubini a Matteo Salvini, Libero Quotidiano, 22/10/2026 (datePublished 2026-10-22T08:50Z), testo letto per intero con curl (GET) e confrontato parola per parola. La frase contiene due misure: questa riga è la revoca della cittadinanza «per chi delinque»; la seconda misura è TMP-I-3. Il testo non specifica quali reati né se riguardi solo i cittadini per naturalizzazione. Distinta da C27-LEGA-008 (esclusione decennale dalla richiesta di cittadinanza per i condannati per spaccio). Ruolo: stessa formula di C27-LEGA-025; nel periodo Salvini è indicato dalle testate come leader e candidato alla segreteria al congresso straordinario del 24-25/10 (Libero, URL 49352174, titola «Salvini si dimette da segretario della Lega in vista del congresso, Di Rubba commissario»): da verificare. L’intervistatore lo chiama «Ministro», ma la risposta riguarda una proposta del partito («la nostra proposta»), non un atto del Governo. COFOG 01 come C27-LEGA-008. Orizzonte/veicolo: legislatura_in_corso e dichiarazione («mi auguro che in Parlamento nessuno dirà di “no”»; nessun atto numerato citato). Pre-valutazione slogan: OK (strumento: revoca; platea: chi commette reati), misurabile parziale per la platea non definita. (verifica L2 2026-10-24) Intervista di Fabio Rubini a Matteo Salvini, Libero Quotidiano, datePublished 2026-10-22T08:50Z; domanda e risposta tra virgolette, citazione ritrovata parola per parola. V1 (D-019). Ruolo nella forma verificata per C27-LEGA-025 (verificate.csv). Istituto (revoca) e platea («chi delinque»): supera il criterio; misurabile parziale. Collegata a C27-LEGA-008, non doppione.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CORRETTA: ruolo (forma di C27-LEGA-025: leader, segretario dimissionario dal 12/10 e ricandidato) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione; orizzonte: «in Parlamento»]"
+    }
+  },
+  {
+    "id": "C27-LEGA-027",
+    "partitoId": "LEGA",
+    "dichiarante": "Matteo Salvini",
+    "ruoloDichiarante": "leader della Lega, segretario federale dimissionario dal 12/10/2026 e ricandidato al congresso del 24-25/10/2026, senatore; vicepresidente del Consiglio e ministro delle Infrastrutture e dei Trasporti",
+    "data": "2026-10-22",
+    "testoLetterale": "mi auguro che in Parlamento nessuno dirà di “no” alla nostra proposta di revoca della cittadinanza per chi delinque e alla non concessione della stessa per i minori che hanno la fedina penale sporca o che non dimostrano di essersi integrati",
+    "parafrasiNeutra": "Non concedere la cittadinanza italiana ai minori con precedenti penali o che non dimostrano di essersi integrati (proposta della Lega).",
+    "tipoFonte": "intervista",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.liberoquotidiano.it/news/politica/49430969/matteo-salvini-temo-la-saldatura-tra-gli-estremisti-di-sinistra-e-il-radicalismo-islamico-/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervista di Fabio Rubini a Matteo Salvini, Libero Quotidiano, 22/10/2026 (datePublished 2026-10-22T08:50Z), testo letto per intero con curl (GET) e confrontato parola per parola. Seconda misura della stessa frase di TMP-I-2. Possibile sovrapposizione con C27-LEGA-008 (esclusione dalla cittadinanza per i condannati per spaccio): qui la platea è più ampia (precedenti penali in genere e mancata integrazione) e riguarda i minori; da valutare se riga distinta o ampliamento di LEGA-008. Il testo non dice come si dimostra l’integrazione. Contesto: risposta sui minorenni coinvolti negli scontri di Milano e su ius scholae/ius soli. Ruolo: stessa formula di C27-LEGA-025; nel periodo Salvini è indicato dalle testate come leader e candidato alla segreteria al congresso straordinario del 24-25/10 (Libero, URL 49352174, titola «Salvini si dimette da segretario della Lega in vista del congresso, Di Rubba commissario»): da verificare. L’intervistatore lo chiama «Ministro», ma la risposta riguarda una proposta del partito («la nostra proposta»), non un atto del Governo. Orizzonte/veicolo: legislatura_in_corso e dichiarazione. Pre-valutazione slogan: OK (strumento: diniego della cittadinanza; platea: minori con precedenti o non integrati), misurabile parziale. (verifica L2 2026-10-24) Intervista di Fabio Rubini a Matteo Salvini, Libero Quotidiano, datePublished 2026-10-22T08:50Z; domanda e risposta tra virgolette, citazione ritrovata parola per parola. V1 (D-019). Ruolo nella forma verificata per C27-LEGA-025 (verificate.csv). Diniego della cittadinanza con platea definita: supera il criterio.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CORRETTA: ruolo (come C27-LEGA-025); riga distinta da C27-LEGA-008 (platea più ampia: minori con precedenti penali o non integrati) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione; orizzonte: «in Parlamento»]"
+    }
+  },
+  {
+    "id": "C27-LEGA-028",
+    "partitoId": "LEGA",
+    "dichiarante": "Matteo Salvini",
+    "ruoloDichiarante": "leader della Lega, segretario federale dimissionario dal 12/10/2026 e ricandidato al congresso del 24-25/10/2026, senatore; vicepresidente del Consiglio e ministro delle Infrastrutture e dei Trasporti",
+    "data": "2026-10-22",
+    "testoLetterale": "per questo dobbiamo insistere nel chiudere i luoghi di culto abusivi e non permettere la costruzione di moschee fino a quando l’islam non avrà firmato il concordato con lo Stato, che ci permetterà di verificare, per esempio, la trasparenza dei fondi",
+    "parafrasiNeutra": "Non consentire la costruzione di moschee finché le comunità islamiche non avranno sottoscritto un accordo con lo Stato (il testo dice «concordato»), che permetterebbe tra l’altro di verificare la trasparenza dei finanziamenti.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.liberoquotidiano.it/news/politica/49430969/matteo-salvini-temo-la-saldatura-tra-gli-estremisti-di-sinistra-e-il-radicalismo-islamico-/"
+    },
+    "archivioUrl": null,
+    "cofog": "08",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervista di Fabio Rubini a Matteo Salvini, Libero Quotidiano, 22/10/2026 (datePublished 2026-10-22T08:50Z), testo letto per intero con curl (GET) e confrontato parola per parola. La riga riguarda solo lo stop alla costruzione di moschee fino all’accordo con lo Stato; la chiusura dei luoghi di culto abusivi nella stessa frase è doppione di C27-LEGA-021 e la trasparenza dei fondi è collegata a C27-LEGA-019 (già censite). Il testo usa «concordato» (per le confessioni diverse dalla cattolica la Costituzione prevede intese, art. 8): parafrasi con il termine generico «accordo» e virgolettato in parentesi. Frase preceduta da «la lotta all’islam radicalizzato sarà uno dei temi del congresso». Ruolo: stessa formula di C27-LEGA-025; nel periodo Salvini è indicato dalle testate come leader e candidato alla segreteria al congresso straordinario del 24-25/10 (Libero, URL 49352174, titola «Salvini si dimette da segretario della Lega in vista del congresso, Di Rubba commissario»): da verificare. L’intervistatore lo chiama «Ministro», ma la risposta riguarda una proposta del partito («la nostra proposta»), non un atto del Governo. COFOG 08 come C27-LEGA-009. Orizzonte/veicolo: non_specificato e dichiarazione. Pre-valutazione slogan: OK (strumento: divieto di nuove costruzioni; condizione: accordo con lo Stato). (verifica L2 2026-10-24) Intervista di Fabio Rubini a Matteo Salvini, Libero Quotidiano, datePublished 2026-10-22T08:50Z; domanda e risposta tra virgolette, citazione ritrovata parola per parola. V1 (D-019). Ruolo nella forma verificata per C27-LEGA-025 (verificate.csv). Divieto con condizione nominata: supera il criterio. La chiusura dei luoghi di culto abusivi nella stessa frase resta doppione di C27-LEGA-021.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CORRETTA: ruolo (come C27-LEGA-025) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
+    }
+  },
+  {
+    "id": "C27-NM-013",
+    "partitoId": "NM",
+    "dichiarante": "Noi Moderati",
+    "ruoloDichiarante": "partito – sito ufficiale",
+    "data": "2026-10-21",
+    "testoLetterale": "la proposta di legge di Noi Moderati sulla tutela dei minori nell’utilizzo dei social network. La proposta prevede il divieto di accesso alle piattaforme per gli under 13",
+    "parafrasiNeutra": "Divieto di accesso alle piattaforme social per i minori di 13 anni.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "emendamento",
+    "fonte": {
+      "url": "https://noimoderati.it/news-e-media/98"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Testo della pagina news del sito NM (curl GET, HTTP 200), confrontato parola per parola. Pagina «Conferenza stampa con i giovani» (Iniziative del partito, 21/10/2026): Mara Carfagna «ha annunciato un emendamento al decreto Sicurezza per rilanciare la proposta di legge di Noi Moderati»; la fonte attribuisce la proposta al partito (non atto personale, cfr. D-012 e C27-NM-009). Pacchetto di 3 voci: C27-NM-013, 014, 015. Orizzonte/veicolo: legislatura_in_corso ed emendamento (annunciato, al decreto Sicurezza); la PdL è già depositata. COFOG 03 (tutela dei minori legata alla sicurezza nel testo; alternativa 01). Pre-valutazione slogan: OK (divieto con soglia d'età). (verifica L2 2026-10-24) Metodo: fonte riaperta con curl GET (HTTP 200), testo estratto dall'HTML/PDF e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Pagina datata 21/10/2026 (Iniziative del partito). La fonte attribuisce la PdL al partito («proposta di legge di Noi Moderati»); l'emendamento è annunciato da Carfagna, segretaria del partito: non è atto personale (D-012). Nessuna riga NM esistente sui social o sui minori: non è doppione. COFOG 04 (alternativa 03 o 10).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CORRETTA: COFOG 03 → 04 (tutela dei minori sulle piattaforme, come C27-AZ-016 e AZ-032) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: emendamento annunciato al decreto Sicurezza per la PdL NM già depositata]"
+    }
+  },
+  {
+    "id": "C27-NM-016",
+    "partitoId": "NM",
+    "dichiarante": "Noi Moderati",
+    "ruoloDichiarante": "partito – sito ufficiale",
+    "data": "2026-10-22",
+    "testoLetterale": "Vogliamo che il prossimo Governo istituisca un Ministero per la Sicurezza informatica e tecnologica.",
+    "parafrasiNeutra": "Istituzione di un Ministero per la sicurezza informatica e tecnologica nel prossimo Governo.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "prossima_legislatura",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://noimoderati.it/news-e-media/101"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Testo della pagina news del sito NM (curl GET, HTTP 200), confrontato parola per parola. Pagina «Una proposta al passo coi tempi» (Iniziative del partito, 22/10/2026). Pacchetto di 3 voci: C27-NM-016, 017, 018. Orizzonte/veicolo: prossima_legislatura («il prossimo Governo») e dichiarazione. COFOG 03 (alternativa 01, organo di governo). Pre-valutazione slogan: OK (organismo nominato). (verifica L2 2026-10-24) Metodo: fonte riaperta con curl GET (HTTP 200), testo estratto dall'HTML/PDF e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Pagina datata 22/10/2026 (Iniziative del partito). Supera il criterio (organismo nominato), come C27-AZ-028 e C27-M5S-022. COFOG 01 (alternativa 03).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CORRETTA: COFOG 03 → 01 (organo di governo, come C27-AZ-028 «unico ministero per la crescita») | PERIMETRO: orizzonte/veicolo (vedi colonne) [orizzonte: «il prossimo Governo»]"
+    }
+  },
+  {
+    "id": "C27-NM-017",
+    "partitoId": "NM",
+    "dichiarante": "Noi Moderati",
+    "ruoloDichiarante": "partito – sito ufficiale",
+    "data": "2026-10-22",
+    "testoLetterale": "È necessario puntare su una verifica effettiva dell’età per accedere ai social",
+    "parafrasiNeutra": "Verifica effettiva dell'età per l'accesso ai social network.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://noimoderati.it/news-e-media/101"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Testo della pagina news del sito NM (curl GET, HTTP 200), confrontato parola per parola. Seconda voce del pacchetto di C27-NM-016 (stessa fonte e data). Orizzonte/veicolo: non_specificato e dichiarazione (la frase non è legata al «prossimo Governo» della frase precedente). Vicina a C27-NM-013 (divieto under 13). Pre-valutazione slogan: LIM (obbligo di verifica dell'età, meccanismo non descritto). (verifica L2 2026-10-24) Metodo: fonte riaperta con curl GET (HTTP 200), testo estratto dall'HTML/PDF e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Stessa pagina di NM-016. Distinta da NM-013 (divieto sotto i 13 anni): qui l'obbligo è il controllo dell'età, senza meccanismo descritto. Orizzonte non_specificato confermato.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CORRETTA: COFOG 03 → 04 (come NM-013); caso limite superato (obbligo identificabile: verifica effettiva dell'età per l'accesso ai social) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
+    }
+  },
+  {
     "id": "C27-PD-008",
     "partitoId": "PD",
     "dichiarante": "Partito Democratico (documento nazionale presentato da Marina Sereni)",
@@ -4022,6 +4322,431 @@
     "verifica": {
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-AVS-042",
+    "partitoId": "AVS",
+    "dichiarante": "Nicola Fratoianni",
+    "ruoloDichiarante": "Segretario di Sinistra Italiana, leader di AVS, deputato",
+    "data": "2026-10-21",
+    "testoLetterale": "Dicendo no all’aumento della spesa militare",
+    "parafrasiNeutra": "Non aumentare la spesa militare, come fonte di copertura delle proposte.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.quotidiano.net/politica/intervista-fratoianni-e8dk6m0f"
+    },
+    "archivioUrl": null,
+    "cofog": "02",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Stessa intervista di C27-AVS-041, risposta alla domanda «E con quali risorse?». Collegata a C27-AVS-023 (riduzione della spesa militare, uscita come slogan) e confrontabile con C27-PD-021 (contrarietà all’aumento al 5% del PIL). Orizzonte/veicolo: non_specificato, dichiarazione. Pre-valutazione slogan: LIM (tetto al livello attuale come valore di arrivo). (verifica L2 2026-10-24) Metodo: fonte riaperta con curl GET (HTTP 200), testo estratto dall'HTML/PDF e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Intervista a Quotidiano Nazionale (Cosimo Rossi), datePublished 2026-10-21T01:00Z (edizione del 21/10; il testo porta «Roma, 20 ottobre 2026»): prima pubblicazione 21/10, nel periodo. Fratoianni segretario di SI e co-leader di AVS: dichiarante autorizzato. Risposta alla domanda «E con quali risorse?». Supera il criterio come tetto al livello attuale (valore di arrivo), stesso trattamento di C27-PD-021 e C27-M5S-021. Non è doppione di C27-AVS-023 (riduzione, uscita come slogan).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CORRETTA: misurabile si → parziale (come C27-PD-021 e C27-CSX-001: «no all'aumento» senza metrica né livello di riferimento) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
+    }
+  },
+  {
+    "id": "C27-AVS-044",
+    "partitoId": "AVS",
+    "dichiarante": "Luana Zanella",
+    "ruoloDichiarante": "Capogruppo AVS alla Camera",
+    "data": "2026-10-21",
+    "testoLetterale": "Chiediamo al Governo una urgente regolamentazione degli affitti turistici e misure coordinate con Regioni e Comuni per favorire il ritorno degli immobili al mercato degli affitti di lunga durata",
+    "parafrasiNeutra": "Regolamentare gli affitti turistici, con misure coordinate con Regioni e Comuni, per riportare gli immobili agli affitti di lunga durata.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "altro",
+    "fonte": {
+      "url": "https://verdisinistra.it/casa-zanella-limitare-affitti-turistici-immobili-tornino-a-quelli-di-lunga-durata-domani-qt-della-camera-risponde-il-ministro-del-turismo/"
+    },
+    "archivioUrl": null,
+    "cofog": "06",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Comunicato sul sito ufficiale (API WordPress, data 2026-10-21T09:08), in vista dell’interrogazione a risposta immediata 3-02969 (Camera, seduta 730 del 22/10) di cui Zanella è prima firmataria. Il comunicato del 22/10 («Avevamo chiesto una urgente regolamentazione…») ripete la richiesta: non registrato. Confrontabile con C27-PD-022 (affitti brevi). Orizzonte/veicolo: legislatura_in_corso, altro: richiesta al Governo in carica che non nomina un atto. Pre-valutazione slogan: LIM (regolamentazione con oggetto definito, parametri non indicati). (verifica L2 2026-10-24) Metodo: fonte riaperta con curl GET (HTTP 200), testo estratto dall'HTML/PDF e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Data 21/10 (datePublished 2026-10-21T07:08Z). «Lo afferma la capogruppo di AVS alla Camera Luana Zanella»: capogruppo, dichiarante autorizzato. Stesso trattamento della riga PD sugli affitti brevi: nomina l'oggetto della disciplina e un elemento del meccanismo. Il comunicato del 22/10 ripete la richiesta (non registrato, d'accordo).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CONFERMATA: caso limite superato (disciplina degli affitti turistici con coordinamento Regioni-Comuni, come C27-PD-022) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: altro, richiesta al Governo in carica]"
+    }
+  },
+  {
+    "id": "C27-AVS-046",
+    "partitoId": "AVS",
+    "dichiarante": "Angelo Bonelli",
+    "ruoloDichiarante": "co-portavoce nazionale AVS (Europa Verde), deputato",
+    "data": "2026-10-21",
+    "testoLetterale": "Può prendere i soldi tassando gli extraprofitti, introducendo il prezzo calmierato sui carburanti",
+    "parafrasiNeutra": "Introdurre un prezzo calmierato sui carburanti.",
+    "tipoFonte": "discorso",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "altro",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervento sull'ordine dei lavori nell'Aula della Camera, resoconto stenografico della seduta n. 730 del 21/10/2026. Testo scaricato con curl e confrontato parola per parola. «tassando gli extraprofitti» è già in C27-AVS-002 e C27-AVS-045: non registrato a parte. Orizzonte/veicolo: non_specificato e dichiarazione. Pre-valutazione slogan: OK (prezzo amministrato = strumento). (verifica L2 2026-10-24) Citazione ritrovata nello stenografico della seduta 730, intervento di ANGELO BONELLI (AVS). Livello V1 (resoconto stenografico ufficiale). Prezzo calmierato = strumento: supera il criterio. Nessuna riga AVS sul prezzo dei carburanti. (routine 2026-10-24) Livello V2: intervento in Aula dal resoconto stenografico; D-019 porta a V1 solo le interviste, i discorsi restano V2. Il passaggio a V1 dei resoconti ufficiali è da decidere dal titolare.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-24 — CORRETTA: orizzonte/veicolo non_specificato/dichiarazione → legislatura_in_corso/altro («noi vogliamo la Presidente del Consiglio e che ci dica … che i soldi li può prendere»: richiesta al Governo in carica, stessa regola di C27-PD-028 e C27-M5S-046) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: altro, richiesta al Governo in carica nell'Aula]"
+    }
+  },
+  {
+    "id": "C27-AVS-050",
+    "partitoId": "AVS",
+    "dichiarante": "Boldrini, Della Vedova, Zanella, Francesco Silvestri, Amendola, Giachetti, Fratoianni, Provenzano, Magi, Porta, Scotto, Ferrari, Bakkali, Berruto, Ghio, Schullian, Zaratti, Bonelli, Borrelli, Dori, Ghirra, Grimaldi, Mari, Piccolotti, Ascari, Carotenuto (firmatari)",
+    "ruoloDichiarante": "tra i firmatari Luana Zanella (capogruppo AVS alla Camera), Nicola Fratoianni e Angelo Bonelli (leader AVS)",
+    "data": "2026-10-23",
+    "testoLetterale": "a promuovere iniziative normative volte al completamento dell'adeguamento dell'ordinamento italiano in materia di crimini internazionali […] favorendo, per quanto di competenza, l'iter delle iniziative legislative presentate per l'adozione di un Codice dei crimini internazionali",
+    "parafrasiNeutra": "Completare l'adeguamento dell'ordinamento italiano sui crimini internazionali con l'adozione di un Codice dei crimini internazionali.",
+    "tipoFonte": "atto_parlamentare",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "risoluzione_mozione",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0732/allegato_b.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "03",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Mozione 1-00599 (Boldrini e altri), testo «ulteriormente riformulato» pubblicato nell'Allegato B alla seduta n. 732 del 23/10/2026. Nella versione precedente (Allegato B alla seduta n. 725 del 12/10/2026) i firmatari erano solo deputati PD: Zanella, Fratoianni, Bonelli, Magi, Della Vedova, Schullian e gli altri si aggiungono il 23/10, quindi per questi partiti la prima pubblicazione è nel periodo. Mozione con firmatari di più gruppi (non è la risoluzione unitaria CSX: mancano i capigruppo PD, M5S e IV). Punto 4) del dispositivo, nuovo il 23/10. Il taglio «[…]» toglie «, anche valorizzando i lavori già svolti dalla Commissione istituita presso il Ministero della giustizia e». Orizzonte/veicolo: legislatura_in_corso e risoluzione_mozione. Pre-valutazione slogan: OK (codice con oggetto definito). (verifica L2 2026-10-24) Punto 4) ritrovato parola per parola nell'Allegato B, seduta 732; confronto con gli Allegati B delle sedute 697 e 725 (vedi C27-PD-031). Taglio senza gruppi di persone. Codice con oggetto definito: supera il criterio.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CONFERMATA: punto 4 nuovo nel testo del 23/10 (assente nelle versioni del 24/07 e del 12/10); Zanella capogruppo AVS fra i firmatari | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: mozione]"
+    }
+  },
+  {
+    "id": "C27-M5S-039",
+    "partitoId": "M5S",
+    "dichiarante": "Ilaria Fontana, Sergio Costa, Morfino, L'Abbate, Santillo, Quartini, Alifano, Pavanelli, Auriemma, Riccardo Ricciardi (firmatari)",
+    "ruoloDichiarante": "deputati M5S firmatari della mozione 1-00610; tra i firmatari Riccardo Ricciardi, capogruppo M5S alla Camera",
+    "data": "2026-10-23",
+    "testoLetterale": "a definire una strategia nazionale di diplomazia climatica capace di integrare stabilmente i processi e gli impegni multilaterali delle Cop nel quadro della politica estera e di sicurezza",
+    "parafrasiNeutra": "Definire una strategia nazionale di diplomazia climatica che integri gli impegni delle Cop nella politica estera e di sicurezza.",
+    "tipoFonte": "atto_parlamentare",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "risoluzione_mozione",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0732/allegato_b.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Mozione 1-00610 (Fontana e altri, M5S) sulla Cop31 e la diplomazia climatica, Camera, Allegato B alla seduta n. 732 del 23/10/2026, punto 1) del dispositivo «impegna il Governo»; 28 punti, registrati solo quelli che nominano uno strumento, un parametro o una scadenza (gli altri sono elencati nel log del censimento). Atto di gruppo (D-012): tra i firmatari il capogruppo. Canale usato: atti della Camera (canale alternativo 6; il sito movimento5stelle.eu è leggibile ma nel periodo non pubblica proposte nazionali). Orizzonte/veicolo: legislatura_in_corso, risoluzione_mozione: impegno rivolto al Governo in carica. Pre-valutazione slogan (criterio uniforme 2026-10-21): LIM (strumento: strategia nazionale con oggetto definito). testo_letterale confrontato con curl GET (HTTP 200) sul testo HTML, a meno degli spazi. (verifica L2 2026-10-24) Metodo: fonte riaperta con curl GET (HTTP 200), testo estratto dall'HTML/PDF e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Mozione 1-00610 riletta sull'Allegato B della seduta 732 (23/10/2026): testo nuovo (non è una riformulazione), firmatari «Ilaria Fontana, Sergio Costa, Morfino, L'Abbate, Santillo, Quartini, Alifano, Pavanelli, Auriemma, Riccardo Ricciardi». Ricciardi è capogruppo M5S alla Camera (dal gennaio 2025; firma fra i capigruppo la risoluzione 6-00293, Allegato A seduta 726: «Braga, Riccardo Ricciardi, Zanella, Boschi, Magi»): atto di gruppo con il capogruppo fra i firmatari, stesso criterio di C27-FDI-015/016/017. Punto 1: la strategia ha un oggetto definito (integrare gli impegni delle Cop nella politica estera e di sicurezza); il punto 2 invece esce.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CORRETTA: ruolo (capogruppo verificato); caso limite superato (atto identificabile: strategia nazionale con oggetto definito) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: mozione]"
+    }
+  },
+  {
+    "id": "C27-M5S-041",
+    "partitoId": "M5S",
+    "dichiarante": "Ilaria Fontana, Sergio Costa, Morfino, L'Abbate, Santillo, Quartini, Alifano, Pavanelli, Auriemma, Riccardo Ricciardi (firmatari)",
+    "ruoloDichiarante": "deputati M5S firmatari della mozione 1-00610; tra i firmatari Riccardo Ricciardi, capogruppo M5S alla Camera",
+    "data": "2026-10-23",
+    "testoLetterale": "ad adottare iniziative volte alla predisposizione e alla pubblicazione di un'analisi di impatto delle politiche nazionali e degli strumenti di finanza pubblica per gli investimenti all'estero, quali garanzie e crediti all'esportazione, […] quale base per una tabella di marcia nazionale di uscita dalle fonti fossili",
+    "parafrasiNeutra": "Pubblicare un'analisi d'impatto delle politiche nazionali e degli strumenti di finanza pubblica per gli investimenti all'estero (garanzie, crediti all'esportazione), come base per una tabella di marcia nazionale di uscita dalle fonti fossili.",
+    "tipoFonte": "atto_parlamentare",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "risoluzione_mozione",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0732/allegato_b.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Mozione 1-00610 (Fontana e altri, M5S) sulla Cop31 e la diplomazia climatica, Camera, Allegato B alla seduta n. 732 del 23/10/2026, punto 10) del dispositivo «impegna il Governo»; 28 punti, registrati solo quelli che nominano uno strumento, un parametro o una scadenza (gli altri sono elencati nel log del censimento). Atto di gruppo (D-012): tra i firmatari il capogruppo. Canale usato: atti della Camera (canale alternativo 6; il sito movimento5stelle.eu è leggibile ma nel periodo non pubblica proposte nazionali). Orizzonte/veicolo: legislatura_in_corso, risoluzione_mozione: impegno rivolto al Governo in carica. Pre-valutazione slogan (criterio uniforme 2026-10-21): OK (strumento: analisi pubblicata e tabella di marcia nazionale). Il taglio «[…]» toglie «quali garanzie e crediti all'esportazione, rispetto all'impegno alla transizione dai combustibili fossili assunto alla Cop28, che individui gli ambiti da rafforzare e le riforme necessarie,». testo_letterale confrontato con curl GET (HTTP 200) sul testo HTML, a meno degli spazi. (verifica L2 2026-10-24) Metodo: fonte riaperta con curl GET (HTTP 200), testo estratto dall'HTML/PDF e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Mozione 1-00610 riletta sull'Allegato B della seduta 732 (23/10/2026): testo nuovo (non è una riformulazione), firmatari «Ilaria Fontana, Sergio Costa, Morfino, L'Abbate, Santillo, Quartini, Alifano, Pavanelli, Auriemma, Riccardo Ricciardi». Ricciardi è capogruppo M5S alla Camera (dal gennaio 2025; firma fra i capigruppo la risoluzione 6-00293, Allegato A seduta 726: «Braga, Riccardo Ricciardi, Zanella, Boschi, Magi»): atto di gruppo con il capogruppo fra i firmatari, stesso criterio di C27-FDI-015/016/017. Punto 10. Il taglio «[…]» ora toglie solo «rispetto all'impegno alla transizione dai combustibili fossili assunto alla Cop28, che individui gli ambiti da rafforzare e le riforme necessarie,» (nessun gruppo di persone). 316 caratteri. Supera il criterio (analisi pubblicata, tabella di marcia nazionale).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CORRETTA: ruolo; testo_letterale esteso a «quali garanzie e crediti all'esportazione», che la parafrasi usava ma il taglio toglieva | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: mozione]"
+    }
+  },
+  {
+    "id": "C27-M5S-042",
+    "partitoId": "M5S",
+    "dichiarante": "Ilaria Fontana, Sergio Costa, Morfino, L'Abbate, Santillo, Quartini, Alifano, Pavanelli, Auriemma, Riccardo Ricciardi (firmatari)",
+    "ruoloDichiarante": "deputati M5S firmatari della mozione 1-00610; tra i firmatari Riccardo Ricciardi, capogruppo M5S alla Camera",
+    "data": "2026-10-23",
+    "testoLetterale": "ad avviare a livello nazionale un percorso di graduale eliminazione dei sussidi dannosi per l'ambiente e di quelli ai combustibili fossili, nonché delle garanzie pubbliche a sostegno di investimenti privati all'estero in progetti relativi ai combustibili fossili",
+    "parafrasiNeutra": "Eliminare gradualmente i sussidi ambientalmente dannosi e ai combustibili fossili e le garanzie pubbliche agli investimenti privati all’estero in progetti fossili.",
+    "tipoFonte": "atto_parlamentare",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "risoluzione_mozione",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0732/allegato_b.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "05",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Mozione 1-00610 (Fontana e altri, M5S) sulla Cop31 e la diplomazia climatica, Camera, Allegato B alla seduta n. 732 del 23/10/2026, punto 14) del dispositivo «impegna il Governo»; 28 punti, registrati solo quelli che nominano uno strumento, un parametro o una scadenza (gli altri sono elencati nel log del censimento). Atto di gruppo (D-012): tra i firmatari il capogruppo. Canale usato: atti della Camera (canale alternativo 6; il sito movimento5stelle.eu è leggibile ma nel periodo non pubblica proposte nazionali). Orizzonte/veicolo: legislatura_in_corso, risoluzione_mozione: impegno rivolto al Governo in carica. Pre-valutazione slogan (criterio uniforme 2026-10-21): OK (strumento: eliminazione di sussidi e garanzie). La prima parte del punto («a sostenere, nell'ambito del Dialogo di Veredas, l'esame dei rischi…») non è registrata: slogan. testo_letterale confrontato con curl GET (HTTP 200) sul testo HTML, a meno degli spazi. (verifica L2 2026-10-24) Metodo: fonte riaperta con curl GET (HTTP 200), testo estratto dall'HTML/PDF e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Mozione 1-00610 riletta sull'Allegato B della seduta 732 (23/10/2026): testo nuovo (non è una riformulazione), firmatari «Ilaria Fontana, Sergio Costa, Morfino, L'Abbate, Santillo, Quartini, Alifano, Pavanelli, Auriemma, Riccardo Ricciardi». Ricciardi è capogruppo M5S alla Camera (dal gennaio 2025; firma fra i capigruppo la risoluzione 6-00293, Allegato A seduta 726: «Braga, Riccardo Ricciardi, Zanella, Boschi, Magi»): atto di gruppo con il capogruppo fra i firmatari, stesso criterio di C27-FDI-015/016/017. Punto 14, seconda parte (la prima, sul Dialogo di Veredas, è slogan: d'accordo). Supera il criterio (eliminazione di sussidi e garanzie definite). COFOG 05 per coerenza con AVS-026 (alternativa 04, o 01 per i sussidi fiscali).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CORRETTA: ruolo; COFOG 04 → 05 (eliminazione dei sussidi ai combustibili fossili, come C27-AVS-026) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: mozione]"
+    }
+  },
+  {
+    "id": "C27-M5S-043",
+    "partitoId": "M5S",
+    "dichiarante": "Ilaria Fontana, Sergio Costa, Morfino, L'Abbate, Santillo, Quartini, Alifano, Pavanelli, Auriemma, Riccardo Ricciardi (firmatari)",
+    "ruoloDichiarante": "deputati M5S firmatari della mozione 1-00610; tra i firmatari Riccardo Ricciardi, capogruppo M5S alla Camera",
+    "data": "2026-10-23",
+    "testoLetterale": "a sostenere reintegri ambiziosi e tempestivi delle risorse del Fondo verde per il clima (Gcf), […] presentando entro la Cop31, un percorso credibile con cui l'Italia intende rispettare gli impegni assunti nell'ambito dell'Ncqg",
+    "parafrasiNeutra": "Presentare entro la Cop31 un percorso per rispettare gli impegni italiani di finanza climatica (Ncqg), sostenendo i reintegri dei fondi multilaterali per il clima.",
+    "tipoFonte": "atto_parlamentare",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "risoluzione_mozione",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0732/allegato_b.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Mozione 1-00610 (Fontana e altri, M5S) sulla Cop31 e la diplomazia climatica, Camera, Allegato B alla seduta n. 732 del 23/10/2026, punto 17) del dispositivo «impegna il Governo»; 28 punti, registrati solo quelli che nominano uno strumento, un parametro o una scadenza (gli altri sono elencati nel log del censimento). Atto di gruppo (D-012): tra i firmatari il capogruppo. Canale usato: atti della Camera (canale alternativo 6; il sito movimento5stelle.eu è leggibile ma nel periodo non pubblica proposte nazionali). Orizzonte/veicolo: legislatura_in_corso, risoluzione_mozione: impegno rivolto al Governo in carica. Pre-valutazione slogan (criterio uniforme 2026-10-21): LIM (scadenza: entro la Cop31; «sostenere reintegri» da solo sarebbe slogan). Il taglio toglie l’elenco degli altri fondi (Gef, Fondo per l'adattamento, Frld). testo_letterale confrontato con curl GET (HTTP 200) sul testo HTML, a meno degli spazi. (verifica L2 2026-10-24) Metodo: fonte riaperta con curl GET (HTTP 200), testo estratto dall'HTML/PDF e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Mozione 1-00610 riletta sull'Allegato B della seduta 732 (23/10/2026): testo nuovo (non è una riformulazione), firmatari «Ilaria Fontana, Sergio Costa, Morfino, L'Abbate, Santillo, Quartini, Alifano, Pavanelli, Auriemma, Riccardo Ricciardi». Ricciardi è capogruppo M5S alla Camera (dal gennaio 2025; firma fra i capigruppo la risoluzione 6-00293, Allegato A seduta 726: «Braga, Riccardo Ricciardi, Zanella, Boschi, Magi»): atto di gruppo con il capogruppo fra i firmatari, stesso criterio di C27-FDI-015/016/017. Punto 17. Il taglio toglie l'elenco degli altri fondi (Gef, Fondo per l'adattamento, Frld), nessun gruppo di persone. «Sostenere reintegri» da solo sarebbe slogan; supera per la scadenza.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CORRETTA: ruolo; caso limite superato (scadenza: entro la Cop31) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: mozione]"
+    }
+  },
+  {
+    "id": "C27-M5S-044",
+    "partitoId": "M5S",
+    "dichiarante": "Ilaria Fontana, Sergio Costa, Morfino, L'Abbate, Santillo, Quartini, Alifano, Pavanelli, Auriemma, Riccardo Ricciardi (firmatari)",
+    "ruoloDichiarante": "deputati M5S firmatari della mozione 1-00610; tra i firmatari Riccardo Ricciardi, capogruppo M5S alla Camera",
+    "data": "2026-10-23",
+    "testoLetterale": "ad adottare iniziative volte alla definizione in vista della Cop31, di un percorso attuativo chiaro del contributo nazionale all'impegno a triplicare la finanza per l'adattamento, con parametri di riferimento concreti e aspettative di rendicontazione",
+    "parafrasiNeutra": "Definire, in vista della Cop31, il percorso del contributo italiano all’impegno di triplicare la finanza per l’adattamento climatico.",
+    "tipoFonte": "atto_parlamentare",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "risoluzione_mozione",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0732/allegato_b.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Mozione 1-00610 (Fontana e altri, M5S) sulla Cop31 e la diplomazia climatica, Camera, Allegato B alla seduta n. 732 del 23/10/2026, punto 18) del dispositivo «impegna il Governo»; 28 punti, registrati solo quelli che nominano uno strumento, un parametro o una scadenza (gli altri sono elencati nel log del censimento). Atto di gruppo (D-012): tra i firmatari il capogruppo. Canale usato: atti della Camera (canale alternativo 6; il sito movimento5stelle.eu è leggibile ma nel periodo non pubblica proposte nazionali). Orizzonte/veicolo: legislatura_in_corso, risoluzione_mozione: impegno rivolto al Governo in carica. Pre-valutazione slogan (criterio uniforme 2026-10-21): LIM (valore di arrivo: triplicare; è l’impegno internazionale, non un importo nazionale). testo_letterale confrontato con curl GET (HTTP 200) sul testo HTML, a meno degli spazi. (verifica L2 2026-10-24) Metodo: fonte riaperta con curl GET (HTTP 200), testo estratto dall'HTML/PDF e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Mozione 1-00610 riletta sull'Allegato B della seduta 732 (23/10/2026): testo nuovo (non è una riformulazione), firmatari «Ilaria Fontana, Sergio Costa, Morfino, L'Abbate, Santillo, Quartini, Alifano, Pavanelli, Auriemma, Riccardo Ricciardi». Ricciardi è capogruppo M5S alla Camera (dal gennaio 2025; firma fra i capigruppo la risoluzione 6-00293, Allegato A seduta 726: «Braga, Riccardo Ricciardi, Zanella, Boschi, Magi»): atto di gruppo con il capogruppo fra i firmatari, stesso criterio di C27-FDI-015/016/017. Punto 18. La citazione si ferma prima dell'elenco delle modalità (equivalente-dono, accesso diretto, quota ai Paesi meno sviluppati e ai piccoli Stati insulari): sono Paesi, non gruppi di persone.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CORRETTA: ruolo; caso limite superato (scadenza «in vista della Cop31» e valore di arrivo internazionale: triplicare la finanza per l'adattamento) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: mozione]"
+    }
+  },
+  {
+    "id": "C27-M5S-045",
+    "partitoId": "M5S",
+    "dichiarante": "Ilaria Fontana, Sergio Costa, Morfino, L'Abbate, Santillo, Quartini, Alifano, Pavanelli, Auriemma, Riccardo Ricciardi (firmatari)",
+    "ruoloDichiarante": "deputati M5S firmatari della mozione 1-00610; tra i firmatari Riccardo Ricciardi, capogruppo M5S alla Camera",
+    "data": "2026-10-23",
+    "testoLetterale": "ad adottare iniziative volte a garantire valutazioni indipendenti sull'impatto climatico dei progetti del Piano Mattei, anche attraverso criteri di selezione, monitoraggio e valutazione d'impatto che ne garantiscano l'allineamento agli obiettivi climatici",
+    "parafrasiNeutra": "Prevedere valutazioni indipendenti dell’impatto climatico dei progetti del Piano Mattei.",
+    "tipoFonte": "atto_parlamentare",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "risoluzione_mozione",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0732/allegato_b.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Mozione 1-00610 (Fontana e altri, M5S) sulla Cop31 e la diplomazia climatica, Camera, Allegato B alla seduta n. 732 del 23/10/2026, punto 23) del dispositivo «impegna il Governo»; 28 punti, registrati solo quelli che nominano uno strumento, un parametro o una scadenza (gli altri sono elencati nel log del censimento). Atto di gruppo (D-012): tra i firmatari il capogruppo. Canale usato: atti della Camera (canale alternativo 6; il sito movimento5stelle.eu è leggibile ma nel periodo non pubblica proposte nazionali). Orizzonte/veicolo: legislatura_in_corso, risoluzione_mozione: impegno rivolto al Governo in carica. Pre-valutazione slogan (criterio uniforme 2026-10-21): LIM (strumento: valutazione indipendente; criteri non precisati). testo_letterale confrontato con curl GET (HTTP 200) sul testo HTML, a meno degli spazi. (verifica L2 2026-10-24) Metodo: fonte riaperta con curl GET (HTTP 200), testo estratto dall'HTML/PDF e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Mozione 1-00610 riletta sull'Allegato B della seduta 732 (23/10/2026): testo nuovo (non è una riformulazione), firmatari «Ilaria Fontana, Sergio Costa, Morfino, L'Abbate, Santillo, Quartini, Alifano, Pavanelli, Auriemma, Riccardo Ricciardi». Ricciardi è capogruppo M5S alla Camera (dal gennaio 2025; firma fra i capigruppo la risoluzione 6-00293, Allegato A seduta 726: «Braga, Riccardo Ricciardi, Zanella, Boschi, Magi»): atto di gruppo con il capogruppo fra i firmatari, stesso criterio di C27-FDI-015/016/017. Punto 23.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CORRETTA: ruolo; caso limite superato (strumento: valutazioni indipendenti sui progetti di un piano nominato) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: mozione]"
+    }
+  },
+  {
+    "id": "C27-M5S-046",
+    "partitoId": "M5S",
+    "dichiarante": "Giuseppe Conte",
+    "ruoloDichiarante": "presidente del MoVimento 5 Stelle, deputato",
+    "data": "2026-10-21",
+    "testoLetterale": "Abbiamo proposto di tagliare, di mettere un tetto al prezzo del carburante",
+    "parafrasiNeutra": "Introdurre un tetto al prezzo dei carburanti.",
+    "tipoFonte": "discorso",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "altro",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervento sull'ordine dei lavori nell'Aula della Camera, resoconto stenografico della seduta n. 730 del 21/10/2026 (richiesta di informativa urgente della presidente del Consiglio). Testo scaricato con curl e confrontato parola per parola. La frase continua: «di prendere soldi, soldi veri, dagli extraprofitti, soprattutto delle aziende energetiche, per non parlare delle banche, dei colossi delle armi»: è C27-M5S-008 (già censita), non registrata. «tagliare» non ha oggetto esplicito: non registrato. Formula al passato («Abbiamo proposto»): nessuna riga M5S sul tetto ai carburanti nei CSV; da verificare se c'è una prima pubblicazione precedente sui canali M5S. Stessa misura di C27-PD-024 (PD) e della riga AVS di questo file. Orizzonte/veicolo: non_specificato e dichiarazione. Pre-valutazione slogan: OK (tetto di prezzo = strumento). (verifica L2 2026-10-24) Citazione ritrovata nello stenografico della seduta 730, intervento di GIUSEPPE CONTE (M5S). Livello V1 come C27-PD-028 (resoconto stenografico ufficiale). «Abbiamo proposto» al passato: nessuna riga M5S sul tetto ai carburanti nel catalogo, e il testo è nuovo nel periodo (la regola D-012 sui testi ripubblicati riguarda testi, non misure già dette). Non è doppione di C27-PD-024 (altro partito). (routine 2026-10-24) Livello V2: intervento in Aula dal resoconto stenografico; D-019 porta a V1 solo le interviste, i discorsi restano V2. Il passaggio a V1 dei resoconti ufficiali è da decidere dal titolare.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-24 — CORRETTA: orizzonte/veicolo non_specificato/dichiarazione → legislatura_in_corso/altro (proposta rivolta al Governo in carica nello stesso dibattito di C27-PD-028: «Eppure, le nostre proposte le abbiamo fatte»; stessa regola per PD-028, PD-029, AVS-046, PE-025, PE-026) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: altro, richiesta al Governo in carica nell'Aula]"
+    }
+  },
+  {
+    "id": "C27-PD-024",
+    "partitoId": "PD",
+    "dichiarante": "Chiara Braga",
+    "ruoloDichiarante": "Capogruppo PD alla Camera dei deputati",
+    "data": "2026-10-23",
+    "testoLetterale": "Noi proponiamo un tetto al prezzo dei carburanti e l’utilizzo degli extraprofitti energetici per sostenere famiglie e imprese.",
+    "parafrasiNeutra": "Introdurre un tetto al prezzo dei carburanti.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.deputatipd.it/news/carburanti-braga-basta-attaccare-chi-protesta-servono-soluzioni-strutturali"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Nota sul sito del gruppo PD alla Camera (deputatipd.it, 23/10/2026 14:04): canale alternativo 4, perché partitodemocratico.it risponde 403 (verifica Cloudflare). La stessa frase compare il 23/10 alle 16:46 nella nota di Enza Rando su senatoripd.it (non registrata, doppione). Contesto: il 22/10 il gruppo annuncia un emendamento al decreto Carburanti VI per un «tetto pubblico, temporaneo e dinamico» (Peluffo) e il 22/10 presenta l’interrogazione 3-02962 sul «tetto dinamico al prezzo dei carburanti» (newsletter del gruppo n. 178 del 23/10). Orizzonte/veicolo: non_specificato, dichiarazione: la frase non nomina l’atto (caso dubbio). Pre-valutazione slogan: OK (strumento: tetto al prezzo). (verifica L2 2026-10-24) Metodo: fonte riaperta con curl GET (HTTP 200), testo estratto dall'HTML/PDF e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Fonte: sito del gruppo PD alla Camera (deputatipd.it), canale alternativo 4 perché partitodemocratico.it risponde 403 (Cloudflare); trattato come canale ufficiale del partito (V1), scelta ancora aperta nella nota 2026-10-22.canali-alternativi-partiti.md. Data 23/10 (dc:date 2026-10-23T14:04). «Così in una nota Chiara Braga, Capogruppo Pd alla Camera»: dichiarante autorizzato. Supera il criterio (strumento: tetto al prezzo), come C27-FN-024.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione; orizzonte non_specificato, caso dubbio: la frase non nomina l'emendamento al decreto Carburanti]"
+    }
+  },
+  {
+    "id": "C27-PD-026",
+    "partitoId": "PD",
+    "dichiarante": "Maria Cecilia Guerra, Arturo Scotto",
+    "ruoloDichiarante": "Guerra: capogruppo PD in commissione Bilancio della Camera e responsabile nazionale Lavoro PD; Scotto: capogruppo PD in commissione Lavoro",
+    "data": "2026-10-21",
+    "testoLetterale": "il Governo ne faccia uno che allevierebbe la sofferenza di migliaia di persone: l’immediata introduzione obbligatoria dello smartworking per tutti i settori produttivi e amministrativi dove è praticabile come si fece durante il Covid",
+    "parafrasiNeutra": "Chiedere al Governo un decreto che introduca subito l'obbligo di lavoro agile nei settori produttivi e amministrativi in cui è praticabile, come durante il Covid.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_decreto",
+    "fonte": {
+      "url": "https://www.deputatipd.it/news/carburanti-guerra-scotto-mezzo-paese-senza-benzina-governo-introduca-smart-working-ove"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Nota congiunta sul sito del gruppo PD alla Camera (22/10/2026 10:40). «ne faccia uno» = un decreto (frase precedente: «Anziché varare decreti sicurezza inutili»). Dichiarante: responsabile nazionale Lavoro della segreteria PD sul proprio tema (stesso criterio usato per C27-PD-008, Sereni); da confermare in verifica. Misura temporanea legata all’emergenza. Orizzonte/veicolo: legislatura_in_corso, richiesta_decreto. Pre-valutazione slogan: OK (obbligo definito). (verifica L2 2026-10-24) Metodo: fonte riaperta con curl GET (HTTP 200), testo estratto dall'HTML/PDF e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Fonte: sito del gruppo PD alla Camera (deputatipd.it), canale alternativo 4 perché partitodemocratico.it risponde 403 (Cloudflare); trattato come canale ufficiale del partito (V1), scelta ancora aperta nella nota 2026-10-22.canali-alternativi-partiti.md. La pagina mostra «21/10/2026». Guerra è «capogruppo Pd in commissione Bilancio della Camera e responsabile nazionale Lavoro»: autorizzata come responsabile nazionale di settore sul proprio tema (smart working = lavoro), stesso criterio di C27-PD-008 (Sereni), C27-FI-008 (Casasco) e C27-FDI-013 (Osnato). Scotto da solo non lo sarebbe. Supera il criterio (obbligo definito). Misura legata all'emergenza carburanti, contenuto di policy: resta (D-012).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CORRETTA: data 2026-10-22 → 2026-10-21 (article:published_time e dc:created 2026-10-21T10:50; il 22/10 10:40 è la data di modifica); dichiarante confermato (responsabile nazionale Lavoro sul proprio tema) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: richiesta di decreto]"
+    }
+  },
+  {
+    "id": "C27-PD-027",
+    "partitoId": "PD",
+    "dichiarante": "Matteo Mauri",
+    "ruoloDichiarante": "Deputato; responsabile nazionale Sicurezza PD",
+    "data": "2026-10-22",
+    "testoLetterale": "Iniziasse a reclutare i 5.500 agenti della polizia penitenziaria che mancano in organico.",
+    "parafrasiNeutra": "Assumere i 5.500 agenti di polizia penitenziaria che mancano in organico.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "altro",
+    "fonte": {
+      "url": "https://www.deputatipd.it/news/minori-mauri-parole-nordio-abbassano-ancora-livello-decenza-governo-si-legga-beccaria"
+    },
+    "archivioUrl": null,
+    "cofog": "03",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Nota sul sito del gruppo PD alla Camera (22/10/2026 17:45), rivolta al ministro della Giustizia. Le altre richieste della nota (educatori, assistenti sociali, mediatori, psicologi, corsi, strutture) non hanno parametri: non registrate. La richiesta di Mauri di un «piano straordinario di assunzioni» per 30.000 unità delle forze dell’ordine (nota del 22/10 13:01) era già nel suo intervento in Aula del 20/10: esce per data. Dichiarante: responsabile nazionale della segreteria PD sul proprio tema, come C27-PD-026; da confermare. Orizzonte/veicolo: legislatura_in_corso, altro: richiesta al Governo in carica. Pre-valutazione slogan: OK (numero). (verifica L2 2026-10-24) Metodo: fonte riaperta con curl GET (HTTP 200), testo estratto dall'HTML/PDF e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Fonte: sito del gruppo PD alla Camera (deputatipd.it), canale alternativo 4 perché partitodemocratico.it risponde 403 (Cloudflare); trattato come canale ufficiale del partito (V1), scelta ancora aperta nella nota 2026-10-22.canali-alternativi-partiti.md. Data 22/10 (17:45). «il deputato e responsabile nazionale Sicurezza del Pd, Matteo Mauri»: responsabile nazionale di settore sul proprio tema (polizia penitenziaria), stesso criterio di PD-026. Supera il criterio (numero: 5.500 agenti). Esclusione del «piano straordinario» per 30.000 unità (già detto il 20/10) condivisa.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: altro, richiesta al ministro della Giustizia]"
+    }
+  },
+  {
+    "id": "C27-PD-028",
+    "partitoId": "PD",
+    "dichiarante": "Elly Schlein",
+    "ruoloDichiarante": "segretaria nazionale PD, deputata",
+    "data": "2026-10-21",
+    "testoLetterale": "Vi abbiamo chiesto di attivare le accise mobili.",
+    "parafrasiNeutra": "Attivare il meccanismo delle accise mobili sui carburanti.",
+    "tipoFonte": "discorso",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "altro",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervento sull'ordine dei lavori nell'Aula della Camera, resoconto stenografico della seduta n. 730 del 21/10/2026 (richiesta di informativa urgente della presidente del Consiglio). Testo scaricato con curl e confrontato parola per parola. Nello stesso intervento: tetto temporaneo al prezzo dei carburanti (già censita, C27-PD-024), tassazione degli extraprofitti delle società energetiche (C27-PD-025), legge sugli affitti brevi (C27-PD-022), fondi dei centri in Albania per assumere personale di polizia (C27-PD-015): non registrati. Su deputatipd.it il meccanismo delle accise mobili compare nelle note di P. De Luca (20/10 e 22/10) e Forattini (21/10 e 22/10), non autorizzati (scartate nel censimento B): nessun doppione registrato. Distinta da C27-AZ-045 (Azione). Orizzonte/veicolo: legislatura_in_corso e altro (richiesta al Governo in carica senza atto nominato). Pre-valutazione slogan: OK (strumento nominato). (verifica L2 2026-10-24) Citazione ritrovata parola per parola nel resoconto stenografico della seduta 730 (21/10/2026), intervento di ELLY SCHLEIN (PD-IDP). Livello: il resoconto stenografico è il documento ufficiale della Camera, fonte primaria come gli Allegati A/B per gli atti, non un discorso riportato da una testata: V1 (regola applicata uguale a tutti gli interventi in Aula di questo file). Nello stesso intervento il tetto ai carburanti ha parametri (90 giorni, verifica ogni 15, Garante dei prezzi) non registrati in C27-PD-024 (23/10): la riga PD-024 resta valida, la data di prima pubblicazione del tetto per il PD è comunque nel periodo. (routine 2026-10-24) Livello V2: intervento in Aula dal resoconto stenografico; D-019 porta a V1 solo le interviste, i discorsi restano V2. Il passaggio a V1 dei resoconti ufficiali è da decidere dal titolare.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-24 — CORRETTA: COFOG 04 → 01 (accise: regola «imposte e agevolazioni fiscali → 01», come C27-AZ-045 accisa mobile) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: altro, richiesta al Governo in carica nell'Aula]"
+    }
+  },
+  {
+    "id": "C27-PD-029",
+    "partitoId": "PD",
+    "dichiarante": "Elly Schlein",
+    "ruoloDichiarante": "segretaria nazionale PD, deputata",
+    "data": "2026-10-21",
+    "testoLetterale": "il Governo deve dirci anche come intenda rispondere a quegli studenti che hanno piantato le tende in queste città […] ad esempio, rimettendo il fondo per l'affitto",
+    "parafrasiNeutra": "Ripristinare il fondo per il sostegno all'affitto.",
+    "tipoFonte": "discorso",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "altro",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "06",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Stesso intervento della riga precedente (seduta n. 730 del 21/10/2026, stenografico). Il taglio «[…]» toglie «, a partire da qui, davanti a Montecitorio (Applausi dei deputati del gruppo Partito Democratico-Italia Democratica e Progressista),»; nessun gruppo di persone tolto. Stessa misura di C27-CSX-003 (rifinanziamento del fondo per l'accesso alle abitazioni in locazione nella risoluzione unitaria del 13/10): da decidere in verifica se è un doppione per il PD. Su deputatipd.it la stessa richiesta è di Morassut (20/10, fuori periodo e non autorizzato). Orizzonte/veicolo: legislatura_in_corso e altro (richiesta al Governo in carica). Pre-valutazione slogan: OK (fondo identificabile). (verifica L2 2026-10-24) Citazione ritrovata nello stenografico della seduta 730 (Schlein), segmenti nell'ordine; il taglio «[…]» toglie «, a partire da qui, davanti a Montecitorio (Applausi …),». Fondo identificabile (fondo nazionale per il sostegno all'accesso alle abitazioni in locazione): supera il criterio. Livello V1 come C27-PD-028. (routine 2026-10-24) Livello V2: intervento in Aula dal resoconto stenografico; D-019 porta a V1 solo le interviste, i discorsi restano V2. Il passaggio a V1 dei resoconti ufficiali è da decidere dal titolare.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-24 — CONFERMATA: il taglio toglie un inciso di luogo e gli applausi, non le parole sugli studenti; non è doppione di C27-CSX-003 (la risoluzione unitaria è un soggetto distinto, come C27-IV-010 e C27-M5S-007 accanto a C27-CSX-006) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: altro, richiesta al Governo in carica]"
+    }
+  },
+  {
+    "id": "C27-PD-032",
+    "partitoId": "PD",
+    "dichiarante": "Antonio Misiani",
+    "ruoloDichiarante": "responsabile Economia, Finanze, Imprese e Infrastrutture nella segreteria nazionale PD, senatore",
+    "data": "2026-10-23",
+    "testoLetterale": "Il taglio del cuneo ha tutelato i redditi medio-bassi, ma chi guadagna 40-60 mila euro lordi è rimasto esposto alla perdita di potere d’acquisto. Serve indicizzare gli scaglioni Irpef all’inflazione",
+    "parafrasiNeutra": "Indicizzare all'inflazione gli scaglioni dell'Irpef (il testo indica la perdita di potere d'acquisto per chi guadagna 40-60 mila euro lordi).",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.lidentita.it/antonio-misiani-pd-sicurezza-repressione-giovani/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervista di Laura Tecce ad Antonio Misiani, L’Identità, 23/10/2026 (datePublished 2026-10-23T06:15Z), letta per intero con curl e confrontata parola per parola. Ruolo dal testo («responsabile Economia, Finanze, Imprese e Infrastrutture nella segreteria nazionale del Partito democratico»): responsabile nazionale di settore sul proprio tema. Risposta alla domanda su come riequilibrare il sistema fiscale; la frase precedente, non citata per il limite di lunghezza, è: «Bisogna proteggere il ceto medio dal fiscal drag, che tra il 2026 e il 2029 rischia di sottrarre 35 miliardi ai contribuenti Irpef.» (stima dell’effetto, non un costo della misura: costo_dichiarato vuoto). Collegata a C27-CSX-006 (indicizzazione dei parametri fiscali nella risoluzione unitaria): qui è una posizione del PD per voce del suo responsabile economico; da valutare se doppione. Nella stessa intervista: tassazione degli extraprofitti energetici = doppione di C27-PD-025; salario minimo a 9 euro lordi l’ora = doppione di C27-PD-013/C27-CSX-002 (già censite). Orizzonte/veicolo: non_specificato e dichiarazione. Pre-valutazione slogan: OK (strumento: indicizzazione degli scaglioni Irpef). (verifica L2 2026-10-24) Intervista di Laura Tecce ad Antonio Misiani, L'Identità, datePublished 2026-10-23T06:15Z; ruolo dal testo della testata; citazione ritrovata parola per parola. V1 (D-019).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CORRETTA: parafrasi ristretta al testo_letterale (il fiscal drag è nella frase precedente, non citata); non è doppione di C27-CSX-006 (soggetto distinto, come C27-IV-010 e C27-M5S-007) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
     }
   },
   {
@@ -6675,6 +7400,156 @@
     }
   },
   {
+    "id": "C27-FN-023",
+    "partitoId": "FN",
+    "dichiarante": "Futuro Nazionale (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale; presidente Roberto Vannacci",
+    "data": "2026-10-22",
+    "testoLetterale": "STOP ALLE SANZIONI CONTRO LA RUSSIA per tornare a rapporti commerciali ed energetici nell’interesse dell’Italia.",
+    "parafrasiNeutra": "Togliere le sanzioni contro la Russia per riprendere i rapporti commerciali ed energetici.",
+    "tipoFonte": "documento_partito",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "documento_partito",
+    "fonte": {
+      "url": "https://futuronazionale.it/wp-content/uploads/2026/10/CARO-CARBURANTI_A5-fronte-retro.pdf"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Volantino A5 «Caro carburanti» (2 pagine) pubblicato nella pagina ufficiale https://futuronazionale.it/materiale/ (lastmod sitemap 2026-10-22T09:58 UTC). Data: PDF creato il 21/10/2026 (metadati), file caricato sul server il 22/10/2026 08:20 UTC (Last-Modified); il manifesto 70x100 collegato, senza le misure, è del 21/10/2026 17:42 UTC. Il volantino dice che le misure erano in una risoluzione presentata in Parlamento e respinta («Futuro Nazionale ha presentato in Parlamento una risoluzione per fermare il caro carburanti […] Il Governo e la maggioranza l’hanno respinta»): l’atto non è stato individuato negli atti di Camera e Senato; se la risoluzione contiene le stesse misure con data precedente, il verificatore valuti se il testo del volantino è nuovo o una ripresa. Testo letterale in maiuscolo come nel documento; estratto con pdftotext da file scaricato con curl. Altre voci dello stesso elenco escluse per criterio slogan: «ACQUISTARE ENERGIA E CARBURANTI DOVE CONVIENE […]» e «BASTA SPECULAZIONI su benzina, diesel e beni essenziali.». Orizzonte/veicolo: legislatura_in_corso e risoluzione_mozione, perché il testo nomina una risoluzione della legislatura in corso (regola 1.1). COFOG 04 (energia e commercio), alternativa 01 (affari esteri). Pre-valutazione slogan: OK (strumento: sanzioni). Le sanzioni sono decise in sede UE: il testo non dice con quale atto. (verifica L2 2026-10-24) Metodo: fonte riaperta con curl GET (HTTP 200), testo estratto dall'HTML/PDF e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Volantino PDF riscaricato (HTTP 200, Last-Modified 22/10/2026 08:20 UTC; PDF creato il 21/10 17:19 UTC con Canva) e letto con pdftotext. Data 22/10 (prima pubblicazione sul sito) confermata. Ricerca della risoluzione citata: l'unica risoluzione dei deputati di Futuro Nazionale trovata è la 6-00299 (Ziello, Davide Bergamini, Bof, Calderone, Furgiuele, Pierro, Pozzolo, Ravetto, Sasso) sul DPFP, Allegato A seduta 726 del 13/10/2026: non contiene né il tetto europeo al prezzo dei carburanti né il tetto alle accise; al punto 4 chiede di rigettare «i vincoli, autoimposti derivanti da regimi sanzionatori e normativi (quali il Fitfor55)». Il testo del volantino è quindi nuovo e non è una ripresa parola per parola. tipo_fonte → documento_partito (PDF, come la regola applicata ad AZ-017/C27-PD-008); veicolo → documento_partito (le misure non risultano nella risoluzione individuata); orizzonte legislatura_in_corso tenuto (il testo nomina una risoluzione della legislatura in corso, regola 1.1). Supera il criterio (abrogazione di un regime: le sanzioni contro la Russia, decise in sede UE; il testo non dice con quale atto). Non è doppione di C27-FN-010 (riaprire le importazioni di gas russo): le sanzioni sono più ampie.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CORRETTA: tipo_fonte sito_ufficiale → documento_partito; veicolo risoluzione_mozione → documento_partito; sovrapposizione parziale con C27-FN-010 (gas russo) e con il punto 4 della risoluzione 6-00299 del 13/10 | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: volantino PDF del partito]"
+    }
+  },
+  {
+    "id": "C27-FN-024",
+    "partitoId": "FN",
+    "dichiarante": "Futuro Nazionale (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale; presidente Roberto Vannacci",
+    "data": "2026-10-22",
+    "testoLetterale": "TETTO EUROPEO AL PREZZO DEI CARBURANTI all’ingrosso e al dettaglio, per bloccare le speculazioni e proteggere famiglie e imprese.",
+    "parafrasiNeutra": "Fissare a livello europeo un prezzo massimo dei carburanti, all'ingrosso e al dettaglio.",
+    "tipoFonte": "documento_partito",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "documento_partito",
+    "fonte": {
+      "url": "https://futuronazionale.it/wp-content/uploads/2026/10/CARO-CARBURANTI_A5-fronte-retro.pdf"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Volantino A5 «Caro carburanti» (2 pagine) pubblicato nella pagina ufficiale https://futuronazionale.it/materiale/ (lastmod sitemap 2026-10-22T09:58 UTC). Data: PDF creato il 21/10/2026 (metadati), file caricato sul server il 22/10/2026 08:20 UTC (Last-Modified); il manifesto 70x100 collegato, senza le misure, è del 21/10/2026 17:42 UTC. Il volantino dice che le misure erano in una risoluzione presentata in Parlamento e respinta («Futuro Nazionale ha presentato in Parlamento una risoluzione per fermare il caro carburanti […] Il Governo e la maggioranza l’hanno respinta»): l’atto non è stato individuato negli atti di Camera e Senato; se la risoluzione contiene le stesse misure con data precedente, il verificatore valuti se il testo del volantino è nuovo o una ripresa. Testo letterale in maiuscolo come nel documento; estratto con pdftotext da file scaricato con curl. Altre voci dello stesso elenco escluse per criterio slogan: «ACQUISTARE ENERGIA E CARBURANTI DOVE CONVIENE […]» e «BASTA SPECULAZIONI su benzina, diesel e beni essenziali.». Orizzonte/veicolo: legislatura_in_corso e risoluzione_mozione, perché il testo nomina una risoluzione della legislatura in corso (regola 1.1). Pre-valutazione slogan: OK (strumento: tetto di prezzo, con ambito ingrosso e dettaglio). (verifica L2 2026-10-24) Metodo: fonte riaperta con curl GET (HTTP 200), testo estratto dall'HTML/PDF e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Volantino PDF riscaricato (HTTP 200, Last-Modified 22/10/2026 08:20 UTC; PDF creato il 21/10 17:19 UTC con Canva) e letto con pdftotext. Data 22/10 (prima pubblicazione sul sito) confermata. Ricerca della risoluzione citata: l'unica risoluzione dei deputati di Futuro Nazionale trovata è la 6-00299 (Ziello, Davide Bergamini, Bof, Calderone, Furgiuele, Pierro, Pozzolo, Ravetto, Sasso) sul DPFP, Allegato A seduta 726 del 13/10/2026: non contiene né il tetto europeo al prezzo dei carburanti né il tetto alle accise; al punto 4 chiede di rigettare «i vincoli, autoimposti derivanti da regimi sanzionatori e normativi (quali il Fitfor55)». Il testo del volantino è quindi nuovo e non è una ripresa parola per parola. tipo_fonte → documento_partito (PDF, come la regola applicata ad AZ-017/C27-PD-008); veicolo → documento_partito (le misure non risultano nella risoluzione individuata); orizzonte legislatura_in_corso tenuto (il testo nomina una risoluzione della legislatura in corso, regola 1.1). Supera il criterio (tetto di prezzo, ingrosso e dettaglio), come C27-PD-024.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CORRETTA: tipo_fonte → documento_partito; veicolo → documento_partito | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: volantino PDF del partito]"
+    }
+  },
+  {
+    "id": "C27-FN-025",
+    "partitoId": "FN",
+    "dichiarante": "Futuro Nazionale (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale; presidente Roberto Vannacci",
+    "data": "2026-10-22",
+    "testoLetterale": "TETTO ALLE ACCISE IN ITALIA per impedire che ogni crisi internazionale venga scaricata sulle tasche degli automobilisti.",
+    "parafrasiNeutra": "Fissare un limite massimo alle accise sui carburanti in Italia.",
+    "tipoFonte": "documento_partito",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "documento_partito",
+    "fonte": {
+      "url": "https://futuronazionale.it/wp-content/uploads/2026/10/CARO-CARBURANTI_A5-fronte-retro.pdf"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Volantino A5 «Caro carburanti» (2 pagine) pubblicato nella pagina ufficiale https://futuronazionale.it/materiale/ (lastmod sitemap 2026-10-22T09:58 UTC). Data: PDF creato il 21/10/2026 (metadati), file caricato sul server il 22/10/2026 08:20 UTC (Last-Modified); il manifesto 70x100 collegato, senza le misure, è del 21/10/2026 17:42 UTC. Il volantino dice che le misure erano in una risoluzione presentata in Parlamento e respinta («Futuro Nazionale ha presentato in Parlamento una risoluzione per fermare il caro carburanti […] Il Governo e la maggioranza l’hanno respinta»): l’atto non è stato individuato negli atti di Camera e Senato; se la risoluzione contiene le stesse misure con data precedente, il verificatore valuti se il testo del volantino è nuovo o una ripresa. Testo letterale in maiuscolo come nel documento; estratto con pdftotext da file scaricato con curl. Altre voci dello stesso elenco escluse per criterio slogan: «ACQUISTARE ENERGIA E CARBURANTI DOVE CONVIENE […]» e «BASTA SPECULAZIONI su benzina, diesel e beni essenziali.». Orizzonte/veicolo: legislatura_in_corso e risoluzione_mozione, perché il testo nomina una risoluzione della legislatura in corso (regola 1.1). Regola imposte → 01. Pre-valutazione slogan: OK (strumento: tetto alle accise; livello del tetto non indicato). (verifica L2 2026-10-24) Metodo: fonte riaperta con curl GET (HTTP 200), testo estratto dall'HTML/PDF e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Volantino PDF riscaricato (HTTP 200, Last-Modified 22/10/2026 08:20 UTC; PDF creato il 21/10 17:19 UTC con Canva) e letto con pdftotext. Data 22/10 (prima pubblicazione sul sito) confermata. Ricerca della risoluzione citata: l'unica risoluzione dei deputati di Futuro Nazionale trovata è la 6-00299 (Ziello, Davide Bergamini, Bof, Calderone, Furgiuele, Pierro, Pozzolo, Ravetto, Sasso) sul DPFP, Allegato A seduta 726 del 13/10/2026: non contiene né il tetto europeo al prezzo dei carburanti né il tetto alle accise; al punto 4 chiede di rigettare «i vincoli, autoimposti derivanti da regimi sanzionatori e normativi (quali il Fitfor55)». Il testo del volantino è quindi nuovo e non è una ripresa parola per parola. tipo_fonte → documento_partito (PDF, come la regola applicata ad AZ-017/C27-PD-008); veicolo → documento_partito (le misure non risultano nella risoluzione individuata); orizzonte legislatura_in_corso tenuto (il testo nomina una risoluzione della legislatura in corso, regola 1.1). Supera il criterio (tetto alle accise; livello non indicato), come C27-AZ-045 (accisa mobile).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CORRETTA: tipo_fonte → documento_partito; veicolo → documento_partito | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: volantino PDF del partito]"
+    }
+  },
+  {
+    "id": "C27-PE-025",
+    "partitoId": "PE",
+    "dichiarante": "Riccardo Magi",
+    "ruoloDichiarante": "segretario di +Europa, deputato",
+    "data": "2026-10-21",
+    "testoLetterale": "E allora avremmo voluto sentire più chiaramente che il nostro Paese farà di tutto, perché lo Statuto di blocco venga attivato",
+    "parafrasiNeutra": "Chiedere che l'Italia si adoperi per l'attivazione dello Statuto di blocco dell'Unione europea contro le sanzioni statunitensi alla Corte penale internazionale.",
+    "tipoFonte": "discorso",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "altro",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Replica di Magi all'interrogazione a risposta immediata 3-02963 (Magi e Della Vedova) al ministro degli Esteri, resoconto stenografico della seduta n. 730 del 21/10/2026; il testo dell'interrogazione (Allegato A, stessa seduta) chiede di promuovere in sede europea «l'immediata attivazione dello Statuto di blocco, mediante l'estensione del relativo allegato alle misure statunitensi contro la Corte penale internazionale». Testo scaricato con curl e confrontato parola per parola. La stessa richiesta è nella mozione 1-00599 riformulata del 23/10 (Magi e Della Vedova fra i firmatari): doppione, non registrato. Orizzonte/veicolo: legislatura_in_corso e altro (richiesta al Governo in carica). Pre-valutazione slogan: OK (regolamento UE identificabile; nella stessa fonte il meccanismo è descritto). (verifica L2 2026-10-24) Citazione ritrovata nello stenografico della seduta 730, replica di RICCARDO MAGI (MISTO-+EU-SUEU) all'interrogazione 3-02963. Livello V1 (resoconto stenografico ufficiale, come C27-PD-028). +Europa non firmava le versioni del 24/07 e del 12/10 della 1-00599: testo nuovo nel periodo. Strumento nominato (Statuto di blocco): supera il criterio. (routine 2026-10-24) Livello V2: intervento in Aula dal resoconto stenografico; D-019 porta a V1 solo le interviste, i discorsi restano V2. Il passaggio a V1 dei resoconti ufficiali è da decidere dal titolare.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-24 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: altro, richiesta al Governo in carica]"
+    }
+  },
+  {
+    "id": "C27-PE-026",
+    "partitoId": "PE",
+    "dichiarante": "Riccardo Magi",
+    "ruoloDichiarante": "segretario di +Europa, deputato",
+    "data": "2026-10-21",
+    "testoLetterale": "Allora, adeguiamo il nostro ordinamento a quanto richiesto dalla Corte per il miglior funzionamento della Corte e, quindi, per l'approvazione del codice dei crimini internazionali.",
+    "parafrasiNeutra": "Approvare il codice dei crimini internazionali per adeguare l'ordinamento italiano alle richieste della Corte penale internazionale.",
+    "tipoFonte": "discorso",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "altro",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "03",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Stessa replica della riga precedente (seduta n. 730 del 21/10/2026, stenografico). La stessa misura è nel punto 4) della mozione 1-00599 riformulata del 23/10 (Magi fra i firmatari): doppione, non registrato. Orizzonte/veicolo: legislatura_in_corso e altro. Pre-valutazione slogan: OK (codice con oggetto definito). (verifica L2 2026-10-24) Citazione ritrovata nello stenografico della seduta 730 (stessa replica di Magi). Livello V1. Codice dei crimini internazionali: oggetto definito. (routine 2026-10-24) Livello V2: intervento in Aula dal resoconto stenografico; D-019 porta a V1 solo le interviste, i discorsi restano V2. Il passaggio a V1 dei resoconti ufficiali è da decidere dal titolare.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-24 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: altro, richiesta al Governo in carica]"
+    }
+  },
+  {
+    "id": "C27-SVP-003",
+    "partitoId": "SVP",
+    "dichiarante": "Boldrini, Della Vedova, Zanella, Francesco Silvestri, Amendola, Giachetti, Fratoianni, Provenzano, Magi, Porta, Scotto, Ferrari, Bakkali, Berruto, Ghio, Schullian, Zaratti, Bonelli, Borrelli, Dori, Ghirra, Grimaldi, Mari, Piccolotti, Ascari, Carotenuto (firmatari)",
+    "ruoloDichiarante": "tra i firmatari Manfred Schullian (SVP, eletto nella lista SVP-PATT), presidente del gruppo Misto alla Camera dal 18/10/2022 (scheda camera.it), componente Misto-Minoranze linguistiche",
+    "data": "2026-10-23",
+    "testoLetterale": "a promuovere iniziative normative volte al completamento dell'adeguamento dell'ordinamento italiano in materia di crimini internazionali […] favorendo, per quanto di competenza, l'iter delle iniziative legislative presentate per l'adozione di un Codice dei crimini internazionali",
+    "parafrasiNeutra": "Completare l'adeguamento dell'ordinamento italiano sui crimini internazionali con l'adozione di un Codice dei crimini internazionali.",
+    "tipoFonte": "atto_parlamentare",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "risoluzione_mozione",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0732/allegato_b.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "03",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Mozione 1-00599 (Boldrini e altri), testo «ulteriormente riformulato» pubblicato nell'Allegato B alla seduta n. 732 del 23/10/2026. Nella versione precedente (Allegato B alla seduta n. 725 del 12/10/2026) i firmatari erano solo deputati PD: Zanella, Fratoianni, Bonelli, Magi, Della Vedova, Schullian e gli altri si aggiungono il 23/10, quindi per questi partiti la prima pubblicazione è nel periodo. Mozione con firmatari di più gruppi (non è la risoluzione unitaria CSX: mancano i capigruppo PD, M5S e IV). Punto 4). Caso limite sul dichiarante: Schullian è indicato per il Misto-Minoranze linguistiche nella Conferenza dei presidenti di gruppo (camera.it, letta il 24/10); se non vale come capogruppo SVP, la riga esce. Orizzonte/veicolo: legislatura_in_corso e risoluzione_mozione. Pre-valutazione slogan: OK. (verifica L2 2026-10-24) Punto 4) ritrovato parola per parola nell'Allegato B, seduta 732; confronto con le versioni del 24/07 e del 12/10 come C27-PD-031. Caso limite per il titolare: Schullian è capogruppo del Misto, gruppo che comprende anche altre formazioni; la riga è attribuita alla SVP perché Schullian è deputato SVP.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CORRETTA: ruolo (Schullian presidente del gruppo Misto alla Camera, scheda camera.it: capogruppo di un gruppo, quindi non rientra nella regola sui rappresentanti di componente); punto 4 nuovo nel testo del 23/10 | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: mozione]"
+    }
+  },
+  {
     "id": "C27-ORA-001",
     "partitoId": "ORA",
     "dichiarante": "ORA! e Michele Boldrin",
@@ -7997,6 +8872,31 @@
     "verifica": {
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-21 — CORRETTA: parafrasi completata («patti educativi di comunità», «investimenti strutturali») | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    }
+  },
+  {
+    "id": "C27-PSI-004",
+    "partitoId": "PSI",
+    "dichiarante": "Enzo Maraio",
+    "ruoloDichiarante": "segretario nazionale Avanti PSI; assessore della Regione Campania",
+    "data": "2026-10-23",
+    "testoLetterale": "Dobbiamo investire perché le scuole siano aperte in tutta Italia anche nel pomeriggio, per dare fiducia e speranza.",
+    "parafrasiNeutra": "Investire perché le scuole restino aperte anche nel pomeriggio in tutta Italia.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.affaritaliani.it/politica/stati-generali-onorato-primarie-conte-e-schlein-non-bastano-serve-un-campo-larghissimo-maraio-ripartiamo-dai-territori.html"
+    },
+    "archivioUrl": null,
+    "cofog": "09",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervista pubblica condotta dal direttore di Affaritaliani Marco Scotti sul palco degli Stati generali di Progetto Civico Italia (Roma, 23/10/2026) a Onorato e Maraio; la testata la pubblica come «L’intervista completa» (datePublished 2026-10-23T15:35Z). Letta per intero con curl e confrontata parola per parola. Caso da verificare per D-019: intervista di una testata, ma resa in pubblico durante l’evento di un altro partito. Risposta di Maraio sugli scontri di Milano; la frase precede «Il governo fa tutt’altro». Il ruolo di assessore regionale è nella domanda dell’intervistatore («da assessore in Campania»). Nessuna cifra né tempi. Nessun doppione: le righe C27-PSI-001…003 riguardano fondo casa, acconti d’imposta e fondo giovani. Orizzonte/veicolo: non_specificato e dichiarazione. Pre-valutazione slogan: caso limite (strumento: apertura pomeridiana delle scuole; platea: scuole di tutta Italia; senza risorse né modalità), misurabile parziale. (verifica L2 2026-10-24) Affaritaliani, datePublished 2026-10-23T15:35Z; risposta di Maraio alla domanda «E sugli scontri a Milano e le violenze del weekend?», introdotta da «Così sul tema Enzo Maraio:»; citazione ritrovata parola per parola. Motivo D-019: conta chi pone le domande e chi pubblica il testo (la testata), non il luogo; a differenza di un discorso riportato, le risposte seguono domande della testata. Da segnalare al titolare: l'evento è di un'altra formazione (Progetto Civico Italia). Paragonabile a C27-IV-012 (tempo pieno in tutte le scuole), che però ha più parametri.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-24 — CONFERMATA: intervista sul palco valida come intervista (D-019): domande del direttore della testata, pubblicata dalla testata come «L'intervista completa», citazione verificata sul testo; caso limite superato sul criterio slogan (valore di arrivo: scuole aperte anche il pomeriggio in tutta Italia; nessuna risorsa né modalità) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
     }
   }
 ]
