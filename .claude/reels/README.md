@@ -35,7 +35,9 @@ giornaliera (passo «Idee per i Reel» in `.claude/routines/aggiornamento-dati.m
 - Montaggio in Animatio, con il brand kit di Paghi Tu già caricato: palette, Bricolage Grotesque per titoli e
   cifre, Figtree per i testi, Courier Prime per lo scontrino, timbro «TU» terracotta in chiusura (D-UI-08).
 - Voce: **Giulio**, sempre la stessa, tono calmo da documentario, circa 140 parole al minuto.
-- Sottotitoli sempre impressi: la maggior parte dei Reel si guarda senza audio.
+- Sottotitoli sempre accesi alla pubblicazione: la maggior parte dei Reel si guarda senza audio. Un solo progetto per
+  video: i sottotitoli sono la fascia Parole di Animatio e si accendono o si spengono prima del render, mai una copia
+  del progetto «senza sottotitoli» (correzione del titolare, 24/10/2026).
 - Zone sicure: niente testo importante nei 250 px in alto e nei 400 px in basso (didascalia e bottoni del Reel).
 - I primi 2 secondi devono avere una domanda o una cifra a schermo: è lì che si decide se il video viene visto.
 

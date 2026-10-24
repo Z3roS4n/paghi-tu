@@ -9,20 +9,20 @@ BRAND E VOCE
 FORMATO
 - Reel 9:16, 1080×1920, 60-70 secondi, decide la lettura di Giulio.
 - Zone sicure del Reel: 250 px in alto, 420 px in basso.
-- Sottotitoli impressi, Figtree 600, una riga alla volta. Due versioni: con e senza sottotitoli.
+- Sottotitoli con la fascia Parole del progetto (parole.attivi), una riga alla volta: un solo progetto, i sottotitoli si accendono o si spengono prima del render.
 - Musica della stessa famiglia del primo video, 100 BPM, 14 dB sotto la voce; un fruscio di carta a ogni foglio di calendario che si stacca.
 
 DALLE CORREZIONI DEI VIDEO PRECEDENTI (paghi-tu/01-04: valgono qui)
 - Voce: Giulio, eleven_v3, stabilità 0,5, stile 0,4, lettura unica senza tag. L'intonazione si guida col testo: «…» prima delle cifre chiave e una o due parole in MAIUSCOLO dove poggia il senso (la lettura del 03 con queste impostazioni è quella approvata). Mai un'altra voce.
 - Cifre a voce alternate (regola voce-cifre-alternate): la cifra che regge il video si dice intera, quelle di contorno arrotondate; mai decimali a voce; «quasi», «più di», «poco più di» al massimo una volta ogni due cifre. Il testo della VOCE qui sotto è già scritto così: non cambiarlo.
-- Sottotitoli: scrivono le cifre come le dice Giulio (intere dove le dice intere).
+- Sottotitoli: scrivono le cifre come le dice Giulio (intere dove le dice intere); dove la trascrizione sbaglia, si sistema con parole.correzioni.
 - Transizioni: niente spinte o swipe in su o in giù. Dove una scena continua nella successiva, morph con un elemento grafico che cambia forma e resta in scena (al massimo 2 per video); altrimenti taglio.
 - Colori: fondo notte #14181A (alternativo #232A2E), testo notte #E9ECED, accento notte #E9875C, fonti sul fondo notte #9AA4A9 (il #5E6A70 lì non si legge). Un solo accento terracotta per scena; il grigio #7C878C solo per il termine di confronto.
 - Gesto «stampa» almeno due volte nel video; il timbro cade in chiusura con il tonfo, a musica quasi spenta, sull'accordo finale.
 - Musica nuova della famiglia del primo video (elettronica minimale, pulse a 100 BPM, piano e sub morbido), 14 dB sotto la voce; agganciala con sync_musica in modo che l'accordo largo arrivi sulla chiusura.
 - Immagini: scene con gemini-3-pro-image a 2K; oggetti isolati con gpt-image-1.5 e «trasparente» (la chiave verde con gemini è uscita rovinata nel 03). Poi bicromia del brand.
 - Nota per le cifre a testa: «Medie per residente, non quanto paga ogni persona.»
-- Due versioni: con sottotitoli e senza (copia del progetto senza /sopra, come 03 e 04). Didascalia scritta nel progetto. Copertina come tavola del canvas «Copertina» del progetto, con un layout diverso da quelle dei video 01 e 03.
+- Un solo progetto: niente copia «senza sottotitoli» (correzione del titolare del 24/10/2026); i sottotitoli sono la fascia Parole, da accendere o spegnere. Didascalia scritta nel progetto. Copertina come tavola del canvas «Copertina» del progetto, con un layout diverso da quelle dei video 01 e 03.
 - Prima del render: foglio, fotogrammi dei momenti chiave, progetto_controlla senza avvisi. Poi i due render. Niente consegna e niente programmazione su Instagram: le fa il titolare.
 
 L'IDEA

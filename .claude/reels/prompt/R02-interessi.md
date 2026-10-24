@@ -9,7 +9,7 @@ BRAND E VOCE
 FORMATO
 - Reel 9:16, 1080×1920, 60-70 secondi, decide la lettura di Giulio.
 - Zone sicure del Reel: 250 px in alto, 420 px in basso.
-- Sottotitoli impressi, Figtree 600, una riga alla volta. Due versioni: con e senza sottotitoli.
+- Sottotitoli con la fascia Parole del progetto (parole.attivi), una riga alla volta: un solo progetto, i sottotitoli si accendono o si spengono prima del render.
 - Musica della stessa famiglia del primo video, 100 BPM, 14 dB sotto la voce; un ticchettio sottile a tempo (tipo contatore meccanico) nella scena della corsa.
 
 L'IDEA
