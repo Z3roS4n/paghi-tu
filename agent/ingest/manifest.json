@@ -1,7 +1,7 @@
 {
   "file": "out/documenti.jsonl",
   "documenti": 2034,
-  "sha256": "1b5673ad5b1dc2edaed7b8cf3d5c62ebd39bef264d9dc0acfc2ed247debcb402",
+  "sha256": "a6a2426296aea35c7a883245db07af3dadd1e76012e1fa10d884f3d845b5d37e",
   "perDataset": {
     "correzioni": 6,
     "finanza-pubblica": 1105,

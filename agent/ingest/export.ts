@@ -32,6 +32,8 @@ export const IndexDocument = z.object({
     record: z.string().min(1),
     titolo: z.string().min(1),
     testo: z.string().min(1),
+    // Le sole parole che l'agente può mettere fra virgolette per una promessa (validatore, 5.2).
+    testo_letterale: z.string().min(1).nullable(),
     livello_verifica: VerificationLevel,
     verifica_dettaglio: z.string(),
     fonte_url: z.array(z.url()).min(1),
@@ -105,6 +107,7 @@ type Draft = {
   periodo: Period | null;
   governi: string[];
   pagina: string;
+  letterale?: string;
 };
 
 const needsPermission = (links: SourceLink[]) =>
@@ -127,6 +130,7 @@ function toDocument(d: Draft): IndexDocument | Exclusion {
       record: d.record,
       titolo: d.titolo,
       testo,
+      testo_letterale: d.letterale ?? null,
       livello_verifica: level,
       verifica_dettaglio: d.verifica.dettaglio,
       fonte_url,
@@ -375,6 +379,7 @@ function promiseDrafts(promises: CampaignPromise[], parties: Party[], govs: Gove
     periodo: { dal: p.data, al: p.data },
     governi: governmentsIn(govs, { dal: p.data, al: p.data }, today),
     pagina: `/promesse#${p.id}`,
+    letterale: p.testoLetterale,
   }));
 }
 
