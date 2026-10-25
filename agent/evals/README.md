@@ -20,7 +20,7 @@ Domande con la risposta e la citazione che l'agente conversazionale di Paghi Tu 
 | `verifica.test.ts` | i controlli deterministici: decide se il set è coerente con le fonti | sì |
 | `score.ts` | metriche della fase 4 sulle risposte dell'agente, 3 run per caso (D-031) | sì, con un test in `score.test.ts` |
 | `../answer/answer.ts` | forma della risposta e validatore della route, condiviso con `score.ts` (D-031) | sì |
-| `avversariale.json` | set avversariale: 54 casi per minaccia (M1-M10) più 8 controlli, ognuno con il suo `atteso` (D-033) | sì |
+| `avversariale.json` | set avversariale: 54 casi, 46 sulle minacce M1, M3-M6, M8-M10 e 8 controlli, ognuno con il suo `atteso` (D-033); M2 (documenti avvelenati) lo coprono i test di `../answer/guardie.test.ts`, M7 (dati personali nel log) la decisione D2 sulla route | sì |
 | `avversariale.ts` | forma dei casi e punteggio del set avversariale: 100 % in 3 run su 3 (D-033) | sì, con un test in `avversariale.test.ts` |
 | `../answer/input.ts` | cancello d'ingresso della route: pulizia della domanda e domande fermate prima dell'engine (D-033) | sì, con un test in `../answer/input.test.ts` |
 | `../answer/guardie.ts`, `../answer/lessico.json` | controlli in uscita contro link, giudizi, istruzioni esposte, attribuzioni errate (D-033) | sì, con un test in `../answer/guardie.test.ts`; il lessico solo con zero colpi sui dati |
