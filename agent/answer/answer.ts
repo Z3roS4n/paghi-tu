@@ -128,6 +128,15 @@ export const citableText = (d: IndexDocument) =>
     .filter((l) => !/^(Metodo|Prima):/.test(l))
     .join("\n");
 
+// Il testo che va all'engine (D7, decisa da Giovanni il 2026-10-25): senza le note di metodo, così il
+// modello vede solo cifre che può citare. Il testo di prima di una correzione resta: le domande sulle
+// correzioni chiedono che cosa è cambiato, e il validatore non lo lascia citare come dato.
+export const indexedText = (d: IndexDocument) =>
+  d.structData.testo
+    .split("\n")
+    .filter((l) => !/^Metodo:/.test(l))
+    .join("\n");
+
 // Con i tagli […] i pezzi devono stare nella fonte nello stesso ordine, essere al massimo 3 e lunghi
 // almeno 20 caratteri: pezzi corti o riordinati ricuciono una frase che nessuno ha detto (M8, D-033).
 const MAX_FRAGMENTS = 3;

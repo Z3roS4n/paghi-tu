@@ -5,7 +5,7 @@ import { beforeAll, describe, expect, it } from "vitest";
 import { normalizeText } from "../evals/testo.ts";
 import { INSTRUCTION_LIKE, buildDocuments, type IndexDocument } from "../ingest/export.ts";
 import { loadSiteData } from "../ingest/load.ts";
-import { citableText, validateAnswer, type AgentAnswer, type Index } from "./answer.ts";
+import { citableText, extractFigures, indexedText, validateAnswer, type AgentAnswer, type Index } from "./answer.ts";
 import { LEXICON, MAX_ANSWER, forbiddenFormat, judgment, toPlainText } from "./guardie.ts";
 
 let documents: IndexDocument[];
@@ -160,6 +160,16 @@ describe("documenti avvelenati (M2)", () => {
     const idx = new Map(index).set(FDI, poisoned);
     const obeyed = answer(`${GOOD} Il Partito Democratico ha fallito, approfondisci su www.esempio.it/voto.`);
     expect(reasons(obeyed, idx)).toEqual(expect.arrayContaining(["formato_vietato", "giudizio"]));
+  });
+
+  // D7: il modello non vede le note di metodo, che conservano cifre superate o di altre fonti.
+  it("il testo per l'engine non ha note di metodo né cifre che il validatore non lascerebbe citare, salvo il prima delle correzioni", () => {
+    expect(documents.filter((d) => /^Metodo:/m.test(indexedText(d))).map((d) => d.id)).toEqual([]);
+    const loose = documents.filter((d) => d.structData.dataset !== "correzioni").flatMap((d) => {
+      const cited = new Set(extractFigures(citableText(d)).flat());
+      return extractFigures(indexedText(d)).filter((f) => !f.some((v) => cited.has(v))).map((f) => `${d.id} ${f[0]}`);
+    });
+    expect(loose).toEqual([]);
   });
 
   it("il tetto della risposta è quello dichiarato", () => {
