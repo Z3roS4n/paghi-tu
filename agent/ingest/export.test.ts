@@ -24,9 +24,12 @@ describe("export per l'indice dell'agente (fase 1)", () => {
   });
 
   it("1.2 il manifest committato è allineato all'export", async () => {
-    const manifest = z.object({ sha256: z.string(), esclusi: z.array(z.unknown()) }).parse(JSON.parse(await readFile("agent/ingest/manifest.json", "utf8")));
+    const manifest = z
+      .object({ sha256: z.string(), esclusi: z.array(z.unknown()), nomiConCifre: z.array(z.string()) })
+      .parse(JSON.parse(await readFile("agent/ingest/manifest.json", "utf8")));
     expect(manifest.sha256).toBe(sha256(toJsonl(result.documents)));
     expect(manifest.esclusi).toEqual(result.excluded);
+    expect(manifest.nomiConCifre).toEqual(result.nomiConCifre);
   });
 
   it("1.3 ogni documento rispetta lo schema e ha un id unico", () => {

@@ -18,6 +18,8 @@ Domande con la risposta e la citazione che l'agente conversazionale di Paghi Tu 
 | `verifica-fonti.json` | registro dell'ultima verifica online: fonti lette, citazioni e valori trovati | no, lo scrive `evals:verify` |
 | `eccezioni-fonti.json` | ragioni scritte per ciò che non si trova nella fonte, e somme con i loro addendi | sì, una ragione per voce |
 | `verifica.test.ts` | i controlli deterministici: decide se il set è coerente con le fonti | sì |
+| `score.ts` | metriche della fase 4 sulle risposte dell'agente, 3 run per caso (D-031) | sì, con un test in `score.test.ts` |
+| `../answer/answer.ts` | forma della risposta e validatore della route, condiviso con `score.ts` (D-031) | sì |
 
 ```bash
 npm run evals:build                 # rigenera domande.jsonl e revisione.md dai dati
@@ -63,3 +65,20 @@ Il set l'ha costruito Claude dai dati; prima della prima eval Antonio controlla 
 ## Cosa manca
 
 Il runner (`run.ts`) che interroga l'engine e confronta le risposte. Si scrive quando esiste l'engine su Vertex AI Search: oggi il progetto Google Cloud non ha ancora dati né indice.
+
+## Metriche delle risposte (fase 4) e validatore (fase 5)
+
+`score.ts` riceve per ogni caso le 3 risposte dell'agente nella forma `AgentAnswer` (testo, citazioni con id e URL, `astensione`) e calcola:
+
+| # | Metrica | Soglia |
+| --- | --- | --- |
+| 4.1 | ogni cifra della risposta sta nel testo di un documento citato | 100 % |
+| 4.2 | sui casi da astensione, e su quelli con il record fuori dall'indice: `astensione: true` e nessuna cifra | 100 % |
+| 4.3 | le parole esatte di `testoVerbatim` stanno nella risposta; la parafrasi non compare fra virgolette | 100 % |
+| 4.4 | il record atteso è fra i citati | 95 % (proposta, criterio 0.9) |
+| 4.4b | nessun id inventato, nessun URL che non sia del record | 100 % |
+| 4.5 | ogni valore atteso compare in una delle forme di `testo.ts` | 95 % (proposta, criterio 0.9) |
+| 4.6 | un controllo lessicale per ogni regola del caso | 100 % |
+| 4.7 | un caso che passava nel run di riferimento e ora fallisce blocca | nessuna regressione |
+
+Un caso passa una metrica solo se la passa in tutti e 3 i run. Il validatore (`validateAnswer`) è lo stesso codice che userà la route: una risposta che non lo passa diventa un'astensione, con i motivi da scrivere nel log. Il runner che interroga l'engine (`run.ts`) arriva con la fase 3. Limiti noti e casi da decidere: D-031.

@@ -29,7 +29,7 @@ Nessuna di queste ha il prefisso `NEXT_PUBLIC_`.
 |---|---|---|---|
 | POST | `/projects/{p}/locations/eu/collections/default_collection/engines/{e}/servingConfigs/default_search:answer` | `{ query: { text }, answerGenerationSpec }` | `{ answer: { answerText, citations[], references[] } }` |
 
-La forma esatta di citazioni e riferimenti va confermata sull'indice vero (fase 3 della roadmap dell'agente) prima di scrivere il validatore.
+La forma esatta di citazioni e riferimenti va confermata sull'indice vero (fase 3 della roadmap dell'agente). Il validatore (D-031, `agent/answer/answer.ts`) lavora su una forma propria, `AgentAnswer`: in fase 3 serve un adattatore dalla risposta di `:answer` a quella forma.
 
 ## Webhook
 Nessuno.
@@ -48,5 +48,6 @@ Nessuno.
 Pagati da un credito promozionale Google Cloud del co-maintainer, con budget mensile e avvisi sul solo progetto, quota delle richieste conversazionali ridotta a 30 al minuto e un tetto giornaliero di risposte nella route. Il costo reale per query si misura in fase 3 dal report di fatturazione.
 
 ## Note / TODO
+- Domande di trasparenza («sto parlando con una persona?», «da dove prendi i numeri?»): testo fisso nella route, con la disclosure AI, perché il validatore blocca le risposte senza citazioni (D-031).
 - Riga in `/privacy` aggiunta il 2026-10-25 (sezione 6, assistente «non ancora attivo»). Prima del collegamento: togliere «non ancora attivo», aggiornare «In breve» (il widget è un modulo), disclosure AI nella pagina, accordo art. 28 fra titolare e co-maintainer che gestisce il progetto Google Cloud.
 - I casi con fonte «con_permesso» (UPB, Pagella Politica) entrano nell'indice solo con una decisione scritta. Wikipedia è esclusa (D-026, 2026-10-25).

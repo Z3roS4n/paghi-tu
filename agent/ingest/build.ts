@@ -6,7 +6,7 @@ import { buildDocuments, sha256, toJsonl, type IndexDocument } from "./export.ts
 import { loadSiteData } from "./load.ts";
 
 const DIR = "agent/ingest";
-const { documents, excluded } = buildDocuments(await loadSiteData());
+const { documents, excluded, nomiConCifre } = buildDocuments(await loadSiteData());
 const jsonl = toJsonl(documents);
 
 const datasetOf = (d: IndexDocument) => d.structData.dataset;
@@ -19,6 +19,7 @@ const manifest = {
   sha256: sha256(jsonl),
   perDataset: Object.fromEntries(Object.keys(perDataset).sort().map((k) => [k, perDataset[k]])),
   esclusi: excluded,
+  nomiConCifre,
 };
 
 await mkdir(join(DIR, "out"), { recursive: true });
