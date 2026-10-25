@@ -21,6 +21,20 @@ export function composeDeclaration(d: IndexDocument): string {
     .join("\n");
 }
 
+// Le correzioni pubblicate su una dichiarazione (pagina «/promesse#<id>») fanno parte della sua
+// verità: la risposta composta le mostra con quello che è cambiato e perché, e le cita.
+const CORRECTION_SHOWN = /^(Correzione |Dopo:|Motivo:)/;
+function corrections(d: IndexDocument, index: Index): IndexDocument[] {
+  const page = `Pagina: /promesse#${d.id.replace(/^promesse--/, "")}.`;
+  return [...index.values()].filter((c) => c.structData.dataset === "correzioni" && citableText(c).split("\n").includes(`Tipo: correzione. ${page}`));
+}
+const composeCorrection = (c: IndexDocument) =>
+  citableText(c)
+    .split("\n")
+    // Un indirizzo nel testo è un formato vietato: la fonte della correzione è già nella citazione.
+    .filter((l) => CORRECTION_SHOWN.test(l) && !/https?:\/\//.test(l))
+    .join("\n");
+
 // Chi la domanda nomina: le persone (nome e cognome con le maiuscole, tolti i nomi dei partiti) e i
 // partiti. Una dichiarazione di qualcun altro non risponde alla domanda (M8): «Che cosa ha dichiarato
 // Elly Schlein l'8 luglio?» non si risponde con le parole di Bignami di quel giorno.
@@ -51,9 +65,10 @@ export function composePromises(answer: AgentAnswer, index: Index, question: str
   const asked = askedAbout(question);
   const own = promises.filter((x) => declaredBy(x.d, asked));
   if (!own.length) return { testo: "", citazioni: [], astensione: true };
+  const fixes = [...new Map(own.flatMap((x) => corrections(x.d, index)).map((c) => [c.id, c])).values()];
   return {
-    testo: own.map((x) => composeDeclaration(x.d)).join("\n\n"),
-    citazioni: own.map((x) => x.c),
+    testo: [...own.map((x) => composeDeclaration(x.d)), ...fixes.map(composeCorrection)].join("\n\n"),
+    citazioni: [...own.map((x) => x.c), ...fixes.map((c) => ({ id: c.id, url: answer.citazioni.find((x) => x.id === c.id)?.url ?? c.structData.fonte_url[0] ?? c.structData.url_pagina }))],
     astensione: false,
   };
 }

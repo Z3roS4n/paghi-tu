@@ -66,4 +66,12 @@ describe("dichiarazioni composte dalla route (D5)", () => {
     expect(composePromises(a, index, "Che cosa ha dichiarato Galeazzo Bignami (Fratelli d'Italia) l'8 luglio 2026?").astensione).toBe(false);
     expect(composePromises(a, index, "Che cosa ha promesso Fratelli d'Italia sui detenuti stranieri?").astensione).toBe(false);
   });
+
+  it("mostra e cita le correzioni pubblicate sulla dichiarazione", () => {
+    const a: AgentAnswer = { testo: "x", citazioni: [cite("promesse--C27-FI-013")], astensione: false };
+    const out = composePromises(a, index, "La frase di Antonio Tajani sull'esenzione del bollo per la prima auto viene da un'intervista?");
+    expect(out.citazioni.map((c) => c.id)).toEqual(["promesse--C27-FI-013", "correzioni--COR-0002"]);
+    expect(out.testo).toContain("Dopo: Discorso");
+    expect(validateAnswer(out, index).esito).toBe("risposta");
+  });
 });
