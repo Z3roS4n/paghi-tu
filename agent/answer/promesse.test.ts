@@ -1,0 +1,61 @@
+// Test delle risposte sulle dichiarazioni composte dalla route (D5, D-033).
+import { readFile } from "node:fs/promises";
+import { beforeAll, describe, expect, it } from "vitest";
+import type { GoldenCase } from "../evals/golden-set.ts";
+import { RUNS, scoreRun } from "../evals/score.ts";
+import { buildDocuments, documentId } from "../ingest/export.ts";
+import { loadSiteData } from "../ingest/load.ts";
+import { validateAnswer, type AgentAnswer, type Index } from "./answer.ts";
+import { composeDeclaration, composePromises } from "./promesse.ts";
+
+let index: Index;
+let cases: GoldenCase[];
+
+beforeAll(async () => {
+  const { documents } = buildDocuments(await loadSiteData());
+  index = new Map(documents.map((d) => [d.id, d]));
+  cases = (await readFile("agent/evals/domande.jsonl", "utf8")).trim().split("\n").map((l) => JSON.parse(l) as GoldenCase);
+});
+
+const cite = (id: string) => {
+  const d = index.get(id);
+  if (!d) throw new Error(id);
+  return { id, url: d.structData.fonte_url[0] ?? d.structData.url_pagina };
+};
+
+describe("dichiarazioni composte dalla route (D5)", () => {
+  it("ogni caso del golden set sulle promesse passa tutte le metriche con la risposta composta, qualunque cosa scriva il modello", () => {
+    const promise = cases.filter((c) => c.categoria === "promesse" && c.esitoAtteso === "risposta" && c.citazioniAttese.every((x) => index.has(documentId(x.dataset, x.record))));
+    expect(promise.length).toBeGreaterThan(30);
+    const answers = new Map(
+      promise.map((c) => {
+        const model: AgentAnswer = { testo: "Il Partito Democratico ha detto «una frase ricucita che nessuno ha mai detto davvero».", citazioni: c.citazioniAttese.map((x) => cite(documentId(x.dataset, x.record))), astensione: false };
+        return [c.id, Array.from({ length: RUNS }, () => composePromises(model, index, c.domanda))];
+      }),
+    );
+    const report = scoreRun(promise, answers, index);
+    expect(report.casi.filter((s) => !s.passa).map((s) => `${s.id}: ${JSON.stringify(s.metriche)}`)).toEqual([]);
+    for (const [, [a]] of answers) expect(a && validateAnswer(a, index).esito).toBe("risposta");
+  });
+
+  it("mostra chi, quando, le parole esatte e il livello, senza sintesi, classificazione e URL", () => {
+    const text = composeDeclaration(index.get("promesse--C27-FDI-001") as never);
+    expect(text).toContain("Dichiarante: Galeazzo Bignami");
+    expect(text).toContain("Parole esatte: «Con questa proposta di legge");
+    expect(text).toContain("Livello di verifica V1");
+    expect(text).not.toMatch(/In sintesi|Tipo di fonte|https?:|non indicato/);
+  });
+
+  it("lascia stare le risposte che non riguardano dichiarazioni", () => {
+    const g = cite("governi--g55");
+    const a: AgentAnswer = { testo: "Alcide De Gasperi.", citazioni: [g, cite("promesse--C27-FDI-001")], astensione: false };
+    expect(composePromises(a, index, "Chi era il presidente del Consiglio nel 1946?")).toBe(a);
+    expect(composePromises({ ...a, citazioni: [g] }, index, "Che cosa ha dichiarato De Gasperi?").testo).toBe("Alcide De Gasperi.");
+  });
+
+  it("su una domanda di dichiarazione tiene solo le dichiarazioni citate", () => {
+    const a: AgentAnswer = { testo: "x", citazioni: [cite("governi--g55"), cite("promesse--C27-FDI-001")], astensione: false };
+    const out = composePromises(a, index, "Che cosa ha dichiarato Bignami l'8 luglio 2026?");
+    expect(out.citazioni.map((c) => c.id)).toEqual(["promesse--C27-FDI-001"]);
+  });
+});
