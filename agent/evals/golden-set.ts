@@ -113,7 +113,7 @@ export type SiteData = {
 
 // Fonti con riuso "con_permesso" in data/fonti.json (R-23 UPB, R-34 Pagella Politica; R-36 Wikipedia è esclusa):
 // finché il permesso non è scritto, il caso resta nel set ma il revisore decide se il record entra nell'indice.
-const PERMISSION_DOMAINS = ["upbilancio.it", "pagellapolitica.it"];
+export const PERMISSION_DOMAINS = ["upbilancio.it", "pagellapolitica.it"];
 
 const MONEY_UNIT = "milioni di euro correnti";
 const GDP_UNIT = "% del PIL";
@@ -145,9 +145,9 @@ export function spread<T>(items: T[], k: number): T[] {
 // Un URL malformato nei dati (per esempio con l'etichetta dentro) non diventa una citazione attesa.
 // D-026: Wikipedia (R-36, «fonte di verità per: nessuna») non è una fonte accettata dell'agente,
 // anche se compare fra le fonti di un record del sito.
-const EXCLUDED_DOMAINS = ["wikipedia.org"];
+export const EXCLUDED_DOMAINS = ["wikipedia.org"];
 
-function urls(links: SourceLink[]): string[] {
+export function urls(links: SourceLink[]): string[] {
   return links
     .map((l) => l.url)
     .filter(isWellFormedUrl)
@@ -352,6 +352,18 @@ function measureCases(measures: Measure[]): GoldenCase[] {
   );
 }
 
+// Pezzo dell'etichetta che identifica, in data/finanza-pubblica.json, la fonte di ogni gruppo di record.
+export const FINANCE_SOURCES = {
+  MAIN: "gov_10a_main, conti principali delle",
+  FUNCTIONS: "gov_10a_exp, spesa delle amministrazioni pubbliche per funzione",
+  EDP: "gov_10dd_edpt1, debito pubblico",
+  QUARTERLY: "gov_10q_ggnfa",
+  EU_FUNCTIONS: "spesa per funzione in % del PIL",
+  EU_ACCOUNTS: "conti principali in % del PIL",
+  EU_DEBT: "debito in % del PIL",
+  BDI: "Banca d'Italia",
+} as const;
+
 function financeCases(f: PublicFinance): GoldenCase[] {
   const source = (needle: string) => {
     const hit = f.fonti.find((s) => s.etichetta?.includes(needle));
@@ -361,14 +373,7 @@ function financeCases(f: PublicFinance): GoldenCase[] {
   const cite = (record: string, needle: string): ExpectedCitation[] => [
     { dataset: "finanza-pubblica", record, urlAccettati: source(needle) },
   ];
-  const MAIN = "gov_10a_main, conti principali delle";
-  const FUNCTIONS = "gov_10a_exp, spesa delle amministrazioni pubbliche per funzione";
-  const EDP = "gov_10dd_edpt1, debito pubblico";
-  const QUARTERLY = "gov_10q_ggnfa";
-  const EU_FUNCTIONS = "spesa per funzione in % del PIL";
-  const EU_ACCOUNTS = "conti principali in % del PIL";
-  const EU_DEBT = "debito in % del PIL";
-  const BDI = "Banca d'Italia";
+  const { MAIN, FUNCTIONS, EDP, QUARTERLY, EU_FUNCTIONS, EU_ACCOUNTS, EU_DEBT, BDI } = FINANCE_SOURCES;
 
   const out: GoldenCase[] = [];
   const base = { esitoAtteso: "risposta" as const, livelloVerifica: f.verifica.livello, testoVerbatim: null };

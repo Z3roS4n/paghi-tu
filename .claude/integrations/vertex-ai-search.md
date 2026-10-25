@@ -36,7 +36,8 @@ Nessuno.
 
 ## File nel codice
 - `agent/evals/`: golden set e verifica contro le fonti (presenti).
-- `agent/ingest`, `agent/setup`, route `/api/agent` e widget: da scrivere.
+- `agent/ingest/`: export dei documenti per l'indice e manifest (D-030, presente, non carica niente).
+- `agent/setup`, import nel data store, route `/api/agent` e widget: da scrivere.
 
 ## Gestione errori e gating
 - `AGENT_ENABLED` diverso da `1`: 503, nessuna chiamata.
