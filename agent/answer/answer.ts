@@ -182,12 +182,14 @@ export const declaresNoData = (text: string) => NO_DATA.test(normalizeText(text)
 
 // promesse: false durante il silenzio elettorale (roadmap 5.4): nessuna dichiarazione si può citare.
 // guardie: false spegne i controlli D-033, solo per misurare quante risposte fermano (falsi rifiuti).
-export type ValidationOptions = { promesse?: boolean; guardie?: boolean };
+// nessunDato (D9, proposta del 2026-10-25, da misurare): una risposta che dice di non avere il dato
+// è un'astensione anche se cita qualcosa.
+export type ValidationOptions = { promesse?: boolean; guardie?: boolean; nessunDato?: boolean };
 
 export function validateAnswer(answer: AgentAnswer, index: Index, question?: string, options: ValidationOptions = {}): Validation {
   if (answer.astensione) return { esito: "astensione" };
   if (answer.testo === TRANSPARENCY_ANSWER && !answer.citazioni.length) return { esito: "risposta" };
-  if (!answer.citazioni.length && declaresNoData(answer.testo)) return { esito: "astensione" };
+  if ((!answer.citazioni.length || options.nessunDato) && declaresNoData(answer.testo)) return { esito: "astensione" };
   const motivi: { motivo: Reason; dettaglio: string }[] = [];
 
   if (!answer.citazioni.length) motivi.push({ motivo: "nessuna_citazione", dettaglio: "risposta senza citazioni" });

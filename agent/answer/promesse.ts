@@ -51,15 +51,43 @@ function declaredBy(d: IndexDocument, asked: { people: string[]; parties: string
   return (!asked.people.length || asked.people.some((n) => who.includes(n))) && (!asked.parties.length || party.some((p) => asked.parties.includes(p)));
 }
 
+// La dichiarazione di una persona o di un partito in una data scritta per intero («il 21 ottobre 2026»), se nell'indice
+// ce n'è esattamente una; altrimenti nessuna. Le candidate (stessa persona o partito, stessa data)
+// servono anche alla ricerca, che fra quelle sceglie per argomento.
+const MONTHS = "gennaio|febbraio|marzo|aprile|maggio|giugno|luglio|agosto|settembre|ottobre|novembre|dicembre";
+const DATE = new RegExp(`\\b(\\d{1,2})°?\\s+(${MONTHS})\\s+(\\d{4})\\b`, "giu");
+export function declarationCandidates(question: string, index: Index): IndexDocument[] {
+  const asked = askedAbout(question);
+  const dates = [...new Set([...question.matchAll(DATE)].map((m) => `Data: ${Number(m[1])} ${m[2].toLowerCase()} ${m[3]}.`))];
+  if ((!asked.people.length && !asked.parties.length) || dates.length !== 1) return [];
+  return [...index.values()].filter((d) => d.structData.dataset === "promesse" && citableText(d).includes(dates[0]) && declaredBy(d, asked));
+}
+export function findDeclaration(question: string, index: Index): IndexDocument | null {
+  const found = declarationCandidates(question, index);
+  return found.length === 1 ? found[0] : null;
+}
+
 // Se la risposta cita dichiarazioni e la domanda chiede una dichiarazione (o cita solo dichiarazioni),
 // il testo del modello si sostituisce con le righe dei record citati, nell'ordine delle citazioni.
 // Le altre risposte restano come sono: le controlla il validatore.
 // La risposta tiene solo le dichiarazioni della persona o del partito che la domanda nomina.
 export function composePromises(answer: AgentAnswer, index: Index, question: string): AgentAnswer {
+  // La dichiarazione che la domanda individua (persona e data) entra fra le citazioni anche se la
+  // ricerca non l'ha trovata (decisione di Giovanni del 2026-10-25).
+  const found = DECLARATION_QUESTION.test(question) ? findDeclaration(question, index) : null;
+  if (found && !answer.citazioni.some((c) => c.id === found.id)) {
+    const c = { id: found.id, url: found.structData.fonte_url[0] ?? found.structData.url_pagina };
+    answer = answer.astensione ? { testo: "", citazioni: [c], astensione: false } : { ...answer, citazioni: [...answer.citazioni, c] };
+  }
   if (answer.astensione) return answer;
   const cited = answer.citazioni.map((c) => ({ c, d: index.get(c.id) }));
   const promises = cited.filter((x): x is { c: (typeof answer.citazioni)[number]; d: IndexDocument } => x.d?.structData.dataset === "promesse");
-  if (!promises.length) return answer;
+  // Una risposta che cita solo correzioni mostra le righe dei record: una regola di metodo cambiata
+  // non si parafrasa (decisione di Giovanni del 2026-10-25).
+  if (!promises.length) {
+    const fixes = cited.map((x) => x.d).filter((d): d is IndexDocument => d?.structData.dataset === "correzioni");
+    return fixes.length && fixes.length === cited.length ? { ...answer, testo: fixes.map(composeCorrection).join("\n\n") } : answer;
+  }
   if (promises.length < cited.length && !DECLARATION_QUESTION.test(question)) return answer;
   // Solo le dichiarazioni di chi la domanda nomina; se non ne resta nessuna, astensione.
   const asked = askedAbout(question);

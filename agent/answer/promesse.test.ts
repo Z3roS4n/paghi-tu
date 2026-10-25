@@ -6,7 +6,7 @@ import { RUNS, scoreRun } from "../evals/score.ts";
 import { buildDocuments, documentId } from "../ingest/export.ts";
 import { loadSiteData } from "../ingest/load.ts";
 import { validateAnswer, type AgentAnswer, type Index } from "./answer.ts";
-import { composeDeclaration, composePromises } from "./promesse.ts";
+import { composeDeclaration, composePromises, findDeclaration } from "./promesse.ts";
 
 let index: Index;
 let cases: GoldenCase[];
@@ -72,6 +72,26 @@ describe("dichiarazioni composte dalla route (D5)", () => {
     const out = composePromises(a, index, "La frase di Antonio Tajani sull'esenzione del bollo per la prima auto viene da un'intervista?");
     expect(out.citazioni.map((c) => c.id)).toEqual(["promesse--C27-FI-013", "correzioni--COR-0002"]);
     expect(out.testo).toContain("Dopo: Discorso");
+    expect(validateAnswer(out, index).esito).toBe("risposta");
+  });
+
+  it("aggiunge la dichiarazione individuata da persona e data anche se la ricerca non l'ha trovata", () => {
+    const q = "Che cosa ha dichiarato Angelo Bonelli (Alleanza Verdi e Sinistra (Europa Verde + Sinistra Italiana)) il 21 ottobre 2026? Voglio le parole esatte e la fonte.";
+    expect(findDeclaration(q, index)?.id).toBe("promesse--C27-AVS-046");
+    const out = composePromises({ testo: "Non lo so.", citazioni: [], astensione: true }, index, q);
+    expect(out.citazioni.map((c) => c.id)).toEqual(["promesse--C27-AVS-046"]);
+    expect(out.testo).toContain("Può prendere i soldi tassando gli extraprofitti");
+    expect(validateAnswer(out, index, q).esito).toBe("risposta");
+    // Senza data, o senza persona, nessuna aggiunta.
+    expect(findDeclaration("Che cosa ha dichiarato Angelo Bonelli sui carburanti?", index)).toBeNull();
+    expect(findDeclaration("Che cosa è stato dichiarato il 21 ottobre 2026?", index)).toBeNull();
+  });
+
+  it("una risposta che cita solo correzioni mostra le righe del record, non la parafrasi", () => {
+    const a: AgentAnswer = { testo: "Prima era V2, ora un'intervista conta come primaria.", citazioni: [cite("correzioni--COR-0003")], astensione: false };
+    const out = composePromises(a, index, "Per Paghi Tu un'intervista pubblicata da un giornale conta come fonte primaria?");
+    expect(out.testo).toContain("Dopo: V1: un'intervista pubblicata da un giornale conta come fonte primaria, se la citazione è verificata sul testo.");
+    expect(out.testo).not.toContain("Prima era V2");
     expect(validateAnswer(out, index).esito).toBe("risposta");
   });
 });

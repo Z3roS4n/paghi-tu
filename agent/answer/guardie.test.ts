@@ -176,3 +176,13 @@ describe("documenti avvelenati (M2)", () => {
     expect(MAX_ANSWER).toBe(2000);
   });
 });
+
+describe("risposta che dice di non avere il dato (D9, proposta)", () => {
+  it("con citazioni è un'astensione solo con l'opzione nessunDato", () => {
+    const id = [...index.keys()].find((k) => k.startsWith("misure--reddito_di_cittadinanza")) as string;
+    const d = index.get(id) as IndexDocument;
+    const a: AgentAnswer = { testo: "I documenti forniti non contengono informazioni sul costo di Quota 100.", citazioni: [{ id, url: d.structData.fonte_url[0] ?? d.structData.url_pagina }], astensione: false };
+    expect(validateAnswer(a, index, undefined, { nessunDato: true }).esito).toBe("astensione");
+    expect(validateAnswer(a, index).esito).not.toBe("astensione");
+  });
+});
