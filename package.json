@@ -17,7 +17,8 @@
     "check:pages": "node scripts/check-pages.ts",
     "typecheck": "next typegen && tsc --noEmit",
     "evals:build": "node agent/evals/build.ts",
-    "evals:verify": "node agent/evals/verifica-fonti.ts"
+    "evals:verify": "node agent/evals/verifica-fonti.ts",
+    "ingest:build": "node agent/ingest/build.ts"
   },
   "dependencies": {
     "@phosphor-icons/react": "2.1.10",

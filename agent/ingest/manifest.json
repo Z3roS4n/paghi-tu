@@ -1,0 +1,55 @@
+{
+  "file": "out/documenti.jsonl",
+  "documenti": 2034,
+  "sha256": "1b5673ad5b1dc2edaed7b8cf3d5c62ebd39bef264d9dc0acfc2ed247debcb402",
+  "perDataset": {
+    "correzioni": 6,
+    "finanza-pubblica": 1105,
+    "governi": 69,
+    "leggi-bilancio": 145,
+    "legislature": 20,
+    "misure": 12,
+    "promesse": 356,
+    "serie/coefficienti-rivalutazione-istat-2025": 80,
+    "serie/pil-nominale": 80,
+    "serie/popolazione-residente": 81,
+    "serie/prezzi-consumo-foi": 80
+  },
+  "esclusi": [
+    {
+      "dataset": "leggi-bilancio",
+      "record": "2027-legge-di-bilancio",
+      "motivo": "fonte con riuso «con_permesso» senza permesso scritto (criterio 1.1)"
+    },
+    {
+      "dataset": "misure",
+      "record": "quota_100-1",
+      "motivo": "fonte con riuso «con_permesso» senza permesso scritto (criterio 1.1)"
+    },
+    {
+      "dataset": "misure",
+      "record": "quota_100-2",
+      "motivo": "fonte con riuso «con_permesso» senza permesso scritto (criterio 1.1)"
+    },
+    {
+      "dataset": "misure",
+      "record": "superbonus_110-1",
+      "motivo": "fonte con riuso «con_permesso» senza permesso scritto (criterio 1.1)"
+    },
+    {
+      "dataset": "misure",
+      "record": "bonus_80_euro-2",
+      "motivo": "fonte con riuso «con_permesso» senza permesso scritto (criterio 1.1)"
+    },
+    {
+      "dataset": "misure",
+      "record": "salvaguardie_esodati_chiuse-1",
+      "motivo": "fonte con riuso «con_permesso» senza permesso scritto (criterio 1.1)"
+    },
+    {
+      "dataset": "misure",
+      "record": "esonero_contributivo_assunzioni_2015-1",
+      "motivo": "fonte con riuso «con_permesso» senza permesso scritto (criterio 1.1)"
+    }
+  ]
+}
