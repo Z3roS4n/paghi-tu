@@ -194,6 +194,12 @@ function budgetLawDrafts(laws: BudgetLaw[]): Draft[] {
   }));
 }
 
+export const withoutPercentages = (note: string) =>
+  note
+    .split(/(?<=\.)\s+(?=\p{Lu})/u)
+    .filter((sentence) => !/\d\s*%|per cento/.test(sentence))
+    .join(" ");
+
 function comparisonLines(c: CostComparison): string[] {
   const lines = [
     `${c.tipoOnere === "tetto" ? "Tetto di spesa" : "Previsto"}: ${num(c.previsto.importoEur)} euro (${c.previsto.descrizione}).`,
@@ -208,7 +214,10 @@ function comparisonLines(c: CostComparison): string[] {
     const by = c.scostamento.calcolatoDa === "fonte" ? "dalla fonte" : "da Paghi Tu";
     lines.push(`Scostamento: ${num(c.scostamento.eur)} euro${pct}, calcolato ${by}.`);
   }
-  lines.push(`Omogeneità delle basi: ${c.omogeneita}. Confidenza: ${c.confidenza}.`, `Metodo: ${c.noteMetodo}`);
+  // Con basi non omogenee la percentuale non si dà, nemmeno dentro la nota di metodo: le frasi con
+  // una percentuale restano fuori dall'indice (D-031).
+  const note = c.omogeneita === "non_omogeneo" ? withoutPercentages(c.noteMetodo) : c.noteMetodo;
+  lines.push(`Omogeneità delle basi: ${c.omogeneita}. Confidenza: ${c.confidenza}.`, `Metodo: ${note}`);
   return lines;
 }
 
@@ -398,7 +407,14 @@ function correctionDrafts(corrections: Correction[]): Draft[] {
   }));
 }
 
-export function buildDocuments(input: ExportInput): { documents: IndexDocument[]; excluded: Exclusion[] } {
+// I nomi delle misure che contengono una cifra («Quota 100», «Superbonus 110%»): il validatore non
+// li conta come cifre. Si prendono da tutte le misure, anche da quelle escluse dall'indice, perché
+// un'astensione può nominarle (D-031).
+export function namedFiguresOf(measures: Measure[]): string[] {
+  return [...new Set(measures.flatMap((m) => [...m.titolo.matchAll(/\p{L}+ \d+(?:\s?%| euro)?/gu)].map((x) => x[0])))].sort();
+}
+
+export function buildDocuments(input: ExportInput): { documents: IndexDocument[]; excluded: Exclusion[]; nomiConCifre: string[] } {
   const governi = z.array(Government).parse(input.governi).toSorted((a, b) => a.ordine - b.ordine);
   const finanza = PublicFinance.parse(input.finanzaPubblica);
   const today = finanza.scaricato.slice(0, 10);
@@ -424,7 +440,7 @@ export function buildDocuments(input: ExportInput): { documents: IndexDocument[]
     if ("motivo" in out) excluded.push(out);
     else documents.push(IndexDocument.parse(out));
   }
-  return { documents, excluded };
+  return { documents, excluded, nomiConCifre: namedFiguresOf(z.array(Measure).parse(input.misure)) };
 }
 
 export function toJsonl(documents: IndexDocument[]): string {

@@ -4,6 +4,7 @@
 import { z } from "zod";
 import type { IndexDocument } from "../ingest/export.ts";
 import { normalizeText, verbatimFragments } from "../evals/testo.ts";
+import manifest from "../ingest/manifest.json" with { type: "json" };
 
 export const AgentAnswer = z.object({
   testo: z.string(),
@@ -13,6 +14,20 @@ export const AgentAnswer = z.object({
 export type AgentAnswer = z.infer<typeof AgentAnswer>;
 
 export type Index = ReadonlyMap<string, IndexDocument>;
+
+// Le domande sull'agente stesso non hanno un record da citare: la route risponde con questo testo
+// fisso, senza chiamare l'engine (AI Act art. 50, decisione del 2026-10-25, D-031).
+export const TRANSPARENCY_ANSWER =
+  "Sono un assistente automatico basato sull'intelligenza artificiale, non una persona. Rispondo solo con i dati pubblicati su Paghi Tu, " +
+  "un dataset pubblico costruito su fonti ufficiali: per ogni risposta indico il record e la fonte da cui viene, così puoi controllarla. " +
+  "Se un dato non c'è, o non è verificato, te lo dico invece di inventarlo.";
+
+const TRANSPARENCY_QUESTION =
+  /\b(sei|parlo con|sto parlando con|parlando con) (una persona|un umano|un essere umano|un bot|un robot|un'ia|un'intelligenza artificiale|una macchina|un programma)\b|\bchi (sei|c'è dall'altra parte)\b|\bcosa sei\b|\bsei (umano|reale|un'ia|un bot)\b|\bda dove (prendi|vengono|arrivano|ricavi) (i numeri|i dati|le risposte|le informazioni)\b|\bquali fonti usi\b|\bcome (funzioni|rispondi)\b/;
+
+export const isTransparencyQuestion = (question: string) => TRANSPARENCY_QUESTION.test(normalizeText(question).replace(/"/g, "'"));
+
+export const transparencyAnswer = (): AgentAnswer => ({ testo: TRANSPARENCY_ANSWER, citazioni: [], astensione: false });
 
 export const REASONS = [
   "nessuna_citazione",
@@ -36,10 +51,18 @@ const MONTHS = [
 
 const dateText = (y: string, m: string, d: string) => `${Number(d)} ${MONTHS[Number(m) - 1] ?? m} ${y}`;
 
+// I nomi delle misure che contengono una cifra («Quota 100», «Superbonus 110%», «Bonus 80 euro»):
+// la cifra fa parte del nome e non è un dato. L'elenco lo scrive l'export nel manifest.
+const escapeName = (n: string) =>
+  n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/\s?%|\s+/g, (x) => (x.includes("%") ? "\\s?%?" : "\\s+"));
+export const namesPattern = (names: string[]): RegExp | null =>
+  names.length ? new RegExp(`(?<!\\p{L})(?:${names.map(escapeName).join("|")})(?!\\d)`, "giu") : null;
+export const NAMED_FIGURES = namesPattern(manifest.nomiConCifre);
+
 // Una data scritta in un altro formato diventa «27 luglio 1960», la forma dei documenti: così il
 // mese non conta come cifra. Gli identificativi (C27-PD-028, COR-0001, g13) non sono cifre.
-function prepare(text: string): string {
-  return text
+function prepare(text: string, names: RegExp | null): string {
+  return (names ? text.replace(names, " ") : text)
     .replace(/https?:\/\/\S+/g, " ")
     .replace(/\b(\d{4})-(\d{2})-(\d{2})\b/g, (_, y: string, m: string, d: string) => dateText(y, m, d))
     .replace(/\b(\d{1,2})[/.](\d{1,2})[/.](\d{4})\b/g, (_, d: string, m: string, y: string) => dateText(y, m, d))
@@ -55,8 +78,8 @@ const SCALES: [RegExp, number][] = [[/^\s*(miliard|mld)/i, 1e9], [/^\s*(milion|m
 
 // Ogni cifra con le letture che ammette: «5.906,8 milioni» vale 5906,8 e 5.906.800.000. Il cambio di
 // scala vale solo se esatto: «5,9 miliardi» non è 5.906.800.000.
-export function extractFigures(text: string): string[][] {
-  const prepared = prepare(text);
+export function extractFigures(text: string, names: RegExp | null = NAMED_FIGURES): string[][] {
+  const prepared = prepare(text, names);
   return [...prepared.matchAll(NUMBER)].map((m) => {
     const value = Number(m[0].replace(/\./g, "").replace(",", "."));
     const after = prepared.slice((m.index ?? 0) + m[0].length, (m.index ?? 0) + m[0].length + 12);
@@ -65,7 +88,7 @@ export function extractFigures(text: string): string[][] {
   });
 }
 
-export const extractNumbers = (text: string): string[] => extractFigures(text).map((f) => f[0]);
+export const extractNumbers = (text: string, names: RegExp | null = NAMED_FIGURES): string[] => extractFigures(text, names).map((f) => f[0]);
 
 const QUOTE = /«([^»]+)»|“([^”]+)”|"([^"]+)"/g;
 // Sotto questa lunghezza le virgolette segnano un termine («tetto»), non una citazione.
@@ -99,15 +122,16 @@ export function quoteIsLiteral(quote: string, docs: IndexDocument[]): boolean {
 }
 
 // Le cifre della risposta che non stanno nel testo di nessun documento citato (metrica 4.1, criterio 5.1).
-export function figuresWithoutSource(text: string, docs: IndexDocument[]): string[] {
-  const cited = new Set(docs.flatMap((d) => extractFigures(citableText(d)).flat()));
-  return [...new Set(extractFigures(text).filter((f) => !f.some((v) => cited.has(v))).map((f) => f[0]))];
+export function figuresWithoutSource(text: string, docs: IndexDocument[], names: RegExp | null = NAMED_FIGURES): string[] {
+  const cited = new Set(docs.flatMap((d) => extractFigures(citableText(d), names).flat()));
+  return [...new Set(extractFigures(text, names).filter((f) => !f.some((v) => cited.has(v))).map((f) => f[0]))];
 }
 
 export const declaresNotVerified = (text: string) => /non (è )?verificat|\(nv\)|\bnv\b|da verificare/.test(normalizeText(text));
 
 export function validateAnswer(answer: AgentAnswer, index: Index): Validation {
   if (answer.astensione) return { esito: "astensione" };
+  if (answer.testo === TRANSPARENCY_ANSWER && !answer.citazioni.length) return { esito: "risposta" };
   const motivi: { motivo: Reason; dettaglio: string }[] = [];
 
   if (!answer.citazioni.length) motivi.push({ motivo: "nessuna_citazione", dettaglio: "risposta senza citazioni" });

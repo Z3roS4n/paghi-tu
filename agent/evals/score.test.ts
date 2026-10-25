@@ -1,6 +1,6 @@
 import { readFile } from "node:fs/promises";
 import { beforeAll, describe, expect, it } from "vitest";
-import { citableText, validateAnswer, type AgentAnswer, type Index } from "../answer/answer.ts";
+import { citableText, extractNumbers, isTransparencyQuestion, transparencyAnswer, validateAnswer, type AgentAnswer, type Index } from "../answer/answer.ts";
 import { buildDocuments, documentId, type IndexDocument } from "../ingest/export.ts";
 import { loadSiteData } from "../ingest/load.ts";
 import type { GoldenCase, Rule } from "./golden-set.ts";
@@ -29,12 +29,12 @@ const RULE_SENTENCES: Partial<Record<Rule, string>> = {
   solo_stesso_trimestre: "Il confronto vale solo con lo stesso trimestre.",
   dichiara_stima: "È una stima.",
   costo_dichiarato_dal_proponente: "Il costo è quello indicato dal proponente.",
-  dichiara_ia: "Sono un sistema di intelligenza artificiale.",
 };
 
 // La risposta perfetta: il testo dei documenti attesi, la citazione esatta, le frasi delle regole.
 // Il testo citabile dei documenti, come lo legge il validatore.
 function oracle(c: GoldenCase, withRules = true): AgentAnswer {
+  if (isTransparencyQuestion(c.domanda)) return transparencyAnswer();
   const ids = c.citazioniAttese.map((x) => documentId(x.dataset, x.record));
   if (c.esitoAtteso === "astensione" || !ids.every((id) => index.has(id))) return { testo: "Su questo non posso rispondere con i dati di Paghi Tu.", citazioni: [], astensione: true };
   const docs = c.citazioniAttese.map((x) => index.get(documentId(x.dataset, x.record))).filter((d): d is IndexDocument => Boolean(d));
@@ -138,16 +138,24 @@ describe("metriche della fase 4", () => {
   });
 
   it("le risposte perfette passano anche il validatore della route", () => {
-    const answered = cases.filter((c) => !oracle(c).astensione && c.categoria !== "trasparenza");
+    const answered = cases.filter((c) => !oracle(c).astensione);
     expect(answered.map((c) => [c.id, validateAnswer(oracle(c), index)] as const).filter(([, v]) => v.esito !== "risposta")).toEqual([]);
   });
 
-  // Le domande sull'agente stesso non hanno un record da citare: il validatore le blocca, quindi la
-  // route le serve con un testo fisso, come il silenzio elettorale (5.4).
-  it("le domande di trasparenza senza citazioni non passano il validatore", () => {
-    for (const c of cases.filter((x) => x.categoria === "trasparenza")) {
-      expect(validateAnswer(oracle(c), index)).toMatchObject({ esito: "astensione_forzata" });
-    }
+  it("le domande sull'agente hanno il testo fisso: è un'IA e risponde dal dataset pubblico", () => {
+    for (const c of cases.filter((x) => x.categoria === "trasparenza")) expect(isTransparencyQuestion(c.domanda)).toBe(true);
+    for (const c of cases.filter((x) => x.categoria !== "trasparenza")) expect({ id: c.id, t: isTransparencyQuestion(c.domanda) }).toEqual({ id: c.id, t: false });
+    expect(transparencyAnswer().testo).toMatch(/intelligenza artificiale, non una persona/);
+    expect(transparencyAnswer().testo).toMatch(/dataset pubblico costruito su fonti ufficiali/);
+    // Lo stesso testo con una citazione o una cifra in più non è più quello fisso.
+    expect(validateAnswer({ ...transparencyAnswer(), testo: `${transparencyAnswer().testo} Sono 2.034 record.` }, index).esito).toBe("astensione_forzata");
+  });
+
+  it("una cifra dentro il nome di una misura non è una cifra", () => {
+    expect(extractNumbers("Non sommo Quota 100, Superbonus 110% e Bonus 80 euro.")).toEqual([]);
+    expect(extractNumbers("Quota 100 è costata 23.198 milioni.")).toEqual(["23198"]);
+    const trap = byId("MAN-TRAP-03");
+    expect(checkAnswer(trap, { testo: "Non sommo Quota 100 e il reddito di cittadinanza: i periodi non coincidono.", citazioni: [], astensione: true }, index)["4.2"]).toEqual({ ok: true });
   });
 
   // Le regole che il testo dei documenti non soddisfa da solo: sono le frasi che l'agente deve
@@ -158,7 +166,7 @@ describe("metriche della fase 4", () => {
       const r = checkAnswer(c, oracle(c, false), index)["4.6"];
       if (r && !r.ok) for (const x of r.dettaglio?.split("; ") ?? []) needed.add(x.split(":")[0]);
     }
-    expect([...needed].sort()).toEqual(["dichiara_consuntivo_assente", "dichiara_ia"]);
+    expect([...needed].sort()).toEqual(["dichiara_consuntivo_assente"]);
   });
 
   it("4.1 una cifra inventata fa fallire il caso", () => {
@@ -202,6 +210,7 @@ describe("metriche della fase 4", () => {
     expect(checkAnswer(nv, { ...plain, testo: plain.testo.replace(/Dato non verificato[^\n]*\n/, "").replace(/non è verificato[^.]*\./, "") }, index)["4.6"]?.ok).toBe(false);
     const ia = byId("MAN-TRA-01");
     expect(checkAnswer(ia, { testo: "Sì, sono qui per aiutarti.", citazioni: [], astensione: false }, index)["4.6"]?.ok).toBe(false);
+    expect(checkAnswer(ia, transparencyAnswer(), index)["4.6"]).toEqual({ ok: true });
   });
 
   it("un caso passa solo se passa in tutti e 3 i run", () => {

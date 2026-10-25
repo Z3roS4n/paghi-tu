@@ -1,7 +1,7 @@
 {
   "file": "out/documenti.jsonl",
   "documenti": 2034,
-  "sha256": "a6a2426296aea35c7a883245db07af3dadd1e76012e1fa10d884f3d845b5d37e",
+  "sha256": "d0a5aa1863ef6a10aaf6cba208223e050e7ed5cf06582b1a058dcd89e5acebbe",
   "perDataset": {
     "correzioni": 6,
     "finanza-pubblica": 1105,
@@ -51,5 +51,11 @@
       "record": "esonero_contributivo_assunzioni_2015-1",
       "motivo": "fonte con riuso «con_permesso» senza permesso scritto (criterio 1.1)"
     }
+  ],
+  "nomiConCifre": [
+    "Bonus 80 euro",
+    "Quota 100",
+    "Superbonus 110%",
+    "assunzioni 2015"
   ]
 }

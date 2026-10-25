@@ -110,6 +110,7 @@ export function checkAnswer(c: GoldenCase, a: AgentAnswer, index: Index): Record
 
   const figures = (): Check => {
     if (a.astensione) return pass;
+    if (validation.esito === "risposta" && !a.citazioni.length) return pass; // testo fisso di trasparenza
     const loose = figuresWithoutSource(a.testo, docs);
     return loose.length ? fail(`cifre senza fonte: ${loose.join(", ")}`) : pass;
   };
