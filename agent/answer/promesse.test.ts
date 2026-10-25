@@ -58,4 +58,12 @@ describe("dichiarazioni composte dalla route (D5)", () => {
     const out = composePromises(a, index, "Che cosa ha dichiarato Bignami l'8 luglio 2026?");
     expect(out.citazioni.map((c) => c.id)).toEqual(["promesse--C27-FDI-001"]);
   });
+
+  it("non risponde con la dichiarazione di un'altra persona o di un altro partito (M8)", () => {
+    const a: AgentAnswer = { testo: "x", citazioni: [cite("promesse--C27-FDI-001")], astensione: false };
+    expect(composePromises(a, index, "Che cosa ha dichiarato Elly Schlein l'8 luglio 2026 sugli immigrati detenuti?").astensione).toBe(true);
+    expect(composePromises(a, index, "Che cosa ha dichiarato il Partito Democratico l'8 luglio 2026?").astensione).toBe(true);
+    expect(composePromises(a, index, "Che cosa ha dichiarato Galeazzo Bignami (Fratelli d'Italia) l'8 luglio 2026?").astensione).toBe(false);
+    expect(composePromises(a, index, "Che cosa ha promesso Fratelli d'Italia sui detenuti stranieri?").astensione).toBe(false);
+  });
 });
