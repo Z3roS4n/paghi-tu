@@ -126,6 +126,25 @@ describe("validatore della route (fase 5)", () => {
   it("un'astensione dichiarata passa così com'è", () => {
     expect(validateAnswer({ testo: "Non posso rispondere.", citazioni: [], astensione: true }, index)).toEqual({ esito: "astensione" });
   });
+
+  it("lascia ripetere le date scritte per intero nella domanda, non gli altri numeri", () => {
+    const q = "Chi era il presidente del Consiglio in Italia il 28 marzo 1946?";
+    const a = answer("Il 28 marzo 1946 il presidente del Consiglio era Alcide De Gasperi, in carica dal 10 dicembre 1945.");
+    expect(validateAnswer(a, index)).toMatchObject({ esito: "astensione_forzata", motivi: [{ motivo: "cifra_senza_fonte", dettaglio: "28" }] });
+    expect(validateAnswer(a, index, q)).toEqual({ esito: "risposta" });
+    expect(validateAnswer(answer("Il 28/3/1946 era Alcide De Gasperi."), index, q)).toEqual({ esito: "risposta" });
+    expect(validateAnswer(answer("Il 29 marzo 1946 era Alcide De Gasperi."), index, q)).toMatchObject({ esito: "astensione_forzata" });
+    const echo = validateAnswer(answer("Sì, erano 400 i ministri di Alcide De Gasperi."), index, "Erano 400 i ministri del governo De Gasperi I?");
+    expect(echo).toMatchObject({ esito: "astensione_forzata", motivi: [{ motivo: "cifra_senza_fonte", dettaglio: "400" }] });
+  });
+
+  it("tratta come astensione una risposta senza citazioni che dice di non avere il dato", () => {
+    const q = "Chi era il presidente del Consiglio in Italia il 10 maggio 1961?";
+    const none = (testo: string): AgentAnswer => ({ testo, citazioni: [], astensione: false });
+    expect(validateAnswer(none("I documenti forniti non contengono informazioni su chi fosse il presidente del Consiglio il 10 maggio 1961."), index, q)).toEqual({ esito: "astensione" });
+    expect(validateAnswer(none("Sulla base dei documenti forniti, non sono presenti informazioni."), index)).toEqual({ esito: "astensione" });
+    expect(validateAnswer(none("Era Amintore Fanfani."), index, q)).toMatchObject({ esito: "astensione_forzata" });
+  });
 });
 
 describe("metriche della fase 4", () => {

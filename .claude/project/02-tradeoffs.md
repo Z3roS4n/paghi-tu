@@ -339,6 +339,10 @@
   - i controlli delle regole (4.6) sono lessicali; sul testo dei documenti da solo resta scoperta `dichiara_consuntivo_assente`, che il prompt deve chiedere;
   - `da verificare:` in fase 3, la forma delle citazioni di `:answer` (3.3): serve un adattatore che la riporti ad `AgentAnswer`; il validatore non cambia.
 - **Data:** 2026-10-25
+- **Aggiornamento 2026-10-25, dopo la prima prova su Vertex AI Search (10 casi sui governi), decisioni di Giovanni:**
+  - le date scritte per intero nella domanda («il 2 novembre 1953») si possono ripetere senza citarle: in 5 casi su 10 il validatore scartava risposte giuste per il giorno della data. Gli altri numeri della domanda restano da citare, così la risposta non conferma una cifra messa da chi chiede;
+  - una risposta senza citazioni che dice di non avere il dato («i documenti non contengono informazioni…») vale come astensione e la route mostra il testo fisso. Con una citazione resta astensione forzata;
+  - nessuna soglia cambia.
 
 ## Decisioni aperte
 - **OA-1** — ~~Nome del progetto e dominio~~ → nome deciso il 2026-10-20: **Paghi Tu** (provocatorio verso politica e cittadini, senza attribuire condotte a nessuno). Dominio candidato `paghitu.it` (libero al controllo DNS del 2026-10-20, da confermare all'acquisto).

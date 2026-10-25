@@ -70,6 +70,17 @@ function prepare(text: string, names: RegExp | null): string {
     .replace(/(\d)\s*[°º]/g, "$1");
 }
 
+// Le date scritte per intero nella domanda («il 2 novembre 1953»): la risposta può ripeterle senza
+// citarle, perché non sono un dato del record (decisione del 2026-10-25). Gli altri numeri della
+// domanda restano da citare, così una risposta non conferma una cifra messa da chi chiede.
+const FULL_DATE = new RegExp(`\\b(\\d{1,2}) (${MONTHS.join("|")}) (\\d{4})\\b`, "gi");
+const dateKey = (d: string, m: string, y: string) => `${Number(d)} ${m.toLowerCase()} ${y}`;
+function withoutQuestionDates(prepared: string, question: string | undefined, names: RegExp | null): string {
+  if (!question) return prepared;
+  const asked = new Set([...prepare(question, names).matchAll(FULL_DATE)].map((m) => dateKey(m[1], m[2], m[3])));
+  return asked.size ? prepared.replace(FULL_DATE, (all, d: string, m: string, y: string) => (asked.has(dateKey(d, m, y)) ? " " : all)) : prepared;
+}
+
 // Le cifre come le scrive un testo italiano: punto per le migliaia, virgola per i decimali. Il segno
 // non conta («disavanzo di 69.736» e «saldo -69.736» sono la stessa cifra). Una cifra attaccata a
 // una lettera («R15») non è una cifra.
@@ -78,8 +89,8 @@ const SCALES: [RegExp, number][] = [[/^\s*(miliard|mld)/i, 1e9], [/^\s*(milion|m
 
 // Ogni cifra con le letture che ammette: «5.906,8 milioni» vale 5906,8 e 5.906.800.000. Il cambio di
 // scala vale solo se esatto: «5,9 miliardi» non è 5.906.800.000.
-export function extractFigures(text: string, names: RegExp | null = NAMED_FIGURES): string[][] {
-  const prepared = prepare(text, names);
+export function extractFigures(text: string, names: RegExp | null = NAMED_FIGURES, question?: string): string[][] {
+  const prepared = withoutQuestionDates(prepare(text, names), question, names);
   return [...prepared.matchAll(NUMBER)].map((m) => {
     const value = Number(m[0].replace(/\./g, "").replace(",", "."));
     const after = prepared.slice((m.index ?? 0) + m[0].length, (m.index ?? 0) + m[0].length + 12);
@@ -122,16 +133,23 @@ export function quoteIsLiteral(quote: string, docs: IndexDocument[]): boolean {
 }
 
 // Le cifre della risposta che non stanno nel testo di nessun documento citato (metrica 4.1, criterio 5.1).
-export function figuresWithoutSource(text: string, docs: IndexDocument[], names: RegExp | null = NAMED_FIGURES): string[] {
+export function figuresWithoutSource(text: string, docs: IndexDocument[], names: RegExp | null = NAMED_FIGURES, question?: string): string[] {
   const cited = new Set(docs.flatMap((d) => extractFigures(citableText(d), names).flat()));
-  return [...new Set(extractFigures(text, names).filter((f) => !f.some((v) => cited.has(v))).map((f) => f[0]))];
+  return [...new Set(extractFigures(text, names, question).filter((f) => !f.some((v) => cited.has(v))).map((f) => f[0]))];
 }
 
 export const declaresNotVerified = (text: string) => /non (è )?verificat|\(nv\)|\bnv\b|da verificare/.test(normalizeText(text));
 
-export function validateAnswer(answer: AgentAnswer, index: Index): Validation {
+// Una risposta senza citazioni che dice di non avere il dato è un'astensione scritta male: la route
+// mostra l'astensione fissa (decisione del 2026-10-25).
+const NO_DATA =
+  /\b(non (sono presenti|ci sono|contengono|contiene|riportano|riporta|ho|dispongo di|trovo|risultano|e presente|è presente|c'e|c'è) (informazioni|dati|riferimenti|notizie)|nessuna informazione|nessun dato|i documenti (forniti )?non (contengono|riportano|indicano))\b/;
+export const declaresNoData = (text: string) => NO_DATA.test(normalizeText(text));
+
+export function validateAnswer(answer: AgentAnswer, index: Index, question?: string): Validation {
   if (answer.astensione) return { esito: "astensione" };
   if (answer.testo === TRANSPARENCY_ANSWER && !answer.citazioni.length) return { esito: "risposta" };
+  if (!answer.citazioni.length && declaresNoData(answer.testo)) return { esito: "astensione" };
   const motivi: { motivo: Reason; dettaglio: string }[] = [];
 
   if (!answer.citazioni.length) motivi.push({ motivo: "nessuna_citazione", dettaglio: "risposta senza citazioni" });
@@ -148,7 +166,7 @@ export function validateAnswer(answer: AgentAnswer, index: Index): Validation {
     }
   }
 
-  for (const n of figuresWithoutSource(answer.testo, docs)) motivi.push({ motivo: "cifra_senza_fonte", dettaglio: n });
+  for (const n of figuresWithoutSource(answer.testo, docs, NAMED_FIGURES, question)) motivi.push({ motivo: "cifra_senza_fonte", dettaglio: n });
 
   for (const q of extractQuotes(answer.testo)) {
     if (!quoteIsLiteral(q, docs)) motivi.push({ motivo: "citazione_non_letterale", dettaglio: q });

@@ -106,12 +106,12 @@ export function checkAnswer(c: GoldenCase, a: AgentAnswer, index: Index): Record
   const indexed = expectedIds(c).every((id) => index.has(id));
   const abstains = c.esitoAtteso === "astensione" || !indexed;
   const docs = a.citazioni.map((x) => index.get(x.id)).filter((d): d is IndexDocument => Boolean(d));
-  const validation = validateAnswer(a, index);
+  const validation = validateAnswer(a, index, c.domanda);
 
   const figures = (): Check => {
     if (a.astensione) return pass;
     if (validation.esito === "risposta" && !a.citazioni.length) return pass; // testo fisso di trasparenza
-    const loose = figuresWithoutSource(a.testo, docs);
+    const loose = figuresWithoutSource(a.testo, docs, undefined, c.domanda);
     return loose.length ? fail(`cifre senza fonte: ${loose.join(", ")}`) : pass;
   };
 
