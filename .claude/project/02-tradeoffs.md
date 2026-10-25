@@ -316,6 +316,19 @@
 - **Conseguenze:** dopo ogni `evals:build` che cambia `domande.jsonl` si rilancia `evals:verify` (il test confronta l'impronta). Il registro non scade da solo: la data è nel file e va riletta prima di ogni eval dell'agente.
 - **Data:** 2026-10-23
 
+### D-032 — Valori attesi leggibili, parole intere e casi tolti dal golden set
+- **Stato:** decisa da Giovanni il 2026-10-25, da confermare dal titolare sulla PR #1.
+- **Contesto:** la revisione dei 132 casi del 2026-10-25 (report `2026-10-25-10-51`, PR #4) ha trovato valori attesi che sono codifiche di Paghi Tu (maggioranze come sigle, «documentata», «(INF)», «NV», confidenza «A»-«D») confrontati alla lettera e senza confine di parola: una risposta giusta falliva, una sbagliata poteva passare («governo de gasperi i» dentro «… ii», «a» dentro qualsiasi parola). I test non lo vedevano perché le risposte perfette erano costruite dagli stessi valori.
+- **Scelta:**
+  - il valore atteso resta quello del record (il test «ogni valore sta nel record» non cambia); in più può avere `forme`, gruppi di modi in cui una risposta lo scrive: ogni gruppo deve comparire con almeno una forma, come parole intere (`findPhrase`, `findForms` in `agent/evals/testo.ts`);
+  - le forme derivabili dal record si generano nel codice (nome del governo con e senza «Governo», governo senza «(INF)», numero e anno della legge dagli estremi); quelle che servono a mano stanno in `agent/evals/forme-accettate.json` (le quattro maggioranze), con una nota;
+  - confidenza e tipo di attribuzione escono dai valori attesi: le controllano le regole `dichiara_confidenza_bassa` e `dichiara_attribuzione_non_documentata`; «NV» non si cerca come governo; estremi senza un numero di legge leggibile non si cercano;
+  - una promessa con un costo dichiarato porta sempre la regola `costo_dichiarato_dal_proponente`;
+  - le percentuali si trovano anche arrotondate a uno o due decimali, solo con «%» o «per cento» accanto;
+  - `agent/evals/esclusi.json` toglie dal set LB-2027 (atto non ancora presentato, record fuori dall'indice) e PRO-C27-FDI-002 (discorso indiretto di un giornalista attribuito al partito), con motivo e chi l'ha deciso. Il golden set passa da 132 a 130 casi.
+- **Conseguenze:** nessuna metrica controlla più che la risposta dica la confidenza A o B, o che l'attribuzione è documentata: lo dice la regola solo quando la confidenza è bassa o l'attribuzione non è documentata. `score.ts` (PR #4) usa le forme e il confine di parola. Nessuna soglia cambia. Le correzioni ai dati segnalate dalla revisione restano ad Antonio.
+- **Data:** 2026-10-25
+
 ## Decisioni aperte
 - **OA-1** — ~~Nome del progetto e dominio~~ → nome deciso il 2026-10-20: **Paghi Tu** (provocatorio verso politica e cittadini, senza attribuire condotte a nessuno). Dominio candidato `paghitu.it` (libero al controllo DNS del 2026-10-20, da confermare all'acquisto).
 - **OA-2** — **SUPERATA da D-023 (2026-10-21): titolare M's Works, indicato in /privacy e /note-legali.** Testo originale: Editore: il titolare del progetto, persona fisica. **Decisione del titolare (2026-10-20): nome e dati personali NON pubblicati sul sito**; il sito si presenta come "Paghi Tu" con un recapito dedicato (email del progetto). Da validare con l'avvocato prima del lancio: (a) se art. 2 L. 47/1948 (richiamato da art. 1 c. 3 L. 62/2001) e art. 7 D.Lgs. 70/2003 impongono l'indicazione dell'editore a un sito non periodico e non commerciale; (b) identità del titolare del trattamento richiesta dall'art. 13 GDPR se il sito tratta dati dei visitatori (log, analytics, form) — si minimizza con zero cookie, zero analytics con IP, nessun form; (c) alternativa: associazione (es. APS/ETS) come editore, così sul sito compare l'ente e non la persona; (d) responsabilità personale e polizza RC. L'anonimato verso il pubblico non elimina la responsabilità: l'editore resta identificabile da hosting e registro del dominio.

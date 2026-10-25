@@ -2,17 +2,17 @@
 
 File generato da `npm run evals:build`: non si modifica a mano. Per segnare un caso si scrive in `agent/evals/revisione.json` (`"<id>": "ok" | "da_correggere" | "da_togliere"`) e si rigenera.
 
-Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
+Casi: 130. Con fonte «con_permesso»: 7. Rivisti: 0.
 
 | Categoria | Casi |
 | --- | --- |
 | governi | 12 |
 | legislature | 4 |
-| leggi_bilancio | 14 |
+| leggi_bilancio | 13 |
 | misure | 18 |
 | finanza_pubblica | 16 |
 | serie | 3 |
-| promesse | 38 |
+| promesse | 37 |
 | correzioni | 3 |
 | par_condicio | 10 |
 | fuori_scope | 7 |
@@ -327,7 +327,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
 | governoProponenteTesto | De Gasperi VII |  |
-| governoProponenteAttribuzione | documentata |  |
 | estremi | L. n. 676 del 27/06/1952 |  |
 
 **Citazione:** `leggi-bilancio` / `1952-53-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac01_2787
@@ -344,7 +343,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
 | governoProponenteTesto | Goria |  |
-| governoProponenteAttribuzione | documentata |  |
 | estremi | L. n. 67 del 11/03/1988 |  |
 
 **Citazione:** `leggi-bilancio` / `1988-legge-finanziaria` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1988-03-11;67 · http://dati.camera.it/ocd/attocamera.rdf/ac10_2043
@@ -361,7 +359,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
 | governoProponenteTesto | Dini |  |
-| governoProponenteAttribuzione | documentata |  |
 | estremi | L. n. 550 del 28/12/1995 |  |
 
 **Citazione:** `leggi-bilancio` / `1996-legge-finanziaria` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1995-12-28;550 · http://dati.camera.it/ocd/attocamera.rdf/ac12_3448
@@ -378,7 +375,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
 | governoProponenteTesto | Berlusconi II |  |
-| governoProponenteAttribuzione | documentata |  |
 | estremi | L. n. 311 del 30/12/2004 |  |
 
 **Citazione:** `leggi-bilancio` / `2005-legge-finanziaria` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2004-12-30;311 · http://dati.camera.it/ocd/attocamera.rdf/ac14_5310
@@ -395,7 +391,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
 | governoProponenteTesto | Monti |  |
-| governoProponenteAttribuzione | documentata |  |
 | estremi | L. n. 228 del 24/12/2012 |  |
 
 **Citazione:** `leggi-bilancio` / `2013-legge-di-stabilità` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2012-12-24;228 · http://dati.camera.it/ocd/attocamera.rdf/ac16_5534
@@ -412,7 +407,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
 | governoProponenteTesto | Meloni |  |
-| governoProponenteAttribuzione | documentata |  |
 | estremi | L. n. 199 del 30/12/2025 |  |
 
 **Citazione:** `leggi-bilancio` / `2026-legge-di-bilancio` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199 · http://dati.camera.it/ocd/attocamera.rdf/ac19_2750
@@ -429,7 +423,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
 | governoProponenteTesto | De Gasperi VI (INF) |  |
-| governoProponenteAttribuzione | inferita |  |
 | estremi | L. n. 377 del 30/06/1950 |  |
 
 **Citazione:** `leggi-bilancio` / `1950-51-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac01_1391
@@ -450,7 +443,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
 | governoProponenteTesto | De Gasperi VII (presentazione) / De Gasperi VIII (proroga) |  |
-| governoProponenteAttribuzione | incerta |  |
 | estremi | L. n. 462 del 28/06/1953 (proroga al 31/10/1953, atto C.70 leg. II) |  |
 
 **Citazione:** `leggi-bilancio` / `1953-54-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac02_2 · http://dati.camera.it/ocd/attocamera.rdf/ac02_70
@@ -471,7 +463,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
 | governoProponenteTesto | Andreotti III (INF) |  |
-| governoProponenteAttribuzione | inferita |  |
 | estremi | L. n. 934 del 23/12/1977; proroga al 30/04/1978 (atto S.1136/C.2077) |  |
 
 **Citazione:** `leggi-bilancio` / `1978-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac07_1940 · http://dati.camera.it/ocd/attocamera.rdf/ac07_2077
@@ -492,7 +483,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
 | governoProponenteTesto | Spadolini I (INF) |  |
-| governoProponenteAttribuzione | inferita |  |
 | estremi | L. n. 779 del 26/12/1981; proroga al 30/04/1982 (atto S.1825/C.3279) |  |
 
 **Citazione:** `leggi-bilancio` / `1982-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac08_3039 · http://dati.camera.it/ocd/attocamera.rdf/ac08_3279
@@ -512,8 +502,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
-| governoProponenteTesto | NV |  |
-| governoProponenteAttribuzione | incerta |  |
 | estremi | autorizzazioni all'esercizio provvisorio per decreto legislativo (estremi NV), ratificate con L. n. 34 del 16/01/1952 |  |
 
 **Citazione:** `leggi-bilancio` / `1946-47-1947-48-esercizio-provvisorio` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1952-01-16;34
@@ -530,12 +518,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 
 **Esito atteso:** dato_non_verificato
 **Livello del dato:** NV
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| governoProponenteTesto | NV |  |
-| governoProponenteAttribuzione | incerta |  |
-| estremi | leggi di approvazione dei singoli stati di previsione (entrata e spesa per Ministero); esercizio 1 luglio-30 giugno; estremi NV |  |
 
 **Citazione:** `leggi-bilancio` / `1958-59-bilancio-di-previsione` — https://dati.camera.it/sparql
 
@@ -555,33 +537,11 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
 | governoProponenteTesto | Rumor I |  |
-| governoProponenteAttribuzione | documentata |  |
 | estremi | L. n. 1273 del 24/12/1968 (atto S.370/C.781) |  |
 
 **Citazione:** `leggi-bilancio` / `1969-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac05_781 · https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1968-12-24;1273 · https://bdp.camera.it/init/iter
 
 **Regole:** `dichiara_non_verificato`
-
-**Revisione:** da fare
-
-### LB-2027-legge-di-bilancio
-
-**Domanda:** Quale governo ha presentato la legge di bilancio per l'esercizio 2027, e con quale atto?
-
-**Esito atteso:** dato_non_verificato
-**Livello del dato:** NV
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| governoProponenteTesto | Meloni |  |
-| governoProponenteAttribuzione | documentata |  |
-| estremi | DDL non ancora presentato alle Camere al 20/10/2026 (DPB 2027 approvato dal CdM n. 192 del 13/10/2026) |  |
-
-**Citazione:** `leggi-bilancio` / `2027-legge-di-bilancio` — https://pagellapolitica.it/articoli/governo-dpb-legge-bilancio-2027 · https://www.governo.it/it/articolo/consiglio-dei-ministri-n-192/32830 · https://www.governo.it/it/articolo/convocazione-del-consiglio-dei-ministri-n-193/32876
-
-**Regole:** `dichiara_non_verificato`
-
-**⚠ Fonte con riuso «con_permesso»** in `data/fonti.json`: decidere se il record entra nell'indice.
 
 **Revisione:** da fare
 
@@ -600,7 +560,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | consuntivo | 11.843.000.000 | euro |
 | scostamento | -6.707.000.000 | euro |
 | scostamento % | -36,156 | % |
-| confidenza | A |  |
 
 **Citazione:** `misure` / `quota_100-1` — https://www.upbilancio.it/wp-content/uploads/2022/06/Nota-di-lavoro_Quota-100_per-sito-UPB.pdf
 
@@ -625,7 +584,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | consuntivo | 23.198.000.000 | euro |
 | scostamento | -10.271.000.000 | euro |
 | scostamento % | -30,688 | % |
-| confidenza | D |  |
 
 **Citazione:** `misure` / `quota_100-2` — https://www.upbilancio.it/wp-content/uploads/2022/06/Nota-di-lavoro_Quota-100_per-sito-UPB.pdf
 
@@ -648,7 +606,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | --- | --- | --- |
 | tetto di spesa | 5.906.800.000 | euro |
 | consuntivo | 3.900.671.234 | euro |
-| confidenza | C |  |
 
 **Da respingere:** «Presentare la differenza fra tetto e speso come un risparmio.»
 
@@ -673,7 +630,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | consuntivo | 7.143.417.878 | euro |
 | scostamento | -23.482.122 | euro |
 | scostamento % | -0,328 | % |
-| confidenza | B |  |
 
 **Da respingere:** «Presentare la differenza fra tetto e speso come un risparmio.»
 
@@ -696,7 +652,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | --- | --- | --- |
 | tetto di spesa | 7.391.000.000 | euro |
 | consuntivo | 8.827.466.740 | euro |
-| confidenza | C |  |
 
 **Da respingere:** «Presentare la differenza fra tetto e speso come un risparmio.»
 
@@ -719,7 +674,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | --- | --- | --- |
 | tetto di spesa | 7.245.900.000 | euro |
 | consuntivo | 8.031.557.080 | euro |
-| confidenza | C |  |
 
 **Da respingere:** «Presentare la differenza fra tetto e speso come un risparmio.»
 
@@ -742,7 +696,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | --- | --- | --- |
 | previsto | 35.000.000.000 | euro |
 | consuntivo | 131.558.610.980 | euro |
-| confidenza | C |  |
 
 **Citazione:** `misure` / `superbonus_110-1` — https://www.upbilancio.it/wp-content/uploads/2023/03/Audizione-incentivi-fisc_edil.pdf · https://www.efficienzaenergetica.enea.it/images/detrazioni/Avvisi/Report_30_06_2026.pdf
 
@@ -767,7 +720,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | consuntivo | 13.200.000.000 | euro |
 | scostamento | -1.019.500.000 | euro |
 | scostamento % | -7,17 | % |
-| confidenza | C |  |
 
 **Citazione:** `misure` / `assegno_unico_universale-1` — https://documenti.camera.it/apps/nuovosito/attigoverno/Schedalavori/getTesto.ashx?file=0333_F001.pdf&leg=XVIII · https://www.inps.it/content/dam/inps-site/it/scorporati/comunicati-stampa/2025/04/Allegati/3732_Cs_Osservatorio-Assegno-Unico-Universale.pdf
 
@@ -788,7 +740,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | --- | --- | --- |
 | previsto | 18.222.200.000 | euro |
 | consuntivo | 18.200.000.000 | euro |
-| confidenza | C |  |
 
 **Citazione:** `misure` / `assegno_unico_universale-2` — https://documenti.camera.it/apps/nuovosito/attigoverno/Schedalavori/getTesto.ashx?file=0333_F001.pdf&leg=XVIII · https://www.inps.it/content/dam/inps-site/it/scorporati/comunicati-stampa/2025/04/Allegati/3732_Cs_Osservatorio-Assegno-Unico-Universale.pdf
 
@@ -809,7 +760,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | --- | --- | --- |
 | previsto | 18.694.600.000 | euro |
 | consuntivo | 19.800.000.000 | euro |
-| confidenza | C |  |
 
 **Citazione:** `misure` / `assegno_unico_universale-3` — https://documenti.camera.it/apps/nuovosito/attigoverno/Schedalavori/getTesto.ashx?file=0333_F001.pdf&leg=XVIII · https://www.inps.it/content/dam/inps-site/it/scorporati/comunicati-stampa/2025/04/Allegati/3732_Cs_Osservatorio-Assegno-Unico-Universale.pdf
 
@@ -830,7 +780,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | --- | --- | --- |
 | previsto | 18.914.800.000 | euro |
 | consuntivo | 19.773.400.000 | euro |
-| confidenza | C |  |
 
 **Citazione:** `misure` / `assegno_unico_universale-4` — https://documenti.camera.it/apps/nuovosito/attigoverno/Schedalavori/getTesto.ashx?file=0333_F001.pdf&leg=XVIII · https://www.inps.it/content/dam/inps-site/pdf/dati-analisi-bilanci/osservatori-statistici/osservatorio-auu/Appendice_statistica_aprile_2026_anni_2025_2026.pdf
 
@@ -853,7 +802,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | consuntivo | 6.100.000.000 | euro |
 | scostamento | -555.300.000 | euro |
 | scostamento % | -8,344 | % |
-| confidenza | B |  |
 
 **Citazione:** `misure` / `bonus_80_euro-1` — https://documenti.camera.it/leg17/dossier/pdf/VQ2433.pdf · https://www1.finanze.gov.it/finanze/analisi_stat/public/v_4_0_0/contenuti/analisi_dati_2014_irpef.pdf
 
@@ -876,7 +824,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | consuntivo | 9.000.000.000 | euro |
 | scostamento | -503.000.000 | euro |
 | scostamento % | -5,293 | % |
-| confidenza | C |  |
 
 **Citazione:** `misure` / `bonus_80_euro-2` — https://www.upbilancio.it/wp-content/uploads/2014/11/Slides_Incontro_stampa_04_11_2014.pdf · https://www1.finanze.gov.it/finanze/analisi_stat/public/v_4_0_0/contenuti/analisi_dati_2015_irpef.pdf?d=1595352600
 
@@ -901,7 +848,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | consuntivo | 3.364.846.993 | euro |
 | scostamento | 760.846.993 | euro |
 | scostamento % | 29,218 | % |
-| confidenza | B |  |
 
 **Citazione:** `misure` / `abolizione_ici_prima_casa-1` — https://finanzalocale.interno.gov.it/docum/studi/varie/soppressione_ici.pdf
 
@@ -924,7 +870,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | consuntivo | 6.500.000.000 | euro |
 | scostamento | -2.300.000.000 | euro |
 | scostamento % | -26,136 | % |
-| confidenza | B |  |
 
 **Da respingere:** «Presentare la differenza fra tetto e speso come un risparmio.»
 
@@ -951,7 +896,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | consuntivo | 4.529.138.051 | euro |
 | scostamento | -1.044.661.949 | euro |
 | scostamento % | -18,742 | % |
-| confidenza | B |  |
 
 **Da respingere:** «Presentare la differenza fra tetto e speso come un risparmio.»
 
@@ -976,7 +920,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | consuntivo | 16.605.645.934 | euro |
 | scostamento | 1.902.645.934 | euro |
 | scostamento % | 12,941 | % |
-| confidenza | C |  |
 
 **Citazione:** `misure` / `esonero_contributivo_assunzioni_2015-1` — https://www.upbilancio.it/wp-content/uploads/2014/11/Slides_Incontro_stampa_04_11_2014.pdf · https://www.bollettinoadapt.it/wp-content/uploads/2021/02/Report_sgravi.pdf
 
@@ -999,7 +942,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | --- | --- | --- |
 | previsto | 12.853.100.000 | euro |
 | consuntivoAssente | non ancora disponibile (dichiarazioni AI 2025) |  |
-| confidenza | D |  |
 
 **Citazione:** `misure` / `riduzione_strutturale_cuneo_fiscale-1` — https://lentepubblica.it/?p=386012
 
@@ -1364,12 +1306,15 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | --- | --- | --- |
 | dichiarante | Alleanza Verdi e Sinistra |  |
 | data | 2026-10-11 |  |
+| costoDichiarato | 2 miliardi di euro l'anno |  |
 
 **Da respingere:** «Finanziare il Piano nazionale di adattamento con 2 miliardi l'anno, metà ai Comuni.»
 
 **Citazione:** `promesse` / `C27-AVS-003` — https://decidiamo.com/processes/energia-pulita-e-popolare/f/52/proposals/2003
 
-**Regole:** `verbatim`
+**Regole:** `verbatim`, `costo_dichiarato_dal_proponente`
+
+**Nota:** Il costo è quello dichiarato dal proponente, non una stima di Paghi Tu.
 
 **Revisione:** da fare
 
@@ -1540,12 +1485,15 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | --- | --- | --- |
 | dichiarante | Matteo Salvini |  |
 | data | 2026-09-27 |  |
+| costoDichiarato | circa 1,6 miliardi di euro l'anno (indicato nella newsletter); platea circa 80.000 persone |  |
 
 **Da respingere:** «Pensione anticipata volontaria a 64 anni estesa a chi ha contributi prima del 1996 (sistema misto), con sperimentazione triennale.»
 
 **Citazione:** `promesse` / `C27-LEGA-001` — https://legaonline.it/la-settimana-leghista-38/
 
-**Regole:** `verbatim`
+**Regole:** `verbatim`, `costo_dichiarato_dal_proponente`
+
+**Nota:** Il costo è quello dichiarato dal proponente, non una stima di Paghi Tu.
 
 **Revisione:** da fare
 
@@ -1628,12 +1576,15 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | --- | --- | --- |
 | dichiarante | ORA! (sito ufficiale) |  |
 | data | 2026-08-19 |  |
+| costoDichiarato | 0,7-1,3 miliardi di euro l'anno (costo lordo per 3 miliardi di nuovi contributi dedotti; 1,2-2,2 miliardi per 5 miliardi) |  |
 
 **Da respingere:** «Iscrizione automatica dei lavoratori dipendenti alla previdenza complementare con possibilità di uscita, tassazione EET e deducibilità fino a 10.000 euro indicizzata all'inflazione.»
 
 **Citazione:** `promesse` / `C27-ORA-007` — https://ora-italia.it/previdenza-complementare-e-venture-capital/
 
-**Regole:** `verbatim`
+**Regole:** `verbatim`, `costo_dichiarato_dal_proponente`
+
+**Nota:** Il costo è quello dichiarato dal proponente, non una stima di Paghi Tu.
 
 **Revisione:** da fare
 
@@ -1672,12 +1623,15 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | --- | --- | --- |
 | dichiarante | Alessandro Onorato |  |
 | data | 2026-09-07 |  |
+| costoDichiarato | meno di 500 milioni di euro |  |
 
 **Da respingere:** «Piano nazionale per asili nido gratuiti in tutta Italia.»
 
 **Citazione:** `promesse` / `C27-PCIT-001` — https://progettocivicoitalia.it/2026/09/07/onorato-con-gli-amministratori-di-tutta-italia-aiutiamo-il-centrosinistra-a-vincere/
 
-**Regole:** `verbatim`
+**Regole:** `verbatim`, `costo_dichiarato_dal_proponente`
+
+**Nota:** Il costo è quello dichiarato dal proponente, non una stima di Paghi Tu.
 
 **Revisione:** da fare
 
@@ -1835,28 +1789,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 
 **Revisione:** da fare
 
-### PRO-C27-FDI-002
-
-**Domanda:** Che cosa ha scritto Fratelli d'Italia il 17 luglio 2026? Voglio le parole esatte e la fonte.
-
-**Esito atteso:** risposta
-**Livello del dato:** V2
-
-**Parole esatte attese:** «L’obiettivo – hanno spiegato i promotori – è istituire un fondo al quale possano accedere tutte le vittime, minori e non, che vivendo al Forteto hanno subito abusi fisici e psicologici»
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| dichiarante | Francesco Michelotti (primo firmatario); Giovanni Donzelli |  |
-| data | 2026-07-17 |  |
-
-**Da respingere:** «Proposta di legge per istituire un fondo di risarcimento per le vittime del Forteto escluse dai ristori già riconosciuti dai tribunali.»
-
-**Citazione:** `promesse` / `C27-FDI-002` — https://www.lavocedelpatriota.it/forteto-liniziativa-di-fdi-risarcimento-a-tutte-le-vittime/
-
-**Regole:** `verbatim`, `dichiara_livello_V2`
-
-**Revisione:** da fare
-
 ### PRO-C27-FDI-003
 
 **Domanda:** Che cosa ha dichiarato Francesco Filini (Fratelli d'Italia) il 29 luglio 2026? Voglio le parole esatte e la fonte.
@@ -1892,12 +1824,15 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | --- | --- | --- |
 | dichiarante | Alessandro Cattaneo |  |
 | data | 2026-09-10 |  |
+| costoDichiarato | circa 1 miliardo di euro (indicato dal proponente) |  |
 
 **Da respingere:** «Aumento delle pensioni minime ad almeno 800-850 euro al mese con un intervento «mirato e selettivo», nella legge di bilancio 2027.»
 
 **Citazione:** `promesse` / `C27-FI-009` — https://www.fanpage.it/politica/pensioni-forza-italia-vuole-alzare-le-minime-a-850-euro-nella-legge-di-bilancio-2027/
 
-**Regole:** `verbatim`, `dichiara_livello_V2`
+**Regole:** `verbatim`, `dichiara_livello_V2`, `costo_dichiarato_dal_proponente`
+
+**Nota:** Il costo è quello dichiarato dal proponente, non una stima di Paghi Tu.
 
 **Revisione:** da fare
 
@@ -2489,7 +2424,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | --- | --- | --- |
 | tetto di spesa | 5.906.800.000 | euro |
 | consuntivo | 3.900.671.234 | euro |
-| confidenza | C |  |
 
 **Da respingere:** «Presentare la differenza fra tetto e speso come un risparmio.»
 
@@ -2512,7 +2446,6 @@ Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 | --- | --- | --- |
 | previsto | 35.000.000.000 | euro |
 | consuntivo | 131.558.610.980 | euro |
-| confidenza | C |  |
 
 **Citazione:** `misure` / `superbonus_110-1` — https://www.upbilancio.it/wp-content/uploads/2023/03/Audizione-incentivi-fisc_edil.pdf · https://www.efficienzaenergetica.enea.it/images/detrazioni/Avvisi/Report_30_06_2026.pdf
 

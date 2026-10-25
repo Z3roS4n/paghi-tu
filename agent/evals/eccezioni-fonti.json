@@ -4,13 +4,11 @@
     "PRO-C27-SVP-003": "Il record è fedele alla fonte: nell'HTML della Camera «iter» è in corsivo (l'<em>iter</em>) e il testo estratto diventa «l' iter», con uno spazio che la fonte non ha. Il resto della citazione si ritrova parola per parola."
   },
   "campi": {
-    "confidenza": "Giudizio di Paghi Tu sulla qualità del confronto (A-D), non un dato della fonte.",
     "consuntivoAssente": "Testo di Paghi Tu che spiega perché il consuntivo manca.",
     "scostamento": "Differenza fra consuntivo e previsto: verificata dal test «scostamenti delle misure»; i due termini si cercano nella fonte.",
     "scostamento %": "Rapporto fra scostamento e previsto: verificato dal test «scostamenti delle misure».",
     "estremi": "Riassunto di Paghi Tu degli estremi dell'atto (numero, data, ratifica), non una stringa della fonte.",
     "governoProponenteTesto": "Nome del governo scritto da Paghi Tu; il collegamento atto-governo è verificato dal test di integrità dei dati.",
-    "governoProponenteAttribuzione": "Classificazione di Paghi Tu (documentata, incerta, ...), non un dato della fonte.",
     "maggioranza": "Sigle dei partiti composte da Paghi Tu dalla coalizione indicata dalla fonte."
   },
   "valori": {

@@ -62,7 +62,9 @@ export const Rule = z.enum([
 ]);
 export type Rule = z.infer<typeof Rule>;
 
-export type ExpectedValue = { campo: string; valore: string | number | null; unita?: string };
+// forme: modi in cui una risposta può scrivere un valore di testo; ogni gruppo deve comparire con
+// almeno una forma (D-032). Senza forme vale il valore stesso, come parole intere.
+export type ExpectedValue = { campo: string; valore: string | number | null; unita?: string; forme?: string[][] };
 export type ExpectedCitation = { dataset: string; record: string; urlAccettati: string[] };
 
 export type GoldenCase = {
@@ -109,7 +111,15 @@ export type SiteData = {
   serie: Record<string, unknown>;
   casiManuali: unknown;
   revisione: unknown;
+  formeAccettate: unknown;
+  esclusi: unknown;
 };
+
+// Forme scritte a mano per i valori che sono codifiche di Paghi Tu (maggioranze come sigle):
+// chiave «<id caso>|<campo>», valore i gruppi di forme.
+export const AcceptedForms = z.record(z.string().regex(/^[^|]+\|[^|]+$/), z.object({ gruppi: z.array(z.array(z.string().min(1)).min(1)).min(1), nota: z.string() }));
+// Casi tolti dal golden set, con il motivo e chi l'ha deciso.
+export const Exclusions = z.record(z.string(), z.object({ motivo: z.string().min(1), deciso: z.string().min(1) }));
 
 // Fonti con riuso "con_permesso" in data/fonti.json (R-23 UPB, R-34 Pagella Politica; R-36 Wikipedia è esclusa):
 // finché il permesso non è scritto, il caso resta nel set ma il revisore decide se il record entra nell'indice.
@@ -193,7 +203,7 @@ function governmentCases(govs: Government[]): GoldenCase[] {
         esitoAtteso: "risposta",
         valoriAttesi: [
           { campo: "presidente", valore: g.presidente },
-          { campo: "nome", valore: g.nome },
+          { campo: "nome", valore: g.nome, forme: [[g.nome, g.nome.replace(/^Governo /, "")]] },
           { campo: "inizio", valore: g.inizio },
         ],
         citazioniAttese: [{ dataset: "governi", record: g.id, urlAccettati: urls(g.fonti) }],
@@ -253,6 +263,29 @@ const ACT_WITH_ARTICLE: Partial<Record<BudgetLaw["tipoAtto"], string>> = {
   "legge di bilancio": "la legge di bilancio",
 };
 
+// «(INF)» è il marcatore di Paghi Tu per un'attribuzione inferita: la risposta scrive il governo e
+// dice che l'attribuzione è inferita (regola). «NV» non è un governo e non si cerca. L'attribuzione
+// documentata/inferita/incerta è una codifica: la controlla la regola, non un valore (D-032).
+function budgetLawValues(l: BudgetLaw): ExpectedValue[] {
+  const values: ExpectedValue[] = [];
+  const gov = l.governoProponenteTesto;
+  if (gov && gov !== "NV") {
+    const plain = gov.replace(/\s*\(INF\)$/, "");
+    values.push({ campo: "governoProponenteTesto", valore: gov, forme: [[plain]] });
+  }
+  // Gli estremi si cercano come numero e anno della legge («legge 190/2014», «L. n. 190 del …»).
+  const law = l.estremi.match(/L\. n\. (\d+) del (\d{2})\/(\d{2})\/(\d{4})/);
+  if (law) {
+    const [, n, , , y] = law;
+    values.push({
+      campo: "estremi",
+      valore: l.estremi,
+      forme: [[`n. ${n}`, `n.${n}`, `numero ${n}`, `${n}/${y}`, `legge ${n}`, `l. ${n}`], [y]],
+    });
+  }
+  return values;
+}
+
 function budgetLawCases(laws: BudgetLaw[]): GoldenCase[] {
   const key = (l: BudgetLaw) => `${l.tipoAtto}|${l.annoEsercizio}`;
   const counts = new Map<string, number>();
@@ -272,11 +305,7 @@ function budgetLawCases(laws: BudgetLaw[]): GoldenCase[] {
       categoria: "leggi_bilancio",
       domanda: `Quale governo ha presentato ${ACT_WITH_ARTICLE[l.tipoAtto] ?? l.tipoAttoOriginale} per l'esercizio ${l.annoEsercizio}, e con quale atto?`,
       esitoAtteso: outcomeFor(level),
-      valoriAttesi: [
-        { campo: "governoProponenteTesto", valore: l.governoProponenteTesto },
-        { campo: "governoProponenteAttribuzione", valore: l.governoProponenteAttribuzione },
-        { campo: "estremi", valore: l.estremi },
-      ],
+      valoriAttesi: budgetLawValues(l),
       citazioniAttese: [{ dataset: "leggi-bilancio", record: l.id, urlAccettati: urls(l.fonti) }],
       regole: rules,
       livelloVerifica: level,
@@ -312,7 +341,7 @@ function comparisonValues(c: CostComparison): ExpectedValue[] {
       values.push({ campo: "scostamento %", valore: c.scostamento.pct, unita: "%" });
     }
   }
-  values.push({ campo: "confidenza", valore: c.confidenza });
+  // La confidenza A-D è una codifica di Paghi Tu: la controlla la regola dichiara_confidenza_bassa (D-032).
   return values;
 }
 
@@ -610,7 +639,10 @@ function promiseCase(p: CampaignPromise, party: Party, withTopic: boolean, extra
     { campo: "dichiarante", valore: p.dichiarante },
     { campo: "data", valore: p.data },
   ];
-  if (extra.includes("costo_dichiarato_dal_proponente")) values.push({ campo: "costoDichiarato", valore: p.costoDichiarato });
+  // Una promessa con un costo dichiarato porta sempre la regola e il valore, anche se è stata scelta
+  // per il partito o per il livello V2.
+  const rules = p.costoDichiarato ? [...extra, "costo_dichiarato_dal_proponente" as const] : extra;
+  if (p.costoDichiarato) values.push({ campo: "costoDichiarato", valore: p.costoDichiarato });
   return makeCase({
     id: `PRO-${p.id}`,
     categoria: "promesse",
@@ -620,11 +652,13 @@ function promiseCase(p: CampaignPromise, party: Party, withTopic: boolean, extra
     testoVerbatim: p.testoLetterale,
     risposteErrate: [p.parafrasiNeutra],
     citazioniAttese: [{ dataset: "promesse", record: p.id, urlAccettati: urls([p.fonte]) }],
-    regole: ["verbatim", ...levelRules(level), ...extra],
+    regole: ["verbatim", ...levelRules(level), ...rules],
     livelloVerifica: level,
-    notaRevisore: note,
+    notaRevisore: note || (p.costoDichiarato ? COST_NOTE : ""),
   });
 }
+
+const COST_NOTE = "Il costo è quello dichiarato dal proponente, non una stima di Paghi Tu.";
 
 function promiseCases(promises: CampaignPromise[], parties: Party[]): GoldenCase[] {
   const partyById = new Map(parties.map((p) => [p.id, p]));
@@ -655,7 +689,7 @@ function promiseCases(promises: CampaignPromise[], parties: Party[]): GoldenCase
   }
   for (const p of sorted.filter((x) => x.verifica.livello === "V2")) add(p);
   for (const p of sorted.filter((x) => x.costoDichiarato && !chosen.has(x.id) && askable(x)).slice(0, 3)) {
-    add(p, ["costo_dichiarato_dal_proponente"], "Il costo è quello dichiarato dal proponente, non una stima di Paghi Tu.");
+    add(p, ["costo_dichiarato_dal_proponente"], COST_NOTE);
   }
   return [...chosen.values()];
 }
@@ -714,8 +748,10 @@ export function buildGoldenSet(data: SiteData): GoldenCase[] {
   const serie = Object.values(data.serie).map((s) => Series.parse(s));
   const manuali = z.array(ManualCase).parse(data.casiManuali);
   const revisione = z.record(z.string(), ReviewStatus).parse(data.revisione);
+  const forme = AcceptedForms.parse(data.formeAccettate);
+  const esclusi = Exclusions.parse(data.esclusi);
 
-  const cases = [
+  const built = [
     ...governmentCases(governi),
     ...legislatureCases(legislature),
     ...budgetLawCases(leggi),
@@ -724,7 +760,21 @@ export function buildGoldenSet(data: SiteData): GoldenCase[] {
     ...seriesCases(serie),
     ...promiseCases(promesse, partiti),
     ...manuali.map((m) => manualCase(m, { corrections: correzioni, promises: promesse, measures: misure })),
-  ].map((c) => ({ ...c, rivistoDaAntonio: revisione[c.id] ?? null }));
+  ];
+  const allIds = new Set(built.map((c) => c.id));
+  const cases = built
+    .filter((c) => !esclusi[c.id])
+    .map((c) => ({
+      ...c,
+      valoriAttesi: c.valoriAttesi.map((v) => (forme[`${c.id}|${v.campo}`] ? { ...v, forme: forme[`${c.id}|${v.campo}`].gruppi } : v)),
+      rivistoDaAntonio: revisione[c.id] ?? null,
+    }));
+
+  const unused = [
+    ...Object.keys(forme).filter((k) => !cases.some((c) => c.valoriAttesi.some((v) => `${c.id}|${v.campo}` === k))),
+    ...Object.keys(esclusi).filter((id) => !allIds.has(id)),
+  ];
+  if (unused.length) throw new Error(`Forme o esclusioni per casi inesistenti: ${unused.join(", ")}`);
 
   const ids = new Set<string>();
   for (const c of cases) {
