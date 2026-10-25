@@ -113,14 +113,25 @@ type Draft = {
 const needsPermission = (links: SourceLink[]) =>
   links.some((l) => PERMISSION_DOMAINS.some((d) => URL.canParse(l.url) && new URL(l.url).hostname.endsWith(d)));
 
+// Frasi che parlano a un modello invece che a un lettore. Un documento che le contiene (una
+// dichiarazione di terzi, una nota) resta fuori dall'indice finché il titolare non lo rivede: è il
+// vettore dell'injection indiretta (piano di hardening, D-033).
+export const INSTRUCTION_LIKE =
+  /\b(ignora|dimentica) (tutte )?(le )?(istruzioni|regole)\b|\bignore (all |any )?(previous |prior )?instructions\b|\bsystem prompt\b|\b(sei|you are) (ora |now )?(un|an?) (assistente|assistant|ai|ia)\b|\b(rispondi|answer) (solo|only) (con|with)\b|\bmodalit[aà] sviluppatore\b|\bdeveloper mode\b/i;
+
 function toDocument(d: Draft): IndexDocument | Exclusion {
+  if ([d.titolo, ...d.righe, d.letterale ?? ""].some((t) => INSTRUCTION_LIKE.test(t))) {
+    return { dataset: d.dataset, record: d.record, motivo: "frasi da istruzione nel testo: in quarantena finché il titolare non lo rivede (D-033)" };
+  }
   if (needsPermission(d.fonti)) {
     return { dataset: d.dataset, record: d.record, motivo: "fonte con riuso «con_permesso» senza permesso scritto (criterio 1.1)" };
   }
   const fonte_url = [...new Set(urls(d.fonti))];
   if (!fonte_url.length) return { dataset: d.dataset, record: d.record, motivo: "nessuna fonte accettata dopo le esclusioni" };
   const level = d.verifica.livello;
-  const testo = [level === "NV" ? NV_OPENING : null, d.titolo, ...d.righe, level === "NV" ? null : LEVEL_TEXT[level], `Fonti: ${fonte_url.join(" ; ")}`]
+  // Le fonti restano nei metadati (fonte_url) e le mostra il widget: nel testo il modello le copierebbe
+  // nella risposta, e un URL nella risposta è un'astensione (D-033).
+  const testo = [level === "NV" ? NV_OPENING : null, d.titolo, ...d.righe, level === "NV" ? null : LEVEL_TEXT[level]]
     .filter((r): r is string => Boolean(r))
     .join("\n");
   return {
