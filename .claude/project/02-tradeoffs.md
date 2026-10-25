@@ -277,8 +277,8 @@
     sua fonte primaria); aggiorna le schede non ancora pubblicate quando cambiano i dati; un secondo agente
     controlla le cifre;
   - tono: una domanda per video, ogni cifra spiegata, un fatto che sorprende, voce da racconto (README dei Reel);
-  - stesse regole del sito: nessun partito o governo nominato fuori dai video sul metodo, nessun giudizio, niente
-    video su partiti e promesse nei 15 giorni prima di un voto.
+  - stesse regole del sito: nessun giudizio, niente video su partiti e promesse nei 15 giorni prima di un voto
+    (la regola sui nomi dei partiti è cambiata con D-028).
 - **Conseguenze:** il repo è pubblico, quindi anche il piano dei video lo è. Le schede servono da copione, ma il
   giorno del montaggio le cifre vanno ricontrollate sul sito.
 - **Data:** 2026-10-22
@@ -297,7 +297,17 @@
 - **Conseguenze:** le correzioni proposte con una PR arrivano sul sito quando il titolare la unisce, non più con un commit della routine. I commenti sono pubblici e partono dall'account del token.
 - **Data:** 2026-10-23
 
-### D-028 — Verifica deterministica del golden set contro le fonti
+### D-028 — Reel: niente idee ripetitive; i partiti si possono nominare, senza preferenze
+- **Stato:** applicata il 2026-10-24, su richiesta del titolare.
+- **Contesto:** le idee aggiunte dalla routine il 24 ottobre (R13, R14) riprendevano i concetti del primo video e di R01-R02 (disavanzo, interessi, debito, confronto con l'Europa). Il divieto di nominare partiti e politici, in D-024, era più stretto del necessario.
+- **Scelta:**
+  - nel README dei Reel la sezione «Non ripetersi» con la tabella «Già raccontato»: ogni video ha una domanda e una cifra principale nuove, un dato già usato torna solo come paragone, non due video di fila con la stessa scena principale; il secondo agente della routine respinge le idee ripetitive;
+  - R04, R13 e R14 scartate; R15, R09 e R10 in calendario per il 2, 4 e 6 novembre, con il prompt per Animatio;
+  - partiti, governi e politici si possono nominare, ma senza preferenze né a favore né contro, solo con fatti veri e con fonte (niente fatti non verificati, intenzioni o motivi attribuiti: diffamazione); se ne compaiono più d'uno, stesso spazio e ordine alfabetico. Nelle immagini restano esclusi volti, simboli e colori di partito (D-011).
+- **Conseguenze:** binario 4 della routine dei dati e README dei Reel aggiornati. La regola dei 15 giorni (D-025) non cambia.
+- **Data:** 2026-10-24
+
+### D-029 — Verifica deterministica del golden set contro le fonti
 - **Stato:** proposta il 2026-10-23, in revisione.
 - **Contesto:** un controllo a mano sulle fonti del golden set ha trovato errori che i test non vedevano (percentuali arrotondate, record citati a metà, un URL con l'etichetta dentro, una citazione che unisce due frasi). Per un agente su dati politici l'errore non è ammesso: la verifica deve essere ripetibile e decisa dal codice.
 - **Scelta:** due livelli. `npm run evals:verify` (`agent/evals/verifica-fonti.ts`) va in rete con la coda per host di D-004, legge ogni URL atteso (HTML, PDF con `pdftotext`, copia d'archivio del record se la fonte è chiusa) e scrive i fatti in `verifica-fonti.json`, che si committa. I test offline (`verifica.test.ts`, `testo.test.ts`) decidono: ogni fonte letta, ogni citazione trovata parola per parola, ogni valore trovato nella fonte o nelle copie di `data/raw/` cella per cella, oppure con una ragione scritta in `eccezioni-fonti.json`. Le somme calcolate da Paghi Tu si dichiarano con gli addendi, che devono stare nella fonte e tornare al valore. Un'eccezione non più necessaria fa fallire il test.

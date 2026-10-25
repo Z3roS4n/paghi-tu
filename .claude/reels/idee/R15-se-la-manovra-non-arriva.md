@@ -1,7 +1,7 @@
 # R15 — Se la manovra non arriva in tempo
 
-- **Uscita prevista:** lunedì 9 novembre 2026
-- **Stato:** idea
+- **Uscita prevista:** lunedì 2 novembre 2026
+- **Stato:** in lavorazione (prompt in `prompt/`)
 - **Pagine:** https://www.paghitu.it/leggi-di-bilancio (riga «2027», righe «2026» e «2025» della legge di bilancio,
   righe del 1988 nella sezione «Legge finanziaria (1979-2010)», nota sul 1964)
 - **Perché adesso:** il termine del 20 ottobre per presentare alle Camere il disegno di legge di bilancio 2027 è
@@ -59,15 +59,16 @@ riga «esercizio provvisorio». La riga 2027 va riscritta il giorno del montaggi
 Nessun governo nominato: la pagina indica il governo proponente di ogni atto, il video no.
 
 ## Voce (Giulio)
+Come nel prompt (cifre alternate, «…» e MAIUSCOLO per l'intonazione):
 ```
-Cosa succede se la manovra non è approvata entro il trentuno dicembre? [pausa breve]
+Cosa succede se la manovra non è approvata entro il trentuno dicembre?
 La manovra è la legge di bilancio: dice quanto il settore pubblico incassa e spende l'anno dopo.
-La legge fissa un calendario. Il disegno di legge va presentato alle Camere entro il venti ottobre. [pausa breve] Quest'anno, al venti ottobre, non era ancora stato presentato.
+La legge fissa un calendario. Il disegno di legge va presentato alle Camere entro il venti ottobre. Quest'anno, al venti ottobre, NON era ancora stato presentato.
 L'anno dei conti comincia il primo gennaio.
-[pausa] Se per allora il bilancio non è approvato, la Costituzione prevede l'esercizio provvisorio: una legge permette di andare avanti per un periodo limitato. Al massimo quattro mesi in tutto.
-[pausa] È già successo. [pausa breve] Nel millenovecentottantotto l'esercizio provvisorio fu prorogato fino al trentuno marzo, e la legge finanziaria porta la data dell'undici marzo.
+Se per allora il bilancio non è approvato, la Costituzione prevede l'esercizio provvisorio: una legge permette di andare avanti per un periodo limitato. Al massimo… QUATTRO mesi in tutto.
+È già successo. Nel millenovecentottantotto… l'esercizio provvisorio fu prorogato fino al trentuno marzo, e la legge finanziaria porta la data dell'undici marzo.
 Quella per il duemilaventisei, invece, è del trenta dicembre duemilaventicinque.
-[pausa] Riassumendo: c'è un calendario, e se salta c'è un paracadute di quattro mesi al massimo. [pausa breve] Tutte le leggi di bilancio dal millenovecentoquarantasei sono su paghitu punto it.
+Riassumendo: c'è un calendario, e se salta c'è un paracadute di quattro mesi al massimo. Tutte le leggi di bilancio dal millenovecentoquarantasei sono su paghitu punto it.
 ```
 Circa 130 parole. «Quest'anno, al venti ottobre, non era ancora stato presentato» va riscritta sullo stato del
 giorno, come lo riporta il sito («è stato presentato il…», «è all'esame della Camera»).

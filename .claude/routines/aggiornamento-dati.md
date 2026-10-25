@@ -107,8 +107,12 @@ Le issue con etichetta `correzione` o `dato-mancante`. Le pull request le verifi
 Formato, tono, voce e regole sono in `.claude/reels/README.md`; il piano in `.claude/reels/calendario.md`.
 1. Ogni esecuzione: se nel calendario ci sono meno di 6 uscite con data futura, aggiungi le 3 uscite (lunedì,
    mercoledì, venerdì) della prima settimana ancora vuota.
-2. Prima di scrivere leggi il README (soprattutto «Tono» e «Video dalle notizie») e due schede in
-   `.claude/reels/idee/` come modello.
+2. Prima di scrivere leggi il README (soprattutto «Tono», «Video dalle notizie» e «Non ripetersi» con la tabella
+   «Già raccontato») e due schede in `.claude/reels/idee/` come modello. **Niente idee ripetitive:** ogni video ha
+   una domanda e una cifra principale che nessun video uscito o in lavorazione ha già avuto al centro; un dato già
+   usato torna solo come paragone; se la notizia della settimana porterebbe a ripetere un concetto, cerca un angolo
+   nuovo o un'altra notizia. Nella segnalazione, per ogni idea, una riga «Cosa c'è di nuovo rispetto ai video già
+   fatti».
 3. **Notizie.** Cerca cosa è successo negli ultimi 7 giorni sui conti pubblici: manovra e decreti in Parlamento, dati
    nuovi di ISTAT, Banca d'Italia, Eurostat, MEF, Ufficio parlamentare di bilancio, temi economici di cui parlano
    tutti (prezzi, pensioni, tasse, debito). Scegli le notizie che il sito può spiegare con i suoi numeri.
@@ -116,21 +120,24 @@ Formato, tono, voce e regole sono in `.claude/reels/README.md`; il piano in `.cl
      (dopo l'eventuale deploy di oggi), non dai JSON.
    - Una cifra della notizia che il sito non ha si può usare solo dalla sua fonte primaria (gli enti sopra, la
      Gazzetta Ufficiale, gli atti di Camera e Senato), con il link; mai una cifra presa solo da un giornale.
-   - Notizie su un partito o un politico: solo se il video spiega un fatto (una misura, un costo, una regola), senza
-     nominare chi l'ha proposta.
+   - Notizie su un partito o un politico: si possono nominare, se il video spiega un fatto vero con la fonte (una
+     misura, un costo, un atto, una frase citata com'è), senza preferenze né a favore né contro.
    - Se una settimana non offre notizie adatte, prendi una scheda in riserva, riallinea i numeri e dalle una data.
 4. Una scheda per video, `RNN-titolo.md` con la numerazione dopo l'ultima, con lo schema delle altre più la sezione
    «La notizia» (fatto, fonte, data, link). Riga nel calendario con stato `idea`.
 5. Una scheda `idea` con data futura si può sostituire con una notizia più fresca e più adatta: la vecchia torna in
    riserva, e la segnalazione lo dice. Le schede `in lavorazione` e `pubblicato` non si toccano.
-6. Regole: cifre copiate come sono sulla fonte, nessuna cifra calcolata per il video; nessun partito, governo o
-   politico nominato o mostrato, tranne nei video sul metodo dove compaiono tutti alla pari; nessun giudizio e
-   nessuna causa che il sito o la fonte non danno. Nei 15 giorni prima di un voto niente idee su partiti e promesse
+6. Regole: cifre copiate come sono sulla fonte, nessuna cifra calcolata per il video. Partiti, governi e politici
+   si possono nominare, ma nessuna preferenza espressa per un partito, una coalizione o una persona, e su di loro
+   solo fatti veri con fonte primaria: niente fatti non verificati, intenzioni o motivi attribuiti (diffamazione).
+   Se ne compare più d'uno, stesso spazio e ordine alfabetico. Nessun volto di politico, simbolo o colore di
+   partito nelle immagini; nessun giudizio e nessuna causa che il sito o la fonte non danno. Nei 15 giorni prima di un voto niente idee su partiti e promesse
    (regola 4).
 7. Ogni giorno: se il binario 1 ha cambiato un numero usato da una scheda con stato `idea` o `in lavorazione`,
    aggiorna tabella e voce di quella scheda e scrivilo nella segnalazione.
 8. Un secondo agente controlla che ogni cifra delle schede nuove o modificate compaia sulla pagina del sito o sulla
-   fonte primaria indicata, e la neutralità. Con `CONFERMATO`: commit «Add reel ideas for the week of <data>»
+   fonte primaria indicata, la neutralità (nessuna preferenza, ogni fatto su partiti e persone con la sua fonte) e
+   la ripetizione rispetto alla tabella «Già raccontato»: un'idea ripetitiva è `RESPINTO`. Con `CONFERMATO`: commit «Add reel ideas for the week of <data>»
    (oppure «Update reel ideas to new data»).
 9. Nella segnalazione del giorno: per ogni idea nuova titolo, data di uscita, notizia di partenza e gancio, con il
    link alla scheda su GitHub.

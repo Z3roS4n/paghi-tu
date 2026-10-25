@@ -1,7 +1,7 @@
 # R04 — Il debito in ottant'anni
 
 - **Uscita prevista:** lunedì 2 novembre 2026
-- **Stato:** idea
+- **Stato:** scartato il 24/10/2026: ripete concetti già al centro di video usciti o in lavorazione (vedi `calendario.md`)
 - **Pagine:** https://www.paghitu.it/spesa («Il debito dal 1946», tabella) · https://www.paghitu.it/ (debito di agosto)
 - **Perché adesso:** è il grafico più forte del sito e funziona da solo, senza bisogno di contesto.
 
