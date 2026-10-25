@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { findNumber, findValue, htmlToText, isWellFormedUrl, missingFragments, normalizeText } from "./testo.ts";
+import { findForms, findNumber, findPhrase, findValue, htmlToText, isWellFormedUrl, missingFragments, normalizeText } from "./testo.ts";
 
 describe("normalizzazione del testo delle fonti", () => {
   it("toglie lo spazio prima della virgola e unifica apostrofi e virgolette", () => {
@@ -76,5 +76,25 @@ describe("forme scritte degli importi e dei campi composti", () => {
     expect(findNumber("spesa di 13,2 per cento", 13_200_000_000, "euro")).toBeNull();
     expect(findDeclaredCost(normalizeText("una misura a costo zero"), "nessun costo ('una misura a costo zero', dichiarato)")).not.toBeNull();
     expect(findDeclaredCost("mettere 8 mld sulla difesa", "8 mld (in scostamento di bilancio)")).toBe("8 mld");
+  });
+});
+
+describe("testi attesi come parole intere (D-032)", () => {
+  it("non trova un nome dentro un nome più lungo", () => {
+    const text = normalizeText("Era in carica il Governo De Gasperi II.");
+    expect(findPhrase(text, "Governo De Gasperi I")).toBeNull();
+    expect(findPhrase(text, "Governo De Gasperi II")).toBe("governo de gasperi ii");
+    expect(findPhrase(normalizeText("confidenza alta"), "A")).toBeNull();
+  });
+
+  it("vuole ogni gruppo di forme, con una forma qualsiasi del gruppo", () => {
+    const groups = [["FdI", "Fratelli d'Italia"], ["Lega"], ["FI", "Forza Italia"], ["NM", "Noi Moderati"]];
+    expect(findForms(normalizeText("Fratelli d'Italia, Lega, Forza Italia e Noi Moderati"), groups)).not.toBeNull();
+    expect(findForms(normalizeText("Fratelli d'Italia, Lega e Forza Italia"), groups)).toBeNull();
+  });
+
+  it("trova una percentuale arrotondata solo con il segno accanto", () => {
+    expect(findNumber(normalizeText("uno scostamento del -34,0 %"), -34.04123456789012, "%")).not.toBeNull();
+    expect(findNumber(normalizeText("uno scostamento di 34,0 milioni"), -34.04123456789012, "%")).toBeNull();
   });
 });

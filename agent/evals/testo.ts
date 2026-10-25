@@ -78,6 +78,20 @@ export function numberForms(value: number, unit?: string): string[] {
   const plain = [...new Set(forms)].filter((f) => f.replace(/\D/g, "").length >= minDigits);
   // Con l'unità scritta accanto («35 miliardi», «6,1 mld») anche una forma corta è un riscontro.
   const worded: string[] = [];
+  // Una percentuale salvata con tutte le cifre del calcolo («-34,0412…») si scrive arrotondata a uno
+  // o due decimali: vale solo con il segno o le parole accanto, perché «34,0» da solo è troppo corto.
+  if (unit?.startsWith("%")) {
+    for (const digits of [1, 2]) {
+      const scaled = Number(abs.toFixed(digits));
+      if (scaled === abs || scaled === 0) continue;
+      const fixed = abs.toFixed(digits).replace(".", ",");
+      for (const sign of value < 0 ? ["", "-"] : [""]) {
+        for (const num of new Set([fixed, it(scaled, digits)])) {
+          for (const w of ["%", " %", " per cento"]) worded.push(`${sign}${num}${w}`);
+        }
+      }
+    }
+  }
   if (unit === "euro") {
     for (const [scale, words] of [[1e9, ["miliardi", "mld"]], [1e6, ["milioni", "mln"]]] as const) {
       for (const digits of [0, 1, 2, 3]) {
@@ -149,6 +163,21 @@ export function findDeclaredCost(normalizedSource: string, value: string): strin
   if (!m) return null;
   const amount = Number(m[1].replace(",", ".")) * (/^m(ld|iliardi)/i.test(m[2]) ? 1e9 : 1e6);
   return findNumber(normalizedSource, amount, "euro");
+}
+
+// Un testo atteso vale solo come parole intere: «governo de gasperi i» non si trova dentro
+// «governo de gasperi ii», «a» non si trova dentro una parola qualsiasi.
+export function findPhrase(normalizedSource: string, phrase: string): string | null {
+  const p = normalizeText(phrase);
+  if (!p) return null;
+  return new RegExp(`(?<![\\p{L}\\p{N}])${escape(p)}(?![\\p{L}\\p{N}])`, "u").test(normalizedSource) ? p : null;
+}
+
+// Forme accettate di un valore (forme-accettate.json o derivate dal record): ogni gruppo deve
+// comparire con almeno una delle sue forme, per esempio un gruppo per ogni partito di una maggioranza.
+export function findForms(normalizedSource: string, groups: string[][]): string | null {
+  const hits = groups.map((g) => g.map((f) => findPhrase(normalizedSource, f)).find(Boolean) ?? null);
+  return groups.length && hits.every(Boolean) ? hits.join("; ") : null;
 }
 
 export function findValue(normalizedSource: string, value: string | number, unit?: string): string | null {

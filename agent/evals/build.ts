@@ -22,6 +22,8 @@ const cases = buildGoldenSet({
   serie,
   casiManuali: await json(join(DIR, "casi-manuali.json")),
   revisione: await json(join(DIR, "revisione.json")),
+  formeAccettate: await json(join(DIR, "forme-accettate.json")),
+  esclusi: await json(join(DIR, "esclusi.json")),
 });
 
 await writeFile(join(DIR, "domande.jsonl"), cases.map((c) => JSON.stringify(c)).join("\n") + "\n");

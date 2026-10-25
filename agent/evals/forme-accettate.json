@@ -1,0 +1,94 @@
+{
+  "GOV-g11-maggioranza|maggioranza": {
+    "gruppi": [
+      [
+        "DC",
+        "Democrazia Cristiana"
+      ],
+      [
+        "PLI",
+        "Partito Liberale"
+      ],
+      [
+        "PNM",
+        "Partito Nazionale Monarchico"
+      ],
+      [
+        "PMP",
+        "Partito Monarchico Popolare"
+      ],
+      [
+        "MSI",
+        "Movimento Sociale Italiano"
+      ],
+      [
+        "appoggio esterno"
+      ]
+    ],
+    "nota": "Governo monocolore DC con appoggio esterno: la risposta nomina i cinque partiti e dice che l'appoggio era esterno."
+  },
+  "GOV-g82-maggioranza|maggioranza": {
+    "gruppi": [
+      [
+        "PD",
+        "Partito Democratico"
+      ],
+      [
+        "PdL",
+        "Popolo della Libertà",
+        "NCD",
+        "Nuovo Centrodestra"
+      ],
+      [
+        "SC",
+        "Scelta Civica"
+      ],
+      [
+        "UdC",
+        "Unione di Centro"
+      ]
+    ],
+    "nota": "«e altri» non si cerca: bastano i partiti nominati nel record."
+  },
+  "GOV-g202-maggioranza|maggioranza": {
+    "gruppi": [
+      [
+        "FdI",
+        "Fratelli d'Italia"
+      ],
+      [
+        "Lega"
+      ],
+      [
+        "FI",
+        "Forza Italia"
+      ],
+      [
+        "NM",
+        "Noi Moderati"
+      ]
+    ],
+    "nota": ""
+  },
+  "GOV-g23-maggioranza|maggioranza": {
+    "gruppi": [
+      [
+        "DC",
+        "Democrazia Cristiana"
+      ],
+      [
+        "PSI",
+        "Partito Socialista Italiano"
+      ],
+      [
+        "PSDI",
+        "Partito Socialista Democratico Italiano"
+      ],
+      [
+        "PRI",
+        "Partito Repubblicano Italiano"
+      ]
+    ],
+    "nota": "Dubbio della revisione del 25 ottobre: il dato potrebbe essere PSU invece di PSI e PSDI; decide Antonio."
+  }
+}

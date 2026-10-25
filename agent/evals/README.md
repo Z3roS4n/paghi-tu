@@ -9,6 +9,8 @@ Domande con la risposta e la citazione che l'agente conversazionale di Paghi Tu 
 | `golden-set.ts` | regole di costruzione: quali record si scelgono, come si formula la domanda, quali regole valgono | sì |
 | `casi-manuali.json` | casi che i dati non generano da soli: par condicio, fuori scope, trappole, correzioni, trasparenza | sì |
 | `revisione.json` | esito della revisione di Antonio per id: `ok`, `da_correggere`, `da_togliere` | sì |
+| `forme-accettate.json` | forme scritte a mano per i valori che sono codifiche di Paghi Tu (maggioranze come sigle), chiave `<id>|<campo>` (D-032) | sì, con una nota |
+| `esclusi.json` | casi tolti dal golden set, con motivo e chi l'ha deciso (D-032) | sì |
 | `domande.jsonl` | il golden set, un caso per riga | no, si rigenera |
 | `revisione.md` | lo stesso set in forma leggibile, per la revisione | no, si rigenera |
 | `testo.ts` | normalizzazione del testo e forme accettate per numeri, date, nomi e costi | sì, con un test in `testo.test.ts` |

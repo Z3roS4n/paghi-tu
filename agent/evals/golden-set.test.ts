@@ -21,6 +21,8 @@ function loadData(): SiteData {
     serie,
     casiManuali: read("agent/evals/casi-manuali.json"),
     revisione: read("agent/evals/revisione.json"),
+    formeAccettate: read("agent/evals/forme-accettate.json"),
+    esclusi: read("agent/evals/esclusi.json"),
   };
 }
 
@@ -104,5 +106,22 @@ describe("golden set dell'agente", () => {
     const withPromises = new Set((data.promesse as { partitoId: string }[]).map((p) => p.partitoId));
     const covered = new Set(cases.filter((c) => c.categoria === "promesse").map((c) => c.id.split("-")[2]));
     expect([...withPromises].filter((p) => !covered.has(p))).toEqual([]);
+  });
+});
+
+describe("forme accettate ed esclusioni (D-032)", () => {
+  it("i casi esclusi non sono nel set e nessun valore atteso è una codifica di Paghi Tu", () => {
+    const excluded = Object.keys(read("agent/evals/esclusi.json") as Record<string, unknown>);
+    expect(cases.filter((c) => excluded.includes(c.id))).toEqual([]);
+    const coded = cases.flatMap((c) =>
+      c.valoriAttesi.filter((v) => ["confidenza", "governoProponenteAttribuzione"].includes(v.campo) || (v.valore === "NV" && !v.forme)).map((v) => `${c.id}|${v.campo}`),
+    );
+    expect(coded).toEqual([]);
+  });
+
+  it("ogni promessa con un costo dichiarato chiede di attribuirlo al proponente", () => {
+    const withCost = new Set((data.promesse as { id: string; costoDichiarato: string | null }[]).filter((p) => p.costoDichiarato).map((p) => p.id));
+    const missing = cases.filter((c) => c.categoria === "promesse" && withCost.has(c.citazioniAttese[0]?.record ?? "") && !c.regole.includes("costo_dichiarato_dal_proponente"));
+    expect(missing.map((c) => c.id)).toEqual([]);
   });
 });
