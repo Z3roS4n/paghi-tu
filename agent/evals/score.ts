@@ -2,6 +2,7 @@
 // 3 i run. Usa lo stesso validatore della route (agent/answer/answer.ts), così le eval misurano
 // quello che l'utente vedrebbe. Nessun giudizio di un modello: solo confronti sul testo.
 import {
+  NAMED_FIGURES,
   declaresNotVerified,
   extractFigures,
   extractQuotes,
@@ -11,8 +12,8 @@ import {
   type Index,
 } from "../answer/answer.ts";
 import { documentId, type IndexDocument } from "../ingest/export.ts";
-import type { GoldenCase, Rule } from "./golden-set.ts";
-import { findDeclarant, findValue, normalizeText } from "./testo.ts";
+import type { ExpectedValue, GoldenCase, Rule } from "./golden-set.ts";
+import { findDeclarant, findDeclaredCost, findForms, findPhrase, findValue, normalizeText } from "./testo.ts";
 
 export const RUNS = 3;
 
@@ -69,7 +70,9 @@ const RULES: Record<Rule, (a: AgentAnswer, c: GoldenCase) => Check | null> = {
     has(a.testo, /attribuzione (inferita|non documentata|incerta)|non (è )?documentat|inferit/) ? pass : fail("attribuzione data come certa"),
   tetto_non_e_risparmio: (a) =>
     !has(a.testo, /tetto/) ? fail("tetto non nominato") : affirms(a.testo, /risparmi/) ? fail("tetto presentato come risparmio") : pass,
-  niente_percentuale: (a) => (has(a.testo, /\d\s*(%|per cento)/) ? fail("percentuale su basi non omogenee") : pass),
+  // «Superbonus 110%» è il nome della misura, non una percentuale (nomiConCifre del manifest).
+  niente_percentuale: (a) =>
+    /\d\s*(%|per cento)/.test(normalizeText(NAMED_FIGURES ? a.testo.replace(NAMED_FIGURES, " ") : a.testo)) ? fail("percentuale su basi non omogenee") : pass,
   dichiara_proiezione: (a) => (has(a.testo, /proiezion/) ? pass : fail("proiezione non dichiarata")),
   scostamento_calcolato_da_paghi_tu: (a) => (has(a.testo, /calcolat\w* da paghi tu|paghi tu (lo )?(ha )?calcolat/) ? pass : fail("chi ha calcolato lo scostamento non è detto")),
   dichiara_confidenza_bassa: (a) => (has(a.testo, /confidenza (è )?(bassa|[cd]\b)|confidenza: [cd]\b|bassa confidenza/) ? pass : fail("confidenza bassa non dichiarata")),
@@ -94,6 +97,16 @@ const RULES: Record<Rule, (a: AgentAnswer, c: GoldenCase) => Check | null> = {
     affirms(a.testo, /\b(meglio|peggio|migliore|peggiore|fallimentar\w*|disastros\w*|ottim[oa]|pessim[oa]|bravo|brava|giust[oa]|sbagliat\w*)\b/) ? fail("giudizio") : pass,
   dichiara_ia: (a) => (has(a.testo, /intelligenza artificiale|\b(ia|ai)\b|sistema automatico|assistente automatico/) ? pass : fail("non dice di essere un sistema di IA")),
 };
+
+// Un valore atteso nella risposta (D-032): i numeri e le date nelle loro forme scritte, il costo
+// dichiarato come lo cerca la verifica delle fonti, i testi come parole intere o con le forme accettate.
+function findExpected(text: string, v: ExpectedValue): string | null {
+  if (v.valore === null) return null;
+  if (typeof v.valore === "number" || /^\d{4}-\d{2}-\d{2}$/.test(v.valore)) return findValue(text, v.valore, v.unita);
+  if (v.campo === "dichiarante") return findDeclarant(text, v.valore);
+  if (v.campo === "costoDichiarato") return findDeclaredCost(text, v.valore);
+  return (v.forme && findForms(text, v.forme)) ?? findPhrase(text, v.valore);
+}
 
 const expectedIds = (c: GoldenCase) => c.citazioniAttese.map((x) => documentId(x.dataset, x.record));
 
@@ -148,11 +161,7 @@ export function checkAnswer(c: GoldenCase, a: AgentAnswer, index: Index): Record
     const vals = c.valoriAttesi.filter((v) => v.valore !== null);
     if (!vals.length) return null;
     const text = normalizeText(a.testo);
-    const missing = vals.filter((v) =>
-      v.campo === "dichiarante" && typeof v.valore === "string"
-        ? !findDeclarant(text, v.valore)
-        : !(findValue(text, v.valore as string | number, v.unita) ?? (typeof v.valore === "string" && text.includes(normalizeText(v.valore)) ? v.valore : null)),
-    );
+    const missing = vals.filter((v) => !findExpected(text, v));
     return missing.length ? fail(`valori mancanti: ${missing.map((v) => v.campo).join(", ")}`) : pass;
   };
 

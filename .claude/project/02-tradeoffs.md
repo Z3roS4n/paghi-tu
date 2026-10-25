@@ -322,19 +322,6 @@
 - **Scelta:** `npm run ingest:build` (`agent/ingest/`) legge solo `data/` e scrive un documento per ogni chiave (dataset, record) che il golden set usa nelle citazioni: governi, legislature, leggi di bilancio, confronti delle misure, record di finanza pubblica (`conti/<anno>`, `trimestri/<periodo>`, `funzioni/<anno>`, `debitoMensile/<mese>`, `debitoPil/<anno>`, `confrontoUe/...`), punti delle serie, promesse e correzioni. Ogni documento ha `id` stabile, testo in italiano con le cifre nelle forme di `testo.ts`, livello di verifica, fonti, periodo, governi collegati e pagina del sito. Fuori: i record con una fonte «con_permesso» finché il permesso non è scritto, gli URL di Wikipedia (D-026), le note di ricerca delle promesse, che il sito non mostra. Il JSONL non si committa (`agent/ingest/out/`, circa 2,8 MB, cambia a ogni aggiornamento dei dati): si committa `manifest.json` con conteggi, sha256 ed esclusi, e il test fallisce se non è allineato.
 - **Motivo:** stessa chiave del golden set, quindi «ogni id citato esiste nell'indice» (4.4) si controlla già adesso; i test verificano che ogni valore atteso del golden set stia nel testo del documento citato.
 - **Conseguenze:** dopo un aggiornamento dei dati si rilancia `npm run ingest:build` e si committa il manifest. `da verificare:` in fase 3, se Vertex AI Search usa i documenti come dati strutturati (`structData`, come ora) o come contenuto con metadati: cambia solo il writer. I governi collegati sono quelli in carica in almeno un giorno del periodo (per un anno è la regola delle pagine dei governi); per misure e leggi di bilancio quelli che il dato attribuisce. Partiti e fonti non sono documenti in questa versione. Il titolare può decidere di committare anche il JSONL.
-### D-032 — Valori attesi leggibili, parole intere e casi tolti dal golden set
-- **Stato:** decisa da Giovanni il 2026-10-25, da confermare dal titolare sulla PR #1.
-- **Contesto:** la revisione dei 132 casi del 2026-10-25 (report `2026-10-25-10-51`, PR #4) ha trovato valori attesi che sono codifiche di Paghi Tu (maggioranze come sigle, «documentata», «(INF)», «NV», confidenza «A»-«D») confrontati alla lettera e senza confine di parola: una risposta giusta falliva, una sbagliata poteva passare («governo de gasperi i» dentro «… ii», «a» dentro qualsiasi parola). I test non lo vedevano perché le risposte perfette erano costruite dagli stessi valori.
-- **Scelta:**
-  - il valore atteso resta quello del record (il test «ogni valore sta nel record» non cambia); in più può avere `forme`, gruppi di modi in cui una risposta lo scrive: ogni gruppo deve comparire con almeno una forma, come parole intere (`findPhrase`, `findForms` in `agent/evals/testo.ts`);
-  - le forme derivabili dal record si generano nel codice (nome del governo con e senza «Governo», governo senza «(INF)», numero e anno della legge dagli estremi); quelle che servono a mano stanno in `agent/evals/forme-accettate.json` (le quattro maggioranze), con una nota;
-  - confidenza e tipo di attribuzione escono dai valori attesi: le controllano le regole `dichiara_confidenza_bassa` e `dichiara_attribuzione_non_documentata`; «NV» non si cerca come governo; estremi senza un numero di legge leggibile non si cercano;
-  - una promessa con un costo dichiarato porta sempre la regola `costo_dichiarato_dal_proponente`;
-  - le percentuali si trovano anche arrotondate a uno o due decimali, solo con «%» o «per cento» accanto;
-  - `agent/evals/esclusi.json` toglie dal set LB-2027 (atto non ancora presentato, record fuori dall'indice) e PRO-C27-FDI-002 (discorso indiretto di un giornalista attribuito al partito), con motivo e chi l'ha deciso. Il golden set passa da 132 a 130 casi.
-- **Conseguenze:** nessuna metrica controlla più che la risposta dica la confidenza A o B, o che l'attribuzione è documentata: lo dice la regola solo quando la confidenza è bassa o l'attribuzione non è documentata. `score.ts` (PR #4) usa le forme e il confine di parola. Nessuna soglia cambia. Le correzioni ai dati segnalate dalla revisione restano ad Antonio.
-- **Data:** 2026-10-25
-
 ### D-031 — Validatore delle risposte e metriche delle eval (fasi 4 e 5)
 - **Stato:** proposta il 2026-10-25, in revisione.
 - **Contesto:** fasi 4 e 5 della roadmap dell'agente: prima di mostrare una risposta, la route la controlla con lo stesso codice con cui le eval la misurano. Nessun giudizio di un modello, solo confronti sul testo.
@@ -367,3 +354,16 @@
 - **OA-8** — Runner per l'ingestione: self-hosted con IP fisso o CI condiviso, visto il limite per IP di ISTAT.
 - **OA-9** — Quale relazione legge–governo mostrare di default nelle pagine (proponente, approvazione o gestione).
 - **OA-10** — Se chiedere il permesso al Manifesto Project, all'FMI e all'OCPI, o limitarsi ai link; se usare un browser headless (Playwright) per Elezioni trasparenti e senato.it.
+
+### D-032 — Valori attesi leggibili, parole intere e casi tolti dal golden set
+- **Stato:** decisa da Giovanni il 2026-10-25, da confermare dal titolare sulla PR #1.
+- **Contesto:** la revisione dei 132 casi del 2026-10-25 (report `2026-10-25-10-51`, PR #4) ha trovato valori attesi che sono codifiche di Paghi Tu (maggioranze come sigle, «documentata», «(INF)», «NV», confidenza «A»-«D») confrontati alla lettera e senza confine di parola: una risposta giusta falliva, una sbagliata poteva passare («governo de gasperi i» dentro «… ii», «a» dentro qualsiasi parola). I test non lo vedevano perché le risposte perfette erano costruite dagli stessi valori.
+- **Scelta:**
+  - il valore atteso resta quello del record (il test «ogni valore sta nel record» non cambia); in più può avere `forme`, gruppi di modi in cui una risposta lo scrive: ogni gruppo deve comparire con almeno una forma, come parole intere (`findPhrase`, `findForms` in `agent/evals/testo.ts`);
+  - le forme derivabili dal record si generano nel codice (nome del governo con e senza «Governo», governo senza «(INF)», numero e anno della legge dagli estremi); quelle che servono a mano stanno in `agent/evals/forme-accettate.json` (le quattro maggioranze), con una nota;
+  - confidenza e tipo di attribuzione escono dai valori attesi: le controllano le regole `dichiara_confidenza_bassa` e `dichiara_attribuzione_non_documentata`; «NV» non si cerca come governo; estremi senza un numero di legge leggibile non si cercano;
+  - una promessa con un costo dichiarato porta sempre la regola `costo_dichiarato_dal_proponente`;
+  - le percentuali si trovano anche arrotondate a uno o due decimali, solo con «%» o «per cento» accanto;
+  - `agent/evals/esclusi.json` toglie dal set LB-2027 (atto non ancora presentato, record fuori dall'indice) e PRO-C27-FDI-002 (discorso indiretto di un giornalista attribuito al partito), con motivo e chi l'ha deciso. Il golden set passa da 132 a 130 casi.
+- **Conseguenze:** nessuna metrica controlla più che la risposta dica la confidenza A o B, o che l'attribuzione è documentata: lo dice la regola solo quando la confidenza è bassa o l'attribuzione non è documentata. `score.ts` (PR #4) usa le forme e il confine di parola. Nessuna soglia cambia. Le correzioni ai dati segnalate dalla revisione restano ad Antonio.
+- **Data:** 2026-10-25
