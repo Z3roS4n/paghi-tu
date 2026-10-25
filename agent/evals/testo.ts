@@ -93,7 +93,7 @@ export function numberForms(value: number, unit?: string): string[] {
     }
   }
   if (unit === "euro") {
-    for (const [scale, words] of [[1e9, ["miliardi", "mld"]], [1e6, ["milioni", "mln"]]] as const) {
+    for (const [scale, words] of [[1e9, ["miliardi", "miliardo", "mld"]], [1e6, ["milioni", "milione", "mln"]]] as const) {
       for (const digits of [0, 1, 2, 3]) {
         const scaled = Number((abs / scale).toFixed(digits));
         if (!exactAt(abs, scaled, scale)) continue;
@@ -159,9 +159,13 @@ export function findDeclarant(normalizedSource: string, value: string): string |
 export function findDeclaredCost(normalizedSource: string, value: string): string | null {
   const quoted = [...value.matchAll(/'([^']{6,})'/g)].map((m) => m[1]);
   if (quoted.length) return quoted.every((q) => normalizedSource.includes(normalizeText(q))) ? quoted.join("; ") : null;
-  const m = value.match(/(\d+(?:[.,]\d+)?)\s*(mld|miliardi|milioni|mln)/i);
+  const m = value.match(/(\d+(?:[.,]\d+)?)\s*(mld|miliard[io]|milion[ei]|mln)/i);
   if (!m) return null;
-  const amount = Number(m[1].replace(",", ".")) * (/^m(ld|iliardi)/i.test(m[2]) ? 1e9 : 1e6);
+  // Prima la cifra con la sua parola, come la scrive il proponente («1 miliardo»): una forma nuda
+  // («1000» milioni) può stare nel testo per tutt'altro.
+  const literal = findPhrase(normalizedSource, m[0]);
+  if (literal) return literal;
+  const amount = Number(m[1].replace(",", ".")) * (/^m(ld|iliard)/i.test(m[2]) ? 1e9 : 1e6);
   return findNumber(normalizedSource, amount, "euro");
 }
 
