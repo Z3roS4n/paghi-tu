@@ -2,7 +2,7 @@
 
 File generato da `npm run evals:build`: non si modifica a mano. Per segnare un caso si scrive in `agent/evals/revisione.json` (`"<id>": "ok" | "da_correggere" | "da_togliere"`) e si rigenera.
 
-Casi: 132. Con fonte «con_permesso»: 18. Rivisti: 0.
+Casi: 132. Con fonte «con_permesso»: 8. Rivisti: 0.
 
 | Categoria | Casi |
 | --- | --- |
@@ -53,9 +53,7 @@ Casi: 132. Con fonte «con_permesso»: 18. Rivisti: 0.
 | nome | Governo Pella |  |
 | inizio | 1953-08-17 |  |
 
-**Citazione:** `governi` / `g5` — http://dati.camera.it/ocd/governo.rdf/g5 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ii-legislatura-25-giugno-1953-14-marzo-1958/governo-pella/3223 · https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana
-
-**⚠ Fonte con riuso «con_permesso»** in `data/fonti.json`: decidere se il record entra nell'indice.
+**Citazione:** `governi` / `g5` — http://dati.camera.it/ocd/governo.rdf/g5 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ii-legislatura-25-giugno-1953-14-marzo-1958/governo-pella/3223
 
 **Nota:** Data a metà del mandato (1953-08-17 → 1954-01-19).
 
@@ -74,9 +72,7 @@ Casi: 132. Con fonte «con_permesso»: 18. Rivisti: 0.
 | nome | Governo Fanfani III |  |
 | inizio | 1960-07-27 |  |
 
-**Citazione:** `governi` / `g13` — http://dati.camera.it/ocd/governo.rdf/g13 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-fanfani-iii/3214 · https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana
-
-**⚠ Fonte con riuso «con_permesso»** in `data/fonti.json`: decidere se il record entra nell'indice.
+**Citazione:** `governi` / `g13` — http://dati.camera.it/ocd/governo.rdf/g13 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-fanfani-iii/3214
 
 **Nota:** Data a metà del mandato (1960-07-27 → 1962-02-22).
 
@@ -95,9 +91,7 @@ Casi: 132. Con fonte «con_permesso»: 18. Rivisti: 0.
 | nome | Governo Rumor II |  |
 | inizio | 1969-08-06 |  |
 
-**Citazione:** `governi` / `g21` — http://dati.camera.it/ocd/governo.rdf/g21 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/v-legislatura-5-giugno-1968-28-febbraio-1972/governo-rumor-ii/3204 · https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana
-
-**⚠ Fonte con riuso «con_permesso»** in `data/fonti.json`: decidere se il record entra nell'indice.
+**Citazione:** `governi` / `g21` — http://dati.camera.it/ocd/governo.rdf/g21 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/v-legislatura-5-giugno-1968-28-febbraio-1972/governo-rumor-ii/3204
 
 **Nota:** Data a metà del mandato (1969-08-06 → 1970-03-28).
 
@@ -116,9 +110,7 @@ Casi: 132. Con fonte «con_permesso»: 18. Rivisti: 0.
 | nome | Governo Andreotti III |  |
 | inizio | 1976-07-30 |  |
 
-**Citazione:** `governi` / `g30` — http://dati.camera.it/ocd/governo.rdf/g30 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/vii-legislatura-5-luglio-1976-2-aprile-1979/governo-andreotti-iii/3191 · https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana
-
-**⚠ Fonte con riuso «con_permesso»** in `data/fonti.json`: decidere se il record entra nell'indice.
+**Citazione:** `governi` / `g30` — http://dati.camera.it/ocd/governo.rdf/g30 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/vii-legislatura-5-luglio-1976-2-aprile-1979/governo-andreotti-iii/3191
 
 **Nota:** Data a metà del mandato (1976-07-30 → 1978-03-13).
 
@@ -137,9 +129,7 @@ Casi: 132. Con fonte «con_permesso»: 18. Rivisti: 0.
 | nome | Governo Fanfani V |  |
 | inizio | 1982-12-01 |  |
 
-**Citazione:** `governi` / `g38` — http://dati.camera.it/ocd/governo.rdf/g38 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/viii-legislatura-20-giugno-1979-4-maggio-1983/governo-fanfani-v/3181 · https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana
-
-**⚠ Fonte con riuso «con_permesso»** in `data/fonti.json`: decidere se il record entra nell'indice.
+**Citazione:** `governi` / `g38` — http://dati.camera.it/ocd/governo.rdf/g38 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/viii-legislatura-20-giugno-1979-4-maggio-1983/governo-fanfani-v/3181
 
 **Nota:** Data a metà del mandato (1982-12-01 → 1983-08-04).
 
@@ -158,9 +148,7 @@ Casi: 132. Con fonte «con_permesso»: 18. Rivisti: 0.
 | nome | Governo Amato I |  |
 | inizio | 1992-06-28 |  |
 
-**Citazione:** `governi` / `g46` — http://dati.camera.it/ocd/governo.rdf/g46 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xi-legislatura-23-aprile-1992-16-gennaio-1994/governo-amato/3169 · https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana
-
-**⚠ Fonte con riuso «con_permesso»** in `data/fonti.json`: decidere se il record entra nell'indice.
+**Citazione:** `governi` / `g46` — http://dati.camera.it/ocd/governo.rdf/g46 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xi-legislatura-23-aprile-1992-16-gennaio-1994/governo-amato/3169
 
 **Nota:** Data a metà del mandato (1992-06-28 → 1993-04-29).
 
@@ -196,11 +184,9 @@ Casi: 132. Con fonte «con_permesso»: 18. Rivisti: 0.
 | --- | --- | --- |
 | maggioranza | DC (appoggio esterno: PLI-PNM-PMP-MSI) |  |
 
-**Citazione:** `governi` / `g11` — http://dati.camera.it/ocd/governo.rdf/g11 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-segni-ii/3216 · https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana
+**Citazione:** `governi` / `g11` — http://dati.camera.it/ocd/governo.rdf/g11 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-segni-ii/3216
 
 **Regole:** `dichiara_livello_V2`
-
-**⚠ Fonte con riuso «con_permesso»** in `data/fonti.json`: decidere se il record entra nell'indice.
 
 **Nota:** Il campo maggioranza è V2: la risposta deve dirlo.
 
@@ -217,11 +203,9 @@ Casi: 132. Con fonte «con_permesso»: 18. Rivisti: 0.
 | --- | --- | --- |
 | maggioranza | PD-PdL/NCD-SC-UdC e altri |  |
 
-**Citazione:** `governi` / `g82` — http://dati.camera.it/ocd/governo.rdf/g82 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xvii-legislatura-dal-15032013/governo-letta/330 · https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana
+**Citazione:** `governi` / `g82` — http://dati.camera.it/ocd/governo.rdf/g82 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xvii-legislatura-dal-15032013/governo-letta/330
 
 **Regole:** `dichiara_livello_V2`
-
-**⚠ Fonte con riuso «con_permesso»** in `data/fonti.json`: decidere se il record entra nell'indice.
 
 **Nota:** Il campo maggioranza è V2: la risposta deve dirlo.
 
@@ -238,11 +222,9 @@ Casi: 132. Con fonte «con_permesso»: 18. Rivisti: 0.
 | --- | --- | --- |
 | maggioranza | FdI-Lega-FI-NM |  |
 
-**Citazione:** `governi` / `g202` — http://dati.camera.it/ocd/governo.rdf/g202 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/governo-meloni/20727 · https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana
+**Citazione:** `governi` / `g202` — http://dati.camera.it/ocd/governo.rdf/g202 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/governo-meloni/20727
 
 **Regole:** `dichiara_livello_V2`
-
-**⚠ Fonte con riuso «con_permesso»** in `data/fonti.json`: decidere se il record entra nell'indice.
 
 **Nota:** Il campo maggioranza è V2: la risposta deve dirlo.
 
@@ -259,11 +241,9 @@ Casi: 132. Con fonte «con_permesso»: 18. Rivisti: 0.
 | --- | --- | --- |
 | maggioranza | DC-PSI-PSDI-PRI |  |
 
-**Citazione:** `governi` / `g23` — http://dati.camera.it/ocd/governo.rdf/g23 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/v-legislatura-5-giugno-1968-28-febbraio-1972/governo-colombo/3202 · https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana
+**Citazione:** `governi` / `g23` — http://dati.camera.it/ocd/governo.rdf/g23 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/v-legislatura-5-giugno-1968-28-febbraio-1972/governo-colombo/3202
 
 **Regole:** `dichiara_non_verificato`
-
-**⚠ Fonte con riuso «con_permesso»** in `data/fonti.json`: decidere se il record entra nell'indice.
 
 **Nota:** Il campo maggioranza è NV: la risposta deve dirlo.
 

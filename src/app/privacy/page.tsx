@@ -166,6 +166,34 @@ export default function PrivacyPage() {
         </li>
       </ul>
 
+      <h3>6. Domande all&apos;assistente AI (non ancora attivo)</h3>
+      <p>
+        Stiamo preparando un assistente che risponde alle domande sui dati del sito citando ogni volta il record e la
+        sua fonte. Oggi non è attivo e non raccoglie nulla. Quando lo sarà, il testo della domanda che scrivi verrà
+        inviato a Google Cloud (servizio Vertex AI Search, regione Unione europea) per cercare la risposta nei dati del
+        sito.
+      </p>
+      <ul>
+        <li>
+          <strong>Cosa non fare:</strong> non scrivere nella domanda dati personali tuoi o di altri; non servono per
+          rispondere.
+        </li>
+        <li>
+          <strong>Cosa registriamo:</strong> nei nostri registri non salviamo il testo delle domande, nemmeno in caso di
+          errore.
+        </li>
+        <li>
+          <strong>Base giuridica:</strong> legittimo interesse a rendere i dati del sito più facili da consultare (art.
+          6, par. 1, lett. f GDPR). Usare l&apos;assistente è facoltativo: le stesse informazioni sono nelle pagine del
+          sito.
+        </li>
+        <li>
+          <strong>Chi li tratta:</strong> Google, come responsabile del trattamento secondo il suo accordo sul
+          trattamento dei dati per Google Cloud. Il progetto Google Cloud è gestito dal co-maintainer del sito per conto
+          del titolare.
+        </li>
+      </ul>
+
       <h2>A chi arrivano i dati</h2>
       <ul>
         <li>
@@ -183,6 +211,10 @@ export default function PrivacyPage() {
         <li>
           <strong>Resend</strong>: invio dei riepiloghi via email al titolare, come responsabile del trattamento secondo
           il suo accordo sul trattamento dei dati.
+        </li>
+        <li>
+          <strong>Google Cloud</strong>: ricerca delle risposte dell&apos;assistente AI, quando sarà attivo, come
+          responsabile del trattamento secondo il suo accordo sul trattamento dei dati.
         </li>
       </ul>
       <p>Nessun dato viene venduto o ceduto ad altri per fini commerciali.</p>
@@ -204,6 +236,10 @@ export default function PrivacyPage() {
         <li>
           <strong>Anthropic</strong> riceve solo dati già pubblici: testo e nome utente delle segnalazioni su GitHub e le
           fonti pubbliche usate per la ricerca.
+        </li>
+        <li>
+          <strong>Google Cloud</strong> tratta le domande all&apos;assistente nella regione Unione europea; Google è
+          certificata secondo l&apos;EU-U.S. Data Privacy Framework per gli eventuali accessi dagli Stati Uniti.
         </li>
       </ul>
       <p>

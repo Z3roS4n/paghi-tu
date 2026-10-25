@@ -1,6 +1,6 @@
 {
-  "domandeSha256": "f5bc27d797a80501e0cf31c7d80343032e8ac127c4232515d5899c9a2f57acc0",
-  "verificatoIl": "2026-10-24",
+  "domandeSha256": "858163b7d79851256f32326da8edf793d2232a20b737e3b7cc4598879de3d8fe",
+  "verificatoIl": "2026-10-25",
   "fonti": [
     {
       "url": "http://dati.camera.it/ocd/attocamera.rdf/ac01_1391",
@@ -306,7 +306,7 @@
       "http": 200,
       "urlLetto": "https://decidiamo.com/processes/energia-pulita-e-popolare/f/52/proposals/2003",
       "tipo": "html",
-      "caratteri": 24744
+      "caratteri": 24674
     },
     {
       "url": "https://documenti.camera.it/apps/nuovosito/attigoverno/Schedalavori/getTesto.ashx?file=0333_F001.pdf&leg=XVIII",
@@ -438,71 +438,64 @@
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_164_DF_DCIS_RICPOPRES2011_1,1.0/",
       "esito": "ko",
       "via": "diretto",
-      "http": 0,
+      "http": 500,
       "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_164_DF_DCIS_RICPOPRES2011_1,1.0/",
-      "tipo": "binario",
-      "caratteri": 0,
-      "errore": "TypeError: fetch failed"
+      "tipo": "testo",
+      "caratteri": 0
     },
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_279_DF_DCIS_RICPOPRES1991_1,1.0/",
       "esito": "ko",
       "via": "diretto",
-      "http": 0,
+      "http": 500,
       "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_279_DF_DCIS_RICPOPRES1991_1,1.0/",
-      "tipo": "binario",
-      "caratteri": 0,
-      "errore": "TypeError: fetch failed"
+      "tipo": "testo",
+      "caratteri": 0
     },
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_305_DF_DCIS_RICPOPRES2001_1,1.0/",
       "esito": "ko",
       "via": "diretto",
-      "http": 0,
+      "http": 500,
       "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_305_DF_DCIS_RICPOPRES2001_1,1.0/",
-      "tipo": "binario",
-      "caratteri": 0,
-      "errore": "TypeError: fetch failed"
+      "tipo": "testo",
+      "caratteri": 0
     },
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_346_DF_DCIS_RICPOPRES1971_1,1.0/",
       "esito": "ko",
       "via": "diretto",
-      "http": 0,
+      "http": 500,
       "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_346_DF_DCIS_RICPOPRES1971_1,1.0/",
-      "tipo": "binario",
-      "caratteri": 0,
-      "errore": "TypeError: fetch failed"
+      "tipo": "testo",
+      "caratteri": 0
     },
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_347_DF_DCIS_RICPOPRES1981_1,1.0/",
       "esito": "ko",
       "via": "diretto",
-      "http": 0,
+      "http": 500,
       "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_347_DF_DCIS_RICPOPRES1981_1,1.0/",
-      "tipo": "binario",
-      "caratteri": 0,
-      "errore": "TypeError: fetch failed"
+      "tipo": "testo",
+      "caratteri": 0
     },
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,22_289_DF_DCIS_POPRES1_1,1.0/",
       "esito": "ko",
       "via": "diretto",
-      "http": 0,
+      "http": 500,
       "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,22_289_DF_DCIS_POPRES1_1,1.0/",
-      "tipo": "binario",
-      "caratteri": 0,
-      "errore": "TypeError: fetch failed"
+      "tipo": "testo",
+      "caratteri": 0
     },
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,92_506_DF_DCCN_PILN_1,1.0/A.IT.B1GQ_B_W2_S1..../ALL/",
       "esito": "ko",
       "via": "diretto",
-      "http": 0,
+      "http": 500,
       "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,92_506_DF_DCCN_PILN_1,1.0/A.IT.B1GQ_B_W2_S1..../ALL/",
-      "tipo": "binario",
-      "caratteri": 0,
-      "errore": "TypeError: fetch failed"
+      "tipo": "testo",
+      "caratteri": 0
     },
     {
       "url": "https://finanzalocale.interno.gov.it/docum/studi/varie/soppressione_ici.pdf",
@@ -521,15 +514,6 @@
       "urlLetto": "https://futuronazionale.it/wp-content/uploads/2026/09/GIUSTIFICATO_SLOT-1-e-2_Base-Programmatica-di-Futuro-Nazionale-24-agosto-2026.pdf",
       "tipo": "pdf",
       "caratteri": 383165
-    },
-    {
-      "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana",
-      "esito": "ok",
-      "via": "diretto",
-      "http": 200,
-      "urlLetto": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana",
-      "tipo": "html",
-      "caratteri": 38263
     },
     {
       "url": "https://legaonline.it/la-settimana-leghista-38/",
@@ -592,7 +576,7 @@
       "http": 200,
       "urlLetto": "https://www.noimoderati.it/news-e-media/86",
       "tipo": "html",
-      "caratteri": 3192
+      "caratteri": 3191
     },
     {
       "url": "https://ora-italia.it/previdenza-complementare-e-venture-capital/",
@@ -655,7 +639,7 @@
       "http": 200,
       "urlLetto": "https://www.alanews.it/2026/10/23/politica/bonus-ai-genitori-proposta-salvini",
       "tipo": "html",
-      "caratteri": 15000
+      "caratteri": 15009
     },
     {
       "url": "https://www.azione.it/le-nostre-proposte-immigrazione/",
@@ -673,7 +657,7 @@
       "http": 200,
       "urlLetto": "https://www.azione.it/meno-distrazione-piu-azione/",
       "tipo": "html",
-      "caratteri": 9496
+      "caratteri": 9499
     },
     {
       "url": "https://www.bancaditalia.it/statistiche/tematiche/stat-storiche/stat-storiche-economia/NA150_2.0.zip",
@@ -736,7 +720,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/articolo/convocazione-del-consiglio-dei-ministri-n-193/32876",
       "tipo": "html",
-      "caratteri": 10383
+      "caratteri": 10379
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/governo-meloni/20727",
@@ -745,7 +729,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/governo-meloni/20727",
       "tipo": "html",
-      "caratteri": 15779
+      "caratteri": 15777
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/i-governi-nelle-legislature/192",
@@ -754,7 +738,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/i-governi-nelle-legislature/192",
       "tipo": "html",
-      "caratteri": 16694
+      "caratteri": 16698
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ii-legislatura-25-giugno-1953-14-marzo-1958/governo-pella/3223",
@@ -763,7 +747,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ii-legislatura-25-giugno-1953-14-marzo-1958/governo-pella/3223",
       "tipo": "html",
-      "caratteri": 14230
+      "caratteri": 14232
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-fanfani-iii/3214",
@@ -772,7 +756,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-fanfani-iii/3214",
       "tipo": "html",
-      "caratteri": 14874
+      "caratteri": 14876
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-segni-ii/3216",
@@ -790,7 +774,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ordinamento-provvisorio-25-luglio-1943-23-maggio-1948-assemblea-3",
       "tipo": "html",
-      "caratteri": 15651
+      "caratteri": 15649
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/v-legislatura-5-giugno-1968-28-febbraio-1972/governo-colombo/3202",
@@ -799,7 +783,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/v-legislatura-5-giugno-1968-28-febbraio-1972/governo-colombo/3202",
       "tipo": "html",
-      "caratteri": 15205
+      "caratteri": 15207
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/v-legislatura-5-giugno-1968-28-febbraio-1972/governo-rumor-ii/3204",
@@ -808,7 +792,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/v-legislatura-5-giugno-1968-28-febbraio-1972/governo-rumor-ii/3204",
       "tipo": "html",
-      "caratteri": 14823
+      "caratteri": 14819
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/vii-legislatura-5-luglio-1976-2-aprile-1979/governo-andreotti-iii/3191",
@@ -817,7 +801,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/vii-legislatura-5-luglio-1976-2-aprile-1979/governo-andreotti-iii/3191",
       "tipo": "html",
-      "caratteri": 16117
+      "caratteri": 16113
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/viii-legislatura-20-giugno-1979-4-maggio-1983/governo-fanfani-v/3181",
@@ -826,7 +810,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/viii-legislatura-20-giugno-1979-4-maggio-1983/governo-fanfani-v/3181",
       "tipo": "html",
-      "caratteri": 15172
+      "caratteri": 15170
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xi-legislatura-23-aprile-1992-16-gennaio-1994/governo-amato/3169",
@@ -835,7 +819,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xi-legislatura-23-aprile-1992-16-gennaio-1994/governo-amato/3169",
       "tipo": "html",
-      "caratteri": 15180
+      "caratteri": 15182
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xvi-legislatura-dal-29-aprile-2008-al-23-dicembre-2012/governo-berlusconi",
@@ -844,7 +828,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xvi-legislatura-dal-29-aprile-2008-al-23-dicembre-2012/governo-berlusconi",
       "tipo": "html",
-      "caratteri": 17857
+      "caratteri": 17859
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xvii-legislatura-dal-15032013/governo-letta/330",
@@ -853,7 +837,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xvii-legislatura-dal-15032013/governo-letta/330",
       "tipo": "html",
-      "caratteri": 15857
+      "caratteri": 15855
     },
     {
       "url": "https://www.hdmotori.it/bollo-tajani-estendere-esenzione-prime-auto/",
@@ -871,7 +855,7 @@
       "http": 200,
       "urlLetto": "https://www.ilgiornale.it/news/interni/fdi-reato-di-associazione-a-delinquere-per-chi-devasta-e-aggredisce-le-forze-dellordine/",
       "tipo": "html",
-      "caratteri": 8675
+      "caratteri": 8622
     },
     {
       "url": "https://www.ilgiornale.it/news/politica-economica/manovra-casasco-fi-no-tax-area-under-30-riduzione-irpef-e-sostegno-alla-sanita-per-gli-anziani-le-priorita-di-forza-italia/",
@@ -880,7 +864,7 @@
       "http": 200,
       "urlLetto": "https://www.ilgiornale.it/news/politica-economica/manovra-casasco-fi-no-tax-area-under-30-riduzione-irpef-e-sostegno-alla-sanita-per-gli-anziani-le-priorita-di-forza-italia/",
       "tipo": "html",
-      "caratteri": 6846
+      "caratteri": 6916
     },
     {
       "url": "https://www.ilmessaggero.it/politica/schlein_programma_governo_energia_sanita_lavoro_sicurezza_giorgia_meloni-9694413.html",
@@ -889,7 +873,7 @@
       "http": 200,
       "urlLetto": "https://www.ilmessaggero.it/politica/schlein_programma_governo_energia_sanita_lavoro_sicurezza_giorgia_meloni-9694413.html",
       "tipo": "html",
-      "caratteri": 46604
+      "caratteri": 46657
     },
     {
       "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/comunicati-stampa/2025/04/Allegati/3732_Cs_Osservatorio-Assegno-Unico-Universale.pdf",
@@ -952,7 +936,7 @@
       "http": 200,
       "urlLetto": "https://www.lavocedelpatriota.it/forteto-liniziativa-di-fdi-risarcimento-a-tutte-le-vittime/",
       "tipo": "html",
-      "caratteri": 16456
+      "caratteri": 16571
     },
     {
       "url": "https://www.maiemondiale.com/index.php/2026/02/24/maie-svolta-sul-voto-estero-proposta-di-legge-per-piu-sicurezza-e-sostegno-al-si-al-referendum/",
@@ -1376,9 +1360,7 @@
         },
         {
           "campo": "inizio",
-          "esito": "trovato",
-          "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana",
-          "forma": "27 luglio 1960"
+          "esito": "non_trovato"
         }
       ]
     },
@@ -1410,9 +1392,7 @@
         },
         {
           "campo": "inizio",
-          "esito": "trovato",
-          "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana",
-          "forma": "6 agosto 1969"
+          "esito": "non_trovato"
         }
       ]
     },
@@ -1444,9 +1424,7 @@
         },
         {
           "campo": "inizio",
-          "esito": "trovato",
-          "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana",
-          "forma": "30 luglio 1976"
+          "esito": "non_trovato"
         }
       ]
     },

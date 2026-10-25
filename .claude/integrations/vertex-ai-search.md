@@ -1,6 +1,6 @@
 # Vertex AI Search (Discovery Engine)
 
-> Agente conversazionale che risponde solo dai dati del sito, con citazioni (D-026, proposta). **Gated**: senza `AGENT_ENABLED=1` la route risponde 503 e non chiama Google Cloud. **Stato: proposta, non collegata.** Nessuna route, nessun widget e nessun dato importato; la scheda c'è perché D-023 la chiede prima del collegamento.
+> Agente conversazionale che risponde solo dai dati del sito, con citazioni (D-026). **Gated**: senza `AGENT_ENABLED=1` la route risponde 503 e non chiama Google Cloud. **Stato: decisa il 2026-10-25, non collegata.** Nessuna route, nessun widget e nessun dato importato; la scheda c'è perché D-023 la chiede prima del collegamento.
 
 ## Scopo
 Rispondere a domande sui dati di Paghi Tu (governi, leggi di bilancio, misure, serie, promesse) citando ogni volta il record e la sua fonte. Le cifre vengono solo dai record citati, le promesse solo verbatim; senza una citazione verificabile l'agente si astiene e manda alla pagina del sito. Il golden set in `agent/evals/` misura questo comportamento prima di qualsiasi rilascio.
@@ -47,5 +47,5 @@ Nessuno.
 Pagati da un credito promozionale Google Cloud del co-maintainer, con budget mensile e avvisi sul solo progetto, quota delle richieste conversazionali ridotta a 30 al minuto e un tetto giornaliero di risposte nella route. Il costo reale per query si misura in fase 3 dal report di fatturazione.
 
 ## Note / TODO
-- Prima del collegamento: decisione del titolare su D-026, riga in `/privacy` (Google Cloud come responsabile del trattamento, regione UE, cosa si registra delle domande), disclosure AI nella pagina.
-- I 18 casi con fonte «con_permesso» (UPB, Pagella Politica, Wikipedia) entrano nell'indice solo con una decisione scritta.
+- Riga in `/privacy` aggiunta il 2026-10-25 (sezione 6, assistente «non ancora attivo»). Prima del collegamento: togliere «non ancora attivo», aggiornare «In breve» (il widget è un modulo), disclosure AI nella pagina, accordo art. 28 fra titolare e co-maintainer che gestisce il progetto Google Cloud.
+- I casi con fonte «con_permesso» (UPB, Pagella Politica) entrano nell'indice solo con una decisione scritta. Wikipedia è esclusa (D-026, 2026-10-25).

@@ -284,10 +284,11 @@
 - **Data:** 2026-10-22
 
 ### D-026 — Golden set dell'agente generato dai dati
-- **Stato:** proposta il 2026-10-23, in revisione.
+- **Stato:** proposta il 2026-10-23; il 2026-10-25 l'agente entra nel progetto, decisione presa insieme da titolare e co-maintainer (da confermare sulla PR #1 con il marcatore del titolare, D-027).
 - **Contesto:** l'agente conversazionale su Vertex AI Search va misurato prima di andare online. Il progetto non ha un golden set; i dati del sito sono la fonte del grounding.
 - **Scelta:** il set si genera da `data/` con `agent/evals/golden-set.ts` (selezione deterministica e distribuita, valori letti dai record, mai ricopiati), più casi scritti a mano in `casi-manuali.json` per par condicio, fuori scope e trappole. Le promesse si scelgono in ordine alfabetico di sigla, almeno una per partito. La revisione del titolare sta in `revisione.json` e sopravvive alle rigenerazioni.
 - **Conseguenze:** dopo una correzione ai dati si rigenera con `npm run evals:build`; il test fallisce se `domande.jsonl` non è allineato. Le soglie restano ipotesi finché il titolare non le conferma.
+- **Aggiunta del 2026-10-25:** Wikipedia (R-36, «fonte di verità per: nessuna») non è una fonte accettata dell'agente: i suoi URL non entrano in `urlAccettati` anche quando compaiono fra le fonti di un record. `/privacy` descrive l'assistente come non ancora attivo, con Google Cloud fra i destinatari (D-023).
 - **Data:** 2026-10-23
 
 ### D-027 — Le pull request le verifica una routine a parte, e le unisce il titolare

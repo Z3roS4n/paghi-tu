@@ -111,9 +111,9 @@ export type SiteData = {
   revisione: unknown;
 };
 
-// Fonti con riuso "con_permesso" in data/fonti.json (R-23 UPB, R-34 Pagella Politica, R-36 Wikipedia):
+// Fonti con riuso "con_permesso" in data/fonti.json (R-23 UPB, R-34 Pagella Politica; R-36 Wikipedia è esclusa):
 // finché il permesso non è scritto, il caso resta nel set ma il revisore decide se il record entra nell'indice.
-const PERMISSION_DOMAINS = ["upbilancio.it", "pagellapolitica.it", "wikipedia.org"];
+const PERMISSION_DOMAINS = ["upbilancio.it", "pagellapolitica.it"];
 
 const MONEY_UNIT = "milioni di euro correnti";
 const GDP_UNIT = "% del PIL";
@@ -143,8 +143,15 @@ export function spread<T>(items: T[], k: number): T[] {
 }
 
 // Un URL malformato nei dati (per esempio con l'etichetta dentro) non diventa una citazione attesa.
+// D-026: Wikipedia (R-36, «fonte di verità per: nessuna») non è una fonte accettata dell'agente,
+// anche se compare fra le fonti di un record del sito.
+const EXCLUDED_DOMAINS = ["wikipedia.org"];
+
 function urls(links: SourceLink[]): string[] {
-  return links.map((l) => l.url).filter(isWellFormedUrl);
+  return links
+    .map((l) => l.url)
+    .filter(isWellFormedUrl)
+    .filter((u) => !EXCLUDED_DOMAINS.some((d) => new URL(u).hostname.endsWith(d)));
 }
 
 function needsPermission(urlList: string[]): boolean {

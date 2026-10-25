@@ -45,7 +45,7 @@ I valori attesi si leggono dai record al momento della build, quindi dopo una co
 - `testoVerbatim`: per le promesse, le parole esatte attese. `risposteErrate` contiene la parafrasi neutra, che l'agente non deve presentare come citazione.
 - `citazioniAttese`: dataset, id del record e URL accettati. Basta uno degli URL.
 - `regole`: vincoli da controllare, per esempio `tetto_non_e_risparmio`, `niente_percentuale` (basi non omogenee), `niente_classifiche` (par condicio), `dichiara_livello_V2`.
-- `fonteConPermesso`: il record cita una fonte con riuso «con_permesso» in `data/fonti.json` (UPB, Pagella Politica, Wikipedia). Va deciso se quel record entra nell'indice.
+- `fonteConPermesso`: il record cita una fonte con riuso «con_permesso» in `data/fonti.json` (UPB, Pagella Politica). Va deciso se quel record entra nell'indice. Wikipedia non è una fonte accettata (D-026): i suoi URL non entrano in `urlAccettati`.
 
 ## Revisione
 
