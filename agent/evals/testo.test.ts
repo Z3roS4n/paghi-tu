@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { findForms, findNumber, findPhrase, findValue, htmlToText, isWellFormedUrl, missingFragments, normalizeText } from "./testo.ts";
+import { findDeclaredCost, findForms, findNumber, findPhrase, findValue, htmlToText, isWellFormedUrl, missingFragments, normalizeText } from "./testo.ts";
 
 describe("normalizzazione del testo delle fonti", () => {
   it("toglie lo spazio prima della virgola e unifica apostrofi e virgolette", () => {
@@ -96,5 +96,11 @@ describe("testi attesi come parole intere (D-032)", () => {
   it("trova una percentuale arrotondata solo con il segno accanto", () => {
     expect(findNumber(normalizeText("uno scostamento del -34,0 %"), -34.04123456789012, "%")).not.toBeNull();
     expect(findNumber(normalizeText("uno scostamento di 34,0 milioni"), -34.04123456789012, "%")).toBeNull();
+  });
+});
+
+describe("costo dichiarato", () => {
+  it("trova «1 miliardo» al singolare", () => {
+    expect(findDeclaredCost(normalizeText("pagina 1000 · costerebbe circa 1 miliardo di euro"), "circa 1 miliardo di euro (indicato dal proponente)")).toBe("1 miliardo");
   });
 });

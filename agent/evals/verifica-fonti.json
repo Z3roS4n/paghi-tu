@@ -576,7 +576,7 @@
       "http": 200,
       "urlLetto": "https://www.noimoderati.it/news-e-media/86",
       "tipo": "html",
-      "caratteri": 3191
+      "caratteri": 3192
     },
     {
       "url": "https://ora-italia.it/previdenza-complementare-e-venture-capital/",
@@ -828,7 +828,7 @@
       "http": 200,
       "urlLetto": "https://www.ilgiornale.it/news/interni/fdi-reato-di-associazione-a-delinquere-per-chi-devasta-e-aggredisce-le-forze-dellordine/",
       "tipo": "html",
-      "caratteri": 8768
+      "caratteri": 8762
     },
     {
       "url": "https://www.ilgiornale.it/news/politica-economica/manovra-casasco-fi-no-tax-area-under-30-riduzione-irpef-e-sostegno-alla-sanita-per-gli-anziani-le-priorita-di-forza-italia/",
@@ -2465,7 +2465,9 @@
         },
         {
           "campo": "costoDichiarato",
-          "esito": "non_trovato"
+          "esito": "trovato",
+          "url": "https://www.fanpage.it/politica/pensioni-forza-italia-vuole-alzare-le-minime-a-850-euro-nella-legge-di-bilancio-2027/",
+          "forma": "1 miliardo"
         }
       ]
     },
@@ -2843,7 +2845,7 @@
           "campo": "costoDichiarato",
           "esito": "trovato",
           "url": "https://progettocivicoitalia.it/2026/09/07/onorato-con-gli-amministratori-di-tutta-italia-aiutiamo-il-centrosinistra-a-vincere/",
-          "forma": "500"
+          "forma": "500 milioni"
         }
       ]
     },
