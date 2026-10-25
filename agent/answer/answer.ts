@@ -67,13 +67,16 @@ export const namesPattern = (names: string[]): RegExp | null =>
 export const NAMED_FIGURES = namesPattern(manifest.nomiConCifre);
 
 // Una data scritta in un altro formato diventa «27 luglio 1960», la forma dei documenti: così il
-// mese non conta come cifra. Gli identificativi (C27-PD-028, COR-0001, g13) non sono cifre.
+// mese non conta come cifra. Gli identificativi (C27-PD-028, COR-0001, g13) non sono cifre. Il
+// periodo di un trimestre («2026-Q2» nel record) diventa «2 trimestre 2026», come «2° trimestre
+// 2026» nella risposta: è un dato del record e la risposta lo può ripetere.
 function prepare(text: string, names: RegExp | null): string {
   return (names ? text.replace(names, " ") : text)
     .replace(/https?:\/\/\S+/g, " ")
     .replace(/\b(\d{4})-(\d{2})-(\d{2})\b/g, (_, y: string, m: string, d: string) => dateText(y, m, d))
     .replace(/\b(\d{1,2})[/.](\d{1,2})[/.](\d{4})\b/g, (_, d: string, m: string, y: string) => dateText(y, m, d))
-    .replace(/\b[A-Z]\d{2}-[A-Z0-9]+-\d{3}\b|\bCOR-\d{4}\b|\bg\d+\b|\b\d{4}-Q[1-4]\b/g, " ")
+    .replace(/\b(\d{4})-Q([1-4])\b/g, "$2 trimestre $1")
+    .replace(/\b[A-Z]\d{2}-[A-Z0-9]+-\d{3}\b|\bCOR-\d{4}\b|\bg\d+\b/g, " ")
     .replace(/(\d)\s*[°º]/g, "$1");
 }
 
