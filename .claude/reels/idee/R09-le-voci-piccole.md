@@ -1,7 +1,7 @@
 # R09 — Le voci piccole del conto
 
 - **Uscita prevista:** mercoledì 4 novembre 2026
-- **Stato:** in lavorazione (prompt in `prompt/`)
+- **Stato:** programmato su Instagram (25/10/2026)
 - **Pagine:** https://www.paghitu.it/spesa («Dove vanno i soldi»)
 - **Perché adesso:** difesa, sicurezza e cultura sono temi di cui si parla molto, ma pochi sanno quanto pesano
   davvero sul conto.

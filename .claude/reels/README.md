@@ -27,7 +27,8 @@ giornaliera (passo «Idee per i Reel» in `.claude/routines/aggiornamento-dati.m
     «più di» al massimo una volta ogni due cifre;
   - niente transizioni a spinta o swipe in su o in giù: morph con un elemento grafico che cambia forma (massimo 2
     per video), altrimenti taglio.
-- Stati: `idea` → `in lavorazione` → `pubblicato` (con data e link al post), oppure `scartato` (con il motivo).
+- Stati: `idea` → `in lavorazione` → `programmato` (in coda su Instagram) → `pubblicato` (con data e link al post),
+  oppure `scartato` (con il motivo).
   `riserva`: scheda pronta senza data, da usare quando una settimana non ha notizie adatte.
 
 ## Formato

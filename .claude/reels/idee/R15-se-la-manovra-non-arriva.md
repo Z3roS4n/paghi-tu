@@ -1,7 +1,7 @@
 # R15 — Se la manovra non arriva in tempo
 
 - **Uscita prevista:** lunedì 2 novembre 2026
-- **Stato:** in lavorazione (prompt in `prompt/`)
+- **Stato:** programmato su Instagram (25/10/2026)
 - **Pagine:** https://www.paghitu.it/leggi-di-bilancio (riga «2027», righe «2026» e «2025» della legge di bilancio,
   righe del 1988 nella sezione «Legge finanziaria (1979-2010)», nota sul 1964)
 - **Perché adesso:** il termine del 20 ottobre per presentare alle Camere il disegno di legge di bilancio 2027 è
