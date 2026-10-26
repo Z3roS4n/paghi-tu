@@ -280,7 +280,7 @@ const PROMISE_FILES: Record<string, string> = {
   c: "2026-10-20.promesse-campagna-gruppo-c",
   "c-integrazione": "2026-10-21.promesse-campagna-gruppo-c-integrazione",
 };
-const CAMPAIGN_PERIOD = { dal: "2026-01-01", al: "2026-10-24" };
+const CAMPAIGN_PERIOD = { dal: "2026-01-01", al: "2026-10-26" };
 
 function isVerified(status: string) {
   return status.includes("✓") && !/DA RIMUOVERE|NON VERIFICABILE|NUOVA|riserva/i.test(status);
