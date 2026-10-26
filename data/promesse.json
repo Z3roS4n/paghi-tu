@@ -1700,6 +1700,56 @@
     }
   },
   {
+    "id": "C27-LEGA-029",
+    "partitoId": "LEGA",
+    "dichiarante": "Matteo Salvini",
+    "ruoloDichiarante": "segretario federale Lega (rieletto al congresso del 25/10/2026 dopo le dimissioni del 12/10/2026), senatore; vicepresidente del Consiglio e ministro delle Infrastrutture e dei Trasporti",
+    "data": "2026-10-25",
+    "testoLetterale": "io penso che questo congresso mi darà, se mi risceglierete come segretario federale, il mandato di andare in Cdm e di portare la posizione chiara della Lega, non possiamo continuare a mandare soldi e armi all’Ucraina",
+    "parafrasiNeutra": "Portare in Consiglio dei ministri la posizione della Lega contraria all'invio di altri fondi e armi all'Ucraina.",
+    "tipoFonte": "discorso",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "altro",
+    "fonte": {
+      "url": "https://lapresse.it/politica/2026/10/25/lega-oggi-al-congresso-gli-interventi-di-salvini-e-garavaglia-poi-il-voto-sulla-segreteria-del-partito-la-diretta"
+    },
+    "archivioUrl": null,
+    "cofog": "02",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 4 (testate aperte): diretta LaPresse del congresso federale straordinario della Lega a Milano, voce delle 13:03 del 25/10/2026 (curl GET semplice, HTTP 200; datePublished 2026-10-25T12:35:33+01:00 letto nella pagina). Trovata con la query Google News «Lega intervista» (ultimi 3 giorni). È un discorso dal palco riportato fra virgolette, non un'intervista: registrato come C27-LEGA-025 e C27-FI-017 della routine del 24/10; il verificatore decide se il canale 4 lo ammette. Livello atteso V2. Variante fra le testate: Il Giorno (diretta, ilgiorno.it/milano/politica/congresso-lega-diretta-jl8zq0rd) e Giornale La Voce riportano «non possiamo continuare a mandare soldi all'Ucraina» senza «e armi»; Il Dubbio e LaPresse hanno «soldi e armi»: da confrontare con il video del congresso (Radio Radicale). Orizzonte/veicolo: legislatura_in_corso (posizione da portare al Governo in carica) e altro (richiesta al Governo che non nomina un atto). COFOG 02 (aiuti militari; alternativa 01, aiuti economici esteri). Doppioni: nessuna riga sull'Ucraina nei quattro CSV per la Lega. Pre-valutazione slogan: LIM (stop all'invio di fondi e armi: leva identificabile, i pacchetti di aiuti, ma formulata come posizione da portare, senza atto né importo). (verifica L2 2026-10-26) Metodo: fonte riaperta con curl GET semplice (HTTP 200), testo estratto dall'HTML e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Voce delle 13:03 della diretta LaPresse (datePublished 2026-10-25T12:35:33+01:00); il testo della fonte comincia con «ma io penso»: l'attacco «ma» è fuori dal testo_letterale, nessun gruppo di persone tolto. Variante «e armi»: ANSA (25/10, 13:29, «non possiamo continuare a mandare soldi e armi all'Ucraina») e Italpress («non si può continuare a mandare soldi e armi all'Ucraina») la riportano, come LaPresse; Il Giorno (diretta, voce delle 12:06) ha «soldi all'Ucraina» senza «e armi». Le agenzie lette sono concordi su «e armi»: testo tenuto; le trascrizioni differiscono nelle parole d'attacco, quindi resta V2 finché non c'è il video. Ruolo: rieletto lo stesso giorno (465 voti, ANSA e Italpress). Non è un annuncio di governo (diverso da C27-FDI-012): è la posizione del partito da portare in Cdm. Orizzonte/veicolo, COFOG 02 e misurabile parziale («soldi» non definiti) confermati. Nessun doppione nelle righe Lega.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-26 — CONFERMATA: caso limite superato (cessazione di un programma definito: invio di fondi e armi a un Paese nominato, come l'embargo di C27-AVS-040); discorso riportato da testata: V2 (D-019) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: altro, posizione da portare al Governo in carica]"
+    }
+  },
+  {
+    "id": "C27-LEGA-030",
+    "partitoId": "LEGA",
+    "dichiarante": "Matteo Salvini",
+    "ruoloDichiarante": "segretario federale Lega (rieletto al congresso del 25/10/2026 dopo le dimissioni del 12/10/2026), senatore; vicepresidente del Consiglio e ministro delle Infrastrutture e dei Trasporti",
+    "data": "2026-10-25",
+    "testoLetterale": "la priorità della Lega è smontare la legge Fornero.",
+    "parafrasiNeutra": "Superamento della legge Fornero sulle pensioni come priorità della Lega.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://lapresse.it/politica/2026/10/25/lega-oggi-al-congresso-gli-interventi-di-salvini-e-garavaglia-poi-il-voto-sulla-segreteria-del-partito-la-diretta"
+    },
+    "archivioUrl": null,
+    "cofog": "10",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 4 (testate aperte): diretta LaPresse del congresso federale straordinario della Lega a Milano, voce delle 13:03 del 25/10/2026 (curl GET semplice, HTTP 200; datePublished 2026-10-25T12:35:33+01:00 letto nella pagina). Trovata con la query Google News «Lega intervista» (ultimi 3 giorni). È un discorso dal palco riportato fra virgolette, non un'intervista: registrato come C27-LEGA-025 e C27-FI-017 della routine del 24/10; il verificatore decide se il canale 4 lo ammette. Livello atteso V2. Voce delle 12:55 della stessa diretta («Visto che siamo popolani e popolari, la priorità della Lega è smontare la legge Fornero. Torniamo a parlare alle partite Iva»). La flat tax nella stessa voce è parafrasi della testata, non citazione: non registrata. Orizzonte/veicolo: non_specificato (nessun atto né scadenza nominati) e dichiarazione. Vicina a C27-LEGA-001 (uscita a 64 anni) e C27-LEGA-017, ma qui l'oggetto è la legge nel suo insieme: non è un doppione. Pre-valutazione slogan: LIM (norma nominata, la legge Fornero, ma «smontare» non dice se abrogarla o modificarla né con quale parametro). (verifica L2 2026-10-26) Metodo: fonte riaperta con curl GET semplice (HTTP 200), testo estratto dall'HTML e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Voce delle 12:55 della diretta LaPresse (datePublished 2026-10-25T12:35:33+01:00): «Visto che siamo popolani e popolari, la priorità della Lega è smontare la legge Fornero.»; l'attacco tolto non descrive un gruppo destinatario della misura. La flat tax nella stessa voce è fuori dalle virgolette: giusto non registrarla. Collegata a C27-LEGA-001 (uscita a 64 anni, misura parziale dentro il regime Fornero), non doppione: qui l'oggetto è la legge nel suo insieme. Misurabile parziale: «smontare» non dice se abrogazione totale o parziale. Da segnalare al titolare per la simmetria con C27-PD-035 (uscita): qui la norma è identificata, là il modello no. (verificatore 2026-10-26: voce della diretta LaPresse delle 12:55)",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-26 — CONFERMATA: caso limite superato (norma nominata, la legge Fornero, con direzione univoca: smontarla; diverso da «riforma» senza direzione di C27-PD-023); discorso riportato da testata: V2 (D-019) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
+    }
+  },
+  {
     "id": "C27-PD-008",
     "partitoId": "PD",
     "dichiarante": "Partito Democratico (documento nazionale presentato da Marina Sereni)",
@@ -4750,6 +4800,56 @@
     }
   },
   {
+    "id": "C27-PD-033",
+    "partitoId": "PD",
+    "dichiarante": "Elly Schlein",
+    "ruoloDichiarante": "segretaria nazionale PD, deputata",
+    "data": "2026-10-25",
+    "testoLetterale": "Serve un negoziatore unico europeo per un negoziato e una pace giusta, che non è la resa alle ragioni dell'aggressione.",
+    "parafrasiNeutra": "Nominare un negoziatore unico dell'Unione europea per un negoziato di pace sull'Ucraina.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.lanazione.it/siena/politica/pd-correntone-montepulciano-schlein-v7ah64cg"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale aggiunto dal coordinatore per simmetria con il gruppo A (C27-LEGA-029/030): discorsi pubblici dei dichiaranti autorizzati riportati con virgolettato da testate aperte lette per intero. Discorso di chiusura di Elly Schlein alla tre giorni PD «Pronti per l'alternativa» a Montepulciano (Siena), 25/10/2026. Testo e video ufficiali non leggibili: partitodemocratico.it risponde 403 (Cloudflare); senatoripd.it e deputatipd.it fermi al 23/10. Query usate (uguali per tutti i partiti del gruppo): «Schlein discorso Montepulciano», «Partito Democratico evento/assemblea Montepulciano». Fonte: La Nazione (Siena), curl GET, HTTP 200, datePublished 2026-10-25T14:05:48Z, testo letto per intero; citazione confrontata in automatico parola per parola (a meno di spazi e apostrofi). Stessa frase in Il Sole 24 Ore (ilsole24ore.com/art/il-neoliberalismo-ha-fallito-…-AJYb36tB, datePublished 2026-10-25T17:19+01:00, HTTP 200); Quotidiano.net (25/10) riporta nello stesso discorso «È incredibile che l’Unione europea non abbia ancora fatto una discussione per individuare un negoziatore unico». Frase precedente nella fonte: «accanto al sostegno che giustamente non abbiamo mai fatto mancare al popolo invaso dell'Ucraina serve la diplomazia». Doppioni: nessuna riga sul negoziatore europeo nei quattro CSV. Livello atteso V2 (discorso riportato, come C27-LEGA-025/029). Orizzonte/veicolo: non_specificato e dichiarazione (richiesta rivolta all'Ue, nessun atto nominato). COFOG 01 (affari esteri). Pre-valutazione slogan: LIM (figura istituzionale identificabile, il negoziatore unico Ue, senza mandato né scadenza). (verifica L2 2026-10-26) Metodo: fonte riaperta con curl GET semplice (HTTP 200), testo estratto dall'HTML e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. La Nazione, datePublished 2026-10-25T14:05:48+00:00: «Sulla questione ucraina Schlein spiega che “dobbiamo insistere […] serve la diplomazia. Serve un negoziatore unico europeo per un negoziato e una pace giusta, che non è la resa alle ragioni dell'aggressione.”»; frase intera, nessun taglio. QN riporta nello stesso discorso la stessa richiesta con altre parole. Dichiarante e ruolo confermati. Stessa severità dei discorsi Lega (congresso) e PCIT (Stati generali): discorso riportato = V2, criterio slogan riga per riga. Nessun doppione nelle righe PD.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-26 — CONFERMATA: caso limite superato (organismo identificabile: un negoziatore unico europeo); discorso riportato da testata: V2 (D-019) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
+    }
+  },
+  {
+    "id": "C27-PD-034",
+    "partitoId": "PD",
+    "dichiarante": "Elly Schlein",
+    "ruoloDichiarante": "segretaria nazionale PD, deputata",
+    "data": "2026-10-25",
+    "testoLetterale": "Se abbiamo dovuto sanzionare Putin dobbiamo sanzionare anche Netanyahu e il suo governo criminale",
+    "parafrasiNeutra": "Applicare sanzioni al primo ministro israeliano Netanyahu e al suo governo, come per Putin.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.lanazione.it/siena/politica/pd-correntone-montepulciano-schlein-v7ah64cg"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale aggiunto dal coordinatore per simmetria con il gruppo A (C27-LEGA-029/030): discorsi pubblici dei dichiaranti autorizzati riportati con virgolettato da testate aperte lette per intero. Discorso di chiusura di Elly Schlein alla tre giorni PD «Pronti per l'alternativa» a Montepulciano (Siena), 25/10/2026. Testo e video ufficiali non leggibili: partitodemocratico.it risponde 403 (Cloudflare); senatoripd.it e deputatipd.it fermi al 23/10. Query usate (uguali per tutti i partiti del gruppo): «Schlein discorso Montepulciano», «Partito Democratico evento/assemblea Montepulciano». Fonte: La Nazione (Siena), curl GET, HTTP 200, datePublished 2026-10-25T14:05:48Z; citazione confrontata in automatico parola per parola. Stessa frase in Il Sole 24 Ore (25/10, HTTP 200). Frase precedente: «Vogliamo essere costruttori di pace e vogliamo far valere ovunque il diritto internazionale.» Citazione intera, nessun taglio. Doppioni: nessuna riga PD su sanzioni a Israele nei quattro CSV; misure vicine di altri partiti: C27-AVS-040 (sospensione dell'Accordo di associazione Ue-Israele, embargo armi), C27-PAP-004/008. Livello atteso V2. Orizzonte/veicolo: non_specificato e dichiarazione. COFOG 01 (affari esteri). Pre-valutazione slogan: OK (strumento: sanzioni, con destinatari nominati); il tipo di sanzione non è indicato. (verifica L2 2026-10-26) Metodo: fonte riaperta con curl GET semplice (HTTP 200), testo estratto dall'HTML e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. La Nazione (datePublished 2026-10-25T14:05:48+00:00), stesso virgolettato di PD-033, frase intera. Il tipo di sanzione non è indicato; misurabile «si» tenuto come C27-AVS-040 (adozione o no delle sanzioni). Nessun doppione nelle righe PD; non è doppione di C27-AVS-040 (altro partito).",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-26 — CONFERMATA: strumento identificabile (sanzioni con destinatari nominati), come C27-AVS-040; discorso riportato da testata: V2 (D-019) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
+    }
+  },
+  {
     "id": "C27-AZ-001",
     "partitoId": "AZ",
     "dichiarante": "Azione (sito ufficiale)",
@@ -7550,6 +7650,131 @@
     }
   },
   {
+    "id": "C27-AZ-048",
+    "partitoId": "AZ",
+    "dichiarante": "Carlo Calenda",
+    "ruoloDichiarante": "Segretario di Azione, senatore",
+    "data": "2026-10-24",
+    "testoLetterale": "Se fossi stato al Governo, avrei cercato risorse strutturali con una proposta di buon senso: […] Aumentando di un euro le sigarette e abbassando le accise sui carburanti si farebbe un intervento da 3 miliardi di euro.",
+    "parafrasiNeutra": "Aumentare di un euro le sigarette e abbassare le accise sui carburanti, per un intervento da 3 miliardi di euro indicato dal proponente.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://quotidianodelsud.it/calabria/vibo-valentia/politica/interviste/2026/10/24/carlo-calenda-leader-di-azione-a-vibo-un-piano-per-la-calabria-e-il-mezzogiorno"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": "3 miliardi di euro (dimensione dell'intervento indicata dal proponente: aumento di un euro sulle sigarette e riduzione delle accise sui carburanti; periodo non indicato)",
+    "stimaTerzi": null,
+    "note": "Intervista esclusiva di Carlo Calenda al Quotidiano del Sud (Gianluca Prestia, datePublished 2026-10-24T08:09Z, dateModified 2026-10-25T16:24Z), rilasciata a Vibo Valentia prima della presentazione del libro al Festival del Sud del 23/10. Canale: ricerca web «Calenda intervista» (canali ufficiali di Azione senza contenuti nel periodo: API WordPress di azione.it 200 ma nessun post dopo il 10/09; Telegram t.me/s/EntrainAzione 200, unico post del periodo il 24/10 senza misure). Metodo: curl GET, HTTP 200, testo letto per intero e confrontato parola per parola. Testata aperta (nessun paywall sul testo). Il taglio «[…]» toglie la frase «l’Italia ha le accise più basse su sigarette, superalcolici e gioco d’azzardo e le più alte su benzina e gasolio.» (premessa, nessun gruppo di persone). La fonte aggiunge che la misura «è stata bloccata da Forza Italia» dopo che Meloni «all’inizio l’avesse accettata»: proposta già fatta al Governo in carica prima del periodo (Pagella Politica del 26/8 riporta una proposta di Azione sulle accise del 24/8, senza cifre). Questa intervista dà la leva e la cifra che mancavano in C27-AZ-046 (NON VERIFICABILE, 3 miliardi senza leva): il verificatore valuti se la riga è nuova o una ripresa (D-012) e se sostituisce AZ-046. Collegata a C27-AZ-045 (accisa mobile), strumento diverso. Orizzonte/veicolo: non_specificato e dichiarazione (formulazione controfattuale «Se fossi stato al Governo»; nessun atto nominato). COFOG 01 (imposte). Pre-valutazione slogan: OK (parametro: un euro sulle sigarette; importo 3 miliardi; strumento: accise). (verifica L2 2026-10-26) Metodo: fonte riaperta con curl GET semplice (HTTP 200), testo estratto dall'HTML e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Quotidiano del Sud, datePublished 2026-10-24T08:09:07+00:00, risposta alla domanda «Lei cosa avrebbe proposto per superare la crisi?»; il taglio «[…]» toglie la premessa sulle accise (nessun gruppo di persone). Intervista pubblicata da testata con citazione verificata: V1 (D-019). D-012: la regola esclude i testi scritti prima del periodo, non le proposte riprese in un testo nuovo; la ricerca nell'API WordPress di azione.it («sigarette», «accise») non trova testi precedenti con l'euro sulle sigarette o i 3 miliardi; Pagella Politica del 26/8 (citata dal censimento) riporta la proposta senza cifre. Stesso criterio di C27-FI-018 (riaffermazione con elemento nuovo resta). Rapporto con C27-AZ-046: stessa cifra (3 miliardi) e stesso tema; AZ-046 resta NON VERIFICABILE (non toccata), ma se il titolare la riprende va marcata doppione di questa riga, che ora dà la leva. Il costo va codificato due volte (D-021).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-26 — CORRETTA: parafrasi ristretta al testo («usare il gettito» non è nella fonte); costo senza «a saldo» (non è nella fonte); caso limite superato su D-012: testo nuovo nel periodo con parametro (un euro sulle sigarette) e importo che non risultano in testi precedenti; la formula «Se fossi stato al Governo» introduce una proposta del partito («proposta di buon senso»), non un impegno non di policy | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
+    }
+  },
+  {
+    "id": "C27-AZ-049",
+    "partitoId": "AZ",
+    "dichiarante": "Carlo Calenda",
+    "ruoloDichiarante": "Segretario di Azione, senatore",
+    "data": "2026-10-24",
+    "testoLetterale": "Per controllare il territorio bisognerebbe collegare tutte le telecamere a un motore di intelligenza artificiale che segnala in tempo reale gli assembramenti alle pattuglie più vicine, come avviene in altri Paesi europei.",
+    "parafrasiNeutra": "Collegare tutte le telecamere di sorveglianza a un sistema di intelligenza artificiale che segnali in tempo reale gli assembramenti alle pattuglie più vicine.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://quotidianodelsud.it/calabria/vibo-valentia/politica/interviste/2026/10/24/carlo-calenda-leader-di-azione-a-vibo-un-piano-per-la-calabria-e-il-mezzogiorno"
+    },
+    "archivioUrl": null,
+    "cofog": "03",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervista esclusiva di Carlo Calenda al Quotidiano del Sud (Gianluca Prestia, datePublished 2026-10-24T08:09Z, dateModified 2026-10-25T16:24Z), rilasciata a Vibo Valentia prima della presentazione del libro al Festival del Sud del 23/10. Canale: ricerca web «Calenda intervista» (canali ufficiali di Azione senza contenuti nel periodo: API WordPress di azione.it 200 ma nessun post dopo il 10/09; Telegram t.me/s/EntrainAzione 200, unico post del periodo il 24/10 senza misure). Metodo: curl GET, HTTP 200, testo letto per intero e confrontato parola per parola. Testata aperta (nessun paywall sul testo). Risposta sul decreto sicurezza del Governo (nella stessa risposta Calenda condivide «l’estensione del fermo preventivo ai minorenni», misura del Governo, non registrata perché non è una proposta di Azione). Formulazione al condizionale («bisognerebbe»). Nessun doppione nelle righe AZ. Orizzonte/veicolo: non_specificato e dichiarazione. COFOG 03. Pre-valutazione slogan: OK (strumento descritto nel meccanismo: telecamere collegate a un motore di IA con segnalazione alle pattuglie). (verifica L2 2026-10-26) Metodo: fonte riaperta con curl GET semplice (HTTP 200), testo estratto dall'HTML e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Quotidiano del Sud (24/10), risposta sui decreti sicurezza; frase intera. V1 (D-019, intervista). Il fermo preventivo dei minorenni, misura del Governo, giustamente non registrato. Nessun doppione nelle righe AZ.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-26 — CONFERMATA: strumento descritto nel meccanismo (telecamere collegate a un motore di IA con segnalazione alle pattuglie) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
+    }
+  },
+  {
+    "id": "C27-AZ-050",
+    "partitoId": "AZ",
+    "dichiarante": "Carlo Calenda",
+    "ruoloDichiarante": "Segretario di Azione, senatore",
+    "data": "2026-10-24",
+    "testoLetterale": "Bisogna potenziare le ZES con un credito d’imposta potenziato, unendo Industria 4.0 al credito Sud.",
+    "parafrasiNeutra": "Potenziare le Zone economiche speciali con un credito d'imposta rafforzato che unisca Industria 4.0 e il credito d'imposta per il Sud.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://quotidianodelsud.it/calabria/vibo-valentia/politica/interviste/2026/10/24/carlo-calenda-leader-di-azione-a-vibo-un-piano-per-la-calabria-e-il-mezzogiorno"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervista esclusiva di Carlo Calenda al Quotidiano del Sud (Gianluca Prestia, datePublished 2026-10-24T08:09Z, dateModified 2026-10-25T16:24Z), rilasciata a Vibo Valentia prima della presentazione del libro al Festival del Sud del 23/10. Canale: ricerca web «Calenda intervista» (canali ufficiali di Azione senza contenuti nel periodo: API WordPress di azione.it 200 ma nessun post dopo il 10/09; Telegram t.me/s/EntrainAzione 200, unico post del periodo il 24/10 senza misure). Metodo: curl GET, HTTP 200, testo letto per intero e confrontato parola per parola. Testata aperta (nessun paywall sul testo). Risposta sullo sviluppo industriale del Mezzogiorno. Collegata a C27-AZ-023 (ripristino di Industria 4.0 nella forma originaria) ma distinta: qui lo strumento è il credito d'imposta nelle ZES. Orizzonte/veicolo: non_specificato e dichiarazione. COFOG 04 (alternativa 01, agevolazione fiscale). Pre-valutazione slogan: OK (strumento: credito d'imposta ZES che unisce due agevolazioni nominate; importo non indicato). (verifica L2 2026-10-26) Metodo: fonte riaperta con curl GET semplice (HTTP 200), testo estratto dall'HTML e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Quotidiano del Sud (24/10), risposta «Come si attirano investimenti produttivi nelle regioni meridionali?»; frase intera. V1 (D-019). Strumento identificabile (credito d'imposta nelle ZES che unisce due agevolazioni nominate). Collegata a C27-AZ-023, non doppione.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-26 — CORRETTA: COFOG 04 → 01 (credito d'imposta: regola «imposte e agevolazioni fiscali → 01», come C27-AZ-023 e C27-FI-019; alternativa 04) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
+    }
+  },
+  {
+    "id": "C27-AZ-052",
+    "partitoId": "AZ",
+    "dichiarante": "Carlo Calenda",
+    "ruoloDichiarante": "Segretario di Azione, senatore",
+    "data": "2026-10-24",
+    "testoLetterale": "Detassazione completa per i giovani under 30, che guadagnano il 30% in meno del reddito mediano e tendono a emigrare",
+    "parafrasiNeutra": "Nella legge di bilancio, esenzione fiscale completa per i giovani sotto i 30 anni.",
+    "tipoFonte": "intervista",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://quotidianodelsud.it/calabria/vibo-valentia/politica/interviste/2026/10/24/carlo-calenda-leader-di-azione-a-vibo-un-piano-per-la-calabria-e-il-mezzogiorno"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervista esclusiva di Carlo Calenda al Quotidiano del Sud (Gianluca Prestia, datePublished 2026-10-24T08:09Z, dateModified 2026-10-25T16:24Z), rilasciata a Vibo Valentia prima della presentazione del libro al Festival del Sud del 23/10. Canale: ricerca web «Calenda intervista» (canali ufficiali di Azione senza contenuti nel periodo: API WordPress di azione.it 200 ma nessun post dopo il 10/09; Telegram t.me/s/EntrainAzione 200, unico post del periodo il 24/10 senza misure). Metodo: curl GET, HTTP 200, testo letto per intero e confrontato parola per parola. Testata aperta (nessun paywall sul testo). Seconda delle «due direzioni» per i margini della manovra (prima: C27-AZ-051). Citazione intera: la descrizione della platea («che guadagnano il 30% in meno del reddito mediano e tendono a emigrare») resta per la regola sui gruppi di persone. Non è doppione di C27-AZ-021 (aumento delle retribuzioni degli under 35, DA RIMUOVERE). Il testo non dice quali imposte («detassazione completa»). Orizzonte/veicolo: legislatura_in_corso e richiesta_legge_bilancio. COFOG 01. Pre-valutazione slogan: OK (platea con soglia di età; valore di arrivo: detassazione completa). (verifica L2 2026-10-26) Metodo: fonte riaperta con curl GET semplice (HTTP 200), testo estratto dall'HTML e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Quotidiano del Sud (24/10), seconda delle «due direzioni» per i margini della finanziaria; citazione intera, con le parole che descrivono i giovani (regola dei gruppi di persone). V1 (D-019). Orizzonte/veicolo confermati (la risposta nomina la finanziaria). Non è doppione di C27-AZ-021 (fuori periodo, stipendi under 35).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-26 — CORRETTA: misurabile si → parziale (le imposte interessate dalla «detassazione completa» non sono indicate); supera il criterio per platea con soglia d'età e valore di arrivo (detassazione completa) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: richiesta sulla legge di bilancio]"
+    }
+  },
+  {
+    "id": "C27-PLD-012",
+    "partitoId": "PLD",
+    "dichiarante": "Partito Liberaldemocratico (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale; segretario Luigi Marattin",
+    "data": "2026-10-25",
+    "testoLetterale": "Il nostro Francesco Hellmann ci ricorda perché lottare per la privatizzazione della Rai è una grande battaglia di libertà e a favore dell’informazione.",
+    "parafrasiNeutra": "Privatizzare la Rai.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://partitoliberaldemocratico.com/il-nostro-francesco-hellmann-ci-ricorda-perche-lottare-per-la-privatizzazione-de/"
+    },
+    "archivioUrl": null,
+    "cofog": "08",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Post del sito ufficiale (ripubblicazione di un post Instagram del partito con video di Francesco Hellmann, esponente del PLD; ruolo nel partito non indicato nella pagina, video non trascritto). Canale: API WordPress di partitoliberaldemocratico.com (GET /wp-json/wp/v2/posts?after=2026-10-23T00:00:00, HTTP 200), pagina riaperta con curl (HTTP 200), datePublished 2026-10-25T17:07Z. Il testo è del partito («Il nostro … ci ricorda»): dichiarante = canale ufficiale. Altri post del periodo sullo stesso canale (24-25/10) senza misure o slogan: «Servono meno tasse, più crescita e promesse mantenute» (24/10, rimanda a un'intervista a HuffPost, testata a pagamento, non letta). Nessun doppione nelle righe PLD. Orizzonte/veicolo: non_specificato e dichiarazione. COFOG 08 (servizi radiotelevisivi). Pre-valutazione slogan: OK/LIM (strumento identificabile: privatizzazione di una società pubblica nominata; formulazione indiretta, nessun tempo né modalità). (verifica L2 2026-10-26) Metodo: fonte riaperta con curl GET semplice (HTTP 200), testo estratto dall'HTML e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Pagina del sito PLD, article:published_time 2026-10-25T17:07:22+00:00, categoria «Social», autore Alessio Pellizzaro; la frase è del partito («Il nostro … ci ricorda»), dichiarante = canale ufficiale (V1). L'API WordPress (search=Rai) non trova testi PLD precedenti sulla privatizzazione: nessun doppione né testo fuori periodo. Direzione univoca (privatizzare), diversa da «riforma della Rai» di C27-PD-023.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-26 — CONFERMATA: strumento identificabile (privatizzazione di una società pubblica nominata, la Rai); testo del partito sul canale ufficiale | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
+    }
+  },
+  {
     "id": "C27-ORA-001",
     "partitoId": "ORA",
     "dichiarante": "ORA! e Michele Boldrin",
@@ -8897,6 +9122,81 @@
     "verifica": {
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-24 — CONFERMATA: intervista sul palco valida come intervista (D-019): domande del direttore della testata, pubblicata dalla testata come «L'intervista completa», citazione verificata sul testo; caso limite superato sul criterio slogan (valore di arrivo: scuole aperte anche il pomeriggio in tutta Italia; nessuna risorsa né modalità) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
+    }
+  },
+  {
+    "id": "C27-PCIT-006",
+    "partitoId": "PCIT",
+    "dichiarante": "Alessandro Onorato",
+    "ruoloDichiarante": "Leader (coordinatore nazionale) di Progetto Civico Italia; assessore di Roma Capitale",
+    "data": "2026-10-26",
+    "testoLetterale": "oltre un certo profitto per le società deve scattare una tassazione in più, che rientra come sconto in bolletta per gli utenti",
+    "parafrasiNeutra": "Per le società (contesto: energia), un'imposta aggiuntiva sui profitti oltre una certa soglia, restituita agli utenti come sconto in bolletta.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.ilmessaggero.it/politica/onorato_proposte_mutui_case_popolari_sport-9848214.html"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Discorso di chiusura degli Stati generali di Progetto Civico Italia (Roma, Shangri-La, domenica 25/10/2026), virgolettato riportato da Il Messaggero (datePublished 2026-10-26T01:30+01:00), articolo letto per intero con curl GET (HTTP 200). Canale: ricerca web «Onorato discorso» / «Progetto Civico evento» (progettocivicoitalia.it: feed e API WordPress 200, ultimo post 07/09). V2 (discorso riportato da testata, come C27-LEGA-025 e C27-FI-017). La stessa fonte riassume senza virgolettato altre voci dei «dieci punti» (case popolari 6.600 alloggi l'anno con la tassa di soggiorno, agenzia per l'abitare in capo a Cdp, mutui a tasso zero, meno tasse per chi entra nel lavoro, nidi e sport gratuiti, Daspo per gli stalker, finestra di 5 anni per la revoca della cittadinanza): non registrate perché senza parole del dichiarante. Voce «energia» dei dieci punti («c'è l'energia» nel testo del cronista). Soglia non indicata. Collegata per tema a C27-PAP-009 (altro partito). Orizzonte/veicolo: non_specificato e dichiarazione. COFOG 04 (alternativa 01). Pre-valutazione slogan: OK (strumento: imposta sui profitti oltre una soglia con destinazione definita). (verifica L2 2026-10-26) Metodo: fonte riaperta con curl GET semplice (HTTP 200), testo estratto dall'HTML e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Il Messaggero (Ernesto Menicucci), datePublished 2026-10-26T01:30:04+01:00; frammento fra virgolette dentro l'elenco del cronista («c'è l'energia (“…”)»). La pagina è marcata «riservato agli abbonati premium», ma il testo completo è nell'HTML servito a una GET semplice: nessun aggiramento. Diversa da C27-PD-025 (uscita: nessuna leva): qui la leva è nominata. Soglia non indicata: misurabile parziale.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-26 — CORRETTA: data 2026-10-25 → 2026-10-26 (pubblicazione del Messaggero, lunedì 26/10 01:30; il discorso è del 25/10); COFOG 04 → 01 (imposta, come C27-AVS-002 e C27-PAP-009); parafrasi: il settore energia viene dal contesto del cronista, ora indicato come tale; caso limite superato (imposta su una base definita, profitti oltre una soglia, con destinazione definita); discorso riportato da testata: V2 (D-019) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
+    }
+  },
+  {
+    "id": "C27-PCIT-007",
+    "partitoId": "PCIT",
+    "dichiarante": "Alessandro Onorato",
+    "ruoloDichiarante": "Leader (coordinatore nazionale) di Progetto Civico Italia; assessore di Roma Capitale",
+    "data": "2026-10-26",
+    "testoLetterale": "strumenti di prima diagnostica per i medici di base, per decongestionare i pronto soccorso da codici bianchi e verdi",
+    "parafrasiNeutra": "Dotare i medici di base di strumenti di prima diagnostica per ridurre gli accessi in pronto soccorso dei codici bianchi e verdi.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.ilmessaggero.it/politica/onorato_proposte_mutui_case_popolari_sport-9848214.html"
+    },
+    "archivioUrl": null,
+    "cofog": "07",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Discorso di chiusura degli Stati generali di Progetto Civico Italia (Roma, Shangri-La, domenica 25/10/2026), virgolettato riportato da Il Messaggero (datePublished 2026-10-26T01:30+01:00), articolo letto per intero con curl GET (HTTP 200). Canale: ricerca web «Onorato discorso» / «Progetto Civico evento» (progettocivicoitalia.it: feed e API WordPress 200, ultimo post 07/09). V2 (discorso riportato da testata, come C27-LEGA-025 e C27-FI-017). La stessa fonte riassume senza virgolettato altre voci dei «dieci punti» (case popolari 6.600 alloggi l'anno con la tassa di soggiorno, agenzia per l'abitare in capo a Cdp, mutui a tasso zero, meno tasse per chi entra nel lavoro, nidi e sport gratuiti, Daspo per gli stalker, finestra di 5 anni per la revoca della cittadinanza): non registrate perché senza parole del dichiarante. Voce «Sanità» dei dieci punti. Nessun importo. Orizzonte/veicolo: non_specificato e dichiarazione. COFOG 07. Pre-valutazione slogan: LIM (strumento e platea nominati: dotazione diagnostica dei medici di base; nessuna quantità). (verifica L2 2026-10-26) Metodo: fonte riaperta con curl GET semplice (HTTP 200), testo estratto dall'HTML e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Il Messaggero, datePublished 2026-10-26T01:30:04+01:00; frammento fra virgolette nella voce «Sanità» dell'elenco del cronista. Nessun importo né numero: misurabile parziale. Nessun doppione nelle righe PCIT.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-26 — CORRETTA: data 2026-10-25 → 2026-10-26 (pubblicazione del Messaggero; discorso del 25/10); caso limite superato (azione identificabile con destinatari nominati: dotazione di strumenti di prima diagnostica ai medici di base, come C27-AZ-033); discorso riportato da testata: V2 (D-019) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
+    }
+  },
+  {
+    "id": "C27-PCIT-009",
+    "partitoId": "PCIT",
+    "dichiarante": "Alessandro Onorato",
+    "ruoloDichiarante": "Leader (coordinatore nazionale) di Progetto Civico Italia; assessore di Roma Capitale",
+    "data": "2026-10-25",
+    "testoLetterale": "Una volta ottenuta ci può essere una finestra nella quale se commetti un reato la cittadinanza ti viene tolta",
+    "parafrasiNeutra": "Introdurre un periodo dopo l'acquisto della cittadinanza in cui chi commette un reato la perde.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.affaritaliani.it/politica/onorato-lancia-il-programma-di-progetto-civico-alle-primarie-ci-saremo-non-escludo-di-candidarmi-renzi-vado-daccordo.html"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Discorso di chiusura degli Stati generali di Progetto Civico Italia (Roma, 25/10/2026), virgolettato riportato da Affaritaliani («ha detto Onorato durante il suo discorso», datePublished 2026-10-25T13:12Z), letto per intero con curl GET (HTTP 200). Canale: ricerca web «Onorato discorso» / «Progetto Civico evento». V2 (discorso riportato da testata). Il Messaggero (26/10) riporta senza virgolettato la stessa voce come «periodo finestra di 5 anni per chi prende la nazionalità italiana»: la durata non è nelle parole del dichiarante. Formulazione possibilista («ci può essere»). Collegata a C27-PCIT-008 (stessa risposta). Orizzonte/veicolo: non_specificato e dichiarazione. COFOG 03. Pre-valutazione slogan: LIM (strumento: revoca della cittadinanza per reato entro un periodo; durata e reati non indicati nel virgolettato). (verifica L2 2026-10-26) Metodo: fonte riaperta con curl GET semplice (HTTP 200), testo estratto dall'HTML e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Affaritaliani (datePublished 2026-10-25T13:12:05+00:00), frase che segue PCIT-008 nello stesso virgolettato. Formula possibilista («ci può essere») accettata come per C27-LEGA-026 («mi auguro»). La durata di 5 anni è solo nel testo del Messaggero, non fra virgolette: resta fuori. Durata e reati non indicati: misurabile parziale.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-26 — CORRETTA: COFOG 03 → 01 (cittadinanza, come C27-LEGA-008, 026, 027); istituto identificabile (revoca della cittadinanza per reato entro un periodo dall'acquisto), come C27-LEGA-026; discorso riportato da testata: V2 (D-019) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
     }
   }
 ]
