@@ -4850,6 +4850,256 @@
     }
   },
   {
+    "id": "C27-AVS-054",
+    "partitoId": "AVS",
+    "dichiarante": "Angelo Bonelli",
+    "ruoloDichiarante": "co-portavoce nazionale AVS (Europa Verde), deputato",
+    "data": "2026-10-26",
+    "testoLetterale": "Chiediamo che l’Italia richiami immediatamente il proprio ambasciatore in Israele.",
+    "parafrasiNeutra": "Richiamare l'ambasciatore italiano in Israele.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "altro",
+    "fonte": {
+      "url": "https://verdisinistra.it/cisgiordania-bonelli-avs-il-blocco-totale-e-terrorismo-di-stato-meloni-basta-ipocrisia-ritiri-lambasciatore-e-dica-si-alle-sanzioni-contro-netanyahu/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: sito ufficiale verdisinistra.it, API WordPress (/wp-json/wp/v2/posts?after=2026-10-25T00:00:00, HTTP 200) e pagina dell'articolo (curl GET, HTTP 200), letti il 2026-10-27; comunicato del 2026-10-26T13:55 («Così in una nota Angelo Bonelli, deputato di Alleanza Verdi e Sinistra e co-portavoce di Europa Verde»). Citazione confrontata in automatico parola per parola con il testo della pagina: ritrovata, frase intera, nessun taglio. Stessa richiesta nel comunicato Bonelli dello stesso giorno (verdisinistra.it/cisgiordania-bonelli-avs-case-marchiate-…, 13:52): «Chiediamo il richiamo immediato dell’ambasciatore italiano in Israele e le sanzioni contro Netanyahu e i ministri responsabili a cui il governo Meloni si oppone». Orizzonte/veicolo: legislatura_in_corso e altro (richiesta al Governo in carica, stessa regola di C27-AVS-045). COFOG 01 (affari esteri). Doppioni: nessuna riga sull'ambasciatore in Israele nei CSV. Pre-valutazione slogan: OK (atto diplomatico identificabile: richiamo dell'ambasciatore). (verifica L2 2026-10-27) Metodo: fonte riaperta con curl GET semplice, testo estratto dall'HTML e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato, frase intera (verdisinistra.it, HTTP 200 con curl senza user agent; con user agent del browser 403, non insistito; datePublished 2026-10-26T12:55:39+00:00). Nota firmata «Angelo Bonelli, deputato di Alleanza Verdi e Sinistra e co-portavoce di Europa Verde»: dichiarante autorizzato (come C27-AVS-045/046). Sito ufficiale: V1. Atto diplomatico identificabile, supera il criterio slogan; misurabile sì (richiamo avvenuto o no); COFOG 01; orizzonte/veicolo legislatura_in_corso e altro come C27-AVS-045. Nessun doppione nelle righe AVS (C27-AVS-040 non contiene l'ambasciatore). Il ruolo «co-portavoce nazionale AVS (Europa Verde)» è la forma di C27-AVS-046; C27-AVS-045 usa «Co-portavoce di Europa Verde, deputato AVS», più vicina alla fonte: da uniformare in un passaggio a parte.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-27 — CONFERMATA: strumento identificabile (atto diplomatico nominato: richiamo dell'ambasciatore italiano in Israele); comunicato sul sito ufficiale AVS: V1 | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: altro, richiesta al Governo in carica]"
+    }
+  },
+  {
+    "id": "C27-M5S-047",
+    "partitoId": "M5S",
+    "dichiarante": "Mario Turco",
+    "ruoloDichiarante": "vicepresidente del MoVimento 5 Stelle con delega a Economia, lavoro e imprese, senatore",
+    "data": "2026-10-26",
+    "testoLetterale": "Per rendere espansiva la manovra occorre invertire queste priorità: cancellare l’aumento delle spese militari",
+    "parafrasiNeutra": "Togliere dalla legge di bilancio 2027 l’aumento delle spese militari.",
+    "tipoFonte": "intervista",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://www.lanotiziagiornale.it/turco-da-meloni-una-manovra-di-guerra-fermiamo-la-corsa-al-riarmo-per-finanziare-sanita-scaglioni-irpef-e-un-fondo-sovrano-da-100-miliardi/"
+    },
+    "archivioUrl": null,
+    "cofog": "02",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (binario 2, query uniformi «M5S intervista», «M5S proposta», «Conte intervista», «Conte proposta», when:2d), trovata con «Conte proposta»; testata La Notizia (lanotiziagiornale.it), intervista di Sara Manfuso a Mario Turco, datePublished 2026-10-26T22:31:06Z (26/10 ore 23:31 in Italia), letta per intero il 2026-10-27 con curl GET semplice (HTTP 200), testata aperta. Intervista da testata: fonte primaria (V1, D-019). Ruolo dal testo della testata («Vicepresidente del Movimento 5 Stelle con delega a Economia, lavoro e imprese»): dirigente nazionale di settore sul proprio tema, come C27-PD-032 (Misiani). Citazione confrontata in automatico parola per parola con il testo della pagina. Risposta alla domanda «Quali cambiamenti suggerisce?», che segue quella sulla «correzione» che renderebbe «questa manovra espansiva»; nella risposta precedente Turco indica «circa 4,5 miliardi di euro alla difesa, contro appena 2,4 miliardi alla sanità» (cifra del proponente sulla manovra, non un costo della misura: costo_dichiarato vuoto). La frase continua con «rivedere gli impegni sul riarmo assunti da Giorgia Meloni in sede NATO e rimettere in discussione il Patto di stabilità europeo»: non registrate (criterio slogan: direzione senza parametro né strumento; la prima è vicina a C27-M5S-021). Collegata a C27-M5S-021 (no al 5% del Pil in sede Nato), non doppione: qui è l’aumento previsto dalla manovra in corso. Orizzonte/veicolo: legislatura_in_corso e richiesta_legge_bilancio (la domanda e la frase nominano la manovra). COFOG 02. Pre-valutazione slogan: OK/LIM (oggetto definito: l’aumento delle spese militari della manovra; vale come tetto al livello attuale). Letta il 2026-10-27. Nessuna copia Wayback (wayback/available vuoto il 2026-10-27). (verifica L2 2026-10-27) Metodo: fonte riaperta con curl GET semplice, senza user agent da browser (HTTP 200), testo estratto dall'HTML e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. La Notizia, intervista di Sara Manfuso, datePublished 2026-10-26T22:31:06+00:00 (26/10 in Italia). La frase è nella risposta virgolettata di Turco, non nella domanda né nel cappello. Ruolo: la testata scrive «senatore Mario Turco, Vicepresidente del Movimento 5 Stelle con delega a Economia, lavoro e imprese»; mandato di senatore XIX legislatura confermato su dati.senato.it (SPARQL, inizio 2022-10-13, senza data di fine): dichiarante autorizzato, dirigente nazionale sul proprio tema come C27-PD-032. Intervista da testata: V1 (D-019). Risposta a «Quali cambiamenti suggerisce?», che segue la domanda sulla correzione che renderebbe «questa manovra espansiva»: orizzonte legislatura_in_corso e veicolo richiesta_legge_bilancio confermati. Testo intero dall'inizio della risposta, nessun taglio. Parafrasi neutra, non più forte del testo. COFOG 02. Non è doppione di C27-M5S-021 (obiettivo NATO del 5% del PIL, documento programmatico): qui l'oggetto è l'aumento previsto dalla legge di bilancio in corso. Correzione: misurabile si → parziale. Nessun costo dichiarato (i 4,5 miliardi alla difesa della risposta precedente sono una cifra della manovra, non il costo della misura).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-27 — CONFERMATA: supera il criterio slogan come tetto al livello attuale («cancellare l'aumento» previsto dalla manovra in discussione), come C27-AVS-042 e C27-PD-021; diversa da C27-AVS-023 (uscita come slogan: «riduzione reale» senza livello di riferimento); corretta: misurabile si → parziale (come C27-AVS-042, C27-PD-021, C27-M5S-021: l'entità dell'aumento non è indicata nella frase) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: richiesta_legge_bilancio]"
+    }
+  },
+  {
+    "id": "C27-M5S-048",
+    "partitoId": "M5S",
+    "dichiarante": "Mario Turco",
+    "ruoloDichiarante": "vicepresidente del MoVimento 5 Stelle con delega a Economia, lavoro e imprese, senatore",
+    "data": "2026-10-26",
+    "testoLetterale": "Serve poi una vera riforma fiscale e industriale: no tax area fino a 20.000 euro",
+    "parafrasiNeutra": "Portare la no tax area dell’Irpef fino a 20.000 euro di reddito.",
+    "tipoFonte": "intervista",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://www.lanotiziagiornale.it/turco-da-meloni-una-manovra-di-guerra-fermiamo-la-corsa-al-riarmo-per-finanziare-sanita-scaglioni-irpef-e-un-fondo-sovrano-da-100-miliardi/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (binario 2, query uniformi «M5S intervista», «M5S proposta», «Conte intervista», «Conte proposta», when:2d), trovata con «Conte proposta»; testata La Notizia (lanotiziagiornale.it), intervista di Sara Manfuso a Mario Turco, datePublished 2026-10-26T22:31:06Z (26/10 ore 23:31 in Italia), letta per intero il 2026-10-27 con curl GET semplice (HTTP 200), testata aperta. Intervista da testata: fonte primaria (V1, D-019). Ruolo dal testo della testata («Vicepresidente del Movimento 5 Stelle con delega a Economia, lavoro e imprese»): dirigente nazionale di settore sul proprio tema, come C27-PD-032 (Misiani). Citazione confrontata in automatico parola per parola con il testo della pagina. Stessa risposta di C27-M5S-047 (domanda sulla manovra). Nella stessa frase: «scala mobile fiscale» (doppione di C27-M5S-007, «meccanismi automatici di neutralizzazione del “fiscal drag”»; Turco precisa poi che è la sua proposta di legge «a mia prima firma e depositata in Senato nel luglio 2025»: non registrata), «cashback fiscale» (C27-M5S-049) e «rilancio di Transizione 4.0» (doppione di C27-M5S-010). Collegata a C27-M5S-007 («ampliando scaglioni e no tax area», senza soglia): qui c’è il valore di arrivo, quindi riga distinta; da valutare se doppione. Nessun costo dichiarato. Orizzonte/veicolo: legislatura_in_corso e richiesta_legge_bilancio. COFOG 01. Pre-valutazione slogan: OK (valore di arrivo: 20.000 euro). Letta il 2026-10-27. Nessuna copia Wayback (wayback/available vuoto il 2026-10-27). (verifica L2 2026-10-27) Metodo: fonte riaperta con curl GET semplice, senza user agent da browser (HTTP 200), testo estratto dall'HTML e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. La Notizia, intervista di Sara Manfuso, datePublished 2026-10-26T22:31:06+00:00 (26/10 in Italia). La frase è nella risposta virgolettata di Turco, non nella domanda né nel cappello. Ruolo: la testata scrive «senatore Mario Turco, Vicepresidente del Movimento 5 Stelle con delega a Economia, lavoro e imprese»; mandato di senatore XIX legislatura confermato su dati.senato.it (SPARQL, inizio 2022-10-13, senza data di fine): dichiarante autorizzato, dirigente nazionale sul proprio tema come C27-PD-032. Intervista da testata: V1 (D-019). Stessa risposta di C27-M5S-047 (domanda sulla manovra): orizzonte e veicolo confermati. Testo intero dall'inizio della frase, nessun taglio. Sovrapposizione parziale con C27-M5S-007 segnalata: stesso istituto, qui con la soglia; conta come riga distinta. La fonte non dice per quali contribuenti vale la soglia (dipendenti, pensionati, autonomi): la parafrasi non lo aggiunge. «fino a 20.000 euro» è una soglia, non un costo: costo_dichiarato vuoto. COFOG 01, misurabile si.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-27 — CONFERMATA: valore di arrivo (no tax area fino a 20.000 euro); non è doppione di C27-M5S-007 (programma: «ampliando scaglioni e no tax area» senza soglia), aggiunge il parametro, come C27-PAP-010 rispetto a C27-PAP-001 (elemento distinto) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: richiesta_legge_bilancio]"
+    }
+  },
+  {
+    "id": "C27-M5S-049",
+    "partitoId": "M5S",
+    "dichiarante": "Mario Turco",
+    "ruoloDichiarante": "vicepresidente del MoVimento 5 Stelle con delega a Economia, lavoro e imprese, senatore",
+    "data": "2026-10-26",
+    "testoLetterale": "Serve poi una vera riforma fiscale e industriale: […] cashback fiscale per sostenere i consumi",
+    "parafrasiNeutra": "Introdurre un cashback fiscale per sostenere i consumi.",
+    "tipoFonte": "intervista",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://www.lanotiziagiornale.it/turco-da-meloni-una-manovra-di-guerra-fermiamo-la-corsa-al-riarmo-per-finanziare-sanita-scaglioni-irpef-e-un-fondo-sovrano-da-100-miliardi/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (binario 2, query uniformi «M5S intervista», «M5S proposta», «Conte intervista», «Conte proposta», when:2d), trovata con «Conte proposta»; testata La Notizia (lanotiziagiornale.it), intervista di Sara Manfuso a Mario Turco, datePublished 2026-10-26T22:31:06Z (26/10 ore 23:31 in Italia), letta per intero il 2026-10-27 con curl GET semplice (HTTP 200), testata aperta. Intervista da testata: fonte primaria (V1, D-019). Ruolo dal testo della testata («Vicepresidente del Movimento 5 Stelle con delega a Economia, lavoro e imprese»): dirigente nazionale di settore sul proprio tema, come C27-PD-032 (Misiani). Citazione confrontata in automatico parola per parola con il testo della pagina. Stessa frase di C27-M5S-048; il «[…]» toglie «no tax area fino a 20.000 euro, scala mobile fiscale,» (nessuna parola su gruppi di persone). Meccanismo, importi e platea non indicati. Nessun doppione nelle righe M5S. Orizzonte/veicolo: legislatura_in_corso e richiesta_legge_bilancio (risposta sulla manovra). COFOG 01. Pre-valutazione slogan: LIM (strumento nominato, il cashback fiscale, senza parametri). Letta il 2026-10-27. Nessuna copia Wayback (wayback/available vuoto il 2026-10-27). (verifica L2 2026-10-27) Metodo: fonte riaperta con curl GET semplice, senza user agent da browser (HTTP 200), testo estratto dall'HTML e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. La Notizia, intervista di Sara Manfuso, datePublished 2026-10-26T22:31:06+00:00 (26/10 in Italia). La frase è nella risposta virgolettata di Turco, non nella domanda né nel cappello. Ruolo: la testata scrive «senatore Mario Turco, Vicepresidente del Movimento 5 Stelle con delega a Economia, lavoro e imprese»; mandato di senatore XIX legislatura confermato su dati.senato.it (SPARQL, inizio 2022-10-13, senza data di fine): dichiarante autorizzato, dirigente nazionale sul proprio tema come C27-PD-032. Intervista da testata: V1 (D-019). Stessa frase di C27-M5S-048. Il «[…]» toglie «no tax area fino a 20.000 euro, scala mobile fiscale,»: voci della stessa elencazione, nessuna parola su gruppi di persone, senso invariato. Parafrasi fedele. Nessun doppione nelle righe M5S. Da segnalare al titolare come caso limite: se il criterio richiede anche un parametro per i bonus fiscali, la riga esce come slogan. COFOG 01, misurabile parziale; orizzonte e veicolo confermati (risposta sulla manovra).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-27 — CONFERMATA, caso limite superato: strumento nominato (cashback fiscale) con scopo dichiarato, senza importo né platea; il nome descrive il meccanismo (rimborso di una quota delle spese), a differenza del «modello spagnolo» di C27-PD-035 | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: richiesta_legge_bilancio]"
+    }
+  },
+  {
+    "id": "C27-M5S-050",
+    "partitoId": "M5S",
+    "dichiarante": "Mario Turco",
+    "ruoloDichiarante": "vicepresidente del MoVimento 5 Stelle con delega a Economia, lavoro e imprese, senatore",
+    "data": "2026-10-26",
+    "testoLetterale": "Le coperture per una vera manovra espansiva devono arrivare anche […] da un contributo sugli utili netti annui eccedenti i 5 milioni di euro realizzati da banche e operatori finanziari attraverso il trading algoritmico ad alta frequenza (HFT), escludendo i piccoli risparmiatori",
+    "parafrasiNeutra": "Introdurre un contributo sugli utili netti annui oltre i 5 milioni di euro che banche e operatori finanziari realizzano con il trading algoritmico ad alta frequenza, esclusi i piccoli risparmiatori.",
+    "tipoFonte": "intervista",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://www.lanotiziagiornale.it/turco-da-meloni-una-manovra-di-guerra-fermiamo-la-corsa-al-riarmo-per-finanziare-sanita-scaglioni-irpef-e-un-fondo-sovrano-da-100-miliardi/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (binario 2, query uniformi «M5S intervista», «M5S proposta», «Conte intervista», «Conte proposta», when:2d), trovata con «Conte proposta»; testata La Notizia (lanotiziagiornale.it), intervista di Sara Manfuso a Mario Turco, datePublished 2026-10-26T22:31:06Z (26/10 ore 23:31 in Italia), letta per intero il 2026-10-27 con curl GET semplice (HTTP 200), testata aperta. Intervista da testata: fonte primaria (V1, D-019). Ruolo dal testo della testata («Vicepresidente del Movimento 5 Stelle con delega a Economia, lavoro e imprese»): dirigente nazionale di settore sul proprio tema, come C27-PD-032 (Misiani). Citazione confrontata in automatico parola per parola con il testo della pagina. Risposta alla domanda «da dove prenderemmo le risorse?». Il «[…]» toglie «da una tassazione strutturale degli extraprofitti bancari, energetici, finanziari e dell’industria bellica, da una maggiore imposizione sulle grandi ricchezze finanziarie e speculative e» (nessuna parola su gruppi di persone: «banche e operatori finanziari» e «piccoli risparmiatori» restano). Non registrate: extraprofitti (doppione di C27-M5S-008); «maggiore imposizione sulle grandi ricchezze finanziarie e speculative» e «revisione delle agevolazioni fiscali inefficienti» (criterio slogan: direzione su un aggregato senza soglia né imposta nominata). Gettito non indicato. Orizzonte/veicolo: legislatura_in_corso e richiesta_legge_bilancio (coperture della manovra). COFOG 01. Pre-valutazione slogan: OK (soglia di 5 milioni e base imponibile definita). Letta il 2026-10-27. Nessuna copia Wayback (wayback/available vuoto il 2026-10-27). (verifica L2 2026-10-27) Metodo: fonte riaperta con curl GET semplice, senza user agent da browser (HTTP 200), testo estratto dall'HTML e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. La Notizia, intervista di Sara Manfuso, datePublished 2026-10-26T22:31:06+00:00 (26/10 in Italia). La frase è nella risposta virgolettata di Turco, non nella domanda né nel cappello. Ruolo: la testata scrive «senatore Mario Turco, Vicepresidente del Movimento 5 Stelle con delega a Economia, lavoro e imprese»; mandato di senatore XIX legislatura confermato su dati.senato.it (SPARQL, inizio 2022-10-13, senza data di fine): dichiarante autorizzato, dirigente nazionale sul proprio tema come C27-PD-032. Intervista da testata: V1 (D-019). Risposta a «da dove prenderemmo le risorse?» (coperture della manovra): orizzonte e veicolo confermati. Il «[…]» toglie «da una tassazione strutturale degli extraprofitti bancari, energetici, finanziari e dell'industria bellica, da una maggiore imposizione sulle grandi ricchezze finanziarie e speculative e»: voci della stessa elencazione, nessuna parola su gruppi di persone («banche e operatori finanziari» e «piccoli risparmiatori» restano), senso invariato. Parafrasi fedele: «oltre i 5 milioni» rende «eccedenti i 5 milioni» senza sciogliere l'ambiguità (contributo sulla parte eccedente o sugli operatori sopra soglia). Gettito non indicato: costo_dichiarato vuoto (5 milioni è una soglia). COFOG 01, misurabile si.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-27 — CONFERMATA: soglia (5 milioni di euro di utili netti annui) e base definita (utili da trading algoritmico ad alta frequenza di banche e operatori finanziari); non è doppione di C27-M5S-008 (contributo sugli extraprofitti: base diversa) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: richiesta_legge_bilancio]"
+    }
+  },
+  {
+    "id": "C27-M5S-051",
+    "partitoId": "M5S",
+    "dichiarante": "Mario Turco",
+    "ruoloDichiarante": "vicepresidente del MoVimento 5 Stelle con delega a Economia, lavoro e imprese, senatore",
+    "data": "2026-10-26",
+    "testoLetterale": "Per questo abbiamo proposto un Fondo Taglia Tasse, per alleggerire il carico fiscale sul lavoro e sulla produzione e rafforzare lo Stato sociale.",
+    "parafrasiNeutra": "Istituire un «Fondo Taglia Tasse» per ridurre il carico fiscale sul lavoro e sulla produzione e rafforzare lo Stato sociale.",
+    "tipoFonte": "intervista",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://www.lanotiziagiornale.it/turco-da-meloni-una-manovra-di-guerra-fermiamo-la-corsa-al-riarmo-per-finanziare-sanita-scaglioni-irpef-e-un-fondo-sovrano-da-100-miliardi/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (binario 2, query uniformi «M5S intervista», «M5S proposta», «Conte intervista», «Conte proposta», when:2d), trovata con «Conte proposta»; testata La Notizia (lanotiziagiornale.it), intervista di Sara Manfuso a Mario Turco, datePublished 2026-10-26T22:31:06Z (26/10 ore 23:31 in Italia), letta per intero il 2026-10-27 con curl GET semplice (HTTP 200), testata aperta. Intervista da testata: fonte primaria (V1, D-019). Ruolo dal testo della testata («Vicepresidente del Movimento 5 Stelle con delega a Economia, lavoro e imprese»): dirigente nazionale di settore sul proprio tema, come C27-PD-032 (Misiani). Citazione confrontata in automatico parola per parola con il testo della pagina. Stessa risposta di C27-M5S-050 (coperture della manovra). Nella risposta successiva Turco descrive il fondo come «alimentato dalla tassazione delle grandi ricchezze finanziarie, degli extraprofitti e dal contrasto alla grande evasione ed elusione fiscale». Dotazione non indicata; «abbiamo proposto» non dice con quale atto (non trovato un atto nel periodo). Nessun doppione nelle righe M5S. Orizzonte/veicolo: legislatura_in_corso e richiesta_legge_bilancio (risposta sulla manovra; caso dubbio sul veicolo). COFOG 01. Pre-valutazione slogan: LIM (strumento identificabile: un fondo con oggetto definito, senza importo). Letta il 2026-10-27. Nessuna copia Wayback (wayback/available vuoto il 2026-10-27). (verifica L2 2026-10-27) Metodo: fonte riaperta con curl GET semplice, senza user agent da browser (HTTP 200), testo estratto dall'HTML e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. La Notizia, intervista di Sara Manfuso, datePublished 2026-10-26T22:31:06+00:00 (26/10 in Italia). La frase è nella risposta virgolettata di Turco, non nella domanda né nel cappello. Ruolo: la testata scrive «senatore Mario Turco, Vicepresidente del Movimento 5 Stelle con delega a Economia, lavoro e imprese»; mandato di senatore XIX legislatura confermato su dati.senato.it (SPARQL, inizio 2022-10-13, senza data di fine): dichiarante autorizzato, dirigente nazionale sul proprio tema come C27-PD-032. Intervista da testata: V1 (D-019). Stessa risposta di C27-M5S-050. Frase intera, nessun taglio. Correzione: parafrasi «ridurre le imposte … e finanziare lo Stato sociale» → «ridurre il carico fiscale … e rafforzare lo Stato sociale», più vicina al testo. «abbiamo proposto» non indica l'atto: veicolo richiesta_legge_bilancio tenuto perché la risposta riguarda le coperture della manovra (caso dubbio, alternativa dichiarazione). Nessun doppione nelle righe M5S. Da segnalare al titolare come caso limite (oggetto su aggregati: lavoro e produzione). Dotazione non indicata: costo_dichiarato vuoto. COFOG 01, misurabile parziale.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-27 — CONFERMATA, caso limite superato: fondo nominato con oggetto definito (riduzione del carico fiscale su lavoro e produzione) e fonti di alimentazione descritte nella risposta successiva, senza importo; corretta: parafrasi «finanziare lo Stato sociale» → «rafforzare lo Stato sociale» (parola del testo) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: richiesta_legge_bilancio, caso dubbio]"
+    }
+  },
+  {
+    "id": "C27-M5S-052",
+    "partitoId": "M5S",
+    "dichiarante": "Mario Turco",
+    "ruoloDichiarante": "vicepresidente del MoVimento 5 Stelle con delega a Economia, lavoro e imprese, senatore",
+    "data": "2026-10-26",
+    "testoLetterale": "Per questo abbiamo già depositato in Parlamento la proposta di legge sul Fondo sovrano nazionale di sviluppo, a prima firma Giuseppe Conte alla Camera e mia al Senato, con l’obiettivo di mobilitare almeno 100 miliardi di euro di capitali pubblici e privati",
+    "parafrasiNeutra": "Istituire un Fondo sovrano nazionale di sviluppo con l'obiettivo di mobilitare almeno 100 miliardi di euro di capitali pubblici e privati.",
+    "tipoFonte": "intervista",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "proposta_di_legge",
+    "fonte": {
+      "url": "https://www.lanotiziagiornale.it/turco-da-meloni-una-manovra-di-guerra-fermiamo-la-corsa-al-riarmo-per-finanziare-sanita-scaglioni-irpef-e-un-fondo-sovrano-da-100-miliardi/"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (binario 2, query uniformi «M5S intervista», «M5S proposta», «Conte intervista», «Conte proposta», when:2d), trovata con «Conte proposta»; testata La Notizia (lanotiziagiornale.it), intervista di Sara Manfuso a Mario Turco, datePublished 2026-10-26T22:31:06Z (26/10 ore 23:31 in Italia), letta per intero il 2026-10-27 con curl GET semplice (HTTP 200), testata aperta. Intervista da testata: fonte primaria (V1, D-019). Ruolo dal testo della testata («Vicepresidente del Movimento 5 Stelle con delega a Economia, lavoro e imprese»): dirigente nazionale di settore sul proprio tema, come C27-PD-032 (Misiani). Citazione confrontata in automatico parola per parola con il testo della pagina. Risposta alla domanda sulla governance del fondo. Proposta di legge a prima firma del presidente del partito (Conte) alla Camera e di Turco al Senato: atto del partito, non personale (D-012 non si applica); data di deposito non indicata e non cercata negli atti. La risposta aggiunge che il fondo sarà «una public corporation, dotata di autonoma personalità giuridica» e investirà in «energia, infrastrutture, innovazione, tecnologie digitali, ricerca e filiere industriali, con particolare attenzione al Mezzogiorno». I 100 miliardi sono capitali da mobilitare, non un costo per lo Stato: costo_dichiarato vuoto. Nessun doppione nelle righe M5S. Orizzonte/veicolo: legislatura_in_corso e proposta_di_legge. COFOG 04. Pre-valutazione slogan: OK (strumento: fondo istituito per legge, con importo). Letta il 2026-10-27. Nessuna copia Wayback (wayback/available vuoto il 2026-10-27). (verifica L2 2026-10-27) Metodo: fonte riaperta con curl GET semplice, senza user agent da browser (HTTP 200), testo estratto dall'HTML e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. La Notizia, intervista di Sara Manfuso, datePublished 2026-10-26T22:31:06+00:00 (26/10 in Italia). La frase è nella risposta virgolettata di Turco, non nella domanda né nel cappello. Ruolo: la testata scrive «senatore Mario Turco, Vicepresidente del Movimento 5 Stelle con delega a Economia, lavoro e imprese»; mandato di senatore XIX legislatura confermato su dati.senato.it (SPARQL, inizio 2022-10-13, senza data di fine): dichiarante autorizzato, dirigente nazionale sul proprio tema come C27-PD-032. Intervista da testata: V1 (D-019). Risposta alla domanda sulla governance del fondo. Frase intera fino a «capitali pubblici e privati», nessun taglio interno. Riscontro dell'atto su dati.camera.it (SPARQL, XIX legislatura): AC 3065, «CONTE ed altri: Istituzione del Fondo di sviluppo per l'economia, le infrastrutture e l'innovazione», data 2026-08-03; il titolo non contiene «sovrano»: corrispondenza probabile, testo dell'atto non letto. Il deposito al Senato a prima firma Turco non è stato cercato. Correzione: parafrasi «che mobiliti» → «con l'obiettivo di mobilitare» (il testo indica un obiettivo, non un esito). I 100 miliardi sono capitali da mobilitare, non un costo per lo Stato: costo_dichiarato vuoto. Nessun doppione nelle righe M5S. Orizzonte legislatura_in_corso (PdL depositata). COFOG 04, misurabile si.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-27 — CONFERMATA: strumento identificabile (fondo istituito con proposta di legge depositata) e valore obiettivo (almeno 100 miliardi da mobilitare); PdL a prima firma del presidente del partito (Conte) alla Camera: atto del partito, non personale (D-012 non si applica); corretta: parafrasi «che mobiliti» → «con l'obiettivo di mobilitare» | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: proposta_di_legge]"
+    }
+  },
+  {
+    "id": "C27-M5S-053",
+    "partitoId": "M5S",
+    "dichiarante": "Mario Turco",
+    "ruoloDichiarante": "vicepresidente del MoVimento 5 Stelle con delega a Economia, lavoro e imprese, senatore",
+    "data": "2026-10-26",
+    "testoLetterale": "A questa proposta vogliamo affiancare una banca pubblica specializzata nella capitalizzazione delle micro e piccole imprese, per favorirne aggregazioni, patrimonializzazione e crescita dimensionale.",
+    "parafrasiNeutra": "Creare una banca pubblica dedicata alla capitalizzazione delle micro e piccole imprese.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.lanotiziagiornale.it/turco-da-meloni-una-manovra-di-guerra-fermiamo-la-corsa-al-riarmo-per-finanziare-sanita-scaglioni-irpef-e-un-fondo-sovrano-da-100-miliardi/"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (binario 2, query uniformi «M5S intervista», «M5S proposta», «Conte intervista», «Conte proposta», when:2d), trovata con «Conte proposta»; testata La Notizia (lanotiziagiornale.it), intervista di Sara Manfuso a Mario Turco, datePublished 2026-10-26T22:31:06Z (26/10 ore 23:31 in Italia), letta per intero il 2026-10-27 con curl GET semplice (HTTP 200), testata aperta. Intervista da testata: fonte primaria (V1, D-019). Ruolo dal testo della testata («Vicepresidente del Movimento 5 Stelle con delega a Economia, lavoro e imprese»): dirigente nazionale di settore sul proprio tema, come C27-PD-032 (Misiani). Citazione confrontata in automatico parola per parola con il testo della pagina. Stessa risposta di C27-M5S-052 («questa proposta» è il Fondo sovrano). Dotazione non indicata. Nessun doppione nelle righe M5S. Orizzonte/veicolo: non_specificato e dichiarazione. COFOG 04. Pre-valutazione slogan: OK/LIM (organismo identificabile con oggetto definito, senza importo). Letta il 2026-10-27. Nessuna copia Wayback (wayback/available vuoto il 2026-10-27). (verifica L2 2026-10-27) Metodo: fonte riaperta con curl GET semplice, senza user agent da browser (HTTP 200), testo estratto dall'HTML e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. La Notizia, intervista di Sara Manfuso, datePublished 2026-10-26T22:31:06+00:00 (26/10 in Italia). La frase è nella risposta virgolettata di Turco, non nella domanda né nel cappello. Ruolo: la testata scrive «senatore Mario Turco, Vicepresidente del Movimento 5 Stelle con delega a Economia, lavoro e imprese»; mandato di senatore XIX legislatura confermato su dati.senato.it (SPARQL, inizio 2022-10-13, senza data di fine): dichiarante autorizzato, dirigente nazionale sul proprio tema come C27-PD-032. Intervista da testata: V1 (D-019). Stessa risposta di C27-M5S-052; «questa proposta» è il Fondo sovrano. Frase intera, nessun taglio. «vogliamo affiancare» non dice se la banca è nella PdL: orizzonte non_specificato e veicolo dichiarazione confermati. Parafrasi fedele (omette solo le finalità «aggregazioni, patrimonializzazione e crescita dimensionale», che non la rafforzano). Nessun doppione nei CSV. Nessun costo dichiarato. COFOG 04, misurabile parziale.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-27 — CONFERMATA: organismo identificabile (banca pubblica) con oggetto definito (capitalizzazione delle micro e piccole imprese), senza dotazione | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
+    }
+  },
+  {
+    "id": "C27-M5S-054",
+    "partitoId": "M5S",
+    "dichiarante": "Mario Turco",
+    "ruoloDichiarante": "vicepresidente del MoVimento 5 Stelle con delega a Economia, lavoro e imprese, senatore",
+    "data": "2026-10-26",
+    "testoLetterale": "Serve una politica industriale che subordini gli incentivi pubblici a precisi impegni. Chi investe deve contribuire ai costi delle infrastrutture energetiche, senza scaricarli sulle bollette di famiglie e imprese, e garantire investimenti aggiuntivi nelle rinnovabili.",
+    "parafrasiNeutra": "Subordinare gli incentivi pubblici (la risposta riguarda i data center) all'impegno, per chi investe, di contribuire ai costi delle infrastrutture energetiche senza scaricarli sulle bollette di famiglie e imprese e di garantire investimenti aggiuntivi nelle rinnovabili.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.lanotiziagiornale.it/turco-da-meloni-una-manovra-di-guerra-fermiamo-la-corsa-al-riarmo-per-finanziare-sanita-scaglioni-irpef-e-un-fondo-sovrano-da-100-miliardi/"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (binario 2, query uniformi «M5S intervista», «M5S proposta», «Conte intervista», «Conte proposta», when:2d), trovata con «Conte proposta»; testata La Notizia (lanotiziagiornale.it), intervista di Sara Manfuso a Mario Turco, datePublished 2026-10-26T22:31:06Z (26/10 ore 23:31 in Italia), letta per intero il 2026-10-27 con curl GET semplice (HTTP 200), testata aperta. Intervista da testata: fonte primaria (V1, D-019). Ruolo dal testo della testata («Vicepresidente del Movimento 5 Stelle con delega a Economia, lavoro e imprese»): dirigente nazionale di settore sul proprio tema, come C27-PD-032 (Misiani). Citazione confrontata in automatico parola per parola con il testo della pagina. Risposta alla domanda su come attrarre investimenti «senza socializzare i costi energetici e lasciare all’estero il valore aggiunto»; la risposta si apre con «I data center rappresentano un’opportunità strategica» (oggetto della frase citata, fuori dal testo_letterale per il limite di lunghezza). La frase seguente («Dobbiamo inoltre vincolare i sostegni pubblici a ricadute concrete: occupazione qualificata, ricerca, trasferimento tecnologico e coinvolgimento delle PMI italiane») non è registrata: criterio slogan, condizioni generiche senza parametro. Nessun doppione nelle righe M5S. Orizzonte/veicolo: non_specificato e dichiarazione. COFOG 04 (energia e industria). Pre-valutazione slogan: LIM (obbligo identificabile per chi riceve incentivi, senza quote). Letta il 2026-10-27. Nessuna copia Wayback (wayback/available vuoto il 2026-10-27). (verifica L2 2026-10-27) Metodo: fonte riaperta con curl GET semplice, senza user agent da browser (HTTP 200), testo estratto dall'HTML e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. La Notizia, intervista di Sara Manfuso, datePublished 2026-10-26T22:31:06+00:00 (26/10 in Italia). La frase è nella risposta virgolettata di Turco, non nella domanda né nel cappello. Ruolo: la testata scrive «senatore Mario Turco, Vicepresidente del Movimento 5 Stelle con delega a Economia, lavoro e imprese»; mandato di senatore XIX legislatura confermato su dati.senato.it (SPARQL, inizio 2022-10-13, senza data di fine): dichiarante autorizzato, dirigente nazionale sul proprio tema come C27-PD-032. Intervista da testata: V1 (D-019). Risposta alla domanda su come attrarre investimenti «senza socializzare i costi energetici»; la risposta si apre con «I data center rappresentano un'opportunità strategica», fuori dal testo_letterale: il contesto resta dichiarato in parafrasi fra parentesi. Due frasi consecutive, nessun taglio. Correzione: parafrasi «Condizionare gli incentivi pubblici ai data center all'obbligo …» → «Subordinare gli incentivi pubblici (la risposta riguarda i data center) all'impegno …», con «di famiglie e imprese» come nel testo. Nessun doppione nei CSV. Da segnalare al titolare come caso limite (condizioni descritte, senza parametro). Nessun costo dichiarato. COFOG 04, misurabile parziale; orizzonte non_specificato e veicolo dichiarazione confermati.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-27 — CONFERMATA, caso limite superato: condizione identificabile sugli incentivi pubblici (contributo ai costi delle infrastrutture energetiche, investimenti aggiuntivi nelle rinnovabili), senza quote; corretta: parafrasi ristretta al testo («ai data center» passa fra parentesi come contesto della risposta; «obbligo» → «impegno», parola del testo) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
+    }
+  },
+  {
+    "id": "C27-PD-036",
+    "partitoId": "PD",
+    "dichiarante": "Annalisa Corrado",
+    "ruoloDichiarante": "responsabile Ambiente del PD, europarlamentare",
+    "data": "2026-10-26",
+    "testoLetterale": "Sì, noi lavoriamo in modo diametralmente opposto: […] costruire un’Europa che investa fondi propri per sostenere i settori in difficoltà, verso un modello Next Generation Eu permanente a cui le destre nazionaliste continuano testardamente ad opporsi.",
+    "parafrasiNeutra": "Andare verso un modello Next Generation EU permanente, con un'Unione europea che investa fondi propri per sostenere i settori in difficoltà.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://formiche.net/2026/10/ets-energia-imprese-europa-corrado-prezzi-italia-pd/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (binario 2, query uniformi «PD intervista», «PD proposta», «Schlein intervista», «Schlein proposta», when:2d), trovata con «PD intervista»; testata Formiche.net, intervista di Gianluca Zapponini ad Annalisa Corrado, datePublished 2026-10-26T14:22:06Z, letta per intero il 2026-10-27 con curl GET semplice (HTTP 200), testata aperta. Intervista da testata: fonte primaria (V1, D-019). Ruolo dal testo della testata («europarlamentare del Pd e responsabile dem per l’Ambiente»): responsabile nazionale di settore nella segreteria, come C27-PD-032 (Misiani); la frase risponde alla domanda «Il Pd invece va in una direzione diversa, anzi direi opposta. Vuole spiegarla?», quindi è presentata come linea del partito. Citazione confrontata in automatico parola per parola con il testo della pagina. Il «[…]» toglie «rafforzare il sistema, correggerne le storture, renderlo più realistico e applicabile, e» (riferito al sistema Ets; nessuna parola su gruppi di persone: «le destre nazionaliste» resta nella citazione). Non registrati, nella stessa intervista: l’emendamento Ets «a mia prima firma» già approvato dal Parlamento europeo (atto personale, D-012) e la critica all’uso dei proventi Ets nella fiscalità generale (non formulata come impegno). Collegata a C27-CSX-018 («un piano di investimenti comuni sul modello di NextGenerationEU», risoluzione unitaria): qui la proposta è di un istituto permanente e per voce del PD; da valutare se doppione. Orizzonte/veicolo: non_specificato e dichiarazione. COFOG 01 come C27-CSX-018 (alternativa 04). Pre-valutazione slogan: LIM (strumento identificabile: un Next Generation EU reso permanente, senza importo). Letta il 2026-10-27. Nessuna copia Wayback (wayback/available vuoto il 2026-10-27). (verifica L2 2026-10-27) Metodo: fonte riaperta con curl GET semplice, senza user agent da browser (HTTP 200), testo estratto dall'HTML e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Formiche.net, intervista di Gianluca Zapponini, datePublished 2026-10-26T14:22:06+00:00. La frase è nella risposta di Corrado alla domanda «Il Pd invece va in una direzione diversa, anzi direi opposta. Vuole spiegarla?», non nella domanda. Il «[…]» toglie «rafforzare il sistema, correggerne le storture, renderlo più realistico e applicabile, e» (sul sistema Ets, stessa elencazione): nessuna parola su gruppi di persone («le destre nazionaliste» resta), senso invariato. Ruolo: la testata scrive «europarlamentare del Pd e responsabile dem per l'Ambiente»; europarlamentare confermata su europarl.europa.eu (gruppo S&D, Partito Democratico). L'appartenenza alla segreteria nazionale non è nella fonte e partitodemocratico.it risponde 403 (non aggirato): ruolo corretto in «responsabile Ambiente del PD, europarlamentare». Dichiarante autorizzata come responsabile nazionale di settore (precedente C27-PD-032), che risponde sulla linea del partito. Intervista da testata: V1 (D-019). Correzioni: ruolo come sopra; parafrasi «Rendere permanente un modello come Next Generation EU …» → «Andare verso un modello Next Generation EU permanente …» (il testo dice «verso»). Da segnalare al titolare come caso limite: formulazione di direzione («verso») con un modello nominato. Nessun importo: costo_dichiarato vuoto. COFOG 01 come C27-CSX-018 (alternativa 04), misurabile parziale, orizzonte non_specificato e veicolo dichiarazione confermati.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-27 — CONFERMATA, caso limite superato: strumento nominato (modello Next Generation EU reso permanente, con fondi propri dell'UE), come il «piano di investimenti comuni sul modello di NextGenerationEU» di C27-CSX-018; non è doppione di C27-CSX-018 (soggetto distinto: risoluzione unitaria, come C27-PD-032 rispetto a C27-CSX-006) né di altre righe PD (nessuna su NGEU); corretta: parafrasi («Rendere permanente» → «Andare verso», come «verso» del testo) e ruolo (tolta «nella segreteria nazionale», non verificata) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
+    }
+  },
+  {
     "id": "C27-AZ-001",
     "partitoId": "AZ",
     "dichiarante": "Azione (sito ufficiale)",
@@ -7775,6 +8025,31 @@
     }
   },
   {
+    "id": "C27-AZ-053",
+    "partitoId": "AZ",
+    "dichiarante": "Carlo Calenda",
+    "ruoloDichiarante": "Segretario di Azione, senatore",
+    "data": "2026-10-26",
+    "testoLetterale": "Si faccia una norma gas release per la Basilicata, che estrae gas e petrolio per tutta l’Italia […] Serve una porzione dedicata agli investimenti industriali in Basilicata, anche riconsiderando l’investimento di raffinazione, perché in Europa abbiamo pochissimi impianti di raffinazione",
+    "parafrasiNeutra": "Approvare una norma di «gas release» per la Basilicata, con una porzione dedicata agli investimenti industriali nella regione.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://ivl24.it/calenda-a-potenza-gas-release-per-la-basilicata-stellantis-melfi-rischia-la-chiusura-critiche-anche-alla-giunta-bardi/"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Dichiarazioni di Carlo Calenda a Potenza il 26/10/2026, dopo l'incontro con i segretari regionali di Cgil, Cisl e Uil sulla crisi di Stellantis Melfi, riportate tra virgolette da ivl24.it (Redazione, article:published_time 2026-10-26 13:36:20): V2, discorso pubblico riportato da testata aperta. Canale: ricerca web con le query uniformi per tutti i partiti («<leader> <partito> proposta oggi», «<leader> ultime notizie 27 ottobre 2026»), letta il 2026-10-27 con curl GET semplice (HTTP 200), testo letto per intero e confrontato parola per parola. Canali ufficiali di Azione senza contenuti nel periodo: API WordPress di azione.it 200 ma vuota dopo il 25/10; Telegram t.me/s/EntrainAzione 200, ultimo post del 24/10. I due virgolettati sono separati nella fonte da testo della redazione («, ha dichiarato Calenda, proponendo di destinare una quota delle risorse energetiche a condizioni favorevoli agli investimenti industriali sul territorio regionale. Secondo il leader di Azione, la misura potrebbe rappresentare un’opportunità anche per rilanciare il settore della raffinazione.»), sostituito da «[…]»; nessuna parola che descrive un gruppo di persone tolta. Conferma indipendente della proposta: SassiLive (2026-10-26T12:49Z, HTTP 200), dichiarazione di Marcello Pittella (commissario di Azione Basilicata, non dichiarante autorizzato) che descrive la norma come destinazione di «una quota del gas estratto sul territorio agli investimenti industriali regionali, con particolare attenzione a Melfi e al suo indotto». Nessun importo né quota indicati. «Riconsiderando l’investimento di raffinazione» resta nella citazione ma non è registrato come misura a sé (nessun oggetto definito). Nessun doppione nelle righe AZ (nessuna riga su gas release o Basilicata). Orizzonte/veicolo: non_specificato e dichiarazione (nessun atto o scadenza nominati). COFOG 04 (affari economici: energia e industria). Pre-valutazione slogan: OK (strumento identificabile: una norma di gas release, meccanismo descritto come porzione di gas dedicata agli investimenti industriali in una regione nominata; quota non indicata). (verifica L2 2026-10-27) Metodo: fonte riaperta con curl GET semplice, testo estratto dall'HTML e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: entrambi i segmenti ritrovati, nell'ordine (ivl24.it, HTTP 200, article:published_time 2026-10-26T12:36:20+00:00). Il «[…]» salta testo della redazione più lungo di un inciso («, ha dichiarato Calenda, proponendo di destinare … Secondo il leader di Azione, la misura potrebbe rappresentare un’opportunità anche per rilanciare il settore della raffinazione.») fino al secondo virgolettato chiuso da «ha spiegato»: giudicato ammissibile perché i due virgolettati sono consecutivi, sullo stesso tema e nello stesso incontro, e il testo saltato descrive la stessa proposta senza cambiarne il senso; nessuna parola su gruppi di persone tolta. Parafrasi corretta: era «che destini una quota del gas estratto nella regione agli investimenti industriali sul territorio»; la quota del gas estratto è parafrasi della redazione (e di Pittella su SassiLive), il virgolettato dice solo «una porzione dedicata agli investimenti industriali in Basilicata». Calenda dichiarante autorizzato (leader di Azione). Supera il criterio slogan (strumento identificabile: norma di gas release, meccanismo già noto nell'ordinamento, con porzione e territorio nominati); la raffinazione resta fuori come misura (come C27-AZ-044). COFOG 04, misurabile parziale (quota non indicata), orizzonte/veicolo non_specificato e dichiarazione confermati. Nessun doppione nelle righe AZ.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-27 — CORRETTA: parafrasi ristretta al virgolettato (tolta «una quota del gas estratto nella regione», che è della redazione); strumento identificabile (norma di gas release con porzione dedicata agli investimenti industriali in una regione nominata); taglio «[…]» sul testo della redazione giudicato senza cambio di senso; discorso riportato da testata: V2 (D-019) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
+    }
+  },
+  {
     "id": "C27-ORA-001",
     "partitoId": "ORA",
     "dichiarante": "ORA! e Michele Boldrin",
@@ -9197,6 +9472,31 @@
     "verifica": {
       "livello": "V2",
       "dettaglio": "V2✓ verificatore 2026-10-26 — CORRETTA: COFOG 03 → 01 (cittadinanza, come C27-LEGA-008, 026, 027); istituto identificabile (revoca della cittadinanza per reato entro un periodo dall'acquisto), come C27-LEGA-026; discorso riportato da testata: V2 (D-019) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
+    }
+  },
+  {
+    "id": "C27-PCIT-010",
+    "partitoId": "PCIT",
+    "dichiarante": "Alessandro Onorato",
+    "ruoloDichiarante": "Leader (coordinatore nazionale) di Progetto Civico Italia; assessore di Roma Capitale",
+    "data": "2026-10-25",
+    "testoLetterale": "Ma vi pare normale che dobbiamo mettere 14 miliardi sul Ponte Stretto e non è il caso di metterle nelle scuole?",
+    "parafrasiNeutra": "Destinare alla scuola i 14 miliardi che il proponente indica come previsti per il Ponte sullo Stretto (proposta formulata come domanda retorica).",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.affaritaliani.it/politica/onorato-lancia-il-programma-di-progetto-civico-alle-primarie-ci-saremo-non-escludo-di-candidarmi-renzi-vado-daccordo.html"
+    },
+    "archivioUrl": null,
+    "cofog": "09",
+    "misurabile": "si",
+    "costoDichiarato": "14 miliardi di euro (riallocazione dalle risorse del Ponte sullo Stretto indicata dal proponente in forma di domanda; profilo annuale non indicato)",
+    "stimaTerzi": null,
+    "note": "Discorso di chiusura degli Stati generali di Progetto Civico Italia (Roma, 25/10/2026), virgolettato riportato da Affaritaliani («ha detto Onorato durante il suo discorso», datePublished 2026-10-25T13:12Z), letto per intero con curl GET (HTTP 200). Canale: ricerca web «Onorato discorso» / «Progetto Civico evento». V2 (discorso riportato da testata). Passaggio introdotto dal cronista con «Sul Ponte sullo Stretto:». Il taglio «[…]» toglie «Si può professionalizzare seriamente il ruolo degli insegnanti perché nella società non c’è funzione più importante, insieme a quella medica.» (gli insegnanti restano nominati nella parte citata). Domanda retorica; la cifra di 14 miliardi è il costo del Ponte indicato dal dichiarante, non un costo della misura. Orizzonte/veicolo: non_specificato e dichiarazione. COFOG 09. Pre-valutazione slogan: LIM (parametro: 14 miliardi spostati dal Ponte alla scuola; strumento generico: «valorizzazione straordinaria degli insegnanti»). (verifica L2 2026-10-26) Metodo: fonte riaperta con curl GET semplice (HTTP 200), testo estratto dall'HTML e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato. Affaritaliani (datePublished 2026-10-25T13:12:05+00:00), passaggio introdotto dal cronista con «Sul Ponte sullo Stretto:». Diversa da C27-LEGA-029 (resta): là lo stop a un programma definito è affermato; qui il definanziamento del Ponte è solo implicito nella domanda e la destinazione è generica. Se il titolare la reintegrasse, il taglio «[…]» andrebbe rivisto: toglie la frase che descrive gli insegnanti («non c'è funzione più importante, insieme a quella medica»), e con quella frase il testo supera i 320 caratteri. (verifica L2 2026-10-27) Metodo: fonte riaperta con curl GET semplice, testo estratto dall'HTML e ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte, a meno di spazi e apostrofi tipografici: ritrovato (Affaritaliani, HTTP 200, datePublished 2026-10-25T13:12:05+00:00). testo_letterale corretto: era «Noi dobbiamo fare poche scelte e metterci i soldi. Le scuole devono mettere in campo valorizzazione straordinaria degli insegnanti. […] Ma vi pare normale…», il cui «[…]» toglieva la frase che descrive gli insegnanti («non c’è funzione più importante, insieme a quella medica»); il passaggio intero da «Le scuole» è di 334 caratteri, oltre il limite, quindi resta la sola domanda finale, intera e senza tagli (110 caratteri). Il contesto (valorizzazione e professionalizzazione degli insegnanti, introdotto dal cronista con «Sul Ponte sullo Stretto:») resta in questa nota e non è registrato come misura. Simmetria: C27-M5S-014 (13,5 miliardi dal Ponte «per le nostre scuole») e C27-AVS-037 (14,7 miliardi dal Ponte alle ferrovie) sono valide con destinazione di settore e importo; con lo stesso criterio questa riga supera per il parametro (14 miliardi, fonte e destinazione nominate). La forma di domanda retorica non cambia il contenuto nel contesto («Noi dobbiamo fare poche scelte e metterci i soldi»); segnalata in parafrasi. Parafrasi riscritta (era «Destinare alla scuola, e in particolare alla valorizzazione degli insegnanti, le risorse previste per il Ponte…», non più nel testo). misurabile parziale → si e costo_dichiarato_proponente compilato come C27-M5S-014 e C27-AVS-037. Da fare fuori da questo file: doppia codifica D-021 della cifra (costi-precedenti-codifica-A/B), non eseguita perché questa verifica tocca solo le righe indicate. Esito L2 precedente (2026-10-26), sostituito: DA RIMUOVERE: slogan — «valorizzazione straordinaria degli insegnanti» senza parametro né strumento; riaperta dal verificatore del 2026-10-26 per asimmetria con C27-M5S-014 e C27-AVS-037.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-27 — CORRETTA: testo_letterale ridotto alla sola domanda finale, intera, senza «[…]» (il taglio precedente toglieva la frase sugli insegnanti); parafrasi, misurabile (parziale → si) e costo del proponente allineati a C27-M5S-014 e C27-AVS-037; supera il criterio per il parametro (14 miliardi dal Ponte alla scuola); discorso riportato da testata: V2 (D-019) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
     }
   }
 ]
