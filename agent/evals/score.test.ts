@@ -138,6 +138,14 @@ describe("validatore della route (fase 5)", () => {
     expect(echo).toMatchObject({ esito: "astensione_forzata", motivi: [{ motivo: "cifra_senza_fonte", dettaglio: "400" }] });
   });
 
+  it("lascia ripetere il trimestre del record citato, non un altro", () => {
+    const q2 = doc("finanza-pubblica--trimestri-2026-Q2");
+    const cite = { id: q2.id, url: q2.structData.fonte_url[0] };
+    const a = (testo: string): AgentAnswer => ({ testo, citazioni: [cite], astensione: false });
+    expect(validateAnswer(a("Nel 2° trimestre 2026 la spesa è stata di 290.792,8 milioni di euro correnti."), index)).toEqual({ esito: "risposta" });
+    expect(validateAnswer(a("Nel 3° trimestre 2026 la spesa è stata di 290.792,8 milioni di euro correnti."), index)).toMatchObject({ esito: "astensione_forzata", motivi: [{ motivo: "cifra_senza_fonte", dettaglio: "3" }] });
+  });
+
   it("tratta come astensione una risposta senza citazioni che dice di non avere il dato", () => {
     const q = "Chi era il presidente del Consiglio in Italia il 10 maggio 1961?";
     const none = (testo: string): AgentAnswer => ({ testo, citazioni: [], astensione: false });
