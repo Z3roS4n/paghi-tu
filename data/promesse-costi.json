@@ -282,5 +282,16 @@
       "periodo": "non_indicato",
       "anni": null
     }
+  },
+  {
+    "id": "C27-PCIT-010",
+    "famiglia": null,
+    "costo": {
+      "natura": "riallocazione",
+      "minMln": 14000,
+      "maxMln": 14000,
+      "periodo": "non_indicato",
+      "anni": null
+    }
   }
 ]
