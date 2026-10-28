@@ -179,7 +179,7 @@
     "id": "R-17",
     "ente": "Camera",
     "dataset": "dati.camera.it OCD (F-40; E-22)",
-    "copertura": "governi e legislature 1948–oggi (69 governi coincidenti con il CSV)",
+    "copertura": "governi 1945–oggi (69 governi coincidenti con il CSV); Assemblea Costituente 1946–1948, legislature 1948–oggi",
     "accesso": "SPARQL, linked data",
     "licenza": "CC BY-SA 4.0",
     "riuso": "si",
