@@ -123,7 +123,8 @@ Le issue con etichetta `correzione` o `dato-mancante`. Le pull request le verifi
 ## Binario 4 — idee per i Reel, dalle notizie
 Formato, tono, voce e regole sono in `.claude/reels/README.md`; il piano in `.claude/reels/calendario.md`.
 1. Ogni esecuzione: se nel calendario ci sono meno di 10 uscite con data futura, aggiungi le 5 uscite (dal lunedì al
-   venerdì) della prima settimana ancora vuota (D-032: cinque Reel a settimana).
+   venerdì) della prima settimana ancora vuota (D-032: cinque Reel a settimana). Una casella `libera` che cade nei
+   prossimi 10 giorni si riempie con una scheda nuova nata da una notizia, come le altre.
 2. Prima di scrivere leggi il README (soprattutto «Formato visivo», «Immagini», «Tono», «Video dalle notizie» e «Non
    ripetersi» con la tabella «Già raccontato») e due schede in `.claude/reels/idee/` come modello. Ogni scheda ha le
    tre informazioni utili, 8-12 scene con la misura della cifra protagonista, almeno 3 ritagli con fonte e licenza

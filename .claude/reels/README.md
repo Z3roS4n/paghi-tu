@@ -79,7 +79,10 @@ come fondo sbiadito. Dal 28/10 ogni video segue queste regole, misurate sul foto
   nell'inchiostro del brand, con un bordo di carta bianca e un'ombra morbida, come un ritaglio di giornale
   incollato sulla pagina. Stanno sopra la grafica, in primo piano, non solo come sfondo.
 - Lo sfondo può essere una foto intera, sempre a retino e in bicromia, mai a colori pieni.
-- Almeno 3 ritagli per video. Il componente del brand è `ritaglio-carta` (vedi il prompt del prototipo).
+- Almeno 3 ritagli per video. Il componente del brand è `ritaglio-carta`: la foto resta leggibile sotto in bicromia e
+  il retino è una trama sopra (di serie forza 0,5 e passo 6 px; sotto i 300 px passo 4-5 e forza 0,3-0,4). L'oggetto
+  si deve riconoscere al primo sguardo (correzione del titolare del 28/10: con i soli puntini grossi non si capiva cosa
+  fosse). Prototipo del formato: progetto Animatio `paghi-tu/90-prototipo-sanita`.
 
 **Informazioni utili, non ripetizioni.**
 - Ogni video dà almeno **tre informazioni che chi guarda può riusare**: una cifra con cosa vuol dire, un confronto che
@@ -122,7 +125,7 @@ scrivere un'idea si legge l'elenco «Già raccontato» qui sotto e le schede `in
 ### Già raccontato
 | Video | Concetti al centro |
 |---|---|
-| R00 Il conto lo paghi tu | spesa per residente (19.633 €), ogni 100 € di spesa, interessi ogni 100 € 1995-2024, debito in % del PIL dal 1946 e debito a testa, Italia contro media UE (debito e interessi), previsto contro speso (Quota 100) |
+| R00 Il conto lo paghi tu | spesa per residente (19.633 €), ogni 100 € di spesa (con «8 all'istruzione e 8 agli interessi»: gli interessi pesano quanto l'istruzione), interessi ogni 100 € 1995-2024, debito in % del PIL dal 1946, debito ad agosto 2026 (3.201 miliardi) e debito a testa, Italia contro media UE (debito e interessi), previsto contro speso (Quota 100) |
 | R01 Lo Stato spende più di quanto incassa | entrate contro uscite per residente, disavanzo a testa, saldo in % del PIL dal 1995 |
 | R02 La voce che corre più di tutte | crescita degli interessi nel semestre, interessi a testa, interessi ogni 100 € dal 1995, interessi Italia contro UE |
 | R03 Previsto contro speso | stima della relazione tecnica contro consuntivo delle misure |
