@@ -67,6 +67,28 @@ come fondo sbiadito. Dal 28/10 ogni video segue queste regole, misurate sul foto
 - Ogni grafica si aggancia alla parola della voce che la nomina; il grafico cresce mentre Giulio dice la cifra.
 - Le transizioni restano quelle ammesse dal brand (taglio, morph al massimo 2, push-down al massimo 1).
 
+**Montaggio pulito, non da principiante** (correzione del titolare del 28/10/2026).
+- **Continuità sul taglio.** Un elemento che resta da una scena all'altra (una pila, un grafico, la cifra protagonista,
+  un'etichetta, il fondo) sta nello stesso punto, alla stessa misura e nello stesso stato: niente salti di qualche
+  pixel, niente cambi di corpo, niente pile o grafici che ricrescono da zero (`da` negativo li mostra già pronti),
+  niente cifre che ricontano da zero. Se deve cambiare, cambia con un movimento visibile o con il morph, mai con il
+  taglio.
+- **Camera coerente.** Un avvicinamento lento (camera o `lento`) non si interrompe su un taglio verso una scena che
+  riparte da 1: o la scena dopo parte dallo stesso zoom, o niente camera su quella coppia di scene. Il fondo che
+  continua non riparte il suo movimento.
+- **Griglia fissa.** Le stesse cose stanno sempre allo stesso posto per tutto il video: etichetta in alto a y 270,
+  cifra protagonista a y 340, riga che la spiega a y 560-570, fonte a y 1500, sottotitoli a 1400. Margini 80 px.
+- **Ogni movimento ha un motivo.** Entra solo ciò che la voce sta per dire, quando lo dice; niente elementi che
+  entrano ed escono subito, niente scatti, lampi, rimbalzi o zoom senza scopo. Le entrate cambiano con la funzione
+  (la cifra con il blur, il titolo con la maschera, l'etichetta con il wipe, la fonte in dissolvenza): mai tutto in
+  dissolvenza.
+- **Tagli sul senso.** Si taglia su una pausa della voce o su un cambio di argomento, non a metà di una frase; due
+  scene di fila non devono sembrare la stessa con un elemento in meno.
+- **Suoni sul colpo.** Un effetto cade sull'evento che sottolinea (la pila che cresce, il timbro che cade), anche se
+  l'avviso del controllo dice «fuori battito»; sui battiti (`sync_aggancia`) solo gli effetti senza un evento a schermo.
+- **Prima di consegnare:** si guarda il video consegnato (`video_guarda`) e, a ogni taglio, il fotogramma prima e
+  quello dopo: se qualcosa salta senza motivo, si corregge.
+
 **Grafici che colpiscono.**
 - Un grafico per scena, mai una tabella. Tipi: colonne e barre per confronti, linea per l'andamento (si disegna),
   ciambella e pila per le parti di un totale.
