@@ -68,7 +68,7 @@ manovra in corso suggerirebbe un esito.
 | 7 | 34-42 s | La prima legge di bilancio presentata dal governo successivo: due cartellini affiancati, stessa misura, Monti a sinistra e Draghi a destra (ordine cronologico); su ognuno entra l'anno, poi gli estremi dell'atto; nessun ritratto in questa scena | cartellini 440 × 800 px; anno 200 px; «legge di stabilità · L. n. 228 del 24/12/2012» e «legge di bilancio · L. n. 234 del 30/12/2021» a 48 px; primo piano: freccia di carta dal binario alto al cartellino | «2013» e «2022», 200 px |
 | 8 | 42-51 s | Registrazione dello schermo su telefono: /leggi-di-bilancio, la colonna «Governo proponente» evidenziata e il link «normattiva.it» di una riga; poi la scheda di un governo sul riquadro «Atti di bilancio presentati» | telefono a 900 px; etichetta «146 atti dal 1946» a 64 px | «146», 180 px nell'etichetta |
 | 9 | 51-56 s | La frase del sito, su una striscia di carta: «Il governo indicato è quello che ha presentato l'atto, non sempre quello che l'ha gestito.» | testo 64 px; fonte «paghitu.it/leggi-di-bilancio» 34 px; fondo: incisione di piazza Colonna a retino, parallasse | nessuna cifra |
-| 10 | 56-60 s | Chiusura: timbro «TU», «paghitu.it», «Hai visto un errore? Segnalacelo» | timbro terracotta | nessuna cifra |
+| 10 | 56-60 s | Chiusura: timbro «TU», «paghitu.it/leggi-di-bilancio», «Hai trovato un errore? Segnalalo su paghitu.it/correzioni» | timbro terracotta | nessuna cifra |
 
 Fonti in piccolo (34 px) sulle scene 3-8: «paghitu.it/leggi-di-bilancio · estremi verificati su Normattiva · date dei
 governi: dati.camera.it».
@@ -76,13 +76,15 @@ governi: dati.camera.it».
 ## Voce (Giulio)
 ```
 La manovra del duemiladodici: chi l'ha presentata, e chi l'ha gestita?
-Una manovra si approva nell'autunno prima dell'anno a cui serve. E intanto il governo può cambiare.
-Due esempi. La legge di stabilità per il duemiladodici porta la data del dodici novembre duemilaundici: l'ha presentata il governo Berlusconi quattro. Il governo Monti comincia il sedici novembre duemilaundici.
-La legge di bilancio per il duemilaventuno porta la data del trenta dicembre duemilaventi: l'ha presentata il governo Conte due. Il governo Draghi comincia il tredici febbraio duemilaventuno.
+Una manovra si approva nell'autunno prima dell'anno a cui serve. E intanto, il governo può cambiare.
+Due esempi. La legge di stabilità per il duemiladodici porta la data del dodici novembre duemilaundici: l'ha presentata il governo Berlusconi quater. Il governo Monti comincia il sedici novembre duemilaundici.
+La legge di bilancio per il duemilaventuno porta la data del trenta dicembre duemilaventi: l'ha presentata il governo Conte bis. Il governo Draghi comincia il tredici febbraio duemilaventuno.
 La prima legge di bilancio presentata da Monti? Quella per il duemilatredici. E la prima presentata da Draghi? Quella per il duemilaventidue.
-Su paghitu punto it ogni atto ha il governo che l'ha presentato, e il link a Normattiva.
-Il governo indicato è quello che ha presentato l'atto… NON sempre quello che l'ha gestito.
+Su paghitu punto it, ogni atto ha il governo che l'ha presentato, e il link a Normattiva.
+Il governo indicato è quello che ha presentato l'atto, non sempre quello che l'ha gestito.
 ```
+I numeri romani dei governi si leggono all'italiana (correzione del titolare del 28/10: «hai detto Berlusconi 4, ma è
+Berlusconi quater»): IV si legge «quater», II «bis». A schermo e nei sottotitoli restano i numeri romani del sito.
 Circa 130 parole. Le cifre sono date: i due casi hanno la stessa frase (data della legge, governo proponente, data di
 inizio del governo dopo), con le date dette per intero tutte e due le volte. «Comincia» e non «giura»: il sito
 riporta la data di inizio. Nessun aggettivo sui governi.

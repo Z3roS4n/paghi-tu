@@ -12,21 +12,21 @@ dopo le riempie la routine con le notizie della settimana (binario 4 del runbook
 | R18 | gio 29/10/2026 | [Misure urgenti e sostegni per autotrasporto, agricoltura e pesca](idee/R18-il-decreto-del-gasolio.md) | /atti | programmato (Instagram, 29/10 13:00) |
 | R12 | gio 29/10/2026 | [Cosa c'è dentro la voce più grande](idee/R12-un-euro-su-tre.md) | /spesa | programmato (Instagram, 29/10 18:00) |
 | R15 | sab 31/10/2026 | [Se la manovra non arriva in tempo](idee/R15-se-la-manovra-non-arriva.md) · [prompt](prompt/R15-se-la-manovra-non-arriva.md) | /leggi-di-bilancio | programmato (Instagram, 31/10 15:00), video rimontato il 28/10 con le regole «meno movimento» |
-| — | lun 02/11/2026 | da riempire: R12 anticipato al 29/10 | | libera |
-| — | mar 03/11/2026 | da riempire: R18 anticipato al 29/10 | | libera |
+| R28 | lun 02/11/2026 | [Sessanta giorni per diventare legge](idee/R28-sessanta-giorni.md) | /atti | programmato (Instagram, 2/11 13:00) |
+| R25 | mar 03/11/2026 | [Quanto dura un governo](idee/R25-quanto-dura-un-governo.md) | /governi | programmato (Instagram, 3/11 13:00) |
 | R29 | mer 04/11/2026 | La manovra 2027 è arrivata (seguito di R15) | /leggi-di-bilancio | da scrivere quando il DDL è sul sito; se non c'è entro il 2/11, al suo posto R07 aggiornata |
 | R27 | gio 05/11/2026 | [Il debito, mese per mese](idee/R27-il-debito-mese-per-mese.md) | /, /spesa | programmato (Instagram, 5/11 13:00) |
 | R10 | ven 06/11/2026 | [Le regole per le promesse](idee/R10-come-contiamo-le-promesse.md) · [prompt](prompt/R10-come-contiamo-le-promesse.md) | /promesse, /metodo | programmato (Instagram, 6/11 13:00), video rimontato il 28/10 con le regole «meno movimento» |
-| R19 | lun 09/11/2026 | [Ex ILVA: cosa paga il decreto](idee/R19-ex-ilva.md) | /atti | idea |
-| R23 | mar 10/11/2026 | [Sotto il limite non è un risparmio](idee/R23-sotto-il-limite.md) | /misure | idea |
+| R19 | lun 09/11/2026 | [Ex ILVA: cosa paga il decreto](idee/R19-ex-ilva.md) | /atti | programmato 09/11 13:00 |
+| R23 | mar 10/11/2026 | [Sotto il limite non è un risparmio](idee/R23-sotto-il-limite.md) | /misure | programmato (Instagram, 10/11 13:00) |
 | — | mer 11/11/2026 | libera: un'idea dalla notizia della settimana | | libera |
 | R22 | gio 12/11/2026 | [Di chi è la manovra dell'anno](idee/R22-di-chi-e-la-manovra.md) | /leggi-di-bilancio, /governi | idea |
 | — | ven 13/11/2026 | libera: un'idea dalla notizia della settimana | | libera |
-| R20 | lun 16/11/2026 | [Terra dei fuochi: da dove vengono i 200 milioni](idee/R20-terra-dei-fuochi.md) | /atti | idea |
-| R25 | mar 17/11/2026 | [Quanto dura un governo](idee/R25-quanto-dura-un-governo.md) | /governi | idea |
+| R20 | lun 16/11/2026 | [Terra dei fuochi: da dove vengono i 200 milioni](idee/R20-terra-dei-fuochi.md) | /atti | programmato (Instagram, 16/11 13:00) |
+| — | mar 17/11/2026 | libera: R25 anticipato al 3/11 | | libera |
 | — | mer 18/11/2026 | libera: un'idea dalla notizia della settimana | | libera |
-| R28 | lun 02/11/2026 | [Sessanta giorni per diventare legge](idee/R28-sessanta-giorni.md) | /atti | pronto (video consegnato) |
-| R21 | ven 20/11/2026 | [Quante promesse toccano i conti](idee/R21-promesse-e-conti.md) | /promesse | idea |
+| — | gio 19/11/2026 | libera: R28 anticipato al 2/11 | | libera |
+| R21 | ven 20/11/2026 | [Quante promesse toccano i conti](idee/R21-promesse-e-conti.md) | /promesse | programmato 20/11 13:00; entro il 18/11 ricontrollare che il DDL di bilancio 2027 sia in Parlamento («in discussione adesso») e che non ci sia un decreto di convocazione delle elezioni |
 
 Quando il titolare mette un video in coda su Instagram: stato `programmato`. Quando esce: stato `pubblicato`, data vera
 e link al post. Una casella `libera` la riempie la routine con una scheda nuova (numerazione dopo l'ultima) e lo stato

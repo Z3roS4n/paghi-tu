@@ -6,6 +6,9 @@
   la fiducia delle due Camere»; scena 2 con il testo esatto dell'art. 60 («La Camera dei deputati e il Senato della
   Repubblica sono eletti per cinque anni»), e «salvo scioglimento anticipato» staccato, senza virgolette; scena 3 con
   la maiuscola del testo dell'art. 94 («Il Governo»).
+- **Voce, 28/10:** i numerali dei governi si leggono all'italiana, come chiesto dal titolare su R22 («Berlusconi
+  quater», non «Berlusconi 4»): «De Gasperi primo», «Fanfani primo». A schermo e nei sottotitoli restano i numeri
+  romani del sito (De Gasperi I, Fanfani I, Leone II, Rumor I, II e III).
 - **Pagine:** https://www.paghitu.it/governi (titolo, elenco «Tutti i governi, legislatura per legislatura», blocchi
   «Assemblea Costituente», «II legislatura» e «V legislatura») · schede https://www.paghitu.it/governi/g6 (Fanfani I),
   /governi/g19 (Leone II), /governi/g20, /g21, /g22 (Rumor I, II, III), /governi/g23 (Colombo), /governi/g24
@@ -77,9 +80,9 @@ dati.camera.it».
 ## Voce (Giulio)
 ```
 Quanto dura un governo, in Italia? La Costituzione dice che le Camere sono elette per cinque anni, salvo scioglimento anticipato. Il governo, invece, deve avere la fiducia delle due Camere.
-Dal primo dell'elenco, De Gasperi uno, nel millenovecentoquarantacinque, i governi sono stati… sessantanove.
+Dal primo dell'elenco, De Gasperi primo, nel millenovecentoquarantacinque, i governi sono stati… sessantanove.
 Prendi la quinta legislatura, dal sessantotto al settantadue. Guarda i fogli: Andreotti, Colombo, Leone, e tre volte Rumor. Ognuno con la sua durata, in giorni. Quella di Colombo è ancora da verificare.
-E nel millenovecentocinquantaquattro? Il governo Fanfani uno: ventidue giorni. Sulla sua scheda il sito scrive: nessun atto di bilancio attribuito a questo governo come proponente, nei dati verificati finora.
+E nel millenovecentocinquantaquattro? Il governo Fanfani primo: ventidue giorni. Sulla sua scheda il sito scrive: nessun atto di bilancio attribuito a questo governo come proponente, nei dati verificati finora.
 Per ogni governo ci sono le date, la durata, la maggioranza e le manovre presentate, con il livello di verifica campo per campo. Su paghitu punto it.
 ```
 Circa 135 parole, cinque cifre (cinque anni, 1945, 69, 1954, 22 giorni) più gli anni della legislatura. La cifra che
