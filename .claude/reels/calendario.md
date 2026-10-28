@@ -10,7 +10,7 @@ dopo le riempie la routine con le notizie della settimana (binario 4 del runbook
 | R09 | dom 25/10/2026 | [Le voci piccole del conto](idee/R09-le-voci-piccole.md) · [prompt](prompt/R09-le-voci-piccole.md) | /spesa | pubblicato ([post](https://www.instagram.com/reel/De6rI3xjG2H/)) |
 | R01 | lun 26/10/2026 | [Lo Stato spende più di quanto incassa](idee/R01-entrate-e-uscite.md) · [prompt](prompt/R01-entrate-e-uscite.md) | /, /spesa | pubblicato il 28/10 ([post](https://www.instagram.com/reel/DfCdCz7lqeJ/)), ripubblicato dal titolare dopo la revisione D-032 |
 | R15 | sab 31/10/2026 | [Se la manovra non arriva in tempo](idee/R15-se-la-manovra-non-arriva.md) · [prompt](prompt/R15-se-la-manovra-non-arriva.md) | /leggi-di-bilancio | programmato (Instagram, 31/10 15:00), video rifatto nel formato D-032 |
-| R12 | lun 02/11/2026 | [Un euro su tre: vecchiaia e superstiti](idee/R12-un-euro-su-tre.md) | /spesa | in lavorazione (scheda da riscrivere con un gancio nuovo, poi verificatore) |
+| R12 | lun 02/11/2026 | [Cosa c'è dentro la voce più grande](idee/R12-un-euro-su-tre.md) | /spesa | scheda riscritta il 28/10, al verificatore indipendente |
 | R18 | mar 03/11/2026 | [Misure urgenti e sostegni per autotrasporto, agricoltura e pesca](idee/R18-il-decreto-del-gasolio.md) | /atti | idea |
 | R29 | mer 04/11/2026 | La manovra 2027 è arrivata (seguito di R15) | /leggi-di-bilancio | da scrivere quando il DDL è sul sito; se non c'è entro il 2/11, al suo posto R07 aggiornata |
 | R27 | gio 05/11/2026 | [Il debito, mese per mese](idee/R27-il-debito-mese-per-mese.md) | /, /spesa | idea |
@@ -42,7 +42,6 @@ riallinea ai numeri del giorno.
 | R07 | [Trent'anni di spesa, in euro di oggi](idee/R07-trent-anni-di-spesa.md) | /spesa | usa i 19.633 € di R00 e R01: solo come paragone |
 | R08 | [Cento euro, nel 1995 e oggi](idee/R08-cento-euro-ieri-e-oggi.md) | /spesa | stessa griglia di R00: solo con un angolo nuovo |
 | R11 | [La manovra, in ottant'anni](idee/R11-la-manovra-in-80-anni.md) | /leggi-di-bilancio | non prima di tre settimane dopo R15 |
-| R12 | [Un euro su tre: vecchiaia e superstiti](idee/R12-un-euro-su-tre.md) | /spesa | parte dai 32 € di R00: il gancio va cambiato |
 | R16 | [Metà del PIL, ma non una fetta](idee/R16-meta-del-pil.md) | /spesa | sostituita da R27 il 28/10: spiega solo cosa vuol dire «% del PIL» |
 | R06 | [Chi controlla i numeri](idee/R06-chi-controlla-i-numeri.md) | /metodo, /correzioni | sostituita da R28 il 28/10: video di metodo troppo vicino a R10; non prima del 20/11 |
 | R17 | [L'istruzione, a testa](idee/R17-la-scuola-a-testa.md) | /spesa | ripete R00 (istruzione quanto gli interessi, griglia dei 100 €): serve un fatto nuovo, per esempio una misura della legge di bilancio 2027 |
