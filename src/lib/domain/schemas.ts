@@ -152,8 +152,9 @@ export const PromiseVehicle = z.enum([
   "altro",
 ]);
 
-// D-030: se la proposta, attuata, cambia direttamente spese o entrate pubbliche. Doppia codifica
-// indipendente; nei casi discordi vale «incerto». null = riga non ancora classificata.
+// D-030: se la proposta riguarda una spesa o un'entrata pubblica precisa, anche per lasciarla com'è
+// (criterio in research/2026-10-28.criterio-conti-pubblici.md). Doppia codifica indipendente; nei casi
+// discordi vale «incerto». null = riga non ancora classificata.
 export const BudgetEffect = z.enum(["si", "no", "incerto"]);
 export type BudgetEffect = z.infer<typeof BudgetEffect>;
 

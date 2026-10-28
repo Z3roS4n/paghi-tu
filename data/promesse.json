@@ -212,7 +212,7 @@
       "livello": "V1",
       "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-20 — CORRETTA: testo verificato (Il Tempo, intervista di Daniele Capezzone alla Festa de Il Tempo, 25/9/2026); parafrasi resa meno assertiva (la frase è una battuta polemica: «un governo diverso dal nostro, ammesso che arriverà»); ruolo: parla come capo del governo | PERIMETRO: orizzonte/veicolo (vedi colonne) (orizzonte non_specificato; veste istituzionale da marcare)"
     },
-    "effettoConti": "incerto",
+    "effettoConti": "si",
     "ribadita": []
   },
   {
@@ -779,7 +779,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-20 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne) (orizzonte non_specificato; controllo di simmetria 2026-10-21: il passo segue gli emendamenti al decreto energia ma non li nomina)"
     },
-    "effettoConti": "si",
+    "effettoConti": "incerto",
     "ribadita": []
   },
   {
@@ -1076,7 +1076,7 @@
       "livello": "V1",
       "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-20 — CORRETTA: citazione verificata (il punto finale nella fonte è fuori dalle virgolette); ruolo | PERIMETRO: orizzonte/veicolo (vedi colonne) (orizzonte non_specificato; status quo)"
     },
-    "effettoConti": "incerto",
+    "effettoConti": "si",
     "ribadita": []
   },
   {
@@ -1103,7 +1103,7 @@
       "livello": "V1",
       "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-20 — CORRETTA: citazione verificata; la parafrasi aggiungeva «contributo del settore solo tramite accordo», non detto nella fonte | PERIMETRO: orizzonte/veicolo (vedi colonne) [orizzonte: legge di bilancio 2027]"
     },
-    "effettoConti": "incerto",
+    "effettoConti": "si",
     "ribadita": []
   },
   {
@@ -1238,7 +1238,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-20 — CONFERMATA: la pagina contiene solo la frase citata e gli hashtag | PERIMETRO: orizzonte/veicolo (vedi colonne) (orizzonte non_specificato)"
     },
-    "effettoConti": "no",
+    "effettoConti": "si",
     "ribadita": []
   },
   {
@@ -1859,7 +1859,7 @@
       "livello": "V2",
       "dettaglio": "V2✓ verificatore 2026-10-26 — CONFERMATA: caso limite superato (cessazione di un programma definito: invio di fondi e armi a un Paese nominato, come l'embargo di C27-AVS-040); discorso riportato da testata: V2 (D-019) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: altro, posizione da portare al Governo in carica]"
     },
-    "effettoConti": "si",
+    "effettoConti": "incerto",
     "ribadita": []
   },
   {
@@ -2183,7 +2183,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-20 — CONFERMATA (PDF ospitato da Quotidiano Sanità; il documento porta la dicitura «Roma settembre 2026»; presentazione 02/10/2026 da QS datePublished)"
     },
-    "effettoConti": "no",
+    "effettoConti": "incerto",
     "ribadita": []
   },
   {
@@ -2831,7 +2831,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-20 — CONFERMATA (PDF NOVA_20_PUNTI; capitolo verificato; proposta approvata nella consultazione 18-20/09/2026 (Risultati-votazioni-NOVA-2026.pdf, tutte >84% sì))"
     },
-    "effettoConti": "si",
+    "effettoConti": "incerto",
     "ribadita": []
   },
   {
@@ -3101,7 +3101,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA (riga derivata); frase ritrovata parola per parola nel PDF, cap. 1"
     },
-    "effettoConti": "no",
+    "effettoConti": "incerto",
     "ribadita": []
   },
   {
@@ -3911,7 +3911,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-20 — CORRETTA: data 2026-06-10→2026-10-12 (la data precedente non era della proposta AVS ma di una proposta di cittadini collegata); testo e numero proposta verificati sulla pagina; autore «Alleanza Verdi Sinistra»"
     },
-    "effettoConti": "incerto",
+    "effettoConti": "si",
     "ribadita": []
   },
   {
@@ -4856,7 +4856,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne)"
     },
-    "effettoConti": "no",
+    "effettoConti": "si",
     "ribadita": []
   },
   {
@@ -4883,7 +4883,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne)"
     },
-    "effettoConti": "no",
+    "effettoConti": "si",
     "ribadita": []
   },
   {
@@ -4937,7 +4937,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-24 — CONFERMATA: caso limite superato (disciplina degli affitti turistici con coordinamento Regioni-Comuni, come C27-PD-022) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: altro, richiesta al Governo in carica]"
     },
-    "effettoConti": "incerto",
+    "effettoConti": "no",
     "ribadita": []
   },
   {
@@ -5639,7 +5639,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-27 — CONFERMATA, caso limite superato: condizione identificabile sugli incentivi pubblici (contributo ai costi delle infrastrutture energetiche, investimenti aggiuntivi nelle rinnovabili), senza quote; corretta: parafrasi ristretta al testo («ai data center» passa fra parentesi come contesto della risposta; «obbligo» → «impegno», parola del testo) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
     },
-    "effettoConti": "no",
+    "effettoConti": "si",
     "ribadita": []
   },
   {
@@ -5666,7 +5666,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-27 — CONFERMATA, caso limite superato: strumento nominato (modello Next Generation EU reso permanente, con fondi propri dell'UE), come il «piano di investimenti comuni sul modello di NextGenerationEU» di C27-CSX-018; non è doppione di C27-CSX-018 (soggetto distinto: risoluzione unitaria, come C27-PD-032 rispetto a C27-CSX-006) né di altre righe PD (nessuna su NGEU); corretta: parafrasi («Rendere permanente» → «Andare verso», come «verso» del testo) e ruolo (tolta «nella segreteria nazionale», non verificata) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
     },
-    "effettoConti": "no",
+    "effettoConti": "si",
     "ribadita": []
   },
   {
@@ -5693,7 +5693,7 @@
       "livello": "V2",
       "dettaglio": "V2✓ verificatore 2026-10-28 — CONFERMATA: strumento (credito energetico in kWh) e soglie ISEE; conferenza stampa riportata da testata: V2 (D-019); il «[…]» toglie una frase dello stesso Bonelli sul prezzo dell'energia, nessuna parola su gruppi di persone («ceti sociali più deboli» resta) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione, proposta per la discussione della coalizione]"
     },
-    "effettoConti": "si",
+    "effettoConti": "incerto",
     "ribadita": []
   },
   {
@@ -5774,7 +5774,7 @@
       "livello": "V2",
       "dettaglio": "V2✓ verificatore 2026-10-28 — CONFERMATA, caso limite superato: istituto nominato (contratto di formazione e lavoro); la platea (medici specializzandi) è nel contesto dello stesso intervento e dell'emendamento 3.5 di cui Zanella dice di aver presentato il gemello (3.6); frase intera, nessun taglio; intervento in Aula: V2 | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: emendamento 3.6 ad A.C. 2700-A, respinto]"
     },
-    "effettoConti": "incerto",
+    "effettoConti": "si",
     "ribadita": []
   },
   {
@@ -6125,7 +6125,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-20 — mozione parlamentare nella legislatura in corso; contenuto di policy valutabile"
     },
-    "effettoConti": "incerto",
+    "effettoConti": "si",
     "ribadita": []
   },
   {
@@ -6314,7 +6314,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-20 — CORRETTA: parafrasi allineata al testo ('7 mld' senza 'circa'; 'idroelettrico'); natura dell'importo e destinatario precisati"
     },
-    "effettoConti": "si",
+    "effettoConti": "incerto",
     "ribadita": []
   },
   {
@@ -6800,7 +6800,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-20 — CORRETTA: nota di attribuzione precisata (il sito non contiene la frase 'non un progetto di partito')"
     },
-    "effettoConti": "incerto",
+    "effettoConti": "si",
     "ribadita": []
   },
   {
@@ -6935,7 +6935,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-20 — formulata come previsione ('Sono convinto che quando saremo al governo...')"
     },
-    "effettoConti": "si",
+    "effettoConti": "no",
     "ribadita": []
   },
   {
@@ -6989,7 +6989,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-20 — CORRETTA: natura e data precisate"
     },
-    "effettoConti": "no",
+    "effettoConti": "incerto",
     "ribadita": []
   },
   {
@@ -7286,7 +7286,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-20"
     },
-    "effettoConti": "no",
+    "effettoConti": "incerto",
     "ribadita": []
   },
   {
@@ -7394,7 +7394,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-20"
     },
-    "effettoConti": "incerto",
+    "effettoConti": "no",
     "ribadita": []
   },
   {
@@ -7934,7 +7934,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-20"
     },
-    "effettoConti": "si",
+    "effettoConti": "incerto",
     "ribadita": []
   },
   {
@@ -8015,7 +8015,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-21 — CORRETTA: tipo_fonte da documento_partito a sito_ufficiale, come la riga sorella (§3 uniformità: articolo HTML su azione.it); caso limite deciso: supera il criterio | PERIMETRO: orizzonte/veicolo (vedi colonne)"
     },
-    "effettoConti": "no",
+    "effettoConti": "incerto",
     "ribadita": []
   },
   {
@@ -8069,7 +8069,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-21 — CORRETTA: tipo_fonte da documento_partito a sito_ufficiale, come la riga sorella (§3 uniformità: articolo HTML su azione.it); caso limite deciso: supera il criterio | PERIMETRO: orizzonte/veicolo (vedi colonne)"
     },
-    "effettoConti": "si",
+    "effettoConti": "incerto",
     "ribadita": []
   },
   {
@@ -8177,7 +8177,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-21 — CORRETTA: tipo_fonte da documento_partito a sito_ufficiale, come la riga sorella (§3 uniformità: articolo HTML su azione.it) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
     },
-    "effettoConti": "incerto",
+    "effettoConti": "si",
     "ribadita": []
   },
   {
@@ -8852,7 +8852,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-26 — CONFERMATA: strumento descritto nel meccanismo (telecamere collegate a un motore di IA con segnalazione alle pattuglie) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
     },
-    "effettoConti": "si",
+    "effettoConti": "incerto",
     "ribadita": []
   },
   {
@@ -9014,7 +9014,7 @@
       "livello": "V2",
       "dettaglio": "V2✓ verificatore 2026-10-28 — CORRETTA: parafrasi «su cui decidere in autonomia» → «che possa manovrare» (più vicina al testo); caso limite superato (leva descritta nel meccanismo: un tributo proprio manovrabile da ciascun livello di governo; tributo non nominato, misurabile parziale); virgolettato del segretario riportato da testata: V2 (D-019) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
     },
-    "effettoConti": "incerto",
+    "effettoConti": "si",
     "ribadita": []
   },
   {
@@ -9041,7 +9041,7 @@
       "livello": "V2",
       "dettaglio": "V2✓ verificatore 2026-10-28 — CORRETTA: parafrasi: «vincoli finanziari» viene dal cronista ed è ora indicato come tale; caso limite superato (abrogazione di norme con perimetro definito per eccezione: tutti i vincoli tranne il pareggio di bilancio, regola nominata; vincoli non elencati, misurabile parziale); virgolettato del segretario riportato da testata: V2 (D-019) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
     },
-    "effettoConti": "incerto",
+    "effettoConti": "si",
     "ribadita": []
   },
   {
@@ -9122,7 +9122,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA"
     },
-    "effettoConti": "si",
+    "effettoConti": "incerto",
     "ribadita": []
   },
   {
@@ -9554,7 +9554,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA"
     },
-    "effettoConti": "incerto",
+    "effettoConti": "si",
     "ribadita": []
   },
   {
@@ -9824,7 +9824,7 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-21 — CORRETTA: data da 2026-07-02 a 2026-07-03 (created_at della pagina nel CMS)"
     },
-    "effettoConti": "si",
+    "effettoConti": "incerto",
     "ribadita": []
   },
   {
@@ -10418,7 +10418,7 @@
       "livello": "V2",
       "dettaglio": "V2✓ verificatore 2026-10-21 — CORRETTA: da NV a V2 (virgolettato diretto in testata, legenda V2); orizzonte da prossima_legislatura a non_specificato; coalizione da «non definita» a centrodestra (accordo con FdI dichiarato da De Luca l'08/10/2026)"
     },
-    "effettoConti": "incerto",
+    "effettoConti": "si",
     "ribadita": []
   },
   {
