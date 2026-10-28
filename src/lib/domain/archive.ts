@@ -2,6 +2,7 @@ export const ARCHIVE_KINDS = {
   governo: "Governi",
   legge: "Leggi di bilancio",
   misura: "Misure",
+  atto: "Leggi e decreti",
   promessa: "Promesse 2027",
 } as const;
 export type ArchiveKind = keyof typeof ARCHIVE_KINDS;

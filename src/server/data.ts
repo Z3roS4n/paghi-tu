@@ -16,11 +16,15 @@ import promiseStatusJson from "../../data/promesse-stato.json";
 import correctionsJson from "../../data/correzioni.json";
 import unreadableChannelsJson from "../../data/canali-non-leggibili.json";
 import promiseCostsJson from "../../data/promesse-costi.json";
+import legalActsJson from "../../data/atti.json";
+import legalActsStatusJson from "../../data/atti-stato.json";
 import {
   BudgetLaw,
   CampaignPromise,
   Correction,
   Government,
+  LegalAct,
+  LegalActsStatus,
   Legislature,
   Measure,
   Party,
@@ -54,6 +58,8 @@ export const promises = z.array(CampaignPromise).parse(promisesJson);
 export const promiseStatus = PromiseCatalogStatus.parse(promiseStatusJson);
 export const unreadableChannels = z.array(UnreadableChannel).parse(unreadableChannelsJson);
 export const promiseCosts = z.array(PromiseCost).parse(promiseCostsJson);
+export const legalActs = z.array(LegalAct).parse(legalActsJson);
+export const legalActsStatus = LegalActsStatus.parse(legalActsStatusJson);
 export const corrections = z.array(Correction).parse(correctionsJson).toSorted((a, b) => b.id.localeCompare(a.id));
 
 export function getGovernment(id: string) {
@@ -70,6 +76,10 @@ export function budgetLawsProposedBy(governmentId: string) {
 
 export function measuresOf(governmentId: string) {
   return measures.filter((m) => m.governiIds.includes(governmentId));
+}
+
+export function legalActsOf(governmentId: string) {
+  return legalActs.filter((a) => a.governoId === governmentId);
 }
 
 export function governmentsOf(legislatureId: string) {

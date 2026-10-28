@@ -294,3 +294,14 @@ h3 {
     animation: nudge 1.4s ease-in-out infinite;
   }
 }
+
+/* Filtro di /promesse (BudgetEffectFilter). «nd» = non ancora classificata: resta visibile nella vista di default. */
+.effect-filter[data-vista="conti"] [data-effetto="no"],
+.effect-filter[data-vista="conti"] [data-effetto="incerto"],
+.effect-filter[data-vista="incerto"] [data-effetto]:not([data-effetto="incerto"]),
+.effect-filter[data-vista="no"] [data-effetto]:not([data-effetto="no"]),
+.effect-filter[data-vista="conti"] [data-effetti]:not([data-effetti~="si"], [data-effetti~="nd"]),
+.effect-filter[data-vista="incerto"] [data-effetti]:not([data-effetti~="incerto"]),
+.effect-filter[data-vista="no"] [data-effetti]:not([data-effetti~="no"]) {
+  display: none;
+}

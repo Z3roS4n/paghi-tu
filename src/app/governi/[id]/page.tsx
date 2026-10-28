@@ -4,11 +4,12 @@ import { notFound } from "next/navigation";
 import { ArrowLeftIcon, ArrowRightIcon } from "@phosphor-icons/react/ssr";
 import { ChartFigure } from "@/components/chart-figure";
 import { SourceLinks } from "@/components/source-links";
-import { Card, PageHead, Section, SourceNote, Tile, Wrap } from "@/components/ui";
+import { Card, GoLink, PageHead, Section, SourceNote, Tile, Wrap } from "@/components/ui";
 import { VerificationBadge } from "@/components/verification-badge";
-import { budgetLawsProposedBy, finance, getGovernment, getLegislature, governments, measuresOf } from "@/server/data";
+import { budgetLawsProposedBy, finance, getGovernment, getLegislature, governments, legalActsOf, legalActsStatus, measuresOf } from "@/server/data";
 import { governmentDurationDays } from "@/server/stats";
 import { formatDate, formatDecimal, formatEuroMillions, formatInt, formatMonth } from "@/lib/format";
+import { LEGAL_ACT_TYPE } from "@/lib/domain/acts";
 import { fractionalYear } from "@/lib/domain/finance";
 import { debtGdpSeries, governmentFinance, isProvisionalDebt } from "@/server/finance";
 
@@ -27,6 +28,7 @@ export default async function GovernmentPage({ params }: PageProps<"/governi/[id
   const leg = getLegislature(g.legislaturaId);
   const laws = budgetLawsProposedBy(g.id).toSorted((a, b) => a.annoInizio - b.annoInizio);
   const linkedMeasures = measuresOf(g.id);
+  const acts = legalActsOf(g.id);
   const prev = governments.find((x) => x.ordine === g.ordine - 1);
   const next = governments.find((x) => x.ordine === g.ordine + 1);
   const money = governmentFinance(g);
@@ -103,6 +105,31 @@ export default async function GovernmentPage({ params }: PageProps<"/governi/[id
                   </li>
                 ))}
               </ul>
+            </Card>
+          ) : null}
+
+          {acts.length > 0 ? (
+            <Card className="reveal" as="section">
+              <h2 className="text-2xl font-extrabold">Leggi e decreti con importi</h2>
+              <p className="mt-1 text-[15px] text-ink-soft">
+                {acts.length} atti nel registro, Gazzetta Ufficiale letta dal {formatDate(legalActsStatus.dal)} al {formatDate(legalActsStatus.al)}.
+              </p>
+              <ul className="mt-3 divide-y divide-rule border-t border-rule">
+                {acts.slice(0, 8).map((a) => (
+                  <li key={a.id}>
+                    <Link href={`/atti#${a.id}`} className="group flex min-h-12 items-center justify-between gap-3 py-2.5 hover:text-accent">
+                      <span>
+                        <span className="font-bold">{a.titolo}</span>
+                        <span className="block text-[15px] text-ink-soft">
+                          {LEGAL_ACT_TYPE[a.tipo]} n. {a.numero} del {formatDate(a.data)}
+                        </span>
+                      </span>
+                      <ArrowRightIcon size={18} weight="bold" aria-hidden className="shrink-0 text-accent transition-transform group-hover:translate-x-0.5" />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              {acts.length > 8 ? <GoLink href="/atti">Tutti gli atti</GoLink> : null}
             </Card>
           ) : null}
         </div>

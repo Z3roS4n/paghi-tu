@@ -152,6 +152,25 @@ export const PromiseVehicle = z.enum([
   "altro",
 ]);
 
+// D-030: se la proposta, attuata, cambia direttamente spese o entrate pubbliche. Doppia codifica
+// indipendente; nei casi discordi vale «incerto». null = riga non ancora classificata.
+export const BudgetEffect = z.enum(["si", "no", "incerto"]);
+export type BudgetEffect = z.infer<typeof BudgetEffect>;
+
+// D-031: la stessa proposta ripetuta dallo stesso partito non apre una riga nuova.
+export const PromiseRestatement = z.object({
+  id: z.string().regex(/^C27-[A-Z0-9]+-\d{3}$/),
+  dichiarante: z.string(),
+  ruoloDichiarante: z.string(),
+  data: isoDate,
+  testoLetterale: z.string().min(1).max(320),
+  tipoFonte: PromiseSourceType,
+  fonte: SourceLink,
+  archivioUrl: z.url().nullable(),
+  verifica: Verification,
+});
+export type PromiseRestatement = z.infer<typeof PromiseRestatement>;
+
 // Citazione breve ex art. 70 L. 633/1941: oltre i 320 caratteri si riassume, non si cita.
 export const CampaignPromise = z.object({
   id: z.string().regex(/^C27-[A-Z0-9]+-\d{3}$/),
@@ -172,6 +191,8 @@ export const CampaignPromise = z.object({
   stimaTerzi: z.object({ testo: z.string(), fonte: SourceLink }).nullable(),
   note: z.string(),
   verifica: Verification,
+  effettoConti: BudgetEffect.nullable(),
+  ribadita: z.array(PromiseRestatement),
 });
 export type CampaignPromise = z.infer<typeof CampaignPromise>;
 
@@ -180,6 +201,7 @@ export const PromiseCatalogStatus = z.object({
   censite: z.number().int().nonnegative(),
   verificate: z.number().int().nonnegative(),
   pubblicate: z.number().int().nonnegative(),
+  ribadite: z.number().int().nonnegative(),
   gruppiPubblicati: z.array(z.string()),
   regolaPerimetro: z.enum(["tutte", "solo_fuori_legislatura_in_corso"]).nullable(),
 });
@@ -220,6 +242,69 @@ export const CostComparison = z.object({
   verifica: Verification,
 });
 export type CostComparison = z.infer<typeof CostComparison>;
+
+// D-029: registro degli atti con effetti sui conti. Entra un atto pubblicato in Gazzetta con almeno
+// una misura con importo; gli importi sono quelli scritti nella norma o nella relazione tecnica.
+export const LegalActType = z.enum(["decreto_legge", "legge", "decreto_legislativo", "legge_di_bilancio"]);
+export type LegalActType = z.infer<typeof LegalActType>;
+export const LegalActStatus = z.enum(["in_conversione", "convertito", "decaduto", "in_vigore"]);
+export type LegalActStatus = z.infer<typeof LegalActStatus>;
+
+const LEGAL_ACT_ID = /^(dl|l|dlgs)-\d{4}-\d+$/;
+
+export const YearAmount = z.object({ anno: z.number().int().min(1946), mln: z.number().nonnegative() });
+export type YearAmount = z.infer<typeof YearAmount>;
+
+// Le coperture ottenute riducendo altri fondi non sono misure: restano nelle note dell'atto.
+export const ActMeasureNature = z.enum(["spesa", "minori_entrate", "maggiori_entrate", "minori_spese"]);
+export type ActMeasureNature = z.infer<typeof ActMeasureNature>;
+
+export const ActMeasure = z.object({
+  id: z.string().regex(/^(dl|l|dlgs)-\d{4}-\d+-m\d{2,3}$/),
+  articolo: z.string().min(1),
+  descrizione: z.string().min(1).max(200),
+  natura: ActMeasureNature,
+  // Come per le misure: un limite di spesa non è una stima.
+  tipoOnere: z.enum(["stima", "tetto"]),
+  cofog: CofogDivision,
+  importi: z.array(YearAmount).min(1),
+  // «A decorrere dal»: l'importo dell'ultimo anno indicato continua ogni anno dopo.
+  continuaDopo: z.boolean(),
+  citazione: z.string().min(1).max(320),
+  fonte: SourceLink,
+  verifica: Verification,
+});
+export type ActMeasure = z.infer<typeof ActMeasure>;
+
+export const LegalAct = z.object({
+  id: z.string().regex(LEGAL_ACT_ID),
+  tipo: LegalActType,
+  numero: z.number().int().positive(),
+  data: isoDate,
+  titoloUfficiale: z.string().min(1),
+  titolo: z.string().min(1).max(80),
+  governoId: z.string().regex(/^g\d+$/),
+  gazzetta: z.object({ numero: z.number().int().positive(), data: isoDate, fonte: SourceLink }),
+  // Lo stato «pubblicato, non ancora in vigore» si ricava da questa data nel browser: nessun dato da aggiornare.
+  inVigoreDal: isoDate,
+  cdm: SourceLink.nullable(),
+  stato: LegalActStatus,
+  conversione: z.object({ estremi: z.string(), fonte: SourceLink }).nullable(),
+  relazioneTecnica: SourceLink.nullable(),
+  misure: z.array(ActMeasure).min(1),
+  note: z.string(),
+  verifica: Verification,
+});
+export type LegalAct = z.infer<typeof LegalAct>;
+
+// Periodo della Gazzetta già censito; «obiettivo» è la data fin dove arriva il recupero (inizio del governo Meloni).
+export const LegalActsCoverage = z.object({ dal: isoDate, al: isoDate, obiettivo: isoDate });
+export const LegalActsStatus = LegalActsCoverage.extend({
+  censiti: z.number().int().nonnegative(),
+  pubblicati: z.number().int().nonnegative(),
+  misureCensite: z.number().int().nonnegative(),
+});
+export type LegalActsStatus = z.infer<typeof LegalActsStatus>;
 
 export const Measure = z.object({
   id: z.string(),

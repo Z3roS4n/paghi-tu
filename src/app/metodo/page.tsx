@@ -124,6 +124,23 @@ export default function MethodPage() {
         bilancio, risoluzione in Parlamento. Non contiamo come promesse gli slogan, gli atti solo procedurali e gli
         impegni che non riguardano politiche pubbliche, come candidature e alleanze.
       </p>
+      <p>
+        Ogni promessa dice anche se, attuata, cambierebbe direttamente una spesa o un&apos;entrata pubblica. La
+        classificazione la fanno due codificatori indipendenti, con lo stesso criterio per tutti i partiti, guardando solo il
+        testo e non gli effetti indiretti; se non sono d&apos;accordo scriviamo «non chiaro». Quando un partito ripete la
+        stessa proposta, la nuova dichiarazione compare sotto quella di prima come «ribadita» e non conta come una promessa
+        in più. Resta una riga a sé se aggiunge una cifra, una soglia, una data o uno strumento diversi.
+      </p>
+
+      <h2>Leggi e decreti</h2>
+      <p>
+        Nel registro delle leggi e dei decreti entrano gli atti pubblicati in Gazzetta Ufficiale che autorizzano una spesa o
+        cambiano un&apos;entrata con un importo scritto: decreti-legge, leggi e decreti legislativi. Per ogni misura copiamo
+        l&apos;importo anno per anno dal testo o dalla relazione tecnica del governo, con le parole esatte, e diciamo se è un
+        limite di spesa o una stima. Non registriamo come misure le coperture ottenute tagliando altri fondi, per questo i
+        totali di un atto non sono il suo saldo ufficiale. Ogni importo è riletto sulla fonte da un secondo controllo prima
+        della pubblicazione. Il registro parte dal governo in carica e va indietro fino al suo insediamento, il 22 ottobre 2022.
+      </p>
 
       <h2>Cosa possiamo mostrare, per periodo</h2>
       <dl className="grid gap-2.5">

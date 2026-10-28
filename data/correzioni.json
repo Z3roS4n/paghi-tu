@@ -70,5 +70,17 @@
     "motivo": "La data della promessa (24/08/2026) è quella della Base Ideologica e Programmatica, indicata nel file ufficiale e non nella pagina «Programma». Il PDF contiene anche il testo citato.",
     "fonte": { "url": "https://futuronazionale.it/wp-content/uploads/2026/09/GIUSTIFICATO_SLOT-1-e-2_Base-Programmatica-di-Futuro-Nazionale-24-agosto-2026.pdf" },
     "segnalazione": null
+  },
+  {
+    "id": "COR-0007",
+    "data": "2026-10-28",
+    "tipo": "metodo",
+    "dato": "Vista di default delle promesse",
+    "pagina": "/promesse",
+    "prima": "Tutte le promesse in un solo elenco, senza distinguere quelle che toccano i conti pubblici.",
+    "dopo": "Ogni promessa ha l'etichetta «effetto sui conti» (sì, no, non chiaro) e un filtro; la vista di default mostra quelle con effetto. Nessuna promessa è stata tolta: con «Tutte» si vedono tutte.",
+    "motivo": "Il sito parla di come si spendono i soldi pubblici. La classificazione la fanno due codificatori indipendenti con lo stesso criterio per tutti i partiti; quando non concordano vale «non chiaro».",
+    "fonte": null,
+    "segnalazione": null
   }
 ]

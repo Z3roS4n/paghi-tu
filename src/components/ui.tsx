@@ -39,8 +39,17 @@ export function Section({ id, title, intro, children, className = "" }: { id: st
   );
 }
 
-export function Card({ children, className = "", as: As = "div" }: { children: React.ReactNode; className?: string; as?: "div" | "article" | "li" | "section" }) {
-  return <As className={`min-w-0 rounded-card bg-paper-raised px-4 py-4.5 md:px-6 md:py-5.5 ${className}`}>{children}</As>;
+export function Card({
+  children,
+  className = "",
+  as: As = "div",
+  ...data
+}: { children: React.ReactNode; className?: string; as?: "div" | "article" | "li" | "section" } & { [k: `data-${string}`]: string }) {
+  return (
+    <As className={`min-w-0 rounded-card bg-paper-raised px-4 py-4.5 md:px-6 md:py-5.5 ${className}`} {...data}>
+      {children}
+    </As>
+  );
 }
 
 export function Tag({ children, tone = "accent" }: { children: React.ReactNode; tone?: "accent" | "plain" }) {

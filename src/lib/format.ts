@@ -23,6 +23,13 @@ export function formatEuroMillions(millions: number): string {
   return `${formatInt(millions)} mln €`;
 }
 
+const exactMlnFmt = new Intl.NumberFormat("it-IT", { maximumFractionDigits: 3, useGrouping: "always" });
+
+/** Milioni come scritti nella fonte, senza arrotondare né passare ai miliardi: 45.2 → "45,2 mln €". */
+export function formatExactMillions(millions: number): string {
+  return `${exactMlnFmt.format(millions)} mln €`;
+}
+
 const monthFmt = new Intl.DateTimeFormat("it-IT", { month: "long", year: "numeric", timeZone: "UTC" });
 
 /** "2026-08" → "agosto 2026". */
