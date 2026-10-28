@@ -293,5 +293,16 @@
       "periodo": "non_indicato",
       "anni": null
     }
+  },
+  {
+    "id": "C27-PAP-011",
+    "famiglia": null,
+    "costo": {
+      "natura": "non_strutturabile",
+      "minMln": null,
+      "maxMln": null,
+      "periodo": "non_indicato",
+      "anni": null
+    }
   }
 ]

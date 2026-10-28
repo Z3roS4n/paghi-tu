@@ -1750,6 +1750,156 @@
     }
   },
   {
+    "id": "C27-LEGA-032",
+    "partitoId": "LEGA",
+    "dichiarante": "Matteo Salvini",
+    "ruoloDichiarante": "segretario federale Lega (rieletto al congresso del 25/10/2026), senatore; vicepresidente del Consiglio e ministro delle Infrastrutture e dei Trasporti",
+    "data": "2026-10-27",
+    "testoLetterale": "Le nostre priorità sono […] la riduzione della cedolare secca ed estensione agli immobili commerciali.",
+    "parafrasiNeutra": "Ridurre la cedolare secca sugli affitti.",
+    "tipoFonte": "intervista",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://www.ilgiornale.it/news/politica/lislam-e-la-principale-minaccia-per-litalia-chiudere-le-moschee-abusive-quattro-anni-di-armi-a-kiev-e-lora-di-una-pace-giusta-vi-racconto-la-nuova-lega/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 2 (Google News RSS): query «Salvini intervista» e «Lega intervista» (when:2d, HTTP 200), titolo «Matteo Salvini: “L’Islam è la principale minaccia per l’Italia […] Vi racconto la nuova Lega”» (il Giornale); il link di Google News non è stato aperto, articolo ritrovato nella sitemap news del sito (arc/outboundfeeds/sitemap-news/2026-10-27/) e letto su ilgiornale.it (curl GET semplice, HTTP 200, isAccessibleForFree true; datePublished 2026-10-27T07:59:44Z, in pagina «27 ottobre 2026 - 08:03»), letta il 2026-10-28. Intervista di Tommaso Cerno pubblicata da una testata aperta: fonte primaria, livello atteso V1 (D-019). Data della dichiarazione: 27/10, data di pubblicazione dell'intervista (raccolta «primo giorno dopo la rielezione», quindi probabilmente il 26/10: da confermare dal verificatore; il 26/10 era già nel periodo della routine di ieri, che non ha registrato questa intervista). Canali ufficiali Lega per il periodo: legaonline.it 403 (home, /feed/, /wp-json/, sitemap); «La Settimana Leghista» n. 42 404, indice fermo al n. 41 (18/10). Taglio «[…]»: tolte le prime due voci dell'elenco («Quota 64 per superare gradualmente l’odiosa legge Fornero, la Flat Tax al 15% fino a 100mila euro per le partite IVA,»), già righe Lega; nessun gruppo di persone tolto. La stessa frase contiene due misure (riduzione ed estensione): due righe, NEW-LEGA-1 e NEW-LEGA-2, con lo stesso testo (come C27-LEGA-026/027). Doppioni controllati sulle righe Lega: nella stessa risposta Quota 64 (= C27-LEGA-001/030) e la Flat Tax al 15% fino a 100mila euro (= C27-LEGA-002) sono già registrate e non ripetute; nessuna riga Lega su cedolare secca o tasse sugli stipendi under 30 (C27-LEGA-004 riguarda la tassazione agevolata per le imprese che aumentano gli stipendi, misura diversa). Altre misure della stessa intervista non registrate perché doppioni: revoca della cittadinanza per reati gravi (C27-LEGA-026, qui con l'elenco dei reati: possibile integrazione della parafrasi di LEGA-026), cittadinanza a 18 anni negata a chi ha commesso reati gravi (C27-LEGA-027/008), emendamento al decreto anti-maranza per lo sgombero rapido delle seconde case occupate (C27-LEGA-014), Strade Sicure nei capoluoghi (C27-LEGA-005), chiusura dei centri islamici abusivi e carta di diritti e doveri (C27-LEGA-021/028/020), Ucraina (C27-LEGA-029). Orizzonte/veicolo: legislatura_in_corso e richiesta_legge_bilancio (la domanda nomina la legge di Bilancio; «Sono proposte concrete che porteremo al tavolo della maggioranza»). Salvini parla da segretario della Lega di proposte del partito alla maggioranza, non di contenuti annunciati del DDL di bilancio del Governo (come C27-LEGA-002, diverso da C27-FDI-012); da ricontrollare se il DDL varato dal Cdm del 28/10 le contiene. COFOG 01 (imposte; alternativa 06 abitazioni in nota). Costo non dichiarato. Pre-valutazione slogan: LIM (strumento identificabile, la cedolare secca, senza aliquota di arrivo). Nessuna copia Wayback (archive.org/wayback/available vuoto il 2026-10-28). (verifica L2 2026-10-28) Metodo: fonte riaperta con curl GET semplice, senza user agent da browser (HTTP 200), testo estratto con un estrattore proprio (html.parser della libreria standard, script e stili esclusi), apostrofi, virgolette e spazi normalizzati, ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte a meno degli spazi: ritrovato. il Giornale, intervista di Tommaso Cerno, datePublished 2026-10-27T07:59:44Z (in pagina «27 ottobre 2026 - 08:03»); domanda «La legge di Bilancio si avvicina. Quali sono le priorità economiche della Lega?» e risposta fra virgolette. Data: vale la data di pubblicazione, come C27-LEGA-026 (l'intervista è raccolta il «primo giorno dopo la rielezione», cioè il 26/10, ma la pubblicazione del 27/10 è nel periodo). Intervista da testata: V1 (D-019). Ruolo nella forma di C27-LEGA-029/031 («Segretario» nella domanda). Non è un annuncio di governo: Salvini parla da segretario di proposte del partito «che porteremo al tavolo della maggioranza» (regola di C27-LEGA-029, diversa da C27-FDI-012). Doppioni cercati nelle righe Lega dei quattro CSV (cedolare, under 30/30 anni): nessuno. Criterio slogan: la riduzione riguarda un'imposta nominata con oggetto definito (strumento identificabile, come C27-PLD-011), quindi supera il criterio; misurabile parziale (nessuna aliquota di arrivo). COFOG 01 confermato. Stesso testo di C27-LEGA-033 (due misure nella stessa frase, come C27-LEGA-026/027).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-28 — CORRETTA: parafrasi «Ridurre l'aliquota della cedolare secca» → «Ridurre la cedolare secca» (il testo non nomina l'aliquota); caso limite superato: imposta identificata (cedolare secca), senza valore di arrivo; il taglio «[…]» toglie due voci dell'elenco già registrate (C27-LEGA-001/030, C27-LEGA-002), nessun gruppo di persone | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: richiesta_legge_bilancio, proposta del partito al tavolo della maggioranza]"
+    }
+  },
+  {
+    "id": "C27-LEGA-033",
+    "partitoId": "LEGA",
+    "dichiarante": "Matteo Salvini",
+    "ruoloDichiarante": "segretario federale Lega (rieletto al congresso del 25/10/2026), senatore; vicepresidente del Consiglio e ministro delle Infrastrutture e dei Trasporti",
+    "data": "2026-10-27",
+    "testoLetterale": "Le nostre priorità sono […] la riduzione della cedolare secca ed estensione agli immobili commerciali.",
+    "parafrasiNeutra": "Estendere la cedolare secca agli affitti degli immobili commerciali.",
+    "tipoFonte": "intervista",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://www.ilgiornale.it/news/politica/lislam-e-la-principale-minaccia-per-litalia-chiudere-le-moschee-abusive-quattro-anni-di-armi-a-kiev-e-lora-di-una-pace-giusta-vi-racconto-la-nuova-lega/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 2 (Google News RSS): query «Salvini intervista» e «Lega intervista» (when:2d, HTTP 200), titolo «Matteo Salvini: “L’Islam è la principale minaccia per l’Italia […] Vi racconto la nuova Lega”» (il Giornale); il link di Google News non è stato aperto, articolo ritrovato nella sitemap news del sito (arc/outboundfeeds/sitemap-news/2026-10-27/) e letto su ilgiornale.it (curl GET semplice, HTTP 200, isAccessibleForFree true; datePublished 2026-10-27T07:59:44Z, in pagina «27 ottobre 2026 - 08:03»), letta il 2026-10-28. Intervista di Tommaso Cerno pubblicata da una testata aperta: fonte primaria, livello atteso V1 (D-019). Data della dichiarazione: 27/10, data di pubblicazione dell'intervista (raccolta «primo giorno dopo la rielezione», quindi probabilmente il 26/10: da confermare dal verificatore; il 26/10 era già nel periodo della routine di ieri, che non ha registrato questa intervista). Canali ufficiali Lega per il periodo: legaonline.it 403 (home, /feed/, /wp-json/, sitemap); «La Settimana Leghista» n. 42 404, indice fermo al n. 41 (18/10). Stesso testo e stesso taglio di NEW-LEGA-1 (seconda misura della frase). Doppioni controllati sulle righe Lega: nella stessa risposta Quota 64 (= C27-LEGA-001/030) e la Flat Tax al 15% fino a 100mila euro (= C27-LEGA-002) sono già registrate e non ripetute; nessuna riga Lega su cedolare secca o tasse sugli stipendi under 30 (C27-LEGA-004 riguarda la tassazione agevolata per le imprese che aumentano gli stipendi, misura diversa). Altre misure della stessa intervista non registrate perché doppioni: revoca della cittadinanza per reati gravi (C27-LEGA-026, qui con l'elenco dei reati: possibile integrazione della parafrasi di LEGA-026), cittadinanza a 18 anni negata a chi ha commesso reati gravi (C27-LEGA-027/008), emendamento al decreto anti-maranza per lo sgombero rapido delle seconde case occupate (C27-LEGA-014), Strade Sicure nei capoluoghi (C27-LEGA-005), chiusura dei centri islamici abusivi e carta di diritti e doveri (C27-LEGA-021/028/020), Ucraina (C27-LEGA-029). Orizzonte/veicolo: legislatura_in_corso e richiesta_legge_bilancio (la domanda nomina la legge di Bilancio; «Sono proposte concrete che porteremo al tavolo della maggioranza»). Salvini parla da segretario della Lega di proposte del partito alla maggioranza, non di contenuti annunciati del DDL di bilancio del Governo (come C27-LEGA-002, diverso da C27-FDI-012); da ricontrollare se il DDL varato dal Cdm del 28/10 le contiene. COFOG 01 (imposte). Costo non dichiarato. Pre-valutazione slogan: OK (strumento, la cedolare secca, e platea, gli immobili commerciali). Nessuna copia Wayback (archive.org/wayback/available vuoto il 2026-10-28). (verifica L2 2026-10-28) Metodo: fonte riaperta con curl GET semplice, senza user agent da browser (HTTP 200), testo estratto con un estrattore proprio (html.parser della libreria standard, script e stili esclusi), apostrofi, virgolette e spazi normalizzati, ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte a meno degli spazi: ritrovato. il Giornale, intervista di Tommaso Cerno, datePublished 2026-10-27T07:59:44Z (in pagina «27 ottobre 2026 - 08:03»); domanda «La legge di Bilancio si avvicina. Quali sono le priorità economiche della Lega?» e risposta fra virgolette. Data: vale la data di pubblicazione, come C27-LEGA-026 (l'intervista è raccolta il «primo giorno dopo la rielezione», cioè il 26/10, ma la pubblicazione del 27/10 è nel periodo). Intervista da testata: V1 (D-019). Ruolo nella forma di C27-LEGA-029/031 («Segretario» nella domanda). Non è un annuncio di governo: Salvini parla da segretario di proposte del partito «che porteremo al tavolo della maggioranza» (regola di C27-LEGA-029, diversa da C27-FDI-012). Doppioni cercati nelle righe Lega dei quattro CSV (cedolare, under 30/30 anni): nessuno. Estensione di un'imposta esistente a una base nominata: supera il criterio; misurabile si (estensione sì/no). COFOG 01 confermato.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-28 — CONFERMATA: strumento identificabile (cedolare secca) e platea definita (immobili commerciali); stesso testo e stesso taglio di C27-LEGA-032 | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: richiesta_legge_bilancio, proposta del partito al tavolo della maggioranza]"
+    }
+  },
+  {
+    "id": "C27-LEGA-034",
+    "partitoId": "LEGA",
+    "dichiarante": "Matteo Salvini",
+    "ruoloDichiarante": "segretario federale Lega (rieletto al congresso del 25/10/2026), senatore; vicepresidente del Consiglio e ministro delle Infrastrutture e dei Trasporti",
+    "data": "2026-10-27",
+    "testoLetterale": "E poi una battaglia a cui tengo particolarmente: tagliare le tasse sugli stipendi dei giovani fino a 30 anni, per dare loro più opportunità e stipendi migliori.",
+    "parafrasiNeutra": "Ridurre le imposte sugli stipendi dei lavoratori fino a 30 anni di età.",
+    "tipoFonte": "intervista",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://www.ilgiornale.it/news/politica/lislam-e-la-principale-minaccia-per-litalia-chiudere-le-moschee-abusive-quattro-anni-di-armi-a-kiev-e-lora-di-una-pace-giusta-vi-racconto-la-nuova-lega/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 2 (Google News RSS): query «Salvini intervista» e «Lega intervista» (when:2d, HTTP 200), titolo «Matteo Salvini: “L’Islam è la principale minaccia per l’Italia […] Vi racconto la nuova Lega”» (il Giornale); il link di Google News non è stato aperto, articolo ritrovato nella sitemap news del sito (arc/outboundfeeds/sitemap-news/2026-10-27/) e letto su ilgiornale.it (curl GET semplice, HTTP 200, isAccessibleForFree true; datePublished 2026-10-27T07:59:44Z, in pagina «27 ottobre 2026 - 08:03»), letta il 2026-10-28. Intervista di Tommaso Cerno pubblicata da una testata aperta: fonte primaria, livello atteso V1 (D-019). Data della dichiarazione: 27/10, data di pubblicazione dell'intervista (raccolta «primo giorno dopo la rielezione», quindi probabilmente il 26/10: da confermare dal verificatore; il 26/10 era già nel periodo della routine di ieri, che non ha registrato questa intervista). Canali ufficiali Lega per il periodo: legaonline.it 403 (home, /feed/, /wp-json/, sitemap); «La Settimana Leghista» n. 42 404, indice fermo al n. 41 (18/10). Nessun taglio. Segue nella fonte «Sono proposte concrete che porteremo al tavolo della maggioranza» (fuori dal testo_letterale, usata per orizzonte/veicolo). Doppioni controllati sulle righe Lega: nella stessa risposta Quota 64 (= C27-LEGA-001/030) e la Flat Tax al 15% fino a 100mila euro (= C27-LEGA-002) sono già registrate e non ripetute; nessuna riga Lega su cedolare secca o tasse sugli stipendi under 30 (C27-LEGA-004 riguarda la tassazione agevolata per le imprese che aumentano gli stipendi, misura diversa). Altre misure della stessa intervista non registrate perché doppioni: revoca della cittadinanza per reati gravi (C27-LEGA-026, qui con l'elenco dei reati: possibile integrazione della parafrasi di LEGA-026), cittadinanza a 18 anni negata a chi ha commesso reati gravi (C27-LEGA-027/008), emendamento al decreto anti-maranza per lo sgombero rapido delle seconde case occupate (C27-LEGA-014), Strade Sicure nei capoluoghi (C27-LEGA-005), chiusura dei centri islamici abusivi e carta di diritti e doveri (C27-LEGA-021/028/020), Ucraina (C27-LEGA-029). Orizzonte/veicolo: legislatura_in_corso e richiesta_legge_bilancio (la domanda nomina la legge di Bilancio; «Sono proposte concrete che porteremo al tavolo della maggioranza»). Salvini parla da segretario della Lega di proposte del partito alla maggioranza, non di contenuti annunciati del DDL di bilancio del Governo (come C27-LEGA-002, diverso da C27-FDI-012); da ricontrollare se il DDL varato dal Cdm del 28/10 le contiene. Da valutare: la stampa del 27/10 (Open, ANSA, Adnkronos) riporta che il DDL di bilancio del Governo conterrebbe una «mini Irpef per gli under 30» o una flat tax per i neoassunti: se il DDL la contiene, la riga resta una proposta del partito fatta prima del Cdm (data 27/10). COFOG 01. Costo non dichiarato. Pre-valutazione slogan: OK/LIM (direzione «tagliare» con platea definita, fino a 30 anni; strumento non precisato: Irpef, contributi o altro). Nessuna copia Wayback (archive.org/wayback/available vuoto il 2026-10-28). (verifica L2 2026-10-28) Metodo: fonte riaperta con curl GET semplice, senza user agent da browser (HTTP 200), testo estratto con un estrattore proprio (html.parser della libreria standard, script e stili esclusi), apostrofi, virgolette e spazi normalizzati, ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte a meno degli spazi: ritrovato. il Giornale, intervista di Tommaso Cerno, datePublished 2026-10-27T07:59:44Z (in pagina «27 ottobre 2026 - 08:03»); domanda «La legge di Bilancio si avvicina. Quali sono le priorità economiche della Lega?» e risposta fra virgolette. Data: vale la data di pubblicazione, come C27-LEGA-026 (l'intervista è raccolta il «primo giorno dopo la rielezione», cioè il 26/10, ma la pubblicazione del 27/10 è nel periodo). Intervista da testata: V1 (D-019). Ruolo nella forma di C27-LEGA-029/031 («Segretario» nella domanda). Non è un annuncio di governo: Salvini parla da segretario di proposte del partito «che porteremo al tavolo della maggioranza» (regola di C27-LEGA-029, diversa da C27-FDI-012). Doppioni cercati nelle righe Lega dei quattro CSV (cedolare, under 30/30 anni): nessuno. Criterio slogan: «tagliare le tasse» da solo sarebbe una direzione, ma la riga nomina una base definita (le tasse sugli stipendi) e un'età come parametro della platea (§1 dell'uniformità: «età, platea di beneficiari»); diversa da C27-FI-014 (agevolazione a una categoria di persone senza base). Lo strumento (Irpef, contributi o altro) non è detto: misurabile parziale. Se il DDL di bilancio del Governo (Cdm del 28/10) contiene una misura per gli under 30, la riga resta la proposta del partito del 27/10: da tracciare come attuazione, non da togliere. Non è doppione di C27-LEGA-004 (imprese che aumentano gli stipendi).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-28 — CONFERMATA, caso limite superato: base definita (imposte sugli stipendi) e parametro di età (fino a 30 anni), senza strumento né importo; frase intera, nessun taglio | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: richiesta_legge_bilancio, proposta del partito al tavolo della maggioranza]"
+    }
+  },
+  {
+    "id": "C27-LEGA-035",
+    "partitoId": "LEGA",
+    "dichiarante": "Andrea Barabotti",
+    "ruoloDichiarante": "deputato della Lega, promotore dell'iniziativa (comunicato dell'Ufficio Stampa Lega Camera)",
+    "data": "2026-10-27",
+    "testoLetterale": "abbiamo avviato la discussione della risoluzione della Lega per abolire il doppio cambio dell’ora e rendere permanente l’ora legale in Italia. […] Con questa risoluzione chiediamo al Governo di rilanciare il confronto in Europa, sostenere l’ora legale permanente per l’Italia e valutare una sperimentazione europea.",
+    "parafrasiNeutra": "Risoluzione della Lega per abolire il doppio cambio dell'ora e rendere permanente l'ora legale in Italia: chiede al Governo di rilanciare il confronto in Europa, sostenere l'ora legale permanente per l'Italia e valutare una sperimentazione europea.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "risoluzione_mozione",
+    "fonte": {
+      "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/lega-camera-ora-legale-barabotti-lega-camera-discute-risoluzione-per-renderla-permanente-un-passo-importante/"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 3 (Agenzia Opinione, /feed/?paged=1…20, HTTP 200): comunicato «Ufficio Stampa Lega Camera» ripubblicato da Agenzia Opinione il 27/10/2026 (curl GET semplice, HTTP 200; article:published_time 2026-10-27T15:20:24+01:00; nel testo «Roma, 27 ott.»), letto il 2026-10-28. Virgolettato integrale con «Lo dichiara il deputato della Lega Andrea Barabotti, promotore dell’iniziativa»; non è una trascrizione di video. La pagina porta l'avviso generico di Opinione sull'impaginazione con AI («I contenuti potrebbero presentare interpretazioni di testo difformi dall'originale»): il verificatore cerchi il comunicato originale (legaonline.it 403; sito del gruppo Lega alla Camera non individuato). Livello atteso V1 se il comunicato è confermato, altrimenti V2. tipo_fonte sito_ufficiale per analogia con i comunicati dei gruppi (C27-PD-024), da confermare. Stessa notizia in Orizzonte Scuola («Cambio dell’ora, alla Camera si discute proposta…», query «Lega proposta», Google News), non usata. Taglio «[…]»: tolti l'attacco «Oggi in Commissione Attività produttive della Camera» (spostato fuori perché la frase comincia dopo), «Un passo importante, che segue l’approvazione all’unanimità dell’indagine conoscitiva svolta nei mesi scorsi» e il paragrafo sui vantaggi stimati (Terna: 160 milioni di kWh l'anno; fino a 200.000 tonnellate di CO₂, stime riportate dal dichiarante, non un costo); nessun gruppo di persone tolto. Da valutare: dichiarante. Barabotti è deputato e promotore, non leader, capogruppo o responsabile nazionale; la risoluzione è presentata come «della Lega» (atto del partito come C27-LEGA-012/013, non atto personale D-012). Numero della risoluzione non indicato: da cercare negli atti della Camera. Orizzonte/veicolo: legislatura_in_corso e risoluzione_mozione. COFOG 04 (energia: risparmio elettrico; alternativa 01 per il negoziato UE). Doppioni: nessuna riga Lega sull'ora legale. Pre-valutazione slogan: OK (strumento identificabile: abolizione del cambio dell'ora, ora legale permanente, risoluzione). Nessuna copia Wayback (archive.org/wayback/available vuoto il 2026-10-28). (verifica L2 2026-10-28) Metodo: fonte riaperta con curl GET semplice, senza user agent da browser (HTTP 200), testo estratto con un estrattore proprio (html.parser della libreria standard, script e stili esclusi), apostrofi, virgolette e spazi normalizzati, ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte a meno degli spazi: ritrovato. Agenzia Opinione, article:published_time 2026-10-27T15:20:24+01:00, «Roma, 27 ott.», firma «Ufficio Stampa Lega Camera». Comunicato originale non ritrovato (legaonline.it 403, non aggirato; sito del gruppo non individuato) e numero della risoluzione non trovato (bollettini di Commissione del 27/10 non ancora leggibili, 404): V2. Il primo «[…]» salta, oltre a una frase di Barabotti, l'inciso della redazione «Lo dichiara il deputato della Lega Andrea Barabotti, promotore dell'iniziativa.» e il paragrafo sui vantaggi stimati (Terna: 160 milioni di kWh l'anno, fino a 200.000 tonnellate di CO₂: stime di risparmio, non un costo); nessuna parola su gruppi di persone. Criterio slogan: misura identificabile (abolizione del doppio cambio dell'ora, ora legale permanente) chiesta al Governo in carica: supera. Misurabile si, COFOG 04 tenuto (alternativa 01), orizzonte/veicolo confermati. tipo_fonte sito_ufficiale tenuto per la natura del testo (comunicato ufficiale di un gruppo), ma la pagina è di un'agenzia: valore da decidere dal titolare per i comunicati ripubblicati. Nessuna riga Lega sull'ora legale.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-28 — CORRETTA: livello V2 (comunicato dell'Ufficio Stampa Lega Camera ripubblicato da Agenzia Opinione, non dal canale del partito; D-019); ruolo nella forma della fonte («deputato della Lega, promotore dell'iniziativa»); parafrasi aderente all'impegno chiesto al Governo; dichiarante: comunicato del gruppo Lega alla Camera su una risoluzione «della Lega» (come C27-FDI-016, deputato sul canale del partito), non atto personale | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: risoluzione in Commissione Attività produttive della Camera, numero non indicato]"
+    }
+  },
+  {
+    "id": "C27-FI-025",
+    "partitoId": "FI",
+    "dichiarante": "Stefania Craxi",
+    "ruoloDichiarante": "presidente dei senatori di Forza Italia",
+    "data": "2026-10-27",
+    "testoLetterale": "Per questo l’Unione deve nominare subito un suo inviato speciale e sedersi al tavolo con una voce sola.",
+    "parafrasiNeutra": "Chiedere che l'Unione europea nomini subito un proprio inviato speciale e partecipi con una sola voce ai negoziati sull'Ucraina.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-ucraina-craxi-fi-tregua-a-oleshky-passo-importante-ue-nomini-subito-un-suo-inviato/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 3 (Agenzia Opinione, /feed/?paged=1…20, HTTP 200): comunicato del gruppo FI al Senato («FI – FORZA ITALIA * SENATO») ripubblicato da Agenzia Opinione il 27/10/2026 (curl GET semplice, HTTP 200, download completato a 140 KB con timeout ma testo integro; article:published_time 2026-10-27T17:56:15+01:00), letto il 2026-10-28. Virgolettato integrale chiuso da «Lo dichiara la senatrice Stefania Craxi, presidente dei senatori di Forza Italia»: capogruppo, dichiarante autorizzato. Stesso avviso generico di Opinione sull'impaginazione con AI: comunicato originale da cercare (forzaitalia.it/feed/ fermo al 19/03, /wp-json/ 401). Livello atteso V1 se confermato, altrimenti V2. tipo_fonte sito_ufficiale per analogia con i comunicati dei gruppi (C27-PD-024), da confermare. Nessun taglio. Contesto: la frase segue «Gli stessi leader nordici hanno chiarito di non parlare a nome dell’Europa» ed è seguita da «Lo deve fare a pieno titolo, perché la pace in Ucraina riguarda prima di tutto la sicurezza europea». Da valutare: richiesta rivolta all'Unione europea, non a un atto italiano; Craxi non ha incarichi di governo, quindi non è un annuncio di governo (diverso da C27-FI-024); la presidente del Consiglio ha espresso il 27/10 una posizione simile da capo del Governo (non registrata, regola di C27-FDI-012). Orizzonte/veicolo: non_specificato e dichiarazione. COFOG 01 (affari esteri; le righe Ucraina C27-LEGA-029 e C27-FI-024 hanno 02 perché riguardano aiuti militari). Doppioni: nessuna riga FI su un inviato UE (C27-FI-024 riguarda gli aiuti militari). Pre-valutazione slogan: OK (organismo/figura identificabile, l'inviato speciale UE, e scadenza «subito»). Nessuna copia Wayback (archive.org/wayback/available vuoto il 2026-10-28). (verifica L2 2026-10-28) Metodo: fonte riaperta con curl GET semplice, senza user agent da browser (HTTP 200), testo estratto con un estrattore proprio (html.parser della libreria standard, script e stili esclusi), apostrofi, virgolette e spazi normalizzati, ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte a meno degli spazi: ritrovato. Agenzia Opinione, article:published_time 2026-10-27T17:56:15+01:00 («17.56 - martedì 27 ottobre 2026»); il download si è interrotto per timeout a 161 KB, ma il comunicato è integro (da «La tregua umanitaria a Oleshky» a «Lo dichiara la senatrice Stefania Craxi, presidente dei senatori di Forza Italia.»). Comunicato originale non ritrovato (forzaitalia.it/feed/ fermo al 19/03): V2. Frase intera, nessun taglio. Ruolo verificato su senato.it (Conferenza dei presidenti dei gruppi parlamentari: Forza Italia - Berlusconi Presidente - PPE, Stefania Gabriella Anastasia Craxi). COFOG 01 (affari esteri) come C27-PD-033. La posizione simile espressa il 27/10 dalla presidente del Consiglio non è registrata (C27-FDI-012); questa è la richiesta di una capogruppo, non del Governo. tipo_fonte sito_ufficiale: vedi C27-LEGA-035 (valore da decidere per i comunicati ripubblicati). Nessuna riga FI su un inviato UE.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-28 — CORRETTA: livello V2 (comunicato del gruppo FI al Senato ripubblicato da Agenzia Opinione; D-019); misurabile si → parziale (come C27-PD-033, stessa misura); parafrasi completata («con una voce sola»); organismo identificabile (inviato speciale UE) e «subito»: supera, come C27-PD-033; Craxi presidente dei senatori FI (Conferenza dei presidenti dei gruppi, senato.it), senza incarichi di governo: non è un annuncio di governo | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
+    }
+  },
+  {
+    "id": "C27-LEGA-036",
+    "partitoId": "LEGA",
+    "dichiarante": "Massimiliano Romeo, Massimo Garavaglia, Giorgio Maria Bergesio, Maria Cristina Cantu', Tilde Minasi, Elena Murelli, Stefania Pucciarelli, Erika Stefani (firmatari)",
+    "ruoloDichiarante": "primo firmatario Massimiliano Romeo, presidente del gruppo Lega Salvini Premier - Partito Sardo d'Azione al Senato (Conferenza dei presidenti dei gruppi, senato.it)",
+    "data": "2026-10-27",
+    "testoLetterale": "Delega al Governo in materia di valutazione, revisione e razionalizzazione dei sussidi e degli incentivi alle imprese, e destinazione delle risorse conseguite alla riduzione del costo del lavoro",
+    "parafrasiNeutra": "Proposta di legge che delega il Governo a valutare, rivedere e razionalizzare i sussidi e gli incentivi alle imprese e a destinare le risorse ricavate alla riduzione del costo del lavoro.",
+    "tipoFonte": "atto_parlamentare",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "proposta_di_legge",
+    "fonte": {
+      "url": "https://www.senato.it/show-doc?leg=19&tipodoc=Resaula&id=1526418&idoggetto=0&part=doc_dc-allegatob_ab"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 6 (atti di Camera e Senato): disegno di legge S. 2077, «presentato in data 27/10/2026», annunciato nell'Allegato B al resoconto della seduta n. 468 del Senato del 27/10/2026 (sezione «Disegni di legge, annunzio di presentazione»), letto il 28/10 con curl GET (HTTP 200). Firmatari dall'annunzio. Romeo è presidente del gruppo LSP-PSd'Az (pagina «Conferenza dei presidenti dei gruppi parlamentari» di senato.it, letta il 28/10, HTTP 200): atto di gruppo con il capogruppo primo firmatario, stesso criterio di C27-FDI-018 e C27-FI-020. Testo letterale = titolo (articolato non ancora stampato). Regola uniforme sulle PdL con solo titolo: il titolo indica lo strumento (revisione dei sussidi e incentivi alle imprese) e la destinazione delle risorse (riduzione del costo del lavoro), quindi la direzione è chiara; mancano importi. Orizzonte/veicolo: legislatura_in_corso, proposta_di_legge. COFOG 04 (alternativa 01, se la riduzione del costo del lavoro passa dal fisco). Doppioni: nessuna riga Lega su sussidi alle imprese o costo del lavoro. Pre-valutazione slogan: OK/LIM (strumento e destinazione nominati, nessun parametro). Da ricontrollare sullo stampato. Testo_letterale confrontato in automatico con il testo HTML riscaricato con curl GET (HTTP 200): ogni segmento ritrovato nell'ordine, a meno di spazi e apostrofi tipografici. Wayback archive.org/wayback/available (solo lettura, 28/10): HTTP 200, nessuna copia. (verifica L2 2026-10-28) Metodo: fonte riaperta con curl GET semplice, senza user agent da browser (HTTP 200), testo estratto con un estrattore proprio (html.parser della libreria standard, script e stili esclusi), apostrofi, virgolette e spazi normalizzati, ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte a meno degli spazi: ritrovato. Senato, Allegato B al resoconto della seduta n. 468 del 27/10/2026, «Disegni di legge, annunzio di presentazione»: firmatari «Romeo Massimiliano, Garavaglia Massimo, Bergesio Giorgio Maria, Cantu' Maria Cristina, Minasi Tilde, Murelli Elena, Pucciarelli Stefania, Stefani Erika», titolo identico, «(2077) (presentato in data 27/10/2026)». Romeo presidente del gruppo Lega Salvini Premier - Partito Sardo d'Azione (Conferenza dei presidenti dei gruppi parlamentari, senato.it, letta il 28/10). Testo letterale = titolo: nessun taglio. Mancano importi: misurabile parziale. COFOG 04 tenuto (alternativa 01). Da ricontrollare sullo stampato.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-28 — CONFERMATA, caso limite superato: il titolo nomina lo strumento (revisione dei sussidi e incentivi alle imprese) e la destinazione delle risorse (riduzione del costo del lavoro), quindi la direzione della misura è chiara senza l'articolato (regola di C27-FI-022, diversa da C27-FDI-018); atto di gruppo con il capogruppo primo firmatario | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: proposta_di_legge, ddl S. 2077]"
+    }
+  },
+  {
     "id": "C27-PD-008",
     "partitoId": "PD",
     "dichiarante": "Partito Democratico (documento nazionale presentato da Marina Sereni)",
@@ -5100,6 +5250,106 @@
     }
   },
   {
+    "id": "C27-AVS-056",
+    "partitoId": "AVS",
+    "dichiarante": "Angelo Bonelli",
+    "ruoloDichiarante": "co-portavoce nazionale AVS (Europa Verde), deputato",
+    "data": "2026-10-27",
+    "testoLetterale": "Lo scopo è quello di garantire ai ceti sociali più deboli un credito energetico. […] Individuiamo un credito energetico in Kwh per nuclei familiari con Isee da 10mila fino a 30mila euro, a seconda della consistenza del nucleo. Da 30mila euro in su non c’è più credito energetico",
+    "parafrasiNeutra": "Introdurre un credito energetico calcolato in kWh per i nuclei familiari con ISEE da 10.000 a 30.000 euro, variabile con la composizione del nucleo; nessun credito sopra 30.000 euro di ISEE.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://corrierelivornese.it/toscana/dalla-toscana/avs-lancia-bolletta-sociale-fratoianni-e-bonelli-in-italia-28-milioni-famiglie-in-poverta-energetica-che-meloni-non-vuole-vedere/"
+    },
+    "archivioUrl": null,
+    "cofog": "10",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (binario 2, query uniformi «AVS intervista», «AVS proposta», «Bonelli intervista», «Bonelli proposta», «Fratoianni intervista», «Fratoianni proposta», when:2d; per AVS entrambi i co-leader), trovata con «AVS proposta», «Bonelli proposta» e «Fratoianni proposta». Conferenza stampa di AVS alla Camera dei deputati del 27/10/2026 di presentazione della «bolletta sociale progressiva», con Angelo Bonelli, Nicola Fratoianni e Lorenzo Fioramonti (responsabile Politiche economiche e industriali di Europa Verde). Canale ufficiale: verdisinistra.it (API WordPress /wp-json/wp/v2/posts?after=2026-10-26T00:00:00, HTTP 200, ultimo post 2026-10-27T15:26; ricerca «bolletta sociale» su post e pagine) non contiene la conferenza: fonte da testata. Fonte: Corriere Livornese (corrierelivornese.it), articolo di Cinzia Gorla, datePublished 2026-10-27T17:56:32+01:00, letto per intero il 2026-10-28 con curl GET semplice (HTTP 200), testata aperta. Attribuzione: il virgolettato segue «Bonelli mostra gli utili del sistema bancario italiano…» nello stesso paragrafo; Il Domani d'Italia (askanews, 27/10, HTTP 200) attribuisce a Bonelli la frase intermedia («Non interveniamo sulla modalità di determinazione del prezzo dell’energia perchè l’Europa ce lo boccerebbe»). Il «[…]» toglie «Non interveniamo sulla modalità di formazione del prezzo perché sarebbe non legittimo e UE ce la boccerebbe.» (spiegazione, nessuna parola su gruppi di persone; «ceti sociali più deboli» resta). Discrepanza fra testate: askanews scrive «credito energetico con fasce di reddito fino 25mila euro» e «da 30mila euro in su non c’è credito energetico»; il valore 10mila-30mila è solo nel Corriere Livornese. Meccanismo dal testo (Fioramonti, stesso articolo): «al calcolo pensa Arera, si ritrova in bolletta»; coperture indicate da Bonelli: aste della CO2 del sistema Ets e altri contributi (righe NEW-AVS-3/4). Citazione confrontata in automatico parola per parola con il testo della pagina (a meno di spazi e apostrofi). Livello atteso V2 (conferenza stampa riportata da testata, come i discorsi riportati C27-PD-033/034). Orizzonte/veicolo: non_specificato e dichiarazione (Fratoianni la presenta come «un altro pezzo del contributo che AVS intende portare alla discussione della coalizione»; nessun atto depositato nominato). COFOG 10 (protezione sociale, povertà energetica; alternativa 04). Doppioni: nessuna riga sul credito energetico nei CSV; collegata a C27-AVS-002 (contributo sugli extraprofitti restituito in bolletta alle famiglie a basso reddito, strumento diverso). Nessun costo dichiarato («Tutto questo non a deficit», Fioramonti). Pre-valutazione slogan: OK (strumento e soglie ISEE). Wayback archive.org/wayback/available: nessuna copia (2026-10-28). (verifica L2 2026-10-28) Metodo: fonte riaperta con curl GET semplice, senza user agent da browser (HTTP 200), testo estratto con un estrattore proprio (html.parser della libreria standard, script e stili esclusi), apostrofi, virgolette e spazi normalizzati, ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte a meno degli spazi: ritrovato. Corriere Livornese, articolo di Cinzia Gorla, datePublished 2026-10-27T17:56:32+01:00. Il virgolettato segue «Bonelli mostra gli utili del sistema bancario…»; askanews (Il Domani d'Italia) attribuisce a Bonelli la frase tolta dal taglio («Non interveniamo sulla modalità di determinazione del prezzo…») e la soglia «da 30mila euro in su non c'è credito energetico»: attribuzione confermata. Caso da segnalare: la soglia inferiore «da 10mila» è solo in questo virgolettato; lo stesso articolo scrive altrove «Isee inferiore a 30mila euro» e askanews, fuori virgolette, «fasce di reddito fino 25mila euro». La riga riporta la citazione come è; la soglia superiore di 30.000 euro è concorde. Misurabile si, COFOG 10, orizzonte/veicolo confermati. Nessuna cifra di costo («Tutto questo non a deficit», Fioramonti). Nessuna riga AVS sul credito energetico.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-28 — CONFERMATA: strumento (credito energetico in kWh) e soglie ISEE; conferenza stampa riportata da testata: V2 (D-019); il «[…]» toglie una frase dello stesso Bonelli sul prezzo dell'energia, nessuna parola su gruppi di persone («ceti sociali più deboli» resta) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione, proposta per la discussione della coalizione]"
+    }
+  },
+  {
+    "id": "C27-AVS-057",
+    "partitoId": "AVS",
+    "dichiarante": "Angelo Bonelli, Nicola Fratoianni",
+    "ruoloDichiarante": "co-portavoce nazionale AVS (Europa Verde), deputato; Segretario di Sinistra Italiana, leader di AVS, deputato",
+    "data": "2026-10-27",
+    "testoLetterale": "Fino a 10mila euro di Isee è previsto al 100% la possibilità di installare le pompe di calore a carico dello Stato",
+    "parafrasiNeutra": "Prevedere per chi ha un ISEE fino a 10.000 euro la possibilità di installare pompe di calore interamente a carico dello Stato.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://ildomaniditalia.eu/bolletteavs-lancia-bolletta-sociale-credito-energetico-e-scudo-anticiclico/"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (binario 2, query uniformi «AVS intervista», «AVS proposta», «Bonelli intervista», «Bonelli proposta», «Fratoianni intervista», «Fratoianni proposta», when:2d; per AVS entrambi i co-leader), trovata con «AVS proposta», «Bonelli proposta» e «Fratoianni proposta». Conferenza stampa di AVS alla Camera dei deputati del 27/10/2026 di presentazione della «bolletta sociale progressiva», con Angelo Bonelli, Nicola Fratoianni e Lorenzo Fioramonti (responsabile Politiche economiche e industriali di Europa Verde). Canale ufficiale: verdisinistra.it (API WordPress /wp-json/wp/v2/posts?after=2026-10-26T00:00:00, HTTP 200, ultimo post 2026-10-27T15:26; ricerca «bolletta sociale» su post e pagine) non contiene la conferenza: fonte da testata. Fonte: Il Domani d'Italia (ildomaniditalia.eu), lancio askanews «Roma, 27 ott.», datePublished 2026-10-27T08:55:00+00:00 (modificato 11:12), letto per intero il 2026-10-28 con curl GET semplice (HTTP 200), testata aperta. Attribuzione: il virgolettato segue «A lanciarla Avs, in una conferenza stampa alla Camera, con Angelo Bonelli e Nicola Fratoianni che hanno spiegato che…»; la testata non dice quale dei due l'abbia pronunciato, quindi dichiaranti entrambi. Frase intera fra virgolette, nessun taglio; la testata prosegue fuori virgolette: «mentre per altre fasce di reddito la famiglia paga una quota in bolletta». Il Corriere Livornese (27/10, HTTP 200) riporta senza attribuzione chiara: «Quindi il noleggio sociale delle pompe di calore, anche per piccole e micro imprese con meno di dieci addetti. Fino a 10mila euro Isee è prevista la possibilità installare pompe di calore a carico dello Stato»; copertura indicata da Bonelli (Corriere Livornese): «Per le pompe calore la copertura viene dalla riduzione delle spese per gli armamenti, contributo gioco pubblico, maggiorazione Irap e utilizzo piano sociale per il clima». Citazione confrontata in automatico parola per parola con il testo della pagina. Livello atteso V2 (conferenza stampa riportata). Orizzonte/veicolo: non_specificato e dichiarazione, come NEW-AVS-1. COFOG 04 (energia; alternativa 10). Doppioni: nessuna riga sulle pompe di calore nei CSV. Pre-valutazione slogan: OK (strumento e soglia ISEE). Wayback: nessuna copia (2026-10-28). (verifica L2 2026-10-28) Metodo: fonte riaperta con curl GET semplice, senza user agent da browser (HTTP 200), testo estratto con un estrattore proprio (html.parser della libreria standard, script e stili esclusi), apostrofi, virgolette e spazi normalizzati, ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte a meno degli spazi: ritrovato. Il Domani d'Italia, lancio askanews «Roma, 27 ott.», datePublished 2026-10-27T08:55:00+00:00. Frase intera fra virgolette, dopo «con Angelo Bonelli e Nicola Fratoianni che hanno spiegato che…»: la testata non dice chi dei due la pronuncia, dichiaranti entrambi (ruoli nella forma delle righe AVS). Il Corriere Livornese riporta la stessa misura («Fino a 10mila euro Isee è prevista la possibilità installare pompe di calore a carico dello Stato»). Misurabile si, COFOG 04, orizzonte/veicolo confermati. Nessuna riga AVS sulle pompe di calore.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-28 — CORRETTA: parafrasi «Installare pompe di calore […] a carico dello Stato» → «Prevedere la possibilità di installare…» (il testo dice «la possibilità») e tolta la parentesi sul noleggio sociale, che è nel contesto e non nella citazione; strumento e soglia ISEE: supera; conferenza stampa riportata: V2 | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione, proposta per la discussione della coalizione]"
+    }
+  },
+  {
+    "id": "C27-AVS-060",
+    "partitoId": "AVS",
+    "dichiarante": "Luana Zanella",
+    "ruoloDichiarante": "capogruppo AVS alla Camera, deputata; prima firmataria dell'emendamento 3.23 ad A.C. 2700-A",
+    "data": "2026-10-27",
+    "testoLetterale": "Questa proposta emendativa […] non fa altro che prevedere una possibilità in più per attrarre e fidelizzare il personale sanitario nelle situazioni di difficoltà, di disagio […] offrendo i cosiddetti fringe benefits, cioè dei benefici accessori, come potrebbe essere l'alloggio o i trasporti.",
+    "parafrasiNeutra": "Nella delega sulle professioni sanitarie, prevedere la possibilità di offrire benefici accessori (fringe benefits), come l'alloggio o i trasporti, per attrarre e trattenere il personale sanitario nelle situazioni di difficoltà o di disagio.",
+    "tipoFonte": "discorso",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "emendamento",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0734/stenografico.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "07",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 6 (atti di Camera e Senato): intervento in Aula sull'emendamento 3.23 Zanella al ddl delega sulle professioni sanitarie (A.C. 2700-A), resoconto stenografico della seduta n. 734 del 27/10/2026, letto il 28/10 con curl GET (HTTP 200). Dopo l'intervento l'emendamento è respinto (votazione n. 34, parere contrario di Commissione e Governo). Il testo dell'emendamento non è ancora leggibile: l'Allegato A della seduta 734 contiene per ora solo interpellanza e interrogazioni; la data di prima presentazione dell'emendamento (in Commissione o in Aula) non è verificata, mentre il testo dell'intervento è nuovo nel periodo (stessa regola di C27-M5S-046: la regola sui testi ripubblicati riguarda i testi). Tagli «[…]»: il primo toglie «, che è stata respinta,» (riferito alla proposta), il secondo «- come le isole di cui abbiamo parlato -,» (esempio di luogo, non un gruppo di persone); necessari per stare nei 320 caratteri. Livello atteso V2 (intervento in Aula, come C27-AVS-046; D-019). Orizzonte/veicolo: legislatura_in_corso, emendamento (la proposta è veicolata dall'emendamento 3.23 a una delega del Governo in carica). COFOG 07. Doppioni: nessuna riga AVS su benefici accessori o alloggi per il personale sanitario. Pre-valutazione slogan: LIM (strumento nominato: benefici accessori, con esempi; platea «personale sanitario nelle situazioni di difficoltà, di disagio»; nessun parametro). Testo_letterale confrontato in automatico con il testo HTML riscaricato con curl GET (HTTP 200): ogni segmento ritrovato nell'ordine, a meno di spazi e apostrofi tipografici. Wayback archive.org/wayback/available (solo lettura, 28/10): HTTP 200, nessuna copia. (verifica L2 2026-10-28) Metodo: fonte riaperta con curl GET semplice, senza user agent da browser (HTTP 200), testo estratto con un estrattore proprio (html.parser della libreria standard, script e stili esclusi), apostrofi, virgolette e spazi normalizzati, ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte a meno degli spazi: ritrovato. Camera, resoconto stenografico della seduta n. 734 del 27/10/2026 (A.C. 2700-A, delega sulle professioni sanitarie). Intervento in Aula: V2 (regola della routine del 2026-10-24 per C27-AVS-046 e C27-M5S-046: D-019 porta a V1 solo le interviste). Zanella capogruppo AVS alla Camera (forma delle righe AVS; verificato nelle righe del 24/10). Testo: «Passiamo all'emendamento 3.23 Zanella. […] LUANA ZANELLA (AVS). Grazie, Presidente. Questa proposta emendativa, […]»; respinto con la votazione n. 34. Il testo dell'emendamento non è leggibile (Allegato A parziale): la data della prima presentazione non è verificata, l'intervento è nuovo nel periodo (regola di C27-M5S-046). Criterio slogan: agevolazione con tipo nominato (alloggio, trasporti), diversa da C27-FI-014; misurabile parziale, COFOG 07. Nessuna riga AVS sui benefici accessori.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-28 — CONFERMATA, caso limite superato: strumento descritto (benefici accessori come alloggio o trasporti) con platea definita (personale sanitario nelle situazioni di difficoltà o disagio), senza importo; intervento in Aula: V2; i due «[…]» tolgono un inciso sulla proposta («, che è stata respinta,») e un esempio di luogo («come le isole di cui abbiamo parlato»), nessun gruppo di persone | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: emendamento 3.23 ad A.C. 2700-A, respinto]"
+    }
+  },
+  {
+    "id": "C27-AVS-061",
+    "partitoId": "AVS",
+    "dichiarante": "Luana Zanella",
+    "ruoloDichiarante": "capogruppo AVS alla Camera, deputata; prima firmataria dell'emendamento 3.6 ad A.C. 2700-A",
+    "data": "2026-10-27",
+    "testoLetterale": "Ebbene, proprio per queste ragioni, io credo che un contratto di formazione e lavoro sia il minimo sindacale che noi dobbiamo garantire a questi giovani donne e uomini",
+    "parafrasiNeutra": "Garantire un contratto di formazione e lavoro ai medici specializzandi.",
+    "tipoFonte": "discorso",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "emendamento",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0734/stenografico.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "07",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 6 (atti di Camera e Senato): intervento in Aula sull'emendamento 3.5 Malavasi (PD) al ddl delega sulle professioni sanitarie (A.C. 2700-A), resoconto stenografico della seduta n. 734 del 27/10/2026, letto il 28/10 con curl GET (HTTP 200). Zanella apre con «Noi abbiamo presentato un emendamento praticamente uguale a quello della collega del gruppo del Partito Democratico»: è il 3.6 Zanella, identico al 3.7 Marianna Ricciardi (M5S), respinto subito dopo (votazione n. 22). Malavasi descrive il 3.5 come «un contratto di formazione e lavoro per i medici specializzandi». Il soggetto «questi giovani donne e uomini» si riferisce agli specializzandi nominati poco prima nello stesso intervento («ci sono moltissimi specializzandi e specializzande»): citata solo la frase finale, senza tagli, per non togliere le parole con cui Zanella descrive il gruppo; il riferimento agli specializzandi è nel contesto, caso limite per il verificatore. Testo degli emendamenti non ancora leggibile (Allegato A della seduta 734 parziale); data di prima presentazione dell'emendamento non verificata, intervento nuovo nel periodo. Riga solo AVS: Malavasi (PD) e Marianna Ricciardi (M5S) non sono dichiaranti autorizzati. Livello atteso V2 (intervento in Aula). Orizzonte/veicolo: legislatura_in_corso, emendamento. COFOG 07 (alternativa 09, formazione post-laurea). Doppioni: nessuna riga AVS sugli specializzandi. Pre-valutazione slogan: LIM (istituto contrattuale nominato; platea data dal contesto; nessun parametro). Testo_letterale confrontato in automatico con il testo HTML riscaricato con curl GET (HTTP 200): ogni segmento ritrovato nell'ordine, a meno di spazi e apostrofi tipografici. Wayback archive.org/wayback/available (solo lettura, 28/10): HTTP 200, nessuna copia. (verifica L2 2026-10-28) Metodo: fonte riaperta con curl GET semplice, senza user agent da browser (HTTP 200), testo estratto con un estrattore proprio (html.parser della libreria standard, script e stili esclusi), apostrofi, virgolette e spazi normalizzati, ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte a meno degli spazi: ritrovato. Camera, resoconto stenografico della seduta n. 734 del 27/10/2026 (A.C. 2700-A, delega sulle professioni sanitarie). Intervento in Aula: V2 (regola della routine del 2026-10-24 per C27-AVS-046 e C27-M5S-046: D-019 porta a V1 solo le interviste). Zanella capogruppo AVS alla Camera (forma delle righe AVS; verificato nelle righe del 24/10). Zanella interviene sul 3.5 Malavasi («Noi abbiamo presentato un emendamento praticamente uguale…»); poco prima nello stesso intervento: «ci sono moltissimi specializzandi e specializzande»; Malavasi descrive il 3.5 come «un contratto di formazione e lavoro per i medici specializzandi». Gli identici 3.6 Zanella e 3.7 Marianna Ricciardi sono respinti (votazione n. 22). «Questi giovani donne e uomini» resta nella citazione. Da segnalare: la parafrasi nomina gli specializzandi, che la citazione indica solo con «questi giovani donne e uomini». Misurabile parziale, COFOG 07 (alternativa 09). Nessuna riga AVS sugli specializzandi; Malavasi (PD) e Ricciardi (M5S) non sono dichiaranti autorizzati.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-28 — CONFERMATA, caso limite superato: istituto nominato (contratto di formazione e lavoro); la platea (medici specializzandi) è nel contesto dello stesso intervento e dell'emendamento 3.5 di cui Zanella dice di aver presentato il gemello (3.6); frase intera, nessun taglio; intervento in Aula: V2 | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: emendamento 3.6 ad A.C. 2700-A, respinto]"
+    }
+  },
+  {
     "id": "C27-AZ-001",
     "partitoId": "AZ",
     "dichiarante": "Azione (sito ufficiale)",
@@ -8050,6 +8300,81 @@
     }
   },
   {
+    "id": "C27-PLD-014",
+    "partitoId": "PLD",
+    "dichiarante": "Luigi Marattin",
+    "ruoloDichiarante": "Segretario del Partito Liberaldemocratico, deputato",
+    "data": "2026-10-27",
+    "testoLetterale": "Dobbiamo dare ad ogni livello di governo […] fondi perequativi",
+    "parafrasiNeutra": "Attribuire a ogni livello di governo fondi perequativi.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.strettoweb.com/2026/10/luigi-marattin-alla-convention-di-cateno-de-luca-il-leader-liberaldemocratico-rilancia-il-federalismo-e-guarda-ai-territori/2168026/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Dichiarazione di Luigi Marattin (segretario del Partito Liberaldemocratico) sulla sua partecipazione del 27/10/2026 alla tavola rotonda sugli enti locali della convention «L'Italia dei Territori» di Sud chiama Nord e Sindaci d'Italia a Roma, riportata tra virgolette da StrettoWeb (testata aperta, article:published_time 2026-10-27T20:22:06Z, modified 21:14Z): V2 atteso (dichiarazione riportata da testata). Il virgolettato è in prima persona e sembra un testo scritto dal proponente («Alla convention di Sud Chiama Nord oggi a Roma, ho partecipato […] Ho ribadito la proposta del Partito Libdem»), probabilmente un post social: l'originale non è stato trovato (API WordPress di partitoliberaldemocratico.com 200, nessun post sul tema dopo il 26/10). Canale: Google News RSS, query uniforme «Partito Liberaldemocratico proposta» when:2d (HTTP 200), articolo ritrovato sul sito della testata con l'API WordPress di strettoweb.com (search=Marattin) e letto il 2026-10-28 con curl GET semplice (HTTP 200), testo estratto dall'HTML e ogni segmento confrontato in automatico come sottostringa. «Ho ribadito la proposta»: il verificatore valuti se è la ripresa di una proposta PLD precedente (non individuata nel catalogo: nessuna riga PLD su federalismo o enti locali, quindi nessun doppione; C27-PLD-003 riguarda la sola competenza sanitaria). Le quattro misure della stessa frase sono righe separate (D-019): competenze esclusive, fondi perequativi, strumento fiscale manovrabile, abolizione dei vincoli tranne il pareggio di bilancio. Orizzonte/veicolo: non_specificato e dichiarazione (nessun atto né scadenza). COFOG 01 (rapporti finanziari fra livelli di governo). Wayback archive.org/wayback/available: nessuna copia (HTTP 200, archived_snapshots vuoto). Seconda misura: il taglio «[…]» toglie «competenze chiare ed esclusive,» (prima misura, riga NEW-PLD-1); nessuna parola su gruppi di persone tolta. Pre-valutazione slogan: OK/LIM (strumento identificabile: fondi perequativi, istituto noto; nessun importo né criterio). (verifica L2 2026-10-28) Metodo: fonte riaperta il 2026-10-28 con curl GET semplice (StrettoWeb, HTTP 200, article:published_time 2026-10-27T20:22:06+00:00), testo estratto con un estrattore proprio (html.parser della libreria standard Python, esclusi script e stili; diverso da quello del censitore), normalizzati apostrofi, virgolette e spazi, ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte: ritrovato. Ruolo: «segretario del Partito Liberal Democratico» nella fonte; seggio di deputato verificato su camera.it (elenco deputati XIX legislatura, lettera M: «MARATTIN LUIGI – MISTO») il 2026-10-28. Dichiarante autorizzato (segretario). Livello V2: virgolettato in prima persona riportato da testata, originale non trovato (D-019: discorsi e comunicati riportati da terzi = V2). «Ho ribadito la proposta»: la stessa proposta è nella pagina PLD «LE RIFORME ISTITUZIONALI» (2025-02-24, API WordPress search=federalismo, HTTP 200), fuori periodo e non censita; il testo del 27/10 è una dichiarazione nuova con parole diverse, non una ripubblicazione: resta nel periodo. Nessun doppione nelle righe PLD. Esito: resta con la regola di C27-PLD-011 e degli istituti nominati (§1, «un fondo […] con oggetto definito»): il fondo perequativo è un istituto noto; il cronista ne descrive la funzione («riequilibrare le differenze economiche tra i territori»). Caso limite: lo strumento esiste già per Regioni e Comuni (art. 119 Cost.), il testo non dice cosa cambia rispetto a oggi. Orizzonte/veicolo non_specificato/dichiarazione, COFOG 01 e misurabile parziale confermati. Nessuna cifra di costo.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-28 — CONFERMATA: caso limite superato (strumento identificabile: fondi perequativi, istituto nominato, per ogni livello di governo; importo e criterio non indicati, misurabile parziale); virgolettato del segretario riportato da testata: V2 (D-019); il taglio «[…]» toglie solo la prima misura (C27-PLD-013) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
+    }
+  },
+  {
+    "id": "C27-PLD-015",
+    "partitoId": "PLD",
+    "dichiarante": "Luigi Marattin",
+    "ruoloDichiarante": "Segretario del Partito Liberaldemocratico, deputato",
+    "data": "2026-10-27",
+    "testoLetterale": "Dobbiamo dare ad ogni livello di governo […] uno strumento fiscale che possono manovrare",
+    "parafrasiNeutra": "Attribuire a ogni livello di governo uno strumento fiscale che possa manovrare.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.strettoweb.com/2026/10/luigi-marattin-alla-convention-di-cateno-de-luca-il-leader-liberaldemocratico-rilancia-il-federalismo-e-guarda-ai-territori/2168026/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Dichiarazione di Luigi Marattin (segretario del Partito Liberaldemocratico) sulla sua partecipazione del 27/10/2026 alla tavola rotonda sugli enti locali della convention «L'Italia dei Territori» di Sud chiama Nord e Sindaci d'Italia a Roma, riportata tra virgolette da StrettoWeb (testata aperta, article:published_time 2026-10-27T20:22:06Z, modified 21:14Z): V2 atteso (dichiarazione riportata da testata). Il virgolettato è in prima persona e sembra un testo scritto dal proponente («Alla convention di Sud Chiama Nord oggi a Roma, ho partecipato […] Ho ribadito la proposta del Partito Libdem»), probabilmente un post social: l'originale non è stato trovato (API WordPress di partitoliberaldemocratico.com 200, nessun post sul tema dopo il 26/10). Canale: Google News RSS, query uniforme «Partito Liberaldemocratico proposta» when:2d (HTTP 200), articolo ritrovato sul sito della testata con l'API WordPress di strettoweb.com (search=Marattin) e letto il 2026-10-28 con curl GET semplice (HTTP 200), testo estratto dall'HTML e ogni segmento confrontato in automatico come sottostringa. «Ho ribadito la proposta»: il verificatore valuti se è la ripresa di una proposta PLD precedente (non individuata nel catalogo: nessuna riga PLD su federalismo o enti locali, quindi nessun doppione; C27-PLD-003 riguarda la sola competenza sanitaria). Le quattro misure della stessa frase sono righe separate (D-019): competenze esclusive, fondi perequativi, strumento fiscale manovrabile, abolizione dei vincoli tranne il pareggio di bilancio. Orizzonte/veicolo: non_specificato e dichiarazione (nessun atto né scadenza). COFOG 01 (rapporti finanziari fra livelli di governo). Wayback archive.org/wayback/available: nessuna copia (HTTP 200, archived_snapshots vuoto). Terza misura: il taglio «[…]» toglie «competenze chiare ed esclusive, fondi perequativi e» (righe NEW-PLD-1 e 2); nessuna parola su gruppi di persone tolta. Pre-valutazione slogan: LIM (leva descritta nel meccanismo, un tributo manovrabile da ciascun livello, ma il tributo non è nominato). (verifica L2 2026-10-28) Metodo: fonte riaperta il 2026-10-28 con curl GET semplice (StrettoWeb, HTTP 200, article:published_time 2026-10-27T20:22:06+00:00), testo estratto con un estrattore proprio (html.parser della libreria standard Python, esclusi script e stili; diverso da quello del censitore), normalizzati apostrofi, virgolette e spazi, ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte: ritrovato. Ruolo: «segretario del Partito Liberal Democratico» nella fonte; seggio di deputato verificato su camera.it (elenco deputati XIX legislatura, lettera M: «MARATTIN LUIGI – MISTO») il 2026-10-28. Dichiarante autorizzato (segretario). Livello V2: virgolettato in prima persona riportato da testata, originale non trovato (D-019: discorsi e comunicati riportati da terzi = V2). «Ho ribadito la proposta»: la stessa proposta è nella pagina PLD «LE RIFORME ISTITUZIONALI» (2025-02-24, API WordPress search=federalismo, HTTP 200), fuori periodo e non censita; il testo del 27/10 è una dichiarazione nuova con parole diverse, non una ripubblicazione: resta nel periodo. Nessun doppione nelle righe PLD. Esito: resta come caso limite: la leva (autonomia impositiva, un tributo che ciascun livello può manovrare) è descritta nel meccanismo, a differenza di «agevolazioni» senza tipo (C27-FI-014). Da segnalare al titolare insieme a C27-PLD-013, che esce: la differenza è che qui il testo nomina il tipo di strumento e cosa se ne può fare, là solo una proprietà del riparto. Il taglio «[…]» toglie le prime due misure (C27-PLD-013 e 014), nessuna parola su gruppi di persone. Nessuna cifra di costo.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-28 — CORRETTA: parafrasi «su cui decidere in autonomia» → «che possa manovrare» (più vicina al testo); caso limite superato (leva descritta nel meccanismo: un tributo proprio manovrabile da ciascun livello di governo; tributo non nominato, misurabile parziale); virgolettato del segretario riportato da testata: V2 (D-019) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
+    }
+  },
+  {
+    "id": "C27-PLD-016",
+    "partitoId": "PLD",
+    "dichiarante": "Luigi Marattin",
+    "ruoloDichiarante": "Segretario del Partito Liberaldemocratico, deputato",
+    "data": "2026-10-27",
+    "testoLetterale": "E abolire tutti i vincoli tranne quello del pareggio di bilancio.",
+    "parafrasiNeutra": "Abolire tutti i vincoli sui livelli di governo, salvo il pareggio di bilancio (il cronista li indica come vincoli finanziari).",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.strettoweb.com/2026/10/luigi-marattin-alla-convention-di-cateno-de-luca-il-leader-liberaldemocratico-rilancia-il-federalismo-e-guarda-ai-territori/2168026/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Dichiarazione di Luigi Marattin (segretario del Partito Liberaldemocratico) sulla sua partecipazione del 27/10/2026 alla tavola rotonda sugli enti locali della convention «L'Italia dei Territori» di Sud chiama Nord e Sindaci d'Italia a Roma, riportata tra virgolette da StrettoWeb (testata aperta, article:published_time 2026-10-27T20:22:06Z, modified 21:14Z): V2 atteso (dichiarazione riportata da testata). Il virgolettato è in prima persona e sembra un testo scritto dal proponente («Alla convention di Sud Chiama Nord oggi a Roma, ho partecipato […] Ho ribadito la proposta del Partito Libdem»), probabilmente un post social: l'originale non è stato trovato (API WordPress di partitoliberaldemocratico.com 200, nessun post sul tema dopo il 26/10). Canale: Google News RSS, query uniforme «Partito Liberaldemocratico proposta» when:2d (HTTP 200), articolo ritrovato sul sito della testata con l'API WordPress di strettoweb.com (search=Marattin) e letto il 2026-10-28 con curl GET semplice (HTTP 200), testo estratto dall'HTML e ogni segmento confrontato in automatico come sottostringa. «Ho ribadito la proposta»: il verificatore valuti se è la ripresa di una proposta PLD precedente (non individuata nel catalogo: nessuna riga PLD su federalismo o enti locali, quindi nessun doppione; C27-PLD-003 riguarda la sola competenza sanitaria). Le quattro misure della stessa frase sono righe separate (D-019): competenze esclusive, fondi perequativi, strumento fiscale manovrabile, abolizione dei vincoli tranne il pareggio di bilancio. Orizzonte/veicolo: non_specificato e dichiarazione (nessun atto né scadenza). COFOG 01 (rapporti finanziari fra livelli di governo). Wayback archive.org/wayback/available: nessuna copia (HTTP 200, archived_snapshots vuoto). Quarta misura, frase intera. Dal contesto (frase precedente) i vincoli sono quelli sui livelli di governo; il testo non elenca quali vincoli. Pre-valutazione slogan: OK/LIM (abrogazione di norme con un limite nominato, il pareggio di bilancio; vincoli non elencati). (verifica L2 2026-10-28) Metodo: fonte riaperta il 2026-10-28 con curl GET semplice (StrettoWeb, HTTP 200, article:published_time 2026-10-27T20:22:06+00:00), testo estratto con un estrattore proprio (html.parser della libreria standard Python, esclusi script e stili; diverso da quello del censitore), normalizzati apostrofi, virgolette e spazi, ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte: ritrovato. Ruolo: «segretario del Partito Liberal Democratico» nella fonte; seggio di deputato verificato su camera.it (elenco deputati XIX legislatura, lettera M: «MARATTIN LUIGI – MISTO») il 2026-10-28. Dichiarante autorizzato (segretario). Livello V2: virgolettato in prima persona riportato da testata, originale non trovato (D-019: discorsi e comunicati riportati da terzi = V2). «Ho ribadito la proposta»: la stessa proposta è nella pagina PLD «LE RIFORME ISTITUZIONALI» (2025-02-24, API WordPress search=federalismo, HTTP 200), fuori periodo e non censita; il testo del 27/10 è una dichiarazione nuova con parole diverse, non una ripubblicazione: resta nel periodo. Nessun doppione nelle righe PLD. Frase intera, segue senza stacco la frase delle altre tre misure. Esito: resta (abrogazione di norme, §1 punto 3, con il limite nominato). Il soggetto dei vincoli (i livelli di governo) è nella frase precedente dello stesso virgolettato; «finanziari» è del cronista («eliminare gli altri vincoli finanziari»). Nessuna cifra di costo.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-10-28 — CORRETTA: parafrasi: «vincoli finanziari» viene dal cronista ed è ora indicato come tale; caso limite superato (abrogazione di norme con perimetro definito per eccezione: tutti i vincoli tranne il pareggio di bilancio, regola nominata; vincoli non elencati, misurabile parziale); virgolettato del segretario riportato da testata: V2 (D-019) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
+    }
+  },
+  {
     "id": "C27-ORA-001",
     "partitoId": "ORA",
     "dichiarante": "ORA! e Michele Boldrin",
@@ -9497,6 +9822,156 @@
     "verifica": {
       "livello": "V2",
       "dettaglio": "V2✓ verificatore 2026-10-27 — CORRETTA: testo_letterale ridotto alla sola domanda finale, intera, senza «[…]» (il taglio precedente toglieva la frase sugli insegnanti); parafrasi, misurabile (parziale → si) e costo del proponente allineati a C27-M5S-014 e C27-AVS-037; supera il criterio per il parametro (14 miliardi dal Ponte alla scuola); discorso riportato da testata: V2 (D-019) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
+    }
+  },
+  {
+    "id": "C27-PAP-011",
+    "partitoId": "PAP",
+    "dichiarante": "Potere al Popolo (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale",
+    "data": "2026-10-27",
+    "testoLetterale": "No ai 4,5 miliardi in più per le armi, quasi il doppio di quanto si andrà a spendere per la sanità: non un euro per la guerra!",
+    "parafrasiNeutra": "Non destinare alla spesa per armamenti i 4,5 miliardi di euro in più indicati dal partito (atto non nominato).",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "altro",
+    "fonte": {
+      "url": "https://poterealpopolo.org/notizie/news-e-media/2026/10/27/24-ottobre-piazze-30-ottobre-sciopero-generale/"
+    },
+    "archivioUrl": null,
+    "cofog": "02",
+    "misurabile": "si",
+    "costoDichiarato": "4,5 miliardi di euro (minore spesa per armamenti: è l'aumento che il proponente chiede di non fare, non un costo; atto e profilo annuale non indicati)",
+    "stimaTerzi": null,
+    "note": "Canale: API WordPress di poterealpopolo.org (/wp-json/wp/v2/posts?after=2026-10-26T00:00:00, HTTP 200; conferma da /feed/, HTTP 200), letta il 2026-10-28 con curl GET semplice. Post «Il 24 ottobre le piazze hanno parlato. Il 30 ottobre è sciopero generale!» (date 2026-10-27T16:49:37 ora italiana), nell'elenco introdotto da «In piazza e in sciopero portiamo richieste precise:» (quattro voci con simboli ❌/✅, tolti dal testo_letterale). Livello atteso V1 (canale del partito). Testo_letterale senza tagli «[…]»; confronto automatico come sottostringa del testo estratto dall'HTML della pagina (HTTP 200) e del campo content dell'API: ritrovato. Orizzonte/veicolo: legislatura_in_corso e altro, perché sono richieste della mobilitazione e dello sciopero del 30/10 rivolte al Governo in carica che non nominano un atto (come C27-PAP-009). La cifra di 4,5 miliardi è l'aumento di spesa che il partito contesta, non un costo della misura: il verificatore L2 ha poi compilato costo_dichiarato_proponente, come C27-AZ-022 (importo indicato non come costo). Atto e anno non nominati nel post (il contesto è la manovra in discussione: da confermare in verifica). COFOG 02 (difesa). Doppioni controllati: nessuna riga PAP sulla spesa militare (C27-PAP-001…010). Simmetria: C27-AVS-023 (spese militari) è uscita come slogan perché senza cifra; qui c'è il parametro. Pre-valutazione slogan: OK (parametro: 4,5 miliardi). Wayback archive.org/wayback/available (sola lettura, 2026-10-28): nessuna copia. (verifica L2 2026-10-28) Metodo: fonte riaperta il 2026-10-28 con curl GET semplice (poterealpopolo.org, HTTP 200, datePublished 2026-10-27T16:49:37+01:00), testo estratto con un estrattore proprio (html.parser della libreria standard Python, esclusi script e stili; diverso da quello del censitore), normalizzati apostrofi, virgolette e spazi, ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte: ritrovato. Dichiarante: canale ufficiale del partito (V1). Orizzonte/veicolo legislatura_in_corso/altro confermati: richieste dello sciopero del 30/10 al Governo in carica senza atto nominato, come C27-PAP-007…009. Prima voce dell'elenco «In piazza e in sciopero portiamo richieste precise:», simbolo ❌ tolto. La cifra è l'oggetto della proposta (i 4,5 miliardi da non spendere): campo costo compilato, come richiesto per le cifre oggetto della proposta, con la natura dichiarata (minore spesa) per la doppia codifica di D-021. «Quasi il doppio di quanto si andrà a spendere per la sanità» è un confronto del partito, non registrato. Diversa da C27-AVS-023 (uscita senza cifra). Nessun doppione PAP.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-28 — CORRETTA: parafrasi («non approvare» presupponeva un voto su un atto che il testo non nomina); costo_dichiarato_proponente compilato con la cifra oggetto della proposta, come C27-AZ-022 (importo indicato non come costo); supera il criterio per il parametro (4,5 miliardi); canale ufficiale del partito | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: altro]"
+    }
+  },
+  {
+    "id": "C27-PAP-012",
+    "partitoId": "PAP",
+    "dichiarante": "Potere al Popolo (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale",
+    "data": "2026-10-27",
+    "testoLetterale": "Salario minimo e un tetto ai prezzi di carburante, trasporto pubblico e affitti: il carovita si combatte così!",
+    "parafrasiNeutra": "Fissare un prezzo massimo per il trasporto pubblico e gli affitti (il tetto al carburante e il salario minimo sono già registrati in altre righe di Potere al Popolo).",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "altro",
+    "fonte": {
+      "url": "https://poterealpopolo.org/notizie/news-e-media/2026/10/27/24-ottobre-piazze-30-ottobre-sciopero-generale/"
+    },
+    "archivioUrl": null,
+    "cofog": "06",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: API WordPress di poterealpopolo.org (/wp-json/wp/v2/posts?after=2026-10-26T00:00:00, HTTP 200; conferma da /feed/, HTTP 200), letta il 2026-10-28 con curl GET semplice. Post «Il 24 ottobre le piazze hanno parlato. Il 30 ottobre è sciopero generale!» (date 2026-10-27T16:49:37 ora italiana), nell'elenco introdotto da «In piazza e in sciopero portiamo richieste precise:» (quattro voci con simboli ❌/✅, tolti dal testo_letterale). Livello atteso V1 (canale del partito). Testo_letterale senza tagli «[…]»; confronto automatico come sottostringa del testo estratto dall'HTML della pagina (HTTP 200) e del campo content dell'API: ritrovato. Orizzonte/veicolo: legislatura_in_corso e altro, perché sono richieste della mobilitazione e dello sciopero del 30/10 rivolte al Governo in carica che non nominano un atto (come C27-PAP-009). Doppione parziale da valutare: il salario minimo è già in C27-PAP-001 e C27-PAP-010, il tetto al carburante in C27-PAP-007 («Tetto al prezzo del carburante e dell’energia»); la parte nuova è il tetto ai prezzi del trasporto pubblico e degli affitti. Se il verificatore preferisce, la riga si restringe a quelle due voci. Livello del tetto non indicato: misurabile parziale. COFOG 06 (abitazioni, per gli affitti; alternativa 04 per carburante e trasporto pubblico). Pre-valutazione slogan: OK (strumento: tetto ai prezzi su oggetti nominati). Wayback archive.org/wayback/available (sola lettura, 2026-10-28): nessuna copia. (verifica L2 2026-10-28) Metodo: fonte riaperta il 2026-10-28 con curl GET semplice (poterealpopolo.org, HTTP 200, datePublished 2026-10-27T16:49:37+01:00), testo estratto con un estrattore proprio (html.parser della libreria standard Python, esclusi script e stili; diverso da quello del censitore), normalizzati apostrofi, virgolette e spazi, ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte: ritrovato. Dichiarante: canale ufficiale del partito (V1). Orizzonte/veicolo legislatura_in_corso/altro confermati: richieste dello sciopero del 30/10 al Governo in carica senza atto nominato, come C27-PAP-007…009. Seconda voce dell'elenco, frase intera, simbolo ✅ tolto. Non è doppione: le parti nuove (trasporto pubblico, affitti) non sono in C27-PAP-007 («Tetto al prezzo del carburante e dell'energia»); la citazione resta intera perché è una sola voce della fonte e il taglio non servirebbe al limite di lunghezza. Una sola riga: stesso strumento su più oggetti, come C27-PAP-007. COFOG 06 tenuto per gli affitti, alternativa 04 per il trasporto pubblico (misura mista). Nessuna cifra di costo.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-28 — CORRETTA: parafrasi ristretta agli elementi nuovi (tetto ai prezzi di trasporto pubblico e affitti; salario minimo e tetto al carburante già registrati); misurabile parziale → si, come C27-PAP-007 (stesso strumento, livello non indicato in entrambe); supera il criterio (tetto ai prezzi su oggetti nominati); canale ufficiale del partito | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: altro]"
+    }
+  },
+  {
+    "id": "C27-PAP-013",
+    "partitoId": "PAP",
+    "dichiarante": "Potere al Popolo (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale",
+    "data": "2026-10-27",
+    "testoLetterale": "Sanità e istruzione alla media europea in rapporto al PIL: prima le persone, non i missili!",
+    "parafrasiNeutra": "Portare la spesa per la sanità alla media europea in rapporto al PIL.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "altro",
+    "fonte": {
+      "url": "https://poterealpopolo.org/notizie/news-e-media/2026/10/27/24-ottobre-piazze-30-ottobre-sciopero-generale/"
+    },
+    "archivioUrl": null,
+    "cofog": "07",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: API WordPress di poterealpopolo.org (/wp-json/wp/v2/posts?after=2026-10-26T00:00:00, HTTP 200; conferma da /feed/, HTTP 200), letta il 2026-10-28 con curl GET semplice. Post «Il 24 ottobre le piazze hanno parlato. Il 30 ottobre è sciopero generale!» (date 2026-10-27T16:49:37 ora italiana), nell'elenco introdotto da «In piazza e in sciopero portiamo richieste precise:» (quattro voci con simboli ❌/✅, tolti dal testo_letterale). Livello atteso V1 (canale del partito). Testo_letterale senza tagli «[…]»; confronto automatico come sottostringa del testo estratto dall'HTML della pagina (HTTP 200) e del campo content dell'API: ritrovato. Orizzonte/veicolo: legislatura_in_corso e altro, perché sono richieste della mobilitazione e dello sciopero del 30/10 rivolte al Governo in carica che non nominano un atto (come C27-PAP-009). La voce contiene due misure (sanità e istruzione): scissa in NEW-PAP-3 (sanità) e NEW-PAP-4 (istruzione) con la stessa citazione, come le scissioni del controllo di simmetria del 2026-10-21. «Spesa» non è scritto: «in rapporto al PIL» indica la spesa (da confermare in verifica). COFOG 07. Doppioni controllati: nessuna riga PAP su sanità. Simmetria: valore di arrivo «media europea» come C27-CSX-007 e C27-M5S-001. Pre-valutazione slogan: OK (benchmark: media europea in rapporto al PIL). Wayback archive.org/wayback/available (sola lettura, 2026-10-28): nessuna copia. (verifica L2 2026-10-28) Metodo: fonte riaperta il 2026-10-28 con curl GET semplice (poterealpopolo.org, HTTP 200, datePublished 2026-10-27T16:49:37+01:00), testo estratto con un estrattore proprio (html.parser della libreria standard Python, esclusi script e stili; diverso da quello del censitore), normalizzati apostrofi, virgolette e spazi, ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte: ritrovato. Dichiarante: canale ufficiale del partito (V1). Orizzonte/veicolo legislatura_in_corso/altro confermati: richieste dello sciopero del 30/10 al Governo in carica senza atto nominato, come C27-PAP-007…009. Terza voce dell'elenco, frase intera, simbolo ✅ tolto. «Spesa» non è scritto: «alla media europea in rapporto al PIL» riferito a un settore indica la spesa pubblica, unica grandezza di settore che si confronta in % del PIL; parafrasi non più forte del testo. COFOG 07, misurabile si. Nessun doppione PAP sulla sanità. Nessuna cifra di costo.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-28 — CONFERMATA: supera il criterio (benchmark: media europea in rapporto al PIL, come C27-M5S-001 e C27-CSX-007); scissione della voce in sanità (questa riga) e istruzione (C27-PAP-014) con la stessa citazione, come §1.6 del controllo di simmetria; canale ufficiale del partito | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: altro]"
+    }
+  },
+  {
+    "id": "C27-PAP-014",
+    "partitoId": "PAP",
+    "dichiarante": "Potere al Popolo (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale",
+    "data": "2026-10-27",
+    "testoLetterale": "Sanità e istruzione alla media europea in rapporto al PIL: prima le persone, non i missili!",
+    "parafrasiNeutra": "Portare la spesa per l'istruzione alla media europea in rapporto al PIL.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "altro",
+    "fonte": {
+      "url": "https://poterealpopolo.org/notizie/news-e-media/2026/10/27/24-ottobre-piazze-30-ottobre-sciopero-generale/"
+    },
+    "archivioUrl": null,
+    "cofog": "09",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: API WordPress di poterealpopolo.org (/wp-json/wp/v2/posts?after=2026-10-26T00:00:00, HTTP 200; conferma da /feed/, HTTP 200), letta il 2026-10-28 con curl GET semplice. Post «Il 24 ottobre le piazze hanno parlato. Il 30 ottobre è sciopero generale!» (date 2026-10-27T16:49:37 ora italiana), nell'elenco introdotto da «In piazza e in sciopero portiamo richieste precise:» (quattro voci con simboli ❌/✅, tolti dal testo_letterale). Livello atteso V1 (canale del partito). Testo_letterale senza tagli «[…]»; confronto automatico come sottostringa del testo estratto dall'HTML della pagina (HTTP 200) e del campo content dell'API: ritrovato. Orizzonte/veicolo: legislatura_in_corso e altro, perché sono richieste della mobilitazione e dello sciopero del 30/10 rivolte al Governo in carica che non nominano un atto (come C27-PAP-009). Riga sorella di NEW-PAP-3 (stessa citazione, voce istruzione). COFOG 09. Doppioni controllati: nessuna riga PAP sull'istruzione. Pre-valutazione slogan: OK (benchmark: media europea in rapporto al PIL). Wayback archive.org/wayback/available (sola lettura, 2026-10-28): nessuna copia. (verifica L2 2026-10-28) Metodo: fonte riaperta il 2026-10-28 con curl GET semplice (poterealpopolo.org, HTTP 200, datePublished 2026-10-27T16:49:37+01:00), testo estratto con un estrattore proprio (html.parser della libreria standard Python, esclusi script e stili; diverso da quello del censitore), normalizzati apostrofi, virgolette e spazi, ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte: ritrovato. Dichiarante: canale ufficiale del partito (V1). Orizzonte/veicolo legislatura_in_corso/altro confermati: richieste dello sciopero del 30/10 al Governo in carica senza atto nominato, come C27-PAP-007…009. Stessa verifica di C27-PAP-013. COFOG 09, misurabile si. Nessun doppione PAP sull'istruzione. Nessuna cifra di costo.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-28 — CONFERMATA: supera il criterio (benchmark: media europea in rapporto al PIL); riga sorella di C27-PAP-013 (stessa citazione, voce istruzione); canale ufficiale del partito | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: altro]"
+    }
+  },
+  {
+    "id": "C27-PAP-015",
+    "partitoId": "PAP",
+    "dichiarante": "Potere al Popolo (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale",
+    "data": "2026-10-27",
+    "testoLetterale": "Stop alla repressione: ritiro di tutti i pacchetti sicurezza, dai decreti Minniti, Conte-Salvini a quelli del governo Meloni!",
+    "parafrasiNeutra": "Abrogare tutti i pacchetti sicurezza, dai decreti Minniti e Conte-Salvini a quelli del governo Meloni.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "altro",
+    "fonte": {
+      "url": "https://poterealpopolo.org/notizie/news-e-media/2026/10/27/24-ottobre-piazze-30-ottobre-sciopero-generale/"
+    },
+    "archivioUrl": null,
+    "cofog": "03",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: API WordPress di poterealpopolo.org (/wp-json/wp/v2/posts?after=2026-10-26T00:00:00, HTTP 200; conferma da /feed/, HTTP 200), letta il 2026-10-28 con curl GET semplice. Post «Il 24 ottobre le piazze hanno parlato. Il 30 ottobre è sciopero generale!» (date 2026-10-27T16:49:37 ora italiana), nell'elenco introdotto da «In piazza e in sciopero portiamo richieste precise:» (quattro voci con simboli ❌/✅, tolti dal testo_letterale). Livello atteso V1 (canale del partito). Testo_letterale senza tagli «[…]»; confronto automatico come sottostringa del testo estratto dall'HTML della pagina (HTTP 200) e del campo content dell'API: ritrovato. Orizzonte/veicolo: legislatura_in_corso e altro, perché sono richieste della mobilitazione e dello sciopero del 30/10 rivolte al Governo in carica che non nominano un atto (come C27-PAP-009). «Ritiro» riferito a decreti già convertiti: parafrasi «abrogare» (da confermare in verifica). COFOG 03 (ordine pubblico e sicurezza). Doppioni controllati: nessuna riga PAP sui decreti sicurezza. Pre-valutazione slogan: OK (strumento: abrogazione di norme nominate). Wayback archive.org/wayback/available (sola lettura, 2026-10-28): nessuna copia. (verifica L2 2026-10-28) Metodo: fonte riaperta il 2026-10-28 con curl GET semplice (poterealpopolo.org, HTTP 200, datePublished 2026-10-27T16:49:37+01:00), testo estratto con un estrattore proprio (html.parser della libreria standard Python, esclusi script e stili; diverso da quello del censitore), normalizzati apostrofi, virgolette e spazi, ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte: ritrovato. Dichiarante: canale ufficiale del partito (V1). Orizzonte/veicolo legislatura_in_corso/altro confermati: richieste dello sciopero del 30/10 al Governo in carica senza atto nominato, come C27-PAP-007…009. Quarta voce dell'elenco, citazione fino a «Meloni!» (segue «E non siamo soli.», frase di passaggio non inclusa), simbolo ✅ tolto. «Stop alla repressione» è la cornice del partito, non entra nella parafrasi. Lo stesso post cita «un nuovo decreto sicurezza che allarga i fermi preventivi», compreso fra «quelli del governo Meloni». COFOG 03, misurabile si. Nessun doppione PAP. Nessuna cifra di costo.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-28 — CONFERMATA: supera il criterio (abrogazione di norme nominate: i pacchetti sicurezza dai decreti Minniti e Conte-Salvini a quelli del governo Meloni); «ritiro» di decreti già convertiti reso con «abrogare»; canale ufficiale del partito | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: altro]"
+    }
+  },
+  {
+    "id": "C27-PAP-016",
+    "partitoId": "PAP",
+    "dichiarante": "Potere al Popolo (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale",
+    "data": "2026-10-27",
+    "testoLetterale": "Per questo come Potere al Popolo rivolgiamo un appello netto al Governo italiano: l’Italia voti a favore della fine del bloqueo il 28 Ottobre all’ONU",
+    "parafrasiNeutra": "Chiedere al Governo che l'Italia voti all'ONU, il 28 ottobre, a favore della fine dell'embargo statunitense verso Cuba.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "altro",
+    "fonte": {
+      "url": "https://poterealpopolo.org/notizie/news-e-media/2026/10/27/cuba-socialista-solidarieta-fermiamo-bloqueo-stati-uniti/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: API WordPress di poterealpopolo.org (after=2026-10-26, HTTP 200; conferma da /feed/), letta il 2026-10-28 con curl GET semplice. Post «Al fianco di Cuba socialista! Solidarietà al popolo cubano, fermiamo l’infame bloqueo degli Stati Uniti» (date 2026-10-27T16:17:45 ora italiana). Livello atteso V1 (canale del partito). Testo_letterale senza tagli; confronto automatico come sottostringa del testo estratto dall'HTML: ritrovato. Orizzonte/veicolo: legislatura_in_corso e altro (richiesta al Governo in carica su un voto con data, nessun atto legislativo). COFOG 01 (affari esteri). Doppioni controllati: le righe C27-PAP-004 e 008 riguardano Israele, nessuna su Cuba. Pre-valutazione slogan: LIM (voto con data e sede definite, ma è una posizione su un singolo voto all'ONU, scaduta il 28/10: il verificatore decide se è una misura di policy o un appello contingente). Wayback archive.org/wayback/available (sola lettura, 2026-10-28): nessuna copia. (verifica L2 2026-10-28) Metodo: fonte riaperta il 2026-10-28 con curl GET semplice (poterealpopolo.org, HTTP 200, datePublished 2026-10-27T16:17:45+01:00), testo estratto con un estrattore proprio (html.parser della libreria standard Python, esclusi script e stili; diverso da quello del censitore), normalizzati apostrofi, virgolette e spazi, ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte: ritrovato. Frase intera fino a «ONU» (segue «confermando la posizione che il nostro Paese ha storicamente sempre avuto»); ripresa in chiusura del post: «Il 28 ottobre l'Italia voti sì alla fine dell'embargo statunitense!», che conferma la parafrasi («embargo statunitense»). Esito: resta con la regola di D-012 sulle richieste al Governo in carica e di C27-PAP-008 (politica estera verso uno Stato nominato). Da segnalare al titolare: la richiesta riguarda un singolo voto con data 28/10/2026, quindi l'esito sarà noto subito; il post dice che l'Italia si era astenuta nella «precedente votazione di luglio». COFOG 01, misurabile si, legislatura_in_corso/altro confermati. Nessuna cifra di costo.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-28 — CONFERMATA: caso limite superato (richiesta al Governo in carica con contenuto di policy, presentata dal partito come proposta propria, D-012: voto con sede e data definite, l'Assemblea ONU del 28/10, sulla fine dell'embargo statunitense verso Cuba); non è un appello con raccolta firme; canale ufficiale del partito | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: altro]"
     }
   }
 ]
