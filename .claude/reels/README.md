@@ -32,7 +32,8 @@ giornaliera (passo «Idee per i Reel» in `.claude/routines/aggiornamento-dati.m
   `riserva`: scheda pronta senza data, da usare quando una settimana non ha notizie adatte.
 
 ## Formato
-- Reel 9:16, 1080×1920, circa 60 secondi (55-65). Tre uscite a settimana: lunedì, mercoledì, venerdì.
+- Reel 9:16, 1080×1920, circa 60 secondi (55-65). **Cinque uscite a settimana, dal lunedì al venerdì** (decisione del
+  titolare del 28/10/2026, D-032; prima erano tre).
 - Montaggio in Animatio, con il brand kit di Paghi Tu già caricato: palette, Bricolage Grotesque per titoli e
   cifre, Figtree per i testi, Courier Prime per lo scontrino, timbro «TU» terracotta in chiusura (D-UI-08).
 - Voce: **Giulio**, sempre la stessa, tono calmo da documentario, circa 140 parole al minuto.
@@ -41,6 +42,52 @@ giornaliera (passo «Idee per i Reel» in `.claude/routines/aggiornamento-dati.m
   del progetto «senza sottotitoli» (correzione del titolare, 24/10/2026).
 - Zone sicure: niente testo importante nei 250 px in alto e nei 400 px in basso (didascalia e bottoni del Reel).
 - I primi 2 secondi devono avere una domanda o una cifra a schermo: è lì che si decide se il video viene visto.
+
+## Formato visivo (D-032, dal 28/10/2026)
+I primi video erano chiari ma fermi: poche scene lunghe, etichette minuscole, metà del fotogramma vuota, immagini solo
+come fondo sbiadito. Dal 28/10 ogni video segue queste regole, misurate sul fotogramma 1080×1920.
+
+**Niente di piccolo.**
+- Testo minimo 40 px, per qualsiasi cosa sia a schermo (fonti comprese: 34 px al minimo, in `testoTenue`, mai Courier
+  sotto i 40 px). Etichette dei grafici 48 px, cifre dentro un grafico 64 px, la cifra protagonista 180-320 px.
+- Un grafico prende tutta la larghezza utile (920 px) e almeno 700 px di altezza; barre e colonne spesse almeno 110
+  px; al massimo 6 voci per grafico. Una sola voce nell'accento, le altre in ardesia o nel grigio di confronto.
+- Se una cosa non si legge sul telefono a braccio teso, non c'è: si toglie o si ingrandisce.
+
+**Il fotogramma è pieno.**
+- Il soggetto della scena (cifra, grafico, oggetto) occupa almeno metà della zona sicura (250-1580 px in altezza).
+  Nessuna metà del fotogramma vuota.
+- Tre piani per scena: un fondo (carta, notte o foto a retino), il soggetto, un dettaglio in primo piano (un ritaglio,
+  un'etichetta, una freccia). Il primo piano entra per ultimo.
+
+**Si muove sempre.**
+- 8-12 scene per un minuto. Ogni 1,5-2 secondi succede qualcosa: entra un elemento, una cifra conta, un grafico
+  cresce, la camera avanza. Nessun fotogramma fermo per più di 3 secondi.
+- Le immagini non stanno mai ferme: avvicinamento lento (push-in) o parallasse tra i piani.
+- Ogni grafica si aggancia alla parola della voce che la nomina; il grafico cresce mentre Giulio dice la cifra.
+- Le transizioni restano quelle ammesse dal brand (taglio, morph al massimo 2, push-down al massimo 1).
+
+**Grafici che colpiscono.**
+- Un grafico per scena, mai una tabella. Tipi: colonne e barre per confronti, linea per l'andamento (si disegna),
+  ciambella e pila per le parti di un totale.
+- Il dato che conta è nell'accento, grande, con l'etichetta scritta sulla barra e non in una legenda.
+- Confronti fisici quando aiutano: pile di monete (`pila-monete`), lo scontrino che si allunga, i cento quadretti.
+- Proporzioni sempre vere: zero dentro l'asse, nessun asse tagliato.
+
+**Immagini ritagliate, effetto carta.**
+- Gli oggetti, i luoghi e le persone sono **ritagli**: scontornati (`scontorna`), stampati a **retino di puntini**
+  nell'inchiostro del brand, con un bordo di carta bianca e un'ombra morbida, come un ritaglio di giornale
+  incollato sulla pagina. Stanno sopra la grafica, in primo piano, non solo come sfondo.
+- Lo sfondo può essere una foto intera, sempre a retino e in bicromia, mai a colori pieni.
+- Almeno 3 ritagli per video. Il componente del brand è `ritaglio-carta` (vedi il prompt del prototipo).
+
+**Informazioni utili, non ripetizioni.**
+- Ogni video dà almeno **tre informazioni che chi guarda può riusare**: una cifra con cosa vuol dire, un confronto che
+  la mette in prospettiva, dove si trova sul sito o nell'atto ufficiale.
+- Vietati i video che spiegano solo una definizione o il metodo senza un dato nuovo: al massimo un video sul metodo
+  ogni due settimane.
+- Meglio un fatto di questa settimana (un decreto in Gazzetta, una promessa nuova, un dato appena uscito) spiegato con
+  i numeri del sito, che un concetto generale già raccontato.
 
 ## Tono: informare, e farsi ascoltare volentieri
 - **Una domanda, una risposta.** Ogni Reel risponde a una sola domanda che una persona si farebbe davvero («Perché
@@ -86,15 +133,24 @@ scrivere un'idea si legge l'elenco «Già raccontato» qui sotto e le schede `in
 Quando un video passa a `in lavorazione` si aggiunge la sua riga.
 
 ## Immagini
-- Incisioni del Settecento già nel repo (`public/img/`), in pubblico dominio, trattate in bicromia con un velo
-  terracotta e parallasse lento.
-- Foto dimostrative di oggetti e luoghi: scontrini, monete, registri, facciate di palazzi pubblici, archivi,
-  aule vuote, corsie d'ospedale vuote. Solo in pubblico dominio o con licenza che permette l'uso commerciale,
-  con il credito a schermo quando la licenza lo chiede. Si possono generare con l'AI, se non mostrano persone
-  riconoscibili, loghi o palazzi falsi spacciati per veri.
+- Incisioni del Settecento già nel repo (`public/img/`), in pubblico dominio, a retino e in bicromia, con parallasse
+  lento.
+- Foto dimostrative di oggetti e luoghi (scontrini, monete, registri, camion, pompe di benzina, banchi di scuola,
+  corsie d'ospedale, facciate di palazzi pubblici), scontornate e a retino. Solo in pubblico dominio o con una licenza
+  che permette l'uso commerciale, con il credito a schermo quando la licenza lo chiede. Si possono generare con l'AI
+  se non mostrano persone riconoscibili, loghi o palazzi falsi spacciati per veri.
+- **Personaggi pubblici** (decisione del titolare del 28/10/2026, D-032): la foto di un politico o di un'altra persona
+  pubblica può comparire quando il video parla di un fatto che la riguarda (un decreto del suo governo, una proposta
+  che ha presentato, una frase citata com'è), con nome e ruolo scritti accanto. Regole:
+  - mai insultata, derisa o messa in cattiva luce: niente caricature, smorfie scelte apposta, fumetti, scritte sopra il
+    volto, accostamenti che suggeriscono un giudizio;
+  - solo foto vere con licenza che ne permette il riuso (ritratti ufficiali di governo.it, camera.it, senato.it,
+    Wikimedia Commons), con il credito; mai volti generati o modificati con l'AI, mai fotomontaggi;
+  - stesso trattamento per tutti: stessa misura, stesso retino, espressione neutra; se ne compare più d'uno, stesso
+    spazio e ordine alfabetico;
+  - restano esclusi simboli e colori di partito, folle di manifestazioni, banconote che bruciano e altri cliché
+    allarmistici.
 - Registrazioni dello schermo del sito su telefono, per mostrare dove si trova ogni numero.
-- Mai volti di politici, simboli o colori di partito, folle di manifestazioni, banconote che bruciano o altri
-  cliché allarmistici.
 
 ## Regole che non si saltano
 1. **Ogni numero viene dal sito pubblicato**, copiato com'è, in formato italiano (19.633 €, 7,5%). Unica
@@ -109,11 +165,14 @@ Quando un video passa a `in lavorazione` si aggiunge la sua riga.
    misura, un atto, una frase citata com'è), mai fatti non verificati, intenzioni o motivi attribuiti: sarebbe
    diffamazione. Quando ne compare più d'uno, stesse regole e stesso spazio per tutti, in ordine alfabetico. Nessun
    giudizio («spreco», «scandalo», «colpa», «finalmente»). Nessuna spiegazione delle cause che il sito non dà.
-   Nelle immagini restano esclusi volti di politici, simboli e colori di partito.
+   Nelle immagini i personaggi pubblici seguono le regole della sezione «Immagini»; restano esclusi simboli e colori di
+   partito.
 4. Le cifre per residente sono medie: quando compaiono, a schermo c'è «medie per residente».
 5. **Nei 15 giorni prima delle elezioni politiche o di un referendum nazionale** niente video nuovi su partiti e promesse (stessa regola del sito).
 6. Fonti in piccolo su ogni scena con un numero; in chiusura «paghitu.it» e l'invito a segnalare gli errori.
 
 ## Struttura di una scheda
 Titolo, data prevista, stato, pagine del sito, perché adesso, gancio, tabella dei numeri (valore, fonte, pagina),
-scene con i tempi, voce per Giulio, immagini, bozza della didascalia, cose da controllare prima del montaggio.
+**le tre informazioni utili** (una riga ciascuna), scene con i tempi (8-12 scene, per ognuna il soggetto, il grafico o il
+ritaglio e la misura della cifra protagonista), voce per Giulio, **ritagli** (almeno 3, con la fonte dell'immagine e la
+licenza), bozza della didascalia, cose da controllare prima del montaggio.
