@@ -208,7 +208,10 @@ Quando un video passa a `in lavorazione` si aggiunge la sua riga.
    eccezione: nei video nati da una notizia, la cifra della notizia può venire dalla sua fonte primaria (ISTAT,
    Banca d'Italia, Eurostat, MEF, Ufficio parlamentare di bilancio, Gazzetta Ufficiale, atti di Camera e Senato),
    con il link nella scheda, mai solo da un giornale. Nessun arrotondamento a schermo, nessuna cifra calcolata
-   apposta per il video. Nella voce le cifre si scrivono in lettere, così Giulio non le legge male.
+   apposta per il video. Nella voce le cifre si scrivono in lettere, così Giulio non le legge male. I numeri romani
+   dei governi si scrivono come si dicono: «De Gasperi primo», «Prodi bis», «Berlusconi ter», «Berlusconi quater»
+   (correzione del titolare, 28/10/2026: la voce aveva detto «Berlusconi 4»); a schermo restano «Berlusconi IV».
+   La voce è una traccia unica: mai spezzata in clip né con le pause accorciate a mano.
 2. **Il giorno del montaggio** si riaprono le pagine indicate nella scheda e si ricontrolla ogni cifra: la routine
    aggiorna i dati, e il video deve dire quello che dice il sito quel giorno.
 3. **Neutralità:** partiti, governi e politici si possono nominare, ma senza mai esprimere una preferenza, né a
