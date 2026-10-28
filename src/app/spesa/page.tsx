@@ -87,7 +87,7 @@ export default function SpendingPage() {
           <SourceNote>
             Fonte: Eurostat, gov_10a_exp. «Vecchiaia e superstiti» sono le voci COFOG 10.2 e 10.3: pensioni di vecchiaia, anticipate e ai
             superstiti, più assistenza e servizi agli anziani. «Altra protezione sociale» comprende malattia e invalidità (con le pensioni di
-            invalidità), famiglia e figli, disoccupazione, casa, esclusione sociale e altre spese non classificate. La riga sul debito è la
+            invalidità fino all'età della pensione), famiglia e figli, disoccupazione, casa, esclusione sociale e altre spese non classificate. La riga sul debito è la
             voce COFOG 01.7, operazioni relative al debito pubblico: interessi e oneri di emissione.
           </SourceNote>
         </Card>
