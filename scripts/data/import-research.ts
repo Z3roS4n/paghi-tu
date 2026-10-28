@@ -448,6 +448,7 @@ async function legalActs(govs: ReturnType<typeof Government.parse>[]) {
         titolo: r.titolo_breve.trim(),
         governoId: gov.id,
         gazzetta: { numero: Number(r.gu_numero), data: r.gu_data, fonte: { url: r.gu_url.trim() } },
+        inVigoreDal: r.in_vigore_dal.trim(),
         cdm: urlOrNull(r.cdm_url) ? { url: r.cdm_url.trim() } : null,
         stato: r.stato,
         conversione: conversione ? { estremi: conversione, fonte: { url: r.conversione_url.trim() } } : null,

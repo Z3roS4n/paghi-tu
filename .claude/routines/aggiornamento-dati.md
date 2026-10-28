@@ -206,6 +206,9 @@ Mai una cifra presa solo da un giornale.
    - leggi di bilancio: si registrano le misure con almeno 100 milioni in un anno, con lo stesso criterio per ogni
      legge di bilancio; la riga in `2026-10-20.leggi-bilancio.csv` si aggiorna quando il disegno di legge è presentato
      alle Camere (estremi, fonte) e quando è pubblicato.
+   `in_vigore_dal`: la data di entrata in vigore dell'atto, letta su Normattiva («Entrata in vigore del
+   provvedimento») o nell'ultimo articolo del testo. Prima di quella data la pagina mostra da sola «Pubblicato, in
+   vigore dal …»: alla data lo stato cambia senza ricontrolli e senza commit.
    Un decreto approvato in Consiglio dei ministri ma non ancora in Gazzetta non si registra: va nella segnalazione.
 2. **Stato dei decreti-legge:** per ogni atto `in_conversione` controlla se è uscita la legge di conversione (60
    giorni). Convertito: `stato` `convertito`, estremi e link della legge; se la conversione cambia un importo,

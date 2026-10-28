@@ -285,6 +285,8 @@ export const LegalAct = z.object({
   titolo: z.string().min(1).max(80),
   governoId: z.string().regex(/^g\d+$/),
   gazzetta: z.object({ numero: z.number().int().positive(), data: isoDate, fonte: SourceLink }),
+  // Lo stato «pubblicato, non ancora in vigore» si ricava da questa data nel browser: nessun dato da aggiornare.
+  inVigoreDal: isoDate,
   cdm: SourceLink.nullable(),
   stato: LegalActStatus,
   conversione: z.object({ estremi: z.string(), fonte: SourceLink }).nullable(),

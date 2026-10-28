@@ -74,6 +74,10 @@ describe("integrità dei dataset", () => {
     expect(legalActs.flatMap((a) => a.misure.filter((m) => !m.id.startsWith(`${a.id}-m`)).map((m) => m.id))).toEqual([]);
   });
 
+  it("nessun atto entra in vigore prima di uscire in Gazzetta", () => {
+    expect(legalActs.filter((a) => a.inVigoreDal < a.gazzetta.data).map((a) => a.id)).toEqual([]);
+  });
+
   it("ogni atto è uscito in Gazzetta nel periodo dichiarato come censito", () => {
     const { dal, al, obiettivo } = legalActsStatus;
     expect(obiettivo <= dal && dal <= al).toBe(true);

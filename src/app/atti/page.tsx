@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRightIcon, FlagIcon } from "@phosphor-icons/react/ssr";
+import { ActStatus } from "@/components/act-status";
 import { SourceLinks } from "@/components/source-links";
 import { Card, PageHead, SectionHead, Tag, Wrap } from "@/components/ui";
 import { LevelTag, VerificationBadge } from "@/components/verification-badge";
@@ -122,7 +123,7 @@ function ActCard({ act }: { act: LegalAct }) {
   return (
     <Card as="li" className="reveal flex flex-col gap-3 pb-0!">
       <div id={act.id} className="flex scroll-mt-24 flex-wrap items-center gap-1.5">
-        <Tag tone="plain">{STATUS[act.stato]}</Tag>
+        <ActStatus status={STATUS[act.stato]} inForceFrom={act.inVigoreDal} inForceLabel={formatDate(act.inVigoreDal)} />
         <span className="ml-auto">
           <LevelTag level={act.verifica.livello} />
         </span>
@@ -130,7 +131,8 @@ function ActCard({ act }: { act: LegalAct }) {
       <div>
         <h3 className="font-sans text-lg leading-snug font-bold tracking-normal">{act.titolo}</h3>
         <p className="mt-1 text-[14.5px] text-ink-soft">
-          {LEGAL_ACT_TYPE[act.tipo]} n. {act.numero} del {formatDate(act.data)}, in Gazzetta dal {formatDate(act.gazzetta.data)}.{" "}
+          {LEGAL_ACT_TYPE[act.tipo]} n. {act.numero} del {formatDate(act.data)}, in Gazzetta dal {formatDate(act.gazzetta.data)}, in vigore
+          dal {formatDate(act.inVigoreDal)}.{" "}
           {gov ? (
             <Link href={`/governi/${gov.id}`} className="font-semibold text-ink underline underline-offset-2 hover:text-accent">
               {gov.nome}
