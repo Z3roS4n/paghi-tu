@@ -87,7 +87,7 @@
 | 7 | 35-42 s | Cosa è stato aggiunto | barre orizzontali 920 × 760 px, spesse 140 px, due voci per il 2026: pensione anticipata giornalisti ex INPGI 4,6 mln € (accento), indennità degli uffici del Ministro dell'economia 0,39 mln € (ardesia); cifre 64 px; sotto, «e altre misure più piccole: l'elenco è su /atti» 40 px; ritaglio della macchina da scrivere in primo piano | «4,6 mln €» 220 px |
 | 8 | 42-48 s | Con le loro coperture | la barra dei 4,6 mln € resta in alto, più piccola; da un ritaglio di faldone parte una freccia spessa verso la barra; etichetta sulla freccia «riducendo un'autorizzazione di spesa del D.Lgs. 62/2024 (art. 9, c. 8)» 48 px; fonte «Gazzetta Ufficiale n. 232» 34 px | «coperture» 120 px |
 | 9 | 48-54 s | Il totale | due colonne 920 × 700 px, larghe 300 px: «2026: 5,229 mln €» e «2027: 5,377 mln €», cifre 64 px; sotto «misure aggiunte in conversione, somma del sito» 48 px | «5,229 mln €» 180 px |
-| 10 | 54-60 s | Chiusura | fondo: incisione di Montecitorio (Piranesi) a retino a tutto schermo, parallasse lento; il timbro «TU» si stampa in basso | «paghitu.it/atti» 64 px, «Hai visto un errore? Segnalalo» 40 px |
+| 10 | 54-60 s | Chiusura | fondo: incisione di Montecitorio (Piranesi) a retino a tutto schermo, parallasse lento; il timbro «TU» si stampa in basso | «paghitu.it/atti» 64 px, «Hai trovato un errore? Segnalalo su paghitu.it/correzioni» 40 px |
 
 Transizioni: tagli, un morph (scena 6). La scena 7 mostra solo due barre con un valore: le altre misure della legge
 174 sono troppo piccole per una barra leggibile e non si sommano in una voce «altro» (sarebbe un calcolo nostro).
