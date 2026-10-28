@@ -127,8 +127,9 @@ Formato, tono, voce e regole sono in `.claude/reels/README.md`; il piano in `.cl
    prossimi 10 giorni si riempie con una scheda nuova nata da una notizia, come le altre.
 2. Prima di scrivere leggi il README (soprattutto «Formato visivo», «Immagini», «Tono», «Video dalle notizie» e «Non
    ripetersi» con la tabella «Già raccontato») e due schede in `.claude/reels/idee/` come modello. Ogni scheda ha le
-   tre informazioni utili, 8-12 scene con la misura della cifra protagonista, almeno 3 ritagli con fonte e licenza
-   dell'immagine; niente schede che spiegano solo una definizione o il metodo (al massimo una ogni due settimane). **Niente idee ripetitive:** ogni video ha
+   tre informazioni utili, 8-12 scene con la misura della cifra protagonista, due o tre ritagli con fonte e licenza
+   dell'immagine (non già usati in un altro video, salvo stesso soggetto), pochi testi a schermo (i sottotitoli portano
+   il narrato); niente schede che spiegano solo una definizione o il metodo (al massimo una ogni due settimane). **Niente idee ripetitive:** ogni video ha
    una domanda e una cifra principale che nessun video uscito o in lavorazione ha già avuto al centro; un dato già
    usato torna solo come paragone; se la notizia della settimana porterebbe a ripetere un concetto, cerca un angolo
    nuovo o un'altra notizia. Nella segnalazione, per ogni idea, una riga «Cosa c'è di nuovo rispetto ai video già

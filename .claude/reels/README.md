@@ -57,15 +57,29 @@ come fondo sbiadito. Dal 28/10 ogni video segue queste regole, misurate sul foto
 **Il fotogramma è pieno.**
 - Il soggetto della scena (cifra, grafico, oggetto) occupa almeno metà della zona sicura (250-1580 px in altezza).
   Nessuna metà del fotogramma vuota.
-- Tre piani per scena: un fondo (carta, notte o foto a retino), il soggetto, un dettaglio in primo piano (un ritaglio,
-  un'etichetta, una freccia). Il primo piano entra per ultimo.
+- Un soggetto per scena, grande; un fondo (carta, notte o foto a retino) e, solo se aggiunge qualcosa, un ritaglio.
 
-**Si muove sempre.**
-- 8-12 scene per un minuto. Ogni 1,5-2 secondi succede qualcosa: entra un elemento, una cifra conta, un grafico
-  cresce, la camera avanza. Nessun fotogramma fermo per più di 3 secondi.
-- Le immagini non stanno mai ferme: avvicinamento lento (push-in) o parallasse tra i piani.
+**Si muove quando la voce lo chiede, non a tempo** (correzione del titolare del 28/10/2026: «il video sembra
+editato da un bambino di 3 anni con CapCut»; prima qui c'era «ogni 1,5-2 secondi succede qualcosa»).
+- 8-12 scene per un minuto. Una scena cambia quando cambia quello che dice la voce, non per riempire il tempo: una
+  pagina ferma che regge una cifra va bene.
+- **Poche animazioni.** Quasi tutto entra con un taglio o una dissolvenza breve. Un'entrata vistosa (maschera, wipe,
+  blur) solo per la cifra protagonista o il titolo della scena; un solo conteggio per video (la cifra chiave); niente
+  pop, enfasi, rimbalzi, camera che avanza o immagini che si muovono da sole.
+- **Morph al massimo uno per video**, e solo se è davvero lo stesso oggetto che si trasforma; per il resto tagli
+  netti. Push-down al massimo uno.
 - Ogni grafica si aggancia alla parola della voce che la nomina; il grafico cresce mentre Giulio dice la cifra.
-- Le transizioni restano quelle ammesse dal brand (taglio, morph al massimo 2, push-down al massimo 1).
+
+**Ordine e quantità del testo** (correzione del titolare del 28/10/2026).
+- **Prima il titolo, poi il resto.** L'etichetta o il titolo della scena entra per primo, poi la cifra, poi (se
+  serve) la riga che la spiega. Mai una descrizione prima del titolo che spiega, mai un titolo che arriva dopo senza
+  motivo.
+- **I sottotitoli restano sempre**, quindi a schermo non si ripete il narrato: niente descrizioni che dicono quello
+  che dice la voce. Restano la cifra protagonista, un titolo breve (al massimo cinque parole), le etichette dei
+  grafici, «medie per residente» dove serve e la fonte. Al massimo due blocchi di testo per scena oltre a sottotitoli e
+  fonte.
+- **Allineamento caso per caso.** Non tutto a sinistra con la linea a sinistra: una cifra o un titolo da solo può
+  stare al centro, un grafico decide la sua impaginazione. Restano palette, font, margini di 80 px e zone sicure.
 
 **Montaggio pulito, non da principiante** (correzione del titolare del 28/10/2026).
 - **Continuità sul taglio.** Un elemento che resta da una scena all'altra (una pila, un grafico, la cifra protagonista,
@@ -76,12 +90,13 @@ come fondo sbiadito. Dal 28/10 ogni video segue queste regole, misurate sul foto
 - **Camera coerente.** Un avvicinamento lento (camera o `lento`) non si interrompe su un taglio verso una scena che
   riparte da 1: o la scena dopo parte dallo stesso zoom, o niente camera su quella coppia di scene. Il fondo che
   continua non riparte il suo movimento.
-- **Griglia fissa.** Le stesse cose stanno sempre allo stesso posto per tutto il video: etichetta in alto a y 270,
-  cifra protagonista a y 340, riga che la spiega a y 560-570, fonte a y 1500, sottotitoli a 1400. Margini 80 px.
+- **Posizioni coerenti.** Dentro un video le cose dello stesso tipo stanno allo stesso posto (la fonte sempre a
+  y 1500, i sottotitoli a 1400, la cifra protagonista sempre alla stessa altezza); quello che resta tra due scene non
+  si sposta. L'allineamento si sceglie per scena (vedi sopra), non è obbligatorio a sinistra.
 - **Ogni movimento ha un motivo.** Entra solo ciò che la voce sta per dire, quando lo dice; niente elementi che
   entrano ed escono subito, niente scatti, lampi, rimbalzi o zoom senza scopo. Le entrate cambiano con la funzione
-  (la cifra con il blur, il titolo con la maschera, l'etichetta con il wipe, la fonte in dissolvenza): mai tutto in
-  dissolvenza.
+  (la cifra con il blur o la maschera, il resto con un taglio o una dissolvenza breve), sempre poche (vedi «Poche
+  animazioni»).
 - **Tagli sul senso.** Si taglia su una pausa della voce o su un cambio di argomento, non a metà di una frase; due
   scene di fila non devono sembrare la stessa con un elemento in meno.
 - **Suoni sul colpo.** Un effetto cade sull'evento che sottolinea (la pila che cresce, il timbro che cade), anche se
@@ -101,10 +116,18 @@ come fondo sbiadito. Dal 28/10 ogni video segue queste regole, misurate sul foto
   nell'inchiostro del brand, con un bordo di carta bianca e un'ombra morbida, come un ritaglio di giornale
   incollato sulla pagina. Stanno sopra la grafica, in primo piano, non solo come sfondo.
 - Lo sfondo può essere una foto intera, sempre a retino e in bicromia, mai a colori pieni.
-- Almeno 3 ritagli per video. Il componente del brand è `ritaglio-carta`: la foto resta leggibile sotto in bicromia e
+- Due o tre ritagli per video bastano, dove aggiungono qualcosa; mai la stessa immagine in quasi ogni scena. Il componente del brand è `ritaglio-carta`: la foto resta leggibile sotto in bicromia e
   il retino è una trama sopra (di serie forza 0,5 e passo 6 px; sotto i 300 px passo 4-5 e forza 0,3-0,4). L'oggetto
   si deve riconoscere al primo sguardo (correzione del titolare del 28/10: con i soli puntini grossi non si capiva cosa
   fosse). Prototipo del formato: progetto Animatio `paghi-tu/90-prototipo-sanita`.
+- **Riuso delle immagini tra video** (proposta del 28/10/2026, da confermare dal titolare):
+  - gli oggetti del brand (scontrino, timbro, pila di monete disegnata, marchio Paghi Tu) tornano in tutti i video:
+    sono la firma;
+  - le incisioni di fondo (Montecitorio, piazza Colonna, ministero delle Finanze) sono i luoghi della serie: si
+    riusano quando il video parla di quel luogo, ma non in due video vicini;
+  - un ritaglio fotografico (registro, monete fotografate, cartellino, stetoscopio…) appartiene a un video solo,
+    salvo un video sullo stesso soggetto (lo stetoscopio per la sanità, il lampeggiante per le forze di polizia).
+    Il registro era già in sei progetti e le monete fotografate in tre: non si usano più.
 
 **Informazioni utili, non ripetizioni.**
 - Ogni video dà almeno **tre informazioni che chi guarda può riusare**: una cifra con cosa vuol dire, un confronto che
