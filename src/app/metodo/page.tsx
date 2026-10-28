@@ -125,9 +125,11 @@ export default function MethodPage() {
         impegni che non riguardano politiche pubbliche, come candidature e alleanze.
       </p>
       <p>
-        Ogni promessa dice anche se, attuata, cambierebbe direttamente una spesa o un&apos;entrata pubblica. La
-        classificazione la fanno due codificatori indipendenti, con lo stesso criterio per tutti i partiti, guardando solo il
-        testo e non gli effetti indiretti; se non sono d&apos;accordo scriviamo «non chiaro». Quando un partito ripete la
+        Ogni promessa dice anche se riguarda i conti pubblici: sì se parla di una spesa o di un&apos;entrata pubblica precisa,
+        per crearla, cambiarla, toglierla o lasciarla com&apos;è; no se riguarda diritti, regole per i privati, politica estera o
+        l&apos;organizzazione dello Stato senza soldi pubblici; non chiaro se il testo non dice chi paga. La classificazione la
+        fanno due codificatori indipendenti, con la stessa regola per tutti i partiti, guardando solo il testo e non gli effetti
+        indiretti; se non sono d&apos;accordo scriviamo «non chiaro». Quando un partito ripete la
         stessa proposta, la nuova dichiarazione compare sotto quella di prima come «ribadita» e non conta come una promessa
         in più. Resta una riga a sé se aggiunge una cifra, una soglia, una data o uno strumento diversi.
       </p>

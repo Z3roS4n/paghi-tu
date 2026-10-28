@@ -70,11 +70,12 @@
 4. **Classificazione delle righe nuove (D-030, D-031)**, prima della verifica L2 così il verificatore la controlla con il
    resto. Due codificatori indipendenti, con contesto pulito, che non vedono l'uno il lavoro dell'altro, codificano
    ogni riga nuova:
-   - `effetto_conti`: `si` se la proposta, attuata, cambia **direttamente** una spesa o un'entrata pubblica (tasse,
-     contributi, bonus, fondi, assunzioni pubbliche, spostare fondi, spesa militare, pensioni pubbliche); `no` se non
-     tocca soldi pubblici (diritti, regole, politica estera, nomine, posizioni di principio); `incerto` se il testo non
-     lo fa capire (per esempio un tetto ai prezzi senza dire chi paga). Si giudica solo il testo, mai gli effetti
-     indiretti;
+   - `effetto_conti`, con la regola e le liste di casi di `research/2026-10-28.criterio-conti-pubblici.md`, che i
+     codificatori leggono per intero: `si` se la proposta parla di una spesa o di un'entrata pubblica precisa, per
+     crearla, cambiarla, toglierla **o lasciarla com'è** («non introdurre la patrimoniale» e «non aumentare la spesa
+     militare» sono `si`); `no` se non riguarda soldi pubblici (diritti, regole per i privati, politica estera,
+     organizzazione dello Stato senza fondi); `incerto` se il testo non dice chi paga. Si giudica solo il testo, mai
+     gli effetti indiretti. Un caso che la regola non copre va nella segnalazione, non si decide da soli;
    - `ribadisce`: l'id della promessa **dello stesso partito**, già nel catalogo, che la riga nuova ripete in sostanza.
      Non è una ripetizione se la riga nuova aggiunge una cifra, una soglia, una data, beneficiari o uno strumento
      diversi. Nel dubbio resta vuoto.

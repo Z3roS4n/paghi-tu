@@ -48,9 +48,9 @@ const VEHICLE: Record<CampaignPromise["veicolo"], string> = {
 };
 
 const EFFECT: Record<BudgetEffect, string> = {
-  si: "Effetto sui conti pubblici",
-  no: "Nessun effetto diretto sui conti",
-  incerto: "Effetto sui conti non chiaro",
+  si: "Riguarda i conti pubblici",
+  no: "Non riguarda i conti pubblici",
+  incerto: "Non chiaro se riguarda i conti pubblici",
 };
 
 const effectKey = (p: CampaignPromise) => p.effettoConti ?? "nd";
@@ -185,7 +185,7 @@ function PromiseItem({ p, party }: { p: CampaignPromise; party: string }) {
       ) : null}
       <CostContext p={p} />
       <ul className="flex flex-wrap gap-1.5 text-[13.5px]" aria-label="Classificazione">
-        {[p.effettoConti ? EFFECT[p.effettoConti] : "Effetto sui conti da classificare", COFOG_DIVISIONS[p.cofog], HORIZON[p.orizzonte], VEHICLE[p.veicolo]].map((t) => (
+        {[p.effettoConti ? EFFECT[p.effettoConti] : "Conti pubblici: da classificare", COFOG_DIVISIONS[p.cofog], HORIZON[p.orizzonte], VEHICLE[p.veicolo]].map((t) => (
           <li key={t} className="rounded-ctl bg-paper-sunk px-2 py-1 text-ink-soft">
             {t}
           </li>
