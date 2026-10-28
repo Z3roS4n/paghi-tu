@@ -94,5 +94,17 @@
     "motivo": "La prima regola trattava in modo diverso promesse dello stesso tipo a seconda del verso. La regola nuova è scritta con le liste di casi ed è la stessa per tutti i partiti; la applicano due codificatori indipendenti, e quando non concordano vale «non chiaro».",
     "fonte": null,
     "segnalazione": null
+  },
+  {
+    "id": "COR-0009",
+    "data": "2026-10-28",
+    "tipo": "correzione",
+    "dato": "Spesa per funzione, nota sulle voci della protezione sociale",
+    "pagina": "/spesa",
+    "prima": "«Altra protezione sociale» comprende malattia e invalidità (con le pensioni di invalidità), famiglia e figli, disoccupazione, casa, esclusione sociale e altre spese non classificate.",
+    "dopo": "«Altra protezione sociale» comprende malattia e invalidità (con le pensioni di invalidità fino all'età della pensione), famiglia e figli, disoccupazione, casa, esclusione sociale e altre spese non classificate.",
+    "motivo": "Nella classificazione COFOG le pensioni di invalidità stanno in «invalidità» (10.12) solo per chi non ha ancora l'età della pensione; da quell'età la spesa è in «vecchiaia» (10.20), cioè in «Vecchiaia e superstiti». Le cifre non cambiano: cambia solo la descrizione.",
+    "fonte": { "url": "https://ec.europa.eu/eurostat/documents/3859598/10142242/KS-GQ-19-010-EN-N.pdf" },
+    "segnalazione": null
   }
 ]
