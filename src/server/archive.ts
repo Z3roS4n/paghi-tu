@@ -1,8 +1,9 @@
 import "server-only";
+import { LEGAL_ACT_TYPE } from "@/lib/domain/acts";
 import { type ArchiveEntry, normalize } from "@/lib/domain/archive";
 import { COFOG_DIVISIONS } from "@/lib/domain/schemas";
 import { formatDate } from "@/lib/format";
-import { budgetLaws, getGovernment, governments, measures, parties, promises } from "./data";
+import { budgetLaws, getGovernment, governments, legalActs, measures, parties, promises } from "./data";
 
 const text = (...parts: (string | null | undefined)[]) => normalize(parts.filter(Boolean).join(" "));
 
@@ -36,6 +37,14 @@ export function archiveEntries(): ArchiveEntry[] {
       data: String(m.annoAvvio),
       testo: text(m.titolo, m.attoIstitutivo, m.governoTesto, String(m.annoAvvio)),
     })),
+    ...legalActs.map((a) => ({
+      tipo: "atto" as const,
+      titolo: a.titolo,
+      dettaglio: `${LEGAL_ACT_TYPE[a.tipo]} n. ${a.numero} del ${formatDate(a.data)} · ${getGovernment(a.governoId)?.nome ?? ""}`,
+      href: `/atti#${a.id}`,
+      data: a.data,
+      testo: text(a.titolo, a.titoloUfficiale, LEGAL_ACT_TYPE[a.tipo], String(a.numero), a.data.slice(0, 4), ...a.misure.map((m) => m.descrizione)),
+    })),
     ...promises.map((p) => {
       const nome = partyName.get(p.partitoId) ?? p.partitoId;
       return {
@@ -45,7 +54,7 @@ export function archiveEntries(): ArchiveEntry[] {
         href: `/promesse#${p.id}`,
         data: p.data,
         partito: { id: p.partitoId, nome },
-        testo: text(p.parafrasiNeutra, p.testoLetterale, nome, p.dichiarante, COFOG_DIVISIONS[p.cofog]),
+        testo: text(p.parafrasiNeutra, p.testoLetterale, nome, p.dichiarante, COFOG_DIVISIONS[p.cofog], ...p.ribadita.map((r) => r.testoLetterale)),
       };
     }),
   ];

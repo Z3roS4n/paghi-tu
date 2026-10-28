@@ -27,6 +27,14 @@
 - Colonne di ricerca: partito, coalizione, dichiarante e ruolo, data, testo letterale (citazione breve, art. 70 L. 633/1941), parafrasi neutra, tipo e URL della fonte, archivio, tema COFOG, misurabile, costo dichiarato dal proponente, stima di terzi con fonte, stato, stato di verifica.
 - Da decidere prima dell'import: campo `orizzonte` (legge di bilancio 2027 / prossima legislatura) e regola per le promesse recepite dal governo prima del voto, uguale per maggioranza e opposizione.
 
+### Atto (D-029)
+- Un decreto-legge, una legge o un decreto legislativo pubblicato in Gazzetta con almeno una misura con importo. Campi chiave: `id` (`dl-AAAA-N`, `l-AAAA-N`, `dlgs-AAAA-N`), `tipo`, `numero`, `data`, `titolo` (breve e neutro) e `titoloUfficiale`, `governoId`, `gazzetta` (numero, data, link), `cdm`, `stato` (`in_conversione`, `convertito`, `decaduto`, `in_vigore`), `conversione`, `relazioneTecnica`, `misure`, `verifica`.
+- Misura dell'atto: `id` (`<atto>-mNN`), `articolo`, `descrizione`, `natura` (`spesa`, `minori_entrate`, `maggiori_entrate`, `minori_spese`), `tipoOnere` (`tetto` o `stima`), `cofog`, `importi` (anno e milioni, come nella fonte), `continuaDopo` («a decorrere»), `citazione`, `fonte`, `verifica`.
+- Vincoli: governo in carica alla data dell'atto; Gazzetta dentro il periodo censito (`data/atti-stato.json`); un atto senza misure verificate non si pubblica. CSV: `research/2026-10-28.atti-economici.csv` e `2026-10-28.atti-misure.csv`, importi nel formato `2026:45.2;2027:60`.
+
+### Classificazione delle promesse (D-030, D-031)
+- `effettoConti` (`si`, `no`, `incerto`) e `ribadita` (le ripetizioni dello stesso partito, con data e fonte) da `research/2026-10-28.promesse-classificazione.csv`, doppia codifica indipendente.
+
 ### Misura (in arrivo, D-007)
 - Multi-atto e multi-governo: costo stimato all'approvazione (relazione tecnica) contro costo a consuntivo, ciascuno con fonte. Scostamento % solo se le basi sono omogenee.
 

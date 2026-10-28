@@ -19,6 +19,7 @@ export default function Home() {
     { href: "/spesa", title: "Spesa", body: "Spesa, entrate, disavanzo e debito per residente, anno per anno, con le fonti e i controlli." },
     { href: "/governi", title: "Governi", body: `I ${s.governmentCount} governi dal 1945: date, maggioranze, manovre e debito durante il mandato.` },
     { href: "/leggi-di-bilancio", title: "Leggi di bilancio", body: `${s.budgetLawCount} atti di bilancio con gli estremi su Normattiva e il governo che li ha presentati.` },
+    { href: "/atti", title: "Leggi e decreti", body: "I decreti e le leggi che autorizzano una spesa o cambiano un'entrata, con gli importi della norma." },
     { href: "/promesse", title: "Promesse per il 2027", body: "Cosa promettono i partiti, con la frase esatta e la fonte. Stesse regole per tutti." },
     { href: "/misure", title: "Misure", body: "Costo stimato all'approvazione contro costo effettivo, per Quota 100, Superbonus, RdC e altre." },
     { href: "/archivio", title: "Archivio", body: "Cerca fra governi, manovre, misure e promesse in un solo posto." },
