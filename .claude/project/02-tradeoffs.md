@@ -348,6 +348,17 @@
 - **Conseguenze:** la linea va progettata su una tela larga quanto tutte le slide e poi tagliata; ogni carosello si controlla con le slide affiancate, perché i pezzi devono combaciare al pixel. Sfondi notte e immagini a tutta slide restano esclusi, perché romperebbero la linea.
 - **Data:** 2026-10-28
 
+### D-034 — Il registro delle fonti descrive quello che la pipeline scarica davvero
+- **Stato:** applicata il 2026-10-28, su richiesta del titolare.
+- **Contesto:** il verificatore del carosello 04 ha trovato /fonti in contraddizione con /metodo, /governi e /spesa. R-12 Eurostat risultava «controllo incrociato e confronti UE» e R-04 ISTAT «conti delle AP dal 1995», ma `scripts/data/fetch-public-finance.ts` scarica i conti da Eurostat e il debito dalla tavola Banca d'Italia TCCE0325, che R-07 non nominava. R-17 limitava i 69 governi al 1948, ma il primo è del 1945. R-01 BDAP aveva la licenza «aperta» e il bollino «Serve un permesso». L'introduzione diceva «con la licenza verificata», anche con licenze «NV».
+- **Scelta:**
+  - «Usata per» dice quale serie pubblicata viene da quella fonte. Una fonte primaria che ripubblichiamo nella versione di un altro ente lo dice (R-04 → R-12);
+  - la copertura nomina la tavola usata sul sito (R-07: TCCE0325, mensile dal dicembre 1861) e le date dei dati, non quelle della legislatura (R-17: governi dal 1945);
+  - una licenza in conflitto fra metadati e condizioni d'uso è «da chiarire», non «aperta». Finché non è chiarita la fonte resta «Serve un permesso» e non ripubblichiamo i suoi dati (R-01);
+  - l'introduzione di /fonti non promette licenze verificate: «NV» dove non lo sono.
+- **Conseguenze:** quando cambia una fonte nella pipeline cambia anche la sua scheda in `data/fonti.json`, nello stesso commit. Caroselli e reel citano /fonti solo per quello che la scheda dice.
+- **Data:** 2026-10-28
+
 ## Decisioni aperte
 - **OA-1** — ~~Nome del progetto e dominio~~ → nome deciso il 2026-10-20: **Paghi Tu** (provocatorio verso politica e cittadini, senza attribuire condotte a nessuno). Dominio candidato `paghitu.it` (libero al controllo DNS del 2026-10-20, da confermare all'acquisto).
 - **OA-2** — **SUPERATA da D-023 (2026-10-21): titolare M's Works, indicato in /privacy e /note-legali.** Testo originale: Editore: il titolare del progetto, persona fisica. **Decisione del titolare (2026-10-20): nome e dati personali NON pubblicati sul sito**; il sito si presenta come "Paghi Tu" con un recapito dedicato (email del progetto). Da validare con l'avvocato prima del lancio: (a) se art. 2 L. 47/1948 (richiamato da art. 1 c. 3 L. 62/2001) e art. 7 D.Lgs. 70/2003 impongono l'indicazione dell'editore a un sito non periodico e non commerciale; (b) identità del titolare del trattamento richiesta dall'art. 13 GDPR se il sito tratta dati dei visitatori (log, analytics, form) — si minimizza con zero cookie, zero analytics con IP, nessun form; (c) alternativa: associazione (es. APS/ETS) come editore, così sul sito compare l'ente e non la persona; (d) responsabilità personale e polizza RC. L'anonimato verso il pubblico non elimina la responsabilità: l'editore resta identificabile da hosting e registro del dominio.

@@ -19,8 +19,8 @@ export default function SourcesPage() {
     <Wrap>
       <PageHead kicker="Registro delle fonti" title="Fonti">
         <p>
-          Le fonti che usiamo o abbiamo valutato, con la licenza verificata. Dove serve un permesso, non ripubblichiamo i dati
-          finché non l&apos;abbiamo ottenuto.
+          Le fonti che usiamo o abbiamo valutato, ognuna con la sua licenza: «NV» dove non l&apos;abbiamo ancora verificata.
+          Dove serve un permesso, non ripubblichiamo i dati finché non l&apos;abbiamo ottenuto.
         </p>
       </PageHead>
       <ul className="mt-8 grid gap-2.5 md:grid-cols-2">

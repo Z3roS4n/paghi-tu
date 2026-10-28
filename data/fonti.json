@@ -5,10 +5,10 @@
     "dataset": "Open Data BDAP (F-01, F-02; E-07…E-13)",
     "copertura": "capitolo 2011–2026; serie storiche saldi rendiconto 2003–2025, spese per amministrazione e missione 2008–2025",
     "accesso": "API pseudo-CKAN: package_list/package_show; dump CSV con id del dataset; OData (colonne offuscate) come riserva; package_search intermittente",
-    "licenza": "\"cc-by\" nei metadati contro pagina Copyright OpenBDAP (fini di lucro su autorizzazione, no deep linking) — aperta",
+    "licenza": "\"cc-by\" nei metadati, ma la pagina Copyright di OpenBDAP chiede un'autorizzazione per i fini di lucro e vieta il deep linking: da chiarire",
     "riuso": "con_permesso",
     "aggiornamento": "annuale (LB, rendiconto luglio); pagamenti mensili",
-    "fonteDiVeritaPer": "Spesa del bilancio dello Stato 2011– (previsioni e rendiconto per capitolo, missione, programma)"
+    "fonteDiVeritaPer": "Spesa del bilancio dello Stato 2011– (previsioni e rendiconto per capitolo, missione, programma), quando il riuso sarà chiarito: oggi non la ripubblichiamo"
   },
   {
     "id": "R-02",
@@ -41,7 +41,7 @@
     "licenza": "CC BY 4.0 (F-14)",
     "riuso": "si",
     "aggiornamento": "marzo, aprile (notifica), settembre",
-    "fonteDiVeritaPer": "Conti delle AP SEC2010 dal 1995"
+    "fonteDiVeritaPer": "Conti delle AP SEC2010 dal 1995, alla fonte: sul sito li usiamo nella versione Eurostat (R-12)"
   },
   {
     "id": "R-05",
@@ -69,7 +69,7 @@
     "id": "R-07",
     "ente": "Banca d'Italia",
     "dataset": "BDS/A2A, finanza pubblica (F-16, F-17; E-05, E-06)",
-    "copertura": "debito TCCE0200 dal 1861; fabbisogno TCCE0100 dal 1980",
+    "copertura": "debito TCCE0200 dal 1861; debito per vita residua TCCE0325, mensile dal dicembre 1861 (la tavola usata sul sito); fabbisogno TCCE0100 dal 1980",
     "accesso": "export ZIP di CSV ;",
     "licenza": "condizioni SEBC (gratuito anche commerciale, citare la fonte, non modificare); CC BY 4.0 per i dataset su dati.gov.it (TCCE0350/0400)",
     "riuso": "con_citazione",
@@ -129,7 +129,7 @@
     "licenza": "riuso anche commerciale con citazione",
     "riuso": "si",
     "aggiornamento": "aprile, ottobre",
-    "fonteDiVeritaPer": "Controllo incrociato e confronti UE"
+    "fonteDiVeritaPer": "Conti delle AP dal 1995 (spese, entrate, saldo, debito in % del PIL, spesa per funzione) e confronti UE"
   },
   {
     "id": "R-13",
