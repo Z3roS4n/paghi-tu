@@ -99,6 +99,9 @@ editato da un bambino di 3 anni con CapCut»; prima qui c'era «ogni 1,5-2 secon
   animazioni»).
 - **Tagli sul senso.** Si taglia su una pausa della voce o su un cambio di argomento, non a metà di una frase; due
   scene di fila non devono sembrare la stessa con un elemento in meno.
+- **Mai una pagina vuota dopo il taglio.** Dal primo fotogramma la scena ha già il suo soggetto, mai solo
+  l'etichetta o la fonte: se la voce è in pausa si sposta il taglio sull'inizio della frase, altrimenti il primo
+  elemento c'è già al taglio.
 - **Suoni sul colpo.** Un effetto cade sull'evento che sottolinea (la pila che cresce, il timbro che cade), anche se
   l'avviso del controllo dice «fuori battito»; sui battiti (`sync_aggancia`) solo gli effetti senza un evento a schermo.
 - **Prima di consegnare:** si guarda il video consegnato (`video_guarda`) e, a ogni taglio, il fotogramma prima e
