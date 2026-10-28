@@ -8,15 +8,15 @@ dopo le riempie la routine con le notizie della settimana (binario 4 del runbook
 |---|---|---|---|---|
 | R00 | già uscito | Il conto lo paghi tu (il racconto del sito) | / | pubblicato |
 | R09 | dom 25/10/2026 | [Le voci piccole del conto](idee/R09-le-voci-piccole.md) · [prompt](prompt/R09-le-voci-piccole.md) | /spesa | pubblicato ([post](https://www.instagram.com/reel/De6rI3xjG2H/)) |
-| R01 | lun 26/10/2026 | [Lo Stato spende più di quanto incassa](idee/R01-entrate-e-uscite.md) · [prompt](prompt/R01-entrate-e-uscite.md) | /, /spesa | in revisione (D-032): pubblicato il 28/10, tolto dal titolare, si ripubblica rifatto nel formato nuovo |
+| R01 | lun 26/10/2026 | [Lo Stato spende più di quanto incassa](idee/R01-entrate-e-uscite.md) · [prompt](prompt/R01-entrate-e-uscite.md) | /, /spesa | pubblicato il 28/10 ([post](https://www.instagram.com/reel/DfCdCz7lqeJ/)), ripubblicato dal titolare dopo la revisione D-032 |
 | R02 | mer 28/10/2026 | [La voce che cresce più in fretta](idee/R02-interessi.md) · [prompt](prompt/R02-interessi.md) | /spesa | in lavorazione |
 | R03 | ven 30/10/2026 | [Previsto contro speso](idee/R03-previsto-e-speso.md) · [prompt](prompt/R03-previsto-e-speso.md) | /misure | in lavorazione |
-| R15 | sab 31/10/2026 | [Se la manovra non arriva in tempo](idee/R15-se-la-manovra-non-arriva.md) · [prompt](prompt/R15-se-la-manovra-non-arriva.md) | /leggi-di-bilancio | programmato (Instagram, 31/10 15:00) · in revisione (D-032) |
+| R15 | sab 31/10/2026 | [Se la manovra non arriva in tempo](idee/R15-se-la-manovra-non-arriva.md) · [prompt](prompt/R15-se-la-manovra-non-arriva.md) | /leggi-di-bilancio | programmato (Instagram, 31/10 15:00), video rifatto nel formato D-032 |
 | — | lun 02/11/2026 | libera: un'idea dalla notizia della settimana | | libera |
 | R18 | mar 03/11/2026 | [Misure urgenti e sostegni per autotrasporto, agricoltura e pesca](idee/R18-il-decreto-del-gasolio.md) | /atti | idea |
 | — | mer 04/11/2026 | libera: un'idea dalla notizia della settimana | | libera |
 | R27 | gio 05/11/2026 | [Il debito, mese per mese](idee/R27-il-debito-mese-per-mese.md) | /, /spesa | idea |
-| R10 | ven 06/11/2026 | [Le regole per le promesse](idee/R10-come-contiamo-le-promesse.md) · [prompt](prompt/R10-come-contiamo-le-promesse.md) | /promesse, /metodo | in revisione (D-032) |
+| R10 | ven 06/11/2026 | [Le regole per le promesse](idee/R10-come-contiamo-le-promesse.md) · [prompt](prompt/R10-come-contiamo-le-promesse.md) | /promesse, /metodo | programmato (Instagram, 6/11 13:00), video rifatto nel formato D-032 |
 | R19 | lun 09/11/2026 | [Ex ILVA: cosa paga il decreto](idee/R19-ex-ilva.md) | /atti | idea |
 | R23 | mar 10/11/2026 | [Sotto il limite non è un risparmio](idee/R23-sotto-il-limite.md) | /misure | idea |
 | — | mer 11/11/2026 | libera: un'idea dalla notizia della settimana | | libera |
