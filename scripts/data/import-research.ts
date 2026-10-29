@@ -399,7 +399,7 @@ async function classifyPromises(eligible: z.infer<typeof CampaignPromise>[]) {
 const LEGAL_ACTS = "2026-10-28.atti-economici";
 const LEGAL_ACT_MEASURES = "2026-10-28.atti-misure";
 // La routine sposta «dal» indietro con il recupero e «al» al giorno dell'ultima Gazzetta letta.
-const LEGAL_ACTS_COVERAGE = { dal: "2026-10-01", al: "2026-10-28", obiettivo: "2022-10-22" };
+const LEGAL_ACTS_COVERAGE = { dal: "2026-09-01", al: "2026-10-28", obiettivo: "2022-10-22" };
 
 async function legalActs(govs: ReturnType<typeof Government.parse>[]) {
   const coverage = LegalActsCoverage.parse(LEGAL_ACTS_COVERAGE);
