@@ -39,3 +39,6 @@
   su ogni pagina. Usare `npm run check:pages`, che guarda solo il testo visibile (2026-10-21).
 - ❌ Lasciare marcatori di lavoro («INFERENZA», `V1✓`) nelle colonne mostrate in pagina: /fonti ne aveva
   quattro nella licenza e nella copertura, riformulati alla fonte (2026-10-21).
+- ❌ Correggere a mano `data/fonti.json`: lo rigenera `npm run data:import` dalla tabella delle fonti in
+  `research/2026-10-20.sintesi-e-verifica-incrociata.md`. Le correzioni di D-034 (R-01, R-04, R-07, R-12) e di R-17
+  erano solo nel JSON e il primo import le avrebbe tolte; riportate nella tabella il 2026-10-29.
