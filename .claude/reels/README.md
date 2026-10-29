@@ -27,11 +27,13 @@ giornaliera (passo «Idee per i Reel» in `.claude/routines/aggiornamento-dati.m
     «più di» al massimo una volta ogni due cifre;
   - niente transizioni a spinta o swipe in su o in giù: morph con un elemento grafico che cambia forma (massimo 2
     per video), altrimenti taglio.
-- Stati: `idea` → `in lavorazione` → `pubblicato` (con data e link al post), oppure `scartato` (con il motivo).
+- Stati: `idea` → `in lavorazione` → `programmato` (in coda su Instagram) → `pubblicato` (con data e link al post),
+  oppure `scartato` (con il motivo).
   `riserva`: scheda pronta senza data, da usare quando una settimana non ha notizie adatte.
 
 ## Formato
-- Reel 9:16, 1080×1920, circa 60 secondi (55-65). Tre uscite a settimana: lunedì, mercoledì, venerdì.
+- Reel 9:16, 1080×1920, circa 60 secondi (55-65). **Cinque uscite a settimana, dal lunedì al venerdì** (decisione del
+  titolare del 28/10/2026, D-032; prima erano tre).
 - Montaggio in Animatio, con il brand kit di Paghi Tu già caricato: palette, Bricolage Grotesque per titoli e
   cifre, Figtree per i testi, Courier Prime per lo scontrino, timbro «TU» terracotta in chiusura (D-UI-08).
 - Voce: **Giulio**, sempre la stessa, tono calmo da documentario, circa 140 parole al minuto.
@@ -40,6 +42,103 @@ giornaliera (passo «Idee per i Reel» in `.claude/routines/aggiornamento-dati.m
   del progetto «senza sottotitoli» (correzione del titolare, 24/10/2026).
 - Zone sicure: niente testo importante nei 250 px in alto e nei 400 px in basso (didascalia e bottoni del Reel).
 - I primi 2 secondi devono avere una domanda o una cifra a schermo: è lì che si decide se il video viene visto.
+
+## Formato visivo (D-032, dal 28/10/2026)
+I primi video erano chiari ma fermi: poche scene lunghe, etichette minuscole, metà del fotogramma vuota, immagini solo
+come fondo sbiadito. Dal 28/10 ogni video segue queste regole, misurate sul fotogramma 1080×1920.
+
+**Niente di piccolo.**
+- Testo minimo 40 px, per qualsiasi cosa sia a schermo (fonti comprese: 34 px al minimo, in `testoTenue`, mai Courier
+  sotto i 40 px). Etichette dei grafici 48 px, cifre dentro un grafico 64 px, la cifra protagonista 180-320 px.
+- Un grafico prende tutta la larghezza utile (920 px) e almeno 700 px di altezza; barre e colonne spesse almeno 110
+  px; al massimo 6 voci per grafico. Una sola voce nell'accento, le altre in ardesia o nel grigio di confronto.
+- Se una cosa non si legge sul telefono a braccio teso, non c'è: si toglie o si ingrandisce.
+
+**Il fotogramma è pieno.**
+- Il soggetto della scena (cifra, grafico, oggetto) occupa almeno metà della zona sicura (250-1580 px in altezza).
+  Nessuna metà del fotogramma vuota.
+- Un soggetto per scena, grande; un fondo (carta, notte o foto a retino) e, solo se aggiunge qualcosa, un ritaglio.
+
+**Si muove quando la voce lo chiede, non a tempo** (correzione del titolare del 28/10/2026: «il video sembra
+editato da un bambino di 3 anni con CapCut»; prima qui c'era «ogni 1,5-2 secondi succede qualcosa»).
+- 8-12 scene per un minuto. Una scena cambia quando cambia quello che dice la voce, non per riempire il tempo: una
+  pagina ferma che regge una cifra va bene.
+- **Poche animazioni.** Quasi tutto entra con un taglio o una dissolvenza breve. Un'entrata vistosa (maschera, wipe,
+  blur) solo per la cifra protagonista o il titolo della scena; un solo conteggio per video (la cifra chiave); niente
+  pop, enfasi, rimbalzi, camera che avanza o immagini che si muovono da sole.
+- **Morph al massimo uno per video**, e solo se è davvero lo stesso oggetto che si trasforma; per il resto tagli
+  netti. Push-down al massimo uno.
+- Ogni grafica si aggancia alla parola della voce che la nomina; il grafico cresce mentre Giulio dice la cifra.
+
+**Ordine e quantità del testo** (correzione del titolare del 28/10/2026).
+- **Prima il titolo, poi il resto.** L'etichetta o il titolo della scena entra per primo, poi la cifra, poi (se
+  serve) la riga che la spiega. Mai una descrizione prima del titolo che spiega, mai un titolo che arriva dopo senza
+  motivo.
+- **I sottotitoli restano sempre**, quindi a schermo non si ripete il narrato: niente descrizioni che dicono quello
+  che dice la voce. Restano la cifra protagonista, un titolo breve (al massimo cinque parole), le etichette dei
+  grafici, «medie per residente» dove serve e la fonte. Al massimo due blocchi di testo per scena oltre a sottotitoli e
+  fonte.
+- **Allineamento caso per caso.** Non tutto a sinistra con la linea a sinistra: una cifra o un titolo da solo può
+  stare al centro, un grafico decide la sua impaginazione. Restano palette, font, margini di 80 px e zone sicure.
+
+**Montaggio pulito, non da principiante** (correzione del titolare del 28/10/2026).
+- **Continuità sul taglio.** Un elemento che resta da una scena all'altra (una pila, un grafico, la cifra protagonista,
+  un'etichetta, il fondo) sta nello stesso punto, alla stessa misura e nello stesso stato: niente salti di qualche
+  pixel, niente cambi di corpo, niente pile o grafici che ricrescono da zero (`da` negativo li mostra già pronti),
+  niente cifre che ricontano da zero. Se deve cambiare, cambia con un movimento visibile o con il morph, mai con il
+  taglio.
+- **Camera coerente.** Un avvicinamento lento (camera o `lento`) non si interrompe su un taglio verso una scena che
+  riparte da 1: o la scena dopo parte dallo stesso zoom, o niente camera su quella coppia di scene. Il fondo che
+  continua non riparte il suo movimento.
+- **Posizioni coerenti.** Dentro un video le cose dello stesso tipo stanno allo stesso posto (la fonte sempre a
+  y 1500, i sottotitoli a 1400, la cifra protagonista sempre alla stessa altezza); quello che resta tra due scene non
+  si sposta. L'allineamento si sceglie per scena (vedi sopra), non è obbligatorio a sinistra.
+- **Ogni movimento ha un motivo.** Entra solo ciò che la voce sta per dire, quando lo dice; niente elementi che
+  entrano ed escono subito, niente scatti, lampi, rimbalzi o zoom senza scopo. Le entrate cambiano con la funzione
+  (la cifra con il blur o la maschera, il resto con un taglio o una dissolvenza breve), sempre poche (vedi «Poche
+  animazioni»).
+- **Tagli sul senso.** Si taglia su una pausa della voce o su un cambio di argomento, non a metà di una frase; due
+  scene di fila non devono sembrare la stessa con un elemento in meno.
+- **Mai una pagina vuota dopo il taglio.** Dal primo fotogramma la scena ha già il suo soggetto, mai solo
+  l'etichetta o la fonte: se la voce è in pausa si sposta il taglio sull'inizio della frase, altrimenti il primo
+  elemento c'è già al taglio.
+- **Suoni sul colpo.** Un effetto cade sull'evento che sottolinea (la pila che cresce, il timbro che cade), anche se
+  l'avviso del controllo dice «fuori battito»; sui battiti (`sync_aggancia`) solo gli effetti senza un evento a schermo.
+- **Prima di consegnare:** si guarda il video consegnato (`video_guarda`) e, a ogni taglio, il fotogramma prima e
+  quello dopo: se qualcosa salta senza motivo, si corregge.
+
+**Grafici che colpiscono.**
+- Un grafico per scena, mai una tabella. Tipi: colonne e barre per confronti, linea per l'andamento (si disegna),
+  ciambella e pila per le parti di un totale.
+- Il dato che conta è nell'accento, grande, con l'etichetta scritta sulla barra e non in una legenda.
+- Confronti fisici quando aiutano: pile di monete (`pila-monete`), lo scontrino che si allunga, i cento quadretti.
+- Proporzioni sempre vere: zero dentro l'asse, nessun asse tagliato.
+
+**Immagini ritagliate, effetto carta.**
+- Gli oggetti, i luoghi e le persone sono **ritagli**: scontornati (`scontorna`), stampati a **retino di puntini**
+  nell'inchiostro del brand, con un bordo di carta bianca e un'ombra morbida, come un ritaglio di giornale
+  incollato sulla pagina. Stanno sopra la grafica, in primo piano, non solo come sfondo.
+- Lo sfondo può essere una foto intera, sempre a retino e in bicromia, mai a colori pieni.
+- Due o tre ritagli per video bastano, dove aggiungono qualcosa; mai la stessa immagine in quasi ogni scena. Il componente del brand è `ritaglio-carta`: la foto resta leggibile sotto in bicromia e
+  il retino è una trama sopra (di serie forza 0,5 e passo 6 px; sotto i 300 px passo 4-5 e forza 0,3-0,4). L'oggetto
+  si deve riconoscere al primo sguardo (correzione del titolare del 28/10: con i soli puntini grossi non si capiva cosa
+  fosse). Prototipo del formato: progetto Animatio `paghi-tu/90-prototipo-sanita`.
+- **Riuso delle immagini tra video** (proposta del 28/10/2026, da confermare dal titolare):
+  - gli oggetti del brand (scontrino, timbro, pila di monete disegnata, marchio Paghi Tu) tornano in tutti i video:
+    sono la firma;
+  - le incisioni di fondo (Montecitorio, piazza Colonna, ministero delle Finanze) sono i luoghi della serie: si
+    riusano quando il video parla di quel luogo, ma non in due video vicini;
+  - un ritaglio fotografico (registro, monete fotografate, cartellino, stetoscopio…) appartiene a un video solo,
+    salvo un video sullo stesso soggetto (lo stetoscopio per la sanità, il lampeggiante per le forze di polizia).
+    Il registro era già in sei progetti e le monete fotografate in tre: non si usano più.
+
+**Informazioni utili, non ripetizioni.**
+- Ogni video dà almeno **tre informazioni che chi guarda può riusare**: una cifra con cosa vuol dire, un confronto che
+  la mette in prospettiva, dove si trova sul sito o nell'atto ufficiale.
+- Vietati i video che spiegano solo una definizione o il metodo senza un dato nuovo: al massimo un video sul metodo
+  ogni due settimane.
+- Meglio un fatto di questa settimana (un decreto in Gazzetta, una promessa nuova, un dato appena uscito) spiegato con
+  i numeri del sito, che un concetto generale già raccontato.
 
 ## Tono: informare, e farsi ascoltare volentieri
 - **Una domanda, una risposta.** Ogni Reel risponde a una sola domanda che una persona si farebbe davvero («Perché
@@ -74,7 +173,7 @@ scrivere un'idea si legge l'elenco «Già raccontato» qui sotto e le schede `in
 ### Già raccontato
 | Video | Concetti al centro |
 |---|---|
-| R00 Il conto lo paghi tu | spesa per residente (19.633 €), ogni 100 € di spesa, interessi ogni 100 € 1995-2024, debito in % del PIL dal 1946 e debito a testa, Italia contro media UE (debito e interessi), previsto contro speso (Quota 100) |
+| R00 Il conto lo paghi tu | spesa per residente (19.633 €), ogni 100 € di spesa (con «8 all'istruzione e 8 agli interessi»: gli interessi pesano quanto l'istruzione), interessi ogni 100 € 1995-2024, debito in % del PIL dal 1946, debito ad agosto 2026 (3.201 miliardi) e debito a testa, Italia contro media UE (debito e interessi), previsto contro speso (Quota 100) |
 | R01 Lo Stato spende più di quanto incassa | entrate contro uscite per residente, disavanzo a testa, saldo in % del PIL dal 1995 |
 | R02 La voce che corre più di tutte | crescita degli interessi nel semestre, interessi a testa, interessi ogni 100 € dal 1995, interessi Italia contro UE |
 | R03 Previsto contro speso | stima della relazione tecnica contro consuntivo delle misure |
@@ -85,22 +184,34 @@ scrivere un'idea si legge l'elenco «Già raccontato» qui sotto e le schede `in
 Quando un video passa a `in lavorazione` si aggiunge la sua riga.
 
 ## Immagini
-- Incisioni del Settecento già nel repo (`public/img/`), in pubblico dominio, trattate in bicromia con un velo
-  terracotta e parallasse lento.
-- Foto dimostrative di oggetti e luoghi: scontrini, monete, registri, facciate di palazzi pubblici, archivi,
-  aule vuote, corsie d'ospedale vuote. Solo in pubblico dominio o con licenza che permette l'uso commerciale,
-  con il credito a schermo quando la licenza lo chiede. Si possono generare con l'AI, se non mostrano persone
-  riconoscibili, loghi o palazzi falsi spacciati per veri.
+- Incisioni del Settecento già nel repo (`public/img/`), in pubblico dominio, a retino e in bicromia, con parallasse
+  lento.
+- Foto dimostrative di oggetti e luoghi (scontrini, monete, registri, camion, pompe di benzina, banchi di scuola,
+  corsie d'ospedale, facciate di palazzi pubblici), scontornate e a retino. Solo in pubblico dominio o con una licenza
+  che permette l'uso commerciale, con il credito a schermo quando la licenza lo chiede. Si possono generare con l'AI
+  se non mostrano persone riconoscibili, loghi o palazzi falsi spacciati per veri.
+- **Personaggi pubblici** (decisione del titolare del 28/10/2026, D-032): la foto di un politico o di un'altra persona
+  pubblica può comparire quando il video parla di un fatto che la riguarda (un decreto del suo governo, una proposta
+  che ha presentato, una frase citata com'è), con nome e ruolo scritti accanto. Regole:
+  - mai insultata, derisa o messa in cattiva luce: niente caricature, smorfie scelte apposta, fumetti, scritte sopra il
+    volto, accostamenti che suggeriscono un giudizio;
+  - solo foto vere con licenza che ne permette il riuso (ritratti ufficiali di governo.it, camera.it, senato.it,
+    Wikimedia Commons), con il credito; mai volti generati o modificati con l'AI, mai fotomontaggi;
+  - stesso trattamento per tutti: stessa misura, stesso retino, espressione neutra; se ne compare più d'uno, stesso
+    spazio e ordine alfabetico;
+  - restano esclusi simboli e colori di partito, folle di manifestazioni, banconote che bruciano e altri cliché
+    allarmistici.
 - Registrazioni dello schermo del sito su telefono, per mostrare dove si trova ogni numero.
-- Mai volti di politici, simboli o colori di partito, folle di manifestazioni, banconote che bruciano o altri
-  cliché allarmistici.
 
 ## Regole che non si saltano
 1. **Ogni numero viene dal sito pubblicato**, copiato com'è, in formato italiano (19.633 €, 7,5%). Unica
    eccezione: nei video nati da una notizia, la cifra della notizia può venire dalla sua fonte primaria (ISTAT,
    Banca d'Italia, Eurostat, MEF, Ufficio parlamentare di bilancio, Gazzetta Ufficiale, atti di Camera e Senato),
    con il link nella scheda, mai solo da un giornale. Nessun arrotondamento a schermo, nessuna cifra calcolata
-   apposta per il video. Nella voce le cifre si scrivono in lettere, così Giulio non le legge male.
+   apposta per il video. Nella voce le cifre si scrivono in lettere, così Giulio non le legge male. I numeri romani
+   dei governi si scrivono come si dicono: «De Gasperi primo», «Prodi bis», «Berlusconi ter», «Berlusconi quater»
+   (correzione del titolare, 28/10/2026: la voce aveva detto «Berlusconi 4»); a schermo restano «Berlusconi IV».
+   La voce è una traccia unica: mai spezzata in clip né con le pause accorciate a mano.
 2. **Il giorno del montaggio** si riaprono le pagine indicate nella scheda e si ricontrolla ogni cifra: la routine
    aggiorna i dati, e il video deve dire quello che dice il sito quel giorno.
 3. **Neutralità:** partiti, governi e politici si possono nominare, ma senza mai esprimere una preferenza, né a
@@ -108,11 +219,14 @@ Quando un video passa a `in lavorazione` si aggiunge la sua riga.
    misura, un atto, una frase citata com'è), mai fatti non verificati, intenzioni o motivi attribuiti: sarebbe
    diffamazione. Quando ne compare più d'uno, stesse regole e stesso spazio per tutti, in ordine alfabetico. Nessun
    giudizio («spreco», «scandalo», «colpa», «finalmente»). Nessuna spiegazione delle cause che il sito non dà.
-   Nelle immagini restano esclusi volti di politici, simboli e colori di partito.
+   Nelle immagini i personaggi pubblici seguono le regole della sezione «Immagini»; restano esclusi simboli e colori di
+   partito.
 4. Le cifre per residente sono medie: quando compaiono, a schermo c'è «medie per residente».
 5. **Nei 15 giorni prima delle elezioni politiche o di un referendum nazionale** niente video nuovi su partiti e promesse (stessa regola del sito).
 6. Fonti in piccolo su ogni scena con un numero; in chiusura «paghitu.it» e l'invito a segnalare gli errori.
 
 ## Struttura di una scheda
 Titolo, data prevista, stato, pagine del sito, perché adesso, gancio, tabella dei numeri (valore, fonte, pagina),
-scene con i tempi, voce per Giulio, immagini, bozza della didascalia, cose da controllare prima del montaggio.
+**le tre informazioni utili** (una riga ciascuna), scene con i tempi (8-12 scene, per ognuna il soggetto, il grafico o il
+ritaglio e la misura della cifra protagonista), voce per Giulio, **ritagli** (almeno 3, con la fonte dell'immagine e la
+licenza), bozza della didascalia, cose da controllare prima del montaggio.

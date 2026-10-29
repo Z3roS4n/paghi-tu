@@ -4,17 +4,24 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { z } from "zod";
 import { parseCsvRecords } from "../../src/lib/csv.ts";
+import { parseYearAmounts } from "../../src/lib/domain/acts.ts";
 import {
+  ActMeasure,
+  BudgetEffect,
   BudgetLaw,
   CampaignPromise,
   CofogDivision,
   CostComparison,
   Government,
+  LegalAct,
+  LegalActsCoverage,
+  LegalActsStatus,
   Legislature,
   Measure,
   Party,
   PromiseCatalogStatus,
   PromiseCost,
+  PromiseRestatement,
   Series,
   Source,
   type SourceLink,
@@ -280,7 +287,7 @@ const PROMISE_FILES: Record<string, string> = {
   c: "2026-10-20.promesse-campagna-gruppo-c",
   "c-integrazione": "2026-10-21.promesse-campagna-gruppo-c-integrazione",
 };
-const CAMPAIGN_PERIOD = { dal: "2026-01-01", al: "2026-10-24" };
+const CAMPAIGN_PERIOD = { dal: "2026-01-01", al: "2026-10-29" };
 
 function isVerified(status: string) {
   return status.includes("✓") && !/DA RIMUOVERE|NON VERIFICABILE|NUOVA|riserva/i.test(status);
@@ -321,24 +328,141 @@ async function campaignPromises() {
         stimaTerzi: r.stima_terzi.trim() && stimaUrl ? { testo: r.stima_terzi.trim(), fonte: { url: stimaUrl } } : null,
         note: r.note.trim(),
         verifica: interviewAsPrimary(r.id, r.tipo_fonte, promiseVerification(r.stato_verifica)),
+        effettoConti: null,
+        ribadita: [],
       });
       verified.push({ group, promise });
     }
   }
-  const published = verified
+  const eligible = verified
     .filter(({ group }) => PUBLISHED_PROMISE_GROUPS.includes(group))
     .filter(({ promise }) => promise.verifica.livello !== "NV")
     .filter(({ promise }) => PROMISE_SCOPE_RULE === "tutte" || promise.orizzonte !== "legislatura_in_corso")
     .map(({ promise }) => promise);
+  const published = await classifyPromises(eligible);
   const status = PromiseCatalogStatus.parse({
     periodo: CAMPAIGN_PERIOD,
     censite,
     verificate: verified.length,
     pubblicate: published.length,
+    ribadite: eligible.length - published.length,
     gruppiPubblicati: PUBLISHED_PROMISE_GROUPS,
     regolaPerimetro: PROMISE_SCOPE_RULE,
   });
   return { parties: [...parties.values()], published, status };
+}
+
+// D-030 e D-031: due codificatori indipendenti; nel CSV entra solo l'esito concorde
+// (sui conti, «incerto» se discordano; sulle ripetizioni, vuoto se discordano).
+const PROMISE_CLASSIFICATION = "2026-10-28.promesse-classificazione";
+
+async function classifyPromises(eligible: z.infer<typeof CampaignPromise>[]) {
+  const rows = parseCsvRecords(await readFile(join(RESEARCH, `${PROMISE_CLASSIFICATION}.csv`), "utf8"));
+  const byId = new Map(eligible.map((p) => [p.id, p]));
+  const restates = new Map<string, string>();
+  for (const r of rows) {
+    const p = byId.get(r.id);
+    if (!p) continue;
+    p.effettoConti = BudgetEffect.parse(r.effetto_conti);
+    const target = r.ribadisce.trim();
+    if (!target) continue;
+    const original = byId.get(target);
+    if (!original) throw new Error(`${r.id}: ribadisce ${target}, che non è pubblicata`);
+    if (original.partitoId !== p.partitoId) throw new Error(`${r.id}: ribadisce una promessa di un altro partito`);
+    if (original.data > p.data) throw new Error(`${r.id}: ribadisce una promessa successiva`);
+    restates.set(r.id, target);
+  }
+  const root = (id: string): string => {
+    const next = restates.get(id);
+    return next ? root(next) : id;
+  };
+  for (const [id] of restates) {
+    const p = byId.get(id)!;
+    byId.get(root(id))!.ribadita.push(
+      PromiseRestatement.parse({
+        id: p.id,
+        dichiarante: p.dichiarante,
+        ruoloDichiarante: p.ruoloDichiarante,
+        data: p.data,
+        testoLetterale: p.testoLetterale,
+        tipoFonte: p.tipoFonte,
+        fonte: p.fonte,
+        archivioUrl: p.archivioUrl,
+        verifica: p.verifica,
+      }),
+    );
+  }
+  for (const p of eligible) p.ribadita.sort((a, b) => a.data.localeCompare(b.data) || a.id.localeCompare(b.id));
+  return eligible.filter((p) => !restates.has(p.id));
+}
+
+const LEGAL_ACTS = "2026-10-28.atti-economici";
+const LEGAL_ACT_MEASURES = "2026-10-28.atti-misure";
+// La routine sposta «dal» indietro con il recupero e «al» al giorno dell'ultima Gazzetta letta.
+const LEGAL_ACTS_COVERAGE = { dal: "2026-09-01", al: "2026-10-28", obiettivo: "2022-10-22" };
+
+async function legalActs(govs: ReturnType<typeof Government.parse>[]) {
+  const coverage = LegalActsCoverage.parse(LEGAL_ACTS_COVERAGE);
+  const byName = new Map(govs.map((g) => [g.nome.replace(/^Governo\s+/, ""), g]));
+  const measuresByAct = new Map<string, z.infer<typeof ActMeasure>[]>();
+  let measuresCensite = 0;
+  for (const r of parseCsvRecords(await readFile(join(RESEARCH, `${LEGAL_ACT_MEASURES}.csv`), "utf8"))) {
+    measuresCensite++;
+    if (!isVerified(r.stato_verifica)) continue;
+    const m = ActMeasure.parse({
+      id: r.id,
+      articolo: r.articolo.trim(),
+      descrizione: r.descrizione.trim(),
+      natura: r.natura,
+      tipoOnere: r.tipo_onere,
+      cofog: CofogDivision.parse(r.cofog.trim().slice(0, 2)),
+      importi: parseYearAmounts(r.importi_mln),
+      continuaDopo: r.a_decorrere.trim() === "si",
+      citazione: r.citazione.trim(),
+      fonte: { url: r.fonte_url.trim() },
+      verifica: promiseVerification(r.stato_verifica),
+    });
+    if (!m.id.startsWith(`${r.atto}-m`)) throw new Error(`${m.id}: l'id non comincia con l'atto ${r.atto}`);
+    measuresByAct.set(r.atto, [...(measuresByAct.get(r.atto) ?? []), m]);
+  }
+  const acts: z.infer<typeof LegalAct>[] = [];
+  let censiti = 0;
+  for (const r of parseCsvRecords(await readFile(join(RESEARCH, `${LEGAL_ACTS}.csv`), "utf8"))) {
+    censiti++;
+    const misure = (measuresByAct.get(r.id) ?? []).filter((m) => m.verifica.livello !== "NV");
+    measuresByAct.delete(r.id);
+    if (!isVerified(r.stato_verifica) || misure.length === 0) continue;
+    const gov = byName.get(r.governo.trim());
+    if (!gov) throw new Error(`${r.id}: governo sconosciuto «${r.governo}»`);
+    if (r.data_atto < gov.inizio || (gov.fine && r.data_atto > gov.fine)) throw new Error(`${r.id}: ${gov.nome} non era in carica`);
+    if (r.gu_data < coverage.dal || r.gu_data > coverage.al) throw new Error(`${r.id}: Gazzetta del ${r.gu_data} fuori dal periodo censito`);
+    const conversione = r.conversione_estremi.trim();
+    const verifica = promiseVerification(r.stato_verifica);
+    acts.push(
+      LegalAct.parse({
+        id: r.id,
+        tipo: r.tipo,
+        numero: Number(r.numero),
+        data: r.data_atto,
+        titoloUfficiale: r.titolo_ufficiale.trim(),
+        titolo: r.titolo_breve.trim(),
+        governoId: gov.id,
+        gazzetta: { numero: Number(r.gu_numero), data: r.gu_data, fonte: { url: r.gu_url.trim() } },
+        inVigoreDal: r.in_vigore_dal.trim(),
+        cdm: urlOrNull(r.cdm_url) ? { url: r.cdm_url.trim() } : null,
+        stato: r.stato,
+        conversione: conversione ? { estremi: conversione, fonte: { url: r.conversione_url.trim() } } : null,
+        relazioneTecnica: urlOrNull(r.relazione_tecnica_url) ? { url: r.relazione_tecnica_url.trim() } : null,
+        misure,
+        note: r.note.trim(),
+        verifica: { ...verifica, livello: lowest([verifica.livello, ...misure.map((m) => m.verifica.livello)]) },
+      }),
+    );
+  }
+  const orphans = [...measuresByAct.keys()].filter((id) => measuresByAct.get(id)!.length > 0);
+  if (orphans.length > 0) throw new Error(`misure di atti non censiti: ${orphans.join(", ")}`);
+  const status = LegalActsStatus.parse({ ...coverage, censiti, pubblicati: acts.length, misureCensite: measuresCensite });
+  return { acts: acts.toSorted((a, b) => b.gazzetta.data.localeCompare(a.gazzetta.data) || a.id.localeCompare(b.id)), status };
 }
 
 const MEASURES: Record<string, { titolo: string; governi: string[] }> = {
@@ -479,6 +603,7 @@ const srcs = await sources();
 const campaign = await campaignPromises();
 const allMeasures = await measures(govs);
 const costs = await promiseCosts(campaign.published);
+const acts = await legalActs(govs);
 
 await mkdir(join(OUT, "serie"), { recursive: true });
 await write("legislature", legs);
@@ -491,6 +616,8 @@ await write("promesse", campaign.published);
 await write("promesse-stato", campaign.status);
 await write("promesse-costi", costs);
 await write("misure", allMeasures);
+await write("atti", acts.acts);
+await write("atti-stato", acts.status);
 
 const count = (xs: { verifica: Verification }[]) =>
   Object.entries(Object.groupBy(xs, (x) => x.verifica.livello)).map(([k, v]) => `${k}=${v?.length}`).join(" ");
@@ -501,4 +628,6 @@ console.log(`serie ${allSeries.map((s) => `${s.id}:${s.punti.length}`).join(" ")
 console.log(`fonti ${srcs.length}`);
 console.log(`misure ${allMeasures.length}, confronti ${allMeasures.reduce((n, m) => n + m.confronti.length, 0)}`);
 console.log(`costi delle promesse ${costs.filter((c) => c.costo).length}, con precedenti ${costs.filter((c) => c.famiglia).length}`);
-console.log(`promesse censite ${campaign.status.censite}, verificate ${campaign.status.verificate}, pubblicate ${campaign.status.pubblicate}, partiti ${campaign.parties.length}`);
+console.log(`promesse censite ${campaign.status.censite}, verificate ${campaign.status.verificate}, pubblicate ${campaign.status.pubblicate}, ribadite ${campaign.status.ribadite}, partiti ${campaign.parties.length}`);
+console.log(`promesse per effetto sui conti: ${Object.entries(Object.groupBy(campaign.published, (p) => p.effettoConti ?? "da_classificare")).map(([k, v]) => `${k}=${v?.length}`).join(" ")}`);
+console.log(`atti censiti ${acts.status.censiti}, pubblicati ${acts.acts.length} (${count(acts.acts)}), misure ${acts.acts.reduce((n, a) => n + a.misure.length, 0)} su ${acts.status.misureCensite} censite`);

@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRightIcon, FlagIcon } from "@phosphor-icons/react/ssr";
+import { BudgetEffectFilter, type BudgetEffectView } from "@/components/budget-effect-filter";
 import { Card, PageHead, SectionHead, Tag, Wrap } from "@/components/ui";
 import { LevelTag, VerificationBadge } from "@/components/verification-badge";
 import { correctionUrl } from "@/lib/contribute";
-import { COFOG_DIVISIONS, type CampaignPromise } from "@/lib/domain/schemas";
+import { COFOG_DIVISIONS, type BudgetEffect, type CampaignPromise } from "@/lib/domain/schemas";
 import { formatDate, formatDecimal, formatInt } from "@/lib/format";
-import { parties, promiseStatus, promisesByParty, unreadableChannels } from "@/server/data";
+import { parties, promises, promiseStatus, promisesByParty, unreadableChannels } from "@/server/data";
 import { costBase, promiseCostView } from "@/server/promise-costs";
 
 export const metadata: Metadata = {
@@ -45,6 +46,14 @@ const VEHICLE: Record<CampaignPromise["veicolo"], string> = {
   appello_raccolta_firme: "Appello con raccolta firme",
   altro: "Altro",
 };
+
+const EFFECT: Record<BudgetEffect, string> = {
+  si: "Riguarda i conti pubblici",
+  no: "Non riguarda i conti pubblici",
+  incerto: "Non chiaro se riguarda i conti pubblici",
+};
+
+const effectKey = (p: CampaignPromise) => p.effettoConti ?? "nd";
 
 // Alcune citazioni hanno già le loro virgolette (frase citata seguita dal testo dell'articolo): non si raddoppiano.
 const quoted = (text: string) => (/[«»]/.test(text) ? text : `«${text}»`);
@@ -103,9 +112,44 @@ function CostContext({ p }: { p: CampaignPromise }) {
 
 const LINK = "inline-flex min-h-12 items-center gap-1.5 text-[15px] font-bold";
 
+// D-031: la stessa proposta detta di nuovo dallo stesso partito resta sotto la riga originale.
+function Restatements({ p }: { p: CampaignPromise }) {
+  if (p.ribadita.length === 0) return null;
+  return (
+    <details className="group text-[15px]">
+      <summary className="flex min-h-11 cursor-pointer list-none items-center gap-2 font-semibold text-ink-soft hover:text-ink [&::-webkit-details-marker]:hidden">
+        Ribadita {p.ribadita.length === 1 ? "un'altra volta" : `altre ${p.ribadita.length} volte`}, l&apos;ultima il {formatDate(p.ribadita.at(-1)!.data)}
+        <span className="font-normal text-ink-faint underline underline-offset-2 group-open:hidden">apri</span>
+      </summary>
+      <ul className="mt-1 mb-2 space-y-3 border-l-2 border-rule pl-4">
+        {p.ribadita.map((r) => (
+          <li key={r.id} id={r.id} className="scroll-mt-24 space-y-1">
+            <p>{quoted(r.testoLetterale)}</p>
+            <p className="text-sm text-ink-soft">
+              {r.dichiarante}, {r.ruoloDichiarante}. {SOURCE_TYPE[r.tipoFonte]}, {formatDate(r.data)}.{" "}
+              <a href={r.fonte.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-ink underline underline-offset-2">
+                Fonte
+              </a>
+              {r.archivioUrl ? (
+                <>
+                  {" · "}
+                  <a href={r.archivioUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-ink underline underline-offset-2">
+                    Copia d&apos;archivio
+                  </a>
+                </>
+              ) : null}
+            </p>
+            <LevelTag level={r.verifica.livello} />
+          </li>
+        ))}
+      </ul>
+    </details>
+  );
+}
+
 function PromiseItem({ p, party }: { p: CampaignPromise; party: string }) {
   return (
-    <Card as="li" className="reveal flex flex-col gap-2.5 pb-0!">
+    <Card as="li" className="reveal flex flex-col gap-2.5 pb-0!" data-effetto={effectKey(p)}>
       <div id={p.id} className="flex scroll-mt-24 flex-wrap items-center gap-1.5">
         <Tag tone="plain">{party}</Tag>
         <span className="ml-auto">
@@ -141,12 +185,13 @@ function PromiseItem({ p, party }: { p: CampaignPromise; party: string }) {
       ) : null}
       <CostContext p={p} />
       <ul className="flex flex-wrap gap-1.5 text-[13.5px]" aria-label="Classificazione">
-        {[COFOG_DIVISIONS[p.cofog], HORIZON[p.orizzonte], VEHICLE[p.veicolo]].map((t) => (
+        {[p.effettoConti ? EFFECT[p.effettoConti] : "Conti pubblici: da classificare", COFOG_DIVISIONS[p.cofog], HORIZON[p.orizzonte], VEHICLE[p.veicolo]].map((t) => (
           <li key={t} className="rounded-ctl bg-paper-sunk px-2 py-1 text-ink-soft">
             {t}
           </li>
         ))}
       </ul>
+      <Restatements p={p} />
       <VerificationBadge verifica={p.verifica} />
       <div className="mt-auto flex flex-wrap gap-x-4.5 border-t border-rule">
         <a href={p.fonte.url} target="_blank" rel="noopener noreferrer" className={`${LINK} hover:text-accent`}>
@@ -243,6 +288,13 @@ function Pending() {
   );
 }
 
+function effectCounts(): Record<BudgetEffectView, number> {
+  const n = (k: string) => promises.filter((p) => effectKey(p) === k).length;
+  return { conti: n("si") + n("nd"), incerto: n("incerto"), no: n("no"), tutte: promises.length };
+}
+
+const effectsOf = (items: CampaignPromise[]) => [...new Set(items.map(effectKey))].join(" ");
+
 export default function PromisesPage() {
   const groups = promisesByParty();
   return (
@@ -262,8 +314,8 @@ export default function PromisesPage() {
           <nav aria-label="Partiti" className="mt-8">
             <p className="text-sm font-semibold text-ink-soft">Partiti in ordine alfabetico</p>
             <ul className="mt-2 flex flex-wrap gap-2">
-              {groups.map(({ party }) => (
-                <li key={party.id}>
+              {groups.map(({ party, items }) => (
+                <li key={party.id} data-effetti={effectsOf(items)}>
                   <a
                     href={`#p-${party.id}`}
                     className="inline-flex min-h-11 items-center rounded-ctl border-[1.5px] border-rule bg-paper-raised px-3.5 text-[15px] font-semibold hover:border-ink-faint"
@@ -275,9 +327,10 @@ export default function PromisesPage() {
             </ul>
           </nav>
           <Coverage />
+          <BudgetEffectFilter counts={effectCounts()}>
           <div className="mt-12 space-y-14 md:mt-16 md:space-y-20">
             {groups.map(({ party, items }) => (
-              <section key={party.id} id={`p-${party.id}`} aria-labelledby={`h-${party.id}`} className="scroll-mt-24">
+              <section key={party.id} id={`p-${party.id}`} aria-labelledby={`h-${party.id}`} className="scroll-mt-24" data-effetti={effectsOf(items)}>
                 <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
                   <h2 id={`h-${party.id}`} className="reveal text-[clamp(1.6rem,6vw,2.4rem)] leading-tight font-extrabold">
                     {party.nome}
@@ -292,6 +345,7 @@ export default function PromisesPage() {
               </section>
             ))}
           </div>
+          </BudgetEffectFilter>
         </>
       )}
     </Wrap>

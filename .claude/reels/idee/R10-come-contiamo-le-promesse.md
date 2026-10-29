@@ -1,7 +1,7 @@
 # R10 — Le regole per le promesse
 
 - **Uscita prevista:** venerdì 6 novembre 2026
-- **Stato:** in lavorazione (prompt in `prompt/`)
+- **Stato:** programmato su Instagram (25/10/2026)
 - **Pagine:** https://www.paghitu.it/promesse (introduzione, «Partiti in ordine alfabetico», «Copertura e limiti») ·
   https://www.paghitu.it/metodo
 - **Perché adesso:** la campagna per il 2027 entra nel vivo. Il video spiega le regole prima di mostrare qualsiasi

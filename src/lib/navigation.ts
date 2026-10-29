@@ -2,6 +2,7 @@ export const MAIN_NAV = [
   { href: "/spesa", label: "Spesa" },
   { href: "/governi", label: "Governi" },
   { href: "/leggi-di-bilancio", label: "Leggi di bilancio" },
+  { href: "/atti", label: "Decreti" },
   { href: "/promesse", label: "Promesse" },
   { href: "/misure", label: "Misure" },
   { href: "/archivio", label: "Archivio" },
@@ -17,6 +18,7 @@ export const DOCK_NAV = [
 
 export const MORE_NAV = [
   { href: "/leggi-di-bilancio", label: "Leggi di bilancio", hint: "le manovre anno per anno" },
+  { href: "/atti", label: "Leggi e decreti", hint: "gli atti che spostano soldi pubblici, con gli importi" },
   { href: "/archivio", label: "Archivio", hint: "cerca fra governi, manovre, misure e promesse" },
   { href: "/metodo", label: "Metodo", hint: "come verifichiamo, cosa vogliono dire V1 e V2" },
   { href: "/fonti", label: "Fonti", hint: "da dove vengono i numeri" },

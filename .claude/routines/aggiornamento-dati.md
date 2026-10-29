@@ -16,7 +16,7 @@
 > manca. Se mancano i segreti di Resend, l'errore resta nel log dell'esecuzione.
 
 ## Regole fisse (valgono per ogni esecuzione)
-1. Leggi `AGENTS.md`, `.claude/project/07-bad-practices.md` e `.claude/project/02-tradeoffs.md` (D-010, D-013, D-016, D-018, D-019, D-020, D-021, D-022).
+1. Leggi `AGENTS.md`, `.claude/project/07-bad-practices.md` e `.claude/project/02-tradeoffs.md` (D-010, D-013, D-016, D-018, D-019, D-020, D-021, D-022, D-029, D-030, D-031).
 2. Un solo processo interroga ISTAT, con al massimo 4 richieste al minuto. Se ISTAT non risponde, non riprovare in ciclo.
 3. Niente Save Page Now, form, login o scritture su servizi esterni, a parte il repo, Vercel e Resend. Non aggirare 403, captcha o WAF. Le catture nuove su Internet Archive (`archive-sources.ts --save`) restano escluse finché il titolare non le autorizza in modo esplicito.
 4. **Nei 15 giorni prima delle elezioni politiche o di un referendum nazionale non si pubblicano contenuti nuovi su partiti e promesse**, solo correzioni di errori (D-025). Suppletive, regionali e amministrative non fanno scattare la regola. Prima del binario 2 controlla la data del voto: fa fede il decreto di convocazione in Gazzetta Ufficiale, poi le note in `.claude/project/research/`. Se non c'è ancora una data ufficiale la regola non scatta, e la segnalazione del giorno lo dice.
@@ -67,11 +67,28 @@
      controllarlo a mano, con l'elenco dei siti;
    - la regola vale per l'impossibilità tecnica di leggere un canale. Un partito saltato per errore o per fretta
      blocca ancora la pubblicazione di tutti.
-4. Righe nuove con una cifra di costo: due codificatori indipendenti con lo schema di D-021 (`research/2026-10-21.costi-precedenti.csv`: natura, importo minimo e massimo, periodo, famiglia di precedenti). Se non concordano sulla famiglia, resta vuota.
-5. `node scripts/data/archive-sources.ts` (senza `--save`): cerca la copia d'archivio già esistente di ogni fonte nuova; il verificatore controlla che la copia contenga la citazione. Le fonti ancora senza copia vanno nella segnalazione del giorno.
-6. `npm run data:import`, test, build. Le righe che non passano restano nei CSV e fuori dal sito.
-7. `npm run check:pages`: sulle pagine pubbliche non devono comparire note interne di lavoro (`V1✓`, `CONFERMATA`, `PERIMETRO`, `INFERENZA`, «verificatore»), tranne nei pannelli chiusi «Registro tecnico della verifica» e «Note di lavoro della ricerca». Una nota che compare va riformulata alla fonte (CSV o nota di ricerca), mai a mano nel JSON.
-8. Cancello del verificatore (regola 6), poi commit «Add verified campaign promises up to <data>».
+4. **Classificazione delle righe nuove (D-030, D-031)**, prima della verifica L2 così il verificatore la controlla con il
+   resto. Due codificatori indipendenti, con contesto pulito, che non vedono l'uno il lavoro dell'altro, codificano
+   ogni riga nuova:
+   - `effetto_conti`, con la regola e le liste di casi di `research/2026-10-28.criterio-conti-pubblici.md`, che i
+     codificatori leggono per intero: `si` se la proposta parla di una spesa o di un'entrata pubblica precisa, per
+     crearla, cambiarla, toglierla **o lasciarla com'è** («non introdurre la patrimoniale» e «non aumentare la spesa
+     militare» sono `si`); `no` se non riguarda soldi pubblici (diritti, regole per i privati, politica estera,
+     organizzazione dello Stato senza fondi); `incerto` se il testo non dice chi paga. Si giudica solo il testo, mai
+     gli effetti indiretti. Un caso che la regola non copre va nella segnalazione, non si decide da soli;
+   - `ribadisce`: l'id della promessa **dello stesso partito**, già nel catalogo, che la riga nuova ripete in sostanza.
+     Non è una ripetizione se la riga nuova aggiunge una cifra, una soglia, una data, beneficiari o uno strumento
+     diversi. Nel dubbio resta vuoto.
+   Esito in `research/2026-10-28.promesse-classificazione.csv` (`id`, `effetto_conti`, `motivo`, `ribadisce`,
+   `esito_doppia_codifica`): se i due non concordano sull'effetto vale `incerto`, se non concordano sulla ripetizione
+   resta vuoto. Una riga che ribadisce non diventa una promessa nuova: `data:import` la mette sotto l'originale come
+   «ribadita», con la sua data e la sua fonte, e deve comunque passare la verifica L2 della citazione. Il test di
+   integrità fallisce se una promessa pubblicata non ha la classificazione.
+5. Righe nuove con una cifra di costo: due codificatori indipendenti con lo schema di D-021 (`research/2026-10-21.costi-precedenti.csv`: natura, importo minimo e massimo, periodo, famiglia di precedenti). Se non concordano sulla famiglia, resta vuota.
+6. `node scripts/data/archive-sources.ts` (senza `--save`): cerca la copia d'archivio già esistente di ogni fonte nuova; il verificatore controlla che la copia contenga la citazione. Le fonti ancora senza copia vanno nella segnalazione del giorno.
+7. `npm run data:import`, test, build. Le righe che non passano restano nei CSV e fuori dal sito.
+8. `npm run check:pages`: sulle pagine pubbliche non devono comparire note interne di lavoro (`V1✓`, `CONFERMATA`, `PERIMETRO`, `INFERENZA`, «verificatore»), tranne nei pannelli chiusi «Registro tecnico della verifica» e «Note di lavoro della ricerca». Una nota che compare va riformulata alla fonte (CSV o nota di ricerca), mai a mano nel JSON.
+9. Cancello del verificatore (regola 6), poi commit «Add verified campaign promises up to <data>».
 
 ## Binario 3 — segnalazioni pubbliche (D-020)
 Le issue con etichetta `correzione` o `dato-mancante`. Le pull request le verifica un'altra routine, ogni giorno alle 07:00 UTC (`verifica-pr.md`, D-027): questa non le tocca.
@@ -105,10 +122,14 @@ Le issue con etichetta `correzione` o `dato-mancante`. Le pull request le verifi
 
 ## Binario 4 — idee per i Reel, dalle notizie
 Formato, tono, voce e regole sono in `.claude/reels/README.md`; il piano in `.claude/reels/calendario.md`.
-1. Ogni esecuzione: se nel calendario ci sono meno di 6 uscite con data futura, aggiungi le 3 uscite (lunedì,
-   mercoledì, venerdì) della prima settimana ancora vuota.
-2. Prima di scrivere leggi il README (soprattutto «Tono», «Video dalle notizie» e «Non ripetersi» con la tabella
-   «Già raccontato») e due schede in `.claude/reels/idee/` come modello. **Niente idee ripetitive:** ogni video ha
+1. Ogni esecuzione: se nel calendario ci sono meno di 10 uscite con data futura, aggiungi le 5 uscite (dal lunedì al
+   venerdì) della prima settimana ancora vuota (D-032: cinque Reel a settimana). Una casella `libera` che cade nei
+   prossimi 10 giorni si riempie con una scheda nuova nata da una notizia, come le altre.
+2. Prima di scrivere leggi il README (soprattutto «Formato visivo», «Immagini», «Tono», «Video dalle notizie» e «Non
+   ripetersi» con la tabella «Già raccontato») e due schede in `.claude/reels/idee/` come modello. Ogni scheda ha le
+   tre informazioni utili, 8-12 scene con la misura della cifra protagonista, due o tre ritagli con fonte e licenza
+   dell'immagine (non già usati in un altro video, salvo stesso soggetto), pochi testi a schermo (i sottotitoli portano
+   il narrato); niente schede che spiegano solo una definizione o il metodo (al massimo una ogni due settimane). **Niente idee ripetitive:** ogni video ha
    una domanda e una cifra principale che nessun video uscito o in lavorazione ha già avuto al centro; un dato già
    usato torna solo come paragone; se la notizia della settimana porterebbe a ripetere un concetto, cerca un angolo
    nuovo o un'altra notizia. Nella segnalazione, per ogni idea, una riga «Cosa c'è di nuovo rispetto ai video già
@@ -130,17 +151,89 @@ Formato, tono, voce e regole sono in `.claude/reels/README.md`; il piano in `.cl
 6. Regole: cifre copiate come sono sulla fonte, nessuna cifra calcolata per il video. Partiti, governi e politici
    si possono nominare, ma nessuna preferenza espressa per un partito, una coalizione o una persona, e su di loro
    solo fatti veri con fonte primaria: niente fatti non verificati, intenzioni o motivi attribuiti (diffamazione).
-   Se ne compare più d'uno, stesso spazio e ordine alfabetico. Nessun volto di politico, simbolo o colore di
-   partito nelle immagini; nessun giudizio e nessuna causa che il sito o la fonte non danno. Nei 15 giorni prima di un voto niente idee su partiti e promesse
+   Se ne compare più d'uno, stesso spazio e ordine alfabetico. Le foto di personaggi pubblici seguono la sezione
+   «Immagini» del README (solo foto vere con licenza, mai derise o alterate, stesso trattamento per tutti); nessun
+   simbolo o colore di partito; nessun giudizio e nessuna causa che il sito o la fonte non danno. Nei 15 giorni prima di un voto niente idee su partiti e promesse
    (regola 4).
 7. Ogni giorno: se il binario 1 ha cambiato un numero usato da una scheda con stato `idea` o `in lavorazione`,
    aggiorna tabella e voce di quella scheda e scrivilo nella segnalazione.
 8. Un secondo agente controlla che ogni cifra delle schede nuove o modificate compaia sulla pagina del sito o sulla
-   fonte primaria indicata, la neutralità (nessuna preferenza, ogni fatto su partiti e persone con la sua fonte) e
-   la ripetizione rispetto alla tabella «Già raccontato»: un'idea ripetitiva è `RESPINTO`. Con `CONFERMATO`: commit «Add reel ideas for the week of <data>»
+   fonte primaria indicata, la neutralità (nessuna preferenza, ogni fatto su partiti e persone con la sua fonte, foto
+   di persone pubbliche secondo il README), la ripetizione rispetto alla tabella «Già raccontato» e il formato visivo
+   (tre informazioni utili, 8-12 scene, misure minime, ritagli con licenza): un'idea ripetitiva o povera di
+   informazioni è `RESPINTO`. Con `CONFERMATO`: commit «Add reel ideas for the week of <data>»
    (oppure «Update reel ideas to new data»).
 9. Nella segnalazione del giorno: per ogni idea nuova titolo, data di uscita, notizia di partenza e gancio, con il
    link alla scheda su GitHub.
+
+## Binario 5 — leggi e decreti con effetti sui conti (D-029)
+Il registro in `/atti`: decreti-legge, leggi (comprese le leggi di conversione e di bilancio) e decreti legislativi
+pubblicati in Gazzetta Ufficiale con almeno una misura che autorizza una spesa o cambia un'entrata, **con l'importo
+scritto nella norma o nella relazione tecnica**. Restano fuori gli atti «senza nuovi o maggiori oneri», i decreti
+ministeriali, i DPCM e le delibere. Il registro non riguarda partiti o promesse: la regola dei 15 giorni (regola 4)
+non lo ferma.
+
+File: `research/2026-10-28.atti-economici.csv` (un atto per riga) e `research/2026-10-28.atti-misure.csv` (una misura
+per riga), con le colonne descritte nel modello dati (`04-data-model.md`, «Atto»). Il periodo di Gazzetta già letto
+è `LEGAL_ACTS_COVERAGE` in `scripts/data/import-research.ts`: `al` è l'ultimo giorno letto, `dal` il punto fin dove è
+arrivato il recupero all'indietro, `obiettivo` il 22/10/2022 (inizio del governo Meloni). L'import fallisce se un atto
+è fuori dal periodo dichiarato.
+
+Fonti, solo GET semplici (vale la regola 3):
+- Gazzetta Ufficiale: l'RSS `https://www.gazzettaufficiale.it/rss/SG` dà solo l'ultimo numero. I numeri per data
+  sono in `http://www.gazzettaufficiale.it/eli/gu/AAAA/MM/GG/<numero>/SG/html`: la numerazione è progressiva per
+  giorno di uscita, dal lunedì al sabato (228 il 1° ottobre 2026, 250 il 27), e le edizioni straordinarie hanno un
+  numero proprio. **Con data o numero sbagliati la pagina risponde 200 lo stesso**: è valida solo se elenca atti.
+  Si legge la sezione «Leggi ed altri atti normativi» e l'elenco dei supplementi ordinari. Il testo completo è nel
+  PDF del numero (`…/AAAA/MM/GG/<numero>/sg/pdf`, da convertire con pdftotext). Un numero «in fase di caricamento»
+  si riprende all'esecuzione dopo, senza spostare `al` oltre il giorno prima;
+- Normattiva, con gli URN per articolo (es. `https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026-10-23;193~art6`),
+  anche per i testi coordinati dopo la conversione;
+- comunicati del Consiglio dei ministri su governo.it (`https://www.governo.it/it/tipologie-contenuto/riunioni`), per
+  sapere cosa sta per uscire;
+- relazioni tecniche: il PDF del disegno di legge alla Camera (`camera.it/leg19/126?leg=19&idDocumento=N`, link
+  `testo_pdl_pdf`) e i dossier in `documenti.camera.it/leg19/dossier/Pdf/D26<numero del DL>.pdf`; senato.it risponde
+  202 senza contenuto alle richieste semplici, quindi per gli atti presentati al Senato la relazione tecnica può
+  mancare: lo si scrive nelle note; Ufficio parlamentare di bilancio.
+Mai una cifra presa solo da un giornale.
+
+1. **Atti nuovi:** leggi ogni numero della Serie generale dal giorno dopo `al` a oggi. Per ogni atto che rientra:
+   una riga in `atti-economici.csv` e una riga per **ogni** misura con importo in `atti-misure.csv`, con
+   `stato_verifica` «NUOVA da routine <data> — richiede verifica».
+   - `importi_mln` anno per anno come li scrive la fonte (`2026:45.2;2027:60`), mai somme fatte dall'agente;
+     `a_decorrere` `si` se l'importo dell'ultimo anno continua ogni anno dopo («a decorrere dal», «a regime»);
+   - `natura`: crediti d'imposta, esenzioni, esoneri e sgravi fiscali o contributivi sono sempre `minori_entrate`,
+     qualunque sia la formula del testo; imposte o contributi nuovi o aumentati `maggiori_entrate`; tagli di spesa
+     come scelta di politica `minori_spese`; il resto `spesa`;
+   - `tipo_onere` `tetto` per dotazioni, autorizzazioni e limiti che non si possono superare («nel limite di», «è
+     autorizzata la spesa di», «dotazione»); `stima` per le valutazioni di un costo che dipende da quanti ne
+     usufruiscono («valutati in», oneri stimati dalla relazione tecnica);
+   - quando il comunicato del CdM e la Gazzetta danno cifre diverse, vale la Gazzetta: la differenza va nelle note;
+   - `citazione`: le parole esatte con l'importo (massimo 320 caratteri);
+   - le coperture fatte riducendo altri fondi non sono misure: vanno nelle note dell'atto;
+   - leggi di bilancio: si registrano le misure con almeno 100 milioni in un anno, con lo stesso criterio per ogni
+     legge di bilancio; la riga in `2026-10-20.leggi-bilancio.csv` si aggiorna quando il disegno di legge è presentato
+     alle Camere (estremi, fonte) e quando è pubblicato.
+   `in_vigore_dal`: la data di entrata in vigore dell'atto, letta su Normattiva («Entrata in vigore del
+   provvedimento») o nell'ultimo articolo del testo. Prima di quella data la pagina mostra da sola «Pubblicato, in
+   vigore dal …»: alla data lo stato cambia senza ricontrolli e senza commit.
+   Un decreto approvato in Consiglio dei ministri ma non ancora in Gazzetta non si registra: va nella segnalazione.
+2. **Stato dei decreti-legge:** per ogni atto `in_conversione` controlla se è uscita la legge di conversione (60
+   giorni). Convertito: `stato` `convertito`, estremi e link della legge; se la conversione cambia un importo,
+   aggiorna la misura sul testo coordinato e scrivi nelle note il valore del testo originale. Scaduti i 60 giorni senza
+   legge: `decaduto`.
+3. **Recupero all'indietro:** dopo gli atti nuovi, leggi a ritroso al massimo **due mesi** di Gazzetta prima di `dal`
+   (meno se l'esecuzione è già lunga), e sposta `dal` al primo giorno letto per intero. Quando `dal` arriva a
+   `obiettivo`, il recupero è finito e la pagina lo dice da sola.
+4. **Verifica:** un agente diverso, con contesto pulito, riapre ogni atto e ogni misura sulla fonte con un percorso
+   diverso (per esempio Normattiva se il censitore ha usato la Gazzetta): titolo ed estremi, governo, data di
+   Gazzetta, ogni importo anno per anno e ogni citazione parola per parola, natura e tipo di onere. Riga per riga:
+   `CONFERMATO` o `RESPINTO` con il motivo. Confermata: `stato_verifica` «V1✓ verificatore <data> — …» (Gazzetta,
+   Normattiva e relazione tecnica sono fonti primarie). Respinta: resta nel CSV, fuori dal sito.
+5. `npm run data:import`, test, build, `npm run check:pages`. Poi cancello del verificatore (regola 6) e commit
+   «Add legal acts up to <data>» (con il recupero: «Add legal acts up to <data>, backfill to <dal>»).
+6. Nella segnalazione del giorno: atti e misure aggiunti, decreti convertiti o decaduti, fin dove è arrivato il
+   recupero, i decreti approvati in Consiglio dei ministri e non ancora in Gazzetta.
 
 ## Pubblicazione
 Solo se almeno un binario ha qualcosa di `CONFERMATO`. **Il push su `main` pubblica:** il progetto Vercel è collegato
@@ -151,7 +244,7 @@ controllo delle pagine.
    `success` (un controllo ogni 30 secondi, al massimo 15 minuti). Con `failure`, `error` o tempo scaduto:
    segnalazione con il link del deploy. Il deploy a mano con la CLI e `VERCEL_TOKEN` serve solo se Vercel non ha
    creato nessun deploy per il commit.
-3. Controllo HTTP 200 di `/`, `/spesa`, `/governi`, `/promesse`, `/archivio/indice.json` su https://www.paghitu.it. Se uno fallisce: segnalazione con l'output.
+3. Controllo HTTP 200 di `/`, `/spesa`, `/governi`, `/promesse`, `/atti`, `/archivio/indice.json` su https://www.paghitu.it. Se uno fallisce: segnalazione con l'output.
 4. Report breve in `.claude/project/reports/` (`node .claude/scripts/new-report.mjs "aggiornamento <data>"`) con cosa è cambiato, esito del verificatore e controlli fatti, committato con il resto, senza dati personali.
 
 ## Segnalazioni

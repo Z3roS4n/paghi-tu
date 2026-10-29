@@ -70,5 +70,41 @@
     "motivo": "La data della promessa (24/08/2026) è quella della Base Ideologica e Programmatica, indicata nel file ufficiale e non nella pagina «Programma». Il PDF contiene anche il testo citato.",
     "fonte": { "url": "https://futuronazionale.it/wp-content/uploads/2026/09/GIUSTIFICATO_SLOT-1-e-2_Base-Programmatica-di-Futuro-Nazionale-24-agosto-2026.pdf" },
     "segnalazione": null
+  },
+  {
+    "id": "COR-0007",
+    "data": "2026-10-28",
+    "tipo": "metodo",
+    "dato": "Vista di default delle promesse",
+    "pagina": "/promesse",
+    "prima": "Tutte le promesse in un solo elenco, senza distinguere quelle che toccano i conti pubblici.",
+    "dopo": "Ogni promessa ha l'etichetta «effetto sui conti» (sì, no, non chiaro) e un filtro; la vista di default mostra quelle con effetto. Nessuna promessa è stata tolta: con «Tutte» si vedono tutte.",
+    "motivo": "Il sito parla di come si spendono i soldi pubblici. La classificazione la fanno due codificatori indipendenti con lo stesso criterio per tutti i partiti; quando non concordano vale «non chiaro».",
+    "fonte": null,
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0008",
+    "data": "2026-10-28",
+    "tipo": "metodo",
+    "dato": "Classificazione delle promesse rispetto ai conti pubblici",
+    "pagina": "/promesse",
+    "prima": "«Effetto sui conti»: sì se la proposta cambia direttamente una spesa o un'entrata pubblica. Le promesse di non introdurre una tassa o di lasciare una regola com'è erano in parte «non chiaro», quelle di non aumentare una spesa «sì».",
+    "dopo": "«Riguarda i conti pubblici»: sì se la proposta parla di una spesa o di un'entrata pubblica precisa, per cambiarla o per lasciarla com'è. Ricodificate tutte le 399 promesse, poi riesaminate le 174 non «sì» con i casi decisi dal titolare (fondi verso altri Paesi, servizi e pagamenti dello Stato senza importi, tariffe del trasporto pubblico, bilancio europeo): 242 sì, 127 no, 30 non chiaro; 38 hanno un valore diverso dalla prima classificazione.",
+    "motivo": "La prima regola trattava in modo diverso promesse dello stesso tipo a seconda del verso. La regola nuova è scritta con le liste di casi ed è la stessa per tutti i partiti; la applicano due codificatori indipendenti, e quando non concordano vale «non chiaro».",
+    "fonte": null,
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0009",
+    "data": "2026-10-28",
+    "tipo": "correzione",
+    "dato": "Spesa per funzione, nota sulle voci della protezione sociale",
+    "pagina": "/spesa",
+    "prima": "«Altra protezione sociale» comprende malattia e invalidità (con le pensioni di invalidità), famiglia e figli, disoccupazione, casa, esclusione sociale e altre spese non classificate.",
+    "dopo": "«Altra protezione sociale» comprende malattia e invalidità (con le pensioni di invalidità fino all'età della pensione), famiglia e figli, disoccupazione, casa, esclusione sociale e altre spese non classificate.",
+    "motivo": "Nella classificazione COFOG le pensioni di invalidità stanno in «invalidità» (10.12) solo per chi non ha ancora l'età della pensione; da quell'età la spesa è in «vecchiaia» (10.20), cioè in «Vecchiaia e superstiti». Le cifre non cambiano: cambia solo la descrizione.",
+    "fonte": { "url": "https://ec.europa.eu/eurostat/documents/3859598/10142242/KS-GQ-19-010-EN-N.pdf" },
+    "segnalazione": null
   }
 ]

@@ -133,6 +133,7 @@
 - **Scelta:** l'import valida e conta tutte le righe, ma pubblica solo i gruppi elencati in `PUBLISHED_PROMISE_GROUPS` (oggi nessuno). Un gruppo entra quando tutti e tre hanno passato la verifica L2 e il controllo di simmetria. Restano fuori le righe "DA RIMUOVERE", "NON VERIFICABILE", "NUOVA" e quelle "con riserva" (per esempio il discorso di Schlein del 18/10, da confrontare con il video).
 - **Motivo:** pubblicare un partito prima degli altri, o con standard diversi, sarebbe di per sé una scelta di parte.
 - **Data:** 2026-10-20
+- **Trappole del golden set (titolare, 2026-10-28):** le quattro trappole MAN-TRAP-04, MAN-PAR-08, MAN-OUT-03 e MAN-OUT-07 restano e si bilanciano con quattro casi speculari con la stessa formulazione: MAN-TRAP-05 e MAN-OUT-08 sul governo Conte II, MAN-PAR-11 sulle promesse del PD, MAN-OUT-09 contro Fratelli d'Italia. Esito atteso: astensione.
 - **Modifica del 2026-10-22 (titolare):** le esecuzioni del 21 e 22 ottobre si sono fermate perché alcuni siti
   rispondono con un blocco anti-bot e due formazioni non hanno un canale ufficiale leggibile. Da ora un partito
   **tecnicamente** non leggibile, dopo i canali alternativi del runbook, non blocca gli altri: si pubblicano i partiti
@@ -284,10 +285,11 @@
 - **Data:** 2026-10-22
 
 ### D-026 — Golden set dell'agente generato dai dati
-- **Stato:** proposta il 2026-10-23; il 2026-10-25 l'agente entra nel progetto, decisione presa insieme da titolare e co-maintainer (da confermare sulla PR #1 con il marcatore del titolare, D-027).
+- **Stato:** confermata dal titolare il 2026-10-28 (sulla PR #1, con il marcatore del titolare, D-027). L'agente è entrato nel progetto il 2026-10-25, decisione presa insieme da titolare e co-maintainer.
 - **Contesto:** l'agente conversazionale su Vertex AI Search va misurato prima di andare online. Il progetto non ha un golden set; i dati del sito sono la fonte del grounding.
 - **Scelta:** il set si genera da `data/` con `agent/evals/golden-set.ts` (selezione deterministica e distribuita, valori letti dai record, mai ricopiati), più casi scritti a mano in `casi-manuali.json` per par condicio, fuori scope e trappole. Le promesse si scelgono in ordine alfabetico di sigla, almeno una per partito. La revisione del titolare sta in `revisione.json` e sopravvive alle rigenerazioni.
 - **Conseguenze:** dopo una correzione ai dati si rigenera con `npm run evals:build`; il test fallisce se `domande.jsonl` non è allineato. Le soglie restano ipotesi finché il titolare non le conferma.
+- **Casi «con_permesso» (titolare, 2026-10-28):** dentro l'indice, con la citazione. I 7 casi del branch vengono tutti dall'UPB. I record entrano come sul sito: valori di Paghi Tu con il link alla fonte UPB in `urlAccettati`, mai testo UPB copiato. Se l'UPB chiede di toglierli, si tolgono. Pagella Politica non ha casi nel set e resta fonte di controllo e confronto, mai copia; se un suo caso arriva, si decide allora. Il flag `fonteConPermesso` del golden set segnala questi casi, non decide l'inclusione.
 - **Aggiunta del 2026-10-25:** Wikipedia (R-36, «fonte di verità per: nessuna») non è una fonte accettata dell'agente: i suoi URL non entrano in `urlAccettati` anche quando compaiono fra le fonti di un record. `/privacy` descrive l'assistente come non ancora attivo, con Google Cloud fra i destinatari (D-023).
 - **Data:** 2026-10-23
 
@@ -308,16 +310,77 @@
 - **Conseguenze:** binario 4 della routine dei dati e README dei Reel aggiornati. La regola dei 15 giorni (D-025) non cambia.
 - **Data:** 2026-10-24
 
-### D-029 — Verifica deterministica del golden set contro le fonti
-- **Stato:** proposta il 2026-10-23, in revisione.
+### D-029 — Registro delle leggi e dei decreti con effetti sui conti
+- **Stato:** applicata il 2026-10-28, su richiesta del titolare.
+- **Contesto:** in una settimana la routine ha aggiunto solo promesse. Il binario 1 riscarica serie Eurostat e Banca d'Italia che cambiano poche volte l'anno, e nessun binario registrava gli atti del governo: il decreto-legge approvato dal Consiglio dei ministri n. 194 del 22/10/2026 (credito d'imposta sul gasolio per l'autotrasporto, contributi ad agricoltura e pesca, con importi) non compariva da nessuna parte. Le misure in `/misure` sono 10 casi storici scritti a mano.
+- **Opzioni:** A) registro per atto, nuova pagina `/atti`; B) misure nuove dentro `/misure` con il consuntivo «non disponibile».
+- **Scelta:** A, con il recupero di tutto il governo Meloni (dal 22/10/2022), fatto a lotti dalla routine: binario 5 del runbook. Entrano decreti-legge, leggi e decreti legislativi pubblicati in Gazzetta con almeno una misura con importo; per ogni misura natura (spesa, entrate in meno, entrate in più, spesa in meno), limite o stima, importi anno per anno e citazione con l'importo. Le coperture fatte tagliando altri fondi non sono misure. Le leggi di bilancio entrano con le misure da almeno 100 milioni in un anno. Un atto approvato in CdM entra solo dopo l'uscita in Gazzetta. Censimento e verifica come per le promesse: due agenti diversi, ogni importo riletto sulla fonte primaria.
+- **Conseguenze:** schema `LegalAct` e `ActMeasure`, CSV `research/2026-10-28.atti-*.csv`, `data/atti.json` e `data/atti-stato.json`, pagina `/atti`, voce «Decreti» nel menu, atti nella pagina di ogni governo e nell'archivio. I totali per atto sono la somma delle misure registrate, non il saldo ufficiale: la pagina lo dice. Ogni atto ha la data di entrata in vigore (`inVigoreDal`, da Normattiva): prima di quella data la pagina mostra «Pubblicato, in vigore dal…», e alla data lo stato cambia da solo nel browser, senza ricontrolli né commit (decisione del titolare del 2026-10-28). Quando una misura avrà un consuntivo, potrà entrare anche in `/misure`.
+- **Data:** 2026-10-28
+
+### D-030 — Promesse: etichetta «effetto sui conti» e vista di default
+- **Stato:** applicata il 2026-10-28, su richiesta del titolare.
+- **Contesto:** delle 79 promesse aggiunte dal 21/10 circa metà non riguarda i conti pubblici (cittadinanza, politica estera, ora legale), e solo 3 hanno un costo. D-015 tiene nel catalogo tutte le righe valide.
+- **Scelta:** il catalogo resta completo. Ogni promessa ha `effettoConti`: `si` se, attuata, cambia direttamente una spesa o un'entrata pubblica; `no` se non tocca soldi pubblici; `incerto` se il testo non lo fa capire. Due codificatori indipendenti con lo stesso criterio per tutti; se discordano vale `incerto`. In `/promesse` un filtro, e la vista di default mostra quelle con effetto. Prima codifica il 2026-10-28 sulle 399 promesse pubblicate: concordi 388, discordi 11 (diventate `incerto`); esito 219 sì, 143 no, 37 incerto.
+- **Conseguenze:** CSV `research/2026-10-28.promesse-classificazione.csv`, passo 4 del binario 2, test di integrità che vuole ogni promessa classificata, voce COR-0007 nel registro (cambio di metodo).
+- **Regola chiarita dal titolare il 2026-10-28:** la prima codifica trattava in modo diverso le promesse di lasciare una voce com'è (la patrimoniale da non introdurre era `incerto`, la spesa militare da non aumentare `si`). Il titolare ha scelto la regola «riguarda una voce dei conti»: `si` se la proposta parla di una spesa o di un'entrata pubblica precisa, per crearla, cambiarla, toglierla o lasciarla com'è; la regola «cambia i conti rispetto alle leggi in vigore» è stata scartata perché dipende dal calendario delle leggi. Criterio scritto, con le liste di casi, in `research/2026-10-28.criterio-conti-pubblici.md`; il filtro si chiama «Riguardano i conti pubblici». Ricodifica di tutte le 399 promesse con due codificatori nuovi che hanno letto solo il criterio: concordi 391, discordi 8 (`incerto`); esito 225 `si`, 136 `no`, 38 `incerto`; 35 promesse cambiano valore rispetto alla prima codifica (voce COR-0008). Lo stesso giorno il titolare ha deciso i casi che il criterio non copriva (fondi verso altri Paesi, servizi e pagamenti dello Stato senza importi, tariffe del trasporto pubblico e bilancio dell'Unione europea: tutti `si`; ne discendono sussidi tolti `si` e quote nei concorsi `no`); due codificatori nuovi hanno riesaminato le 174 promesse non `si`: 26 cambiano, 6 discordi (`incerto`). Esito finale: 242 `si`, 127 `no`, 30 `incerto`; 38 promesse hanno un valore diverso dalla prima classificazione. Tre casi nuovi restano aperti nella nota.
+- **Data:** 2026-10-28
+
+### D-031 — Una proposta ripetuta dallo stesso partito non apre una riga nuova
+- **Stato:** applicata il 2026-10-28, su richiesta del titolare.
+- **Contesto:** il partito che parla più spesso della stessa proposta avrebbe più righe, a parità di proposte.
+- **Scelta:** la ripetizione si collega alla promessa originale come «ribadita», con la sua data, la sua citazione e la sua fonte, e non conta come promessa. Resta una riga a sé se aggiunge una cifra, una soglia, una data, beneficiari o uno strumento diversi. Due codificatori indipendenti; vale solo il collegamento concorde.
+- **Conseguenze:** campo `ribadita` delle promesse, colonna `ribadisce` nel CSV di classificazione, conteggio `ribadite` in `promesse-stato.json`. Prima codifica del 2026-10-28: nessuna ripetizione concorde. I casi segnalati al titolare (FI-001/FI-018, M5S-007/M5S-048, LEGA-008/LEGA-027) aggiungono tutti una cifra, una soglia o un ambito; PE-019/PE-011 l'ha collegata un solo codificatore.
+- **Data:** 2026-10-28
+
+### D-032 — Reel: cinque a settimana, formato visivo nuovo, personaggi pubblici ammessi
+- **Stato:** applicata il 2026-10-28, su richiesta del titolare.
+- **Contesto:** il titolare vuole aumentare il ritmo e trova le idee della routine ripetitive e povere di informazioni. I fogli dei video già fatti (le voci piccole, la manovra) mostrano etichette e fonti sui 20 px, metà del fotogramma vuota, 4-6 scene ferme per un minuto, immagini usate solo come fondo sbiadito.
+- **Scelta:**
+  - cinque uscite a settimana, dal lunedì al venerdì (prima tre); la routine riempie il calendario quando restano meno di 10 uscite future;
+  - formato visivo nuovo nel README dei Reel: misure minime (testo 40 px, fonti 34, etichette dei grafici 48, cifre nei grafici 64, cifra protagonista 180-320), fotogramma pieno su tre piani, 8-12 scene con qualcosa che cambia ogni 1,5-2 secondi, un grafico grande per scena, ritagli scontornati a retino di puntini con bordo di carta e ombra in primo piano (almeno 3 per video), almeno tre informazioni utili per video, al massimo un video sul metodo ogni due settimane;
+  - le foto di politici e altre persone pubbliche sono ammesse quando il video parla di un fatto che le riguarda: solo foto vere con licenza e credito, mai insultate, derise, alterate o generate con l'AI, stesso trattamento per tutti e ordine alfabetico. Restano vietati simboli e colori di partito (D-011). Supera il divieto dei volti di D-024 e D-028.
+- **Conseguenze:** README e calendario dei Reel, binario 4 del runbook e prompt della routine aggiornati; nell'identità del brand in Animatio la regola «niente-volti» è sostituita da «personaggi-pubblici», più «niente-di-piccolo» e «ritagli-carta-a-retino» (proposte da confermare nell'app); componente `ritaglio-carta` per il prototipo.
+- **Primo calendario a cinque (28/10):** 9 schede nuove fino al 20/11, ognuna rivista da un verificatore indipendente e corretta. Scartata R26 (ripete R03); in riserva R17 (ripete R00: istruzione quanto gli interessi) e R24 (troppo vicina a R17); R16 e R06 sostituite da R27 e R28. Le quattro schede su /atti sono distanziate (3, 9, 16 e 19/11) e cambiano apertura e chiusura. Tre caselle «libera» (11, 13 e 18/11) restano alla routine, così ogni settimana ha almeno una notizia fresca.
+- **Ritratti e atti del governo in carica:** tutti gli atti del registro sono del governo in carica, quindi nelle schede su /atti niente ritratti di ministri; al loro posto le firme della Gazzetta come testo, con chi propone e chi firma «di concerto». La stessa parte in faccia più volte a settimana sembrerebbe promozione. I ritratti restano ammessi dove compaiono più parti con lo stesso spazio (per esempio R22).
+- **Montaggio pulito** (correzione del titolare, «evitare che i video sembrino editati da un principiante»): ciò che resta da una scena all'altra sta identico sul taglio (posto, misura, fondo, zoom); niente ri-entrate, posizioni coerenti dentro il video, ogni taglio controllato fotogramma prima e dopo. Regole nel README dei Reel. Costa qualche effetto in meno (zoom lenti e fondi alternati), ma un salto di pochi pixel si nota più di un movimento in meno.
+- **Meno movimento e meno testo** (correzione del titolare dopo i primi video D-032, «sembra editato da un bambino di 3 anni con CapCut»): tolto «ogni 1,5-2 secondi succede qualcosa», i tre piani per scena e l'obbligo di almeno tre ritagli; quasi tutto entra con un taglio o una dissolvenza breve, un solo conteggio e al massimo un morph per video (anche nel brand), niente camera né pop. Prima il titolo, poi la cifra, poi la riga che spiega; a schermo non si ripete il narrato perché i sottotitoli restano sempre (al massimo due blocchi di testo per scena oltre a sottotitoli e fonte); allineamento scelto per scena, non sempre a sinistra. Immagini: gli oggetti del brand tornano sempre, le incisioni di fondo non in due video vicini, un ritaglio fotografico in un video solo (proposta da confermare). Si perde un po' di «movimento continuo», ma il ritmo lo danno la voce e i tagli.
+- **Data:** 2026-10-28
+
+### D-033 — Caroselli: un formato standard con una linea continua tra le slide
+- **Stato:** applicata il 2026-10-28, su richiesta del titolare.
+- **Contesto:** il titolare vuole anche caroselli Instagram, con continuità tra le slide, che sembrino premium. Sul pilota ha scritto: «non è che un carosello deve avere uno stile completamente diverso dall'altro. Cambiano i contenuti, cambia la disposizione delle cose, ma non deve cambiare il formato standard».
+- **Scelta:**
+  - un formato standard fisso per tutti i caroselli (misure in `.claude/caroselli/README.md`): post 4:5 1080×1350, da 6 a 10 slide, margini di 80 px; testata mono con il numero della slide; filo di testata continuo; titolo, cifra e riga a posizioni fisse; una o due colonne; fondo carta su tutte le slide; modello di copertina e di ultima slide;
+  - un elemento continuo che attraversa i bordi e lega le slide, sempre nella stessa fascia (y 900-1040). Nel pilota è la striscia della spesa per funzione, in scala;
+  - un canvas solo («caroselli» del brand paghi-tu), una riga per carosello; in cima la riga «00 · Modello» con le tavole del formato e i segnaposto;
+  - stesse regole dei Reel su testo, immagini e verifica: solo cifre pubblicate sul sito e ricontrollate il giorno stesso, al massimo due blocchi di testo per slide, ritagli a retino solo dove aiutano.
+- **Conseguenze:** la linea va progettata su una tela larga quanto tutte le slide e poi tagliata; ogni carosello si controlla con le slide affiancate, perché i pezzi devono combaciare al pixel. Sfondi notte e immagini a tutta slide restano esclusi, perché romperebbero la linea.
+- **Data:** 2026-10-28
+
+### D-034 — Il registro delle fonti descrive quello che la pipeline scarica davvero
+- **Stato:** applicata il 2026-10-28, su richiesta del titolare.
+- **Contesto:** il verificatore del carosello 04 ha trovato /fonti in contraddizione con /metodo, /governi e /spesa. R-12 Eurostat risultava «controllo incrociato e confronti UE» e R-04 ISTAT «conti delle AP dal 1995», ma `scripts/data/fetch-public-finance.ts` scarica i conti da Eurostat e il debito dalla tavola Banca d'Italia TCCE0325, che R-07 non nominava. R-17 limitava i 69 governi al 1948, ma il primo è del 1945. R-01 BDAP aveva la licenza «aperta» e il bollino «Serve un permesso». L'introduzione diceva «con la licenza verificata», anche con licenze «NV».
+- **Scelta:**
+  - «Usata per» dice quale serie pubblicata viene da quella fonte. Una fonte primaria che ripubblichiamo nella versione di un altro ente lo dice (R-04 → R-12);
+  - la copertura nomina la tavola usata sul sito (R-07: TCCE0325, mensile dal dicembre 1861) e le date dei dati, non quelle della legislatura (R-17: governi dal 1945);
+  - una licenza in conflitto fra metadati e condizioni d'uso è «da chiarire», non «aperta». Finché non è chiarita la fonte resta «Serve un permesso» e non ripubblichiamo i suoi dati (R-01);
+  - l'introduzione di /fonti non promette licenze verificate: «NV» dove non lo sono.
+- **Conseguenze:** quando cambia una fonte nella pipeline cambia anche la sua scheda in `data/fonti.json`, nello stesso commit. Caroselli e reel citano /fonti solo per quello che la scheda dice.
+- **Data:** 2026-10-28
+
+### D-035 — Verifica deterministica del golden set contro le fonti
+- **Già:** D-029 nel branch agent/golden-set, rinumerata il 2026-10-29 dopo il conflitto con main.
+- **Stato:** confermata dal titolare il 2026-10-28 (sulla PR #1, con la sigla D-029).
 - **Contesto:** un controllo a mano sulle fonti del golden set ha trovato errori che i test non vedevano (percentuali arrotondate, record citati a metà, un URL con l'etichetta dentro, una citazione che unisce due frasi). Per un agente su dati politici l'errore non è ammesso: la verifica deve essere ripetibile e decisa dal codice.
 - **Scelta:** due livelli. `npm run evals:verify` (`agent/evals/verifica-fonti.ts`) va in rete con la coda per host di D-004, legge ogni URL atteso (HTML, PDF con `pdftotext`, copia d'archivio del record se la fonte è chiusa) e scrive i fatti in `verifica-fonti.json`, che si committa. I test offline (`verifica.test.ts`, `testo.test.ts`) decidono: ogni fonte letta, ogni citazione trovata parola per parola, ogni valore trovato nella fonte o nelle copie di `data/raw/` cella per cella, oppure con una ragione scritta in `eccezioni-fonti.json`. Le somme calcolate da Paghi Tu si dichiarano con gli addendi, che devono stare nella fonte e tornare al valore. Un'eccezione non più necessaria fa fallire il test.
 - **Motivo:** la rete non è deterministica, il registro sì: lo stesso registro dà sempre lo stesso esito, e chi rilegge vede cosa è stato trovato, dove e in che forma. Le forme accettate sono strette (niente miliardi arrotondati senza la parola, niente cognome da solo per un nome di più di due parole) perché un falso riscontro è peggio di un valore non trovato.
 - **Conseguenze:** dopo ogni `evals:build` che cambia `domande.jsonl` si rilancia `evals:verify` (il test confronta l'impronta). Il registro non scade da solo: la data è nel file e va riletta prima di ogni eval dell'agente.
 - **Data:** 2026-10-23
 
-### D-032 — Valori attesi leggibili, parole intere e casi tolti dal golden set
-- **Stato:** decisa da Giovanni il 2026-10-25, da confermare dal titolare sulla PR #1.
+### D-036 — Valori attesi leggibili, parole intere e casi tolti dal golden set
+- **Già:** D-032 nel branch agent/golden-set, rinumerata il 2026-10-29 dopo il conflitto con main.
+- **Stato:** confermata dal titolare il 2026-10-28 (sulla PR #1, con la sigla D-032, compresa l'esclusione di PRO-C27-FDI-002). Decisa da Giovanni il 2026-10-25.
 - **Contesto:** la revisione dei 132 casi del 2026-10-25 (report `2026-10-25-10-51`, PR #4) ha trovato valori attesi che sono codifiche di Paghi Tu (maggioranze come sigle, «documentata», «(INF)», «NV», confidenza «A»-«D») confrontati alla lettera e senza confine di parola: una risposta giusta falliva, una sbagliata poteva passare («governo de gasperi i» dentro «… ii», «a» dentro qualsiasi parola). I test non lo vedevano perché le risposte perfette erano costruite dagli stessi valori.
 - **Scelta:**
   - il valore atteso resta quello del record (il test «ogni valore sta nel record» non cambia); in più può avere `forme`, gruppi di modi in cui una risposta lo scrive: ogni gruppo deve comparire con almeno una forma, come parole intere (`findPhrase`, `findForms` in `agent/evals/testo.ts`);
