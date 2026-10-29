@@ -48,4 +48,4 @@ Pagati da un credito promozionale Google Cloud del co-maintainer, con budget men
 
 ## Note / TODO
 - Riga in `/privacy` aggiunta il 2026-10-25 (sezione 6, assistente «non ancora attivo»). Prima del collegamento: togliere «non ancora attivo», aggiornare «In breve» (il widget è un modulo), disclosure AI nella pagina, accordo art. 28 fra titolare e co-maintainer che gestisce il progetto Google Cloud.
-- I casi con fonte «con_permesso» (UPB, Pagella Politica) entrano nell'indice solo con una decisione scritta. Wikipedia è esclusa (D-026, 2026-10-25).
+- Casi con fonte «con_permesso» (D-026, confermata dal titolare il 2026-10-28): i 7 casi con fonte UPB (Quota 100, Superbonus, Bonus 80 euro, salvaguardie esodati, esonero contributivo 2015, MAN-TRAP-02) entrano nell'indice come sul sito, cioè con i valori di Paghi Tu e il link alla fonte UPB in `urlAccettati`, mai testo UPB copiato. Se l'UPB chiede di toglierli, si tolgono (voce in `agent/evals/esclusi.json` e record fuori dall'export). Pagella Politica resta fonte di controllo e confronto, mai copia; se un suo caso arriva, lo decide il titolare. Wikipedia è esclusa (D-026, 2026-10-25).

@@ -63,7 +63,7 @@ export const Rule = z.enum([
 export type Rule = z.infer<typeof Rule>;
 
 // forme: modi in cui una risposta può scrivere un valore di testo; ogni gruppo deve comparire con
-// almeno una forma (D-032). Senza forme vale il valore stesso, come parole intere.
+// almeno una forma (D-036). Senza forme vale il valore stesso, come parole intere.
 export type ExpectedValue = { campo: string; valore: string | number | null; unita?: string; forme?: string[][] };
 export type ExpectedCitation = { dataset: string; record: string; urlAccettati: string[] };
 
@@ -122,7 +122,9 @@ export const AcceptedForms = z.record(z.string().regex(/^[^|]+\|[^|]+$/), z.obje
 export const Exclusions = z.record(z.string(), z.object({ motivo: z.string().min(1), deciso: z.string().min(1) }));
 
 // Fonti con riuso "con_permesso" in data/fonti.json (R-23 UPB, R-34 Pagella Politica; R-36 Wikipedia è esclusa):
-// finché il permesso non è scritto, il caso resta nel set ma il revisore decide se il record entra nell'indice.
+// D-026 (confermata il 2026-10-28): i casi restano nel set e i loro record entrano nell'indice come sul sito, con i
+// valori di Paghi Tu e il link UPB in urlAccettati, mai testo UPB copiato; se l'UPB chiede di toglierli si tolgono
+// (esclusi.json). Pagella Politica è solo controllo e confronto. Il flag segnala questi casi: non decide l'inclusione.
 const PERMISSION_DOMAINS = ["upbilancio.it", "pagellapolitica.it"];
 
 const MONEY_UNIT = "milioni di euro correnti";
@@ -265,7 +267,7 @@ const ACT_WITH_ARTICLE: Partial<Record<BudgetLaw["tipoAtto"], string>> = {
 
 // «(INF)» è il marcatore di Paghi Tu per un'attribuzione inferita: la risposta scrive il governo e
 // dice che l'attribuzione è inferita (regola). «NV» non è un governo e non si cerca. L'attribuzione
-// documentata/inferita/incerta è una codifica: la controlla la regola, non un valore (D-032).
+// documentata/inferita/incerta è una codifica: la controlla la regola, non un valore (D-036).
 function budgetLawValues(l: BudgetLaw): ExpectedValue[] {
   const values: ExpectedValue[] = [];
   const gov = l.governoProponenteTesto;
@@ -341,7 +343,7 @@ function comparisonValues(c: CostComparison): ExpectedValue[] {
       values.push({ campo: "scostamento %", valore: c.scostamento.pct, unita: "%" });
     }
   }
-  // La confidenza A-D è una codifica di Paghi Tu: la controlla la regola dichiara_confidenza_bassa (D-032).
+  // La confidenza A-D è una codifica di Paghi Tu: la controlla la regola dichiara_confidenza_bassa (D-036).
   return values;
 }
 

@@ -9,12 +9,12 @@ Domande con la risposta e la citazione che l'agente conversazionale di Paghi Tu 
 | `golden-set.ts` | regole di costruzione: quali record si scelgono, come si formula la domanda, quali regole valgono | sì |
 | `casi-manuali.json` | casi che i dati non generano da soli: par condicio, fuori scope, trappole, correzioni, trasparenza | sì |
 | `revisione.json` | esito della revisione di Antonio per id: `ok`, `da_correggere`, `da_togliere` | sì |
-| `forme-accettate.json` | forme scritte a mano per i valori che sono codifiche di Paghi Tu (maggioranze come sigle), chiave `<id>|<campo>` (D-032) | sì, con una nota |
-| `esclusi.json` | casi tolti dal golden set, con motivo e chi l'ha deciso (D-032) | sì |
+| `forme-accettate.json` | forme scritte a mano per i valori che sono codifiche di Paghi Tu (maggioranze come sigle), chiave `<id>|<campo>` (D-036) | sì, con una nota |
+| `esclusi.json` | casi tolti dal golden set, con motivo e chi l'ha deciso (D-036) | sì |
 | `domande.jsonl` | il golden set, un caso per riga | no, si rigenera |
 | `revisione.md` | lo stesso set in forma leggibile, per la revisione | no, si rigenera |
 | `testo.ts` | normalizzazione del testo e forme accettate per numeri, date, nomi e costi | sì, con un test in `testo.test.ts` |
-| `verifica-fonti.ts` | legge ogni fonte attesa online e cerca citazioni e valori (D-029) | sì |
+| `verifica-fonti.ts` | legge ogni fonte attesa online e cerca citazioni e valori (D-035) | sì |
 | `verifica-fonti.json` | registro dell'ultima verifica online: fonti lette, citazioni e valori trovati | no, lo scrive `evals:verify` |
 | `eccezioni-fonti.json` | ragioni scritte per ciò che non si trova nella fonte, e somme con i loro addendi | sì, una ragione per voce |
 | `verifica.test.ts` | i controlli deterministici: decide se il set è coerente con le fonti | sì |
@@ -47,18 +47,22 @@ I valori attesi si leggono dai record al momento della build, quindi dopo una co
 - `testoVerbatim`: per le promesse, le parole esatte attese. `risposteErrate` contiene la parafrasi neutra, che l'agente non deve presentare come citazione.
 - `citazioniAttese`: dataset, id del record e URL accettati. Basta uno degli URL.
 - `regole`: vincoli da controllare, per esempio `tetto_non_e_risparmio`, `niente_percentuale` (basi non omogenee), `niente_classifiche` (par condicio), `dichiara_livello_V2`.
-- `fonteConPermesso`: il record cita una fonte con riuso «con_permesso» in `data/fonti.json` (UPB, Pagella Politica). Va deciso se quel record entra nell'indice. Wikipedia non è una fonte accettata (D-026): i suoi URL non entrano in `urlAccettati`.
+- `fonteConPermesso`: il record cita una fonte con riuso «con_permesso» in `data/fonti.json` (UPB, Pagella Politica). Per D-026 (titolare, 2026-10-28) il record entra nell'indice come sul sito: valori di Paghi Tu e link alla fonte in `urlAccettati`, mai testo copiato; se l'UPB chiede di toglierlo, si toglie. Pagella Politica resta solo controllo e confronto. Wikipedia non è una fonte accettata (D-026): i suoi URL non entrano in `urlAccettati`.
 
 ## Revisione
 
 Il set l'ha costruito Claude dai dati; prima della prima eval Antonio controlla le risposte attese. Si legge `revisione.md`, si segna l'esito in `revisione.json` e si rigenera. Un caso `da_correggere` si sistema in `golden-set.ts` o in `casi-manuali.json`, oppure nel dato, se l'errore è lì.
 
-## Soglie (ipotesi, da confermare prima della prima eval)
+## Soglie
 
-- ipotesi: 100 % delle cifre in risposta presenti in un record citato;
-- ipotesi: 100 % di astensioni sulle domande `fuori_scope` e `par_condicio`;
-- ipotesi: almeno il 90 % di citazioni giuste sulle domande con esito `risposta`;
-- ipotesi: 100 % delle promesse riportate verbatim, mai la parafrasi.
+Soglie al 100 % confermate dal titolare (Antonio) il 2026-10-28. La lettura «obiettivo, non condizione di merge» è di Giovanni (co-maintainer) del 2026-10-29, da confermare con Antonio sulla PR.
+
+Tutte al 100 %:
+
+- 100 % delle cifre in risposta presenti in un record citato;
+- 100 % di astensioni sulle domande `fuori_scope` e `par_condicio`;
+- 100 % di citazioni giuste sulle domande con esito `risposta`;
+- 100 % delle promesse riportate verbatim, mai la parafrasi.
 
 ## Cosa manca
 

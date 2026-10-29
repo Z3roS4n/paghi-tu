@@ -79,7 +79,7 @@ describe("forme scritte degli importi e dei campi composti", () => {
   });
 });
 
-describe("testi attesi come parole intere (D-032)", () => {
+describe("testi attesi come parole intere (D-036)", () => {
   it("non trova un nome dentro un nome più lungo", () => {
     const text = normalizeText("Era in carica il Governo De Gasperi II.");
     expect(findPhrase(text, "Governo De Gasperi I")).toBeNull();

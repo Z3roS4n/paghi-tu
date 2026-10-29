@@ -43,7 +43,7 @@ function reviewBlock(c: GoldenCase): string {
   if (c.risposteErrate.length) lines.push("", `**Da respingere:** ${c.risposteErrate.map((r) => `«${r}»`).join(" · ")}`);
   for (const cit of c.citazioniAttese) lines.push("", `**Citazione:** \`${cit.dataset}\` / \`${cit.record}\` — ${cit.urlAccettati.join(" · ") || "nessun URL"}`);
   if (c.regole.length) lines.push("", `**Regole:** ${c.regole.map((r) => `\`${r}\``).join(", ")}`);
-  if (c.fonteConPermesso) lines.push("", "**⚠ Fonte con riuso «con_permesso»** in `data/fonti.json`: decidere se il record entra nell'indice.");
+  if (c.fonteConPermesso) lines.push("", "**⚠ Fonte con riuso «con_permesso»** in `data/fonti.json`: il record entra nell'indice come sul sito (valori di Paghi Tu, link alla fonte, nessun testo copiato), D-026.");
   if (c.notaRevisore) lines.push("", `**Nota:** ${c.notaRevisore}`);
   lines.push("", `**Revisione:** ${c.rivistoDaAntonio ?? "da fare"}`, "");
   return lines.join("\n");

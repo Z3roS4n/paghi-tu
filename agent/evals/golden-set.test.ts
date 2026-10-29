@@ -109,7 +109,7 @@ describe("golden set dell'agente", () => {
   });
 });
 
-describe("forme accettate ed esclusioni (D-032)", () => {
+describe("forme accettate ed esclusioni (D-036)", () => {
   it("i casi esclusi non sono nel set e nessun valore atteso è una codifica di Paghi Tu", () => {
     const excluded = Object.keys(read("agent/evals/esclusi.json") as Record<string, unknown>);
     expect(cases.filter((c) => excluded.includes(c.id))).toEqual([]);
