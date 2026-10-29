@@ -2052,6 +2052,60 @@
     "ribadita": []
   },
   {
+    "id": "C27-FI-026",
+    "partitoId": "FI",
+    "dichiarante": "Stefania Craxi",
+    "ruoloDichiarante": "presidente dei senatori di Forza Italia",
+    "data": "2026-10-28",
+    "testoLetterale": "La disposizione votata alla Camera, che introduce un percorso straordinario per riammettere agli Albi i professionisti sanitari radiati negli anni del Covid, non ci convince e non può restare così com’è. Al Senato è nostra intenzione lavorare per modificarla.",
+    "parafrasiNeutra": "Modificare al Senato la norma approvata dalla Camera che introduce un percorso straordinario di riammissione agli Albi dei professionisti sanitari radiati negli anni del Covid.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "emendamento",
+    "fonte": {
+      "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-sanita-craxi-fi-sanatoria-sui-medici-radiati-e-un-errore-al-senato-chiederemo-modifiche/"
+    },
+    "archivioUrl": null,
+    "cofog": "07",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 3 (Agenzia Opinione): feed https://www.agenziagiornalisticaopinione.it/feed/?paged=1…19 (HTTP 200; /feed/?paged=1 risponde 301 verso /feed/, 200), comunicato «FI – FORZA ITALIA * SENATO» ripubblicato il 28/10/2026 (article:published_time 2026-10-28T11:50:30+01:00), pagina riscaricata con curl GET semplice (HTTP 200) il 2026-10-29 e citazione cercata come sottostringa a meno di apostrofi e spazi: ritrovata. Virgolettato chiuso da «Lo dichiara Stefania Craxi, presidente dei senatori di Forza Italia»: capogruppo, dichiarante autorizzato (ruolo come C27-FI-025). Pagina con l'avviso generico di Opinione sull'impaginazione con AI; comunicato originale non trovato (forzaitalia.it/feed/ 200 ma fermo al 19/03/2026, /wp-json/ 401): livello atteso V2 come C27-FI-025. Nessun taglio interno; il seguito dice «Quando il testo arriverà a Palazzo Madama, il nostro gruppo farà la sua parte per correggerlo» e che le singole vicende vanno riconsiderate «caso per caso, secondo le procedure previste e nel pieno rispetto dell’autonomia degli Ordini, non attraverso una sanatoria indistinta». La norma è nel ddl delega sulle professioni sanitarie approvato dalla Camera il 28/10/2026 (secondo i titoli di Quotidiano Sanità e del Fatto Quotidiano del 28/10, non usati come fonte, il reintegro viene da un emendamento voluto da FdI). Stessa posizione, lo stesso giorno, da Letizia Moratti (presidente della Consulta nazionale FI) sullo stesso canale: non registrata come riga a parte (doppione dello stesso partito e ruolo da valutare). Orizzonte/veicolo: legislatura_in_corso (atto in discussione) ed emendamento annunciato, non ancora presentato (alternativa: dichiarazione). COFOG 07. Doppioni: nessuna riga FI sui sanitari radiati. Pre-valutazione slogan: LIM (norma identificata da modificare, senza il contenuto della modifica). Nessuna copia Wayback cercata con successo (429).",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ L2 2026-10-29 — comunicato del gruppo FI al Senato ripubblicato da Agenzia Opinione, come C27-FI-025 (D-019); dichiarante autorizzato (presidente dei senatori FI); caso limite superato: modifica di una norma identificata"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-FI-027",
+    "partitoId": "FI",
+    "dichiarante": "Alessandro Cattaneo",
+    "ruoloDichiarante": "deputato di Forza Italia e responsabile dei dipartimenti",
+    "data": "2026-10-28",
+    "testoLetterale": "La nostra priorità è il taglio dell’Irpef per la classe media, per i redditi da 50.000 fino a 60.000, dal 43 al 33%. Lo possiamo fare in due step: ora fino a 55.000, poi nella prossima legislatura fino a 60.000",
+    "parafrasiNeutra": "Estensione dell'aliquota Irpef del 33% ai redditi fra 50.000 e 60.000 euro in due fasi: fino a 55.000 euro ora e fino a 60.000 euro nella prossima legislatura.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "prossima_legislatura",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-camera-manovra-cattaneo-priorita-taglio-irpef-al-ceto-medio-e-su-di-pietro-candidatura-divisiva/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 3 (Agenzia Opinione): feed https://www.agenziagiornalisticaopinione.it/feed/?paged=1…19 (HTTP 200), comunicato «FI – FORZA ITALIA * CAMERA» del 28/10/2026 (article:published_time 2026-10-28T15:01:56+01:00) che riporta fra virgolette l'intervento di Cattaneo alla trasmissione «Inside24» («Lo ha detto Alessandro Cattaneo, deputato di Forza Italia e responsabile dei dipartimenti, intervenendo a “Inside24”»); pagina riscaricata con curl GET semplice (HTTP 200) il 2026-10-29 e citazione cercata come sottostringa a meno di apostrofi e spazi: ritrovata. Ruolo come nelle righe FI esistenti (responsabile dei Dipartimenti, forzaitalia.it/organi-e-funzioni-nazionali). Intervento televisivo riportato da un comunicato ripubblicato da Opinione (avviso generico sull'AI): livello atteso V2; da confrontare con il video della trasmissione se disponibile. Nessun taglio. «dal 43 al 33%» è nella fonte : è l'aliquota vigente per i redditi oltre 50.000 euro (il 33% riguarda oggi lo scaglione 28.000-50.000), quindi corretto. Detto prima del Cdm del 28/10, che ha poi approvato il 33% fino a 55.000 euro (prima fase). Possibile ripetizione di C27-FI-018 (Casasco, 23/10: 55.000 euro «quest'anno», 60.000 il prossimo) e di C27-FI-001; aggiunge la scadenza «nella prossima legislatura» per la seconda fase. Orizzonte/veicolo: prossima_legislatura per la seconda fase («nella prossima legislatura»), la prima fase riguarda la manovra 2027 (alternativa: legislatura_in_corso e richiesta_legge_bilancio); dichiarazione. COFOG 01. Pre-valutazione slogan: OK (aliquota, soglie e fasi). Nella stessa fonte la contrarietà alla candidatura di Di Pietro al CSM non è una policy (non registrata). Nessuna copia Wayback (429).",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ L2 2026-10-29 — comunicato del gruppo FI alla Camera ripubblicato da Agenzia Opinione che riporta l'intervento televisivo di Cattaneo, come C27-LEGA-035 e C27-FI-025; dichiarante autorizzato (responsabile dei dipartimenti, come C27-FI-009); aliquota, soglie e fasi"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
     "id": "C27-PD-008",
     "partitoId": "PD",
     "dichiarante": "Partito Democratico (documento nazionale presentato da Marina Sereni)",
@@ -5724,6 +5778,60 @@
     "ribadita": []
   },
   {
+    "id": "C27-AVS-058",
+    "partitoId": "AVS",
+    "dichiarante": "Angelo Bonelli",
+    "ruoloDichiarante": "co-portavoce nazionale AVS (Europa Verde), deputato",
+    "data": "2026-10-27",
+    "testoLetterale": "Le coperture del provvedimento sono previste dalle aste della CO2, che sono già in funzione nel sistema Ets, […] Poi c’è un contributo dai concessionari del gioco legalizzato dallo Stato",
+    "parafrasiNeutra": "Finanziare la bolletta sociale anche con un contributo a carico dei concessionari statali del gioco legale.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://corrierelivornese.it/toscana/dalla-toscana/avs-lancia-bolletta-sociale-fratoianni-e-bonelli-in-italia-28-milioni-famiglie-in-poverta-energetica-che-meloni-non-vuole-vedere/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (binario 2, query uniformi «AVS intervista», «AVS proposta», «Bonelli intervista», «Bonelli proposta», «Fratoianni intervista», «Fratoianni proposta», when:2d; per AVS entrambi i co-leader), trovata con «AVS proposta», «Bonelli proposta» e «Fratoianni proposta». Conferenza stampa di AVS alla Camera dei deputati del 27/10/2026 di presentazione della «bolletta sociale progressiva», con Angelo Bonelli, Nicola Fratoianni e Lorenzo Fioramonti (responsabile Politiche economiche e industriali di Europa Verde). Canale ufficiale: verdisinistra.it (API WordPress /wp-json/wp/v2/posts?after=2026-10-26T00:00:00, HTTP 200, ultimo post 2026-10-27T15:26; ricerca «bolletta sociale» su post e pagine) non contiene la conferenza: fonte da testata. Fonte: Corriere Livornese, datePublished 2026-10-27T17:56:32+01:00, letto il 2026-10-28 (curl GET, HTTP 200). Copertura della misura NEW-AVS-1, registrata come riga a parte come C27-M5S-050 (coperture indicate dal proponente). Attribuzione: stesso paragrafo di Bonelli di NEW-AVS-1; askanews: «altri contributi sono possibili, secondo Avs, dal comparto del gioco di azzardo». Il «[…]» toglie «che serve anche ad abbassare i costi dell’energia con l’innovazione tecnologica, lo ricordo alla Meloni.» (inciso polemico, nessuna parola su gruppi di persone). La prima parte (aste della CO2) è tenuta come contesto: è l'uso di un'entrata già esistente, non una misura nuova. Citazione confrontata in automatico parola per parola. Livello atteso V2. Orizzonte/veicolo: non_specificato e dichiarazione. COFOG 01. Doppioni: nessuna riga sul gioco nei CSV dei partiti del gruppo. Importo e aliquota non indicati: misurabile parziale. Pre-valutazione slogan: LIM (prelievo con soggetti definiti, senza parametro). Wayback: nessuna copia (2026-10-28). (verifica L2 2026-10-28) Metodo: fonte riaperta con curl GET semplice, senza user agent da browser (HTTP 200), testo estratto con un estrattore proprio (html.parser della libreria standard, script e stili esclusi), apostrofi, virgolette e spazi normalizzati, ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte a meno degli spazi: ritrovato. Corriere Livornese, articolo di Cinzia Gorla, datePublished 2026-10-27T17:56:32+01:00. Stesso paragrafo di Bonelli di C27-AVS-056; askanews: «altri contributi sono possibili, secondo Avs, dal comparto del gioco di azzardo». Il «[…]» toglie «che serve anche ad abbassare i costi dell'energia con l'innovazione tecnologica, lo ricordo alla Meloni.» (inciso polemico, nessun gruppo di persone). Criterio slogan: base definita dai soggetti che pagano (come C27-PLD-011 per la base imponibile), diversa da C27-PAP-003 (nessuna base); misurabile parziale. COFOG 01. Nessuna riga AVS sul gioco. (cancello del verificatore 2026-10-28) Lo spazio prima delle virgole dopo «CO2» e «dallo Stato» non è nella fonte (HTML: «CO2</strong>, che», «dallo Stato</strong>, una»): tolto. Riga da riverificare. (routine 2026-10-29) Fonte riaperta con curl GET semplice (https://corrierelivornese.it/toscana/dalla-toscana/avs-lancia-bolletta-sociale-fratoianni-e-bonelli-in-italia-28-milioni-famiglie-in-poverta-energetica-che-meloni-non-vuole-vedere/, HTTP 200, 414.706 byte): nell'HTML le virgole seguono direttamente il tag di chiusura («della CO2</strong>, che sono già in funzione nel sistema Ets,» e «dallo Stato</strong>, una maggiorazione Irap»), quindi senza spazio prima della virgola; il testo_letterale nel CSV del repo è già senza lo spazio spurio (correzione del cancello del 2026-10-28) e qui è confermato carattere per carattere: ogni segmento fra «[…]» ritrovato nell'ordine della fonte nel testo grezzo (solo spazi e a capo compressi, apostrofo tipografico ’ di «c’è» identico alla fonte). Riga riproposta intera con lo stesso id per la riverifica L2; nessun altro campo cambiato a parte stato_verifica, archivio_url («da archiviare») e questa nota. Wayback archive.org/wayback/available: HTTP 429 il 2026-10-29, non ripetuto.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ L2 2026-10-29 — conferenza stampa riportata da testata (D-019), come C27-AVS-056; prelievo con soggetti definiti (concessionari del gioco), come la verifica L2 del 2026-10-28"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-AVS-059",
+    "partitoId": "AVS",
+    "dichiarante": "Angelo Bonelli",
+    "ruoloDichiarante": "co-portavoce nazionale AVS (Europa Verde), deputato",
+    "data": "2026-10-27",
+    "testoLetterale": "Le coperture del provvedimento sono previste dalle aste della CO2, […] Poi c’è un contributo dai concessionari del gioco legalizzato dallo Stato, una maggiorazione Irap imprese Oil and gas",
+    "parafrasiNeutra": "Finanziare la bolletta sociale anche con una maggiorazione dell'IRAP per le imprese del petrolio e del gas.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://corrierelivornese.it/toscana/dalla-toscana/avs-lancia-bolletta-sociale-fratoianni-e-bonelli-in-italia-28-milioni-famiglie-in-poverta-energetica-che-meloni-non-vuole-vedere/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (binario 2, query uniformi «AVS intervista», «AVS proposta», «Bonelli intervista», «Bonelli proposta», «Fratoianni intervista», «Fratoianni proposta», when:2d; per AVS entrambi i co-leader), trovata con «AVS proposta», «Bonelli proposta» e «Fratoianni proposta». Conferenza stampa di AVS alla Camera dei deputati del 27/10/2026 di presentazione della «bolletta sociale progressiva», con Angelo Bonelli, Nicola Fratoianni e Lorenzo Fioramonti (responsabile Politiche economiche e industriali di Europa Verde). Canale ufficiale: verdisinistra.it (API WordPress /wp-json/wp/v2/posts?after=2026-10-26T00:00:00, HTTP 200, ultimo post 2026-10-27T15:26; ricerca «bolletta sociale» su post e pagine) non contiene la conferenza: fonte da testata. Fonte: Corriere Livornese, datePublished 2026-10-27T17:56:32+01:00, letto il 2026-10-28 (curl GET, HTTP 200). Copertura della misura NEW-AVS-1, riga a parte come C27-M5S-050. Il «[…]» toglie «che sono già in funzione nel sistema Ets, che serve anche ad abbassare i costi dell’energia con l’innovazione tecnologica, lo ricordo alla Meloni.» (nessuna parola su gruppi di persone); il contributo del gioco resta perché la maggiorazione è nella stessa enumerazione (riga NEW-AVS-3). La maggiorazione Irap è ripetuta da Bonelli fra le coperture delle pompe di calore. Citazione confrontata in automatico parola per parola. Livello atteso V2. Orizzonte/veicolo: non_specificato e dichiarazione. COFOG 01. Doppioni: non è C27-AVS-002 né C27-AVS-046 (contributo o tassa sugli extraprofitti): qui è una maggiorazione di un'imposta esistente, l'IRAP, per un settore nominato; da valutare dal verificatore come riga collegata. Aliquota non indicata: misurabile parziale. Pre-valutazione slogan: OK/LIM (imposta e settore nominati, senza aliquota). Wayback: nessuna copia (2026-10-28). (verifica L2 2026-10-28) Metodo: fonte riaperta con curl GET semplice, senza user agent da browser (HTTP 200), testo estratto con un estrattore proprio (html.parser della libreria standard, script e stili esclusi), apostrofi, virgolette e spazi normalizzati, ogni segmento fra «[…]» cercato come sottostringa nell'ordine della fonte a meno degli spazi: ritrovato. Corriere Livornese, articolo di Cinzia Gorla, datePublished 2026-10-27T17:56:32+01:00. Il «[…]» toglie «che sono già in funzione nel sistema Ets, che serve anche ad abbassare i costi dell'energia con l'innovazione tecnologica, lo ricordo alla Meloni.»; la voce sul gioco resta perché precede la maggiorazione nella stessa enumerazione (riga C27-AVS-058); nessun gruppo di persone tolto. Il «contributo straordinario su profitti di banche e società» della stessa frase non è registrato (sovrapposto a C27-AVS-002). Misurabile parziale, COFOG 01, orizzonte/veicolo confermati. (cancello del verificatore 2026-10-28) Lo spazio prima delle virgole dopo «CO2» e «dallo Stato» non è nella fonte (HTML: «CO2</strong>, che», «dallo Stato</strong>, una»): tolto. Riga da riverificare. (routine 2026-10-29) Fonte riaperta con curl GET semplice (https://corrierelivornese.it/toscana/dalla-toscana/avs-lancia-bolletta-sociale-fratoianni-e-bonelli-in-italia-28-milioni-famiglie-in-poverta-energetica-che-meloni-non-vuole-vedere/, HTTP 200, 414.706 byte): nell'HTML le virgole seguono direttamente il tag di chiusura («della CO2</strong>, che sono già in funzione nel sistema Ets,» e «dallo Stato</strong>, una maggiorazione Irap»), quindi senza spazio prima della virgola; il testo_letterale nel CSV del repo è già senza lo spazio spurio (correzione del cancello del 2026-10-28) e qui è confermato carattere per carattere: ogni segmento fra «[…]» ritrovato nell'ordine della fonte nel testo grezzo (solo spazi e a capo compressi, apostrofo tipografico ’ di «c’è» identico alla fonte). Riga riproposta intera con lo stesso id per la riverifica L2; nessun altro campo cambiato a parte stato_verifica, archivio_url («da archiviare») e questa nota. Wayback archive.org/wayback/available: HTTP 429 il 2026-10-29, non ripetuto.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ L2 2026-10-29 — conferenza stampa riportata da testata (D-019); imposta e settore nominati (maggiorazione IRAP per le imprese oil and gas)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
     "id": "C27-AVS-060",
     "partitoId": "AVS",
     "dichiarante": "Luana Zanella",
@@ -5775,6 +5883,87 @@
       "dettaglio": "V2✓ verificatore 2026-10-28 — CONFERMATA, caso limite superato: istituto nominato (contratto di formazione e lavoro); la platea (medici specializzandi) è nel contesto dello stesso intervento e dell'emendamento 3.5 di cui Zanella dice di aver presentato il gemello (3.6); frase intera, nessun taglio; intervento in Aula: V2 | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: emendamento 3.6 ad A.C. 2700-A, respinto]"
     },
     "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-PD-039",
+    "partitoId": "PD",
+    "dichiarante": "Antonio Misiani",
+    "ruoloDichiarante": "responsabile Economia, Finanze, Imprese e Infrastrutture nella segreteria nazionale PD, senatore",
+    "data": "2026-10-29",
+    "testoLetterale": "Il secondo punto è il lavoro: serve il salario minimo e la difesa della buona contrattazione collettiva.",
+    "parafrasiNeutra": "Introdurre un salario minimo, insieme alla tutela della contrattazione collettiva.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.editorialedomani.it/politica/italia/antonio-misiani-intervista-manovra-2027-governo-meloni-una-cambiale-la-paga-il-prossimo-governo-bvyfmugb"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (binario 2, query uniformi «PD intervista», «PD proposta», «Schlein intervista», «Schlein proposta», when:2d; https://news.google.com/rss/search?q=<query>+when:2d&hl=it&gl=IT&ceid=IT:it, HTTP 200 per tutte), trovata con «PD intervista». Testata Domani (editorialedomani.it), intervista di Daniela Preziosi ad Antonio Misiani, datePublished 2026-10-29T06:00:00Z, \"isAccessibleForFree\": true; letta per intero il 2026-10-29 con curl GET semplice (https://www.editorialedomani.it/politica/italia/antonio-misiani-intervista-manovra-2027-governo-meloni-una-cambiale-la-paga-il-prossimo-governo-bvyfmugb, HTTP 200), testata aperta. Intervista da testata: fonte primaria (V1, D-019). Ruolo: la testata scrive «Senatore Antonio Misiani (responsabile economico Pd, ndr)»; forma del ruolo copiata da C27-PD-032. Citazione confrontata in automatico parola per parola con il testo scaricato una seconda volta (segmenti cercati come sottostringa, a meno degli spazi). Seconda delle «tre grandi priorità» elencate da Misiani nella risposta alla domanda sulle coperture («La coperta è, come si dice, corta. Dove troverete le coperture?»), dopo «Ma la vera sfida sarà per la prossima legislatura. Il prossimo governo dovrà…»; pacchetto: la prima priorità (energia) e la terza (sanità) non sono registrate perché slogan (vedi sotto). Possibile ripetizione di C27-PD-013 (Schlein: «Sanità pubblica e salario minimo, immediatamente.»): nessuna cifra nuova (il valore di 9 euro non compare qui); collegata a C27-CSX-002. Nella stessa intervista, non registrati: «Serve una riforma del sistema fiscale», «Serve un cambio di passo sulle rinnovabili, massicci investimenti sulle reti e l'eliminazione delle distorsioni…», «La sanità pubblica […] ha bisogno di investimenti e di una profonda riorganizzazione» (slogan: direzione senza parametro, scadenza o strumento); «Il prossimo governo dovrà negoziare con la Commissione Ue un nuovo piano strutturale di bilancio di medio termine» (adempimento, non impegno di policy); «Ogni proposta di emendamento avrà una sua copertura» (non di policy). Orizzonte/veicolo: non_specificato e dichiarazione; caso dubbio: la risposta parla della «prossima legislatura» e del «prossimo governo» ma non dice «se vinciamo» o simili (regola §1.1: nel dubbio non_specificato). COFOG 04 come C27-PD-013. Nessun costo dichiarato. Pre-valutazione slogan: OK (istituto: salario minimo, come C27-PD-013). Wayback archive.org/wayback/available: HTTP 429 il 2026-10-29, non ripetuto.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ L2 2026-10-29 — intervista su testata (D-019); istituto nominato (salario minimo), come C27-PD-013"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-PD-040",
+    "partitoId": "PD",
+    "dichiarante": "Antonio Misiani",
+    "ruoloDichiarante": "responsabile Economia, Finanze, Imprese e Infrastrutture nella segreteria nazionale PD, senatore",
+    "data": "2026-10-29",
+    "testoLetterale": "Quello che è certo è che è necessario estendere l’adeguamento dei salari all’inflazione previsto da alcuni contratti nazionali, e aiutare le partite Iva più fragili.",
+    "parafrasiNeutra": "Estendere l'adeguamento dei salari all'inflazione oggi previsto da alcuni contratti collettivi nazionali.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.editorialedomani.it/politica/italia/antonio-misiani-intervista-manovra-2027-governo-meloni-una-cambiale-la-paga-il-prossimo-governo-bvyfmugb"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (binario 2, query uniformi «PD intervista», «PD proposta», «Schlein intervista», «Schlein proposta», when:2d; https://news.google.com/rss/search?q=<query>+when:2d&hl=it&gl=IT&ceid=IT:it, HTTP 200 per tutte), trovata con «PD intervista». Testata Domani (editorialedomani.it), intervista di Daniela Preziosi ad Antonio Misiani, datePublished 2026-10-29T06:00:00Z, \"isAccessibleForFree\": true; letta per intero il 2026-10-29 con curl GET semplice (https://www.editorialedomani.it/politica/italia/antonio-misiani-intervista-manovra-2027-governo-meloni-una-cambiale-la-paga-il-prossimo-governo-bvyfmugb, HTTP 200), testata aperta. Intervista da testata: fonte primaria (V1, D-019). Ruolo: la testata scrive «Senatore Antonio Misiani (responsabile economico Pd, ndr)»; forma del ruolo copiata da C27-PD-032. Citazione confrontata in automatico parola per parola con il testo scaricato una seconda volta (segmenti cercati come sottostringa, a meno degli spazi). Stessa risposta di C27-PD-039 (seconda priorità, il lavoro); la frase segue «Avs propone il ripristino della scala mobile.». La parte finale «e aiutare le partite Iva più fragili» è tenuta nella citazione (non si taglia la descrizione di un gruppo di persone) ma non è registrata come misura: direzione senza parametro né strumento (slogan). Nessuna riga PD sull'indicizzazione dei salari; collegata, per un altro partito, a C27-AVS-004 («Vogliamo che i salari siano indicizzati all'inflazione»); diversa da C27-PD-032 (scaglioni Irpef). La fonte non dice con quale strumento (legge, accordo interconfederale) si estenderebbe l'adeguamento: la parafrasi non lo aggiunge. Nella stessa intervista, non registrati: «Serve una riforma del sistema fiscale», «Serve un cambio di passo sulle rinnovabili, massicci investimenti sulle reti e l'eliminazione delle distorsioni…», «La sanità pubblica […] ha bisogno di investimenti e di una profonda riorganizzazione» (slogan: direzione senza parametro, scadenza o strumento); «Il prossimo governo dovrà negoziare con la Commissione Ue un nuovo piano strutturale di bilancio di medio termine» (adempimento, non impegno di policy); «Ogni proposta di emendamento avrà una sua copertura» (non di policy). Orizzonte/veicolo: non_specificato e dichiarazione (come C27-PD-039). COFOG 04. Nessun costo dichiarato. Pre-valutazione slogan: LIM (meccanismo descritto: estensione di una clausola contrattuale esistente, senza platea né strumento). Wayback archive.org/wayback/available: HTTP 429 il 2026-10-29, non ripetuto.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ L2 2026-10-29 — intervista su testata (D-019); caso limite superato: meccanismo descritto (estensione della clausola di adeguamento all'inflazione dei contratti nazionali); parafrasi corretta"
+    },
+    "effettoConti": "incerto",
+    "ribadita": []
+  },
+  {
+    "id": "C27-AVS-074",
+    "partitoId": "AVS",
+    "dichiarante": "Faraone, Ruffino, Zanella (firmatari)",
+    "ruoloDichiarante": "deputati firmatari dell'emendamento 3.12 ad A.C. 2700-A; tra i firmatari Luana Zanella, capogruppo AVS alla Camera",
+    "data": "2026-10-27",
+    "testoLetterale": "sostituire le parole: tempi di permanenza minima obbligatoria con le seguenti: misure incentivanti, anche mediante criteri di priorità e punteggio nelle procedure di progressione e conferimento incarichi.",
+    "parafrasiNeutra": "Sostituire l'obbligo di permanenza minima nelle aree disagiate con misure incentivanti, anche con criteri di priorità e punteggio nelle progressioni e negli incarichi.",
+    "tipoFonte": "atto_parlamentare",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "emendamento",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0734/allegato_a.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "07",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 6 (atti di Camera e Senato): emendamento 3.12 (Faraone, IV; Ruffino, Azione; Zanella, AVS) al ddl delega sulle professioni sanitarie (A.C. 2700-A), Allegato A alla seduta n. 734 del 27/10/2026 (fascicolo completo letto il 29/10 con curl GET, HTTP 200; il 28/10 l'Allegato A era parziale e gli emendamenti non erano leggibili: lacuna dell'esecuzione precedente, recuperata oggi). Respinto in Aula il 27/10 (votazione n. 26, parere contrario di Commissione e Governo; stenografico della seduta 734). Data di prima presentazione non verificata: la numerazione «(ex …)» rinvia al fascicolo iniziale; non controllato se lo stesso testo era stato presentato in XII Commissione prima del 27/10 (stessa riserva di C27-AZ-047 e C27-AVS-060). Primo periodo dell'emendamento («Al comma 1, lettera b), sostituire le parole: …»); il secondo periodo (isole minori lagunari e lacustri) è la riga successiva. Zanella capogruppo AVS (Conferenza dei presidenti di gruppo, camera.it/leg19/99?shadow_organo_parlamentare=3601, letta il 29/10, HTTP 200). Riga solo AVS: Faraone (IV) e Ruffino (Azione) non sono capigruppo (Boschi e Richetti, stessa pagina). COFOG 07. Pre-valutazione slogan: OK (strumento descritto: punteggio e priorità nelle progressioni). Orizzonte/veicolo: legislatura_in_corso, emendamento (a una delega del Governo in carica). Testo_letterale confrontato in automatico con il testo HTML riscaricato il 29/10 con curl GET semplice (HTTP 200): ogni segmento fra «[…]» ritrovato nell'ordine, a meno di spazi, apostrofi e trattini tipografici. Wayback archive.org/wayback/available (solo lettura, 29/10): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ L2 2026-10-29 — strumento descritto (misure incentivanti con criteri di priorità e punteggio nelle progressioni e negli incarichi); Zanella, capogruppo AVS, sottoscrive in Aula il 27/10"
+    },
+    "effettoConti": "incerto",
     "ribadita": []
   },
   {
@@ -9045,6 +9234,141 @@
     "ribadita": []
   },
   {
+    "id": "C27-PLD-017",
+    "partitoId": "PLD",
+    "dichiarante": "Partito Liberaldemocratico (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale; segretario Luigi Marattin",
+    "data": "2026-10-28",
+    "testoLetterale": "Il ceto medio non può essere sempre quello che paga e mai quello che riceve. Il taglio dell’Irpef oltre i 50mila euro non può restare l’ennesima promessa mancata. Se il Governo non agirà, presenteremo noi un emendamento.",
+    "parafrasiNeutra": "Ridurre l’Irpef per i redditi oltre i 50 mila euro; se il Governo non lo fa, il partito presenterà un emendamento.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://partitoliberaldemocratico.com/il-ceto-medio-non-puo-essere-sempre-quello-che-paga-e-mai-quello-che-riceve-il/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Post del sito ufficiale del PLD (ripubblicazione di un post Instagram del partito, firmato in pagina «By Alessio Pellizzaro», article:published_time 2026-10-28T07:35:47Z). Il testo è del partito («presenteremo noi un emendamento»): dichiarante = canale ufficiale, come C27-PLD-012. Canale: API WordPress di partitoliberaldemocratico.com (GET /wp-json/wp/v2/posts?after=2026-10-27T00:00:00&_fields=date,link,title,content, HTTP 200), pagina riaperta con curl GET semplice (https://partitoliberaldemocratico.com/il-ceto-medio-non-puo-essere-sempre-quello-che-paga-e-mai-quello-che-riceve-il/, HTTP 200, riscaricata il 2026-10-29: citazione ritrovata come sottostringa). Altri post del periodo sullo stesso canale: 28/10 sera, «Ogni anno la Ragioneria Generale dello Stato pubblica un documento…» (pensioni, «3 punti» solo nel video Instagram, non trascritto: nessuna riga). Nessun taglio («Il ceto medio» descrive il gruppo e resta). Possibile ripetizione di C27-PLD-010 («Riduzione dell’IRPEF per il ceto medio e per le società di persone», 05/09): qui c'è una soglia (oltre i 50 mila euro) e un veicolo (emendamento), quindi per D-031 resterebbe riga a sé; la classificazione la fanno altri. Entità del taglio non indicata: misurabile parziale. COFOG 01. Orizzonte/veicolo: legislatura_in_corso (emendamento annunciato a un atto in discussione, la manovra) e richiesta_legge_bilancio; in alternativa emendamento, se il verificatore lo considera già annunciato. Pre-valutazione slogan: OK (soglia di reddito e imposta nominata).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ L2 2026-10-29 — testo del partito sul sito ufficiale, come C27-PLD-012; imposta nominata e soglia di reddito (oltre 50.000 euro)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-AZ-056",
+    "partitoId": "AZ",
+    "dichiarante": "Richetti, Pastorella, Bonetti, Rosato, Onori, Benzoni, D'Alessio, Grippo, Sottanelli, Ruffino (firmatari)",
+    "ruoloDichiarante": "deputati firmatari della mozione 1-00612; primo firmatario Matteo Richetti, capogruppo Azione alla Camera",
+    "data": "2026-10-27",
+    "testoLetterale": "a sollecitare […] l'immediata applicazione del meccanismo di tutela previsto dal regolamento (CE) n. 2271/96, […] – Statuto di blocco – […] nei riguardi della Corte stessa, dei suoi giudici, procuratori e funzionari e delle persone fisiche e giuridiche che ne sostengono il lavoro",
+    "parafrasiNeutra": "Chiedere in sede UE l'applicazione immediata dello Statuto di blocco (regolamento CE 2271/96) a tutela della Corte penale internazionale, dei suoi giudici, procuratori e funzionari e di chi ne sostiene il lavoro.",
+    "tipoFonte": "atto_parlamentare",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "risoluzione_mozione",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0734/allegato_b.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 6 (atti di Camera e Senato): mozione 1-00612 (Richetti e altri) sulla Corte penale internazionale e i crimini internazionali, Allegato B alla seduta n. 734 del 27/10/2026, letto il 29/10 con curl GET (HTTP 200; il 28/10 l'Allegato B dava 404: lacuna dell'esecuzione precedente, recuperata oggi). Numero nuovo (dopo la 1-00611 del 26/10): testo presentato il 27/10. Iscritta nel calendario con la mozione Boldrini 1-00599. Richetti capogruppo Azione (Conferenza dei presidenti di gruppo, camera.it, letta il 29/10): atto di gruppo. Dispositivo «impegna il Governo», 5 punti; il punto 1) («difendere con determinazione … l'autonomia della Corte») esce come slogan. Orizzonte/veicolo: legislatura_in_corso, risoluzione_mozione. Punto 2). Tagli «[…]»: il primo toglie «, in seno al Consiglio dell'Unione europea e nel dialogo con la Commissione,», il secondo «nella versione aggiornata con il regolamento delegato (UE) 2018/1100», il terzo «e ogni analoga misura disposta da altri Stati, così da neutralizzarne, nel territorio dell'Unione, l'applicazione extraterritoriale» (necessari per i 320 caratteri; i gruppi di persone restano). Doppioni: nessuna riga Azione sulla CPI; stessa misura in C27-PE-025 e C27-AVS-049 (altri partiti). COFOG 01. Pre-valutazione slogan: OK (regolamento nominato). Testo_letterale confrontato in automatico con il testo HTML riscaricato il 29/10 con curl GET semplice (HTTP 200): ogni segmento fra «[…]» ritrovato nell'ordine, a meno di spazi, apostrofi e trattini tipografici. Wayback archive.org/wayback/available (solo lettura, 29/10): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ L2 2026-10-29 — regolamento nominato (Statuto di blocco, reg. CE 2271/96); mozione presentata il 27/10 con il capogruppo primo firmatario — CORRETTA: parafrasi"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-AZ-057",
+    "partitoId": "AZ",
+    "dichiarante": "Richetti, Pastorella, Bonetti, Rosato, Onori, Benzoni, D'Alessio, Grippo, Sottanelli, Ruffino (firmatari)",
+    "ruoloDichiarante": "deputati firmatari della mozione 1-00612; primo firmatario Matteo Richetti, capogruppo Azione alla Camera",
+    "data": "2026-10-27",
+    "testoLetterale": "a fare in modo che la delegazione italiana presso l'organizzazione delle Nazioni Unite nonché in seno all'Assemblea dei Paesi aderenti al trattato di Roma svolga un ruolo propositivo […] partecipando in particolare al negoziato su una convenzione per prevenire e punire i crimini contro l'umanità",
+    "parafrasiNeutra": "Far partecipare la delegazione italiana all'ONU e all'Assemblea degli Stati parte dello Statuto di Roma al negoziato su una convenzione per prevenire e punire i crimini contro l'umanità.",
+    "tipoFonte": "atto_parlamentare",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "risoluzione_mozione",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0734/allegato_b.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 6 (atti di Camera e Senato): mozione 1-00612 (Richetti e altri) sulla Corte penale internazionale e i crimini internazionali, Allegato B alla seduta n. 734 del 27/10/2026, letto il 29/10 con curl GET (HTTP 200; il 28/10 l'Allegato B dava 404: lacuna dell'esecuzione precedente, recuperata oggi). Numero nuovo (dopo la 1-00611 del 26/10): testo presentato il 27/10. Iscritta nel calendario con la mozione Boldrini 1-00599. Richetti capogruppo Azione (Conferenza dei presidenti di gruppo, camera.it, letta il 29/10): atto di gruppo. Dispositivo «impegna il Governo», 5 punti; il punto 1) («difendere con determinazione … l'autonomia della Corte») esce come slogan. Orizzonte/veicolo: legislatura_in_corso, risoluzione_mozione. Punto 3), prima parte; il taglio «[…]» toglie «nel consolidamento del sistema di giustizia penale sovranazionale,»; la seconda («nonché al percorso di revisione delle norme sul crimine di aggressione») è la riga successiva. COFOG 01. Pre-valutazione slogan: LIM (negoziato nominato, impegno di partecipazione). Testo_letterale confrontato in automatico con il testo HTML riscaricato il 29/10 con curl GET semplice (HTTP 200): ogni segmento fra «[…]» ritrovato nell'ordine, a meno di spazi, apostrofi e trattini tipografici. Wayback archive.org/wayback/available (solo lettura, 29/10): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ L2 2026-10-29 — strumento identificabile (negoziato su una convenzione con oggetto definito: prevenire e punire i crimini contro l'umanità), caso limite superato"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-AZ-059",
+    "partitoId": "AZ",
+    "dichiarante": "Richetti, Pastorella, Bonetti, Rosato, Onori, Benzoni, D'Alessio, Grippo, Sottanelli, Ruffino (firmatari)",
+    "ruoloDichiarante": "deputati firmatari della mozione 1-00612; primo firmatario Matteo Richetti, capogruppo Azione alla Camera",
+    "data": "2026-10-27",
+    "testoLetterale": "ad adottare iniziative normative volte a portare a termine l'allineamento della legislazione italiana agli standard del diritto penale internazionale, valorizzando gli esiti della Commissione costituita presso il Ministero della giustizia con il compito di redigere un Codice dei crimini internazionali",
+    "parafrasiNeutra": "Adottare iniziative normative per completare l'allineamento della legislazione italiana agli standard del diritto penale internazionale, valorizzando gli esiti della Commissione del Ministero della giustizia incaricata di redigere un Codice dei crimini internazionali.",
+    "tipoFonte": "atto_parlamentare",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "risoluzione_mozione",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0734/allegato_b.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "03",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 6 (atti di Camera e Senato): mozione 1-00612 (Richetti e altri) sulla Corte penale internazionale e i crimini internazionali, Allegato B alla seduta n. 734 del 27/10/2026, letto il 29/10 con curl GET (HTTP 200; il 28/10 l'Allegato B dava 404: lacuna dell'esecuzione precedente, recuperata oggi). Numero nuovo (dopo la 1-00611 del 26/10): testo presentato il 27/10. Iscritta nel calendario con la mozione Boldrini 1-00599. Richetti capogruppo Azione (Conferenza dei presidenti di gruppo, camera.it, letta il 29/10): atto di gruppo. Dispositivo «impegna il Governo», 5 punti; il punto 1) («difendere con determinazione … l'autonomia della Corte») esce come slogan. Orizzonte/veicolo: legislatura_in_corso, risoluzione_mozione. Punto 4); la frase continua con «, che ha ultimato il proprio mandato nel 2022, e favorendo, per quanto di competenza, l'iter delle proposte di legge depositate in materia, così da colmare le lacune …». Doppioni: nessuna riga Azione; stessa misura in C27-PD-031, C27-AVS-050 e C27-SVP-003 (mozione Boldrini 1-00599, altri partiti). COFOG 03. Pre-valutazione slogan: OK (codice con oggetto definito). Testo_letterale confrontato in automatico con il testo HTML riscaricato il 29/10 con curl GET semplice (HTTP 200): ogni segmento fra «[…]» ritrovato nell'ordine, a meno di spazi, apostrofi e trattini tipografici. Wayback archive.org/wayback/available (solo lettura, 29/10): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ L2 2026-10-29 — codice con oggetto definito, come C27-AVS-050 e C27-SVP-003 per gli altri firmatari della 1-00599 — CORRETTA: parafrasi"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-AZ-060",
+    "partitoId": "AZ",
+    "dichiarante": "Richetti, Pastorella, Bonetti, Rosato, Onori, Benzoni, D'Alessio, Grippo, Sottanelli, Ruffino (firmatari)",
+    "ruoloDichiarante": "deputati firmatari della mozione 1-00612; primo firmatario Matteo Richetti, capogruppo Azione alla Camera",
+    "data": "2026-10-27",
+    "testoLetterale": "a promuovere ogni anno l'organizzazione, in concomitanza con la ricorrenza del 17 luglio dedicata alla giustizia internazionale, di campagne di comunicazione e momenti di approfondimento pubblico per far conoscere le funzioni della Corte, i risultati del suo lavoro e il valore del trattato adottato a Roma nel 1998",
+    "parafrasiNeutra": "Organizzare ogni anno, intorno al 17 luglio, campagne di comunicazione pubblica sulla Corte penale internazionale e sullo Statuto di Roma.",
+    "tipoFonte": "atto_parlamentare",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "risoluzione_mozione",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0734/allegato_b.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 6 (atti di Camera e Senato): mozione 1-00612 (Richetti e altri) sulla Corte penale internazionale e i crimini internazionali, Allegato B alla seduta n. 734 del 27/10/2026, letto il 29/10 con curl GET (HTTP 200; il 28/10 l'Allegato B dava 404: lacuna dell'esecuzione precedente, recuperata oggi). Numero nuovo (dopo la 1-00611 del 26/10): testo presentato il 27/10. Iscritta nel calendario con la mozione Boldrini 1-00599. Richetti capogruppo Azione (Conferenza dei presidenti di gruppo, camera.it, letta il 29/10): atto di gruppo. Dispositivo «impegna il Governo», 5 punti; il punto 1) («difendere con determinazione … l'autonomia della Corte») esce come slogan. Orizzonte/veicolo: legislatura_in_corso, risoluzione_mozione. Punto 5), intero. COFOG 01 (alternativa 08). Pre-valutazione slogan: LIM (iniziativa con cadenza e data definite; stesso tipo di C27-AZ-033, campagne informative). Testo_letterale confrontato in automatico con il testo HTML riscaricato il 29/10 con curl GET semplice (HTTP 200): ogni segmento fra «[…]» ritrovato nell'ordine, a meno di spazi, apostrofi e trattini tipografici. Wayback archive.org/wayback/available (solo lettura, 29/10): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ L2 2026-10-29 — iniziativa con cadenza e data definite (campagne ogni anno intorno al 17 luglio), caso limite superato come C27-AZ-033"
+    },
+    "effettoConti": "incerto",
+    "ribadita": []
+  },
+  {
     "id": "C27-ORA-001",
     "partitoId": "ORA",
     "dichiarante": "ORA! e Michele Boldrin",
@@ -10770,6 +11094,114 @@
       "dettaglio": "V1✓ verificatore 2026-10-28 — CONFERMATA: caso limite superato (richiesta al Governo in carica con contenuto di policy, presentata dal partito come proposta propria, D-012: voto con sede e data definite, l'Assemblea ONU del 28/10, sulla fine dell'embargo statunitense verso Cuba); non è un appello con raccolta firme; canale ufficiale del partito | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: altro]"
     },
     "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-PCIT-011",
+    "partitoId": "PCIT",
+    "dichiarante": "Alessandro Onorato",
+    "ruoloDichiarante": "Leader (coordinatore nazionale) di Progetto Civico Italia; assessore di Roma Capitale",
+    "data": "2026-10-28",
+    "testoLetterale": "Basta fare una cosa molto semplice […]: lasciare ai sindaci italiani la possibilità di aumentare la tassa di soggiorno al prezzo che vogliono per un massimo del 5% del costo totale della stanza dell’hotel o della struttura extralberghiera",
+    "parafrasiNeutra": "Consentire ai Comuni di fissare liberamente l'imposta di soggiorno fino a un massimo del 5% del prezzo della camera in strutture alberghiere ed extralberghiere.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.qualitytravel.it/tassa-di-soggiorno-onorato-propone-di-destinare-il-50-allhousing-sociale-con-calcolo-in-percentuale/194405"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Discorso di Alessandro Onorato agli Stati generali di Progetto Civico Italia (Roma, Hotel Shangri-La, domenica 25/10/2026), virgolettato riportato da Qualitytravel.it (testata online di settore, firma Lara Morano; article:published_time 2026-10-28T09:12:37+01:00), letto per intero il 2026-10-29 con curl GET semplice (richiesta: https://www.qualitytravel.it/tassa-di-soggiorno-onorato-propone-di-destinare-il-50-allhousing-sociale-con-calcolo-in-percentuale/194405, HTTP 200). Canale: Google News RSS, query uniformi «Progetto Civico Italia proposta» e «Onorato proposta» (when:2d, HTTP 200); URL ritrovato nel feed della testata (https://www.qualitytravel.it/feed, HTTP 200). Canale ufficiale: https://progettocivicoitalia.it/feed/ HTTP 200, ultimo post 07/09/2026; /wp-json/wp/v2/posts?after=2026-10-27 HTTP 200 (con HTTP/1.1; con HTTP/2 errore di protocollo), nessun post. Livello atteso V2 (discorso riportato da testata aperta, come C27-PCIT-006, 007, 009, 010). Data = pubblicazione della testata (come C27-PCIT-006); il discorso è del 25/10. Confronto automatico di ogni segmento fra «[…]» con il testo estratto dall'HTML scaricato di nuovo: ritrovato. Tagliato l'inciso del cronista «– ha dichiarato Onorato -». Il cronista riporta, senza virgolettato e «secondo l'assessore», che il gettito passerebbe «da un incasso di circa un miliardo di euro a quasi 3,5 miliardi di euro» (periodo non indicato): non messo in costo_dichiarato_proponente perché non è nelle parole del dichiarante; da valutare in verifica (D-021). Il cronista aggiunge che la proposta renderebbe l'imposta proporzionale alla tariffa invece che alle stelle. Collegata a C27-PCIT-012 e 013 (stessa proposta, voci distinte). Doppioni controllati: nessuna riga PCIT sull'imposta di soggiorno (C27-PCIT-006 nota che Il Messaggero riassume senza virgolettato «case popolari 6.600 alloggi l'anno con la tassa di soggiorno»: non registrata allora). Orizzonte/veicolo: non_specificato e dichiarazione (programma presentato agli Stati generali, nessun atto né scadenza). COFOG 01 (imposta; alternativa 04, turismo). Pre-valutazione slogan: OK (parametro: tetto del 5% del costo della stanza; strumento: imposta di soggiorno).",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ L2 2026-10-29 — discorso riportato da testata (D-019); parametro (tetto del 5% del costo della stanza) e imposta nominata"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-PCIT-012",
+    "partitoId": "PCIT",
+    "dichiarante": "Alessandro Onorato",
+    "ruoloDichiarante": "Leader (coordinatore nazionale) di Progetto Civico Italia; assessore di Roma Capitale",
+    "data": "2026-10-28",
+    "testoLetterale": "Se tu fai una legge […] e vincoli il 50% dell’incasso solo all’acquisto di case popolari sul libero mercato, in 5 anni tu hai 30.000 case popolari nuove.",
+    "parafrasiNeutra": "Una legge che vincoli il 50% del gettito dell'imposta di soggiorno all'acquisto di alloggi di edilizia popolare sul mercato; il proponente stima 30.000 alloggi in 5 anni.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.qualitytravel.it/tassa-di-soggiorno-onorato-propone-di-destinare-il-50-allhousing-sociale-con-calcolo-in-percentuale/194405"
+    },
+    "archivioUrl": null,
+    "cofog": "06",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Discorso di Alessandro Onorato agli Stati generali di Progetto Civico Italia (Roma, Hotel Shangri-La, domenica 25/10/2026), virgolettato riportato da Qualitytravel.it (testata online di settore, firma Lara Morano; article:published_time 2026-10-28T09:12:37+01:00), letto per intero il 2026-10-29 con curl GET semplice (richiesta: https://www.qualitytravel.it/tassa-di-soggiorno-onorato-propone-di-destinare-il-50-allhousing-sociale-con-calcolo-in-percentuale/194405, HTTP 200). Canale: Google News RSS, query uniformi «Progetto Civico Italia proposta» e «Onorato proposta» (when:2d, HTTP 200); URL ritrovato nel feed della testata (https://www.qualitytravel.it/feed, HTTP 200). Canale ufficiale: https://progettocivicoitalia.it/feed/ HTTP 200, ultimo post 07/09/2026; /wp-json/wp/v2/posts?after=2026-10-27 HTTP 200 (con HTTP/1.1; con HTTP/2 errore di protocollo), nessun post. Livello atteso V2 (discorso riportato da testata aperta, come C27-PCIT-006, 007, 009, 010). Data = pubblicazione della testata (come C27-PCIT-006); il discorso è del 25/10. Confronto automatico di ogni segmento fra «[…]» con il testo estratto dall'HTML scaricato di nuovo: ritrovato. Tagliato l'inciso del cronista «– continua l’Assessore –» (due parti della stessa frase unite con «[…]»). Il cronista precisa «Case acquistate e non costruite» e, senza virgolettato, che «a livello nazionale, Alessandro Onorato ipotizza l’acquisto di 6.600 case popolari» (periodo non indicato): non nel testo_letterale. 30.000 alloggi in 5 anni è un risultato atteso, non un costo: costo vuoto. Collegata a C27-PCIT-011 (aumento dell'imposta) e 013 (destinazione del restante 50%). Doppioni controllati: nessuna riga PCIT sugli alloggi popolari (vedi nota di C27-PCIT-006, voce non registrata allora per mancanza di virgolettato). Orizzonte/veicolo: non_specificato e dichiarazione («Se tu fai una legge»: nessun atto depositato). COFOG 06 (abitazioni). Pre-valutazione slogan: OK (parametro: 50% del gettito; strumento: vincolo di destinazione per legge).",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ L2 2026-10-29 — discorso riportato da testata (D-019); parametro (50% del gettito) e vincolo di destinazione per legge"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-PCIT-013",
+    "partitoId": "PCIT",
+    "dichiarante": "Alessandro Onorato",
+    "ruoloDichiarante": "Leader (coordinatore nazionale) di Progetto Civico Italia; assessore di Roma Capitale",
+    "data": "2026-10-28",
+    "testoLetterale": "I fondi rimangono ai comuni che reinvestono il rimanente 10% in promozione turistica, 30% manutenzione città, 10% contributo agli affitti calmierati.",
+    "parafrasiNeutra": "Il gettito dell'imposta di soggiorno resta ai Comuni, che ne destinano il 10% alla promozione turistica, il 30% alla manutenzione urbana e il 10% a contributi per gli affitti a canone calmierato.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.qualitytravel.it/tassa-di-soggiorno-onorato-propone-di-destinare-il-50-allhousing-sociale-con-calcolo-in-percentuale/194405"
+    },
+    "archivioUrl": null,
+    "cofog": "06",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Discorso di Alessandro Onorato agli Stati generali di Progetto Civico Italia (Roma, Hotel Shangri-La, domenica 25/10/2026), virgolettato riportato da Qualitytravel.it (testata online di settore, firma Lara Morano; article:published_time 2026-10-28T09:12:37+01:00), letto per intero il 2026-10-29 con curl GET semplice (richiesta: https://www.qualitytravel.it/tassa-di-soggiorno-onorato-propone-di-destinare-il-50-allhousing-sociale-con-calcolo-in-percentuale/194405, HTTP 200). Canale: Google News RSS, query uniformi «Progetto Civico Italia proposta» e «Onorato proposta» (when:2d, HTTP 200); URL ritrovato nel feed della testata (https://www.qualitytravel.it/feed, HTTP 200). Canale ufficiale: https://progettocivicoitalia.it/feed/ HTTP 200, ultimo post 07/09/2026; /wp-json/wp/v2/posts?after=2026-10-27 HTTP 200 (con HTTP/1.1; con HTTP/2 errore di protocollo), nessun post. Livello atteso V2 (discorso riportato da testata aperta, come C27-PCIT-006, 007, 009, 010). Data = pubblicazione della testata (come C27-PCIT-006); il discorso è del 25/10. Confronto automatico di ogni segmento fra «[…]» con il testo estratto dall'HTML scaricato di nuovo: ritrovato. Frase che segue, nello stesso virgolettato, quella di C27-PCIT-012 (nessun taglio). Registrata a parte perché è una voce distinta della stessa proposta (destinazione del restante 50% del gettito), con parametri propri; se il verificatore la considera parte di C27-PCIT-012 la può unire. Doppioni controllati: nessuno. Orizzonte/veicolo: non_specificato e dichiarazione. COFOG 06 (alternative 04 per la promozione turistica e 10 per i contributi all'affitto). Pre-valutazione slogan: OK (parametri: quote del 10%, 30% e 10%).",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ L2 2026-10-29 — discorso riportato da testata (D-019); voce distinta della stessa proposta con parametri propri (10%, 30%, 10%); parafrasi corretta"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-CAPI-015",
+    "partitoId": "CAPI",
+    "dichiarante": "Davide Dibitonto",
+    "ruoloDichiarante": "promotore del Partito Capibara (come nelle righe C27-CAPI-001…014); la fonte lo dice «esponente del Partito Capibara»",
+    "data": "2026-10-28",
+    "testoLetterale": "La soluzione al caro affitti è la casa gratis",
+    "parafrasiNeutra": "Rendere gratuita la casa come risposta al costo degli affitti.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.pressenza.com/it/2026/10/casa-gratis-affitti-aboliti-il-partito-capibara-su-rete-4-lancia-la-rivoluzione-gratuitista/"
+    },
+    "archivioUrl": null,
+    "cofog": "06",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervento di Davide Dibitonto a «Verità Nascoste», Rete 4, martedì 27/10/2026, virgolettato («sostiene Dibitonto») riportato da Pressenza (agenzia stampa internazionale, «Redazione Italia», categoria «Comunicati Stampa», datePublished 2026-10-28T20:49:10+00:00), letto per intero il 2026-10-29 con curl GET semplice (richiesta: https://www.pressenza.com/it/2026/10/casa-gratis-affitti-aboliti-il-partito-capibara-su-rete-4-lancia-la-rivoluzione-gratuitista/, HTTP 200; URL ritrovato nel feed https://www.pressenza.com/it/feed/, HTTP 200). Canale: Google News RSS, query uniformi «Partito Capibara proposta» e «Dibitonto proposta» (when:2d, HTTP 200). Canale ufficiale: https://www.partitocapibara.it/ e /sitemap.xml HTTP 200, 18 pagine di programma senza lastmod, nessuna pagina nuova. Da verificare: il testo è nella categoria «Comunicati Stampa» e la riga d'intestazione indica «Partito Capibara»: con ogni probabilità è il comunicato del partito ripubblicato dall'agenzia (come i comunicati ripresi da Agenzia Opinione, C27-LEGA-035, C27-FI-025); l'ho classificato come discorso riportato (V2) perché il virgolettato viene dall'intervento televisivo, che non ho visto (video su PeerTube e Google Drive, non aperti). Confronto automatico con il testo estratto dall'HTML scaricato di nuovo: ritrovato. Il comunicato aggiunge, senza virgolettato, che il partito propone «di superare il caro vita attraverso la redistribuzione della ricchezza, a partire dai grandi patrimoni miliardari» e cita i sei bisogni da rendere gratuiti (casa, utenze, cibo, trasporti, salute e istruzione), già nel programma (C27-CAPI-007, 009, 011, 012). Possibile ripetizione: la pagina di programma «casa-gratis» è la fonte di C27-CAPI-006 (massimo due case a testa), ma la gratuità della casa in sé non ha una riga propria; da valutare se ribadisce C27-CAPI-006. Data = pubblicazione (l'intervento è del 27/10). Orizzonte/veicolo: non_specificato e dichiarazione. COFOG 06. Pre-valutazione slogan: LIM (valore di arrivo: casa gratuita, come la gratuità di C27-CAPI-007 e 009; nessuno strumento né platea nel virgolettato).",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ L2 2026-10-29 — comunicato del partito («28.10.26 - Partito Capibara») ripubblicato da Pressenza nella categoria «Comunicati Stampa», come i comunicati ripresi da Agenzia Opinione (C27-FI-025, C27-LEGA-035); caso limite superato: valore di arrivo (gratuità della casa), come C27-CAPI-009 e C27-CAPI-012"
+    },
+    "effettoConti": "incerto",
     "ribadita": []
   }
 ]

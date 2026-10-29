@@ -322,3 +322,6 @@
 "C27-AZ-048","","","riallocazione","3000","3000","non_indicato","","3 miliardi di euro"
 "C27-PCIT-010","","nessuna famiglia definita: è una riallocazione di risorse dal Ponte sullo Stretto alla scuola, non uno strumento con beneficiari delle sette famiglie","riallocazione","14000","14000","non_indicato","","14 miliardi di euro"
 "C27-PAP-011","","","non_strutturabile","","","non_indicato","","4,5 miliardi (importo indicato dal proponente come aumento di spesa per armamenti da non fare, non come costo)"
+"C27-FDI-020","","nessuna famiglia definita: è lo spostamento di una quota di IMU sugli immobili produttivi dallo Stato ai Comuni delle aree interne, non uno strumento con beneficiari delle sette famiglie (la famiglia tasse_prima_casa riguarda la prima casa)","riallocazione","700","700","annuo","","700 milioni di euro annui dal 2027"
+"C27-PD-037","","nessuna famiglia definita: è un aumento del finanziamento della sanità, non uno strumento con beneficiari delle sette famiglie","spesa","18000","18000","totale","3","18 miliardi di euro nei prossimi tre anni"
+"C27-AVS-070","","nessuna famiglia definita: è una copertura ottenuta spostando risorse dai nuovi programmi d'arma, non uno strumento con beneficiari delle sette famiglie","riallocazione","1800","1800","annuo","","1,8 miliardi di euro l'anno"
