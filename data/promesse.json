@@ -564,7 +564,24 @@
       "dettaglio": "V1✓ verificatore 2026-10-20 — CORRETTA: ruolo (carica di governo aggiunta); la specificazione «cauzione, fideiussione o assicurazione» della parafrasi viene da #34 (26/7), non da #41: corretto in nota | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: proposta di legge]"
     },
     "effettoConti": "no",
-    "ribadita": []
+    "ribadita": [
+      {
+        "id": "C27-LEGA-037",
+        "dichiarante": "Matteo Salvini",
+        "ruoloDichiarante": "segretario federale Lega (rieletto al congresso del 25/10/2026), senatore; vicepresidente del Consiglio e ministro delle Infrastrutture e dei Trasporti",
+        "data": "2026-10-29",
+        "testoLetterale": "Continuo a ritenere una priorità la proposta della Lega di chiedere una cauzione personale a chi organizza cortei e manifestazioni, che in caso di danni ne paghi personalmente ed economicamente le conseguenze",
+        "tipoFonte": "discorso",
+        "fonte": {
+          "url": "https://www.lavocedigenova.it/2026/10/29/leggi-notizia/argomenti/politica-6/articolo/sciopero-generale-salvini-difende-la-precettazione-ho-fatto-il-mio-dovere-treni-regolari-e-ril.html"
+        },
+        "archivioUrl": null,
+        "verifica": {
+          "livello": "V2",
+          "dettaglio": "V2✓ L2 2026-10-30 — dichiarazione ai giornalisti a margine degli Stati Generali della Logistica (Genova, 29/10) riportata da testata aperta (La Voce di Genova, GET 200): discorso riportato, V2 (D-019); citazione ritrovata parola per parola, nessun taglio; dichiarante autorizzato (segretario federale) che parla di «la proposta della Lega»; strumento identificato (cauzione personale a carico degli organizzatori di cortei e manifestazioni), come C27-LEGA-007, che ribadisce in sostanza (classificazione «ribadisce» ad altri)"
+        }
+      }
+    ]
   },
   {
     "id": "C27-LEGA-008",
@@ -2106,6 +2123,87 @@
     "ribadita": []
   },
   {
+    "id": "C27-FI-028",
+    "partitoId": "FI",
+    "dichiarante": "Enrico Costa; Stefania Craxi",
+    "ruoloDichiarante": "capogruppo FI alla Camera; presidente dei senatori di Forza Italia",
+    "data": "2026-10-29",
+    "testoLetterale": "C’è un altro impegno che consideriamo prioritario e irrinunciabile, e che intendiamo portare fino in fondo: la previdenza dedicata per le donne e gli uomini delle Forze dell’ordine e delle Forze armate.",
+    "parafrasiNeutra": "Un trattamento previdenziale dedicato al personale delle Forze dell'ordine e delle Forze armate; i gruppi FI dicono che lavoreranno anche durante l'esame parlamentare della manovra per individuare le risorse.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-manovra-craxi-costa-fi-soddisfatti-per-i-risultati-ottenuti-ora-avanti-fino-a-garantire-la-previdenza-dedicata-a-forze-dellordine-e-forze-armate/"
+    },
+    "archivioUrl": null,
+    "cofog": "10",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 3 (Agenzia Opinione): feed https://www.agenziagiornalisticaopinione.it/feed/ e /feed/?paged=2…22 (HTTP 200), comunicato «FI – FORZA ITALIA * SENATO» del 29/10/2026 (article:published_time 2026-10-29T10:01:46+01:00), «Lo dichiarano congiuntamente i presidenti dei gruppi parlamentari di Forza Italia alla Camera e al Senato, Enrico Costa e Stefania Craxi»: capigruppo, dichiaranti autorizzati. Pagina scaricata con curl GET semplice (HTTP 200) il 2026-10-30; citazione confrontata in automatico: ritrovata, nessun taglio. Livello atteso V2 (come C27-FI-025/026). Il seguito precisa il veicolo: i gruppi lavoreranno «anche durante l’esame parlamentare della manovra, per individuare le risorse necessarie e ottenere una soluzione concreta e definitiva». Stesso impegno, stesso giorno, da Antonio Tajani (ANSA ripresa dalla Gazzetta del Mezzogiorno, https://www.lagazzettadelmezzogiorno.it/news/ultima-ora/2189780/tajani-da-risolvere-il-nodo-previdenza-per-militari-e-forze-dell-ordine.html, HTTP 200, 29/10 12:25: «Mi auguro che si possa risolvere a livello di governo, altrimenti presenteremo degli emendamenti durante la finanziaria affinché si possa risolvere il problema»): non registrato come riga a parte (stesso partito, stessa misura; da valutare dal verificatore). La prima parte del comunicato rivendica misure già nel ddl di bilancio approvato dal Cdm (Irpef 33% fino a 55 mila, card sanitaria anziani): non registrate. Orizzonte/veicolo: legislatura_in_corso, richiesta_legge_bilancio (alternativa emendamento). COFOG 10 (pensioni; alternativa 02/03 per il comparto). Doppioni: nessuna riga FI sulla previdenza delle Forze dell'ordine. Pre-valutazione slogan: LIM (istituto identificato, «previdenza dedicata», senza parametri né importo). Wayback (archive.org/wayback/available, sola lettura, 2026-10-30): nessuna copia esistente.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ L2 2026-10-30 — comunicato congiunto dei presidenti dei gruppi FI di Camera e Senato (Costa, Craxi) ripubblicato da Agenzia Opinione, come C27-FI-025/026; citazione ritrovata parola per parola; dichiaranti autorizzati (capigruppo); caso limite superato: istituto nominato («previdenza dedicata», trattamento previdenziale specifico) con platea definita (Forze dell'ordine e Forze armate), senza parametri — CORRETTA: parafrasi (la fonte dice che i gruppi lavoreranno «anche durante l'esame parlamentare della manovra, per individuare le risorse», non che la misura sia da finanziare in quella sede)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-FI-029",
+    "partitoId": "FI",
+    "dichiarante": "Antonio Tajani",
+    "ruoloDichiarante": "segretario nazionale Forza Italia, deputato; vicepresidente del Consiglio e ministro degli Affari esteri",
+    "data": "2026-10-29",
+    "testoLetterale": "noi avevamo chiesto di arrivare con l’Irpef al 33% fino ai redditi da 60 mila euro: lo faremo nella prossima Manovra, sappiamo che la coperta è corta.",
+    "parafrasiNeutra": "Estendere l'aliquota Irpef del 33% ai redditi fino a 60.000 euro con la prossima legge di bilancio.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.lagazzettadelmezzogiorno.it/news/ultima-ora/2189777/tajani-nella-manovra-accolte-tutte-le-richieste-di-forza-italia.html"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 2 (Google News RSS (query uniformi when:2d, HTTP 200)): query «Tajani intervista» e «Forza Italia intervista», titolo «Tajani “Nella manovra accolte tutte le richieste di Forza Italia”» (La Gazzetta del Mezzogiorno); link di Google News non aperto, articolo ritrovato nella sitemap news del sito (siteMapNews.jsp) e letto con curl GET semplice (HTTP 200; datePublished 2026-10-29T12:24:09+01:00), letto il 2026-10-30. Lancio ITALPRESS che riporta fra virgolette l'intervista di Tajani al Corriere della Sera (testata a pagamento, non letta): virgolettato su testata aperta, livello atteso V2 (non V1, perché l'intervista originale non è stata letta). Citazione confrontata in automatico: ritrovata, nessun taglio. Probabile ripetizione di C27-FI-027 (Cattaneo, 28/10: «poi nella prossima legislatura fino a 60.000») e di C27-FI-018; qui la seconda fase è legata alla «prossima Manovra». Orizzonte/veicolo: non_specificato (la «prossima Manovra» è la legge di bilancio per il 2028, che cade dopo le politiche 2027: alternativa prossima_legislatura, come C27-FI-027) e dichiarazione (alternativa richiesta_legge_bilancio). Il resto dell'intervista rivendica misure del ddl di bilancio (tasse azzerate per gli under 30, card anziani, bollo auto, cedolare all'1%, flat tax a 100 mila): non registrate. COFOG 01. Pre-valutazione slogan: OK (aliquota, soglia e scadenza). Wayback (archive.org/wayback/available, sola lettura, 2026-10-30): nessuna copia esistente.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ L2 2026-10-30 — intervista al Corriere della Sera (a pagamento, non letta) riportata con virgolettato da un lancio ITALPRESS su La Gazzetta del Mezzogiorno (GET 200, 29/10 12:24): citazione verificata sulla ripresa, non sul testo dell'intervista, quindi resta V2 come C27-FI-009; per l'import va aggiunta a INTERVIEW_V2_OTHER_REASON (altrimenti interviewAsPrimary la porta a V1); dichiarante autorizzato (segretario nazionale); aliquota (33%), soglia (60.000 euro) e scadenza («nella prossima Manovra»); orizzonte non_specificato corretto (il testo non dice «prossima legislatura»); ribadisce in sostanza C27-FI-001 e C27-FI-027 (classificazione ad altri)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-FI-030",
+    "partitoId": "FI",
+    "dichiarante": "Stefania Craxi; Daniela Ternullo",
+    "ruoloDichiarante": "presidente dei senatori di Forza Italia; vicepresidente del gruppo FI al Senato",
+    "data": "2026-10-29",
+    "testoLetterale": "Per questo abbiamo presentato in Senato un ddl delega per la protezione del processo elettorale, dalle comunali alle europee. […] Punta su prevenzione, monitoraggio e capacità di reazione, per individuare per tempo le campagne coordinate, cooperare a livello nazionale ed europeo",
+    "parafrasiNeutra": "Disegno di legge delega per la protezione del processo elettorale, dalle elezioni comunali alle europee, basato su prevenzione, monitoraggio e capacità di reazione per individuare le campagne coordinate, con cooperazione nazionale ed europea.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "proposta_di_legge",
+    "fonte": {
+      "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-elezioni-craxi-e-ternullo-da-fi-ddl-delega-si-a-tutela-voto-no-a-reati-dopinione/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 3 (Agenzia Opinione): feed https://www.agenziagiornalisticaopinione.it/feed/ e /feed/?paged=2…22 (HTTP 200), comunicato «FI – FORZA ITALIA * SENATO» del 29/10/2026 (article:published_time 2026-10-29T09:10:56+01:00) che riporta fra virgolette l'intervento di Stefania Craxi (capogruppo) e Daniela Ternullo (vicepresidente del gruppo) su Il Riformista (non letto). Pagina scaricata con curl GET semplice (HTTP 200) il 2026-10-30; citazione confrontata in automatico: ritrovata, nessun taglio. Livello atteso V2. Atto di gruppo (prima persona plurale, capogruppo fra i dichiaranti, come C27-FDI-015…017), non atto personale. Contenuto dichiarato: «Punta su prevenzione, monitoraggio e capacità di reazione, per individuare per tempo le campagne coordinate, cooperare a livello nazionale ed europeo, usare l’ intelligenza artificiale […]»; il testo «non istituisce un tribunale della verità, non introduce reati d’opinione, non tocca le regole sulla validità delle elezioni» (descrizioni del contenuto, non voci distinte: una riga). Probabilmente è il ddl S. 2068 (Craxi, FI, 22/10), segnalato come lacuna nella nota canali del 29/10: l'agente degli atti di Camera e Senato potrebbe censirlo come atto (evitare il doppione). Orizzonte/veicolo: legislatura_in_corso, proposta_di_legge. COFOG 01. Doppioni: nessuna riga FI sulla protezione del processo elettorale. Pre-valutazione slogan: OK (legge delega con oggetto definito). Wayback (archive.org/wayback/available, sola lettura, 2026-10-30): nessuna copia esistente.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ L2 2026-10-30 — comunicato del gruppo FI al Senato ripubblicato da Agenzia Opinione che riporta l'intervento di Craxi e Ternullo su Il Riformista; citazione ritrovata parola per parola; atto di gruppo (prima persona plurale, capogruppo fra i dichiaranti), non atto personale (D-012); legge delega con oggetto definito — CORRETTA: testo_letterale esteso con la frase che descrive il contenuto del ddl (senza, la citazione darebbe solo la materia, come C27-FDI-018) e parafrasi ristretta al testo (il «senza nuovi reati d'opinione» non era nella citazione)"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
     "id": "C27-PD-008",
     "partitoId": "PD",
     "dichiarante": "Partito Democratico (documento nazionale presentato da Marina Sereni)",
@@ -2130,7 +2228,24 @@
       "dettaglio": "V1✓ verificatore 2026-10-20 — CONFERMATA (citazione nel PDF; contesto: descrive la PdL già presentata dal PD; i «20 miliardi» non compaiono nel PDF, sono nella nota di presentazione di Sereni riportata da QS 02/10/2026: costo V2)"
     },
     "effettoConti": "si",
-    "ribadita": []
+    "ribadita": [
+      {
+        "id": "C27-PD-042",
+        "dichiarante": "Francesco Boccia",
+        "ruoloDichiarante": "capogruppo PD al Senato, senatore",
+        "data": "2026-10-29",
+        "testoLetterale": "la dotazione finanziaria si misura in rapporto al Pil, resta comunque sotto il 6% contro una media Ue del 7. Dove la porteremo noi una volta al governo",
+        "tipoFonte": "intervista",
+        "fonte": {
+          "url": "https://senatoripd.it/boccia-solo-spot-e-propaganda-chi-arrivera-dopo-trovera-macerie/"
+        },
+        "archivioUrl": null,
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ L2 2026-10-30 — intervista di Giovanna Vitale a Boccia su La Repubblica, ripubblicata per intero su senatoripd.it (canale del gruppo PD al Senato; la pagina indica la testata, contrariamente alla nota): intervista per D-019; citazione ritrovata parola per parola; dichiarante autorizzato (capogruppo PD al Senato); valore di arrivo (7% del PIL, media UE) con orizzonte esplicito («una volta al governo»); ribadisce in sostanza C27-PD-001 / C27-PD-008 (classificazione ad altri)"
+        }
+      }
+    ]
   },
   {
     "id": "C27-PD-009",
@@ -2616,7 +2731,24 @@
       "dettaglio": "V1✓ verificatore 2026-10-20 — CONFERMATA (PDF NOVA_20_PUNTI; capitolo verificato; proposta approvata nella consultazione 18-20/09/2026 (Risultati-votazioni-NOVA-2026.pdf, tutte >84% sì))"
     },
     "effettoConti": "si",
-    "ribadita": []
+    "ribadita": [
+      {
+        "id": "C27-M5S-057",
+        "dichiarante": "Giuseppe Conte",
+        "ruoloDichiarante": "presidente del MoVimento 5 Stelle, deputato",
+        "data": "2026-10-29",
+        "testoLetterale": "Hanno ignorato le nostre proposte per la scala mobile fiscale automatica per difendere gli stipendi dai rincari",
+        "tipoFonte": "discorso",
+        "fonte": {
+          "url": "https://ildomaniditalia.eu/manovra-conte-la-targa-personalizzata-del-governo-e-carovita-me-ne-frego/"
+        },
+        "archivioUrl": null,
+        "verifica": {
+          "livello": "V2",
+          "dettaglio": "V2✓ L2 2026-10-30 — post Facebook di Conte riportato da askanews (Il Domani d'Italia): V2; citazione ritrovata; caso limite superato: il nome descrive il meccanismo (adeguamento fiscale automatico all'inflazione per gli stipendi), come il cashback fiscale di C27-M5S-049; vicina a C27-M5S-007 (classificazione ad altri)"
+        }
+      }
+    ]
   },
   {
     "id": "C27-M5S-008",
@@ -2643,7 +2775,40 @@
       "dettaglio": "V1✓ verificatore 2026-10-20 — CORRETTA: parafrasi sostituiva «industria bellica» del testo con «industria della difesa» (PDF NOVA_20_PUNTI; capitolo verificato; proposta approvata nella consultazione 18-20/09/2026 (Risultati-votazioni-NOVA-2026.pdf, tutte >84% sì))"
     },
     "effettoConti": "si",
-    "ribadita": []
+    "ribadita": [
+      {
+        "id": "C27-M5S-056",
+        "dichiarante": "Giuseppe Conte",
+        "ruoloDichiarante": "presidente del MoVimento 5 Stelle, deputato",
+        "data": "2026-10-29",
+        "testoLetterale": "dopo anni e anni di no alle nostre proposte di una vera tassa sugli extraprofitti bancari",
+        "tipoFonte": "discorso",
+        "fonte": {
+          "url": "https://ildomaniditalia.eu/manovra-conte-la-targa-personalizzata-del-governo-e-carovita-me-ne-frego/"
+        },
+        "archivioUrl": null,
+        "verifica": {
+          "livello": "V2",
+          "dettaglio": "V2✓ L2 2026-10-30 — post Facebook di Conte riportato con virgolettato da askanews, ripubblicato da Il Domani d'Italia (GET 200): dichiarazione riportata, V2 come discorso (post originale non letto); citazione ritrovata; dichiarante autorizzato (presidente); le «nostre proposte» sono richiamate come proposte del partito, non come critica controfattuale; caso limite superato: imposta nominata con base definita (extraprofitti bancari), come C27-M5S-008, che ribadisce in sostanza (classificazione ad altri)"
+        }
+      },
+      {
+        "id": "C27-M5S-063",
+        "dichiarante": "Michele Gubitosa",
+        "ruoloDichiarante": "vicepresidente del MoVimento 5 Stelle, deputato",
+        "data": "2026-10-29",
+        "testoLetterale": "Se dovessimo tornare al governo, […] introdurremmo vere tasse sugli extraprofitti di chi si è arricchito con queste guerre, a partire dalle compagnie petrolifere e dalle banche",
+        "tipoFonte": "intervista",
+        "fonte": {
+          "url": "https://giornaleradio.fm/le-esclusive-di-giornale-radio/manovra-gubitosa-m5s-14-miliardi-in-armi-mentre-i-cittadini-sono-in-crisi-e-un-cortocircuito/"
+        },
+        "archivioUrl": null,
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ L2 2026-10-30 — intervista a Gubitosa nel programma «Corrente alternata» pubblicata in testo dalla testata che l'ha fatta (Giornale Radio, testata registrata, GET 200): intervista per D-019; citazione ritrovata, il «[…]» toglie solo «diremmo no alle armi e» (C27-M5S-062); dichiarante: vicepresidente del partito, ammesso come C27-M5S-047 (Turco); imposta nominata con base e settori (extraprofitti, a partire da compagnie petrolifere e banche), come C27-M5S-008; orizzonte esplicito («Se dovessimo tornare al governo»)"
+        }
+      }
+    ]
   },
   {
     "id": "C27-M5S-009",
@@ -2805,7 +2970,24 @@
       "dettaglio": "V1✓ verificatore 2026-10-20 — CONFERMATA (PDF NOVA_20_PUNTI; capitolo verificato; proposta approvata nella consultazione 18-20/09/2026 (Risultati-votazioni-NOVA-2026.pdf, tutte >84% sì))"
     },
     "effettoConti": "si",
-    "ribadita": []
+    "ribadita": [
+      {
+        "id": "C27-M5S-060",
+        "dichiarante": "Giuseppe Conte",
+        "ruoloDichiarante": "presidente del MoVimento 5 Stelle, deputato",
+        "data": "2026-10-29",
+        "testoLetterale": "Hanno ignorato le nostre proposte […] per recuperare soldi […] dai 13 miliardi del Ponte da mettere sulle scuole",
+        "tipoFonte": "discorso",
+        "fonte": {
+          "url": "https://ildomaniditalia.eu/manovra-conte-la-targa-personalizzata-del-governo-e-carovita-me-ne-frego/"
+        },
+        "archivioUrl": null,
+        "verifica": {
+          "livello": "V2",
+          "dettaglio": "V2✓ L2 2026-10-30 — post Facebook di Conte riportato da askanews (Il Domani d'Italia): V2; citazione ritrovata, i «[…]» tolgono solo le altre voci dell'elenco; importo (13 miliardi) e destinazione (scuole) dichiarati; ribadisce in sostanza C27-M5S-014 (classificazione ad altri)"
+        }
+      }
+    ]
   },
   {
     "id": "C27-M5S-015",
@@ -5964,6 +6146,87 @@
       "dettaglio": "V1✓ L2 2026-10-29 — strumento descritto (misure incentivanti con criteri di priorità e punteggio nelle progressioni e negli incarichi); Zanella, capogruppo AVS, sottoscrive in Aula il 27/10"
     },
     "effettoConti": "incerto",
+    "ribadita": []
+  },
+  {
+    "id": "C27-PD-052",
+    "partitoId": "PD",
+    "dichiarante": "Elly Schlein",
+    "ruoloDichiarante": "Segretaria nazionale PD, deputata",
+    "data": "2026-10-29",
+    "testoLetterale": "c’è una categoria che non dovrebbe esistere, gli idonei non beneficiari, serve un aiuto nazionale",
+    "parafrasiNeutra": "Un aiuto nazionale per gli studenti idonei non beneficiari di borsa di studio.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.antennaradioesse.it/a-montepulciano-si-sono-incontrati-i-vertici-del-correntone-dem-schlein-andiamo-a-vincere/"
+    },
+    "archivioUrl": null,
+    "cofog": "09",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (query uniformi «PD intervista», «PD proposta», «Schlein intervista», «Schlein proposta», when:2d; https://news.google.com/rss/search?q=<query>+when:2d&hl=it&gl=IT&ceid=IT:it, HTTP 200 per tutte), trovata con «Schlein intervista». Testata Antenna Radio Esse (antennaradioesse.it), articolo di Jori Diego Cherubini, article:published_time 2026-10-29T15:26:33+00:00, letto per intero il 2026-10-30 con curl GET semplice (HTTP 200), testata aperta. Discorso di Elly Schlein al raduno delle aree PD a Montepulciano riportato con virgolettato: V2. Nella stessa frase, non registrati come slogan: precarietà «da combattere come hanno fatto in Spagna» (come C27-PD-035, già fuori) e «bisogna invertire lo spopolamento». Sandro Ruotolo (responsabile cultura PD) nello stesso articolo: «Nei primi cento giorni del nostro governo dobbiamo riconoscere lo stato di Palestina»: non registrato, responsabile nazionale fuori dal proprio tema (criterio di C27-PD-026/027). «Idonei non beneficiari»: studenti idonei alla borsa di studio universitaria che non la ricevono per mancanza di fondi (contesto: «di studio e scuola»). COFOG 09. Pre-valutazione slogan: LIM (platea definita, strumento «aiuto nazionale» generico). Orizzonte/veicolo: non_specificato, dichiarazione. Citazione confrontata in automatico con il testo scaricato una seconda volta il 2026-10-30 (curl GET semplice, HTTP 200): ogni segmento fra «[…]» ritrovato nell'ordine, a meno di spazi e apostrofi tipografici. Wayback archive.org/wayback/available (solo lettura, 2026-10-30): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ L2 2026-10-30 — discorso di Schlein a Montepulciano riportato con virgolettato da testata aperta (Antenna Radio Esse, GET 200): V2 (D-019); citazione ritrovata parola per parola; caso limite superato: platea definita da una condizione giuridica (idonei alla borsa di studio non beneficiari) e valore di arrivo («una categoria che non dovrebbe esistere»: nessun idoneo senza borsa), diverso dalle categorie di persone senza leva (C27-FI-014, C27-NM-006); «aiuto nazionale» da solo non basterebbe — segnalato come caso limite"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-PD-053",
+    "partitoId": "PD",
+    "dichiarante": "Elly Schlein",
+    "ruoloDichiarante": "Segretaria nazionale PD, deputata",
+    "data": "2026-10-29",
+    "testoLetterale": "bisogna assicurare il diritto all’istruzione in tutte le regioni e rendere gratuiti i libri di testo anche alle superiori",
+    "parafrasiNeutra": "Rendere gratuiti i libri di testo anche nelle scuole superiori, per assicurare il diritto all'istruzione in tutte le regioni.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.antennaradioesse.it/a-montepulciano-si-sono-incontrati-i-vertici-del-correntone-dem-schlein-andiamo-a-vincere/"
+    },
+    "archivioUrl": null,
+    "cofog": "09",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (query uniformi «PD intervista», «PD proposta», «Schlein intervista», «Schlein proposta», when:2d; https://news.google.com/rss/search?q=<query>+when:2d&hl=it&gl=IT&ceid=IT:it, HTTP 200 per tutte), trovata con «Schlein intervista». Testata Antenna Radio Esse (antennaradioesse.it), articolo di Jori Diego Cherubini, article:published_time 2026-10-29T15:26:33+00:00, letto per intero il 2026-10-30 con curl GET semplice (HTTP 200), testata aperta. Discorso di Elly Schlein al raduno delle aree PD a Montepulciano riportato con virgolettato: V2. Nella stessa frase, non registrati come slogan: precarietà «da combattere come hanno fatto in Spagna» (come C27-PD-035, già fuori) e «bisogna invertire lo spopolamento». Sandro Ruotolo (responsabile cultura PD) nello stesso articolo: «Nei primi cento giorni del nostro governo dobbiamo riconoscere lo stato di Palestina»: non registrato, responsabile nazionale fuori dal proprio tema (criterio di C27-PD-026/027). Stessa frase di C27-PD-052, voce distinta. COFOG 09. Pre-valutazione slogan: OK (gratuità con platea definita). Orizzonte/veicolo: non_specificato, dichiarazione. Citazione confrontata in automatico con il testo scaricato una seconda volta il 2026-10-30 (curl GET semplice, HTTP 200): ogni segmento fra «[…]» ritrovato nell'ordine, a meno di spazi e apostrofi tipografici. Wayback archive.org/wayback/available (solo lettura, 2026-10-30): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ L2 2026-10-30 — discorso riportato da testata aperta (Antenna Radio Esse): V2 (D-019); citazione ritrovata parola per parola; valore di arrivo (gratuità dei libri di testo) con platea definita (scuole superiori); la prima parte («assicurare il diritto all'istruzione in tutte le regioni») da sola sarebbe slogan"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-M5S-061",
+    "partitoId": "M5S",
+    "dichiarante": "Giuseppe Conte",
+    "ruoloDichiarante": "presidente del MoVimento 5 Stelle, deputato",
+    "data": "2026-10-29",
+    "testoLetterale": "Non ci hanno ascoltato […] su un taglio Irpef di 5 anni per gli under 35 prima che scappino a cercare stipendi altrove",
+    "parafrasiNeutra": "Un taglio dell'Irpef per cinque anni per gli under 35.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://ildomaniditalia.eu/manovra-conte-la-targa-personalizzata-del-governo-e-carovita-me-ne-frego/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (query uniformi «M5S intervista», «M5S proposta», «Conte intervista», «Conte proposta», when:2d; HTTP 200 per tutte), trovata con «Conte proposta»; articolo letto sul sito della testata con l'API WordPress (ildomaniditalia.eu/wp-json/wp/v2/posts?search=Conte, HTTP 200) e la pagina (HTTP 200) il 2026-10-30. Il Domani d'Italia ripubblica un lancio askanews del 2026-10-29 (datePublished 2026-10-29T15:26:00+00:00) che riporta con virgolettato il post Facebook di Giuseppe Conte «Dopo 4 anni ecco la targa del Governo: ‘carovita, me ne frego'»: dichiarazione riportata da testata aperta (V2); il post originale su Facebook non è stato letto. Pacchetto: elenco delle «nostre proposte» ignorate dal Governo, una riga per voce. Non registrato: «ora dare tutto, senza perdere un secondo» (non di policy). Le due parti sono separate solo dall'inciso «– prosegue Conte –», unite con «[…]». Nessuna riga M5S con la stessa misura nel catalogo (collegabile a C27-CSX-005, start tax della risoluzione unitaria, soggetto distinto). COFOG 01. Pre-valutazione slogan: OK (platea e durata; entità del taglio non indicata). Orizzonte/veicolo: non_specificato, dichiarazione. Citazione confrontata in automatico con il testo scaricato una seconda volta il 2026-10-30 (curl GET semplice, HTTP 200): ogni segmento fra «[…]» ritrovato nell'ordine, a meno di spazi e apostrofi tipografici. Wayback archive.org/wayback/available (solo lettura, 2026-10-30): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ L2 2026-10-30 — post Facebook di Conte riportato da askanews (Il Domani d'Italia): V2; citazione ritrovata, il «[…]» toglie solo l'inciso «– prosegue Conte –» (regola del runbook) e nessuna parola sul gruppo descritto; imposta nominata con platea (under 35) e durata (5 anni), entità del taglio non indicata"
+    },
+    "effettoConti": "si",
     "ribadita": []
   },
   {
@@ -9369,6 +9632,114 @@
     "ribadita": []
   },
   {
+    "id": "C27-AZ-061",
+    "partitoId": "AZ",
+    "dichiarante": "Carlo Calenda",
+    "ruoloDichiarante": "Segretario di Azione, senatore",
+    "data": "2026-10-29",
+    "testoLetterale": "Noi avevamo proposto due misure: una sull’aumento di stipendio, detassazione dai 35 anni in giù (sono 5 anni che la proponiamo).",
+    "parafrasiNeutra": "Una misura «sull'aumento di stipendio»: detassazione per chi ha 35 anni o meno, proposta in relazione alla legge di bilancio.",
+    "tipoFonte": "intervista",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://www.cremonaoggi.it/2026/10/29/carlo-calenda-a-cremona-sostegno-la-candidatura-della-citta-a-capitale-della-cultura/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervista a Carlo Calenda («Il Senatore e leader di Azione», «segretario di Azione») di Andrea Colla su CremonaOggi (testata aperta, domande e risposte; article:published_time 2026-10-29T19:11:04Z), a Cremona per la presentazione del libro «Difendere la libertà – l’ora dell’Europa»: intervista pubblicata dalla testata, fonte primaria (D-019), livello atteso V1. Canale: Google News RSS, query uniforme «Calenda proposta» when:2d (HTTP 200), che dà l'articolo di Cremona Sera sulla stessa serata (cremonasera.it, letto con curl GET, HTTP 200: resoconto senza virgolettati sulle misure, solo sintesi del giornalista, nessuna riga); stessa serata ritrovata con «Calenda Cremona» (GN, HTTP 200) su CremonaOggi, letta con curl GET semplice (https://www.cremonaoggi.it/2026/10/29/carlo-calenda-a-cremona-sostegno-la-candidatura-della-citta-a-capitale-della-cultura/, HTTP 200, 2026-10-30). Canali ufficiali di Azione senza contenuti nel periodo: API WordPress di azione.it (GET /wp-json/wp/v2/posts?after=2026-10-29T00:00:00, HTTP 200, lista vuota); Telegram https://t.me/s/EntrainAzione (HTTP 200), ultimo post il 28/10 14:49 UTC. Risposta alla domanda «Partiamo dalle ultimissime notizie: la legge di bilancio. Qualche considerazione?»; le «due misure» sono una riga ciascuna. Nessun taglio («dai 35 anni in giù» descrive la platea e resta). Possibile ripetizione di C27-AZ-054 (tassazione al 5% per gli under 35, 28/10) e C27-AZ-052 (detassazione completa under 30, 24/10): qui la misura riguarda solo l'aumento di stipendio, senza aliquota; la classificazione la fanno altri. Imposta e misura della detassazione non indicate: misurabile parziale. COFOG 01 (regola imposte → 01). Orizzonte/veicolo: legislatura_in_corso e richiesta_legge_bilancio (la domanda nomina la legge di bilancio; «avevamo proposto» si riferisce alla manovra in discussione), come C27-AZ-054. Pre-valutazione slogan: OK (platea con soglia d'età e oggetto definito: aumenti di stipendio). Testo_letterale confrontato in automatico con il testo HTML scaricato il 2026-10-30 con curl GET semplice (HTTP 200): ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 30/10): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ L2 2026-10-30 — intervista su testata (D-019): CremonaOggi pubblica domande e risposte della testata (domande proprie come «Oggi presenta il suo libro…», distinte dall'incontro moderato da Gualandris); citazione ritrovata parola per parola (curl GET, HTTP 200, 2026-10-30; article:published_time 2026-10-29T19:11:04Z); dichiarante autorizzato (segretario di Azione); platea con soglia d'età (35 anni o meno) e leva definita (detassazione), come C27-AZ-052; nessun taglio; richiesta sulla legge di bilancio con contenuto di policy, proposta propria (D-012) — CORRETTA: parafrasi (il testo dice «una sull'aumento di stipendio, detassazione dai 35 anni in giù», subito dopo la critica allo «sconto fiscale solo sugli aumenti di stipendio»: la parafrasi non deve scegliere fra detassazione dell'aumento e dello stipendio)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-AZ-066",
+    "partitoId": "AZ",
+    "dichiarante": "Carlo Calenda",
+    "ruoloDichiarante": "Segretario di Azione, senatore",
+    "data": "2026-10-29",
+    "testoLetterale": "Noi abbiamo bisogno che l’Unione abbia più fondi, più fondi anche propri: mettiamo un bel 10% di dazi alla Cina che ci sta invadendo di prodotti in dumping",
+    "parafrasiNeutra": "Dare all’Unione europea più risorse proprie con dazi del 10% sulle importazioni dalla Cina.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.cremonaoggi.it/2026/10/29/carlo-calenda-a-cremona-sostegno-la-candidatura-della-citta-a-capitale-della-cultura/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervista a Carlo Calenda («Il Senatore e leader di Azione», «segretario di Azione») di Andrea Colla su CremonaOggi (testata aperta, domande e risposte; article:published_time 2026-10-29T19:11:04Z), a Cremona per la presentazione del libro «Difendere la libertà – l’ora dell’Europa»: intervista pubblicata dalla testata, fonte primaria (D-019), livello atteso V1. Canale: Google News RSS, query uniforme «Calenda proposta» when:2d (HTTP 200), che dà l'articolo di Cremona Sera sulla stessa serata (cremonasera.it, letto con curl GET, HTTP 200: resoconto senza virgolettati sulle misure, solo sintesi del giornalista, nessuna riga); stessa serata ritrovata con «Calenda Cremona» (GN, HTTP 200) su CremonaOggi, letta con curl GET semplice (https://www.cremonaoggi.it/2026/10/29/carlo-calenda-a-cremona-sostegno-la-candidatura-della-citta-a-capitale-della-cultura/, HTTP 200, 2026-10-30). Canali ufficiali di Azione senza contenuti nel periodo: API WordPress di azione.it (GET /wp-json/wp/v2/posts?after=2026-10-29T00:00:00, HTTP 200, lista vuota); Telegram https://t.me/s/EntrainAzione (HTTP 200), ultimo post il 28/10 14:49 UTC. Risposta alla domanda «Unione Europea: a proposito di scadenze, si avvicina anche quella del bilancio pluriennale. […] come dovrebbe muoversi il Governo?»; la risposta elenca le voci «più PNRR, più politica agricola, più politica di coesione» e poi dazi e debito comune: una riga per voce (elenco anaforico, §2 della nota di uniformità). Stessa risposta di C27-AZ-063…065; la frase continua con «e finanziamo una linea di debito dell’Unione per 1.000 miliardi di euro» (C27-AZ-067). Nessun taglio. Doppioni: nessuna riga di Azione su dazi o risorse proprie UE. Dazio europeo: misura dell'Unione, non nazionale (il verificatore valuti se rientra nel perimetro come le altre richieste sul bilancio UE, per esempio C27-FN-036). COFOG 01 (regola imposte → 01). Orizzonte/veicolo: non_specificato e dichiarazione, come C27-AZ-063. Pre-valutazione slogan: OK (aliquota e base definite). Testo_letterale confrontato in automatico con il testo HTML scaricato il 2026-10-30 con curl GET semplice (HTTP 200): ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 30/10): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ L2 2026-10-30 — intervista su testata (D-019): CremonaOggi pubblica domande e risposte della testata (domande proprie come «Oggi presenta il suo libro…», distinte dall'incontro moderato da Gualandris); citazione ritrovata parola per parola (curl GET, HTTP 200, 2026-10-30; article:published_time 2026-10-29T19:11:04Z); dichiarante autorizzato (segretario di Azione); aliquota e base definite (dazi del 10% sulle importazioni dalla Cina) come risorsa propria dell'Unione; proposta di livello UE nel perimetro come le altre posizioni dei partiti sull'Unione (C27-PE-004, C27-FI-025); nessun taglio; «che ci sta invadendo di prodotti in dumping» resta"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-AZ-067",
+    "partitoId": "AZ",
+    "dichiarante": "Carlo Calenda",
+    "ruoloDichiarante": "Segretario di Azione, senatore",
+    "data": "2026-10-29",
+    "testoLetterale": "Noi abbiamo bisogno che l’Unione abbia più fondi, più fondi anche propri: […] e finanziamo una linea di debito dell’Unione per 1.000 miliardi di euro.",
+    "parafrasiNeutra": "Finanziare una linea di debito comune dell’Unione europea da 1.000 miliardi di euro.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.cremonaoggi.it/2026/10/29/carlo-calenda-a-cremona-sostegno-la-candidatura-della-citta-a-capitale-della-cultura/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervista a Carlo Calenda («Il Senatore e leader di Azione», «segretario di Azione») di Andrea Colla su CremonaOggi (testata aperta, domande e risposte; article:published_time 2026-10-29T19:11:04Z), a Cremona per la presentazione del libro «Difendere la libertà – l’ora dell’Europa»: intervista pubblicata dalla testata, fonte primaria (D-019), livello atteso V1. Canale: Google News RSS, query uniforme «Calenda proposta» when:2d (HTTP 200), che dà l'articolo di Cremona Sera sulla stessa serata (cremonasera.it, letto con curl GET, HTTP 200: resoconto senza virgolettati sulle misure, solo sintesi del giornalista, nessuna riga); stessa serata ritrovata con «Calenda Cremona» (GN, HTTP 200) su CremonaOggi, letta con curl GET semplice (https://www.cremonaoggi.it/2026/10/29/carlo-calenda-a-cremona-sostegno-la-candidatura-della-citta-a-capitale-della-cultura/, HTTP 200, 2026-10-30). Canali ufficiali di Azione senza contenuti nel periodo: API WordPress di azione.it (GET /wp-json/wp/v2/posts?after=2026-10-29T00:00:00, HTTP 200, lista vuota); Telegram https://t.me/s/EntrainAzione (HTTP 200), ultimo post il 28/10 14:49 UTC. Risposta alla domanda «Unione Europea: a proposito di scadenze, si avvicina anche quella del bilancio pluriennale. […] come dovrebbe muoversi il Governo?»; la risposta elenca le voci «più PNRR, più politica agricola, più politica di coesione» e poi dazi e debito comune: una riga per voce (elenco anaforico, §2 della nota di uniformità). Stessa frase di C27-AZ-066; il taglio «[…]» toglie «mettiamo un bel 10% di dazi alla Cina che ci sta invadendo di prodotti in dumping» (registrato a parte, nessun gruppo di persone tolto). L'importo è la dimensione del debito europeo proposto, non un costo per il bilancio italiano: costo_dichiarato lasciato vuoto, da valutare nella codifica D-021. COFOG 01. Orizzonte/veicolo: non_specificato e dichiarazione, come C27-AZ-063. Pre-valutazione slogan: OK (strumento e importo). Testo_letterale confrontato in automatico con il testo HTML scaricato il 2026-10-30 con curl GET semplice (HTTP 200): ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 30/10): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ L2 2026-10-30 — intervista su testata (D-019): CremonaOggi pubblica domande e risposte della testata (domande proprie come «Oggi presenta il suo libro…», distinte dall'incontro moderato da Gualandris); citazione ritrovata parola per parola (curl GET, HTTP 200, 2026-10-30; article:published_time 2026-10-29T19:11:04Z); dichiarante autorizzato (segretario di Azione); strumento e importo (linea di debito dell'Unione da 1.000 miliardi di euro); taglio «[…]» sulla misura registrata in C27-AZ-066, nessun gruppo di persone tolto; l'importo non è un costo per il bilancio italiano: costo_dichiarato giustamente vuoto, la natura resta alla codifica D-021"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-FN-042",
+    "partitoId": "FN",
+    "dichiarante": "Roberto Vannacci",
+    "ruoloDichiarante": "presidente di Futuro Nazionale",
+    "data": "2026-10-29",
+    "testoLetterale": "Non dobbiamo tagliare la Pac",
+    "parafrasiNeutra": "Non ridurre i fondi della politica agricola comune (PAC).",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.ansa.it/sito/notizie/politica/2026/10/29/ansa-box-vannacci-lancia-un-segnale-a-meloni-vuol-far-vincere-la-sinistra_4e83c538-b12b-48ba-994f-6a3b659ad59c.html"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Discorso di Roberto Vannacci («Il leader di Futuro nazionale») alla festa dell'agricoltura del partito a Trecenta (Rovigo), riportato tra virgolette da ANSA («ANSA-BOX», dell'inviato Riccardo Rimondi; article:published_time 2026-10-29T20:11:00+0100), testata aperta: V2 atteso. Canale: Google News RSS, query uniforme «Vannacci intervista» when:2d (HTTP 200); articolo ritrovato nel feed RSS politica di ANSA (HTTP 200) e letto con curl GET semplice (https://www.ansa.it/sito/notizie/politica/2026/10/29/ansa-box-vannacci-lancia-un-segnale-a-meloni-vuol-far-vincere-la-sinistra_4e83c538-b12b-48ba-994f-6a3b659ad59c.html, HTTP 200, 2026-10-30). Altre fonti sulla stessa giornata: ViPiù («Prezzi garantiti e meno burocrazia dall’Europa») risponde 403 «Just a moment…» su pagina, feed e API, non aggirato; Antenna Tre e Telenordest solo video (nessun testo); OmniTrattore solo annuncio. Canali ufficiali FN come C27-FN-041 (nessun contenuto nel periodo). Contesto: la frase è seguita da «ricordando che ‹il mondo agricolo sta versando in una crisi incredibile›» (nella pagina tra virgolette dritte); nessun taglio. Doppioni: nessuna riga FN sulla PAC. Impegno a mantenere lo status quo su un fondo nominato (come C27-FI-010): misurabile si. COFOG 04. Orizzonte/veicolo: non_specificato e dichiarazione (il negoziato sul bilancio UE 2028-2034 non è nominato nel testo). Pre-valutazione slogan: OK (fondo nominato, tetto al livello attuale). Testo_letterale confrontato in automatico con il testo HTML scaricato il 2026-10-30 con curl GET semplice (HTTP 200): ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 30/10): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ L2 2026-10-30 — discorso alla festa dell'agricoltura di Trecenta riportato tra virgolette da ANSA (D-019; curl GET, HTTP 200; article:published_time 2026-10-29T20:11+01:00), citazione ritrovata parola per parola, nessun taglio; dichiarante autorizzato (presidente di Futuro Nazionale); impegno a mantenere lo status quo su un fondo nominato (PAC), come C27-FI-010 e C27-FI-011"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
     "id": "C27-ORA-001",
     "partitoId": "ORA",
     "dichiarante": "ORA! e Michele Boldrin",
@@ -11202,6 +11573,33 @@
       "dettaglio": "V2✓ L2 2026-10-29 — comunicato del partito («28.10.26 - Partito Capibara») ripubblicato da Pressenza nella categoria «Comunicati Stampa», come i comunicati ripresi da Agenzia Opinione (C27-FI-025, C27-LEGA-035); caso limite superato: valore di arrivo (gratuità della casa), come C27-CAPI-009 e C27-CAPI-012"
     },
     "effettoConti": "incerto",
+    "ribadita": []
+  },
+  {
+    "id": "C27-ORA-023",
+    "partitoId": "ORA",
+    "dichiarante": "Laura Scalfi",
+    "ruoloDichiarante": "componente della Segreteria nazionale di ORA! (delega alla Scuola)",
+    "data": "2026-10-29",
+    "testoLetterale": "Il programma nazionale di ORA! indica un’altra strada: […] istituire figure intermedie, che diano agli insegnanti una carriera e rendano la professione più attrattiva.",
+    "parafrasiNeutra": "Istituire nella scuola figure intermedie che offrano agli insegnanti un percorso di carriera.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.agenziagiornalisticaopinione.it/opinionews-tn-aa/scalfi-ora-segreteria-nazionale-delega-alla-scuola-docenti-trento-protesta-e-bolzano-aumenta-pagare-il-lavoro-in-piu-e-misurare-che-cosa-compra/"
+    },
+    "archivioUrl": null,
+    "cofog": "09",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Agenzia Opinione (https://www.agenziagiornalisticaopinione.it/feed/?paged=18, HTTP 200; item del 2026-10-29T07:14:42+00:00, sezione OPINIONEWS TN-AA), pagina letta per intero il 2026-10-30 con curl GET semplice (HTTP 200): nota stampa «Docenti, Trento protesta e Bolzano aumenta: pagare il lavoro in più e misurare che cosa compra», «tratta integralmente dalla nota stampa inviata all’Agenzia Opinione», firmata «Laura Scalfi – componente della Segreteria nazionale di ORA! (delega alla Scuola)» (stessa dichiarante di C27-ORA-014/015/021). Canale ufficiale: https://ora-italia.it/wp-json/wp/v2/posts?after=2026-10-29T00:00:00 HTTP 200, nessun post; /feed/ HTTP 200, ultimo item del 18/10. Livello atteso V2 (comunicato ripubblicato da Agenzia Opinione, come C27-FI-025). Perimetro: la frase riporta una proposta del «programma nazionale di ORA!»; le tre richieste dello stesso comunicato alle Giunte provinciali di Trento e Bolzano (cifra e criterio per le attività aggiuntive entro il 3/11, rapporto annuale su cattedre scoperte, confronto tra i contratti) sono rivolte a enti locali e non sono registrate: da decidere dal titolare se rientrano. Confronto automatico di ogni segmento con il testo estratto dall'HTML scaricato: ritrovato. Orizzonte/veicolo: non_specificato e dichiarazione (il testo richiama il programma nazionale senza data né atto). Wayback archive.org/wayback/available: nessuna copia (HTTP 200). Voce 2 di 2 della stessa frase (l'altra è C27-ORA-022). Pre-valutazione slogan: OK/LIM (strumento: istituzione di figure intermedie con percorso di carriera; numero e funzioni non indicati). Doppioni controllati: nessuna riga ORA su carriera o figure intermedie dei docenti (C27-ORA-014/015/021 riguardano L2, classi e reti territoriali). COFOG 09.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ L2 2026-10-30 — nota stampa di ORA! ripubblicata integralmente da Agenzia Opinione, firmata «Laura Scalfi – componente della Segreteria nazionale di ORA! (delega alla Scuola)», come C27-FI-025 (D-019; curl GET, HTTP 200, 2026-10-30); citazione ritrovata parola per parola; dichiarante autorizzato (responsabile nazionale sul proprio tema, come C27-ORA-014 e C27-PD-026); proposta del «programma nazionale di ORA!»; strumento identificabile (istituire figure intermedie con percorso di carriera), caso limite superato come C27-AVS-081; taglio «[…]» sulla voce di C27-ORA-022, nessun gruppo di persone tolto"
+    },
+    "effettoConti": "si",
     "ribadita": []
   }
 ]
