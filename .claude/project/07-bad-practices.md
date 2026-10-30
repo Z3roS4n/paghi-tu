@@ -42,3 +42,6 @@
 - ❌ Correggere a mano `data/fonti.json`: lo rigenera `npm run data:import` dalla tabella delle fonti in
   `research/2026-10-20.sintesi-e-verifica-incrociata.md`. Le correzioni di D-034 (R-01, R-04, R-07, R-12) e di R-17
   erano solo nel JSON e il primo import le avrebbe tolte; riportate nella tabella il 2026-10-29.
+- ❌ Scrivere «nuova», «riserva» o «non verificabile» in un `stato_verifica` confermato, anche dentro una frase
+  («la nuova scadenza»): `isVerified` cerca quelle parole senza distinguere maiuscole e la riga resta fuori dal sito
+  senza errori. È successo a dlgs-2026-147-m02 il 2026-10-30, trovato contando le misure pubblicate.
