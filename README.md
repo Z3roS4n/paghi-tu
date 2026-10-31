@@ -8,7 +8,7 @@ Sito: https://www.paghitu.it
 
 - **Apartitico.** Stesso metodo, stessa profondità e stesse regole per ogni governo e ogni partito. Niente classifiche, giudizi o indicazioni di voto.
 - **Ogni dato ha una fonte** e un livello di verifica (V1 fonte primaria, V2 verifica parziale, NV da verificare).
-- **Aggiornato dall'AI, corretto da tutti.** Una routine di agenti AI aggiorna dati e fonti ogni giorno; un secondo agente ricontrolla tutto sulle fonti prima della pubblicazione. Chiunque può segnalare un errore o proporre una correzione: ogni modifica a un dato pubblicato resta nel [registro delle correzioni](https://www.paghitu.it/correzioni).
+- **Aggiornato dall'AI, corretto da tutti.** Una routine di agenti AI aggiorna dati e fonti ogni tre giorni; un secondo agente ricontrolla tutto sulle fonti prima della pubblicazione. Chiunque può segnalare un errore o proporre una correzione: ogni modifica a un dato pubblicato resta nel [registro delle correzioni](https://www.paghitu.it/correzioni).
 
 Hai trovato un errore? [Apri una correzione](https://github.com/Z3roS4n/paghi-tu/issues/new?template=correzione.yml). Vuoi contribuire al codice o ai dati? Leggi [CONTRIBUTING.md](CONTRIBUTING.md).
 

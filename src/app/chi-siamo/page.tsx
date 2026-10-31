@@ -31,7 +31,7 @@ export default function AboutPage() {
       </ul>
       <h2>Un progetto aperto</h2>
       <p>
-        I dati li raccoglie e li verifica un sistema di agenti AI, ogni giorno. Prima della pubblicazione un secondo
+        I dati li raccoglie e li verifica un sistema di agenti AI, ogni tre giorni. Prima della pubblicazione un secondo
         agente ricontrolla ogni novità: tutte le citazioni sulle fonti e i numeri a campione, oltre ai controlli
         automatici fra fonti diverse. L&apos;AI però sbaglia, e una fonte può sfuggire: per questo chiunque
         può segnalare un errore o proporre una correzione, e ogni modifica resta in un registro pubblico.
