@@ -14,10 +14,10 @@ import {
   PublicFinance,
   Series,
   type CostComparison,
-  type SourceLink,
   type VerificationLevel,
 } from "../../src/lib/domain/schemas.ts";
-import { isWellFormedUrl } from "./testo.ts";
+import { FINANCE_SOURCES, formatDateIt, urls, MONTHS } from "../shared/source-format.ts";
+export { FINANCE_SOURCES, formatDateIt, urls, EXCLUDED_DOMAINS } from "../shared/source-format.ts";
 
 export const CATEGORIES = [
   "governi",
@@ -131,16 +131,6 @@ const MONEY_UNIT = "milioni di euro correnti";
 const GDP_UNIT = "% del PIL";
 const TODAY_FOR_OPEN_TERMS = "2026-10-20";
 
-const MONTHS = [
-  "gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno",
-  "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre",
-];
-
-export function formatDateIt(iso: string): string {
-  const [y, m, d] = iso.split("-").map(Number);
-  return `${d === 1 ? "1°" : d} ${MONTHS[m - 1]} ${y}`;
-}
-
 function midpoint(from: string, to: string): string {
   const a = Date.parse(from);
   const b = Date.parse(to);
@@ -157,15 +147,6 @@ export function spread<T>(items: T[], k: number): T[] {
 // Un URL malformato nei dati (per esempio con l'etichetta dentro) non diventa una citazione attesa.
 // D-026: Wikipedia (R-36, «fonte di verità per: nessuna») non è una fonte accettata dell'agente,
 // anche se compare fra le fonti di un record del sito.
-export const EXCLUDED_DOMAINS = ["wikipedia.org"];
-
-export function urls(links: SourceLink[]): string[] {
-  return links
-    .map((l) => l.url)
-    .filter(isWellFormedUrl)
-    .filter((u) => !EXCLUDED_DOMAINS.some((d) => new URL(u).hostname.endsWith(d)));
-}
-
 function needsPermission(urlList: string[]): boolean {
   return urlList.some((u) => PERMISSION_DOMAINS.some((d) => new URL(u).hostname.endsWith(d)));
 }
@@ -384,17 +365,6 @@ function measureCases(measures: Measure[]): GoldenCase[] {
 }
 
 // Pezzo dell'etichetta che identifica, in data/finanza-pubblica.json, la fonte di ogni gruppo di record.
-export const FINANCE_SOURCES = {
-  MAIN: "gov_10a_main, conti principali delle",
-  FUNCTIONS: "gov_10a_exp, spesa delle amministrazioni pubbliche per funzione",
-  EDP: "gov_10dd_edpt1, debito pubblico",
-  QUARTERLY: "gov_10q_ggnfa",
-  EU_FUNCTIONS: "spesa per funzione in % del PIL",
-  EU_ACCOUNTS: "conti principali in % del PIL",
-  EU_DEBT: "debito in % del PIL",
-  BDI: "Banca d'Italia",
-} as const;
-
 function financeCases(f: PublicFinance): GoldenCase[] {
   const source = (needle: string) => {
     const hit = f.fonti.find((s) => s.etichetta?.includes(needle));

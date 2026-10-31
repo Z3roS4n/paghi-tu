@@ -1,0 +1,15 @@
+{
+  "gcpProjectId": "paghi-tu-agent",
+  "gcpProjectNumber": "REQUIRED_VERIFIED_PROJECT_NUMBER",
+  "databaseId": "paghi-tu-preview",
+  "databaseLocation": "europe-west1",
+  "serviceAccountEmail": "REQUIRED_EXISTING_RUNTIME_SA_EMAIL",
+  "workloadIdentityPoolId": "REQUIRED_POOL_ID",
+  "workloadIdentityProviderId": "REQUIRED_PROVIDER_ID",
+  "vercelOwnerId": "REQUIRED_VERIFIED_OWNER_ID",
+  "vercelProjectId": "REQUIRED_VERIFIED_PROJECT_ID",
+  "vercelIssuer": "REQUIRED_VERIFIED_ISSUER",
+  "vercelJwtAudience": "REQUIRED_VERIFIED_JWT_AUDIENCE",
+  "stsAudience": "REQUIRED_VERIFIED_STS_AUDIENCE",
+  "previewOrigin": "https://REQUIRED_VERIFIED_PREVIEW_HOST.vercel.app"
+}

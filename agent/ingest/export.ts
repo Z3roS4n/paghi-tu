@@ -19,7 +19,7 @@ import {
   type SourceLink,
   type Verification,
 } from "../../src/lib/domain/schemas.ts";
-import { FINANCE_SOURCES, formatDateIt, urls } from "../evals/golden-set.ts";
+import { FINANCE_SOURCES, formatDateIt, urls } from "../shared/source-format.ts";
 
 export const SITE_URL = "https://www.paghitu.it";
 
