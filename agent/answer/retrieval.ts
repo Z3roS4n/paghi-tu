@@ -54,27 +54,62 @@ export function structuredCandidates(question: string, index: Index): IndexDocum
   if (!years.length) return [];
   const series = /pil nominale/.test(text) ? "pil-nominale" : /residenti|popolazione/.test(text) ? "popolazione-residente" : /\bfoi\b/.test(text) ? "prezzi-consumo-foi" : null;
   if (series) return documents.filter((d) => d.structData.dataset === `serie/${series}` && years.includes(d.structData.record));
-  if (!/spesa|speso|spende|entrate|saldo|interessi|debito/.test(text) || /governo|legge|stanziat|prevedeva|partito/.test(text)) return [];
+  if (!/spesa|speso|spende|entrate|saldo|interessi|oneri finanziari|debito/.test(text) || /governo|legge|stanziat|prevedeva|partito/.test(text)) return [];
 
   const europe = /germania|francia|spagna|unione europea|media europea/.test(text);
+  const interest = /interess|oneri finanziari/.test(text);
+  const debtRatio = /debito.{0,35}(?:rapporto|percentuale|%|pil)|(?:rapporto|percentuale|%) .{0,25}debito/.test(text);
+  const explicitStock = /consistenza|stock|ammonta.{0,20}debito|debito.{0,25}(?:a fine|fine mese)/.test(text);
+  if (/debito/.test(text) && /spesa|speso|spende|pagat|versat|costat|costo/.test(text) && !interest && !debtRatio && !explicitStock) return [];
+  const separateDebtRequest = interest && /\be\s+(?:il\s+|la\s+)?(?:debito|consistenza|stock|rapporto)/.test(text);
+  const separateFunctionRequest = interest && (/\be\s+(?:la\s+)?(?:spesa\s+)?(?:per\s+)?(?:sanita|istruzione|protezione sociale|funzione)/.test(text)
+    || /(?:sanita|istruzione|protezione sociale|funzione).{0,30}\be\s+(?:gli\s+)?interess/.test(text));
+  const monthNames = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
+  const month = monthNames.findIndex((name) => text.includes(name));
   let kind = "conti";
   if (/trimestre/.test(text)) kind = "trimestri";
   else if (/sanita|istruzione|protezione sociale|funzione/.test(text)) kind = "funzioni";
-  else if (/debito/.test(text)) kind = /pil/.test(text) ? "debitoPil" : "debitoMensile";
-  if (europe) kind = `confrontoUe/${kind === "debitoPil" ? "debito" : kind}`;
+  else if (/debito/.test(text) && (!interest || explicitStock || debtRatio)) kind = debtRatio ? "debitoPil" : "debitoMensile";
+  if (interest && kind === "debitoMensile" && month < 0) kind = "conti";
+  if (interest && kind === "debitoPil" && !separateDebtRequest) kind = "conti";
+  const kinds = interest && ((separateDebtRequest && (kind === "debitoPil" || (kind === "debitoMensile" && month >= 0))) || (separateFunctionRequest && kind === "funzioni"))
+    ? ["conti", kind] : [kind];
+  const selectedKinds = europe ? kinds.map((candidateKind) => `confrontoUe/${candidateKind === "debitoPil" ? "debito" : candidateKind}`) : kinds;
   let targetYears = years;
   if (kind === "trimestri" && /stesso trimestre.*anno prima/.test(text)) targetYears = [...years, ...years.map((y) => String(Number(y) - 1))];
   const quarters = [...question.matchAll(/\b([1-4])[°º]/g)].map((m) => m[1]);
-  return documents.filter((d) => {
-    if (d.structData.dataset !== "finanza-pubblica" || !d.structData.record.startsWith(`${kind}/`)) return false;
-    if (!targetYears.some((year) => d.structData.record.startsWith(`${kind}/${year}`))) return false;
-    if (kind === "debitoMensile") {
-      const months = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
-      const month = months.findIndex((name) => text.includes(name));
+  const selected = documents.filter((d) => {
+    if (d.structData.dataset !== "finanza-pubblica" || !selectedKinds.some((candidateKind) => d.structData.record.startsWith(`${candidateKind}/`))) return false;
+    if (!targetYears.some((year) => selectedKinds.some((candidateKind) => d.structData.record.startsWith(`${candidateKind}/${year}`)))) return false;
+    if (d.structData.record.startsWith("debitoMensile/")) {
       if (month >= 0 && !d.structData.record.endsWith(`-${String(month + 1).padStart(2, "0")}`)) return false;
     }
     return kind !== "trimestri" || !quarters.length || quarters.some((q) => d.structData.record.endsWith(`Q${q}`));
   });
+  if (interest && selectedKinds.length > 1 && !targetYears.every((year) => selected.some((d) => d.structData.record === `${europe ? "confrontoUe/conti" : "conti"}/${year}`))) return [];
+  return selected;
+}
+
+export function financeMeasureMismatch(question: string, documents: readonly IndexDocument[]): boolean {
+  const text = fold(question);
+  const interest = /interess|oneri finanziari/.test(text);
+  const publicFinance = /debito|spesa|speso|spende|pagat|versat|oneri finanziari|trimestre/.test(text);
+  if (!interest || !publicFinance || /dichiar|promess|intervist|ha detto|legge|stanziat|prevedeva|partito/.test(text)) return false;
+
+  const years = [...new Set(question.match(/\b(?:18|19|20)\d{2}\b/g) ?? [])];
+  const quarterly = /trimestre/.test(text);
+  const quarters = [...question.matchAll(/\b([1-4])[°º]/g)].map((match) => match[1]);
+  const europe = /germania|francia|spagna|unione europea|media europea/.test(text);
+  const prefix = europe ? "confrontoUe/conti/" : quarterly ? "trimestri/" : "conti/";
+  const compatible = documents.filter((document) => document.structData.dataset === "finanza-pubblica"
+    && document.structData.record.startsWith(prefix));
+  if (!compatible.length) return true;
+  if (!years.length) return false;
+  return years.some((year) => !compatible.some((document) => {
+    const period = document.structData.record.slice(prefix.length);
+    return quarterly ? period.startsWith(`${year}-Q`) && (!quarters.length || quarters.some((quarter) => period === `${year}-Q${quarter}`))
+      : period === year;
+  }));
 }
 
 export function candidateFilter(candidates: IndexDocument[]): string | null {
