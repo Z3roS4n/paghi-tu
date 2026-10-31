@@ -1,6 +1,6 @@
 # Contribuire a Paghi Tu
 
-Paghi Tu è aggiornato ogni giorno da una routine di agenti AI, ma è aperto a tutti: l'AI sbaglia, e chi conosce un tema o una fonte può correggerla. Questa guida spiega come.
+Paghi Tu è aggiornato ogni tre giorni da una routine di agenti AI, ma è aperto a tutti: l'AI sbaglia, e chi conosce un tema o una fonte può correggerla. Questa guida spiega come.
 
 Le regole complete, con le fonti ammesse, sono su [paghitu.it/contribuire](https://www.paghitu.it/contribuire). In breve: **conta la fonte, non chi scrive o quante volte**.
 
