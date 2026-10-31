@@ -2147,7 +2147,24 @@
       "dettaglio": "V2✓ L2 2026-10-30 — comunicato congiunto dei presidenti dei gruppi FI di Camera e Senato (Costa, Craxi) ripubblicato da Agenzia Opinione, come C27-FI-025/026; citazione ritrovata parola per parola; dichiaranti autorizzati (capigruppo); caso limite superato: istituto nominato («previdenza dedicata», trattamento previdenziale specifico) con platea definita (Forze dell'ordine e Forze armate), senza parametri — CORRETTA: parafrasi (la fonte dice che i gruppi lavoreranno «anche durante l'esame parlamentare della manovra, per individuare le risorse», non che la misura sia da finanziare in quella sede)"
     },
     "effettoConti": "si",
-    "ribadita": []
+    "ribadita": [
+      {
+        "id": "C27-FI-039",
+        "dichiarante": "Forza Italia – segreteria nazionale",
+        "ruoloDichiarante": "nota della segreteria nazionale di Forza Italia, presieduta dal segretario Antonio Tajani",
+        "data": "2026-10-30",
+        "testoLetterale": "l’impegno prioritario di Forza Italia a finanziare con la legge di bilancio la previdenza dedicata per le forze dell’ordine e le forze armate, basata sulla specificità del lavoro che svolgono: chi rischia la propria incolumità per la sicurezza di tutti merita un riconoscimento concreto e non solo parole.",
+        "tipoFonte": "sito_ufficiale",
+        "fonte": {
+          "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-camera-nota-di-forza-italia-5/"
+        },
+        "archivioUrl": null,
+        "verifica": {
+          "livello": "V2",
+          "dettaglio": "V2✓ verificatore 2026-10-31 — CORRETTA: testo_letterale ristretto all'impegno (\"l’impegno prioritario…\", 305 caratteri), senza togliere le parole sulle persone interessate; nota della segreteria nazionale di Forza Italia ripubblicata da Agenzia Opinione (30/10, GET 200), come C27-FI-028 (V2); citazione ritrovata parola per parola; istituto nominato (previdenza dedicata) con platea definita (Forze dell'ordine e Forze armate) e veicolo dichiarato (legge di bilancio); stessa misura di C27-FI-028, classificazione della ripetizione ai codificatori (D-031) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+        }
+      }
+    ]
   },
   {
     "id": "C27-FI-029",
@@ -2201,6 +2218,33 @@
       "dettaglio": "V2✓ L2 2026-10-30 — comunicato del gruppo FI al Senato ripubblicato da Agenzia Opinione che riporta l'intervento di Craxi e Ternullo su Il Riformista; citazione ritrovata parola per parola; atto di gruppo (prima persona plurale, capogruppo fra i dichiaranti), non atto personale (D-012); legge delega con oggetto definito — CORRETTA: testo_letterale esteso con la frase che descrive il contenuto del ddl (senza, la citazione darebbe solo la materia, come C27-FDI-018) e parafrasi ristretta al testo (il «senza nuovi reati d'opinione» non era nella citazione)"
     },
     "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-LEGA-040",
+    "partitoId": "LEGA",
+    "dichiarante": "Alberto Di Rubba",
+    "ruoloDichiarante": "tesoriere federale e responsabile Automotive della Lega; deputato",
+    "data": "2026-10-30",
+    "testoLetterale": "Sul superbollo la nostra posizione è chiara: è una tassa ingiusta e anacronistica. Abbiamo già dei tavoli di lavoro aperti e stiamo valutando possibili interventi per ridurne progressivamente il peso, con l’obiettivo di arrivare al suo superamento",
+    "parafrasiNeutra": "Ridurre progressivamente il superbollo sulle auto di potenza elevata fino ad abolirlo (interventi ancora in valutazione).",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.ilriformista.it/manovra-di-rubba-lega-meno-tasse-ma-se-poi-lue-moltiplica-i-divieti-dopo-il-bollo-al-lavoro-per-il-superbollo-536466/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 2 (Google News RSS (query uniformi when:2d, HTTP 200)): query «Lega intervista», titolo «Manovra, Di Rubba (Lega): \"Meno tasse ma se poi l’Ue moltiplica i divieti... Dopo il bollo, al lavoro per il superbollo\"» (Il Riformista); link di Google News non aperto, articolo ritrovato nella sitemap news del sito (sitemap-news.xml) e letto con curl GET semplice (HTTP 200; datePublished 2026-10-30T10:46:23+00:00, testo integrale senza paywall), letto il 2026-10-31. Intervista pubblicata da testata aperta: fonte primaria (D-019), livello atteso V1. Citazione confrontata in automatico con il testo scaricato: ritrovata, nessun taglio. Dichiarante: la testata lo presenta come «Tesoriere federale della Lega, già reggente del partito nella fase che ha preceduto il congresso straordinario di Milano e responsabile Automotive del movimento»; ruolo di partito non compreso alla lettera fra i dichiaranti autorizzati (partito, segretario, capogruppo, responsabile del programma): da valutare dal verificatore, precedente vicino C27-LEGA-038 (responsabile di dipartimento sul proprio tema). La frase introduttiva della testata «Con lo sguardo rivolto alla prossima legislatura» è del giornalista, non del dichiarante. Formulazione: «stiamo valutando possibili interventi», con obiettivo dichiarato («arrivare al suo superamento»): precedente della formulazione in studio C27-FDI-010/013. Orizzonte/veicolo: non_specificato, dichiarazione. COFOG 01 (imposta). Doppioni: nessuna riga sul superbollo; righe vicine sul bollo auto C27-FDI-019, C27-FI-005, C27-FI-013 (altri partiti o altra imposta). Nella stessa intervista, non registrati: misure del ddl di bilancio rivendicate (Irpef 33% fino a 55.000 euro, forfettario a 100.000 euro, esenzione strutturale del bollo fino a 80 kW: misure del Governo, la soglia del forfettario è già C27-LEGA-002); contributo delle grandi banche (già C27-LEGA-003); «neutralità tecnologica, valorizzazione dei biocarburanti e degli e-fuel e libertà di scelta» (richiesta all'UE senza strumento: slogan); codice della strada (rivendicazione). Pre-valutazione slogan: OK (imposta nominata, esito: superamento). Wayback (archive.org/wayback/available, sola lettura, 2026-10-31): nessuna copia esistente.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-31 — CONFERMATA: intervista a domande e risposte pubblicata da Il Riformista (D-019, GET 200, 30/10); citazione ritrovata parola per parola, nessun taglio; dichiarante ammesso sul proprio tema (responsabile Automotive della Lega, come i responsabili di dipartimento C27-LEGA-038 e C27-FI-027); imposta nominata (superbollo) con esito dichiarato (superamento), formulazione \"stiamo valutando\" come C27-FDI-013 | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
     "ribadita": []
   },
   {
@@ -6230,6 +6274,87 @@
     "ribadita": []
   },
   {
+    "id": "C27-M5S-064",
+    "partitoId": "M5S",
+    "dichiarante": "Giuseppe Conte",
+    "ruoloDichiarante": "presidente del MoVimento 5 Stelle, deputato",
+    "data": "2026-10-30",
+    "testoLetterale": "Mutui agevolati",
+    "parafrasiNeutra": "Mutui agevolati, indicati come priorità per l'autonomia dei giovani.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.skuola.net/news/skuola-originals/giuseppe-conte-proposte-giovani-ascensore-sociale.html"
+    },
+    "archivioUrl": null,
+    "cofog": "06",
+    "misurabile": "no",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (query uniformi «M5S intervista», «M5S proposta», «Conte intervista», «Conte proposta», when:2d; HTTP 200 per tutte), trovata con «Conte intervista» e «Conte proposta»; movimento5stelle.eu (API WordPress e feed, HTTP 200) non pubblica nulla dopo il 29/10. Testata Skuola.net, articolo «Giuseppe Conte: per una vita migliore studiare e talento non bastano più», datePublished 2026-10-30T12:45:24+01:00, letto per intero il 2026-10-31 con curl GET semplice (HTTP 200): resoconto con virgolettati dell'intervista di Daniele Grassucci a Giuseppe Conte nel vodcast #Wannabe della stessa testata. Intervista pubblicata dalla testata che l'ha fatta: fonte primaria (D-019); la data della registrazione non è indicata, si usa la data di pubblicazione. La stessa intervista è ripresa da Orizzonte Scuola (403 «Just a moment…», non aggirato). Contesto (della testata): «Conte indica le priorità su cui, a suo giudizio, dovrebbe concentrarsi l'azione politica», dopo gli ostacoli per i giovani (casa, lavoro stabile). Frase intera: «Mutui agevolati, affitti calmierati, agevolazioni per l'inserimento nel mondo del lavoro. E basta stage e tirocini gratuiti»: una riga per voce; la voce «agevolazioni per l'inserimento nel mondo del lavoro» non registrata (slogan: «agevolazioni» generico). Nella stessa intervista (altro articolo Skuola.net del 30/10) la proposta di «far votare anche i sedicenni alle primarie del campo largo»: non registrata (regola interna della coalizione, non policy). Nessun costo. Orizzonte/veicolo: non_specificato, dichiarazione. Prima voce dell'elenco. COFOG 06 (abitazioni). Pre-valutazione slogan: LIM (strumento nominato, «mutui agevolati», senza beneficiari, importi o tassi; cfr. C27-AZ-055, garanzia pubblica sui mutui per i giovani). Citazione confrontata in automatico con il testo scaricato il 2026-10-31 (curl GET semplice, HTTP 200): ogni segmento fra «[…]» ritrovato nell'ordine, a meno di spazi e apostrofi tipografici. Wayback archive.org/wayback/available (solo lettura, 2026-10-31): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-31 — CONFERMATA: intervista di Skuola.net nel proprio vodcast pubblicata in testo dalla testata (D-019, come C27-M5S-063; GET 200, 30/10); citazione ritrovata nel virgolettato; caso limite superato: agevolazione legata a un atto definito (mutuo), come C27-FI-015, senza platea né importo nella citazione | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "incerto",
+    "ribadita": []
+  },
+  {
+    "id": "C27-M5S-065",
+    "partitoId": "M5S",
+    "dichiarante": "Giuseppe Conte",
+    "ruoloDichiarante": "presidente del MoVimento 5 Stelle, deputato",
+    "data": "2026-10-30",
+    "testoLetterale": "Mutui agevolati, affitti calmierati",
+    "parafrasiNeutra": "Affitti calmierati, indicati come priorità per l'autonomia dei giovani.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.skuola.net/news/skuola-originals/giuseppe-conte-proposte-giovani-ascensore-sociale.html"
+    },
+    "archivioUrl": null,
+    "cofog": "06",
+    "misurabile": "no",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (query uniformi «M5S intervista», «M5S proposta», «Conte intervista», «Conte proposta», when:2d; HTTP 200 per tutte), trovata con «Conte intervista» e «Conte proposta»; movimento5stelle.eu (API WordPress e feed, HTTP 200) non pubblica nulla dopo il 29/10. Testata Skuola.net, articolo «Giuseppe Conte: per una vita migliore studiare e talento non bastano più», datePublished 2026-10-30T12:45:24+01:00, letto per intero il 2026-10-31 con curl GET semplice (HTTP 200): resoconto con virgolettati dell'intervista di Daniele Grassucci a Giuseppe Conte nel vodcast #Wannabe della stessa testata. Intervista pubblicata dalla testata che l'ha fatta: fonte primaria (D-019); la data della registrazione non è indicata, si usa la data di pubblicazione. La stessa intervista è ripresa da Orizzonte Scuola (403 «Just a moment…», non aggirato). Contesto (della testata): «Conte indica le priorità su cui, a suo giudizio, dovrebbe concentrarsi l'azione politica», dopo gli ostacoli per i giovani (casa, lavoro stabile). Frase intera: «Mutui agevolati, affitti calmierati, agevolazioni per l'inserimento nel mondo del lavoro. E basta stage e tirocini gratuiti»: una riga per voce; la voce «agevolazioni per l'inserimento nel mondo del lavoro» non registrata (slogan: «agevolazioni» generico). Nella stessa intervista (altro articolo Skuola.net del 30/10) la proposta di «far votare anche i sedicenni alle primarie del campo largo»: non registrata (regola interna della coalizione, non policy). Nessun costo. Orizzonte/veicolo: non_specificato, dichiarazione. Seconda voce dell'elenco (la prima, «Mutui agevolati», resta nel testo perché la voce da sola non si legge). COFOG 06. Pre-valutazione slogan: LIM (strumento nominato, canone calmierato, senza parametro né platea). Citazione confrontata in automatico con il testo scaricato il 2026-10-31 (curl GET semplice, HTTP 200): ogni segmento fra «[…]» ritrovato nell'ordine, a meno di spazi e apostrofi tipografici. Wayback archive.org/wayback/available (solo lettura, 2026-10-31): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-31 — CONFERMATA: stessa intervista di C27-M5S-064 (D-019); citazione ritrovata nel virgolettato; caso limite superato: affitti \"calmierati\", cioè con un tetto al canone, come il tetto agli affitti di C27-PAP-012; nessun parametro né platea nella citazione | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "incerto",
+    "ribadita": []
+  },
+  {
+    "id": "C27-M5S-066",
+    "partitoId": "M5S",
+    "dichiarante": "Giuseppe Conte",
+    "ruoloDichiarante": "presidente del MoVimento 5 Stelle, deputato",
+    "data": "2026-10-30",
+    "testoLetterale": "E basta stage e tirocini gratuiti",
+    "parafrasiNeutra": "Vietare stage e tirocini non retribuiti.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.skuola.net/news/skuola-originals/giuseppe-conte-proposte-giovani-ascensore-sociale.html"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (query uniformi «M5S intervista», «M5S proposta», «Conte intervista», «Conte proposta», when:2d; HTTP 200 per tutte), trovata con «Conte intervista» e «Conte proposta»; movimento5stelle.eu (API WordPress e feed, HTTP 200) non pubblica nulla dopo il 29/10. Testata Skuola.net, articolo «Giuseppe Conte: per una vita migliore studiare e talento non bastano più», datePublished 2026-10-30T12:45:24+01:00, letto per intero il 2026-10-31 con curl GET semplice (HTTP 200): resoconto con virgolettati dell'intervista di Daniele Grassucci a Giuseppe Conte nel vodcast #Wannabe della stessa testata. Intervista pubblicata dalla testata che l'ha fatta: fonte primaria (D-019); la data della registrazione non è indicata, si usa la data di pubblicazione. La stessa intervista è ripresa da Orizzonte Scuola (403 «Just a moment…», non aggirato). Contesto (della testata): «Conte indica le priorità su cui, a suo giudizio, dovrebbe concentrarsi l'azione politica», dopo gli ostacoli per i giovani (casa, lavoro stabile). Frase intera: «Mutui agevolati, affitti calmierati, agevolazioni per l'inserimento nel mondo del lavoro. E basta stage e tirocini gratuiti»: una riga per voce; la voce «agevolazioni per l'inserimento nel mondo del lavoro» non registrata (slogan: «agevolazioni» generico). Nella stessa intervista (altro articolo Skuola.net del 30/10) la proposta di «far votare anche i sedicenni alle primarie del campo largo»: non registrata (regola interna della coalizione, non policy). Nessun costo. Orizzonte/veicolo: non_specificato, dichiarazione. Ultima voce dell'elenco. Non c'è una riga M5S su stage o tirocini nel catalogo. COFOG 04 (lavoro). Pre-valutazione slogan: OK (divieto). Possibile effetto sui conti incerto: il testo non dice chi paga. Citazione confrontata in automatico con il testo scaricato il 2026-10-31 (curl GET semplice, HTTP 200): ogni segmento fra «[…]» ritrovato nell'ordine, a meno di spazi e apostrofi tipografici. Wayback archive.org/wayback/available (solo lettura, 2026-10-31): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-31 — CONFERMATA: stessa intervista di C27-M5S-064 (D-019); citazione ritrovata nel virgolettato; divieto identificabile (stage e tirocini gratuiti) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
     "id": "C27-AZ-001",
     "partitoId": "AZ",
     "dichiarante": "Azione (sito ufficiale)",
@@ -6929,7 +7054,24 @@
       "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-20 — CORRETTA: costo_dichiarato_proponente svuotato: le cifre non sono nella fonte citata (intervista Il Messaggero). Il '2% del Pil' riguarda l'intero 'decreto Ceto Medio' del libro 'Quando c'era lei' (orizzontescuola.it 27/09/2026, che cita Repubblica), non la sola quattordicesima. Citazione riscontrata anche su Il Foglio 02/10/2026"
     },
     "effettoConti": "si",
-    "ribadita": []
+    "ribadita": [
+      {
+        "id": "C27-IV-026",
+        "dichiarante": "Matteo Renzi",
+        "ruoloDichiarante": "Leader di Italia Viva, senatore",
+        "data": "2026-10-31",
+        "testoLetterale": "Poi proporremo la quattordicesima per insegnanti, infermieri, forze dell’ordine […]",
+        "tipoFonte": "intervista",
+        "fonte": {
+          "url": "https://www.quotidiano.net/politica/renzi-finita-la-stagione-dei-veti-parteciperemo-a-primarie-aperte-altrimenti-staremo-con-elly-cmtpwlo8"
+        },
+        "archivioUrl": null,
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-31 — CONFERMATA: intervista a domande e risposte pubblicata da QN (D-019, GET 200, 31/10); citazione ritrovata parola per parola; il \"[…]\" toglie solo la voce successiva (misure contro la fuga di cervelli, senza leva) e lascia le categorie beneficiarie; istituto e platea definiti (quattordicesima per insegnanti, infermieri, forze dell'ordine); stessa misura di C27-IV-001, classificazione della ripetizione ai codificatori (D-031) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+        }
+      }
+    ]
   },
   {
     "id": "C27-IV-003",
@@ -11598,6 +11740,114 @@
     "verifica": {
       "livello": "V2",
       "dettaglio": "V2✓ L2 2026-10-30 — nota stampa di ORA! ripubblicata integralmente da Agenzia Opinione, firmata «Laura Scalfi – componente della Segreteria nazionale di ORA! (delega alla Scuola)», come C27-FI-025 (D-019; curl GET, HTTP 200, 2026-10-30); citazione ritrovata parola per parola; dichiarante autorizzato (responsabile nazionale sul proprio tema, come C27-ORA-014 e C27-PD-026); proposta del «programma nazionale di ORA!»; strumento identificabile (istituire figure intermedie con percorso di carriera), caso limite superato come C27-AVS-081; taglio «[…]» sulla voce di C27-ORA-022, nessun gruppo di persone tolto"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-ORA-029",
+    "partitoId": "ORA",
+    "dichiarante": "Michele Boldrin",
+    "ruoloDichiarante": "fondatore di ORA! (con Alberto Forchielli), economista; la testata lo dice «economista e fondatore, insieme ad Alberto Forchielli, di questo nuovo partito»",
+    "data": "2026-10-31",
+    "testoLetterale": "La seconda è l’Università. Servono […] finanziamento della ricerca su base competitiva assegnato da agenzie indipendenti […]",
+    "parafrasiNeutra": "Assegnare i fondi per la ricerca con procedure competitive gestite da agenzie indipendenti.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://qds.it/boldrin-fondatore-di-ora-da-quarantanni-destra-e-sinistra-governano-a-colpi-di-bonus-e-debiti/"
+    },
+    "archivioUrl": null,
+    "cofog": "09",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervista a Michele Boldrin di Renata Giordano su QdS - Quotidiano di Sicilia (article:published_time 2026-10-31T05:20:00+00:00, «31 Ottobre 2026, 06:20»), letta per intero il 2026-10-31 con curl GET semplice (richiesta: https://qds.it/boldrin-fondatore-di-ora-da-quarantanni-destra-e-sinistra-governano-a-colpi-di-bonus-e-debiti/, HTTP 200, testo dell'intervista visibile senza abbonamento; URL ritrovato nel feed https://qds.it/feed/, HTTP 200). Canale: Google News RSS, query uniformi «Boldrin intervista», «Boldrin proposta», «\"Ora!\" proposta», «\"Ora!\" intervista» più «\"ORA!\" Boldrin» (when:2d, HTTP 200). Canale ufficiale: https://ora-italia.it/wp-json/wp/v2/posts?after=2026-10-29T00:00:00 HTTP 200, nessun post (anche con modified_after); /feed/ HTTP 200, ultimo item del 18/10. Dichiarante: la testata lo presenta come «economista e fondatore, insieme ad Alberto Forchielli, di questo nuovo partito» (come le righe C27-ORA-001…006, «ORA! e Michele Boldrin»). Livello atteso V1 (intervista di una testata aperta, D-019). Confronto automatico di ogni segmento con il testo estratto dall'HTML scaricato: ritrovato. Wayback archive.org/wayback/available: nessuna copia (HTTP 200). Orizzonte/veicolo: non_specificato e dichiarazione (nessun atto, nessuna data, nessun riferimento al prossimo governo). Contesto: risposta sulla fuga dei cervelli, «Servono tre cose al posto delle miopi e illusorie politiche per il ‘rientro dei cervelli’»: la prima è la crescita della produttività, la seconda l'Università, la terza la casa. Pacchetto (D-019, regola pacchetti della nota 2026-10-21.uniformita-pre-pubblicazione.md): ogni voce dell'elenco è una riga, righe C27-ORA-024…032; la voce con strumento identificabile è C27-ORA-031 (abolizione del valore legale del titolo). Voce 2b (Università). Pre-valutazione slogan: LIM (strumento descritto nel meccanismo: agenzie indipendenti che assegnano i fondi su base competitiva; non dice se nuove o quali, né importi). Doppioni: nessuna riga ORA sul finanziamento della ricerca. COFOG 09 (ricerca, come C27-AVS-005 e C27-CSX-012).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-31 — CONFERMATA: intervista a domande e risposte di QdS (D-019, GET 200, 31/10); segmenti ritrovati nell'ordine; caso limite superato: meccanismo di assegnazione descritto (finanziamento della ricerca su base competitiva da agenzie indipendenti), senza importo | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-ORA-031",
+    "partitoId": "ORA",
+    "dichiarante": "Michele Boldrin",
+    "ruoloDichiarante": "fondatore di ORA! (con Alberto Forchielli), economista; la testata lo dice «economista e fondatore, insieme ad Alberto Forchielli, di questo nuovo partito»",
+    "data": "2026-10-31",
+    "testoLetterale": "La seconda è l’Università. Servono […] abolizione del valore legale del titolo.",
+    "parafrasiNeutra": "Abolire il valore legale del titolo di studio.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://qds.it/boldrin-fondatore-di-ora-da-quarantanni-destra-e-sinistra-governano-a-colpi-di-bonus-e-debiti/"
+    },
+    "archivioUrl": null,
+    "cofog": "09",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervista a Michele Boldrin di Renata Giordano su QdS - Quotidiano di Sicilia (article:published_time 2026-10-31T05:20:00+00:00, «31 Ottobre 2026, 06:20»), letta per intero il 2026-10-31 con curl GET semplice (richiesta: https://qds.it/boldrin-fondatore-di-ora-da-quarantanni-destra-e-sinistra-governano-a-colpi-di-bonus-e-debiti/, HTTP 200, testo dell'intervista visibile senza abbonamento; URL ritrovato nel feed https://qds.it/feed/, HTTP 200). Canale: Google News RSS, query uniformi «Boldrin intervista», «Boldrin proposta», «\"Ora!\" proposta», «\"Ora!\" intervista» più «\"ORA!\" Boldrin» (when:2d, HTTP 200). Canale ufficiale: https://ora-italia.it/wp-json/wp/v2/posts?after=2026-10-29T00:00:00 HTTP 200, nessun post (anche con modified_after); /feed/ HTTP 200, ultimo item del 18/10. Dichiarante: la testata lo presenta come «economista e fondatore, insieme ad Alberto Forchielli, di questo nuovo partito» (come le righe C27-ORA-001…006, «ORA! e Michele Boldrin»). Livello atteso V1 (intervista di una testata aperta, D-019). Confronto automatico di ogni segmento con il testo estratto dall'HTML scaricato: ritrovato. Wayback archive.org/wayback/available: nessuna copia (HTTP 200). Orizzonte/veicolo: non_specificato e dichiarazione (nessun atto, nessuna data, nessun riferimento al prossimo governo). Contesto: risposta sulla fuga dei cervelli, «Servono tre cose al posto delle miopi e illusorie politiche per il ‘rientro dei cervelli’»: la prima è la crescita della produttività, la seconda l'Università, la terza la casa. Pacchetto (D-019, regola pacchetti della nota 2026-10-21.uniformita-pre-pubblicazione.md): ogni voce dell'elenco è una riga, righe C27-ORA-024…032; la voce con strumento identificabile è C27-ORA-031 (abolizione del valore legale del titolo). Voce 2d (Università). Pre-valutazione slogan: OK (strumento: abrogazione di una norma, il valore legale del titolo). Doppioni: nessuna riga ORA sul valore legale del titolo. COFOG 09.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-31 — CONFERMATA: intervista a domande e risposte di QdS (D-019, GET 200, 31/10); segmenti ritrovati nell'ordine; abolizione di una norma identificata (valore legale del titolo di studio) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-ORA-032",
+    "partitoId": "ORA",
+    "dichiarante": "Michele Boldrin",
+    "ruoloDichiarante": "fondatore di ORA! (con Alberto Forchielli), economista; la testata lo dice «economista e fondatore, insieme ad Alberto Forchielli, di questo nuovo partito»",
+    "data": "2026-10-31",
+    "testoLetterale": "La terza è la casa: più offerta abitativa nelle città, con urbanistica semplificata e campus universitari, invece del controllo degli affitti.",
+    "parafrasiNeutra": "Aumentare l'offerta di abitazioni nelle città con regole urbanistiche semplificate e campus universitari, al posto del controllo degli affitti.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://qds.it/boldrin-fondatore-di-ora-da-quarantanni-destra-e-sinistra-governano-a-colpi-di-bonus-e-debiti/"
+    },
+    "archivioUrl": null,
+    "cofog": "06",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervista a Michele Boldrin di Renata Giordano su QdS - Quotidiano di Sicilia (article:published_time 2026-10-31T05:20:00+00:00, «31 Ottobre 2026, 06:20»), letta per intero il 2026-10-31 con curl GET semplice (richiesta: https://qds.it/boldrin-fondatore-di-ora-da-quarantanni-destra-e-sinistra-governano-a-colpi-di-bonus-e-debiti/, HTTP 200, testo dell'intervista visibile senza abbonamento; URL ritrovato nel feed https://qds.it/feed/, HTTP 200). Canale: Google News RSS, query uniformi «Boldrin intervista», «Boldrin proposta», «\"Ora!\" proposta», «\"Ora!\" intervista» più «\"ORA!\" Boldrin» (when:2d, HTTP 200). Canale ufficiale: https://ora-italia.it/wp-json/wp/v2/posts?after=2026-10-29T00:00:00 HTTP 200, nessun post (anche con modified_after); /feed/ HTTP 200, ultimo item del 18/10. Dichiarante: la testata lo presenta come «economista e fondatore, insieme ad Alberto Forchielli, di questo nuovo partito» (come le righe C27-ORA-001…006, «ORA! e Michele Boldrin»). Livello atteso V1 (intervista di una testata aperta, D-019). Confronto automatico di ogni segmento con il testo estratto dall'HTML scaricato: ritrovato. Wayback archive.org/wayback/available: nessuna copia (HTTP 200). Orizzonte/veicolo: non_specificato e dichiarazione (nessun atto, nessuna data, nessun riferimento al prossimo governo). Contesto: risposta sulla fuga dei cervelli, «Servono tre cose al posto delle miopi e illusorie politiche per il ‘rientro dei cervelli’»: la prima è la crescita della produttività, la seconda l'Università, la terza la casa. Pacchetto (D-019, regola pacchetti della nota 2026-10-21.uniformita-pre-pubblicazione.md): ogni voce dell'elenco è una riga, righe C27-ORA-024…032; la voce con strumento identificabile è C27-ORA-031 (abolizione del valore legale del titolo). Voce 3 (casa). Pre-valutazione slogan: LIM (due strumenti nominati, semplificazione urbanistica e campus universitari, senza numeri; il rifiuto del controllo degli affitti è un impegno a non introdurre una misura). Una sola riga: la frase presenta una misura (più offerta abitativa) con i suoi strumenti. Doppioni controllati: C27-ORA-003 (12.000 posti letto l'anno, affitti a 300-350 € per gli studenti) e C27-ORA-008 (alloggi ERP sfitti) sono più specifiche e non coincidono; il verificatore valuta se la riga ribadisce C27-ORA-003 per la parte sui campus. COFOG 06.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-31 — CONFERMATA: intervista a domande e risposte di QdS (D-019, GET 200, 31/10); frase intera ritrovata; caso limite superato: rifiuto di uno strumento identificato (controllo degli affitti, come gli impegni a non introdurre di C27-FI-011) insieme ai campus universitari; \"più offerta\" e \"urbanistica semplificata\" da sole non basterebbero | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "incerto",
+    "ribadita": []
+  },
+  {
+    "id": "C27-ORA-034",
+    "partitoId": "ORA",
+    "dichiarante": "Michele Boldrin",
+    "ruoloDichiarante": "fondatore di ORA! (con Alberto Forchielli), economista; la testata lo dice «economista e fondatore, insieme ad Alberto Forchielli, di questo nuovo partito»",
+    "data": "2026-10-31",
+    "testoLetterale": "Un piano straordinario di assunzioni di personale sanitario, dove la carenza sia strutturale, e strutture sanitarie territoriali ridurrebbero la pressione in pronto soccorso e grandi ospedali […]",
+    "parafrasiNeutra": "Un piano straordinario di assunzioni di personale sanitario nelle zone con carenza strutturale.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://qds.it/boldrin-fondatore-di-ora-da-quarantanni-destra-e-sinistra-governano-a-colpi-di-bonus-e-debiti/"
+    },
+    "archivioUrl": null,
+    "cofog": "07",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervista a Michele Boldrin di Renata Giordano su QdS - Quotidiano di Sicilia (article:published_time 2026-10-31T05:20:00+00:00, «31 Ottobre 2026, 06:20»), letta per intero il 2026-10-31 con curl GET semplice (richiesta: https://qds.it/boldrin-fondatore-di-ora-da-quarantanni-destra-e-sinistra-governano-a-colpi-di-bonus-e-debiti/, HTTP 200, testo dell'intervista visibile senza abbonamento; URL ritrovato nel feed https://qds.it/feed/, HTTP 200). Canale: Google News RSS, query uniformi «Boldrin intervista», «Boldrin proposta», «\"Ora!\" proposta», «\"Ora!\" intervista» più «\"ORA!\" Boldrin» (when:2d, HTTP 200). Canale ufficiale: https://ora-italia.it/wp-json/wp/v2/posts?after=2026-10-29T00:00:00 HTTP 200, nessun post (anche con modified_after); /feed/ HTTP 200, ultimo item del 18/10. Dichiarante: la testata lo presenta come «economista e fondatore, insieme ad Alberto Forchielli, di questo nuovo partito» (come le righe C27-ORA-001…006, «ORA! e Michele Boldrin»). Livello atteso V1 (intervista di una testata aperta, D-019). Confronto automatico di ogni segmento con il testo estratto dall'HTML scaricato: ritrovato. Wayback archive.org/wayback/available: nessuna copia (HTTP 200). Orizzonte/veicolo: non_specificato e dichiarazione (nessun atto, nessuna data, nessun riferimento al prossimo governo). Contesto: risposta alla domanda «Cosa fare per evitare che la salute sia un lusso?»; «integrarli» si riferisce ai piani di rientro regionali citati nella frase precedente. Le frasi sono al condizionale («Occorrerebbe», «ridurrebbero», «uniformerebbe»): il verificatore valuta se sono un impegno o un'analisi. Pacchetto: righe C27-ORA-033…036. Pre-valutazione slogan: LIM/OK (strumento: piano straordinario di assunzioni con oggetto e platea, le zone con carenza strutturale; nessun numero). Stessa frase di C27-ORA-035 (due voci nella stessa frase, come C27-PAP-013/014). COFOG 07.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-31 — CONFERMATA: intervista a domande e risposte di QdS (D-019, GET 200, 31/10); citazione ritrovata, il \"[…]\" finale toglie solo \"e di conseguenza il ricorso al privato\"; caso limite superato: piano con oggetto definito (assunzioni di personale sanitario dove la carenza è strutturale), come C27-PD-009 e C27-M5S-027, senza numero | PERIMETRO: orizzonte/veicolo (vedi colonne)"
     },
     "effettoConti": "si",
     "ribadita": []

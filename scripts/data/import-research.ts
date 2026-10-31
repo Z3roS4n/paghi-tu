@@ -287,7 +287,7 @@ const PROMISE_FILES: Record<string, string> = {
   c: "2026-10-20.promesse-campagna-gruppo-c",
   "c-integrazione": "2026-10-21.promesse-campagna-gruppo-c-integrazione",
 };
-const CAMPAIGN_PERIOD = { dal: "2026-01-01", al: "2026-10-30" };
+const CAMPAIGN_PERIOD = { dal: "2026-01-01", al: "2026-10-31" };
 
 function isVerified(status: string) {
   return status.includes("✓") && !/DA RIMUOVERE|NON VERIFICABILE|NUOVA|riserva/i.test(status);
@@ -399,7 +399,7 @@ async function classifyPromises(eligible: z.infer<typeof CampaignPromise>[]) {
 const LEGAL_ACTS = "2026-10-28.atti-economici";
 const LEGAL_ACT_MEASURES = "2026-10-28.atti-misure";
 // La routine sposta «dal» indietro con il recupero e «al» al giorno dell'ultima Gazzetta letta.
-const LEGAL_ACTS_COVERAGE = { dal: "2026-08-01", al: "2026-10-29", obiettivo: "2022-10-22" };
+const LEGAL_ACTS_COVERAGE = { dal: "2026-07-01", al: "2026-10-30", obiettivo: "2022-10-22" };
 
 async function legalActs(govs: ReturnType<typeof Government.parse>[]) {
   const coverage = LegalActsCoverage.parse(LEGAL_ACTS_COVERAGE);
