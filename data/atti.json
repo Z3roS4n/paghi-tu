@@ -2082,5 +2082,2173 @@
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-29 — Normattiva (GET uri-res/N2Ls, URN ~artN, testo vigente al 29-10-2026): intestazione (DL 10-9-2026 n. 157, titolo, GU n. 210 del 10-9-2026, in vigore dall'11-9-2026), premesse (CdM del 10-9-2026), artt. 1-4 riletti, firma Meloni; cdm_url (CdM n. 187) aperto. Stato in_conversione (scade 9-11-2026). Correzione: aggiunta alle note sul DL 193/2026."
     }
+  },
+  {
+    "id": "l-2026-152",
+    "tipo": "legge",
+    "numero": 152,
+    "data": "2026-08-07",
+    "titoloUfficiale": "Conversione in legge, con modificazioni, del decreto-legge 26 giugno 2026, n. 107, recante disposizioni urgenti per interventi infrastrutturali e per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR), nonché ulteriori disposizioni finanziarie urgenti.",
+    "titolo": "Conversione DL 107/2026: infrastrutture, PNRR e disposizioni finanziarie",
+    "governoId": "g202",
+    "gazzetta": {
+      "numero": 192,
+      "data": "2026-08-20",
+      "fonte": {
+        "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/20/26G00165/SG"
+      }
+    },
+    "inVigoreDal": "2026-08-21",
+    "cdm": {
+      "url": "https://www.governo.it/it/articolo/comunicato-stampa-del-consiglio-dei-ministri-n-179/32157"
+    },
+    "stato": "in_vigore",
+    "conversione": null,
+    "relazioneTecnica": {
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2987"
+    },
+    "misure": [
+      {
+        "id": "l-2026-152-m01",
+        "articolo": "all.: art. 1, c. 2-bis, DL 107/2026",
+        "descrizione": "Contributo straordinario al comune di Serravalle Scrivia per progettare nuove opere viarie di collegamento",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "04",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 0.3
+          },
+          {
+            "anno": 2027,
+            "mln": 0.8
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "un contributo straordinario di 300.000 euro per l’anno 2026 e di 800.000 euro per l’anno 2027",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/20/26G00165/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 1, c. 2-bis del DL 107/2026 nel testo coordinato su Normattiva, norma tra (( )) cioè aggiunta in conversione; 300.000 euro 2026 e 800.000 euro 2027, citazione identica, spesa / tetto. Nessuna correzione."
+        }
+      },
+      {
+        "id": "l-2026-152-m02",
+        "articolo": "all.: art. 1, c. 2-ter, DL 107/2026",
+        "descrizione": "Potenziamento del trasporto pubblico locale nella provincia di Brescia",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "04",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 1
+          },
+          {
+            "anno": 2027,
+            "mln": 1.5
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "è autorizzata la spesa di 1 milione di euro per l’anno 2026 e di 1,5 milioni di euro per l’anno 2027",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/20/26G00165/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 1, c. 2-ter del DL 107/2026 nel testo coordinato su Normattiva, norma tra (( )) cioè aggiunta in conversione; 1 mln 2026 e 1,5 mln 2027, citazione identica, spesa / tetto. Nessuna correzione."
+        }
+      },
+      {
+        "id": "l-2026-152-m03",
+        "articolo": "all.: art. 4, c. 1-ter, DL 107/2026",
+        "descrizione": "Contributo al comune di Tropea per un ascensore di collegamento tra il centro storico e il lungomare",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "04",
+        "importi": [
+          {
+            "anno": 2027,
+            "mln": 1.8
+          },
+          {
+            "anno": 2028,
+            "mln": 0.7
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "in ragione di 1,8 milioni di euro per l’anno 2027 e di 0,7 milioni di euro per l’anno 2028",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/20/26G00165/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 4, c. 1-ter del DL 107/2026 nel testo coordinato su Normattiva, norma tra (( )) cioè aggiunta in conversione; 1,8 mln 2027 e 0,7 mln 2028, citazione identica, spesa / tetto. Nessuna correzione."
+        }
+      },
+      {
+        "id": "l-2026-152-m04",
+        "articolo": "all.: art. 13-quinquies, cc. 1 e 3, DL 107/2026",
+        "descrizione": "Ministero della cultura: misure dell’art. 2, c. 5-ter, DL 83/2014 prorogate al 2029 ed estese ai programmi di spesa nazionali e UE (Grandi Progetti Beni culturali, PNRR)",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "08",
+        "importi": [
+          {
+            "anno": 2027,
+            "mln": 0.9
+          },
+          {
+            "anno": 2028,
+            "mln": 0.9
+          },
+          {
+            "anno": 2029,
+            "mln": 0.9
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "pari a 900.000 euro per ciascuno degli anni dal 2027 al 2029",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/20/26G00165/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 13-quinquies, cc. 1 e 3 del DL 107/2026 nel testo coordinato su Normattiva, norma tra (( )) cioè aggiunta in conversione; 900.000 euro per ciascuno degli anni 2027-2029, citazione identica, spesa / tetto. Nessuna correzione."
+        }
+      },
+      {
+        "id": "l-2026-152-m05",
+        "articolo": "all.: art. 13-sexies, DL 107/2026",
+        "descrizione": "Contributo ad ALES spa per il supporto al Ministero della cultura nella rendicontazione e chiusura degli interventi PNRR fino al 2029",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "08",
+        "importi": [
+          {
+            "anno": 2027,
+            "mln": 2.5
+          },
+          {
+            "anno": 2028,
+            "mln": 2.5
+          },
+          {
+            "anno": 2029,
+            "mln": 2.5
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "è assegnato un contributo pari a 2,5 milioni di euro per ciascuno degli anni dal 2027 al 2029",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/20/26G00165/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 13-sexies del DL 107/2026 nel testo coordinato su Normattiva, norma tra (( )) cioè aggiunta in conversione; 2,5 mln per ciascuno degli anni 2027-2029, citazione identica, spesa / tetto. Nessuna correzione."
+        }
+      },
+      {
+        "id": "l-2026-152-m06",
+        "articolo": "all.: art. 13-septies, c. 1, DL 107/2026",
+        "descrizione": "Proroga al 31-12-2029 della Soprintendenza speciale per il PNRR (art. 29, c. 1, DL 77/2021)",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "08",
+        "importi": [
+          {
+            "anno": 2027,
+            "mln": 0.05
+          },
+          {
+            "anno": 2028,
+            "mln": 0.05
+          },
+          {
+            "anno": 2029,
+            "mln": 0.05
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "pari a 50.000 euro per ciascuno degli anni dal 2027 al 2029",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/20/26G00165/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 13-septies, c. 1 del DL 107/2026 nel testo coordinato su Normattiva, norma tra (( )) cioè aggiunta in conversione; 50.000 euro per ciascuno degli anni 2027-2029, citazione identica, spesa / tetto. Nessuna correzione."
+        }
+      },
+      {
+        "id": "l-2026-152-m07",
+        "articolo": "all.: art. 13-septies, cc. 2-4, DL 107/2026",
+        "descrizione": "Soprintendenza speciale per il PNRR: esperti aggiuntivi della segreteria tecnica e funzioni di RUP per il 2027-2029",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "08",
+        "importi": [
+          {
+            "anno": 2027,
+            "mln": 1.848777
+          },
+          {
+            "anno": 2028,
+            "mln": 1.848777
+          },
+          {
+            "anno": 2029,
+            "mln": 1.848777
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "è autorizzata la spesa di 1.848.777 euro per ciascuno degli anni dal 2027 al 2029",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/20/26G00165/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 13-septies, c. 4 del DL 107/2026 nel testo coordinato su Normattiva, norma tra (( )) cioè aggiunta in conversione; 1.848.777 euro per ciascuno degli anni 2027-2029, citazione identica, spesa / tetto. Nessuna correzione."
+        }
+      },
+      {
+        "id": "l-2026-152-m08",
+        "articolo": "all.: art. 15-bis, cc. 3-4, DL 107/2026",
+        "descrizione": "Aumento del Fondo per il cinema e l’audiovisivo (art. 13, c. 2, L. 220/2016): da 610 a 660 milioni nel 2026 e da 500 a 650 milioni nel 2027",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "08",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 50
+          },
+          {
+            "anno": 2027,
+            "mln": 150
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "Agli oneri derivanti dal comma 3, pari a 50 milioni di euro per l’anno 2026 e a 150 milioni di euro per l’anno 2027",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/20/26G00165/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 15-bis, cc. 3-4 del DL 107/2026 nel testo coordinato su Normattiva, norma tra (( )) cioè aggiunta in conversione; 50 mln 2026 e 150 mln 2027 (Fondo cinema e audiovisivo, art. 13, c. 2, L. 220/2016: da 610 a 660 e da 500 a 650 milioni), citazione identica, spesa / tetto. Nessuna correzione."
+        }
+      }
+    ],
+    "note": "Legge di conversione: converte il DL 26 giugno 2026, n. 107 (fuori finestra). Recupero all’indietro (agosto 2026): trovato nel sommario GU n. 192. Testo dalla pagina dell’atto in GU (caricaDettaglioAtto, testo originario articolo per articolo) (allegato con le modificazioni); PDF del numero https://www.gazzettaufficiale.it/eli/gu/2026/08/20/192/sg/pdf. Registrate solo le misure con importo introdotte in conversione. cdm_url = CdM n. 179 del 22-6-2026, che ha approvato il DL 107. relazione_tecnica_url: scheda A.C. 2987 (RT del DL originario); RT sugli emendamenti non recuperata. Testo coordinato non letto. Non registrati: art. 13-bis (integrazioni di investimenti PNRR per riprogrammazione, risorse UE); art. 15, c. 2 (correzione formale «61,2» in «61,25 milioni»); art. 15-bis, c. 5 (destinazione di 20 milioni al polo per l’industria culturale e creativa di Matera e somma dell’art. 28, c. 5, DL 19/2026 portata da 27,6 milioni a 67.957.899 euro: impieghi di risorse già previste dall’art. 28 DL 19/2026, da verificare). Coperture di m08: Fondo di rotazione L. 183/1987 e residui del Fondo sviluppo e coesione versati all’entrata. in_vigore_dal letto sulla pagina dell’atto in GU («Entrata in vigore del provvedimento»), da ricontrollare su Normattiva.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-30 — Normattiva (GET uri-res/N2Ls, URN @originale~artN e testo coordinato del DL 107/2026 ~art1, ~art4, ~art13quinquies, ~art13sexies, ~art13septies, ~art15bis, con i segni (( )) delle parti aggiunte in conversione): intestazione (L. 7-8-2026 n. 152, titolo identico, GU n. 192 del 20-8-2026, in vigore dal 21-8-2026), firma Meloni. Stato in_vigore. Nessuna correzione."
+    }
+  },
+  {
+    "id": "dlgs-2026-151",
+    "tipo": "decreto_legislativo",
+    "numero": 151,
+    "data": "2026-07-30",
+    "titoloUfficiale": "Disposizioni in materia di coltivazione, promozione, commercializzazione, valorizzazione e incremento della qualità e dell’utilizzo dei prodotti del settore florovivaistico e della filiera florovivaistica, in attuazione della delega di cui alla legge 4 luglio 2024, n. 102.",
+    "titolo": "Settore e filiera florovivaistica",
+    "governoId": "g202",
+    "gazzetta": {
+      "numero": 186,
+      "data": "2026-08-12",
+      "fonte": {
+        "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/12/26G00161/SG"
+      }
+    },
+    "inVigoreDal": "2026-08-27",
+    "cdm": {
+      "url": "https://www.governo.it/it/articolo/comunicato-stampa-del-consiglio-dei-ministri-n-181/32336"
+    },
+    "stato": "in_vigore",
+    "conversione": null,
+    "relazioneTecnica": null,
+    "misure": [
+      {
+        "id": "dlgs-2026-151-m01",
+        "articolo": "art. 8, cc. 1 e 3",
+        "descrizione": "Adeguamento dei mercati all’ingrosso come piattaforme logistiche per i prodotti florovivaistici",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "04",
+        "importi": [
+          {
+            "anno": 2027,
+            "mln": 2
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "è autorizzata la spesa di 2 milioni di euro per l’anno 2027",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/12/26G00161/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 8, cc. 1 e 3 su Normattiva; 2 mln 2027, citazione identica, spesa / tetto, coperta dal fondo speciale di conto capitale (accantonamento MASAF, che l'art. 4, c. 2, L. 102/2024 consente di usare ma non autorizza come spesa). Nessuna correzione."
+        }
+      },
+      {
+        "id": "dlgs-2026-151-m03",
+        "articolo": "art. 13, c. 4",
+        "descrizione": "Risorse per il Piano nazionale del settore florovivaistico, da ripartire tra le regioni",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "04",
+        "importi": [
+          {
+            "anno": 2027,
+            "mln": 3.5
+          },
+          {
+            "anno": 2028,
+            "mln": 2.5
+          },
+          {
+            "anno": 2029,
+            "mln": 2.5
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "è autorizzata la spesa di 3,5 milioni di euro per l’anno 2027 e di 2,5 milioni di euro per ciascuno degli anni 2028 e 2029",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/12/26G00161/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 13, c. 4 su Normattiva; 3,5 mln 2027 e 2,5 mln per ciascuno degli anni 2028 e 2029, citazione identica, spesa / tetto; copertura come m01. Nessuna correzione."
+        }
+      }
+    ],
+    "note": "Recupero all’indietro (agosto 2026): trovato nel sommario GU n. 186. Testo dalla pagina dell’atto in GU (caricaDettaglioAtto, testo originario articolo per articolo); PDF del numero https://www.gazzettaufficiale.it/eli/gu/2026/08/12/186/sg/pdf. Esame preliminare CdM 30-4-2026, definitivo CdM 14-7-2026 (n. 181). RT dello schema non cercata. Misure: artt. 8, 11 e 13 (art. 20: invarianza per il resto). DOPPIO CONTEGGIO POSSIBILE per m02: è coperta riducendo l’autorizzazione art. 4, c. 1, L. 102/2024 (legge di delega, non ancora nel registro, dentro il periodo del recupero): stesso caso di dlgs-2026-197-m01 (respinta) e dlgs-2026-188-m01, in attesa della regola del titolare. m01 e m03 sono coperte dal fondo speciale di conto capitale (accantonamento MASAF). in_vigore_dal letto sulla pagina dell’atto in GU («Entrata in vigore del provvedimento»), da ricontrollare su Normattiva.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-30 — Normattiva (GET uri-res/N2Ls, URN @originale~artN): intestazione (Dlgs 30-7-2026 n. 151, titolo identico, GU n. 186 del 12-8-2026, entrata in vigore 27-8-2026), premesse (preliminare CdM 30-4-2026, definitiva 14-7-2026), artt. 8, 11, 13 e 20 riletti, firma Meloni; L. 102/2024 art. 4 riletto (testo vigente). Stato in_vigore. Confermate m01 e m03; respinta m02 (doppio conteggio con la legge di delega). Nessuna correzione."
+    }
+  },
+  {
+    "id": "dlgs-2026-147",
+    "tipo": "decreto_legislativo",
+    "numero": 147,
+    "data": "2026-08-07",
+    "titoloUfficiale": "Disposizioni in materia di tributi regionali e locali e di federalismo fiscale regionale.",
+    "titolo": "Tributi regionali e locali e federalismo fiscale regionale",
+    "governoId": "g202",
+    "gazzetta": {
+      "numero": 185,
+      "data": "2026-08-11",
+      "fonte": {
+        "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/11/26G00168/SG"
+      }
+    },
+    "inVigoreDal": "2026-08-12",
+    "cdm": {
+      "url": "https://www.governo.it/it/articolo/comunicato-stampa-del-consiglio-dei-ministri-n-185/32468"
+    },
+    "stato": "in_vigore",
+    "conversione": null,
+    "relazioneTecnica": null,
+    "misure": [
+      {
+        "id": "dlgs-2026-147-m02",
+        "articolo": "art. 15",
+        "descrizione": "Tassa automobilistica: pagamento annuale in unica soluzione riferito ai dodici mesi dall’immatricolazione, dal 2028",
+        "natura": "minori_entrate",
+        "tipoOnere": "stima",
+        "cofog": "04",
+        "importi": [
+          {
+            "anno": 2029,
+            "mln": 1.7
+          },
+          {
+            "anno": 2030,
+            "mln": 0.9
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "valutati in 1,7 milioni di euro per l’anno 2029 e 0,9 milioni di euro annui a decorrere dall’anno 2030",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/11/26G00168/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 15, c. 3 su Normattiva; 1,7 mln 2029 e 0,9 mln annui dal 2030 (a_decorrere si), citazione identica, minori_entrate / stima. Natura: l'onere è l'effetto di gettito della scadenza introdotta per la tassa automobilistica, coperto dal fondo della delega fiscale senza alcun trasferimento alle regioni scritto nel testo: è una minore entrata del conto delle amministrazioni pubbliche."
+        }
+      },
+      {
+        "id": "dlgs-2026-147-m03",
+        "articolo": "art. 33, cc. 1, lett. a), e 2",
+        "descrizione": "Fondo per le regioni a statuto ordinario legato alla compartecipazione IRPEF (art. 2, c. 3, Dlgs 68/2011): incremento di 50 milioni annui dal 2028",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "01",
+        "importi": [
+          {
+            "anno": 2028,
+            "mln": 50
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "Agli oneri derivanti dal comma 1, lettera a), pari a 50 milioni di euro annui a decorrere dall’anno 2028",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/11/26G00168/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 33, c. 1, lett. a) (nuovo art. 2, c. 3, Dlgs 68/2011) e c. 2 su Normattiva; 50 mln annui dal 2028 (a_decorrere si), citazione identica, spesa / tetto. I trasferimenti soppressi (424; 110; 34; 5.259,6 milioni) e la compartecipazione si compensano per testo: giusto non registrarli. Nessuna correzione."
+        }
+      },
+      {
+        "id": "dlgs-2026-147-m04",
+        "articolo": "art. 34",
+        "descrizione": "Fondo per le regioni a statuto ordinario per il recupero dei tagli dell’art. 14, c. 2, DL 78/2010",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "01",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 80
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "un fondo con una dotazione pari a 80 milioni di euro per l’anno 2026",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/11/26G00168/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 34 su Normattiva; 80 mln 2026, citazione identica, spesa / tetto. Nessuna correzione."
+        }
+      }
+    ],
+    "note": "Recupero all’indietro (agosto 2026): trovato nel sommario GU n. 185 (S.O. n. 30). Testo dalla pagina dell’atto in GU (caricaDettaglioAtto, testo originario articolo per articolo) (atto nel supplemento ordinario: il PDF del numero non lo contiene). Esame preliminare CdM 9-5-2025, definitivo CdM 4-8-2026 (premesse; comunicato n. 185); delega L. 111/2023. RT dello schema non cercata. Misure con importo: artt. 11, 15, 33, 34 e 36 (art. 38: invarianza per il resto). Art. 36: la compartecipazione IRPEF di province e città metropolitane (m05) sostituisce l’imposta RCA che passa allo Stato (m06): le due righe vanno lette insieme; l’onere netto coperto dal fondo art. 62 Dlgs 209/2023 è di 9 milioni 2027, 2,6 milioni 2028, 41,1 milioni 2029 e 97,6 milioni dal 2030 (art. 36, c. 6). Art. 33: la compartecipazione regionale all’IRPEF sostituisce trasferimenti statali soppressi dal 2027 (424 milioni quota IVA non sanità, 5.259,6 milioni TPL e altri): regolazione tra Stato e regioni senza onere scritto, salvo i 50 milioni di m03. Coperture: fondo art. 62, c. 1, Dlgs 209/2023 (attuazione della delega fiscale). in_vigore_dal letto sulla pagina dell’atto in GU («Entrata in vigore del provvedimento»), da ricontrollare su Normattiva.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-30 — Normattiva (GET uri-res/N2Ls, URN @originale~artN): intestazione (Dlgs 7-8-2026 n. 147, titolo identico, GU n. 185 dell'11-8-2026, S.O. n. 30, entrata in vigore 12-8-2026), premesse (esame preliminare CdM 9-5-2025, deliberazione motivata 29-7-2026 per la mancata intesa, deliberazione definitiva 4-8-2026), artt. 11, 15, 33, 34, 36, 38 e 39 riletti, firma Meloni. Stato in_vigore. Confermate m02, m03 e m04; respinte m01 (natura), m05 e m06 (giro di gettito tra Stato e province). Nessuna correzione."
+    }
+  },
+  {
+    "id": "dlgs-2026-148",
+    "tipo": "decreto_legislativo",
+    "numero": 148,
+    "data": "2026-08-07",
+    "titoloUfficiale": "Disposizioni integrative e correttive in materia di imposte sui redditi, di imposta sulle successioni e donazioni, di imposta sul valore aggiunto, di accise nonché in materia di controlli, di adempimento collaborativo e di semplificazione.",
+    "titolo": "Correttivo fiscale: imposte sui redditi, successioni, IVA, accise e controlli",
+    "governoId": "g202",
+    "gazzetta": {
+      "numero": 185,
+      "data": "2026-08-11",
+      "fonte": {
+        "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/11/26G00169/SG"
+      }
+    },
+    "inVigoreDal": "2026-08-12",
+    "cdm": {
+      "url": "https://www.governo.it/it/articolo/comunicato-stampa-del-consiglio-dei-ministri-n-185/32468"
+    },
+    "stato": "in_vigore",
+    "conversione": null,
+    "relazioneTecnica": null,
+    "misure": [
+      {
+        "id": "dlgs-2026-148-m01",
+        "articolo": "art. 36, c. 2 (oneri degli artt. 6, 10, 11, 22, 28 e 29)",
+        "descrizione": "Minori entrate di riallineamento dei valori contabili, perdite estere, regimi OCSE, termini di accertamento, concordato preventivo biennale e imposta sostitutiva 2020-2023 (valutazione complessiva)",
+        "natura": "minori_entrate",
+        "tipoOnere": "stima",
+        "cofog": "01",
+        "importi": [
+          {
+            "anno": 2027,
+            "mln": 73.19125
+          },
+          {
+            "anno": 2028,
+            "mln": 41.595
+          },
+          {
+            "anno": 2029,
+            "mln": 31.46875
+          },
+          {
+            "anno": 2030,
+            "mln": 36.0625
+          },
+          {
+            "anno": 2031,
+            "mln": 32.6325
+          },
+          {
+            "anno": 2032,
+            "mln": 27.12
+          },
+          {
+            "anno": 2033,
+            "mln": 27.12
+          },
+          {
+            "anno": 2034,
+            "mln": 36.672334
+          },
+          {
+            "anno": 2035,
+            "mln": 36.672334
+          },
+          {
+            "anno": 2036,
+            "mln": 36.672334
+          },
+          {
+            "anno": 2037,
+            "mln": 36.672334
+          },
+          {
+            "anno": 2038,
+            "mln": 36.672334
+          },
+          {
+            "anno": 2039,
+            "mln": 36.672334
+          },
+          {
+            "anno": 2040,
+            "mln": 36.672334
+          },
+          {
+            "anno": 2041,
+            "mln": 31.172334
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "valutati in 73.191.250 euro per l’anno 2027, 41.595.000 euro per l’anno 2028, 31.468.750 euro per l’anno 2029, 36.062.500 euro per l’anno 2030, 32.632.500 euro per l’anno 2031 […]",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/11/26G00169/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 36, c. 2 su Normattiva; importi 2027-2041 identici (27.120.000 nel 2032 e nel 2033, 36.672.334 per ciascuno degli anni 2034-2040, 31.172.334 dal 2041, a_decorrere si), citazione identica fino al taglio «[…]» (limite di 320 caratteri), stima («valutati in»). Natura: gli artt. 6, 10, 11, 22, 28 e 29 (riletti) sono tutte norme fiscali (riallineamento, perdite estere, regimi OCSE, termini di accertamento, concordato preventivo, imposta sostitutiva): minori_entrate. Giusto non contare a parte l'art. 29, c. 19, compreso nell'aggregato. Nessuna correzione."
+        }
+      }
+    ],
+    "note": "Recupero all’indietro (agosto 2026): trovato nel sommario GU n. 185 (S.O. n. 30). Testo dalla pagina dell’atto in GU (caricaDettaglioAtto, testo originario articolo per articolo) (atto nel supplemento ordinario). Esame preliminare CdM 10-6-2026, definitivo CdM 4-8-2026 (premesse; comunicato n. 185); delega L. 111/2023. RT dello schema non cercata. Registrati i due aggregati dell’art. 36, c. 2: oneri (m01) e maggiori entrate/minori spese usate come copertura (m02). Non registrate a parte le quantificazioni dell’art. 29, c. 19 (17.521.250 euro 2027, 3.675.000 2028, 4.348.750 2029, 8.942.500 2030, 5.512.500 2031): sono comprese nell’aggregato di m01, contarle due volte sarebbe un errore. Non registrato: art. 36, c. 1 (fondo art. 62, c. 1, Dlgs 209/2023 incrementato di 46.308.750 euro 2027 e altri anni: accantonamento per coperture future, stesso criterio del Fondo interventi strutturali). Copertura residua (c. 2, lett. b): fondo art. 62, c. 1, Dlgs 209/2023. in_vigore_dal letto sulla pagina dell’atto in GU («Entrata in vigore del provvedimento»), da ricontrollare su Normattiva.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-30 — Normattiva (GET uri-res/N2Ls, URN @originale~artN): intestazione (Dlgs 7-8-2026 n. 148, titolo identico, GU n. 185 dell'11-8-2026, S.O. n. 30, entrata in vigore 12-8-2026), premesse (preliminare CdM 10-6-2026, definitiva 4-8-2026), artt. 6, 10, 11, 22, 26-29, 36 e 37 riletti, firma Meloni. Stato in_vigore. Confermata m01; respinta m02 (natura mista). Nessuna correzione."
+    }
+  },
+  {
+    "id": "dlgs-2026-149",
+    "tipo": "decreto_legislativo",
+    "numero": 149,
+    "data": "2026-08-07",
+    "titoloUfficiale": "Disposizioni in materia di ordinamento della giurisdizione tributaria.",
+    "titolo": "Ordinamento della giurisdizione tributaria",
+    "governoId": "g202",
+    "gazzetta": {
+      "numero": 185,
+      "data": "2026-08-11",
+      "fonte": {
+        "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/11/26G00170/SG"
+      }
+    },
+    "inVigoreDal": "2026-08-26",
+    "cdm": {
+      "url": "https://www.governo.it/it/articolo/comunicato-stampa-del-consiglio-dei-ministri-n-185/32468"
+    },
+    "stato": "in_vigore",
+    "conversione": null,
+    "relazioneTecnica": null,
+    "misure": [
+      {
+        "id": "dlgs-2026-149-m01",
+        "articolo": "art. 3, c. 1 (oneri dell’art. 2, c. 20)",
+        "descrizione": "Applicazione annuale di magistrati e giudici tributari ad altre sedi (art. 1, c. 14, L. 130/2022) estesa ai magistrati tributari",
+        "natura": "spesa",
+        "tipoOnere": "stima",
+        "cofog": "03",
+        "importi": [
+          {
+            "anno": 2027,
+            "mln": 0.3542
+          },
+          {
+            "anno": 2028,
+            "mln": 0.3542
+          },
+          {
+            "anno": 2029,
+            "mln": 0.7007
+          },
+          {
+            "anno": 2030,
+            "mln": 1.0934
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "valutati in euro 354.200 per ciascuno degli anni 2027 e 2028, in euro 700.700 per l’anno 2029 e in euro 1.093.400 annui a decorrere dall’anno 2030",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/11/26G00170/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 3, c. 1 e art. 2, c. 20 su Normattiva; 354.200 euro 2027 e 2028, 700.700 euro 2029, 1.093.400 annui dal 2030 (a_decorrere si), citazione identica, spesa / stima («valutati in»). Nessuna correzione."
+        }
+      }
+    ],
+    "note": "Recupero all’indietro (agosto 2026): trovato nel sommario GU n. 185 (S.O. n. 30). Testo dalla pagina dell’atto in GU (caricaDettaglioAtto, testo originario articolo per articolo) (atto nel supplemento ordinario). Esame preliminare CdM 22-5-2026, definitivo CdM 4-8-2026 (premesse; comunicato n. 185); delega L. 111/2023. RT dello schema non cercata. Unica misura: art. 3, c. 1 (c. 2: invarianza per il resto). Copertura: fondo art. 62 Dlgs 209/2023. in_vigore_dal letto sulla pagina dell’atto in GU («Entrata in vigore del provvedimento»), da ricontrollare su Normattiva.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-30 — Normattiva (GET uri-res/N2Ls, URN @originale~artN): intestazione (Dlgs 7-8-2026 n. 149, titolo identico, GU n. 185 dell'11-8-2026, S.O. n. 30, entrata in vigore 26-8-2026), premesse (preliminare CdM 22-5-2026, definitiva 4-8-2026), artt. 2, c. 20 e 3 riletti, firma Meloni. Stato in_vigore. Nessuna correzione."
+    }
+  },
+  {
+    "id": "dl-2026-144",
+    "tipo": "decreto_legge",
+    "numero": 144,
+    "data": "2026-08-07",
+    "titoloUfficiale": "Disposizioni urgenti per la funzionalità della pubblica amministrazione e degli enti territoriali, nonché in materia di protezione civile.",
+    "titolo": "Funzionalità della PA e degli enti territoriali, protezione civile e sismi",
+    "governoId": "g202",
+    "gazzetta": {
+      "numero": 182,
+      "data": "2026-08-07",
+      "fonte": {
+        "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/07/26G00167/SG"
+      }
+    },
+    "inVigoreDal": "2026-08-08",
+    "cdm": {
+      "url": "https://www.governo.it/it/articolo/comunicato-stampa-del-consiglio-dei-ministri-n-185/32468"
+    },
+    "stato": "convertito",
+    "conversione": {
+      "estremi": "L. 5 ottobre 2026, n. 174 (GU n. 232 del 6-10-2026)",
+      "fonte": {
+        "url": "http://www.gazzettaufficiale.it/eli/id/2026/10/06/26G00194/SG"
+      }
+    },
+    "relazioneTecnica": {
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=3083"
+    },
+    "misure": [
+      {
+        "id": "dl-2026-144-m01",
+        "articolo": "art. 1, cc. 11-12",
+        "descrizione": "Assunzione straordinaria all’Avvocatura dello Stato di 9 avvocati e 6 procuratori dello Stato nel triennio 2026-2028",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "01",
+        "importi": [
+          {
+            "anno": 2027,
+            "mln": 1.847193
+          },
+          {
+            "anno": 2028,
+            "mln": 1.871583
+          },
+          {
+            "anno": 2029,
+            "mln": 2.010809
+          },
+          {
+            "anno": 2030,
+            "mln": 2.153177
+          },
+          {
+            "anno": 2031,
+            "mln": 2.167366
+          },
+          {
+            "anno": 2032,
+            "mln": 2.362973
+          },
+          {
+            "anno": 2033,
+            "mln": 2.379997
+          },
+          {
+            "anno": 2034,
+            "mln": 2.440272
+          },
+          {
+            "anno": 2035,
+            "mln": 2.941915
+          },
+          {
+            "anno": 2036,
+            "mln": 3.969922
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "pari a euro 1.847.193 per l’anno 2027, a euro 1.871.583 per l’anno 2028, a euro 2.010.809 per l’anno 2029, a euro 2.153.177 per l’anno 2030, a euro 2.167.366 per l’anno 2031 […]",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/07/26G00167/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 1, cc. 11-12 su Normattiva (originario e vigente); dieci importi 2027-2036 identici, 3.969.922 dal 2036 (a_decorrere si), citazione identica fino al taglio «[…]» (limite di 320 caratteri, il seguito è nelle note), spesa / tetto. Nessuna correzione."
+        }
+      },
+      {
+        "id": "dl-2026-144-m02",
+        "articolo": "art. 1, c. 15",
+        "descrizione": "Ufficio dell’Autorità garante per l’infanzia e l’adolescenza: posti di livello dirigenziale non generale della dotazione organica portati da due a tre (art. 5-bis, c. 1, L. 112/2011)",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "01",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 0.075099
+          },
+          {
+            "anno": 2027,
+            "mln": 0.180237
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "pari a euro 75.099 per l’anno 2026 e a euro 180.237 a decorrere dal 2027",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/07/26G00167/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 1, c. 15 su Normattiva; 75.099 euro 2026 e 180.237 dal 2027, citazione identica al testo originario, spesa / tetto. L'art. 5-bis, c. 1, L. 112/2011 (Normattiva, vigente) fissa la dotazione organica dell'Ufficio: i posti dirigenziali non generali passano da due a tre."
+        }
+      },
+      {
+        "id": "dl-2026-144-m03",
+        "articolo": "art. 2, cc. 11-12",
+        "descrizione": "Fondo nel bilancio del Ministero del lavoro per i progetti PNRR delle misure M5C2 I1.2 e I1.3 rimasti senza copertura dopo il definanziamento UE",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "10",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 187.5
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "con una dotazione di 187,5 milioni di euro per l’esercizio 2026",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/07/26G00167/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 2, cc. 11-12 su Normattiva; 187,5 mln 2026, citazione identica al testo originario (nel vigente «per l'anno 2026»), spesa / tetto; le coperture con risorse esistenti sono note. Nessuna correzione."
+        }
+      },
+      {
+        "id": "dl-2026-144-m04",
+        "articolo": "art. 4, c. 6",
+        "descrizione": "Compenso del Commissario straordinario per lo smaltimento dei materiali acquisiti dal Ministero della salute (40.000 euro annui, fino al 31-3-2027)",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "07",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 0.016667
+          },
+          {
+            "anno": 2027,
+            "mln": 0.01
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "pari a euro 16.667 per l’anno 2026 e a 10.000 euro per l’anno 2027",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/07/26G00167/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 4, c. 6 su Normattiva; 16.667 euro 2026 e 10.000 euro 2027, citazione identica, spesa / tetto. Nessuna correzione."
+        }
+      },
+      {
+        "id": "dl-2026-144-m05",
+        "articolo": "art. 4, c. 7",
+        "descrizione": "Attività del Commissario straordinario: deposito, custodia, trasporto, dismissione e smaltimento dei materiali già acquisiti dal Ministero della salute",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "07",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 44
+          },
+          {
+            "anno": 2027,
+            "mln": 40
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "pari a euro 44 milioni per l’anno 2026 e a euro 40 milioni per l’anno 2027",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/07/26G00167/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 4, c. 7 su Normattiva; 44 mln 2026 e 40 mln 2027, citazione identica, spesa / tetto. Nessuna correzione."
+        }
+      },
+      {
+        "id": "dl-2026-144-m07",
+        "articolo": "art. 7, c. 9, primo periodo",
+        "descrizione": "Attuazione del c. 2: tempi di liquidazione e pagamento delle spese di giustizia (art. 168-bis TU spese di giustizia) e interessi di ritardo",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "03",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 0.142381
+          },
+          {
+            "anno": 2027,
+            "mln": 1.708567
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "è autorizzata la spesa di euro 142.381 per l’anno 2026 e di euro 1.708.567 annui a decorrere dall’anno 2027",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/07/26G00167/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 7, c. 9, primo periodo su Normattiva; 142.381 euro 2026 e 1.708.567 annui dal 2027 (a_decorrere si), citazione identica, spesa / tetto. Nessuna correzione."
+        }
+      },
+      {
+        "id": "dl-2026-144-m08",
+        "articolo": "art. 7, cc. 6, 8 e 9",
+        "descrizione": "Aumento di 25 unità del ruolo organico della magistratura ordinaria dal 1° luglio 2027 (funzioni requirenti minorili): oneri assunzionali",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "03",
+        "importi": [
+          {
+            "anno": 2027,
+            "mln": 0.955037
+          },
+          {
+            "anno": 2028,
+            "mln": 2.176734
+          },
+          {
+            "anno": 2029,
+            "mln": 2.672152
+          },
+          {
+            "anno": 2030,
+            "mln": 2.672152
+          },
+          {
+            "anno": 2031,
+            "mln": 3.130025
+          },
+          {
+            "anno": 2032,
+            "mln": 3.473759
+          },
+          {
+            "anno": 2033,
+            "mln": 3.476672
+          },
+          {
+            "anno": 2034,
+            "mln": 3.601746
+          },
+          {
+            "anno": 2035,
+            "mln": 3.612169
+          },
+          {
+            "anno": 2036,
+            "mln": 7.371182
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "è autorizzata la spesa di euro 955.037 per l’anno 2027, di euro 2.176.734 per l’anno 2028, di euro 2.672.152 per l’anno 2029, di euro 2.672.152 per l’anno 2030, di euro 3.130.025 per l’anno 2031, di euro 3.473.759 per l’anno 2032 […]",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/07/26G00167/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 7, cc. 6, 8 e 9 su Normattiva; dieci importi 2027-2036 identici, 7.371.182 dal 2036 (a_decorrere si), citazione identica fino al taglio «[…]» (limite di 320 caratteri), spesa / tetto. I 25 posti vanno alle funzioni requirenti di primo grado del c. 5, che riguarda le procure presso i tribunali per i minorenni. Nessuna correzione."
+        }
+      },
+      {
+        "id": "dl-2026-144-m09",
+        "articolo": "art. 7, cc. 8-9",
+        "descrizione": "Concorsi per i 25 magistrati in più: spese concorsuali",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "03",
+        "importi": [
+          {
+            "anno": 2027,
+            "mln": 0.401
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "di euro 401.000 per l’anno 2027 relativamente alle spese concorsuali",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/07/26G00167/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 7, c. 9 su Normattiva; 401.000 euro 2027, citazione identica, spesa / tetto. Nessuna correzione."
+        }
+      },
+      {
+        "id": "dl-2026-144-m10",
+        "articolo": "art. 7, cc. 6 e 9",
+        "descrizione": "Spese di funzionamento per i 25 magistrati in più",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "03",
+        "importi": [
+          {
+            "anno": 2027,
+            "mln": 0.1125
+          },
+          {
+            "anno": 2028,
+            "mln": 0.01125
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "di euro 112.500 per l’anno 2027 e di euro 11.250 annui a decorrere dall’anno 2028 relativamente alle spese di funzionamento",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/07/26G00167/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 7, c. 9 su Normattiva; 112.500 euro 2027 e 11.250 annui dal 2028 (a_decorrere si), citazione identica, spesa / tetto. Nessuna correzione."
+        }
+      },
+      {
+        "id": "dl-2026-144-m11",
+        "articolo": "art. 7, cc. 10-13",
+        "descrizione": "Assunzione straordinaria di 500 agenti della Polizia di Stato (dal 1° dicembre 2026) per i controlli di frontiera e sui flussi migratori, con le spese di funzionamento",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "03",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 1.954453
+          },
+          {
+            "anno": 2027,
+            "mln": 20.338081
+          },
+          {
+            "anno": 2028,
+            "mln": 27.04827
+          },
+          {
+            "anno": 2029,
+            "mln": 27.79827
+          },
+          {
+            "anno": 2030,
+            "mln": 27.04827
+          },
+          {
+            "anno": 2031,
+            "mln": 27.119333
+          },
+          {
+            "anno": 2032,
+            "mln": 28.65102
+          },
+          {
+            "anno": 2033,
+            "mln": 27.90102
+          },
+          {
+            "anno": 2034,
+            "mln": 27.90102
+          },
+          {
+            "anno": 2035,
+            "mln": 28.65102
+          },
+          {
+            "anno": 2036,
+            "mln": 27.985392
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "pari complessivamente a euro 1.954.453 per l’anno 2026, euro 20.338.081 per l’anno 2027, euro 27.048.270 per l’anno 2028, euro 27.798.270 per l’anno 2029, euro 27.048.270 per l’anno 2030, euro 27.119.333 per l’anno 2031 […]",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/07/26G00167/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 7, cc. 10-13 su Normattiva; gli importi del c. 13 sono identici anno per anno (2026-2036, 27.985.392 dal 2036) e tornano con la somma dei cc. 11 e 12 scritta nel c. 13; citazione identica fino al taglio «[…]» (limite di 320 caratteri), spesa / tetto. Nessuna correzione."
+        }
+      },
+      {
+        "id": "dl-2026-144-m12",
+        "articolo": "art. 8, cc. 1 e 5",
+        "descrizione": "Proroga al 31-12-2030 del Commissario straordinario e della struttura per il superamento degli insediamenti abusivi dei lavoratori agricoli",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "10",
+        "importi": [
+          {
+            "anno": 2027,
+            "mln": 1.759128
+          },
+          {
+            "anno": 2028,
+            "mln": 1.759128
+          },
+          {
+            "anno": 2029,
+            "mln": 1.759128
+          },
+          {
+            "anno": 2030,
+            "mln": 1.759128
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "pari a euro 1.759.128 per ciascuno degli anni 2027, 2028, 2029 e 2030",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/07/26G00167/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 8, c. 5 su Normattiva; 1.759.128 euro per ciascuno degli anni 2027-2030, citazione identica, spesa / tetto. Nessuna correzione."
+        }
+      },
+      {
+        "id": "dl-2026-144-m13",
+        "articolo": "art. 9, cc. 2-3",
+        "descrizione": "Incremento del fondo art. 1, c. 210, L. 213/2023 (disabilità), nel 2027 per la quota del c. 211",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "10",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 23.612251
+          },
+          {
+            "anno": 2027,
+            "mln": 8.788509
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "è incrementata di 23.612.251 euro per l’anno 2026 e, con riguardo alla quota di cui all’articolo 1, comma 211, secondo periodo, della medesima legge, di 8.788.509 euro per l’anno 2027",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/07/26G00167/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 9, cc. 2-3 su Normattiva; 23.612.251 euro 2026 e 8.788.509 euro 2027, citazione identica, spesa / tetto; la riduzione del Dlgs 62/2024 (c. 1) è copertura. Nessuna correzione."
+        }
+      },
+      {
+        "id": "dl-2026-144-m14",
+        "articolo": "art. 10, c. 1",
+        "descrizione": "Pensioni del personale ex Croce Rossa Italiana con periodi senza copertura assicurativa (rendita vitalizia a carico dell’ente in liquidazione)",
+        "natura": "spesa",
+        "tipoOnere": "stima",
+        "cofog": "10",
+        "importi": [
+          {
+            "anno": 2027,
+            "mln": 0.3
+          },
+          {
+            "anno": 2028,
+            "mln": 0.6
+          },
+          {
+            "anno": 2029,
+            "mln": 0.7
+          },
+          {
+            "anno": 2030,
+            "mln": 0.9
+          },
+          {
+            "anno": 2031,
+            "mln": 1
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "valutati in 300.000 euro per l’anno 2027, 600.000 euro per l’anno 2028, 700.000 euro per l’anno 2029, 900.000 per l’anno 2030 e 1 milione di euro annui a decorrere dall’anno 2031",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/07/26G00167/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 10, c. 1 su Normattiva; 0,3/0,6/0,7/0,9 mln 2027-2030 e 1 mln annuo dal 2031 (a_decorrere si), citazione identica al testo originario, spesa / stima («valutati in»). Nessuna correzione."
+        }
+      },
+      {
+        "id": "dl-2026-144-m15",
+        "articolo": "art. 13, cc. 1 e 5",
+        "descrizione": "Fondo per i contributi alla riparazione e riqualificazione sismica delle abitazioni principali sgomberate per i terremoti del 31-7 e 1-8-2026 ai Campi Flegrei",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "06",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 30
+          },
+          {
+            "anno": 2027,
+            "mln": 70
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "con una dotazione complessiva di 100 milioni di euro, di cui 30 milioni di euro per l’anno 2026 e 70 milioni di euro per l’anno 2027",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/07/26G00167/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 13, c. 1 su Normattiva; 30 mln 2026 e 70 mln 2027 (dotazione complessiva 100), citazione identica, spesa / tetto. Nessuna correzione."
+        }
+      },
+      {
+        "id": "dl-2026-144-m16",
+        "articolo": "art. 16, c. 2",
+        "descrizione": "Piano dei fabbisogni urgenti del comune di Monte di Procida (bradisismo), coordinato dalla città metropolitana di Napoli",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "03",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 0.25
+          },
+          {
+            "anno": 2027,
+            "mln": 0.25
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "nel limite massimo di 250.000 euro annui, per gli anni 2026 e 2027",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/07/26G00167/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 16, c. 2 su Normattiva (nuovo c. 1-bis dell'art. 6 DL 140/2023); 250.000 euro annui 2026 e 2027, citazione identica, spesa / tetto. Nessuna correzione."
+        }
+      },
+      {
+        "id": "dl-2026-144-m17",
+        "articolo": "art. 17, c. 2",
+        "descrizione": "Interventi urgenti dei comuni di Pozzuoli e Bacoli su servizi pubblici e reti per il bradisismo",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "06",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 1
+          },
+          {
+            "anno": 2027,
+            "mln": 1.5
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "è autorizzata la spesa di 1 milione di euro per l’anno 2026, di cui euro 600.000 per il Comune di Pozzuoli ed euro 400.000 per il Comune di Bacoli, e di euro 1,5 milioni per l’anno 2027",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/07/26G00167/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 17, c. 2 su Normattiva; 1 mln 2026 e 1,5 mln 2027, citazione identica, spesa / tetto. Nessuna correzione."
+        }
+      },
+      {
+        "id": "dl-2026-144-m18",
+        "articolo": "art. 18, c. 9",
+        "descrizione": "Incremento dell’autorizzazione per la ricostruzione privata nei territori del sisma 2016 (art. 1, c. 362, lett. a, L. 232/2016)",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "06",
+        "importi": [
+          {
+            "anno": 2027,
+            "mln": 60
+          },
+          {
+            "anno": 2028,
+            "mln": 60
+          },
+          {
+            "anno": 2029,
+            "mln": 60
+          },
+          {
+            "anno": 2030,
+            "mln": 60
+          },
+          {
+            "anno": 2031,
+            "mln": 60
+          },
+          {
+            "anno": 2032,
+            "mln": 60
+          },
+          {
+            "anno": 2033,
+            "mln": 60
+          },
+          {
+            "anno": 2034,
+            "mln": 60
+          },
+          {
+            "anno": 2035,
+            "mln": 60
+          },
+          {
+            "anno": 2036,
+            "mln": 60
+          },
+          {
+            "anno": 2037,
+            "mln": 60
+          },
+          {
+            "anno": 2038,
+            "mln": 60
+          },
+          {
+            "anno": 2039,
+            "mln": 60
+          },
+          {
+            "anno": 2040,
+            "mln": 60
+          },
+          {
+            "anno": 2041,
+            "mln": 60
+          },
+          {
+            "anno": 2042,
+            "mln": 60
+          },
+          {
+            "anno": 2043,
+            "mln": 60
+          },
+          {
+            "anno": 2044,
+            "mln": 60
+          },
+          {
+            "anno": 2045,
+            "mln": 60
+          },
+          {
+            "anno": 2046,
+            "mln": 60
+          },
+          {
+            "anno": 2047,
+            "mln": 60
+          },
+          {
+            "anno": 2048,
+            "mln": 60
+          },
+          {
+            "anno": 2049,
+            "mln": 60
+          },
+          {
+            "anno": 2050,
+            "mln": 60
+          },
+          {
+            "anno": 2051,
+            "mln": 60
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "è incrementata di 60 milioni di euro per ciascuno degli anni dal 2027 al 2051",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/07/26G00167/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 18, c. 9 su Normattiva; 60 mln per ciascuno degli anni 2027-2051 (25 anni, nessun a_decorrere), citazione identica, spesa / tetto. Nessuna correzione."
+        }
+      },
+      {
+        "id": "dl-2026-144-m19",
+        "articolo": "art. 19, c. 3",
+        "descrizione": "Fondo per le assunzioni a tempo indeterminato nei comuni del primo cratere sismico",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "01",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 0.34625
+          },
+          {
+            "anno": 2027,
+            "mln": 1.385
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "un fondo con dotazione pari a euro 346.250 per l’anno 2026 e a euro 1.385.000 a decorrere dall’anno 2027",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/07/26G00167/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 19, c. 3 su Normattiva; 346.250 euro 2026 e 1.385.000 dal 2027 (a_decorrere si), citazione identica al testo originario, spesa / tetto. Nessuna correzione."
+        }
+      },
+      {
+        "id": "dl-2026-144-m20",
+        "articolo": "art. 19, cc. 4-5",
+        "descrizione": "Agevolazioni fiscali e contributive della zona franca urbana sisma (art. 46, cc. 2-3, DL 50/2017) estese al 2027 e 2028 per i comuni del primo cratere",
+        "natura": "minori_entrate",
+        "tipoOnere": "tetto",
+        "cofog": "04",
+        "importi": [
+          {
+            "anno": 2027,
+            "mln": 2
+          },
+          {
+            "anno": 2028,
+            "mln": 2
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "nel limite di spesa di 2 milioni di euro per ciascuno degli anni 2027 e 2028",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/07/26G00167/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 19, c. 4 su Normattiva; 2 mln per ciascuno degli anni 2027 e 2028, citazione identica, agevolazioni ZFU = minori_entrate / tetto («nel limite di spesa»). Nessuna correzione."
+        }
+      },
+      {
+        "id": "dl-2026-144-m21",
+        "articolo": "art. 24, c. 3",
+        "descrizione": "Rifinanziamento del Fondo di solidarietà nazionale della pesca e dell’acquacoltura per i danni da calamità 2024-2026",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "04",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 3
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "è rifinanziata di 3 milioni di euro per l’anno 2026",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/07/26G00167/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 24, c. 3 su Normattiva; 3 mln 2026, citazione identica, spesa / tetto. Nessuna correzione."
+        }
+      }
+    ],
+    "note": "Recupero all’indietro (agosto 2026): trovato nel sommario GU n. 182. Testo originario dalla pagina dell’atto in GU (caricaDettaglioAtto, testo originario articolo per articolo); PDF del numero https://www.gazzettaufficiale.it/eli/gu/2026/08/07/182/sg/pdf. Deliberato nel CdM del 4-8-2026 (premesse; comunicato n. 185 datato 5-8-2026). Ddl di conversione A.C. 3083. Convertito dalla L. 174/2026, già nel registro (l-2026-174) con le sole misure introdotte in conversione: niente doppio conteggio. Il verificatore di l-2026-174 ha controllato che le modifiche di conversione con importi (art. 1, cc. 12 e 15; art. 2, c. 11, lett. d; art. 7, c. 11; art. 16, c. 1-bis) sono solo formali: gli importi restano quelli del testo originario (testo coordinato 26A05288 non riletto, da confermare). Non registrati: art. 4, c. 8 (compensazione degli effetti su fabbisogno e indebitamento, 10, 15 e 16 milioni 2026-2028, dell’uso di risorse già esistenti); art. 8, c. 6 (fino a 60 milioni dal Fondo sviluppo e coesione, risorse esistenti); art. 9, c. 1 (autorizzazione Dlgs 62/2024 ridotta da 165.196.120 a 119.347.088 euro per il 2026: in parte copertura del c. 2); art. 10, c. 2 (integrazioni PNRR per riprogrammazione, risorse UE); art. 12, c. 4 e art. 15, c. 2 (a valere sul Fondo per le emergenze nazionali); art. 18, c. 1 (proroga della gestione straordinaria sisma 2016, 59 milioni annui 2027-2029, nei limiti di risorse già assegnate); art. 21, c. 4 (rimborsi a carico delle contabilità speciali). Art. 7, c. 1, lett. c) sostituisce l’art. 16 del DL 100/2026 (fuori finestra, convertito senza modificazioni dalla L. 145/2026): se il testo originario dell’art. 16 aveva già un’autorizzazione di spesa, m06 va confrontata per evitare doppi conteggi. Coperture principali: Fondo interventi strutturali di politica economica, Fondo art. 1, c. 200, L. 190/2014, fondi speciali, autorizzazioni art. 1, c. 140, L. 232/2016 e art. 3-bis, c. 6, DL 95/2012, risorse art. 13, cc. 8-9, DL 48/2023. in_vigore_dal letto sulla pagina dell’atto in GU («Entrata in vigore del provvedimento»), da ricontrollare su Normattiva.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-30 — Normattiva (GET uri-res/N2Ls, URN @originale~artN per gli artt. 1, 2, 4, 7, 8, 9, 10, 13, 16, 17, 18, 19, 24 e 26, più gli stessi articoli nel testo vigente dopo la L. 174/2026): intestazione (DL 7-8-2026 n. 144, titolo identico, GU n. 182 del 7-8-2026, entrata in vigore 8-8-2026), premesse (CdM del 4-8-2026), firma Meloni. Nel testo vigente gli importi delle misure registrate sono invariati: le modifiche sono solo formali (art. 1, c. 15 «annui a decorrere dall'anno»; art. 10, c. 1 «euro»; art. 19, c. 3 «annui»). Stato convertito, L. 5-10-2026 n. 174 (GU n. 232 del 6-10-2026), come l-2026-174 già nel registro. m06 respinta (doppio conteggio con il DL 100/2026). Nessuna correzione."
+    }
+  },
+  {
+    "id": "l-2026-142",
+    "tipo": "legge",
+    "numero": 142,
+    "data": "2026-08-04",
+    "titoloUfficiale": "Conversione in legge, con modificazioni, del decreto-legge 26 giugno 2026, n. 108, recante disposizioni urgenti in materia di sport, per lo svolgimento di grandi eventi e l’efficacia del documento di identità.",
+    "titolo": "Conversione DL 108/2026: sport, grandi eventi, documento di identità",
+    "governoId": "g202",
+    "gazzetta": {
+      "numero": 182,
+      "data": "2026-08-07",
+      "fonte": {
+        "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/07/26G00163/SG"
+      }
+    },
+    "inVigoreDal": "2026-08-08",
+    "cdm": {
+      "url": "https://www.governo.it/it/articolo/comunicato-stampa-del-consiglio-dei-ministri-n-178/32112"
+    },
+    "stato": "in_vigore",
+    "conversione": null,
+    "relazioneTecnica": {
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2988"
+    },
+    "misure": [
+      {
+        "id": "l-2026-142-m01",
+        "articolo": "all.: art. 4-bis, c. 4, DL 108/2026",
+        "descrizione": "Fondo per l’adeguamento dei sistemi di ricircolo e aspirazione delle piscine pubbliche (sicurezza dei bagnanti)",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "08",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 4.725
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "un fondo con una dotazione di 4.725.000 euro per l’anno 2026",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/07/26G00163/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 4-bis, c. 4 del DL 108/2026 nel testo coordinato su Normattiva e nell'allegato della GU n. 182 (PDF); 4.725.000 euro 2026, citazione identica, spesa / tetto, norma aggiunta in conversione. Nessuna correzione."
+        }
+      }
+    ],
+    "note": "Legge di conversione: converte il DL 26 giugno 2026, n. 108 (fuori finestra). Recupero all’indietro (agosto 2026): trovato nel sommario GU n. 182. Testo dalla pagina dell’atto in GU (caricaDettaglioAtto, testo originario articolo per articolo) (allegato con le modificazioni); PDF del numero https://www.gazzettaufficiale.it/eli/gu/2026/08/07/182/sg/pdf. Registrate solo le misure con importo introdotte in conversione: l’unica è l’art. 4-bis, c. 4; le altre modifiche con importi (art. 4, c. 10; art. 7, c. 1; art. 9, c. 1) sono solo formali. cdm_url = CdM n. 178 del 16-6-2026, che ha approvato il DL 108. relazione_tecnica_url: scheda A.C. 2988 (RT del DL originario); RT sugli emendamenti non recuperata. Testo coordinato non letto. in_vigore_dal letto sulla pagina dell’atto in GU («Entrata in vigore del provvedimento»), da ricontrollare su Normattiva.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-30 — Normattiva (GET uri-res/N2Ls, URN @originale~artN e testo coordinato del DL 108/2026 ~art4bis) e allegato nel PDF della GU n. 182 (pdftotext): intestazione (L. 4-8-2026 n. 142, titolo identico, GU n. 182 del 7-8-2026, in vigore dall'8-8-2026), firma Meloni; le modifiche dell'allegato all'art. 4, c. 10 e all'art. 7, c. 1 sono di sola punteggiatura. Stato in_vigore. Nessuna correzione."
+    }
+  },
+  {
+    "id": "l-2026-140",
+    "tipo": "legge",
+    "numero": 140,
+    "data": "2026-08-05",
+    "titoloUfficiale": "Disposizioni in materia di detenzione domiciliare per il recupero dei detenuti tossicodipendenti o alcoldipendenti.",
+    "titolo": "Detenzione domiciliare per detenuti tossicodipendenti o alcoldipendenti",
+    "governoId": "g202",
+    "gazzetta": {
+      "numero": 181,
+      "data": "2026-08-06",
+      "fonte": {
+        "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/06/26G00157/SG"
+      }
+    },
+    "inVigoreDal": "2026-08-21",
+    "cdm": null,
+    "stato": "in_vigore",
+    "conversione": null,
+    "relazioneTecnica": null,
+    "misure": [
+      {
+        "id": "l-2026-140-m01",
+        "articolo": "art. 6, c. 1",
+        "descrizione": "Fondo nel bilancio del Ministero della salute per l’attuazione della legge (detenzione domiciliare per il recupero dei detenuti tossicodipendenti o alcoldipendenti)",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "07",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 19.43625
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "fondo con una dotazione pari a euro 19.436.250 annui a decorrere dall’anno 2026",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/2026/08/06/26G00157/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-30 — art. 6, cc. 1 e 3 su Normattiva; 19.436.250 euro annui dal 2026 (a_decorrere si), citazione identica, spesa / tetto («limite di spesa», c. 3). I 5 milioni dall'abrogazione dell'art. 8, c. 6-bis, DL 92/2024 sono copertura. Nessuna correzione."
+        }
+      }
+    ],
+    "note": "Recupero all’indietro (agosto 2026): trovato nel sommario GU n. 181. Testo dalla pagina dell’atto in GU (caricaDettaglioAtto, testo originario articolo per articolo); PDF del numero https://www.gazzettaufficiale.it/eli/gu/2026/08/06/181/sg/pdf. A.S. 1635, poi A.C. 2961 (open data Camera): iniziativa (governo o parlamentare) da verificare, CdM non cercato, RT non cercata. Senza clausola di entrata in vigore: vacatio ordinaria (21-8-2026). Unica misura: art. 6, c. 1. Coperture (art. 6, c. 1): 5 milioni annui dalle risorse liberate dall’abrogazione dell’art. 8, c. 6-bis, DL 92/2024 (art. 5) e 14.436.250 euro annui dal Fondo art. 1, c. 200, L. 190/2014. in_vigore_dal letto sulla pagina dell’atto in GU («Entrata in vigore del provvedimento»), da ricontrollare su Normattiva.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-30 — Normattiva (GET uri-res/N2Ls, URN @originale~artN): intestazione (L. 5-8-2026 n. 140, titolo identico, GU n. 181 del 6-8-2026, entrata in vigore 21-8-2026, vacatio ordinaria), artt. 5-6 riletti, firma Meloni (Nordio, Schillaci). Stato in_vigore. Nessuna correzione."
+    }
+  },
+  {
+    "id": "dlgs-2026-136",
+    "tipo": "decreto_legislativo",
+    "numero": 136,
+    "data": "2026-07-03",
+    "titoloUfficiale": "Attuazione della direttiva (UE) 2024/1788 del Parlamento europeo e del Consiglio del 13 giugno 2024, relativa a norme comuni per i mercati interni del gas rinnovabile, del gas naturale e dell’idrogeno, che modifica la direttiva (UE) 2023/1791 e che abroga la direttiva 2009/73/CE.",
+    "titolo": "Mercati del gas rinnovabile, naturale e dell’idrogeno (direttiva UE 2024/1788)",
+    "governoId": "g202",
+    "gazzetta": {
+      "numero": 176,
+      "data": "2026-07-31",
+      "fonte": {
+        "url": "http://www.gazzettaufficiale.it/eli/id/2026/07/31/26G00152/SG"
+      }
+    },
+    "inVigoreDal": "2026-08-15",
+    "cdm": {
+      "url": "https://www.governo.it/it/articolo/comunicato-stampa-del-consiglio-dei-ministri-n-180/32262"
+    },
+    "stato": "in_vigore",
+    "conversione": null,
+    "relazioneTecnica": null,
+    "misure": [
+      {
+        "id": "dlgs-2026-136-m01",
+        "articolo": "art. 34, c. 1 (art. 33-tricies bis, cc. 2-3, Dlgs 93/2011)",
+        "descrizione": "Dodici funzionari in più nella pianta organica di ARERA, autorità di regolazione per l’idrogeno",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "04",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 0.646692
+          },
+          {
+            "anno": 2027,
+            "mln": 1.293384
+          },
+          {
+            "anno": 2028,
+            "mln": 1.329306
+          },
+          {
+            "anno": 2029,
+            "mln": 1.366305
+          },
+          {
+            "anno": 2030,
+            "mln": 1.404414
+          },
+          {
+            "anno": 2031,
+            "mln": 1.443667
+          },
+          {
+            "anno": 2032,
+            "mln": 1.484097
+          },
+          {
+            "anno": 2033,
+            "mln": 1.525739
+          },
+          {
+            "anno": 2034,
+            "mln": 1.568632
+          },
+          {
+            "anno": 2035,
+            "mln": 1.612811
+          },
+          {
+            "anno": 2036,
+            "mln": 1.658315
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "pari a euro 646.692 per l’anno 2026, a euro 1.293.384 per l’anno 2027, a euro 1.329.306 per l’anno 2028, a euro 1.366.305 per l’anno 2029, a euro 1.404.414 per l’anno 2030, a euro 1.443.667 per l’anno 2031 […]",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/07/31/26G00152/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-31 — art. 34, c. 1 (art. 33-tricies bis, cc. 2-4, Dlgs 93/2011) e art. 44 su Normattiva; undici importi 2026-2036 identici, 1.658.315 euro annui dal 2036 (a_decorrere si), citazione identica fino al taglio, spesa / tetto; onere escluso dall'invarianza dall'art. 44, a carico del bilancio ARERA. Nessuna correzione."
+        }
+      }
+    ],
+    "note": "Recupero all’indietro (luglio 2026): trovato nel sommario GU n. 176 (S.O. n. 27). Testo dal PDF del supplemento https://www.gazzettaufficiale.it/eli/gu/2026/07/31/176/so/27/sg/pdf. Esame preliminare CdM 27-3-2026, definitivo CdM 2-7-2026 (n. 180), come da premesse. RT dello schema non cercata. Unica misura con importo: art. 34, c. 1 (nuovo art. 33-tricies bis, cc. 2-3, Dlgs 93/2011); art. 44 clausola di invarianza «Fatta eccezione per quanto previsto dall’articolo 34, comma 1, capoverso articolo 33-tricies bis». DA VALUTARE: l’onere è a carico del bilancio di ARERA, finanziato dal contributo dei soggetti regolati, che il c. 4 estende agli operatori dell’idrogeno (fino all’1 per mille dei ricavi): non pesa sul bilancio dello Stato. in_vigore_dal da Normattiva e dalla pagina dell’atto in GU (15-8-2026).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-31 — Normattiva (GET uri-res/N2Ls, URN ~artN, testo vigente): intestazione (Dlgs 3-7-2026 n. 136, titolo, GU n. 176 del 31-07-2026 S.O. n. 27, in vigore dal 15-08-2026), premesse (CdM 27-3 e 2-7-2026), artt. 34 e 44 riletti (aggiornamento del 22-9-2026 solo sull'art. 12), firma Meloni; comunicato CdM n. 180 aperto. Stato in_vigore. Nessuna correzione."
+    }
+  },
+  {
+    "id": "l-2026-135",
+    "tipo": "legge",
+    "numero": 135,
+    "data": "2026-07-23",
+    "titoloUfficiale": "Delega al Governo per il sostegno delle attività educative e ricreative non formali.",
+    "titolo": "Delega sulle attività educative e ricreative non formali per i minori",
+    "governoId": "g202",
+    "gazzetta": {
+      "numero": 174,
+      "data": "2026-07-29",
+      "fonte": {
+        "url": "http://www.gazzettaufficiale.it/eli/id/2026/07/29/26G00154/SG"
+      }
+    },
+    "inVigoreDal": "2026-08-13",
+    "cdm": null,
+    "stato": "in_vigore",
+    "conversione": null,
+    "relazioneTecnica": null,
+    "misure": [
+      {
+        "id": "l-2026-135-m01",
+        "articolo": "art. 2, c. 3",
+        "descrizione": "Attuazione della delega per il sostegno delle attività educative e ricreative non formali dei minori",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "10",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 3.5
+          },
+          {
+            "anno": 2027,
+            "mln": 4
+          },
+          {
+            "anno": 2028,
+            "mln": 1
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "è autorizzata la spesa di 3,5 milioni di euro per l’anno 2026, di 4 milioni di euro per l’anno 2027 e di 1 milione di euro annui a decorrere dall’anno 2028",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/07/29/26G00154/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-31 — art. 2, c. 3 su Normattiva; 3,5 mln 2026, 4 mln 2027 e 1 mln annuo dal 2028 (a_decorrere si), citazione identica, spesa / tetto; la riduzione del fondo art. 1, c. 213, L. 207/2024 è copertura e resta nelle note. Nessuna correzione."
+        }
+      }
+    ],
+    "note": "Recupero all’indietro (luglio 2026): trovata nel sommario GU n. 174. Testo dal PDF https://www.gazzettaufficiale.it/eli/gu/2026/07/29/174/sg/pdf. Iniziativa parlamentare (A.C. 1311, on. Bonetti e altri): nessun CdM; RT non cercata. Senza clausola di entrata in vigore: vacatio ordinaria, in vigore dal 13-8-2026 (Normattiva). Unica misura: art. 2, c. 3; artt. 3 e 4 senza oneri. DA VALUTARE: per il 2026 e il 2027 la spesa è coperta riducendo il Fondo per il sostegno alle attività educative formali e non formali (art. 1, c. 213, L. 207/2024), cioè un fondo con la stessa finalità che la delega aggiorna (art. 2, c. 1, lett. a): per quegli anni l’effetto netto può essere nullo. Dal 2028 copertura dal Fondo art. 1, c. 200, L. 190/2014.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-31 — Normattiva (GET uri-res/N2Ls, URN ~artN, testo vigente): intestazione (L. 23-7-2026 n. 135, titolo, GU n. 174 del 29-07-2026, in vigore dal 13-08-2026), artt. 1-4 riletti, firma Meloni. Stato in_vigore. Nessuna correzione."
+    }
+  },
+  {
+    "id": "dl-2026-133",
+    "tipo": "decreto_legge",
+    "numero": 133,
+    "data": "2026-07-27",
+    "titoloUfficiale": "Disposizioni urgenti in materia di prezzi petroliferi connessi alla ulteriore crisi dei mercati internazionali e disposizioni in materia di ILVA S.p.A. in amministrazione straordinaria.",
+    "titolo": "Accisa sul gasolio (30/7-6/8/2026), credito per l’autotrasporto ed ex ILVA",
+    "governoId": "g202",
+    "gazzetta": {
+      "numero": 172,
+      "data": "2026-07-27",
+      "fonte": {
+        "url": "http://www.gazzettaufficiale.it/eli/id/2026/07/27/26G00155/SG"
+      }
+    },
+    "inVigoreDal": "2026-07-28",
+    "cdm": {
+      "url": "https://www.governo.it/it/articolo/comunicato-stampa-del-consiglio-dei-ministri-n-183/32417"
+    },
+    "stato": "convertito",
+    "conversione": {
+      "estremi": "L. 25 settembre 2026, n. 166 (GU n. 223 del 25-9-2026)",
+      "fonte": {
+        "url": "http://www.gazzettaufficiale.it/eli/id/2026/09/25/26G00184/SG"
+      }
+    },
+    "relazioneTecnica": {
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=3045"
+    },
+    "misure": [
+      {
+        "id": "dl-2026-133-m01",
+        "articolo": "art. 1, cc. 1-3",
+        "descrizione": "Accisa sul gasolio carburante (e su HVO e biodiesel) rideterminata a 532,90 euro per mille litri dal 30 luglio al 6 agosto 2026",
+        "natura": "minori_entrate",
+        "tipoOnere": "stima",
+        "cofog": "04",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 83.8
+          },
+          {
+            "anno": 2028,
+            "mln": 0.9
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "Agli oneri derivanti dai commi 1 e 2, valutati in 83,8 milioni di euro per l’anno 2026 e 0,9 milioni di euro per l’anno 2028",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/07/27/26G00155/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-31 — art. 1, cc. 1-3 su Normattiva (testo originario, in vigore 28-7/25-9-2026); 83,8 mln 2026 e 0,9 mln 2028, citazione identica, minori_entrate / stima; il coordinato (379,6 e 4,1) somma DL 133, 139 e 153 e resta fuori. Nessuna correzione."
+        }
+      },
+      {
+        "id": "dl-2026-133-m02",
+        "articolo": "art. 1, cc. 4-5",
+        "descrizione": "Credito d’imposta gasolio per l’autotrasporto esteso alle spese di luglio 2026 (limite art. 3, c. 1, DL 33/2026 da 300 a 322 milioni)",
+        "natura": "minori_entrate",
+        "tipoOnere": "tetto",
+        "cofog": "04",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 22
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "Agli oneri derivanti dal comma 4, pari a 22 milioni di euro per l’anno 2026",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/07/27/26G00155/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-31 — art. 1, cc. 4-5 su Normattiva (testo originario); limite da 300 a 322 milioni, 22 mln 2026, citazione identica, credito d'imposta = minori_entrate / tetto. Nessuna correzione."
+        }
+      },
+      {
+        "id": "dl-2026-133-m03",
+        "articolo": "art. 2",
+        "descrizione": "Finanziamento oneroso del MIMIT ad Acciaierie d’Italia in a.s. per la funzionalità degli impianti ex ILVA, nelle more della vendita",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "04",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 100.5
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "in una soluzione, sino a ulteriori 100,5 milioni di euro per l’anno 2026, a titolo di finanziamento oneroso",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/07/27/26G00155/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-31 — art. 2 su Normattiva (testo originario e vigente); 100,5 mln 2026, citazione identica, spesa / tetto; il rialzo a 141 milioni è dell'art. 8 DL 185/2026 (dl-2026-185-m07, 40,5). Nessuna correzione."
+        }
+      }
+    ],
+    "note": "Recupero all’indietro (luglio 2026): trovato nel sommario GU n. 172. Testo dal PDF https://www.gazzettaufficiale.it/eli/gu/2026/07/27/172/sg/pdf. Deliberato nel CdM del 27-7-2026 (n. 183), come da premesse. Ddl di conversione A.C. 3045 con RT (PDF A.C. 3045, tabella effetti art. 1: 83,8 / 19,9 / -0,9). Convertito dalla L. 166/2026, già nel registro (l-2026-166) con le sole misure introdotte in conversione; Normattiva: «Decreto-Legge convertito con modificazioni dalla L. 25 settembre 2026, n. 166». DOPPIO CONTEGGIO: m01 e m02 riportano gli importi del testo ORIGINARIO (83,8 e 0,9 milioni accisa; 22 milioni credito), come chiesto dal verificatore di dl-2026-139 il 30-10; i totali del testo coordinato (379,6 e 4,1; 97,6), che sommano anche i DL 139 e 153, restano fuori (l-2026-166-m01/m02 respinte). m03: il limite di 100,5 milioni è stato portato a 141 milioni dall’art. 8 del DL 185/2026 (dl-2026-185-m07, +40,5): nessun doppio conteggio. Non registrati: art. 3, c. 1 (Fondo per gli interventi strutturali di politica economica +19,9 milioni 2027: accantonamento per coperture future, stesso criterio di dl-2026-139 e dl-2026-157); maggiori entrate 2027 dell’art. 1 (19,9 milioni, usate come copertura: art. 3, c. 2, lett. b). Coperture (art. 3, cc. 2-3): somme versate ex art. 148, c. 1, L. 388/2000 non riassegnate (105,8 milioni 2026), Fondo interventi strutturali (0,9 milioni 2028), riduzioni delle autorizzazioni art. 25, c. 1, L. 131/2025 (20 milioni), art. 1, c. 951, L. 234/2021 (51,5 milioni) e art. 42, c. 1, DL 34/2020 (29 milioni). Comunicato CdM coerente con la GU (17 centesimi = 14 di accisa e 3 di IVA, 100,5 milioni ILVA). in_vigore_dal da Normattiva (28-7-2026).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-31 — Normattiva (GET uri-res/N2Ls, URN @originale~artN e testo vigente): intestazione (DL 27-7-2026 n. 133, titolo, GU n. 172 del 27-07-2026, in vigore dal 28-07-2026), premesse (CdM del 27-7-2026), artt. 1-4 originari riletti, firma Meloni; convertito dalla L. 25-9-2026 n. 166; comunicato CdM n. 183 e scheda A.C. 3045 aperti. Stato convertito. Nessuna correzione."
+    }
+  },
+  {
+    "id": "l-2026-131",
+    "tipo": "legge",
+    "numero": 131,
+    "data": "2026-07-17",
+    "titoloUfficiale": "Misure per la protezione e l’assistenza dei minorenni e degli adulti di riferimento nei contesti di criminalità organizzata. («Liberi di scegliere»).",
+    "titolo": "«Liberi di scegliere»: minori e famiglie nei contesti di criminalità organizzata",
+    "governoId": "g202",
+    "gazzetta": {
+      "numero": 171,
+      "data": "2026-07-25",
+      "fonte": {
+        "url": "http://www.gazzettaufficiale.it/eli/id/2026/07/25/26G00147/SG"
+      }
+    },
+    "inVigoreDal": "2026-08-09",
+    "cdm": null,
+    "stato": "in_vigore",
+    "conversione": null,
+    "relazioneTecnica": null,
+    "misure": [
+      {
+        "id": "l-2026-131-m01",
+        "articolo": "art. 4, c. 2, lett. f) e art. 14, c. 1",
+        "descrizione": "Patrocinio a spese dello Stato, anche oltre i limiti di reddito, per minorenni e adulti di riferimento ammessi alle misure «Liberi di scegliere»",
+        "natura": "spesa",
+        "tipoOnere": "stima",
+        "cofog": "03",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 0.179573
+          },
+          {
+            "anno": 2027,
+            "mln": 1.07744
+          },
+          {
+            "anno": 2028,
+            "mln": 1.152931
+          },
+          {
+            "anno": 2029,
+            "mln": 1.234376
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "Agli oneri derivanti dall’articolo 4, comma 2, lettera f), valutati in 179.573 euro per l’anno 2026, in 1.077.440 euro per l’anno 2027, in 1.152.931 euro per l’anno 2028 e in 1.234.376 euro annui a decorrere dall’anno 2029",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/07/25/26G00147/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-31 — artt. 4, c. 2, lett. f) e 14, c. 1 su Normattiva; quattro importi 2026-2029 identici, 1.234.376 euro annui dal 2029 (a_decorrere si), citazione identica, spesa / stima. Nessuna correzione."
+        }
+      },
+      {
+        "id": "l-2026-131-m02",
+        "articolo": "art. 4, cc. 1, lett. a), e 2, lett. a), b) e d) e art. 14, c. 1",
+        "descrizione": "Supporto sociale e psicologico, assegno periodico, alloggio e spese sanitarie per minorenni e adulti di riferimento che escono dai contesti di criminalità organizzata",
+        "natura": "spesa",
+        "tipoOnere": "stima",
+        "cofog": "10",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 1.661042
+          },
+          {
+            "anno": 2027,
+            "mln": 9.96625
+          },
+          {
+            "anno": 2028,
+            "mln": 10.66975
+          },
+          {
+            "anno": 2029,
+            "mln": 11.42015
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "agli oneri derivanti dall’articolo 4, commi 1, lettera a), e 2, lettere a), b) e d), valutati in 1.661.042 euro per l’anno 2026, in 9.966.250 euro per l’anno 2027, in 10.669.750 euro per l’anno 2028 e in 11.420.150 euro annui a decorrere dall’anno 2029",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/07/25/26G00147/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-31 — artt. 4 e 14, c. 1 su Normattiva; quattro importi 2026-2029 identici, 11.420.150 euro annui dal 2029 (a_decorrere si), citazione identica, spesa / stima; coperture del c. 1, lett. a-c) sommate tornano con gli oneri. Nessuna correzione."
+        }
+      }
+    ],
+    "note": "Recupero all’indietro (luglio 2026): trovata nel sommario GU n. 171. Testo dal PDF https://www.gazzettaufficiale.it/eli/gu/2026/07/25/171/sg/pdf. Iniziativa parlamentare (A.C. 2696, on. Colosimo e altri; poi A.S. 1951): nessun CdM; RT non cercata. Senza clausola di entrata in vigore: vacatio ordinaria, in vigore dal 9-8-2026 (Normattiva). Misure con importo: art. 14, c. 1 (due quantificazioni distinte nella norma); c. 2 invarianza per il resto. Coperture (art. 14, c. 1, lett. a-c): risorse art. 17 DL 8/1991 (2 milioni annui dal 2027), autorizzazione art. 1, c. 766, L. 207/2024, Fondo art. 1, c. 200, L. 190/2014.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-31 — Normattiva (GET uri-res/N2Ls, URN ~artN, testo vigente): intestazione (L. 17-7-2026 n. 131, titolo, GU n. 171 del 25-07-2026, in vigore dal 09-08-2026), artt. 4 e 14 riletti, firma Meloni. Stato in_vigore. Nessuna correzione."
+    }
+  },
+  {
+    "id": "l-2026-126",
+    "tipo": "legge",
+    "numero": 126,
+    "data": "2026-07-08",
+    "titoloUfficiale": "Norme per la regolazione dei rapporti tra lo Stato e la Diocesi ortodossa romena d’Italia, in attuazione dell’articolo 8, terzo comma, della Costituzione.",
+    "titolo": "Intesa con la Diocesi ortodossa romena d’Italia",
+    "governoId": "g202",
+    "gazzetta": {
+      "numero": 164,
+      "data": "2026-07-17",
+      "fonte": {
+        "url": "http://www.gazzettaufficiale.it/eli/id/2026/07/17/26G00144/SG"
+      }
+    },
+    "inVigoreDal": "2026-08-01",
+    "cdm": null,
+    "stato": "in_vigore",
+    "conversione": null,
+    "relazioneTecnica": {
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2396"
+    },
+    "misure": [
+      {
+        "id": "l-2026-126-m01",
+        "articolo": "art. 20 e art. 27, c. 1",
+        "descrizione": "Deduzione IRPEF delle erogazioni liberali fino a 1.032,91 euro a favore della Diocesi ortodossa romena d’Italia e dei suoi enti",
+        "natura": "minori_entrate",
+        "tipoOnere": "stima",
+        "cofog": "01",
+        "importi": [
+          {
+            "anno": 2027,
+            "mln": 0.418
+          },
+          {
+            "anno": 2028,
+            "mln": 0.244
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "Agli oneri derivanti dall’articolo 20, valutati in 418.000 euro per l’anno 2027 e in 244.000 euro annui a decorrere dall’anno 2028",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/07/17/26G00144/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-31 — artt. 20 e 27, c. 1 su Normattiva; 418.000 euro 2027 e 244.000 annui dal 2028 (a_decorrere si), citazione identica, deduzione = minori_entrate / stima. Nessuna correzione."
+        }
+      }
+    ],
+    "note": "Recupero all’indietro (luglio 2026): trovata nel sommario GU n. 164. Testo dal PDF https://www.gazzettaufficiale.it/eli/gu/2026/07/17/164/sg/pdf. Disegno di legge del Governo (A.C. 2396, presentato dal Presidente del Consiglio il 12-5-2025): comunicato CdM di approvazione del ddl (2025) non cercato. Senza clausola di entrata in vigore: vacatio ordinaria, in vigore dal 1-8-2026 (Normattiva). Unica misura con importo: art. 20 (deduzione IRPEF delle erogazioni liberali), oneri all’art. 27, c. 1. Non registrato: art. 21 (partecipazione della Diocesi alla ripartizione dell’otto per mille IRPEF, senza importo nella norma). RT del ddl (PDF A.C. 2396, verificata RGS) con anni diversi dalla legge: «valutati in 418.000 euro per l’anno 2026 e in 244.000 euro annui a decorrere dall’anno 2027»; la GU dice 2027 e 2028: fa fede la GU. Copertura: fondo speciale di parte corrente, accantonamento MEF.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-31 — Normattiva (GET uri-res/N2Ls, URN ~artN, testo vigente): intestazione (L. 8-7-2026 n. 126, titolo, GU n. 164 del 17-07-2026, in vigore dal 01-08-2026), artt. 1, 20, 21 e 27 riletti, firma Meloni; scheda A.C. 2396 aperta. Stato in_vigore. Nessuna correzione."
+    }
+  },
+  {
+    "id": "l-2026-116",
+    "tipo": "legge",
+    "numero": 116,
+    "data": "2026-07-02",
+    "titoloUfficiale": "Conversione in legge, con modificazioni, del decreto-legge 7 maggio 2026, n. 66, recante disposizioni urgenti per il Piano Casa.",
+    "titolo": "Conversione DL 66/2026: Piano Casa",
+    "governoId": "g202",
+    "gazzetta": {
+      "numero": 152,
+      "data": "2026-07-03",
+      "fonte": {
+        "url": "http://www.gazzettaufficiale.it/eli/id/2026/07/03/26G00137/SG"
+      }
+    },
+    "inVigoreDal": "2026-07-04",
+    "cdm": {
+      "url": "https://www.governo.it/it/articolo/comunicato-stampa-del-consiglio-dei-ministri-n-173/31698"
+    },
+    "stato": "in_vigore",
+    "conversione": null,
+    "relazioneTecnica": {
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2920"
+    },
+    "misure": [
+      {
+        "id": "l-2026-116-m01",
+        "articolo": "all.: art. 4-bis, c. 5, DL 66/2026",
+        "descrizione": "Incremento del Fondo di garanzia per la prima casa per la priorità alle famiglie con persone con disabilità grave",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "06",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 6
+          },
+          {
+            "anno": 2027,
+            "mln": 8
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "è incrementato di 6 milioni di euro per l’anno 2026 e di 8 milioni di euro per l’anno 2027",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/07/03/26G00137/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-31 — art. 4-bis, c. 5, DL 66/2026 coordinato su Normattiva (introdotto dalla L. 116/2026); 6 mln 2026 e 8 mln 2027, citazione identica, spesa / tetto. Nessuna correzione."
+        }
+      },
+      {
+        "id": "l-2026-116-m02",
+        "articolo": "all.: art. 4-ter, DL 66/2026",
+        "descrizione": "Incremento del fondo per il contributo alle spese di affitto degli studenti universitari fuori sede (art. 1, c. 526, L. 178/2020)",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "09",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 8.5
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "è incrementato di 8,5 milioni di euro per l’anno 2026",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/07/03/26G00137/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-31 — art. 4-ter, DL 66/2026 coordinato su Normattiva (introdotto dalla L. 116/2026); 8,5 mln 2026, citazione identica, spesa / tetto. Nessuna correzione."
+        }
+      },
+      {
+        "id": "l-2026-116-m03",
+        "articolo": "all.: art. 9-bis, c. 2, DL 66/2026",
+        "descrizione": "Alloggi di servizio per esigenze temporanee dell’Arma dei carabinieri (artt. 295 e 296-bis del codice dell’ordinamento militare)",
+        "natura": "spesa",
+        "tipoOnere": "stima",
+        "cofog": "02",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 0.061
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "Agli oneri derivanti dal comma 1, lettera b), valutati in 61.000 euro annui a decorrere dall’anno 2026",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/07/03/26G00137/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-31 — art. 9-bis, c. 2, DL 66/2026 coordinato su Normattiva (introdotto dalla L. 116/2026); 61.000 euro annui dal 2026 (a_decorrere si), citazione identica, spesa / stima. Nessuna correzione."
+        }
+      },
+      {
+        "id": "l-2026-116-m04",
+        "articolo": "all.: art. 11-bis, cc. 1-2, DL 66/2026",
+        "descrizione": "Costruzione, acquisto e ristrutturazione di alloggi e immobili per le Forze armate, compresa l’Arma dei carabinieri",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "02",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 15
+          },
+          {
+            "anno": 2027,
+            "mln": 15
+          },
+          {
+            "anno": 2028,
+            "mln": 15
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "è autorizzata la spesa di 15 milioni di euro per ciascuno degli anni 2026, 2027 e 2028",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/07/03/26G00137/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-31 — art. 11-bis, cc. 1-2, DL 66/2026 coordinato su Normattiva (introdotto dalla L. 116/2026); 15 mln per ciascuno degli anni 2026-2028, citazione identica, spesa / tetto. Nessuna correzione."
+        }
+      },
+      {
+        "id": "l-2026-116-m05",
+        "articolo": "all.: art. 11-bis, cc. 3-4, DL 66/2026",
+        "descrizione": "Costruzione e riqualificazione di strutture e alloggi del Corpo della guardia di finanza",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "03",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 1.5
+          },
+          {
+            "anno": 2027,
+            "mln": 3.9
+          },
+          {
+            "anno": 2028,
+            "mln": 3.1
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "è autorizzata la spesa di 1,5 milioni di euro per l’anno 2026, di 3,9 milioni di euro per l’anno 2027 e di 3,1 milioni di euro per l’anno 2028",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/07/03/26G00137/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-31 — art. 11-bis, cc. 3-4, DL 66/2026 coordinato su Normattiva (introdotto dalla L. 116/2026); 1,5, 3,9 e 3,1 mln 2026-2028, citazione identica, spesa / tetto. Nessuna correzione."
+        }
+      }
+    ],
+    "note": "Legge di conversione: converte il DL 7 maggio 2026, n. 66 (fuori finestra, da registrare quando il recupero arriverà a maggio). Recupero all’indietro (luglio 2026): trovata nel sommario GU n. 152. Testo dal PDF https://www.gazzettaufficiale.it/eli/gu/2026/07/03/152/sg/pdf (allegato con le modificazioni). Registrate solo le misure con importo introdotte in conversione (artt. 4-bis, 4-ter, 9-bis, 11-bis). cdm_url = CdM n. 173 del 30-4-2026, il cui comunicato riporta l’approvazione del DL «Disposizioni urgenti per il Piano Casa»; le premesse del DL 66 su Normattiva confermano la deliberazione del 30-4-2026. relazione_tecnica_url: scheda A.C. 2920 (RT del DL originario); RT sugli emendamenti non recuperata. Testo coordinato non letto. Modifiche di conversione a importi del DL originario, non registrate come misure ma da considerare quando il recupero registrerà il DL 66: art. 3, c. 1, sesto periodo («per gli anni 2026 e 2027» sostituite da «per l’anno 2026», oneri per il sub-commissario); art. 3, cc. 7 e 9 (oneri riferiti «per l’anno 2026»); art. 9, c. 8, nono periodo («dal 2027, per il funzionamento della struttura di supporto,» sostituite da «dall’anno 2027,»). Non registrato: art. 11, c. 4-bis (commissione a Invitalia nel limite dell’1% dei fondi L. 338/2000, risorse esistenti); art. 5 sostituito (riscatto alloggi ERP, proventi destinati con provvedimento successivo, senza importo). Coperture: fondo art. 1, c. 199, L. 190/2014; fondi speciali di parte corrente (accantonamenti MUR e Difesa) e di conto capitale (accantonamenti Difesa e MEF). in_vigore_dal da Normattiva (4-7-2026).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-31 — Normattiva (GET uri-res/N2Ls, URN ~artN, testo vigente): intestazione (L. 2-7-2026 n. 116, titolo, GU n. 152 del 03-07-2026, in vigore dal 04-07-2026), art. 1 e firma Meloni; DL 66/2026 coordinato: premesse (CdM del 30-4-2026), indice e artt. 4-bis, 4-ter, 9-bis, 9-ter, 11-bis, 11-ter letti; comunicato CdM n. 173 e scheda A.C. 2920 aperti. Stato in_vigore. Nessuna correzione."
+    }
+  },
+  {
+    "id": "dlgs-2026-115",
+    "tipo": "decreto_legislativo",
+    "numero": 115,
+    "data": "2026-06-12",
+    "titoloUfficiale": "Attuazione della direttiva (UE) 2024/1712 del Parlamento europeo e del Consiglio, del 13 giugno 2024, che modifica la direttiva 2011/36/UE concernente la prevenzione e la repressione della tratta di esseri umani e la protezione delle vittime.",
+    "titolo": "Tratta di esseri umani: recepimento della direttiva (UE) 2024/1712",
+    "governoId": "g202",
+    "gazzetta": {
+      "numero": 150,
+      "data": "2026-07-01",
+      "fonte": {
+        "url": "http://www.gazzettaufficiale.it/eli/id/2026/07/01/26G00130/SG"
+      }
+    },
+    "inVigoreDal": "2026-07-16",
+    "cdm": {
+      "url": "https://www.governo.it/it/articolo/comunicato-stampa-del-consiglio-dei-ministri-n-176/31997"
+    },
+    "stato": "in_vigore",
+    "conversione": null,
+    "relazioneTecnica": null,
+    "misure": [
+      {
+        "id": "dlgs-2026-115-m01",
+        "articolo": "art. 9, c. 1, lett. b) (art. 13-bis, c. 3, L. 228/2003)",
+        "descrizione": "Adeguamento dei sistemi applicativi e statistici del Ministero della giustizia per i dati sulla tratta da trasmettere alla Commissione europea",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "03",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 0.2
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "è autorizzata la spesa di euro 200.000 per l’anno 2026",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/07/01/26G00130/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-31 — art. 9, c. 1, lett. b) (art. 13-bis, c. 3, L. 228/2003) su Normattiva; 200.000 euro 2026, citazione identica, spesa / tetto. Nessuna correzione."
+        }
+      },
+      {
+        "id": "dlgs-2026-115-m02",
+        "articolo": "art. 12",
+        "descrizione": "Patrocinio a spese dello Stato anche in deroga ai limiti di reddito per le vittime del nuovo reato dell’art. 601.1 c.p. (art. 76, c. 4-ter, TU spese di giustizia)",
+        "natura": "spesa",
+        "tipoOnere": "stima",
+        "cofog": "03",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 0.2688
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "Agli oneri derivanti dall’attuazione del comma 1, valutati in euro 268.800 annui a decorrere dall’anno 2026",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/07/01/26G00130/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-10-31 — art. 12 su Normattiva; 268.800 euro annui dal 2026 (a_decorrere si), citazione identica, spesa / stima. Nessuna correzione."
+        }
+      }
+    ],
+    "note": "Recupero all’indietro (luglio 2026): trovato nel sommario GU n. 150. Testo dal PDF del numero https://www.gazzettaufficiale.it/eli/gu/2026/07/01/150/sg/pdf. Esame preliminare CdM 10-3-2026, definitivo CdM 4-6-2026 (n. 176), come da premesse. RT dello schema (atto del Governo) non cercata. Misure con importo: art. 9, c. 1, lett. b) e art. 12; art. 14 clausola di invarianza «Fatto salvo quanto previsto dall’articolo 9, comma 1, lettera b), e dall’articolo 12». Copertura di entrambe: riduzione del fondo per il recepimento della normativa europea (art. 41-bis L. 234/2012). in_vigore_dal da Normattiva («Entrata in vigore del provvedimento: 16/07/2026»).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-10-31 — Normattiva (GET uri-res/N2Ls, URN ~artN, testo vigente): intestazione (Dlgs 12-6-2026 n. 115, titolo, GU n. 150 del 01-07-2026, in vigore dal 16-07-2026), premesse (CdM 10-3 e 4-6-2026), artt. 9, 12 e 14 riletti, firma Meloni; comunicato CdM n. 176 aperto. Stato in_vigore. Nessuna correzione."
+    }
   }
 ]

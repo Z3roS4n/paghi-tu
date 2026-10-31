@@ -57,7 +57,7 @@ function promiseVerification(text: string): Verification {
 
 // D-019: un'intervista pubblicata da una testata vale come fonte primaria. Restano V2 le righe che
 // lo sono per un altro motivo: ruolo preso da fonti secondarie, pagina originale letta solo in copia.
-const INTERVIEW_V2_OTHER_REASON = new Set(["C27-NM-012", "C27-FI-009"]);
+const INTERVIEW_V2_OTHER_REASON = new Set(["C27-NM-012", "C27-FI-009", "C27-FI-029"]);
 
 function interviewAsPrimary(id: string, tipoFonte: string, v: Verification): Verification {
   if (tipoFonte !== "intervista" || v.livello !== "V2" || INTERVIEW_V2_OTHER_REASON.has(id)) return v;
@@ -287,7 +287,7 @@ const PROMISE_FILES: Record<string, string> = {
   c: "2026-10-20.promesse-campagna-gruppo-c",
   "c-integrazione": "2026-10-21.promesse-campagna-gruppo-c-integrazione",
 };
-const CAMPAIGN_PERIOD = { dal: "2026-01-01", al: "2026-10-29" };
+const CAMPAIGN_PERIOD = { dal: "2026-01-01", al: "2026-10-31" };
 
 function isVerified(status: string) {
   return status.includes("✓") && !/DA RIMUOVERE|NON VERIFICABILE|NUOVA|riserva/i.test(status);
@@ -399,7 +399,7 @@ async function classifyPromises(eligible: z.infer<typeof CampaignPromise>[]) {
 const LEGAL_ACTS = "2026-10-28.atti-economici";
 const LEGAL_ACT_MEASURES = "2026-10-28.atti-misure";
 // La routine sposta «dal» indietro con il recupero e «al» al giorno dell'ultima Gazzetta letta.
-const LEGAL_ACTS_COVERAGE = { dal: "2026-09-01", al: "2026-10-28", obiettivo: "2022-10-22" };
+const LEGAL_ACTS_COVERAGE = { dal: "2026-07-01", al: "2026-10-30", obiettivo: "2022-10-22" };
 
 async function legalActs(govs: ReturnType<typeof Government.parse>[]) {
   const coverage = LegalActsCoverage.parse(LEGAL_ACTS_COVERAGE);
