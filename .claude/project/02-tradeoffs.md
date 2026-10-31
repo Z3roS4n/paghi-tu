@@ -133,6 +133,7 @@
 - **Scelta:** l'import valida e conta tutte le righe, ma pubblica solo i gruppi elencati in `PUBLISHED_PROMISE_GROUPS` (oggi nessuno). Un gruppo entra quando tutti e tre hanno passato la verifica L2 e il controllo di simmetria. Restano fuori le righe "DA RIMUOVERE", "NON VERIFICABILE", "NUOVA" e quelle "con riserva" (per esempio il discorso di Schlein del 18/10, da confrontare con il video).
 - **Motivo:** pubblicare un partito prima degli altri, o con standard diversi, sarebbe di per sé una scelta di parte.
 - **Data:** 2026-10-20
+- **Trappole del golden set (titolare, 2026-10-28):** le quattro trappole MAN-TRAP-04, MAN-PAR-08, MAN-OUT-03 e MAN-OUT-07 restano e si bilanciano con quattro casi speculari con la stessa formulazione: MAN-TRAP-05 e MAN-OUT-08 sul governo Conte II, MAN-PAR-11 sulle promesse del PD, MAN-OUT-09 contro Fratelli d'Italia. Esito atteso: astensione.
 - **Modifica del 2026-10-22 (titolare):** le esecuzioni del 21 e 22 ottobre si sono fermate perché alcuni siti
   rispondono con un blocco anti-bot e due formazioni non hanno un canale ufficiale leggibile. Da ora un partito
   **tecnicamente** non leggibile, dopo i canali alternativi del runbook, non blocca gli altri: si pubblicano i partiti
@@ -283,6 +284,15 @@
   giorno del montaggio le cifre vanno ricontrollate sul sito.
 - **Data:** 2026-10-22
 
+### D-026 — Golden set dell'agente generato dai dati
+- **Stato:** confermata dal titolare il 2026-10-28 (sulla PR #1, con il marcatore del titolare, D-027). L'agente è entrato nel progetto il 2026-10-25, decisione presa insieme da titolare e co-maintainer.
+- **Contesto:** l'agente conversazionale su Vertex AI Search va misurato prima di andare online. Il progetto non ha un golden set; i dati del sito sono la fonte del grounding.
+- **Scelta:** il set si genera da `data/` con `agent/evals/golden-set.ts` (selezione deterministica e distribuita, valori letti dai record, mai ricopiati), più casi scritti a mano in `casi-manuali.json` per par condicio, fuori scope e trappole. Le promesse si scelgono in ordine alfabetico di sigla, almeno una per partito. La revisione del titolare sta in `revisione.json` e sopravvive alle rigenerazioni.
+- **Conseguenze:** dopo una correzione ai dati si rigenera con `npm run evals:build`; il test fallisce se `domande.jsonl` non è allineato. Le soglie restano ipotesi finché il titolare non le conferma.
+- **Casi «con_permesso» (titolare, 2026-10-28):** dentro l'indice, con la citazione. I 7 casi del branch vengono tutti dall'UPB. I record entrano come sul sito: valori di Paghi Tu con il link alla fonte UPB in `urlAccettati`, mai testo UPB copiato. Se l'UPB chiede di toglierli, si tolgono. Pagella Politica non ha casi nel set e resta fonte di controllo e confronto, mai copia; se un suo caso arriva, si decide allora. Il flag `fonteConPermesso` del golden set segnala questi casi, non decide l'inclusione.
+- **Aggiunta del 2026-10-25:** Wikipedia (R-36, «fonte di verità per: nessuna») non è una fonte accettata dell'agente: i suoi URL non entrano in `urlAccettati` anche quando compaiono fra le fonti di un record. `/privacy` descrive l'assistente come non ancora attivo, con Google Cloud fra i destinatari (D-023).
+- **Data:** 2026-10-23
+
 ### D-027 — Le pull request le verifica una routine a parte, e le unisce il titolare
 - **Stato:** applicata il 2026-10-23, su richiesta del titolare.
 - **Contesto:** arrivano le prime PR di un collaboratore, con codice e correzioni ai dati. Il binario 3 della routine dei dati le trattava come segnalazioni e riapplicava i dati confermati con un suo commit (D-020), ma non controllava il codice, i conflitti o i file generati.
@@ -358,6 +368,29 @@
   - l'introduzione di /fonti non promette licenze verificate: «NV» dove non lo sono.
 - **Conseguenze:** quando cambia una fonte nella pipeline cambia anche la sua scheda in `data/fonti.json`, nello stesso commit. Caroselli e reel citano /fonti solo per quello che la scheda dice.
 - **Data:** 2026-10-28
+
+### D-035 — Verifica deterministica del golden set contro le fonti
+- **Già:** D-029 nel branch agent/golden-set, rinumerata il 2026-10-29 dopo il conflitto con main.
+- **Stato:** confermata dal titolare il 2026-10-28 (sulla PR #1, con la sigla D-029).
+- **Contesto:** un controllo a mano sulle fonti del golden set ha trovato errori che i test non vedevano (percentuali arrotondate, record citati a metà, un URL con l'etichetta dentro, una citazione che unisce due frasi). Per un agente su dati politici l'errore non è ammesso: la verifica deve essere ripetibile e decisa dal codice.
+- **Scelta:** due livelli. `npm run evals:verify` (`agent/evals/verifica-fonti.ts`) va in rete con la coda per host di D-004, legge ogni URL atteso (HTML, PDF con `pdftotext`, copia d'archivio del record se la fonte è chiusa) e scrive i fatti in `verifica-fonti.json`, che si committa. I test offline (`verifica.test.ts`, `testo.test.ts`) decidono: ogni fonte letta, ogni citazione trovata parola per parola, ogni valore trovato nella fonte o nelle copie di `data/raw/` cella per cella, oppure con una ragione scritta in `eccezioni-fonti.json`. Le somme calcolate da Paghi Tu si dichiarano con gli addendi, che devono stare nella fonte e tornare al valore. Un'eccezione non più necessaria fa fallire il test.
+- **Motivo:** la rete non è deterministica, il registro sì: lo stesso registro dà sempre lo stesso esito, e chi rilegge vede cosa è stato trovato, dove e in che forma. Le forme accettate sono strette (niente miliardi arrotondati senza la parola, niente cognome da solo per un nome di più di due parole) perché un falso riscontro è peggio di un valore non trovato.
+- **Conseguenze:** dopo ogni `evals:build` che cambia `domande.jsonl` si rilancia `evals:verify` (il test confronta l'impronta). Il registro non scade da solo: la data è nel file e va riletta prima di ogni eval dell'agente.
+- **Data:** 2026-10-23
+
+### D-036 — Valori attesi leggibili, parole intere e casi tolti dal golden set
+- **Già:** D-032 nel branch agent/golden-set, rinumerata il 2026-10-29 dopo il conflitto con main.
+- **Stato:** confermata dal titolare il 2026-10-28 (sulla PR #1, con la sigla D-032, compresa l'esclusione di PRO-C27-FDI-002). Decisa da Giovanni il 2026-10-25.
+- **Contesto:** la revisione dei 132 casi del 2026-10-25 (report `2026-10-25-10-51`, PR #4) ha trovato valori attesi che sono codifiche di Paghi Tu (maggioranze come sigle, «documentata», «(INF)», «NV», confidenza «A»-«D») confrontati alla lettera e senza confine di parola: una risposta giusta falliva, una sbagliata poteva passare («governo de gasperi i» dentro «… ii», «a» dentro qualsiasi parola). I test non lo vedevano perché le risposte perfette erano costruite dagli stessi valori.
+- **Scelta:**
+  - il valore atteso resta quello del record (il test «ogni valore sta nel record» non cambia); in più può avere `forme`, gruppi di modi in cui una risposta lo scrive: ogni gruppo deve comparire con almeno una forma, come parole intere (`findPhrase`, `findForms` in `agent/evals/testo.ts`);
+  - le forme derivabili dal record si generano nel codice (nome del governo con e senza «Governo», governo senza «(INF)», numero e anno della legge dagli estremi); quelle che servono a mano stanno in `agent/evals/forme-accettate.json` (le quattro maggioranze), con una nota;
+  - confidenza e tipo di attribuzione escono dai valori attesi: le controllano le regole `dichiara_confidenza_bassa` e `dichiara_attribuzione_non_documentata`; «NV» non si cerca come governo; estremi senza un numero di legge leggibile non si cercano;
+  - una promessa con un costo dichiarato porta sempre la regola `costo_dichiarato_dal_proponente`;
+  - le percentuali si trovano anche arrotondate a uno o due decimali, solo con «%» o «per cento» accanto;
+  - `agent/evals/esclusi.json` toglie dal set LB-2027 (atto non ancora presentato, record fuori dall'indice) e PRO-C27-FDI-002 (discorso indiretto di un giornalista attribuito al partito), con motivo e chi l'ha deciso. Il golden set passa da 132 a 130 casi.
+- **Conseguenze:** nessuna metrica controlla più che la risposta dica la confidenza A o B, o che l'attribuzione è documentata: lo dice la regola solo quando la confidenza è bassa o l'attribuzione non è documentata. `score.ts` (PR #4) usa le forme e il confine di parola. Nessuna soglia cambia. Le correzioni ai dati segnalate dalla revisione restano ad Antonio.
+- **Data:** 2026-10-25
 
 ## Decisioni aperte
 - **OA-1** — ~~Nome del progetto e dominio~~ → nome deciso il 2026-10-20: **Paghi Tu** (provocatorio verso politica e cittadini, senza attribuire condotte a nessuno). Dominio candidato `paghitu.it` (libero al controllo DNS del 2026-10-20, da confermare all'acquisto).
