@@ -1,6 +1,6 @@
 {
-  "domandeSha256": "fd0497cd62c029c0bfd0a655044d0e57f77ed89727356c9e94ad0729fc249088",
-  "verificatoIl": "2026-10-29",
+  "domandeSha256": "bf1910777e7803cbf048b4ecd04c32465e709faa577076773b36d2e12711f59f",
+  "verificatoIl": "2026-10-31",
   "fonti": [
     {
       "url": "http://dati.camera.it/ocd/attocamera.rdf/ac01_1391",
@@ -282,6 +282,33 @@
       "caratteri": 0
     },
     {
+      "url": "https://archivio.quirinale.it/aspr/presidente/nomine/giovanni-gronchi",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://archivio.quirinale.it/aspr/presidente/nomine/giovanni-gronchi",
+      "tipo": "html",
+      "caratteri": 14633
+    },
+    {
+      "url": "https://archivio.quirinale.it/aspr/presidente/nomine/giovanni-leone",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://archivio.quirinale.it/aspr/presidente/nomine/giovanni-leone",
+      "tipo": "html",
+      "caratteri": 12843
+    },
+    {
+      "url": "https://archivio.quirinale.it/aspr/presidente/nomine/giuseppe-saragat",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://archivio.quirinale.it/aspr/presidente/nomine/giuseppe-saragat",
+      "tipo": "html",
+      "caratteri": 12666
+    },
+    {
       "url": "https://bdp.camera.it/init/iter",
       "esito": "ok",
       "via": "diretto",
@@ -297,7 +324,7 @@
       "http": 200,
       "urlLetto": "https://corrierelivornese.it/toscana/dalla-toscana/avs-lancia-bolletta-sociale-fratoianni-e-bonelli-in-italia-28-milioni-famiglie-in-poverta-energetica-che-meloni-non-vuole-vedere/",
       "tipo": "html",
-      "caratteri": 12251
+      "caratteri": 12036
     },
     {
       "url": "https://dati.camera.it/sparql",
@@ -315,7 +342,16 @@
       "http": 200,
       "urlLetto": "https://decidiamo.com/processes/energia-pulita-e-popolare/f/52/proposals/2003",
       "tipo": "html",
-      "caratteri": 25105
+      "caratteri": 25107
+    },
+    {
+      "url": "https://demo.istat.it/app/?a=2026&i=POS&l=it",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://demo.istat.it/app/?a=2026&i=POS&l=it",
+      "tipo": "html",
+      "caratteri": 19558
     },
     {
       "url": "https://documenti.camera.it/apps/nuovosito/attigoverno/Schedalavori/getTesto.ashx?file=0333_F001.pdf&leg=XVIII",
@@ -444,61 +480,59 @@
       "caratteri": 10632
     },
     {
-      "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_164_DF_DCIS_RICPOPRES2011_1,1.0/",
+      "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_164_DF_DCIS_RICPOPRES2011_1,1.0/all?startPeriod=2002&endPeriod=2018",
       "esito": "ko",
       "via": "diretto",
       "http": 0,
-      "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_164_DF_DCIS_RICPOPRES2011_1,1.0/",
+      "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_164_DF_DCIS_RICPOPRES2011_1,1.0/all?startPeriod=2002&endPeriod=2018",
       "tipo": "binario",
       "caratteri": 0,
       "errore": "TimeoutError: The operation was aborted due to timeout"
     },
     {
-      "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_279_DF_DCIS_RICPOPRES1991_1,1.0/",
+      "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_279_DF_DCIS_RICPOPRES1991_1,1.0/all?startPeriod=1982&endPeriod=1991",
       "esito": "ko",
       "via": "diretto",
       "http": 0,
-      "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_279_DF_DCIS_RICPOPRES1991_1,1.0/",
+      "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_279_DF_DCIS_RICPOPRES1991_1,1.0/all?startPeriod=1982&endPeriod=1991",
       "tipo": "binario",
       "caratteri": 0,
       "errore": "TimeoutError: The operation was aborted due to timeout"
     },
     {
-      "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_305_DF_DCIS_RICPOPRES2001_1,1.0/",
+      "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_305_DF_DCIS_RICPOPRES2001_1,1.0/all?startPeriod=1992&endPeriod=2001",
       "esito": "ko",
       "via": "diretto",
       "http": 0,
-      "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_305_DF_DCIS_RICPOPRES2001_1,1.0/",
+      "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_305_DF_DCIS_RICPOPRES2001_1,1.0/all?startPeriod=1992&endPeriod=2001",
       "tipo": "binario",
       "caratteri": 0,
       "errore": "TimeoutError: The operation was aborted due to timeout"
     },
     {
-      "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_346_DF_DCIS_RICPOPRES1971_1,1.0/",
-      "esito": "ko",
+      "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_346_DF_DCIS_RICPOPRES1971_1,1.0/all?startPeriod=1952&endPeriod=1971",
+      "esito": "ok",
       "via": "diretto",
-      "http": 0,
-      "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_346_DF_DCIS_RICPOPRES1971_1,1.0/",
-      "tipo": "binario",
-      "caratteri": 0,
-      "errore": "TimeoutError: The operation was aborted due to timeout"
+      "http": 200,
+      "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_346_DF_DCIS_RICPOPRES1971_1,1.0/all?startPeriod=1952&endPeriod=1971",
+      "tipo": "html",
+      "caratteri": 762638
     },
     {
-      "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_347_DF_DCIS_RICPOPRES1981_1,1.0/",
-      "esito": "ko",
+      "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_347_DF_DCIS_RICPOPRES1981_1,1.0/all?startPeriod=1972&endPeriod=1981",
+      "esito": "ok",
       "via": "diretto",
-      "http": 0,
-      "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_347_DF_DCIS_RICPOPRES1981_1,1.0/",
-      "tipo": "binario",
-      "caratteri": 0,
-      "errore": "TimeoutError: The operation was aborted due to timeout"
+      "http": 200,
+      "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_347_DF_DCIS_RICPOPRES1981_1,1.0/all?startPeriod=1972&endPeriod=1981",
+      "tipo": "html",
+      "caratteri": 449906
     },
     {
-      "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,22_289_DF_DCIS_POPRES1_1,1.0/",
+      "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,22_289_DF_DCIS_POPRES1_1,1.0/all?startPeriod=2019&endPeriod=2026",
       "esito": "ko",
       "via": "diretto",
       "http": 0,
-      "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,22_289_DF_DCIS_POPRES1_1,1.0/",
+      "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,22_289_DF_DCIS_POPRES1_1,1.0/all?startPeriod=2019&endPeriod=2026",
       "tipo": "binario",
       "caratteri": 0,
       "errore": "TimeoutError: The operation was aborted due to timeout"
@@ -537,7 +571,16 @@
       "http": 200,
       "urlLetto": "https://ildomaniditalia.eu/bolletteavs-lancia-bolletta-sociale-credito-energetico-e-scudo-anticiclico/",
       "tipo": "html",
-      "caratteri": 9066
+      "caratteri": 9031
+    },
+    {
+      "url": "https://ildomaniditalia.eu/manovra-conte-la-targa-personalizzata-del-governo-e-carovita-me-ne-frego/",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://ildomaniditalia.eu/manovra-conte-la-targa-personalizzata-del-governo-e-carovita-me-ne-frego/",
+      "tipo": "html",
+      "caratteri": 9891
     },
     {
       "url": "https://ivl24.it/calenda-a-potenza-gas-release-per-la-basilicata-stellantis-melfi-rischia-la-chiusura-critiche-anche-alla-giunta-bardi/",
@@ -546,7 +589,7 @@
       "http": 200,
       "urlLetto": "https://ivl24.it/calenda-a-potenza-gas-release-per-la-basilicata-stellantis-melfi-rischia-la-chiusura-critiche-anche-alla-giunta-bardi/",
       "tipo": "html",
-      "caratteri": 25749
+      "caratteri": 25926
     },
     {
       "url": "https://lapresse.it/politica/2026/10/25/lega-oggi-al-congresso-gli-interventi-di-salvini-e-garavaglia-poi-il-voto-sulla-segreteria-del-partito-la-diretta",
@@ -555,7 +598,7 @@
       "http": 200,
       "urlLetto": "https://www.lapresse.it/politica/2026/10/25/lega-oggi-al-congresso-gli-interventi-di-salvini-e-garavaglia-poi-il-voto-sulla-segreteria-del-partito-la-diretta/",
       "tipo": "html",
-      "caratteri": 90490
+      "caratteri": 90394
     },
     {
       "url": "https://legaonline.it/la-settimana-leghista-38/",
@@ -600,7 +643,7 @@
       "http": 200,
       "urlLetto": "https://www.noimoderati.it/news-e-media/12",
       "tipo": "html",
-      "caratteri": 6652
+      "caratteri": 6653
     },
     {
       "url": "https://noimoderati.it/news-e-media/42",
@@ -657,13 +700,40 @@
       "caratteri": 20477
     },
     {
+      "url": "https://storia.camera.it/deputato/antonio-bellocchio-19271109/leg-repubblica-VII",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://storia.camera.it/deputato/antonio-bellocchio-19271109/leg-repubblica-VII",
+      "tipo": "html",
+      "caratteri": 6140
+    },
+    {
+      "url": "https://storia.camera.it/deputato/gabriella-pistone-19510729/leg-repubblica-XIV",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://storia.camera.it/deputato/gabriella-pistone-19510729/leg-repubblica-XIV",
+      "tipo": "html",
+      "caratteri": 7697
+    },
+    {
       "url": "https://www.affaritaliani.it/politica/onorato-lancia-il-programma-di-progetto-civico-alle-primarie-ci-saremo-non-escludo-di-candidarmi-renzi-vado-daccordo.html",
       "esito": "ok",
       "via": "diretto",
       "http": 200,
       "urlLetto": "https://www.affaritaliani.it/politica/onorato-lancia-il-programma-di-progetto-civico-alle-primarie-ci-saremo-non-escludo-di-candidarmi-renzi-vado-daccordo.html",
       "tipo": "html",
-      "caratteri": 13978
+      "caratteri": 13809
+    },
+    {
+      "url": "https://www.agenziagiornalisticaopinione.it/opinionews-tn-aa/scalfi-ora-segreteria-nazionale-delega-alla-scuola-docenti-trento-protesta-e-bolzano-aumenta-pagare-il-lavoro-in-piu-e-misurare-che-cosa-compra/",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://www.agenziagiornalisticaopinione.it/opinionews-tn-aa/scalfi-ora-segreteria-nazionale-delega-alla-scuola-docenti-trento-protesta-e-bolzano-aumenta-pagare-il-lavoro-in-piu-e-misurare-che-cosa-compra/",
+      "tipo": "html",
+      "caratteri": 21229
     },
     {
       "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-camera-manovra-cattaneo-priorita-taglio-irpef-al-ceto-medio-e-su-di-pietro-candidatura-divisiva/",
@@ -672,7 +742,25 @@
       "http": 200,
       "urlLetto": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-camera-manovra-cattaneo-priorita-taglio-irpef-al-ceto-medio-e-su-di-pietro-candidatura-divisiva/",
       "tipo": "html",
-      "caratteri": 17912
+      "caratteri": 17909
+    },
+    {
+      "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-elezioni-craxi-e-ternullo-da-fi-ddl-delega-si-a-tutela-voto-no-a-reati-dopinione/",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-elezioni-craxi-e-ternullo-da-fi-ddl-delega-si-a-tutela-voto-no-a-reati-dopinione/",
+      "tipo": "html",
+      "caratteri": 19208
+    },
+    {
+      "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-manovra-craxi-costa-fi-soddisfatti-per-i-risultati-ottenuti-ora-avanti-fino-a-garantire-la-previdenza-dedicata-a-forze-dellordine-e-forze-armate/",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-manovra-craxi-costa-fi-soddisfatti-per-i-risultati-ottenuti-ora-avanti-fino-a-garantire-la-previdenza-dedicata-a-forze-dellordine-e-forze-armate/",
+      "tipo": "html",
+      "caratteri": 19338
     },
     {
       "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-sanita-craxi-fi-sanatoria-sui-medici-radiati-e-un-errore-al-senato-chiederemo-modifiche/",
@@ -681,7 +769,7 @@
       "http": 200,
       "urlLetto": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-sanita-craxi-fi-sanatoria-sui-medici-radiati-e-un-errore-al-senato-chiederemo-modifiche/",
       "tipo": "html",
-      "caratteri": 18783
+      "caratteri": 18780
     },
     {
       "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-ucraina-craxi-fi-tregua-a-oleshky-passo-importante-ue-nomini-subito-un-suo-inviato/",
@@ -690,7 +778,7 @@
       "http": 200,
       "urlLetto": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-ucraina-craxi-fi-tregua-a-oleshky-passo-importante-ue-nomini-subito-un-suo-inviato/",
       "tipo": "html",
-      "caratteri": 18265
+      "caratteri": 18262
     },
     {
       "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/lega-camera-ora-legale-barabotti-lega-camera-discute-risoluzione-per-renderla-permanente-un-passo-importante/",
@@ -699,7 +787,7 @@
       "http": 200,
       "urlLetto": "https://www.agenziagiornalisticaopinione.it/opinionmix/lega-camera-ora-legale-barabotti-lega-camera-discute-risoluzione-per-renderla-permanente-un-passo-importante/",
       "tipo": "html",
-      "caratteri": 20118
+      "caratteri": 20115
     },
     {
       "url": "https://www.agi.it/vista-tv/video/2026-09-21/schlein-faremo-un-grande-piano-casa-come-ai-tempi-di-fanfani-39164621/",
@@ -717,7 +805,16 @@
       "http": 200,
       "urlLetto": "https://www.alanews.it/2026/10/23/politica/bonus-ai-genitori-proposta-salvini/",
       "tipo": "html",
-      "caratteri": 15120
+      "caratteri": 15053
+    },
+    {
+      "url": "https://www.ansa.it/sito/notizie/politica/2026/10/29/ansa-box-vannacci-lancia-un-segnale-a-meloni-vuol-far-vincere-la-sinistra_4e83c538-b12b-48ba-994f-6a3b659ad59c.html",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://www.ansa.it/sito/notizie/politica/2026/10/29/ansa-box-vannacci-lancia-un-segnale-a-meloni-vuol-far-vincere-la-sinistra_4e83c538-b12b-48ba-994f-6a3b659ad59c.html",
+      "tipo": "html",
+      "caratteri": 54672
     },
     {
       "url": "https://www.azione.it/le-nostre-proposte-immigrazione/",
@@ -726,7 +823,7 @@
       "http": 200,
       "urlLetto": "https://www.azione.it/le-nostre-proposte-immigrazione/",
       "tipo": "html",
-      "caratteri": 20650
+      "caratteri": 20651
     },
     {
       "url": "https://www.azione.it/meno-distrazione-piu-azione/",
@@ -735,7 +832,7 @@
       "http": 200,
       "urlLetto": "https://www.azione.it/meno-distrazione-piu-azione/",
       "tipo": "html",
-      "caratteri": 9501
+      "caratteri": 9498
     },
     {
       "url": "https://www.bancaditalia.it/statistiche/tematiche/stat-storiche/stat-storiche-economia/NA150_2.0.zip",
@@ -783,6 +880,15 @@
       "caratteri": 14656
     },
     {
+      "url": "https://www.gazzettaufficiale.it/eli/gu/2022/07/21/169/sg/pdf",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://www.gazzettaufficiale.it/eli/gu/2022/07/21/169/sg/pdf",
+      "tipo": "pdf",
+      "caratteri": 244659
+    },
+    {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/governo-meloni/20727",
       "esito": "ok",
       "via": "diretto",
@@ -816,7 +922,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-fanfani-iii/3214",
       "tipo": "html",
-      "caratteri": 14876
+      "caratteri": 14874
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-segni-ii/3216",
@@ -825,7 +931,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-segni-ii/3216",
       "tipo": "html",
-      "caratteri": 15007
+      "caratteri": 15009
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ordinamento-provvisorio-25-luglio-1943-23-maggio-1948-assemblea-3",
@@ -861,7 +967,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/vii-legislatura-5-luglio-1976-2-aprile-1979/governo-andreotti-iii/3191",
       "tipo": "html",
-      "caratteri": 16113
+      "caratteri": 16115
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/viii-legislatura-20-giugno-1979-4-maggio-1983/governo-fanfani-v/3181",
@@ -870,7 +976,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/viii-legislatura-20-giugno-1979-4-maggio-1983/governo-fanfani-v/3181",
       "tipo": "html",
-      "caratteri": 15170
+      "caratteri": 15174
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xi-legislatura-23-aprile-1992-16-gennaio-1994/governo-amato/3169",
@@ -879,7 +985,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xi-legislatura-23-aprile-1992-16-gennaio-1994/governo-amato/3169",
       "tipo": "html",
-      "caratteri": 15180
+      "caratteri": 15182
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xvi-legislatura-dal-29-aprile-2008-al-23-dicembre-2012/governo-berlusconi",
@@ -897,7 +1003,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xvii-legislatura-dal-15032013/governo-letta/330",
       "tipo": "html",
-      "caratteri": 15855
+      "caratteri": 15857
     },
     {
       "url": "https://www.hdmotori.it/bollo-tajani-estendere-esenzione-prime-auto/",
@@ -906,7 +1012,7 @@
       "http": 200,
       "urlLetto": "https://www.hdmotori.it/bollo-tajani-estendere-esenzione-prime-auto/",
       "tipo": "html",
-      "caratteri": 29794
+      "caratteri": 29756
     },
     {
       "url": "https://www.ilgiornale.it/news/interni/fdi-reato-di-associazione-a-delinquere-per-chi-devasta-e-aggredisce-le-forze-dellordine/",
@@ -915,7 +1021,7 @@
       "http": 200,
       "urlLetto": "https://www.ilgiornale.it/news/interni/fdi-reato-di-associazione-a-delinquere-per-chi-devasta-e-aggredisce-le-forze-dellordine/",
       "tipo": "html",
-      "caratteri": 8705
+      "caratteri": 8656
     },
     {
       "url": "https://www.ilgiornale.it/news/politica-economica/manovra-casasco-fi-no-tax-area-under-30-riduzione-irpef-e-sostegno-alla-sanita-per-gli-anziani-le-priorita-di-forza-italia/",
@@ -924,7 +1030,7 @@
       "http": 200,
       "urlLetto": "https://www.ilgiornale.it/news/politica-economica/manovra-casasco-fi-no-tax-area-under-30-riduzione-irpef-e-sostegno-alla-sanita-per-gli-anziani-le-priorita-di-forza-italia/",
       "tipo": "html",
-      "caratteri": 6791
+      "caratteri": 6900
     },
     {
       "url": "https://www.ilmessaggero.it/politica/onorato_proposte_mutui_case_popolari_sport-9848214.html",
@@ -933,7 +1039,7 @@
       "http": 200,
       "urlLetto": "https://www.ilmessaggero.it/politica/onorato_proposte_mutui_case_popolari_sport-9848214.html",
       "tipo": "html",
-      "caratteri": 27220
+      "caratteri": 27059
     },
     {
       "url": "https://www.ilmessaggero.it/politica/schlein_programma_governo_energia_sanita_lavoro_sicurezza_giorgia_meloni-9694413.html",
@@ -942,7 +1048,7 @@
       "http": 200,
       "urlLetto": "https://www.ilmessaggero.it/politica/schlein_programma_governo_energia_sanita_lavoro_sicurezza_giorgia_meloni-9694413.html",
       "tipo": "html",
-      "caratteri": 46611
+      "caratteri": 46565
     },
     {
       "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/comunicati-stampa/2025/04/Allegati/3732_Cs_Osservatorio-Assegno-Unico-Universale.pdf",
@@ -981,14 +1087,40 @@
       "caratteri": 58632
     },
     {
-      "url": "https://www.istat.it/wp-content/uploads/2026/07/Nota-informativa30luglio2026.pdf",
-      "esito": "ko",
+      "url": "https://www.istat.it/comunicato-stampa/conti-economici-nazionali-anni-2010-2025/",
+      "esito": "ok",
       "via": "diretto",
-      "http": 0,
+      "http": 200,
+      "urlLetto": "https://www.istat.it/comunicato-stampa/conti-economici-nazionali-anni-2010-2025/",
+      "tipo": "html",
+      "caratteri": 18563
+    },
+    {
+      "url": "https://www.istat.it/notizia/bilancio-demografico-mensile-gennaio-dicembre-2025/",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://www.istat.it/notizia/bilancio-demografico-mensile-gennaio-dicembre-2025/",
+      "tipo": "html",
+      "caratteri": 16440
+    },
+    {
+      "url": "https://www.istat.it/wp-content/uploads/2026/07/Nota-informativa30luglio2026.pdf",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
       "urlLetto": "https://www.istat.it/wp-content/uploads/2026/07/Nota-informativa30luglio2026.pdf",
-      "tipo": "binario",
-      "caratteri": 0,
-      "errore": "TypeError: fetch failed"
+      "tipo": "pdf",
+      "caratteri": 10275
+    },
+    {
+      "url": "https://www.lagazzettadelmezzogiorno.it/news/ultima-ora/2189777/tajani-nella-manovra-accolte-tutte-le-richieste-di-forza-italia.html",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://www.lagazzettadelmezzogiorno.it/news/ultima-ora/2189777/tajani-nella-manovra-accolte-tutte-le-richieste-di-forza-italia.html",
+      "tipo": "html",
+      "caratteri": 19821
     },
     {
       "url": "https://www.lasicilia.it/news/politica/3052972/mezzogiorno-protagonista-de-luca-rilancia-l-autonomia-e-la-super-zes-contro-il-romanocentrismo.html",
@@ -1024,7 +1156,7 @@
       "http": 200,
       "urlLetto": "https://www.milanofinanza.it/news/manovra-casasco-forza-italia-flat-tax-per-tutti-202608251910269198",
       "tipo": "html",
-      "caratteri": 45423
+      "caratteri": 45616
     },
     {
       "url": "https://www.movimento5stelle.eu/wp-content/uploads/2026/09/NOVA_20_PUNTI.pdf",
@@ -1132,7 +1264,7 @@
       "http": 200,
       "urlLetto": "https://www.partitosocialista.it/firma-le-tre-petizioni-popolari-promosse-da-avanti-psi/",
       "tipo": "html",
-      "caratteri": 9943
+      "caratteri": 9929
     },
     {
       "url": "https://www.piueuropa.eu/cannabis_magi_legalizzazione_sia_in_programma_centrosinistra_in_svizzera_prosciugato_mercato_nero",
@@ -1159,7 +1291,7 @@
       "http": 200,
       "urlLetto": "https://www.qualitytravel.it/tassa-di-soggiorno-onorato-propone-di-destinare-il-50-allhousing-sociale-con-calcolo-in-percentuale/194405",
       "tipo": "html",
-      "caratteri": 9864
+      "caratteri": 18786
     },
     {
       "url": "https://www.upbilancio.it/wp-content/uploads/2014/11/Slides_Incontro_stampa_04_11_2014.pdf",
@@ -1439,7 +1571,9 @@
         },
         {
           "campo": "inizio",
-          "esito": "non_trovato"
+          "esito": "trovato",
+          "url": "https://archivio.quirinale.it/aspr/presidente/nomine/giovanni-gronchi",
+          "forma": "27 luglio 1960"
         }
       ]
     },
@@ -1471,7 +1605,9 @@
         },
         {
           "campo": "inizio",
-          "esito": "non_trovato"
+          "esito": "trovato",
+          "url": "https://archivio.quirinale.it/aspr/presidente/nomine/giuseppe-saragat",
+          "forma": "6 agosto 1969"
         }
       ]
     },
@@ -1503,7 +1639,9 @@
         },
         {
           "campo": "inizio",
-          "esito": "non_trovato"
+          "esito": "trovato",
+          "url": "https://archivio.quirinale.it/aspr/presidente/nomine/giovanni-leone",
+          "forma": "30 luglio 1976"
         }
       ]
     },
@@ -1830,7 +1968,9 @@
       "valori": [
         {
           "campo": "elezioni",
-          "esito": "non_trovato"
+          "esito": "trovato",
+          "url": "https://storia.camera.it/deputato/antonio-bellocchio-19271109/leg-repubblica-VII",
+          "forma": "20 giugno 1976"
         },
         {
           "campo": "inizio",
@@ -1846,7 +1986,9 @@
       "valori": [
         {
           "campo": "elezioni",
-          "esito": "non_trovato"
+          "esito": "trovato",
+          "url": "https://storia.camera.it/deputato/gabriella-pistone-19510729/leg-repubblica-XIV",
+          "forma": "13 maggio 2001"
         },
         {
           "campo": "inizio",
@@ -1862,7 +2004,9 @@
       "valori": [
         {
           "campo": "elezioni",
-          "esito": "non_trovato"
+          "esito": "trovato",
+          "url": "https://www.gazzettaufficiale.it/eli/gu/2022/07/21/169/sg/pdf",
+          "forma": "25 settembre 2022"
         },
         {
           "campo": "inizio",
@@ -2785,6 +2929,72 @@
       ]
     },
     {
+      "id": "PRO-C27-FI-028",
+      "verbatim": {
+        "trovato": true,
+        "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-manovra-craxi-costa-fi-soddisfatti-per-i-risultati-ottenuti-ora-avanti-fino-a-garantire-la-previdenza-dedicata-a-forze-dellordine-e-forze-armate/",
+        "mancanti": []
+      },
+      "valori": [
+        {
+          "campo": "dichiarante",
+          "esito": "trovato",
+          "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-manovra-craxi-costa-fi-soddisfatti-per-i-risultati-ottenuti-ora-avanti-fino-a-garantire-la-previdenza-dedicata-a-forze-dellordine-e-forze-armate/",
+          "forma": "enrico costa; stefania craxi"
+        },
+        {
+          "campo": "data",
+          "esito": "trovato",
+          "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-manovra-craxi-costa-fi-soddisfatti-per-i-risultati-ottenuti-ora-avanti-fino-a-garantire-la-previdenza-dedicata-a-forze-dellordine-e-forze-armate/",
+          "forma": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "id": "PRO-C27-FI-029",
+      "verbatim": {
+        "trovato": true,
+        "url": "https://www.lagazzettadelmezzogiorno.it/news/ultima-ora/2189777/tajani-nella-manovra-accolte-tutte-le-richieste-di-forza-italia.html",
+        "mancanti": []
+      },
+      "valori": [
+        {
+          "campo": "dichiarante",
+          "esito": "trovato",
+          "url": "https://www.lagazzettadelmezzogiorno.it/news/ultima-ora/2189777/tajani-nella-manovra-accolte-tutte-le-richieste-di-forza-italia.html",
+          "forma": "antonio tajani"
+        },
+        {
+          "campo": "data",
+          "esito": "trovato",
+          "url": "https://www.lagazzettadelmezzogiorno.it/news/ultima-ora/2189777/tajani-nella-manovra-accolte-tutte-le-richieste-di-forza-italia.html",
+          "forma": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "id": "PRO-C27-FI-030",
+      "verbatim": {
+        "trovato": true,
+        "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-elezioni-craxi-e-ternullo-da-fi-ddl-delega-si-a-tutela-voto-no-a-reati-dopinione/",
+        "mancanti": []
+      },
+      "valori": [
+        {
+          "campo": "dichiarante",
+          "esito": "trovato",
+          "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-elezioni-craxi-e-ternullo-da-fi-ddl-delega-si-a-tutela-voto-no-a-reati-dopinione/",
+          "forma": "stefania craxi; daniela ternullo"
+        },
+        {
+          "campo": "data",
+          "esito": "trovato",
+          "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-elezioni-craxi-e-ternullo-da-fi-ddl-delega-si-a-tutela-voto-no-a-reati-dopinione/",
+          "forma": "2026-10-29"
+        }
+      ]
+    },
+    {
       "id": "PRO-C27-FN-016",
       "verbatim": {
         "trovato": true,
@@ -2801,6 +3011,28 @@
         {
           "campo": "data",
           "esito": "non_trovato"
+        }
+      ]
+    },
+    {
+      "id": "PRO-C27-FN-042",
+      "verbatim": {
+        "trovato": true,
+        "url": "https://www.ansa.it/sito/notizie/politica/2026/10/29/ansa-box-vannacci-lancia-un-segnale-a-meloni-vuol-far-vincere-la-sinistra_4e83c538-b12b-48ba-994f-6a3b659ad59c.html",
+        "mancanti": []
+      },
+      "valori": [
+        {
+          "campo": "dichiarante",
+          "esito": "trovato",
+          "url": "https://www.ansa.it/sito/notizie/politica/2026/10/29/ansa-box-vannacci-lancia-un-segnale-a-meloni-vuol-far-vincere-la-sinistra_4e83c538-b12b-48ba-994f-6a3b659ad59c.html",
+          "forma": "roberto vannacci"
+        },
+        {
+          "campo": "data",
+          "esito": "trovato",
+          "url": "https://www.ansa.it/sito/notizie/politica/2026/10/29/ansa-box-vannacci-lancia-un-segnale-a-meloni-vuol-far-vincere-la-sinistra_4e83c538-b12b-48ba-994f-6a3b659ad59c.html",
+          "forma": "2026-10-29"
         }
       ]
     },
@@ -3013,6 +3245,28 @@
       ]
     },
     {
+      "id": "PRO-C27-M5S-061",
+      "verbatim": {
+        "trovato": true,
+        "url": "https://ildomaniditalia.eu/manovra-conte-la-targa-personalizzata-del-governo-e-carovita-me-ne-frego/",
+        "mancanti": []
+      },
+      "valori": [
+        {
+          "campo": "dichiarante",
+          "esito": "trovato",
+          "url": "https://ildomaniditalia.eu/manovra-conte-la-targa-personalizzata-del-governo-e-carovita-me-ne-frego/",
+          "forma": "giuseppe conte"
+        },
+        {
+          "campo": "data",
+          "esito": "trovato",
+          "url": "https://ildomaniditalia.eu/manovra-conte-la-targa-personalizzata-del-governo-e-carovita-me-ne-frego/",
+          "forma": "2026-10-29"
+        }
+      ]
+    },
+    {
       "id": "PRO-C27-MAIE-001",
       "verbatim": {
         "trovato": true,
@@ -3131,6 +3385,28 @@
           "esito": "trovato",
           "url": "https://ora-italia.it/previdenza-complementare-e-venture-capital/",
           "forma": "1,3 miliardi"
+        }
+      ]
+    },
+    {
+      "id": "PRO-C27-ORA-023",
+      "verbatim": {
+        "trovato": true,
+        "url": "https://www.agenziagiornalisticaopinione.it/opinionews-tn-aa/scalfi-ora-segreteria-nazionale-delega-alla-scuola-docenti-trento-protesta-e-bolzano-aumenta-pagare-il-lavoro-in-piu-e-misurare-che-cosa-compra/",
+        "mancanti": []
+      },
+      "valori": [
+        {
+          "campo": "dichiarante",
+          "esito": "trovato",
+          "url": "https://www.agenziagiornalisticaopinione.it/opinionews-tn-aa/scalfi-ora-segreteria-nazionale-delega-alla-scuola-docenti-trento-protesta-e-bolzano-aumenta-pagare-il-lavoro-in-piu-e-misurare-che-cosa-compra/",
+          "forma": "laura scalfi"
+        },
+        {
+          "campo": "data",
+          "esito": "trovato",
+          "url": "https://www.agenziagiornalisticaopinione.it/opinionews-tn-aa/scalfi-ora-segreteria-nazionale-delega-alla-scuola-docenti-trento-protesta-e-bolzano-aumenta-pagare-il-lavoro-in-piu-e-misurare-che-cosa-compra/",
+          "forma": "2026-10-29"
         }
       ]
     },
@@ -3560,7 +3836,9 @@
       "valori": [
         {
           "campo": "popolazione-residente",
-          "esito": "non_trovato"
+          "esito": "trovato",
+          "url": "https://www.istat.it/notizia/bilancio-demografico-mensile-gennaio-dicembre-2025/",
+          "forma": "58.942.828"
         }
       ]
     },
@@ -3570,7 +3848,9 @@
       "valori": [
         {
           "campo": "prezzi-consumo-foi",
-          "esito": "non_trovato"
+          "esito": "trovato",
+          "url": "https://www.istat.it/wp-content/uploads/2026/07/Nota-informativa30luglio2026.pdf",
+          "forma": "9286,869"
         }
       ]
     }

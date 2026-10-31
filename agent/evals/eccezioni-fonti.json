@@ -17,7 +17,8 @@
     "PRO-C27-M5S-018|data": "La data è quella di pubblicazione del PDF, «a partire da oggi 18 settembre», nella pagina https://www.movimento5stelle.eu/nova-20-punti-una-alleanza-per-la-costituzione/ (citata nella nota del record da PR #2), non nel testo del PDF.",
     "MAN-COR-02|Promessa C27-FI-013, tipo di fonte": "Valore del registro delle correzioni di Paghi Tu (classificazione del tipo di fonte), non della fonte esterna; il test «nel record citato» lo riscontra con COR-0002.",
     "MAN-COR-03|Livello di verifica di 23 promesse tratte da interviste": "Regola di metodo del registro delle correzioni (D-019), non un dato di una fonte esterna; il test «nel record citato» lo riscontra con COR-0003.",
-    "PRO-C27-AVS-003|dichiarante": "La piattaforma «Decidiamo» di AVS scrive «Alleanza Verdi Sinistra», senza la «e» del nome ufficiale «Alleanza Verdi e Sinistra» usato nei dati."
+    "PRO-C27-AVS-003|dichiarante": "La piattaforma «Decidiamo» di AVS scrive «Alleanza Verdi Sinistra», senza la «e» del nome ufficiale «Alleanza Verdi e Sinistra» usato nei dati.",
+    "SER-pil-nominale-2025|pil-nominale": "Il comunicato Istat del 22/09/2026 pubblica il PIL 2025 a prezzi correnti arrotondato al milione: 2.265.003 milioni di euro. Il valore 2.265.002,5 milioni del record proviene dalla serie IstatData, edizione 2026M9; lo scarto di 0,5 milioni è l'arrotondamento del comunicato, non una divergenza dei dati. Fonte: https://www.istat.it/comunicato-stampa/conti-economici-nazionali-anni-2010-2025/ (consultata 2026-10-31)."
   },
   "somme": {
     "MIS-reddito_di_cittadinanza-1|consuntivo": {

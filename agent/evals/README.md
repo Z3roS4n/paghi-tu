@@ -51,11 +51,13 @@ I valori attesi si leggono dai record al momento della build, quindi dopo una co
 
 ## Revisione
 
-Il set l'ha costruito Claude dai dati; prima della prima eval Antonio controlla le risposte attese. Si legge `revisione.md`, si segna l'esito in `revisione.json` e si rigenera. Un caso `da_correggere` si sistema in `golden-set.ts` o in `casi-manuali.json`, oppure nel dato, se l'errore è lì.
+Il set l'ha costruito Claude dai dati. In via ordinaria, prima della prima eval Antonio controlla le risposte attese: si legge `revisione.md`, si segna l'esito in `revisione.json` e si rigenera. Un caso `da_correggere` si sistema in `golden-set.ts` o in `casi-manuali.json`, oppure nel dato, se l'errore è lì.
+
+**Deroga di Giovanni (2026-10-31):** per la prima eval del set corrente da 155 casi, Giovanni deroga alla revisione preventiva di Antonio. La deroga non è una revisione e non cambia `revisione.json`: i casi restano `rivistoDaAntonio: null` e il riepilogo resta 0/155. Non si estende ai set futuri.
 
 ## Soglie
 
-Soglie al 100 % confermate dal titolare (Antonio) il 2026-10-28. La lettura «obiettivo, non condizione di merge» è di Giovanni (co-maintainer) del 2026-10-29, da confermare con Antonio sulla PR.
+Soglie al 100 % confermate da Antonio il 2026-10-28. Giovanni (co-maintainer) conferma il 2026-10-31 che sono un obiettivo post-merge, non una condizione di merge.
 
 Tutte al 100 %:
 
@@ -66,4 +68,4 @@ Tutte al 100 %:
 
 ## Cosa manca
 
-Il runner (`run.ts`) che interroga l'engine e confronta le risposte. Si scrive quando esiste l'engine su Vertex AI Search: oggi il progetto Google Cloud non ha ancora dati né indice.
+Il runner (`run.ts`) che interroga l'engine e confronta le risposte: il repository non lo contiene ancora. La deroga alla revisione non equivale all'esecuzione dell'eval; prima di un run su Vertex vanno verificati separatamente il runner e lo stato effettivo delle risorse cloud.

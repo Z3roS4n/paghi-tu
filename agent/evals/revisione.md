@@ -2,7 +2,7 @@
 
 File generato da `npm run evals:build`: non si modifica a mano. Per segnare un caso si scrive in `agent/evals/revisione.json` (`"<id>": "ok" | "da_correggere" | "da_togliere"`) e si rigenera.
 
-Casi: 149. Con fonte «con_permesso»: 7. Rivisti: 0.
+Casi: 155. Con fonte «con_permesso»: 7. Rivisti: 0.
 
 | Categoria | Casi |
 | --- | --- |
@@ -12,7 +12,7 @@ Casi: 149. Con fonte «con_permesso»: 7. Rivisti: 0.
 | misure | 18 |
 | finanza_pubblica | 16 |
 | serie | 3 |
-| promesse | 52 |
+| promesse | 58 |
 | correzioni | 3 |
 | par_condicio | 11 |
 | fuori_scope | 9 |
@@ -72,7 +72,7 @@ Casi: 149. Con fonte «con_permesso»: 7. Rivisti: 0.
 | nome | Governo Fanfani III |  |
 | inizio | 1960-07-27 |  |
 
-**Citazione:** `governi` / `g13` — http://dati.camera.it/ocd/governo.rdf/g13 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-fanfani-iii/3214
+**Citazione:** `governi` / `g13` — http://dati.camera.it/ocd/governo.rdf/g13 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-fanfani-iii/3214 · https://archivio.quirinale.it/aspr/presidente/nomine/giovanni-gronchi
 
 **Nota:** Data a metà del mandato (1960-07-27 → 1962-02-22).
 
@@ -91,7 +91,7 @@ Casi: 149. Con fonte «con_permesso»: 7. Rivisti: 0.
 | nome | Governo Rumor II |  |
 | inizio | 1969-08-06 |  |
 
-**Citazione:** `governi` / `g21` — http://dati.camera.it/ocd/governo.rdf/g21 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/v-legislatura-5-giugno-1968-28-febbraio-1972/governo-rumor-ii/3204
+**Citazione:** `governi` / `g21` — http://dati.camera.it/ocd/governo.rdf/g21 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/v-legislatura-5-giugno-1968-28-febbraio-1972/governo-rumor-ii/3204 · https://archivio.quirinale.it/aspr/presidente/nomine/giuseppe-saragat
 
 **Nota:** Data a metà del mandato (1969-08-06 → 1970-03-28).
 
@@ -110,7 +110,7 @@ Casi: 149. Con fonte «con_permesso»: 7. Rivisti: 0.
 | nome | Governo Andreotti III |  |
 | inizio | 1976-07-30 |  |
 
-**Citazione:** `governi` / `g30` — http://dati.camera.it/ocd/governo.rdf/g30 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/vii-legislatura-5-luglio-1976-2-aprile-1979/governo-andreotti-iii/3191
+**Citazione:** `governi` / `g30` — http://dati.camera.it/ocd/governo.rdf/g30 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/vii-legislatura-5-luglio-1976-2-aprile-1979/governo-andreotti-iii/3191 · https://archivio.quirinale.it/aspr/presidente/nomine/giovanni-leone
 
 **Nota:** Data a metà del mandato (1976-07-30 → 1978-03-13).
 
@@ -279,7 +279,7 @@ Casi: 149. Con fonte «con_permesso»: 7. Rivisti: 0.
 | elezioni | 1976-06-20 |  |
 | inizio | 1976-07-05 |  |
 
-**Citazione:** `legislature` / `VII` — http://dati.camera.it/ocd/legislatura.rdf/repubblica_07
+**Citazione:** `legislature` / `VII` — http://dati.camera.it/ocd/legislatura.rdf/repubblica_07 · https://storia.camera.it/deputato/antonio-bellocchio-19271109/leg-repubblica-VII
 
 **Revisione:** da fare
 
@@ -295,7 +295,7 @@ Casi: 149. Con fonte «con_permesso»: 7. Rivisti: 0.
 | elezioni | 2001-05-13 |  |
 | inizio | 2001-05-30 |  |
 
-**Citazione:** `legislature` / `XIV` — http://dati.camera.it/ocd/legislatura.rdf/repubblica_14
+**Citazione:** `legislature` / `XIV` — http://dati.camera.it/ocd/legislatura.rdf/repubblica_14 · https://storia.camera.it/deputato/gabriella-pistone-19510729/leg-repubblica-XIV
 
 **Revisione:** da fare
 
@@ -311,7 +311,7 @@ Casi: 149. Con fonte «con_permesso»: 7. Rivisti: 0.
 | elezioni | 2022-09-25 |  |
 | inizio | 2022-10-13 |  |
 
-**Citazione:** `legislature` / `XIX` — http://dati.camera.it/ocd/legislatura.rdf/repubblica_19 · https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2026-10-09;180
+**Citazione:** `legislature` / `XIX` — http://dati.camera.it/ocd/legislatura.rdf/repubblica_19 · https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2026-10-09;180 · https://www.gazzettaufficiale.it/eli/gu/2022/07/21/169/sg/pdf
 
 **Revisione:** da fare
 
@@ -1249,7 +1249,7 @@ Casi: 149. Con fonte «con_permesso»: 7. Rivisti: 0.
 | --- | --- | --- |
 | pil-nominale | 2.265.002,5 | milioni di euro correnti (lire/1936,27) |
 
-**Citazione:** `serie/pil-nominale` / `2025` — https://www.bancaditalia.it/statistiche/tematiche/stat-storiche/stat-storiche-economia/NA150_2.0.zip · https://esploradati.istat.it/SDMXWS/rest/data/IT1,92_506_DF_DCCN_PILN_1,1.0/A.IT.B1GQ_B_W2_S1..../ALL/
+**Citazione:** `serie/pil-nominale` / `2025` — https://www.bancaditalia.it/statistiche/tematiche/stat-storiche/stat-storiche-economia/NA150_2.0.zip · https://esploradati.istat.it/SDMXWS/rest/data/IT1,92_506_DF_DCCN_PILN_1,1.0/A.IT.B1GQ_B_W2_S1..../ALL/ · https://www.istat.it/comunicato-stampa/conti-economici-nazionali-anni-2010-2025/
 
 **Regole:** `unita_di_misura`
 
@@ -1266,7 +1266,7 @@ Casi: 149. Con fonte «con_permesso»: 7. Rivisti: 0.
 | --- | --- | --- |
 | popolazione-residente | 58.942.828 | persone al 1 gennaio |
 
-**Citazione:** `serie/popolazione-residente` / `2026` — https://www.bancaditalia.it/statistiche/tematiche/stat-storiche/stat-storiche-economia/NA150_2.0.zip · https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_346_DF_DCIS_RICPOPRES1971_1,1.0/ · https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_347_DF_DCIS_RICPOPRES1981_1,1.0/ · https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_279_DF_DCIS_RICPOPRES1991_1,1.0/ · https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_305_DF_DCIS_RICPOPRES2001_1,1.0/ · https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_164_DF_DCIS_RICPOPRES2011_1,1.0/ · https://esploradati.istat.it/SDMXWS/rest/data/IT1,22_289_DF_DCIS_POPRES1_1,1.0/
+**Citazione:** `serie/popolazione-residente` / `2026` — https://www.bancaditalia.it/statistiche/tematiche/stat-storiche/stat-storiche-economia/NA150_2.0.zip · https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_346_DF_DCIS_RICPOPRES1971_1,1.0/all?startPeriod=1952&endPeriod=1971 · https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_347_DF_DCIS_RICPOPRES1981_1,1.0/all?startPeriod=1972&endPeriod=1981 · https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_279_DF_DCIS_RICPOPRES1991_1,1.0/all?startPeriod=1982&endPeriod=1991 · https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_305_DF_DCIS_RICPOPRES2001_1,1.0/all?startPeriod=1992&endPeriod=2001 · https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_164_DF_DCIS_RICPOPRES2011_1,1.0/all?startPeriod=2002&endPeriod=2018 · https://esploradati.istat.it/SDMXWS/rest/data/IT1,22_289_DF_DCIS_POPRES1_1,1.0/all?startPeriod=2019&endPeriod=2026 · https://www.istat.it/notizia/bilancio-demografico-mensile-gennaio-dicembre-2025/ · https://demo.istat.it/app/?a=2026&i=POS&l=it
 
 **Regole:** `unita_di_misura`, `dichiara_stima`
 
@@ -2034,6 +2034,94 @@ Casi: 149. Con fonte «con_permesso»: 7. Rivisti: 0.
 
 **Revisione:** da fare
 
+### PRO-C27-FI-028
+
+**Domanda:** Che cosa ha dichiarato Enrico Costa; Stefania Craxi (Forza Italia) il 29 ottobre 2026? Voglio le parole esatte e la fonte.
+
+**Esito atteso:** risposta
+**Livello del dato:** V2
+
+**Parole esatte attese:** «C’è un altro impegno che consideriamo prioritario e irrinunciabile, e che intendiamo portare fino in fondo: la previdenza dedicata per le donne e gli uomini delle Forze dell’ordine e delle Forze armate.»
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| dichiarante | Enrico Costa; Stefania Craxi |  |
+| data | 2026-10-29 |  |
+
+**Da respingere:** «Un trattamento previdenziale dedicato al personale delle Forze dell'ordine e delle Forze armate; i gruppi FI dicono che lavoreranno anche durante l'esame parlamentare della manovra per individuare le risorse.»
+
+**Citazione:** `promesse` / `C27-FI-028` — https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-manovra-craxi-costa-fi-soddisfatti-per-i-risultati-ottenuti-ora-avanti-fino-a-garantire-la-previdenza-dedicata-a-forze-dellordine-e-forze-armate/
+
+**Regole:** `verbatim`, `dichiara_livello_V2`
+
+**Revisione:** da fare
+
+### PRO-C27-FI-029
+
+**Domanda:** Che cosa ha dichiarato Antonio Tajani (Forza Italia) il 29 ottobre 2026? Voglio le parole esatte e la fonte.
+
+**Esito atteso:** risposta
+**Livello del dato:** V2
+
+**Parole esatte attese:** «noi avevamo chiesto di arrivare con l’Irpef al 33% fino ai redditi da 60 mila euro: lo faremo nella prossima Manovra, sappiamo che la coperta è corta.»
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| dichiarante | Antonio Tajani |  |
+| data | 2026-10-29 |  |
+
+**Da respingere:** «Estendere l'aliquota Irpef del 33% ai redditi fino a 60.000 euro con la prossima legge di bilancio.»
+
+**Citazione:** `promesse` / `C27-FI-029` — https://www.lagazzettadelmezzogiorno.it/news/ultima-ora/2189777/tajani-nella-manovra-accolte-tutte-le-richieste-di-forza-italia.html
+
+**Regole:** `verbatim`, `dichiara_livello_V2`
+
+**Revisione:** da fare
+
+### PRO-C27-FI-030
+
+**Domanda:** Che cosa ha dichiarato Stefania Craxi; Daniela Ternullo (Forza Italia) il 29 ottobre 2026? Voglio le parole esatte e la fonte.
+
+**Esito atteso:** risposta
+**Livello del dato:** V2
+
+**Parole esatte attese:** «Per questo abbiamo presentato in Senato un ddl delega per la protezione del processo elettorale, dalle comunali alle europee. […] Punta su prevenzione, monitoraggio e capacità di reazione, per individuare per tempo le campagne coordinate, cooperare a livello nazionale ed europeo»
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| dichiarante | Stefania Craxi; Daniela Ternullo |  |
+| data | 2026-10-29 |  |
+
+**Da respingere:** «Disegno di legge delega per la protezione del processo elettorale, dalle elezioni comunali alle europee, basato su prevenzione, monitoraggio e capacità di reazione per individuare le campagne coordinate, con cooperazione nazionale ed europea.»
+
+**Citazione:** `promesse` / `C27-FI-030` — https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-elezioni-craxi-e-ternullo-da-fi-ddl-delega-si-a-tutela-voto-no-a-reati-dopinione/
+
+**Regole:** `verbatim`, `dichiara_livello_V2`
+
+**Revisione:** da fare
+
+### PRO-C27-FN-042
+
+**Domanda:** Che cosa ha dichiarato Roberto Vannacci (Futuro Nazionale) il 29 ottobre 2026? Voglio le parole esatte e la fonte.
+
+**Esito atteso:** risposta
+**Livello del dato:** V2
+
+**Parole esatte attese:** «Non dobbiamo tagliare la Pac»
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| dichiarante | Roberto Vannacci |  |
+| data | 2026-10-29 |  |
+
+**Da respingere:** «Non ridurre i fondi della politica agricola comune (PAC).»
+
+**Citazione:** `promesse` / `C27-FN-042` — https://www.ansa.it/sito/notizie/politica/2026/10/29/ansa-box-vannacci-lancia-un-segnale-a-meloni-vuol-far-vincere-la-sinistra_4e83c538-b12b-48ba-994f-6a3b659ad59c.html
+
+**Regole:** `verbatim`, `dichiara_livello_V2`
+
+**Revisione:** da fare
+
 ### PRO-C27-LEGA-025
 
 **Domanda:** Che cosa ha dichiarato Matteo Salvini (Lega) il 23 ottobre 2026? Voglio le parole esatte e la fonte.
@@ -2144,6 +2232,28 @@ Casi: 149. Con fonte «con_permesso»: 7. Rivisti: 0.
 
 **Revisione:** da fare
 
+### PRO-C27-M5S-061
+
+**Domanda:** Che cosa ha dichiarato Giuseppe Conte (MoVimento 5 Stelle) il 29 ottobre 2026? Voglio le parole esatte e la fonte.
+
+**Esito atteso:** risposta
+**Livello del dato:** V2
+
+**Parole esatte attese:** «Non ci hanno ascoltato […] su un taglio Irpef di 5 anni per gli under 35 prima che scappino a cercare stipendi altrove»
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| dichiarante | Giuseppe Conte |  |
+| data | 2026-10-29 |  |
+
+**Da respingere:** «Un taglio dell'Irpef per cinque anni per gli under 35.»
+
+**Citazione:** `promesse` / `C27-M5S-061` — https://ildomaniditalia.eu/manovra-conte-la-targa-personalizzata-del-governo-e-carovita-me-ne-frego/
+
+**Regole:** `verbatim`, `dichiara_livello_V2`
+
+**Revisione:** da fare
+
 ### PRO-C27-NM-012
 
 **Domanda:** Che cosa ha dichiarato Mariastella Gelmini (Noi Moderati) il 4 settembre 2026? Voglio le parole esatte e la fonte.
@@ -2161,6 +2271,28 @@ Casi: 149. Con fonte «con_permesso»: 7. Rivisti: 0.
 **Da respingere:** «Introduzione del quoziente familiare nel sistema fiscale.»
 
 **Citazione:** `promesse` / `C27-NM-012` — https://noimoderati.it/news-e-media/12
+
+**Regole:** `verbatim`, `dichiara_livello_V2`
+
+**Revisione:** da fare
+
+### PRO-C27-ORA-023
+
+**Domanda:** Che cosa ha dichiarato Laura Scalfi (Ora!) il 29 ottobre 2026? Voglio le parole esatte e la fonte.
+
+**Esito atteso:** risposta
+**Livello del dato:** V2
+
+**Parole esatte attese:** «Il programma nazionale di ORA! indica un’altra strada: […] istituire figure intermedie, che diano agli insegnanti una carriera e rendano la professione più attrattiva.»
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| dichiarante | Laura Scalfi |  |
+| data | 2026-10-29 |  |
+
+**Da respingere:** «Istituire nella scuola figure intermedie che offrano agli insegnanti un percorso di carriera.»
+
+**Citazione:** `promesse` / `C27-ORA-023` — https://www.agenziagiornalisticaopinione.it/opinionews-tn-aa/scalfi-ora-segreteria-nazionale-delega-alla-scuola-docenti-trento-protesta-e-bolzano-aumenta-pagare-il-lavoro-in-piu-e-misurare-che-cosa-compra/
 
 **Regole:** `verbatim`, `dichiara_livello_V2`
 
