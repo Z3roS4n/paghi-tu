@@ -22,3 +22,8 @@ it("distingue i dati italiani dal confronto europeo", () => {
   expect(selected.map((d) => d.structData.record)).toEqual(["confrontoUe/conti/2025"]);
   expect(candidateFilter(selected)).toContain('dataset: ANY("finanza-pubblica")');
 });
+
+it("usa tipo ed esercizio per le leggi e il nome completo per le maggioranze", () => {
+  expect(structuredCandidates("Chi ha presentato la legge finanziaria per l’esercizio 1999?", index).map((d) => d.structData.record)).toEqual(["1999-legge-finanziaria"]);
+  expect(structuredCandidates("Quali partiti formavano la maggioranza del Governo Prodi I?", index).map((d) => d.structData.record)).toEqual(["g50"]);
+});

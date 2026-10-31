@@ -19,6 +19,28 @@ export function structuredCandidates(question: string, index: Index): IndexDocum
     if (ranked[0]?.score >= 3 && ranked[0].score >= (ranked[1]?.score ?? 0) + 2) return [ranked[0].d, ...ranked[0].linked];
   }
 
+  if (/partiti|maggioranza|durat/.test(text)) {
+    const named = documents.filter((d) => {
+      if (d.structData.dataset !== "governi") return false;
+      const name = fold(d.structData.titolo).replace(/^governo /, "");
+      const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      return new RegExp(`\\b${escaped}\\b`).test(text);
+    });
+    if (named.length === 1) return named;
+  }
+  if (/presentato|proponente/.test(text) && years.length) {
+    const kind = /esercizio provvisorio/.test(text) ? "esercizio provvisorio"
+      : /legge finanziaria/.test(text) ? "legge finanziaria"
+      : /legge di stabilita/.test(text) ? "legge di stabilita"
+      : /legge di bilancio/.test(text) ? "legge di bilancio"
+      : /bilancio di previsione/.test(text) ? "bilancio di previsione" : null;
+    if (kind) {
+      const matching = documents.filter((d) => d.structData.dataset === "leggi-bilancio"
+        && fold(d.structData.titolo).includes(kind)
+        && years.every((year) => d.structData.record.includes(year)));
+      if (matching.length === 1) return matching;
+    }
+  }
   const legislative = /\blegislatura ([ivxlcdm]+)\b/i.exec(question);
   if (legislative) return documents.filter((d) => d.structData.dataset === "legislature" && d.structData.record === legislative[1].toUpperCase());
 
