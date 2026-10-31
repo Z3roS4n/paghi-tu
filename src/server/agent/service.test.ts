@@ -12,6 +12,7 @@ vi.mock("../../../agent/runtime/index.ts", () => ({ createAgentRuntime: ({ trans
 import { createAgentHandler } from "./service.ts";
 import type { AgentConfig } from "./config.ts";
 import type { FirestoreStateStore } from "./state.ts";
+import { snapshotHash } from "../../../agent/sync/refresh.ts";
 import { IndexDocument } from "../../../agent/ingest/export.ts";
 
 const config: AgentConfig = { projectId: "paghi-tu-agent", projectNumber: "123456789012", poolId: "pool", providerId: "provider", serviceAccountEmail: "agent@paghi-tu-agent.iam.gserviceaccount.com", engineId: "engine", dataStoreId: "store", databaseId: "preview-db", allowedOrigin: "https://preview.example.vercel.app", ipHashSecret: "x".repeat(32), vercelOwnerId: "team_test", vercelProjectId: "prj_test", vercelAudience: "https://vercel.com/team_test", vercelIssuer: "https://oidc.vercel.com/team_test" };
@@ -28,7 +29,7 @@ describe("strict agent HTTP gate", () => {
   it("rejects a malformed session cookie without replacing it", async () => { const response = await createAgentHandler({ config, getToken, state, index })(request({ origin: config.allowedOrigin, cookie: "__Host-paghi-agent=forged" })); expect(response.status).toBe(409); expect(response.headers.get("set-cookie")).toBeNull(); expect(getToken).not.toHaveBeenCalled(); });
   it("logs only fixed metadata for invalid bodies", async () => { const log = vi.fn(); const response = await createAgentHandler({ config, getToken, state, index, log })(request({ origin: config.allowedOrigin }, "SECRET_INVALID_BODY")); expect(response.status).toBe(400); expect(log).toHaveBeenCalledOnce(); expect(JSON.stringify(log.mock.calls)).not.toContain("SECRET_INVALID_BODY"); expect(log.mock.calls[0][0]).toMatchObject({ status: 400, attempts: 0 }); });
   it("never performs a fourth backend fetch", async () => {
-    const docs = new Map<string, unknown>([["control", { enabled: true }]]);
+    const docs = new Map<string, unknown>([["control", { enabled: true, indexSha256: snapshotHash(new Map()) }]]);
     const adapter = { transact: async <T,>(keys: string[], fn: (input: Map<string, unknown | null>) => { writes: Record<string, unknown>; value: T }): Promise<T> => {
       const result = fn(new Map(keys.map((key) => [key, docs.get(key) ?? null])));
       for (const [key, value] of Object.entries(result.writes)) docs.set(key, value);
@@ -47,7 +48,7 @@ describe("strict agent HTTP gate", () => {
     const snapshot = JSON.parse(gunzipSync(readFileSync(fixture)).toString("utf8").split("\n", 1)[0]) as { index: unknown[] };
     const gov = IndexDocument.parse(snapshot.index.find((doc) => IndexDocument.safeParse(doc).data?.id === "governi--g60"));
     const sha = createHash("sha256").update(JSON.stringify(gov)).digest("hex");
-    const docs = new Map<string, unknown>([["control", { enabled: true }]]);
+    const docs = new Map<string, unknown>([["control", { enabled: true, indexSha256: snapshotHash(new Map([[gov.id, gov]])) }]]);
     const adapter = { transact: async <T,>(keys: string[], fn: (input: Map<string, unknown | null>) => { writes: Record<string, unknown>; value: T }): Promise<T> => {
       const result = fn(new Map(keys.map((key) => [key, docs.get(key) ?? null])));
       for (const [key, value] of Object.entries(result.writes)) docs.set(key, value);
@@ -72,4 +73,13 @@ describe("strict agent HTTP gate", () => {
     for (const secret of ["SECRET_QUESTION", "SECRET_PROVIDER_ERROR", "SECRET_ACCESS_TOKEN", "203.0.113.1"]) expect(safeLog).not.toContain(secret);
     expect(logs).toHaveLength(2);
   });
+});
+
+
+it("rejects a stale deployed bundle before any Vertex fetch", async () => {
+  const fetchBackend = vi.fn();
+  const adapter = { transact: async <T,>(keys: string[], fn: (input: Map<string, unknown | null>) => { writes: Record<string, unknown>; value: T }) => fn(new Map(keys.map((key) => [key, key === "control" ? { enabled: true, indexSha256: "b".repeat(64) } : null]))).value };
+  const handler = createAgentHandler({ config, getToken: async () => "token", state: () => adapter as unknown as FirestoreStateStore, index: async () => new Map(), fetch: fetchBackend });
+  expect((await handler(request({ origin: config.allowedOrigin, "x-vercel-forwarded-for": "203.0.113.1" }))).status).toBe(503);
+  expect(fetchBackend).not.toHaveBeenCalled();
 });
