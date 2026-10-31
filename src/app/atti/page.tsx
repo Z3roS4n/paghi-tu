@@ -178,7 +178,7 @@ function Coverage() {
       </p>
       <p className="mt-1 text-[15.5px] text-ink-soft">
         {recovering
-          ? `Ogni giorno aggiungiamo gli atti nuovi e, a ritroso, quelli già usciti, fino al ${formatDate(obiettivo)}, l'inizio del governo Meloni. Finché il recupero non è finito, il registro non è completo.`
+          ? `A ogni esecuzione della routine, prevista ogni tre giorni, aggiungiamo gli atti nuovi e, a ritroso, quelli già usciti, fino al ${formatDate(obiettivo)}, l'inizio del governo Meloni. Finché il recupero non è finito, il registro non è completo.`
           : `Il registro copre tutto il periodo dal ${formatDate(obiettivo)}, l'inizio del governo Meloni.`}{" "}
         Un atto compare dopo che una seconda verifica indipendente ha ricontrollato ogni importo sul testo.
       </p>

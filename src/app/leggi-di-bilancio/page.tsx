@@ -27,7 +27,7 @@ export default function BudgetLawsPage() {
     <Wrap>
       <PageHead kicker={`${budgetLaws.length} atti dal 1946`} title="Leggi di bilancio">
         <p>
-          Estremi verificati su Normattiva. Il governo indicato è quello che ha presentato l&apos;atto, non sempre quello che l&apos;ha
+          Estremi con livello di verifica indicato: V1 per quelli verificati su fonte primaria, NV per quelli ancora da verificare. Il governo indicato è quello che ha presentato l&apos;atto, non sempre quello che l&apos;ha
           gestito.
         </p>
       </PageHead>

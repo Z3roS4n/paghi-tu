@@ -18,7 +18,7 @@ Per un dato che manca (una promessa, una misura, una fonte ufficiale) c'è il mo
 
 ### Cosa succede dopo
 
-- Ogni giorno la routine legge le segnalazioni aperte. Senza fonte, con una fonte non ammessa o senza un motivo chiaro, la segnalazione viene respinta subito.
+- A ogni esecuzione, prevista ogni tre giorni, la routine legge le segnalazioni aperte. Senza fonte, con una fonte non ammessa o senza un motivo chiaro, la segnalazione viene respinta subito.
 - Le altre passano due controlli, fatti da due agenti diversi da quello che ha scritto il dato: il primo verifica la correzione sulla fonte, il secondo prova a smentirla. Vale solo se il primo la conferma e il secondo non riesce a smentirla.
 - **Confermata**: il dato viene corretto, la modifica entra nel [registro delle correzioni](https://www.paghitu.it/correzioni) e la segnalazione viene chiusa con il link al commit.
 - **Respinta**: la risposta spiega perché, sotto la segnalazione. Se non sei d'accordo puoi rispondere con un'altra fonte.

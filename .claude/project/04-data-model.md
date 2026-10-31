@@ -1,5 +1,7 @@
 # Paghi Tu — Modello dati
 
+> **Ultimo aggiornamento:** 31 ottobre 2026 · **da:** Codex (su mandato Giovanni) — riconciliazione audit con codice e dati di main.
+
 > Fonte di verità: gli schemi zod in `src/lib/domain/schemas.ts`. Non c'è un database: i dati sono JSON versionati in `data/`, generati da `npm run data:import`. Questo documento spiega intento, vincoli e stati.
 
 ## Entità principali
@@ -23,9 +25,9 @@
 ### Serie
 - `id`, unità, fonti, avvertenze, `punti[{anno, valore, nota?}]`. Oggi: PIL nominale, popolazione residente, indice FOI, coefficienti di rivalutazione ISTAT 2025.
 
-### Promessa (in arrivo, dai CSV della campagna)
+### Promessa (pubblicata, dai CSV della campagna)
 - Colonne di ricerca: partito, coalizione, dichiarante e ruolo, data, testo letterale (citazione breve, art. 70 L. 633/1941), parafrasi neutra, tipo e URL della fonte, archivio, tema COFOG, misurabile, costo dichiarato dal proponente, stima di terzi con fonte, stato, stato di verifica.
-- Da decidere prima dell'import: campo `orizzonte` (legge di bilancio 2027 / prossima legislatura) e regola per le promesse recepite dal governo prima del voto, uguale per maggioranza e opposizione.
+- `orizzonte`: `prossima_legislatura`, `legislatura_in_corso` o `non_specificato`; `veicolo` distingue programma, dichiarazione e atti/proposte. `effettoConti` e `ribadita` seguono D-030/D-031. Stato del catalogo e perimetro sono in `data/promesse-stato.json` e `PromiseCatalogStatus`; gli enum completi restano nello schema.
 
 ### Atto (D-029)
 - Un decreto-legge, una legge o un decreto legislativo pubblicato in Gazzetta con almeno una misura con importo. Campi chiave: `id` (`dl-AAAA-N`, `l-AAAA-N`, `dlgs-AAAA-N`), `tipo`, `numero`, `data`, `titolo` (breve e neutro) e `titoloUfficiale`, `governoId`, `gazzetta` (numero, data, link), `inVigoreDal` (da Normattiva; prima di quella data la pagina mostra «Pubblicato, in vigore dal…», calcolato nel browser), `cdm`, `stato` (`in_conversione`, `convertito`, `decaduto`, `in_vigore`), `conversione`, `relazioneTecnica`, `misure`, `verifica`.
@@ -35,7 +37,7 @@
 ### Classificazione delle promesse (D-030, D-031)
 - `effettoConti` (`si`, `no`, `incerto`) e `ribadita` (le ripetizioni dello stesso partito, con data e fonte) da `research/2026-10-28.promesse-classificazione.csv`, doppia codifica indipendente.
 
-### Misura (in arrivo, D-007)
+### Misura (pubblicata, D-007)
 - Multi-atto e multi-governo: costo stimato all'approvazione (relazione tecnica) contro costo a consuntivo, ciascuno con fonte. Scostamento % solo se le basi sono omogenee.
 
 ## Livelli di verifica

@@ -1,10 +1,12 @@
 # Paghi Tu — Stack tecnico
 
+> **Ultimo aggiornamento:** 31 ottobre 2026 · **da:** Codex (su mandato Giovanni) — riconciliazione audit con codice e dati di main.
+
 > Versioni pinnate alla prima installazione; aggiornare qui a ogni upgrade.
 
 **Versioni installate (2026-10-20; Next.js aggiornato il 2026-10-24):** Next.js 16.4.3 · React 19.3.0 ·
 TypeScript 5.9.3 · Tailwind 4.3.3 · Node 24.14.0
-*(lette da `package.json` allo scaffold; `<n/d>` = non presente, completare a mano)*
+*(versioni storiche dello scaffold; per le versioni risolte fa fede `package-lock.json`)*
 
 ## Baseline Next.js 16.x (se lo stack è Next)
 - **Requisiti**: Node ≥ 20.9 · TypeScript ≥ 5.1 (dalla 16.3 `next build` può usare TS 7 per il
@@ -26,29 +28,25 @@ TypeScript 5.9.3 · Tailwind 4.3.3 · Node 24.14.0
 ## Runtime & framework
 | Layer | Scelta | Note |
 |---|---|---|
-| Framework | **<…>** | |
-| Linguaggio | **<…>** strict | |
-| Deploy | **<…>** | |
-| DB | **<…>** | |
-| ORM | **<…>** | |
-| Auth | **<…>** | |
-| File / storage | **<…>** | |
+| Framework | Next.js App Router | configurazione in `next.config.ts` |
+| Linguaggio | TypeScript strict | script dati Node con type-stripping nativo |
+| Deploy | Vercel | dominio pubblico `https://www.paghitu.it` |
+| DB / ORM | Nessuno | snapshot JSON versionati, validati da zod |
+| Auth | Nessuna nel sito pubblico | nessun account visitatore |
+| File / storage | Git e asset statici | grezzi in `data/raw/`, manifest con hash |
 
 ## Librerie applicative
 | Scopo | Libreria | Motivo |
 |---|---|---|
-| UI kit | **<…>** | |
-| Form / validazione | **<…>** | |
-| Test | **<…>** | |
-| Lint / format | **<…>** | |
+| UI | React, Tailwind, Phosphor | componenti propri, SVG per i grafici |
+| Validazione | zod | unico schema per import e dati server |
+| Test | vitest | logica di dominio e integrità dei dati |
+| Lint | ESLint / eslint-config-next | comando `npm run lint` |
+| Analytics | @vercel/analytics | senza cookie; query e frammenti rimossi prima dell’invio |
 
 ## Variabili d'ambiente (contratto)
-```
-DATABASE_URL=
-AUTH_SECRET=
-# … un segreto per riga; nessun prefisso NEXT_PUBLIC_ sui segreti
-```
-Regola: validare l'env allo startup con uno schema (`src/lib/env.ts`).
+Il sito pubblico si costruisce senza credenziali applicative: nessun `DATABASE_URL` o `AUTH_SECRET`.
+Solo `scripts/notify.ts` richiede `RESEND_API_KEY`, `PAGHITU_NOTIFY_TO` e `PAGHITU_NOTIFY_FROM`, custodite nei segreti della routine. In assenza esce con codice 2; non disabilita le pagine statiche. Non esiste `src/lib/env.ts`.
 
-## Servizi esterni e piani
-- **<servizio>**: <account, ambienti sandbox/prod, costi>
+## Servizi esterni
+Registro e contratti in [integrazioni](../integrations/README.md): Vercel, Resend, Eurostat, Banca d’Italia, Internet Archive. Download solo dagli script; rendering delle pagine da JSON locali. CI esegue lint, typecheck, test e build senza credenziali dei servizi e senza aggiornare i dati.

@@ -48,7 +48,7 @@ export default function CorrectionsPage() {
       <ul>
         <li>
           Un agente verificatore, diverso da quello che ha scritto il dato, ricontrolla la segnalazione sulla fonte,
-          di solito entro un giorno.
+          alla prima esecuzione utile della routine, prevista ogni tre giorni; i casi dubbi richiedono ulteriori verifiche.
         </li>
         <li>
           Se la fonte conferma, il dato viene corretto, la correzione compare in questa pagina e la segnalazione viene

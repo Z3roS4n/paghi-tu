@@ -9,17 +9,12 @@
 | Integrazione | Tipo | Stato | Scheda |
 |---|---|---|---|
 | Vercel | hosting statico | ✅ attiva (produzione pubblica dal 2026-10-21) | [vercel.md](vercel.md) |
-| Resend | email di segnalazione della routine | 🟡 pronta, da configurare sull'account della routine | [resend.md](resend.md) |
+| Resend | email di segnalazione della routine | 🟡 script pronto; routine attive, configurazione e consegna email non verificate da questo checkout | [resend.md](resend.md) |
 | Eurostat (SDMX) | dati dei conti pubblici, senza chiave | ✅ attiva (pipeline `data:update`) | [eurostat.md](eurostat.md) |
+| Banca d’Italia | debito mensile TCCE0325, senza chiave | ✅ pipeline `data:update` | [banca-d-italia.md](banca-d-italia.md) |
 | Internet Archive (Wayback) | copie d'archivio delle fonti | 🟡 ricerca delle copie attiva; nuove catture in attesa di permesso | [internet-archive.md](internet-archive.md) |
 
-## Webhook in entrata (endpoint esposti dalla nostra app)
-
-| Endpoint | Provider | Verifica | Scheda |
-|---|---|---|---|
-| `POST /api/webhooks/<x>` | <provider> | firma/secret | — |
-
-## Gating / graceful degradation
-Ogni integrazione è **opzionale a runtime**: senza le sue variabili d'ambiente l'app resta pienamente funzionante e la funzione appare disabilitata. Verifica con `isXxxConfigured()` per ciascuna.
+## Webhook e gating
+Nessun webhook in entrata. Il sito legge snapshot locali; i download non avvengono a runtime. Resend è usato solo dallo script di notifica, che fallisce esplicitamente se mancano le sue variabili. La presenza delle routine non prova la configurazione o la consegna delle email: verifica presso il titolare, senza invii di test automatici.
 
 Nuova scheda: `/integration <nome servizio>` oppure `node .claude/scripts/new-integration.mjs "Nome"`.
