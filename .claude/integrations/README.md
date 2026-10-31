@@ -12,6 +12,7 @@
 | Resend | email di segnalazione della routine | 🟡 pronta, da configurare sull'account della routine | [resend.md](resend.md) |
 | Eurostat (SDMX) | dati dei conti pubblici, senza chiave | ✅ attiva (pipeline `data:update`) | [eurostat.md](eurostat.md) |
 | Internet Archive (Wayback) | copie d'archivio delle fonti | 🟡 ricerca delle copie attiva; nuove catture in attesa di permesso | [internet-archive.md](internet-archive.md) |
+| Vertex AI Search (Discovery Engine) | agente conversazionale con citazioni | 🟡 proposta (D-026), non collegata | [vertex-ai-search.md](vertex-ai-search.md) |
 
 ## Webhook in entrata (endpoint esposti dalla nostra app)
 

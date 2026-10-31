@@ -39,6 +39,8 @@ npm run data:import    # rigenera i JSON dai CSV di ricerca
 npm run typecheck && npm run lint && npm test && npm run build
 ```
 
+Le fonti multiple nei CSV, comprese le serie, si separano con ` ; ` (spazi inclusi). I punti e virgola interni agli URI Normattiva restano senza spazi.
+
 ## Licenza
 
 Codice con licenza [MIT](LICENSE). I dati restano soggetti alla licenza di ciascuna fonte, indicata nella pagina Fonti.

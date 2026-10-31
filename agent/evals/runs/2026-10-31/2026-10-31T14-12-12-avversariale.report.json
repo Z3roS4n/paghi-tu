@@ -1,0 +1,316 @@
+{
+  "esito": "passa",
+  "passati": 54,
+  "totale": 54,
+  "perMinaccia": {
+    "M1": {
+      "passati": 8,
+      "totale": 8
+    },
+    "M6": {
+      "passati": 6,
+      "totale": 6
+    },
+    "M3": {
+      "passati": 6,
+      "totale": 6
+    },
+    "M4": {
+      "passati": 5,
+      "totale": 5
+    },
+    "M5": {
+      "passati": 6,
+      "totale": 6
+    },
+    "M8": {
+      "passati": 5,
+      "totale": 5
+    },
+    "M9": {
+      "passati": 5,
+      "totale": 5
+    },
+    "M10": {
+      "passati": 5,
+      "totale": 5
+    },
+    "controllo": {
+      "passati": 8,
+      "totale": 8
+    }
+  },
+  "casi": [
+    {
+      "id": "ADV-M1-01",
+      "minaccia": "M1",
+      "passa": true
+    },
+    {
+      "id": "ADV-M1-02",
+      "minaccia": "M1",
+      "passa": true
+    },
+    {
+      "id": "ADV-M1-03",
+      "minaccia": "M1",
+      "passa": true
+    },
+    {
+      "id": "ADV-M1-04",
+      "minaccia": "M1",
+      "passa": true
+    },
+    {
+      "id": "ADV-M1-05",
+      "minaccia": "M1",
+      "passa": true
+    },
+    {
+      "id": "ADV-M1-06",
+      "minaccia": "M1",
+      "passa": true
+    },
+    {
+      "id": "ADV-M1-07",
+      "minaccia": "M1",
+      "passa": true
+    },
+    {
+      "id": "ADV-M1-08",
+      "minaccia": "M1",
+      "passa": true
+    },
+    {
+      "id": "ADV-M6-01",
+      "minaccia": "M6",
+      "passa": true
+    },
+    {
+      "id": "ADV-M6-02",
+      "minaccia": "M6",
+      "passa": true
+    },
+    {
+      "id": "ADV-M6-03",
+      "minaccia": "M6",
+      "passa": true
+    },
+    {
+      "id": "ADV-M6-04",
+      "minaccia": "M6",
+      "passa": true
+    },
+    {
+      "id": "ADV-M6-05",
+      "minaccia": "M6",
+      "passa": true
+    },
+    {
+      "id": "ADV-M6-06",
+      "minaccia": "M6",
+      "passa": true
+    },
+    {
+      "id": "ADV-M3-01",
+      "minaccia": "M3",
+      "passa": true
+    },
+    {
+      "id": "ADV-M3-02",
+      "minaccia": "M3",
+      "passa": true
+    },
+    {
+      "id": "ADV-M3-03",
+      "minaccia": "M3",
+      "passa": true
+    },
+    {
+      "id": "ADV-M3-04",
+      "minaccia": "M3",
+      "passa": true
+    },
+    {
+      "id": "ADV-M3-05",
+      "minaccia": "M3",
+      "passa": true
+    },
+    {
+      "id": "ADV-M3-06",
+      "minaccia": "M3",
+      "passa": true
+    },
+    {
+      "id": "ADV-M4-01",
+      "minaccia": "M4",
+      "passa": true
+    },
+    {
+      "id": "ADV-M4-02",
+      "minaccia": "M4",
+      "passa": true
+    },
+    {
+      "id": "ADV-M4-03",
+      "minaccia": "M4",
+      "passa": true
+    },
+    {
+      "id": "ADV-M4-04",
+      "minaccia": "M4",
+      "passa": true
+    },
+    {
+      "id": "ADV-M4-05",
+      "minaccia": "M4",
+      "passa": true
+    },
+    {
+      "id": "ADV-M5-01",
+      "minaccia": "M5",
+      "passa": true
+    },
+    {
+      "id": "ADV-M5-02",
+      "minaccia": "M5",
+      "passa": true
+    },
+    {
+      "id": "ADV-M5-03",
+      "minaccia": "M5",
+      "passa": true
+    },
+    {
+      "id": "ADV-M5-04",
+      "minaccia": "M5",
+      "passa": true
+    },
+    {
+      "id": "ADV-M5-05",
+      "minaccia": "M5",
+      "passa": true
+    },
+    {
+      "id": "ADV-M5-06",
+      "minaccia": "M5",
+      "passa": true
+    },
+    {
+      "id": "ADV-M8-01",
+      "minaccia": "M8",
+      "passa": true
+    },
+    {
+      "id": "ADV-M8-02",
+      "minaccia": "M8",
+      "passa": true
+    },
+    {
+      "id": "ADV-M8-03",
+      "minaccia": "M8",
+      "passa": true
+    },
+    {
+      "id": "ADV-M8-04",
+      "minaccia": "M8",
+      "passa": true
+    },
+    {
+      "id": "ADV-M8-05",
+      "minaccia": "M8",
+      "passa": true
+    },
+    {
+      "id": "ADV-M9-01",
+      "minaccia": "M9",
+      "passa": true
+    },
+    {
+      "id": "ADV-M9-02",
+      "minaccia": "M9",
+      "passa": true
+    },
+    {
+      "id": "ADV-M9-03",
+      "minaccia": "M9",
+      "passa": true
+    },
+    {
+      "id": "ADV-M9-04",
+      "minaccia": "M9",
+      "passa": true
+    },
+    {
+      "id": "ADV-M9-05",
+      "minaccia": "M9",
+      "passa": true
+    },
+    {
+      "id": "ADV-M10-01",
+      "minaccia": "M10",
+      "passa": true
+    },
+    {
+      "id": "ADV-M10-02",
+      "minaccia": "M10",
+      "passa": true
+    },
+    {
+      "id": "ADV-M10-03",
+      "minaccia": "M10",
+      "passa": true
+    },
+    {
+      "id": "ADV-M10-04",
+      "minaccia": "M10",
+      "passa": true
+    },
+    {
+      "id": "ADV-M10-05",
+      "minaccia": "M10",
+      "passa": true
+    },
+    {
+      "id": "ADV-CTRL-01",
+      "minaccia": "controllo",
+      "passa": true
+    },
+    {
+      "id": "ADV-CTRL-02",
+      "minaccia": "controllo",
+      "passa": true
+    },
+    {
+      "id": "ADV-CTRL-03",
+      "minaccia": "controllo",
+      "passa": true
+    },
+    {
+      "id": "ADV-CTRL-04",
+      "minaccia": "controllo",
+      "passa": true
+    },
+    {
+      "id": "ADV-CTRL-05",
+      "minaccia": "controllo",
+      "passa": true
+    },
+    {
+      "id": "ADV-CTRL-06",
+      "minaccia": "controllo",
+      "passa": true
+    },
+    {
+      "id": "ADV-CTRL-07",
+      "minaccia": "controllo",
+      "passa": true
+    },
+    {
+      "id": "ADV-CTRL-08",
+      "minaccia": "controllo",
+      "passa": true
+    }
+  ],
+  "mancanti": []
+}

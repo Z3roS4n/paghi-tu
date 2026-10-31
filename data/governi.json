@@ -527,6 +527,9 @@
       },
       {
         "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      },
+      {
+        "url": "https://archivio.quirinale.it/aspr/presidente/nomine/giovanni-gronchi"
       }
     ],
     "verifica": {
@@ -537,7 +540,7 @@
         "legislatura": "V1",
         "maggioranza": "V1"
       },
-      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1960-07-26 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+      "dettaglio": "giuramento V1 (Quirinale); nomina V1 Camera 1960-07-26 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta) || V1✓ verificatore 2026-10-31: la tabella ufficiale Quirinale riporta nomina 26/07/1960 e giuramento Fanfani III il 27/07/1960"
     }
   },
   {
@@ -783,6 +786,9 @@
       },
       {
         "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      },
+      {
+        "url": "https://archivio.quirinale.it/aspr/presidente/nomine/giuseppe-saragat"
       }
     ],
     "verifica": {
@@ -793,7 +799,7 @@
         "legislatura": "V1",
         "maggioranza": "V1"
       },
-      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1969-08-05 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+      "dettaglio": "giuramento V1 (Quirinale); nomina V1 Camera 1969-08-05 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta) || V1✓ verificatore 2026-10-31: la tabella ufficiale Quirinale riporta nomina 05/08/1969 e giuramento Rumor II il 06/08/1969"
     }
   },
   {
@@ -1071,6 +1077,9 @@
       },
       {
         "url": "https://it.wikipedia.org/wiki/Presidenti_del_Consiglio_dei_ministri_della_Repubblica_Italiana"
+      },
+      {
+        "url": "https://archivio.quirinale.it/aspr/presidente/nomine/giovanni-leone"
       }
     ],
     "verifica": {
@@ -1081,7 +1090,7 @@
         "legislatura": "V1",
         "maggioranza": "V1"
       },
-      "dettaglio": "giuramento V2 (Wikipedia); nomina V1 Camera 1976-07-29 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta)"
+      "dettaglio": "giuramento V1 (Quirinale); nomina V1 Camera 1976-07-29 | fine=giuramento successore (V2) | partiti V1 (governo.it \"Coalizione politica\") || V1✓ verificatore 2026-10-20: inizio(nomina)/PdC/legislatura confermati con SPARQL dati.camera.it indipendente; giuramento: coincide con DataGiuramento di it.wikipedia (infobox) — resta V2 (archivio.quirinale.it citato da Wikipedia, non accessibile: 403); partiti V1✓ (governo.it 'Coalizione politica' riletta) || V1✓ verificatore 2026-10-31: il Diario storico Quirinale documenta direttamente il giuramento Andreotti III il 30/07/1976"
     }
   },
   {

@@ -1,0 +1,62 @@
+{
+  "https://archivio.quirinale.it/aspr/presidente/nomine/giovanni-gronchi": {
+    "file": "data/raw/agent-sources/quirinale-gronchi-20261031.txt",
+    "sha256": "c91bc179a69e8f6443d67cf4586b7ce235b2e01f5b536ace49da9580467ec25d",
+    "verificatoIl": "2026-10-31",
+    "letturaOriginale": {
+      "url": "https://archivio.quirinale.it/aspr/presidente/nomine/giovanni-gronchi",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://archivio.quirinale.it/aspr/presidente/nomine/giovanni-gronchi",
+      "tipo": "html",
+      "caratteri": 14633
+    },
+    "nota": "Copia integrale del testo normalizzato letto con HTTP 200 il 31 ottobre. Il controllo successivo ha ricevuto HTTP 403. Conservata come prova primaria; nessun aggiramento del server e nessuna eccezione ai valori."
+  },
+  "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_347_DF_DCIS_RICPOPRES1981_1,1.0/all?startPeriod=1972&endPeriod=1981": {
+    "file": "data/raw/agent-sources/f7cc3a7d79d9-20261031.txt.gz",
+    "sha256": "7c40b03a1f9c937f64ea213d4ada4eed3b832db96473ce39ed2e989700ef0c30",
+    "verificatoIl": "2026-10-31",
+    "letturaOriginale": {
+      "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_347_DF_DCIS_RICPOPRES1981_1,1.0/all?startPeriod=1972&endPeriod=1981",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_347_DF_DCIS_RICPOPRES1981_1,1.0/all?startPeriod=1972&endPeriod=1981",
+      "tipo": "html",
+      "caratteri": 449906
+    },
+    "nota": "Testo integrale normalizzato acquisito HTTP 200 il 31 ottobre, prima della successiva indisponibilità. Copia gzip senza modifiche."
+  },
+  "https://esploradati.istat.it/SDMXWS/rest/data/IT1,92_506_DF_DCCN_PILN_1,1.0/A.IT.B1GQ_B_W2_S1..../ALL/": {
+    "file": "data/raw/agent-sources/2996370f8708-20261031.txt.gz",
+    "sha256": "6bf84de4780fed2fc81ec2db5b636d2b81996522f23738388fa7639a7259aa93",
+    "verificatoIl": "2026-10-31",
+    "letturaOriginale": {
+      "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,92_506_DF_DCCN_PILN_1,1.0/A.IT.B1GQ_B_W2_S1..../ALL/",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,92_506_DF_DCCN_PILN_1,1.0/A.IT.B1GQ_B_W2_S1..../ALL/",
+      "tipo": "html",
+      "caratteri": 2046
+    },
+    "nota": "Testo integrale normalizzato acquisito HTTP 200 il 31 ottobre, prima della successiva indisponibilità. Copia gzip senza modifiche."
+  },
+  "https://esploradati.istat.it/SDMXWS/rest/data/IT1,22_289_DF_DCIS_POPRES1_1,1.0/A.IT....?startPeriod=2019&endPeriod=2026": {
+    "file": "data/raw/agent-sources/istat-popres-20261031.txt.gz",
+    "sha256": "2baa4d3d35a53a0bc8246026f3df86e7f10784f072e2df79c922df09c988d03e",
+    "verificatoIl": "2026-10-31",
+    "letturaOriginale": {
+      "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,22_289_DF_DCIS_POPRES1_1,1.0/A.IT....?startPeriod=2019&endPeriod=2026",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,22_289_DF_DCIS_POPRES1_1,1.0/A.IT....?startPeriod=2019&endPeriod=2026",
+      "tipo": "html",
+      "caratteri": 181
+    },
+    "nota": "XML primario acquisito HTTP 200 nella passata filtrata, totali confrontati con il CSV prima del successivo blocco di connessione."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "file": "out/documenti.jsonl",
+  "documenti": 2121,
+  "sha256": "d0cad38c0785b3d3c0d7223148a45a687d880b0036f8e02463a9d4633a900d2a",
+  "perDataset": {
+    "correzioni": 9,
+    "finanza-pubblica": 1105,
+    "governi": 69,
+    "leggi-bilancio": 145,
+    "legislature": 20,
+    "misure": 18,
+    "promesse": 434,
+    "serie/coefficienti-rivalutazione-istat-2025": 80,
+    "serie/pil-nominale": 80,
+    "serie/popolazione-residente": 81,
+    "serie/prezzi-consumo-foi": 80
+  },
+  "esclusi": [
+    {
+      "dataset": "leggi-bilancio",
+      "record": "2027-legge-di-bilancio",
+      "motivo": "fonte con riuso «con_permesso» senza permesso scritto (criterio 1.1)"
+    }
+  ],
+  "nomiConCifre": [
+    "Bonus 80 euro",
+    "Quota 100",
+    "Superbonus 110%",
+    "assunzioni 2015"
+  ]
+}
