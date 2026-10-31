@@ -51,3 +51,10 @@ NV (da verificare) → V2 (verifica parziale o fonte secondaria) → V1 (fonte p
 
 ## Migrazioni
 - Nessun DB. Un cambio di schema si fa nello schema zod e nello script di import nello stesso commit, rigenerando `data/`. Mai modificare i JSON a mano.
+
+
+## Stato Preview e migrazione refresh — 31 ottobre 2026 (D-043)
+
+I dati pubblici restano JSON; la Preview della #7 aggiunge Firestore effimero. Il payload control conserva `enabled` e `version` intera non negativa e aggiunge `indexSha256`, `indexCommit`, `indexedAt` e marker opzionale `sync={owner,startedAt,hash,commit}`. Il marker non scade automaticamente. I cap/lease/sessioni/ledger esistenti restano invariati.
+
+Migrazione applicativa versionata: primo `sync-index.ts --apply` con control spento pubblica lo stamp solo dopo verifica completa, senza accendere il servizio. Runtime e comando enable richiedono stamp valido; migrazione incompleta o bundle diverso bloccano le query. Il recupero versionato richiede control spento/owner esatto/ack e invalida lo stamp; nessuna modifica manuale al DB. Prima dell'attivazione ritirare tutte le vecchie Preview con l'agente acceso: il vecchio codice #7 non contiene il nuovo gate hash. Procedura e rollback nel [runbook](reports/2026-10-31-index-refresh.md).

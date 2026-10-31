@@ -55,3 +55,10 @@ Pagati da un credito promozionale Google Cloud del co-maintainer, con budget men
 ## Aggiornamento Preview — 31 ottobre 2026
 
 Il precedente stato proposta/non collegata è storico: il core è stato provato su Vertex nelle eval precedenti. La nuova API Preview è implementata ma il suo wiring cloud resta PENDING ANTONIO. `agent/runtime/` usa il trasporto di `src/server/agent/`, con identità Vercel federata e nessuna credenziale locale in produzione. Endpoint Discovery Engine europei search/answer; nessun webhook. Flag, cap e intento persistente precedono ogni fetch; nessun retry automatico, esiti incerti fermano il sistema. Indice e attesi non sono modificati. Il replay delle registrazioni non prova nuove query live o sintesi conversazionale. [Report](../project/reports/2026-10-31-preview-integration.md), [runbook](../project/reports/2026-10-31-preview-wiring.md).
+
+
+## Aggiornamento indice — 31 ottobre 2026
+
+D-043 aggiunge aggiornamento opt-in dopo i commit dati verificati: list, import INCREMENTAL, delete degli esclusi, polling operations e Search di readiness. WIF GitHub e SA sync separati dal viewer Vercel. Durante refresh control sospeso; hash del bundle deve coincidere con stamp verificato. Integrazione preparata, nessun apply/trigger live in sessione; vedere runbook index-refresh.
+
+[Runbook aggiornamento](../project/reports/2026-10-31-index-refresh.md).

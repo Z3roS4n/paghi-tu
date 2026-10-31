@@ -74,3 +74,10 @@ L'architettura statica sopra descrive le pagine pubbliche. Il nuovo POST `/api/a
 `agent/runtime/` contiene core e conversazione portabili con trasporto iniettato. `src/server/agent/` applica OIDC Vercel → Google STS → impersonazione SA, stato Firestore REST transazionale, origine esatta, cookie HttpOnly e contesto per scheda. L'export JSONL viene rigenerato prima del build e incluso nel trace della route. Il contesto scade logicamente dopo 30 minuti; TTL fisico eventuale. Nessun fallback a memoria/ADC/chiavi JSON. L'intento di ogni chiamata Vertex è persistito prima del fetch; esito incerto blocca i nuovi dispatch fino a riconciliazione operatore.
 
 La UI è esclusivamente un test Preview; il design finale spetta ad Antonio. Wiring e prove cloud sono PENDING ANTONIO. Vedere [runbook](reports/2026-10-31-preview-wiring.md).
+
+
+## Aggiornamento indice — 31 ottobre 2026
+
+Il workflow opzionale `Agent index sync` collega i commit dati approvati dalla routine a Vertex; sospende control, importa il delta e verifica ID/impronte/Search prima di pubblicare lo stamp. Il bundle deve coincidere con indexSha256 per ammissione e dispatch. Nessun deploy Vercel eseguito dal job; la Preview deve seguire lo snapshot di main, wiring Antonio pendente.
+
+[Runbook aggiornamento](reports/2026-10-31-index-refresh.md).

@@ -23,7 +23,8 @@
     "agent:preview:verify": "node scripts/agent/verify-preview.mjs",
     "agent:preview:control": "node --conditions=react-server scripts/agent/control-preview.mjs",
     "agent:stress:http": "node scripts/agent/stress-preview.mjs",
-    "agent:stress:state": "node --conditions=react-server scripts/agent/stress-state.ts"
+    "agent:stress:state": "node --conditions=react-server scripts/agent/stress-state.ts",
+    "agent:index:sync": "node --conditions=react-server scripts/agent/sync-index.ts"
   },
   "dependencies": {
     "@phosphor-icons/react": "2.1.10",
