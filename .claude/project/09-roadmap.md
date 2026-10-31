@@ -39,3 +39,14 @@
 ## Atti e indicizzazione
 - [x] Registro `/atti` con misure e fonti (D-029), stato di copertura in `data/atti-stato.json`
 - [x] `robots.txt` e `sitemap.xml` generati dalle convenzioni Next
+
+## Preview protetta assistente — 31 ottobre 2026
+
+- [x] Runtime portabile, API Preview, UI funzionale di test e controlli locali.
+- [x] Setup in modalità piano di default, stress limitato e istruzioni di stop/recupero.
+- [ ] Antonio: verificare ID Vercel, WIF, IAM altro DB, Firestore reale su due istanze, TTL ACTIVE, protezione anonima pagina/API e costi osservati.
+- [ ] Titolare: approvare privacy della persistenza effimera prima dell'accensione.
+- [ ] Antonio: deploy e wiring Preview con i suoi accessi; design finale UI a sua cura.
+- [ ] Produzione: decisione separata dopo le prove live; questa consegna non la abilita.
+
+Prove e limiti nel [report](reports/2026-10-31-preview-integration.md), procedura nel [runbook](reports/2026-10-31-preview-wiring.md).

@@ -8,12 +8,13 @@
 
 | Integrazione | Tipo | Stato | Scheda |
 |---|---|---|---|
-| Vercel | hosting statico | ✅ attiva (produzione pubblica dal 2026-10-21) | [vercel.md](vercel.md) |
+| Vercel | hosting statico + API Preview protetta | ✅ attiva (produzione pubblica dal 2026-10-21) | [vercel.md](vercel.md) |
 | Resend | email di segnalazione della routine | 🟡 script pronto; routine attive, configurazione e consegna email non verificate da questo checkout | [resend.md](resend.md) |
 | Eurostat (SDMX) | dati dei conti pubblici, senza chiave | ✅ attiva (pipeline `data:update`) | [eurostat.md](eurostat.md) |
 | Banca d’Italia | debito mensile TCCE0325, senza chiave | ✅ pipeline `data:update` | [banca-d-italia.md](banca-d-italia.md) |
 | Internet Archive (Wayback) | copie d'archivio delle fonti | 🟡 ricerca delle copie attiva; nuove catture in attesa di permesso | [internet-archive.md](internet-archive.md) |
-| Vertex AI Search (Discovery Engine) | agente conversazionale con citazioni | 🟡 proposta (D-026), non collegata | [vertex-ai-search.md](vertex-ai-search.md) |
+| Vertex AI Search (Discovery Engine) | agente conversazionale con citazioni | 🟡 core verificato; nuova API Preview preparata, wiring Antonio pendente | [vertex-ai-search.md](vertex-ai-search.md) |
+| Firestore | stato effimero e limiti Preview | 🟡 implementato, provisioning/verifica Antonio pendenti | [firestore.md](firestore.md) |
 
 ## Webhook e gating
 Nessun webhook in entrata. Il sito legge snapshot locali; i download non avvengono a runtime. Resend è usato solo dallo script di notifica, che fallisce esplicitamente se mancano le sue variabili. La presenza delle routine non prova la configurazione o la consegna delle email: verifica presso il titolare, senza invii di test automatici.
