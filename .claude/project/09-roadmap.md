@@ -32,3 +32,14 @@
 ## Fase 3 — Storico promesse
 - [ ] Programmi 2018 e 2022, poi 2013 e 1995–2010, poi 1965–1994 e 1946–1964
 - [ ] Stato di attuazione delle promesse con atti collegati
+
+## Preview protetta assistente — 31 ottobre 2026
+
+- [x] Runtime portabile, API Preview, UI funzionale di test e controlli locali.
+- [x] Setup in modalità piano di default, stress limitato e istruzioni di stop/recupero.
+- [ ] Antonio: verificare ID Vercel, WIF, IAM altro DB, Firestore reale su due istanze, TTL ACTIVE, protezione anonima pagina/API e costi osservati.
+- [ ] Titolare: approvare privacy della persistenza effimera prima dell'accensione.
+- [ ] Antonio: deploy e wiring Preview con i suoi accessi; design finale UI a sua cura.
+- [ ] Produzione: decisione separata dopo le prove live; questa consegna non la abilita.
+
+Prove e limiti nel [report](reports/2026-10-31-preview-integration.md), procedura nel [runbook](reports/2026-10-31-preview-wiring.md).

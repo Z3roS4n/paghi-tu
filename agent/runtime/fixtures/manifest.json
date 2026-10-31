@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "fixture": "recorded-runs.jsonl.gz",
+  "fixtureSha256": "d14cd20359b0872d48dbd8bf2c02432263a1fd672047571c90f65f96835e63f9",
+  "transform": "First JSONL row is the full IndexDocument export; remaining 627 rows preserve id, domanda, raw, adapted, validation, shown, gate, chiamata_google, api_usata, expected_ids, search_attempts from source logs. JSON uses compact separators and ensure_ascii=false; gzip mtime=0.",
+  "sources": [
+    {
+      "origin": "WEBMASTER/projects/paghi-tu-agent/vertex/runs/2026-10-31T16-16-53.jsonl",
+      "sha256": "45eaa42c15fca7b08aef711f162106c27ce17769e42ed7e88583290d3816c28f",
+      "metaSha256": "4b626193246a5c2a0f92c9b2ea3a6697af0248af0b3f214dee3fd597cec81b23",
+      "rows": 465,
+      "repoCommit": "eb15bad27a4519fbc7324d49d5dfa3ec1d815f2e",
+      "runnerSha256": "6417f5bd8c768b30cb66ff7dbd2a668463800be7030ea38a669bfe20885c4590"
+    },
+    {
+      "origin": "WEBMASTER/projects/paghi-tu-agent/vertex/runs/2026-10-31T16-33-52-avversariale.jsonl",
+      "sha256": "7a5d4293de314b8f5689104809b6c6368938f00d3868b3fe0409b34ec3ef855e",
+      "metaSha256": "f6b2c68069575c077b659d7892aad1b89a00a6b267a10a634ce368bf97ec585c",
+      "rows": 162,
+      "repoCommit": "eb15bad27a4519fbc7324d49d5dfa3ec1d815f2e",
+      "runnerSha256": "6417f5bd8c768b30cb66ff7dbd2a668463800be7030ea38a669bfe20885c4590"
+    }
+  ],
+  "indexExportSha256": "d0cad38c0785b3d3c0d7223148a45a687d880b0036f8e02463a9d4633a900d2a",
+  "goldenSha256": "a9a18a3194f8081279ee584c43746bf5adac5276254d3a6e903f6c1f548a1ce8",
+  "baselineSource": {
+    "origin": "WEBMASTER/projects/paghi-tu-agent/vertex/agent.ts",
+    "sha256": "6417f5bd8c768b30cb66ff7dbd2a668463800be7030ea38a669bfe20885c4590",
+    "answerPreambleSha256": "934d9a1fa6066d3be1f54fb8f4efec89746b7ab7e4a3cf6a2f631d6db1d574dc",
+    "formulationPreambleSha256": "76e4ec2e003fce1c706223b92c08ec93a23b1f45b428d3d1298255f7c90b58a6"
+  },
+  "proofBoundary": "Replay compares factual shown/adapted/validation/gate, dispatch kind and count against recorded raw. Separate tests pin the baseline Answer parameters and both preamble hashes. Replay does not prove full request payload equality for every case, provider behavior, live transport, or conversation generation equivalence."
+}

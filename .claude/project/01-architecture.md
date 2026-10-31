@@ -66,3 +66,11 @@ src/
   components/      # UI condivisa
   lib/             # utility pure, schemi zod, test
 ```
+
+## Preview assistente — 31 ottobre 2026 (D-042)
+
+L'architettura statica sopra descrive le pagine pubbliche. Il nuovo POST `/api/agent` è server-only; `/assistente` è una pagina statica costruita solo con `AGENT_ENABLED=1` e `VERCEL_ENV=preview`, senza modificare il root layout o la navigazione. Produzione e flag off restituiscono 503 prima di autenticazione e stato.
+
+`agent/runtime/` contiene core e conversazione portabili con trasporto iniettato. `src/server/agent/` applica OIDC Vercel → Google STS → impersonazione SA, stato Firestore REST transazionale, origine esatta, cookie HttpOnly e contesto per scheda. L'export JSONL viene rigenerato prima del build e incluso nel trace della route. Il contesto scade logicamente dopo 30 minuti; TTL fisico eventuale. Nessun fallback a memoria/ADC/chiavi JSON. L'intento di ogni chiamata Vertex è persistito prima del fetch; esito incerto blocca i nuovi dispatch fino a riconciliazione operatore.
+
+La UI è esclusivamente un test Preview; il design finale spetta ad Antonio. Wiring e prove cloud sono PENDING ANTONIO. Vedere [runbook](reports/2026-10-31-preview-wiring.md).
