@@ -508,3 +508,12 @@ Mandato di Giovanni: proseguire fino all’agente pronto su Vertex. D-038/039/04
 - **Motivo:** consentire un test reale conservando sito pubblico statico e controllo dei tentativi anche fra istanze. Nessun limite monetario garantito: i contatori limitano richieste/tentativi; l'alert di budget non è un hard cap.
 - **Limiti:** lease e timeout non provano la fine del lavoro remoto. Commit o chiamata incerti lasciano il sistema fermo; recupero manuale con control spento, owner/lease verificati e contatori preservati. TTL deve risultare ACTIVE prima di proseguire; cancellazione fisica successiva, backup/PITR disabilitati. Privacy da approvare dal titolare prima dell'accensione.
 - **Consegna:** UI funzionale per test Preview; design finale affidato ad Antonio. Setup, stress e rollback nel [runbook](reports/2026-10-31-preview-wiring.md). Replay locale e unit test non certificano WIF, IAM, protezione Vercel o concorrenza Firestore live.
+
+
+## Aggiornamento indice — 31 ottobre 2026
+
+### D-043 — Aggiornamento indice a valle della routine dati
+
+Data 2026-10-31, mandato Giovanni. Workflow separato su commit main pertinenti, opt-in, identità GitHub WIF distinta dal runtime, lock persistente e control sospeso. Import delta, delete limitati, verifica storage e Search, stamp hash del bundle controllato prima di ogni query. No retry scritture ambigue, no secondo cron/ricerca, no deploy automatico Vercel. In-place con pausa e riconciliazione in errore; non promette rollback atomico. Un control inizialmente spento resta spento; kill operatore preservato. Preparato localmente, attivazione e prova live Antonio; dettaglio nel report index-refresh.
+
+[Runbook aggiornamento](reports/2026-10-31-index-refresh.md).

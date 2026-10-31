@@ -58,3 +58,10 @@ Regola: validare l'env allo startup con uno schema (`src/lib/env.ts`).
 Server Node/Next esistente, `@vercel/oidc` 4.0.5 e `google-auth-library` 11.3.2; override mirato `@vercel/cli-config` → `zod` 4.6.6 per evitare la dipendenza vulnerabile transitiva. Firestore REST senza SDK client. Runtime e CLI non richiedono loader TypeScript personalizzato; i CLI server usano `node --conditions=react-server`.
 
 Contratto env server e procedura completa: [runbook](reports/2026-10-31-preview-wiring.md). Nessun `NEXT_PUBLIC_`, chiave SA JSON o fallback ADC. `AGENT_ENABLED=1` richiede anche `VERCEL_ENV=preview`; la pagina richiede gli stessi flag al build, la route li ricontrolla a runtime. Le env restano esclusivamente Preview. Nessun provisioning cloud eseguito in questa consegna.
+
+
+## Aggiornamento indice — 31 ottobre 2026
+
+GitHub Actions opt-in con Node24, checkout/setup-node/auth/upload-artifact fissate per SHA, token effimero GitHub WIF in env dello step, nessun file credenziale generato. Contratto variabili e IAM sync distinti dal runtime nel report index-refresh; nessuna nuova dipendenza npm.
+
+[Runbook aggiornamento](reports/2026-10-31-index-refresh.md).

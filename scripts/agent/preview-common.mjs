@@ -68,3 +68,7 @@ export function assertTTLActive(fields, projectId, databaseId) {
   const expected = `projects/${projectId}/databases/${databaseId}/collectionGroups/agent_preview/fields/expiresAt`;
   if (!Array.isArray(fields) || fields.length !== 1 || fields[0]?.name !== expected || fields[0]?.ttlConfig?.state !== "ACTIVE") throw new Error("TTL expiresAt non ancora ACTIVE o configurazione divergente: PENDING, attendere e ripetere il setup.");
 }
+
+export function assertIndexReadyControl(control) {
+  if (control?.sync !== undefined || !/^[a-f0-9]{64}$/.test(control?.indexSha256 ?? "")) throw new Error("Sincronizzazione indice verificata richiesta prima di abilitare.");
+}

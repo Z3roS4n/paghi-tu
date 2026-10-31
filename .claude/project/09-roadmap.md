@@ -43,3 +43,12 @@
 - [ ] Produzione: decisione separata dopo le prove live; questa consegna non la abilita.
 
 Prove e limiti nel [report](reports/2026-10-31-preview-integration.md), procedura nel [runbook](reports/2026-10-31-preview-wiring.md).
+
+
+## Aggiornamento indice — 31 ottobre 2026
+
+- [x] Preparare refresh indice separato: workflow opt-in, CLI piano/apply, delta/rimozioni/verifica, gate hash e prove locali.
+- [ ] Antonio: identity GitHub WIF/permessi, environment/variabili, test trigger reale e notifiche, prompt routine effettivo aggiornato e Preview costruita sullo stesso snapshot.
+- [ ] Collaudo cloud no-op/correzione/aggiunta/rimozione/errore e recupero; nessuna attivazione implicita dalla PR.
+
+[Runbook aggiornamento](reports/2026-10-31-index-refresh.md).
