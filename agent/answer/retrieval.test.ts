@@ -1,8 +1,9 @@
+import { readFile } from "node:fs/promises";
 import { beforeAll, expect, it } from "vitest";
 import { buildDocuments } from "../ingest/export.ts";
 import { loadSiteData } from "../ingest/load.ts";
 import type { Index } from "./answer.ts";
-import { candidateFilter, structuredCandidates } from "./retrieval.ts";
+import { candidateFilter, scopeBlock, structuredCandidates } from "./retrieval.ts";
 let index: Index;
 beforeAll(async () => { index = new Map(buildDocuments(await loadSiteData()).documents.map((d) => [d.id, d])); });
 it("restringe una domanda annuale mai usata nelle prove al suo dato", () => {
@@ -26,4 +27,21 @@ it("distingue i dati italiani dal confronto europeo", () => {
 it("usa tipo ed esercizio per le leggi e il nome completo per le maggioranze", () => {
   expect(structuredCandidates("Chi ha presentato la legge finanziaria per l’esercizio 1999?", index).map((d) => d.structData.record)).toEqual(["1999-legge-finanziaria"]);
   expect(structuredCandidates("Quali partiti formavano la maggioranza del Governo Prodi I?", index).map((d) => d.structData.record)).toEqual(["g50"]);
+});
+
+it("si astiene sui territori non coperti, anche fuori dai casi della suite principale", () => {
+  expect(scopeBlock("Quanto ha speso la Toscana per l’istruzione nel 2023?")?.motivo).toBe("fuori_perimetro");
+  expect(scopeBlock("Quanto vale il PIL della Svizzera nel 2024?")?.motivo).toBe("fuori_perimetro");
+  expect(scopeBlock("Chi era il presidente del Consiglio del Giappone nel 2000?")?.motivo).toBe("fuori_perimetro");
+  expect(scopeBlock("Spesa pubblica italiana rispetto alla Germania nel 2025")).toBeNull();
+});
+it("non calcola nuove somme e lascia passare i totali già disponibili", () => {
+  expect(scopeBlock("Quanto costa la somma di assegno unico e bonus 80 euro?")?.motivo).toBe("calcolo_non_disponibile");
+  expect(scopeBlock("Quota 100 e assegno unico messi insieme: quanto costano?")?.motivo).toBe("calcolo_non_disponibile");
+  expect(scopeBlock("Quanto vale la spesa totale delle amministrazioni pubbliche italiane nel 2020?")).toBeNull();
+});
+
+it("il controllo di perimetro non ferma le domande con risposta del golden set", async () => {
+  const cases = (await readFile("agent/evals/domande.jsonl", "utf8")).trim().split("\n").map((line) => JSON.parse(line) as { id: string; domanda: string; esitoAtteso: string });
+  expect(cases.filter((c) => c.esitoAtteso !== "astensione" && scopeBlock(c.domanda)).map((c) => c.id)).toEqual([]);
 });

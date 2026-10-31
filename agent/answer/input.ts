@@ -8,7 +8,7 @@ import { PARTIES } from "./guardie.ts";
 // D1, deciso da Giovanni il 2026-10-25.
 export const MAX_QUESTION = 300;
 
-export const GATE_REASONS = ["vuota", "troppo_lunga", "manipolazione", "voto_o_giudizio", "previsione", "testo_da_pubblicare", "link_o_formato", "piu_partiti"] as const;
+export const GATE_REASONS = ["vuota", "troppo_lunga", "manipolazione", "voto_o_giudizio", "previsione", "testo_da_pubblicare", "link_o_formato", "piu_partiti", "fuori_perimetro", "calcolo_non_disponibile"] as const;
 export type GateReason = (typeof GATE_REASONS)[number];
 export type GateResult = { passa: true; domanda: string } | { passa: false; motivo: GateReason; dettaglio: string };
 

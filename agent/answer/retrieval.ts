@@ -83,3 +83,35 @@ export function candidateFilter(candidates: IndexDocument[]): string | null {
   for (const d of candidates) groups.set(d.structData.dataset, [...(groups.get(d.structData.dataset) ?? []), d.structData.record]);
   return [...groups].map(([dataset, records]) => `(dataset: ANY(${JSON.stringify(dataset)}) AND record: ANY(${records.map((r) => JSON.stringify(r)).join(", ")}))`).join(" OR ");
 }
+
+
+const REGIONS = /\b(abruzzo|basilicata|calabria|campania|emilia[ -]romagna|friuli|lazio|liguria|lombardia|marche|molise|piemonte|puglia|sardegna|sicilia|toscana|trentino|alto adige|umbria|valle d aosta|veneto|comun[ei]|provincia|provinciale|regione|regionale)\b/;
+const countryNames = new Map<string, string>();
+for (const locale of ["it", "en"]) {
+  const names = new Intl.DisplayNames([locale], { type: "region" });
+  for (let first = 65; first <= 90; first++) for (let second = 65; second <= 90; second++) {
+    const code = String.fromCharCode(first, second);
+    const name = names.of(code);
+    if (name && name !== code) countryNames.set(fold(name), new Intl.Locale(`und-${code}`).region ?? code);
+  }
+}
+countryNames.set("usa", "US"); countryNames.set("uk", "GB");
+
+export function scopeBlock(question: string): { motivo: "fuori_perimetro" | "calcolo_non_disponibile"; dettaglio: string } | null {
+  const text = fold(question);
+  if (/\b(somma|sommando|messi insieme|messe insieme|sommati|sommate)\b/.test(text)) {
+    return { motivo: "calcolo_non_disponibile", dettaglio: "Nessuna somma nuova tra record: si riportano solo aggregati già presenti." };
+  }
+  const factual = /spesa|speso|spende|entrate|saldo|interessi|debito|\bpil\b|residenti|popolazione|presidente del consiglio|governo/.test(text);
+  if (!factual || /dichiar|promess|ha detto|ha scritto/.test(text)) return null;
+  if (REGIONS.test(text)) return { motivo: "fuori_perimetro", dettaglio: "Non ci sono dati regionali, provinciali o comunali nel dataset." };
+  const countries = [...countryNames].filter(([name]) => {
+    const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    return new RegExp(`\\b${escaped}\\b`).test(text);
+  }).map(([, code]) => code);
+  const government = /presidente del consiglio|governo/.test(text);
+  if (countries.some((code) => !(government ? ["IT"] : ["IT", "DE", "FR", "ES", "EU"]).includes(code))) {
+    return { motivo: "fuori_perimetro", dettaglio: "Il territorio richiesto non è coperto da questi record." };
+  }
+  return null;
+}
