@@ -43,6 +43,7 @@ export const REASONS = [
   "attribuzione_errata",
   "troppo_lunga",
   "silenzio_elettorale",
+  "percentuale_basi_non_omogenee",
 ] as const;
 export type Reason = (typeof REASONS)[number];
 
@@ -162,7 +163,9 @@ const inside = (quote: string, source: string) => {
 // altro documento citato. La parafrasi di una promessa non vale come citazione.
 export function quoteIsLiteral(quote: string, docs: IndexDocument[]): boolean {
   return docs.some((d) =>
-    d.structData.testo_letterale !== null ? inside(quote, d.structData.testo_letterale) : inside(quote, citableText(d)),
+    d.structData.testo_letterale !== null
+      ? inside(quote, d.structData.testo_letterale) || citableText(d).split("\n").some((line) => line.startsWith("Dichiarante:") && inside(quote, line))
+      : inside(quote, citableText(d)),
   );
 }
 
@@ -217,6 +220,9 @@ export function validateAnswer(answer: AgentAnswer, index: Index, question?: str
   // Controlli contro manipolazioni e abusi (D-033), sul testo fuori dalle citazioni verificate: le
   // parole esatte di una dichiarazione possono contenere giudizi, la risposta no.
   if (options.guardie !== false) {
+    if (docs.some((doc) => /Omogeneità delle basi: non_omogeneo\./.test(citableText(doc))) && /\d\s*(%|per cento)/i.test(NAMED_FIGURES ? answer.testo.replace(NAMED_FIGURES, " ") : answer.testo)) {
+      motivi.push({ motivo: "percentuale_basi_non_omogenee", dettaglio: "Percentuale in un confronto che include basi non omogenee" });
+    }
     const format = forbiddenFormat(answer.testo);
     if (format) motivi.push({ motivo: "formato_vietato", dettaglio: format });
     const judged = judgment(outside);

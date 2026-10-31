@@ -24,6 +24,15 @@ const cite = (id: string) => {
 };
 
 describe("dichiarazioni composte dalla route (D5)", () => {
+  it("accetta il ruolo citato dal record senza accettare una parafrasi come parole del dichiarante", () => {
+    const id = "promesse--C27-CAPI-015";
+    const d = index.get(id)!;
+    const good: AgentAnswer = { testo: composeDeclaration(d), citazioni: [cite(id)], astensione: false };
+    expect(validateAnswer(good, index).esito).toBe("risposta");
+    const bad = { ...good, testo: `${good.testo}\nHa dichiarato: «Rendere gratuita la casa come risposta al costo degli affitti.»` };
+    expect(validateAnswer(bad, index).esito).toBe("astensione_forzata");
+  });
+
   it("ogni caso del golden set sulle promesse passa tutte le metriche con la risposta composta, qualunque cosa scriva il modello", () => {
     const promise = cases.filter((c) => c.categoria === "promesse" && c.esitoAtteso === "risposta" && c.citazioniAttese.every((x) => index.has(documentId(x.dataset, x.record))));
     expect(promise.length).toBeGreaterThan(30);

@@ -380,6 +380,7 @@
 - **Data:** 2026-10-23
 
 ### D-038 — Export dei dati per l'indice dell'agente
+- **Già:** D-030 nella PR #3; rinumerata per non collidere con main.
 - **Stato:** proposta il 2026-10-25, in revisione.
 - **Contesto:** fase 1 della roadmap dell'agente: nell'indice entra solo ciò che è pubblicato e verificato, in una forma che si rigenera dai dati e che le eval possono controllare.
 - **Scelta:** `npm run ingest:build` (`agent/ingest/`) legge solo `data/` e scrive un documento per ogni chiave (dataset, record) che il golden set usa nelle citazioni: governi, legislature, leggi di bilancio, confronti delle misure, record di finanza pubblica (`conti/<anno>`, `trimestri/<periodo>`, `funzioni/<anno>`, `debitoMensile/<mese>`, `debitoPil/<anno>`, `confrontoUe/...`), punti delle serie, promesse e correzioni. Ogni documento ha `id` stabile, testo in italiano con le cifre nelle forme di `testo.ts`, livello di verifica, fonti, periodo, governi collegati e pagina del sito. Fuori: i record con una fonte «con_permesso» finché il permesso non è scritto, gli URL di Wikipedia (D-026), le note di ricerca delle promesse, che il sito non mostra. Il JSONL non si committa (`agent/ingest/out/`, circa 2,8 MB, cambia a ogni aggiornamento dei dati): si committa `manifest.json` con conteggi, sha256 ed esclusi, e il test fallisce se non è allineato.
@@ -387,6 +388,7 @@
 - **Conseguenze:** dopo un aggiornamento dei dati si rilancia `npm run ingest:build` e si committa il manifest. `da verificare:` in fase 3, se Vertex AI Search usa i documenti come dati strutturati (`structData`, come ora) o come contenuto con metadati: cambia solo il writer. I governi collegati sono quelli in carica in almeno un giorno del periodo (per un anno è la regola delle pagine dei governi); per misure e leggi di bilancio quelli che il dato attribuisce. Partiti e fonti non sono documenti in questa versione. Il titolare può decidere di committare anche il JSONL.
 
 ### D-039 — Validatore delle risposte e metriche delle eval (fasi 4 e 5)
+- **Già:** D-031 nella PR #4; rinumerata per non collidere con main.
 - **Stato:** proposta il 2026-10-25, in revisione.
 - **Contesto:** fasi 4 e 5 della roadmap dell'agente: prima di mostrare una risposta, la route la controlla con lo stesso codice con cui le eval la misurano. Nessun giudizio di un modello, solo confronti sul testo.
 - **Scelta:** l'agente risponde nella forma `AgentAnswer` (`agent/answer/answer.ts`): testo, citazioni (id del documento dell'indice e URL) e `astensione`. `validateAnswer` trasforma la risposta in un'astensione forzata, con i motivi per il log (5.5), se: non ci sono citazioni; un id non è nell'indice (5.3); l'URL non è fra le fonti o la pagina del record; una cifra non sta nel testo dei documenti citati (5.1); una citazione fra virgolette, da 12 caratteri in su, non sta nelle parole esatte di una promessa citata o nel testo di un altro documento citato (5.2); un documento NV è citato senza dirlo. Il testo citabile esclude le righe «Metodo:» (conservano valori superati) e «Prima:» delle correzioni. Le cifre si leggono in forma italiana, senza segno, con le date riportate a «27 luglio 1960» e gli identificativi tolti; «milioni» e «miliardi» valgono solo se il cambio di scala è esatto. `agent/evals/score.ts` calcola le metriche 4.1-4.7 su 3 run per caso: un caso passa una metrica solo se la passa in tutti e 3. L'export aggiunge `testo_letterale` alle promesse, la base del controllo 5.2.
@@ -421,6 +423,7 @@
 - **Data:** 2026-10-25
 
 ### D-040 — Difese contro prompt injection e abusi, set avversariale
+- **Già:** D-033 nella PR #5; rinumerata per non collidere con main.
 - **Stato:** proposta da Giovanni il 2026-10-25 sulla PR `agent/hardening`, da confermare dal titolare. D1-D8 decise da Giovanni il 2026-10-25.
 - **Contesto:** l'agente risponde a domande libere su partiti e governi, e indicizza dichiarazioni di terzi. Il piano di hardening del 2026-10-25 (WEBMASTER, `projects/paghi-tu-agent/PLAN-hardening-agente-2026-10-25.md`), passato da una revisione ostile, elenca dieci minacce: injection diretta (M1) e indiretta dai documenti (M2), propaganda (M3), link e formati (M4), giudizi senza cifre (M5), abuso e costo (M6), dati personali nel log (M7), citazioni ricucite o attribuite al partito sbagliato (M8), premesse false (M9), sbilanciamento fra partiti (M10).
 - **Scelta:** difese a strati, tutte deterministiche, nessun giudice LLM:
@@ -446,6 +449,7 @@
 - **Data:** 2026-10-25
 
 ### D-037 — Scelte del co-maintainer sul golden set, date d'inizio dei governi, fonti ISTAT
+- **Già:** D-034 nella PR #5; rinumerazione proposta nella PR #1.
 - **Stato:** decisa dal co-maintainer (Giovanni) il 2026-10-27; le conferme che spettano al titolare valgono quando compaiono sulla PR #1 con il marcatore del titolare (D-027).
 - **Contesto:** la verifica della PR #1 del 2026-10-26 chiede decisioni del titolare; dopo D9 e D10 restano 8 casi falliti nel golden set.
 - **Scelta:**
@@ -471,3 +475,19 @@
 - **OA-8** — Runner per l'ingestione: self-hosted con IP fisso o CI condiviso, visto il limite per IP di ISTAT.
 - **OA-9** — Quale relazione legge–governo mostrare di default nelle pagine (proponente, approvazione o gestione).
 - **OA-10** — Se chiedere il permesso al Manifesto Project, all'FMI e all'OCPI, o limitarsi ai link; se usare un browser headless (Playwright) per Elezioni trasparenti e senato.it.
+
+## Aggiornamento operativo 31 ottobre 2026 — integrazione Vertex
+
+Mandato di Giovanni: proseguire fino all’agente pronto su Vertex. D-038/039/040 sono le decisioni di export, validatore e difese già sviluppate nelle PR #3/#4/#5; i numeri precedenti collidevano con main. Non costituisce merge delle PR da parte del titolare (D-027).
+
+- D-026, confermata il 28 ottobre: l’export include i valori UPB già presenti sul sito e i link, senza testo copiato; Pagella Politica resta esclusa. Il precedente blocco indiscriminato «con_permesso» era obsoleto.
+- Soglie di score.ts tutte al 100%, coerenti con il README e la decisione del titolare del 28 ottobre; obiettivo post-merge, come conferma Giovanni il 31 ottobre. Le percentuali al 95% rimangono solo cronaca delle proposte storiche.
+- Query SDMX di popolazione filtrate su REF_AREA=IT, con le posizioni lette dalle DSD ufficiali. Riscontrati tutti i valori italiani dei periodi interessati; nessuna eccezione per timeout.
+- Il validatore accetta una citazione letterale del ruolo nella riga Dichiarante, oltre alle parole esatte; una parafrasi inventata resta respinta (test dedicato).
+- Il filtro avversariale di Vertex respinge una domanda legittima su chi governa il 15 giugno 1998; spento nel runner dopo confronto live della stessa domanda. Cancello, validatore e set avversariale restano attivi. Il guardrail jailbreak era già spento da D8.
+- Una diagnostica con meno di tre passate non può emettere PASS: il runner aggiornato scrive diagnostica_incompleta e conserva hash di export, golden e runner. Nessuna ripetizione artificiale della stessa risposta.
+
+- Prova live del 31 ottobre: il filtro di bassa pertinenza scartava GOV-g13 con NO_RELEVANT_CONTENT; stessa domanda senza quel filtro restituisce Fanfani III con citazione valida. Anche questo filtro è spento nel runner, con opzione di confronto. Il validatore rimane fail-closed.
+
+- Le letture successive hanno ricevuto 403 dal Quirinale e timeout di connessione ISTAT. Conservate quattro copie integrali già acquisite con HTTP 200 nella giornata, con provenienza e SHA-256 in `fonti-archiviate.json`; il registro distingue archivio e diretto e i test riscontrano comunque i valori. Nessuna eccezione per host indisponibili; nessun aggiramento. D-004: nessun’altra richiesta a ISTAT durante questa fase.
+- Recupero strutturato: date dei mandati, dataset, anni e periodi restringono la ricerca Vertex usando solo domanda e metadati. Un record tabellare citato è riportato dalla route con i suoi valori, senza calcoli o parafrasi; una risposta su basi miste non mostra percentuali, e il validatore le respinge se sfuggono alla composizione. Test dedicati su domande diverse dal golden set.

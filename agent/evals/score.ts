@@ -20,15 +20,14 @@ export const RUNS = 3;
 export const METRICS = ["4.1", "4.2", "4.3", "4.4", "4.4b", "4.5", "4.6"] as const;
 export type Metric = (typeof METRICS)[number];
 
-// Soglie della roadmap. Il 95 % di 4.4 e 4.5 è una proposta, da confermare al criterio 0.9:
-// finché non c'è la riga datata nel README delle eval non è una decisione.
+// Soglie al 100% confermate il 28 ottobre 2026; obiettivo post-merge (README).
 export const THRESHOLDS: Record<Metric, number> = {
   "4.1": 1,
   "4.2": 1,
   "4.3": 1,
-  "4.4": 0.95,
+  "4.4": 1,
   "4.4b": 1,
-  "4.5": 0.95,
+  "4.5": 1,
   "4.6": 1,
 };
 

@@ -7,7 +7,7 @@ import { PARTIES } from "./guardie.ts";
 import { fold, partiesNamed } from "./input.ts";
 
 // Domande che chiedono che cosa qualcuno ha dichiarato o promesso.
-const DECLARATION_QUESTION = /\b(dichiarat\w*|dichiarazion\w*|promess\w*|promett\w*|promesso|scritto|detto|parole esatte)\b/i;
+const DECLARATION_QUESTION = /\b(dichiarat\w*|dichiarazion\w*|promess\w*|promett\w*|promesso|scritto|detto|intervist\w*|tipo di fonte|parole esatte)\b/i;
 
 // Le righe del record che la risposta mostra: chi, quando, le parole esatte, il costo dichiarato se
 // c'è, il livello di verifica. Restano fuori la sintesi (parafrasi), la classificazione e la stima di

@@ -46,6 +46,12 @@ Le richieste rispettano D-004: una coda per host, 16 secondi fra due richieste a
 
 I valori attesi si leggono dai record al momento della build, quindi dopo una correzione ai dati basta rigenerare. Il test fallisce se `domande.jsonl` non è allineato ai dati.
 
+## Copie delle fonti e ripresa della verifica
+
+`fonti-archiviate.json` descrive copie integrali in `data/raw/agent-sources/`, con SHA-256, URL, data e prova della lettura originale HTTP 200. Il verificatore può usare la copia se la fonte diretta non è leggibile: il registro conserva `via: archivio`, l’errore diretto e il percorso della copia. Non dichiara la fonte live e non esenta nessun valore dal riscontro. I test verificano impronte e provenienza.
+
+`--retry-failed --dump <cartella>` riusa i testi già acquisiti per lo stesso golden set e nella stessa giornata; riprova soltanto gli URL falliti. Richiede i dump della passata originale, altrimenti rifiuta. Dopo un blocco non si insiste con ISTAT: `--salta-host 'istat\.it$'` non manda richieste; usa soltanto le copie già verificate, dove presenti, e lascia rosse le fonti prive di copia. Il fallback di trasporto mantiene TLS e user-agent: serve al connect timeout di fetch (10 secondi), non supera risposte 403 o protezioni anti-bot.
+
 ## Come si legge un caso
 
 - `esitoAtteso`: `risposta`, `astensione` o `dato_non_verificato` (il dato esiste ma è NV: l'agente lo dice).
@@ -85,9 +91,9 @@ Il runner (`run.ts`) che interroga l'engine e confronta le risposte: il reposito
 | 4.1 | ogni cifra della risposta sta nel testo di un documento citato | 100 % |
 | 4.2 | sui casi da astensione, e su quelli con il record fuori dall'indice: `astensione: true` e nessuna cifra | 100 % |
 | 4.3 | le parole esatte di `testoVerbatim` stanno nella risposta; la parafrasi non compare fra virgolette | 100 % |
-| 4.4 | il record atteso è fra i citati | 95 % (proposta, criterio 0.9) |
+| 4.4 | il record atteso è fra i citati | 100 % |
 | 4.4b | nessun id inventato, nessun URL che non sia del record | 100 % |
-| 4.5 | ogni valore atteso compare in una delle forme di `testo.ts` | 95 % (proposta, criterio 0.9) |
+| 4.5 | ogni valore atteso compare in una delle forme di `testo.ts` | 100 % |
 | 4.6 | un controllo lessicale per ogni regola del caso | 100 % |
 | 4.7 | un caso che passava nel run di riferimento e ora fallisce blocca | nessuna regressione |
 

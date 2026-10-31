@@ -62,9 +62,10 @@ describe("export per l'indice dell'agente (fase 1)", () => {
     expect(new Set(exported.map((d) => d.dataset))).toEqual(new Set(Object.keys(published)));
   });
 
-  it("1.1 nessun documento cita Wikipedia o una fonte «con_permesso»", () => {
+  it("1.1 UPB entra con i valori del sito; Wikipedia e Pagella Politica restano fuori", () => {
     const urls = result.documents.flatMap((d) => d.structData.fonte_url);
-    expect(urls.filter((u) => /wikipedia\.org|upbilancio\.it|pagellapolitica\.it/.test(new URL(u).hostname))).toEqual([]);
+    expect(urls.filter((u) => /wikipedia\.org|pagellapolitica\.it/.test(new URL(u).hostname))).toEqual([]);
+    expect(urls.some((u) => new URL(u).hostname.endsWith("upbilancio.it"))).toBe(true);
     for (const e of result.excluded) expect(e.motivo).not.toBe("");
   });
 

@@ -253,7 +253,7 @@ Casi: 155. Con fonte «con_permesso»: 7. Rivisti: 0.
 
 ### LEG-I-elezioni
 
-**Domanda:** Quando si sono tenute le elezioni che hanno aperto la legislatura I?
+**Domanda:** Quando si sono tenute le elezioni e quando è iniziata la legislatura I?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -269,7 +269,7 @@ Casi: 155. Con fonte «con_permesso»: 7. Rivisti: 0.
 
 ### LEG-VII-elezioni
 
-**Domanda:** Quando si sono tenute le elezioni che hanno aperto la legislatura VII?
+**Domanda:** Quando si sono tenute le elezioni e quando è iniziata la legislatura VII?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -285,7 +285,7 @@ Casi: 155. Con fonte «con_permesso»: 7. Rivisti: 0.
 
 ### LEG-XIV-elezioni
 
-**Domanda:** Quando si sono tenute le elezioni che hanno aperto la legislatura XIV?
+**Domanda:** Quando si sono tenute le elezioni e quando è iniziata la legislatura XIV?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -301,7 +301,7 @@ Casi: 155. Con fonte «con_permesso»: 7. Rivisti: 0.
 
 ### LEG-XIX-elezioni
 
-**Domanda:** Quando si sono tenute le elezioni che hanno aperto la legislatura XIX?
+**Domanda:** Quando si sono tenute le elezioni e quando è iniziata la legislatura XIX?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1266,7 +1266,7 @@ Casi: 155. Con fonte «con_permesso»: 7. Rivisti: 0.
 | --- | --- | --- |
 | popolazione-residente | 58.942.828 | persone al 1 gennaio |
 
-**Citazione:** `serie/popolazione-residente` / `2026` — https://www.bancaditalia.it/statistiche/tematiche/stat-storiche/stat-storiche-economia/NA150_2.0.zip · https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_346_DF_DCIS_RICPOPRES1971_1,1.0/all?startPeriod=1952&endPeriod=1971 · https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_347_DF_DCIS_RICPOPRES1981_1,1.0/all?startPeriod=1972&endPeriod=1981 · https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_279_DF_DCIS_RICPOPRES1991_1,1.0/all?startPeriod=1982&endPeriod=1991 · https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_305_DF_DCIS_RICPOPRES2001_1,1.0/all?startPeriod=1992&endPeriod=2001 · https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_164_DF_DCIS_RICPOPRES2011_1,1.0/all?startPeriod=2002&endPeriod=2018 · https://esploradati.istat.it/SDMXWS/rest/data/IT1,22_289_DF_DCIS_POPRES1_1,1.0/all?startPeriod=2019&endPeriod=2026 · https://www.istat.it/notizia/bilancio-demografico-mensile-gennaio-dicembre-2025/ · https://demo.istat.it/app/?a=2026&i=POS&l=it
+**Citazione:** `serie/popolazione-residente` / `2026` — https://www.bancaditalia.it/statistiche/tematiche/stat-storiche/stat-storiche-economia/NA150_2.0.zip · https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_346_DF_DCIS_RICPOPRES1971_1,1.0/all?startPeriod=1952&endPeriod=1971 · https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_347_DF_DCIS_RICPOPRES1981_1,1.0/all?startPeriod=1972&endPeriod=1981 · https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_279_DF_DCIS_RICPOPRES1991_1,1.0/A.IT...?startPeriod=1982&endPeriod=1991 · https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_305_DF_DCIS_RICPOPRES2001_1,1.0/A.IT...?startPeriod=1992&endPeriod=2001 · https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_164_DF_DCIS_RICPOPRES2011_1,1.0/A.IT....?startPeriod=2002&endPeriod=2018 · https://esploradati.istat.it/SDMXWS/rest/data/IT1,22_289_DF_DCIS_POPRES1_1,1.0/A.IT....?startPeriod=2019&endPeriod=2026 · https://www.istat.it/notizia/bilancio-demografico-mensile-gennaio-dicembre-2025/ · https://demo.istat.it/app/?a=2026&i=POS&l=it
 
 **Regole:** `unita_di_misura`, `dichiara_stima`
 

@@ -7,6 +7,7 @@ import { execFile, execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
+import { gunzipSync } from "node:zlib";
 import { join } from "node:path";
 import { promisify } from "node:util";
 import type { GoldenCase } from "./golden-set.ts";
@@ -78,15 +79,33 @@ async function get(url: string): Promise<Fetched> {
     try {
       await throttle(url);
       // Niente header Range: alcuni server (dati.camera.it, ISTAT) rispondono 416 o 500.
-      const res = await fetch(url, { headers: { "user-agent": UA, accept: "*/*" }, redirect: "follow", signal: AbortSignal.timeout(TIMEOUT_MS) });
-      if (res.status >= 500 && attempt === 0) continue;
-      const body = Buffer.from(await res.arrayBuffer());
-      const type = res.headers.get("content-type") ?? "";
+      let status: number;
+      let finalUrl: string;
+      let type: string;
+      let body: Buffer;
+      if (attempt === 0) {
+        const res = await fetch(url, { headers: { "user-agent": UA, accept: "*/*" }, redirect: "follow", signal: AbortSignal.timeout(TIMEOUT_MS) });
+        if (res.status >= 500) continue;
+        status = res.status;
+        finalUrl = res.url;
+        type = res.headers.get("content-type") ?? "";
+        body = Buffer.from(await res.arrayBuffer());
+      } else {
+        // Il connect timeout interno di fetch è 10s anche con AbortSignal a 90s.
+        // curl mantiene TLS e user-agent, ma permette la connessione lenta di ISTAT.
+        const file = join(work, `${createHash("sha256").update(url).digest("hex")}.body`);
+        const result = await run("curl", ["--silent", "--show-error", "--location", "--connect-timeout", "30", "--max-time", "90", "--user-agent", UA, "--output", file, "--write-out", "%{http_code}\n%{url_effective}\n%{content_type}", url], { timeout: 95_000, maxBuffer: 1024 * 1024 });
+        const fields = result.stdout.split("\n");
+        status = Number(fields[0]);
+        finalUrl = fields[1];
+        type = fields[2] ?? "";
+        body = await readFile(file);
+      }
       const isPdf = type.includes("pdf") || body.subarray(0, 5).toString() === "%PDF-";
       const isBinary = !isPdf && (/zip|octet-stream|excel|spreadsheet/.test(type) || body.subarray(0, 2).toString() === "PK");
       const tipo: Kind = isPdf ? "pdf" : isBinary ? "binario" : /html|xml/.test(type) ? "html" : "testo";
-      const testo = !res.ok || isBinary ? "" : isPdf ? await pdfText(body) : tipo === "html" ? htmlToText(body.toString("utf8")) : body.toString("utf8");
-      return { http: res.status, urlLetto: res.url, tipo, testo };
+      const testo = status < 200 || status >= 300 || isBinary ? "" : isPdf ? await pdfText(body) : tipo === "html" ? htmlToText(body.toString("utf8")) : body.toString("utf8");
+      return { http: status, urlLetto: finalUrl, tipo, testo };
     } catch (e) {
       last = e;
     }
@@ -97,21 +116,37 @@ async function get(url: string): Promise<Fetched> {
 // La cattura Wayback con «id_» restituisce la pagina originale, senza la barra dell'archivio.
 const rawArchive = (a: string) => a.replace(/\/web\/(\d{14})\//, "/web/$1id_/");
 
+type LocalArchive = { file: string; sha256: string; verificatoIl: string; letturaOriginale: SourceResult };
+const localArchives: Record<string, LocalArchive> = JSON.parse(await readFile(join(DIR, "fonti-archiviate.json"), "utf8"));
 const texts = new Map<string, string>();
 if (DUMP) await mkdir(DUMP, { recursive: true });
 const dumpName = (url: string) => `${createHash("sha256").update(url).digest("hex").slice(0, 12)}.txt`;
 async function check(url: string): Promise<SourceResult> {
-  if (SKIP?.test(new URL(url).hostname)) return { url, esito: "ko", via: "diretto", http: 0, urlLetto: url, tipo: "binario", caratteri: 0, errore: "saltato" };
+  const skip = SKIP?.test(new URL(url).hostname);
+  if (skip && !localArchives[url]) return { url, esito: "ko", via: "diretto", http: 0, urlLetto: url, tipo: "binario", caratteri: 0, errore: "saltato" };
   let direct: Fetched | null = null;
   let error = "";
   try {
-    direct = await get(url);
-    if (direct.http === 200) {
+    if (!skip) direct = await get(url);
+    if (direct?.http === 200) {
       texts.set(url, normalizeText(direct.testo));
       return { url, esito: "ok", via: "diretto", http: 200, urlLetto: direct.urlLetto, tipo: direct.tipo, caratteri: direct.testo.length };
     }
   } catch (e) {
     error = String(e);
+  }
+  const local = localArchives[url];
+  if (local) {
+    const bytes = await readFile(local.file);
+    const saved = (local.file.endsWith(".gz") ? gunzipSync(bytes) : bytes).toString("utf8");
+    if (createHash("sha256").update(bytes).digest("hex") !== local.sha256 || !saved.startsWith(`${url}\n\n`)
+      || local.letturaOriginale.url !== url || local.letturaOriginale.http !== 200 || local.letturaOriginale.esito !== "ok") {
+      throw new Error(`Archivio locale non valido: ${url}`);
+    }
+    const text = saved.slice(url.length + 2);
+    texts.set(url, text);
+    return { url, esito: "ok", via: "archivio", http: direct?.http ?? 0, urlLetto: local.file, tipo: local.letturaOriginale.tipo, caratteri: text.length,
+      errore: `Fonte diretta non leggibile; copia verificata il ${local.verificatoIl}, sha256 ${local.sha256}` };
   }
   const archive = archiveOf.get(url);
   if (archive) {
@@ -126,8 +161,30 @@ async function check(url: string): Promise<SourceResult> {
 
 const urls = [...new Set(cases.flatMap((c) => c.citazioniAttese.flatMap((x) => x.urlAccettati)))].toSorted();
 const sources: SourceResult[] = [];
+const retryFailed = process.argv.includes("--retry-failed");
+let previousSources = new Map<string, SourceResult>();
+if (retryFailed) {
+  if (!DUMP) throw new Error("--retry-failed richiede --dump con i testi della stessa verifica.");
+  const previous = JSON.parse(await readFile(join(DIR, "verifica-fonti.json"), "utf8"));
+  const currentSha = createHash("sha256").update(domandeText).digest("hex");
+  if (previous.domandeSha256 !== currentSha || previous.verificatoIl !== new Date().toISOString().slice(0, 10)) {
+    throw new Error("Retry rifiutato: golden set o giorno di verifica differenti.");
+  }
+  previousSources = new Map(previous.fonti.map((source: SourceResult) => [source.url, source]));
+}
+async function verifySource(url: string): Promise<SourceResult> {
+  const previous = previousSources.get(url);
+  if (previous?.esito === "ok") {
+    const saved = await readFile(join(DUMP!, dumpName(url)), "utf8");
+    const prefix = `${url}\n\n`;
+    if (!saved.startsWith(prefix)) throw new Error(`Dump non corrispondente: ${url}`);
+    texts.set(url, saved.slice(prefix.length));
+    return previous;
+  }
+  return check(url);
+}
 for (let i = 0; i < urls.length; i += PARALLEL) {
-  sources.push(...(await Promise.all(urls.slice(i, i + PARALLEL).map(check))));
+  sources.push(...(await Promise.all(urls.slice(i, i + PARALLEL).map(verifySource))));
   process.stdout.write(`\r${sources.length}/${urls.length} fonti`);
 }
 process.stdout.write("\n");

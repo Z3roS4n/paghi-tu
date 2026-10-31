@@ -182,3 +182,17 @@ describe("riscontro con le fonti online (verifica-fonti.json)", () => {
     expect(stale).toEqual([]);
   });
 });
+
+describe("copie primarie archiviate", () => {
+  it("ogni copia conserva impronta, URL e prova della lettura originale riuscita", () => {
+    const archived = JSON.parse(read("agent/evals/fonti-archiviate.json")) as Record<string, {
+      file: string; sha256: string; verificatoIl: string;
+      letturaOriginale: { url: string; esito: string; http: number };
+    }>;
+    for (const [url, source] of Object.entries(archived)) {
+      expect(createHash("sha256").update(readFileSync(source.file)).digest("hex")).toBe(source.sha256);
+      expect(source.letturaOriginale).toMatchObject({ url, esito: "ok", http: 200 });
+      expect(source.verificatoIl).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+    }
+  });
+});

@@ -19,7 +19,7 @@ import {
   type SourceLink,
   type Verification,
 } from "../../src/lib/domain/schemas.ts";
-import { FINANCE_SOURCES, PERMISSION_DOMAINS, formatDateIt, urls } from "../evals/golden-set.ts";
+import { FINANCE_SOURCES, formatDateIt, urls } from "../evals/golden-set.ts";
 
 export const SITE_URL = "https://www.paghitu.it";
 
@@ -111,7 +111,7 @@ type Draft = {
 };
 
 const needsPermission = (links: SourceLink[]) =>
-  links.some((l) => PERMISSION_DOMAINS.some((d) => URL.canParse(l.url) && new URL(l.url).hostname.endsWith(d)));
+  links.some((l) => URL.canParse(l.url) && /(^|\.)pagellapolitica\.it$/.test(new URL(l.url).hostname));
 
 // Frasi che parlano a un modello invece che a un lettore. Un documento che le contiene (una
 // dichiarazione di terzi, una nota) resta fuori dall'indice finché il titolare non lo rivede: è il

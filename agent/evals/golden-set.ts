@@ -243,7 +243,7 @@ function legislatureCases(legs: Legislature[]): GoldenCase[] {
     makeCase({
       id: `LEG-${l.id}-elezioni`,
       categoria: "legislature",
-      domanda: `Quando si sono tenute le elezioni che hanno aperto la legislatura ${l.id}?`,
+      domanda: `Quando si sono tenute le elezioni e quando è iniziata la legislatura ${l.id}?`,
       esitoAtteso: "risposta",
       valoriAttesi: [
         { campo: "elezioni", valore: l.elezioni },

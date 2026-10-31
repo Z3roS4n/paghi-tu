@@ -249,10 +249,10 @@ describe("metriche della fase 4", () => {
     expect(report.esito).toBe("non_passa");
   });
 
-  it("4.7 un caso che passava e ora fallisce è una regressione, anche sopra soglia", () => {
+  it("4.7 registra la regressione anche quando fallisce la soglia al 100%", () => {
     const c = byId("GOV-g55-in-carica");
     const report = run(cases, (x) => (x.id === c.id ? { ...oracle(x), citazioni: [] } : oracle(x)), new Set([c.id]));
-    expect(report.metriche.find((m) => m.metrica === "4.4")?.ok).toBe(true);
+    expect(report.metriche.find((m) => m.metrica === "4.4")?.ok).toBe(false);
     expect(report.regressioni).toEqual([c.id]);
     expect(report.esito).toBe("non_passa");
   });
