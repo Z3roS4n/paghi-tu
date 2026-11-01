@@ -37,7 +37,9 @@ try {
     Object.assign(report, await refreshIndex({ snapshot, remote, state, commit: commit!, owner, event }));
   }
   await persist(); console.log(JSON.stringify({ phase: report.phase, owner, hash: snapshot.hash }));
-} catch {
-  report.phase = "BLOCKED"; report.operatorAction = "Inspect control/sync owner, operation references and cloud outcome. Never clear a lock or replay an unknown import blindly.";
+} catch (error) {
+  report.phase = "BLOCKED";
+  // Internal messages only (limits, HTTP status, ownership): they tell «no remote writes» from «outcome unknown».
+  report.error = error instanceof Error ? error.message.slice(0, 200) : "unknown"; report.operatorAction = "Inspect control/sync owner, operation references and cloud outcome. Never clear a lock or replay an unknown import blindly.";
   await persist(); console.error(JSON.stringify({ phase: "BLOCKED", owner, hash: snapshot.hash, message: "Sync failed; inspect report and reconcile before recovery." })); process.exitCode = 1;
 }

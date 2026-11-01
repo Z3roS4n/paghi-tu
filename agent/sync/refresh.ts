@@ -35,6 +35,9 @@ export function assertIdleGlobal(value: unknown, now = Date.now()) {
 export async function refreshIndex(input: { snapshot: Snapshot; remote: SyncRemote; state: SyncState; commit: string; owner?: string; now?: () => number; event?: (event: Record<string, unknown>) => void }) {
   const { snapshot, remote, state } = input; const owner = input.owner ?? randomUUID(); const now = input.now ?? Date.now;
   let version = 0; let wasEnabled = false;
+  // Read-only preflight: a removal over the limit or an invalid remote listing stops here, before the
+  // assistant is suspended and before a still-valid stamp could be lost in recovery.
+  diffSnapshot(snapshot, await remote.list());
   // No expiry unlock: a crashed worker may still have an import running remotely.
   await state.transact(["control", "global"], (docs) => {
     const c = record(docs.get("control")); assertIdleGlobal(docs.get("global"), now());
@@ -54,11 +57,12 @@ export async function refreshIndex(input: { snapshot: Snapshot; remote: SyncRemo
   // An uncertain final commit may already have published a fully verified snapshot.
   const changes = diffSnapshot(snapshot, await remote.list());
   for (let i = 0; i < changes.upserts.length; i += 100) { await assertOwned(); await remote.upsert(changes.upserts.slice(i, i + 100)); }
-  for (const d of changes.removed) { await assertOwned(); await remote.remove(d.id); }
+  for (const d of changes.removed) { await assertOwned(); input.event?.({ phase: "DELETE_SENT", id: d.id }); await remote.remove(d.id); }
   const stored = await remote.list(); const expected = new Map(snapshot.documents.map((d) => [d.id, fingerprint(d)]));
   if (stored.length !== expected.size || new Set(stored.map((d) => d.id)).size !== stored.length || stored.some((d) => expected.get(d.id) !== d.hash)) throw new Error("remote verification failed");
   await assertOwned();
-  if (!await remote.ready(snapshot.documents, changes.removed)) throw new Error("search index not ready");
+  // Readiness probes only what changed: unchanged documents were already verified by the previous stamp.
+  if (!await remote.ready(changes.upserts, changes.removed)) throw new Error("search index not ready");
   const enabled = await state.transact(["control", "global"], (docs) => {
     const c = record(docs.get("control")); assertIdleGlobal(docs.get("global"), now());
     if (record(c.sync).owner !== owner || !Number.isInteger(c.version) || c.enabled !== false) throw new Error("sync ownership changed");

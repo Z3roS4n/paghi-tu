@@ -88,7 +88,8 @@ export class FirestoreStateStore {
         commitAttempted = true;
         try { committed = await this.post("commit", { transaction: tx, writes }, signal); }
         catch { throw new CommitUncertain(); }
-        if (committed.status === 409 && /ABORTED/.test(committed.text) && retry < 2 && !signal?.aborted) continue;
+        // ABORTED è un rifiuto certo: dopo i tentativi la transazione non è scritta, non è incerta.
+        if (committed.status === 409 && /ABORTED/.test(committed.text)) { if (retry < 2 && !signal?.aborted) continue; throw new StateUnavailable(); }
         if (committed.status !== 200) throw new CommitUncertain();
         return result.value;
       } catch (error) {

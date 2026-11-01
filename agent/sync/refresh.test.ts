@@ -98,3 +98,19 @@ it("does not replay an uncertain publication; an applied stamp was fully verifie
   expect(r.ready).toHaveBeenCalledOnce(); expect(r.upsert).not.toHaveBeenCalled();
   expect(state.docs.get("control")).toMatchObject({ enabled: true, indexSha256: snapshot().hash });
 });
+
+it("stops an over-limit removal before suspending the assistant", async () => {
+  const state = new State(); const r = remote();
+  await expect(refreshIndex({ snapshot: snapshot(docs.slice(0, 1)), state, remote: r, commit })).rejects.toThrow("removal limit");
+  expect(state.docs.get("control")).toEqual({ enabled: true, version: 1 });
+  expect(r.upsert).not.toHaveBeenCalled(); expect(r.remove).not.toHaveBeenCalled();
+});
+
+it("probes readiness only on changed and removed documents", async () => {
+  const state = new State(); const r = remote(docs.slice(0, 21));
+  await refreshIndex({ snapshot: snapshot(docs.slice(1, 22)), state, remote: r, commit });
+  expect(r.ready).toHaveBeenCalledOnce();
+  const [changed, removed] = r.ready.mock.calls[0] as unknown as [IndexDocument[], { id: string }[]];
+  expect(changed.map((d) => d.id)).toEqual([docs[21].id]);
+  expect(removed.map((d) => d.id)).toEqual([docs[0].id]);
+});

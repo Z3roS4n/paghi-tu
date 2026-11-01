@@ -39,6 +39,10 @@ In errore: disabilitare la variabile di repository per impedire nuove esecuzioni
 
 Eseguire una nuova sincronizzazione verificata prima di riabilitare. Per ripristinare uno snapshot precedente: ripristino/revert dei soli dati approvati in un commit revisionato e nuova esecuzione; rimozioni massive richiedono intervento revisionato distinto, non un flag che aggira i limiti. Nessun comando cancella progetto, indice o identità condivise.
 
+## Cambio del testo indicizzato
+
+L'impronta `source_sha256` copre il record dell'export, non `indexedText` né i metadati caricati. Dopo una modifica a `indexedText` o alla proiezione in `agent/sync/vertex.ts`, la sincronizzazione risulta UNCHANGED: ricaricare per intero l'indice con l'import del runner e verificare con `check` prima di riabilitare (revisione del 2026-11-01).
+
 ## Verifica locale
 
 Baseline 277 test. Le prove aggiunte coprono diff/no-op, import prima di delete, rimozioni e limiti, concorrenza, stato incerto, Search non pronta, kill operatore, mismatch del bundle, recupero e pubblicazione con conferma persa. Suite completa, typecheck, lint, build, actionlint e piano CLI sono eseguiti prima della consegna; esito finale nel corpo PR. Export e golden conservano le impronte della #7. Nessuna nuova eval generativa o ricerca esterna alle fonti della routine eseguita.

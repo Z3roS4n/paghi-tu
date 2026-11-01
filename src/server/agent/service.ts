@@ -53,13 +53,15 @@ export function createAgentHandler(deps: Dependencies): (request: Request) => Pr
     const config = deps.config;
     const startedAt = Date.now();
     const deadline = AbortSignal.timeout(45000);
-    const signal = AbortSignal.any([deadline, request.signal]);
+    // Il client che chiude la scheda interrompe solo la lettura della richiesta: Vertex e Firestore
+    // vanno avanti fino alla scadenza, così un'uscita dalla pagina non lascia esiti incerti.
+    const signal = deadline;
     if (request.headers.get("origin") !== config.allowedOrigin) return failure(403, "ORIGIN", "Origine non autorizzata.");
     if (!/^application\/json(?:;\s*charset=utf-8)?$/i.test(request.headers.get("content-type") ?? "")) return failure(400, "INPUT", "Richiesta non valida.");
     const claimedLength = Number(request.headers.get("content-length"));
     if (Number.isFinite(claimedLength) && claimedLength > 4096) return failure(413, "SIZE", "Richiesta troppo grande.");
     let raw: unknown;
-    try { raw = await readSmallJson(request, signal); }
+    try { raw = await readSmallJson(request, AbortSignal.any([deadline, request.signal])); }
     catch (error) { return error instanceof RangeError ? failure(413, "SIZE", "Richiesta troppo grande.") : signal.aborted ? failure(504, "DEADLINE", "Tempo scaduto.") : failure(400, "INPUT", "Richiesta non valida."); }
     const parsed = agentRequestSchema.safeParse(raw);
     if (!parsed.success) return failure(400, "INPUT", "Richiesta non valida.");
@@ -89,9 +91,10 @@ export function createAgentHandler(deps: Dependencies): (request: Request) => Pr
         const path = `/v1/projects/${encodeURIComponent(config.projectId)}/locations/eu/collections/default_collection/engines/${encodeURIComponent(config.engineId)}/servingConfigs/default_search:`;
         if (dispatch.url !== `https://eu-discoveryengine.googleapis.com${path}${dispatch.kind}`) throw new StateUnavailable();
         try { await policy!.authorizeDispatch(admission!, deps.now?.() ?? Date.now(), signal); }
-        catch (error) { if (error instanceof StateUnavailable) uncertain = true; if (error instanceof PolicyDenied) blocked = error; throw error; }
+        // StateUnavailable vuol dire «non scritto»: nessuna chiamata autorizzata, nessun esito incerto.
+        catch (error) { if (error instanceof CommitUncertain) uncertain = true; if (error instanceof PolicyDenied) blocked = error; throw error; }
         attempts++; audit.attempts++;
-        if (signal.aborted) { uncertain = true; throw new DOMException("aborted", "AbortError"); }
+        if (signal.aborted) throw new DOMException("aborted", "AbortError");
         try {
           const response = await (deps.fetch ?? fetch)(dispatch.url, { method: "POST", headers: { authorization: `Bearer ${token}`, "content-type": "application/json" }, body: JSON.stringify(dispatch.body), redirect: "manual", signal });
           if (!response.ok) return { status: response.status, ok: false, json: {} };
@@ -103,7 +106,8 @@ export function createAgentHandler(deps: Dependencies): (request: Request) => Pr
       const result = await runtime.reply(input.question, admission.previous);
       if (uncertain) throw new StateUnavailable();
       if (blocked) throw blocked;
-      const context = result.shown.astensione ? undefined : result.context;
+      // Una richiesta di chiarimento conserva il contesto che il runtime ha rimesso nella risposta.
+      const context = result.shown.astensione && result.mode !== "chiarimento" ? undefined : result.context;
       try { await policy.finalize(admission, context, false, deps.now?.() ?? Date.now(), signal); completed = true; }
       catch (error) { if (error instanceof CommitUncertain) finalizationUncertain = true; throw error; }
       const sources = result.shown.citazioni.flatMap((citation) => {
@@ -112,10 +116,10 @@ export function createAgentHandler(deps: Dependencies): (request: Request) => Pr
       });
       const body: AgentAskResponse = { requestId: input.requestId, conversationId: admission.conversationId, text: result.shown.testo, abstention: result.shown.astensione, mode: result.mode, ...(result.notice ? { notice: result.notice } : {}), sources };
       const responseHeaders = new Headers(headers);
-      if (!cookie) responseHeaders.set("set-cookie", `__Host-paghi-agent=${currentCookie}; HttpOnly; Secure; SameSite=Strict; Path=/; Max-Age=1800`);
+      responseHeaders.set("set-cookie", `__Host-paghi-agent=${currentCookie}; HttpOnly; Secure; SameSite=Strict; Path=/; Max-Age=1800`);
       return new Response(JSON.stringify(body), { status: 200, headers: responseHeaders });
     } catch (error) {
-      if (error instanceof CommitUncertain || signal.aborted) uncertain = true;
+      if (error instanceof CommitUncertain) uncertain = true;
       return statusFor(error, signal, input.requestId);
     } finally {
       if (admission && policy && !completed && !finalizationUncertain) {
