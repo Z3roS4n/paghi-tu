@@ -1,9 +1,9 @@
 # Paghi Tu — Architettura
 
-> Ultimo aggiornamento: 2026-10-21. Documento vivo: aggiornare a ogni decisione architetturale.
+> Ultimo aggiornamento: 2026-10-31, Codex su mandato Giovanni. Documento vivo: aggiornare a ogni decisione architetturale.
 
 ## Visione
-Sito pubblico e apartitico che mostra spesa dello Stato, governi, leggi di bilancio, promesse elettorali e costo delle misure (previsto contro effettivo) dal 1946 a oggi. Pubblica solo dati con fonte verificabile e livello di verifica dichiarato, con le stesse regole per ogni governo e partito.
+Sito pubblico e apartitico che mostra spesa dello Stato, governi, leggi di bilancio, promesse elettorali e costo delle misure (previsto contro effettivo) dal 1945 a oggi (la copertura varia per dataset). Pubblica solo dati con fonte verificabile e livello di verifica dichiarato, con le stesse regole per ogni governo e partito.
 
 ## Diagramma logico
 ```
@@ -16,13 +16,13 @@ Sito pubblico e apartitico che mostra spesa dello Stato, governi, leggi di bilan
  data/*.json, data/serie/*.json        ← snapshot versionato in git (DATA_SNAPSHOT)
         ▲
         │  npm run data:update = data:fetch (API Eurostat, Banca d'Italia → data/raw/ + manifest)
-        │                       + data:finance (5 controlli incrociati → data/finanza-pubblica.json), D-016
+        │                       + data:finance (7 controlli incrociati → data/finanza-pubblica.json), D-016
         │  import statico, validazione zod a build time (src/server/data.ts)
         ▼
  Next.js 16 App Router, tutte le pagine prerenderizzate (ensureStatic "navigation")
         │
         ▼
- hosting statico/CDN — nessun DB, nessun cookie, nessun form, nessuna analytics
+ hosting statico/CDN — nessun DB, nessun cookie, nessun form, Vercel Web Analytics senza cookie, URL privati di query e frammenti (D-023)
 ```
 
 ## Componenti chiave
@@ -47,7 +47,7 @@ Sito pubblico e apartitico che mostra spesa dello Stato, governi, leggi di bilan
 - `data.ts` importa i JSON e li valida; `stats.ts` e `finance.ts` calcolano i numeri delle pagine; `archive.ts` costruisce l'indice dell'archivio. Nessun I/O a runtime.
 
 ### 5. UI (`src/app/`, `src/components/`)
-- Server Components statici. Due client component, isolati: `line-chart.tsx` (grafico SVG con crocino e tastiera; titolo, fonte e tabella stanno nel server component `chart-figure.tsx`) e `archive-search.tsx` (carica `/archivio/indice.json`, route GET prerenderizzata).
+- Server Components statici; client isolati per grafici (`series-chart`, `chart-views`, `eu-compare`, `government-debt`, `segmented`), filtri e archivio (`budget-effect-filter`, `archive-search`, `act-status`), narrazione (`waffle-story`, `in-view`), navigazione (`mobile-dock`, `nav-links`) e analytics (`site-analytics`). L’archivio carica `/archivio/indice.json` e cerca lato client; `line-chart.tsx` è stato sostituito da `series-chart.tsx`. L’elenco autorevole è dato dalle direttive `use client` in `src/components/`.
 - Badge di verifica, link alle fonti, scontrino per residente in home. Palette neutra (D-011).
 
 ## Flussi principali
@@ -61,7 +61,7 @@ data/              # snapshot JSON generati (non modificare a mano)
 data/raw/          # copie grezze delle API ufficiali + manifest
 scripts/data/      # import dai CSV di ricerca, download e build dei conti pubblici
 src/
-  app/             # route: /, /spesa, /governi, /governi/[id], /leggi-di-bilancio, /promesse, /misure, /archivio (+ indice.json), /metodo, /fonti, /chi-siamo, /correzioni, /note-legali
+  app/             # route: /, /spesa, /governi, /governi/[id], /leggi-di-bilancio, /promesse, /misure, /archivio (+ indice.json), /metodo, /fonti, /chi-siamo, /correzioni, /note-legali, /atti, /privacy, /contribuire (+ robots.txt e sitemap.xml)
   server/          # accesso dati server-only e statistiche
   components/      # UI condivisa
   lib/             # utility pure, schemi zod, test

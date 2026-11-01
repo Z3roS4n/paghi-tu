@@ -14,7 +14,7 @@ dopo le riempie la routine con le notizie della settimana (binario 4 del runbook
 | R15 | sab 31/10/2026 | [Se la manovra non arriva in tempo](idee/R15-se-la-manovra-non-arriva.md) · [prompt](prompt/R15-se-la-manovra-non-arriva.md) | /leggi-di-bilancio | programmato (Instagram, 31/10 15:00), video rimontato il 28/10 con le regole «meno movimento» |
 | R28 | lun 02/11/2026 | [Sessanta giorni per diventare legge](idee/R28-sessanta-giorni.md) | /atti | programmato (Instagram, 2/11 13:00) |
 | R25 | mar 03/11/2026 | [Quanto dura un governo](idee/R25-quanto-dura-un-governo.md) | /governi | programmato (Instagram, 3/11 13:00) |
-| R29 | mer 04/11/2026 | La manovra 2027 è arrivata (seguito di R15) | /leggi-di-bilancio | da scrivere quando il DDL è sul sito; se non c'è entro il 2/11, al suo posto R07 aggiornata |
+| R07 | mer 04/11/2026 | [Trent'anni di spesa, in euro di oggi](idee/R07-trent-anni-di-spesa.md) | /spesa | idea (riscritta il 1/11 con i numeri del giorno e il formato D-032); R29 torna quando il ddl è alle Camere |
 | R27 | gio 05/11/2026 | [Il debito, mese per mese](idee/R27-il-debito-mese-per-mese.md) | /, /spesa | programmato (Instagram, 5/11 13:00) |
 | R10 | ven 06/11/2026 | [Le regole per le promesse](idee/R10-come-contiamo-le-promesse.md) · [prompt](prompt/R10-come-contiamo-le-promesse.md) | /promesse, /metodo | programmato (Instagram, 6/11 13:00), video rimontato il 28/10 con le regole «meno movimento» |
 | R19 | lun 09/11/2026 | [Ex ILVA: cosa paga il decreto](idee/R19-ex-ilva.md) | /atti | programmato 09/11 13:00 |
@@ -41,7 +41,6 @@ riallinea ai numeri del giorno.
 | R02 | [La voce che cresce più in fretta](idee/R02-interessi.md) · [prompt](prompt/R02-interessi.md) | /spesa | rinviata il 28/10 dal titolare (settimana saltata): cifre del 22/10 da riverificare, formato D-032; attenzione a «8 agli interessi» di R00 |
 | R03 | [Previsto contro speso](idee/R03-previsto-e-speso.md) · [prompt](prompt/R03-previsto-e-speso.md) | /misure | rinviata il 28/10 dal titolare (settimana saltata): cifre del 22/10 da riverificare, formato D-032; non a ridosso di R23 (10/11) |
 | R05 | [Italia contro Europa](idee/R05-italia-ed-europa.md) | /spesa | ripete R00 e R02: solo con un angolo nuovo |
-| R07 | [Trent'anni di spesa, in euro di oggi](idee/R07-trent-anni-di-spesa.md) | /spesa | usa i 19.633 € di R00 e R01: solo come paragone |
 | R08 | [Cento euro, nel 1995 e oggi](idee/R08-cento-euro-ieri-e-oggi.md) | /spesa | stessa griglia di R00: solo con un angolo nuovo |
 | R11 | [La manovra, in ottant'anni](idee/R11-la-manovra-in-80-anni.md) | /leggi-di-bilancio | non prima di tre settimane dopo R15 |
 | R16 | [Metà del PIL, ma non una fetta](idee/R16-meta-del-pil.md) | /spesa | sostituita da R27 il 28/10: spiega solo cosa vuol dire «% del PIL» |
@@ -58,6 +57,9 @@ riallinea ai numeri del giorno.
 | R26 | [Quanto costa l'assegno unico](idee/R26-quanto-costa-l-assegno-unico.md) | previsto contro speso e «basi diverse» sono già in R03, il 2022 tornerebbe protagonista; troppo simile a R23. I 19,8 mld € del 2025 restano come paragone (28/10/2026) |
 
 Spunti senza scheda:
+- **R29 La manovra 2027 è arrivata (seguito di R15)** (/leggi-di-bilancio): numero già assegnato, da scrivere quando il
+  ddl di bilancio 2027 è presentato alle Camere e compare sul sito. Al 1/11 è approvato dal Consiglio dei ministri
+  (n. 195 del 28/10) ma non presentato; il 4/11 è andato a R07.
 - **Perché non confrontiamo il Superbonus:** previsto 35,0 mld €, consuntivo 131,6 mld €, ma le due cifre misurano
   cose diverse (/misure). Delicato: spiegare bene perché la differenza non si calcola.
 - **La spesa per funzione 2025:** quando Eurostat la pubblica (febbraio), rifare i 100 € con l'anno nuovo.

@@ -34,7 +34,7 @@ Il dettaglio di ogni fonte, con licenza e condizioni di riuso, è nella pagina [
 ```bash
 npm ci
 npm run dev            # sito in locale
-npm run data:update    # riscarica e ricostruisce i conti pubblici (con 5 controlli incrociati)
+npm run data:update    # riscarica e ricostruisce i conti pubblici (con 7 controlli incrociati)
 npm run data:import    # rigenera i JSON dai CSV di ricerca
 npm run typecheck && npm run lint && npm test && npm run build
 ```

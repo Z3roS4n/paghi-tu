@@ -36,7 +36,7 @@ Nessuno.
 - Timeout 30 s. Se la segnalazione fallisce, la routine lo scrive nel report del giorno.
 
 ## Costi
-La routine manda una o due email al giorno: basta il piano gratuito di Resend (limiti da ricontrollare sul listino al momento dell'attivazione).
+Le notifiche seguono le esecuzioni delle routine dati e verifica PR. Piano, consumo e limiti effettivi non verificati da questo checkout.
 
 ## Note / TODO
-- Da configurare sull'account dove girerà la routine (non questo).
+- Routine dati e verifica PR già attive sull’account del titolare; configurazione Resend e ricezione email non verificate qui. Non dedurre la consegna dall’attivazione delle routine.

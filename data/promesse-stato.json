@@ -1,12 +1,12 @@
 {
   "periodo": {
     "dal": "2026-01-01",
-    "al": "2026-10-31"
+    "al": "2026-11-01"
   },
-  "censite": 642,
-  "verificate": 442,
-  "pubblicate": 434,
-  "ribadite": 8,
+  "censite": 655,
+  "verificate": 446,
+  "pubblicate": 436,
+  "ribadite": 10,
   "gruppiPubblicati": [
     "a",
     "b",

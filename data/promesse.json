@@ -2163,6 +2163,22 @@
           "livello": "V2",
           "dettaglio": "V2✓ verificatore 2026-10-31 — CORRETTA: testo_letterale ristretto all'impegno (\"l’impegno prioritario…\", 305 caratteri), senza togliere le parole sulle persone interessate; nota della segreteria nazionale di Forza Italia ripubblicata da Agenzia Opinione (30/10, GET 200), come C27-FI-028 (V2); citazione ritrovata parola per parola; istituto nominato (previdenza dedicata) con platea definita (Forze dell'ordine e Forze armate) e veicolo dichiarato (legge di bilancio); stessa misura di C27-FI-028, classificazione della ripetizione ai codificatori (D-031) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
         }
+      },
+      {
+        "id": "C27-FI-041",
+        "dichiarante": "Antonio Tajani",
+        "ruoloDichiarante": "segretario nazionale Forza Italia, deputato; vicepresidente del Consiglio e ministro degli Affari esteri",
+        "data": "2026-10-31",
+        "testoLetterale": "Ecco perchè per Forza Italia è un imperativo morale battersi fino in fondo e ottenere la previdenza dedicata per il comparto Difesa e Sicurezza […] Faremo di tutto perchè venga inserita già nell'articolato della legge di bilancio. Se necessario presenteremo un emendamento durante l'esame parlamentare",
+        "tipoFonte": "discorso",
+        "fonte": {
+          "url": "https://www.ansa.it/sito/notizie/economia/pmi/2026/10/31/tajani-previdenza-dedicata-alla-difesa-e-un-imperativo-morale-pronti-a-emendamento_11ccc51a-77f3-4c46-a8b2-cca5df2c407b.html"
+        },
+        "archivioUrl": null,
+        "verifica": {
+          "livello": "V2",
+          "dettaglio": "V2✓ verificatore 2026-11-01 — CORRETTA: tipo_fonte social_ufficiale → discorso (post su X di Tajani riportato fra virgolette da ANSA, 31/10 19:22, GET 200; post originale non letto: come il post Facebook di C27-M5S-056, V2); citazione ritrovata parola per parola, il «[…]» toglie solo l'inciso dell'agenzia («Lo scrive su X il vicepremier e leader di Fi […] rilanciando uno dei cavalli di battaglia degli azzurri per la manovra.»), nessun gruppo di persone tolto; dichiarante ammesso (segretario nazionale); caso limite superato come C27-FI-028 e C27-FI-039: istituto nominato (previdenza dedicata) con platea definita (comparto Difesa e Sicurezza) e veicolo dichiarato (legge di bilancio, emendamento se necessario); stessa misura di C27-FI-028/039, ripetizione ai codificatori (D-031) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+        }
       }
     ]
   },
@@ -2245,6 +2261,33 @@
       "dettaglio": "V1✓ verificatore 2026-10-31 — CONFERMATA: intervista a domande e risposte pubblicata da Il Riformista (D-019, GET 200, 30/10); citazione ritrovata parola per parola, nessun taglio; dichiarante ammesso sul proprio tema (responsabile Automotive della Lega, come i responsabili di dipartimento C27-LEGA-038 e C27-FI-027); imposta nominata (superbollo) con esito dichiarato (superamento), formulazione \"stiamo valutando\" come C27-FDI-013 | PERIMETRO: orizzonte/veicolo (vedi colonne)"
     },
     "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-FI-042",
+    "partitoId": "FI",
+    "dichiarante": "Enrico Costa",
+    "ruoloDichiarante": "capogruppo FI alla Camera",
+    "data": "2026-10-31",
+    "testoLetterale": "Forza Italia alla Camera e al Senato ripresenterà la proposta di legge di iniziativa popolare sulla separazione delle carriere, promossa dall’Unione delle Camere Penali, già depositata in Parlamento e sottoscritta da oltre 70 mila cittadini.",
+    "parafrasiNeutra": "Ripresentare alla Camera e al Senato la proposta di legge di iniziativa popolare dell'Unione delle Camere Penali sulla separazione delle carriere dei magistrati.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "proposta_di_legge",
+    "fonte": {
+      "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-camera-giustizia-costa-fi-ripresenteremo-pdl-separazione-carriere-gesto-simbolo-di-battaglia-che-non-si-ferma/"
+    },
+    "archivioUrl": null,
+    "cofog": "03",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 3 (Agenzia Opinione): feed https://www.agenziagiornalisticaopinione.it/feed/ e /feed/?paged=2…12 (HTTP 200), comunicato «FI – FORZA ITALIA * CAMERA» del 31/10/2026 (article:published_time 2026-10-31T10:20:18+01:00): «Lo ha detto Enrico Costa, presidente dei deputati di Forza Italia, a margine del Congresso straordinario dell’UCPI». Capogruppo: dichiarante autorizzato. Dichiarazione a margine di un congresso, ripresa fra virgolette da Opinione (tipo_fonte sito_ufficiale dopo la verifica L2, come C27-FI-028 e C27-FI-030); la stessa notizia è anche su Il Fatto Quotidiano e Il Dubbio (Google News, query «Forza Italia proposta», 31/10; non letti: l'API di ildubbio.news risponde 404). Pagina scaricata con curl GET semplice (HTTP 200) il 2026-11-01; citazione confrontata in automatico: ritrovata, nessun taglio. Livello atteso V2. Nello stesso virgolettato, non registrate: «Un atto simbolico in ossequio ai 13 milioni di Si’, ma anche un segnale concreto della nostra determinazione a portare avanti questa battaglia» (motivazione, non un impegno distinto). Il riferimento ai «13 milioni di Sì» riguarda il referendum costituzionale sulla riforma della giustizia. Orizzonte/veicolo: legislatura_in_corso (PdL annunciata), proposta_di_legge. COFOG 03. Doppioni: nessuna riga sulla separazione delle carriere nel gruppo A. La proposta è di iniziativa popolare (UCPI) e verrebbe ripresentata come atto dei gruppi FI, annunciato dal capogruppo: trattata come gli atti di gruppo (C27-FDI-015/016/017). Wayback (archive.org/wayback/available, sola lettura, 2026-11-01): nessuna copia esistente.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-11-01 — CORRETTA: tipo_fonte discorso → sito_ufficiale (comunicato «FI - FORZA ITALIA * CAMERA» ripubblicato da Agenzia Opinione, che dichiara di riprendere il «comunicato stampa ricevuto», come C27-FI-028 e C27-FI-030; V2); citazione ritrovata parola per parola (GET 200, 31/10 10:20), nessun taglio; dichiarante ammesso (capogruppo: «presidente dei deputati di Forza Italia»); atto dei gruppi FI di Camera e Senato annunciato in terza persona dal capogruppo, non atto personale (D-012, come C27-FDI-017); non è un atto solo procedurale come C27-AZ-024: il contenuto è nominato (separazione delle carriere, testo dell'Unione delle Camere Penali già depositato) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "no",
     "ribadita": []
   },
   {
@@ -3166,7 +3209,24 @@
       "dettaglio": "V1✓ verificatore 2026-10-20 — CONFERMATA (PDF NOVA_20_PUNTI; capitolo verificato; proposta approvata nella consultazione 18-20/09/2026 (Risultati-votazioni-NOVA-2026.pdf, tutte >84% sì))"
     },
     "effettoConti": "no",
-    "ribadita": []
+    "ribadita": [
+      {
+        "id": "C27-M5S-068",
+        "dichiarante": "Giuseppe Conte",
+        "ruoloDichiarante": "presidente del MoVimento 5 Stelle, deputato",
+        "data": "2026-10-31",
+        "testoLetterale": "Questo è un passaggio non negoziabile. Se non si metterà al centro del progetto progressista una legge sul conflitto di interessi seria noi non ci saremo. E questo non vale solo per Renzi, ma per chiunque",
+        "tipoFonte": "discorso",
+        "fonte": {
+          "url": "https://www.ilmessaggero.it/politica/reddito_cittadinanza_conte_come_sara_programma_elezioni_campo_largo-9860942.html"
+        },
+        "archivioUrl": "http://web.archive.org/web/20261031221110/https://www.ilmessaggero.it/politica/reddito_cittadinanza_conte_come_sara_programma_elezioni_campo_largo-9860942.html",
+        "verifica": {
+          "livello": "V2",
+          "dettaglio": "V2✓ verificatore 2026-11-01 — CONFERMATA: intervista televisiva («Accordi & Disaccordi», Nove, 31/10) ripresa con virgolettato da Il Messaggero (GET 200), testata che non l'ha fatta: discorso, V2 come C27-FN-041; citazione ritrovata parola per parola, identica su StrettoWeb (GET 200), nessun taglio; dichiarante ammesso (presidente); istituto nominato (legge sul conflitto di interessi), come C27-M5S-019, posto come condizione per il programma della coalizione; la parafrasi non nomina Renzi perché la frase dice «per chiunque»; ripetizione di C27-M5S-019 ai codificatori (D-031) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+        }
+      }
+    ]
   },
   {
     "id": "C27-M5S-021",
@@ -6352,6 +6412,33 @@
       "dettaglio": "V1✓ verificatore 2026-10-31 — CONFERMATA: stessa intervista di C27-M5S-064 (D-019); citazione ritrovata nel virgolettato; divieto identificabile (stage e tirocini gratuiti) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
     },
     "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-M5S-069",
+    "partitoId": "M5S",
+    "dichiarante": "Giuseppe Conte",
+    "ruoloDichiarante": "presidente del MoVimento 5 Stelle, deputato",
+    "data": "2026-10-31",
+    "testoLetterale": "io non voglio fare una tassa, una tantum, perché non ci vuole nulla, non c'è nessun coraggio. Io voglio esprimere una visione e una prospettiva molto più coraggiosa. L'abbiamo studiata, la porteremo al tavolo.",
+    "parafrasiNeutra": "Non introdurre una tassa una tantum (la testata riferisce la frase alla patrimoniale); portare al tavolo del programma una proposta diversa, non descritta.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.adnkronos.com/politica/conte-schlein-centrosinistra-campo-largo-ultime-news_4pVZ9L4Key11m7agPmSr4g"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (query uniformi «M5S intervista», «M5S proposta», «Conte intervista», «Conte proposta», when:2d; HTTP 200 per tutte; integrate per tutti i partiti del gruppo con le stesse query di approfondimento «<leader> manovra», «<leader> Vespa libro», «Conte Accordi e Disaccordi»); movimento5stelle.eu (API WordPress after=2026-10-30 e /feed/, HTTP 200) non pubblica nulla dopo il 29/10. Trovata con «Conte intervista». Fonte: Adnkronos, «Conte a Schlein: \"Garanzie su Renzi o M5S non ci sta. Riproporremo il reddito di cittadinanza\"», datePublished 2026-10-31T19:15:00Z, trovato anche nel feed https://www.adnkronos.com/RSS_Politica.xml (HTTP 200), letto per intero il 2026-11-01 con curl GET semplice (HTTP 200). Occasione: intervista di Giuseppe Conte ad «Accordi & Disaccordi» (Nove), registrata il 31/10 e andata in onda alle 21:30 dello stesso giorno; video non letto. Intervista riportata con virgolettati da testate che non l'hanno fatta: V2 atteso (come C27-FN-041), tipo_fonte «discorso» per non applicare D-019. Contesto (della testata): «A proposito della patrimoniale, ha chiarito»; segue «Noi dobbiamo contrastare la speculazione finanziaria, ma non comprimere e deprimere l'economia reale che è già depressa» (non registrata: direzione senza strumento). L'oggetto «una tassa, una tantum» si legge come patrimoniale una tantum solo dal contesto della testata, come per C27-FI-010. Nessun costo. COFOG 01. Pre-valutazione slogan: LIM (impegno a non introdurre uno strumento identificato dal contesto; la proposta alternativa non è descritta). Orizzonte/veicolo: non_specificato, dichiarazione. Citazione confrontata in automatico con il testo scaricato il 2026-11-01, a meno di spazi e apostrofi tipografici. Wayback archive.org/wayback/available (solo lettura, 2026-11-01): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore 2026-11-01 — CORRETTA: parafrasi: «imposta patrimoniale» viene dal contesto della testata («A proposito della patrimoniale, ha chiarito») ed è ora indicato come tale, come in C27-PLD-016; intervista televisiva («Accordi & Disaccordi», Nove, 31/10) ripresa con virgolettato da Adnkronos (GET 200), testata che non l'ha fatta: discorso, V2 come C27-FN-041; citazione ritrovata parola per parola, nessun taglio; dichiarante ammesso (presidente); caso limite superato: rifiuto di uno strumento identificato dal contesto (tassa una tantum sui patrimoni), impegno di status quo come C27-FI-010 e C27-ORA-032; la proposta alternativa («L'abbiamo studiata, la porteremo al tavolo») non è descritta e non conta | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
     "ribadita": []
   },
   {
