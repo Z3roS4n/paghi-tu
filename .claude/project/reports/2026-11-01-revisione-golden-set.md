@@ -44,9 +44,9 @@ Sulle 60 domande sulle promesse il centrodestra ha 23 casi su 84 record (27 %), 
 
 ## Stato dei test dopo l'allineamento a `main`
 
-Rigenerati `domande.jsonl`, `revisione.md` e `agent/ingest/manifest.json` (export: 2.123 documenti). Restano rossi in locale:
+Rigenerati `domande.jsonl`, `revisione.md` e `agent/ingest/manifest.json` (export: 2.123 documenti).
 
-- 3 test di `verifica.test.ts` (impronte di `data/raw/manifest.json`, del registro delle fonti e delle copie archiviate). Falliscono anche sul ramo originale della PR, senza l'allineamento.
-- «Ogni URL atteso è stato letto»: i 2 casi nuovi arrivati da `main` (PRO-C27-FI-042, PRO-C27-M5S-069) non sono nel registro `verifica-fonti.json`. Serve `npm run evals:verify`, che va in rete anche verso ISTAT: non lanciato per il limite per IP (D-004).
+- Su Windows 3 test di `verifica.test.ts` sulle impronte falliscono anche sul ramo originale: dipendono dagli a capo del checkout (`core.autocrlf=true`). Nella CI su Linux passano.
+- Dopo l'allineamento, il registro `verifica-fonti.json` non conteneva i 2 casi nuovi arrivati da `main` (PRO-C27-FI-042, PRO-C27-M5S-069). Serve `npm run evals:verify`, che distanzia le richieste a ISTAT come vuole D-004, ma richiede `pdftotext` (poppler), assente su questo computer: va lanciato dove poppler è installato. Fino ad allora la CI resta rossa su questi 2 test.
 
 L'eval del 31 ottobre (155 casi al 100 %) vale per il set di quel giorno: dopo le correzioni va rifatta.
