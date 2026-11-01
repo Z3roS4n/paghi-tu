@@ -23,6 +23,11 @@ Il client manda solo `question`, `requestId` e `conversationId` tramite POST. Il
 - Con `control.enabled=false`, `node --conditions=react-server scripts/agent/stress-preview.mjs --config /percorso/preview-config.json --apply` esegue al massimo 50 POST, 10 concorrenti, 30 secondi, nessun retry, attende solo 503. Prima legge il control Firestore. `VERCEL_PROTECTION_BYPASS` va fornito come env di processo in memoria; mai in argomenti/URL/config/log. La fase pagata richiede `--paid-vertex`, è separata e limitata a 3 richieste (`--count 1` consigliato per primo campione). Non lanciare contro produzione o redirect. Il budget Google da 50 EUR è un avviso, non un blocco.
 - Raccogliere timestamp, commit, URL Preview, project/database/region/owner/project ID verificati, versione runtime, status/count aggregati, esito WIF/IAM/TTL/protezione e costi osservati. Non raccogliere domande, risposte, cookie, IP, token o segreti. Nessun test live è stato eseguito qui.
 
+## Limiti trovati in revisione (2026-11-01)
+
+- L'identità federata accetta ogni deployment Preview del progetto Vercel: il token OIDC non porta il ramo. Limitare le env dell'agente a un solo ramo Preview e non lasciare deployment Preview di rami di terzi mentre `control` è acceso.
+- Una sessione con molte conversazioni può superare i 32 KB del documento: il sintomo è un 503 dopo una risposta; si risolve con il reset o alla scadenza della sessione.
+
 ## Stop e rollback
 
 Kill persistente: `node --conditions=react-server scripts/agent/control-preview.mjs --config /percorso/preview-config.json --apply --disable`; ricontrollare con `--read`. Poi `AGENT_ENABLED=0` e nuovo deploy **Preview**. Il kill impedisce nuovi dispatch ma non annulla una chiamata Vertex già avviata. Revocare solo binding e risorse create dal setup, dopo confronto con il manifest dell'operatore; nessuna cancellazione progetto, indice o IAM con sostituzione cieca.

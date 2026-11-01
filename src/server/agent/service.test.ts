@@ -11,7 +11,7 @@ vi.mock("../../../agent/runtime/index.ts", () => ({ createAgentRuntime: ({ trans
 } }) }));
 import { createAgentHandler } from "./service.ts";
 import type { AgentConfig } from "./config.ts";
-import type { FirestoreStateStore } from "./state.ts";
+import { StateUnavailable, type FirestoreStateStore } from "./state.ts";
 import { snapshotHash } from "../../../agent/sync/refresh.ts";
 import { IndexDocument } from "../../../agent/ingest/export.ts";
 
@@ -82,4 +82,43 @@ it("rejects a stale deployed bundle before any Vertex fetch", async () => {
   const handler = createAgentHandler({ config, getToken: async () => "token", state: () => adapter as unknown as FirestoreStateStore, index: async () => new Map(), fetch: fetchBackend });
   expect((await handler(request({ origin: config.allowedOrigin, "x-vercel-forwarded-for": "203.0.113.1" }))).status).toBe(503);
   expect(fetchBackend).not.toHaveBeenCalled();
+});
+
+describe("esiti certi non fermano la Preview", () => {
+  const memoryState = (fail?: (call: number) => boolean) => {
+    const docs = new Map<string, unknown>([["control", { enabled: true, indexSha256: snapshotHash(new Map()) }]]);
+    let calls = 0;
+    const adapter = { transact: async <T,>(keys: string[], fn: (input: Map<string, unknown | null>) => { writes: Record<string, unknown>; value: T }): Promise<T> => {
+      calls++;
+      if (fail?.(calls)) throw new StateUnavailable();
+      const result = fn(new Map(keys.map((key) => [key, docs.get(key) ?? null])));
+      for (const [key, value] of Object.entries(result.writes)) docs.set(key, value);
+      return result.value;
+    } };
+    return { docs, adapter: adapter as unknown as FirestoreStateStore };
+  };
+  const headers = { origin: config.allowedOrigin, "x-vercel-forwarded-for": "203.0.113.1" };
+
+  it("il client che chiude la scheda non interrompe Vertex e non lascia halt", async () => {
+    const { docs, adapter } = memoryState();
+    const client = new AbortController();
+    const fetchBackend = vi.fn(async (_url: unknown, init?: RequestInit) => {
+      client.abort();
+      expect(init?.signal?.aborted).toBe(false);
+      return new Response("{}", { status: 200 });
+    });
+    const handler = createAgentHandler({ config, getToken: async () => "token", state: () => adapter, index: async () => new Map(), fetch: fetchBackend as typeof fetch });
+    await handler(new Request("https://preview.example.vercel.app/api/agent", { method: "POST", headers: { "content-type": "application/json", ...headers }, body, signal: client.signal }));
+    expect(fetchBackend).toHaveBeenCalledTimes(3);
+    expect(docs.get("global")).not.toMatchObject({ halted: true });
+  });
+
+  it("un'autorizzazione non scritta non lascia halt", async () => {
+    const { docs, adapter } = memoryState((call) => call === 2);
+    const fetchBackend = vi.fn();
+    const handler = createAgentHandler({ config, getToken: async () => "token", state: () => adapter, index: async () => new Map(), fetch: fetchBackend as typeof fetch });
+    expect((await handler(request(headers))).status).toBe(503);
+    expect(fetchBackend).not.toHaveBeenCalled();
+    expect(docs.get("global")).not.toMatchObject({ halted: true });
+  });
 });
