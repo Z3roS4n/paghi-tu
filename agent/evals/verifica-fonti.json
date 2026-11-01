@@ -1,5 +1,5 @@
 {
-  "domandeSha256": "966204185176a97d16506c2a27d5ed20c13f40bdd664d2783c0eb24699a3d057",
+  "domandeSha256": "d4ba53af31698f87eedc7056f50349a54cf2446a8023684e0a4fcd8e66253d94",
   "verificatoIl": "2026-11-01",
   "fonti": [
     {
@@ -352,7 +352,7 @@
       "http": 200,
       "urlLetto": "https://demo.istat.it/app/?a=2026&i=POS&l=it",
       "tipo": "html",
-      "caratteri": 19559
+      "caratteri": 19558
     },
     {
       "url": "https://documenti.camera.it/apps/nuovosito/attigoverno/Schedalavori/getTesto.ashx?file=0333_F001.pdf&leg=XVIII",
@@ -482,20 +482,19 @@
     },
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_164_DF_DCIS_RICPOPRES2011_1,1.0/A.IT....?startPeriod=2002&endPeriod=2018",
-      "esito": "ko",
+      "esito": "ok",
       "via": "diretto",
-      "http": 0,
+      "http": 200,
       "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_164_DF_DCIS_RICPOPRES2011_1,1.0/A.IT....?startPeriod=2002&endPeriod=2018",
-      "tipo": "binario",
-      "caratteri": 0,
-      "errore": "Error: Command failed: curl --silent --show-error --location --connect-timeout 30 --max-time 90 --user-agent PaghiTu-verifica/1.0 (+https://www.paghitu.it/metodo) --output C:\\Users\\thepr\\AppData\\Local\\Temp\\paghi-tu-verifica-zylQ9j\\3d60e7f6f700f2c8f3a7fbff99de0880aac91376db1b8f32c7c260b52cdc22ff.body --write-out %{http_code}\n%{url_effective}\n%{content_type} https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_164_DF_DCIS_RICPOPRES2011_1,1.0/A.IT....?startPeriod=2002&endPeriod=2018\ncurl: (28) Operation timed out after 90007 milliseconds with 6143 bytes received\r\n"
+      "tipo": "html",
+      "caratteri": 78116
     },
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_279_DF_DCIS_RICPOPRES1991_1,1.0/A.IT...?startPeriod=1982&endPeriod=1991",
       "esito": "ok",
       "via": "diretto",
       "http": 200,
-      "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_279_DF_DCIS_RICPOPRES1991_1,1.0/A.IT...?startPeriod=1982&endPeriod=1991\r",
+      "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_279_DF_DCIS_RICPOPRES1991_1,1.0/A.IT...?startPeriod=1982&endPeriod=1991",
       "tipo": "html",
       "caratteri": 15080
     },
@@ -529,12 +528,11 @@
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,22_289_DF_DCIS_POPRES1_1,1.0/A.IT....?startPeriod=2019&endPeriod=2026",
       "esito": "ok",
-      "via": "archivio",
-      "http": 0,
-      "urlLetto": "data/raw/agent-sources/istat-popres-20261031.txt.gz",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,22_289_DF_DCIS_POPRES1_1,1.0/A.IT....?startPeriod=2019&endPeriod=2026",
       "tipo": "html",
-      "caratteri": 60,
-      "errore": "Fonte diretta non leggibile; copia verificata il 2026-10-31, sha256 2baa4d3d35a53a0bc8246026f3df86e7f10784f072e2df79c922df09c988d03e"
+      "caratteri": 83618
     },
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,92_506_DF_DCCN_PILN_1,1.0/A.IT.B1GQ_B_W2_S1..../ALL/",
@@ -588,7 +586,7 @@
       "http": 200,
       "urlLetto": "https://www.lapresse.it/politica/2026/10/25/lega-oggi-al-congresso-gli-interventi-di-salvini-e-garavaglia-poi-il-voto-sulla-segreteria-del-partito-la-diretta/",
       "tipo": "html",
-      "caratteri": 90482
+      "caratteri": 90435
     },
     {
       "url": "https://legaonline.it/la-settimana-leghista-38/",
@@ -624,7 +622,7 @@
       "http": 200,
       "urlLetto": "https://www.noimoderati.it/news-e-media/12",
       "tipo": "html",
-      "caratteri": 6653
+      "caratteri": 6652
     },
     {
       "url": "https://noimoderati.it/news-e-media/42",
@@ -714,7 +712,7 @@
       "http": 200,
       "urlLetto": "https://www.agenziagiornalisticaopinione.it/opinionews-tn-aa/scalfi-ora-segreteria-nazionale-delega-alla-scuola-docenti-trento-protesta-e-bolzano-aumenta-pagare-il-lavoro-in-piu-e-misurare-che-cosa-compra/",
       "tipo": "html",
-      "caratteri": 21706
+      "caratteri": 21682
     },
     {
       "url": "https://www.agi.it/vista-tv/video/2026-09-21/schlein-faremo-un-grande-piano-casa-come-ai-tempi-di-fanfani-39164621/",
@@ -732,7 +730,7 @@
       "http": 200,
       "urlLetto": "https://www.alanews.it/2026/10/23/politica/bonus-ai-genitori-proposta-salvini/",
       "tipo": "html",
-      "caratteri": 15128
+      "caratteri": 15148
     },
     {
       "url": "https://www.ansa.it/sito/notizie/politica/2026/10/29/ansa-box-vannacci-lancia-un-segnale-a-meloni-vuol-far-vincere-la-sinistra_4e83c538-b12b-48ba-994f-6a3b659ad59c.html",
@@ -741,7 +739,7 @@
       "http": 200,
       "urlLetto": "https://www.ansa.it/sito/notizie/politica/2026/10/29/ansa-box-vannacci-lancia-un-segnale-a-meloni-vuol-far-vincere-la-sinistra_4e83c538-b12b-48ba-994f-6a3b659ad59c.html",
       "tipo": "html",
-      "caratteri": 55111
+      "caratteri": 55106
     },
     {
       "url": "https://www.azione.it/le-nostre-proposte-immigrazione/",
@@ -948,7 +946,7 @@
       "http": 200,
       "urlLetto": "https://www.ilgiornale.it/news/interni/fdi-reato-di-associazione-a-delinquere-per-chi-devasta-e-aggredisce-le-forze-dellordine/",
       "tipo": "html",
-      "caratteri": 8733
+      "caratteri": 8718
     },
     {
       "url": "https://www.ilmessaggero.it/politica/onorato_proposte_mutui_case_popolari_sport-9848214.html",
@@ -957,7 +955,7 @@
       "http": 200,
       "urlLetto": "https://www.ilmessaggero.it/politica/onorato_proposte_mutui_case_popolari_sport-9848214.html",
       "tipo": "html",
-      "caratteri": 27079
+      "caratteri": 27119
     },
     {
       "url": "https://www.ilmessaggero.it/politica/schlein_programma_governo_energia_sanita_lavoro_sicurezza_giorgia_meloni-9694413.html",
@@ -966,7 +964,7 @@
       "http": 200,
       "urlLetto": "https://www.ilmessaggero.it/politica/schlein_programma_governo_energia_sanita_lavoro_sicurezza_giorgia_meloni-9694413.html",
       "tipo": "html",
-      "caratteri": 46914
+      "caratteri": 46913
     },
     {
       "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/comunicati-stampa/2025/04/Allegati/3732_Cs_Osservatorio-Assegno-Unico-Universale.pdf",
@@ -1011,7 +1009,7 @@
       "http": 200,
       "urlLetto": "https://www.istat.it/comunicato-stampa/conti-economici-nazionali-anni-2010-2025/",
       "tipo": "html",
-      "caratteri": 18563
+      "caratteri": 18562
     },
     {
       "url": "https://www.istat.it/notizia/bilancio-demografico-mensile-gennaio-dicembre-2025/",
@@ -1020,7 +1018,7 @@
       "http": 200,
       "urlLetto": "https://www.istat.it/notizia/bilancio-demografico-mensile-gennaio-dicembre-2025/",
       "tipo": "html",
-      "caratteri": 16441
+      "caratteri": 16439
     },
     {
       "url": "https://www.istat.it/wp-content/uploads/2026/07/Nota-informativa30luglio2026.pdf",
