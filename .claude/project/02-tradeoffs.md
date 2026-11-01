@@ -512,3 +512,12 @@ Mandato di Giovanni: proseguire fino all’agente pronto su Vertex. D-038/039/04
 - **Scelta:** `V2_CASES_PER_PARTY = 2` in `golden-set.ts`, contando anche la prima dichiarazione del partito se è V2. Restano la prima dichiarazione interrogabile di ogni partito, in ordine di sigla, e le tre con un costo dichiarato. Il tetto riguarda solo le promesse: governi, leggi e misure non hanno partiti.
 - **Conseguenze:** le domande sulle promesse passano da 60 a 44 e il set da 157 a 142 casi. Centrodestra 12 casi su 84 record (14 %), centrosinistra 18 su 200 (9 %), polo di centro 4 su 68 (6 %), altri 10 su 84 (12 %); nessun partito supera 3 casi. Ogni partito con promesse pubblicate ha ancora almeno un caso (test). La differenza che resta dipende dal numero di partiti per coalizione, non dalle loro dichiarazioni V2.
 - **Data:** 2026-11-01
+
+### D-043 — Preview protetta, identità federata e stato transazionale
+
+- **Già:** D-042 nella PR #7; rinumerata il 2026-11-01 per non collidere con D-042 di main.
+- **Data:** 2026-10-31. **Stato:** implementata e verificata localmente da Codex su mandato Giovanni; attivazione e verifica live pendenti Antonio.
+- **Scelta:** limitare il test all'ambiente Preview protetto nativamente da Vercel; produzione sempre disabilitata. Identità federata con owner/project/environment pin, Firestore Native separato `paghi-tu-preview`, IAM condizionato sul database, contesto effimero e limiti persistenti. Nessun seat aggiuntivo per Giovanni: Antonio esegue deploy e wiring con i propri accessi.
+- **Motivo:** consentire un test reale conservando sito pubblico statico e controllo dei tentativi anche fra istanze. Nessun limite monetario garantito: i contatori limitano richieste/tentativi; l'alert di budget non è un hard cap.
+- **Limiti:** lease e timeout non provano la fine del lavoro remoto. Commit o chiamata incerti lasciano il sistema fermo; recupero manuale con control spento, owner/lease verificati e contatori preservati. TTL deve risultare ACTIVE prima di proseguire; cancellazione fisica successiva, backup/PITR disabilitati. Privacy da approvare dal titolare prima dell'accensione.
+- **Consegna:** UI funzionale per test Preview; design finale affidato ad Antonio. Setup, stress e rollback nel [runbook](reports/2026-10-31-preview-wiring.md). Replay locale e unit test non certificano WIF, IAM, protezione Vercel o concorrenza Firestore live.

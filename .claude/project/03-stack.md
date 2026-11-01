@@ -50,3 +50,9 @@ Solo `scripts/notify.ts` richiede `RESEND_API_KEY`, `PAGHITU_NOTIFY_TO` e `PAGHI
 
 ## Servizi esterni
 Registro e contratti in [integrazioni](../integrations/README.md): Vercel, Resend, Eurostat, Banca d’Italia, Internet Archive. Download solo dagli script; rendering delle pagine da JSON locali. CI esegue lint, typecheck, test e build senza credenziali dei servizi e senza aggiornare i dati.
+
+## Stack Preview assistente — 31 ottobre 2026
+
+Server Node/Next esistente, `@vercel/oidc` 4.0.5 e `google-auth-library` 11.3.2; override mirato `@vercel/cli-config` → `zod` 4.6.6 per evitare la dipendenza vulnerabile transitiva. Firestore REST senza SDK client. Runtime e CLI non richiedono loader TypeScript personalizzato; i CLI server usano `node --conditions=react-server`.
+
+Contratto env server e procedura completa: [runbook](reports/2026-10-31-preview-wiring.md). Nessun `NEXT_PUBLIC_`, chiave SA JSON o fallback ADC. `AGENT_ENABLED=1` richiede anche `VERCEL_ENV=preview`; la pagina richiede gli stessi flag al build, la route li ricontrolla a runtime. Le env restano esclusivamente Preview. Nessun provisioning cloud eseguito in questa consegna.
