@@ -71,6 +71,8 @@ Il set l'ha costruito Claude dai dati. In via ordinaria, prima della prima eval 
 
 **Correzioni del 2026-11-01:** applicate quelle del generatore e dei casi manuali, aggiunto lo speculare MAN-PAR-12 e messo il tetto di due casi V2 per partito (D-042). Il set scende a 142 casi: 134 `ok` e 8 `da_correggere`. Gli 8 restano aperti perché il difetto è nel dato o nella sua nota (leggi di bilancio 1969, 1978, 1988 e 1996, promesse C27-LEGA-001 e C27-SVP-003, note di Quota 100 e dell'ICI) e passa dalla verifica a tre livelli. Dettaglio in `.claude/project/reports/2026-11-01-correzioni-golden-set.md`.
 
+**Correzioni dei dati del 2026-11-01:** gli 8 casi sono stati corretti nel dato, con la verifica a tre livelli (COR-0010…0016). C27-SVP-003 esce dal catalogo e il set scende a 141 casi. Le correzioni del 1969 e del 1978 cambiano la scelta delle leggi di bilancio (D-045): escono sei casi, fra cui i quattro corretti, ed entrano sei casi nuovi, rivisti sulle fonti: 5 `ok`, 1 `da_correggere` (LB-1969-bilancio-di-previsione, token NV rimasto nella nota). Il set è a 140 `ok` e 1 `da_correggere`. Dettaglio in `.claude/project/reports/2026-11-01-correzioni-dati-tre-livelli.md`.
+
 ## Soglie
 
 Soglie al 100 % confermate da Antonio il 2026-10-28. Giovanni (co-maintainer) conferma il 2026-10-31 che sono un obiettivo post-merge, non una condizione di merge.

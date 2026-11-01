@@ -380,10 +380,10 @@
   {
     "id": "C27-LEGA-001",
     "partitoId": "LEGA",
-    "dichiarante": "Matteo Salvini",
-    "ruoloDichiarante": "segretario federale Lega, senatore; vicepresidente del Consiglio e ministro delle Infrastrutture e dei Trasporti",
+    "dichiarante": "Lega",
+    "ruoloDichiarante": "partito – newsletter ufficiale",
     "data": "2026-09-27",
-    "testoLetterale": "«Non vedo perché un lavoratore italiano debba essere condannato ad aspettare i 67 anni». L’obiettivo è dare la possibilità di uscire volontariamente a 64 anni anche a chi ha iniziato a versare contributi prima del 1996.",
+    "testoLetterale": "L’obiettivo è dare la possibilità di uscire volontariamente a 64 anni anche a chi ha iniziato a versare contributi prima del 1996. […] La misura potrebbe interessare circa 80mila persone, con una sperimentazione triennale e un investimento stimato in circa 1,6 miliardi all’anno.",
     "parafrasiNeutra": "Pensione anticipata volontaria a 64 anni estesa a chi ha contributi prima del 1996 (sistema misto), con sperimentazione triennale.",
     "tipoFonte": "sito_ufficiale",
     "orizzonte": "legislatura_in_corso",
@@ -396,10 +396,10 @@
     "misurabile": "si",
     "costoDichiarato": "circa 1,6 miliardi di euro l'anno (indicato nella newsletter); platea circa 80.000 persone",
     "stimaTerzi": null,
-    "note": "Intervista a La Verità riportata nella newsletter ufficiale 'La Settimana Leghista #38'. Il 13/9/2026 (#37) la stessa proposta è attribuita al sottosegretario Claudio Durigon. Secondo Money.it l'uscita sarebbe subordinata al ricalcolo contributivo; requisiti (es. 25 anni di contributi) in discussione. Proposta riferita alla legge di bilancio 2027 (XIX legislatura, ultimo bilancio prima delle politiche); se recepita in un atto del governo diventa attuazione, da tracciare separatamente. (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su dati.senato.it (open data ufficiale del Senato; senato.it risponde 403/202 ai client automatici) il 2026-10-21.",
+    "note": "Intervista a La Verità riportata nella newsletter ufficiale 'La Settimana Leghista #38'. Il 13/9/2026 (#37) la stessa proposta è attribuita al sottosegretario Claudio Durigon. Secondo Money.it l'uscita sarebbe subordinata al ricalcolo contributivo; requisiti (es. 25 anni di contributi) in discussione. Proposta riferita alla legge di bilancio 2027 (XIX legislatura, ultimo bilancio prima delle politiche); se recepita in un atto del governo diventa attuazione, da tracciare separatamente. (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su dati.senato.it (open data ufficiale del Senato; senato.it risponde 403/202 ai client automatici) il 2026-10-21. (correzione 2026-11-01) Dichiarante: nella newsletter #38 sono fra virgolette e attribuite a Matteo Salvini solo «Non vedo perché un lavoratore italiano debba essere condannato ad aspettare i 67 anni» e «Non significa obbligare nessuno ad andare in pensione: significa lasciare al lavoratore la libertà di scegliere», che da sole non indicano l'età di uscita proposta, la platea né il costo (criterio slogan, come C27-FDI-009). Età, platea, sperimentazione e costo sono scritti dalla newsletter, fuori dalle virgolette, nel paragrafo che riferisce l'intervista di Salvini a La Verità: la citazione è quindi testo del canale ufficiale della Lega e la riga è attribuita al partito, come C27-LEGA-006. L'intervista originale è a pagamento e, come per C27-NM-021 e C27-IV-027, non è usata come fonte. La nota del 2026-10-20 che chiamava quella frase «testo redazionale» va letta così: è testo della newsletter che riferisce l'intervista, non una proposta diversa da quella di Salvini. Il taglio «[…]» toglie la seconda frase di Salvini; nessun gruppo di persone tolto. Nella #37 (13/09) la newsletter chiama la misura «la proposta della Lega», illustrata da Claudio Durigon; la #38 aggiunge il costo. Verifica a tre livelli del 2026-11-01: ricerca, verifica indipendente, tentativo di smentita.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V1✓ verificatore 2026-10-20 — CORRETTA: ruolo: aggiunta la carica di governo (la stessa newsletter lo chiama «vicepremier» e «ministro»), per simmetria con Meloni e Tajani; solo la prima frase del testo_letterale è di Salvini, la seconda («L’obiettivo è…») è testo redazionale della newsletter. Costo «circa 1,6 miliardi all’anno» e platea «circa 80mila» verificati nella newsletter #38 | PERIMETRO: orizzonte/veicolo (vedi colonne) [orizzonte: legge di bilancio 2027]"
+      "dettaglio": "V1✓ verifica 2026-11-01 — CORRETTA: dichiarante da Matteo Salvini a Lega (partito – newsletter ufficiale); testo_letterale ristretto al testo della newsletter #38, ritrovato parola per parola in ordine; costo e platea restano cifra del proponente (canale ufficiale del partito, D-021) || esito precedente: V1✓ verificatore 2026-10-20 — CORRETTA: ruolo: aggiunta la carica di governo (la stessa newsletter lo chiama «vicepremier» e «ministro»), per simmetria con Meloni e Tajani; solo la prima frase del testo_letterale è di Salvini, la seconda («L’obiettivo è…») è testo redazionale della newsletter. Costo «circa 1,6 miliardi all’anno» e platea «circa 80mila» verificati nella newsletter #38 | PERIMETRO: orizzonte/veicolo (vedi colonne) [orizzonte: legge di bilancio 2027]"
     },
     "effettoConti": "si",
     "ribadita": []
@@ -9451,33 +9451,6 @@
     "verifica": {
       "livello": "V2",
       "dettaglio": "V2✓ verificatore 2026-10-24 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: altro, richiesta al Governo in carica]"
-    },
-    "effettoConti": "no",
-    "ribadita": []
-  },
-  {
-    "id": "C27-SVP-003",
-    "partitoId": "SVP",
-    "dichiarante": "Boldrini, Della Vedova, Zanella, Francesco Silvestri, Amendola, Giachetti, Fratoianni, Provenzano, Magi, Porta, Scotto, Ferrari, Bakkali, Berruto, Ghio, Schullian, Zaratti, Bonelli, Borrelli, Dori, Ghirra, Grimaldi, Mari, Piccolotti, Ascari, Carotenuto (firmatari)",
-    "ruoloDichiarante": "tra i firmatari Manfred Schullian (SVP, eletto nella lista SVP-PATT), presidente del gruppo Misto alla Camera dal 18/10/2022 (scheda camera.it), componente Misto-Minoranze linguistiche",
-    "data": "2026-10-23",
-    "testoLetterale": "a promuovere iniziative normative volte al completamento dell'adeguamento dell'ordinamento italiano in materia di crimini internazionali […] favorendo, per quanto di competenza, l'iter delle iniziative legislative presentate per l'adozione di un Codice dei crimini internazionali",
-    "parafrasiNeutra": "Completare l'adeguamento dell'ordinamento italiano sui crimini internazionali con l'adozione di un Codice dei crimini internazionali.",
-    "tipoFonte": "atto_parlamentare",
-    "orizzonte": "legislatura_in_corso",
-    "veicolo": "risoluzione_mozione",
-    "fonte": {
-      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0732/allegato_b.htm"
-    },
-    "archivioUrl": null,
-    "cofog": "03",
-    "misurabile": "si",
-    "costoDichiarato": null,
-    "stimaTerzi": null,
-    "note": "Mozione 1-00599 (Boldrini e altri), testo «ulteriormente riformulato» pubblicato nell'Allegato B alla seduta n. 732 del 23/10/2026. Nella versione precedente (Allegato B alla seduta n. 725 del 12/10/2026) i firmatari erano solo deputati PD: Zanella, Fratoianni, Bonelli, Magi, Della Vedova, Schullian e gli altri si aggiungono il 23/10, quindi per questi partiti la prima pubblicazione è nel periodo. Mozione con firmatari di più gruppi (non è la risoluzione unitaria CSX: mancano i capigruppo PD, M5S e IV). Punto 4). Caso limite sul dichiarante: Schullian è indicato per il Misto-Minoranze linguistiche nella Conferenza dei presidenti di gruppo (camera.it, letta il 24/10); se non vale come capogruppo SVP, la riga esce. Orizzonte/veicolo: legislatura_in_corso e risoluzione_mozione. Pre-valutazione slogan: OK. (verifica L2 2026-10-24) Punto 4) ritrovato parola per parola nell'Allegato B, seduta 732; confronto con le versioni del 24/07 e del 12/10 come C27-PD-031. Caso limite per il titolare: Schullian è capogruppo del Misto, gruppo che comprende anche altre formazioni; la riga è attribuita alla SVP perché Schullian è deputato SVP.",
-    "verifica": {
-      "livello": "V1",
-      "dettaglio": "V1✓ verificatore 2026-10-24 — CORRETTA: ruolo (Schullian presidente del gruppo Misto alla Camera, scheda camera.it: capogruppo di un gruppo, quindi non rientra nella regola sui rappresentanti di componente); punto 4 nuovo nel testo del 23/10 | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: mozione]"
     },
     "effettoConti": "no",
     "ribadita": []

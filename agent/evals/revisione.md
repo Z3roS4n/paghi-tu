@@ -2,7 +2,7 @@
 
 File generato da `npm run evals:build`: non si modifica a mano. Per segnare un caso si scrive in `agent/evals/revisione.json` (`"<id>": "ok" | "da_correggere" | "da_togliere"`) e si rigenera.
 
-Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
+Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 141.
 
 | Categoria | Casi |
 | --- | --- |
@@ -12,7 +12,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 | misure | 18 |
 | finanza_pubblica | 16 |
 | serie | 3 |
-| promesse | 44 |
+| promesse | 43 |
 | correzioni | 3 |
 | par_condicio | 12 |
 | fuori_scope | 9 |
@@ -325,25 +325,25 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 **Revisione:** ok
 
-### LB-1988-legge-finanziaria
+### LB-1987-legge-finanziaria
 
-**Domanda:** Quale governo ha presentato la legge finanziaria per l'esercizio 1988, e con quale atto?
+**Domanda:** Quale governo ha presentato la legge finanziaria per l'esercizio 1987, e con quale atto?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
 
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
-| governoProponenteTesto | Goria |  |
-| estremi | L. n. 67 del 11/03/1988 |  |
+| governoProponenteTesto | Craxi II |  |
+| estremi | L. n. 910 del 22/12/1986 |  |
 
-**Citazione:** `leggi-bilancio` / `1988-legge-finanziaria` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1988-03-11;67 · http://dati.camera.it/ocd/attocamera.rdf/ac10_2043
+**Citazione:** `leggi-bilancio` / `1987-legge-finanziaria` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1986-12-22;910 · http://dati.camera.it/ocd/attocamera.rdf/ac09_4016
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
-### LB-1996-legge-finanziaria
+### LB-1996-bilancio-di-previsione
 
-**Domanda:** Quale governo ha presentato la legge finanziaria per l'esercizio 1996, e con quale atto?
+**Domanda:** Quale governo ha presentato il bilancio di previsione per l'esercizio 1996, e con quale atto?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -351,15 +351,15 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
 | governoProponenteTesto | Dini |  |
-| estremi | L. n. 550 del 28/12/1995 |  |
+| estremi | L. n. 551 del 28/12/1995 |  |
 
-**Citazione:** `leggi-bilancio` / `1996-legge-finanziaria` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1995-12-28;550 · http://dati.camera.it/ocd/attocamera.rdf/ac12_3448
+**Citazione:** `leggi-bilancio` / `1996-bilancio-di-previsione` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1995-12-28;551
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
-### LB-2005-legge-finanziaria
+### LB-2005-bilancio-di-previsione
 
-**Domanda:** Quale governo ha presentato la legge finanziaria per l'esercizio 2005, e con quale atto?
+**Domanda:** Quale governo ha presentato il bilancio di previsione per l'esercizio 2005, e con quale atto?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -367,9 +367,9 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
 | governoProponenteTesto | Berlusconi II |  |
-| estremi | L. n. 311 del 30/12/2004 |  |
+| estremi | L. n. 312 del 30/12/2004 |  |
 
-**Citazione:** `leggi-bilancio` / `2005-legge-finanziaria` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2004-12-30;311 · http://dati.camera.it/ocd/attocamera.rdf/ac14_5310
+**Citazione:** `leggi-bilancio` / `2005-bilancio-di-previsione` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2004-12-30;312
 
 **Revisione:** ok
 
@@ -445,25 +445,25 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 **Revisione:** ok
 
-### LB-1978-esercizio-provvisorio
+### LB-1966-esercizio-provvisorio
 
-**Domanda:** Quale governo ha presentato l'esercizio provvisorio per l'esercizio 1978, e con quale atto?
+**Domanda:** Quale governo ha presentato l'esercizio provvisorio per l'esercizio 1966, e con quale atto?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
 
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
-| governoProponenteTesto | Andreotti III (INF) |  |
-| estremi | L. n. 934 del 23/12/1977; proroga al 30/04/1978 (atto S.1136/C.2077) |  |
+| governoProponenteTesto | Moro II (INF) |  |
+| estremi | L. n. 1389 del 20/12/1965; proroga al 30/04/1966 con L. n. 63 del 18/02/1966 |  |
 
-**Citazione:** `leggi-bilancio` / `1978-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac07_1940 · http://dati.camera.it/ocd/attocamera.rdf/ac07_2077
+**Citazione:** `leggi-bilancio` / `1966-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac04_2838 · http://dati.camera.it/ocd/attocamera.rdf/ac04_2970
 
 **Regole:** `dichiara_attribuzione_non_documentata`
 
 **Nota:** Attribuzione inferita: il governo non va dato come certo.
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### LB-1982-esercizio-provvisorio
 
@@ -504,36 +504,40 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 **Revisione:** ok
 
-### LB-1958-59-bilancio-di-previsione
+### LB-1958-59-esercizio-provvisorio
 
-**Domanda:** Quale governo ha presentato il bilancio di previsione per l'esercizio 1958-59, e con quale atto?
-
-**Esito atteso:** dato_non_verificato
-**Livello del dato:** NV
-
-**Citazione:** `leggi-bilancio` / `1958-59-bilancio-di-previsione` — https://dati.camera.it/sparql
-
-**Regole:** `dichiara_non_verificato`, `dichiara_attribuzione_non_documentata`
-
-**Nota:** Attribuzione incerta: il governo non va dato come certo.
-
-**Revisione:** ok
-
-### LB-1969-esercizio-provvisorio
-
-**Domanda:** Quale governo ha presentato l'esercizio provvisorio per l'esercizio 1969, e con quale atto?
+**Domanda:** Quale governo ha presentato l'esercizio provvisorio per l'esercizio 1958-59, e con quale atto?
 
 **Esito atteso:** dato_non_verificato
 **Livello del dato:** NV
 
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
-| governoProponenteTesto | Rumor I |  |
-| estremi | L. n. 1273 del 24/12/1968 (atto S.370/C.781) |  |
+| governoProponenteTesto | Zoli |  |
 
-**Citazione:** `leggi-bilancio` / `1969-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac05_781 · https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1968-12-24;1273 · https://bdp.camera.it/init/iter
+**Citazione:** `leggi-bilancio` / `1958-59-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac03_1
 
 **Regole:** `dichiara_non_verificato`
+
+**Revisione:** ok
+
+### LB-1969-bilancio-di-previsione
+
+**Domanda:** Quale governo ha presentato il bilancio di previsione per l'esercizio 1969, e con quale atto?
+
+**Esito atteso:** dato_non_verificato
+**Livello del dato:** NV
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| governoProponenteTesto | Leone II (INF) |  |
+| estremi | L. n. 21 del 28/02/1969 (legge unica di bilancio) |  |
+
+**Citazione:** `leggi-bilancio` / `1969-bilancio-di-previsione` — http://dati.camera.it/ocd/attocamera.rdf/ac05_311 · https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1969-02-28;21
+
+**Regole:** `dichiara_non_verificato`, `dichiara_attribuzione_non_documentata`
+
+**Nota:** Attribuzione inferita: il governo non va dato come certo.
 
 **Revisione:** da_correggere
 
@@ -583,9 +587,9 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 **⚠ Fonte con riuso «con_permesso»** in `data/fonti.json`: il record entra nell'indice come sul sito (valori di Paghi Tu, link alla fonte, nessun testo copiato), D-026.
 
-**Nota:** UPB NdL 1/2022 Tab. 20 p. 47 (PDF). Il consuntivo contiene una PROIEZIONE (domande giacenti incluse). Differenza -10.272 mln; -5.772 mln rispetto alla RT corretta (28.969).
+**Nota:** UPB NdL 1/2022 Tab. 20 p. 47 (PDF). Il consuntivo contiene una PROIEZIONE (domande giacenti incluse). Differenza -10.271 mln rispetto alla RT del DL 4/2019 (33.469) e -5.771 mln (-19,9%, INFERENZA) rispetto alla RT corretta con NADEF 2019 e LB 2020 (28.969): differenze tra i totali, calcolo nostro. La tabella UPB riporta 10.272 e 5.772, pari alla somma delle differenze annue arrotondate al milione (per il 2023 indica 1.372, mentre 5.034 - 3.663 = 1.371).
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### MIS-reddito_di_cittadinanza-1
 
@@ -845,9 +849,9 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 **Regole:** `unita_di_misura`, `scostamento_calcolato_da_paghi_tu`
 
-**Nota:** Min. Interno, audizione 22/4/2010, pp. 1-4. Previsto 2.604 = 904 (L. 244/2007, finanziaria 2008, governo Prodi II, per l'aumento della detrazione) + 1.700 (DL 93/2008, Berlusconi IV). Stanziamento 2008 portato a 2.864 mln (DL 154/2008) e a 3.020 mln (L. 191/2009); 3.364 mln annui dal 2009. Il totale certificato ricalcolato a p. 4 è 3.364.556.281,09. +29,2% (INFERENZA).
+**Nota:** Min. Interno, audizione 22/4/2010, pp. 1-4. Previsto 2.604 = 904 (L. 244/2007, finanziaria 2008, governo Prodi II, per l'aumento della detrazione) + 1.700 (DL 93/2008, Berlusconi IV). Stanziamento 2008 portato a 2.864 mln (DL 154/2008) e a 3.020 mln (L. 191/2009); 3.364 mln annui dal 2009. Consuntivo = «ICI attestata 2008 come da D.M. 1° aprile 2009» (p. 3: 3.364.846.992,77, arrotondato all'euro). Nella tabella dopo la L. 191/2009 (p. 4) il «Totale complessivo certificato» del 2008, su cui è calcolata la percentuale di riparto (89,75924%), è 3.364.556.281,09 (290.711,68 euro in meno); la fonte non spiega la differenza. Con quel totale lo scostamento sarebbe +760,6 mln invece di +760,8 mln; +29,2% in entrambi i casi (calcolo nostro, INFERENZA).
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### MIS-salvaguardie_esodati_chiuse-1
 
@@ -1466,16 +1470,16 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 ### PRO-C27-LEGA-001
 
-**Domanda:** Che cosa ha dichiarato Matteo Salvini (Lega) il 27 settembre 2026 a proposito di protezione sociale? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha scritto Lega il 27 settembre 2026 a proposito di protezione sociale? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
 
-**Parole esatte attese:** ««Non vedo perché un lavoratore italiano debba essere condannato ad aspettare i 67 anni». L’obiettivo è dare la possibilità di uscire volontariamente a 64 anni anche a chi ha iniziato a versare contributi prima del 1996.»
+**Parole esatte attese:** «L’obiettivo è dare la possibilità di uscire volontariamente a 64 anni anche a chi ha iniziato a versare contributi prima del 1996. […] La misura potrebbe interessare circa 80mila persone, con una sperimentazione triennale e un investimento stimato in circa 1,6 miliardi all’anno.»
 
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
-| dichiarante | Matteo Salvini |  |
+| dichiarante | Lega |  |
 | data | 2026-09-27 |  |
 | costoDichiarato | circa 1,6 miliardi di euro l'anno (indicato nella newsletter); platea circa 80.000 persone |  |
 
@@ -1487,7 +1491,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 **Nota:** Il costo è quello dichiarato dal proponente, non una stima di Paghi Tu.
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### PRO-C27-M5S-018
 
@@ -1736,28 +1740,6 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 **Regole:** `verbatim`, `dichiara_livello_V2`
 
 **Revisione:** ok
-
-### PRO-C27-SVP-003
-
-**Domanda:** Che cosa ha scritto Südtiroler Volkspartei (SVP) il 23 ottobre 2026? Voglio le parole esatte e la fonte.
-
-**Esito atteso:** risposta
-**Livello del dato:** V1
-
-**Parole esatte attese:** «a promuovere iniziative normative volte al completamento dell'adeguamento dell'ordinamento italiano in materia di crimini internazionali […] favorendo, per quanto di competenza, l'iter delle iniziative legislative presentate per l'adozione di un Codice dei crimini internazionali»
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| dichiarante | Boldrini, Della Vedova, Zanella, Francesco Silvestri, Amendola, Giachetti, Fratoianni, Provenzano, Magi, Porta, Scotto, Ferrari, Bakkali, Berruto, Ghio, Schullian, Zaratti, Bonelli, Borrelli, Dori, Ghirra, Grimaldi, Mari, Piccolotti, Ascari, Carotenuto (firmatari) |  |
-| data | 2026-10-23 |  |
-
-**Da respingere:** «Completare l'adeguamento dell'ordinamento italiano sui crimini internazionali con l'adozione di un Codice dei crimini internazionali.»
-
-**Citazione:** `promesse` / `C27-SVP-003` — https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0732/allegato_b.htm
-
-**Regole:** `verbatim`
-
-**Revisione:** da_correggere
 
 ### PRO-C27-AVS-046
 
