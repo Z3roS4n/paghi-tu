@@ -1,0 +1,87 @@
+{
+  "verificatoIl": "2026-10-31",
+  "ambito": "Agente assistito dal runner su Vertex; sito pubblico non collegato",
+  "prove": {
+    "2026-10-31T13-55-50": {
+      "esito": "passa",
+      "casi": 155,
+      "passate": 3,
+      "risposte": 465,
+      "backend": {
+        "search": 285,
+        "answer": 114,
+        "locale": 66
+      },
+      "searchRichieste": 286,
+      "latenzaGoogleMedianaMs": 205,
+      "exportSha256": "d0cad38c0785b3d3c0d7223148a45a687d880b0036f8e02463a9d4633a900d2a",
+      "goldenSha256": "a9a18a3194f8081279ee584c43746bf5adac5276254d3a6e903f6c1f548a1ce8",
+      "repoCommit": "e8c820287beff25910e23b0f5539a46a8a406794",
+      "runnerSha256": "6cac197e085d16a0026a9ede3905bf8fcd6140d68a49ac68a02fc731dc8b5400"
+    },
+    "2026-10-31T14-12-12-avversariale": {
+      "esito": "passa",
+      "casi": 54,
+      "passate": 3,
+      "risposte": 162,
+      "backend": {
+        "locale": 111,
+        "search": 18,
+        "answer": 33
+      },
+      "searchRichieste": 18,
+      "latenzaGoogleMedianaMs": 2253,
+      "exportSha256": "d0cad38c0785b3d3c0d7223148a45a687d880b0036f8e02463a9d4633a900d2a",
+      "goldenSha256": "a9a18a3194f8081279ee584c43746bf5adac5276254d3a6e903f6c1f548a1ce8",
+      "repoCommit": "e8c820287beff25910e23b0f5539a46a8a406794",
+      "runnerSha256": "ebdad7cd8832b6d720232b986685cb52bb64d19686e76c54d32027637b113a4e"
+    }
+  },
+  "file": {
+    "2026-10-31-holdout-runtime.json": {
+      "sha256": "9293ebe5d9253341b514dcd0c8c082fe2cc522bce8ab031ea57ceb5eb14ae66d",
+      "bytes": 23069
+    },
+    "2026-10-31-typecheck-equivalence.json": {
+      "sha256": "23e45bc9efaee4f6df5b639d70c0e1cf2130ee1bb24382be876aebd27a328dec",
+      "bytes": 499
+    },
+    "2026-10-31T13-55-50.jsonl.gz": {
+      "sha256": "1ed95c492e8f84319d1bf812fbd17a0c386c61a23b57e2c905dc9e73655f7492",
+      "bytes": 568826
+    },
+    "2026-10-31T13-55-50.meta.json": {
+      "sha256": "75ff58e904bd6e670090c27b44ce5ff6783de3c4396a2bf281ddf3ec134d5fd7",
+      "bytes": 5348
+    },
+    "2026-10-31T13-55-50.report.json": {
+      "sha256": "56cbe9d4ce612d03dad615bdaf7953f5a14f377e586706c1767fc3b42f2f583d",
+      "bytes": 52839
+    },
+    "2026-10-31T13-55-50.runner.ts.gz": {
+      "sha256": "88075a85478a7760fb8cbb61a16185411bfc80c1edffe600364cc9ce5a0c7741",
+      "bytes": 12969
+    },
+    "2026-10-31T14-12-12-avversariale.jsonl.gz": {
+      "sha256": "2604eeafda0335376ebcc5b21429aaa8ee7e93183dc6a5abe03afa065b0d40ae",
+      "bytes": 149215
+    },
+    "2026-10-31T14-12-12-avversariale.meta.json": {
+      "sha256": "403ea5a1868ec3ccfc1a6017e4141c2c8681b6b5630ac8c2a057b8464b32d710",
+      "bytes": 2294
+    },
+    "2026-10-31T14-12-12-avversariale.report.json": {
+      "sha256": "37b0d00db4c76623035c422fff81ea0535168956d201c91835d2b5979415f48e",
+      "bytes": 5143
+    },
+    "2026-10-31T14-12-12-avversariale.runner.ts.gz": {
+      "sha256": "d48658f5c2642b19c143911537b63d2048fd17771a8e8637c5cdcba5f1726b60",
+      "bytes": 12977
+    }
+  },
+  "holdout": {
+    "esito": "passa",
+    "casi": 7,
+    "assentiDalGolden": true
+  }
+}

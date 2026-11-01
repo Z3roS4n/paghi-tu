@@ -1,0 +1,34 @@
+39,49c39,49
+< } from "/Users/giovanni/paghi-tu/agent/answer/answer.ts";
+< import { toPlainText } from "/Users/giovanni/paghi-tu/agent/answer/guardie.ts";
+< import { gateQuestion, type GateResult } from "/Users/giovanni/paghi-tu/agent/answer/input.ts";
+< import { candidateFilter, scopeBlock, structuredCandidates } from "/Users/giovanni/paghi-tu/agent/answer/retrieval.ts";
+< import { composeRecords } from "/Users/giovanni/paghi-tu/agent/answer/records.ts";
+< import { appendWarnings } from "/Users/giovanni/paghi-tu/agent/answer/avvertenze.ts";
+< import { composePromises, declarationCandidates } from "/Users/giovanni/paghi-tu/agent/answer/promesse.ts";
+< import { IndexDocument } from "/Users/giovanni/paghi-tu/agent/ingest/export.ts";
+< import { checkAdversarial, loadAdversarial, scoreAdversarial } from "/Users/giovanni/paghi-tu/agent/evals/avversariale.ts";
+< import type { GoldenCase } from "/Users/giovanni/paghi-tu/agent/evals/golden-set.ts";
+< import { checkAnswer, scoreRun, RUNS } from "/Users/giovanni/paghi-tu/agent/evals/score.ts";
+---
+> } from "file:///C:/Users/thepr/Documents/GitHub/paghi-tu-pr6/agent/answer/answer.ts";
+> import { toPlainText } from "file:///C:/Users/thepr/Documents/GitHub/paghi-tu-pr6/agent/answer/guardie.ts";
+> import { gateQuestion, type GateResult } from "file:///C:/Users/thepr/Documents/GitHub/paghi-tu-pr6/agent/answer/input.ts";
+> import { candidateFilter, scopeBlock, structuredCandidates } from "file:///C:/Users/thepr/Documents/GitHub/paghi-tu-pr6/agent/answer/retrieval.ts";
+> import { composeRecords } from "file:///C:/Users/thepr/Documents/GitHub/paghi-tu-pr6/agent/answer/records.ts";
+> import { appendWarnings } from "file:///C:/Users/thepr/Documents/GitHub/paghi-tu-pr6/agent/answer/avvertenze.ts";
+> import { composePromises, declarationCandidates } from "file:///C:/Users/thepr/Documents/GitHub/paghi-tu-pr6/agent/answer/promesse.ts";
+> import { IndexDocument } from "file:///C:/Users/thepr/Documents/GitHub/paghi-tu-pr6/agent/ingest/export.ts";
+> import { checkAdversarial, loadAdversarial, scoreAdversarial } from "file:///C:/Users/thepr/Documents/GitHub/paghi-tu-pr6/agent/evals/avversariale.ts";
+> import type { GoldenCase } from "file:///C:/Users/thepr/Documents/GitHub/paghi-tu-pr6/agent/evals/golden-set.ts";
+> import { checkAnswer, scoreRun, RUNS } from "file:///C:/Users/thepr/Documents/GitHub/paghi-tu-pr6/agent/evals/score.ts";
+51,52c51,52
+< const REPO = "/Users/giovanni/paghi-tu";
+< const OUT = "/Users/giovanni/WEBMASTER/projects/paghi-tu-agent/vertex/runs";
+---
+> const REPO = "C:/Users/thepr/Documents/GitHub/paghi-tu-pr6";
+> const OUT = "C:/Users/thepr/AppData/Local/Temp/claude/C--Users-thepr-Documents-GitHub-italy-government-expenses/3e97419a-d394-4dd9-a077-d5320122059b/scratchpad/vertex/runs";
+88c88
+<     cachedToken = { value: execFileSync("gcloud", ["auth", "print-access-token"], { encoding: "utf8" }).trim(), at: Date.now() };
+---
+>     cachedToken = { value: execFileSync("cmd.exe", ["/c", "gcloud.cmd", "auth", "print-access-token"], { encoding: "utf8" }).trim(), at: Date.now() };

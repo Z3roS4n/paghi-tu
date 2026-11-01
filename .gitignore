@@ -42,3 +42,6 @@ next-env.d.ts
 
 .vercel
 .env*
+
+# export per l'indice dell'agente (D-030): si rigenera con npm run ingest:build
+/agent/ingest/out/

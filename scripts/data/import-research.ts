@@ -218,7 +218,7 @@ async function series() {
   return Promise.all(
     Object.entries(SERIES_META).map(async ([name, meta]) => {
       const rows = await readRecords(name);
-      const urls = [...new Set(rows.map((r) => r.fonte_url))];
+      const urls = [...new Set(rows.flatMap((r) => links(r.fonte_url).map((source) => source.url)))];
       return Series.parse({
         id: name.replace(/^serie-/, ""),
         titolo: meta.titolo,

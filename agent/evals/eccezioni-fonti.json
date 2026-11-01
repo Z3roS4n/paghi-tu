@@ -1,0 +1,121 @@
+{
+  "fonti": {},
+  "citazioni": {
+    "PRO-C27-SVP-003": "Il record è fedele alla fonte: nell'HTML della Camera «iter» è in corsivo (l'<em>iter</em>) e il testo estratto diventa «l' iter», con uno spazio che la fonte non ha. Il resto della citazione si ritrova parola per parola."
+  },
+  "campi": {
+    "consuntivoAssente": "Testo di Paghi Tu che spiega perché il consuntivo manca.",
+    "scostamento": "Differenza fra consuntivo e previsto: verificata dal test «scostamenti delle misure»; i due termini si cercano nella fonte.",
+    "scostamento %": "Rapporto fra scostamento e previsto: verificato dal test «scostamenti delle misure».",
+    "estremi": "Riassunto di Paghi Tu degli estremi dell'atto (numero, data, ratifica), non una stringa della fonte.",
+    "governoProponenteTesto": "Nome del governo scritto da Paghi Tu; il collegamento atto-governo è verificato dal test di integrità dei dati.",
+    "maggioranza": "Sigle dei partiti composte da Paghi Tu dalla coalizione indicata dalla fonte."
+  },
+  "valori": {
+    "PRO-C27-AZ-026|dichiarante": "La pagina non nomina Calenda nel testo visibile: la newsletter è in prima persona, ha la parola chiave «Carlo Calenda» nei metadati e cita «il mio ultimo libro \"Difendere la libertà\"» (Calenda, Piemme 2026). Nota del record corretta in PR #2.",
+    "PRO-C27-FN-016|data": "La data 24/08/2026 sta nel nome del PDF ufficiale della B.I.P., non nel suo testo né nella pagina /programma/. Con PR #2 la fonte del record diventa il PDF (COR-0006).",
+    "PRO-C27-M5S-018|data": "La data è quella di pubblicazione del PDF, «a partire da oggi 18 settembre», nella pagina https://www.movimento5stelle.eu/nova-20-punti-una-alleanza-per-la-costituzione/ (citata nella nota del record da PR #2), non nel testo del PDF.",
+    "MAN-COR-02|Promessa C27-FI-013, tipo di fonte": "Valore del registro delle correzioni di Paghi Tu (classificazione del tipo di fonte), non della fonte esterna; il test «nel record citato» lo riscontra con COR-0002.",
+    "MAN-COR-03|Livello di verifica di 23 promesse tratte da interviste": "Regola di metodo del registro delle correzioni (D-019), non un dato di una fonte esterna; il test «nel record citato» lo riscontra con COR-0003.",
+    "PRO-C27-AVS-003|dichiarante": "La piattaforma «Decidiamo» di AVS scrive «Alleanza Verdi Sinistra», senza la «e» del nome ufficiale «Alleanza Verdi e Sinistra» usato nei dati.",
+    "SER-pil-nominale-2025|pil-nominale": "Il comunicato Istat del 22/09/2026 pubblica il PIL 2025 a prezzi correnti arrotondato al milione: 2.265.003 milioni di euro. Il valore 2.265.002,5 milioni del record proviene dalla serie IstatData, edizione 2026M9; lo scarto di 0,5 milioni è l'arrotondamento del comunicato, non una divergenza dei dati. Fonte: https://www.istat.it/comunicato-stampa/conti-economici-nazionali-anni-2010-2025/ (consultata 2026-10-31)."
+  },
+  "somme": {
+    "MIS-reddito_di_cittadinanza-1|consuntivo": {
+      "ragione": "Somma calcolata da Paghi Tu degli importi mensili erogati RdC+PdC (colonna Totale) della Tavola 1.4 del report INPS, aprile-dicembre 2019.",
+      "addendi": [
+        284300839,
+        359770876,
+        403311343,
+        416287758,
+        441181962,
+        444896970,
+        463862269,
+        500768372,
+        586290845
+      ]
+    },
+    "MAN-TRAP-01|consuntivo": {
+      "ragione": "Somma calcolata da Paghi Tu degli importi mensili erogati RdC+PdC (colonna Totale) della Tavola 1.4 del report INPS, aprile-dicembre 2019.",
+      "addendi": [
+        284300839,
+        359770876,
+        403311343,
+        416287758,
+        441181962,
+        444896970,
+        463862269,
+        500768372,
+        586290845
+      ]
+    },
+    "MIS-reddito_di_cittadinanza-2|consuntivo": {
+      "ragione": "Somma calcolata da Paghi Tu degli importi mensili erogati RdC+PdC (colonna Totale) della Tavola 1.4 del report INPS, gennaio-dicembre 2020.",
+      "addendi": [
+        533689513,
+        506287632,
+        542773741,
+        574395200,
+        605802109,
+        634553608,
+        649798569,
+        669114286,
+        680542983,
+        467570738,
+        625146586,
+        653742913
+      ]
+    },
+    "MIS-reddito_di_cittadinanza-3|consuntivo": {
+      "ragione": "Somma calcolata da Paghi Tu degli importi mensili erogati RdC+PdC (colonna Totale) della Tavola 1.4 del report INPS, gennaio-dicembre 2021.",
+      "addendi": [
+        695972581,
+        638105749,
+        699657455,
+        744535845,
+        754535243,
+        762613913,
+        767869227,
+        757188216,
+        742688893,
+        748951925,
+        753436673,
+        761911020
+      ]
+    },
+    "MIS-reddito_di_cittadinanza-4|consuntivo": {
+      "ragione": "Somma calcolata da Paghi Tu degli importi mensili erogati RdC+PdC (colonna Totale) della Tavola 1.4 del report INPS, gennaio-dicembre 2022.",
+      "addendi": [
+        747974897,
+        695075629,
+        690236374,
+        721583428,
+        586971198,
+        647351454,
+        658297208,
+        661807820,
+        650175980,
+        654063358,
+        660684354,
+        657335380
+      ]
+    },
+    "MIS-assegno_di_inclusione-1|consuntivo": {
+      "ragione": "Somma calcolata da Paghi Tu degli importi mensili ADI gennaio-dicembre 2024 della Tavola 1.2 dell'Appendice statistica INPS ADI-SFL di gennaio 2026.",
+      "addendi": [
+        320707748,
+        307093739,
+        356318917,
+        379808834,
+        394365377,
+        400196447,
+        401222560,
+        396027237,
+        391323364,
+        392620033,
+        393404884,
+        396048911
+      ]
+    }
+  }
+}

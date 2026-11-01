@@ -140,6 +140,9 @@
     "fonti": [
       {
         "url": "http://dati.camera.it/ocd/legislatura.rdf/repubblica_07"
+      },
+      {
+        "url": "https://storia.camera.it/deputato/antonio-bellocchio-19271109/leg-repubblica-VII"
       }
     ],
     "verifica": {
@@ -262,6 +265,9 @@
     "fonti": [
       {
         "url": "http://dati.camera.it/ocd/legislatura.rdf/repubblica_14"
+      },
+      {
+        "url": "https://storia.camera.it/deputato/gabriella-pistone-19510729/leg-repubblica-XIV"
       }
     ],
     "verifica": {
@@ -356,6 +362,9 @@
       },
       {
         "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2026-10-09;180"
+      },
+      {
+        "url": "https://www.gazzettaufficiale.it/eli/gu/2022/07/21/169/sg/pdf"
       }
     ],
     "verifica": {

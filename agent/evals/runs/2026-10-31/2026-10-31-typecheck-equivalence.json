@@ -1,0 +1,7 @@
+{
+  "esito": "equivalente",
+  "runnerGoldenSha256": "6cac197e085d16a0026a9ede3905bf8fcd6140d68a49ac68a02fc731dc8b5400",
+  "runnerCorrenteSha256": "ebdad7cd8832b6d720232b986685cb52bb64d19686e76c54d32027637b113a4e",
+  "javascriptSha256": "858ed63d07efec655855bb9afd93585ce7fbe546af7ed30018c0c9942c8e0004",
+  "nota": "Unica correzione di tipo sullo spread di failedCase; JavaScript emesso identico. Typecheck ESNext/bundler strict eseguito senza errori; nessuna modifica al percorso delle risposte."
+}

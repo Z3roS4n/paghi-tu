@@ -7,5 +7,5 @@ export const CONTROLLER = {
   email: "antonio.murabito@msworks.it",
   pec: "antonio.murabito@pec.it",
   site: "https://www.msworks.it",
-  policyDate: "21 ottobre 2026",
+  policyDate: "25 ottobre 2026",
 } as const;

@@ -1,0 +1,3250 @@
+{
+  "esito": "passa",
+  "metriche": [
+    {
+      "metrica": "4.1",
+      "nome": "cifre con fonte",
+      "passati": 155,
+      "totale": 155,
+      "quota": 1,
+      "soglia": 1,
+      "ok": true
+    },
+    {
+      "metrica": "4.2",
+      "nome": "astensioni giuste",
+      "passati": 23,
+      "totale": 23,
+      "quota": 1,
+      "soglia": 1,
+      "ok": true
+    },
+    {
+      "metrica": "4.3",
+      "nome": "verbatim",
+      "passati": 59,
+      "totale": 59,
+      "quota": 1,
+      "soglia": 1,
+      "ok": true
+    },
+    {
+      "metrica": "4.4",
+      "nome": "record atteso fra i citati",
+      "passati": 132,
+      "totale": 132,
+      "quota": 1,
+      "soglia": 1,
+      "ok": true
+    },
+    {
+      "metrica": "4.4b",
+      "nome": "nessuna citazione inventata",
+      "passati": 155,
+      "totale": 155,
+      "quota": 1,
+      "soglia": 1,
+      "ok": true
+    },
+    {
+      "metrica": "4.5",
+      "nome": "valori attesi",
+      "passati": 129,
+      "totale": 129,
+      "quota": 1,
+      "soglia": 1,
+      "ok": true
+    },
+    {
+      "metrica": "4.6",
+      "nome": "regole",
+      "passati": 96,
+      "totale": 96,
+      "quota": 1,
+      "soglia": 1,
+      "ok": true
+    }
+  ],
+  "casi": [
+    {
+      "id": "GOV-g55-in-carica",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "GOV-g5-in-carica",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "GOV-g13-in-carica",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "GOV-g21-in-carica",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "GOV-g30-in-carica",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "GOV-g38-in-carica",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "GOV-g46-in-carica",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "GOV-g61-in-carica",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "GOV-g11-maggioranza",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "GOV-g82-maggioranza",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "GOV-g202-maggioranza",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "GOV-g23-maggioranza",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "LEG-I-elezioni",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "LEG-VII-elezioni",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "LEG-XIV-elezioni",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "LEG-XIX-elezioni",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "LB-1952-53-esercizio-provvisorio",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "LB-1988-legge-finanziaria",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "LB-1996-legge-finanziaria",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "LB-2005-legge-finanziaria",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "LB-2013-legge-di-stabilità",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "LB-2026-legge-di-bilancio",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "LB-1950-51-esercizio-provvisorio",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "LB-1953-54-esercizio-provvisorio",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "LB-1978-esercizio-provvisorio",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "LB-1982-esercizio-provvisorio",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "LB-1946-47-1947-48-esercizio-provvisorio",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "LB-1958-59-bilancio-di-previsione",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "LB-1969-esercizio-provvisorio",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MIS-quota_100-1",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MIS-quota_100-2",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MIS-reddito_di_cittadinanza-1",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MIS-reddito_di_cittadinanza-2",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MIS-reddito_di_cittadinanza-3",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MIS-reddito_di_cittadinanza-4",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MIS-superbonus_110-1",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MIS-assegno_unico_universale-1",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MIS-assegno_unico_universale-2",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MIS-assegno_unico_universale-3",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MIS-assegno_unico_universale-4",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MIS-bonus_80_euro-1",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MIS-bonus_80_euro-2",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MIS-abolizione_ici_prima_casa-1",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MIS-salvaguardie_esodati_chiuse-1",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MIS-assegno_di_inclusione-1",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MIS-esonero_contributivo_assunzioni_2015-1",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MIS-riduzione_strutturale_cuneo_fiscale-1",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "FP-conti-1995-spesa",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "FP-conti-2003-entrate",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "FP-conti-2010-saldo",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "FP-conti-2018-interessi",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "FP-conti-2025-spesa",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "FP-conti-2025-interessi-pil",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "FP-rottura-2010",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "FP-trimestre-2026-Q2-stesso",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "FP-trimestre-2026-Q2-precedente",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "FP-funzioni-2024-GF07",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "FP-funzioni-2024-GF09",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "FP-funzioni-2024-GF10",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "FP-debito-2026-08",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "FP-debito-pil-2025",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "FP-ue-funzioni-2024-GF07",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "FP-ue-debito-2025",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "FP-ue-conti-2025-spesa",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "SER-pil-nominale-2025",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "SER-popolazione-residente-2026",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "SER-prezzi-consumo-foi-2025",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-AVS-003",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-AZ-006",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-CAPI-012",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-CSX-001",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-FDI-001",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-FI-006",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-FN-016",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-IV-001",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-LEGA-001",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-M5S-018",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-MAIE-001",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-NM-001",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-ORA-007",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-PAP-004",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-PCIT-001",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-PD-014",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-PE-002",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-PLD-001",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-PSI-001",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-SCN-001",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-SVP-003",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-AVS-046",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-AVS-056",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-AVS-057",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-AZ-053",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-CAPI-015",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-FDI-003",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-FI-009",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-FI-013",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-FI-017",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-FI-025",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-FI-026",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-FI-027",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-FI-028",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-FI-029",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-FI-030",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-FN-042",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-LEGA-025",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-LEGA-029",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-LEGA-030",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-LEGA-035",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-M5S-046",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-M5S-061",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-NM-012",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-ORA-023",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-PCIT-006",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-PCIT-007",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-PCIT-009",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-PCIT-010",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-PCIT-011",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-PD-022",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-PD-028",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-PD-029",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-PE-025",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-PE-026",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-AZ-026",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-LEGA-003",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "PRO-C27-NM-008",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-COR-01",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.3": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-COR-02",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-COR-03",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-TRAP-01",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-TRAP-02",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.5": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-TRAP-03",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.2": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-TRAP-04",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.2": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-TRAP-05",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.2": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-PAR-01",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.2": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-PAR-02",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.2": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-PAR-03",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.2": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-PAR-04",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.2": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-PAR-05",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.2": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-PAR-06",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.2": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-PAR-07",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.2": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-PAR-08",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.2": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-PAR-11",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.2": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-PAR-09",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.2": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-PAR-10",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.2": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-OUT-01",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.2": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-OUT-02",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.2": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-OUT-03",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.2": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-OUT-08",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.2": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-OUT-04",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.2": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-OUT-05",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.2": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-OUT-06",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.2": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-OUT-07",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.2": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-OUT-09",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.2": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-TRA-01",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "MAN-TRA-02",
+      "passa": true,
+      "metriche": {
+        "4.1": {
+          "ok": true
+        },
+        "4.4": {
+          "ok": true
+        },
+        "4.4b": {
+          "ok": true
+        },
+        "4.6": {
+          "ok": true
+        }
+      }
+    }
+  ],
+  "fuoriIndice": [],
+  "regressioni": [],
+  "mancanti": []
+}
