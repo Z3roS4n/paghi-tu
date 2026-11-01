@@ -240,6 +240,36 @@ describe("metriche della fase 4", () => {
     expect(checkAnswer(ia, transparencyAnswer(), index)["4.6"]).toEqual({ ok: true });
   });
 
+  it("fra trimestri diversi non si dice che la spesa è salita o scesa", () => {
+    const c = byId("FP-trimestre-2026-Q2-precedente");
+    const a = oracle(c);
+    const rule = (extra: string) => checkAnswer(c, { ...a, testo: `${a.testo}\n${extra}` }, index)["4.6"];
+    expect(rule("")?.ok).toBe(true);
+    expect(rule("Nel 2° trimestre la spesa è salita.")?.ok).toBe(false);
+    expect(rule("Non si può dire se la spesa sia salita o scesa.")?.ok).toBe(true);
+    expect(rule("Non si può dire che sia aumentata.")?.ok).toBe(true);
+    expect(rule("Rispetto allo stesso trimestre dell'anno prima la spesa è aumentata.")?.ok).toBe(true);
+  });
+
+  it("il tetto si può chiamare limite di spesa", () => {
+    const tetto = cases.find((c) => c.regole.includes("tetto_non_e_risparmio") && c.esitoAtteso !== "astensione");
+    if (!tetto) throw new Error("nessun caso tetto");
+    const a = oracle(tetto, false);
+    const testo = `${a.testo.replace(/tetto/gi, "importo")}\nIl limite di spesa non è una stima: spendere meno non è un risparmio.`;
+    const failed = (t: string) => checkAnswer(tetto, { ...a, testo: t }, index)["4.6"]?.dettaglio ?? "";
+    expect(failed(testo)).not.toContain("tetto_non_e_risparmio");
+    expect(failed(a.testo.replace(/tetto|limite di spesa/gi, "importo"))).toContain("tetto_non_e_risparmio");
+  });
+
+  it("una data di elezioni su due giorni vale con il primo giorno", () => {
+    const c = byId("LEG-VII-elezioni");
+    const a = oracle(c);
+    const testo = a.testo.replace(/20 giugno 1976|1976-06-20|20\/06\/1976/g, "20-21 giugno 1976");
+    expect(testo).not.toContain("20 giugno 1976");
+    expect(checkAnswer(c, { ...a, testo }, index)["4.5"]).toEqual({ ok: true });
+    expect(checkAnswer(c, { ...a, testo: testo.replaceAll("20-21 giugno 1976", "21-22 giugno 1976") }, index)["4.5"]?.ok).toBe(false);
+  });
+
   it("un caso passa solo se passa in tutti e 3 i run", () => {
     const c = byId("GOV-g55-in-carica");
     const good = oracle(c);

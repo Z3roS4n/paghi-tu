@@ -51,6 +51,17 @@ const has = (text: string, re: RegExp) => re.test(normalizeText(text));
 const affirms = (text: string, re: RegExp) =>
   [...normalizeText(text).matchAll(new RegExp(re.source, "g"))].some((m) => !/\bnon\b[^.;]{0,40}$/.test(normalizeText(text).slice(0, m.index)));
 
+// Fra trimestri non destagionalizzati non si dice che la spesa è salita o scesa; vale solo il confronto
+// con lo stesso trimestre dell'anno prima. «Salita o scesa» ripete la domanda e non afferma niente.
+const TREND = /\b(salit[ao]|aumentat[ao]|cresciut[ao]|scesa|sceso|diminuit[ao]|calat[ao]|in (aumento|calo|crescita|diminuzione))\b/;
+const TREND_QUESTION = /\b(salit[ao]|aumentat[ao]|cresciut[ao]) o (scesa|sceso|diminuit[ao]|calat[ao])\b|\b(scesa|sceso|diminuit[ao]|calat[ao]) o (salit[ao]|aumentat[ao]|cresciut[ao])\b/g;
+const SAME_QUARTER = /stesso trimestre|anno (prima|precedente)/;
+const trendBetweenQuarters = (text: string) =>
+  normalizeText(text)
+    .replace(TREND_QUESTION, " ")
+    .split(/(?<=[.;!?\n])\s+/)
+    .some((s) => !SAME_QUARTER.test(s) && affirms(s, TREND));
+
 const UNIT_WORDS: [RegExp, RegExp][] = [
   [/^euro$|euro/, /euro|€/],
   [/%/, /%|per cento/],
@@ -68,7 +79,7 @@ const RULES: Record<Rule, (a: AgentAnswer, c: GoldenCase) => Check | null> = {
   dichiara_attribuzione_non_documentata: (a) =>
     has(a.testo, /attribuzione (inferita|non documentata|incerta)|non (è )?documentat|inferit/) ? pass : fail("attribuzione data come certa"),
   tetto_non_e_risparmio: (a) =>
-    !has(a.testo, /tetto/) ? fail("tetto non nominato") : affirms(a.testo, /risparmi/) ? fail("tetto presentato come risparmio") : pass,
+    !has(a.testo, /tetto|limite di spesa/) ? fail("tetto non nominato") : affirms(a.testo, /risparmi/) ? fail("tetto presentato come risparmio") : pass,
   // «Superbonus 110%» è il nome della misura, non una percentuale (nomiConCifre del manifest).
   niente_percentuale: (a) =>
     /\d\s*(%|per cento)/.test(normalizeText(NAMED_FIGURES ? a.testo.replace(NAMED_FIGURES, " ") : a.testo)) ? fail("percentuale su basi non omogenee") : pass,
@@ -78,7 +89,12 @@ const RULES: Record<Rule, (a: AgentAnswer, c: GoldenCase) => Check | null> = {
   dichiara_consuntivo_assente: (a) =>
     has(a.testo, /consuntivo (non (è )?(disponibile|ancora)|assente|mancante)|nessun consuntivo|senza consuntivo|manca il consuntivo/) ? pass : fail("consuntivo assente non dichiarato"),
   rottura_di_serie: (a) => (has(a.testo, /rottura di serie/) ? pass : fail("rottura di serie non dichiarata")),
-  solo_stesso_trimestre: (a) => (has(a.testo, /stesso trimestre/) ? pass : fail("confronto fra trimestri diversi non escluso")),
+  solo_stesso_trimestre: (a) =>
+    !has(a.testo, /stesso trimestre/)
+      ? fail("confronto fra trimestri diversi non escluso")
+      : trendBetweenQuarters(a.testo)
+        ? fail("andamento fra trimestri diversi")
+        : pass,
   dichiara_stima: (a) => (has(a.testo, /stim[ae]/) ? pass : fail("stima non dichiarata")),
   unita_di_misura: (a, c) => {
     const units = [...new Set(c.valoriAttesi.map((v) => v.unita).filter((u): u is string => Boolean(u)))];
@@ -101,7 +117,9 @@ const RULES: Record<Rule, (a: AgentAnswer, c: GoldenCase) => Check | null> = {
 // dichiarato come lo cerca la verifica delle fonti, i testi come parole intere o con le forme accettate.
 function findExpected(text: string, v: ExpectedValue): string | null {
   if (v.valore === null) return null;
-  if (typeof v.valore === "number" || /^\d{4}-\d{2}-\d{2}$/.test(v.valore)) return findValue(text, v.valore, v.unita);
+  if (typeof v.valore === "number") return findValue(text, v.valore, v.unita);
+  // Una data vale nelle sue forme scritte o in quelle accettate in più (elezioni su due giorni).
+  if (/^\d{4}-\d{2}-\d{2}$/.test(v.valore)) return findValue(text, v.valore) ?? (v.forme ? findForms(text, v.forme) : null);
   if (v.campo === "dichiarante") return findDeclarant(text, v.valore);
   if (v.campo === "costoDichiarato") return findDeclaredCost(text, v.valore);
   return (v.forme && findForms(text, v.forme)) ?? findPhrase(text, v.valore);

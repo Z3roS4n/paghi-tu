@@ -90,5 +90,14 @@
       ]
     ],
     "nota": "Dubbio della revisione del 25 ottobre: il dato potrebbe essere PSU invece di PSI e PSDI; decide Antonio."
+  },
+  "LEG-VII-elezioni|elezioni": {
+    "gruppi": [
+      [
+        "20-21 giugno 1976",
+        "20 e 21 giugno 1976"
+      ]
+    ],
+    "nota": "Si votò il 20 e il 21 giugno 1976: vale anche la forma su due giorni (revisione del golden set del 2026-11-01). Le date nelle forme scritte restano valide."
   }
 }

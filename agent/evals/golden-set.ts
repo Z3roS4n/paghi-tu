@@ -203,10 +203,10 @@ function governmentCases(govs: Government[]): GoldenCase[] {
         categoria: "governi",
         domanda: `Chi era il presidente del Consiglio in Italia il ${formatDateIt(day)}?`,
         esitoAtteso: "risposta",
+        // La domanda chiede chi governava, non da quando: la data d'inizio resta nella nota.
         valoriAttesi: [
           { campo: "presidente", valore: g.presidente },
           { campo: "nome", valore: g.nome, forme: [[g.nome, g.nome.replace(/^Governo /, "")]] },
-          { campo: "inizio", valore: g.inizio },
         ],
         citazioniAttese: [{ dataset: "governi", record: g.id, urlAccettati: urls(g.fonti) }],
         regole: [],
@@ -224,7 +224,7 @@ function governmentCases(govs: Government[]): GoldenCase[] {
       makeCase({
         id: `GOV-${g.id}-maggioranza`,
         categoria: "governi",
-        domanda: `Quali partiti sostenevano il ${g.nome}?`,
+        domanda: `Quali partiti ${g.fine ? "sostenevano" : "sostengono"} il ${g.nome}?`,
         esitoAtteso: outcomeFor(level),
         valoriAttesi: [{ campo: "maggioranza", valore: g.maggioranza }],
         citazioniAttese: [{ dataset: "governi", record: g.id, urlAccettati: urls(g.fonti) }],
@@ -288,6 +288,14 @@ function budgetLawValues(l: BudgetLaw): ExpectedValue[] {
   return values;
 }
 
+// Più esercizi in un record («1946-47 / 1947-48»); i decreti legislativi il governo li adotta, non li presenta.
+function budgetLawQuestion(l: BudgetLaw): string {
+  const verb = /decreto legislativo/i.test(l.estremi) ? "ha autorizzato" : "ha presentato";
+  const years = l.annoEsercizio.split(/\s*\/\s*/);
+  const period = years.length > 1 ? `gli esercizi ${years.slice(0, -1).join(", ")} e ${years.at(-1)}` : `l'esercizio ${l.annoEsercizio}`;
+  return `Quale governo ${verb} ${ACT_WITH_ARTICLE[l.tipoAtto] ?? l.tipoAttoOriginale} per ${period}, e con quale atto?`;
+}
+
 function budgetLawCases(laws: BudgetLaw[]): GoldenCase[] {
   const key = (l: BudgetLaw) => `${l.tipoAtto}|${l.annoEsercizio}`;
   const counts = new Map<string, number>();
@@ -305,7 +313,7 @@ function budgetLawCases(laws: BudgetLaw[]): GoldenCase[] {
     return makeCase({
       id: `LB-${l.id}`,
       categoria: "leggi_bilancio",
-      domanda: `Quale governo ha presentato ${ACT_WITH_ARTICLE[l.tipoAtto] ?? l.tipoAttoOriginale} per l'esercizio ${l.annoEsercizio}, e con quale atto?`,
+      domanda: budgetLawQuestion(l),
       esitoAtteso: outcomeFor(level),
       valoriAttesi: budgetLawValues(l),
       citazioniAttese: [{ dataset: "leggi-bilancio", record: l.id, urlAccettati: urls(l.fonti) }],
@@ -368,19 +376,21 @@ function comparisonCase(c: CostComparison, id: string, question: string, categor
   });
 }
 
+// Il consuntivo non è sempre spesa (minor gettito, detrazioni maturate, proiezioni) e un tetto può
+// essere stato alzato dopo: la domanda chiede il costo, o il limite fissato all'avvio.
+function measureQuestion(m: Measure, c: CostComparison): string {
+  const period = /^intero periodo$/i.test(c.periodo) ? "sull'intero periodo" : `periodo «${c.periodo}»`;
+  const ask =
+    c.tipoOnere === "tetto"
+      ? "qual era il limite di spesa fissato all'avvio della misura e quanto è stato erogato?"
+      : c.consuntivo?.proiezione
+        ? "qual era il costo previsto e qual è il costo a consuntivo, proiezione compresa?"
+        : "qual era il costo previsto e qual è il costo a consuntivo?";
+  return `${m.titolo}, ${period}: ${ask}`;
+}
+
 function measureCases(measures: Measure[]): GoldenCase[] {
-  return measures.flatMap((m) =>
-    m.confronti.map((c) =>
-      comparisonCase(
-        c,
-        `MIS-${c.id}`,
-        c.tipoOnere === "tetto"
-          ? `${m.titolo}, periodo «${c.periodo}»: quanto era stanziato e quanto si è speso davvero?`
-          : `${m.titolo}, periodo «${c.periodo}»: quanto si prevedeva di spendere e quanto si è speso davvero?`,
-        "misure",
-      ),
-    ),
-  );
+  return measures.flatMap((m) => m.confronti.map((c) => comparisonCase(c, `MIS-${c.id}`, measureQuestion(m, c), "misure")));
 }
 
 // Pezzo dell'etichetta che identifica, in data/finanza-pubblica.json, la fonte di ogni gruppo di record.
@@ -602,7 +612,7 @@ function seriesCases(series: Series[]): GoldenCase[] {
   const questions: Record<string, (anno: number) => string> = {
     "pil-nominale": (a) => `Quanto valeva il PIL nominale italiano nel ${a}?`,
     "popolazione-residente": (a) => `Quanti residenti aveva l'Italia al 1° gennaio ${a}?`,
-    "prezzi-consumo-foi": (a) => `Qual è il valore dell'indice FOI dei prezzi al consumo nel ${a}?`,
+    "prezzi-consumo-foi": (a) => `Qual è il valore medio annuo dell'indice FOI dei prezzi al consumo (base 1913 = 1) nel ${a}?`,
   };
   return series
     .filter((s) => questions[s.id])
@@ -623,10 +633,20 @@ function seriesCases(series: Series[]): GoldenCase[] {
     });
 }
 
-// Se il dichiarante è il partito stesso o un documento, la domanda nomina il partito.
-function promiseSubject(p: CampaignPromise, party: Party): { who: string; verb: string } {
+const joinNames = (names: string[]) => (names.length > 1 ? `${names.slice(0, -1).join(", ")} e ${names.at(-1)}` : names[0]);
+
+// Se il dichiarante è il partito stesso o un documento, la domanda nomina il partito. Le persone possono
+// essere più d'una («Enrico Costa; Stefania Craxi»): il verbo segue il numero.
+function promiseSubject(p: CampaignPromise, party: Party): { who: string; verb: string; people: string[] } {
   const isPerson = !p.dichiarante.includes("(") && !p.dichiarante.includes(party.nome) && !party.nome.includes(p.dichiarante) && p.dichiarante !== party.id;
-  return isPerson ? { who: `${p.dichiarante} (${party.nome})`, verb: "ha dichiarato" } : { who: party.nome, verb: "ha scritto" };
+  if (isPerson) {
+    const people = p.dichiarante.split(/\s*[;,]\s*/);
+    const shortParty = party.nome.replace(/\s*\([^()]*\)$/, "");
+    return { who: `${joinNames(people)} (${shortParty})`, verb: people.length > 1 ? "hanno dichiarato" : "ha dichiarato", people };
+  }
+  const [, names, note] = party.nome.match(/^(.*?)(\s*\([^()]*\))?$/)!;
+  const signers = names.split(/\s*,\s*/);
+  return { who: `${joinNames(signers)}${note ?? ""}`, verb: signers.length > 1 ? "hanno scritto" : "ha scritto", people: [] };
 }
 
 function onDate(iso: string): string {
@@ -634,9 +654,10 @@ function onDate(iso: string): string {
   return `${day === 8 || day === 11 ? "l'" : "il "}${formatDateIt(iso)}`;
 }
 
+// L'area di spesa con le parole dell'indice («Area di spesa: …»): distingue due dichiarazioni dello stesso giorno.
 function promiseQuestion(p: CampaignPromise, party: Party, withTopic: boolean): string {
   const { who, verb } = promiseSubject(p, party);
-  const topic = withTopic ? ` a proposito di ${COFOG_DIVISIONS[p.cofog].toLowerCase()}` : "";
+  const topic = withTopic ? ` nell'area di spesa «${COFOG_DIVISIONS[p.cofog]}»` : "";
   return `Che cosa ${verb} ${who} ${onDate(p.data)}${topic}? Voglio le parole esatte e la fonte.`;
 }
 
@@ -667,26 +688,33 @@ function promiseCase(p: CampaignPromise, party: Party, withTopic: boolean, extra
 
 const COST_NOTE = "Il costo è quello dichiarato dal proponente, non una stima di Paghi Tu.";
 
+// D-042: al massimo due casi V2 per partito. La regola «tutti i V2 interrogabili» premiava i partiti
+// con molte dichiarazioni V2 di persone diverse in giorni diversi.
+export const V2_CASES_PER_PARTY = 2;
+
 function promiseCases(promises: CampaignPromise[], parties: Party[]): GoldenCase[] {
   const partyById = new Map(parties.map((p) => [p.id, p]));
   const sorted = [...promises].sort((a, b) => a.id.localeCompare(b.id));
-  const speakerDay = (p: CampaignPromise) => `${promiseSubject(p, partyById.get(p.partitoId)!).who}|${p.data}`;
-  const speakerDayTopic = (p: CampaignPromise) => `${speakerDay(p)}|${p.cofog}`;
-  const count = (key: (p: CampaignPromise) => string) => {
-    const m = new Map<string, number>();
-    for (const p of sorted) m.set(key(p), (m.get(key(p)) ?? 0) + 1);
-    return m;
+  const people = new Map(sorted.map((p) => [p.id, promiseSubject(p, partyById.get(p.partitoId)!).people]));
+  // La route filtra per singola persona: due dichiarazioni dello stesso giorno con una persona in comune
+  // si confondono. Una domanda che nomina il partito si confonde con ogni sua dichiarazione di quel giorno.
+  const clash = (a: CampaignPromise, b: CampaignPromise) => {
+    if (a.id === b.id || a.data !== b.data) return false;
+    const [pa, pb] = [people.get(a.id)!, people.get(b.id)!];
+    if (!pa.length || !pb.length) return a.partitoId === b.partitoId;
+    return pa.some((x) => pb.includes(x));
   };
-  const byDay = count(speakerDay);
-  const byTopic = count(speakerDayTopic);
-  // Una domanda deve indicare una sola promessa: se chi parla, data e tema non bastano, la promessa si salta.
-  const askable = (p: CampaignPromise) => byDay.get(speakerDay(p)) === 1 || byTopic.get(speakerDayTopic(p)) === 1;
-  const needsTopic = (p: CampaignPromise) => byDay.get(speakerDay(p))! > 1;
+  const sameDay = new Map(sorted.map((p) => [p.id, sorted.filter((q) => clash(p, q))]));
+  // Una domanda deve indicare una sola promessa: se chi parla, data e area di spesa non bastano, la promessa si salta.
+  const askable = (p: CampaignPromise) => sameDay.get(p.id)!.every((q) => q.cofog !== p.cofog);
+  const needsTopic = (p: CampaignPromise) => sameDay.get(p.id)!.length > 0;
 
   const chosen = new Map<string, GoldenCase>();
+  const v2 = new Map<string, number>();
   const add = (p: CampaignPromise, extra: Rule[] = [], note = "") => {
     if (chosen.has(p.id) || !askable(p)) return;
     chosen.set(p.id, promiseCase(p, partyById.get(p.partitoId)!, needsTopic(p), extra, note));
+    if (p.verifica.livello === "V2") v2.set(p.partitoId, (v2.get(p.partitoId) ?? 0) + 1);
   };
 
   // Ordine dei partiti alfabetico per sigla: nessun partito viene prima per scelta.
@@ -694,7 +722,9 @@ function promiseCases(promises: CampaignPromise[], parties: Party[]): GoldenCase
     const first = sorted.find((p) => p.partitoId === partyId && askable(p));
     if (first) add(first);
   }
-  for (const p of sorted.filter((x) => x.verifica.livello === "V2")) add(p);
+  for (const p of sorted.filter((x) => x.verifica.livello === "V2")) {
+    if ((v2.get(p.partitoId) ?? 0) < V2_CASES_PER_PARTY) add(p);
+  }
   for (const p of sorted.filter((x) => x.costoDichiarato && !chosen.has(x.id) && askable(x)).slice(0, 3)) {
     add(p, ["costo_dichiarato_dal_proponente"], COST_NOTE);
   }

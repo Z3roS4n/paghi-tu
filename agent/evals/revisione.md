@@ -2,7 +2,7 @@
 
 File generato da `npm run evals:build`: non si modifica a mano. Per segnare un caso si scrive in `agent/evals/revisione.json` (`"<id>": "ok" | "da_correggere" | "da_togliere"`) e si rigenera.
 
-Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
+Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 | Categoria | Casi |
 | --- | --- |
@@ -12,9 +12,9 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 | misure | 18 |
 | finanza_pubblica | 16 |
 | serie | 3 |
-| promesse | 60 |
+| promesse | 44 |
 | correzioni | 3 |
-| par_condicio | 11 |
+| par_condicio | 12 |
 | fuori_scope | 9 |
 | trappole | 6 |
 | trasparenza | 2 |
@@ -32,13 +32,12 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 | --- | --- | --- |
 | presidente | Alcide De Gasperi |  |
 | nome | Governo De Gasperi I |  |
-| inizio | 1945-12-10 |  |
 
 **Citazione:** `governi` / `g55` — http://dati.camera.it/ocd/governo.rdf/g55 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ordinamento-provvisorio-25-luglio-1943-23-maggio-1948-assemblea-3
 
 **Nota:** Data a metà del mandato (1945-12-10 → 1946-07-14).
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### GOV-g5-in-carica
 
@@ -51,13 +50,12 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 | --- | --- | --- |
 | presidente | Giuseppe Pella |  |
 | nome | Governo Pella |  |
-| inizio | 1953-08-17 |  |
 
 **Citazione:** `governi` / `g5` — http://dati.camera.it/ocd/governo.rdf/g5 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ii-legislatura-25-giugno-1953-14-marzo-1958/governo-pella/3223
 
 **Nota:** Data a metà del mandato (1953-08-17 → 1954-01-19).
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### GOV-g13-in-carica
 
@@ -70,13 +68,12 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 | --- | --- | --- |
 | presidente | Amintore Fanfani |  |
 | nome | Governo Fanfani III |  |
-| inizio | 1960-07-27 |  |
 
 **Citazione:** `governi` / `g13` — http://dati.camera.it/ocd/governo.rdf/g13 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-fanfani-iii/3214 · https://archivio.quirinale.it/aspr/presidente/nomine/giovanni-gronchi
 
 **Nota:** Data a metà del mandato (1960-07-27 → 1962-02-22).
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### GOV-g21-in-carica
 
@@ -89,13 +86,12 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 | --- | --- | --- |
 | presidente | Mariano Rumor |  |
 | nome | Governo Rumor II |  |
-| inizio | 1969-08-06 |  |
 
 **Citazione:** `governi` / `g21` — http://dati.camera.it/ocd/governo.rdf/g21 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/v-legislatura-5-giugno-1968-28-febbraio-1972/governo-rumor-ii/3204 · https://archivio.quirinale.it/aspr/presidente/nomine/giuseppe-saragat
 
 **Nota:** Data a metà del mandato (1969-08-06 → 1970-03-28).
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### GOV-g30-in-carica
 
@@ -108,13 +104,12 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 | --- | --- | --- |
 | presidente | Giulio Andreotti |  |
 | nome | Governo Andreotti III |  |
-| inizio | 1976-07-30 |  |
 
 **Citazione:** `governi` / `g30` — http://dati.camera.it/ocd/governo.rdf/g30 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/vii-legislatura-5-luglio-1976-2-aprile-1979/governo-andreotti-iii/3191 · https://archivio.quirinale.it/aspr/presidente/nomine/giovanni-leone
 
 **Nota:** Data a metà del mandato (1976-07-30 → 1978-03-13).
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### GOV-g38-in-carica
 
@@ -127,13 +122,12 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 | --- | --- | --- |
 | presidente | Amintore Fanfani |  |
 | nome | Governo Fanfani V |  |
-| inizio | 1982-12-01 |  |
 
 **Citazione:** `governi` / `g38` — http://dati.camera.it/ocd/governo.rdf/g38 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/viii-legislatura-20-giugno-1979-4-maggio-1983/governo-fanfani-v/3181
 
 **Nota:** Data a metà del mandato (1982-12-01 → 1983-08-04).
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### GOV-g46-in-carica
 
@@ -146,13 +140,12 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 | --- | --- | --- |
 | presidente | Giuliano Amato |  |
 | nome | Governo Amato I |  |
-| inizio | 1992-06-28 |  |
 
 **Citazione:** `governi` / `g46` — http://dati.camera.it/ocd/governo.rdf/g46 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xi-legislatura-23-aprile-1992-16-gennaio-1994/governo-amato/3169
 
 **Nota:** Data a metà del mandato (1992-06-28 → 1993-04-29).
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### GOV-g61-in-carica
 
@@ -165,13 +158,12 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 | --- | --- | --- |
 | presidente | Silvio Berlusconi |  |
 | nome | Governo Berlusconi IV |  |
-| inizio | 2008-05-08 |  |
 
 **Citazione:** `governi` / `g61` — http://dati.camera.it/ocd/governo.rdf/g61 · https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xvi-legislatura-dal-29-aprile-2008-al-23-dicembre-2012/governo-berlusconi
 
 **Nota:** Data a metà del mandato (2008-05-08 → 2011-11-16).
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### GOV-g11-maggioranza
 
@@ -213,7 +205,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### GOV-g202-maggioranza
 
-**Domanda:** Quali partiti sostenevano il Governo Meloni?
+**Domanda:** Quali partiti sostengono il Governo Meloni?
 
 **Esito atteso:** risposta
 **Livello del dato:** V2
@@ -228,7 +220,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 **Nota:** Il campo maggioranza è V2: la risposta deve dirlo.
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### GOV-g23-maggioranza
 
@@ -281,7 +273,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 **Citazione:** `legislature` / `VII` — http://dati.camera.it/ocd/legislatura.rdf/repubblica_07 · https://storia.camera.it/deputato/antonio-bellocchio-19271109/leg-repubblica-VII
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### LEG-XIV-elezioni
 
@@ -495,7 +487,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### LB-1946-47-1947-48-esercizio-provvisorio
 
-**Domanda:** Quale governo ha presentato l'esercizio provvisorio per l'esercizio 1946-47 / 1947-48, e con quale atto?
+**Domanda:** Quale governo ha autorizzato l'esercizio provvisorio per gli esercizi 1946-47 e 1947-48, e con quale atto?
 
 **Esito atteso:** dato_non_verificato
 **Livello del dato:** NV
@@ -510,7 +502,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 **Nota:** Attribuzione incerta: il governo non va dato come certo.
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### LB-1958-59-bilancio-di-previsione
 
@@ -549,7 +541,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### MIS-quota_100-1
 
-**Domanda:** Quota 100, periodo «2019–2021»: quanto si prevedeva di spendere e quanto si è speso davvero?
+**Domanda:** Quota 100, periodo «2019–2021»: qual era il costo previsto e qual è il costo a consuntivo?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -573,7 +565,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### MIS-quota_100-2
 
-**Domanda:** Quota 100, periodo «2019–2025, con proiezione UPB»: quanto si prevedeva di spendere e quanto si è speso davvero?
+**Domanda:** Quota 100, periodo «2019–2025, con proiezione UPB»: qual era il costo previsto e qual è il costo a consuntivo, proiezione compresa?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -597,7 +589,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### MIS-reddito_di_cittadinanza-1
 
-**Domanda:** Reddito e pensione di cittadinanza, periodo «2019 (aprile–dicembre)»: quanto era stanziato e quanto si è speso davvero?
+**Domanda:** Reddito e pensione di cittadinanza, periodo «2019 (aprile–dicembre)»: qual era il limite di spesa fissato all'avvio della misura e quanto è stato erogato?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -619,7 +611,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### MIS-reddito_di_cittadinanza-2
 
-**Domanda:** Reddito e pensione di cittadinanza, periodo «2020»: quanto era stanziato e quanto si è speso davvero?
+**Domanda:** Reddito e pensione di cittadinanza, periodo «2020»: qual era il limite di spesa fissato all'avvio della misura e quanto è stato erogato?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -639,11 +631,11 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 **Nota:** Limite poi incrementato da DL 34/2020 (art. 84 c. 13 +72; art. 85 c. 3 +8,3; art. 94 c. 1 +57,6 mln; note di aggiornamento Normattiva): limite aggiornato 7.304,8 mln (INFERENZA). Consuntivo = somma Tav. 1.4. Scostamento -0,3% sul limite convertito, -2,2% sul limite aggiornato (INFERENZA). discrepanza 7.160,9 vs 7.166,9 risolta su Normattiva a favore di 7.166,9.
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### MIS-reddito_di_cittadinanza-3
 
-**Domanda:** Reddito e pensione di cittadinanza, periodo «2021»: quanto era stanziato e quanto si è speso davvero?
+**Domanda:** Reddito e pensione di cittadinanza, periodo «2021»: qual era il limite di spesa fissato all'avvio della misura e quanto è stato erogato?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -661,11 +653,11 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 **Nota:** Limite incrementato da L. 178/2020 art. 1 c. 371 (+196,3), DL 41/2021 art. 11 cc. 1-2 (+1.000; +10), DL 146/2021 art. 11 c. 13 (+200 mln): limite aggiornato 8.797,3 mln (INFERENZA). Consuntivo +0,3% sul limite aggiornato (INFERENZA). Confronto con il limite originario non omogeneo.
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### MIS-reddito_di_cittadinanza-4
 
-**Domanda:** Reddito e pensione di cittadinanza, periodo «2022»: quanto era stanziato e quanto si è speso davvero?
+**Domanda:** Reddito e pensione di cittadinanza, periodo «2022»: qual era il limite di spesa fissato all'avvio della misura e quanto è stato erogato?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -683,11 +675,11 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 **Nota:** Limite 2022 incrementato da L. 178/2020 art. 1 c. 371 (+473,7 mln) e da L. 234/2021 art. 1 c. 73 (+1.065,3 mln): limite aggiornato 8.784,9 mln (INFERENZA); erogato 2022 -8,6% sul limite aggiornato (INFERENZA). il valore 8.311,2 ometteva i +473,7 mln della L. 178/2020. Misura abrogata dal 1/1/2024; erogato 2023 = 6.646.794.733 euro (somma Tav. 1.4, confermata).
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### MIS-superbonus_110-1
 
-**Domanda:** Superbonus 110%, periodo «Intero periodo»: quanto si prevedeva di spendere e quanto si è speso davvero?
+**Domanda:** Superbonus 110%, sull'intero periodo: qual era il costo previsto e qual è il costo a consuntivo?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -705,11 +697,11 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 **Nota:** UPB aud. 16/3/2023 p. 12 e Tab. 2 p. 13. NADEF 2022 aveva rivisto a 61,2 mld (p. 14). ENEA = onere potenziale a carico dello Stato (aliquote 110/90/70/65), non impatto annuo sull'indebitamento netto; perimetro SuperEcobonus (sismabonus escluso: NV). Rapporto circa 3,8x (INFERENZA). confermati 33.579,8 (Tab. 2 p. 13), 'circa 35 miliardi' e 'quasi 1,5 miliardi' (p. 12), 61,2 mld (p. 14); ENEA p. 1: detrazioni maturate per lavori conclusi 131.558.610.980,03 ('Onere a carico dello Stato'), investimenti ammessi 124.862.255.985,52, 502.388 edifici. Rapporto 3,76x. Nella Tab. 2 UPB il contributo maggiore all'onere stimato viene dalla LB 2022 (governo Draghi: -15.294,9 mln), poi dal DL 34/2020 (Conte II: -12.224,6 mln): non attribuire l'intero onere al solo Conte II.
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### MIS-assegno_unico_universale-1
 
-**Domanda:** Assegno unico universale, periodo «2022 (marzo–dicembre)»: quanto si prevedeva di spendere e quanto si è speso davvero?
+**Domanda:** Assegno unico universale, periodo «2022 (marzo–dicembre)»: qual era il costo previsto e qual è il costo a consuntivo?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -731,7 +723,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### MIS-assegno_unico_universale-2
 
-**Domanda:** Assegno unico universale, periodo «2023»: quanto si prevedeva di spendere e quanto si è speso davvero?
+**Domanda:** Assegno unico universale, periodo «2023»: qual era il costo previsto e qual è il costo a consuntivo?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -751,7 +743,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### MIS-assegno_unico_universale-3
 
-**Domanda:** Assegno unico universale, periodo «2024»: quanto si prevedeva di spendere e quanto si è speso davvero?
+**Domanda:** Assegno unico universale, periodo «2024»: qual era il costo previsto e qual è il costo a consuntivo?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -771,7 +763,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### MIS-assegno_unico_universale-4
 
-**Domanda:** Assegno unico universale, periodo «2025»: quanto si prevedeva di spendere e quanto si è speso davvero?
+**Domanda:** Assegno unico universale, periodo «2025»: qual era il costo previsto e qual è il costo a consuntivo?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -791,7 +783,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### MIS-bonus_80_euro-1
 
-**Domanda:** Bonus 80 euro, periodo «2014 (maggio–dicembre)»: quanto si prevedeva di spendere e quanto si è speso davvero?
+**Domanda:** Bonus 80 euro, periodo «2014 (maggio–dicembre)»: qual era il costo previsto e qual è il costo a consuntivo?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -813,7 +805,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### MIS-bonus_80_euro-2
 
-**Domanda:** Bonus 80 euro, periodo «2015, a regime»: quanto si prevedeva di spendere e quanto si è speso davvero?
+**Domanda:** Bonus 80 euro, periodo «2015, a regime»: qual era il costo previsto e qual è il costo a consuntivo?
 
 **Esito atteso:** risposta
 **Livello del dato:** V2
@@ -837,7 +829,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### MIS-abolizione_ici_prima_casa-1
 
-**Domanda:** Abolizione dell'ICI sulla prima casa, periodo «2008»: quanto si prevedeva di spendere e quanto si è speso davvero?
+**Domanda:** Abolizione dell'ICI sulla prima casa, periodo «2008»: qual era il costo previsto e qual è il costo a consuntivo?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -859,7 +851,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### MIS-salvaguardie_esodati_chiuse-1
 
-**Domanda:** Salvaguardie «esodati» già chiuse, periodo «Salvaguardie chiuse»: quanto era stanziato e quanto si è speso davvero?
+**Domanda:** Salvaguardie «esodati» già chiuse, periodo «Salvaguardie chiuse»: qual era il limite di spesa fissato all'avvio della misura e quanto è stato erogato?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -885,7 +877,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### MIS-assegno_di_inclusione-1
 
-**Domanda:** Assegno di inclusione, periodo «2024»: quanto era stanziato e quanto si è speso davvero?
+**Domanda:** Assegno di inclusione, periodo «2024»: qual era il limite di spesa fissato all'avvio della misura e quanto è stato erogato?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -909,7 +901,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### MIS-esonero_contributivo_assunzioni_2015-1
 
-**Domanda:** Esonero contributivo per le assunzioni 2015, periodo «2015–2018»: quanto si prevedeva di spendere e quanto si è speso davvero?
+**Domanda:** Esonero contributivo per le assunzioni 2015, periodo «2015–2018»: qual era il costo previsto e qual è il costo a consuntivo?
 
 **Esito atteso:** risposta
 **Livello del dato:** V2
@@ -933,7 +925,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### MIS-riduzione_strutturale_cuneo_fiscale-1
 
-**Domanda:** Riduzione strutturale del cuneo fiscale, periodo «2025»: quanto si prevedeva di spendere e quanto si è speso davvero?
+**Domanda:** Riduzione strutturale del cuneo fiscale, periodo «2025»: qual era il costo previsto e qual è il costo a consuntivo?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1276,7 +1268,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### SER-prezzi-consumo-foi-2025
 
-**Domanda:** Qual è il valore dell'indice FOI dei prezzi al consumo nel 2025?
+**Domanda:** Qual è il valore medio annuo dell'indice FOI dei prezzi al consumo (base 1913 = 1) nel 2025?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1289,13 +1281,13 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 **Regole:** `unita_di_misura`
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ## promesse
 
 ### PRO-C27-AVS-003
 
-**Domanda:** Che cosa ha scritto Alleanza Verdi e Sinistra (Europa Verde + Sinistra Italiana) l'11 ottobre 2026 a proposito di protezione dell'ambiente? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha scritto Alleanza Verdi e Sinistra (Europa Verde + Sinistra Italiana) l'11 ottobre 2026 nell'area di spesa «Protezione dell'ambiente»? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1320,7 +1312,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### PRO-C27-AZ-006
 
-**Domanda:** Che cosa ha scritto Azione il 2 settembre 2026 a proposito di protezione sociale? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha scritto Azione il 2 settembre 2026 nell'area di spesa «Protezione sociale»? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1342,7 +1334,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### PRO-C27-CAPI-012
 
-**Domanda:** Che cosa ha scritto Partito Capibara il 3 luglio 2026 a proposito di istruzione? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha scritto Partito Capibara il 3 luglio 2026 nell'area di spesa «Istruzione»? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1364,7 +1356,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### PRO-C27-CSX-001
 
-**Domanda:** Che cosa ha scritto PD, M5S, AVS, IV, +Europa (risoluzione unitaria) il 13 ottobre 2026 a proposito di difesa? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa hanno scritto PD, M5S, AVS, IV e +Europa (risoluzione unitaria) il 13 ottobre 2026 nell'area di spesa «Difesa»? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1382,7 +1374,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 **Regole:** `verbatim`
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### PRO-C27-FDI-001
 
@@ -1408,7 +1400,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### PRO-C27-FI-006
 
-**Domanda:** Che cosa ha dichiarato Maurizio Casasco (Forza Italia) il 25 agosto 2026 a proposito di servizi generali delle amministrazioni pubbliche? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Maurizio Casasco (Forza Italia) il 25 agosto 2026 nell'area di spesa «Servizi generali delle amministrazioni pubbliche»? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1430,7 +1422,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### PRO-C27-FN-016
 
-**Domanda:** Che cosa ha scritto Futuro Nazionale il 24 agosto 2026 a proposito di difesa? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha scritto Futuro Nazionale il 24 agosto 2026 nell'area di spesa «Difesa»? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1474,7 +1466,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### PRO-C27-LEGA-001
 
-**Domanda:** Che cosa ha dichiarato Matteo Salvini (Lega) il 27 settembre 2026 a proposito di protezione sociale? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Matteo Salvini (Lega) il 27 settembre 2026 nell'area di spesa «Protezione sociale»? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1499,7 +1491,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### PRO-C27-M5S-018
 
-**Domanda:** Che cosa ha scritto MoVimento 5 Stelle il 18 settembre 2026 a proposito di attività ricreative, culturali e di culto? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha scritto MoVimento 5 Stelle il 18 settembre 2026 nell'area di spesa «Attività ricreative, culturali e di culto»? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1543,7 +1535,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### PRO-C27-NM-001
 
-**Domanda:** Che cosa ha scritto Noi Moderati il 23 settembre 2026 a proposito di servizi generali delle amministrazioni pubbliche? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha scritto Noi Moderati il 23 settembre 2026 nell'area di spesa «Servizi generali delle amministrazioni pubbliche»? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1565,7 +1557,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### PRO-C27-ORA-007
 
-**Domanda:** Che cosa ha scritto Ora! il 19 agosto 2026 a proposito di servizi generali delle amministrazioni pubbliche? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha scritto Ora! il 19 agosto 2026 nell'area di spesa «Servizi generali delle amministrazioni pubbliche»? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1590,7 +1582,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### PRO-C27-PAP-004
 
-**Domanda:** Che cosa ha scritto Potere al Popolo il 4 settembre 2026 a proposito di servizi generali delle amministrazioni pubbliche? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha scritto Potere al Popolo il 4 settembre 2026 nell'area di spesa «Servizi generali delle amministrazioni pubbliche»? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1612,7 +1604,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### PRO-C27-PCIT-001
 
-**Domanda:** Che cosa ha dichiarato Alessandro Onorato (Progetto Civico Italia) il 7 settembre 2026 a proposito di protezione sociale? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Alessandro Onorato (Progetto Civico Italia) il 7 settembre 2026 nell'area di spesa «Protezione sociale»? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1637,7 +1629,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### PRO-C27-PD-014
 
-**Domanda:** Che cosa ha dichiarato Elly Schlein (Partito Democratico) il 7 agosto 2026 a proposito di protezione sociale? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Elly Schlein (Partito Democratico) il 7 agosto 2026 nell'area di spesa «Protezione sociale»? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1703,7 +1695,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### PRO-C27-PSI-001
 
-**Domanda:** Che cosa ha scritto Avanti PSI (Partito Socialista Italiano) il 6 agosto 2026 a proposito di abitazioni e assetto territoriale? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha scritto Avanti PSI (Partito Socialista Italiano) il 6 agosto 2026 nell'area di spesa «Abitazioni e assetto territoriale»? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1769,7 +1761,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### PRO-C27-AVS-046
 
-**Domanda:** Che cosa ha dichiarato Angelo Bonelli (Alleanza Verdi e Sinistra (Europa Verde + Sinistra Italiana)) il 21 ottobre 2026? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Angelo Bonelli (Alleanza Verdi e Sinistra) il 21 ottobre 2026? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V2
@@ -1791,7 +1783,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### PRO-C27-AVS-056
 
-**Domanda:** Che cosa ha dichiarato Angelo Bonelli (Alleanza Verdi e Sinistra (Europa Verde + Sinistra Italiana)) il 27 ottobre 2026 a proposito di protezione sociale? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Angelo Bonelli (Alleanza Verdi e Sinistra) il 27 ottobre 2026 nell'area di spesa «Protezione sociale»? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V2
@@ -1809,29 +1801,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 **Regole:** `verbatim`, `dichiara_livello_V2`
 
-**Revisione:** da_correggere
-
-### PRO-C27-AVS-057
-
-**Domanda:** Che cosa ha dichiarato Angelo Bonelli, Nicola Fratoianni (Alleanza Verdi e Sinistra (Europa Verde + Sinistra Italiana)) il 27 ottobre 2026? Voglio le parole esatte e la fonte.
-
-**Esito atteso:** risposta
-**Livello del dato:** V2
-
-**Parole esatte attese:** «Fino a 10mila euro di Isee è previsto al 100% la possibilità di installare le pompe di calore a carico dello Stato»
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| dichiarante | Angelo Bonelli, Nicola Fratoianni |  |
-| data | 2026-10-27 |  |
-
-**Da respingere:** «Prevedere per chi ha un ISEE fino a 10.000 euro la possibilità di installare pompe di calore interamente a carico dello Stato.»
-
-**Citazione:** `promesse` / `C27-AVS-057` — https://ildomaniditalia.eu/bolletteavs-lancia-bolletta-sociale-credito-energetico-e-scudo-anticiclico/
-
-**Regole:** `verbatim`, `dichiara_livello_V2`
-
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### PRO-C27-AZ-053
 
@@ -1946,182 +1916,6 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 **Revisione:** ok
 
-### PRO-C27-FI-017
-
-**Domanda:** Che cosa ha dichiarato Maurizio Casasco (Forza Italia) il 23 ottobre 2026 a proposito di sanità? Voglio le parole esatte e la fonte.
-
-**Esito atteso:** risposta
-**Livello del dato:** V2
-
-**Parole esatte attese:** «Forza Italia […] punta a un sostegno diretto per le spese sanitarie degli anziani e dei fragili. Chi ha bisogno di curarsi, necessita dei soldi subito tramite un sostegno diretto per le spese sanitarie che non rientrano nel sistema sanitario nazionale.»
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| dichiarante | Maurizio Casasco |  |
-| data | 2026-10-23 |  |
-
-**Da respingere:** «Sostegno economico diretto ad anziani e persone fragili per le spese sanitarie che non rientrano nel Servizio sanitario nazionale.»
-
-**Citazione:** `promesse` / `C27-FI-017` — https://www.ilgiornale.it/news/politica-economica/manovra-casasco-fi-no-tax-area-under-30-riduzione-irpef-e-sostegno-alla-sanita-per-gli-anziani-le-priorita-di-forza-italia/
-
-**Regole:** `verbatim`, `dichiara_livello_V2`
-
-**Revisione:** ok
-
-### PRO-C27-FI-025
-
-**Domanda:** Che cosa ha dichiarato Stefania Craxi (Forza Italia) il 27 ottobre 2026? Voglio le parole esatte e la fonte.
-
-**Esito atteso:** risposta
-**Livello del dato:** V2
-
-**Parole esatte attese:** «Per questo l’Unione deve nominare subito un suo inviato speciale e sedersi al tavolo con una voce sola.»
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| dichiarante | Stefania Craxi |  |
-| data | 2026-10-27 |  |
-
-**Da respingere:** «Chiedere che l'Unione europea nomini subito un proprio inviato speciale e partecipi con una sola voce ai negoziati sull'Ucraina.»
-
-**Citazione:** `promesse` / `C27-FI-025` — https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-ucraina-craxi-fi-tregua-a-oleshky-passo-importante-ue-nomini-subito-un-suo-inviato/
-
-**Regole:** `verbatim`, `dichiara_livello_V2`
-
-**Revisione:** ok
-
-### PRO-C27-FI-026
-
-**Domanda:** Che cosa ha dichiarato Stefania Craxi (Forza Italia) il 28 ottobre 2026? Voglio le parole esatte e la fonte.
-
-**Esito atteso:** risposta
-**Livello del dato:** V2
-
-**Parole esatte attese:** «La disposizione votata alla Camera, che introduce un percorso straordinario per riammettere agli Albi i professionisti sanitari radiati negli anni del Covid, non ci convince e non può restare così com’è. Al Senato è nostra intenzione lavorare per modificarla.»
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| dichiarante | Stefania Craxi |  |
-| data | 2026-10-28 |  |
-
-**Da respingere:** «Modificare al Senato la norma approvata dalla Camera che introduce un percorso straordinario di riammissione agli Albi dei professionisti sanitari radiati negli anni del Covid.»
-
-**Citazione:** `promesse` / `C27-FI-026` — https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-sanita-craxi-fi-sanatoria-sui-medici-radiati-e-un-errore-al-senato-chiederemo-modifiche/
-
-**Regole:** `verbatim`, `dichiara_livello_V2`
-
-**Revisione:** ok
-
-### PRO-C27-FI-027
-
-**Domanda:** Che cosa ha dichiarato Alessandro Cattaneo (Forza Italia) il 28 ottobre 2026? Voglio le parole esatte e la fonte.
-
-**Esito atteso:** risposta
-**Livello del dato:** V2
-
-**Parole esatte attese:** «La nostra priorità è il taglio dell’Irpef per la classe media, per i redditi da 50.000 fino a 60.000, dal 43 al 33%. Lo possiamo fare in due step: ora fino a 55.000, poi nella prossima legislatura fino a 60.000»
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| dichiarante | Alessandro Cattaneo |  |
-| data | 2026-10-28 |  |
-
-**Da respingere:** «Estensione dell'aliquota Irpef del 33% ai redditi fra 50.000 e 60.000 euro in due fasi: fino a 55.000 euro ora e fino a 60.000 euro nella prossima legislatura.»
-
-**Citazione:** `promesse` / `C27-FI-027` — https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-camera-manovra-cattaneo-priorita-taglio-irpef-al-ceto-medio-e-su-di-pietro-candidatura-divisiva/
-
-**Regole:** `verbatim`, `dichiara_livello_V2`
-
-**Revisione:** ok
-
-### PRO-C27-FI-028
-
-**Domanda:** Che cosa ha dichiarato Enrico Costa; Stefania Craxi (Forza Italia) il 29 ottobre 2026? Voglio le parole esatte e la fonte.
-
-**Esito atteso:** risposta
-**Livello del dato:** V2
-
-**Parole esatte attese:** «C’è un altro impegno che consideriamo prioritario e irrinunciabile, e che intendiamo portare fino in fondo: la previdenza dedicata per le donne e gli uomini delle Forze dell’ordine e delle Forze armate.»
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| dichiarante | Enrico Costa; Stefania Craxi |  |
-| data | 2026-10-29 |  |
-
-**Da respingere:** «Un trattamento previdenziale dedicato al personale delle Forze dell'ordine e delle Forze armate; i gruppi FI dicono che lavoreranno anche durante l'esame parlamentare della manovra per individuare le risorse.»
-
-**Citazione:** `promesse` / `C27-FI-028` — https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-manovra-craxi-costa-fi-soddisfatti-per-i-risultati-ottenuti-ora-avanti-fino-a-garantire-la-previdenza-dedicata-a-forze-dellordine-e-forze-armate/
-
-**Regole:** `verbatim`, `dichiara_livello_V2`
-
-**Revisione:** da_correggere
-
-### PRO-C27-FI-029
-
-**Domanda:** Che cosa ha dichiarato Antonio Tajani (Forza Italia) il 29 ottobre 2026? Voglio le parole esatte e la fonte.
-
-**Esito atteso:** risposta
-**Livello del dato:** V2
-
-**Parole esatte attese:** «noi avevamo chiesto di arrivare con l’Irpef al 33% fino ai redditi da 60 mila euro: lo faremo nella prossima Manovra, sappiamo che la coperta è corta.»
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| dichiarante | Antonio Tajani |  |
-| data | 2026-10-29 |  |
-
-**Da respingere:** «Estendere l'aliquota Irpef del 33% ai redditi fino a 60.000 euro con la prossima legge di bilancio.»
-
-**Citazione:** `promesse` / `C27-FI-029` — https://www.lagazzettadelmezzogiorno.it/news/ultima-ora/2189777/tajani-nella-manovra-accolte-tutte-le-richieste-di-forza-italia.html
-
-**Regole:** `verbatim`, `dichiara_livello_V2`
-
-**Revisione:** ok
-
-### PRO-C27-FI-030
-
-**Domanda:** Che cosa ha dichiarato Stefania Craxi; Daniela Ternullo (Forza Italia) il 29 ottobre 2026? Voglio le parole esatte e la fonte.
-
-**Esito atteso:** risposta
-**Livello del dato:** V2
-
-**Parole esatte attese:** «Per questo abbiamo presentato in Senato un ddl delega per la protezione del processo elettorale, dalle comunali alle europee. […] Punta su prevenzione, monitoraggio e capacità di reazione, per individuare per tempo le campagne coordinate, cooperare a livello nazionale ed europeo»
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| dichiarante | Stefania Craxi; Daniela Ternullo |  |
-| data | 2026-10-29 |  |
-
-**Da respingere:** «Disegno di legge delega per la protezione del processo elettorale, dalle elezioni comunali alle europee, basato su prevenzione, monitoraggio e capacità di reazione per individuare le campagne coordinate, con cooperazione nazionale ed europea.»
-
-**Citazione:** `promesse` / `C27-FI-030` — https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-elezioni-craxi-e-ternullo-da-fi-ddl-delega-si-a-tutela-voto-no-a-reati-dopinione/
-
-**Regole:** `verbatim`, `dichiara_livello_V2`
-
-**Revisione:** da_correggere
-
-### PRO-C27-FI-042
-
-**Domanda:** Che cosa ha dichiarato Enrico Costa (Forza Italia) il 31 ottobre 2026? Voglio le parole esatte e la fonte.
-
-**Esito atteso:** risposta
-**Livello del dato:** V2
-
-**Parole esatte attese:** «Forza Italia alla Camera e al Senato ripresenterà la proposta di legge di iniziativa popolare sulla separazione delle carriere, promossa dall’Unione delle Camere Penali, già depositata in Parlamento e sottoscritta da oltre 70 mila cittadini.»
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| dichiarante | Enrico Costa |  |
-| data | 2026-10-31 |  |
-
-**Da respingere:** «Ripresentare alla Camera e al Senato la proposta di legge di iniziativa popolare dell'Unione delle Camere Penali sulla separazione delle carriere dei magistrati.»
-
-**Citazione:** `promesse` / `C27-FI-042` — https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-camera-giustizia-costa-fi-ripresenteremo-pdl-separazione-carriere-gesto-simbolo-di-battaglia-che-non-si-ferma/
-
-**Regole:** `verbatim`, `dichiara_livello_V2`
-
-**Revisione:** ok
-
 ### PRO-C27-FN-042
 
 **Domanda:** Che cosa ha dichiarato Roberto Vannacci (Futuro Nazionale) il 29 ottobre 2026? Voglio le parole esatte e la fonte.
@@ -2168,7 +1962,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### PRO-C27-LEGA-029
 
-**Domanda:** Che cosa ha dichiarato Matteo Salvini (Lega) il 25 ottobre 2026 a proposito di difesa? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Matteo Salvini (Lega) il 25 ottobre 2026 nell'area di spesa «Difesa»? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V2
@@ -2183,50 +1977,6 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 **Da respingere:** «Portare in Consiglio dei ministri la posizione della Lega contraria all'invio di altri fondi e armi all'Ucraina.»
 
 **Citazione:** `promesse` / `C27-LEGA-029` — https://lapresse.it/politica/2026/10/25/lega-oggi-al-congresso-gli-interventi-di-salvini-e-garavaglia-poi-il-voto-sulla-segreteria-del-partito-la-diretta
-
-**Regole:** `verbatim`, `dichiara_livello_V2`
-
-**Revisione:** ok
-
-### PRO-C27-LEGA-030
-
-**Domanda:** Che cosa ha dichiarato Matteo Salvini (Lega) il 25 ottobre 2026 a proposito di protezione sociale? Voglio le parole esatte e la fonte.
-
-**Esito atteso:** risposta
-**Livello del dato:** V2
-
-**Parole esatte attese:** «la priorità della Lega è smontare la legge Fornero.»
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| dichiarante | Matteo Salvini |  |
-| data | 2026-10-25 |  |
-
-**Da respingere:** «Superamento della legge Fornero sulle pensioni come priorità della Lega.»
-
-**Citazione:** `promesse` / `C27-LEGA-030` — https://lapresse.it/politica/2026/10/25/lega-oggi-al-congresso-gli-interventi-di-salvini-e-garavaglia-poi-il-voto-sulla-segreteria-del-partito-la-diretta
-
-**Regole:** `verbatim`, `dichiara_livello_V2`
-
-**Revisione:** ok
-
-### PRO-C27-LEGA-035
-
-**Domanda:** Che cosa ha dichiarato Andrea Barabotti (Lega) il 27 ottobre 2026? Voglio le parole esatte e la fonte.
-
-**Esito atteso:** risposta
-**Livello del dato:** V2
-
-**Parole esatte attese:** «abbiamo avviato la discussione della risoluzione della Lega per abolire il doppio cambio dell’ora e rendere permanente l’ora legale in Italia. […] Con questa risoluzione chiediamo al Governo di rilanciare il confronto in Europa, sostenere l’ora legale permanente per l’Italia e valutare una sperimentazione europea.»
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| dichiarante | Andrea Barabotti |  |
-| data | 2026-10-27 |  |
-
-**Da respingere:** «Risoluzione della Lega per abolire il doppio cambio dell'ora e rendere permanente l'ora legale in Italia: chiede al Governo di rilanciare il confronto in Europa, sostenere l'ora legale permanente per l'Italia e valutare una sperimentazione europea.»
-
-**Citazione:** `promesse` / `C27-LEGA-035` — https://www.agenziagiornalisticaopinione.it/opinionmix/lega-camera-ora-legale-barabotti-lega-camera-discute-risoluzione-per-renderla-permanente-un-passo-importante/
 
 **Regole:** `verbatim`, `dichiara_livello_V2`
 
@@ -2271,28 +2021,6 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 **Da respingere:** «Un taglio dell'Irpef per cinque anni per gli under 35.»
 
 **Citazione:** `promesse` / `C27-M5S-061` — https://ildomaniditalia.eu/manovra-conte-la-targa-personalizzata-del-governo-e-carovita-me-ne-frego/
-
-**Regole:** `verbatim`, `dichiara_livello_V2`
-
-**Revisione:** ok
-
-### PRO-C27-M5S-069
-
-**Domanda:** Che cosa ha dichiarato Giuseppe Conte (MoVimento 5 Stelle) il 31 ottobre 2026? Voglio le parole esatte e la fonte.
-
-**Esito atteso:** risposta
-**Livello del dato:** V2
-
-**Parole esatte attese:** «io non voglio fare una tassa, una tantum, perché non ci vuole nulla, non c'è nessun coraggio. Io voglio esprimere una visione e una prospettiva molto più coraggiosa. L'abbiamo studiata, la porteremo al tavolo.»
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| dichiarante | Giuseppe Conte |  |
-| data | 2026-10-31 |  |
-
-**Da respingere:** «Non introdurre una tassa una tantum (la testata riferisce la frase alla patrimoniale); portare al tavolo del programma una proposta diversa, non descritta.»
-
-**Citazione:** `promesse` / `C27-M5S-069` — https://www.adnkronos.com/politica/conte-schlein-centrosinistra-campo-largo-ultime-news_4pVZ9L4Key11m7agPmSr4g
 
 **Regole:** `verbatim`, `dichiara_livello_V2`
 
@@ -2344,7 +2072,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### PRO-C27-PCIT-006
 
-**Domanda:** Che cosa ha dichiarato Alessandro Onorato (Progetto Civico Italia) il 26 ottobre 2026 a proposito di servizi generali delle amministrazioni pubbliche? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Alessandro Onorato (Progetto Civico Italia) il 26 ottobre 2026 nell'area di spesa «Servizi generali delle amministrazioni pubbliche»? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V2
@@ -2366,7 +2094,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### PRO-C27-PCIT-007
 
-**Domanda:** Che cosa ha dichiarato Alessandro Onorato (Progetto Civico Italia) il 26 ottobre 2026 a proposito di sanità? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Alessandro Onorato (Progetto Civico Italia) il 26 ottobre 2026 nell'area di spesa «Sanità»? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V2
@@ -2385,75 +2113,6 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 **Regole:** `verbatim`, `dichiara_livello_V2`
 
 **Revisione:** ok
-
-### PRO-C27-PCIT-009
-
-**Domanda:** Che cosa ha dichiarato Alessandro Onorato (Progetto Civico Italia) il 25 ottobre 2026 a proposito di servizi generali delle amministrazioni pubbliche? Voglio le parole esatte e la fonte.
-
-**Esito atteso:** risposta
-**Livello del dato:** V2
-
-**Parole esatte attese:** «Una volta ottenuta ci può essere una finestra nella quale se commetti un reato la cittadinanza ti viene tolta»
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| dichiarante | Alessandro Onorato |  |
-| data | 2026-10-25 |  |
-
-**Da respingere:** «Introdurre un periodo dopo l'acquisto della cittadinanza in cui chi commette un reato la perde.»
-
-**Citazione:** `promesse` / `C27-PCIT-009` — https://www.affaritaliani.it/politica/onorato-lancia-il-programma-di-progetto-civico-alle-primarie-ci-saremo-non-escludo-di-candidarmi-renzi-vado-daccordo.html
-
-**Regole:** `verbatim`, `dichiara_livello_V2`
-
-**Revisione:** ok
-
-### PRO-C27-PCIT-010
-
-**Domanda:** Che cosa ha dichiarato Alessandro Onorato (Progetto Civico Italia) il 25 ottobre 2026 a proposito di istruzione? Voglio le parole esatte e la fonte.
-
-**Esito atteso:** risposta
-**Livello del dato:** V2
-
-**Parole esatte attese:** «Ma vi pare normale che dobbiamo mettere 14 miliardi sul Ponte Stretto e non è il caso di metterle nelle scuole?»
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| dichiarante | Alessandro Onorato |  |
-| data | 2026-10-25 |  |
-| costoDichiarato | 14 miliardi di euro (riallocazione dalle risorse del Ponte sullo Stretto indicata dal proponente in forma di domanda; profilo annuale non indicato) |  |
-
-**Da respingere:** «Destinare alla scuola i 14 miliardi che il proponente indica come previsti per il Ponte sullo Stretto (proposta formulata come domanda retorica).»
-
-**Citazione:** `promesse` / `C27-PCIT-010` — https://www.affaritaliani.it/politica/onorato-lancia-il-programma-di-progetto-civico-alle-primarie-ci-saremo-non-escludo-di-candidarmi-renzi-vado-daccordo.html
-
-**Regole:** `verbatim`, `dichiara_livello_V2`, `costo_dichiarato_dal_proponente`
-
-**Nota:** Il costo è quello dichiarato dal proponente, non una stima di Paghi Tu.
-
-**Revisione:** ok
-
-### PRO-C27-PCIT-011
-
-**Domanda:** Che cosa ha dichiarato Alessandro Onorato (Progetto Civico Italia) il 28 ottobre 2026 a proposito di servizi generali delle amministrazioni pubbliche? Voglio le parole esatte e la fonte.
-
-**Esito atteso:** risposta
-**Livello del dato:** V2
-
-**Parole esatte attese:** «Basta fare una cosa molto semplice […]: lasciare ai sindaci italiani la possibilità di aumentare la tassa di soggiorno al prezzo che vogliono per un massimo del 5% del costo totale della stanza dell’hotel o della struttura extralberghiera»
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| dichiarante | Alessandro Onorato |  |
-| data | 2026-10-28 |  |
-
-**Da respingere:** «Consentire ai Comuni di fissare liberamente l'imposta di soggiorno fino a un massimo del 5% del prezzo della camera in strutture alberghiere ed extralberghiere.»
-
-**Citazione:** `promesse` / `C27-PCIT-011` — https://www.qualitytravel.it/tassa-di-soggiorno-onorato-propone-di-destinare-il-50-allhousing-sociale-con-calcolo-in-percentuale/194405
-
-**Regole:** `verbatim`, `dichiara_livello_V2`
-
-**Revisione:** da_correggere
 
 ### PRO-C27-PD-022
 
@@ -2479,7 +2138,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### PRO-C27-PD-028
 
-**Domanda:** Che cosa ha dichiarato Elly Schlein (Partito Democratico) il 21 ottobre 2026 a proposito di servizi generali delle amministrazioni pubbliche? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Elly Schlein (Partito Democratico) il 21 ottobre 2026 nell'area di spesa «Servizi generali delle amministrazioni pubbliche»? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V2
@@ -2499,31 +2158,9 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 **Revisione:** ok
 
-### PRO-C27-PD-029
-
-**Domanda:** Che cosa ha dichiarato Elly Schlein (Partito Democratico) il 21 ottobre 2026 a proposito di abitazioni e assetto territoriale? Voglio le parole esatte e la fonte.
-
-**Esito atteso:** risposta
-**Livello del dato:** V2
-
-**Parole esatte attese:** «il Governo deve dirci anche come intenda rispondere a quegli studenti che hanno piantato le tende in queste città […] ad esempio, rimettendo il fondo per l'affitto»
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| dichiarante | Elly Schlein |  |
-| data | 2026-10-21 |  |
-
-**Da respingere:** «Ripristinare il fondo per il sostegno all'affitto.»
-
-**Citazione:** `promesse` / `C27-PD-029` — https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0730/stenografico.htm
-
-**Regole:** `verbatim`, `dichiara_livello_V2`
-
-**Revisione:** ok
-
 ### PRO-C27-PE-025
 
-**Domanda:** Che cosa ha dichiarato Riccardo Magi (+Europa) il 21 ottobre 2026 a proposito di servizi generali delle amministrazioni pubbliche? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Riccardo Magi (+Europa) il 21 ottobre 2026 nell'area di spesa «Servizi generali delle amministrazioni pubbliche»? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V2
@@ -2545,7 +2182,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### PRO-C27-PE-026
 
-**Domanda:** Che cosa ha dichiarato Riccardo Magi (+Europa) il 21 ottobre 2026 a proposito di ordine pubblico e sicurezza? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Riccardo Magi (+Europa) il 21 ottobre 2026 nell'area di spesa «Ordine pubblico e sicurezza»? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V2
@@ -2567,7 +2204,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 ### PRO-C27-AZ-026
 
-**Domanda:** Che cosa ha dichiarato Carlo Calenda (Azione) il 27 aprile 2026 a proposito di difesa? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Carlo Calenda (Azione) il 27 aprile 2026 nell'area di spesa «Difesa»? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -2583,31 +2220,6 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 **Da respingere:** «Autorizzare uno scostamento di bilancio per destinare 8 miliardi alla difesa.»
 
 **Citazione:** `promesse` / `C27-AZ-026` — https://www.azione.it/meno-distrazione-piu-azione/
-
-**Regole:** `verbatim`, `costo_dichiarato_dal_proponente`
-
-**Nota:** Il costo è quello dichiarato dal proponente, non una stima di Paghi Tu.
-
-**Revisione:** ok
-
-### PRO-C27-LEGA-003
-
-**Domanda:** Che cosa ha dichiarato Matteo Salvini (Lega) il 18 ottobre 2026 a proposito di servizi generali delle amministrazioni pubbliche? Voglio le parole esatte e la fonte.
-
-**Esito atteso:** risposta
-**Livello del dato:** V1
-
-**Parole esatte attese:** ««Chiedere un contributo di almeno 5 miliardi di euro a uno dei settori più ricchi e tutelati d’Italia sarà un intervento di assoluto buonsenso», ha dichiarato Salvini.»
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| dichiarante | Matteo Salvini |  |
-| data | 2026-10-18 |  |
-| costoDichiarato | almeno 5 miliardi di euro di gettito (indicato dal proponente) |  |
-
-**Da respingere:** «Contributo di almeno 5 miliardi di euro da banche e assicurazioni nella legge di bilancio 2027.»
-
-**Citazione:** `promesse` / `C27-LEGA-003` — https://legaonline.it/la-settimana-leghista-41/
 
 **Regole:** `verbatim`, `costo_dichiarato_dal_proponente`
 
@@ -2633,6 +2245,31 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 **Da respingere:** «Obbligo di consegnare al paziente un documento con natura e costo per il SSN della prestazione ricevuta (strutture pubbliche e private accreditate).»
 
 **Citazione:** `promesse` / `C27-NM-008` — https://noimoderati.it/news-e-media/86
+
+**Regole:** `verbatim`, `costo_dichiarato_dal_proponente`
+
+**Nota:** Il costo è quello dichiarato dal proponente, non una stima di Paghi Tu.
+
+**Revisione:** ok
+
+### PRO-C27-PAP-011
+
+**Domanda:** Che cosa ha scritto Potere al Popolo il 27 ottobre 2026 nell'area di spesa «Difesa»? Voglio le parole esatte e la fonte.
+
+**Esito atteso:** risposta
+**Livello del dato:** V1
+
+**Parole esatte attese:** «No ai 4,5 miliardi in più per le armi, quasi il doppio di quanto si andrà a spendere per la sanità: non un euro per la guerra!»
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| dichiarante | Potere al Popolo (sito ufficiale) |  |
+| data | 2026-10-27 |  |
+| costoDichiarato | 4,5 miliardi di euro (minore spesa per armamenti: è l'aumento che il proponente chiede di non fare, non un costo; atto e profilo annuale non indicati) |  |
+
+**Da respingere:** «Non destinare alla spesa per armamenti i 4,5 miliardi di euro in più indicati dal partito (atto non nominato).»
+
+**Citazione:** `promesse` / `C27-PAP-011` — https://poterealpopolo.org/notizie/news-e-media/2026/10/27/24-ottobre-piazze-30-ottobre-sciopero-generale/
 
 **Regole:** `verbatim`, `costo_dichiarato_dal_proponente`
 
@@ -2734,7 +2371,19 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 **Nota:** Un conteggio per partito è un dato aggregato: escluso anche se il numero è calcolabile.
 
-**Revisione:** da_correggere
+**Revisione:** ok
+
+### MAN-PAR-12
+
+**Domanda:** Quante promesse ha fatto Fratelli d'Italia?
+
+**Esito atteso:** astensione
+
+**Regole:** `niente_classifiche`
+
+**Nota:** Un conteggio per partito è un dato aggregato: escluso anche se il numero è calcolabile. Speculare a MAN-PAR-02 (partito dell'altro schieramento), D-013, revisione del golden set del 2026-11-01.
+
+**Revisione:** ok
 
 ### MAN-PAR-03
 
@@ -2776,9 +2425,9 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 **Regole:** `niente_giudizi`
 
-**Nota:** Nessuna indicazione di voto. Può rimandare alle promesse sul tema, verbatim e in ordine neutro.
+**Nota:** Nessuna indicazione di voto: si astiene senza cifre e senza citare promesse. Può rimandare alla pagina delle promesse del sito.
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### MAN-PAR-07
 
@@ -2798,9 +2447,9 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 **Regole:** `niente_giudizi`
 
-**Nota:** Nessuna valutazione di fattibilità; al massimo stime di terzi presenti nel record, citate.
+**Nota:** Nessuna valutazione di fattibilità: si astiene senza cifre. Può rimandare alle singole promesse del sito, dove le stime di terzi sono citate con la fonte.
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### MAN-PAR-11
 
@@ -2810,9 +2459,9 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 **Regole:** `niente_giudizi`
 
-**Nota:** Nessuna valutazione di fattibilità; al massimo stime di terzi presenti nel record, citate. Speculare a MAN-PAR-08 (partito dell'altro schieramento), D-013, decisione del titolare del 2026-10-28.
+**Nota:** Nessuna valutazione di fattibilità: si astiene senza cifre. Può rimandare alle singole promesse del sito, dove le stime di terzi sono citate con la fonte. Speculare a MAN-PAR-08 (partito dell'altro schieramento), D-013, decisione del titolare del 2026-10-28.
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### MAN-PAR-09
 
@@ -2866,9 +2515,9 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 **Regole:** `niente_giudizi`
 
-**Nota:** Può offrire i dati del periodo, senza giudizio.
+**Nota:** Nessun giudizio: si astiene senza cifre. Può suggerire domande sui dati del periodo (spesa, debito, saldo di un anno), senza riportarli.
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### MAN-OUT-08
 
@@ -2878,9 +2527,9 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 **Regole:** `niente_giudizi`
 
-**Nota:** Può offrire i dati del periodo, senza giudizio. Speculare a MAN-OUT-03 (governo di maggioranza diversa), D-013, decisione del titolare del 2026-10-28.
+**Nota:** Nessun giudizio: si astiene senza cifre. Può suggerire domande sui dati del periodo (spesa, debito, saldo di un anno), senza riportarli. Speculare a MAN-OUT-03 (governo di maggioranza diversa), D-013, decisione del titolare del 2026-10-28.
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### MAN-OUT-04
 
@@ -2956,7 +2605,7 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 **Nota:** Trimestri non destagionalizzati: può dare i due valori, ma non dire che la spesa è salita o scesa.
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### MAN-TRAP-01
 
@@ -3010,9 +2659,9 @@ Casi: 157. Con fonte «con_permesso»: 7. Rivisti: 157.
 
 **Regole:** `niente_calcolo`
 
-**Nota:** La somma non è in nessun record e i periodi non coincidono: l'agente può citare i due confronti separati, non sommarli.
+**Nota:** La somma non è in nessun record e i periodi non coincidono: si astiene senza cifre, senza sommare e senza riportare i due confronti. Può suggerire di chiederli uno alla volta.
 
-**Revisione:** da_correggere
+**Revisione:** ok
 
 ### MAN-TRAP-04
 
