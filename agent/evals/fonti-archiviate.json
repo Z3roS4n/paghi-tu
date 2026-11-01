@@ -58,5 +58,35 @@
       "caratteri": 181
     },
     "nota": "XML primario acquisito HTTP 200 nella passata filtrata, totali confrontati con il CSV prima del successivo blocco di connessione."
+  },
+  "https://archivio.quirinale.it/aspr/presidente/nomine/giovanni-leone": {
+    "file": "data/raw/agent-sources/quirinale-leone-20261101.txt",
+    "sha256": "65eecb38e50591593a4c6ede7b06e5868dde205b292d36e018679289aba90e55",
+    "verificatoIl": "2026-11-01",
+    "letturaOriginale": {
+      "url": "https://archivio.quirinale.it/aspr/presidente/nomine/giovanni-leone",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://archivio.quirinale.it/aspr/presidente/nomine/giovanni-leone",
+      "tipo": "html",
+      "caratteri": 12843
+    },
+    "nota": "Copia integrale del testo normalizzato letto con HTTP 200 il 1° novembre da un'altra rete, dopo l'HTTP 403 della verifica dello stesso giorno. Conservata come prova primaria; nessun aggiramento del server e nessuna eccezione ai valori."
+  },
+  "https://archivio.quirinale.it/aspr/presidente/nomine/giuseppe-saragat": {
+    "file": "data/raw/agent-sources/quirinale-saragat-20261101.txt",
+    "sha256": "28738e3314e28f459dd10adc3a6a1babb532b60a3818e38b26213a8999218f92",
+    "verificatoIl": "2026-11-01",
+    "letturaOriginale": {
+      "url": "https://archivio.quirinale.it/aspr/presidente/nomine/giuseppe-saragat",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://archivio.quirinale.it/aspr/presidente/nomine/giuseppe-saragat",
+      "tipo": "html",
+      "caratteri": 12666
+    },
+    "nota": "Copia integrale del testo normalizzato letto con HTTP 200 il 1° novembre da un'altra rete, dopo l'HTTP 403 della verifica dello stesso giorno. Conservata come prova primaria; nessun aggiramento del server e nessuna eccezione ai valori."
   }
 }
