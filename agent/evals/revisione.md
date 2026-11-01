@@ -1287,7 +1287,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 ### PRO-C27-AVS-003
 
-**Domanda:** Che cosa ha scritto Alleanza Verdi e Sinistra (Europa Verde + Sinistra Italiana) l'11 ottobre 2026 nell'area di spesa «Protezione dell'ambiente»? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha scritto Alleanza Verdi e Sinistra (Europa Verde + Sinistra Italiana) l'11 ottobre 2026 a proposito di protezione dell'ambiente? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1312,7 +1312,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 ### PRO-C27-AZ-006
 
-**Domanda:** Che cosa ha scritto Azione il 2 settembre 2026 nell'area di spesa «Protezione sociale»? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha scritto Azione il 2 settembre 2026 a proposito di protezione sociale? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1334,7 +1334,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 ### PRO-C27-CAPI-012
 
-**Domanda:** Che cosa ha scritto Partito Capibara il 3 luglio 2026 nell'area di spesa «Istruzione»? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha scritto Partito Capibara il 3 luglio 2026 a proposito di istruzione? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1356,7 +1356,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 ### PRO-C27-CSX-001
 
-**Domanda:** Che cosa hanno scritto PD, M5S, AVS, IV e +Europa (risoluzione unitaria) il 13 ottobre 2026 nell'area di spesa «Difesa»? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa hanno scritto PD, M5S, AVS, IV e +Europa (risoluzione unitaria) il 13 ottobre 2026 a proposito di difesa? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1400,7 +1400,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 ### PRO-C27-FI-006
 
-**Domanda:** Che cosa ha dichiarato Maurizio Casasco (Forza Italia) il 25 agosto 2026 nell'area di spesa «Servizi generali delle amministrazioni pubbliche»? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Maurizio Casasco (Forza Italia) il 25 agosto 2026 a proposito di servizi generali delle amministrazioni pubbliche? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1422,7 +1422,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 ### PRO-C27-FN-016
 
-**Domanda:** Che cosa ha scritto Futuro Nazionale il 24 agosto 2026 nell'area di spesa «Difesa»? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha scritto Futuro Nazionale il 24 agosto 2026 a proposito di difesa? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1466,7 +1466,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 ### PRO-C27-LEGA-001
 
-**Domanda:** Che cosa ha dichiarato Matteo Salvini (Lega) il 27 settembre 2026 nell'area di spesa «Protezione sociale»? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Matteo Salvini (Lega) il 27 settembre 2026 a proposito di protezione sociale? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1491,7 +1491,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 ### PRO-C27-M5S-018
 
-**Domanda:** Che cosa ha scritto MoVimento 5 Stelle il 18 settembre 2026 nell'area di spesa «Attività ricreative, culturali e di culto»? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha scritto MoVimento 5 Stelle il 18 settembre 2026 a proposito di attività ricreative, culturali e di culto? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1535,7 +1535,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 ### PRO-C27-NM-001
 
-**Domanda:** Che cosa ha scritto Noi Moderati il 23 settembre 2026 nell'area di spesa «Servizi generali delle amministrazioni pubbliche»? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha scritto Noi Moderati il 23 settembre 2026 a proposito di servizi generali delle amministrazioni pubbliche? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1557,7 +1557,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 ### PRO-C27-ORA-007
 
-**Domanda:** Che cosa ha scritto Ora! il 19 agosto 2026 nell'area di spesa «Servizi generali delle amministrazioni pubbliche»? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha scritto Ora! il 19 agosto 2026 a proposito di servizi generali delle amministrazioni pubbliche? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1582,7 +1582,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 ### PRO-C27-PAP-004
 
-**Domanda:** Che cosa ha scritto Potere al Popolo il 4 settembre 2026 nell'area di spesa «Servizi generali delle amministrazioni pubbliche»? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha scritto Potere al Popolo il 4 settembre 2026 a proposito di servizi generali delle amministrazioni pubbliche? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1604,7 +1604,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 ### PRO-C27-PCIT-001
 
-**Domanda:** Che cosa ha dichiarato Alessandro Onorato (Progetto Civico Italia) il 7 settembre 2026 nell'area di spesa «Protezione sociale»? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Alessandro Onorato (Progetto Civico Italia) il 7 settembre 2026 a proposito di protezione sociale? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1629,7 +1629,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 ### PRO-C27-PD-014
 
-**Domanda:** Che cosa ha dichiarato Elly Schlein (Partito Democratico) il 7 agosto 2026 nell'area di spesa «Protezione sociale»? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Elly Schlein (Partito Democratico) il 7 agosto 2026 a proposito di protezione sociale? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1695,7 +1695,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 ### PRO-C27-PSI-001
 
-**Domanda:** Che cosa ha scritto Avanti PSI (Partito Socialista Italiano) il 6 agosto 2026 nell'area di spesa «Abitazioni e assetto territoriale»? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha scritto Avanti PSI (Partito Socialista Italiano) il 6 agosto 2026 a proposito di abitazioni e assetto territoriale? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -1783,7 +1783,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 ### PRO-C27-AVS-056
 
-**Domanda:** Che cosa ha dichiarato Angelo Bonelli (Alleanza Verdi e Sinistra) il 27 ottobre 2026 nell'area di spesa «Protezione sociale»? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Angelo Bonelli (Alleanza Verdi e Sinistra) il 27 ottobre 2026 a proposito di protezione sociale? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V2
@@ -1962,7 +1962,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 ### PRO-C27-LEGA-029
 
-**Domanda:** Che cosa ha dichiarato Matteo Salvini (Lega) il 25 ottobre 2026 nell'area di spesa «Difesa»? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Matteo Salvini (Lega) il 25 ottobre 2026 a proposito di difesa? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V2
@@ -2072,7 +2072,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 ### PRO-C27-PCIT-006
 
-**Domanda:** Che cosa ha dichiarato Alessandro Onorato (Progetto Civico Italia) il 26 ottobre 2026 nell'area di spesa «Servizi generali delle amministrazioni pubbliche»? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Alessandro Onorato (Progetto Civico Italia) il 26 ottobre 2026 a proposito di servizi generali delle amministrazioni pubbliche? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V2
@@ -2094,7 +2094,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 ### PRO-C27-PCIT-007
 
-**Domanda:** Che cosa ha dichiarato Alessandro Onorato (Progetto Civico Italia) il 26 ottobre 2026 nell'area di spesa «Sanità»? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Alessandro Onorato (Progetto Civico Italia) il 26 ottobre 2026 a proposito di sanità? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V2
@@ -2138,7 +2138,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 ### PRO-C27-PD-028
 
-**Domanda:** Che cosa ha dichiarato Elly Schlein (Partito Democratico) il 21 ottobre 2026 nell'area di spesa «Servizi generali delle amministrazioni pubbliche»? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Elly Schlein (Partito Democratico) il 21 ottobre 2026 a proposito di servizi generali delle amministrazioni pubbliche? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V2
@@ -2160,7 +2160,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 ### PRO-C27-PE-025
 
-**Domanda:** Che cosa ha dichiarato Riccardo Magi (+Europa) il 21 ottobre 2026 nell'area di spesa «Servizi generali delle amministrazioni pubbliche»? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Riccardo Magi (+Europa) il 21 ottobre 2026 a proposito di servizi generali delle amministrazioni pubbliche? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V2
@@ -2182,7 +2182,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 ### PRO-C27-PE-026
 
-**Domanda:** Che cosa ha dichiarato Riccardo Magi (+Europa) il 21 ottobre 2026 nell'area di spesa «Ordine pubblico e sicurezza»? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Riccardo Magi (+Europa) il 21 ottobre 2026 a proposito di ordine pubblico e sicurezza? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V2
@@ -2204,7 +2204,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 ### PRO-C27-AZ-026
 
-**Domanda:** Che cosa ha dichiarato Carlo Calenda (Azione) il 27 aprile 2026 nell'area di spesa «Difesa»? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Carlo Calenda (Azione) il 27 aprile 2026 a proposito di difesa? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -2254,7 +2254,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 ### PRO-C27-PAP-011
 
-**Domanda:** Che cosa ha scritto Potere al Popolo il 27 ottobre 2026 nell'area di spesa «Difesa»? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha scritto Potere al Popolo il 27 ottobre 2026 a proposito di difesa? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
 **Livello del dato:** V1

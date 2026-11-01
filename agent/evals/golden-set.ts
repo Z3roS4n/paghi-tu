@@ -654,10 +654,11 @@ function onDate(iso: string): string {
   return `${day === 8 || day === 11 ? "l'" : "il "}${formatDateIt(iso)}`;
 }
 
-// L'area di spesa con le parole dell'indice («Area di spesa: …»): distingue due dichiarazioni dello stesso giorno.
+// Il tema distingue due dichiarazioni dello stesso giorno. «Nell'area di spesa «…»» faceva scartare a Vertex 6 domande
+// su 23 come fuori dominio (run del 2026-11-01): resta «a proposito di …», che passava 3 run su 3.
 function promiseQuestion(p: CampaignPromise, party: Party, withTopic: boolean): string {
   const { who, verb } = promiseSubject(p, party);
-  const topic = withTopic ? ` nell'area di spesa «${COFOG_DIVISIONS[p.cofog]}»` : "";
+  const topic = withTopic ? ` a proposito di ${COFOG_DIVISIONS[p.cofog].toLowerCase()}` : "";
   return `Che cosa ${verb} ${who} ${onDate(p.data)}${topic}? Voglio le parole esatte e la fonte.`;
 }
 
