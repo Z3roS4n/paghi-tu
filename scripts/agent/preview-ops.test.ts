@@ -76,3 +76,12 @@ test("TTL requires the exact Preview field in ACTIVE state", () => {
   expect(() => verify([{ name: name.replace("agent_preview", "agent_other"), ttlConfig: { state: "ACTIVE" } }])).toThrow();
   expect(() => verify([{ name, ttlConfig: { state: "ACTIVE" } }, { name, ttlConfig: { state: "ACTIVE" } }])).toThrow();
 });
+
+
+test("requires a verified index stamp and no sync marker before manual enable", async () => {
+  const { assertIndexReadyControl } = await import("./preview-common.mjs");
+  expect(() => assertIndexReadyControl({ enabled: false })).toThrow();
+  expect(() => assertIndexReadyControl({ indexSha256: "x".repeat(64) })).toThrow();
+  expect(() => assertIndexReadyControl({ indexSha256: "a".repeat(64), sync: { owner: "sync" } })).toThrow();
+  expect(() => assertIndexReadyControl({ indexSha256: "a".repeat(64) })).not.toThrow();
+});

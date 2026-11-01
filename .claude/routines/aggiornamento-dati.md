@@ -249,3 +249,12 @@ controllo delle pagine.
 
 ## Segnalazioni
 A fine esecuzione, sempre (anche se non è cambiato niente): `node scripts/notify.ts "<esito> <data>" <file>` con binario per binario cosa è stato pubblicato (con il commit), cosa ha respinto il verificatore e perché, quali fonti restano senza copia, le issue messe in `da-decidere`, gli errori con il passo e l'output. Esito in una parola: `PUBBLICATO`, `NIENTE DA FARE`, `BLOCCATO` (con il motivo). Mai pubblicare «a metà».
+
+
+## Allineamento agente dopo la pubblicazione (integrazione separata, 31 ottobre 2026)
+
+Dopo il push approvato che cambia `data/` o l'export, il workflow `Agent index sync` su main sincronizza Vertex solo se Antonio lo ha configurato e abilitato. Non eseguire import Vertex dal processo di ricerca e non usare l'identità Vercel per scrivere l'indice. Non modificare il cron di questa routine.
+
+Controllare `gh run list --workflow agent-index-sync.yml --commit <sha-pubblicato> --limit 5 --json databaseId,status,conclusion,url`. Se c'è un run, seguirne l'esito per un tempo limitato; dopo al massimo 25 minuti riportare pendente se ancora in attesa (per esempio environment approval). Un run skipped, assente, timed_out o fallito non è allineamento agente. Se la variazione non cambia alcun dato esportato, dichiarare indice invariato soltanto sulla verifica hash, non sul nome dei file.
+
+Nella segnalazione esistente distinguere sempre sito pubblicato, indice verificato, Preview con bundle allineato o agente pendente/bloccato, con SHA e link al run. Se manca configurazione o il trigger non parte, segnalare ad Antonio attraverso il meccanismo di notifica già autorizzato. Non attribuire PASS dell'agente al solo check Vercel; non ripetere import, liberare lock o accendere control in questa routine. [Wiring, limiti, recupero e prove](../project/reports/2026-10-31-index-refresh.md). Questo file va sincronizzato con il prompt del runtime effettivo e riletto dopo l'aggiornamento da parte di Antonio.

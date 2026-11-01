@@ -1,0 +1,72 @@
+name: Agent index sync
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'agent/ingest/**'
+      - 'agent/answer/**'
+      - 'agent/shared/**'
+      - 'agent/sync/**'
+      - 'scripts/agent/sync-index.ts'
+      - '.github/workflows/agent-index-sync.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: paghi-tu-agent-index
+  cancel-in-progress: false
+jobs:
+  sync:
+    if: github.ref == 'refs/heads/main' && github.repository == 'Z3roS4n/paghi-tu' && vars.AGENT_INDEX_SYNC_ENABLED == '1'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    environment: agent-index-sync
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Validate candidate locally before cloud authentication
+        run: |
+          npm ci
+          npm test
+          npm run typecheck
+          npm run lint
+          npm run build
+          npm run agent:index:sync
+      - name: Federate dedicated sync identity
+        id: auth
+        uses: google-github-actions/auth@7c6bc770dae815cd3e89ee6cdf493a5fab2cc093 # v3
+        with:
+          workload_identity_provider: ${{ vars.AGENT_SYNC_WIF_PROVIDER }}
+          service_account: ${{ vars.AGENT_SYNC_SERVICE_ACCOUNT }}
+          token_format: access_token
+          create_credentials_file: false
+      - name: Synchronize and verify index
+        env:
+          AGENT_SYNC_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
+          AGENT_SYNC_PROJECT: paghi-tu-agent
+          AGENT_SYNC_DATABASE: paghi-tu-preview
+          AGENT_SYNC_STORE: ${{ vars.AGENT_SYNC_STORE }}
+          AGENT_SYNC_ENGINE: ${{ vars.AGENT_SYNC_ENGINE }}
+          AGENT_SYNC_COMMIT: ${{ github.sha }}
+          AGENT_SYNC_REPORT: ${{ runner.temp }}/agent-sync-report.json
+        run: npm run agent:index:sync -- --apply
+      - name: Preserve aggregate report
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: agent-index-sync-${{ github.run_id }}
+          path: ${{ runner.temp }}/agent-sync-report.json
+          if-no-files-found: ignore
+          retention-days: 14
+      - name: Record failure for operator
+        if: failure()
+        run: echo 'Index sync failed. Inspect the job and aggregate artifact; the assistant may remain suspended. Reconcile persistent lock before rerunning.' >> "$GITHUB_STEP_SUMMARY"

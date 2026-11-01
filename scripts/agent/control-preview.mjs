@@ -1,5 +1,5 @@
 import { spawnSync } from "node:child_process";
-import { argsMap, loadStateStore, readConfig, recoverHaltedGlobal } from "./preview-common.mjs";
+import { argsMap, loadStateStore, readConfig, recoverHaltedGlobal, assertIndexReadyControl } from "./preview-common.mjs";
 
 const args = argsMap(process.argv.slice(2));
 if (args.has("--help")) {
@@ -25,6 +25,7 @@ const control = await state.transact(["control", "global"], (docs) => {
   const current = docs.get("control");
   const global = docs.get("global");
   if (current !== null && (typeof current !== "object" || current === null || typeof current.enabled !== "boolean")) throw new Error("Control divergente.");
+  if (enable) assertIndexReadyControl(current);
   if (enable && global && typeof global === "object" && global.halted === true) throw new Error("Global halted dopo esito remoto ambiguo: serve riconciliazione operatore prima di riabilitare.");
   if (!args.has("--apply")) return { writes: {}, value: { control: current, global } };
   if (recover) {

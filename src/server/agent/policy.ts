@@ -25,9 +25,10 @@ export type Admission = { owner: string; ledgerKey: string; sessionKey: string; 
 export class PreviewPolicy {
   private readonly state: FirestoreStateStore;
   private readonly secret: string;
-  constructor(state: FirestoreStateStore, secret: string) { if (Buffer.byteLength(secret) < 32) throw new StateUnavailable(); this.state = state; this.secret = secret; }
+  private readonly indexHash: string;
+  constructor(state: FirestoreStateStore, secret: string, indexHash: string) { if (Buffer.byteLength(secret) < 32) throw new StateUnavailable(); this.state = state; this.secret = secret; if (!/^[a-f0-9]{64}$/.test(indexHash)) throw new StateUnavailable(); this.indexHash = indexHash; }
   hash(text: string): string { return createHmac("sha256", this.secret).update(text).digest("base64url"); }
-  private control(v: unknown): void { if (!object(v) || v.enabled !== true) throw new PolicyDenied("disabled"); }
+  private control(v: unknown): void { if (!object(v) || v.enabled !== true || v.sync !== undefined || v.indexSha256 !== this.indexHash) throw new PolicyDenied("disabled"); }
   async admit(input: { cookie: string; ip: string; requestId: string; question: string; conversationId?: string; now?: number; signal?: AbortSignal }): Promise<Admission> {
     const now = input.now ?? Date.now(); const date = new Date(now); const day = date.toISOString().slice(0, 10); const month = day.slice(0, 7); const hour = date.toISOString().slice(0, 13);
     const sessionKey = `session/${this.hash(input.cookie)}`; const ipKey = `ip/${this.hash(`${day}:${input.ip}`)}`;

@@ -1,4 +1,5 @@
 import "server-only";
+import { snapshotHash } from "../../../agent/sync/refresh.ts";
 import { randomBytes } from "node:crypto";
 import { isIP } from "node:net";
 import type { AgentConfig } from "./config.ts";
@@ -75,13 +76,13 @@ export function createAgentHandler(deps: Dependencies): (request: Request) => Pr
     try {
       const token = await deps.getToken(config, signal);
       if (signal.aborted) throw new AuthUnavailable();
-      const state = deps.state(config, token, signal); policy = new PreviewPolicy(state, config.ipHashSecret);
+      const index = await deps.index();
+      const state = deps.state(config, token, signal); policy = new PreviewPolicy(state, config.ipHashSecret, snapshotHash(index));
       if (input.action === "reset") {
         await policy.reset(currentCookie, input.conversationId, deps.now?.() ?? Date.now(), signal);
         return new Response(JSON.stringify({ reset: true }), { status: 200, headers });
       }
       admission = await policy.admit({ cookie: currentCookie, ip, requestId: input.requestId, question: input.question, conversationId: input.conversationId, now: deps.now?.() ?? Date.now(), signal });
-      const index = await deps.index();
       let attempts = 0;
       const transport: RuntimeTransport = async (dispatch, dispatchSignal) => {
         if (uncertain || blocked || signal.aborted || dispatchSignal.aborted || attempts >= 3 || deadline.aborted || Date.now() - startedAt > 43000) throw new DOMException("aborted", "AbortError");
