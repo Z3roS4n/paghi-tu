@@ -67,7 +67,7 @@
           "pct": -30.688099435298337,
           "calcolatoDa": "paghi_tu"
         },
-        "noteMetodo": "UPB NdL 1/2022 Tab. 20 p. 47 (PDF). Il consuntivo contiene una PROIEZIONE (domande giacenti incluse). Differenza -10.272 mln; -5.772 mln rispetto alla RT corretta (28.969).",
+        "noteMetodo": "UPB NdL 1/2022 Tab. 20 p. 47 (PDF). Il consuntivo contiene una PROIEZIONE (domande giacenti incluse). Differenza -10.271 mln rispetto alla RT del DL 4/2019 (33.469) e -5.771 mln (-19,9%, INFERENZA) rispetto alla RT corretta con NADEF 2019 e LB 2020 (28.969): differenze tra i totali, calcolo nostro. La tabella UPB riporta 10.272 e 5.772, pari alla somma delle differenze annue arrotondate al milione (per il 2023 indica 1.372, mentre 5.034 - 3.663 = 1.371).",
         "verifica": {
           "livello": "V1",
           "dettaglio": "V1-proiezione ✓ CONFERMATA verificatore 2026-10-20 (Tab. 20 p. 47; -30,7% vs RT, -19,9% vs RT corretta: INFERENZA)"
@@ -486,7 +486,7 @@
           "pct": 29.21839450844854,
           "calcolatoDa": "paghi_tu"
         },
-        "noteMetodo": "Min. Interno, audizione 22/4/2010, pp. 1-4. Previsto 2.604 = 904 (L. 244/2007, finanziaria 2008, governo Prodi II, per l'aumento della detrazione) + 1.700 (DL 93/2008, Berlusconi IV). Stanziamento 2008 portato a 2.864 mln (DL 154/2008) e a 3.020 mln (L. 191/2009); 3.364 mln annui dal 2009. Il totale certificato ricalcolato a p. 4 è 3.364.556.281,09. +29,2% (INFERENZA).",
+        "noteMetodo": "Min. Interno, audizione 22/4/2010, pp. 1-4. Previsto 2.604 = 904 (L. 244/2007, finanziaria 2008, governo Prodi II, per l'aumento della detrazione) + 1.700 (DL 93/2008, Berlusconi IV). Stanziamento 2008 portato a 2.864 mln (DL 154/2008) e a 3.020 mln (L. 191/2009); 3.364 mln annui dal 2009. Consuntivo = «ICI attestata 2008 come da D.M. 1° aprile 2009» (p. 3: 3.364.846.992,77, arrotondato all'euro). Nella tabella dopo la L. 191/2009 (p. 4) il «Totale complessivo certificato» del 2008, su cui è calcolata la percentuale di riparto (89,75924%), è 3.364.556.281,09 (290.711,68 euro in meno); la fonte non spiega la differenza. Con quel totale lo scostamento sarebbe +760,6 mln invece di +760,8 mln; +29,2% in entrambi i casi (calcolo nostro, INFERENZA).",
         "verifica": {
           "livello": "V1",
           "dettaglio": "V1 ✓ CONFERMATA verificatore 2026-10-20 (cifre confermate; precisate l'attribuzione dei 904 mln e le pagine)"

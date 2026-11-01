@@ -1,8 +1,6 @@
 {
   "fonti": {},
-  "citazioni": {
-    "PRO-C27-SVP-003": "Il record è fedele alla fonte: nell'HTML della Camera «iter» è in corsivo (l'<em>iter</em>) e il testo estratto diventa «l' iter», con uno spazio che la fonte non ha. Il resto della citazione si ritrova parola per parola."
-  },
+  "citazioni": {},
   "campi": {
     "consuntivoAssente": "Testo di Paghi Tu che spiega perché il consuntivo manca.",
     "scostamento": "Differenza fra consuntivo e previsto: verificata dal test «scostamenti delle misure»; i due termini si cercano nella fonte.",
