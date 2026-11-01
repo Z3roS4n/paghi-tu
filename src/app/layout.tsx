@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s | Paghi Tu",
   },
   description:
-    "Quanto spende lo Stato, cosa promettono i partiti, quanto costano le misure approvate. Solo dati verificati su fonte primaria, dal 1946 a oggi.",
+    "Quanto spende lo Stato, cosa promettono i partiti, quanto costano le misure approvate. Fonti e livelli di verifica dichiarati, con governi dal 1945.",
 };
 
 export const viewport: Viewport = {

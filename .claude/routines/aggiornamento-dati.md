@@ -1,7 +1,7 @@
 # Routine — aggiornamento dati di Paghi Tu
 
 > Istruzioni per l'agente schedulato su cloud (D-018, decisa dal titolare il 2026-10-21).
-> **Ogni giorno.** Le modifiche vanno online subito, ma solo dopo la conferma di un secondo agente AI
+> **Ogni tre giorni secondo il cron `0 6 */3 * *` (06:00 UTC, passo che riparte a inizio mese).** Le modifiche vanno online subito, ma solo dopo la conferma di un secondo agente AI
 > indipendente (il verificatore), che non ha scritto le modifiche e le ricontrolla sulle fonti.
 > La routine gira sull'account di sviluppo, in un ambiente cloud dedicato che contiene solo i suoi segreti.
 > Prerequisiti: clone del repo GitHub pubblico con permesso di push su `main`, Node ≥ 24, e questi segreti
@@ -155,7 +155,7 @@ Formato, tono, voce e regole sono in `.claude/reels/README.md`; il piano in `.cl
    «Immagini» del README (solo foto vere con licenza, mai derise o alterate, stesso trattamento per tutti); nessun
    simbolo o colore di partito; nessun giudizio e nessuna causa che il sito o la fonte non danno. Nei 15 giorni prima di un voto niente idee su partiti e promesse
    (regola 4).
-7. Ogni giorno: se il binario 1 ha cambiato un numero usato da una scheda con stato `idea` o `in lavorazione`,
+7. A ogni esecuzione: se il binario 1 ha cambiato un numero usato da una scheda con stato `idea` o `in lavorazione`,
    aggiorna tabella e voce di quella scheda e scrivilo nella segnalazione.
 8. Un secondo agente controlla che ogni cifra delle schede nuove o modificate compaia sulla pagina del sito o sulla
    fonte primaria indicata, la neutralità (nessuna preferenza, ogni fatto su partiti e persone con la sua fonte, foto
