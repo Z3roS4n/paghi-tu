@@ -1,7 +1,7 @@
 {
   "file": "out/documenti.jsonl",
-  "documenti": 2121,
-  "sha256": "d0cad38c0785b3d3c0d7223148a45a687d880b0036f8e02463a9d4633a900d2a",
+  "documenti": 2123,
+  "sha256": "c4f6f3a5bc940019665a05a6222bf1d5e55b204a7ccffb748729441b30b9dfb4",
   "perDataset": {
     "correzioni": 9,
     "finanza-pubblica": 1105,
@@ -9,7 +9,7 @@
     "leggi-bilancio": 145,
     "legislature": 20,
     "misure": 18,
-    "promesse": 434,
+    "promesse": 436,
     "serie/coefficienti-rivalutazione-istat-2025": 80,
     "serie/pil-nominale": 80,
     "serie/popolazione-residente": 81,

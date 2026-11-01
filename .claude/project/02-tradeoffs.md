@@ -480,6 +480,11 @@
 
 Mandato di Giovanni: proseguire fino all’agente pronto su Vertex. D-038/039/040 sono le decisioni di export, validatore e difese già sviluppate nelle PR #3/#4/#5; i numeri precedenti collidevano con main. Non costituisce merge delle PR da parte del titolare (D-027).
 
+- **Rinumerazione confermata dal titolare il 2026-11-01:** D-029 → D-035, D-032 → D-036, D-034 → D-037, D-030 → D-038, D-031 → D-039, D-033 → D-040. La conferma riguarda le sigle; lo stato di ogni decisione resta quello scritto nella sua voce.
+- **Revisione legale dell'informativa approvata dal titolare il 2026-11-01** (sezione 6 di `/privacy`, destinatari e trasferimenti). Prima del collegamento restano i passi elencati in `.claude/integrations/vertex-ai-search.md`.
+- **Accordo art. 28 con il co-maintainer già in essere (titolare, 2026-11-01):** il DPA aziendale fra M's Works e Giovanni vale per ogni progetto in collaborazione, compreso il progetto Google Cloud dell'agente.
+- **Golden set rivisto il 2026-11-01:** 157 casi, 119 ok e 38 da correggere (report `2026-11-01-revisione-golden-set.md`). L'eval va rifatta dopo le correzioni.
+
 - D-026, confermata il 28 ottobre: l’export include i valori UPB già presenti sul sito e i link, senza testo copiato; Pagella Politica resta esclusa. Il precedente blocco indiscriminato «con_permesso» era obsoleto.
 - Soglie di score.ts tutte al 100%, coerenti con il README e la decisione del titolare del 28 ottobre; obiettivo post-merge, come conferma Giovanni il 31 ottobre. Le percentuali al 95% rimangono solo cronaca delle proposte storiche.
 - Query SDMX di popolazione filtrate su REF_AREA=IT, con le posizioni lette dalle DSD ufficiali. Riscontrati tutti i valori italiani dei periodi interessati; nessuna eccezione per timeout.

@@ -67,6 +67,8 @@ Il set l'ha costruito Claude dai dati. In via ordinaria, prima della prima eval 
 
 **Deroga di Giovanni (2026-10-31):** per la prima eval del set corrente da 155 casi, Giovanni deroga alla revisione preventiva di Antonio. La deroga non è una revisione e non cambia `revisione.json`: i casi restano `rivistoDaAntonio: null` e il riepilogo resta 0/155. Non si estende ai set futuri.
 
+**Revisione del 2026-11-01:** tutti i 157 casi del set allineato a `main` sono rivisti, su mandato del titolare: 119 `ok`, 38 `da_correggere`, nessuno `da_togliere`. La revisione l'ha fatta Claude, con tre revisori indipendenti e controlli a campione; il campo `rivistoDaAntonio` registra l'esito approvato dal titolare. Motivi e correzioni sono in `.claude/project/reports/2026-11-01-revisione-golden-set.md`.
+
 ## Soglie
 
 Soglie al 100 % confermate da Antonio il 2026-10-28. Giovanni (co-maintainer) conferma il 2026-10-31 che sono un obiettivo post-merge, non una condizione di merge.
