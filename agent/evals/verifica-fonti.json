@@ -293,21 +293,23 @@
     },
     {
       "url": "https://archivio.quirinale.it/aspr/presidente/nomine/giovanni-leone",
-      "esito": "ko",
-      "via": "diretto",
+      "esito": "ok",
+      "via": "archivio",
       "http": 403,
-      "urlLetto": "https://archivio.quirinale.it/aspr/presidente/nomine/giovanni-leone",
+      "urlLetto": "data/raw/agent-sources/quirinale-leone-20261101.txt",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 7407,
+      "errore": "Fonte diretta non leggibile; copia verificata il 2026-11-01, sha256 65eecb38e50591593a4c6ede7b06e5868dde205b292d36e018679289aba90e55"
     },
     {
       "url": "https://archivio.quirinale.it/aspr/presidente/nomine/giuseppe-saragat",
-      "esito": "ko",
-      "via": "diretto",
+      "esito": "ok",
+      "via": "archivio",
       "http": 403,
-      "urlLetto": "https://archivio.quirinale.it/aspr/presidente/nomine/giuseppe-saragat",
+      "urlLetto": "data/raw/agent-sources/quirinale-saragat-20261101.txt",
       "tipo": "html",
-      "caratteri": 0
+      "caratteri": 7234,
+      "errore": "Fonte diretta non leggibile; copia verificata il 2026-11-01, sha256 28738e3314e28f459dd10adc3a6a1babb532b60a3818e38b26213a8999218f92"
     },
     {
       "url": "https://bdp.camera.it/init/iter",

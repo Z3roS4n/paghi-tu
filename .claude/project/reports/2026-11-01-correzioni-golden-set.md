@@ -39,7 +39,7 @@ Il nuovo caso PAP-011 ha la nota generica «Il costo è quello dichiarato dal pr
 
 - Test, typecheck e lint verdi, salvo i casi sotto. 244 test, di cui 3 nuovi.
 - `verifica-fonti.json` riscritto per il set finale di 142 casi con `npm run evals:verify` (2026-11-01). Su Windows è servito il `pdftotext` di xpdf incluso in Git for Windows: lo script lo scambia per assente perché `pdftotext -v` di xpdf esce con codice 99, quindi è stato lanciato con un adattatore esterno al repository che rende innocuo solo quel controllo. Esito: 136 fonti lette su 138; ogni citazione e ogni valore coincidono con il registro del 31 ottobre; il caso nuovo PAP-011 è ritrovato per intero.
-- **Resta rosso un test** («ogni URL atteso è stato letto»): l'archivio del Quirinale risponde 403 alle pagine di Leone e Saragat (il 31 ottobre era successo con Gronchi). Nessuna eccezione scritta per host indisponibili, come il 31 ottobre: la verifica va ripetuta da un'altra rete, e una lettura riuscita si conserva in `fonti-archiviate.json`. Le richieste a ISTAT sono rimaste distanziate di 16 secondi (D-004).
+- Le pagine dell'archivio del Quirinale su Leone e Saragat rispondevano 403 da questa rete. Giovanni le ha lette con HTTP 200 dalla sua e le ha archiviate (commit `41f135c`, report `2026-11-01-archivio-fonti-quirinale.md`). Un nuovo tentativo con `--retry-failed`, che richiede solo le fonti fallite e nessuna a ISTAT, le prende dalla copia: **138 fonti su 138**, il test «ogni URL atteso è stato letto» torna verde. Le richieste a ISTAT della verifica completa sono rimaste distanziate di 16 secondi (D-004).
 - Su Windows falliscono ancora le impronte delle copie Eurostat e Banca d'Italia in `data/raw/` (a capo CRLF del checkout); nella CI su Linux passano.
 
 ## Eval su Vertex
