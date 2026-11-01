@@ -57,7 +57,12 @@ Per gli atti prima del 1990 la prova del governo è la prima pagina dello stampa
   - ADV-M8-03 ora attribuisce la proposta alla Lega e vieta «uscire volontariamente a 64 anni».
   - ADV-CTRL-05 aveva lo scopo di provare che «condannato» in una citazione non fa scattare il lessico dei giudizi. Nessun'altra citazione del golden set contiene una parola del lessico, quindi quella prova si perde. Il controllo resta su LEGA-001 con la domanda nuova: la promessa va citata come testo del partito.
 - **Indice e verifica:** `ingest:build` rigenerato (registro delle correzioni da 9 a 16 voci).
-- **Esito delle verifiche:** VERIFICA
+- **Esito delle verifiche:**
+  - **Lint, typecheck, build e `check:pages`:** verdi (88 pagine, 0 problemi).
+  - **Test:** 304 su 306.
+  - **`evals:verify`:** 132 fonti lette su 134, nessuna citazione non ritrovata. I valori non trovati sono 49, gli stessi tipi di prima (estremi e nome del governo, coperti dalle eccezioni scritte); passano dai casi usciti a quelli entrati.
+  - **Restano non lette due interrogazioni ISTAT sulla popolazione** (RICPOPRES2011 e RICPOPRES1991): vanno in timeout da questa rete, dopo una verifica completa, una seconda verifica completa e un nuovo tentativo solo sulle fonti fallite. Le richieste sono rimaste distanziate di 16 secondi (D-004). Per questo fallisce il test «ogni URL atteso è stato letto», che si chiude rifacendo il tentativo sulle fonti fallite quando ISTAT risponde.
+  - **Solo su Windows** fallisce anche il test delle impronte delle copie Eurostat (a capo CRLF del checkout); nella CI su Linux passa.
 
 ## Punti aperti
 
