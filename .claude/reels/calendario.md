@@ -19,9 +19,9 @@ dopo le riempie la routine con le notizie della settimana (binario 4 del runbook
 | R10 | ven 06/11/2026 | [Le regole per le promesse](idee/R10-come-contiamo-le-promesse.md) · [prompt](prompt/R10-come-contiamo-le-promesse.md) | /promesse, /metodo | programmato (Instagram, 6/11 13:00), video rimontato il 28/10 con le regole «meno movimento» |
 | R19 | lun 09/11/2026 | [Ex ILVA: cosa paga il decreto](idee/R19-ex-ilva.md) | /atti | programmato 09/11 13:00 |
 | R23 | mar 10/11/2026 | [Sotto il limite non è un risparmio](idee/R23-sotto-il-limite.md) | /misure | programmato (Instagram, 10/11 13:00) |
-| — | mer 11/11/2026 | libera: un'idea dalla notizia della settimana | | libera |
+| R31 | mer 11/11/2026 | [Il bollo che nel 2027 non si paga](idee/R31-il-bollo-del-2027.md) | /atti | idea (6/11, dalla notizia: DL 162 approvato dalla Camera il 5/11) |
 | R22 | gio 12/11/2026 | [Di chi è la manovra dell'anno](idee/R22-di-chi-e-la-manovra.md) | /leggi-di-bilancio, /governi | programmato 12/11 13:00 |
-| — | ven 13/11/2026 | libera: un'idea dalla notizia della settimana | | libera |
+| R32 | ven 13/11/2026 | [Quanti laureati ha l'Italia](idee/R32-i-laureati-e-l-europa.md) | /spesa, /atti | idea (6/11, dalla notizia: report ISTAT del 3/11 sui livelli di istruzione) |
 | R20 | lun 16/11/2026 | [Terra dei fuochi: da dove vengono i 200 milioni](idee/R20-terra-dei-fuochi.md) | /atti | programmato (Instagram, 16/11 13:00) |
 | — | mar 17/11/2026 | libera: R25 anticipato al 3/11 | | libera |
 | — | mer 18/11/2026 | libera: un'idea dalla notizia della settimana | | libera |
@@ -58,8 +58,8 @@ riallinea ai numeri del giorno.
 
 Spunti senza scheda:
 - **R29 La manovra 2027 è arrivata (seguito di R15)** (/leggi-di-bilancio): numero già assegnato, da scrivere quando il
-  ddl di bilancio 2027 è presentato alle Camere e compare sul sito. Al 1/11 è approvato dal Consiglio dei ministri
-  (n. 195 del 28/10) ma non presentato; il 4/11 è andato a R07.
+  ddl di bilancio 2027 è presentato alle Camere e compare sul sito. Approvato dal Consiglio dei ministri (n. 195 del
+  28/10), presentato alla Camera il 30/10 (A.C. 3174, dati.camera.it; binario 5 del 6/11); il 4/11 è andato a R07.
 - **Perché non confrontiamo il Superbonus:** previsto 35,0 mld €, consuntivo 131,6 mld €, ma le due cifre misurano
   cose diverse (/misure). Delicato: spiegare bene perché la differenza non si calcola.
 - **La spesa per funzione 2025:** quando Eurostat la pubblica (febbraio), rifare i 100 € con l'anno nuovo.
