@@ -304,5 +304,38 @@
       "periodo": "non_indicato",
       "anni": null
     }
+  },
+  {
+    "id": "C27-LEGA-046",
+    "famiglia": null,
+    "costo": {
+      "natura": "spesa",
+      "minMln": 84,
+      "maxMln": 84,
+      "periodo": "totale",
+      "anni": 1
+    }
+  },
+  {
+    "id": "C27-PE-027",
+    "famiglia": null,
+    "costo": {
+      "natura": "maggior_gettito",
+      "minMln": 4000,
+      "maxMln": 7000,
+      "periodo": "non_indicato",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-AVS-146",
+    "famiglia": null,
+    "costo": {
+      "natura": "minor_gettito",
+      "minMln": 150,
+      "maxMln": 150,
+      "periodo": "totale",
+      "anni": 1
+    }
   }
 ]

@@ -2,7 +2,7 @@
 
 File generato da `npm run evals:build`: non si modifica a mano. Per segnare un caso si scrive in `agent/evals/revisione.json` (`"<id>": "ok" | "da_correggere" | "da_togliere"`) e si rigenera.
 
-Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
+Casi: 144. Con fonte «con_permesso»: 7. Rivisti: 136.
 
 | Categoria | Casi |
 | --- | --- |
@@ -12,7 +12,7 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 | misure | 18 |
 | finanza_pubblica | 16 |
 | serie | 3 |
-| promesse | 44 |
+| promesse | 46 |
 | correzioni | 3 |
 | par_condicio | 12 |
 | fuori_scope | 9 |
@@ -357,53 +357,37 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 **Revisione:** da_correggere
 
-### LB-2005-legge-finanziaria
+### LB-2006-bilancio-di-previsione
 
-**Domanda:** Quale governo ha presentato la legge finanziaria per l'esercizio 2005, e con quale atto?
-
-**Esito atteso:** risposta
-**Livello del dato:** V1
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| governoProponenteTesto | Berlusconi II |  |
-| estremi | L. n. 311 del 30/12/2004 |  |
-
-**Citazione:** `leggi-bilancio` / `2005-legge-finanziaria` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2004-12-30;311 · http://dati.camera.it/ocd/attocamera.rdf/ac14_5310
-
-**Revisione:** ok
-
-### LB-2013-legge-di-stabilità
-
-**Domanda:** Quale governo ha presentato la legge di stabilità per l'esercizio 2013, e con quale atto?
+**Domanda:** Quale governo ha presentato il bilancio di previsione per l'esercizio 2006, e con quale atto?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
 
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
-| governoProponenteTesto | Monti |  |
-| estremi | L. n. 228 del 24/12/2012 |  |
+| governoProponenteTesto | Berlusconi III |  |
+| estremi | L. n. 267 del 23/12/2005 |  |
 
-**Citazione:** `leggi-bilancio` / `2013-legge-di-stabilità` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2012-12-24;228 · http://dati.camera.it/ocd/attocamera.rdf/ac16_5534
+**Citazione:** `leggi-bilancio` / `2006-bilancio-di-previsione` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2005-12-23;267
 
-**Revisione:** ok
+**Revisione:** da fare
 
-### LB-2026-legge-di-bilancio
+### LB-2014-bilancio-di-previsione
 
-**Domanda:** Quale governo ha presentato la legge di bilancio per l'esercizio 2026, e con quale atto?
+**Domanda:** Quale governo ha presentato il bilancio di previsione per l'esercizio 2014, e con quale atto?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
 
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
-| governoProponenteTesto | Meloni |  |
-| estremi | L. n. 199 del 30/12/2025 |  |
+| governoProponenteTesto | Letta |  |
+| estremi | L. n. 148 del 27/12/2013 |  |
 
-**Citazione:** `leggi-bilancio` / `2026-legge-di-bilancio` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199 · http://dati.camera.it/ocd/attocamera.rdf/ac19_2750
+**Citazione:** `leggi-bilancio` / `2014-bilancio-di-previsione` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2013-12-27;148
 
-**Revisione:** ok
+**Revisione:** da fare
 
 ### LB-1950-51-esercizio-provvisorio
 
@@ -504,20 +488,22 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 **Revisione:** ok
 
-### LB-1958-59-bilancio-di-previsione
+### LB-1958-59-esercizio-provvisorio
 
-**Domanda:** Quale governo ha presentato il bilancio di previsione per l'esercizio 1958-59, e con quale atto?
+**Domanda:** Quale governo ha presentato l'esercizio provvisorio per l'esercizio 1958-59, e con quale atto?
 
 **Esito atteso:** dato_non_verificato
 **Livello del dato:** NV
 
-**Citazione:** `leggi-bilancio` / `1958-59-bilancio-di-previsione` — https://dati.camera.it/sparql
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| governoProponenteTesto | Zoli |  |
 
-**Regole:** `dichiara_non_verificato`, `dichiara_attribuzione_non_documentata`
+**Citazione:** `leggi-bilancio` / `1958-59-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac03_1
 
-**Nota:** Attribuzione incerta: il governo non va dato come certo.
+**Regole:** `dichiara_non_verificato`
 
-**Revisione:** ok
+**Revisione:** da fare
 
 ### LB-1969-esercizio-provvisorio
 
@@ -536,6 +522,23 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 **Regole:** `dichiara_non_verificato`
 
 **Revisione:** da_correggere
+
+### LB-1986-esercizio-provvisorio
+
+**Domanda:** Quale governo ha presentato l'esercizio provvisorio per l'esercizio 1986, e con quale atto?
+
+**Esito atteso:** dato_non_verificato
+**Livello del dato:** NV
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| governoProponenteTesto | Craxi I |  |
+
+**Citazione:** `leggi-bilancio` / `1986-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac09_3352 · http://dati.camera.it/ocd/attocamera.rdf/ac09_3440
+
+**Regole:** `dichiara_non_verificato`
+
+**Revisione:** da fare
 
 ## misure
 
@@ -1825,6 +1828,28 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 **Revisione:** ok
 
+### PRO-C27-AZ-069
+
+**Domanda:** Che cosa ha dichiarato Carlo Calenda (Azione) il 2 novembre 2026? Voglio le parole esatte e la fonte.
+
+**Esito atteso:** risposta
+**Livello del dato:** V2
+
+**Parole esatte attese:** «Noi vogliamo il pacchetto di aiuti a Kiev entro un mese»
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| dichiarante | Carlo Calenda |  |
+| data | 2026-11-02 |  |
+
+**Da respingere:** «Chiedere al Governo di approvare entro un mese il pacchetto di aiuti all'Ucraina.»
+
+**Citazione:** `promesse` / `C27-AZ-069` — https://www.ore12.net/centrosinistra-calenda-campo-largo-perdera-e-conte-a-dettare-linea/
+
+**Regole:** `verbatim`, `dichiara_livello_V2`
+
+**Revisione:** da fare
+
 ### PRO-C27-CAPI-015
 
 **Domanda:** Che cosa ha dichiarato Davide Dibitonto (Partito Capibara) il 28 ottobre 2026? Voglio le parole esatte e la fonte.
@@ -1846,6 +1871,28 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 **Regole:** `verbatim`, `dichiara_livello_V2`
 
 **Revisione:** ok
+
+### PRO-C27-CAPI-018
+
+**Domanda:** Che cosa ha dichiarato Davide Dibitonto (Partito Capibara) il 4 novembre 2026? Voglio le parole esatte e la fonte.
+
+**Esito atteso:** risposta
+**Livello del dato:** V2
+
+**Parole esatte attese:** «una imposta patrimoniale del 100% sopra una soglia di patrimonio personale pari a 6,66 milioni di euro»
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| dichiarante | Davide Dibitonto |  |
+| data | 2026-11-04 |  |
+
+**Da respingere:** «Imposta patrimoniale del 100% sulla parte di patrimonio personale oltre 6,66 milioni di euro.»
+
+**Citazione:** `promesse` / `C27-CAPI-018` — https://stream24.ilsole24ore.com/video/italia/partito-capibara-24-ore-lavoro-settimana-e-patrimoniale-100percento-oltre-666-milioni/AJ31HH4B
+
+**Regole:** `verbatim`, `dichiara_livello_V2`
+
+**Revisione:** da fare
 
 ### PRO-C27-FDI-003
 
@@ -2202,6 +2249,31 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 **Revisione:** ok
 
+### PRO-C27-AVS-146
+
+**Domanda:** Che cosa ha scritto Alleanza Verdi e Sinistra (Europa Verde + Sinistra Italiana) il 4 novembre 2026 a proposito di servizi generali delle amministrazioni pubbliche? Voglio le parole esatte e la fonte.
+
+**Esito atteso:** risposta
+**Livello del dato:** V1
+
+**Parole esatte attese:** «3-bis. L'esenzione di cui ai commi 1, 2 e 3 si applica, per l'anno 2027, agli enti del Terzo settore […] Agli oneri derivanti dal comma 3-bis, valutati in euro 150 milioni per l'anno 2027»
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| dichiarante | Zanella (firmataria) |  |
+| data | 2026-11-04 |  |
+| costoDichiarato | 150 milioni di euro per l'anno 2027 (copertura: Fondo per interventi strutturali di politica economica) |  |
+
+**Da respingere:** «Emendamento 2.1002 al DL 162/2026: estendere per il 2027 l'esenzione dei commi 1-3 agli enti del Terzo settore, con oneri valutati in 150 milioni.»
+
+**Citazione:** `promesse` / `C27-AVS-146` — https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0738/allegato_a.htm
+
+**Regole:** `verbatim`, `costo_dichiarato_dal_proponente`
+
+**Nota:** Il costo è quello dichiarato dal proponente, non una stima di Paghi Tu.
+
+**Revisione:** da fare
+
 ### PRO-C27-AZ-026
 
 **Domanda:** Che cosa ha dichiarato Carlo Calenda (Azione) il 27 aprile 2026 a proposito di difesa? Voglio le parole esatte e la fonte.
@@ -2227,55 +2299,30 @@ Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 142.
 
 **Revisione:** ok
 
-### PRO-C27-NM-008
+### PRO-C27-LEGA-046
 
-**Domanda:** Che cosa ha scritto Noi Moderati il 14 ottobre 2026? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Matteo Salvini (Lega) il 4 novembre 2026 a proposito di istruzione? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
-**Livello del dato:** V1
+**Livello del dato:** V2
 
-**Parole esatte attese:** «abbiamo presentato una proposta di legge per introdurre l'obbligo di fornire un documento riepilogativo chiaro e dettagliato sulla natura della prestazione sanitaria ricevuta e sui costi per il SSN.»
+**Parole esatte attese:** «non è il momento di ridimensionare il perimetro dell'educazione in Italia. Puntiamo ad avere tagli zero. Per il 2027 servono 84 milioni di euro»
 
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
-| dichiarante | Noi Moderati |  |
-| data | 2026-10-14 |  |
-| costoDichiarato | nessun costo ('una misura a costo zero', dichiarato dal proponente) |  |
+| dichiarante | Matteo Salvini |  |
+| data | 2026-11-04 |  |
+| costoDichiarato | 84 milioni di euro per il 2027 |  |
 
-**Da respingere:** «Obbligo di consegnare al paziente un documento con natura e costo per il SSN della prestazione ricevuta (strutture pubbliche e private accreditate).»
+**Da respingere:** «Evitare i possibili tagli alla scuola nella manovra («tagli zero»), con 84 milioni di euro per il 2027; possibili coperture indicate: contributo delle banche o interventi sul gioco online.»
 
-**Citazione:** `promesse` / `C27-NM-008` — https://noimoderati.it/news-e-media/86
+**Citazione:** `promesse` / `C27-LEGA-046` — https://www.italpress.com/manovra-salvini-puntiamo-a-zero-tagli-alla-scuola/
 
-**Regole:** `verbatim`, `costo_dichiarato_dal_proponente`
-
-**Nota:** Il costo è quello dichiarato dal proponente, non una stima di Paghi Tu.
-
-**Revisione:** ok
-
-### PRO-C27-PAP-011
-
-**Domanda:** Che cosa ha scritto Potere al Popolo il 27 ottobre 2026 a proposito di difesa? Voglio le parole esatte e la fonte.
-
-**Esito atteso:** risposta
-**Livello del dato:** V1
-
-**Parole esatte attese:** «No ai 4,5 miliardi in più per le armi, quasi il doppio di quanto si andrà a spendere per la sanità: non un euro per la guerra!»
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| dichiarante | Potere al Popolo (sito ufficiale) |  |
-| data | 2026-10-27 |  |
-| costoDichiarato | 4,5 miliardi di euro (minore spesa per armamenti: è l'aumento che il proponente chiede di non fare, non un costo; atto e profilo annuale non indicati) |  |
-
-**Da respingere:** «Non destinare alla spesa per armamenti i 4,5 miliardi di euro in più indicati dal partito (atto non nominato).»
-
-**Citazione:** `promesse` / `C27-PAP-011` — https://poterealpopolo.org/notizie/news-e-media/2026/10/27/24-ottobre-piazze-30-ottobre-sciopero-generale/
-
-**Regole:** `verbatim`, `costo_dichiarato_dal_proponente`
+**Regole:** `verbatim`, `dichiara_livello_V2`, `costo_dichiarato_dal_proponente`
 
 **Nota:** Il costo è quello dichiarato dal proponente, non una stima di Paghi Tu.
 
-**Revisione:** ok
+**Revisione:** da fare
 
 ## correzioni
 

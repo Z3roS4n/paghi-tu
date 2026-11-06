@@ -3157,24 +3157,27 @@
     "annoInizio": 2027,
     "tipoAtto": "legge di bilancio",
     "tipoAttoOriginale": "legge di bilancio",
-    "estremi": "DDL non ancora presentato alle Camere al 20/10/2026 (DPB 2027 approvato dal CdM n. 192 del 13/10/2026)",
+    "estremi": "DDL A.C. 3174 (Bilancio di previsione dello Stato per l’anno finanziario 2027 e bilancio pluriennale per il triennio 2027-2029), presentato alla Camera il 30/10/2026 su iniziativa del ministro dell’Economia Giorgetti; dopo lo stralcio comunicato all’Assemblea il 4/11/2026 l’esame prosegue sull’A.C. 3174-bis; non ancora pubblicato in GU",
     "governoProponenteId": "g202",
     "governoProponenteAttribuzione": "documentata",
     "governoProponenteTesto": "Meloni",
     "fonti": [
       {
-        "url": "https://pagellapolitica.it/articoli/governo-dpb-legge-bilancio-2027"
+        "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=3174"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac19_3174"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac19_3174-bis"
       },
       {
         "url": "https://www.governo.it/it/articolo/consiglio-dei-ministri-n-192/32830"
-      },
-      {
-        "url": "https://www.governo.it/it/articolo/convocazione-del-consiglio-dei-ministri-n-193/32876"
       }
     ],
     "verifica": {
-      "livello": "NV",
-      "dettaglio": "NV (fonti secondarie); da riverificare dopo la presentazione || verificatore 2026-10-20: DPB 2027 approvato dal CdM n. 192 del 13/10/2026 = V1✓ (comunicato governo.it); DDL non presentato al 20/10/2026 = V1✓ (nessun atto \"anno finanziario 2027\" negli open data Camera leg. XIX e Senato; ordine del giorno del CdM n. 193 del 20/10/2026 senza DDL di bilancio); importo della manovra resta V2"
+      "livello": "V1",
+      "dettaglio": "estremi V1 (scheda Camera e open data dati.camera.it, aggiornati dalla routine 2026-11-06); governo V1 (iniziativa del Governo); da riaggiornare alla pubblicazione in GU || V1✓ verificatore 2026-11-06: dati.camera.it ac19_3174 (titolo «Bilancio di previsione dello Stato per l’anno finanziario 2027 e bilancio pluriennale per il triennio 2027-2029», dc:date 20261030, iniziativa Governo, creator GIORGETTI Giancarlo) e ac19_3174-bis (testo risultante dallo stralcio comunicato all’Assemblea il 4/11/2026); scheda camera.it idDocumento=3174 (presentato il 30 ottobre 2026, iniziativa del Governo: Giorgetti, Ministro dell’Economia e delle finanze; conclusione anomala per stralcio)"
     }
   }
 ]
