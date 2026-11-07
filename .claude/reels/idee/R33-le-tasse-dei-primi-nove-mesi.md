@@ -52,7 +52,7 @@
 | «Accisa sul gasolio carburante (e su HVO e biodiesel) rideterminata a 532,90 euro per mille litri dal 30 luglio al 6 agosto 2026» · 2026: 83,8 mln € · «Entrate in meno» · «Stima» | la misura del DL 133 | /atti | scheda `#dl-2026-133` («Accisa sul gasolio (30/7-6/8/2026), credito per l'autotrasporto ed ex ILVA»), prima misura |
 | «Accisa sul gasolio carburante (e su HVO e biodiesel) rideterminata a 532,90 euro per mille litri dall'11 al 17 settembre 2026» · 2026: 86 mln € · «Entrate in meno» · «Stima» | la misura del DL 157 | /atti | scheda `#dl-2026-157` («Accisa sul gasolio, autotrasporto e procedimenti energetici strategici»), prima misura |
 | «Accisa sul gasolio carburante rideterminata a 572,90 euro per mille litri dal 18 al 25 settembre e a 622,90 euro dal 26 settembre al 5 ottobre 2026 (HVO e biodiesel nel primo periodo)» · 2026: 111,8 mln € · «Entrate in meno» · «Stima» | la misura del DL 162 | /atti | scheda `#dl-2026-162` («Carburanti, bollo auto 2027, borse di studio e Fondazione Milano-Cortina»), prima misura |
-| «Gazzetta Ufficiale letta dal 23 maggio 2026 al 1 novembre 2026» | fin dove arriva il registro | /atti | intestazione della pagina |
+| «Gazzetta Ufficiale letta dal 13 maggio 2026 al 6 novembre 2026» (dopo il deploy del 7/11; prima «dal 23 maggio 2026 al 1 novembre 2026») | fin dove arriva il registro | /atti | intestazione della pagina |
 | «Le entrate derivanti dagli enti territoriali del periodo gennaio-settembre 2026, pari a 47.721 milioni di euro, in aumento di 1.556 milioni di euro (+3,4%)» | regioni e comuni | MEF, bollettino n. 295 | p. 10, Sezione II |
 | IRAP 20.862 · addizionale regionale all'IRPEF 12.325 · IMU-IMIS (quota comuni)-IMI 9.766 · addizionale comunale all'IRPEF 4.762 | le quattro voci più grandi, milioni di euro | MEF, bollettino n. 295 | p. 10, Sezione II |
 | «Entrate 2025 · 18.450 € · a testa: imposte, contributi e altre entrate» | tutte le entrate pubbliche, solo come paragone | /spesa | riquadro in alto «Entrate 2025» (anche in / come «fra tasse e contributi») |
@@ -150,8 +150,8 @@ Le imposte di regioni e comuni (IRAP, addizionali IRPEF, IMU) sono contate a par
   somma fa 100,1 per gli arrotondamenti del MEF: non correggerle). «Oli minerali» è l'accisa sui prodotti energetici
   della scena 6: stessa etichetta del MEF.
 - **Accise sul sito:** riaprire /atti e controllare le tre misure (83,8, 86 e 111,8 mln €, «Entrate in meno»,
-  «Stima») e l'intestazione «Gazzetta Ufficiale letta dal 23 maggio 2026». Il registro non è ancora completo per i
-  mesi prima del 23 maggio: in voce «i decreti» senza dire quanti sono, e niente somma delle tre stime. Se il
+  «Stima») e l'intestazione «Gazzetta Ufficiale letta dal 13 maggio 2026». Il registro non è ancora completo per i
+  mesi prima del 13 maggio: in voce «i decreti» senza dire quanti sono, e niente somma delle tre stime. Se il
   binario 5 aggiunge altre riduzioni delle accise del 2026, si aggiungono nella scena 8 (al massimo cinque schede) o
   si mostra la registrazione dello schermo della pagina. Le stime riguardano il gasolio carburante, l'accisa del
   bollettino tutti i prodotti energetici: le due cifre non si confrontano.
