@@ -23,7 +23,7 @@ dopo le riempie la routine con le notizie della settimana (binario 4 del runbook
 | R22 | gio 12/11/2026 | [Di chi è la manovra dell'anno](idee/R22-di-chi-e-la-manovra.md) | /leggi-di-bilancio, /governi | programmato 12/11 13:00 |
 | R32 | ven 13/11/2026 | [Quanti laureati ha l'Italia](idee/R32-i-laureati-e-l-europa.md) | /spesa, /atti | idea (6/11, dalla notizia: report ISTAT del 3/11 sui livelli di istruzione) |
 | R20 | lun 16/11/2026 | [Terra dei fuochi: da dove vengono i 200 milioni](idee/R20-terra-dei-fuochi.md) | /atti | programmato (Instagram, 16/11 13:00) |
-| — | mar 17/11/2026 | libera: R25 anticipato al 3/11 | | libera |
+| R33 | mar 17/11/2026 | [Quanto rendono le tasse allo Stato](idee/R33-le-tasse-dei-primi-nove-mesi.md) | /atti, /spesa | idea (7/11, dalla notizia: bollettino MEF delle entrate tributarie di gennaio-settembre, 5/11) |
 | — | mer 18/11/2026 | libera: un'idea dalla notizia della settimana | | libera |
 | — | gio 19/11/2026 | libera: R28 anticipato al 2/11 | | libera |
 | R21 | ven 20/11/2026 | [Quante promesse toccano i conti](idee/R21-promesse-e-conti.md) | /promesse | programmato 20/11 13:00; entro il 18/11 ricontrollare che il DDL di bilancio 2027 sia in Parlamento («in discussione adesso») e che non ci sia un decreto di convocazione delle elezioni |
