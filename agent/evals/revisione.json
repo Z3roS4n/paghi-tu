@@ -16,7 +16,6 @@
   "LEG-XIV-elezioni": "ok",
   "LEG-XIX-elezioni": "ok",
   "LB-1952-53-esercizio-provvisorio": "ok",
-  "LB-2013-legge-di-stabilità": "ok",
   "LB-2026-legge-di-bilancio": "ok",
   "LB-1950-51-esercizio-provvisorio": "ok",
   "LB-1953-54-esercizio-provvisorio": "ok",
@@ -134,10 +133,11 @@
   "MAN-OUT-09": "ok",
   "MAN-TRA-01": "ok",
   "MAN-TRA-02": "ok",
-  "LB-1987-legge-finanziaria": "ok",
-  "LB-1996-bilancio-di-previsione": "ok",
-  "LB-2005-bilancio-di-previsione": "ok",
-  "LB-1966-esercizio-provvisorio": "ok",
-  "LB-1958-59-esercizio-provvisorio": "ok",
-  "LB-1969-bilancio-di-previsione": "da_correggere"
+  "LB-1978-esercizio-provvisorio": "ok",
+  "LB-1991-legge-finanziaria": "ok",
+  "LB-2012-bilancio-di-previsione": "ok",
+  "LB-1956-57-esercizio-provvisorio": "ok",
+  "LB-1963-64-bilancio-di-previsione": "ok",
+  "LB-2002-bilancio-di-previsione": "da_correggere",
+  "LB-1962-63-esercizio-provvisorio": "da_correggere"
 }

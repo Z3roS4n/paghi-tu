@@ -494,18 +494,29 @@
     "annoInizio": 1958,
     "tipoAtto": "esercizio provvisorio",
     "tipoAttoOriginale": "esercizio provvisorio",
-    "estremi": "atto C.1 leg. III del 12/06/1958 (estremi legge NV)",
+    "estremi": "L. n. 625 del 20/06/1958 (atto C.1/S.4)",
     "governoProponenteId": "g9",
     "governoProponenteAttribuzione": "documentata",
     "governoProponenteTesto": "Zoli",
     "fonti": [
       {
         "url": "http://dati.camera.it/ocd/attocamera.rdf/ac03_1"
+      },
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1958-06-20;625"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter/scheda/4228",
+        "etichetta": "Iter delle leggi 1948-1990, C.1"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg03/lavori/stampati/pdf/00010001.pdf",
+        "etichetta": "stampato Camera C.1"
       }
     ],
     "verifica": {
-      "livello": "NV",
-      "dettaglio": "V1 atto (rif_governo g9); legge NV || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione"
+      "livello": "V1",
+      "dettaglio": "V1 atto (rif_governo g9); estremi della legge non verificati in prima stesura || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita): legge V1 (Normattiva: L. 20 giugno 1958 n. 625, «Autorizzazione all'esercizio provvisorio del bilancio per l'anno finanziario 1958-59», GU n. 153 del 27/06/1958; lavori preparatori «C. 1 S.4»; dati.camera.it legge.rdf/L1958_625 rimanda all'atto ac03_1); governo documentato: stampato Camera C.1 «presentato dal Ministro del Tesoro (Medici) di concerto col Ministro del Bilancio (Zoli)», «Seduta del 12 giugno 1958»; Medici e Zoli hanno le stesse cariche anche nel governo Segni I, quindi decide la data: il 12/06/1958 è in carica il governo Zoli (19/05/1957-01/07/1958, dati.camera.it); Iter delle leggi 1948-1990, scheda 4228: «Proponente: Tesoro: Medici. CAMERA n 1: pres 12 giugno 1958»; livello del record portato a V1"
     }
   },
   {
@@ -794,11 +805,19 @@
       },
       {
         "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1965-02-27;49"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter/scheda/6368",
+        "etichetta": "Iter delle leggi 1948-1990"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg04/lavori/stampati/pdf/16860001.pdf",
+        "etichetta": "stampato Camera C.1686"
       }
     ],
     "verifica": {
-      "livello": "NV",
-      "dettaglio": "V1 atto Camera; estremi legge NV; governo V1 (rif_governo g17, C.1686 30/09/1964) || V1✓ verificatore 2026-10-20: estremi L. 49/1965 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1965\")"
+      "livello": "V1",
+      "dettaglio": "V1 atto Camera; legge V1 (Normattiva: L. 27 febbraio 1965 n. 49, GU n. 51 del 27/02/1965, suppl. ord.); governo V1 documentato (rif_governo g17; stampato Camera C.1686: «presentato dal Ministro del Tesoro (Colombo Emilio) di concerto col Ministro del Bilancio (Pieraccini)», «Presentato alla Presidenza il 30 settembre 1964»; Colombo e Pieraccini hanno le stesse cariche nei governi Moro II e Moro III, decide la data, che cade nel Moro II (22/07/1964-23/02/1966); Iter delle leggi 1948-1990, scheda 6368: «Proponente: Tesoro: Colombo. CAMERA n 1686 e 1686 bis: pres 30 settembre 1964») || V1✓ verificatore 2026-10-20: estremi L. 49/1965 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1965\") || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita): gli estremi della legge, rimasti segnati come non verificati dalla prima stesura benché letti su Normattiva il 20 ottobre, e il governo letti sulle fonti sopra; livello del record portato a V1"
     }
   },
   {
@@ -809,19 +828,41 @@
     "tipoAttoOriginale": "esercizio provvisorio",
     "estremi": "L. n. 1389 del 20/12/1965; proroga al 30/04/1966 con L. n. 63 del 18/02/1966",
     "governoProponenteId": "g17",
-    "governoProponenteAttribuzione": "inferita",
-    "governoProponenteTesto": "Moro II (INF)",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Moro II",
     "fonti": [
       {
         "url": "http://dati.camera.it/ocd/attocamera.rdf/ac04_2838"
       },
       {
         "url": "http://dati.camera.it/ocd/attocamera.rdf/ac04_2970"
+      },
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1965-12-20;1389"
+      },
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1966-02-18;63"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter/scheda/6654",
+        "etichetta": "Iter delle leggi 1948-1990, S.1470"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter/scheda/6704",
+        "etichetta": "Iter delle leggi 1948-1990, S.1559"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg04/lavori/stampati/pdf/28380001.pdf",
+        "etichetta": "stampato Camera C.2838"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg04/lavori/stampati/pdf/29700001.pdf",
+        "etichetta": "stampato Camera C.2970"
       }
     ],
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V1 leggi (ocd:legge); governo INF || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione || V1✓ verificatore 2026-10-20: legge 1965-12-20;1389 riletta su Normattiva (titolo coerente)"
+      "dettaglio": "V1 leggi (ocd:legge); governo dedotto in prima stesura dal calendario dei governi || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione || V1✓ verificatore 2026-10-20: legge 1965-12-20;1389 riletta su Normattiva (titolo coerente) || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita): leggi lette su Normattiva (L. 20 dicembre 1965 n. 1389, GU n. 320 del 24/12/1965, lavori preparatori S.1470, C.2838; L. 18 febbraio 1966 n. 63, GU n. 49 del 24/02/1966, lavori preparatori S.1559, C.2970); governo documentato (non più dedotto): gli stampati Camera C.2838 e C.2970 riportano entrambi «presentato dal Ministro del Tesoro (Colombo Emilio) di concerto col Ministro del Bilancio (Pieraccini)»; Colombo e Pieraccini hanno le stesse cariche anche nel governo Moro III (dal 23/02/1966, dati.camera.it), quindi decide la data di presentazione: S.1470 presentato il 6/12/1965 e S.1559 l'8/2/1966 (Iter delle leggi 1948-1990, schede 6654 e 6704: «SENATO n 1470: pres 6 dicembre 1965», «SENATO n 1559: pres 8 febbraio 1966»), entrambi sotto Moro II; il 10/12/1965 e il 9/2/1966 di dati.camera.it sono le date di trasmissione alla Camera"
     }
   },
   {
@@ -832,19 +873,27 @@
     "tipoAttoOriginale": "bilancio di previsione",
     "estremi": "L. n. 218 del 23/04/1966 (legge unica di bilancio)",
     "governoProponenteId": "g17",
-    "governoProponenteAttribuzione": "inferita",
-    "governoProponenteTesto": "Moro II (INF)",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Moro II",
     "fonti": [
       {
         "url": "http://dati.camera.it/ocd/attocamera.rdf/ac04_2811"
       },
       {
         "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1966-04-23;218"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter/scheda/6720",
+        "etichetta": "Iter delle leggi 1948-1990"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg04/lavori/stampati/pdf/28110001.pdf",
+        "etichetta": "stampato Camera C.2811"
       }
     ],
     "verifica": {
-      "livello": "NV",
-      "dettaglio": "V1 atto Camera; estremi legge NV; governo INF (S.1343) || V1✓ verificatore 2026-10-20: estremi L. 218/1966 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1966\")"
+      "livello": "V1",
+      "dettaglio": "V1 atto Camera (S.1343/C.2811; la data 03/12/1965 di dati.camera.it è la trasmissione dal Senato); legge V1 (Normattiva: L. 23 aprile 1966 n. 218, GU n. 100 del 26/04/1966, suppl. ord.); governo V1 documentato, in prima stesura dedotto dal calendario (stampato Camera C.2811: «approvato dal Senato della Repubblica nella seduta del 2 dicembre 1965 (Stampato n. 1343)», «presentato dal Ministro del Tesoro (Colombo Emilio) di concerto col Ministro del Bilancio (Pieraccini)»; Iter delle leggi 1948-1990, scheda 6720: «Proponente: Tesoro: Colombo. SENATO n 1343, […]: pres 31 luglio 1965»; Colombo e Pieraccini hanno le stesse cariche nei governi Moro II e Moro III, decide la data di presentazione al Senato, che cade nel Moro II (22/07/1964-23/02/1966)) || V1✓ verificatore 2026-10-20: estremi L. 218/1966 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1966\") || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita): gli estremi della legge, rimasti segnati come non verificati dalla prima stesura benché letti su Normattiva il 20 ottobre, e il governo, prima dedotto dal calendario, letti sulle fonti sopra; livello del record portato a V1 e attribuzione documentata"
     }
   },
   {
@@ -883,11 +932,19 @@
       },
       {
         "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1967-04-29;230"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter/scheda/7056",
+        "etichetta": "Iter delle leggi 1948-1990"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg04/lavori/stampati/pdf/33890001.pdf",
+        "etichetta": "stampato Camera C.3389"
       }
     ],
     "verifica": {
-      "livello": "NV",
-      "dettaglio": "V1 atto Camera; estremi legge NV; governo V1 (rif_governo g18, C.3389 31/07/1966) || V1✓ verificatore 2026-10-20: estremi L. 230/1967 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1967\")"
+      "livello": "V1",
+      "dettaglio": "V1 atto Camera; legge V1 (Normattiva: L. 29 aprile 1967 n. 230, GU n. 108 del 29/04/1967, suppl. ord.); governo V1 documentato (rif_governo g18; stampato Camera C.3389: «presentato dal Ministro del Tesoro (Colombo Emilio) di concerto col Ministro del Bilancio (Pieraccini)», «Presentato alla Presidenza il 31 luglio 1966»; Colombo e Pieraccini hanno le stesse cariche nei governi Moro II e Moro III, decide la data, che cade nel Moro III (23/02/1966-24/06/1968); Iter delle leggi 1948-1990, scheda 7056: «Proponente: Tesoro: Colombo. CAMERA n 3389, […]: pres 31 luglio 1966») || V1✓ verificatore 2026-10-20: estremi L. 230/1967 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1967\") || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita): gli estremi della legge, rimasti segnati come non verificati dalla prima stesura benché letti su Normattiva il 20 ottobre, e il governo letti sulle fonti sopra; livello del record portato a V1"
     }
   },
   {
@@ -918,19 +975,27 @@
     "tipoAttoOriginale": "bilancio di previsione",
     "estremi": "L. n. 81 del 29/02/1968 (legge unica di bilancio)",
     "governoProponenteId": "g18",
-    "governoProponenteAttribuzione": "inferita",
-    "governoProponenteTesto": "Moro III (INF)",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Moro III",
     "fonti": [
       {
         "url": "http://dati.camera.it/ocd/attocamera.rdf/ac04_4691"
       },
       {
         "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1968-02-29;81"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter/scheda/7461",
+        "etichetta": "Iter delle leggi 1948-1990"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg04/lavori/stampati/pdf/46910001.pdf",
+        "etichetta": "stampato Camera C.4691"
       }
     ],
     "verifica": {
-      "livello": "NV",
-      "dettaglio": "V1 atto Camera; estremi legge NV; governo INF (S.2394) || V1✓ verificatore 2026-10-20: estremi L. 81/1968 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1968\")"
+      "livello": "V1",
+      "dettaglio": "V1 atto Camera (S.2394/C.4691; la data 19/12/1967 di dati.camera.it è la trasmissione dal Senato); legge V1 (Normattiva: L. 29 febbraio 1968 n. 81, GU n. 56 del 29/02/1968, suppl. ord.); governo V1 documentato, in prima stesura dedotto dal calendario (stampato Camera C.4691: «approvato dal Senato della Repubblica nella seduta del 12 dicembre 1967 (Stampato n. 2394)», «presentato dal Ministro del Tesoro (Colombo Emilio) di concerto col Ministro del Bilancio e della programmazione economica (Pieraccini)»; Pieraccini è ministro del Bilancio e della programmazione economica dal 22/02/1967 solo nel governo Moro III, Colombo era al Tesoro anche nel Moro II; Iter delle leggi 1948-1990, scheda 7461: «Proponente: Tesoro: Colombo. SENATO n 2394 e 2394 bis: pres 31 luglio e 11 dicembre 1967») || V1✓ verificatore 2026-10-20: estremi L. 81/1968 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1968\") || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita): gli estremi della legge, rimasti segnati come non verificati dalla prima stesura benché letti su Normattiva il 20 ottobre, e il governo, prima dedotto dal calendario, letti sulle fonti sopra; livello del record portato a V1 e attribuzione documentata"
     }
   },
   {
@@ -972,19 +1037,27 @@
     "tipoAttoOriginale": "bilancio di previsione",
     "estremi": "L. n. 21 del 28/02/1969 (legge unica di bilancio)",
     "governoProponenteId": "g19",
-    "governoProponenteAttribuzione": "inferita",
-    "governoProponenteTesto": "Leone II (INF)",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Leone II",
     "fonti": [
       {
         "url": "http://dati.camera.it/ocd/attocamera.rdf/ac05_311"
       },
       {
         "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1969-02-28;21"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter/scheda/7819",
+        "etichetta": "Iter delle leggi 1948-1990"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg05/lavori/stampati/pdf/03110001.pdf",
+        "etichetta": "stampato Camera C.311"
       }
     ],
     "verifica": {
-      "livello": "NV",
-      "dettaglio": "V1 atto Camera; estremi legge NV; governo INF (C.311 31/07/1968, rif_governo assente) || V1✓ verificatore 2026-10-20: estremi L. 21/1969 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1969\")"
+      "livello": "V1",
+      "dettaglio": "V1 atto Camera (C.311 31/07/1968, rif_governo assente); legge V1 (Normattiva: L. 28 febbraio 1969 n. 21, GU n. 55 del 28/02/1969, suppl. ord.); governo V1 documentato, in prima stesura dedotto dal calendario (stampato Camera C.311: «presentato dal Ministro del Tesoro e ad interim del Bilancio e della programmazione economica (Colombo Emilio)», «Presentato alla Presidenza il 31 luglio 1968»; Colombo ha il Bilancio ad interim dal 24/06/1968 al 12/12/1968 solo nel governo Leone II (dati.camera.it, membroGoverno mg1770_3_19_4_19680624), il Tesoro anche nei governi Moro III e Rumor I; Iter delle leggi 1948-1990, scheda 7819: «Proponente: Tesoro: Colombo. CAMERA n 311: pres 31 luglio 1968») || V1✓ verificatore 2026-10-20: estremi L. 21/1969 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1969\") || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita): gli estremi della legge, rimasti segnati come non verificati dalla prima stesura benché letti su Normattiva il 20 ottobre, e il governo, prima dedotto dal calendario, letti sulle fonti sopra; livello del record portato a V1 e attribuzione documentata"
     }
   },
   {
@@ -1005,13 +1078,17 @@
         "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1969-12-24;986"
       },
       {
-        "url": "https://bdp.camera.it/init/iter",
+        "url": "https://bdp.camera.it/init/iter/scheda/8001",
         "etichetta": "Iter delle leggi 1948-1990"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg05/lavori/stampati/pdf/19870001.pdf",
+        "etichetta": "stampato Camera C.1987"
       }
     ],
     "verifica": {
-      "livello": "NV",
-      "dettaglio": "V1 atto Camera; estremi legge NV; governo INF (S.815) || V1✓ verificatore 2026-10-20: estremi L. 986/1969 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1970\") || CORRETTO verificatore 2026-10-20: governo proponente Rumor I (non Rumor II): S.815 presentato il 31/07/1969 dal Ministro del Tesoro Colombo (bdp.camera.it), Rumor II giura il 06/08/1969; la legge e promulgata sotto Rumor II"
+      "livello": "V1",
+      "dettaglio": "V1 atto Camera (S.815/C.1987; la data 05/11/1969 di dati.camera.it è la trasmissione dal Senato); legge V1 (Normattiva: L. 24 dicembre 1969 n. 986, GU n. 328 del 31/12/1969, suppl. ord.); governo V1 documentato, in prima stesura dedotto dal calendario (stampato Camera C.1987: «approvato dal Senato della Repubblica nella seduta del 31 ottobre 1969 (Stampato n. 815)», «presentato dal Ministro del Tesoro (Colombo Emilio) di concerto col Ministro del Bilancio e della programmazione economica (Preti)»; Preti è ministro del Bilancio dal 12/12/1968 al 05/08/1969 solo nel governo Rumor I, Colombo era al Tesoro anche nel Rumor II; Iter delle leggi 1948-1990, scheda 8001: «Proponente: Tesoro: Colombo Emilio. SENATO n 815: pres 31 luglio 1969») || V1✓ verificatore 2026-10-20: estremi L. 986/1969 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1970\") || CORRETTO verificatore 2026-10-20: governo proponente Rumor I (non Rumor II): S.815 presentato il 31/07/1969 dal Ministro del Tesoro Colombo (bdp.camera.it), Rumor II giura il 06/08/1969; la legge e promulgata sotto Rumor II || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita): gli estremi della legge, rimasti segnati come non verificati dalla prima stesura benché letti su Normattiva il 20 ottobre, e il governo, che la nota indicava ancora come dedotto, letti sulle fonti sopra; al posto del catalogo dell'Iter c'è la scheda 8001; livello del record portato a V1"
     }
   },
   {
@@ -1050,11 +1127,19 @@
       },
       {
         "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1971-04-30;206"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter/scheda/8326",
+        "etichetta": "Iter delle leggi 1948-1990"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg05/lavori/stampati/pdf/26870001.pdf",
+        "etichetta": "stampato Camera C.2687"
       }
     ],
     "verifica": {
-      "livello": "NV",
-      "dettaglio": "V1 atto Camera; estremi legge NV; governo V1 (rif_governo g22, C.2687 31/07/1970; il governo cessa il 06/08/1970) || V1✓ verificatore 2026-10-20: estremi L. 206/1971 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1971\")"
+      "livello": "V1",
+      "dettaglio": "V1 atto Camera; legge V1 (Normattiva: L. 30 aprile 1971 n. 206, GU n. 108 del 30/04/1971, suppl. ord.); governo V1 documentato (rif_governo g22; stampato Camera C.2687: «presentato dal Ministro del Tesoro (Colombo Emilio) di concerto col Ministro del Bilancio e della programmazione economica (Giolitti)», «Presentato alla Presidenza il 31 luglio 1970»; Colombo e Giolitti hanno insieme il Tesoro e il Bilancio nei governi Moro I e Rumor III, decide la data, che cade nel Rumor III; dal 06/08/1970, nel governo Colombo, il Tesoro è di Ferrari Aggradi; Iter delle leggi 1948-1990, scheda 8326: «Proponente: Tesoro: Colombo Emilio. CAMERA n 2687: pres 31 luglio 1970») || V1✓ verificatore 2026-10-20: estremi L. 206/1971 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1971\") || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita): gli estremi della legge, rimasti segnati come non verificati dalla prima stesura benché letti su Normattiva il 20 ottobre, e il governo letti sulle fonti sopra; livello del record portato a V1"
     }
   },
   {
@@ -1085,19 +1170,27 @@
     "tipoAttoOriginale": "bilancio di previsione",
     "estremi": "L. n. 54 del 11/03/1972 (legge unica di bilancio)",
     "governoProponenteId": "g23",
-    "governoProponenteAttribuzione": "inferita",
-    "governoProponenteTesto": "Colombo (INF)",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Colombo",
     "fonti": [
       {
         "url": "http://dati.camera.it/ocd/attocamera.rdf/ac05_3841"
       },
       {
         "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1972-03-11;54"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter/scheda/8622",
+        "etichetta": "Iter delle leggi 1948-1990, S.1861"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg05/lavori/stampati/pdf/38410001.pdf",
+        "etichetta": "stampato Camera C.3841"
       }
     ],
     "verifica": {
-      "livello": "NV",
-      "dettaglio": "V1 atto Camera; estremi legge NV; governo INF (S.1861) || V1✓ verificatore 2026-10-20: estremi L. 54/1972 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1972\")"
+      "livello": "V1",
+      "dettaglio": "V1 atto Camera; estremi della legge non verificati in prima stesura; governo dedotto in prima stesura dal calendario dei governi (S.1861) || V1✓ verificatore 2026-10-20: estremi L. 54/1972 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1972\") || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita): legge V1 (Normattiva: L. 11 marzo 1972 n. 54, GU n. 75 del 20/03/1972, suppl. ord.; lavori preparatori S.1861, C.3841); governo documentato (non più dedotto): stampato Camera C.3841 «presentato dal Ministro del Tesoro (Ferrari-Aggradi) di concerto col Ministro del Bilancio […] (Giolitti)»; Ferrari Aggradi è al Tesoro solo nel governo Colombo (06/08/1970-17/02/1972, dati.camera.it); Iter delle leggi 1948-1990, scheda 8622: «Proponente: Tesoro: Ferrari Aggradi. SENATO n 1861: pres 31 luglio 1971»; il 29/11/1971 di dati.camera.it è la data di trasmissione alla Camera; la legge è promulgata sotto Andreotti I, ma conta il governo che presenta l'atto; livello del record portato a V1"
     }
   },
   {
@@ -1136,11 +1229,19 @@
       },
       {
         "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1973-02-27;18"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter/scheda/8706",
+        "etichetta": "Iter delle leggi 1948-1990, C.620"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg06/lavori/stampati/pdf/06200001.pdf",
+        "etichetta": "stampato Camera C.620"
       }
     ],
     "verifica": {
-      "livello": "NV",
-      "dettaglio": "V1 atto Camera; estremi legge NV; governo V1 (rif_governo g25, C.620 31/07/1972) || V1✓ verificatore 2026-10-20: estremi L. 18/1973 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1973\")"
+      "livello": "V1",
+      "dettaglio": "V1 atto Camera; estremi della legge non verificati in prima stesura; governo V1 (rif_governo g25, C.620 31/07/1972) || V1✓ verificatore 2026-10-20: estremi L. 18/1973 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1973\") || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita): legge V1 (Normattiva: L. 27 febbraio 1973 n. 18, GU n. 54 del 28/02/1973, suppl. ord.; lavori preparatori C.620, S.730); governo documentato: stampato Camera C.620 «presentato dal Ministro del Tesoro (Malagodi) di concerto col Ministro del Bilancio […] (Taviani)», «Presentato alla Presidenza il 31 luglio 1972»; Malagodi è al Tesoro solo nel governo Andreotti II (26/06/1972-07/07/1973, dati.camera.it); Iter delle leggi 1948-1990, scheda 8706: «Proponente: Tesoro: Malagodi»; livello del record portato a V1"
     }
   },
   {
@@ -1171,19 +1272,27 @@
     "tipoAttoOriginale": "bilancio di previsione",
     "estremi": "L. n. 24 del 23/02/1974 (legge unica di bilancio)",
     "governoProponenteId": "g26",
-    "governoProponenteAttribuzione": "inferita",
-    "governoProponenteTesto": "Rumor IV (INF)",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Rumor IV",
     "fonti": [
       {
         "url": "http://dati.camera.it/ocd/attocamera.rdf/ac06_2529"
       },
       {
         "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1974-02-23;24"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter/scheda/9047",
+        "etichetta": "Iter delle leggi 1948-1990, S.1226"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg06/lavori/stampati/pdf/25290001.pdf",
+        "etichetta": "stampato Camera C.2529"
       }
     ],
     "verifica": {
-      "livello": "NV",
-      "dettaglio": "V1 atto Camera; estremi legge NV; governo INF (S.1226) || V1✓ verificatore 2026-10-20: estremi L. 24/1974 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1974\")"
+      "livello": "V1",
+      "dettaglio": "V1 atto Camera; estremi della legge non verificati in prima stesura; governo dedotto in prima stesura dal calendario dei governi (S.1226) || V1✓ verificatore 2026-10-20: estremi L. 24/1974 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1974\") || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita): legge V1 (Normattiva: L. 23 febbraio 1974 n. 24, GU n. 56 del 28/02/1974, suppl. ord.; lavori preparatori S.1226, C.2529); governo documentato (non più dedotto): stampato Camera C.2529 «presentato dal Ministro del Tesoro (La Malfa Ugo) di concerto col Ministro del Bilancio […] (Giolitti)»; Ugo La Malfa è al Tesoro solo nel governo Rumor IV (07/07/1973-14/03/1974, dati.camera.it); Iter delle leggi 1948-1990, scheda 9047: «Proponente: Tesoro: La Malfa. SENATO n 1226 […]: pres 31 luglio 1973»; il 24/11/1973 di dati.camera.it è la data di trasmissione alla Camera; livello del record portato a V1"
     }
   },
   {
@@ -1222,11 +1331,19 @@
       },
       {
         "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1975-04-26;132"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter/scheda/9325",
+        "etichetta": "Iter delle leggi 1948-1990, C.3159"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg06/lavori/stampati/pdf/31590001.pdf",
+        "etichetta": "stampato Camera C.3159"
       }
     ],
     "verifica": {
-      "livello": "NV",
-      "dettaglio": "V1 atto Camera; estremi legge NV; governo V1 (rif_governo g27, C.3159 31/07/1974) || V1✓ verificatore 2026-10-20: estremi L. 132/1975 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1975\")"
+      "livello": "V1",
+      "dettaglio": "V1 atto Camera; estremi della legge non verificati in prima stesura; governo V1 (rif_governo g27, C.3159 31/07/1974) || V1✓ verificatore 2026-10-20: estremi L. 132/1975 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1975\") || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita): legge V1 (Normattiva: L. 26 aprile 1975 n. 132, GU n. 113 del 30/04/1975, suppl. ord.; lavori preparatori C.3159, S.1971); governo documentato: stampato Camera C.3159 «presentato dal Ministro del Tesoro (Colombo Emilio) di concerto col Ministro del Bilancio […] (Giolitti)», «Presentato alla Presidenza il 31 luglio 1974»; Colombo al Tesoro e Giolitti al Bilancio sono insieme anche nel governo Rumor III (27/03/1970-06/08/1970, dati.camera.it), quindi decide la data: il 31/07/1974 è in carica il governo Rumor V (14/03/1974-23/11/1974, dati.camera.it); Iter delle leggi 1948-1990, scheda 9325: «Proponente: Tesoro: Colombo Emilio. CAMERA n 3159»; livello del record portato a V1"
     }
   },
   {
@@ -1237,19 +1354,27 @@
     "tipoAttoOriginale": "bilancio di previsione",
     "estremi": "L. n. 702 del 22/12/1975 (legge unica di bilancio)",
     "governoProponenteId": "g28",
-    "governoProponenteAttribuzione": "inferita",
-    "governoProponenteTesto": "Moro IV (INF)",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Moro IV",
     "fonti": [
       {
-        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac06_4131-bis"
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac06_4131"
       },
       {
         "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1975-12-22;702"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter/scheda/9531",
+        "etichetta": "Iter delle leggi 1948-1990, S.2238"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg06/lavori/stampati/pdf/41310001.pdf",
+        "etichetta": "stampato Camera C.4131"
       }
     ],
     "verifica": {
-      "livello": "NV",
-      "dettaglio": "V1 atto Camera; estremi legge NV; governo INF (C.4131-bis 25/11/1975) || V1✓ verificatore 2026-10-20: estremi L. 702/1975 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1976\")"
+      "livello": "V1",
+      "dettaglio": "V1 atto Camera; estremi della legge non verificati in prima stesura; governo dedotto in prima stesura dal calendario dei governi (atto Camera allora citato come C.4131-bis, 25/11/1975) || V1✓ verificatore 2026-10-20: estremi L. 702/1975 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1976\") || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita): legge V1 (Normattiva: L. 22 dicembre 1975 n. 702, GU n. 343 del 31/12/1975, suppl. ord.; lavori preparatori «S.2238 C. 4131»); fonte dell'atto corretta: ac06_4131-bis è il fascicolo delle «Note illustrative di carattere politico-economico sull'attività delle Amministrazioni statali nell'anno 1976» (stampato 41310002), sostituito con ac06_4131 (stampato 41310001, il disegno di legge; nel titolo dati.camera.it scrive «Bilancio di prevenzione», refuso della scheda); governo documentato (non più dedotto): stampato Camera C.4131 «presentato dal Ministro del Tesoro (Colombo Emilio) di concerto col Ministro del Bilancio […] (Andreotti)»; Colombo e Andreotti hanno le stesse cariche anche nel governo Moro V (dal 12/02/1976, dati.camera.it), quindi decide la data: Iter delle leggi 1948-1990, scheda 9531: «Proponente: Tesoro: Colombo Emilio. SENATO n 2238 […]; 2238 bis (note illustrative […]): pres 31 luglio 1975»; la stessa scheda registra l'esame nelle commissioni del Senato dal 18 settembre 1975 e l'approvazione in Assemblea il 20 novembre 1975 (data confermata dallo stampato C.4131), tutto sotto Moro IV (23/11/1974-12/02/1976), quindi l'esito non dipende dalla lettura della data di presentazione; il 25/11/1975 di dati.camera.it e dello stampato è la data di trasmissione alla Camera (l'Iter scrive 22 novembre 1975); livello del record portato a V1"
     }
   },
   {
@@ -1268,11 +1393,19 @@
       },
       {
         "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1976-12-23;874"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter/scheda/9789",
+        "etichetta": "Iter delle leggi 1948-1990, C.203"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg07/lavori/stampati/pdf/02030001.pdf",
+        "etichetta": "stampato Camera C.203"
       }
     ],
     "verifica": {
-      "livello": "NV",
-      "dettaglio": "V1 atto Camera; estremi legge NV; governo V1 (rif_governo g29, C.203 29/07/1976, stesso giorno della nomina di Andreotti III) || V1✓ verificatore 2026-10-20: estremi L. 874/1976 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1977\")"
+      "livello": "V1",
+      "dettaglio": "V1 atto Camera; estremi della legge non verificati in prima stesura; governo V1 (rif_governo g29, C.203 29/07/1976, stesso giorno della nomina di Andreotti III) || V1✓ verificatore 2026-10-20: estremi L. 874/1976 letti su Normattiva (titolo \"Bilancio di previsione dello Stato per l'anno finanziario 1977\") || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita): legge V1 (Normattiva: L. 23 dicembre 1976 n. 874, GU n. 348 del 31/12/1976, suppl. ord.; lavori preparatori C.203, S.280); governo documentato: stampato Camera C.203 «presentato dal Ministro del Tesoro (Colombo Emilio) di concerto col Ministro del Bilancio […] (Andreotti)», «Presentato alla Presidenza il 29 luglio 1976»; nel governo Andreotti III, nominato lo stesso giorno, il Tesoro è di Stammati e il Bilancio di Morlino (dati.camera.it), quindi l'atto è del governo Moro V; Iter delle leggi 1948-1990, scheda 9789: «Proponente: Min Tesoro: Colombo. CAMERA n 203: pres 29 luglio 1976»; livello del record portato a V1"
     }
   },
   {
@@ -1418,11 +1551,19 @@
       },
       {
         "url": "http://dati.camera.it/ocd/attocamera.rdf/ac08_1491"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter/scheda/10562",
+        "etichetta": "Iter delle leggi 1948-1990, S.292"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg08/lavori/stampati/pdf/14910001.pdf",
+        "etichetta": "stampato Camera C.1491"
       }
     ],
     "verifica": {
       "livello": "V1",
-      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione"
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita): governo DOCUMENTATO (non più INFERENZA): stampato C.1491 «presentato dal Ministro del Tesoro (Pandolfi) di concerto col Ministro del Bilancio […] (Andreatta) e col Ministro delle Finanze (Reviglio)»; Pandolfi al Tesoro e Andreatta al Bilancio sono insieme solo nel governo Cossiga I (04/08/1979-04/04/1980, dati.camera.it); Iter scheda 10562: «Proponente: Min Tesoro: Pandolfi. SENATO n 292: pres 30 settembre 1979»; l'11/03/1980 di dati.camera.it è la data di trasmissione alla Camera"
     }
   },
   {
@@ -1507,11 +1648,19 @@
       },
       {
         "url": "http://dati.camera.it/ocd/attocamera.rdf/ac08_3043"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter/scheda/11069",
+        "etichetta": "Iter delle leggi 1948-1990, S.1583"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg08/lavori/stampati/pdf/30430001.pdf",
+        "etichetta": "stampato Camera C.3043"
       }
     ],
     "verifica": {
       "livello": "V1",
-      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione"
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita): governo DOCUMENTATO (non più INFERENZA): stampato C.3043 «presentato dal Ministro del Tesoro (Andreatta) di concerto col Ministro del Bilancio […] (La Malfa) e col Ministro delle Finanze (Formica)»; i tre ministri sono insieme nei governi Spadolini I (28/06/1981-23/08/1982) e Spadolini II (23/08/1982-01/12/1982) (dati.camera.it), quindi decide la data di presentazione: Iter scheda 11069: «Proponente: Min Tesoro: Andreatta. SENATO n 1583: pres 30 settembre 1981», sotto Spadolini I; il 22/12/1981 di dati.camera.it è la data di trasmissione alla Camera"
     }
   },
   {
@@ -1573,11 +1722,19 @@
       },
       {
         "url": "http://dati.camera.it/ocd/attocamera.rdf/ac09_927"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter/scheda/11400",
+        "etichetta": "Iter delle leggi 1948-1990, S.195"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg09/lavori/stampati/pdf/09270001.pdf",
+        "etichetta": "stampato Camera C.927"
       }
     ],
     "verifica": {
       "livello": "V1",
-      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione"
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita): governo DOCUMENTATO (non più INFERENZA): stampato C.927 «presentato dal Ministro del Tesoro (Goria) di concerto col Ministro del Bilancio […] (Longo) e col Ministro delle Finanze (Visentini)»; Longo è al Bilancio solo nel governo Craxi I, dal 04/08/1983 al 13/07/1984 (dati.camera.it); Iter scheda 11400: «Proponente: Min Tesoro: Goria SENATO n 195: pres 30 settembre 1983»; il 29/11/1983 di dati.camera.it è la data di trasmissione alla Camera"
     }
   },
   {
@@ -1682,11 +1839,19 @@
       },
       {
         "url": "http://dati.camera.it/ocd/attocamera.rdf/ac09_3335"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter/scheda/11928",
+        "etichetta": "Iter delle leggi 1948-1990, S.1504"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg09/lavori/stampati/pdf/33350001.pdf",
+        "etichetta": "stampato Camera C.3335"
       }
     ],
     "verifica": {
       "livello": "V1",
-      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione"
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita): governo DOCUMENTATO (non più INFERENZA): stampato C.3335 «presentato dal Ministro del Tesoro (Goria) di concerto col Ministro del Bilancio […] (Romita)»; Goria al Tesoro e Romita al Bilancio sono insieme nei governi Craxi I (Romita dal 30/07/1984) e Craxi II (01/08/1986-17/04/1987) (dati.camera.it), quindi decide la data di presentazione: Iter scheda 11928: «PROPONENTE: Min Tesoro: Goria. SENATO n 1504: pres 30 settembre 1985», sotto Craxi I; l'11/12/1985 di dati.camera.it è la data di trasmissione alla Camera"
     }
   },
   {
@@ -1861,11 +2026,19 @@
       },
       {
         "url": "http://dati.camera.it/ocd/attocamera.rdf/ac10_4362"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter/scheda/12622",
+        "etichetta": "Iter delle leggi 1948-1990, S.1892"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg10/lavori/stampati/pdf/43620002.pdf",
+        "etichetta": "stampato Camera C.4362"
       }
     ],
     "verifica": {
       "livello": "V1",
-      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione"
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita): governo DOCUMENTATO (non più INFERENZA): stampato C.4362 «presentato dal Ministro del Tesoro (Carli) di concerto col Ministro del Bilancio […] (Cirino Pomicino) e col Ministro delle Finanze (Formica)»; i tre ministri sono insieme nei governi Andreotti VI (22/07/1989-12/04/1991) e Andreotti VII (dati.camera.it), quindi decide la data di presentazione: Iter scheda 12622: «PROPONENTE: Min Tesoro: Carli. SENATO n 1892: pres 30 settembre 1989», sotto Andreotti VI; il 20/11/1989 di dati.camera.it è la data di trasmissione alla Camera"
     }
   },
   {
@@ -1947,11 +2120,15 @@
       },
       {
         "url": "http://dati.camera.it/ocd/attocamera.rdf/ac10_6115"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg10/lavori/stampati/pdf/61150001.pdf",
+        "etichetta": "stampato Camera C.6115"
       }
     ],
     "verifica": {
       "livello": "V1",
-      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione"
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita): governo DOCUMENTATO (non più INFERENZA): stampato C.6115 «presentato dal Ministro del Tesoro (Carli) di concerto col Ministro del Bilancio e della Programmazione Economica (Cirino Pomicino)», e col Ministro delle Finanze (Formica); i tre ministri sono insieme nei governi Andreotti VI e Andreotti VII (12/04/1991-28/06/1992) (dati.camera.it), quindi decide la data di presentazione: lavori preparatori della pagina Normattiva della L. 415/1991: «Senato della Repubblica (atto n. 3003): Presentato dal Ministro del tesoro (CARLI) il 30 settembre 1991.», sotto Andreotti VII; l'Iter delle leggi 1948-1990 non copre il 1991; il 20/11/1991 di dati.camera.it è la data di trasmissione alla Camera"
     }
   },
   {
@@ -2032,12 +2209,16 @@
         "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1993-12-24;538"
       },
       {
-        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac11_3341"
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac11_3340"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg11/lavori/stampati/pdf/54544.pdf",
+        "etichetta": "stampato Camera C.3340"
       }
     ],
     "verifica": {
       "livello": "V1",
-      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione"
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita) — CORRETTA: la fonte ac11_3341 era il bilancio di previsione 1994 («S. 1450: Bilancio di previsione dello Stato per l'anno finanziario 1994 e bilancio pluriennale per il triennio 1994-1996 (S. 1450)»), sostituita con ac11_3340, «S. 1507: Disposizioni per la formazione del bilancio annuale e pluriennale dello Stato (legge finanziaria 1994) (S. 1507)»; governo DOCUMENTATO (non più INFERENZA): stampato C.3340 «presentato dal Ministro del Tesoro (Barucci) di concerto con il Ministro del Bilancio […] (Spaventa) e con il Ministro delle Finanze (Gallo)», Spaventa e Gallo sono in carica solo nel governo Ciampi (28/04/1993-10/05/1994, dati.camera.it); lavori preparatori della pagina Normattiva della L. 538/1993: «Senato della Repubblica (atto n. 1507): Presentato dal Ministro del tesoro (BARUCCI) il 14 settembre 1993.»; il 16/11/1993 di dati.camera.it è la data di trasmissione alla Camera e l'iniziativa «Popolare» nei metadati di dati.camera.it è un errore della scheda"
     }
   },
   {
@@ -2096,11 +2277,18 @@
     "fonti": [
       {
         "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1995-12-28;551"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac12_3448"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg12/lavori/stampati/pdf/53633.pdf",
+        "etichetta": "stampato Camera C.3448"
       }
     ],
     "verifica": {
       "livello": "V1",
-      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; governo coerente con data di presentazione dell'atto Camera e calendario governi (dati.camera.it); nessuna correzione"
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; governo coerente con data di presentazione dell'atto Camera e calendario governi (dati.camera.it); nessuna correzione || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita): aggiunte le fonti dell'atto proprio: ac12_3448 «S. 2019: Bilancio di previsione dello Stato per l'anno finanziario 1996 e bilancio pluriennale per il triennio 1996 - 1998 (approvato dal Senato) (S. 2019)»; governo documentato sull'atto: stampato C.3448 «presentato dal Ministro del Tesoro (Dini) di concerto con il Ministro del Bilancio […] (Masera)»; Masera è al Bilancio solo nel governo Dini (17/01/1995-12/01/1996, dati.camera.it); Normattiva, lavori preparatori: «Presentato dal Ministro del tesoro (DINI) il 28 luglio 1995» (l'intestazione dice «atto n. 2109», refuso per 2019 come mostra la successione «S. 2019 C. 3448 S. 2019-B»); il 22/11/1995 di dati.camera.it è la data di trasmissione alla Camera; l'iniziativa «Popolare» nei metadati di dati.camera.it è un errore della scheda, come per ac12_3447"
     }
   },
   {
@@ -2127,7 +2315,7 @@
     ],
     "verifica": {
       "livello": "V1",
-      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione || V1✓ verifica 2026-11-01 (ricerca, verifica indipendente, tentativo di smentita) — CORRETTA: la fonte ac12_3448 era il bilancio di previsione 1996 (S.2019), sostituita con ac12_3447, «S. 2156: Disposizioni per la formazione del bilancio annuale e pluriennale dello Stato (legge finanziaria 1996)»; governo DOCUMENTATO (non più INFERENZA): stampato C.3447 «presentato dal Ministro del Tesoro (Dini) di concerto con il Ministro del Bilancio […] (Masera)», e con il ministro delle Finanze Fantozzi, Masera è al Bilancio solo nel governo Dini (17/01/1995-12/01/1996); l'iniziativa «Popolare» nei metadati di dati.camera.it è un errore della scheda"
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione || V1✓ verifica 2026-11-01 (ricerca, verifica indipendente, tentativo di smentita) — CORRETTA: la fonte ac12_3448 era il bilancio di previsione 1996 (S.2019), sostituita con ac12_3447, «S. 2156: Disposizioni per la formazione del bilancio annuale e pluriennale dello Stato (legge finanziaria 1996) (approvato dal Senato) (S. 2156)»; governo DOCUMENTATO (non più INFERENZA): stampato C.3447 «presentato dal Ministro del Tesoro (Dini) di concerto con il Ministro del Bilancio […] (Masera)», e con il ministro delle Finanze Fantozzi, Masera è al Bilancio solo nel governo Dini (17/01/1995-12/01/1996); l'iniziativa «Popolare» nei metadati di dati.camera.it è un errore della scheda"
     }
   },
   {
@@ -2185,12 +2373,16 @@
         "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1997-12-27;450"
       },
       {
-        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac13_4356"
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac13_4355"
+      },
+      {
+        "url": "http://dati.senato.it/ddl/9694",
+        "etichetta": "dati.senato.it, S.2792"
       }
     ],
     "verifica": {
       "livello": "V1",
-      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (S.2792 30/09/1997, iniziativa: Prodi-I) -> INFERENZA promossa a V1"
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (S.2792 30/09/1997, iniziativa: Prodi-I) -> INFERENZA promossa a V1 || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita) — CORRETTA: la fonte ac13_4356 era il bilancio di previsione 1998 («Bilancio di previsione dello Stato per l'anno finanziario 1998 e bilanciopluriennale per il triennio 1998-2000 (approvato dal Senato) (S. 2739)»), sostituita con ac13_4355, «Disposizioni per la formazione del bilancio annuale e pluriennale dello Stato (legge finanziaria 1998) (approvato dal Senato) (S. 2792)»; governo invariato e documentato: dati.senato.it ddl 9694, S.2792, dataPresentazione 1997-09-30, «Ministro Tesoro Ciampi Carlo Azeglio (Prodi-I), Ministro Bilancio e Programm. Ciampi Carlo Azeglio (Prodi-I) ed altri.»; il 22/11/1997 di dati.camera.it è la data di trasmissione alla Camera e l'iniziativa «Popolare» nei metadati di dati.camera.it è un errore della scheda"
     }
   },
   {
@@ -2251,12 +2443,16 @@
         "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1999-12-23;488"
       },
       {
-        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac13_6558"
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac13_6557"
+      },
+      {
+        "url": "http://dati.senato.it/ddl/11222",
+        "etichetta": "dati.senato.it, S.4236"
       }
     ],
     "verifica": {
       "livello": "V1",
-      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (S.4236 30/09/1999, iniziativa: D'Alema-I) -> INFERENZA promossa a V1"
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo proponente confermato da dati.senato.it osr:Ddl (S.4236 30/09/1999, iniziativa: D'Alema-I) -> INFERENZA promossa a V1 || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita) — CORRETTA: la fonte ac13_6558 era il bilancio di previsione 2000 («Bilancio di previsione dello Stato per l'anno finanziario 2000 e bilanciopluriennale per il triennio 2000-2002 (approvato dal Senato) (S. 4237)»), sostituita con ac13_6557, «Disposizioni per la formazione del bilancio annuale e pluriennale dello Stato (legge finanziaria 2000) (approvato dal Senato) (S.4236)»; governo invariato e documentato: dati.senato.it ddl 11222, S.4236, dataPresentazione 1999-09-30, «Ministro Tesoro e Bilancio Amato Giuliano (D'Alema-I), Ministro Finanze Visco Vincenzo (D'Alema-I)»; il 15/11/1999 di dati.camera.it è la data di trasmissione alla Camera e l'iniziativa «Popolare» nei metadati di dati.camera.it è un errore della scheda"
     }
   },
   {
@@ -2444,11 +2640,18 @@
     "fonti": [
       {
         "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2004-12-30;312"
+      },
+      {
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac14_5311"
+      },
+      {
+        "url": "http://dati.senato.it/ddl/22018",
+        "etichetta": "dati.senato.it, C.5311"
       }
     ],
     "verifica": {
       "livello": "V1",
-      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo: dati.senato.it osr:Ddl della stessa sessione di bilancio (C.5310-BIS 30/09/2004, Berlusconi-II)"
+      "dettaglio": "estremi V1 (Normattiva); governo come legge finanziaria/stabilità dello stesso anno || V1✓ verificatore 2026-10-20: estremi riletti su Normattiva; governo: dati.senato.it osr:Ddl della stessa sessione di bilancio (C.5310-BIS 30/09/2004, Berlusconi-II) || V1✓ verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita): aggiunta la fonte dell'atto proprio (la verifica del 20/10 citava C.5310-BIS, che è la legge finanziaria): ac14_5311 «\"Bilancio di previsione dello Stato per l'anno finanziario 2005 e bilancio pluriennale per il triennio 2005-2007\" (5311)»; Normattiva, lavori preparatori: «Presentato dal Ministro dell'economia e delle finanze (Siniscalco) il 30 settembre 2004»; dati.senato.it ddl/22018: fase C.5311, dataPresentazione 2004-09-30, «MinistroEconomia e finanze SINISCALCO DOMENICO (Berlusconi-II)»; Siniscalco è ministro dell'economia dal 16/07/2004 nel governo Berlusconi II (dati.camera.it); il 01/10/2004 di dati.camera.it non è la data di presentazione"
     }
   },
   {

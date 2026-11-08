@@ -66,6 +66,8 @@ Per gli atti prima del 1990 la prova del governo è la prima pagina dello stampa
 
 ## Punti aperti
 
+> Chiusi in gran parte il 2026-11-08: vedi `2026-11-08-punti-aperti-tre-livelli.md`.
+
 Visti da un solo livello, quindi non applicati qui.
 
 - **Stesso errore del 1996** (atto Camera del bilancio al posto della finanziaria), trovato dal terzo livello con una query su dati.camera.it:

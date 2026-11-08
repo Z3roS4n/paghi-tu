@@ -1,5 +1,5 @@
 {
-  "domandeSha256": "7ff1c5c0a2bb9666f3bff9bf3bfd344848a55f367b6903bc353f11373043220f",
+  "domandeSha256": "0c7f721d77558e7f0e9b3c7cae63ab0952c01884a05cb783412d6613a26aadc5",
   "verificatoIl": "2026-11-08",
   "fonti": [
     {
@@ -30,6 +30,15 @@
       "caratteri": 4347
     },
     {
+      "url": "http://dati.camera.it/ocd/attocamera.rdf/ac02_2335",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac02_2335",
+      "tipo": "html",
+      "caratteri": 3711
+    },
+    {
       "url": "http://dati.camera.it/ocd/attocamera.rdf/ac02_70",
       "esito": "ok",
       "via": "diretto",
@@ -39,40 +48,31 @@
       "caratteri": 4596
     },
     {
-      "url": "http://dati.camera.it/ocd/attocamera.rdf/ac03_1",
+      "url": "http://dati.camera.it/ocd/attocamera.rdf/ac03_3889",
       "esito": "ok",
       "via": "diretto",
       "http": 200,
-      "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac03_1",
+      "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac03_3889",
       "tipo": "html",
-      "caratteri": 4832
+      "caratteri": 5033
     },
     {
-      "url": "http://dati.camera.it/ocd/attocamera.rdf/ac04_2838",
+      "url": "http://dati.camera.it/ocd/attocamera.rdf/ac07_1940",
       "esito": "ok",
       "via": "diretto",
       "http": 200,
-      "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac04_2838",
+      "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac07_1940",
       "tipo": "html",
       "caratteri": 3839
     },
     {
-      "url": "http://dati.camera.it/ocd/attocamera.rdf/ac04_2970",
+      "url": "http://dati.camera.it/ocd/attocamera.rdf/ac07_2077",
       "esito": "ok",
       "via": "diretto",
       "http": 200,
-      "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac04_2970",
+      "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac07_2077",
       "tipo": "html",
-      "caratteri": 3915
-    },
-    {
-      "url": "http://dati.camera.it/ocd/attocamera.rdf/ac05_311",
-      "esito": "ok",
-      "via": "diretto",
-      "http": 200,
-      "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac05_311",
-      "tipo": "html",
-      "caratteri": 4000
+      "caratteri": 3911
     },
     {
       "url": "http://dati.camera.it/ocd/attocamera.rdf/ac08_3039",
@@ -93,22 +93,13 @@
       "caratteri": 4077
     },
     {
-      "url": "http://dati.camera.it/ocd/attocamera.rdf/ac09_4016",
+      "url": "http://dati.camera.it/ocd/attocamera.rdf/ac10_5106",
       "esito": "ok",
       "via": "diretto",
       "http": 200,
-      "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac09_4016",
+      "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac10_5106",
       "tipo": "html",
-      "caratteri": 6319
-    },
-    {
-      "url": "http://dati.camera.it/ocd/attocamera.rdf/ac16_5534",
-      "esito": "ok",
-      "via": "diretto",
-      "http": 200,
-      "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac16_5534",
-      "tipo": "html",
-      "caratteri": 5543
+      "caratteri": 6593
     },
     {
       "url": "http://dati.camera.it/ocd/attocamera.rdf/ac19_2750",
@@ -303,13 +294,40 @@
       "errore": "Fonte diretta non leggibile; copia verificata il 2026-11-01, sha256 28738e3314e28f459dd10adc3a6a1babb532b60a3818e38b26213a8999218f92"
     },
     {
+      "url": "https://bdp.camera.it/init/iter/scheda/10077",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://bdp.camera.it/init/iter/scheda/10077",
+      "tipo": "html",
+      "caratteri": 6769
+    },
+    {
+      "url": "https://bdp.camera.it/init/iter/scheda/10155",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://bdp.camera.it/init/iter/scheda/10155",
+      "tipo": "html",
+      "caratteri": 6680
+    },
+    {
       "url": "https://corrierelivornese.it/toscana/dalla-toscana/avs-lancia-bolletta-sociale-fratoianni-e-bonelli-in-italia-28-milioni-famiglie-in-poverta-energetica-che-meloni-non-vuole-vedere/",
       "esito": "ok",
       "via": "diretto",
       "http": 200,
       "urlLetto": "https://corrierelivornese.it/toscana/dalla-toscana/avs-lancia-bolletta-sociale-fratoianni-e-bonelli-in-italia-28-milioni-famiglie-in-poverta-energetica-che-meloni-non-vuole-vedere/",
       "tipo": "html",
-      "caratteri": 12162
+      "caratteri": 12189
+    },
+    {
+      "url": "https://dati.camera.it/sparql",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://dati.camera.it/sparql",
+      "tipo": "html",
+      "caratteri": 2102
     },
     {
       "url": "https://decidiamo.com/processes/energia-pulita-e-popolare/f/52/proposals/2003",
@@ -327,7 +345,7 @@
       "http": 200,
       "urlLetto": "https://demo.istat.it/app/?a=2026&i=POS&l=it",
       "tipo": "html",
-      "caratteri": 19560
+      "caratteri": 19558
     },
     {
       "url": "https://documenti.camera.it/apps/nuovosito/attigoverno/Schedalavori/getTesto.ashx?file=0333_F001.pdf&leg=XVIII",
@@ -460,7 +478,7 @@
       "esito": "ok",
       "via": "diretto",
       "http": 200,
-      "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_279_DF_DCIS_RICPOPRES1991_1,1.0/A.IT...?startPeriod=1982&endPeriod=1991",
+      "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_279_DF_DCIS_RICPOPRES1991_1,1.0/A.IT...?startPeriod=1982&endPeriod=1991\r",
       "tipo": "html",
       "caratteri": 15081
     },
@@ -494,11 +512,12 @@
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,22_289_DF_DCIS_POPRES1_1,1.0/A.IT....?startPeriod=2019&endPeriod=2026",
       "esito": "ok",
-      "via": "diretto",
-      "http": 200,
-      "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,22_289_DF_DCIS_POPRES1_1,1.0/A.IT....?startPeriod=2019&endPeriod=2026\r",
+      "via": "archivio",
+      "http": 0,
+      "urlLetto": "data/raw/agent-sources/istat-popres-20261031.txt.gz",
       "tipo": "html",
-      "caratteri": 83619
+      "caratteri": 60,
+      "errore": "Fonte diretta non leggibile; copia verificata il 2026-10-31, sha256 2baa4d3d35a53a0bc8246026f3df86e7f10784f072e2df79c922df09c988d03e"
     },
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,92_506_DF_DCCN_PILN_1,1.0/A.IT.B1GQ_B_W2_S1..../ALL/",
@@ -552,7 +571,7 @@
       "http": 200,
       "urlLetto": "https://www.lapresse.it/politica/2026/10/25/lega-oggi-al-congresso-gli-interventi-di-salvini-e-garavaglia-poi-il-voto-sulla-segreteria-del-partito-la-diretta/",
       "tipo": "html",
-      "caratteri": 90448
+      "caratteri": 90476
     },
     {
       "url": "https://legaonline.it/la-settimana-leghista-38/",
@@ -588,7 +607,7 @@
       "http": 200,
       "urlLetto": "https://www.noimoderati.it/news-e-media/12",
       "tipo": "html",
-      "caratteri": 6653
+      "caratteri": 6654
     },
     {
       "url": "https://noimoderati.it/news-e-media/42",
@@ -606,7 +625,7 @@
       "http": 200,
       "urlLetto": "https://www.noimoderati.it/news-e-media/86",
       "tipo": "html",
-      "caratteri": 3192
+      "caratteri": 3191
     },
     {
       "url": "https://ora-italia.it/previdenza-complementare-e-venture-capital/",
@@ -696,7 +715,7 @@
       "http": 200,
       "urlLetto": "https://www.alanews.it/2026/10/23/politica/bonus-ai-genitori-proposta-salvini/",
       "tipo": "html",
-      "caratteri": 15067
+      "caratteri": 15086
     },
     {
       "url": "https://www.ansa.it/sito/notizie/politica/2026/10/29/ansa-box-vannacci-lancia-un-segnale-a-meloni-vuol-far-vincere-la-sinistra_4e83c538-b12b-48ba-994f-6a3b659ad59c.html",
@@ -705,7 +724,7 @@
       "http": 200,
       "urlLetto": "https://www.ansa.it/sito/notizie/politica/2026/10/29/ansa-box-vannacci-lancia-un-segnale-a-meloni-vuol-far-vincere-la-sinistra_4e83c538-b12b-48ba-994f-6a3b659ad59c.html",
       "tipo": "html",
-      "caratteri": 54750
+      "caratteri": 54818
     },
     {
       "url": "https://www.azione.it/le-nostre-proposte-immigrazione/",
@@ -912,7 +931,7 @@
       "http": 200,
       "urlLetto": "https://www.ilgiornale.it/news/interni/fdi-reato-di-associazione-a-delinquere-per-chi-devasta-e-aggredisce-le-forze-dellordine/",
       "tipo": "html",
-      "caratteri": 8721
+      "caratteri": 8752
     },
     {
       "url": "https://www.ilmessaggero.it/politica/onorato_proposte_mutui_case_popolari_sport-9848214.html",
@@ -930,7 +949,7 @@
       "http": 200,
       "urlLetto": "https://www.ilmessaggero.it/politica/schlein_programma_governo_energia_sanita_lavoro_sicurezza_giorgia_meloni-9694413.html",
       "tipo": "html",
-      "caratteri": 46588
+      "caratteri": 46587
     },
     {
       "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/comunicati-stampa/2025/04/Allegati/3732_Cs_Osservatorio-Assegno-Unico-Universale.pdf",
@@ -975,7 +994,7 @@
       "http": 200,
       "urlLetto": "https://www.istat.it/comunicato-stampa/conti-economici-nazionali-anni-2010-2025/",
       "tipo": "html",
-      "caratteri": 18563
+      "caratteri": 18562
     },
     {
       "url": "https://www.istat.it/notizia/bilancio-demografico-mensile-gennaio-dicembre-2025/",
@@ -1002,7 +1021,7 @@
       "http": 200,
       "urlLetto": "https://www.lasicilia.it/news/politica/3052972/mezzogiorno-protagonista-de-luca-rilancia-l-autonomia-e-la-super-zes-contro-il-romanocentrismo.html",
       "tipo": "html",
-      "caratteri": 10169
+      "caratteri": 10133
     },
     {
       "url": "https://www.maiemondiale.com/index.php/2026/02/24/maie-svolta-sul-voto-estero-proposta-di-legge-per-piu-sicurezza-e-sostegno-al-si-al-referendum/",
@@ -1059,49 +1078,49 @@
       "caratteri": 35583
     },
     {
-      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1969-02-28;21",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1977-12-23;934",
       "esito": "ok",
       "via": "diretto",
       "http": 200,
-      "urlLetto": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1969-02-28;21",
+      "urlLetto": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1977-12-23;934",
       "tipo": "html",
-      "caratteri": 31672
+      "caratteri": 23663
     },
     {
-      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1986-12-22;910",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1978-03-22;76",
       "esito": "ok",
       "via": "diretto",
       "http": 200,
-      "urlLetto": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1986-12-22;910",
+      "urlLetto": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1978-03-22;76",
       "tipo": "html",
-      "caratteri": 30381
+      "caratteri": 23914
     },
     {
-      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1995-12-28;551",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1990-12-29;405",
       "esito": "ok",
       "via": "diretto",
       "http": 200,
-      "urlLetto": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1995-12-28;551",
+      "urlLetto": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1990-12-29;405",
       "tipo": "html",
-      "caratteri": 26140
+      "caratteri": 31335
     },
     {
-      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2004-12-30;312",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2001-12-28;449",
       "esito": "ok",
       "via": "diretto",
       "http": 200,
-      "urlLetto": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2004-12-30;312",
+      "urlLetto": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2001-12-28;449",
       "tipo": "html",
-      "caratteri": 26000
+      "caratteri": 25608
     },
     {
-      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2012-12-24;228",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2011-11-12;184",
       "esito": "ok",
       "via": "diretto",
       "http": 200,
-      "urlLetto": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2012-12-24;228",
+      "urlLetto": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2011-11-12;184",
       "tipo": "html",
-      "caratteri": 98513
+      "caratteri": 25999
     },
     {
       "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199",
@@ -1644,33 +1663,32 @@
       ]
     },
     {
-      "id": "LB-1958-59-esercizio-provvisorio",
-      "verbatim": null,
-      "valori": [
-        {
-          "campo": "governoProponenteTesto",
-          "esito": "trovato",
-          "url": "http://dati.camera.it/ocd/attocamera.rdf/ac03_1",
-          "forma": "zoli"
-        }
-      ]
-    },
-    {
-      "id": "LB-1966-esercizio-provvisorio",
+      "id": "LB-1956-57-esercizio-provvisorio",
       "verbatim": null,
       "valori": [
         {
           "campo": "governoProponenteTesto",
           "esito": "non_trovato"
-        },
+        }
+      ]
+    },
+    {
+      "id": "LB-1962-63-esercizio-provvisorio",
+      "verbatim": null,
+      "valori": [
         {
-          "campo": "estremi",
+          "campo": "governoProponenteTesto",
           "esito": "non_trovato"
         }
       ]
     },
     {
-      "id": "LB-1969-bilancio-di-previsione",
+      "id": "LB-1963-64-bilancio-di-previsione",
+      "verbatim": null,
+      "valori": []
+    },
+    {
+      "id": "LB-1978-esercizio-provvisorio",
       "verbatim": null,
       "valori": [
         {
@@ -1698,7 +1716,7 @@
       ]
     },
     {
-      "id": "LB-1987-legge-finanziaria",
+      "id": "LB-1991-legge-finanziaria",
       "verbatim": null,
       "valori": [
         {
@@ -1712,7 +1730,7 @@
       ]
     },
     {
-      "id": "LB-1996-bilancio-di-previsione",
+      "id": "LB-2002-bilancio-di-previsione",
       "verbatim": null,
       "valori": [
         {
@@ -1726,21 +1744,7 @@
       ]
     },
     {
-      "id": "LB-2005-bilancio-di-previsione",
-      "verbatim": null,
-      "valori": [
-        {
-          "campo": "governoProponenteTesto",
-          "esito": "non_trovato"
-        },
-        {
-          "campo": "estremi",
-          "esito": "non_trovato"
-        }
-      ]
-    },
-    {
-      "id": "LB-2013-legge-di-stabilità",
+      "id": "LB-2012-bilancio-di-previsione",
       "verbatim": null,
       "valori": [
         {

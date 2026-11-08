@@ -1,9 +1,9 @@
 {
   "file": "out/documenti.jsonl",
-  "documenti": 2129,
-  "sha256": "39e17e07f96ebd7c3110377f2d688ffde2f4602a8cd4a1b9df53d3c4e030d1e5",
+  "documenti": 2160,
+  "sha256": "f410fba7722247a017bef0c7f4d94a7ef48a9b3f15f044b262469e0722c9d064",
   "perDataset": {
-    "correzioni": 16,
+    "correzioni": 47,
     "finanza-pubblica": 1105,
     "governi": 69,
     "leggi-bilancio": 145,

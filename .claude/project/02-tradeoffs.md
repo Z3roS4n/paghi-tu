@@ -545,3 +545,10 @@ Revisione del 2026-11-01: la validazione (npm ci, test, build) gira in un job se
 - **Scelta:** si accetta la nuova scelta e si rivedono i casi che entrano, invece di fissare a mano i casi corretti. Il set resta una funzione dei dati pubblicati, come prima; fissare i casi corretti premierebbe proprio i record già controllati. Le voci di `revisione.json` dei casi usciti si tolgono.
 - **Conseguenze:** ogni correzione a un record di legge di bilancio va seguita da `evals:build`, dalla revisione dei casi entrati e da `evals:verify`. C27-SVP-003 esce dal catalogo: la SVP non ha più promesse pubblicate e il set scende a 141 casi. Il titolare ha deciso il 2026-11-08 di dirlo nella nota «Copertura e limiti» di `/promesse`, con una riga generata per ogni partito senza promesse pubblicate e senza canali illeggibili (che hanno già la loro riga): «nessuna promessa pubblicata. Nessuna delle dichiarazioni trovate sui canali ufficiali rispetta i criteri di questo censimento». Vale per tutti i partiti allo stesso modo; oggi riguarda solo la SVP.
 - **Data:** 2026-11-01
+
+### D-046 — Citazioni dei frontespizi in maiuscolo
+- **Stato:** decisa da Claude il 2026-11-08, nella correzione a tre livelli delle leggi di bilancio.
+- **Contesto:** i frontespizi degli stampati della Camera sono stampati in maiuscolo («PRESENTATO DAL MINISTRO DEL TESORO (COLOMBO EMILIO) …»). Le note dei record li citano con le maiuscole normali, come già i record del 1969, 1978, 1988 e 1996. Il tentativo di smentita ha chiesto di scrivere la regola, perché per le altre citazioni vale «esattamente come stampato».
+- **Scelta:** dentro le virgolette dei frontespizi si trascrive con le maiuscole normali; parole, ordine e tagli («[…]») restano esattamente quelli della fonte. Vale solo per i frontespizi stampati tutti in maiuscolo, non per le citazioni delle promesse, che restano come nella fonte.
+- **Conseguenze:** nessuna riga cambia. Chi controlla una citazione di frontespizio la confronta senza distinguere maiuscole e minuscole.
+- **Data:** 2026-11-08
