@@ -54,7 +54,7 @@
         },
         "consuntivo": {
           "importoEur": 23198000000,
-          "descrizione": "2019-2025: consuntivo 2019-2021 + proiezione UPB 2022-2025",
+          "descrizione": "2019-2025: spesa registrata dal monitoraggio INPS per il 2019 e il 2020; per il 2021 spesa registrata aumentata di circa il 10% per le domande ancora in attesa (stima UPB); proiezione UPB 2022-2025",
           "fonte": {
             "url": "https://www.upbilancio.it/wp-content/uploads/2022/06/Nota-di-lavoro_Quota-100_per-sito-UPB.pdf"
           },
@@ -67,10 +67,10 @@
           "pct": -30.688099435298337,
           "calcolatoDa": "paghi_tu"
         },
-        "noteMetodo": "UPB NdL 1/2022 Tab. 20 p. 47 (PDF). Il consuntivo contiene una PROIEZIONE (domande giacenti incluse). Differenza -10.271 mln rispetto alla RT del DL 4/2019 (33.469) e -5.771 mln (-19,9%, INFERENZA) rispetto alla RT corretta con NADEF 2019 e LB 2020 (28.969): differenze tra i totali, calcolo nostro. La tabella UPB riporta 10.272 e 5.772, pari alla somma delle differenze annue arrotondate al milione (per il 2023 indica 1.372, mentre 5.034 - 3.663 = 1.371).",
+        "noteMetodo": "UPB NdL 1/2022 Tab. 20 p. 47 (PDF). Il consuntivo contiene una PROIEZIONE: per il 2021 l'UPB aumenta la spesa registrata dal monitoraggio INPS (5.148 mln, Tab. 18) di circa il 10 per cento per le quasi 39.000 domande giacenti al 31/12/2021 (p. 33), ipotizzate accolte (p. 46 e nota 62), e arriva a 5.648 mln (Tab. 20, colonna f; +500 mln, calcolo nostro); il 2022-2025 è proiettato con i tassi di crescita della RT del DL 4/2019 (p. 46). A p. 47 l'UPB scrive «di consuntivo sino al 2021», ma la colonna (f) del 2021 include già la stima per le domande giacenti. Differenza -10.271 mln rispetto alla RT del DL 4/2019 (33.469) e -5.771 mln (-19,9%, INFERENZA) rispetto alla RT corretta con NADEF 2019 e LB 2020 (28.969): differenze tra i totali, calcolo nostro. La tabella UPB riporta 10.272 e 5.772, pari alla somma delle differenze annue arrotondate al milione (per il 2023 indica 1.372, mentre 5.034 - 3.663 = 1.371).",
         "verifica": {
           "livello": "V1",
-          "dettaglio": "V1-proiezione ✓ CONFERMATA verificatore 2026-10-20 (Tab. 20 p. 47; -30,7% vs RT, -19,9% vs RT corretta: INFERENZA)"
+          "dettaglio": "V1-proiezione ✓ CONFERMATA verificatore 2026-10-20 (Tab. 20 p. 47; -30,7% vs RT, -19,9% vs RT corretta: INFERENZA) || verifica 2026-11-08 (ricerca, verifica indipendente, tentativo di smentita): periodo_consuntivo e note_metodo precisati per il 2021 (Tab. 20 col. f 5.648 = 5.148 INPS + stima per le domande giacenti)"
         }
       }
     ]

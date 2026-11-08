@@ -210,10 +210,444 @@
     "dato": "Legge finanziaria 1996, fonte dell'atto Camera",
     "pagina": "/leggi-di-bilancio",
     "prima": "Fonte: atto Camera ac12_3448.",
-    "dopo": "Fonte: atto Camera ac12_3447, «S. 2156: Disposizioni per la formazione del bilancio annuale e pluriennale dello Stato (legge finanziaria 1996)», e il relativo stampato C.3447.",
+    "dopo": "Fonte: atto Camera ac12_3447, «S. 2156: Disposizioni per la formazione del bilancio annuale e pluriennale dello Stato (legge finanziaria 1996) (approvato dal Senato) (S. 2156)», e il relativo stampato C.3447.",
     "motivo": "L'atto ac12_3448 è il bilancio di previsione 1996 (S.2019), non la legge finanziaria. Lo stampato C.3447 indica che il disegno di legge è presentato dal ministro del Tesoro Dini di concerto con il ministro del Bilancio Masera, in carica solo nel governo Dini: il governo indicato non cambia.",
     "fonte": {
       "url": "http://www.camera.it/_dati/leg12/lavori/stampati/pdf/53599.pdf"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0017",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Bilancio di previsione 1965, livello di verifica e fonti",
+    "pagina": "/leggi-di-bilancio",
+    "prima": "Livello di verifica: non verificato. Fonti: atto Camera C.1686 e Normattiva.",
+    "dopo": "Livello di verifica: V1. Fonti: atto Camera C.1686, Normattiva, stampato Camera C.1686 e scheda 6368 dell'Iter delle leggi 1948-1990.",
+    "motivo": "La legge 27 febbraio 1965 n. 49 era già stata letta su Normattiva, ma una nota rimasta dalla prima stesura la segnava ancora come da verificare. Lo stampato della Camera C.1686 indica che il disegno di legge è presentato il 30 settembre 1964 dal ministro del Tesoro Colombo di concerto con il ministro del Bilancio Pieraccini. Entrambi avevano la stessa carica anche nel governo successivo, ma la data cade nel governo Moro II. Il governo indicato non cambia.",
+    "fonte": {
+      "url": "http://www.camera.it/_dati/leg04/lavori/stampati/pdf/16860001.pdf"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0018",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Bilancio di previsione 1966, livello di verifica e governo proponente",
+    "pagina": "/leggi-di-bilancio",
+    "prima": "Livello di verifica: non verificato. Governo: Moro II, dedotto dal calendario dei governi. Fonti: atto Camera C.2811 e Normattiva.",
+    "dopo": "Livello di verifica: V1. Governo: Moro II, documentato. Fonti: atto Camera C.2811, Normattiva, stampato Camera C.2811 e scheda 6720 dell'Iter delle leggi 1948-1990.",
+    "motivo": "La legge 23 aprile 1966 n. 218 era già stata letta su Normattiva, ma una nota rimasta dalla prima stesura la segnava ancora come da verificare. Il disegno di legge è presentato al Senato (S.1343) il 31 luglio 1965 dal ministro del Tesoro Colombo di concerto con il ministro del Bilancio Pieraccini, come indicano lo stampato della Camera C.2811 e la scheda dell'Iter. I due ministri avevano la stessa carica anche nel governo Moro III, ma la data di presentazione cade nel governo Moro II. Il governo indicato era giusto ed è ora documentato.",
+    "fonte": {
+      "url": "http://www.camera.it/_dati/leg04/lavori/stampati/pdf/28110001.pdf"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0019",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Bilancio di previsione 1967, livello di verifica e fonti",
+    "pagina": "/leggi-di-bilancio",
+    "prima": "Livello di verifica: non verificato. Fonti: atto Camera C.3389 e Normattiva.",
+    "dopo": "Livello di verifica: V1. Fonti: atto Camera C.3389, Normattiva, stampato Camera C.3389 e scheda 7056 dell'Iter delle leggi 1948-1990.",
+    "motivo": "La legge 29 aprile 1967 n. 230 era già stata letta su Normattiva, ma una nota rimasta dalla prima stesura la segnava ancora come da verificare. Lo stampato della Camera C.3389 indica che il disegno di legge è presentato il 31 luglio 1966 dal ministro del Tesoro Colombo di concerto con il ministro del Bilancio Pieraccini. Entrambi avevano la stessa carica anche nel governo precedente, ma la data cade nel governo Moro III. Il governo indicato non cambia.",
+    "fonte": {
+      "url": "http://www.camera.it/_dati/leg04/lavori/stampati/pdf/33890001.pdf"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0020",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Bilancio di previsione 1968, livello di verifica e governo proponente",
+    "pagina": "/leggi-di-bilancio",
+    "prima": "Livello di verifica: non verificato. Governo: Moro III, dedotto dal calendario dei governi. Fonti: atto Camera C.4691 e Normattiva.",
+    "dopo": "Livello di verifica: V1. Governo: Moro III, documentato. Fonti: atto Camera C.4691, Normattiva, stampato Camera C.4691 e scheda 7461 dell'Iter delle leggi 1948-1990.",
+    "motivo": "La legge 29 febbraio 1968 n. 81 era già stata letta su Normattiva, ma una nota rimasta dalla prima stesura la segnava ancora come da verificare. Il disegno di legge è presentato al Senato (S.2394) il 31 luglio 1967 dal ministro del Tesoro Colombo di concerto con il ministro del Bilancio e della programmazione economica Pieraccini, come indicano lo stampato della Camera C.4691 e la scheda dell'Iter. Pieraccini ha questa carica solo nel governo Moro III. Il governo indicato era giusto ed è ora documentato.",
+    "fonte": {
+      "url": "http://www.camera.it/_dati/leg04/lavori/stampati/pdf/46910001.pdf"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0021",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Bilancio di previsione 1969, livello di verifica e governo proponente",
+    "pagina": "/leggi-di-bilancio",
+    "prima": "Livello di verifica: non verificato. Governo: Leone II, dedotto dal calendario dei governi. Fonti: atto Camera C.311 e Normattiva.",
+    "dopo": "Livello di verifica: V1. Governo: Leone II, documentato. Fonti: atto Camera C.311, Normattiva, stampato Camera C.311 e scheda 7819 dell'Iter delle leggi 1948-1990.",
+    "motivo": "La legge 28 febbraio 1969 n. 21 era già stata letta su Normattiva, ma una nota rimasta dalla prima stesura la segnava ancora come da verificare. Lo stampato della Camera C.311 indica che il disegno di legge è presentato il 31 luglio 1968 da Emilio Colombo, ministro del Tesoro e ad interim del Bilancio e della programmazione economica. Colombo ha il Bilancio ad interim solo nel governo Leone II. Il governo indicato era giusto ed è ora documentato.",
+    "fonte": {
+      "url": "http://www.camera.it/_dati/leg05/lavori/stampati/pdf/03110001.pdf"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0022",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Bilancio di previsione 1970, livello di verifica e fonti",
+    "pagina": "/leggi-di-bilancio",
+    "prima": "Livello di verifica: non verificato. Fonti: atto Camera C.1987, Normattiva e catalogo generico dell'Iter delle leggi 1948-1990.",
+    "dopo": "Livello di verifica: V1. Fonti: atto Camera C.1987, Normattiva, scheda 8001 dell'Iter delle leggi 1948-1990 (S.815, presentato il 31/07/1969) e stampato Camera C.1987.",
+    "motivo": "La legge 24 dicembre 1969 n. 986 era già stata letta su Normattiva, ma una nota rimasta dalla prima stesura la segnava ancora come da verificare. Lo stampato della Camera C.1987 indica che il disegno di legge è presentato dal ministro del Tesoro Colombo di concerto con il ministro del Bilancio e della programmazione economica Preti. Preti ha questa carica solo nel governo Rumor I, e la presentazione al Senato, il 31 luglio 1969, cade in quel governo. Il governo indicato non cambia. Al posto del collegamento al catalogo c'è quello alla scheda dell'atto.",
+    "fonte": {
+      "url": "http://www.camera.it/_dati/leg05/lavori/stampati/pdf/19870001.pdf"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0023",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Bilancio di previsione 1971, livello di verifica e fonti",
+    "pagina": "/leggi-di-bilancio",
+    "prima": "Livello di verifica: non verificato. Fonti: atto Camera C.2687 e Normattiva.",
+    "dopo": "Livello di verifica: V1. Fonti: atto Camera C.2687, Normattiva, stampato Camera C.2687 e scheda 8326 dell'Iter delle leggi 1948-1990.",
+    "motivo": "La legge 30 aprile 1971 n. 206 era già stata letta su Normattiva, ma una nota rimasta dalla prima stesura la segnava ancora come da verificare. Lo stampato della Camera C.2687 indica che il disegno di legge è presentato il 31 luglio 1970 dal ministro del Tesoro Colombo di concerto con il ministro del Bilancio e della programmazione economica Giolitti. La data cade nel governo Rumor III; dal 6 agosto 1970 il Tesoro passa a un altro ministro. Il governo indicato non cambia.",
+    "fonte": {
+      "url": "http://www.camera.it/_dati/leg05/lavori/stampati/pdf/26870001.pdf"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0024",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Promessa C27-LEGA-011, dichiarante e citazione",
+    "pagina": "/promesse#C27-LEGA-011",
+    "prima": "Matteo Salvini; Riccardo Molinari (segretario federale Lega, senatore; vicepresidente del Consiglio e ministro delle Infrastrutture e dei Trasporti; capogruppo Lega alla Camera): «La Lega ha presentato una proposta di legge, illustrata dal segretario Matteo Salvini e dal capogruppo Lega alla Camera Riccardo Molinari, per estendere il modello delle Zone Economiche Speciali (ZES) alle aree di confine del Nord»",
+    "dopo": "Lega (partito – newsletter ufficiale): «La Lega ha presentato una proposta di legge, illustrata dal segretario Matteo Salvini e dal capogruppo Lega alla Camera Riccardo Molinari, per estendere il modello delle Zone Economiche Speciali (ZES) alle aree di confine del Nord, maggiormente penalizzate dalla concorrenza dei Paesi limitrofi»",
+    "motivo": "La frase citata è scritta dalla newsletter della Lega, fuori dalle virgolette: dice che la proposta di legge è stata illustrata da Matteo Salvini e da Riccardo Molinari, ma non riporta parole loro. Nello stesso paragrafo le sole parole fra virgolette sono di Riccardo Molinari: spiegano da dove nasce la proposta e descrivono le aree, ma non dicono in che cosa consiste. Per questo la riga ora è attribuita al canale ufficiale del partito, come le altre righe che citano il testo della newsletter. La citazione ora arriva alla fine della frase, che prima era tagliata senza segnarlo.",
+    "fonte": {
+      "url": "https://legaonline.it/la-settimana-leghista-32/"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0025",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Promessa C27-LEGA-007, citazione",
+    "pagina": "/promesse#C27-LEGA-007",
+    "prima": "Matteo Salvini (segretario federale Lega, senatore; vicepresidente del Consiglio e ministro delle Infrastrutture e dei Trasporti): «la proposta della Lega per introdurre una garanzia finanziaria a carico degli organizzatori delle manifestazioni a rischio, a copertura degli eventuali danni. Manifestare è un diritto, devastare no. Chi rompe paga»",
+    "dopo": "Matteo Salvini (segretario federale Lega, senatore; vicepresidente del Consiglio e ministro delle Infrastrutture e dei Trasporti): «[…] già questa settimana riproporremo in Parlamento, […] la proposta della Lega per introdurre una garanzia finanziaria a carico degli organizzatori delle manifestazioni a rischio, a copertura degli eventuali danni. Manifestare è un diritto, devastare no. Chi rompe paga»",
+    "motivo": "La citazione cominciava a metà di una frase di Matteo Salvini riportata fra virgolette dalla newsletter della Lega, ma il taglio non era segnato. Ora la citazione comprende anche l'annuncio che la proposta sarà ripresentata in Parlamento, e le parti tolte sono segnate con «[…]». Le parole citate sono di Salvini.",
+    "fonte": {
+      "url": "https://legaonline.it/la-settimana-leghista-41/"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0026",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Misura Quota 100, descrizione del consuntivo 2019-2025",
+    "pagina": "/misure#quota-100",
+    "prima": "2019-2025: consuntivo 2019-2021 + proiezione UPB 2022-2025",
+    "dopo": "2019-2025: spesa registrata dal monitoraggio INPS per il 2019 e il 2020; per il 2021 spesa registrata aumentata di circa il 10% per le domande ancora in attesa (stima UPB); proiezione UPB 2022-2025",
+    "motivo": "La descrizione indicava come consuntivo tutto il periodo 2019-2021. Per il 2021, però, l'Ufficio parlamentare di bilancio non usa solo la spesa registrata dall'INPS (5.148 milioni): la aumenta di circa il 10% per le quasi 39.000 domande ancora in attesa al 31 dicembre 2021, ipotizzando che vengano tutte accolte, e arriva a 5.648 milioni. Ora la descrizione dice quali anni sono spesa registrata e quali sono stime. Previsto, consuntivo con proiezione e differenza non cambiano.",
+    "fonte": {
+      "url": "https://www.upbilancio.it/wp-content/uploads/2022/06/Nota-di-lavoro_Quota-100_per-sito-UPB.pdf"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0027",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Legge finanziaria 1994, fonte dell'atto Camera",
+    "pagina": "/leggi-di-bilancio",
+    "prima": "Fonte: atto Camera ac11_3341.",
+    "dopo": "Fonte: atto Camera ac11_3340, «S. 1507: Disposizioni per la formazione del bilancio annuale e pluriennale dello Stato (legge finanziaria 1994) (S. 1507)», e il relativo stampato C.3340.",
+    "motivo": "L'atto ac11_3341 è il bilancio di previsione 1994 (S.1450), non la legge finanziaria. Lo stampato C.3340 indica che il disegno di legge è stato presentato dal ministro del Tesoro Barucci di concerto con il ministro del Bilancio Spaventa e con il ministro delle Finanze Gallo. Spaventa e Gallo sono stati ministri solo nel governo Ciampi e, secondo i lavori preparatori pubblicati su Normattiva, il disegno di legge è stato presentato al Senato il 14 settembre 1993: il governo indicato non cambia.",
+    "fonte": {
+      "url": "http://www.camera.it/_dati/leg11/lavori/stampati/pdf/54544.pdf"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0028",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Legge finanziaria 1998, fonte dell'atto Camera",
+    "pagina": "/leggi-di-bilancio",
+    "prima": "Fonte: atto Camera ac13_4356.",
+    "dopo": "Fonte: atto Camera ac13_4355, «Disposizioni per la formazione del bilancio annuale e pluriennale dello Stato (legge finanziaria 1998) (approvato dal Senato) (S. 2792)», e la scheda del disegno di legge S.2792 su dati.senato.it.",
+    "motivo": "L'atto ac13_4356 è il bilancio di previsione 1998 (S.2739), non la legge finanziaria. Secondo dati.senato.it, il disegno di legge S.2792 è stato presentato al Senato il 30 settembre 1997 dal ministro del Tesoro e del Bilancio Ciampi e da altri ministri del governo Prodi I: il governo indicato non cambia.",
+    "fonte": {
+      "url": "http://dati.camera.it/ocd/attocamera.rdf/ac13_4355"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0029",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Legge finanziaria 2000, fonte dell'atto Camera",
+    "pagina": "/leggi-di-bilancio",
+    "prima": "Fonte: atto Camera ac13_6558.",
+    "dopo": "Fonte: atto Camera ac13_6557, «Disposizioni per la formazione del bilancio annuale e pluriennale dello Stato (legge finanziaria 2000) (approvato dal Senato) (S.4236)», e la scheda del disegno di legge S.4236 su dati.senato.it.",
+    "motivo": "L'atto ac13_6558 è il bilancio di previsione 2000 (S.4237), non la legge finanziaria. Secondo dati.senato.it, il disegno di legge S.4236 è stato presentato al Senato il 30 settembre 1999 dal ministro del Tesoro e del Bilancio Amato e dal ministro delle Finanze Visco, del governo D'Alema I: il governo indicato non cambia.",
+    "fonte": {
+      "url": "http://dati.camera.it/ocd/attocamera.rdf/ac13_6557"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0030",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Bilancio di previsione 1972, livello di verifica e governo proponente",
+    "pagina": "/leggi-di-bilancio",
+    "prima": "Livello di verifica: non verificato. Governo: Colombo, dedotto dal calendario dei governi. Fonti: atto Camera C.3841 e Normattiva.",
+    "dopo": "Livello di verifica: V1. Governo: Colombo, documentato. Fonti: atto Camera C.3841, Normattiva, stampato Camera C.3841 e scheda 8622 dell'Iter delle leggi 1948-1990.",
+    "motivo": "La legge 11 marzo 1972 n. 54 era già stata letta su Normattiva, ma una nota rimasta dalla prima stesura la segnava ancora come da verificare. Lo stampato della Camera C.3841 indica che il disegno di legge è presentato dal ministro del Tesoro Ferrari Aggradi di concerto con il ministro del Bilancio e della programmazione economica Giolitti. Ferrari Aggradi ha questa carica solo nel governo Colombo, e secondo l'Iter delle leggi il disegno di legge è presentato al Senato (S.1861) il 31 luglio 1971. La legge è promulgata durante il governo Andreotti I, ma, come per gli altri bilanci, conta il governo che presenta il disegno di legge. Il governo indicato era giusto ed è ora documentato.",
+    "fonte": {
+      "url": "http://www.camera.it/_dati/leg05/lavori/stampati/pdf/38410001.pdf"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0031",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Bilancio di previsione 1973, livello di verifica e fonti",
+    "pagina": "/leggi-di-bilancio",
+    "prima": "Livello di verifica: non verificato. Fonti: atto Camera C.620 e Normattiva.",
+    "dopo": "Livello di verifica: V1. Fonti: atto Camera C.620, Normattiva, stampato Camera C.620 e scheda 8706 dell'Iter delle leggi 1948-1990.",
+    "motivo": "La legge 27 febbraio 1973 n. 18 era già stata letta su Normattiva, ma una nota rimasta dalla prima stesura la segnava ancora come da verificare. Lo stampato della Camera C.620 indica che il disegno di legge è presentato il 31 luglio 1972 dal ministro del Tesoro Malagodi di concerto con il ministro del Bilancio e della programmazione economica Taviani. Malagodi ha questa carica solo nel governo Andreotti II: il governo indicato non cambia.",
+    "fonte": {
+      "url": "http://www.camera.it/_dati/leg06/lavori/stampati/pdf/06200001.pdf"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0032",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Bilancio di previsione 1974, livello di verifica e governo proponente",
+    "pagina": "/leggi-di-bilancio",
+    "prima": "Livello di verifica: non verificato. Governo: Rumor IV, dedotto dal calendario dei governi. Fonti: atto Camera C.2529 e Normattiva.",
+    "dopo": "Livello di verifica: V1. Governo: Rumor IV, documentato. Fonti: atto Camera C.2529, Normattiva, stampato Camera C.2529 e scheda 9047 dell'Iter delle leggi 1948-1990.",
+    "motivo": "La legge 23 febbraio 1974 n. 24 era già stata letta su Normattiva, ma una nota rimasta dalla prima stesura la segnava ancora come da verificare. Lo stampato della Camera C.2529 indica che il disegno di legge è presentato dal ministro del Tesoro Ugo La Malfa di concerto con il ministro del Bilancio e della programmazione economica Giolitti. La Malfa ha questa carica solo nel governo Rumor IV, e secondo l'Iter delle leggi il disegno di legge è presentato al Senato (S.1226) il 31 luglio 1973. Il governo indicato era giusto ed è ora documentato.",
+    "fonte": {
+      "url": "http://www.camera.it/_dati/leg06/lavori/stampati/pdf/25290001.pdf"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0033",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Bilancio di previsione 1975, livello di verifica e fonti",
+    "pagina": "/leggi-di-bilancio",
+    "prima": "Livello di verifica: non verificato. Fonti: atto Camera C.3159 e Normattiva.",
+    "dopo": "Livello di verifica: V1. Fonti: atto Camera C.3159, Normattiva, stampato Camera C.3159 e scheda 9325 dell'Iter delle leggi 1948-1990.",
+    "motivo": "La legge 26 aprile 1975 n. 132 era già stata letta su Normattiva, ma una nota rimasta dalla prima stesura la segnava ancora come da verificare. Lo stampato della Camera C.3159 indica che il disegno di legge è presentato il 31 luglio 1974 dal ministro del Tesoro Emilio Colombo di concerto con il ministro del Bilancio e della programmazione economica Giolitti. I due avevano le stesse cariche anche nel governo Rumor III, ma il 31 luglio 1974 era in carica il governo Rumor V: il governo indicato non cambia.",
+    "fonte": {
+      "url": "http://www.camera.it/_dati/leg06/lavori/stampati/pdf/31590001.pdf"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0034",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Bilancio di previsione 1976, livello di verifica, governo proponente e fonte dell'atto Camera",
+    "pagina": "/leggi-di-bilancio",
+    "prima": "Livello di verifica: non verificato. Governo: Moro IV, dedotto dal calendario dei governi. Fonti: atto Camera C.4131-bis e Normattiva.",
+    "dopo": "Livello di verifica: V1. Governo: Moro IV, documentato. Fonti: atto Camera C.4131, Normattiva, stampato Camera C.4131 e scheda 9531 dell'Iter delle leggi 1948-1990.",
+    "motivo": "Il collegamento portava al fascicolo C.4131-bis, che contiene le note illustrative allegate al bilancio. Il disegno di legge è l'atto C.4131 (al Senato S.2238), come indicano anche Normattiva e l'Iter delle leggi. Lo stampato della Camera C.4131 indica che il disegno di legge è presentato dal ministro del Tesoro Emilio Colombo di concerto con il ministro del Bilancio e della programmazione economica Andreotti. I due avevano le stesse cariche anche nel governo Moro V, quindi conta la data. Secondo l'Iter delle leggi il disegno di legge è presentato al Senato il 31 luglio 1975, è esaminato dalle commissioni del Senato da settembre ed è approvato dal Senato il 20 novembre 1975: tutto avviene durante il governo Moro IV, che resta il governo indicato ed è ora documentato. La legge 22 dicembre 1975 n. 702 era già stata letta su Normattiva.",
+    "fonte": {
+      "url": "http://www.camera.it/_dati/leg06/lavori/stampati/pdf/41310001.pdf"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0035",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Bilancio di previsione 1977, livello di verifica e fonti",
+    "pagina": "/leggi-di-bilancio",
+    "prima": "Livello di verifica: non verificato. Fonti: atto Camera C.203 e Normattiva.",
+    "dopo": "Livello di verifica: V1. Fonti: atto Camera C.203, Normattiva, stampato Camera C.203 e scheda 9789 dell'Iter delle leggi 1948-1990.",
+    "motivo": "La legge 23 dicembre 1976 n. 874 era già stata letta su Normattiva, ma una nota rimasta dalla prima stesura la segnava ancora come da verificare. Lo stampato della Camera C.203 indica che il disegno di legge è presentato il 29 luglio 1976 dal ministro del Tesoro Emilio Colombo di concerto con il ministro del Bilancio e della programmazione economica Andreotti, entrambi ministri del governo Moro V. Lo stesso giorno è nominato il governo Andreotti III, che giura il 30 luglio e ha altri ministri del Tesoro e del Bilancio (Stammati e Morlino): il governo indicato non cambia.",
+    "fonte": {
+      "url": "http://www.camera.it/_dati/leg07/lavori/stampati/pdf/02030001.pdf"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0036",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Esercizio provvisorio 1966, governo proponente e fonti",
+    "pagina": "/leggi-di-bilancio",
+    "prima": "Governo: Moro II, dedotto dal calendario dei governi. Fonti: atti Camera C.2838 e C.2970.",
+    "dopo": "Governo: Moro II, documentato. Fonti: atti Camera C.2838 e C.2970, le due leggi su Normattiva, gli stampati Camera C.2838 e C.2970 e le schede 6654 e 6704 dell'Iter delle leggi 1948-1990.",
+    "motivo": "I due disegni di legge, l'esercizio provvisorio e la proroga al 30 aprile 1966, sono presentati dal ministro del Tesoro Emilio Colombo di concerto con il ministro del Bilancio Pieraccini. I due avevano le stesse cariche anche nel governo Moro III, quindi conta la data. Secondo l'Iter delle leggi i disegni di legge sono presentati al Senato il 6 dicembre 1965 e l'8 febbraio 1966, prima della nomina del governo Moro III (23 febbraio 1966). Il governo indicato non cambia, ma ora è documentato dagli atti e non più dedotto dalle date.",
+    "fonte": {
+      "url": "https://bdp.camera.it/init/iter/scheda/6704"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0037",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Esercizio provvisorio 1958-59, estremi e livello di verifica",
+    "pagina": "/leggi-di-bilancio",
+    "prima": "Estremi: atto C.1 leg. III del 12/06/1958, senza la legge di approvazione. Livello di verifica: non verificato. Fonte: atto Camera C.1.",
+    "dopo": "Estremi: L. n. 625 del 20/06/1958 (atto C.1/S.4). Livello di verifica: V1. Fonti: atto Camera C.1, Normattiva, stampato Camera C.1 e scheda 4228 dell'Iter delle leggi 1948-1990.",
+    "motivo": "Mancava la legge che ha approvato il disegno di legge: è la legge 20 giugno 1958 n. 625, «Autorizzazione all'esercizio provvisorio del bilancio per l'anno finanziario 1958-59», pubblicata nella Gazzetta Ufficiale n. 153 del 27 giugno 1958. Lo stampato della Camera C.1 indica che il disegno di legge è presentato dal ministro del Tesoro Medici di concerto con il ministro del Bilancio Zoli, e secondo l'Iter delle leggi è presentato alla Camera il 12 giugno 1958. I due avevano le stesse cariche anche nel governo Segni I, ma quel giorno era in carica il governo Zoli: il governo indicato non cambia.",
+    "fonte": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1958-06-20;625"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0038",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Bilancio di previsione 1996, fonti",
+    "pagina": "/leggi-di-bilancio",
+    "prima": "Fonte: Normattiva (L. n. 551 del 28/12/1995).",
+    "dopo": "Fonti: Normattiva, atto Camera ac12_3448, «S. 2019: Bilancio di previsione dello Stato per l'anno finanziario 1996 e bilancio pluriennale per il triennio 1996 - 1998 (approvato dal Senato) (S. 2019)», e stampato Camera C.3448.",
+    "motivo": "Il record citava solo la legge e attribuiva il governo per analogia con la legge finanziaria dello stesso anno. Ora cita il disegno di legge del bilancio, presentato al Senato il 28 luglio 1995 secondo i lavori preparatori pubblicati su Normattiva. Lo stampato della Camera C.3448 indica che è presentato dal ministro del Tesoro Dini di concerto con il ministro del Bilancio e della programmazione economica Masera, che ha questa carica solo nel governo Dini: il governo indicato non cambia.",
+    "fonte": {
+      "url": "http://www.camera.it/_dati/leg12/lavori/stampati/pdf/53633.pdf"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0039",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Bilancio di previsione 2005, fonti",
+    "pagina": "/leggi-di-bilancio",
+    "prima": "Fonte: Normattiva (L. n. 312 del 30/12/2004).",
+    "dopo": "Fonti: Normattiva, atto Camera ac14_5311 e scheda del disegno di legge C.5311 su dati.senato.it.",
+    "motivo": "Il record citava solo la legge e attribuiva il governo per analogia con la legge finanziaria dello stesso anno. Ora cita il disegno di legge del bilancio (C.5311), presentato il 30 settembre 2004 dal ministro dell'economia e delle finanze Siniscalco, durante il governo Berlusconi II: il governo indicato non cambia.",
+    "fonte": {
+      "url": "http://dati.senato.it/ddl/22018"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0040",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Promessa C27-NM-003, dichiarante",
+    "pagina": "/promesse#C27-NM-003",
+    "prima": "Maurizio Lupi (primo firmatario) (presidente Noi Moderati, deputato): «Noi Moderati propone di estendere l’Art Bonus, il credito d’imposta del 65% per le erogazioni liberali a sostegno della cultura, anche ai beni culturali di interesse pubblico posseduti da enti privati, fondazioni e realtà del Terzo settore.»",
+    "dopo": "Noi Moderati (partito – sito ufficiale): «Noi Moderati propone di estendere l’Art Bonus, il credito d’imposta del 65% per le erogazioni liberali a sostegno della cultura, anche ai beni culturali di interesse pubblico posseduti da enti privati, fondazioni e realtà del Terzo settore.»",
+    "motivo": "La frase citata è scritta da Noi Moderati sul proprio sito, senza virgolette e senza firma: la pagina dice che la proposta è a prima firma di Maurizio Lupi, ma non riporta parole sue. Per questo la riga ora è attribuita al canale ufficiale del partito, come le altre righe che citano il testo del partito sul suo sito. La citazione non cambia.",
+    "fonte": {
+      "url": "https://noimoderati.it/news-e-media/67"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0041",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Promessa C27-NM-007, dichiarante",
+    "pagina": "/promesse#C27-NM-007",
+    "prima": "Mariastella Gelmini (prima firmataria) (senatrice Noi Moderati): «Noi Moderati ha presentato una proposta di legge a prima firma di Mariastella Gelmini per equiparare lo status giuridico ed economico dei docenti AFAM a quello dei docenti universitari.»",
+    "dopo": "Noi Moderati (partito – sito ufficiale): «Noi Moderati ha presentato una proposta di legge a prima firma di Mariastella Gelmini per equiparare lo status giuridico ed economico dei docenti AFAM a quello dei docenti universitari.»",
+    "motivo": "La frase citata è scritta da Noi Moderati sul proprio sito, senza virgolette e senza firma: dice che il partito ha presentato una proposta di legge a prima firma di Mariastella Gelmini, ma non riporta parole sue. Per questo la riga ora è attribuita al canale ufficiale del partito, come le altre righe che citano il testo del partito sul suo sito. La citazione non cambia.",
+    "fonte": {
+      "url": "https://noimoderati.it/news-e-media/70"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0042",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Promessa C27-ORA-001, dichiarante",
+    "pagina": "/promesse#C27-ORA-001",
+    "prima": "ORA! e Michele Boldrin (Partito - canale ufficiale; segretario nazionale): «Un piano organico per portare l’Italia oltre il 40% di giovani laureati in dieci anni, rendendo l’università realmente gratuita, accelerando i percorsi di studio e valorizzando il capitale umano.»",
+    "dopo": "ORA! (sito ufficiale) (Partito - canale ufficiale; segretario nazionale Michele Boldrin): «Un piano organico per portare l’Italia oltre il 40% di giovani laureati in dieci anni, rendendo l’università realmente gratuita, accelerando i percorsi di studio e valorizzando il capitale umano.»",
+    "motivo": "Il testo citato è scritto da ORA! sul proprio sito, in un comunicato senza virgolette e senza firma: il comunicato dice che il partito e il suo segretario Michele Boldrin presentano la riforma, ma non riporta parole di Boldrin. Per questo la riga ora è attribuita al canale ufficiale del partito, come le altre righe che citano il testo del partito sul suo sito. La citazione non cambia.",
+    "fonte": {
+      "url": "https://ora-italia.it/universita-gratuita-e-universale-piu-incentivi-per-rimanere-in-corso/"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0043",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Promessa C27-ORA-002, dichiarante",
+    "pagina": "/promesse#C27-ORA-002",
+    "prima": "ORA! e Michele Boldrin (Partito - canale ufficiale; segretario nazionale): «Abolizione delle tasse di frequenza (resterebbero solo la tassa regionale, circa 140 €, e il bollo di 16 €), legata al conseguimento di una soglia minima di crediti (CFU)»",
+    "dopo": "ORA! (sito ufficiale) (Partito - canale ufficiale; segretario nazionale Michele Boldrin): «Abolizione delle tasse di frequenza (resterebbero solo la tassa regionale, circa 140 €, e il bollo di 16 €), legata al conseguimento di una soglia minima di crediti (CFU)»",
+    "motivo": "Il testo citato è scritto da ORA! sul proprio sito, in un comunicato senza virgolette e senza firma: il comunicato dice che il partito e il suo segretario Michele Boldrin presentano la riforma, ma non riporta parole di Boldrin. Per questo la riga ora è attribuita al canale ufficiale del partito, come le altre righe che citano il testo del partito sul suo sito. La citazione non cambia.",
+    "fonte": {
+      "url": "https://ora-italia.it/universita-gratuita-e-universale-piu-incentivi-per-rimanere-in-corso/"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0044",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Promessa C27-ORA-003, dichiarante",
+    "pagina": "/promesse#C27-ORA-003",
+    "prima": "ORA! e Michele Boldrin (Partito - canale ufficiale; segretario nazionale): «Affitti a 300-350 € al mese, con un piano di 12.000 nuovi posti letto ogni anno»",
+    "dopo": "ORA! (sito ufficiale) (Partito - canale ufficiale; segretario nazionale Michele Boldrin): «Affitti a 300-350 € al mese, con un piano di 12.000 nuovi posti letto ogni anno»",
+    "motivo": "Il testo citato è scritto da ORA! sul proprio sito, in un comunicato senza virgolette e senza firma: il comunicato dice che il partito e il suo segretario Michele Boldrin presentano la riforma, ma non riporta parole di Boldrin. Per questo la riga ora è attribuita al canale ufficiale del partito, come le altre righe che citano il testo del partito sul suo sito. La citazione non cambia.",
+    "fonte": {
+      "url": "https://ora-italia.it/universita-gratuita-e-universale-piu-incentivi-per-rimanere-in-corso/"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0045",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Promessa C27-ORA-004, dichiarante",
+    "pagina": "/promesse#C27-ORA-004",
+    "prima": "ORA! e Michele Boldrin (Partito - canale ufficiale; segretario nazionale): «Prestiti d’onore garantiti dallo Stato. Da restituire solo dopo la laurea e oltre una soglia di reddito (modello income-contingent)»",
+    "dopo": "ORA! (sito ufficiale) (Partito - canale ufficiale; segretario nazionale Michele Boldrin): «Prestiti d’onore garantiti dallo Stato. Da restituire solo dopo la laurea e oltre una soglia di reddito (modello income-contingent)»",
+    "motivo": "Il testo citato è scritto da ORA! sul proprio sito, in un comunicato senza virgolette e senza firma: il comunicato dice che il partito e il suo segretario Michele Boldrin presentano la riforma, ma non riporta parole di Boldrin. Per questo la riga ora è attribuita al canale ufficiale del partito, come le altre righe che citano il testo del partito sul suo sito. La citazione non cambia.",
+    "fonte": {
+      "url": "https://ora-italia.it/universita-gratuita-e-universale-piu-incentivi-per-rimanere-in-corso/"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0046",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Promessa C27-ORA-005, dichiarante",
+    "pagina": "/promesse#C27-ORA-005",
+    "prima": "ORA! e Michele Boldrin (Partito - canale ufficiale; segretario nazionale): «Il budget complessivo per borse di merito e sostegno sale a 1,5 miliardi (+100% rispetto alle risorse attuali).»",
+    "dopo": "ORA! (sito ufficiale) (Partito - canale ufficiale; segretario nazionale Michele Boldrin): «Il budget complessivo per borse di merito e sostegno sale a 1,5 miliardi (+100% rispetto alle risorse attuali).»",
+    "motivo": "Il testo citato è scritto da ORA! sul proprio sito, in un comunicato senza virgolette e senza firma: il comunicato dice che il partito e il suo segretario Michele Boldrin presentano la riforma, ma non riporta parole di Boldrin. Per questo la riga ora è attribuita al canale ufficiale del partito, come le altre righe che citano il testo del partito sul suo sito. La citazione non cambia.",
+    "fonte": {
+      "url": "https://ora-italia.it/universita-gratuita-e-universale-piu-incentivi-per-rimanere-in-corso/"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0047",
+    "data": "2026-11-08",
+    "tipo": "correzione",
+    "dato": "Promessa C27-ORA-006, dichiarante",
+    "pagina": "/promesse#C27-ORA-006",
+    "prima": "ORA! e Michele Boldrin (Partito - canale ufficiale; segretario nazionale): «Eliminazione dei bonus una tantum dispersivi»",
+    "dopo": "ORA! (sito ufficiale) (Partito - canale ufficiale; segretario nazionale Michele Boldrin): «Eliminazione dei bonus una tantum dispersivi»",
+    "motivo": "Il testo citato è scritto da ORA! sul proprio sito, in un comunicato senza virgolette e senza firma: il comunicato dice che il partito e il suo segretario Michele Boldrin presentano la riforma, ma non riporta parole di Boldrin. Per questo la riga ora è attribuita al canale ufficiale del partito, come le altre righe che citano il testo del partito sul suo sito. La citazione non cambia.",
+    "fonte": {
+      "url": "https://ora-italia.it/universita-gratuita-e-universale-piu-incentivi-per-rimanere-in-corso/"
     },
     "segnalazione": null
   }

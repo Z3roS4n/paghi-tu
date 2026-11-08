@@ -545,7 +545,7 @@
     "dichiarante": "Matteo Salvini",
     "ruoloDichiarante": "segretario federale Lega, senatore; vicepresidente del Consiglio e ministro delle Infrastrutture e dei Trasporti",
     "data": "2026-10-18",
-    "testoLetterale": "la proposta della Lega per introdurre una garanzia finanziaria a carico degli organizzatori delle manifestazioni a rischio, a copertura degli eventuali danni. Manifestare è un diritto, devastare no. Chi rompe paga",
+    "testoLetterale": "[…] già questa settimana riproporremo in Parlamento, […] la proposta della Lega per introdurre una garanzia finanziaria a carico degli organizzatori delle manifestazioni a rischio, a copertura degli eventuali danni. Manifestare è un diritto, devastare no. Chi rompe paga",
     "parafrasiNeutra": "Garanzia finanziaria (cauzione, fideiussione o assicurazione) a carico degli organizzatori di manifestazioni a rischio, a copertura dei danni.",
     "tipoFonte": "sito_ufficiale",
     "orizzonte": "legislatura_in_corso",
@@ -558,10 +558,10 @@
     "misurabile": "si",
     "costoDichiarato": null,
     "stimaTerzi": null,
-    "note": "Proposta già presentata in precedenza e rilanciata il 26/7/2026 (#34). (verificatore) La parafrasi «cauzione, fideiussione o assicurazione» è dal testo della #34: «il versamento di una cauzione, una fideiussione, un’assicurazione o un’altra garanzia finanziaria». (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su dati.senato.it (open data ufficiale del Senato; senato.it risponde 403/202 ai client automatici) il 2026-10-21.",
+    "note": "Proposta già presentata in precedenza e rilanciata il 26/7/2026 (#34). (verificatore) La parafrasi «cauzione, fideiussione o assicurazione» è dal testo della #34: «il versamento di una cauzione, una fideiussione, un’assicurazione o un’altra garanzia finanziaria». (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su dati.senato.it (open data ufficiale del Senato; senato.it risponde 403/202 ai client automatici) il 2026-10-21. (correzione 2026-11-08) Dichiarante confermato: nella newsletter #41 (datePublished 2026-10-18T13:04:54+00:00) il testo citato è dentro le virgolette del paragrafo intitolato «CHI ROMPE PAGA»: SALVINI ANNUNCIA IL RITORNO IN PARLAMENTO DELLA PROPOSTA DELLA LEGA; le virgolette non hanno un «ha dichiarato», ma seguono la frase «Matteo Salvini ha annunciato che il partito intende ripresentare […] una proposta» e sono in prima persona («riproporremo»), come il virgolettato di C27-LEGA-002 nella #38. Non è testo della newsletter: il difetto di C27-LEGA-001 e C27-LEGA-011 qui non c'è. Le parole fra virgolette nominano lo strumento (garanzia finanziaria a carico degli organizzatori delle manifestazioni a rischio) e superano il criterio slogan. Il testo_letterale cominciava da «la proposta della Lega» senza segnare il taglio: ora riprende anche «già questa settimana riproporremo in Parlamento,» e segna con […] le due parti tolte, l'inizio «Dopo le vergognose scene di guerriglia urbana degli ultimi giorni,» e l'inciso «dopo troppi ritardi causati da altri in passato,»; nessun gruppo di persone tolto. Testo ritrovato parola per parola, in ordine, su legaonline.it (curl GET semplice, HTTP 200, 2026-11-08). Verifica a tre livelli del 2026-11-08: ricerca, verifica indipendente, tentativo di smentita.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V1✓ verificatore 2026-10-20 — CORRETTA: ruolo (carica di governo aggiunta); la specificazione «cauzione, fideiussione o assicurazione» della parafrasi viene da #34 (26/7), non da #41: corretto in nota | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: proposta di legge]"
+      "dettaglio": "V1✓ verifica 2026-11-08 — CORRETTA: segnati con […] i due tagli del virgolettato (inizio e inciso) e ripreso il verbo dell'impegno «riproporremo in Parlamento»; dichiarante confermato (virgolettato in prima persona introdotto da «Matteo Salvini ha annunciato», titolo «SALVINI ANNUNCIA», nella #41) || esito precedente: V1✓ verificatore 2026-10-20 — CORRETTA: ruolo (carica di governo aggiunta); la specificazione «cauzione, fideiussione o assicurazione» della parafrasi viene da #34 (26/7), non da #41: corretto in nota | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: proposta di legge]"
     },
     "effettoConti": "no",
     "ribadita": [
@@ -667,10 +667,10 @@
   {
     "id": "C27-LEGA-011",
     "partitoId": "LEGA",
-    "dichiarante": "Matteo Salvini; Riccardo Molinari",
-    "ruoloDichiarante": "segretario federale Lega, senatore; vicepresidente del Consiglio e ministro delle Infrastrutture e dei Trasporti; capogruppo Lega alla Camera",
+    "dichiarante": "Lega",
+    "ruoloDichiarante": "partito – newsletter ufficiale",
     "data": "2026-07-12",
-    "testoLetterale": "La Lega ha presentato una proposta di legge, illustrata dal segretario Matteo Salvini e dal capogruppo Lega alla Camera Riccardo Molinari, per estendere il modello delle Zone Economiche Speciali (ZES) alle aree di confine del Nord",
+    "testoLetterale": "La Lega ha presentato una proposta di legge, illustrata dal segretario Matteo Salvini e dal capogruppo Lega alla Camera Riccardo Molinari, per estendere il modello delle Zone Economiche Speciali (ZES) alle aree di confine del Nord, maggiormente penalizzate dalla concorrenza dei Paesi limitrofi",
     "parafrasiNeutra": "Estensione del modello ZES (semplificazioni, crediti d'imposta, sostegni fiscali) alle aree di confine del Nord.",
     "tipoFonte": "sito_ufficiale",
     "orizzonte": "legislatura_in_corso",
@@ -683,10 +683,10 @@
     "misurabile": "parziale",
     "costoDichiarato": null,
     "stimaTerzi": null,
-    "note": "Misure fiscali non quantificate nella newsletter. (controllo di simmetria 2026-10-21) COFOG 04 mantenuto: misura mista (semplificazioni e agevolazioni fiscali). (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su dati.senato.it (open data ufficiale del Senato; senato.it risponde 403/202 ai client automatici) il 2026-10-21.",
+    "note": "Misure fiscali non quantificate nella newsletter. (controllo di simmetria 2026-10-21) COFOG 04 mantenuto: misura mista (semplificazioni e agevolazioni fiscali). (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su dati.senato.it (open data ufficiale del Senato; senato.it risponde 403/202 ai client automatici) il 2026-10-21. (correzione 2026-11-08) Dichiarante: nella newsletter #32 (datePublished 2026-07-12T08:25:34+00:00) il paragrafo «ZES NORD, LA PROPOSTA DELLA LEGA: ESTENDERLE ALLE ZONE DI CONFINE» è scritto dalla newsletter in terza persona; la citazione è la sua prima frase, fuori dalle virgolette, e nomina Matteo Salvini e Riccardo Molinari solo come chi ha illustrato la proposta. Salvini non ha parole fra virgolette nel paragrafo. Le sole parole fra virgolette sono di Molinari (due frasi, da «È una proposta che nasce dalle richieste dei nostri territori […]»): spiegano l'origine della proposta e descrivono le aree, ma non nominano le ZES né uno strumento, un parametro o una scadenza, quindi da sole non superano il criterio slogan (come C27-FDI-009). La riga è quindi attribuita al canale ufficiale del partito, come C27-LEGA-001 e come le proposte di legge riferite dalla newsletter in C27-LEGA-012 e C27-LEGA-013. Testo_letterale ritrovato parola per parola, in ordine, su legaonline.it (curl GET semplice, HTTP 200, 2026-11-08) e sulla copia Wayback del 2026-08-07; ora arriva alla fine della frase («, maggiormente penalizzate dalla concorrenza dei Paesi limitrofi», prima tagliata senza segno; punto finale omesso): la coda descrive le aree, nessun gruppo di persone. Il paragrafo non riferisce un'intervista; nessuna fonte a pagamento. La lettera d'apertura della newsletter, firmata «Matteo Salvini», elenca fra i temi della settimana «la proposta della Lega per estendere le Zone Economiche Speciali alle aree di confine»: è una lettera firmata da Salvini che elenca le iniziative della settimana e chiama la misura «la proposta della Lega»; la citazione della riga non è tratta da lì e non è usata. La nota del 2026-10-21 sul seggio parlamentare riguardava il ruolo di Salvini, non più dichiarante. Verifica a tre livelli del 2026-11-08: ricerca, verifica indipendente, tentativo di smentita.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V1✓ verificatore 2026-10-20 — CORRETTA: ruolo di Salvini (carica di governo aggiunta) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: proposta di legge]"
+      "dettaglio": "V1✓ verifica 2026-11-08 — CORRETTA: dichiarante da Matteo Salvini; Riccardo Molinari a Lega (partito – newsletter ufficiale): la citazione è testo della newsletter #32 in terza persona, ritrovato parola per parola in ordine, ora fino alla fine della frase (prima tagliata senza segno); le sole parole fra virgolette del paragrafo sono di Molinari e non indicano la misura || esito precedente: V1✓ verificatore 2026-10-20 — CORRETTA: ruolo di Salvini (carica di governo aggiunta) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: proposta di legge]"
     },
     "effettoConti": "si",
     "ribadita": []
@@ -1207,8 +1207,8 @@
   {
     "id": "C27-NM-003",
     "partitoId": "NM",
-    "dichiarante": "Maurizio Lupi (primo firmatario)",
-    "ruoloDichiarante": "presidente Noi Moderati, deputato",
+    "dichiarante": "Noi Moderati",
+    "ruoloDichiarante": "partito – sito ufficiale",
     "data": "2026-10-06",
     "testoLetterale": "Noi Moderati propone di estendere l’Art Bonus, il credito d’imposta del 65% per le erogazioni liberali a sostegno della cultura, anche ai beni culturali di interesse pubblico posseduti da enti privati, fondazioni e realtà del Terzo settore.",
     "parafrasiNeutra": "Estensione dell'Art Bonus (credito d'imposta 65%) ai beni culturali di proprietà di privati, fondazioni ed enti del Terzo settore aperti al pubblico.",
@@ -1223,10 +1223,10 @@
     "misurabile": "si",
     "costoDichiarato": null,
     "stimaTerzi": null,
-    "note": "(controllo di simmetria 2026-10-21) COFOG da 08 a 01: credito d'imposta → 01. (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su camera.it (scheda deputato XIX legislatura) e dati.camera.it il 2026-10-21.",
+    "note": "(controllo di simmetria 2026-10-21) COFOG da 08 a 01: credito d'imposta → 01. (uniformità 2026-10-21) ruolo_dichiarante: aggiunto il seggio parlamentare, seggio verificato su camera.it (scheda deputato XIX legislatura) e dati.camera.it il 2026-10-21. (correzione 2026-11-08) Dichiarante: la pagina news-e-media/67 del sito di Noi Moderati («Iniziative del partito», 6 ottobre 2026) è scritta dal partito, senza virgolette e senza firma: comincia con «Noi Moderati propone di estendere l’Art Bonus […]» e prosegue con «La nostra proposta, a prima firma del presidente Maurizio Lupi, punta a coinvolgere maggiormente il mondo privato e il Terzo settore […]». Maurizio Lupi è nominato solo come primo firmatario: nella pagina non ci sono parole sue. La riga è quindi attribuita al canale ufficiale del partito, come le altre proposte di legge presentate dal partito sul suo sito (C27-NM-005, C27-NM-008) e come C27-LEGA-001 e C27-LEGA-011; il controllo di simmetria del 2026-10-21 l'aveva già letta come proposta presentata dal partito. Testo_letterale invariato: è la prima frase della pagina, ritrovata parola per parola su noimoderati.it (curl GET semplice, HTTP 200, 2026-11-08) e sulla copia Wayback del 2026-10-07, che a una prima lettura dello stesso giorno aveva risposto HTTP 404. La nota del 2026-10-21 sul seggio parlamentare riguardava il ruolo di Lupi, non più dichiarante. Verifica a tre livelli del 2026-11-08: ricerca, verifica indipendente, tentativo di smentita.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V1✓ verificatore 2026-10-20 — CONFERMATA: «a prima firma del presidente Maurizio Lupi» verificato | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: proposta di legge]"
+      "dettaglio": "V1✓ verifica 2026-11-08 — CORRETTA: dichiarante da Maurizio Lupi (primo firmatario) a Noi Moderati (partito – sito ufficiale): la citazione è testo della pagina del partito, senza virgolette né firma, ritrovato parola per parola in ordine sul sito e sulla copia Wayback del 2026-10-07; Lupi è nominato solo come primo firmatario, senza parole sue || esito precedente: V1✓ verificatore 2026-10-20 — CONFERMATA: «a prima firma del presidente Maurizio Lupi» verificato | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: proposta di legge]"
     },
     "effettoConti": "si",
     "ribadita": []
@@ -1288,8 +1288,8 @@
   {
     "id": "C27-NM-007",
     "partitoId": "NM",
-    "dichiarante": "Mariastella Gelmini (prima firmataria)",
-    "ruoloDichiarante": "senatrice Noi Moderati",
+    "dichiarante": "Noi Moderati",
+    "ruoloDichiarante": "partito – sito ufficiale",
     "data": "2026-10-07",
     "testoLetterale": "Noi Moderati ha presentato una proposta di legge a prima firma di Mariastella Gelmini per equiparare lo status giuridico ed economico dei docenti AFAM a quello dei docenti universitari.",
     "parafrasiNeutra": "Equiparazione giuridica ed economica dei docenti AFAM ai docenti universitari.",
@@ -1304,10 +1304,10 @@
     "misurabile": "si",
     "costoDichiarato": null,
     "stimaTerzi": null,
-    "note": "Costo non indicato.",
+    "note": "Costo non indicato. (correzione 2026-11-08) Dichiarante: la pagina news-e-media/70 del sito di Noi Moderati («Attività Parlamentare», 7 ottobre 2026) è scritta dal partito, che parla di sé in terza persona, senza virgolette e senza firma: «Noi Moderati ha presentato una proposta di legge a prima firma di Mariastella Gelmini […]». Mariastella Gelmini è nominata solo come prima firmataria: nella pagina non ci sono parole sue. La riga è quindi attribuita al canale ufficiale del partito, come le altre proposte di legge presentate dal partito sul suo sito (C27-NM-005, C27-NM-008) e come C27-LEGA-001 e C27-LEGA-011; la pagina la presenta come proposta del partito, e il controllo di simmetria del 2026-10-21 l'ha tenuta per questa formula. Testo_letterale invariato: è la prima frase della pagina, ritrovata parola per parola su noimoderati.it (curl GET semplice, HTTP 200, 2026-11-08) e sulla copia Wayback del 2026-10-08. Verifica a tre livelli del 2026-11-08: ricerca, verifica indipendente, tentativo di smentita.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V1✓ verificatore 2026-10-20 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: proposta di legge]"
+      "dettaglio": "V1✓ verifica 2026-11-08 — CORRETTA: dichiarante da Mariastella Gelmini (prima firmataria) a Noi Moderati (partito – sito ufficiale): la citazione è testo della pagina del partito, in terza persona, senza virgolette né firma, ritrovato parola per parola in ordine sul sito e sulla copia Wayback del 2026-10-08; Gelmini è nominata solo come prima firmataria, senza parole sue || esito precedente: V1✓ verificatore 2026-10-20 — CONFERMATA | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: proposta di legge]"
     },
     "effettoConti": "si",
     "ribadita": []
@@ -9944,8 +9944,8 @@
   {
     "id": "C27-ORA-001",
     "partitoId": "ORA",
-    "dichiarante": "ORA! e Michele Boldrin",
-    "ruoloDichiarante": "Partito - canale ufficiale; segretario nazionale",
+    "dichiarante": "ORA! (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale; segretario nazionale Michele Boldrin",
     "data": "2026-10-02",
     "testoLetterale": "Un piano organico per portare l’Italia oltre il 40% di giovani laureati in dieci anni, rendendo l’università realmente gratuita, accelerando i percorsi di studio e valorizzando il capitale umano.",
     "parafrasiNeutra": "Portare la quota di giovani laureati oltre il 40% entro dieci anni.",
@@ -9960,10 +9960,10 @@
     "misurabile": "si",
     "costoDichiarato": null,
     "stimaTerzi": null,
-    "note": "Riforma del Diritto allo Studio Universitario Universale (Comunicati Programmatici). Obiettivo di risultato del pacchetto (righe ORA-001..006). (verificatore L2 2026-10-21) Coalizione: alleanze dichiarate possibili con tutti tranne Lega, M5S, AVS e Potere al Popolo; intesa con il PLD per le comunali 2027.",
+    "note": "Riforma del Diritto allo Studio Universitario Universale (Comunicati Programmatici). Obiettivo di risultato del pacchetto (righe ORA-001..006). (verificatore L2 2026-10-21) Coalizione: alleanze dichiarate possibili con tutti tranne Lega, M5S, AVS e Potere al Popolo; intesa con il PLD per le comunali 2027. (correzione 2026-11-08) Dichiarante: la pagina «Università gratuita e universale: più incentivi per rimanere in corso» (Comunicati Programmatici | Istruzione, datePublished 2026-10-02T16:57:15+00:00) è un comunicato scritto dal partito, che parla di sé in terza persona («ORA! presenta la Riforma del Diritto allo Studio Universitario Universale […]»), senza virgolette e senza firma. Michele Boldrin è nominato una sola volta, come chi presenta la riforma insieme al partito («Per questo ORA! e il suo segretario Michele Boldrin presentano la Riforma del Diritto allo Studio Universitario Universale […]»): nella pagina non ci sono parole sue. La riga è quindi attribuita al canale ufficiale del partito, con la stessa dicitura delle righe C27-ORA-007…013 e 016…020, tratte anch'esse dal sito di ORA!, che nominano il segretario nel ruolo; è lo stesso caso di C27-LEGA-011. Testo_letterale invariato: ritrovato parola per parola, in ordine, su ora-italia.it (curl GET semplice, HTTP 200, 2026-11-08). Verifica a tre livelli del 2026-11-08: ricerca, verifica indipendente, tentativo di smentita.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA"
+      "dettaglio": "V1✓ verifica 2026-11-08 — CORRETTA: dichiarante da ORA! e Michele Boldrin a ORA! (sito ufficiale) (Partito - canale ufficiale; segretario nazionale Michele Boldrin): la citazione è testo del comunicato programmatico del partito, senza virgolette né firma, ritrovato parola per parola in ordine; Boldrin è nominato solo come chi presenta la riforma insieme al partito, senza parole sue || esito precedente: V1✓ verificatore 2026-10-21 — CONFERMATA"
     },
     "effettoConti": "si",
     "ribadita": []
@@ -9971,8 +9971,8 @@
   {
     "id": "C27-ORA-002",
     "partitoId": "ORA",
-    "dichiarante": "ORA! e Michele Boldrin",
-    "ruoloDichiarante": "Partito - canale ufficiale; segretario nazionale",
+    "dichiarante": "ORA! (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale; segretario nazionale Michele Boldrin",
     "data": "2026-10-02",
     "testoLetterale": "Abolizione delle tasse di frequenza (resterebbero solo la tassa regionale, circa 140 €, e il bollo di 16 €), legata al conseguimento di una soglia minima di crediti (CFU)",
     "parafrasiNeutra": "Abolire le tasse universitarie di frequenza per gli studenti che raggiungono una soglia minima di crediti; restano tassa regionale e bollo.",
@@ -9987,10 +9987,10 @@
     "misurabile": "si",
     "costoDichiarato": "circa 2,2-2,5 miliardi di euro l’anno (costo netto dell'intera riforma, «finanziabile tramite una revisione della spesa pubblica»)",
     "stimaTerzi": null,
-    "note": "Riforma del Diritto allo Studio Universitario Universale (Comunicati Programmatici). Il costo dichiarato si riferisce all'intero pacchetto ORA-001..006. (verificatore L2 2026-10-21) Coalizione: alleanze dichiarate possibili con tutti tranne Lega, M5S, AVS e Potere al Popolo; intesa con il PLD per le comunali 2027.",
+    "note": "Riforma del Diritto allo Studio Universitario Universale (Comunicati Programmatici). Il costo dichiarato si riferisce all'intero pacchetto ORA-001..006. (verificatore L2 2026-10-21) Coalizione: alleanze dichiarate possibili con tutti tranne Lega, M5S, AVS e Potere al Popolo; intesa con il PLD per le comunali 2027. (correzione 2026-11-08) Dichiarante: la pagina «Università gratuita e universale: più incentivi per rimanere in corso» (Comunicati Programmatici | Istruzione, datePublished 2026-10-02T16:57:15+00:00) è un comunicato scritto dal partito, che parla di sé in terza persona («ORA! presenta la Riforma del Diritto allo Studio Universitario Universale […]»), senza virgolette e senza firma. Michele Boldrin è nominato una sola volta, come chi presenta la riforma insieme al partito («Per questo ORA! e il suo segretario Michele Boldrin presentano la Riforma del Diritto allo Studio Universitario Universale […]»): nella pagina non ci sono parole sue. La riga è quindi attribuita al canale ufficiale del partito, con la stessa dicitura delle righe C27-ORA-007…013 e 016…020, tratte anch'esse dal sito di ORA!, che nominano il segretario nel ruolo; è lo stesso caso di C27-LEGA-011. Testo_letterale invariato: ritrovato parola per parola, in ordine, su ora-italia.it (curl GET semplice, HTTP 200, 2026-11-08). Verifica a tre livelli del 2026-11-08: ricerca, verifica indipendente, tentativo di smentita.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V1✓ verificatore 2026-10-21 — CORRETTA: costo: la fonte dice «finanziabile», non «finanziato», tramite revisione della spesa"
+      "dettaglio": "V1✓ verifica 2026-11-08 — CORRETTA: dichiarante da ORA! e Michele Boldrin a ORA! (sito ufficiale) (Partito - canale ufficiale; segretario nazionale Michele Boldrin): la citazione è testo del comunicato programmatico del partito, senza virgolette né firma, ritrovato parola per parola in ordine; Boldrin è nominato solo come chi presenta la riforma insieme al partito, senza parole sue || esito precedente: V1✓ verificatore 2026-10-21 — CORRETTA: costo: la fonte dice «finanziabile», non «finanziato», tramite revisione della spesa"
     },
     "effettoConti": "si",
     "ribadita": []
@@ -9998,8 +9998,8 @@
   {
     "id": "C27-ORA-003",
     "partitoId": "ORA",
-    "dichiarante": "ORA! e Michele Boldrin",
-    "ruoloDichiarante": "Partito - canale ufficiale; segretario nazionale",
+    "dichiarante": "ORA! (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale; segretario nazionale Michele Boldrin",
     "data": "2026-10-02",
     "testoLetterale": "Affitti a 300-350 € al mese, con un piano di 12.000 nuovi posti letto ogni anno",
     "parafrasiNeutra": "Alloggi per studenti a 300-350 euro al mese e 12.000 nuovi posti letto all'anno.",
@@ -10014,10 +10014,10 @@
     "misurabile": "si",
     "costoDichiarato": null,
     "stimaTerzi": null,
-    "note": "Riforma del Diritto allo Studio Universitario Universale (Comunicati Programmatici). Costo compreso nel totale indicato in ORA-002. (verificatore L2 2026-10-21) Coalizione: alleanze dichiarate possibili con tutti tranne Lega, M5S, AVS e Potere al Popolo; intesa con il PLD per le comunali 2027.",
+    "note": "Riforma del Diritto allo Studio Universitario Universale (Comunicati Programmatici). Costo compreso nel totale indicato in ORA-002. (verificatore L2 2026-10-21) Coalizione: alleanze dichiarate possibili con tutti tranne Lega, M5S, AVS e Potere al Popolo; intesa con il PLD per le comunali 2027. (correzione 2026-11-08) Dichiarante: la pagina «Università gratuita e universale: più incentivi per rimanere in corso» (Comunicati Programmatici | Istruzione, datePublished 2026-10-02T16:57:15+00:00) è un comunicato scritto dal partito, che parla di sé in terza persona («ORA! presenta la Riforma del Diritto allo Studio Universitario Universale […]»), senza virgolette e senza firma. Michele Boldrin è nominato una sola volta, come chi presenta la riforma insieme al partito («Per questo ORA! e il suo segretario Michele Boldrin presentano la Riforma del Diritto allo Studio Universitario Universale […]»): nella pagina non ci sono parole sue. La riga è quindi attribuita al canale ufficiale del partito, con la stessa dicitura delle righe C27-ORA-007…013 e 016…020, tratte anch'esse dal sito di ORA!, che nominano il segretario nel ruolo; è lo stesso caso di C27-LEGA-011. Testo_letterale invariato: ritrovato parola per parola, in ordine, su ora-italia.it (curl GET semplice, HTTP 200, 2026-11-08). Verifica a tre livelli del 2026-11-08: ricerca, verifica indipendente, tentativo di smentita.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA"
+      "dettaglio": "V1✓ verifica 2026-11-08 — CORRETTA: dichiarante da ORA! e Michele Boldrin a ORA! (sito ufficiale) (Partito - canale ufficiale; segretario nazionale Michele Boldrin): la citazione è testo del comunicato programmatico del partito, senza virgolette né firma, ritrovato parola per parola in ordine; Boldrin è nominato solo come chi presenta la riforma insieme al partito, senza parole sue || esito precedente: V1✓ verificatore 2026-10-21 — CONFERMATA"
     },
     "effettoConti": "incerto",
     "ribadita": []
@@ -10025,8 +10025,8 @@
   {
     "id": "C27-ORA-004",
     "partitoId": "ORA",
-    "dichiarante": "ORA! e Michele Boldrin",
-    "ruoloDichiarante": "Partito - canale ufficiale; segretario nazionale",
+    "dichiarante": "ORA! (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale; segretario nazionale Michele Boldrin",
     "data": "2026-10-02",
     "testoLetterale": "Prestiti d’onore garantiti dallo Stato. Da restituire solo dopo la laurea e oltre una soglia di reddito (modello income-contingent)",
     "parafrasiNeutra": "Prestiti agli studenti garantiti dallo Stato, da restituire dopo la laurea e solo sopra una soglia di reddito.",
@@ -10041,10 +10041,10 @@
     "misurabile": "parziale",
     "costoDichiarato": null,
     "stimaTerzi": null,
-    "note": "Riforma del Diritto allo Studio Universitario Universale (Comunicati Programmatici). Soglia di reddito non indicata nel testo letto. (verificatore L2 2026-10-21) Coalizione: alleanze dichiarate possibili con tutti tranne Lega, M5S, AVS e Potere al Popolo; intesa con il PLD per le comunali 2027.",
+    "note": "Riforma del Diritto allo Studio Universitario Universale (Comunicati Programmatici). Soglia di reddito non indicata nel testo letto. (verificatore L2 2026-10-21) Coalizione: alleanze dichiarate possibili con tutti tranne Lega, M5S, AVS e Potere al Popolo; intesa con il PLD per le comunali 2027. (correzione 2026-11-08) Dichiarante: la pagina «Università gratuita e universale: più incentivi per rimanere in corso» (Comunicati Programmatici | Istruzione, datePublished 2026-10-02T16:57:15+00:00) è un comunicato scritto dal partito, che parla di sé in terza persona («ORA! presenta la Riforma del Diritto allo Studio Universitario Universale […]»), senza virgolette e senza firma. Michele Boldrin è nominato una sola volta, come chi presenta la riforma insieme al partito («Per questo ORA! e il suo segretario Michele Boldrin presentano la Riforma del Diritto allo Studio Universitario Universale […]»): nella pagina non ci sono parole sue. La riga è quindi attribuita al canale ufficiale del partito, con la stessa dicitura delle righe C27-ORA-007…013 e 016…020, tratte anch'esse dal sito di ORA!, che nominano il segretario nel ruolo; è lo stesso caso di C27-LEGA-011. Testo_letterale invariato: ritrovato parola per parola, in ordine, su ora-italia.it (curl GET semplice, HTTP 200, 2026-11-08). Verifica a tre livelli del 2026-11-08: ricerca, verifica indipendente, tentativo di smentita.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA"
+      "dettaglio": "V1✓ verifica 2026-11-08 — CORRETTA: dichiarante da ORA! e Michele Boldrin a ORA! (sito ufficiale) (Partito - canale ufficiale; segretario nazionale Michele Boldrin): la citazione è testo del comunicato programmatico del partito, senza virgolette né firma, ritrovato parola per parola in ordine; Boldrin è nominato solo come chi presenta la riforma insieme al partito, senza parole sue || esito precedente: V1✓ verificatore 2026-10-21 — CONFERMATA"
     },
     "effettoConti": "si",
     "ribadita": []
@@ -10052,8 +10052,8 @@
   {
     "id": "C27-ORA-005",
     "partitoId": "ORA",
-    "dichiarante": "ORA! e Michele Boldrin",
-    "ruoloDichiarante": "Partito - canale ufficiale; segretario nazionale",
+    "dichiarante": "ORA! (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale; segretario nazionale Michele Boldrin",
     "data": "2026-10-02",
     "testoLetterale": "Il budget complessivo per borse di merito e sostegno sale a 1,5 miliardi (+100% rispetto alle risorse attuali).",
     "parafrasiNeutra": "Portare a 1,5 miliardi di euro il budget per borse di studio di merito e di sostegno.",
@@ -10068,10 +10068,10 @@
     "misurabile": "si",
     "costoDichiarato": null,
     "stimaTerzi": null,
-    "note": "Riforma del Diritto allo Studio Universitario Universale (Comunicati Programmatici). Costo compreso nel totale indicato in ORA-002. (verificatore L2 2026-10-21) Coalizione: alleanze dichiarate possibili con tutti tranne Lega, M5S, AVS e Potere al Popolo; intesa con il PLD per le comunali 2027.",
+    "note": "Riforma del Diritto allo Studio Universitario Universale (Comunicati Programmatici). Costo compreso nel totale indicato in ORA-002. (verificatore L2 2026-10-21) Coalizione: alleanze dichiarate possibili con tutti tranne Lega, M5S, AVS e Potere al Popolo; intesa con il PLD per le comunali 2027. (correzione 2026-11-08) Dichiarante: la pagina «Università gratuita e universale: più incentivi per rimanere in corso» (Comunicati Programmatici | Istruzione, datePublished 2026-10-02T16:57:15+00:00) è un comunicato scritto dal partito, che parla di sé in terza persona («ORA! presenta la Riforma del Diritto allo Studio Universitario Universale […]»), senza virgolette e senza firma. Michele Boldrin è nominato una sola volta, come chi presenta la riforma insieme al partito («Per questo ORA! e il suo segretario Michele Boldrin presentano la Riforma del Diritto allo Studio Universitario Universale […]»): nella pagina non ci sono parole sue. La riga è quindi attribuita al canale ufficiale del partito, con la stessa dicitura delle righe C27-ORA-007…013 e 016…020, tratte anch'esse dal sito di ORA!, che nominano il segretario nel ruolo; è lo stesso caso di C27-LEGA-011. Testo_letterale invariato: ritrovato parola per parola, in ordine, su ora-italia.it (curl GET semplice, HTTP 200, 2026-11-08). Verifica a tre livelli del 2026-11-08: ricerca, verifica indipendente, tentativo di smentita.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA"
+      "dettaglio": "V1✓ verifica 2026-11-08 — CORRETTA: dichiarante da ORA! e Michele Boldrin a ORA! (sito ufficiale) (Partito - canale ufficiale; segretario nazionale Michele Boldrin): la citazione è testo del comunicato programmatico del partito, senza virgolette né firma, ritrovato parola per parola in ordine; Boldrin è nominato solo come chi presenta la riforma insieme al partito, senza parole sue || esito precedente: V1✓ verificatore 2026-10-21 — CONFERMATA"
     },
     "effettoConti": "si",
     "ribadita": []
@@ -10079,8 +10079,8 @@
   {
     "id": "C27-ORA-006",
     "partitoId": "ORA",
-    "dichiarante": "ORA! e Michele Boldrin",
-    "ruoloDichiarante": "Partito - canale ufficiale; segretario nazionale",
+    "dichiarante": "ORA! (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale; segretario nazionale Michele Boldrin",
     "data": "2026-10-02",
     "testoLetterale": "Eliminazione dei bonus una tantum dispersivi",
     "parafrasiNeutra": "Eliminare i bonus una tantum per studenti (il testo cita come esempio il bonus Wi-Fi).",
@@ -10095,10 +10095,10 @@
     "misurabile": "parziale",
     "costoDichiarato": null,
     "stimaTerzi": null,
-    "note": "Riforma del Diritto allo Studio Universitario Universale (Comunicati Programmatici). Esempio citato nel testo: 'Come il bonus Wi-Fi'. Elenco completo dei bonus da eliminare non indicato. (verificatore L2 2026-10-21) Coalizione: alleanze dichiarate possibili con tutti tranne Lega, M5S, AVS e Potere al Popolo; intesa con il PLD per le comunali 2027.",
+    "note": "Riforma del Diritto allo Studio Universitario Universale (Comunicati Programmatici). Esempio citato nel testo: 'Come il bonus Wi-Fi'. Elenco completo dei bonus da eliminare non indicato. (verificatore L2 2026-10-21) Coalizione: alleanze dichiarate possibili con tutti tranne Lega, M5S, AVS e Potere al Popolo; intesa con il PLD per le comunali 2027. (correzione 2026-11-08) Dichiarante: la pagina «Università gratuita e universale: più incentivi per rimanere in corso» (Comunicati Programmatici | Istruzione, datePublished 2026-10-02T16:57:15+00:00) è un comunicato scritto dal partito, che parla di sé in terza persona («ORA! presenta la Riforma del Diritto allo Studio Universitario Universale […]»), senza virgolette e senza firma. Michele Boldrin è nominato una sola volta, come chi presenta la riforma insieme al partito («Per questo ORA! e il suo segretario Michele Boldrin presentano la Riforma del Diritto allo Studio Universitario Universale […]»): nella pagina non ci sono parole sue. La riga è quindi attribuita al canale ufficiale del partito, con la stessa dicitura delle righe C27-ORA-007…013 e 016…020, tratte anch'esse dal sito di ORA!, che nominano il segretario nel ruolo; è lo stesso caso di C27-LEGA-011. Testo_letterale invariato: ritrovato parola per parola, in ordine, su ora-italia.it (curl GET semplice, HTTP 200, 2026-11-08). Verifica a tre livelli del 2026-11-08: ricerca, verifica indipendente, tentativo di smentita.",
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V1✓ verificatore 2026-10-21 — CONFERMATA"
+      "dettaglio": "V1✓ verifica 2026-11-08 — CORRETTA: dichiarante da ORA! e Michele Boldrin a ORA! (sito ufficiale) (Partito - canale ufficiale; segretario nazionale Michele Boldrin): la citazione è testo del comunicato programmatico del partito, senza virgolette né firma, ritrovato parola per parola in ordine; Boldrin è nominato solo come chi presenta la riforma insieme al partito, senza parole sue || esito precedente: V1✓ verificatore 2026-10-21 — CONFERMATA"
     },
     "effettoConti": "si",
     "ribadita": []

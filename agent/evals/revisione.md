@@ -325,41 +325,41 @@ Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 141.
 
 **Revisione:** ok
 
-### LB-1987-legge-finanziaria
+### LB-1978-esercizio-provvisorio
 
-**Domanda:** Quale governo ha presentato la legge finanziaria per l'esercizio 1987, e con quale atto?
-
-**Esito atteso:** risposta
-**Livello del dato:** V1
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| governoProponenteTesto | Craxi II |  |
-| estremi | L. n. 910 del 22/12/1986 |  |
-
-**Citazione:** `leggi-bilancio` / `1987-legge-finanziaria` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1986-12-22;910 · http://dati.camera.it/ocd/attocamera.rdf/ac09_4016
-
-**Revisione:** ok
-
-### LB-1996-bilancio-di-previsione
-
-**Domanda:** Quale governo ha presentato il bilancio di previsione per l'esercizio 1996, e con quale atto?
+**Domanda:** Quale governo ha presentato l'esercizio provvisorio per l'esercizio 1978, e con quale atto?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
 
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
-| governoProponenteTesto | Dini |  |
-| estremi | L. n. 551 del 28/12/1995 |  |
+| governoProponenteTesto | Andreotti III |  |
+| estremi | L. n. 934 del 23/12/1977 (atto S.1028/C.1940); proroga al 30/04/1978 con L. n. 76 del 22/03/1978 (atto S.1136/C.2077) |  |
 
-**Citazione:** `leggi-bilancio` / `1996-bilancio-di-previsione` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1995-12-28;551
+**Citazione:** `leggi-bilancio` / `1978-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac07_1940 · http://dati.camera.it/ocd/attocamera.rdf/ac07_2077 · https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1977-12-23;934 · https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1978-03-22;76 · https://bdp.camera.it/init/iter/scheda/10077 · https://bdp.camera.it/init/iter/scheda/10155
 
 **Revisione:** ok
 
-### LB-2005-bilancio-di-previsione
+### LB-1991-legge-finanziaria
 
-**Domanda:** Quale governo ha presentato il bilancio di previsione per l'esercizio 2005, e con quale atto?
+**Domanda:** Quale governo ha presentato la legge finanziaria per l'esercizio 1991, e con quale atto?
+
+**Esito atteso:** risposta
+**Livello del dato:** V1
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| governoProponenteTesto | Andreotti VI |  |
+| estremi | L. n. 405 del 29/12/1990 |  |
+
+**Citazione:** `leggi-bilancio` / `1991-legge-finanziaria` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1990-12-29;405 · http://dati.camera.it/ocd/attocamera.rdf/ac10_5106
+
+**Revisione:** ok
+
+### LB-2002-bilancio-di-previsione
+
+**Domanda:** Quale governo ha presentato il bilancio di previsione per l'esercizio 2002, e con quale atto?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -367,25 +367,25 @@ Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 141.
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
 | governoProponenteTesto | Berlusconi II |  |
-| estremi | L. n. 312 del 30/12/2004 |  |
+| estremi | L. n. 449 del 28/12/2001 |  |
 
-**Citazione:** `leggi-bilancio` / `2005-bilancio-di-previsione` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2004-12-30;312
+**Citazione:** `leggi-bilancio` / `2002-bilancio-di-previsione` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2001-12-28;449
 
-**Revisione:** ok
+**Revisione:** da_correggere
 
-### LB-2013-legge-di-stabilità
+### LB-2012-bilancio-di-previsione
 
-**Domanda:** Quale governo ha presentato la legge di stabilità per l'esercizio 2013, e con quale atto?
+**Domanda:** Quale governo ha presentato il bilancio di previsione per l'esercizio 2012, e con quale atto?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
 
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
-| governoProponenteTesto | Monti |  |
-| estremi | L. n. 228 del 24/12/2012 |  |
+| governoProponenteTesto | Berlusconi IV |  |
+| estremi | L. n. 184 del 12/11/2011 |  |
 
-**Citazione:** `leggi-bilancio` / `2013-legge-di-stabilità` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2012-12-24;228 · http://dati.camera.it/ocd/attocamera.rdf/ac16_5534
+**Citazione:** `leggi-bilancio` / `2012-bilancio-di-previsione` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2011-11-12;184
 
 **Revisione:** ok
 
@@ -445,25 +445,24 @@ Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 141.
 
 **Revisione:** ok
 
-### LB-1966-esercizio-provvisorio
+### LB-1962-63-esercizio-provvisorio
 
-**Domanda:** Quale governo ha presentato l'esercizio provvisorio per l'esercizio 1966, e con quale atto?
+**Domanda:** Quale governo ha presentato l'esercizio provvisorio per l'esercizio 1962-63, e con quale atto?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
 
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
-| governoProponenteTesto | Moro II (INF) |  |
-| estremi | L. n. 1389 del 20/12/1965; proroga al 30/04/1966 con L. n. 63 del 18/02/1966 |  |
+| governoProponenteTesto | Fanfani IV (INF) |  |
 
-**Citazione:** `leggi-bilancio` / `1966-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac04_2838 · http://dati.camera.it/ocd/attocamera.rdf/ac04_2970
+**Citazione:** `leggi-bilancio` / `1962-63-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac03_3889
 
 **Regole:** `dichiara_attribuzione_non_documentata`
 
 **Nota:** Attribuzione inferita: il governo non va dato come certo.
 
-**Revisione:** ok
+**Revisione:** da_correggere
 
 ### LB-1982-esercizio-provvisorio
 
@@ -504,42 +503,39 @@ Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 141.
 
 **Revisione:** ok
 
-### LB-1958-59-esercizio-provvisorio
+### LB-1956-57-esercizio-provvisorio
 
-**Domanda:** Quale governo ha presentato l'esercizio provvisorio per l'esercizio 1958-59, e con quale atto?
-
-**Esito atteso:** dato_non_verificato
-**Livello del dato:** NV
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| governoProponenteTesto | Zoli |  |
-
-**Citazione:** `leggi-bilancio` / `1958-59-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac03_1
-
-**Regole:** `dichiara_non_verificato`
-
-**Revisione:** ok
-
-### LB-1969-bilancio-di-previsione
-
-**Domanda:** Quale governo ha presentato il bilancio di previsione per l'esercizio 1969, e con quale atto?
+**Domanda:** Quale governo ha presentato l'esercizio provvisorio per l'esercizio 1956-57, e con quale atto?
 
 **Esito atteso:** dato_non_verificato
 **Livello del dato:** NV
 
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
-| governoProponenteTesto | Leone II (INF) |  |
-| estremi | L. n. 21 del 28/02/1969 (legge unica di bilancio) |  |
+| governoProponenteTesto | Segni I (INF) |  |
 
-**Citazione:** `leggi-bilancio` / `1969-bilancio-di-previsione` — http://dati.camera.it/ocd/attocamera.rdf/ac05_311 · https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1969-02-28;21
+**Citazione:** `leggi-bilancio` / `1956-57-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac02_2335
 
 **Regole:** `dichiara_non_verificato`, `dichiara_attribuzione_non_documentata`
 
 **Nota:** Attribuzione inferita: il governo non va dato come certo.
 
-**Revisione:** da_correggere
+**Revisione:** ok
+
+### LB-1963-64-bilancio-di-previsione
+
+**Domanda:** Quale governo ha presentato il bilancio di previsione per l'esercizio 1963-64, e con quale atto?
+
+**Esito atteso:** dato_non_verificato
+**Livello del dato:** NV
+
+**Citazione:** `leggi-bilancio` / `1963-64-bilancio-di-previsione` — https://dati.camera.it/sparql
+
+**Regole:** `dichiara_non_verificato`, `dichiara_attribuzione_non_documentata`
+
+**Nota:** Attribuzione incerta: il governo non va dato come certo.
+
+**Revisione:** ok
 
 ## misure
 
@@ -587,7 +583,7 @@ Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 141.
 
 **⚠ Fonte con riuso «con_permesso»** in `data/fonti.json`: il record entra nell'indice come sul sito (valori di Paghi Tu, link alla fonte, nessun testo copiato), D-026.
 
-**Nota:** UPB NdL 1/2022 Tab. 20 p. 47 (PDF). Il consuntivo contiene una PROIEZIONE (domande giacenti incluse). Differenza -10.271 mln rispetto alla RT del DL 4/2019 (33.469) e -5.771 mln (-19,9%, INFERENZA) rispetto alla RT corretta con NADEF 2019 e LB 2020 (28.969): differenze tra i totali, calcolo nostro. La tabella UPB riporta 10.272 e 5.772, pari alla somma delle differenze annue arrotondate al milione (per il 2023 indica 1.372, mentre 5.034 - 3.663 = 1.371).
+**Nota:** UPB NdL 1/2022 Tab. 20 p. 47 (PDF). Il consuntivo contiene una PROIEZIONE: per il 2021 l'UPB aumenta la spesa registrata dal monitoraggio INPS (5.148 mln, Tab. 18) di circa il 10 per cento per le quasi 39.000 domande giacenti al 31/12/2021 (p. 33), ipotizzate accolte (p. 46 e nota 62), e arriva a 5.648 mln (Tab. 20, colonna f; +500 mln, calcolo nostro); il 2022-2025 è proiettato con i tassi di crescita della RT del DL 4/2019 (p. 46). A p. 47 l'UPB scrive «di consuntivo sino al 2021», ma la colonna (f) del 2021 include già la stima per le domande giacenti. Differenza -10.271 mln rispetto alla RT del DL 4/2019 (33.469) e -5.771 mln (-19,9%, INFERENZA) rispetto alla RT corretta con NADEF 2019 e LB 2020 (28.969): differenze tra i totali, calcolo nostro. La tabella UPB riporta 10.272 e 5.772, pari alla somma delle differenze annue arrotondate al milione (per il 2023 indica 1.372, mentre 5.034 - 3.663 = 1.371).
 
 **Revisione:** ok
 
