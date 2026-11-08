@@ -81,7 +81,6 @@ Visti da un solo livello, quindi non applicati qui.
 - **ac12_3448:** può diventare fonte del bilancio di previsione 1996, che oggi ha solo Normattiva.
 - **C27-LEGA-011:** ha lo stesso difetto della LEGA-001, cioè testo in terza persona della newsletter #32 attribuito a Salvini.
 - **Quota 100:** la descrizione del consuntivo dice «consuntivo 2019-2021», ma per il 2021 l'UPB include già circa il 10% di domande giacenti (p. 46).
-- **SVP senza promesse pubblicate:** il titolare decide se e come dirlo su `/promesse`.
 - **Date di governo:** `governi.json` usa le date del giuramento, la Camera quelle della nomina (Andreotti III: 13/03 contro 11/03/1978). È una convenzione e non cambia nessun esito.
 
 ## Seguito della verifica automatica della PR (2026-11-08)
@@ -92,3 +91,5 @@ La verifica automatica del 2 novembre ha dato DUBBIO su due correzioni e ha segn
 - **Esercizio provvisorio 1969 (COR-0014).** La scheda dell'Iter nomina solo Colombo; Preti è nello stampato C.781, letto dai primi due livelli ma non citato fra le fonti. Ora lo stampato è fra le fonti del record ed è la fonte della correzione. Il vecchio indirizzo `www.camera.it/_dati/…` rimanda a `documenti.camera.it`, dove il file risponde (HTTP 200).
 - **Citazioni dei frontespizi** (1978, 1988, 1996): il titolo del ministro del Bilancio era abbreviato dentro le virgolette. Ora c'è «[…]» al posto della parte tolta, e per il 1996 «con il» come nello stampato. Nel 1978 «presentati» diventa «presentato», come scrivono i due stampati.
 - `main` unito nel ramo (atti fino al 2026-11-06, idee per i reel): nessun file in comune. `domande.jsonl` non cambia, quindi il registro delle fonti resta valido salvo le due letture ISTAT ancora mancanti.
+- **SVP su `/promesse` (decisione del titolare, 2026-11-08):** la nota «Copertura e limiti» ha ora una riga generata per ogni partito senza promesse pubblicate e senza canali illeggibili (NOVAX ha già la riga dei canali illeggibili). Oggi riguarda solo la SVP.
+- **Verifica delle fonti rifatta il 2026-11-08** da questa rete, con richieste a ISTAT distanziate di 16 secondi (D-004): **134 fonti su 134** (4 dalle copie d'archivio), 0 citazioni non ritrovate, 49 valori non trovati, coperti dalle eccezioni come prima. Il test «ogni URL atteso è stato letto» torna verde.
