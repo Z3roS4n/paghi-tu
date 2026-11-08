@@ -83,3 +83,12 @@ Visti da un solo livello, quindi non applicati qui.
 - **Quota 100:** la descrizione del consuntivo dice «consuntivo 2019-2021», ma per il 2021 l'UPB include già circa il 10% di domande giacenti (p. 46).
 - **SVP senza promesse pubblicate:** il titolare decide se e come dirlo su `/promesse`.
 - **Date di governo:** `governi.json` usa le date del giuramento, la Camera quelle della nomina (Andreotti III: 13/03 contro 11/03/1978). È una convenzione e non cambia nessun esito.
+
+## Seguito della verifica automatica della PR (2026-11-08)
+
+La verifica automatica del 2 novembre ha dato DUBBIO su due correzioni e ha segnalato alcune citazioni abbreviate.
+
+- **C27-SVP-003 (COR-0013).** La pagina «Organisation» di svp.eu dice che del Parteiausschuss fanno parte tutti i parlamentari («alle Mandatar/innen … ital. Parlament»), quindi anche Schullian. «Senza incarichi di partito» era impreciso: motivo e `stato_verifica` ora dicono che fa parte di quell'organo collegiale e che, per la stessa pagina, il partito lo rappresenta all'esterno l'Obmann («vertritt sie nach außen»), che non firma. L'esito non cambia: il Parteiausschuss non è fra i ruoli che parlano per un partito, per nessun partito. La lista elettorale ora è citata come sulla scheda camera.it, «Südtiroler Volkspartei (SVP) - PATT». Fonte della correzione: la pagina svp.eu.
+- **Esercizio provvisorio 1969 (COR-0014).** La scheda dell'Iter nomina solo Colombo; Preti è nello stampato C.781, letto dai primi due livelli ma non citato fra le fonti. Ora lo stampato è fra le fonti del record ed è la fonte della correzione. Il vecchio indirizzo `www.camera.it/_dati/…` rimanda a `documenti.camera.it`, dove il file risponde (HTTP 200).
+- **Citazioni dei frontespizi** (1978, 1988, 1996): il titolo del ministro del Bilancio era abbreviato dentro le virgolette. Ora c'è «[…]» al posto della parte tolta, e per il 1996 «con il» come nello stampato. Nel 1978 «presentati» diventa «presentato», come scrivono i due stampati.
+- `main` unito nel ramo (atti fino al 2026-11-06, idee per i reel): nessun file in comune. `domande.jsonl` non cambia, quindi il registro delle fonti resta valido salvo le due letture ISTAT ancora mancanti.
