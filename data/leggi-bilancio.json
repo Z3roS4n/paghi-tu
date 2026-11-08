@@ -951,13 +951,17 @@
         "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1968-12-24;1273"
       },
       {
-        "url": "https://bdp.camera.it/init/iter",
+        "url": "https://bdp.camera.it/init/iter/scheda/7806",
         "etichetta": "Iter delle leggi 1948-1990"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg05/lavori/stampati/pdf/07810001.pdf",
+        "etichetta": "stampato Camera C.781"
       }
     ],
     "verifica": {
-      "livello": "NV",
-      "dettaglio": "V1 atto; legge NV; governo NV || V1✓ verificatore 2026-10-20: S.370 presentato 16/12/1968 sotto Rumor I (giurato 13/12/1968)"
+      "livello": "V1",
+      "dettaglio": "V1 atto; legge V1 (Normattiva: L. 24 dicembre 1968 n. 1273, GU n. 331 del 31/12/1968); governo V1 documentato (stampato Camera C.781: «presentato dal Ministro del Tesoro (Colombo Emilio) di concerto col Ministro del Bilancio e della programmazione economica (Preti)»; Preti è ministro del Bilancio dal 12/12/1968 solo nel governo Rumor I, Colombo era al Tesoro anche nel Leone II; Iter delle leggi 1948-1990, scheda 7806: «Proponente: Tesoro: Colombo. SENATO n 370: pres 16 dicembre 1968») || V1✓ verificatore 2026-10-20: S.370 presentato 16/12/1968 sotto Rumor I (giurato 13/12/1968) || V1✓ verifica 2026-11-01 (ricerca, verifica indipendente, tentativo di smentita): legge e governo, che in prima stesura erano rimasti non verificati, letti sulle fonti sopra; livello del record portato a V1"
     }
   },
   {
@@ -1277,21 +1281,35 @@
     "annoInizio": 1978,
     "tipoAtto": "esercizio provvisorio",
     "tipoAttoOriginale": "esercizio provvisorio",
-    "estremi": "L. n. 934 del 23/12/1977; proroga al 30/04/1978 (atto S.1136/C.2077)",
+    "estremi": "L. n. 934 del 23/12/1977 (atto S.1028/C.1940); proroga al 30/04/1978 con L. n. 76 del 22/03/1978 (atto S.1136/C.2077)",
     "governoProponenteId": "g30",
-    "governoProponenteAttribuzione": "inferita",
-    "governoProponenteTesto": "Andreotti III (INF)",
+    "governoProponenteAttribuzione": "documentata",
+    "governoProponenteTesto": "Andreotti III",
     "fonti": [
       {
         "url": "http://dati.camera.it/ocd/attocamera.rdf/ac07_1940"
       },
       {
         "url": "http://dati.camera.it/ocd/attocamera.rdf/ac07_2077"
+      },
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1977-12-23;934"
+      },
+      {
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1978-03-22;76"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter/scheda/10077",
+        "etichetta": "Iter delle leggi 1948-1990, S.1028"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter/scheda/10155",
+        "etichetta": "Iter delle leggi 1948-1990, S.1136"
       }
     ],
     "verifica": {
       "livello": "V1",
-      "dettaglio": "V1 (titolo atto Camera cita L. 934/1977); governo INF || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione || V1✓ verificatore 2026-10-20: legge 1977-12-23;934 riletta su Normattiva (titolo coerente)"
+      "dettaglio": "V1 (titolo atto Camera cita L. 934/1977); governo documentato dalla verifica 2026-11-01 (prima stesura: dedotto dal calendario dei governi) || verificatore 2026-10-20: atto e governo coerenti con data atto (dati.camera.it) e calendario governi; nessuna correzione || V1✓ verificatore 2026-10-20: legge 1977-12-23;934 riletta su Normattiva (titolo coerente) || V1✓ verifica 2026-11-01 (ricerca, verifica indipendente, tentativo di smentita) — CORRETTA: estremi completati con la legge di proroga (L. 22 marzo 1978 n. 76, Normattiva, GU n. 88 del 30/03/1978) e con l'atto della L. 934/1977 (S.1028/C.1940); governo documentato: entrambi i disegni di legge sono gli stampati Camera C.1940 e C.2077 riportano «presentato dal Ministro del Tesoro (Stammati) di concerto col Ministro del Bilancio […] (Morlino)», Stammati è al Tesoro solo nel governo Andreotti III; S.1028 presentato il 2/12/1977, S.1136 l'8/3/1978 (Iter schede 10077 e 10155), quando Andreotti III era ancora in carica per gli affari correnti; il 17/03/1978 di dati.camera.it è la data di trasmissione alla Camera; la proroga è approvata sotto Andreotti IV (Pandolfi al Tesoro): il record non si divide perché, come per il 1953-54, conta il governo che presenta l'atto"
     }
   },
   {
@@ -1753,11 +1771,15 @@
       },
       {
         "url": "http://dati.camera.it/ocd/attocamera.rdf/ac10_2043"
+      },
+      {
+        "url": "https://bdp.camera.it/init/iter/scheda/12225",
+        "etichetta": "Iter delle leggi 1948-1990, S.470"
       }
     ],
     "verifica": {
       "livello": "V1",
-      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione"
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione || V1✓ verifica 2026-11-01 (ricerca, verifica indipendente, tentativo di smentita): governo DOCUMENTATO (non più INFERENZA): stampato Camera C.2043 «presentato dal Ministro del Tesoro (Amato) di concerto col Ministro del Bilancio […] (Colombo) e col Ministro delle Finanze (Gava)», tutti e tre in carica insieme solo nel governo Goria; Iter scheda 12225: «Vice Pres Cons e Min Tesoro: Amato. SENATO n 470: pres 30 settembre 1987»"
     }
   },
   {
@@ -2096,12 +2118,16 @@
         "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1995-12-28;550"
       },
       {
-        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac12_3448"
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac12_3447"
+      },
+      {
+        "url": "http://www.camera.it/_dati/leg12/lavori/stampati/pdf/53599.pdf",
+        "etichetta": "stampato Camera C.3447"
       }
     ],
     "verifica": {
       "livello": "V1",
-      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione"
+      "dettaglio": "estremi V1 (Normattiva); governo INFERENZA (governo in carica alla presentazione) || V1✓ verificatore 2026-10-20: estremi e titolo riletti su Normattiva; INFERENZA mantenuta ma robusta: lo stesso governo era in carica per tutta la finestra di presentazione (settembre-dicembre) secondo il calendario governi verificato; nessuna correzione || V1✓ verifica 2026-11-01 (ricerca, verifica indipendente, tentativo di smentita) — CORRETTA: la fonte ac12_3448 era il bilancio di previsione 1996 (S.2019), sostituita con ac12_3447, «S. 2156: Disposizioni per la formazione del bilancio annuale e pluriennale dello Stato (legge finanziaria 1996)»; governo DOCUMENTATO (non più INFERENZA): stampato C.3447 «presentato dal Ministro del Tesoro (Dini) di concerto con il Ministro del Bilancio […] (Masera)», e con il ministro delle Finanze Fantozzi, Masera è al Bilancio solo nel governo Dini (17/01/1995-12/01/1996); l'iniziativa «Popolare» nei metadati di dati.camera.it è un errore della scheda"
     }
   },
   {

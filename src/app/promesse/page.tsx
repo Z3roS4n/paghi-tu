@@ -228,6 +228,11 @@ function unreadableLine(c: (typeof unreadableChannels)[number]) {
   return `${name}: dal ${formatDate(c.dal)} i canali ufficiali (${c.canali.join(", ")}) non sono leggibili dai nostri strumenti; ${last}. Le promesse nuove di questo partito arrivano dopo un controllo a mano.`;
 }
 
+// Per i partiti con canali illeggibili la riga c'è già (unreadableLine).
+const noPromiseLines = parties
+  .filter((p) => !promises.some((x) => x.partitoId === p.id) && !unreadableChannels.some((c) => c.partito === p.id))
+  .map((p) => `${p.nome}: nessuna promessa pubblicata. Nessuna delle dichiarazioni trovate sui canali ufficiali rispetta i criteri di questo censimento.`);
+
 function Coverage() {
   return (
     <details className="group reveal mt-4 rounded-card bg-paper-raised px-4 md:px-6">
@@ -236,7 +241,7 @@ function Coverage() {
         <span className="text-sm font-normal text-ink-faint underline underline-offset-2 group-open:hidden">apri</span>
       </summary>
       <ul className="mb-4 list-disc space-y-2 pl-5 text-[15px] text-ink-soft">
-        {[...COVERAGE, ...unreadableChannels.map(unreadableLine)].map((line) => (
+        {[...COVERAGE, ...unreadableChannels.map(unreadableLine), ...noPromiseLines].map((line) => (
           <li key={line}>{line}</li>
         ))}
       </ul>

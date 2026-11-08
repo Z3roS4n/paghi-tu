@@ -8,7 +8,9 @@
     "prima": "«Poi, è necessaria una stretta per i coltelli, il cui uso si sta diffondendo tra i giovanissimi […] Ci saranno provvedimenti severi per sradicare la tendenza di portare con sé delle lame, ovviamente senza colpire i cittadini perbene che le hanno per giustificati motivi (per esempio professionali).»",
     "dopo": "«[…] è necessaria una stretta per i coltelli, il cui uso si sta diffondendo tra i giovanissimi (in particolare stranieri o di seconda generazione). Ci saranno provvedimenti severi per sradicare la tendenza di portare con sé delle lame, ovviamente senza colpire i cittadini perbene che le hanno per giustificati motivi […]»",
     "motivo": "Il taglio toglieva l'inciso con cui il proponente descrive un gruppo di persone. Una citazione non toglie quelle parole: i tagli ora cadono su parti che non cambiano la misura né i destinatari.",
-    "fonte": { "url": "https://legaonline.it/la-settimana-leghista-9/" },
+    "fonte": {
+      "url": "https://legaonline.it/la-settimana-leghista-9/"
+    },
     "segnalazione": null
   },
   {
@@ -20,7 +22,9 @@
     "prima": "Intervista",
     "dopo": "Discorso",
     "motivo": "L'articolo riporta una dichiarazione fatta alla Camera dei deputati, non un'intervista. Il livello resta V2.",
-    "fonte": { "url": "https://www.hdmotori.it/bollo-tajani-estendere-esenzione-prime-auto/" },
+    "fonte": {
+      "url": "https://www.hdmotori.it/bollo-tajani-estendere-esenzione-prime-auto/"
+    },
     "segnalazione": null
   },
   {
@@ -44,7 +48,9 @@
     "prima": "«Con un intervento mirato e selettivo possiamo portarle ad almeno 800/850 euro, con una spesa stimata in circa 1 miliardo di euro. Vanno adeguate subito al costo della vita.»",
     "dopo": "«Con un intervento mirato e selettivo possiamo portarle ad almeno 800/850 euro, con una spesa stimata in circa 1 miliardo di euro […] Vanno adeguate subito al costo della vita.»",
     "motivo": "Nell'articolo le due frasi sono separate da un inciso del giornalista («ha spiegato»): la citazione le univa senza segnare il taglio.",
-    "fonte": { "url": "http://web.archive.org/web/20260911101757/https://www.fanpage.it/politica/pensioni-forza-italia-vuole-alzare-le-minime-a-850-euro-nella-legge-di-bilancio-2027/" },
+    "fonte": {
+      "url": "http://web.archive.org/web/20260911101757/https://www.fanpage.it/politica/pensioni-forza-italia-vuole-alzare-le-minime-a-850-euro-nella-legge-di-bilancio-2027/"
+    },
     "segnalazione": null
   },
   {
@@ -56,7 +62,9 @@
     "prima": "Link «https://bdp.camera.it/init/iter (Iter delle leggi 1948-1990)», con il nome della banca dati dentro l'indirizzo.",
     "dopo": "Link «https://bdp.camera.it/init/iter» con etichetta «Iter delle leggi 1948-1990».",
     "motivo": "L'indirizzo conteneva uno spazio e del testo, quindi il link non era valido. Lo schema ora rifiuta gli indirizzi con spazi.",
-    "fonte": { "url": "https://bdp.camera.it/init/iter" },
+    "fonte": {
+      "url": "https://bdp.camera.it/init/iter"
+    },
     "segnalazione": null
   },
   {
@@ -68,7 +76,9 @@
     "prima": "https://futuronazionale.it/programma/",
     "dopo": "https://futuronazionale.it/wp-content/uploads/2026/09/GIUSTIFICATO_SLOT-1-e-2_Base-Programmatica-di-Futuro-Nazionale-24-agosto-2026.pdf",
     "motivo": "La data della promessa (24/08/2026) è quella della Base Ideologica e Programmatica, indicata nel file ufficiale e non nella pagina «Programma». Il PDF contiene anche il testo citato.",
-    "fonte": { "url": "https://futuronazionale.it/wp-content/uploads/2026/09/GIUSTIFICATO_SLOT-1-e-2_Base-Programmatica-di-Futuro-Nazionale-24-agosto-2026.pdf" },
+    "fonte": {
+      "url": "https://futuronazionale.it/wp-content/uploads/2026/09/GIUSTIFICATO_SLOT-1-e-2_Base-Programmatica-di-Futuro-Nazionale-24-agosto-2026.pdf"
+    },
     "segnalazione": null
   },
   {
@@ -104,7 +114,107 @@
     "prima": "«Altra protezione sociale» comprende malattia e invalidità (con le pensioni di invalidità), famiglia e figli, disoccupazione, casa, esclusione sociale e altre spese non classificate.",
     "dopo": "«Altra protezione sociale» comprende malattia e invalidità (con le pensioni di invalidità fino all'età della pensione), famiglia e figli, disoccupazione, casa, esclusione sociale e altre spese non classificate.",
     "motivo": "Nella classificazione COFOG le pensioni di invalidità stanno in «invalidità» (10.12) solo per chi non ha ancora l'età della pensione; da quell'età la spesa è in «vecchiaia» (10.20), cioè in «Vecchiaia e superstiti». Le cifre non cambiano: cambia solo la descrizione.",
-    "fonte": { "url": "https://ec.europa.eu/eurostat/documents/3859598/10142242/KS-GQ-19-010-EN-N.pdf" },
+    "fonte": {
+      "url": "https://ec.europa.eu/eurostat/documents/3859598/10142242/KS-GQ-19-010-EN-N.pdf"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0010",
+    "data": "2026-11-01",
+    "tipo": "correzione",
+    "dato": "Misura Quota 100, nota sullo scostamento",
+    "pagina": "/misure#quota-100",
+    "prima": "Differenza -10.272 mln; -5.772 mln rispetto alla RT corretta (28.969).",
+    "dopo": "Differenza -10.271 mln rispetto alla RT del DL 4/2019 (33.469) e -5.771 mln (-19,9%) rispetto alla RT corretta con NADEF 2019 e LB 2020 (28.969): differenze tra i totali, calcolo nostro. La tabella UPB riporta 10.272 e 5.772, pari alla somma delle differenze annue arrotondate al milione (per il 2023 indica 1.372, mentre 5.034 - 3.663 = 1.371).",
+    "motivo": "La nota riportava le differenze stampate nella tabella dell'UPB, che sommano le differenze annue già arrotondate al milione, mentre lo scostamento mostrato nella pagina è la differenza fra i totali. Ora la nota dice da dove viene ciascun numero. Previsto, consuntivo e scostamento non cambiano.",
+    "fonte": {
+      "url": "https://www.upbilancio.it/wp-content/uploads/2022/06/Nota-di-lavoro_Quota-100_per-sito-UPB.pdf"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0011",
+    "data": "2026-11-01",
+    "tipo": "correzione",
+    "dato": "Misura abolizione dell'ICI sulla prima casa, nota sul consuntivo",
+    "pagina": "/misure#abolizione-ici-prima-casa",
+    "prima": "Il totale certificato ricalcolato a p. 4 è 3.364.556.281,09. +29,2%.",
+    "dopo": "Consuntivo = «ICI attestata 2008 come da D.M. 1° aprile 2009» (p. 3: 3.364.846.992,77, arrotondato all'euro). Nella tabella dopo la L. 191/2009 (p. 4) il «Totale complessivo certificato» del 2008, su cui è calcolata la percentuale di riparto (89,75924%), è 3.364.556.281,09 (290.711,68 euro in meno); la fonte non spiega la differenza. Con quel totale lo scostamento sarebbe +760,6 mln invece di +760,8 mln; +29,2% in entrambi i casi (calcolo nostro).",
+    "motivo": "La nota citava un secondo totale senza dire quale dei due usa il confronto, e lo chiamava «ricalcolato», parola che la fonte non usa per quel totale. Ora la nota indica il totale usato, la pagina da cui viene e quanto cambierebbe lo scostamento con l'altro. Previsto, consuntivo e scostamento non cambiano.",
+    "fonte": {
+      "url": "https://finanzalocale.interno.gov.it/docum/studi/varie/soppressione_ici.pdf"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0012",
+    "data": "2026-11-01",
+    "tipo": "correzione",
+    "dato": "Promessa C27-LEGA-001, dichiarante e citazione",
+    "pagina": "/promesse#C27-LEGA-001",
+    "prima": "Matteo Salvini (segretario federale Lega, senatore; vicepresidente del Consiglio e ministro delle Infrastrutture e dei Trasporti): «Non vedo perché un lavoratore italiano debba essere condannato ad aspettare i 67 anni». L’obiettivo è dare la possibilità di uscire volontariamente a 64 anni anche a chi ha iniziato a versare contributi prima del 1996.",
+    "dopo": "Lega (partito – newsletter ufficiale): «L’obiettivo è dare la possibilità di uscire volontariamente a 64 anni anche a chi ha iniziato a versare contributi prima del 1996. […] La misura potrebbe interessare circa 80mila persone, con una sperimentazione triennale e un investimento stimato in circa 1,6 miliardi all’anno.»",
+    "motivo": "La citazione univa una frase che la newsletter mette fra virgolette e attribuisce a Matteo Salvini con una frase scritta dalla newsletter stessa, presentandole entrambe come parole di Salvini. La newsletter riferisce un'intervista di Salvini a La Verità, che è a pagamento e non è usata come fonte: le sole frasi attribuite a Salvini fra virgolette non indicano l'età di uscita proposta, la platea né il costo. Per questo la riga ora cita il testo della newsletter ed è attribuita al canale ufficiale del partito, come le altre righe tratte dalla stessa newsletter.",
+    "fonte": {
+      "url": "https://legaonline.it/la-settimana-leghista-38/"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0013",
+    "data": "2026-11-01",
+    "tipo": "correzione",
+    "dato": "Promessa C27-SVP-003, tolta dal catalogo",
+    "pagina": "/promesse",
+    "prima": "Promessa della SVP: completare l'adeguamento dell'ordinamento italiano sui crimini internazionali con l'adozione di un Codice dei crimini internazionali (mozione 1-00599, Camera, 23/10/2026, firmata fra gli altri da Manfred Schullian).",
+    "dopo": "Riga tolta dal catalogo. Il punto 4 della mozione resta registrato per AVS (C27-AVS-050), che ha la capogruppo fra i firmatari; per +Europa la stessa misura è registrata dall'intervento di Riccardo Magi in Aula del 21/10/2026 (C27-PE-026).",
+    "motivo": "Una mozione vale come promessa di un partito solo se la firma chi può parlare per quel partito. Manfred Schullian, eletto nella lista «Südtiroler Volkspartei (SVP) - PATT», presiede il gruppo Misto della Camera, che riunisce più formazioni. Nella SVP fa parte del Parteiausschuss, come tutti i parlamentari del partito, ma non ha un ruolo che parli per il partito: secondo il sito della SVP lo rappresenta all'esterno l'Obmann. La mozione non è firmata né dall'Obmann Dieter Steger né dalla rappresentante della componente Minoranze linguistiche Renate Gebhard. È la stessa regola applicata agli altri partiti che hanno firmato la mozione e alle altre componenti del gruppo Misto.",
+    "fonte": {
+      "url": "https://www.svp.eu/de/partei/organisation-943.html"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0014",
+    "data": "2026-11-01",
+    "tipo": "correzione",
+    "dato": "Esercizio provvisorio 1969, livello di verifica",
+    "pagina": "/leggi-di-bilancio",
+    "prima": "Livello di verifica: non verificato. Fonte generica: catalogo dell'Iter delle leggi 1948-1990.",
+    "dopo": "Livello di verifica: V1. Fonti: stampato Camera C.781 e scheda 7806 dell'Iter delle leggi 1948-1990 (S.370, presentato il 16/12/1968 dal ministro del Tesoro Colombo).",
+    "motivo": "La legge (L. 24 dicembre 1968 n. 1273) e il governo erano rimasti da verificare. Lo stampato della Camera C.781 indica che il disegno di legge è presentato dal ministro del Tesoro Colombo di concerto con il ministro del Bilancio e della programmazione economica Preti, che ricopre quella carica solo nel governo Rumor I: il governo indicato (Rumor I) era giusto ed è ora documentato. Al posto del collegamento al catalogo c'è quello alla scheda dell'atto.",
+    "fonte": {
+      "url": "http://www.camera.it/_dati/leg05/lavori/stampati/pdf/07810001.pdf"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0015",
+    "data": "2026-11-01",
+    "tipo": "correzione",
+    "dato": "Esercizio provvisorio 1978, estremi e governo",
+    "pagina": "/leggi-di-bilancio",
+    "prima": "L. n. 934 del 23/12/1977; proroga al 30/04/1978 (atto S.1136/C.2077). Governo: Andreotti III, dedotto dal calendario dei governi.",
+    "dopo": "L. n. 934 del 23/12/1977 (atto S.1028/C.1940); proroga al 30/04/1978 con L. n. 76 del 22/03/1978 (atto S.1136/C.2077). Governo: Andreotti III, documentato.",
+    "motivo": "Gli estremi non nominavano la legge di proroga e non indicavano l'atto della prima legge. Entrambi i disegni di legge sono presentati dal ministro del Tesoro Stammati, in carica solo nel governo Andreotti III: S.1028 il 2/12/1977, S.1136 l'8/3/1978. Il governo resta lo stesso ma ora è documentato dagli atti e non più dedotto dalle date. La proroga è stata approvata sotto il governo Andreotti IV; come negli altri casi conta il governo che presenta l'atto.",
+    "fonte": {
+      "url": "https://bdp.camera.it/init/iter/scheda/10155"
+    },
+    "segnalazione": null
+  },
+  {
+    "id": "COR-0016",
+    "data": "2026-11-01",
+    "tipo": "correzione",
+    "dato": "Legge finanziaria 1996, fonte dell'atto Camera",
+    "pagina": "/leggi-di-bilancio",
+    "prima": "Fonte: atto Camera ac12_3448.",
+    "dopo": "Fonte: atto Camera ac12_3447, «S. 2156: Disposizioni per la formazione del bilancio annuale e pluriennale dello Stato (legge finanziaria 1996)», e il relativo stampato C.3447.",
+    "motivo": "L'atto ac12_3448 è il bilancio di previsione 1996 (S.2019), non la legge finanziaria. Lo stampato C.3447 indica che il disegno di legge è presentato dal ministro del Tesoro Dini di concerto con il ministro del Bilancio Masera, in carica solo nel governo Dini: il governo indicato non cambia.",
+    "fonte": {
+      "url": "http://www.camera.it/_dati/leg12/lavori/stampati/pdf/53599.pdf"
+    },
     "segnalazione": null
   }
 ]

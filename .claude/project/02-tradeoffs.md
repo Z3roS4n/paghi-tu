@@ -535,3 +535,13 @@ Data 2026-10-31, mandato Giovanni. Workflow separato su commit main pertinenti, 
 Revisione del 2026-11-01: la validazione (npm ci, test, build) gira in un job senza `id-token`; il job di sincronizzazione installa con `--ignore-scripts` e ricostruisce solo l'export. Diff e limite delle rimozioni si controllano in sola lettura prima del lock, così un taglio oltre il limite non sospende l'assistente né fa perdere lo stamp. La prontezza di Search si prova solo sui documenti cambiati e rimossi. Il report di blocco scrive la causa e ogni DELETE inviato. Il trigger include `src/lib/domain/**` e `package-lock.json`. Limite noto: l'impronta `source_sha256` copre il record ma non il testo indicizzato (`indexedText`) né la proiezione dei metadati; la usano anche il runtime e il runner. Chi cambia `indexedText` deve ricaricare per intero l'indice (import del runner) prima di accendere l'agente: la sincronizzazione da sola risulta UNCHANGED.
 
 [Runbook aggiornamento](reports/2026-10-31-index-refresh.md).
+
+
+## Correzioni dei dati del golden set — 1° novembre 2026
+
+### D-045 — Una correzione del dato può cambiare i casi scelti per il golden set
+- **Stato:** decisa da Claude il 2026-11-01, nella correzione a tre livelli degli 8 casi `da_correggere`.
+- **Contesto:** il generatore sceglie le leggi di bilancio a passo regolare da tre gruppi (governo documentato, non documentato, non verificate). Portare il 1969 da NV a V1 e il 1978 da «inferito» a «documentato» sposta due record di gruppo e cambia la scelta: escono LB-1969, LB-1978, LB-1988, LB-1996, LB-1958-59-bilancio e LB-2005-legge-finanziaria, entrano sei casi nuovi. I quattro casi corretti escono dal set.
+- **Scelta:** si accetta la nuova scelta e si rivedono i casi che entrano, invece di fissare a mano i casi corretti. Il set resta una funzione dei dati pubblicati, come prima; fissare i casi corretti premierebbe proprio i record già controllati. Le voci di `revisione.json` dei casi usciti si tolgono.
+- **Conseguenze:** ogni correzione a un record di legge di bilancio va seguita da `evals:build`, dalla revisione dei casi entrati e da `evals:verify`. C27-SVP-003 esce dal catalogo: la SVP non ha più promesse pubblicate e il set scende a 141 casi. Il titolare ha deciso il 2026-11-08 di dirlo nella nota «Copertura e limiti» di `/promesse`, con una riga generata per ogni partito senza promesse pubblicate e senza canali illeggibili (che hanno già la loro riga): «nessuna promessa pubblicata. Nessuna delle dichiarazioni trovate sui canali ufficiali rispetta i criteri di questo censimento». Vale per tutti i partiti allo stesso modo; oggi riguarda solo la SVP.
+- **Data:** 2026-11-01
