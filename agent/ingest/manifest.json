@@ -1,12 +1,12 @@
 {
   "file": "out/documenti.jsonl",
-  "documenti": 2160,
-  "sha256": "f410fba7722247a017bef0c7f4d94a7ef48a9b3f15f044b262469e0722c9d064",
+  "documenti": 2161,
+  "sha256": "93e109e42da351fb75c2f5ba7fb157d8d4203db7f551ea3a43621221ddd85df8",
   "perDataset": {
     "correzioni": 47,
     "finanza-pubblica": 1105,
     "governi": 69,
-    "leggi-bilancio": 145,
+    "leggi-bilancio": 146,
     "legislature": 20,
     "misure": 18,
     "promesse": 435,
@@ -15,13 +15,7 @@
     "serie/popolazione-residente": 81,
     "serie/prezzi-consumo-foi": 80
   },
-  "esclusi": [
-    {
-      "dataset": "leggi-bilancio",
-      "record": "2027-legge-di-bilancio",
-      "motivo": "fonte con riuso «con_permesso» senza permesso scritto (criterio 1.1)"
-    }
-  ],
+  "esclusi": [],
   "nomiConCifre": [
     "Bonus 80 euro",
     "Quota 100",
