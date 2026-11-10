@@ -33,7 +33,7 @@
   https://www.paghitu.it/spesa
 
 ## Gancio
-Domanda a 64 px in alto (y 320): «Il 13 novembre scadono 8.500 milioni di BOT. Chi li paga?» (0-1,5 s). Poi al centro
+Domanda a 64 px in alto (y 320): «Il 13 novembre sono scaduti 8.500 milioni di BOT. Chi li ha pagati?» (0-1,5 s). Poi al centro
 (y 760) «8.500» a 260 px con la maschera, sotto «milioni di euro» 64 px (1,5-4 s). In basso il ritaglio del testimone
 della staffetta.
 
@@ -85,8 +85,8 @@ comunicato n. 120, 6/11/2026» (scene 1-3), «MEF, comunicato n. 119» (scena 4)
 
 ## Voce (Giulio)
 ```
-Il tredici novembre scadono ottomilacinquecento milioni di BOT. Chi li restituisce?
-Lo stesso giorno lo Stato ne emette di nuovi, per la stessa cifra. Il debito che scade non sparisce: si rinnova.
+Il tredici novembre sono scaduti ottomilacinquecento milioni di BOT. Chi li ha restituiti?
+Lo stesso giorno lo Stato ha emesso BOT nuovi: in asta ne offriva per la stessa cifra. Il debito che scade non sparisce: si rinnova.
 A volte succede anche il contrario. Il cinque novembre il Tesoro ha fatto un'asta per ricomprare titoli in anticipo, con la sua cassa.
 [pausa] Quanto si fa prestare lo Stato in un anno? La legge di bilancio mette un tetto. Per il duemilaventisette… quattrocentoventicinquemila milioni di euro.
 Dentro ci sono quasi trecento miliardi di titoli da rimborsare, e più di centotrenta miliardi di spese che le entrate non coprono.
@@ -110,7 +110,7 @@ si usano). Lo scontrino è l'oggetto del brand. Nessuna incisione: il Ministero 
 
 ## Didascalia (bozza)
 ```
-Il 13 novembre scadono BOT a 12 mesi per 8.500 milioni, e lo stesso giorno il MEF ne regola di nuovi per 8.500 milioni (comunicato del 6 novembre). Il 5 novembre il Tesoro ha tenuto un'asta per riacquistare con la sua cassa titoli che scadono nel 2027 e nel 2028, fino a 5.000 milioni; il 12 novembre si tengono le aste di BTP a 3 e 7 anni e di un BTP Green.
+Il 13 novembre sono scaduti BOT a 12 mesi per 8.500 milioni, e lo stesso giorno il MEF ne ha regolati di nuovi, offerti in asta per 8.500 milioni (comunicato del 6 novembre). Il 5 novembre il Tesoro ha tenuto un'asta per riacquistare con la sua cassa titoli che scadono nel 2027 e nel 2028, fino a 5.000 milioni; il 12 novembre si tengono le aste di BTP a 3 e 7 anni e di un BTP Green.
 
 Quanto può chiedere in prestito lo Stato in un anno? Il disegno di legge di bilancio 2027 (articolo 1, allegato I) fissa il tetto del ricorso al mercato a 425.000 milioni: le spese non coperte dalle entrate finali, compresi 290.541 milioni di titoli da rimborsare. Il saldo netto da finanziare è 132.381 milioni.
 

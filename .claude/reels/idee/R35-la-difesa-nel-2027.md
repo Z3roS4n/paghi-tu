@@ -3,7 +3,7 @@
 - **Uscita prevista:** giovedì 19 novembre 2026 (casella «libera» del calendario)
 - **Stato:** idea (10/11/2026, routine, binario 4)
 - **Pagine:** https://www.paghitu.it/spesa («Dove vanno i soldi», riga «Difesa»)
-- **Perché adesso:** la manovra 2027 è in commissione Bilancio alla Camera, con le audizioni dal 9 novembre. Il
+- **Perché adesso:** la manovra 2027 è in commissione Bilancio alla Camera (assegnata in sede referente il 4 novembre). Il
   dossier del Servizio Studi del 9 novembre dice quanto cambia, con il disegno di legge, la spesa di ogni ministero:
   quella della Difesa cresce più di tutte. La difesa è uno dei temi della manovra di cui si parla di più; il video dà
   la cifra, da dove arriva e la regola europea che la permette.
@@ -17,8 +17,8 @@
 - **Fatto:** il 9 novembre 2026 il Servizio Studi della Camera ha pubblicato il dossier di sintesi sul disegno di
   legge di bilancio 2027 (A.C. 3174-bis). Nella tabella «L'effetto della manovra sui Ministeri» la spesa finale 2027
   del Ministero della difesa passa da 34.298 milioni a legislazione vigente a 38.823 milioni: +4.525 milioni
-  (+13,2%), l'aumento più grande fra i ministeri. Il disegno di legge è in commissione Bilancio, con le audizioni dal 9
-  al 12 novembre.
+  (+13,2%), l'aumento più grande fra i ministeri. Il disegno di legge è in commissione Bilancio in sede referente dal
+  4 novembre (scheda dell'A.C. 3174-bis su camera.it).
 - **Fonte primaria:** Camera dei deputati, Servizio Studi, dossier di sintesi «Il disegno di legge di bilancio 2027
   (A.C. 3174-bis)», 9/11/2026, pp. 10-13; dossier «Le principali misure per politiche pubbliche», 9/11/2026, «Difesa
   e affari esteri» e «La seconda sezione»; scheda dell'A.C. 3174 su camera.it.
@@ -105,7 +105,9 @@ maiuscolo è su «eccezione». Nessun nome di governo, ministro o partito, nessu
 Nessun soggetto già usato in altre schede (controllato il 10/11 su `idee/` e `prompt/`: il lampeggiante di R18 è
 delle forze di polizia, qui non c'è). Niente armi, mezzi o soldati: oggetti fermi e neutri. Nessun ritratto (tutti gli
 atti sono del governo in carica, D-032), nessuna bandiera o simbolo di partito. La copertina del dossier si può
-riprodurre «a condizione che sia citata la fonte» (nota del Servizio Studi in fondo al dossier).
+riprodurre «a condizione che sia citata la fonte»: la frase è nella nota dei dossier «Le principali misure» e vol. I
+del Servizio Studi; il dossier di sintesi ha solo la nota sulla riproduzione «per fini non consentiti dalla legge»,
+quindi a schermo il credito «Camera dei deputati, Servizio Studi» resta obbligatorio.
 
 ## Didascalia (bozza)
 ```

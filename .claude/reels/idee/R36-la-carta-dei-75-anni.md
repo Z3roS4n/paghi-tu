@@ -32,7 +32,7 @@
 
 ## Gancio
 Domanda a 64 px in alto (y 320): «A chi va la carta da 300 euro?» (0-1,2 s). Poi al centro (y 760) «5.456.407» a 220
-px con la maschera e il conteggio, sotto «pensionati» a 80 px (1,2-4 s). In basso il ritaglio della tessera bianca.
+px con la maschera e il conteggio, sotto «pensionati con i requisiti» a 64 px (1,2-4 s). In basso il ritaglio della tessera bianca.
 
 ## Numeri e fatti (riaperti sugli atti della Camera e sul sito il 10/11/2026)
 | Valore | Cosa | Pagina o fonte | Dove |
@@ -65,10 +65,10 @@ tema; le misure della manovra sulla sanità pubblica, che sono in R24 (27/11).
 ## Scene (61 s, 10 scene)
 | # | Tempi | Soggetto | Grafico o ritaglio | Cifra protagonista |
 |---|---|---|---|---|
-| 1 | 0-4 s | Il gancio | fondo carta; ritaglio della tessera bianca a 760 px, inclinata di 4°, in basso (y 1120-1560); domanda 64 px in alto; cifra al centro (y 760), sotto «pensionati» 80 px | «5.456.407» 220 px, l'unico conteggio del video |
-| 2 | 4-10 s | La carta | la tessera resta ferma; sopra, titolo «Carta per beni e prestazioni sanitarie» 56 px; la cifra al centro | «300 €» 300 px |
+| 1 | 0-4 s | Il gancio | fondo carta; ritaglio della tessera bianca a 760 px, inclinata di 4°, in basso (y 1120-1560); domanda 64 px in alto; cifra al centro (y 760), sotto «pensionati con i requisiti» 64 px | «5.456.407» 220 px, l'unico conteggio del video |
+| 2 | 4-10 s | La carta | la tessera resta ferma; sopra, titolo «Carta prestazioni sanitarie» 64 px; la cifra al centro | «300 €» 300 px |
 | 3 | 10-17 s | Chi la riceve | titolo «Chi la riceve» 80 px; due schede di carta impilate, 920 × 300 px, entrano con un taglio quando Giulio le dice: «75 anni compiuti entro il 31/12/2026» e «pensioni fino a 28.000 € l'anno (2025)», testo 56 px, cifre 96 px | «75» e «28.000 €» 96 px nelle schede |
-| 4 | 17-25 s | Per età | titolo «Pensionati sotto i 28.000 €, per età» 56 px; tre barre orizzontali 920 × 760 px, spesse 160 px, asse da zero: «75 anni 386.139» e «76-79 anni 1.579.117» in ardesia, «80 anni e oltre 3.491.151» nell'accento; cifre 64 px sulle barre; ritaglio degli occhiali da lettura a 380 px sopra la barra più lunga, passo del retino 5 | «3.491.151» 160 px |
+| 4 | 17-25 s | Per età | titolo «Pensionati per età, 2025» 64 px; tre barre orizzontali 920 × 760 px, spesse 160 px, asse da zero: «75 anni 386.139» e «76-79 anni 1.579.117» in ardesia, «80 anni e oltre 3.491.151» nell'accento; cifre 64 px sulle barre; ritaglio degli occhiali da lettura a 380 px sopra la barra più lunga, passo del retino 5 | «3.491.151» 160 px |
 | 5 | 25-32 s | Il fondo | taglio; titolo «Il fondo per il 2027» 80 px; barra in pila 920 × 300 px: «carte 1.637» nell'accento e «attribuzione 8» nel grigio di confronto (sottile, in proporzione vera), etichette sulla barra; sotto il cartellino «limite di spesa» 56 px | «1.645 mln €» 220 px |
 | 6 | 32-38 s | Niente tasse, niente ISEE | fondo carta; titolo «Non è reddito» 96 px; sotto due righe 56 px: «non è tassata», «non conta nell'ISEE»; la tessera della scena 1 torna, stesso punto e stessa misura | nessuna cifra nuova |
 | 7 | 38-44 s | Quando | titolo «Come si usa» 80 px; cartellino grande 920 × 360 px: «lo dirà un decreto» 64 px e «entro 30 giorni dalla legge» 56 px; ritaglio del portapillole settimanale a 520 px in basso a destra | «30 giorni» 200 px |
@@ -82,13 +82,13 @@ Transizioni: tagli e dissolvenze brevi, nessun morph. Un solo conteggio, la cifr
 
 ## Voce (Giulio)
 ```
-A chi va la carta da trecento euro della manovra? … A cinquemilioniquattrocentocinquantaseimilaquattrocentosette pensionati.
+A chi va la carta da trecento euro della manovra? Secondo la relazione tecnica, i pensionati con i requisiti sono… cinquemilioniquattrocentocinquantaseimilaquattrocentosette.
 È nel disegno di legge di bilancio, ora alla Camera. Serve per comprare beni e prestazioni sanitarie.
 La ricevi se entro la fine del duemilaventisei hai compiuto settantacinque anni, e se nel duemilaventicinque le tue pensioni non hanno superato ventottomila euro.
-Il gruppo più numeroso ha più di ottant'anni.
+Il gruppo più numeroso ha ottant'anni o più.
 [pausa] Il fondo vale più di un miliardo e seicento milioni, e non si può superare. La carta non fa reddito e non conta nell'ISEE. Come si usa lo dirà un decreto.
 Lo stesso articolo allarga la prestazione per gli anziani non autosufficienti, che finora ha avuto circa SETTEMILA domande.
-Riassumendo: trecento euro, una volta, per chi ha più di settantacinque anni e una pensione bassa. Le cifre su paghitu punto it.
+Riassumendo: trecento euro, nel duemilaventisette, per chi ha almeno settantacinque anni e una pensione bassa. Le cifre su paghitu punto it.
 ```
 Circa 125 parole, sei cifre (300, 5.456.407, 75, 28.000, 1,6 miliardi, 7.000). La cifra che regge è 5.456.407,
 intera; 1.645 milioni e circa 7.000 arrotondati, un «più di» e un «circa» separati da una cifra. «Il gruppo più
@@ -125,8 +125,9 @@ Per confronto, la spesa pubblica per vecchiaia e superstiti nel 2024 è 6.099 �
   approvata, «ora alla Camera» diventa la data giusta.
 - **5.456.407 non sono i beneficiari certi:** sono i pensionati con 75 anni o più e reddito pensionistico fino a
   28.000 euro nel Casellario 2025, la base con cui la relazione tecnica ha fissato il limite di spesa. A schermo
-  «pensionati» con la fonte; in voce «a cinque milioni… di pensionati» va bene, mai «riceveranno la carta in
-  5.456.407». La tabella esclude «rendite Inail e indennità di accompagnamento» dal reddito: non serve dirlo, ma non
+  «pensionati con i requisiti» con la fonte; in voce «secondo la relazione tecnica, i pensionati con i requisiti
+  sono…» (corretto dal verificatore il 10/11: la prima versione rispondeva «a chi va» con «a 5.456.407 pensionati»),
+  mai «riceveranno la carta in 5.456.407». La tabella esclude «rendite Inail e indennità di accompagnamento» dal reddito: non serve dirlo, ma non
   scrivere il contrario.
 - **Niente rapporti:** nessuna quota calcolata («due su tre», «il 64%»): si dice solo che la fascia di 80 anni e oltre
   è la più numerosa, come si vede dalla tabella.

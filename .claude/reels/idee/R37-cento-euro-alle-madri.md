@@ -68,7 +68,7 @@ detrazione del 19% sui versamenti dei parenti al fondo «Valore nuovi nati», le
 | # | Tempi | Soggetto | Grafico o ritaglio | Cifra protagonista |
 |---|---|---|---|---|
 | 1 | 0-4 s | Il gancio | fondo carta; ritaglio del biberon a 600 px, in basso a destra (y 1080-1560); domanda 64 px in alto; cifra al centro (y 760), sotto «lavoratrici» 80 px | «circa 993.000» 220 px, l'unico conteggio del video |
-| 2 | 4-10 s | La misura | taglio; titolo «Madri che lavorano, due o più figli» 56 px; cifra al centro; sotto «non tassati · reddito fino a 40.000 €» 56 px | «100 € al mese» 220 px |
+| 2 | 4-10 s | La misura | taglio; titolo «Madri, due o più figli» 64 px; cifra al centro; sotto «non tassati · reddito fino a 40.000 €» 56 px | «100 € al mese» 220 px |
 | 3 | 10-19 s | Fino a quando | scena principale: il righello dell'età del figlio, 0-18 anni, a tutta larghezza (920 × 180 px, tacche ogni anno, numeri 48 px ogni due anni), su un'asta di legno ritagliata; sopra il righello due strisce spesse 120 px: «due figli: fino a 10 anni del secondo» (accento, da 0 a 10) e «tre o più: fino a 18 anni del più piccolo» (ardesia, da 0 a 18); entrano una per volta quando Giulio le dice | «10» e «18» 120 px alla fine delle strisce |
 | 4 | 19-25 s | Quanto costa | il righello resta fermo in basso, stessa posizione; sopra, titolo «Ogni anno, dal 2027» 64 px | «1.069,7 mln €» 200 px |
 | 5 | 25-33 s | Il congedo | il righello resta; sopra compare una terza striscia da 0 a 6 anni, «congedo all'80%, entro i 6 anni» (accento); sotto il titolo «Mesi pagati all'80%» 56 px tre colonne su asse da zero, larghe 240 px, alte fino a 520 px: «1° figlio 4», «2° figlio 5», «3° e oltre 6», cifre 64 px | «4 · 5 · 6 mesi» 120 px nelle colonne |

@@ -74,7 +74,7 @@ Superbonus (sono sulla scheda del sito, ma qui il video racconta una norma del d
 |---|---|---|---|---|
 | 1 | 0-4 s | Il gancio | fondo carta; ritaglio del ponteggio a 860 px di larghezza, in basso (y 1080-1560); domanda 64 px in alto (y 320); cifra al centro (y 760), sotto «milioni di euro · 2027» 64 px | «18.483» 260 px, l'unico conteggio del video |
 | 2 | 4-10 s | La notizia | fondo carta; titolo «Manovra 2027» 96 px in alto; sotto, scheda di carta 920 × 420 px con «A.C. 3174-bis · Camera» 64 px e «presentata il 30 ottobre» 56 px; il ponteggio resta fermo dov'era | «30 ottobre» 180 px nella scheda |
-| 3 | 10-17 s | Cosa sono | titolo «Crediti del Superbonus, lavori del 2023» 64 px; un blocco unico a tutta larghezza, 920 × 360 px, nell'accento, con scritto dentro «da usare nel 2027» 56 px; la fonte «relazione tecnica, A.C. 3174, p. 269» | «20.537 mln €» 200 px sopra il blocco |
+| 3 | 10-17 s | Cosa sono | titolo «Crediti Superbonus, lavori 2023» 64 px; un blocco unico a tutta larghezza, 920 × 360 px, nell'accento, con scritto dentro «da usare nel 2027» 56 px; la fonte «relazione tecnica, A.C. 3174, p. 269» | «20.537 mln €» 200 px sopra il blocco |
 | 4 | 17-24 s | Dieci rate | morph: il blocco della scena 3 si divide in dieci tessere uguali, 5 × 2, ognuna 170 × 300 px, con l'anno a 48 px (2027 … 2036); titolo «Dieci rate uguali» 80 px, entra prima delle tessere | «10» 240 px sopra la griglia |
 | 5 | 24-31 s | Il 2027 | taglio; le tessere restano ferme, stessa posizione: la tessera 2027 nell'accento, le altre nove in ardesia; sopra «Bilancio dello Stato, 2027» 64 px | «−18.483 mln €» 220 px, stessa altezza della cifra della scena 1 |
 | 6 | 31-37 s | Gli anni dopo | taglio; le nove tessere 2028-2036 passano nell'accento, la 2027 nel grigio di confronto; titolo «Dal 2028 al 2036» 80 px; ritaglio del metro pieghevole a 10 stecche, 700 px, in basso a destra sotto la griglia | «+2.053,7 mln € l'anno» 160 px |
@@ -91,7 +91,7 @@ dossier A.C. 3174-bis, 9/11/2026» (scene 1-2, 5-6, 8), «relazione tecnica, A.C
 ## Voce (Giulio)
 ```
 Nel dossier della Camera sulla manovra duemilaventisette, qual è la cifra più grande? … Diciottomilaquattrocentottantatré milioni di euro. E non è una spesa nuova.
-È il Superbonus. Chi ha i crediti dei lavori del duemilaventitré, ceduti o scontati in fattura, nel duemilaventisette potrebbe usarne più di venti miliardi per pagare le tasse.
+È il Superbonus. Chi ha i crediti dei lavori del duemilaventitré, ceduti o scontati in fattura, nel duemilaventisette potrebbe usarne in tutto più di venti miliardi per pagare le tasse.
 Il disegno di legge li divide in DIECI rate uguali.
 Così nel bilancio dello Stato del duemilaventisette quella cifra diventa spesa in meno. [pausa] Ma torna dopo: circa due miliardi l'anno, fino al duemilatrentasei.
 E per le regole europee non cambia niente: quella spesa è già stata contata nel duemilaventitré.
