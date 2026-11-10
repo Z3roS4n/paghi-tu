@@ -6,7 +6,8 @@
 - **Montaggio di prova (10/11/2026):** progetto Animatio paghi-tu/23-laureati, 66 s, non programmato. Voce di
   Giulio più parlata (eleven_v3, stabilità «creativa», testo con «allora», «quindi, ricapitolando»), poi sporcata
   in post (passa-alto e passa-basso, un po' di stanza, rumore di fondo leggero). La chiusura dice «le fonti le trovi
-  in didascalia». Si programma dopo l'ok del titolare sulla voce.
+  in didascalia». Voce approvata dal titolare l'11/11. Musica rialzata a 0,3 e allungata fino alla fine del video;
+  programmato su Instagram per il 13/11/2026 alle 13:00.
 - **Pagine:** https://www.paghitu.it/spesa (sezione «L'Italia e gli altri paesi», selettore «Media UE», riga
   «Istruzione») · https://www.paghitu.it/ («Dove vanno 100 € di spesa pubblica», passo «Istruzione»: «Dalla scuola
   dell'infanzia all'università») · https://www.paghitu.it/atti#dl-2026-162 (misura «Incremento per il 2026 del fondo
