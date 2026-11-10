@@ -1,7 +1,8 @@
 # R33 — Quanto rendono le tasse allo Stato
 
 - **Uscita prevista:** martedì 17 novembre 2026 (casella «libera» del calendario)
-- **Stato:** idea (7/11/2026, routine, binario 4)
+- **Stato:** idea (7/11/2026, routine, binario 4; alleggerita il 10/11 su indicazione del titolare: tolta la parte su
+  regioni e comuni, restano accise e decreti)
 - **Pagine:** https://www.paghitu.it/atti#dl-2026-133 · https://www.paghitu.it/atti#dl-2026-157 ·
   https://www.paghitu.it/atti#dl-2026-162 (le misure «Accisa sul gasolio carburante … rideterminata», etichette
   «Entrate in meno» e «Stima») · https://www.paghitu.it/spesa (riquadro «Entrate 2025»)
@@ -15,7 +16,7 @@
   (+4,1%) come paragone; R31 (11/11) parla di un'imposta delle regioni, il bollo. Qui la domanda è quali tasse pagano lo
   Stato, con dati nuovi del MEF mai comparsi: il gettito di gennaio-settembre (438.081 milioni, cifra protagonista),
   la quota dell'IRPEF (40,2%) e dell'IVA (30,3%), le ritenute su stipendi e pensioni, il calo dell'accisa sui
-  prodotti energetici (-8,0%) e le imposte di regioni e comuni (47.721 milioni). Le misure sulle accise del registro
+  prodotti energetici (-8,0%). Le misure sulle accise del registro
   /atti non sono state al centro di nessun video (R18 parlava dei crediti d'imposta per il gasolio del DL 193, R31
   del bollo del DL 162). I 18.450 € tornano una volta, a schermo, solo come paragone. Forma nuova: la scena principale
   è una ciambella delle parti di un totale; niente scontrino, niente griglia dei 100 €, niente linea del tempo.
@@ -53,12 +54,11 @@
 | «Accisa sul gasolio carburante (e su HVO e biodiesel) rideterminata a 532,90 euro per mille litri dall'11 al 17 settembre 2026» · 2026: 86 mln € · «Entrate in meno» · «Stima» | la misura del DL 157 | /atti | scheda `#dl-2026-157` («Accisa sul gasolio, autotrasporto e procedimenti energetici strategici»), prima misura |
 | «Accisa sul gasolio carburante rideterminata a 572,90 euro per mille litri dal 18 al 25 settembre e a 622,90 euro dal 26 settembre al 5 ottobre 2026 (HVO e biodiesel nel primo periodo)» · 2026: 111,8 mln € · «Entrate in meno» · «Stima» | la misura del DL 162 | /atti | scheda `#dl-2026-162` («Carburanti, bollo auto 2027, borse di studio e Fondazione Milano-Cortina»), prima misura |
 | «Gazzetta Ufficiale letta dal 13 maggio 2026 al 6 novembre 2026» (dopo il deploy del 7/11; prima «dal 23 maggio 2026 al 1 novembre 2026») | fin dove arriva il registro | /atti | intestazione della pagina |
-| «Le entrate derivanti dagli enti territoriali del periodo gennaio-settembre 2026, pari a 47.721 milioni di euro, in aumento di 1.556 milioni di euro (+3,4%)» | regioni e comuni | MEF, bollettino n. 295 | p. 10, Sezione II |
-| IRAP 20.862 · addizionale regionale all'IRPEF 12.325 · IMU-IMIS (quota comuni)-IMI 9.766 · addizionale comunale all'IRPEF 4.762 | le quattro voci più grandi, milioni di euro | MEF, bollettino n. 295 | p. 10, Sezione II |
 | «Entrate 2025 · 18.450 € · a testa: imposte, contributi e altre entrate» | tutte le entrate pubbliche, solo come paragone | /spesa | riquadro in alto «Entrate 2025» (anche in / come «fra tasse e contributi») |
 
 Restano fuori dal video: il mese di settembre da solo (39.294 milioni), l'IRES, le ritenute sugli interessi, il bollo
-e i giochi, la parte del bollettino sugli incassi di cassa (Sezione IV), le spiegazioni della nota tecnica sulla
+e i giochi, le entrate di regioni e comuni (Sezione II del bollettino, p. 10: 47.721 milioni, con IRAP, addizionali
+IRPEF e IMU; tolte il 10/11 per alleggerire il video), la parte del bollettino sugli incassi di cassa (Sezione IV), le spiegazioni della nota tecnica sulla
 manovra 2026 e sull'IRPEF (aliquote, regimi sostitutivi), che porterebbero il video sulla legge di bilancio.
 
 ## Le tre informazioni utili
@@ -69,11 +69,11 @@ manovra 2026 e sull'IRPEF (aliquote, regimi sostitutivi), che porterebbero il vi
    dipendenti e pensionati valgono 150.440 milioni. L'accisa sui prodotti energetici rende l'8,0% in meno: il MEF
    scrive che pesano anche le riduzioni temporanee delle accise del 2026, e i decreti che le hanno decise sono su
    paghitu.it/atti con la stima di quanto valgono (83,8, 86 e 111,8 milioni).
-3. **Cosa non c'è dentro:** le imposte di regioni e comuni (IRAP, addizionali, IMU) sono contate a parte, 47.721
-   milioni in nove mesi; e tutte le entrate pubbliche, contributi compresi, nel 2025 erano 18.450 € a testa
-   (paghitu.it/spesa, Eurostat). Sono misure diverse e non si sommano.
+3. **In prospettiva:** tutte le entrate pubbliche, contributi compresi e di tutte le amministrazioni, nel 2025 erano
+   18.450 € a testa (paghitu.it/spesa, Eurostat). È un'altra misura, di un altro periodo: non si somma e non si
+   confronta con i 438.081 milioni.
 
-## Scene (62 s, 10 scene)
+## Scene (57 s, 9 scene)
 | # | Tempi | Soggetto | Grafico o ritaglio | Cifra protagonista |
 |---|---|---|---|---|
 | 1 | 0-5 s | Il gancio | fondo carta; ritaglio del portafoglio aperto a 760 px di larghezza, in basso al centro (y 1050-1550); domanda 64 px in alto (y 300); cifra al centro (y 700), sotto «milioni di euro» 80 px e «gennaio-settembre 2026» 48 px | «438.081» 240 px, l'unico conteggio del video |
@@ -84,14 +84,13 @@ manovra 2026 e sull'IRPEF (aliquote, regimi sostitutivi), che porterebbero il vi
 | 6 | 33-40 s | L'accisa | titolo «Accisa sui prodotti energetici» 64 px; due colonne su asse da zero, 920 × 760 px, larghe 300 px: «2025 · 18.472» in ardesia, «2026 · 16.992» nell'accento, cifre 64 px; ritaglio della tanica metallica a 420 px, in basso a destra, accanto alle colonne senza coprirle | «−8,0%» 220 px |
 | 7 | 40-46 s | Il perché, secondo il MEF | fondo carta; la frase della nota tecnica in Figtree 76 px, centrata su 920 px, tra virgolette: «anche gli effetti delle misure temporanee di riduzione delle accise adottate nel corso del 2026»; sotto «MEF, nota tecnica al bollettino n. 295» 40 px | nessuna nuova cifra: la frase è il soggetto |
 | 8 | 46-52 s | Nel registro | titolo «Nel registro dei decreti» 64 px; tre schede di carta impilate, 920 × 260 px, ognuna con il periodo (56 px) e la stima (64 px): «DL 133 · 30 luglio-6 agosto · 83,8 mln €», «DL 157 · 11-17 settembre · 86 mln €», «DL 162 · 18 settembre-5 ottobre · 111,8 mln €»; sotto, etichetta «Entrate in meno · Stima» 48 px come sul sito; le schede entrano con un taglio mentre Giulio dice «i decreti» | «Stima» 96 px, l'etichetta del sito ingrandita |
-| 9 | 52-57 s | Regioni e comuni, a parte | titolo «Regioni e comuni» 80 px; quattro barre orizzontali 920 × 760 px, spesse 130 px, asse da zero: IRAP 20.862 (accento), addizionale regionale IRPEF 12.325, IMU 9.766, addizionale comunale IRPEF 4.762 (ardesia); cifre 64 px sulle barre | «47.721 mln €» 180 px sopra le barre |
-| 10 | 57-62 s | Chiusura | fondo carta; torna il portafoglio della scena 1, stesso punto e stessa misura; in alto una sola riga di paragone: «Tutte le entrate pubbliche 2025: 18.450 € a testa» 56 px e «medie per residente» 40 px; il timbro «TU» si stampa | «paghitu.it» 64 px, «Hai visto un errore? Segnalalo» 40 px |
+| 9 | 52-57 s | Chiusura | fondo carta; torna il portafoglio della scena 1, stesso punto e stessa misura; in alto una sola riga di paragone: «Tutte le entrate pubbliche 2025: 18.450 € a testa» 56 px e «medie per residente» 40 px; il timbro «TU» si stampa | «paghitu.it» 64 px, «Hai visto un errore? Segnalalo» 40 px |
 
 Transizioni: tagli e dissolvenze brevi, nessun morph (la ciambella che si riduce nella scena 4 è uno spostamento
 visibile dello stesso oggetto, non un cambio di forma). Un solo conteggio, la cifra della scena 1. Fonte sempre a
-y 1500, 34 px in `testoTenue`: «MEF, Bollettino delle entrate tributarie n. 295, 5/11/2026» (scene 1-6 e 9), «MEF,
+y 1500, 34 px in `testoTenue`: «MEF, Bollettino delle entrate tributarie n. 295, 5/11/2026» (scene 1-6), «MEF,
 nota tecnica n. 295» (scena 7), «paghitu.it/atti · Gazzetta Ufficiale» (scena 8), «paghitu.it/spesa · Eurostat»
-(scena 10). Le cifre principali delle scene 4, 5 e 9 stanno alla stessa altezza (y 420).
+(scena 9). Le cifre principali delle scene 4 e 5 stanno alla stessa altezza (y 420).
 
 ## Voce (Giulio)
 ```
@@ -101,19 +100,19 @@ Da dove arrivano? QUARANTA euro su cento vengono dall'IRPEF, l'imposta sul reddi
 E le trattenute su stipendi e pensioni valgono centocinquanta miliardi.
 [pausa] Altri trenta su cento vengono dall'IVA, quella che paghi quando compri.
 L'accisa sui prodotti energetici ha reso l'otto per cento in meno. Per il ministero contano i consumi e le riduzioni temporanee delle accise decise quest'anno. Le stime dei decreti sono nel registro di paghitu.
-Le tasse di regioni e comuni, come IRAP e IMU, sono contate a parte: quasi quarantotto miliardi.
 Le due tasse che rendono di più sono l'IRPEF e l'IVA. Le cifre su paghitu punto it.
 ```
-Circa 130 parole (tagliata dopo la verifica del 7/11 per stare nei 55-65 s), sette cifre (438.081, 11, 40, 150, 30, 8, 48), il massimo del formato. La cifra che regge è
-438.081 milioni, intera; 11.130 milioni, 40,2%, 150.440 milioni, 30,3%, 8,0% e 47.721 milioni a voce arrotondati e
-senza decimali, un solo «quasi». Il maiuscolo è sul quaranta. «Rendono» e non «incassato»: il bollettino conta le
+Circa 115 parole (tagliata dopo la verifica del 7/11 e di nuovo il 10/11, senza regioni e comuni, per stare nei
+55-62 s), sei cifre (438.081, 11, 40, 150, 30, 8). La cifra che regge è 438.081 milioni, intera; 11.130 milioni,
+40,2%, 150.440 milioni, 30,3% e 8,0% a voce arrotondati e senza decimali, nessun «quasi». Il maiuscolo è sul
+quaranta. «Rendono» e non «incassato»: il bollettino conta le
 entrate accertate (competenza giuridica), non la cassa. Il perché del calo dell'accisa è quello scritto dal MEF,
 detto con le sue due parti (consumi e riduzioni temporanee). Nessun nome di governo, ministro o partito.
 
 ## Ritagli
 | Ritaglio | Scena | Immagine proposta | Fonte e licenza |
 |---|---|---|---|
-| Portafoglio aperto | 1, 10 | portafoglio di pelle marrone aperto, vuoto, visto dall'alto di tre quarti, su fondo neutro | da generare con l'AI, senza marchi, documenti o carte riconoscibili |
+| Portafoglio aperto | 1, 9 | portafoglio di pelle marrone aperto, vuoto, visto dall'alto di tre quarti, su fondo neutro | da generare con l'AI, senza marchi, documenti o carte riconoscibili |
 | Sacchetto della spesa | 5 | sacchetto di carta marrone con pane, frutta e verdura che spuntano, su fondo neutro | da generare con l'AI, senza loghi, etichette o prodotti di marca |
 | Tanica di carburante | 6 | tanica metallica rossa da 20 litri, vista di lato, su fondo neutro | da generare con l'AI, senza scritte né marchi |
 
@@ -129,7 +128,7 @@ Da gennaio a settembre 2026 le tasse dello Stato hanno reso 438.081 milioni di e
 
 Da dove arrivano: IRPEF 40,2%, IVA 30,3%. Le ritenute IRPEF su dipendenti e pensionati valgono 150.440 milioni. L'accisa sui prodotti energetici rende l'8,0% in meno: secondo il MEF riflette i consumi e anche le riduzioni temporanee delle accise del 2026. Le riduzioni sul gasolio decise per decreto, con le stime della norma, sono nel registro paghitu.it/atti.
 
-Le imposte di regioni e comuni (IRAP, addizionali IRPEF, IMU) sono contate a parte: 47.721 milioni in nove mesi. Tutte le entrate pubbliche, contributi compresi, nel 2025 erano 18.450 € per residente (paghitu.it/spesa). Link in bio.
+Per confronto, tutte le entrate pubbliche, contributi compresi, nel 2025 erano 18.450 € per residente (paghitu.it/spesa). Link in bio.
 
 #tasse #irpef #iva #contipubblici #paghitu
 ```

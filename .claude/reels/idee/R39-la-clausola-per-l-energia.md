@@ -1,7 +1,8 @@
 # R39 — Dove vanno i soldi in più per l'energia
 
 - **Uscita prevista:** giovedì 26 novembre 2026
-- **Stato:** idea (10/11/2026, routine, binario 4)
+- **Stato:** idea (10/11/2026, routine, binario 4; verificata il 10/11 su richiesta del titolare: i 2.790 milioni
+  dell'art. 77 sono fra gli interventi della clausola per l'energia, vedi «Verifica dell'art. 77»; tolto «a sorpresa»)
 - **Pagine:** https://www.paghitu.it/spesa («Dove vanno i soldi», riga «Affari economici»)
 - **Perché adesso:** il 9 novembre il Consiglio dei ministri ha approvato un decreto-legge «per la riduzione del costo
   dell'energia elettrica e del gas»; lo stesso giorno il Servizio Studi della Camera ha pubblicato i dossier sulla
@@ -13,7 +14,7 @@
   difesa: qui la clausola è solo il punto di partenza, in una frase, e la parte energia non è mai stata raccontata. La
   cifra protagonista (3,8 miliardi nel 2027) e le altre (2.790, 1.000, 8,9%, 734,2 milioni) sono nuove; «Affari
   economici» (1.906 € per residente) torna una volta, come paragone. Forma nuova: una barra divisa in pezzi che si
-  stacca in due (un morph); R38 del giorno prima usa scontrini e colonna.
+  stacca in due (un morph).
 
 ## La notizia
 - **Fatto:** il 9 novembre 2026 il Consiglio dei ministri n. 197 ha approvato il decreto-legge «Disposizioni urgenti per
@@ -53,6 +54,30 @@ lampadina.
 | «Affari economici 1.906 € 10,1%» | la funzione di spesa in cui, nella classificazione europea, stanno energia e trasporti; 2024, solo come paragone | /spesa | «Dove vanno i soldi», riga «Affari economici» |
 | il rimborso «è coperto mediante componenti applicate ai prelievi di energia elettrica, secondo le modalità definite dall'Autorità di regolazione per energia, reti e ambiente (ARERA)» | il decreto del 9 novembre | Governo, comunicato CdM n. 197 | sezione «Riduzione del costo dell'energia» |
 
+## Verifica dell'art. 77 (10/11/2026)
+Domanda del titolare: i 2.790 milioni dell'art. 77 (contratto di programma RFI) sono dentro i 3,8 miliardi della
+clausola per l'energia? Sì, gli atti lo dicono in modo esplicito:
+- dossier di sintesi, p. 13, «L'impiego delle risorse della clausola di salvaguardia nazionale»: «Le risorse
+  aggiuntive per l'energia sono impiegate, per 3,8 miliardi nel 2027 e per 6,8 miliardi nel 2028, per finanziare nuovi
+  interventi disposti agli artt. 77–83 del DDL di bilancio»;
+- dossier «Le principali misure per politiche pubbliche», p. 6, «Energia»: «l'articolo 76 autorizza una serie di
+  interventi di conto capitale - disciplinati dagli articoli da 77 a 83 - finalizzati all'incremento della sicurezza
+  energetica, a valere sulle risorse derivanti dall'aumento dell'indebitamento netto dell'Italia consentito
+  dall'attivazione della clausola di salvaguardia nazionale per le spese per incrementare la sicurezza energetica»;
+- relazione tecnica, A.C. 3174, Tomo I, art. 77, p. 320: il comma 4 consente alla Ragioneria di chiedere a RFI gli
+  adempimenti «necessari alla verifica del raggiungimento degli obiettivi previsti ai sensi della clausola di
+  salvaguardia nazionale di cui all'articolo 76»; la relazione illustrativa, p. 157, dice che il comma 5 vale «per le
+  finalità connesse al raggiungimento degli obiettivi previsti ai sensi della clausola di salvaguardia nazionale di cui
+  all'articolo 76»;
+- art. 77 e art. 76 stanno nel Titolo VI, Capo I, «Misure in materia di energia e infrastrutture» (relazione
+  illustrativa, p. 156).
+
+Due cautele. L'elenco degli interventi energetici nella relazione illustrativa dell'art. 76 (p. 156) e l'elenco
+«Energia» del dossier «Le principali misure» (p. 6) non nominano le ferrovie: nominano idroelettrico, fotovoltaico,
+energia termica, biometano e sostegno alle imprese. E la tabella di p. 10 del dossier di sintesi mette l'art. 77
+fra le misure della Sezione I senza dire con quali risorse è coperto. Per questo in voce si dice che è il dossier a
+contarla fra gli interventi di questa regola, senza commenti.
+
 Restano fuori dal video: le stime del comunicato del governo sui risparmi in bolletta (280 euro, 210.000 euro,
 520.000 euro: non sono di una fonte fra quelle ammesse e il decreto non è in Gazzetta); fotovoltaico, Conto termico,
 idroelettrico e biometano (artt. 78-81, quasi tutti dal 2028); il saldo di 6,8 miliardi del 2028; il Terzo valico e
@@ -62,8 +87,8 @@ le altre opere elencate dall'art. 77, che porterebbero il video sui singoli cant
 1. **Quanto e dove:** la clausola europea per l'energia permette più deficit nel 2027 e nel 2028. Secondo il dossier
    della Camera, nel 2027 3,8 miliardi vanno agli interventi nuovi degli articoli 77-83 e 3,4 miliardi a interventi già
    previsti, fra cui misure del PNRR.
-2. **La sorpresa:** nel 2027 la voce più grande è la rete ferroviaria, 2.790 milioni al contratto di programma di RFI
-   (manutenzione straordinaria e investimenti). Per le bollette delle piccole e medie imprese ci sono 1.000 milioni nel
+2. **La voce più grande:** nel 2027 è la rete ferroviaria, 2.790 milioni al contratto di programma di RFI
+   (manutenzione straordinaria e investimenti), che il dossier conta fra i nuovi interventi degli articoli 77-83. Per le bollette delle piccole e medie imprese ci sono 1.000 milioni nel
    2027 e 1.430 nel 2028, con l'obbligo di reinvestire tutto l'aiuto; nel 2029 e nel 2030 quel sostegno lo pagano gli
    oneri di sistema della bolletta elettrica, non il bilancio dello Stato.
 3. **L'altra faccia e il paragone:** l'IRAP delle imprese dell'energia sale dal 3,9% all'8,9% nel 2027 (734,2 milioni
@@ -75,7 +100,7 @@ le altre opere elencate dall'art. 77, che porterebbero il video sui singoli cant
 |---|---|---|---|---|
 | 1 | 0-4 s | Il gancio | fondo carta; ritaglio della lampadina a 520 px, in basso al centro (y 1060-1560); domanda 64 px in alto; cifra al centro (y 760), sotto «nel 2027» 64 px | «3,8 miliardi» 240 px, l'unico conteggio del video |
 | 2 | 4-10 s | La notizia | taglio; titolo «9 novembre» 120 px; due schede di carta 920 × 300 px impilate: «Consiglio dei ministri: decreto sul costo di luce e gas» 48 px e «Camera: dossier sulla manovra 2027» 48 px | «9 novembre» 120 px |
-| 3 | 10-17 s | La regola | titolo «Clausola di salvaguardia per l'energia» 56 px; una barra orizzontale 920 × 300 px, asse da zero, divisa in due pezzi: «interventi nuovi, artt. 77-83 · 3,8 mld» nell'accento e «interventi già previsti, anche PNRR · 3,4 mld» in ardesia; cifre 64 px sulla barra | «3,8 mld €» 180 px sopra la barra |
+| 3 | 10-17 s | La regola | titolo «Clausola di salvaguardia per l'energia» 56 px; sotto «più deficit nel 2027 e nel 2028» 48 px; una barra orizzontale 920 × 300 px, asse da zero, divisa in due pezzi: «interventi nuovi, artt. 77-83 · 3,8 mld» nell'accento e «interventi già previsti, anche PNRR · 3,4 mld» in ardesia; cifre 64 px sulla barra | «3,8 mld €» 180 px sopra la barra |
 | 4 | 17-25 s | Il pezzo più grande | morph: il pezzo «3,8 mld» si stacca dalla barra e diventa una barra più lunga a tutta larghezza (920 × 300 px), con dentro, già divisa, la parte «ferrovie · 2.790» nell'accento e il resto in grigio di confronto, senza cifra; titolo «Rete ferroviaria, art. 77» 64 px; ritaglio del binario a 760 px in basso | «2.790 mln €» 200 px |
 | 5 | 25-31 s | Due parti | la barra resta ferma; sotto, due schede di carta 440 × 300 px affiancate: «manutenzione straordinaria · 600» e «investimenti · 2.190», cifre 64 px | nessuna cifra nuova oltre alle due schede |
 | 6 | 31-39 s | Le bollette delle imprese | taglio; titolo «Piccole e medie imprese, art. 83» 56 px; quattro colonne su asse da zero, 920 × 760 px, larghe 180 px: «2027 · 1.000» e «2028 · 1.430» nell'accento, «2029 · 600» e «2030 · 500» in ardesia a righe, con l'etichetta «dalla bolletta» 48 px sopra le due ultime | «1.000 mln €» 180 px |
@@ -91,18 +116,20 @@ comunicato CdM n. 197» (scena 2), «Camera dei deputati, Servizio Studi, dossie
 
 ## Voce (Giulio)
 ```
-Dove vanno i soldi in più per l'energia, nella manovra? Nel duemilaventisette… tre miliardi e ottocento milioni per interventi nuovi.
-Lo spiega il dossier della Camera. Una regola europea permette più deficit per l'energia, nel duemilaventisette e nel duemilaventotto.
-E la voce più grande, a sorpresa, sono i BINARI: quasi duemilaottocento milioni alla rete ferroviaria, per manutenzione e investimenti.
-Per le bollette delle piccole e medie imprese c'è un miliardo nel duemilaventisette. Chi lo riceve deve reinvestirlo tutto nella transizione energetica.
+Dove vanno i soldi in più per l'energia, nella manovra? Nel duemilaventisette… tre miliardi e ottocento milioni, per interventi nuovi.
+Lo spiega il dossier della Camera: una regola europea permette più deficit per l'energia.
+La voce più grande è la rete ferroviaria: quasi duemilaottocento milioni, per manutenzione e investimenti. Il dossier la conta fra gli interventi di questa regola.
+Per le bollette delle piccole e medie imprese, lo stesso anno, c'è un MILIARDO. Chi lo riceve deve reinvestirlo tutto nella transizione energetica.
 [pausa] Dal duemilaventinove, però, quel sostegno lo pagano gli oneri della bolletta elettrica.
-E le imprese dell'energia, nel duemilaventisette, pagano più IRAP: quasi il nove per cento.
-Riassumendo: i soldi in più per l'energia vanno soprattutto ai treni e alle imprese. Le cifre su paghitu punto it.
+E le imprese dell'energia pagano più IRAP: nel primo anno, quasi il nove per cento.
+Riassumendo: nel primo anno, i soldi in più per l'energia vanno soprattutto alla rete ferroviaria e alle bollette delle imprese. Le cifre su paghitu punto it.
 ```
-Circa 125 parole, cinque cifre (3,8 miliardi, 2.790, 1 miliardo, 100% detto come «tutto», 8,9%), più gli anni. La
-cifra che regge è 3,8 miliardi, detta intera («tre miliardi e ottocento milioni»); 2.790 milioni e 8,9% arrotondati con
-due «quasi» separati da una cifra. Il maiuscolo è su «binari». «A sorpresa» è il momento «non lo sapevo», non un
-giudizio. Il decreto del 9 novembre è solo lo spunto, nel titolo della scena 2: in voce non c'è, perché le sue cifre non
+Circa 135 parole, sei numeri contando gli anni (2027, 3,8 miliardi, 2.790, 1 miliardo, 2029, 8,9%); il 100% è detto
+come «tutto» e il biennio 2027-2028 della regola resta a schermo (scena 3). La cifra che regge è 3,8 miliardi, detta
+intera («tre miliardi e ottocento milioni»); 2.790 milioni e 8,9% arrotondati con due «quasi» separati da due cifre. Il
+maiuscolo è su «miliardo». Tolto «a sorpresa» (correzione del titolare del 10/11): la rete ferroviaria è il momento
+«non lo sapevo» da sola, detta con la frase neutra «il dossier la conta fra gli interventi di questa regola», che è
+quello che scrive il dossier di sintesi a p. 13. Il decreto del 9 novembre è solo lo spunto, nel titolo della scena 2: in voce non c'è, perché le sue cifre non
 sono ancora in Gazzetta. Il paragone con 1.906 € resta a schermo, non in voce.
 
 ## Ritagli
@@ -135,8 +162,13 @@ Il 9 novembre il Consiglio dei ministri ha approvato anche un decreto-legge sul 
 - **Testo in esame:** gli emendamenti possono cambiare gli articoli 77-83 e 21; riaprire il testo della commissione o
   la legge approvata e rifare tabella, scene 3-8, voce e didascalia se cambiano.
 - **3,8 e 2.790:** 3,8 miliardi e 2.790 milioni vengono da due pagine diverse del dossier (p. 13 e p. 10); la barra
-  della scena 4 mostra il pezzo delle ferrovie dentro i 3,8 miliardi senza scrivere il resto (sarebbe un calcolo). Se
-  il verificatore trova che l'art. 77 non è tutto a carico della clausola, la scena 4 diventa una barra a sé.
+  della scena 4 mostra il pezzo delle ferrovie dentro i 3,8 miliardi senza scrivere il resto (sarebbe un calcolo).
+  Verificato il 10/11 (sezione «Verifica dell'art. 77»): il dossier di sintesi (p. 13) e «Le principali misure» (p. 6)
+  mettono gli artt. 77-83 sulle risorse della clausola, e la relazione tecnica dell'art. 77 (p. 320) richiama la
+  clausola dell'art. 76. Se il testo della commissione sposta l'art. 77 su altre coperture, la scena 4 diventa una
+  barra a sé e la frase «il dossier la conta fra gli interventi di questa regola» si toglie.
+- **IRAP:** l'8,9% vale per il periodo d'imposta 2027; per il 2028 e il 2029 il dossier «Le principali misure» (p. 6)
+  scrive +3 punti, al 6,9%. In voce «nel primo anno», a schermo «2027»: mai «sale all'8,9%» senza l'anno.
 - **«Dalla bolletta»:** per il 2029 e il 2030 la relazione tecnica scrive «a valere della componente degli oneri
   generali afferenti al sistema elettrico destinata al sostegno delle fonti rinnovabili»: è la parte della bolletta
   elettrica; a schermo «dalla bolletta (oneri generali di sistema)», mai «lo pagano le famiglie».
@@ -145,4 +177,5 @@ Il 9 novembre il Consiglio dei ministri ha approvato anche un decreto-legge sul 
   la riga e lasciare «Affari economici».
 - **Neutralità:** nessun nome di governo, ministro o partito; niente «tassa sugli extraprofitti», «stangata»,
   «regalo alle imprese». Nessuna causa del caro energia.
-- Esce il giorno dopo R38 (debito) e il giorno prima di R24 (sanità).
+- Esce il giorno dopo la casella libera del 25/11 (R38 è andata in riserva il 10/11) e il giorno prima della casella
+  libera del 27/11: se la routine ci mette un video con la stessa forma (barra che si divide), si cambia la forma lì.

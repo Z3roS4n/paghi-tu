@@ -1,18 +1,20 @@
 # R32 — Quanti laureati ha l'Italia
 
 - **Uscita prevista:** venerdì 13 novembre 2026 (casella «libera» del calendario)
-- **Stato:** idea (6/11/2026, routine, binario 4)
+- **Stato:** idea (6/11/2026, routine, binario 4; rivista il 10/11 su indicazione del titolare: tolto il legame
+  implicito fra laureati e spesa per l'istruzione, che resta un dato a sé dopo la notizia del decreto)
 - **Pagine:** https://www.paghitu.it/spesa (sezione «L'Italia e gli altri paesi», selettore «Media UE», riga
   «Istruzione») · https://www.paghitu.it/ («Dove vanno 100 € di spesa pubblica», passo «Istruzione»: «Dalla scuola
   dell'infanzia all'università») · https://www.paghitu.it/atti#dl-2026-162 (misura «Incremento per il 2026 del fondo
   per le borse di studio universitarie»)
 - **Perché adesso:** il 3 novembre l'ISTAT ha pubblicato «Livelli di istruzione e ritorni occupazionali – Anno 2025»:
   la quota di laureati fra i 25 e i 64 anni resta ferma, mentre la media UE sale. Due giorni dopo la Camera ha
-  approvato il decreto che aumenta il fondo per le borse di studio universitarie. Il sito dice quanto spende lo Stato
-  per l'istruzione, rispetto all'Europa.
+  approvato il decreto che aumenta il fondo per le borse di studio universitarie. Il sito dice anche, a parte, quanto
+  spende lo Stato per l'istruzione rispetto all'Europa.
 - **Cosa c'è di nuovo rispetto ai video già fatti:** nessun video ha parlato di istruzione né di laureati. La cifra
   protagonista (22,3%, ISTAT) non è mai comparsa; il confronto della spesa per l'istruzione con la media UE (4,0% contro
-  4,7% del PIL) non è uscito in nessun video (era in R17, in riserva e mai montata). R00 ha dato l'istruzione solo come
+  4,7% del PIL) non è uscito in nessun video (era in R17, in riserva e mai montata): qui è un dato a sé, dopo la
+  notizia del decreto, mai accanto ai laureati e mai nel riassunto. R00 ha dato l'istruzione solo come
   «8 ogni 100 €», accanto agli interessi: qui niente griglia dei 100 €, niente interessi, niente 1.513 € a testa (il
   protagonista di R17). Rispetto a R31 (11/11), che usa lo stesso decreto per il bollo, qui c'è solo l'articolo 5,
   le borse di studio.
@@ -52,67 +54,69 @@ Restano fuori: i 1.513 € a testa e gli 8 € ogni 100 (R00, R17), gli interess
 
 ## Le tre informazioni utili
 1. **Quanti:** nel 2025 il 22,3% dei 25-64enni ha un titolo terziario; la media UE è 36,9%, e l'Italia è penultima,
-   dopo la Romania (ISTAT, 3 novembre). Chi si è laureato da poco lavora più spesso di un anno prima: 78,7%, contro
-   87,0% in UE.
-2. **Quanto spende lo Stato:** per l'istruzione, dalla scuola dell'infanzia all'università, il 4,0% del PIL nel 2024,
-   contro il 4,7% della media UE (paghitu.it/spesa, Eurostat). Sono due misure diverse: il sito non dice che una
-   spiega l'altra.
-3. **La novità della settimana e dove si trova:** il decreto approvato dalla Camera il 5 novembre aumenta di 288
+   dopo la Romania; in un anno il divario è aumentato (ISTAT, 3 novembre). Chi si è laureato da poco lavora più spesso
+   di un anno prima: 78,7%, contro 87,0% in UE.
+2. **La novità della settimana e dove si trova:** il decreto approvato dalla Camera il 5 novembre aumenta di 288
    milioni, per il 2026, il fondo per le borse di studio universitarie; è un limite di spesa, nella scheda del DL 162
    su paghitu.it/atti.
+3. **Un dato a sé, sul sito:** per tutta l'istruzione, dalla scuola dell'infanzia all'università, lo Stato spende il
+   4,0% del PIL nel 2024, contro il 4,7% della media UE (paghitu.it/spesa, Eurostat). È una misura della spesa, di un
+   altro anno e di un'altra fonte: nel video arriva dopo il decreto, non accanto ai laureati.
 
-## Scene (60 s, 10 scene)
+## Scene (60 s, 9 scene)
 | # | Tempi | Soggetto | Grafico o ritaglio | Cifra protagonista |
 |---|---|---|---|---|
 | 1 | 0-4 s | Il gancio | fondo carta; ritaglio del tocco di laurea a 700 px, in basso a sinistra, inclinato di 4°; domanda 64 px in alto; cifra al centro (y 760) | «22,3%» 300 px |
 | 2 | 4-11 s | Italia e UE | titolo «25-64 anni, titolo terziario» 64 px; due colonne su asse 0-50%, 920 × 760 px, larghe 300 px: «Italia 22,3%» nell'accento, «media UE 36,9%» in ardesia; cifre 64 px sopra le colonne; la colonna dell'Italia è già pronta (stessa cifra della scena 1, che scende al suo posto), quella UE cresce mentre Giulio la dice | «36,9%» 64 px sulla colonna; la protagonista resta 22,3% |
 | 3 | 11-17 s | Penultima | titolo «In Europa» 80 px; griglia di 27 caselle quadrate da 110 px in 6 file da 5 (l'ultima fila con 2), 710 × 860 px (una per paese, senza nomi né bandiere), le ultime due evidenziate: la penultima nell'accento con l'etichetta «Italia» 48 px, l'ultima in ardesia con «Romania» 48 px | «penultima» 200 px |
 | 4 | 17-25 s | Chi si è laureato da poco | titolo «Lavora entro 3 anni» 80 px; sottotitolo «20-34 anni, laureati da 1 a 3 anni» 48 px; due barre orizzontali 920 × 700 px, spesse 160 px: «Italia 78,7%» accento, «media UE 87,0%» ardesia, asse da 0 a 100 | «78,7%» 220 px |
-| 5 | 25-33 s | Quanto spende lo Stato | cambio di fondo: aula universitaria vuota a retino; titolo «Istruzione, % del PIL» 80 px; due colonne 920 × 760 px, larghe 300 px: «Italia 4,0%» accento, «media UE 4,7%» ardesia, asse da 0; etichetta «dalla scuola dell'infanzia all'università» 48 px | «4,0%» 220 px |
-| 6 | 33-38 s | Due misure diverse | due schede di carta affiancate, 440 × 700 px, con la cifra e la fonte: «22,3% · laureati · ISTAT 2025» e «4,0% del PIL · istruzione · Eurostat 2024», cifre 120 px; nessun segno fra le due | nessuna nuova |
-| 7 | 38-46 s | La novità | ritaglio della pila di libri universitari a 800 px; titolo «Borse di studio universitarie» 64 px; sotto «2026 · fondo integrativo statale» 48 px | «+288 mln €» 260 px |
-| 8 | 46-51 s | Dove si trova | registrazione dello schermo di paghitu.it/atti su telefono, a 1.200 px, sulla misura del DL 162 con l'etichetta «Limite di spesa»; cartellino «Camera, 5 novembre · ora al Senato» 48 px | «Limite di spesa» 96 px, l'etichetta del sito ingrandita |
-| 9 | 51-56 s | Riassunto | tre righe che entrano una per volta, 56 px: «laureati: 22,3% contro 36,9%», «istruzione: 4,0% contro 4,7% del PIL», «+288 milioni per le borse di studio» | «22,3%» 180 px in alto |
-| 10 | 56-60 s | Chiusura | fondo carta; torna il tocco di laurea della scena 1, stesso punto e stessa misura; il timbro «TU» si stampa | «paghitu.it/spesa» 64 px, «Hai visto un errore? Segnalalo» 40 px |
+| 5 | 25-33 s | La novità | taglio sulla pausa; ritaglio della pila di libri universitari a 800 px; titolo «Borse di studio universitarie» 64 px; sotto «2026 · fondo integrativo statale» 48 px | «+288 mln €» 260 px |
+| 6 | 33-38 s | Dove si trova | registrazione dello schermo di paghitu.it/atti su telefono, a 1.200 px, sulla misura del DL 162 con l'etichetta «Limite di spesa»; cartellino «Camera, 5 novembre · ora al Senato» 48 px | «Limite di spesa» 96 px, l'etichetta del sito ingrandita |
+| 7 | 38-48 s | L'istruzione, in tutto | cambio di fondo: aula universitaria vuota a retino; titolo «Spesa per l'istruzione, % del PIL» 64 px; due colonne 920 × 760 px, larghe 300 px: «Italia 4,0%» accento, «media UE 4,7%» ardesia, asse da 0; etichette «dalla scuola dell'infanzia all'università» 48 px e «Eurostat, 2024» 48 px | «4,0%» 220 px |
+| 8 | 48-55 s | Riassunto | fondo carta; la cifra protagonista in alto; sotto, una sola riga 56 px: «media UE 36,9% · divario in aumento» | «22,3%» 180 px in alto |
+| 9 | 55-60 s | Chiusura | fondo carta; torna il tocco di laurea della scena 1, stesso punto e stessa misura; il timbro «TU» si stampa | «paghitu.it» 64 px, «Hai visto un errore? Segnalalo» 40 px |
 
 Transizioni: tagli e dissolvenze brevi, nessun morph (la cifra della scena 1 scende sulla colonna della scena 2 con
 uno spostamento visibile, non è un morph). Un solo conteggio, il 22,3% della scena 1. Fonte sempre a y 1500, 34 px:
-«ISTAT, 3/11/2026» (scene 1-4), «Eurostat, COFOG 2024 · paghitu.it/spesa» (scena 5), «paghitu.it/atti · camera.it»
-(scene 7-8). La cifra protagonista sta alla stessa altezza nelle scene 1 e 9. Niente bandiere: le caselle della scena
-3 sono anonime, tranne le due con il nome.
+«ISTAT, 3/11/2026» (scene 1-4 e 8), «paghitu.it/atti · camera.it» (scene 5-6), «Eurostat, COFOG 2024 ·
+paghitu.it/spesa» (scena 7). La cifra protagonista sta alla stessa altezza nelle scene 1 e 8. Niente bandiere: le
+caselle della scena 3 sono anonime, tranne le due con il nome. Nessuna scena mette accanto 22,3% e 4,0% (tolta il
+10/11 la scena «Due misure diverse», che affiancava le due cifre).
 
 ## Voce (Giulio)
 ```
 Quanti laureati ha l'Italia? Fra i venticinque e i sessantaquattro anni… il VENTIDUE virgola tre per cento.
-La media europea è trentasette. E l'ISTAT, il tre novembre, scrive che l'Italia è penultima, dopo la Romania.
+La media europea è trentasette. E per l'ISTAT l'Italia è penultima, dopo la Romania.
 Chi si è laureato da poco lavora più spesso di un anno fa: settantanove su cento. In Europa, ottantasette.
-[pausa] E lo Stato, quanto spende per studiare, dalla scuola dell'infanzia all'università? Il quattro per cento del PIL, il valore di quello che il Paese produce in un anno. La media europea è quasi cinque.
-Sono due misure diverse: il sito non dice che una spiega l'altra.
-Intanto il decreto approvato dalla Camera il cinque novembre aumenta di duecentottantotto milioni il fondo per le borse di studio universitarie, per il duemilaventisei.
-Riassumendo: in Italia i laureati sono meno che in Europa, e in rapporto al PIL anche la spesa per l'istruzione. Le cifre su paghitu punto it.
+[pausa] Intanto il decreto approvato dalla Camera il cinque novembre aumenta di duecentottantotto milioni il fondo per le borse di studio universitarie, per il duemilaventisei.
+Un altro dato del sito: per tutta l'istruzione, dalla scuola all'università, lo Stato spende il quattro per cento del PIL, cioè di quello che il Paese produce in un anno. La media europea è quasi cinque.
+Riassumendo: in Italia i laureati sono meno della media europea, e la distanza è cresciuta. Le cifre su paghitu punto it.
 ```
-Circa 130 parole, sette cifre (22,3, 37, 79, 87, 4, 5, 288), il massimo del formato. La cifra che regge è 22,3%,
+Circa 130 parole (erano circa 150 prima della revisione del 10/11), sette cifre (22,3, 37, 79, 87, 288, 4, 5), il
+massimo del formato. La cifra che regge è 22,3%,
 intera; 36,9, 78,7, 87,0 e 4,7 a voce arrotondati e senza decimali, un solo «quasi». Il maiuscolo è sulla cifra
-protagonista. Nessuna causa: la frase «il sito non dice che una spiega l'altra» resta, perché le due cifre stanno
-vicine.
+protagonista. Nessuna causa e nessun legame fra le due cose: la spesa per l'istruzione arriva dopo il decreto, come
+«un altro dato del sito», e il riassunto parla solo dei laureati («la distanza è cresciuta» è l'«aumento del
+divario» scritto dall'ISTAT a p. 2). «Dalla scuola all'università» accorcia la frase del sito («dalla scuola
+dell'infanzia all'università»), che resta intera a schermo nella scena 7.
 
 ## Ritagli
 | Ritaglio | Scena | Immagine proposta | Fonte e licenza |
 |---|---|---|---|
-| Tocco di laurea | 1, 10 | tocco nero con nappa, da solo, su fondo neutro | da generare con l'AI, senza stemmi di università. Lo stesso oggetto è proposto in R17 (riserva, stesso soggetto, mai montata): se R17 tornasse, va scelto un altro oggetto per una delle due |
-| Aula universitaria (fondo) | 5 | aula a gradoni vuota, senza persone | da generare con l'AI, senza scritte, loghi o un ateneo riconoscibile |
-| Pila di libri universitari | 7 | quattro o cinque manuali impilati, dorsi senza titoli leggibili | da generare con l'AI, senza marchi di editori |
+| Tocco di laurea | 1, 9 | tocco nero con nappa, da solo, su fondo neutro | da generare con l'AI, senza stemmi di università. Lo stesso oggetto è proposto in R17 (riserva, stesso soggetto, mai montata): se R17 tornasse, va scelto un altro oggetto per una delle due |
+| Aula universitaria (fondo) | 7 | aula a gradoni vuota, senza persone | da generare con l'AI, senza scritte, loghi o un ateneo riconoscibile |
+| Pila di libri universitari | 5 | quattro o cinque manuali impilati, dorsi senza titoli leggibili | da generare con l'AI, senza marchi di editori |
 
 Nessuna persona riconoscibile, nessun ritratto, nessuna incisione: R23 (10/11) usa Montecitorio, R22 (12/11) piazza
 Colonna.
 
 ## Didascalia (bozza)
 ```
-Nel 2025 in Italia il 22,3% delle persone fra 25 e 64 anni ha una laurea o un altro titolo terziario: la media UE è 36,9%, e l'Italia è penultima, dopo la Romania (ISTAT, 3 novembre 2026). Fra chi si è laureato da 1 a 3 anni lavora il 78,7%, contro l'87,0% in UE.
+Nel 2025 in Italia il 22,3% delle persone fra 25 e 64 anni ha una laurea o un altro titolo terziario: la media UE è 36,9%, e l'Italia è penultima, dopo la Romania; in un anno il divario è aumentato (ISTAT, 3 novembre 2026). Fra chi si è laureato da 1 a 3 anni lavora il 78,7%, contro l'87,0% in UE.
 
-Per l'istruzione, dalla scuola dell'infanzia all'università, lo Stato spende il 4,0% del PIL, contro il 4,7% della media UE (Eurostat, 2024). Sono due misure diverse: non diciamo che una spiega l'altra.
+Il decreto-legge n. 162, approvato dalla Camera il 5 novembre e ora al Senato, aumenta di 288 milioni per il 2026 il fondo per le borse di studio universitarie: la scheda è su paghitu.it/atti.
 
-Il decreto-legge n. 162, approvato dalla Camera il 5 novembre e ora al Senato, aumenta di 288 milioni per il 2026 il fondo per le borse di studio universitarie. Tutto su paghitu.it/spesa e paghitu.it/atti, link in bio.
+Su paghitu.it/spesa c'è anche la spesa pubblica per l'istruzione, dalla scuola dell'infanzia all'università: 4,0% del PIL nel 2024, contro il 4,7% della media UE (Eurostat). Link in bio.
 
 #istruzione #università #istat #contipubblici #paghitu
 ```
@@ -122,14 +126,17 @@ Il decreto-legge n. 162, approvato dalla Camera il 5 novembre e ora al Senato, a
   dei Paesi (dopo la Romania)». «Titolo terziario» comprende la laurea e altri titoli dopo il diploma: in voce
   «laureati» è la parola del titoletto ISTAT; a schermo resta «titolo terziario».
 - **Sito, /spesa:** «Istruzione 4,0% contro 4,7%» è la riga con il selettore su «Media UE» (vista di partenza). Se
-  Eurostat ha aggiornato la COFOG e il sito è cambiato, rifare la scena 5, la voce e la didascalia.
+  Eurostat ha aggiornato la COFOG e il sito è cambiato, rifare la scena 7, la voce e la didascalia.
 - **Sito, /atti:** la misura del DL 162 «borse di studio universitarie», 288 mln € nel 2026, «Limite di spesa».
   Controllare che l'Aula il 5/11 non abbia cambiato l'art. 5 (nel testo della Commissione A.C. 3106-A l'importo è lo
-  stesso); se il Senato ha già approvato o la legge è in Gazzetta, il cartellino della scena 8 diventa «Legge, [data]».
-- Le cifre ISTAT (2025) e quelle della spesa (2024) sono di anni diversi: a schermo l'anno accanto a ogni cifra,
-  come nelle scene 6 e 9.
-- Neutralità e cause: nessun nome di governo, ministro o partito; nessuna frase che leghi la spesa ai laureati (né
-  «per questo», né «perché»); nessun «pochi», «indietro», «maglia nera».
+  stesso); se il Senato ha già approvato o la legge è in Gazzetta, il cartellino della scena 6 diventa «Legge, [data]».
+- Le cifre ISTAT (2025) e quelle della spesa (2024) sono di anni diversi: a schermo l'anno accanto a ogni cifra
+  (scena 7 «Eurostat, 2024», scene 1-4 e 8 con la fonte ISTAT).
+- Neutralità e cause (correzione del titolare del 10/11): nessun legame, nemmeno implicito, fra la spesa e i
+  laureati. La spesa per l'istruzione arriva dopo il decreto, come «un altro dato del sito»; mai nella stessa scena o
+  nella stessa frase dei laureati, mai nel riassunto né nella chiusura; niente «per questo», «perché», «anche»
+  riferito ai laureati, e niente frasi di difesa («non diciamo che una spiega l'altra»). Nessun nome di governo,
+  ministro o partito; nessun «pochi», «indietro», «maglia nera».
 - R31 (11/11) usa lo stesso decreto per il bollo: qui solo l'art. 5. Se R31 slitta dopo R32, la frase «il decreto
   approvato dalla Camera il cinque novembre» resta comunque vera.
 - R17 (riserva) ha lo stesso tema e il confronto UE della spesa: dopo questo video R17 non si usa così com'è.
