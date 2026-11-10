@@ -1,7 +1,8 @@
 # R34 — Il Superbonus in dieci rate
 
 - **Uscita prevista:** mercoledì 18 novembre 2026 (casella «libera» del calendario)
-- **Stato:** idea (10/11/2026, routine, binario 4)
+- **Stato:** idea (10/11/2026, routine, binario 4; rivista il 10/11 su indicazione del titolare: tolta la scena
+  sull'indebitamento netto e la frase sulle regole europee, il fatto resta in didascalia)
 - **Pagine:** https://www.paghitu.it/misure (scheda «Superbonus 110%»: «Costo previsto 35,0 mld €», «Consuntivo 131,6
   mld €», «Non calcolata: le due cifre misurano cose diverse»)
 - **Perché adesso:** il disegno di legge di bilancio 2027 è alla Camera (A.C. 3174, presentato il 30 ottobre; dopo lo
@@ -49,7 +50,7 @@ ponteggio.
 | «le quote annuali dei crediti d'imposta, derivanti dalle comunicazioni di cessione o di sconto relative alle spese sostenute nell'anno 2023, utilizzabili in compensazione nell'anno 2027 […] sono a loro volta ripartite in dieci rate annuali di pari importo» | la norma | dossier vol. I · RT A.C. 3174 | dossier p. 190; RT p. 269 |
 | «Le compensazioni utilizzabili nel 2027 per i crediti d'imposta in esame, al netto della quota per la quale è stata esercitata l'opzione […], sono stimate in 20.537 milioni» | quanto si sarebbe usato nel 2027 | RT A.C. 3174, Tomo I | p. 269 |
 | art. 37, c. 1 · 2027: −18.483,3 · 2028: 2.053,7 · 2029: 2.053,7 | gli effetti anno per anno sul saldo netto da finanziare, milioni di euro | A.C. 3174, Tomo I | prospetto riepilogativo degli effetti finanziari, p. 436 del PDF |
-| «La disposizione non produce effetti in termini di indebitamento netto, dal momento che gli effetti su tale saldo sono stati registrati nell'anno 2023» | perché nei conti europei non cambia niente | RT A.C. 3174 | p. 269 |
+| «La disposizione non produce effetti in termini di indebitamento netto, dal momento che gli effetti su tale saldo sono stati registrati nell'anno 2023» | perché nei conti europei non cambia niente: solo in didascalia (tolto da scene e voce il 10/11) | RT A.C. 3174 | p. 269 |
 | «di cui: incentivi fiscali per efficienza energetica e rischio sismico» · «27.878» · «−18.483 (−66,3%)» | dove si vede nel bilancio dello Stato, milioni di euro | dossier di sintesi, Camera | p. 9, «Le 34 missioni del bilancio dello Stato», M11 |
 | «Consuntivo 131,6 mld €» · «detrazioni maturate per lavori conclusi al 30/06/2026 (ENEA)» | il Superbonus sul sito, solo come paragone | /misure | scheda «Superbonus 110%» |
 
@@ -63,13 +64,13 @@ Superbonus (sono sulla scheda del sito, ma qui il video racconta una norma del d
    (lavori del 2023, ceduti o scontati in fattura) che nel 2027 si sarebbero potuti usare per pagare le tasse:
    secondo la relazione tecnica sono 20.537 milioni. Nel bilancio dello Stato del 2027 diventano 18.483 milioni di
    spesa in meno.
-2. **Non sparisce, si sposta:** dal 2028 al 2036 tornano 2.053,7 milioni l'anno (2,054 miliardi nel dossier). E
-   nell'indebitamento netto, il saldo che conta per le regole europee, l'effetto non c'è: è stato registrato nel 2023.
+2. **Non sparisce, si sposta:** dal 2028 al 2036 tornano 2.053,7 milioni l'anno (2,054 miliardi nel dossier): nel
+   bilancio dello Stato sono «minori spese» nel 2027 e «maggiori spese» dopo.
 3. **Dove si vede:** nel bilancio dello Stato la voce «incentivi fiscali per efficienza energetica e rischio sismico»
    scende del 66,3%. Il Superbonus sul sito (paghitu.it/misure): 131,6 miliardi di detrazioni maturate per i lavori
    conclusi, secondo ENEA, e la ragione per cui il sito non lo confronta con la stima.
 
-## Scene (61 s, 10 scene)
+## Scene (56 s, 9 scene)
 | # | Tempi | Soggetto | Grafico o ritaglio | Cifra protagonista |
 |---|---|---|---|---|
 | 1 | 0-4 s | Il gancio | fondo carta; ritaglio del ponteggio a 860 px di larghezza, in basso (y 1080-1560); domanda 64 px in alto (y 320); cifra al centro (y 760), sotto «milioni di euro · 2027» 64 px | «18.483» 260 px, l'unico conteggio del video |
@@ -77,16 +78,15 @@ Superbonus (sono sulla scheda del sito, ma qui il video racconta una norma del d
 | 3 | 10-17 s | Cosa sono | titolo «Crediti Superbonus, lavori 2023» 64 px; un blocco unico a tutta larghezza, 920 × 360 px, nell'accento, con scritto dentro «da usare nel 2027» 56 px; la fonte «relazione tecnica, A.C. 3174, p. 269» | «20.537 mln €» 200 px sopra il blocco |
 | 4 | 17-24 s | Dieci rate | morph: il blocco della scena 3 si divide in dieci tessere uguali, 5 × 2, ognuna 170 × 300 px, con l'anno a 48 px (2027 … 2036); titolo «Dieci rate uguali» 80 px, entra prima delle tessere | «10» 240 px sopra la griglia |
 | 5 | 24-31 s | Il 2027 | taglio; le tessere restano ferme, stessa posizione: la tessera 2027 nell'accento, le altre nove in ardesia; sopra «Bilancio dello Stato, 2027» 64 px | «−18.483 mln €» 220 px, stessa altezza della cifra della scena 1 |
-| 6 | 31-37 s | Gli anni dopo | taglio; le nove tessere 2028-2036 passano nell'accento, la 2027 nel grigio di confronto; titolo «Dal 2028 al 2036» 80 px; ritaglio del metro pieghevole a 10 stecche, 700 px, in basso a destra sotto la griglia | «+2.053,7 mln € l'anno» 160 px |
-| 7 | 37-44 s | Nei conti europei | fondo carta; titolo «Indebitamento netto» 96 px; sotto, una sola colonna larga 300 px su asse da zero, etichetta «2023» 64 px, con il cartellino «già registrato qui» 56 px; nessuna colonna per il 2027 | «2027: nessun effetto» 120 px |
-| 8 | 44-51 s | Nel bilancio dello Stato | titolo «Incentivi per efficienza energetica e rischio sismico» 56 px; una barra orizzontale 920 × 260 px, asse da zero: tutta la barra «27.878» in ardesia, la parte tolta dal disegno di legge nell'accento con «−18.483» 64 px scritto sopra (proporzioni vere, nessuna cifra per il resto della barra) | «−66,3%» 240 px |
-| 9 | 51-57 s | Sul sito | registrazione dello schermo di /misure su telefono, 900 px, ferma sulla riga «Consuntivo 131,6 mld €» della scheda «Superbonus 110%» (inquadrata sotto le righe dei governi); accanto, ritaglio della cazzuola sui mattoni, 420 px | «131,6 mld €» 200 px sopra il telefono |
-| 10 | 57-61 s | Chiusura | fondo carta; torna il ponteggio della scena 1, stesso punto e stessa misura; il timbro «TU» si stampa | «paghitu.it/misure» 64 px, «Hai visto un errore? Segnalalo» 40 px |
+| 6 | 31-38 s | Gli anni dopo | taglio; le nove tessere 2028-2036 passano nell'accento, la 2027 nel grigio di confronto; titolo «Dal 2028 al 2036» 80 px; ritaglio del metro pieghevole a 10 stecche, 700 px, in basso a destra sotto la griglia | «+2.053,7 mln € l'anno» 160 px |
+| 7 | 38-46 s | Nel bilancio dello Stato | titolo «Incentivi per efficienza energetica e rischio sismico» 56 px; una barra orizzontale 920 × 260 px, asse da zero: tutta la barra «27.878» in ardesia, la parte tolta dal disegno di legge nell'accento con «−18.483» 64 px scritto sopra (proporzioni vere, nessuna cifra per il resto della barra) | «−66,3%» 240 px |
+| 8 | 46-52 s | Sul sito | registrazione dello schermo di /misure su telefono, 900 px, ferma sulla riga «Consuntivo 131,6 mld €» della scheda «Superbonus 110%» (inquadrata sotto le righe dei governi); accanto, ritaglio della cazzuola sui mattoni, 420 px | «131,6 mld €» 200 px sopra il telefono |
+| 9 | 52-56 s | Chiusura | fondo carta; torna il ponteggio della scena 1, stesso punto e stessa misura; il timbro «TU» si stampa | «paghitu.it/misure» 64 px, «Hai visto un errore? Segnalalo» 40 px |
 
 Transizioni: tagli e dissolvenze brevi, un morph (scena 3 → 4: è lo stesso blocco di crediti che si divide). Un solo
 conteggio, la cifra della scena 1. Fonte sempre a y 1500, 34 px in `testoTenue`: «Camera dei deputati, Servizio Studi,
-dossier A.C. 3174-bis, 9/11/2026» (scene 1-2, 5-6, 8), «relazione tecnica, A.C. 3174» (scene 3, 4, 7),
-«paghitu.it/misure · ENEA» (scena 9). Le tessere stanno identiche dalla scena 4 alla 6: cambia solo il colore.
+dossier A.C. 3174-bis, 9/11/2026» (scene 1-2 e 5-7), «relazione tecnica, A.C. 3174» (scene 3-4),
+«paghitu.it/misure · ENEA» (scena 8). Le tessere stanno identiche dalla scena 4 alla 6: cambia solo il colore.
 
 ## Voce (Giulio)
 ```
@@ -94,14 +94,15 @@ Nel dossier della Camera sulla manovra duemilaventisette, qual è la cifra più 
 È il Superbonus. Chi ha i crediti dei lavori del duemilaventitré, ceduti o scontati in fattura, nel duemilaventisette potrebbe usarne in tutto più di venti miliardi per pagare le tasse.
 Il disegno di legge li divide in DIECI rate uguali.
 Così nel bilancio dello Stato del duemilaventisette quella cifra diventa spesa in meno. [pausa] Ma torna dopo: circa due miliardi l'anno, fino al duemilatrentasei.
-E per le regole europee non cambia niente: quella spesa è già stata contata nel duemilaventitré.
 Sul sito, i lavori conclusi del Superbonus valgono più di centotrenta miliardi di detrazioni.
 La cifra più grande della manovra è un pagamento spostato nel tempo. Le cifre su paghitu punto it.
 ```
-Circa 125 parole, cinque cifre oltre agli anni (18.483, 20, 10, 2, 130). La cifra che regge è 18.483 milioni, intera;
+Circa 115 parole (tolta il 10/11 la frase sulle regole europee), cinque cifre oltre agli anni (18.483, 20, 10, 2,
+130). La cifra che regge è 18.483 milioni, intera;
 20.537 milioni, 2.053,7 milioni e 131,6 miliardi a voce arrotondati e senza decimali; un «circa» e due «più di»
 separati da due cifre. Il maiuscolo è sul dieci. «Spesa in meno» e non «risparmio»: la relazione tecnica scrive
-«minori spese» nel 2027 e «maggiori spese» dopo. Nessun nome di governo, ministro o partito.
+«minori spese» nel 2027 e «maggiori spese» dopo. Nessun nome di governo, ministro o partito. L'indebitamento netto
+non si nomina in voce: il fatto della relazione tecnica resta solo in didascalia.
 
 ## Ritagli
 | Ritaglio | Scena | Immagine proposta | Fonte e licenza |
@@ -118,7 +119,7 @@ nessun simbolo di partito.
 ```
 Nel dossier della Camera sulla manovra 2027 la cifra più grande è 18.483 milioni: non è una spesa nuova, è il Superbonus. L'articolo 37 del disegno di legge di bilancio (A.C. 3174-bis) divide in dieci rate annuali uguali i crediti d'imposta per i lavori del 2023, ceduti o scontati in fattura, che nel 2027 si sarebbero potuti usare per pagare le tasse: 20.537 milioni secondo la relazione tecnica.
 
-Nel bilancio dello Stato del 2027 sono 18.483 milioni di spesa in meno; dal 2028 al 2036 tornano 2.053,7 milioni l'anno. Sull'indebitamento netto, il saldo delle regole europee, l'effetto non c'è: è stato registrato nel 2023.
+Nel bilancio dello Stato del 2027 sono 18.483 milioni di spesa in meno; dal 2028 al 2036 tornano 2.053,7 milioni l'anno. Sull'indebitamento netto, il saldo dei conti europei, la relazione tecnica scrive che la norma non ha effetti, perché quegli effetti sono stati registrati nel 2023.
 
 Il Superbonus sul sito: 131,6 miliardi di detrazioni maturate per i lavori conclusi (ENEA), su paghitu.it/misure. Fonti: Camera dei deputati, A.C. 3174 e dossier del Servizio Studi del 9/11/2026. Link in bio.
 
@@ -128,7 +129,7 @@ Il Superbonus sul sito: 131,6 miliardi di detrazioni maturate per i lavori concl
 ## Da controllare prima del montaggio
 - **Testo in esame:** il termine per gli emendamenti in commissione Bilancio cade a metà novembre. Riaprire la scheda
   dell'A.C. 3174-bis su camera.it e il testo della commissione, se c'è: se l'articolo 37 cambia (anni, rate, importi),
-  rifare tabella, scene 3-8, voce e didascalia. Se la Camera ha già votato, la scena 2 dice dove si trova il testo.
+  rifare tabella, scene 3-7, voce e didascalia. Se la Camera ha già votato, la scena 2 dice dove si trova il testo.
 - **«La cifra più grande»:** vale per la tabella «L'impatto delle misure» del dossier di sintesi (p. 10), che misura
   il saldo netto da finanziare del bilancio dello Stato. In voce «nel dossier della Camera», a schermo la fonte del
   dossier; mai «la manovra costa» o «la manovra risparmia».
@@ -137,10 +138,13 @@ Il Superbonus sul sito: 131,6 miliardi di detrazioni maturate per i lavori concl
   (sarebbe un calcolo nostro).
 - **18.483 e 20.537:** non scrivere la differenza fra le due (è la rata del 2027, ma sarebbe una cifra calcolata).
 - **Sito:** riaprire /misure e ricontrollare «131,6 mld €» e la nota ENEA. Nella registrazione dello schermo si
-  inquadra la riga del consuntivo, non le righe dei governi né il previsto. Il sito non mostra il disegno di legge
-  2027 (/leggi-di-bilancio scrive ancora «DDL non ancora presentato alle Camere al 20/10/2026»): nessuna schermata di
-  quella pagina. Se nel frattempo il sito mostra il ddl presentato, R29 può essere scritta, ma non su questo articolo.
+  inquadra la riga del consuntivo, non le righe dei governi né il previsto. Dal 10/11 /leggi-di-bilancio mostra la
+  riga 2027 («DDL A.C. 3174 presentato alla Camera il 30/10/2026; dopo lo stralcio è in esame come A.C. 3174-bis,
+  assegnato alla Commissione V Bilancio (al 10/11/2026)»): si può mostrare la riga 2027 nella scena 2, al posto della
+  scheda di carta, inquadrando gli estremi e non la colonna «Governo proponente». Il racconto della manovra arrivata
+  resta a R29.
 - **Neutralità:** nessun nome di governo, ministro o partito; nessun «buco», «costo del Superbonus», «trucco»,
-  «rinvio del conto». L'unica spiegazione del perché sull'indebitamento netto è quella della relazione tecnica.
+  «rinvio del conto». L'indebitamento netto compare solo in didascalia, con le parole della relazione tecnica (p.
+  269); niente scena, niente frase in voce (decisione del titolare del 10/11).
 - Esce il giorno dopo R33 (17/11, tasse, ciambella) e il giorno prima di R35 (difesa, colonna): qui la scena
   principale sono le dieci tessere.
