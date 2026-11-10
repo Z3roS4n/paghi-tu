@@ -3386,24 +3386,27 @@
     "annoInizio": 2027,
     "tipoAtto": "legge di bilancio",
     "tipoAttoOriginale": "legge di bilancio",
-    "estremi": "DDL non ancora presentato alle Camere al 20/10/2026 (DPB 2027 approvato dal CdM n. 192 del 13/10/2026)",
+    "estremi": "DDL A.C. 3174 presentato alla Camera il 30/10/2026; dopo lo stralcio del 4/11/2026 prosegue come A.C. 3174-bis, in esame alla Camera (DDL approvato dal CdM n. 195 del 28/10/2026)",
     "governoProponenteId": "g202",
     "governoProponenteAttribuzione": "documentata",
     "governoProponenteTesto": "Meloni",
     "fonti": [
       {
-        "url": "https://pagellapolitica.it/articoli/governo-dpb-legge-bilancio-2027"
+        "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=3174"
       },
       {
-        "url": "https://www.governo.it/it/articolo/consiglio-dei-ministri-n-192/32830"
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac19_3174"
       },
       {
-        "url": "https://www.governo.it/it/articolo/convocazione-del-consiglio-dei-ministri-n-193/32876"
+        "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=3174-bis"
+      },
+      {
+        "url": "https://www.governo.it/it/articolo/comunicato-stampa-del-consiglio-dei-ministri-n-195/32973"
       }
     ],
     "verifica": {
-      "livello": "NV",
-      "dettaglio": "NV (fonti secondarie); da riverificare dopo la presentazione || verificatore 2026-10-20: DPB 2027 approvato dal CdM n. 192 del 13/10/2026 = V1✓ (comunicato governo.it); DDL non presentato al 20/10/2026 = V1✓ (nessun atto \"anno finanziario 2027\" negli open data Camera leg. XIX e Senato; ordine del giorno del CdM n. 193 del 20/10/2026 senza DDL di bilancio); importo della manovra resta V2"
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-11-07 — dati.camera.it ac19_3174 (dc:date 20261030, iniziativa Governo, GIORGETTI Giancarlo; stati dell'iter «Da assegnare» del 30-10-2026 e «Conclusione anomala per stralcio» del 4-11-2026) e ac19_3174-bis (dc:date 20261104, testo risultante dallo stralcio degli artt. 69, c. 8, 105 e 115 del ddl 3174); schede camera.it 126 di 3174 («Presentato il 30 ottobre 2026», derivati 3174-bis, -ter, -quater, -quinquies) e di 3174-bis («Stralciato il 4 novembre 2026», assegnato alla Commissione V in sede referente il 4-11-2026); comunicato del CdM n. 195 su governo.it (28-10-2026, «DDL BILANCIO 2027», su proposta del Ministro Giorgetti). Estremi e governo confermati; in fonte_url nessun giornale. Nessuna correzione. || storia: censore 2026-11-07 (presentazione e stralcio, fonti giornalistiche e CdM n. 192 tolte); verificatore 2026-10-20 (DPB 2027 approvato dal CdM n. 192 del 13-10-2026, ddl non presentato al 20-10-2026); l'importo della manovra non è un campo di questa riga"
     }
   }
 ]

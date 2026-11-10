@@ -1769,7 +1769,24 @@
       "dettaglio": "V1✓ verificatore 2026-10-24 — CORRETTA: ruolo (come C27-LEGA-025) | PERIMETRO: orizzonte/veicolo (vedi colonne) [veicolo: dichiarazione]"
     },
     "effettoConti": "no",
-    "ribadita": []
+    "ribadita": [
+      {
+        "id": "C27-LEGA-044",
+        "dichiarante": "Matteo Salvini",
+        "ruoloDichiarante": "segretario federale Lega (rieletto al congresso del 25/10/2026), senatore; vicepresidente del Consiglio e ministro delle Infrastrutture e dei Trasporti",
+        "data": "2026-11-03",
+        "testoLetterale": "Stop a nuove moschee a Torino e in tutta Italia finché l’Islam non avrà sottoscritto un’intesa con lo Stato italiano, nel pieno rispetto delle nostre leggi, delle nostre regole e dei nostri valori",
+        "tipoFonte": "sito_ufficiale",
+        "fonte": {
+          "url": "https://www.agenziagiornalisticaopinione.it/opinionews/lega-moschea-torino-salvini-nessuna-illegalita-tollerata-in-nome-dellislam-stop-a-nuove-moschee-senza-intesa-con-lo-stato/"
+        },
+        "archivioUrl": null,
+        "verifica": {
+          "livello": "V2",
+          "dettaglio": "V2✓ verificatore L2 2026-11-07 — Agenzia Opinione ripubblica il comunicato ricevuto, come C27-FI-042 del 2026-11-01 (l'avviso di impaginazione AI resta una regola aperta per il titolare); nota della Lega «tratta integralmente», citazione ritrovata parola per parola (GET 200), nessun taglio, frase di Salvini (segretario federale) e non della testata, data 03/11; divieto con condizione definita (nuove moschee fino all'intesa con lo Stato)"
+        }
+      }
+    ]
   },
   {
     "id": "C27-NM-013",
@@ -1823,7 +1840,24 @@
       "dettaglio": "V1✓ verificatore 2026-10-24 — CORRETTA: COFOG 03 → 01 (organo di governo, come C27-AZ-028 «unico ministero per la crescita») | PERIMETRO: orizzonte/veicolo (vedi colonne) [orizzonte: «il prossimo Governo»]"
     },
     "effettoConti": "no",
-    "ribadita": []
+    "ribadita": [
+      {
+        "id": "C27-NM-022",
+        "dichiarante": "Noi Moderati",
+        "ruoloDichiarante": "partito – sito ufficiale",
+        "data": "2026-11-03",
+        "testoLetterale": "Per questo Noi Moderati propone l'istituzione di un Ministero per la Sicurezza informatica e tecnologica, capace di coordinare competenze, risorse e strategie e di rafforzare la protezione del nostro spazio digitale.",
+        "tipoFonte": "sito_ufficiale",
+        "fonte": {
+          "url": "https://www.noimoderati.it/news-e-media/129"
+        },
+        "archivioUrl": null,
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore L2 2026-11-07 — news 129 del sito di Noi Moderati (03/11, testo del partito senza firma, GET 200); citazione ritrovata parola per parola, nessun taglio; organismo nominato (Ministero per la Sicurezza informatica e tecnologica) con funzioni; stessa misura di C27-NM-016, «ribadisce» ai codificatori (D-031). COFOG allineata a C27-NM-016 (01) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+        }
+      }
+    ]
   },
   {
     "id": "C27-NM-017",
@@ -2291,6 +2325,330 @@
     "ribadita": []
   },
   {
+    "id": "C27-LEGA-045",
+    "partitoId": "LEGA",
+    "dichiarante": "Matteo Salvini",
+    "ruoloDichiarante": "segretario federale Lega (rieletto al congresso del 25/10/2026), senatore; vicepresidente del Consiglio e ministro delle Infrastrutture e dei Trasporti",
+    "data": "2026-11-03",
+    "testoLetterale": "Per chi vorrà andare in pensione a 64 anni dal 2027 il fondo per la previdenza per quello è stato disegnato, non per altro. Quindi come io rispetto gli altri, conto che tutti rispettino quella che è la priorità della Lega, che è il superamento della legge Fornero, che è quota 64 a partire già dal 2027",
+    "parafrasiNeutra": "Usare il fondo per l'uscita anticipata previsto dalla legge di bilancio per consentire, dal 2027, il pensionamento a 64 anni («quota 64») a chi lo sceglie.",
+    "tipoFonte": "discorso",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://www.ladige.it/attualita/salvini-gli-alleati-rispettino-le-priorita-della-lega-a-partire-dalle-pensioni-ks037739"
+    },
+    "archivioUrl": null,
+    "cofog": "10",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 3 (Agenzia Opinione, rilancio «L’ADIGE.IT * ATTUALITÀ» del 03/11 con il link) e canale 2 (Google News RSS, query uniforme «Salvini intervista», titolo «Manovra, Salvini \"Superare la Fornero priorità della Lega, gli alleati la rispettino\"» - Quotidiano Nazionale/Italpress); testo letto su ladige.it (lancio ANSA «(ANSA) - MILANO, 03 NOV», isAccessibleForFree true, datePublished 2026-11-03T12:07:00+01:00) con curl GET semplice (HTTP 200) il 2026-11-07; stesso virgolettato su lanotiziagiornale.it (API WordPress 200) e nei titoli Italpress. «Lo afferma Matteo Salvini a margine di Eicma»: dichiarazione a margine riportata fra virgolette, livello atteso V2. Due frasi consecutive, nessun taglio; citazione confrontata in automatico: ritrovata. legaonline.it (home, /feed/, /wp-json/, sitemap) 403 «Just a moment…»; «La Settimana Leghista» ferma al n. 41 (n. 42-46 404); legacamera.it e legasenato.it 502 al CONNECT; legasalvinipremier.it 403. Contesto: secondo QN (03-04/11) il testo della legge di bilancio stanzia 850 milioni annui nel 2027-2029 senza fissare requisiti; FdI (Osnato) replica che «i patti da rispettare sono quelli scritti nella manovra». Doppioni: stessa misura di C27-LEGA-001 e C27-LEGA-030 (superamento della Fornero, 64 anni); aggiunge la data (dal 2027) e il veicolo (il fondo in manovra): la classificazione «ribadisce» spetta ai codificatori (D-031). Orizzonte/veicolo: legislatura_in_corso, richiesta_legge_bilancio. COFOG 10. Pre-valutazione slogan: OK (età e decorrenza). Wayback (archive.org/wayback/available, sola lettura, 2026-11-07): nessuna copia esistente.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — lancio ANSA su ladige.it (03/11, GET 200), dichiarazione di Salvini a margine di Eicma fra virgolette: discorso, V2; citazione ritrovata parola per parola, due frasi consecutive, nessun taglio; dichiarante ammesso (segretario federale); età (64 anni) e decorrenza (dal 2027) nominate; stessa misura di C27-LEGA-001 e 030, classificazione «ribadisce» ai codificatori (D-031) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-LEGA-046",
+    "partitoId": "LEGA",
+    "dichiarante": "Matteo Salvini",
+    "ruoloDichiarante": "segretario federale Lega (rieletto al congresso del 25/10/2026), senatore; vicepresidente del Consiglio e ministro delle Infrastrutture e dei Trasporti",
+    "data": "2026-11-04",
+    "testoLetterale": "non è il momento di ridimensionare il perimetro dell’educazione in Italia. Puntiamo ad avere tagli zero. Per il 2027 servono 84 milioni di euro",
+    "parafrasiNeutra": "Eliminare nella legge di bilancio i tagli previsti alla scuola (secondo il dichiarante servono 84 milioni di euro per il 2027).",
+    "tipoFonte": "discorso",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://www.italpress.com/manovra-salvini-puntiamo-a-zero-tagli-alla-scuola/"
+    },
+    "archivioUrl": null,
+    "cofog": "09",
+    "misurabile": "si",
+    "costoDichiarato": "84 milioni di euro per il 2027 (secondo il dichiarante)",
+    "stimaTerzi": null,
+    "note": "Canale 2 (Google News RSS, query uniforme «Salvini proposta», titoli Italpress/QN del 03/11 «Tagli alla scuola? Non sapevo nulla, ora faremo delle proposte»); il seguito del 04/11 è stato trovato con l'API WordPress pubblica di italpress.com (search=Salvini scuola, after=2026-11-01, HTTP 200) e letto con curl GET semplice (HTTP 200; datePublished 2026-11-04T16:25:59+00:00) il 2026-11-07. «Lo ha dichiarato il vicepremier e leader della Lega, Matteo Salvini, intervenendo a “Point Break – Il punto di rottura”, il programma di approfondimento di San Marino RTV […] rispondendo a una domanda sui possibili tagli alla scuola previsti dalla manovra economica»: intervista televisiva riportata da agenzia, tipo_fonte discorso come C27-M5S-069; livello atteso V2. Il testo inizia dopo l'inciso «Lo dico anche da ministro dei Trasporti:» (attacco tolto, nessun gruppo di persone). Coperture nella stessa pagina: «Ci sono interventi da fare. Per esempio, abbiamo individuato il contributo delle banche o interventi sul gioco online». Contesto (QN 03/11): la manovra prevede 4.925 docenti e 2.049 ATA in meno; il 03/11 Salvini aveva detto «non sapevo nulla, ora faremo delle proposte» (non registrata: nessun contenuto). legaonline.it (home, /feed/, /wp-json/, sitemap) 403 «Just a moment…»; «La Settimana Leghista» ferma al n. 41 (n. 42-46 404); legacamera.it e legasenato.it 502 al CONNECT; legasalvinipremier.it 403. Citazione confrontata in automatico: ritrovata. Doppioni: nessuna riga Lega sulla scuola. Orizzonte/veicolo: legislatura_in_corso, richiesta_legge_bilancio. COFOG 09. Pre-valutazione slogan: OK (valore di arrivo «tagli zero» e importo). Wayback (archive.org/wayback/available, sola lettura, 2026-11-07): nessuna copia esistente.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — Italpress (04/11, GET 200) riporta fra virgolette l'intervento di Salvini a «Point Break» (San Marino RTV): discorso, V2 come C27-M5S-069; citazione ritrovata parola per parola, l'attacco «Lo dico anche da ministro dei Trasporti:» resta fuori senza cambiare il senso; dichiarante ammesso; valore di arrivo (tagli zero alla scuola) e importo (84 milioni per il 2027). Parafrasi ristretta al testo dall'orchestratore: tolto «con coperture indicate nel contributo delle banche o in interventi sul gioco online» (frase successiva della fonte, fuori dal testo_letterale, come C27-AZ-038) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-LEGA-047",
+    "partitoId": "LEGA",
+    "dichiarante": "Matteo Salvini",
+    "ruoloDichiarante": "segretario federale Lega (rieletto al congresso del 25/10/2026), senatore; vicepresidente del Consiglio e ministro delle Infrastrutture e dei Trasporti",
+    "data": "2026-11-04",
+    "testoLetterale": "Abbiamo previsto un fondo di partenza da 850 milioni di euro per chi sceglie di andare in pensione a 64 anni, senza penalizzazioni sull’assegno. Il nostro impegno è stabilizzare questa misura",
+    "parafrasiNeutra": "Rendere stabile il fondo da 850 milioni di euro previsto in manovra per chi sceglie di andare in pensione a 64 anni.",
+    "tipoFonte": "discorso",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://www.italpress.com/manovra-salvini-puntiamo-a-zero-tagli-alla-scuola/"
+    },
+    "archivioUrl": null,
+    "cofog": "10",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Stessa fonte e stesso canale di C27-LEGA-046 (Italpress, intervista di Salvini a «Point Break», San Marino RTV, 04/11/2026; API WordPress di italpress.com 200, pagina GET 200, datePublished 2026-11-04T16:25:59+00:00), letta il 2026-11-07; livello atteso V2. Due frasi consecutive, nessun taglio; citazione confrontata in automatico: ritrovata. Seguono nella fonte: «La Lega non ha ecceduto nelle sue richieste. Il superamento della legge Fornero è centrale, anche per i giovani» (non registrata a parte: direzione già in C27-LEGA-045). «Senza penalizzazioni sull’assegno» è affermazione del dichiarante; secondo QN (03-04/11) la proposta leghista richiederebbe il ricalcolo contributivo. Da valutare dal verificatore: «stabilizzare» come impegno distinto da C27-LEGA-045 (rende strutturale lo strumento) o ripetizione. Doppioni: C27-LEGA-001, C27-LEGA-030, C27-LEGA-045 (ribadisce ai codificatori, D-031). Orizzonte/veicolo: legislatura_in_corso, richiesta_legge_bilancio. COFOG 10. Pre-valutazione slogan: OK (fondo nominato con importo e platea). Wayback (archive.org/wayback/available, sola lettura, 2026-11-07): nessuna copia esistente.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — stessa fonte di C27-LEGA-046 (Italpress 04/11, GET 200, intervento a «Point Break»): discorso, V2; citazione ritrovata parola per parola, due frasi consecutive, nessun taglio; impegno esplicito («Il nostro impegno è stabilizzare questa misura») su un fondo nominato con importo (850 milioni) e platea (pensione a 64 anni); distinto da C27-LEGA-045 perché rende stabile lo strumento, «ribadisce» ai codificatori (D-031) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-LEGA-049",
+    "partitoId": "LEGA",
+    "dichiarante": "Ingrid Bisa",
+    "ruoloDichiarante": "deputata della Lega (comunicato dell’Ufficio stampa Lega Camera)",
+    "data": "2026-11-03",
+    "testoLetterale": "Per questo la Lega propone di istituire un’Autorità garante per i diritti delle vittime di reato: un organismo indipendente che raccolga le segnalazioni, verifichi il rispetto dei diritti e favorisca l’accesso all’assistenza legale, sanitaria e psicologica.",
+    "parafrasiNeutra": "Istituire un'Autorità garante indipendente per i diritti delle vittime di reato, che raccolga le segnalazioni, verifichi il rispetto dei diritti e favorisca l'accesso all'assistenza legale, sanitaria e psicologica.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/lega-camera-giustizia-bisa-lega-un-garante-per-dare-piu-voce-e-tutele-alle-vittime-di-reato/"
+    },
+    "archivioUrl": null,
+    "cofog": "03",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 3 (Agenzia Opinione): feed https://www.agenziagiornalisticaopinione.it/feed/ e /feed/?paged=2…90 (HTTP 200, dal 07/11 al 31/10), comunicato «LEGA * CAMERA: «GIUSTIZIA, BISA (LEGA): “UN GARANTE PER DARE PIÙ VOCE E TUTELE ALLE VITTIME DI REATO”»» del 03/11/2026 (ore 18.10 nella pagina; nessun article:published_time), firmato «Ufficio Stampa Lega Camera»: «Così la deputata della Lega Ingrid Bisa». Pagina scaricata con curl GET semplice (HTTP 200) il 2026-11-07; citazione confrontata in automatico: ritrovata, nessun taglio (nella pagina manca lo spazio dopo il punto precedente). Livello atteso V2. Da valutare dal verificatore: la dichiarante è una deputata senza ruolo di vertice indicato, ma la frase attribuisce la proposta al partito («la Lega propone», come C27-LEGA-012 «il partito ha depositato»); stesso giorno Erika Stefani, «capogruppo della Lega in Commissione Giustizia a Palazzo Madama» (Opinione, 03/11 17:45), sostiene l'Autorità garante «come proposto dal sottosegretario Ostellari» (membro del Governo, Lega): la proposta nasce quindi da un esponente del Governo, da valutare se è annuncio di governo. Non indicato se esiste già un atto depositato. legaonline.it (home, /feed/, /wp-json/, sitemap) 403 «Just a moment…»; «La Settimana Leghista» ferma al n. 41 (n. 42-46 404); legacamera.it e legasenato.it 502 al CONNECT; legasalvinipremier.it 403. Doppioni: nessuna riga sulle vittime di reato. Orizzonte/veicolo: non_specificato, dichiarazione. COFOG 03. Pre-valutazione slogan: OK (organismo nominato con funzioni). Wayback (archive.org/wayback/available, sola lettura, 2026-11-07): nessuna copia esistente.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — Agenzia Opinione ripubblica il comunicato ricevuto, come C27-FI-042 del 2026-11-01 (l'avviso di impaginazione AI resta una regola aperta per il titolare); comunicato dell'Ufficio Stampa Lega Camera (03/11, GET 200), citazione ritrovata parola per parola, nessun taglio; la proposta è attribuita al partito («la Lega propone»), da una deputata, come C27-LEGA-035; organismo nominato con funzioni (Autorità garante indipendente per le vittime di reato)"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-FI-043",
+    "partitoId": "FI",
+    "dichiarante": "Enrico Costa",
+    "ruoloDichiarante": "capogruppo FI alla Camera",
+    "data": "2026-11-03",
+    "testoLetterale": "L’inappellabilità delle sentenze di assoluzione […] è una misura di buon senso, di civiltà giuridica e di garanzia. Una proposta sulla quale è necessario tornare a riflettere e che riteniamo opportuno riproporre, su basi che riteniamo coerenti con la Carta Costituzionale.",
+    "parafrasiNeutra": "Riproporre l'inappellabilità delle sentenze di assoluzione (oggi prevista per i reati meno gravi), in una forma che il dichiarante ritiene compatibile con la Costituzione.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-camera-caso-garlasco-costa-fi-dimostra-necessita-di-riproporre-inappellabilita-assoluzioni/"
+    },
+    "archivioUrl": null,
+    "cofog": "03",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 3 (Agenzia Opinione): feed https://www.agenziagiornalisticaopinione.it/feed/ e /feed/?paged=2…90 (HTTP 200, dal 07/11 al 31/10), comunicato «FI – FORZA ITALIA * CAMERA: «CASO GARLASCO, COSTA (FI): “DIMOSTRA NECESSITÀ DI RIPROPORRE INAPPELLABILITÀ ASSOLUZIONI”»» del 03/11/2026 (article:published_time 2026-11-03T18:54:25+01:00): «Lo dichiara il capogruppo di Forza Italia alla Camera, Enrico Costa». Capogruppo: dichiarante autorizzato. Pagina scaricata con curl GET semplice (HTTP 200) il 2026-11-07; citazione confrontata in automatico: ritrovata (segmenti in ordine); il «[…]» toglie solo l'inciso «, già introdotta dalla riforma Nordio per i reati meno gravi,» per il limite di 320 caratteri (nessun gruppo di persone). Livello atteso V2 (come C27-FI-042). Contesto: la nota prende spunto dal caso Garlasco e ricorda la precedente proposta FI «poi decapitata dalla Corte Costituzionale»; annuncia la discussione agli Stati generali dei garantisti del 06/11. Forza Italia: forzaitalia.it/feed/ 200 fermo al 19/03, /wp-json/ 401. Doppioni: nessuna riga sull'inappellabilità. Orizzonte/veicolo: non_specificato, dichiarazione (nessun atto nominato). COFOG 03. Pre-valutazione slogan: OK (istituto processuale definito). Wayback (archive.org/wayback/available, sola lettura, 2026-11-07): nessuna copia esistente.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — Agenzia Opinione ripubblica il comunicato ricevuto, come C27-FI-042 del 2026-11-01 (l'avviso di impaginazione AI resta una regola aperta per il titolare); comunicato FI Camera (03/11, GET 200), frase di Costa (capogruppo) ritrovata parola per parola; il «[…]» toglie solo «, già introdotta dalla riforma Nordio per i reati meno gravi,» (ripreso in parafrasi), nessun gruppo di persone tolto; istituto processuale definito (inappellabilità delle assoluzioni) con impegno a riproporlo"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-FI-045",
+    "partitoId": "FI",
+    "dichiarante": "Stefania Craxi",
+    "ruoloDichiarante": "presidente dei senatori di Forza Italia",
+    "data": "2026-11-06",
+    "testoLetterale": "C’è un testo all’esame delle Commissioni del Senato, il ddl Zanettin-Zullo, che, arricchito dai contributi e dagli emendamenti proposti da Forza Italia, può diventare il punto di equilibrio necessario per arrivare a una disciplina nazionale del fine vita",
+    "parafrasiNeutra": "Approvare una disciplina nazionale del fine vita partendo dal ddl Zanettin-Zullo all'esame delle commissioni del Senato, con gli emendamenti proposti da Forza Italia.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "proposta_di_legge",
+    "fonte": {
+      "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-fine-vita-craxi-fi-parlamento-non-si-sottragga-serve-una-legge-nazionale/"
+    },
+    "archivioUrl": null,
+    "cofog": "07",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 3 (Agenzia Opinione): feed https://www.agenziagiornalisticaopinione.it/feed/ e /feed/?paged=2…90 (HTTP 200, dal 07/11 al 31/10), comunicato «FI – FORZA ITALIA * SENATO: «FINE VITA. CRAXI (FI): PARLAMENTO NON SI SOTTRAGGA, SERVE UNA LEGGE NAZIONALE»» del 06/11/2026 (ore 17.45 nella pagina; feed pubDate Fri, 06 Nov 2026 16:45:48 +0000): «Lo dichiara la presidente dei senatori di Forza Italia, Stefania Craxi». Pagina scaricata con curl GET semplice (HTTP 200) il 2026-11-07; citazione confrontata in automatico: ritrovata, nessun taglio. Livello atteso V2. Nella stessa nota: «Serve arrivare con urgenza a una legge nazionale capace di evitare frammentazioni normative» (stessa misura). QN del 07/11 conferma la posizione e riporta che il ddl Zanettin-Zullo (relatori Zullo, FdI, e Zanettin, FI) è fermo nelle commissioni riunite Giustizia e Affari sociali; contenuto degli emendamenti FI non indicato. Doppioni: C27-FI-044 (Costa, 05/11, legge nazionale senza atto): ribadisce ai codificatori (D-031). Orizzonte/veicolo: legislatura_in_corso, proposta_di_legge (ddl in esame). COFOG 07 (come C27-FI-044). Pre-valutazione slogan: OK (atto nominato). Wayback (archive.org/wayback/available, sola lettura, 2026-11-07): nessuna copia esistente.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — Agenzia Opinione ripubblica il comunicato ricevuto, come C27-FI-042 del 2026-11-01 (l'avviso di impaginazione AI resta una regola aperta per il titolare); comunicato FI Senato (06/11, GET 200), frase di Craxi (capogruppo) ritrovata parola per parola, nessun taglio; atto nominato (ddl Zanettin-Zullo all'esame delle commissioni del Senato) con emendamenti FI, come C27-FI-042"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-FI-046",
+    "partitoId": "FI",
+    "dichiarante": "Enrico Costa",
+    "ruoloDichiarante": "capogruppo FI alla Camera",
+    "data": "2026-11-06",
+    "testoLetterale": "Eppure tutto resta impantanato al Senato, nonostante l’abrogazione della riforma M5S sulla prescrizione sia stata licenziata dalla Camera a gennaio 2024. […] Ora basta inerzia perché rischiamo di tenerci l’illiberale legge Bonafede",
+    "parafrasiNeutra": "Concludere al Senato l'approvazione del testo, già approvato dalla Camera a gennaio 2024, che abroga la riforma della prescrizione del reato voluta dal M5S (legge Bonafede).",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "proposta_di_legge",
+    "fonte": {
+      "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-camera-giustizia-costa-riforma-prescrizione-ferma-a-senato-da-2-anni-e-mezzo-basta-inerzia-legge-bonafede-e-illiberale/"
+    },
+    "archivioUrl": null,
+    "cofog": "03",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 3 (Agenzia Opinione): feed https://www.agenziagiornalisticaopinione.it/feed/ e /feed/?paged=2…90 (HTTP 200, dal 07/11 al 31/10), comunicato «FI – FORZA ITALIA * CAMERA: «GIUSTIZIA, COSTA: “RIFORMA PRESCRIZIONE FERMA A SENATO DA 2 ANNI E MEZZO. BASTA INERZIA, LEGGE BONAFEDE È ILLIBERALE”»» del 06/11/2026 (article:published_time 2026-11-06T14:20:32+01:00): «Lo ha detto Enrico Costa, presidente dei deputati di Forza Italia, intervenendo agli Stati generali dei Garantisti, in corso alla Camera». Pagina scaricata con curl GET semplice (HTTP 200) il 2026-11-07; citazione confrontata in automatico (segmenti in ordine): ritrovata. Il «[…]» toglie solo «Mesi e mesi nel congelatore della Commissione Giustizia.» (nessun gruppo di persone). Livello atteso V2 (discorso riportato in un comunicato del gruppo). Da valutare dal verificatore: l'impegno è implicito (sollecita l'approvazione di un testo già votato dalla Camera); se è solo una critica all'inerzia del Senato la riga esce. Doppioni: nessuna riga sulla prescrizione. Orizzonte/veicolo: legislatura_in_corso, proposta_di_legge (testo in esame al Senato). COFOG 03. Pre-valutazione slogan: LIM (norma da abrogare identificata, impegno implicito). Wayback (archive.org/wayback/available, sola lettura, 2026-11-07): nessuna copia esistente.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — Agenzia Opinione ripubblica il comunicato ricevuto, come C27-FI-042 del 2026-11-01 (l'avviso di impaginazione AI resta una regola aperta per il titolare); come caso limite: comunicato FI Camera (06/11, GET 200), frase di Costa (capogruppo) agli Stati generali dei garantisti ritrovata parola per parola; il «[…]» toglie solo «Mesi e mesi nel congelatore della Commissione Giustizia.»; chiede di concludere al Senato l'abrogazione di una norma identificata (riforma Bonafede della prescrizione, testo già approvato dalla Camera), con contenuto nominato e non solo procedurale (D-012, come C27-FI-042)"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-FI-047",
+    "partitoId": "FI",
+    "dichiarante": "Stefania Craxi",
+    "ruoloDichiarante": "presidente dei senatori di Forza Italia",
+    "data": "2026-11-05",
+    "testoLetterale": "Per questo servono tre correzioni. Va tassato solo ciò che è maturato in Italia, prendendo come riferimento il valore dei beni al momento dell’arrivo, come già avviene per le imprese.",
+    "parafrasiNeutra": "Modificare la exit tax prevista dalla legge di bilancio in modo che tassi solo le plusvalenze maturate in Italia, prendendo come valore di partenza quello dei beni al momento dell'arrivo nel Paese.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-manovra-craxi-fi-per-exit-tax-lavoriamo-a-correttivi/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 3 (Agenzia Opinione): feed https://www.agenziagiornalisticaopinione.it/feed/ e /feed/?paged=2…90 (HTTP 200, dal 07/11 al 31/10), comunicato «FI – FORZA ITALIA * SENATO: «MANOVRA: CRAXI (FI), PER EXIT TAX LAVORIAMO A CORRETTIVI»» del 05/11/2026 (article:published_time 2026-11-05T11:40:34+01:00): «Lo dichiara la senatrice Stefania Craxi, presidente dei senatori di Forza Italia». Capogruppo: dichiarante autorizzata. Pagina scaricata con curl GET semplice (HTTP 200) il 2026-11-07; stesso testo nel lancio ANSA del 05/11 12:40 («Manovra: FI, servono 3 correzioni su exit tax», sitemap ANSA politica 200, pagina GET 200). Livello atteso V2. Pacchetto di 3 voci («Per questo servono tre correzioni»): C27-FI-047, 048, 049; la frase introduttiva è ripetuta in ogni riga e il «[…]» toglie solo le voci precedenti del pacchetto. Chiusura: «Per questo lavoreremo in Parlamento, insieme al governo e alla maggioranza, per migliorare la norma». Contesto: la exit tax sulle persone fisiche è nel ddl di bilancio del Governo (secondo ANSA per chi ha patrimoni da almeno 800mila euro e si trasferisce all'estero); FI ne condivide «la ratio». Citazione confrontata in automatico (segmenti in ordine): ritrovata. Doppioni: nessuna riga sulla exit tax. Orizzonte/veicolo: legislatura_in_corso, richiesta_legge_bilancio. COFOG 01. Prima voce. Pre-valutazione slogan: OK (base imponibile definita). Wayback (archive.org/wayback/available, sola lettura, 2026-11-07): nessuna copia esistente.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — Agenzia Opinione ripubblica il comunicato ricevuto, come C27-FI-042 del 2026-11-01 (l'avviso di impaginazione AI resta una regola aperta per il titolare); comunicato FI Senato (05/11, GET 200), frase di Craxi (capogruppo) ritrovata parola per parola, prima delle tre correzioni; base imponibile definita (solo plusvalenze maturate in Italia, valore all'arrivo)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-FI-048",
+    "partitoId": "FI",
+    "dichiarante": "Stefania Craxi",
+    "ruoloDichiarante": "presidente dei senatori di Forza Italia",
+    "data": "2026-11-05",
+    "testoLetterale": "Per questo servono tre correzioni. […] Va mantenuta la promessa fatta a chi ha scelto il regime per i nuovi residenti, perché uno Stato credibile non cambia le regole a partita in corso.",
+    "parafrasiNeutra": "Non cambiare, con la exit tax, le regole per chi ha aderito al regime fiscale per i nuovi residenti.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-manovra-craxi-fi-per-exit-tax-lavoriamo-a-correttivi/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 3 (Agenzia Opinione): feed https://www.agenziagiornalisticaopinione.it/feed/ e /feed/?paged=2…90 (HTTP 200, dal 07/11 al 31/10), comunicato «FI – FORZA ITALIA * SENATO: «MANOVRA: CRAXI (FI), PER EXIT TAX LAVORIAMO A CORRETTIVI»» del 05/11/2026 (article:published_time 2026-11-05T11:40:34+01:00): «Lo dichiara la senatrice Stefania Craxi, presidente dei senatori di Forza Italia». Capogruppo: dichiarante autorizzata. Pagina scaricata con curl GET semplice (HTTP 200) il 2026-11-07; stesso testo nel lancio ANSA del 05/11 12:40 («Manovra: FI, servono 3 correzioni su exit tax», sitemap ANSA politica 200, pagina GET 200). Livello atteso V2. Pacchetto di 3 voci («Per questo servono tre correzioni»): C27-FI-047, 048, 049; la frase introduttiva è ripetuta in ogni riga e il «[…]» toglie solo le voci precedenti del pacchetto. Chiusura: «Per questo lavoreremo in Parlamento, insieme al governo e alla maggioranza, per migliorare la norma». Contesto: la exit tax sulle persone fisiche è nel ddl di bilancio del Governo (secondo ANSA per chi ha patrimoni da almeno 800mila euro e si trasferisce all'estero); FI ne condivide «la ratio». Citazione confrontata in automatico (segmenti in ordine): ritrovata. Doppioni: nessuna riga sulla exit tax. Orizzonte/veicolo: legislatura_in_corso, richiesta_legge_bilancio. COFOG 01. Seconda voce (il «[…]» toglie la prima). La parafrasi resta generica perché la fonte non dice come vada «mantenuta la promessa». Pre-valutazione slogan: LIM (regime nominato, effetto non descritto). Wayback (archive.org/wayback/available, sola lettura, 2026-11-07): nessuna copia esistente.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — Agenzia Opinione ripubblica il comunicato ricevuto, come C27-FI-042 del 2026-11-01 (l'avviso di impaginazione AI resta una regola aperta per il titolare); come caso limite: stessa fonte di C27-FI-047, il «[…]» toglie solo la prima voce del pacchetto; impegno di status quo su un regime identificato (nuovi residenti: non cambiare le regole «a partita in corso», come C27-FI-010); parafrasi ristretta al testo dall'orchestratore (tolto «Escludere dalla exit tax», che la fonte non dice)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-FI-049",
+    "partitoId": "FI",
+    "dichiarante": "Stefania Craxi",
+    "ruoloDichiarante": "presidente dei senatori di Forza Italia",
+    "data": "2026-11-05",
+    "testoLetterale": "Per questo servono tre correzioni. […] E va reso il meccanismo pienamente europeo, con un rinvio pieno per chi si trasferisce in un altro Paese dell’Unione, senza l’anticipo del 50 per cento e la garanzia",
+    "parafrasiNeutra": "Per chi si trasferisce in un altro Paese dell'Unione europea, rinviare per intero il pagamento della exit tax, togliendo l'anticipo del 50 per cento e la garanzia previsti dal testo.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-senato-manovra-craxi-fi-per-exit-tax-lavoriamo-a-correttivi/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 3 (Agenzia Opinione): feed https://www.agenziagiornalisticaopinione.it/feed/ e /feed/?paged=2…90 (HTTP 200, dal 07/11 al 31/10), comunicato «FI – FORZA ITALIA * SENATO: «MANOVRA: CRAXI (FI), PER EXIT TAX LAVORIAMO A CORRETTIVI»» del 05/11/2026 (article:published_time 2026-11-05T11:40:34+01:00): «Lo dichiara la senatrice Stefania Craxi, presidente dei senatori di Forza Italia». Capogruppo: dichiarante autorizzata. Pagina scaricata con curl GET semplice (HTTP 200) il 2026-11-07; stesso testo nel lancio ANSA del 05/11 12:40 («Manovra: FI, servono 3 correzioni su exit tax», sitemap ANSA politica 200, pagina GET 200). Livello atteso V2. Pacchetto di 3 voci («Per questo servono tre correzioni»): C27-FI-047, 048, 049; la frase introduttiva è ripetuta in ogni riga e il «[…]» toglie solo le voci precedenti del pacchetto. Chiusura: «Per questo lavoreremo in Parlamento, insieme al governo e alla maggioranza, per migliorare la norma». Contesto: la exit tax sulle persone fisiche è nel ddl di bilancio del Governo (secondo ANSA per chi ha patrimoni da almeno 800mila euro e si trasferisce all'estero); FI ne condivide «la ratio». Citazione confrontata in automatico (segmenti in ordine): ritrovata. Doppioni: nessuna riga sulla exit tax. Orizzonte/veicolo: legislatura_in_corso, richiesta_legge_bilancio. COFOG 01. Terza voce (il «[…]» toglie le prime due); la frase prosegue con la motivazione «previsioni che oggi rischiano di non reggere davanti alla Corte di giustizia», tolta per lunghezza. Pre-valutazione slogan: OK (parametri nominati). Wayback (archive.org/wayback/available, sola lettura, 2026-11-07): nessuna copia esistente.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — Agenzia Opinione ripubblica il comunicato ricevuto, come C27-FI-042 del 2026-11-01 (l'avviso di impaginazione AI resta una regola aperta per il titolare); stessa fonte di C27-FI-047, il «[…]» toglie solo le prime due voci, la motivazione finale («previsioni che oggi rischiano di non reggere davanti alla Corte di giustizia») resta fuori senza cambiare il senso; parametri nominati (rinvio pieno per i trasferimenti nell'Unione, senza anticipo del 50% e garanzia)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-FI-050",
+    "partitoId": "FI",
+    "dichiarante": "Antonio Tajani",
+    "ruoloDichiarante": "segretario nazionale Forza Italia, deputato; vicepresidente del Consiglio e ministro degli Affari esteri",
+    "data": "2026-11-06",
+    "testoLetterale": "Stiamo riflettendo come gruppo parlamentare di inserire nella legge di bilancio un emendamento che possa prevedere un fondo per risarcire immediatamente, non con i tempi biblici che ci sono burocratici, chi ha subito errori giudiziari",
+    "parafrasiNeutra": "Presentare alla legge di bilancio un emendamento del gruppo di Forza Italia che istituisca un fondo per risarcire subito chi ha subito errori giudiziari (importo non indicato).",
+    "tipoFonte": "discorso",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "emendamento",
+    "fonte": {
+      "url": "https://www.ansa.it/sito/notizie/politica/2026/11/06/tajani-inserire-in-manovra-un-fondo-per-risarcire-vittime-di-errori-giudiziari_90eda79a-4df6-483b-9017-106b7ad385fa.html"
+    },
+    "archivioUrl": null,
+    "cofog": "03",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 2 (Google News RSS, query uniforme «Tajani proposta», titoli «Legge di bilancio, Tajani: \"Un fondo nella manovra per risarcire subito le vittime di errori giudiziari\"» - Mediaset Infinity e «Manovra, Tajani propone un fondo per gli errori giudiziari» - La Discussione); link di Google News non aperti, lancio ritrovato nella sitemap ANSA (sito/sitemaps/politica_sitemap_new.xml, HTTP 200) e letto con curl GET semplice (HTTP 200; article:published_time 2026-11-06T13:02:00+0100) il 2026-11-07: il testo è nella pagina anche sotto il banner dei cookie (come C27-FI-041). «Lo ha detto il vicepremier e leader di Forza Italia, Antonio Tajani, agli Stati generali dei garantisti»: discorso riportato fra virgolette, livello atteso V2. Citazione confrontata in automatico: ritrovata, nessun taglio. Da valutare dal verificatore: formula dubitativa («Stiamo riflettendo […] che possa prevedere»), come C27-FDI-013. Doppioni: nessuna riga sugli errori giudiziari. Orizzonte/veicolo: legislatura_in_corso, emendamento (annunciato come ipotesi). COFOG 03. Pre-valutazione slogan: LIM (fondo nominato con beneficiari, nessun importo, impegno dubitativo). Wayback (archive.org/wayback/available, sola lettura, 2026-11-07): nessuna copia esistente.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — ANSA (06/11 13:02, GET 200) riporta fra virgolette Tajani agli Stati generali dei garantisti: discorso, V2; citazione ritrovata parola per parola, nessun taglio; dichiarante ammesso (segretario nazionale); caso limite superato: formula dubitativa («Stiamo riflettendo […] un emendamento che possa prevedere») come C27-FDI-013, con fondo nominato e platea definita (chi ha subito errori giudiziari), importo non indicato | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-FI-051",
+    "partitoId": "FI",
+    "dichiarante": "Maurizio Casasco",
+    "ruoloDichiarante": "responsabile economico Forza Italia",
+    "data": "2026-11-04",
+    "testoLetterale": "Sulla domanda, creare spazio per le tecnologie critiche europee nelle industrie nuove e tradizionali: unificare il mercato, in particolare per le startup, sostenendo la creazione di Eu Inc., il regime societario europeo unico proposto dalla Commissione",
+    "parafrasiNeutra": "Sostenere la creazione di Eu Inc., il regime societario europeo unico proposto dalla Commissione europea, per unificare il mercato in particolare per le startup.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.agenziagiornalisticaopinione.it/opinionmix/fi-forza-italia-camera-industria-casasco-investire-in-innovazione-per-rafforzare-competitivita-e-crescita-italia-proponga-agenda-a-ue/"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale 3 (Agenzia Opinione): feed https://www.agenziagiornalisticaopinione.it/feed/ e /feed/?paged=2…90 (HTTP 200, dal 07/11 al 31/10), comunicato «FI – FORZA ITALIA * CAMERA: «INDUSTRIA: CASASCO, INVESTIRE IN INNOVAZIONE PER RAFFORZARE COMPETITIVITÀ E CRESCITA. ITALIA PROPONGA AGENDA A UE»» del 04/11/2026 (article:published_time 2026-11-04T11:15:45+01:00): «Così Maurizio Casasco, deputato di Forza Italia e responsabile economia del partito, in un intervento su Il Sole 24 Ore»; l'articolo del Sole non è stato letto (testata a pagamento). Pagina scaricata con curl GET semplice (HTTP 200) il 2026-11-07; citazione confrontata in automatico: ritrovata, nessun taglio. Livello atteso V2. Responsabile economico: dichiarante autorizzato (come C27-FI-006…019). Agenda in più punti («Significa tre cose»: energia e data center, litografia, leadership; poi offerta e domanda di tecnologie critiche): registrate solo le due voci con uno strumento o un parametro (C27-FI-051, 052); le altre indicano una direzione senza leva («potenziare tutto ciò che serve», «far convergere il capitale privato»). La fonte presenta l'agenda come proposta da portare all'Unione europea («implementare questa agenda e proporla all’Europa»). Doppioni: nessuna riga su Eu Inc. o appalti pubblici. Orizzonte/veicolo: non_specificato, dichiarazione. COFOG 04. Pre-valutazione slogan: OK (istituto nominato). Wayback (archive.org/wayback/available, sola lettura, 2026-11-07): nessuna copia esistente.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — Agenzia Opinione ripubblica il comunicato ricevuto, come C27-FI-042 del 2026-11-01 (l'avviso di impaginazione AI resta una regola aperta per il titolare); comunicato FI Camera (04/11, GET 200) che riprende l'intervento di Casasco (responsabile economico) sul Sole 24 Ore, non letto; citazione ritrovata parola per parola, nessun taglio; istituto nominato (Eu Inc., regime societario europeo proposto dalla Commissione)"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
     "id": "C27-PD-008",
     "partitoId": "PD",
     "dichiarante": "Partito Democratico (documento nazionale presentato da Marina Sereni)",
@@ -2521,7 +2879,24 @@
       "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-20 — CONFERMATA (Il Messaggero 07/08/2026 (datePublished 2026-08-07T00:05+02:00), risposta testuale nell'intervista; cifre 800 mln e 22.000 sono dichiarazioni della proponente)"
     },
     "effettoConti": "si",
-    "ribadita": []
+    "ribadita": [
+      {
+        "id": "C27-PD-066",
+        "dichiarante": "Elly Schlein",
+        "ruoloDichiarante": "Segretaria nazionale PD, deputata",
+        "data": "2026-11-05",
+        "testoLetterale": "certo bisogna rafforzare i presidi delle forze dell’ordine. L’abbiamo fatto con una proposta di tutte le opposizioni per riportare subito in Italia gli 800 milioni buttati per quelle prigioni vuote in Albania e usarle per assumere più forze di polizia che mancano in tutta Italia",
+        "tipoFonte": "discorso",
+        "fonte": {
+          "url": "https://www.strettoweb.com/2026/11/ponte-sullo-stretto-schlein-e-la-solita-ossessione-contro-lopera-un-progetto-inutile-e-dannoso-prenderemo-i-soldi-da-li/2173284/"
+        },
+        "archivioUrl": null,
+        "verifica": {
+          "livello": "V2",
+          "dettaglio": "V2✓ verificatore L2 2026-11-07 — discorso all'assemblea programmatica della Cgil (05/11) riportato con virgolettato da testata aperta (StrettoWeb, GET 200, datePublished 2026-11-05): V2 (D-019); citazione ritrovata parola per parola, frase di Schlein e non della testata (il titolo valutativo non conta); dichiarante ammesso (segretaria); cifra (800 milioni) e destinazione (assunzioni nelle forze di polizia) dichiarate; ripetizione di C27-PD-015 ai codificatori (D-031) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+        }
+      }
+    ]
   },
   {
     "id": "C27-PD-019",
@@ -3072,6 +3447,22 @@
         "verifica": {
           "livello": "V2",
           "dettaglio": "V2✓ L2 2026-10-30 — post Facebook di Conte riportato da askanews (Il Domani d'Italia): V2; citazione ritrovata, i «[…]» tolgono solo le altre voci dell'elenco; importo (13 miliardi) e destinazione (scuole) dichiarati; ribadisce in sostanza C27-M5S-014 (classificazione ad altri)"
+        }
+      },
+      {
+        "id": "C27-M5S-080",
+        "dichiarante": "MoVimento 5 Stelle",
+        "ruoloDichiarante": "articolo non firmato sul sito ufficiale del partito",
+        "data": "2026-11-04",
+        "testoLetterale": "Era possibile fare scelte diverse? Sì, e le abbiamo proposte più volte: […] spostare i 13,5 miliardi bloccati sul Ponte sullo Stretto su edilizia scolastica, spazi e servizi per studenti",
+        "tipoFonte": "sito_ufficiale",
+        "fonte": {
+          "url": "https://www.movimento5stelle.eu/la-guerra-la-paghi-tu-e-a-perugia-ti-spieghiamo-quanto/"
+        },
+        "archivioUrl": null,
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore L2 2026-11-07 — articolo del sito ufficiale del M5S (GET 200, datePublished 2026-11-04), elenco «Le alternative c'erano»: V1; citazione ritrovata parola per parola, il «[…]» toglie solo le voci precedenti; importo (13,5 miliardi), fonte (Ponte sullo Stretto) e destinazione dichiarati, come C27-M5S-014 e C27-M5S-060 | PERIMETRO: orizzonte/veicolo (vedi colonne)"
         }
       }
     ]
@@ -3982,7 +4373,24 @@
       "dettaglio": "V1✓ verificatore 2026-10-20 — CORRETTA: data 2026-05-10→2026-10-12 (la data precedente non era della proposta AVS ma di una proposta di cittadini collegata); testo e numero proposta verificati sulla pagina; autore «Alleanza Verdi Sinistra» | GRANULARITÀ (controllo di simmetria 2026-10-21): testo_letterale e parafrasi ristretti al primo impegno; gli altri segmenti della stessa citazione sono le righe derivate C27-AVS-032"
     },
     "effettoConti": "si",
-    "ribadita": []
+    "ribadita": [
+      {
+        "id": "C27-AVS-114",
+        "dichiarante": "Nicola Fratoianni",
+        "ruoloDichiarante": "Segretario di Sinistra Italiana, leader di AVS, deputato",
+        "data": "2026-11-02",
+        "testoLetterale": "dovrà esserci. […] La nostra proposta, quella di Oxfam, riguarda i patrimoni personali netti superiori a 5,4 milioni di euro: appena 50 mila italiani, lo 0,1% della popolazione",
+        "tipoFonte": "discorso",
+        "fonte": {
+          "url": "https://www.adnkronos.com/politica/conte-m5s-reddito-cittadinanza_12yfrcdqUNpteG5rTbJQo2"
+        },
+        "archivioUrl": null,
+        "verifica": {
+          "livello": "V2",
+          "dettaglio": "V2✓ verificatore L2 2026-11-07 — parafrasi corretta dall'orchestratore come chiesto dal verificatore (il contesto della testata è indicato come tale, come C27-M5S-069); intervista a Repubblica (02/11, a pagamento, non letta) ripresa con virgolettato da Adnkronos (GET 200, 03/11): discorso V2 come C27-M5S-068; citazione ritrovata parola per parola, il «[…]» toglie una frase sui sondaggi e nessun gruppo di persone; soglia (5,4 milioni) e platea dichiarate; ripetizione di C27-AVS-010 ai codificatori (D-031) (L2 2026-11-07)"
+        }
+      }
+    ]
   },
   {
     "id": "C27-AVS-011",
@@ -4225,7 +4633,24 @@
       "dettaglio": "V1✓ verificatore 2026-10-20 — CORRETTA: data 2026-05-11→2026-10-12 (la data precedente non era della proposta AVS ma di una proposta di cittadini collegata); testo e numero proposta verificati sulla pagina; autore «Alleanza Verdi Sinistra»"
     },
     "effettoConti": "si",
-    "ribadita": []
+    "ribadita": [
+      {
+        "id": "C27-AVS-098",
+        "dichiarante": "Nicola Fratoianni",
+        "ruoloDichiarante": "Segretario di Sinistra Italiana, leader di AVS, deputato",
+        "data": "2026-11-04",
+        "testoLetterale": "Potrebbero per esempio […] intervenire con una patrimoniale sulle mafie legalizzando le droghe leggere, consentendo cosi nuove risorse e sottraendo enormi flussi di ricchezza alle organizzazioni criminali",
+        "tipoFonte": "sito_ufficiale",
+        "fonte": {
+          "url": "https://verdisinistra.it/manovra-fratoianni-avs-il-governo-permette-di-personalizzare-a-pagamento-le-targhe-mentre-gli-italiani-non-hanno-piu-soldi-per-farle-muovere-dati-i-prezzi-del-carburante-siamo-alla-distrazione-di/"
+        },
+        "archivioUrl": null,
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore L2 2026-11-07 — comunicato su verdisinistra.it (GET 200) (04/11): V1; citazione ritrovata parola per parola, il «[…]» toglie solo l'inciso «- prosegue il leader rossoverde -»; modifica di norme identificabile (legalizzazione delle droghe leggere), indicata al governo come proposta propria (regola di D-012), come C27-AVS-019; «cosi» senza accento è nella fonte | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+        }
+      }
+    ]
   },
   {
     "id": "C27-AVS-020",
@@ -6196,7 +6621,24 @@
       "dettaglio": "V1✓ L2 2026-10-29 — intervista su testata (D-019); istituto nominato (salario minimo), come C27-PD-013"
     },
     "effettoConti": "no",
-    "ribadita": []
+    "ribadita": [
+      {
+        "id": "C27-PD-068",
+        "dichiarante": "Elly Schlein",
+        "ruoloDichiarante": "Segretaria nazionale PD, deputata",
+        "data": "2026-11-05",
+        "testoLetterale": "sul lavoro sono già tante le proposte che abbiamo fatto insieme alle opposizioni. Penso a quella sul salario minimo, che in altri Paesi ha aiutato molto le famiglie davanti all’inflazione",
+        "tipoFonte": "discorso",
+        "fonte": {
+          "url": "https://www.lapresse.it/video/2026/11/05/salario-minimo-schlein-in-altri-paesi-ha-aiutato-le-famiglie-davanti-allinflazione/"
+        },
+        "archivioUrl": null,
+        "verifica": {
+          "livello": "V2",
+          "dettaglio": "V2✓ verificatore L2 2026-11-07 — discorso all'assemblea programmatica della Cgil (05/11) riportato con virgolettato da testata aperta (LaPresse, pagina video con testo, GET 200, datePublished 2026-11-05): V2; citazione ritrovata parola per parola, il taglio finale toglie solo «che sta galoppando…»; dichiarante ammesso; istituto nominato (salario minimo), come C27-PD-013 e C27-PD-039; ripetizione ai codificatori (D-031) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+        }
+      }
+    ]
   },
   {
     "id": "C27-PD-040",
@@ -6331,7 +6773,24 @@
       "dettaglio": "V2✓ L2 2026-10-30 — post Facebook di Conte riportato da askanews (Il Domani d'Italia): V2; citazione ritrovata, il «[…]» toglie solo l'inciso «– prosegue Conte –» (regola del runbook) e nessuna parola sul gruppo descritto; imposta nominata con platea (under 35) e durata (5 anni), entità del taglio non indicata"
     },
     "effettoConti": "si",
-    "ribadita": []
+    "ribadita": [
+      {
+        "id": "C27-M5S-081",
+        "dichiarante": "MoVimento 5 Stelle",
+        "ruoloDichiarante": "articolo non firmato sul sito ufficiale del partito",
+        "data": "2026-11-04",
+        "testoLetterale": "Era possibile fare scelte diverse? Sì, e le abbiamo proposte più volte: […] un taglio dell’Irpef per cinque anni agli under 35",
+        "tipoFonte": "sito_ufficiale",
+        "fonte": {
+          "url": "https://www.movimento5stelle.eu/la-guerra-la-paghi-tu-e-a-perugia-ti-spieghiamo-quanto/"
+        },
+        "archivioUrl": null,
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore L2 2026-11-07 — articolo del sito ufficiale del M5S (GET 200, datePublished 2026-11-04), elenco «Le alternative c'erano»: V1; citazione ritrovata parola per parola, il «[…]» toglie solo le voci precedenti e il taglio finale solo il fine («per trattenere i giovani in Italia»), mentre la platea (under 35) resta; imposta, durata e platea definite, come C27-M5S-061 | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+        }
+      }
+    ]
   },
   {
     "id": "C27-M5S-064",
@@ -6439,6 +6898,654 @@
       "dettaglio": "V2✓ verificatore 2026-11-01 — CORRETTA: parafrasi: «imposta patrimoniale» viene dal contesto della testata («A proposito della patrimoniale, ha chiarito») ed è ora indicato come tale, come in C27-PLD-016; intervista televisiva («Accordi & Disaccordi», Nove, 31/10) ripresa con virgolettato da Adnkronos (GET 200), testata che non l'ha fatta: discorso, V2 come C27-FN-041; citazione ritrovata parola per parola, nessun taglio; dichiarante ammesso (presidente); caso limite superato: rifiuto di uno strumento identificato dal contesto (tassa una tantum sui patrimoni), impegno di status quo come C27-FI-010 e C27-ORA-032; la proposta alternativa («L'abbiamo studiata, la porteremo al tavolo») non è descritta e non conta | PERIMETRO: orizzonte/veicolo (vedi colonne)"
     },
     "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-PD-067",
+    "partitoId": "PD",
+    "dichiarante": "Elly Schlein",
+    "ruoloDichiarante": "Segretaria nazionale PD, deputata",
+    "data": "2026-11-05",
+    "testoLetterale": "naturalmente anche la sicurezza quella climatica. E prenderemo i soldi da quell’inutilee dannoso progetto del ponte sullo stretto di Messina",
+    "parafrasiNeutra": "Finanziare la sicurezza climatica con le risorse destinate al Ponte sullo Stretto di Messina, definito «inutile e dannoso».",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.strettoweb.com/2026/11/ponte-sullo-stretto-schlein-e-la-solita-ossessione-contro-lopera-un-progetto-inutile-e-dannoso-prenderemo-i-soldi-da-li/2173284/"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (query uniformi «PD intervista», «PD proposta», «Schlein intervista», «Schlein proposta», when:7d, hl=it&gl=IT&ceid=IT:it; HTTP 200 per tutte), trovata con «Schlein proposta»; il link di Google News non si apre, articolo ritrovato sulla testata. Fonte: StrettoWeb, «Ponte sullo Stretto, Schlein e la solita ossessione contro l’opera: “un progetto inutile e dannoso, prenderemo i soldi da lì”» (Ilaria Calabrò), datePublished 2026-11-05T20:17:00+01:00 (API WordPress di strettoweb.com, ricerca «Schlein» after=2026-11-01, HTTP 200), letto per intero il 2026-11-07 (HTTP 200). Occasione: intervento di Elly Schlein all’assemblea programmatica della Cgil «Il futuro è adesso» (Teatro Brancaccio, Roma, 05/11) con i leader del centrosinistra; discorso riportato con virgolettato da una testata che non l’ha raccolto in esclusiva: V2 atteso, tipo_fonte «discorso». La testata ha un titolo valutativo («la solita ossessione»): conta solo il virgolettato. Il refuso «inutilee» è nella fonte ed è copiato com’è. Contesto: elenco delle «sicurezze» (casa, salario, clima) nello stesso intervento; la frase precedente sul salario minimo («abbiamo proposto il salario minimo») è registrata a parte con altra fonte (riga successiva). La destinazione delle risorse (sicurezza climatica) si legge dalla frase che precede; la cifra non è detta (Zazoom, aggregatore non ammesso, titola «13 miliardi per casa e dissesto idrogeologico»: non usato). Collegata alla PdL sulle aree interne (A.C. 2517, prima firma Schlein, fondo da 6,355 miliardi finanziato in parte con le risorse del Ponte, illustrata a Macomer il 06/11 secondo CronacaOnline, testo della PdL non letto). COFOG 04 (definanziamento di un’opera di trasporto; destinazione 05). Pre-valutazione slogan: LIM (fonte delle risorse identificata, opera nominata; importo e destinazione non quantificati). Orizzonte/veicolo: non_specificato, dichiarazione. Citazione estratta in automatico dal testo scaricato il 2026-11-07 con curl GET semplice e confrontata con la pagina: ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — discorso all'assemblea programmatica della Cgil (05/11) riportato con virgolettato da testata aperta (StrettoWeb, GET 200): V2; citazione ritrovata parola per parola, «inutilee» è nella fonte; dichiarante ammesso; caso limite superato: fonte delle risorse identificata (definanziamento di un'opera nominata, il Ponte sullo Stretto), come C27-M5S-014 e C27-M5S-060, con destinazione detta nella stessa citazione (sicurezza climatica); importo non dichiarato (misurabile parziale) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-PD-069",
+    "partitoId": "PD",
+    "dichiarante": "Antonio Misiani",
+    "ruoloDichiarante": "responsabile Economia, Finanze, Imprese e Infrastrutture nella segreteria nazionale PD, senatore",
+    "data": "2026-11-06",
+    "testoLetterale": "si poteva incominciare restituendo quello che è stato eroso e poi immaginando un meccanismo […] in cui, manovra di bilancio dopo manovra di bilancio, si prevede uno stanziamento destinato a questo scopo. Quindi si possono fare iniziative che vanno in questa direzione",
+    "parafrasiNeutra": "Recuperare il fiscal drag: restituire quanto eroso negli anni passati e prevedere in ogni legge di bilancio uno stanziamento dedicato all’indicizzazione.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.informazionefiscale.it/manovra-2027-flat-tax-100000-euro-irpef-intervista-misiani-pd"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (query uniformi «PD intervista», «PD proposta», «Schlein intervista», «Schlein proposta», when:7d, hl=it&gl=IT&ceid=IT:it; HTTP 200 per tutte), trovata con «PD intervista»; il link di Google News non si apre, articolo ritrovato sulla testata. Ritrovata con la sitemap di informazionefiscale.it (https://www.informazionefiscale.it/sitemap.xml, HTTP 200). Fonte: Informazione Fiscale, «Manovra 2027, Misiani (PD): flat tax a 100.000 euro uno strappo all’equità, “il Governo vive sulla luna”» (Anna Maria D’Andrea), intervista «ai microfoni di Informazione Fiscale», datePublished 2026-11-06 12:40, letta per intero il 2026-11-07 (HTTP 200): intervista pubblicata dalla testata che l’ha fatta (D-019); verificare che Informazione Fiscale sia una testata registrata. Contesto (della testata): «Sollecitato sul nodo dei costi, Misiani propone un intervento per fasi, iniziando con la restituzione di quello che è stato eroso negli anni passati». La frase è al condizionale passato («si poteva»), rivolta al governo, e prosegue con «si possono fare iniziative»: caso limite fra critica e proposta, da valutare. Nella stessa intervista, solo in parole della testata e quindi non registrati: emendamento PD per spostare sulla sanità pubblica gli 1,6 miliardi del voucher per le prestazioni private; evitare gli 850 milioni di risparmi sulla rivalutazione delle pensioni. Collegata a C27-PD-038 (sterilizzazione del fiscal drag, NUOVA) e C27-PD-032. Il «[…]» toglie l’inciso «- come era previsto peraltro da una legge di parecchi anni fa -». COFOG 01 (imposte). Pre-valutazione slogan: LIM (meccanismo descritto: restituzione e stanziamento annuale; importi non indicati). Orizzonte/veicolo: non_specificato, dichiarazione. Citazione estratta in automatico dal testo scaricato il 2026-11-07 con curl GET semplice e confrontata con la pagina: ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — intervista «ai microfoni di Informazione Fiscale» pubblicata dalla testata che l'ha fatta (testata registrata al Tribunale di Velletri, n. 14/2018, indicata nella pagina; GET 200, datePublished 2026-11-06): V1 per D-019; citazione ritrovata parola per parola, il «[…]» toglie solo l'inciso «- come era previsto peraltro da una legge di parecchi anni fa -»; ruolo confermato dalla pagina («Senatore e responsabile economico del Partito Democratico»); caso limite superato: la frase al condizionale («si poteva») prosegue al presente («si possono fare iniziative») e con «il governo […] non ci ha sentito», quindi è una proposta del dichiarante e non solo una critica; meccanismo descritto (restituzione di quanto eroso e stanziamento in ogni manovra), importi non detti; «negli anni passati» della parafrasi è coerente con le parole di Misiani sul 2022-2023 e non aggiunge un impegno | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-M5S-070",
+    "partitoId": "M5S",
+    "dichiarante": "Giuseppe Conte",
+    "ruoloDichiarante": "presidente del MoVimento 5 Stelle, deputato",
+    "data": "2026-11-03",
+    "testoLetterale": "Abbiamo delle proposte assolutamente molto articolate elaborate, ma ci confronteremo. Il reddito è una di queste proposte",
+    "parafrasiNeutra": "Portare ai tavoli del programma della coalizione una nuova versione del reddito (di cittadinanza), fra le proposte di redistribuzione del M5S.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.adnkronos.com/politica/conte-m5s-reddito-cittadinanza_12yfrcdqUNpteG5rTbJQo2"
+    },
+    "archivioUrl": null,
+    "cofog": "10",
+    "misurabile": "no",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (query uniformi «M5S intervista», «M5S proposta», «Conte intervista», «Conte proposta», when:7d, hl=it&gl=IT&ceid=IT:it; HTTP 200 per tutte), trovata con «M5S proposta» e «Conte proposta»; il link di Google News non si apre, articolo ritrovato sulla testata. Ritrovata con la sitemap di Adnkronos (https://www.adnkronos.com/2026/11/sitemap-{1,2,3}.xml, HTTP 200). Fonte: Adnkronos, «Conte: “Il ‘nuovo’ reddito di cittadinanza è tra le proposte M5S”», datePublished 2026-11-03T13:02:59Z, letta per intero il 2026-11-07 (HTTP 200). Occasione: dichiarazione di Conte «arrivando alla presentazione del libro ‘L’internazionale della Terra’»; discorso riportato: V2 atteso. Qui la misura è nelle parole del dichiarante («Il reddito è una di queste proposte»), a differenza di C27-M5S-067 (NON VERIFICABILE perché la misura era solo nella domanda): questa riga può sostituirla. Seguito, separato da parole della testata e quindi non unito con «[…]»: il reddito «va assolutamente rivisto in modo che sia veramente utile per chi è realmente in difficoltà». Costo: QuiFinanza (03/11) riferisce stime M5S di 9-10 miliardi l’anno e il lavoro di Mario Turco sulla proposta, ma senza virgolettati: non registrato come costo dichiarato. COFOG 10. Pre-valutazione slogan: OK (istituto nominato; revisione non descritta). Orizzonte/veicolo: non_specificato (tavoli del programma della coalizione), dichiarazione. Citazione estratta in automatico dal testo scaricato il 2026-11-07 con curl GET semplice e confrontata con la pagina: ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — dichiarazione di Conte «arrivando alla presentazione del libro» riportata con virgolettato da Adnkronos (GET 200, datePublished 2026-11-03): discorso, V2; citazione ritrovata parola per parola; qui la misura è nelle parole del dichiarante («Il reddito è una di queste proposte»), a differenza di C27-M5S-067; dichiarante ammesso (presidente); caso limite superato: istituto nominato (reddito di cittadinanza, che Conte distingue dall'assegno di inclusione nella stessa dichiarazione), come il salario minimo di C27-PD-013; la revisione («va assolutamente rivisto») non è descritta (misurabile no) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-M5S-071",
+    "partitoId": "M5S",
+    "dichiarante": "Giuseppe Conte",
+    "ruoloDichiarante": "presidente del MoVimento 5 Stelle, deputato",
+    "data": "2026-11-03",
+    "testoLetterale": "Qui non c'è solo una legge, c'è una nuova stagione di Governo, e ve l'anticipiamo. Quando ci insedieremo, riconoscimento dello Stato di Palestina",
+    "parafrasiNeutra": "Riconoscere lo Stato di Palestina all’insediamento del governo.",
+    "tipoFonte": "discorso",
+    "orizzonte": "prossima_legislatura",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0737/stenografico.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (query uniformi «M5S intervista», «M5S proposta», «Conte intervista», «Conte proposta», when:7d, hl=it&gl=IT&ceid=IT:it; HTTP 200 per tutte), trovata con la query di approfondimento «Conte Palestina accordo militare Israele Camera» (stesse impostazioni), dopo i titoli di ANSA, Il Fatto Quotidiano, L’Espresso e StrettoWeb del 03-05/11; il link di Google News non si apre, articolo ritrovato sulla testata. Fonte: resoconto stenografico della seduta n. 737 della Camera (03/11/2026), documenti.camera.it (HTTP 200, letto il 2026-11-07), intervento di Giuseppe Conte sulla richiesta di procedura d’urgenza per la proposta di legge che vieta le importazioni di beni e servizi dagli insediamenti israeliani nei territori palestinesi occupati (urgenza respinta, 149 contrari e 109 favorevoli secondo StrettoWeb 05/11). Testo ufficiale dell’intervento: tipo_fonte «discorso», il livello (V1 o V2) lo decide il verificatore. Il «(Applausi …)» fra le due frasi è del resocontista. Collegata a C27-AVS-024 (AVS, programma). Nessuna riga M5S sul riconoscimento della Palestina nel catalogo; C27-M5S-074 (05/11) lo ripete con le sanzioni. COFOG 01 (affari esteri), come C27-AVS-024. Pre-valutazione slogan: OK (atto definito). Orizzonte/veicolo: prossima_legislatura («Quando ci insedieremo»), dichiarazione. Citazione estratta in automatico dal testo scaricato il 2026-11-07 con curl GET semplice e confrontata con la pagina: ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — resoconto stenografico ufficiale della seduta 737 della Camera (03/11, GET 200): intervento in Aula, discorso V2 come C27-AVS-060 e C27-PD-028; citazione ritrovata parola per parola, le due frasi sono contigue e il resocontista non interrompe; dichiarante ammesso (presidente M5S); atto definito (riconoscimento dello Stato di Palestina) con orizzonte esplicito («Quando ci insedieremo») | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-M5S-072",
+    "partitoId": "M5S",
+    "dichiarante": "Giuseppe Conte",
+    "ruoloDichiarante": "presidente del MoVimento 5 Stelle, deputato",
+    "data": "2026-11-03",
+    "testoLetterale": "Qui non c'è solo una legge, c'è una nuova stagione di Governo, e ve l'anticipiamo. […] quando ci insedieremo, strapperemo l'accordo di cooperazione militare con Israele",
+    "parafrasiNeutra": "Interrompere l’accordo di cooperazione militare fra Italia e Israele all’insediamento del governo.",
+    "tipoFonte": "discorso",
+    "orizzonte": "prossima_legislatura",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0737/stenografico.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "02",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (query uniformi «M5S intervista», «M5S proposta», «Conte intervista», «Conte proposta», when:7d, hl=it&gl=IT&ceid=IT:it; HTTP 200 per tutte), trovata con la query di approfondimento «Conte Palestina accordo militare Israele Camera» (stesse impostazioni), dopo i titoli di ANSA, Il Fatto Quotidiano, L’Espresso e StrettoWeb del 03-05/11; il link di Google News non si apre, articolo ritrovato sulla testata. Fonte: resoconto stenografico della seduta n. 737 della Camera (03/11/2026), documenti.camera.it (HTTP 200, letto il 2026-11-07), intervento di Giuseppe Conte sulla richiesta di procedura d’urgenza per la proposta di legge che vieta le importazioni di beni e servizi dagli insediamenti israeliani nei territori palestinesi occupati (urgenza respinta, 149 contrari e 109 favorevoli secondo StrettoWeb 05/11). Testo ufficiale dell’intervento: tipo_fonte «discorso», il livello (V1 o V2) lo decide il verificatore. Il «(Applausi …)» fra le due frasi è del resocontista. Il «[…]» toglie la frase sulla Palestina (riga precedente) e l’indicazione del resocontista fra parentesi. COFOG 02 (difesa). Pre-valutazione slogan: OK (accordo identificato). Orizzonte/veicolo: prossima_legislatura («quando ci insedieremo»), dichiarazione. Citazione estratta in automatico dal testo scaricato il 2026-11-07 con curl GET semplice e confrontata con la pagina: ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — stesso resoconto stenografico (seduta 737, GET 200): discorso V2; citazione ritrovata parola per parola, il «[…]» toglie solo la frase sulla Palestina (C27-M5S-071) e l'indicazione degli applausi del resocontista; accordo identificato (cooperazione militare Italia-Israele) con orizzonte esplicito | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-M5S-073",
+    "partitoId": "M5S",
+    "dichiarante": "Giuseppe Conte",
+    "ruoloDichiarante": "presidente del MoVimento 5 Stelle, deputato",
+    "data": "2026-11-05",
+    "testoLetterale": "Salario minimo",
+    "parafrasiNeutra": "Approvare il salario minimo con un governo del centrosinistra (la testata colloca la frase fra i provvedimenti del primo Consiglio dei ministri).",
+    "tipoFonte": "discorso",
+    "orizzonte": "prossima_legislatura",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.adnkronos.com/politica/conte-schlein-m5s-pd-piazzapulita_G6GqX2rHF4dXyhzzvATt6"
+    },
+    "archivioUrl": null,
+    "cofog": "10",
+    "misurabile": "no",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (query uniformi «M5S intervista», «M5S proposta», «Conte intervista», «Conte proposta», when:7d, hl=it&gl=IT&ceid=IT:it; HTTP 200 per tutte), trovata con «Conte intervista» (titolo La7 «L’intervista a Giuseppe Conte», 05/11); il link di Google News non si apre, articolo ritrovato sulla testata. Ritrovata con la sitemap di Adnkronos (https://www.adnkronos.com/2026/11/sitemap-{1,2,3}.xml, HTTP 200). Fonte: Adnkronos, «Conte: “Salario minimo, Palestina e via i decreti sicurezza nel primo Cdm del campo largo”», datePublished 2026-11-05T22:42:00Z, letta per intero il 2026-11-07 (HTTP 200). Occasione: intervista di Conte a «Piazzapulita» (La7, 05/11); video non visto; intervista ripresa con virgolettato da una testata che non l’ha fatta: V2 atteso (come C27-FN-041), tipo_fonte «discorso». Contesto (della testata): «Sono i 3 provvedimenti che Giuseppe Conte, leader del Movimento 5 Stelle, porterebbe in Consiglio dei ministri se il campo largo vincesse le elezioni e formasse un governo». Le tre misure sono nella stessa frase: una riga per misura (D-019). Frase intera: «Salario minimo, riconoscimento dello stato della Palestina con sanzioni contro Netanyahu, rimuovere tutte le norme dei decreti sicurezza che non consentono proteste civili e dissenso politico». Ripetizione di C27-M5S-003 (salario minimo legale con indicizzazione), da valutare nella classificazione: aggiunge il «primo Cdm». COFOG 10. Pre-valutazione slogan: OK (istituto nominato). Orizzonte/veicolo: prossima_legislatura (dal contesto della domanda riportato dalla testata), dichiarazione. Citazione estratta in automatico dal testo scaricato il 2026-11-07 con curl GET semplice e confrontata con la pagina: ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — parafrasi corretta dall'orchestratore come chiesto dal verificatore (il contesto della testata è indicato come tale, come C27-M5S-069); citazione ritrovata parola per parola su Adnkronos (GET 200, datePublished 2026-11-05T22:42Z), la misura è nelle parole di Conte; istituto nominato (salario minimo), come C27-M5S-003; intervista ripresa da altra testata: V2 (L2 2026-11-07)"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-M5S-074",
+    "partitoId": "M5S",
+    "dichiarante": "Giuseppe Conte",
+    "ruoloDichiarante": "presidente del MoVimento 5 Stelle, deputato",
+    "data": "2026-11-05",
+    "testoLetterale": "riconoscimento dello stato della Palestina con sanzioni contro Netanyahu",
+    "parafrasiNeutra": "Riconoscere lo Stato di Palestina, con sanzioni contro Netanyahu (la testata colloca la frase fra i provvedimenti del primo Consiglio dei ministri).",
+    "tipoFonte": "discorso",
+    "orizzonte": "prossima_legislatura",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.adnkronos.com/politica/conte-schlein-m5s-pd-piazzapulita_G6GqX2rHF4dXyhzzvATt6"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (query uniformi «M5S intervista», «M5S proposta», «Conte intervista», «Conte proposta», when:7d, hl=it&gl=IT&ceid=IT:it; HTTP 200 per tutte), trovata con «Conte intervista» (titolo La7 «L’intervista a Giuseppe Conte», 05/11); il link di Google News non si apre, articolo ritrovato sulla testata. Ritrovata con la sitemap di Adnkronos (https://www.adnkronos.com/2026/11/sitemap-{1,2,3}.xml, HTTP 200). Fonte: Adnkronos, «Conte: “Salario minimo, Palestina e via i decreti sicurezza nel primo Cdm del campo largo”», datePublished 2026-11-05T22:42:00Z, letta per intero il 2026-11-07 (HTTP 200). Occasione: intervista di Conte a «Piazzapulita» (La7, 05/11); video non visto; intervista ripresa con virgolettato da una testata che non l’ha fatta: V2 atteso (come C27-FN-041), tipo_fonte «discorso». Contesto (della testata): «Sono i 3 provvedimenti che Giuseppe Conte, leader del Movimento 5 Stelle, porterebbe in Consiglio dei ministri se il campo largo vincesse le elezioni e formasse un governo». Le tre misure sono nella stessa frase: una riga per misura (D-019). Ripete C27-M5S-071 (Aula, 03/11) e aggiunge le sanzioni; collegata a C27-AVS-055 (sanzioni UE contro Netanyahu). COFOG 01. Pre-valutazione slogan: OK (atto definito; le sanzioni non sono descritte). Orizzonte/veicolo: prossima_legislatura (dal contesto della testata), dichiarazione. Citazione estratta in automatico dal testo scaricato il 2026-11-07 con curl GET semplice e confrontata con la pagina: ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — parafrasi corretta dall'orchestratore come chiesto dal verificatore (il contesto della testata è indicato come tale, come C27-M5S-069); citazione ritrovata parola per parola su Adnkronos (GET 200); atto definito (riconoscimento dello Stato di Palestina) con sanzioni non descritte; intervista ripresa da altra testata: V2 (L2 2026-11-07)"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-M5S-075",
+    "partitoId": "M5S",
+    "dichiarante": "Giuseppe Conte",
+    "ruoloDichiarante": "presidente del MoVimento 5 Stelle, deputato",
+    "data": "2026-11-05",
+    "testoLetterale": "rimuovere tutte le norme dei decreti sicurezza che non consentono proteste civili e dissenso politico",
+    "parafrasiNeutra": "Abrogare le norme dei decreti sicurezza che limitano le proteste civili e il dissenso politico (la testata colloca la frase fra i provvedimenti del primo Consiglio dei ministri).",
+    "tipoFonte": "discorso",
+    "orizzonte": "prossima_legislatura",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.adnkronos.com/politica/conte-schlein-m5s-pd-piazzapulita_G6GqX2rHF4dXyhzzvATt6"
+    },
+    "archivioUrl": null,
+    "cofog": "03",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: Google News RSS (query uniformi «M5S intervista», «M5S proposta», «Conte intervista», «Conte proposta», when:7d, hl=it&gl=IT&ceid=IT:it; HTTP 200 per tutte), trovata con «Conte intervista» (titolo La7 «L’intervista a Giuseppe Conte», 05/11); il link di Google News non si apre, articolo ritrovato sulla testata. Ritrovata con la sitemap di Adnkronos (https://www.adnkronos.com/2026/11/sitemap-{1,2,3}.xml, HTTP 200). Fonte: Adnkronos, «Conte: “Salario minimo, Palestina e via i decreti sicurezza nel primo Cdm del campo largo”», datePublished 2026-11-05T22:42:00Z, letta per intero il 2026-11-07 (HTTP 200). Occasione: intervista di Conte a «Piazzapulita» (La7, 05/11); video non visto; intervista ripresa con virgolettato da una testata che non l’ha fatta: V2 atteso (come C27-FN-041), tipo_fonte «discorso». Contesto (della testata): «Sono i 3 provvedimenti che Giuseppe Conte, leader del Movimento 5 Stelle, porterebbe in Consiglio dei ministri se il campo largo vincesse le elezioni e formasse un governo». Le tre misure sono nella stessa frase: una riga per misura (D-019). Le norme da abrogare sono indicate per effetto («che non consentono proteste civili e dissenso politico»), non per articolo. Nessuna riga M5S sui decreti sicurezza nel catalogo. COFOG 03. Pre-valutazione slogan: OK (abrogazione di norme di atti identificati). Orizzonte/veicolo: prossima_legislatura (dal contesto della testata), dichiarazione. Citazione estratta in automatico dal testo scaricato il 2026-11-07 con curl GET semplice e confrontata con la pagina: ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — parafrasi corretta dall'orchestratore come chiesto dal verificatore (il contesto della testata è indicato come tale, come C27-M5S-069); citazione ritrovata parola per parola su Adnkronos (GET 200); nel merito caso limite superato: abrogazione di norme di atti identificati (decreti sicurezza), con perimetro indicato per effetto e non per articolo; intervista ripresa da altra testata: V2 (L2 2026-11-07)"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-M5S-078",
+    "partitoId": "M5S",
+    "dichiarante": "MoVimento 5 Stelle",
+    "ruoloDichiarante": "articolo non firmato sul sito ufficiale del partito",
+    "data": "2026-11-04",
+    "testoLetterale": "Era possibile fare scelte diverse? Sì, e le abbiamo proposte più volte: una scala mobile fiscale automatica, per adeguare le tasse all’inflazione e difendere gli stipendi dai rincari",
+    "parafrasiNeutra": "Introdurre una scala mobile fiscale automatica che adegui le imposte all’inflazione.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.movimento5stelle.eu/la-guerra-la-paghi-tu-e-a-perugia-ti-spieghiamo-quanto/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: API WordPress di movimento5stelle.eu (https://www.movimento5stelle.eu/wp-json/wp/v2/posts?after=2026-11-01T00:00:00&per_page=100, HTTP 200, 4 post nel periodo) e /feed/ (HTTP 200); pagina riaperta il 2026-11-07 (HTTP 200). Fonte: articolo non firmato «La guerra la paghi tu. E a Perugia ti spieghiamo quanto», datePublished 2026-11-04T15:10:50 (API), sezione «Le alternative c’erano»; annuncia un incontro a Perugia il 13/11. Elenco di cinque proposte del partito sulla legge di bilancio: una riga per voce; la quinta («rivedere gli impegni sul riarmo e sui vincoli di austerità europei che il Governo ha firmato») non è registrata: direzione senza parametro (criterio slogan). Nelle righe C27-M5S-079…081 il «[…]» toglie le voci che precedono nell’elenco. Le stesse voci sono nel post Facebook di Conte del 29/10 (C27-M5S-056…061): righe da valutare nella classificazione (ribadisce). Ripete C27-M5S-057. COFOG 01. Pre-valutazione slogan: OK (meccanismo nominato). Orizzonte/veicolo: non_specificato (proposte già avanzate, il testo non nomina un atto), dichiarazione. Citazione estratta in automatico dal testo scaricato il 2026-11-07 con curl GET semplice e confrontata con la pagina: ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — articolo del sito ufficiale del M5S (GET 200, datePublished 2026-11-04), elenco «Le alternative c'erano»: V1; citazione ritrovata parola per parola; meccanismo descritto dal nome (adeguamento automatico delle imposte all'inflazione), come C27-M5S-057; ripetizione ai codificatori (D-031) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-M5S-079",
+    "partitoId": "M5S",
+    "dichiarante": "MoVimento 5 Stelle",
+    "ruoloDichiarante": "articolo non firmato sul sito ufficiale del partito",
+    "data": "2026-11-04",
+    "testoLetterale": "Era possibile fare scelte diverse? Sì, e le abbiamo proposte più volte: […] una vera tassa sugli extraprofitti di banche e società energetiche",
+    "parafrasiNeutra": "Introdurre una tassa sugli extraprofitti di banche e società energetiche.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.movimento5stelle.eu/la-guerra-la-paghi-tu-e-a-perugia-ti-spieghiamo-quanto/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: API WordPress di movimento5stelle.eu (https://www.movimento5stelle.eu/wp-json/wp/v2/posts?after=2026-11-01T00:00:00&per_page=100, HTTP 200, 4 post nel periodo) e /feed/ (HTTP 200); pagina riaperta il 2026-11-07 (HTTP 200). Fonte: articolo non firmato «La guerra la paghi tu. E a Perugia ti spieghiamo quanto», datePublished 2026-11-04T15:10:50 (API), sezione «Le alternative c’erano»; annuncia un incontro a Perugia il 13/11. Elenco di cinque proposte del partito sulla legge di bilancio: una riga per voce; la quinta («rivedere gli impegni sul riarmo e sui vincoli di austerità europei che il Governo ha firmato») non è registrata: direzione senza parametro (criterio slogan). Nelle righe C27-M5S-079…081 il «[…]» toglie le voci che precedono nell’elenco. Le stesse voci sono nel post Facebook di Conte del 29/10 (C27-M5S-056…061): righe da valutare nella classificazione (ribadisce). Ripete C27-M5S-056 (banche) e collegata a C27-M5S-008; aggiunge le società energetiche nello stesso strumento. COFOG 01. Pre-valutazione slogan: OK (imposta con base indicata). Orizzonte/veicolo: non_specificato (proposte già avanzate, il testo non nomina un atto), dichiarazione. Citazione estratta in automatico dal testo scaricato il 2026-11-07 con curl GET semplice e confrontata con la pagina: ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — articolo del sito ufficiale del M5S (GET 200, datePublished 2026-11-04), elenco «Le alternative c'erano»: V1; citazione ritrovata parola per parola, il «[…]» toglie solo le voci precedenti dell'elenco; imposta nominata con base definita (extraprofitti di banche e società energetiche), come C27-M5S-056 | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-AVS-096",
+    "partitoId": "AVS",
+    "dichiarante": "Nicola Fratoianni",
+    "ruoloDichiarante": "Segretario di Sinistra Italiana, leader di AVS, deputato",
+    "data": "2026-11-06",
+    "testoLetterale": "Tassando davvero i miliardi di extraprofitti di banche e compagnie energetiche. […] La destra non vuole farlo? Lo faremo allora noi, con la prossima legge di bilancio",
+    "parafrasiNeutra": "Tassare gli extraprofitti di banche e compagnie energetiche con la prossima legge di bilancio, per finanziare la sanità pubblica.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "prossima_legislatura",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://verdisinistra.it/manovra-fratoianni-avs-la-maschera-della-propaganda-e-caduta-anche-le-regioni-governate-dalla-destra-denunciano-la-politica-dei-pesanti-tagli-serve-una-svolta-ora-altrimenti-ci-penseremo-noi-c/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: API WordPress di verdisinistra.it (https://verdisinistra.it/wp-json/wp/v2/posts?after=2026-11-01T00:00:00&per_page=100&_fields=date,link,title,content, HTTP 200, 68 post dal 01/11 21:37 al 06/11 14:57) e /feed/ (HTTP 200); pagina riaperta il 2026-11-07 (HTTP 200). Comunicato «Manovra. Fratoianni (Avs), la maschera della propaganda è caduta […] Altrimenti ci penseremo noi con la prossima legge di bilancio», datePublished 2026-11-06T02:33:25 (testo «scritto su Facebook»; post Facebook non letto). Contesto: risposta alla lettera delle Regioni sui tagli alla sanità («non è vero […] che le risorse non ci sono. Bisogna volerle andare a prendere»). Il «[…]» toglie la frase dell’altra misura e «Se a rivoltarsi sono anche i presidenti di destra, Meloni – conclude Fratoianni – ha ben poco da dire e da mentire.» Orizzonte/veicolo: prossima_legislatura («Lo faremo allora noi, con la prossima legge di bilancio»: la legge di bilancio successiva alle elezioni; interpretazione da confermare), dichiarazione. Collegata a C27-AVS-002 e C27-AVS-046; a differenza di C27-AVS-093 nomina la leva («Tassando») e la base (banche e compagnie energetiche), come C27-M5S-063. COFOG 01 (destinazione 07). Pre-valutazione slogan: OK (imposta con base indicata, senza aliquota). Citazione estratta in automatico dal testo scaricato il 2026-11-07 con curl GET semplice e confrontata con la pagina: ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — comunicato su verdisinistra.it (GET 200), testo del leader rossoverde: V1; citazione ritrovata parola per parola, il «[…]» toglie la frase sull'accordo per il 5% (C27-AVS-097) e la frase finale con l'inciso «- conclude Fratoianni -», nessun gruppo di persone; imposta nominata con base definita (extraprofitti di banche e compagnie energetiche), come C27-M5S-079, e diversa da C27-AVS-093 perché nomina la leva («Tassando»); la destinazione (sanità pubblica) della parafrasi viene dalle parole dello stesso dichiarante nel comunicato | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-AVS-097",
+    "partitoId": "AVS",
+    "dichiarante": "Nicola Fratoianni",
+    "ruoloDichiarante": "Segretario di Sinistra Italiana, leader di AVS, deputato",
+    "data": "2026-11-06",
+    "testoLetterale": "Stracciando l’accordo per portare al 5% del pil le spese militari. […] La destra non vuole farlo? Lo faremo allora noi, con la prossima legge di bilancio",
+    "parafrasiNeutra": "Non applicare l’impegno a portare la spesa militare al 5% del PIL, con la prossima legge di bilancio.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "prossima_legislatura",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://verdisinistra.it/manovra-fratoianni-avs-la-maschera-della-propaganda-e-caduta-anche-le-regioni-governate-dalla-destra-denunciano-la-politica-dei-pesanti-tagli-serve-una-svolta-ora-altrimenti-ci-penseremo-noi-c/"
+    },
+    "archivioUrl": null,
+    "cofog": "02",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: API WordPress di verdisinistra.it (https://verdisinistra.it/wp-json/wp/v2/posts?after=2026-11-01T00:00:00&per_page=100&_fields=date,link,title,content, HTTP 200, 68 post dal 01/11 21:37 al 06/11 14:57) e /feed/ (HTTP 200); pagina riaperta il 2026-11-07 (HTTP 200). Comunicato «Manovra. Fratoianni (Avs), la maschera della propaganda è caduta […] Altrimenti ci penseremo noi con la prossima legge di bilancio», datePublished 2026-11-06T02:33:25 (testo «scritto su Facebook»; post Facebook non letto). Contesto: risposta alla lettera delle Regioni sui tagli alla sanità («non è vero […] che le risorse non ci sono. Bisogna volerle andare a prendere»). Il «[…]» toglie la frase dell’altra misura e «Se a rivoltarsi sono anche i presidenti di destra, Meloni – conclude Fratoianni – ha ben poco da dire e da mentire.» Orizzonte/veicolo: prossima_legislatura («Lo faremo allora noi, con la prossima legge di bilancio»: la legge di bilancio successiva alle elezioni; interpretazione da confermare), dichiarazione. Collegata a C27-PD-021 e C27-M5S-021 (no al 5% del PIL); «l’accordo» è l’impegno NATO sul 5% del PIL (dal testo: «l’accordo per portare al 5% del pil le spese militari»). COFOG 02. Pre-valutazione slogan: OK (tetto riferito a un impegno identificato). Citazione estratta in automatico dal testo scaricato il 2026-11-07 con curl GET semplice e confrontata con la pagina: ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — comunicato su verdisinistra.it (GET 200): V1; citazione ritrovata parola per parola, il «[…]» come in C27-AVS-096; impegno identificato (accordo per portare al 5% del PIL le spese militari), come C27-PD-021 e C27-M5S-021 | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-AVS-099",
+    "partitoId": "AVS",
+    "dichiarante": "Angelo Bonelli",
+    "ruoloDichiarante": "co-portavoce nazionale AVS (Europa Verde), deputato",
+    "data": "2026-11-05",
+    "testoLetterale": "le grandi società energetiche continuano a registrare profitti straordinari. […] Di fronte a questi numeri, chiediamo una tassazione degli extraprofitti per redistribuire risorse a famiglie e imprese che stanno pagando il prezzo della crisi energetica.",
+    "parafrasiNeutra": "Tassare gli extraprofitti delle grandi società energetiche per redistribuire risorse a famiglie e imprese colpite dalla crisi energetica.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://verdisinistra.it/bollette-bonelli-meloni-ha-fallito-60-miliardi-spesi-e-prezzi-ancora-alle-stelle-tassare-gli-extraprofitti-delle-societa-energetiche/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: API WordPress di verdisinistra.it (https://verdisinistra.it/wp-json/wp/v2/posts?after=2026-11-01T00:00:00&per_page=100&_fields=date,link,title,content, HTTP 200, 68 post dal 01/11 21:37 al 06/11 14:57) e /feed/ (HTTP 200); pagina riaperta il 2026-11-07 (HTTP 200). Comunicato «Bollette, Bonelli: Meloni ha fallito, 60 miliardi spesi e prezzi ancora alle stelle. Tassare gli extraprofitti delle società energetiche», datePublished 2026-11-05T10:26:53; dichiarazione di Bonelli «intervenendo a Mattino Cinque News su Canale 5» (trasmissione non vista). La proposta di «bolletta sociale» è quella presentata da AVS il 27/10 (C27-AVS-057…070): righe da valutare nella classificazione (ribadisce). Il «[…]» toglie i dati sugli utili di Eni («Eni, nei primi nove mesi del 2026, ha realizzato 7,6 miliardi di euro di utili»). Diversamente da C27-AVS-093 («le risorse vanno prese dagli extraprofitti», uscita come slogan) nomina la leva («tassazione») e la base (le grandi società energetiche, nella frase che precede). Collegata a C27-AVS-002 e C27-AVS-046. COFOG 01. Pre-valutazione slogan: LIM (imposta e base indicate, senza aliquota). Orizzonte/veicolo: non_specificato, dichiarazione. Citazione estratta in automatico dal testo scaricato il 2026-11-07 con curl GET semplice e confrontata con la pagina: ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — comunicato su verdisinistra.it (GET 200), dichiarazione televisiva ripubblicata sul canale del partito (D-019): V1; citazione ritrovata parola per parola, il «[…]» toglie solo i dati sugli utili di Eni; ruolo confermato («deputato di Alleanza Verdi e Sinistra e co-portavoce di Europa Verde»); caso limite superato: imposta nominata («tassazione degli extraprofitti») con base definita (grandi società energetiche), senza aliquota, diversa da C27-AVS-093 | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-AVS-100",
+    "partitoId": "AVS",
+    "dichiarante": "Angelo Bonelli",
+    "ruoloDichiarante": "co-portavoce nazionale AVS (Europa Verde), deputato",
+    "data": "2026-11-05",
+    "testoLetterale": "Con la nostra proposta di bolletta sociale vogliamo utilizzare queste risorse per garantire un credito energetico alle famiglie",
+    "parafrasiNeutra": "Con le risorse degli extraprofitti, garantire un credito energetico alle famiglie (bolletta sociale).",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://verdisinistra.it/bollette-bonelli-meloni-ha-fallito-60-miliardi-spesi-e-prezzi-ancora-alle-stelle-tassare-gli-extraprofitti-delle-societa-energetiche/"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "no",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: API WordPress di verdisinistra.it (https://verdisinistra.it/wp-json/wp/v2/posts?after=2026-11-01T00:00:00&per_page=100&_fields=date,link,title,content, HTTP 200, 68 post dal 01/11 21:37 al 06/11 14:57) e /feed/ (HTTP 200); pagina riaperta il 2026-11-07 (HTTP 200). Comunicato «Bollette, Bonelli: Meloni ha fallito, 60 miliardi spesi e prezzi ancora alle stelle. Tassare gli extraprofitti delle società energetiche», datePublished 2026-11-05T10:26:53; dichiarazione di Bonelli «intervenendo a Mattino Cinque News su Canale 5» (trasmissione non vista). La proposta di «bolletta sociale» è quella presentata da AVS il 27/10 (C27-AVS-057…070): righe da valutare nella classificazione (ribadisce). Frase: «Con la nostra proposta di bolletta sociale vogliamo utilizzare queste risorse per garantire un credito energetico alle famiglie, sostenere le piccole e medie imprese, introdurre piani di rateizzazione e favorire la diffusione delle pompe di calore attraverso forme di noleggio sociale.»: una riga per voce; «sostenere le piccole e medie imprese» non è registrata (direzione senza strumento). COFOG 04 (energia), come le righe della bolletta sociale. Pre-valutazione slogan: LIM (strumento nominato, importo e platea non detti; descritti nella proposta del 27/10). Orizzonte/veicolo: non_specificato, dichiarazione. Citazione estratta in automatico dal testo scaricato il 2026-11-07 con curl GET semplice e confrontata con la pagina: ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — comunicato su verdisinistra.it (GET 200) (05/11): V1; citazione ritrovata parola per parola; caso limite superato: strumento nominato (credito energetico alle famiglie, dentro la proposta di bolletta sociale) con fonte di finanziamento definita (le risorse degli extraprofitti), senza importo; ripetizione delle righe della bolletta sociale ai codificatori (D-031) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-AVS-101",
+    "partitoId": "AVS",
+    "dichiarante": "Angelo Bonelli",
+    "ruoloDichiarante": "co-portavoce nazionale AVS (Europa Verde), deputato",
+    "data": "2026-11-05",
+    "testoLetterale": "Con la nostra proposta di bolletta sociale vogliamo utilizzare queste risorse per […] introdurre piani di rateizzazione",
+    "parafrasiNeutra": "Con le risorse degli extraprofitti, introdurre piani di rateizzazione delle bollette (bolletta sociale).",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://verdisinistra.it/bollette-bonelli-meloni-ha-fallito-60-miliardi-spesi-e-prezzi-ancora-alle-stelle-tassare-gli-extraprofitti-delle-societa-energetiche/"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "no",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: API WordPress di verdisinistra.it (https://verdisinistra.it/wp-json/wp/v2/posts?after=2026-11-01T00:00:00&per_page=100&_fields=date,link,title,content, HTTP 200, 68 post dal 01/11 21:37 al 06/11 14:57) e /feed/ (HTTP 200); pagina riaperta il 2026-11-07 (HTTP 200). Comunicato «Bollette, Bonelli: Meloni ha fallito, 60 miliardi spesi e prezzi ancora alle stelle. Tassare gli extraprofitti delle società energetiche», datePublished 2026-11-05T10:26:53; dichiarazione di Bonelli «intervenendo a Mattino Cinque News su Canale 5» (trasmissione non vista). La proposta di «bolletta sociale» è quella presentata da AVS il 27/10 (C27-AVS-057…070): righe da valutare nella classificazione (ribadisce). Frase: «Con la nostra proposta di bolletta sociale vogliamo utilizzare queste risorse per garantire un credito energetico alle famiglie, sostenere le piccole e medie imprese, introdurre piani di rateizzazione e favorire la diffusione delle pompe di calore attraverso forme di noleggio sociale.»: una riga per voce; «sostenere le piccole e medie imprese» non è registrata (direzione senza strumento). COFOG 04 (energia), come le righe della bolletta sociale. Pre-valutazione slogan: LIM (strumento nominato, senza parametri). Orizzonte/veicolo: non_specificato, dichiarazione. Citazione estratta in automatico dal testo scaricato il 2026-11-07 con curl GET semplice e confrontata con la pagina: ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — comunicato su verdisinistra.it (GET 200) (05/11): V1; citazione ritrovata parola per parola, il «[…]» toglie solo le altre voci della frase; caso limite superato: strumento nominato (piani di rateizzazione delle bollette, dentro la bolletta sociale), senza parametri | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-AVS-102",
+    "partitoId": "AVS",
+    "dichiarante": "Angelo Bonelli",
+    "ruoloDichiarante": "co-portavoce nazionale AVS (Europa Verde), deputato",
+    "data": "2026-11-05",
+    "testoLetterale": "Con la nostra proposta di bolletta sociale vogliamo utilizzare queste risorse per […] favorire la diffusione delle pompe di calore attraverso forme di noleggio sociale",
+    "parafrasiNeutra": "Con le risorse degli extraprofitti, favorire la diffusione delle pompe di calore con forme di noleggio sociale (bolletta sociale).",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://verdisinistra.it/bollette-bonelli-meloni-ha-fallito-60-miliardi-spesi-e-prezzi-ancora-alle-stelle-tassare-gli-extraprofitti-delle-societa-energetiche/"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "no",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: API WordPress di verdisinistra.it (https://verdisinistra.it/wp-json/wp/v2/posts?after=2026-11-01T00:00:00&per_page=100&_fields=date,link,title,content, HTTP 200, 68 post dal 01/11 21:37 al 06/11 14:57) e /feed/ (HTTP 200); pagina riaperta il 2026-11-07 (HTTP 200). Comunicato «Bollette, Bonelli: Meloni ha fallito, 60 miliardi spesi e prezzi ancora alle stelle. Tassare gli extraprofitti delle società energetiche», datePublished 2026-11-05T10:26:53; dichiarazione di Bonelli «intervenendo a Mattino Cinque News su Canale 5» (trasmissione non vista). La proposta di «bolletta sociale» è quella presentata da AVS il 27/10 (C27-AVS-057…070): righe da valutare nella classificazione (ribadisce). Frase: «Con la nostra proposta di bolletta sociale vogliamo utilizzare queste risorse per garantire un credito energetico alle famiglie, sostenere le piccole e medie imprese, introdurre piani di rateizzazione e favorire la diffusione delle pompe di calore attraverso forme di noleggio sociale.»: una riga per voce; «sostenere le piccole e medie imprese» non è registrata (direzione senza strumento). COFOG 04 (energia), come le righe della bolletta sociale. Pre-valutazione slogan: LIM (strumento nominato; parametri in C27-AVS-066/067). Orizzonte/veicolo: non_specificato, dichiarazione. Citazione estratta in automatico dal testo scaricato il 2026-11-07 con curl GET semplice e confrontata con la pagina: ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — comunicato su verdisinistra.it (GET 200) (05/11): V1; citazione ritrovata parola per parola, il «[…]» toglie solo le altre voci della frase; strumento descritto nel meccanismo (noleggio sociale delle pompe di calore), come C27-AVS-057 | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-AVS-103",
+    "partitoId": "AVS",
+    "dichiarante": "Angelo Bonelli",
+    "ruoloDichiarante": "co-portavoce nazionale AVS (Europa Verde), deputato",
+    "data": "2026-11-01",
+    "testoLetterale": "Le risorse ci sono. Si usino i 4,6 miliardi destinati alle armi per la sanità pubblica: screening oncologici, macchinari, assunzioni di medici e infermieri, salute mentale.",
+    "parafrasiNeutra": "Destinare alla sanità pubblica (screening oncologici, macchinari, assunzioni di medici e infermieri, salute mentale) i 4,6 miliardi previsti nella manovra per la difesa.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://verdisinistra.it/manovra-bonelli-avs-la-rapina-sociale-del-governo-va-fermata-subito-un-consiglio-dei-ministri-per-cambiare-la-legge-di-bilancio-e-finanziare-sanita-e-scuola-pubblica-con-i-soldi-delle-armi/"
+    },
+    "archivioUrl": null,
+    "cofog": "07",
+    "misurabile": "si",
+    "costoDichiarato": "4,6 miliardi di euro (riallocazione dichiarata dalla spesa per la difesa)",
+    "stimaTerzi": null,
+    "note": "Canale: API WordPress di verdisinistra.it (https://verdisinistra.it/wp-json/wp/v2/posts?after=2026-11-01T00:00:00&per_page=100&_fields=date,link,title,content, HTTP 200, 68 post dal 01/11 21:37 al 06/11 14:57) e /feed/ (HTTP 200); pagina riaperta il 2026-11-07 (HTTP 200). Comunicato «Manovra, Bonelli (AVS): «La rapina sociale del governo va fermata. Subito un Consiglio dei ministri per cambiare la legge di bilancio e finanziare sanità e scuola pubblica con i soldi delle armi e della flat tax»», datePublished 2026-11-02T09:14:20; la stessa dichiarazione è titolata da Affaritaliani il 01/11 alle 11:15 (Google News, query «Bonelli proposta»; pagina non letta): dichiarazione del 01/11, dopo la mattina, non vista dalla routine del 01/11. Contesto: «Chiediamo al governo di convocare subito un Consiglio dei ministri per modificare la manovra economica»; cifre del ministro della Salute riferite a Repubblica (6,5 miliardi chiesti, 3,4 ottenuti). Orizzonte/veicolo: legislatura_in_corso (richiesta al governo in carica sulla legge di bilancio 2027), richiesta_legge_bilancio. Collegata a C27-AVS-070 (1,8 miliardi dai programmi d’arma) e a C27-AVS-034. COFOG 07 (destinazione; fonte 02). Pre-valutazione slogan: OK (cifra e destinazioni). Citazione estratta in automatico dal testo scaricato il 2026-11-07 con curl GET semplice e confrontata con la pagina: ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — comunicato su verdisinistra.it (GET 200) (datePublished 2026-11-02): V1; data 01/11 confermata dal titolo di Affaritaliani del 01/11 11:15 GMT nel feed di Google News (pagina non letta); citazione ritrovata parola per parola; importo (4,6 miliardi), fonte e destinazioni dichiarati; richiesta al governo in carica con contenuto di policy (D-012) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-AVS-104",
+    "partitoId": "AVS",
+    "dichiarante": "Angelo Bonelli",
+    "ruoloDichiarante": "co-portavoce nazionale AVS (Europa Verde), deputato",
+    "data": "2026-11-01",
+    "testoLetterale": "Si rinunci all’estensione della flat tax fino a 100.000 euro, che costa oltre 260 milioni già nel primo anno, e con quei soldi si cancelli il taglio di 7.000 posti nella scuola, che vale 252 milioni l’anno.",
+    "parafrasiNeutra": "Rinunciare all’estensione della flat tax fino a 100.000 euro e usare le risorse per cancellare il taglio di 7.000 posti nella scuola.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://verdisinistra.it/manovra-bonelli-avs-la-rapina-sociale-del-governo-va-fermata-subito-un-consiglio-dei-ministri-per-cambiare-la-legge-di-bilancio-e-finanziare-sanita-e-scuola-pubblica-con-i-soldi-delle-armi/"
+    },
+    "archivioUrl": null,
+    "cofog": "09",
+    "misurabile": "si",
+    "costoDichiarato": "252 milioni di euro l’anno (taglio dei posti nella scuola) coperti dalla rinuncia all’estensione della flat tax (oltre 260 milioni il primo anno)",
+    "stimaTerzi": null,
+    "note": "Canale: API WordPress di verdisinistra.it (https://verdisinistra.it/wp-json/wp/v2/posts?after=2026-11-01T00:00:00&per_page=100&_fields=date,link,title,content, HTTP 200, 68 post dal 01/11 21:37 al 06/11 14:57) e /feed/ (HTTP 200); pagina riaperta il 2026-11-07 (HTTP 200). Comunicato «Manovra, Bonelli (AVS): «La rapina sociale del governo va fermata. Subito un Consiglio dei ministri per cambiare la legge di bilancio e finanziare sanità e scuola pubblica con i soldi delle armi e della flat tax»», datePublished 2026-11-02T09:14:20; la stessa dichiarazione è titolata da Affaritaliani il 01/11 alle 11:15 (Google News, query «Bonelli proposta»; pagina non letta): dichiarazione del 01/11, dopo la mattina, non vista dalla routine del 01/11. Contesto: «Chiediamo al governo di convocare subito un Consiglio dei ministri per modificare la manovra economica»; cifre del ministro della Salute riferite a Repubblica (6,5 miliardi chiesti, 3,4 ottenuti). Orizzonte/veicolo: legislatura_in_corso (richiesta al governo in carica sulla legge di bilancio 2027), richiesta_legge_bilancio. Due misure legate nella stessa frase (copertura e destinazione): una riga, come C27-AVS-058. Collegata a C27-AVS-107 (emendamento sui tagli alla scuola, 01/11). COFOG 09 (destinazione; la copertura è 01). Pre-valutazione slogan: OK (cifre, soglia e destinazione). Citazione estratta in automatico dal testo scaricato il 2026-11-07 con curl GET semplice e confrontata con la pagina: ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — comunicato su verdisinistra.it (GET 200) (data come C27-AVS-103): V1; citazione ritrovata parola per parola, frase intera; copertura (rinuncia all'estensione della flat tax a 100.000 euro) e destinazione (cancellare il taglio di 7.000 posti nella scuola) con cifre dichiarate | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-AVS-105",
+    "partitoId": "AVS",
+    "dichiarante": "Angelo Bonelli",
+    "ruoloDichiarante": "co-portavoce nazionale AVS (Europa Verde), deputato",
+    "data": "2026-11-01",
+    "testoLetterale": "Presenteremo emendamenti per ripristinare subito i fondi antisismici per scuole e ospedali",
+    "parafrasiNeutra": "Presentare emendamenti alla legge di bilancio 2027 per ripristinare i fondi per la messa in sicurezza antisismica di scuole e ospedali.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "emendamento",
+    "fonte": {
+      "url": "https://verdisinistra.it/manovra-bonelli-avs-le-norme-nascoste-dimezzati-i-fondi-antisismici-per-scuole-e-ospedali-blocco-delle-assunzioni-nelle-universita-e-negli-enti-di-ricerca/"
+    },
+    "archivioUrl": null,
+    "cofog": "09",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: API WordPress di verdisinistra.it (https://verdisinistra.it/wp-json/wp/v2/posts?after=2026-11-01T00:00:00&per_page=100&_fields=date,link,title,content, HTTP 200, 68 post dal 01/11 21:37 al 06/11 14:57) e /feed/ (HTTP 200); pagina riaperta il 2026-11-07 (HTTP 200). Comunicato «Manovra, Bonelli (AVS): «Le norme nascoste: dimezzati i fondi antisismici per scuole e ospedali, blocco delle assunzioni nelle università e negli enti di ricerca»», datePublished 2026-11-02T09:13:24, testo datato «Roma, 1° novembre 2026». Frase: «Presenteremo emendamenti per ripristinare subito i fondi antisismici per scuole e ospedali, cancellare il blocco del turnover e i tagli alla scuola e aumentare in modo consistente il Reddito di libertà.»: una riga per misura. Segue «Le risorse ci sono: si prendano dalle armi e dai privilegi fiscali» (fonte non quantificata). Emendamenti annunciati alla legge di bilancio 2027, non ancora presentati. Orizzonte/veicolo: legislatura_in_corso, emendamento. Contesto: l’articolo 116 porta lo stanziamento 2027 e 2028 «da 60 a 30 milioni l’anno» e rinvia il resto al 2029-2030: il ripristino vale quindi il livello di 60 milioni l’anno (dal contesto). COFOG 09 (edilizia scolastica; anche 07 e 01). Pre-valutazione slogan: OK (fondo e livello di riferimento nel testo). Citazione estratta in automatico dal testo scaricato il 2026-11-07 con curl GET semplice e confrontata con la pagina: ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — comunicato su verdisinistra.it (GET 200), testo datato «Roma, 1° novembre 2026»: V1; citazione ritrovata parola per parola; fondo identificato (art. 116) con livello di riferimento nel testo (60 milioni l'anno prima del dimezzamento): ripristino a un valore noto; emendamenti annunciati, come C27-NM-013 | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-AVS-106",
+    "partitoId": "AVS",
+    "dichiarante": "Angelo Bonelli",
+    "ruoloDichiarante": "co-portavoce nazionale AVS (Europa Verde), deputato",
+    "data": "2026-11-01",
+    "testoLetterale": "Presenteremo emendamenti per […] cancellare il blocco del turnover",
+    "parafrasiNeutra": "Presentare emendamenti alla legge di bilancio 2027 per cancellare il blocco del turnover nella pubblica amministrazione (articolo 66).",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "emendamento",
+    "fonte": {
+      "url": "https://verdisinistra.it/manovra-bonelli-avs-le-norme-nascoste-dimezzati-i-fondi-antisismici-per-scuole-e-ospedali-blocco-delle-assunzioni-nelle-universita-e-negli-enti-di-ricerca/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: API WordPress di verdisinistra.it (https://verdisinistra.it/wp-json/wp/v2/posts?after=2026-11-01T00:00:00&per_page=100&_fields=date,link,title,content, HTTP 200, 68 post dal 01/11 21:37 al 06/11 14:57) e /feed/ (HTTP 200); pagina riaperta il 2026-11-07 (HTTP 200). Comunicato «Manovra, Bonelli (AVS): «Le norme nascoste: dimezzati i fondi antisismici per scuole e ospedali, blocco delle assunzioni nelle università e negli enti di ricerca»», datePublished 2026-11-02T09:13:24, testo datato «Roma, 1° novembre 2026». Frase: «Presenteremo emendamenti per ripristinare subito i fondi antisismici per scuole e ospedali, cancellare il blocco del turnover e i tagli alla scuola e aumentare in modo consistente il Reddito di libertà.»: una riga per misura. Segue «Le risorse ci sono: si prendano dalle armi e dai privilegi fiscali» (fonte non quantificata). Emendamenti annunciati alla legge di bilancio 2027, non ancora presentati. Orizzonte/veicolo: legislatura_in_corso, emendamento. Contesto: con l’articolo 66 «università, enti di ricerca, ministeri e agenzie potranno sostituire solo tre dipendenti su quattro» (risparmio di 431 milioni l’anno dal 2028). COFOG 01. Pre-valutazione slogan: OK (abrogazione di una norma identificata). Citazione estratta in automatico dal testo scaricato il 2026-11-07 con curl GET semplice e confrontata con la pagina: ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — comunicato su verdisinistra.it (GET 200) (01/11): V1; citazione ritrovata parola per parola, il «[…]» toglie solo la voce precedente; abrogazione di una norma identificata nel comunicato (art. 66, blocco del turnover); la parafrasi identifica la norma con le parole dello stesso dichiarante | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-AVS-107",
+    "partitoId": "AVS",
+    "dichiarante": "Angelo Bonelli",
+    "ruoloDichiarante": "co-portavoce nazionale AVS (Europa Verde), deputato",
+    "data": "2026-11-01",
+    "testoLetterale": "Presenteremo emendamenti per […] cancellare […] i tagli alla scuola",
+    "parafrasiNeutra": "Presentare emendamenti alla legge di bilancio 2027 per cancellare il taglio di 7.000 posti nella scuola (articolo 66, comma 5).",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "emendamento",
+    "fonte": {
+      "url": "https://verdisinistra.it/manovra-bonelli-avs-le-norme-nascoste-dimezzati-i-fondi-antisismici-per-scuole-e-ospedali-blocco-delle-assunzioni-nelle-universita-e-negli-enti-di-ricerca/"
+    },
+    "archivioUrl": null,
+    "cofog": "09",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: API WordPress di verdisinistra.it (https://verdisinistra.it/wp-json/wp/v2/posts?after=2026-11-01T00:00:00&per_page=100&_fields=date,link,title,content, HTTP 200, 68 post dal 01/11 21:37 al 06/11 14:57) e /feed/ (HTTP 200); pagina riaperta il 2026-11-07 (HTTP 200). Comunicato «Manovra, Bonelli (AVS): «Le norme nascoste: dimezzati i fondi antisismici per scuole e ospedali, blocco delle assunzioni nelle università e negli enti di ricerca»», datePublished 2026-11-02T09:13:24, testo datato «Roma, 1° novembre 2026». Frase: «Presenteremo emendamenti per ripristinare subito i fondi antisismici per scuole e ospedali, cancellare il blocco del turnover e i tagli alla scuola e aumentare in modo consistente il Reddito di libertà.»: una riga per misura. Segue «Le risorse ci sono: si prendano dalle armi e dai privilegi fiscali» (fonte non quantificata). Emendamenti annunciati alla legge di bilancio 2027, non ancora presentati. Orizzonte/veicolo: legislatura_in_corso, emendamento. Il testo dice «cancellare il blocco del turnover e i tagli alla scuola»: il «[…]» toglie «il blocco del turnover e» (riga precedente). Contesto: «taglia 7.000 posti nella scuola dal prossimo anno scolastico: 4.925 docenti e 2.049» ATA. Collegata a C27-AVS-104 (stessa misura con la copertura dalla flat tax). COFOG 09. Pre-valutazione slogan: OK (taglio identificato e quantificato). Citazione estratta in automatico dal testo scaricato il 2026-11-07 con curl GET semplice e confrontata con la pagina: ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — comunicato su verdisinistra.it (GET 200) (01/11): V1; citazione ritrovata parola per parola, i «[…]» tolgono solo le altre voci; taglio identificato e quantificato nel comunicato (art. 66, comma 5, 7.000 posti); collegata a C27-AVS-104 | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-AVS-109",
+    "partitoId": "AVS",
+    "dichiarante": "Luana Zanella",
+    "ruoloDichiarante": "capogruppo AVS alla Camera, deputata; prima firmataria dell’emendamento soppressivo dell’articolo 6 del DL carburanti",
+    "data": "2026-11-03",
+    "testoLetterale": "Abbiamo presentato un emendamento per sopprimere l’articolo 6 del Dl carburanti all’esame dell’Aula perché trasferisce ancora risorse alla Fondazione Milano Cortina, altri 150 milioni di euro per coprire gli enormi debiti accumulati.",
+    "parafrasiNeutra": "Emendamento al DL carburanti per sopprimere l’articolo 6, che trasferisce altri 150 milioni di euro alla Fondazione Milano Cortina.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "emendamento",
+    "fonte": {
+      "url": "https://verdisinistra.it/dl-carburanti-zanella-ancora-soldi-alla-fondazione-milano-cortina-inaccettabile-sopprimere-art-6/"
+    },
+    "archivioUrl": null,
+    "cofog": "08",
+    "misurabile": "si",
+    "costoDichiarato": "150 milioni di euro (trasferimento che l’emendamento sopprime)",
+    "stimaTerzi": null,
+    "note": "Canale: API WordPress di verdisinistra.it (https://verdisinistra.it/wp-json/wp/v2/posts?after=2026-11-01T00:00:00&per_page=100&_fields=date,link,title,content, HTTP 200, 68 post dal 01/11 21:37 al 06/11 14:57) e /feed/ (HTTP 200); pagina riaperta il 2026-11-07 (HTTP 200). Comunicato «Dl carburanti, Zanella: ancora soldi alla Fondazione Milano Cortina, inaccettabile! Sopprimere art. 6», datePublished 2026-11-03T12:02:55. Emendamenti presentati al decreto carburanti all’esame dell’Aula della Camera (A.C. 3106, numero del decreto «157» indicato in un altro comunicato del 05/11); numeri degli emendamenti non indicati: da controllare nel fascicolo, a cura di chi censisce gli atti. COFOG 08 (Fondazione Milano Cortina 2026, giochi olimpici). Orizzonte/veicolo: legislatura_in_corso, emendamento. Pre-valutazione slogan: OK (soppressione di un articolo identificato). Citazione estratta in automatico dal testo scaricato il 2026-11-07 con curl GET semplice e confrontata con la pagina: ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — comunicato su verdisinistra.it (GET 200) (03/11): V1; citazione ritrovata parola per parola, frase intera; dichiarante ammesso (Zanella, capogruppo AVS alla Camera, «prima firmataria dell'emendamento» secondo la pagina); soppressione di un articolo identificato (art. 6 del DL carburanti, 150 milioni alla Fondazione Milano Cortina) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-AVS-110",
+    "partitoId": "AVS",
+    "dichiarante": "Luana Zanella",
+    "ruoloDichiarante": "capogruppo AVS alla Camera, deputata; firmataria degli emendamenti al comma 1-bis dell’articolo 6 del DL carburanti",
+    "data": "2026-11-03",
+    "testoLetterale": "Al comma 1-bis dello stesso articolo, inoltre, abbiamo presentato altri due emendamenti con cui chiediamo, comunque, di subordinare il trasferimento di denaro al parere dagli organi di controllo contabile degli Enti territoriali chiamati a versarlo",
+    "parafrasiNeutra": "Emendamento al DL carburanti per subordinare il trasferimento di fondi degli enti territoriali alla Fondazione Milano Cortina al parere dei loro organi di controllo contabile.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "emendamento",
+    "fonte": {
+      "url": "https://verdisinistra.it/dl-carburanti-zanella-ancora-soldi-alla-fondazione-milano-cortina-inaccettabile-sopprimere-art-6/"
+    },
+    "archivioUrl": null,
+    "cofog": "08",
+    "misurabile": "no",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Canale: API WordPress di verdisinistra.it (https://verdisinistra.it/wp-json/wp/v2/posts?after=2026-11-01T00:00:00&per_page=100&_fields=date,link,title,content, HTTP 200, 68 post dal 01/11 21:37 al 06/11 14:57) e /feed/ (HTTP 200); pagina riaperta il 2026-11-07 (HTTP 200). Comunicato «Dl carburanti, Zanella: ancora soldi alla Fondazione Milano Cortina, inaccettabile! Sopprimere art. 6», datePublished 2026-11-03T12:02:55. Emendamenti presentati al decreto carburanti all’esame dell’Aula della Camera (A.C. 3106, numero del decreto «157» indicato in un altro comunicato del 05/11); numeri degli emendamenti non indicati: da controllare nel fascicolo, a cura di chi censisce gli atti. COFOG 08 (Fondazione Milano Cortina 2026, giochi olimpici). Orizzonte/veicolo: legislatura_in_corso, emendamento. Secondo dei tre emendamenti dello stesso comunicato (alternativa subordinata alla soppressione: «comunque»). Lo stesso contenuto è chiesto nell’ordine del giorno del 05/11 (C27-AVS-112/113, fonte diversa): non registrato una seconda volta. Pre-valutazione slogan: OK (condizione procedurale identificata). Citazione estratta in automatico dal testo scaricato il 2026-11-07 con curl GET semplice e confrontata con la pagina: ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — comunicato su verdisinistra.it (GET 200) (03/11): V1; citazione ritrovata parola per parola («parere dagli organi» è nella fonte); dichiarante ammesso (capogruppo); condizione definita sul trasferimento (parere degli organi di controllo contabile degli enti territoriali che versano); la parafrasi nomina la Fondazione con le parole dello stesso comunicato | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-M5S-082",
+    "partitoId": "M5S",
+    "dichiarante": "Giuseppe Conte",
+    "ruoloDichiarante": "presidente del MoVimento 5 Stelle, deputato",
+    "data": "2026-11-03",
+    "testoLetterale": "questa proposta di legge vieta le importazioni di beni e servizi dagli insediamenti israeliani illegali che sono nei territori occupati palestinesi.",
+    "parafrasiNeutra": "Vietare per legge l'importazione di beni e servizi provenienti dagli insediamenti israeliani nei territori palestinesi occupati (proposta di legge n. 2916).",
+    "tipoFonte": "discorso",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "proposta_di_legge",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0737/stenografico.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "04",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervento di Giuseppe Conte (M5S) sulla dichiarazione di urgenza della proposta di legge n. 2916 (divieto di importazione e di pubblicità di beni e servizi provenienti da insediamenti israeliani nel territorio palestinese occupato; urgenza chiesta dai gruppi PD, M5S e AVS), resoconto stenografico della seduta n. 737 della Camera del 03/11/2026, letto il 2026-11-07 con curl GET semplice, HTTP 200; livello atteso V2 (intervento in Aula, come C27-M5S-046; D-019). Prima frase dell'intervento. La proposta di legge n. 2916 è stata presentata prima del periodo (firmatari e data non controllati): l'intervento è nuovo nel periodo (regola di C27-M5S-046 e C27-AVS-060: la regola sui testi ripubblicati riguarda i testi). L'Aula ha votato sulla dichiarazione di urgenza (atto procedurale, non registrato). Orizzonte/veicolo: legislatura_in_corso, proposta_di_legge. COFOG 04 (commercio estero; alternativa 01). Pre-valutazione slogan: OK (divieto con oggetto definito). L'intervento di Nicola Fratoianni (AVS) sulla stessa urgenza non contiene una misura propria: non registrato. Testo_letterale confrontato in automatico con il testo HTML scaricato il 2026-11-07 (estrattore html.parser, script e stili esclusi): ogni segmento fra «[…]» ritrovato nell'ordine, a meno di spazi e apostrofi tipografici. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — CONFERMATA: resoconto stenografico della seduta 737 della Camera (03/11/2026, GET 200), prima frase dell'intervento di Giuseppe Conte sulla dichiarazione di urgenza della PdL C. 2916, ritrovata parola per parola; discorso in Aula V2 come C27-M5S-071, C27-M5S-072 (stesso intervento) e C27-M5S-046; dichiarante ammesso (presidente M5S); proposta propria: Conte è fra i firmatari della PdL C. 2916 (Bonelli, Braga, Fratoianni, Zanella, Riccardo Ricciardi, Conte, Schlein; presentata il 04/05/2026, dati.camera.it) e l'urgenza è chiesta anche dal gruppo M5S; divieto con oggetto definito; parafrasi fedele | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "no",
     "ribadita": []
   },
   {
@@ -7590,7 +8697,24 @@
       "dettaglio": "V1✓ verificatore 2026-10-20"
     },
     "effettoConti": "no",
-    "ribadita": []
+    "ribadita": [
+      {
+        "id": "C27-PE-028",
+        "dichiarante": "Riccardo Magi",
+        "ruoloDichiarante": "Segretario di +Europa, deputato",
+        "data": "2026-11-02",
+        "testoLetterale": "Proprio per questo, in nome della legalità e della lotta alle mafie, +Europa al tavolo del centrosinistra porterà come punto programmatico la legalizzazione della cannabis",
+        "tipoFonte": "sito_ufficiale",
+        "fonte": {
+          "url": "https://www.piueuropa.eu/manovra_magi_legalizzare_cannabis_invece_di_tagliare_a_scuola_e_sanit_sia_punto_programma_csx"
+        },
+        "archivioUrl": null,
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore L2 2026-11-07 — stesso comunicato di C27-PE-027 (feed ufficiale, GET 200); citazione ritrovata parola per parola, nessun taglio, il seguito polemico resta fuori; misura identificata (legalizzazione della cannabis) portata come punto del programma di coalizione; probabile ripetizione di C27-PE-002, «ribadisce» ai codificatori (D-031) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+        }
+      }
+    ]
   },
   {
     "id": "C27-PE-003",
@@ -9942,6 +11066,222 @@
     "ribadita": []
   },
   {
+    "id": "C27-PE-027",
+    "partitoId": "PE",
+    "dichiarante": "Riccardo Magi",
+    "ruoloDichiarante": "Segretario di +Europa, deputato",
+    "data": "2026-11-02",
+    "testoLetterale": "Per questo, quando la manovra arriverà in Parlamento, presenteremo un emendamento per legalizzare la cannabis, una misura che genererebbe per le casse dello Stato tra i 4 e i 7 miliardi di euro",
+    "parafrasiNeutra": "Presentare alla legge di bilancio un emendamento per legalizzare la cannabis, con un gettito stimato dal proponente fra 4 e 7 miliardi di euro, da usare per evitare i tagli a istruzione e sanità.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "emendamento",
+    "fonte": {
+      "url": "https://www.piueuropa.eu/manovra_magi_legalizzare_cannabis_invece_di_tagliare_a_scuola_e_sanit_sia_punto_programma_csx"
+    },
+    "archivioUrl": null,
+    "cofog": "03",
+    "misurabile": "si",
+    "costoDichiarato": "gettito dichiarato: tra 4 e 7 miliardi di euro (periodo non indicato)",
+    "stimaTerzi": null,
+    "note": "Comunicato stampa di Riccardo Magi («Comunicato stampa di Riccardo Magi», autore del post Pasquale Domingos Di Pace) pubblicato su piueuropa.eu il 2026-11-02 (pubDate Mon, 02 Nov 2026 16:04:00 +0100), titolo «Manovra: Magi, legalizzare cannabis invece di tagliare a scuola e sanità. Sia punto programma csx». Canale: feed https://www.piueuropa.eu/news.rss (HTTP 200, 2026-11-07), che riporta il testo integrale del comunicato nel campo description; la pagina dell'articolo risponde 403 «Just a moment…» (non aggirata); sitemap.xml 200 con lastmod 2026-11-03T15:06:45Z per la pagina. Stessi temi ripresi da Epoch Times Italia (post Facebook di Magi del 04/11 e 05/11: post ripresi da terzi, fonte non ammessa, non usati) e dalla Repubblica del 03/11 (a pagamento, non letta). La frase continua con «, esattamente le risorse che servirebbero per scongiurare i tagli all’istruzione e alla sanità pubblica previsti da questo governo.» (destinazione del gettito, riportata in parafrasi). Emendamento annunciato, non ancora presentato. Doppioni: C27-PE-002 (legalizzazione nel programma della coalizione) è la stessa misura con un altro veicolo; qui c'è in più l'emendamento alla manovra e la cifra del gettito: il campo ribadisce lo decidono i codificatori (D-030, D-031). COFOG 03 come C27-PE-002 (alternativa 01 per il gettito). Orizzonte/veicolo: legislatura_in_corso ed emendamento (legge di bilancio 2027). Pre-valutazione slogan: OK (strumento: legalizzazione con emendamento; cifra). Canale Telegram https://t.me/s/piueuropa: redirect a t.me/piueuropa senza anteprima pubblica. Google News (query uniformi «+Europa intervista», «+Europa proposta», «Più Europa intervista», «Più Europa proposta», «Magi intervista», «Magi proposta», when:7d, HTTP 200). Testo_letterale confrontato in automatico con il testo del feed scaricato il 2026-11-07 (curl GET semplice, HTTP 200): segmento ritrovato. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — comunicato di Riccardo Magi (segretario) letto nel feed ufficiale piueuropa.eu/news.rss (GET 200, testo integrale, pubDate 02/11), pagina dell'articolo 403 non aggirata; citazione ritrovata parola per parola, nessun taglio; strumento nominato (emendamento alla legge di bilancio per legalizzare la cannabis) con stima del gettito del proponente (4-7 miliardi); la destinazione in parafrasi è nella stessa frase della fonte; stessa misura di C27-PE-002 con veicolo e cifra in più, «ribadisce» ai codificatori (D-031) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-FN-043",
+    "partitoId": "FN",
+    "dichiarante": "Roberto Vannacci",
+    "ruoloDichiarante": "presidente di Futuro Nazionale",
+    "data": "2026-11-02",
+    "testoLetterale": "Futuro Nazionale porterà avanti tutti quei provvedimenti necessari affinché i danni la prossima volta li paghino quelli che li hanno commessi e non il Comune di Milano. […] Dovranno pagare sino all'ultimo centesimo con decenni di decurtazione delle loro buste paga e con lavori socialmente utili.",
+    "parafrasiNeutra": "Far pagare i danni causati durante disordini e manifestazioni a chi li ha commessi, e non al Comune, con trattenute sullo stipendio per molti anni e lavori socialmente utili.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.ilgiorno.it/milano/politica/vannacci-burgio-campagna-elettorale-tfwltdam"
+    },
+    "archivioUrl": null,
+    "cofog": "03",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Punto stampa di Roberto Vannacci («Il leader del partito») in piazza Oberdan a Milano, con il candidato sindaco FN Carmelo Burgio, riportato tra virgolette da Il Giorno («Vannacci a Milano: \"Andremo a cercare i teppisti casa per casa. La cena per la Marcia su Roma? Solo una ricorrenza storica, parteciperei\"», Redazione Milano; datePublished 2026-11-02T15:50:17Z; isAccessibleForFree true): V2 atteso. Contesto: i disordini del 17 ottobre nel centro di Milano. La citazione comincia dopo «Vorrei dire ai negozianti che» (destinatari del messaggio, non dei provvedimenti). Il taglio «[…]» toglie «Quello che ho detto in svariati posti è che li andremo a cercare casa per casa”. Vannacci poi affonda il colpo: “» (una frase senza misura e l'inciso della testata); nessun gruppo di persone tolto («quelli che li hanno commessi» resta). La frase successiva («Perché la libertà di manifestazione è garantita dalla Costituzione…») non è registrata. Le proposte di Burgio per il Comune di Milano (zero euro al Municipio 1) sono elezioni comunali: fuori perimetro. Canale: Google News RSS, query uniformi «Futuro Nazionale intervista», «Futuro Nazionale proposta», «Vannacci intervista», «Vannacci proposta» when:7d (HTTP 200 per tutte), titoli di Il Giorno del 02-03/11 con «Vannacci proposta»; URL ritrovato nella sitemap settimanale https://www.ilgiorno.it/feedservice/sitemap/gio/articles/2026/week/sitemap.xml (HTTP 200) e pagina letta con curl GET semplice (HTTP 200, 2026-11-07). Stesso giro: Il Giorno del 03/11 («Tour di Vannacci: \"Bene i militari ma non hanno i giusti poteri\"») senza misura nuova. Canali ufficiali FN: futuronazionale.it /sitemap_index.xml, /page-sitemap.xml (lastmod nuovi solo per /trasparenza/ 02/11 e /futuro-nazionale-tv/ 06/11) e /post-sitemap.xml (fermo all'11/06) HTTP 200, /materiale/ 200 (lastmod 22/10), API 401; Agenzia Opinione /feed/?paged=1…92 (HTTP 200, fino al 31/10): nota di Vannacci sulle midterm del 04/11 senza misure. Doppioni: nessuna riga FN sul risarcimento dei danni da manifestazioni. COFOG 03. Nessuna cifra; «decenni» non è un parametro preciso: misurabile parziale. Orizzonte/veicolo: non_specificato e dichiarazione. Pre-valutazione slogan: OK (strumenti nominati: trattenute sullo stipendio e lavori socialmente utili). Testo_letterale confrontato in automatico con il testo HTML scaricato il 2026-11-07 con curl GET semplice (HTTP 200): ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — Il Giorno (02/11, GET 200) riporta fra virgolette il punto stampa di Vannacci (presidente) a Milano: discorso, V2; citazione ritrovata parola per parola nell'ordine; il «[…]» toglie una frase senza misura («li andremo a cercare casa per casa») e l'inciso della testata «Vannacci poi affonda il colpo:», resta «quelli che li hanno commessi»; strumenti nominati (trattenute sullo stipendio, lavori socialmente utili) per chi causa danni nelle manifestazioni; misura nazionale, non comunale | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-PLD-018",
+    "partitoId": "PLD",
+    "dichiarante": "Luigi Marattin",
+    "ruoloDichiarante": "Segretario del Partito Liberaldemocratico, deputato",
+    "data": "2026-11-03",
+    "testoLetterale": "2,55 miliardi – in tre anni – stanziati su un generico fondo per favorire le uscite anticipate dal lavoro […] Proporremo al governo di eliminare questa inutile bandierina e destinare quei soldi alla crescita, ad esempio le detassazione per le aggregazioni di micro-imprese, o il supporto ai giovani e alla natalità",
+    "parafrasiNeutra": "Eliminare dalla legge di bilancio il fondo da 2,55 miliardi in tre anni per le uscite anticipate dal lavoro e usare le risorse per la crescita (esempi indicati: detassazione delle aggregazioni di micro-imprese, sostegno ai giovani e alla natalità).",
+    "tipoFonte": "intervista",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "richiesta_legge_bilancio",
+    "fonte": {
+      "url": "https://www.ilriformista.it/marattin-promuove-a-meta-ma-manovra-taglio-docenti-dovuto-al-calo-demografico-sulle-pensioni-bandierina-inutile-di-salvini-536831/"
+    },
+    "archivioUrl": null,
+    "cofog": "10",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervista a Luigi Marattin («leader del PLD, economista, […] deputato a Montecitorio») di Aldo Torchiaro su Il Riformista (domande e risposte della testata; datePublished 2026-11-03T10:43:26Z; testo intero nella pagina servita a un GET semplice, nessun avviso di pagamento): fonte primaria (D-019), livello atteso V1. Risposta alla domanda «Il Governo punta su misure selettive di sostegno sociale. È un modello sostenibile…?». Il taglio «[…]» toglie «, quello che Salvini sta spacciando essere il “superamento della Fornero”. Ma con Quota 100 Salvini ha pre-pensionato 400mila persone, ed è costato 23 miliardi. Anche ammesso che i pre-pensionamenti servano (e certamente noi non la pensiamo così), cosa pensate si possa fare con un decimo di quella cifra?» (polemica e confronto con Quota 100); i gruppi di persone nominati come destinatari («giovani») restano. La stessa intervista ripete l'appello «a tutte le forze politiche di maggioranza e di opposizione» sui «2,5 miliardi»; il post del sito ufficiale del 03/11 (https://partitoliberaldemocratico.com/25-miliardi-per-anticipare-le-e-se-li-investissimo-nel-futuro-meno-sprechi/, API WordPress posts?after=2026-11-01, HTTP 200) rimanda all'intervista e a una petizione. Non registrate: la richiesta già fatta di ridurre dal 43% al 33% l'Irpef fra 50 e 60 mila euro (è C27-PLD-001, citata al passato), la «riforma radicale» della scuola (senza strumento in questa intervista), i prestiti SAFE (giudizio su una scelta passata). Importo: 2,55 miliardi in tre anni è la dotazione del fondo da togliere, non un costo: costo_dichiarato vuoto, natura da valutare nella codifica D-021. Gli esempi di destinazione sono alternativi («ad esempio … o …»), non un pacchetto: una sola riga. Canale: Google News RSS, query uniformi «Partito Liberaldemocratico intervista», «Partito Liberaldemocratico proposta», «Marattin intervista», «Marattin proposta» when:7d (HTTP 200 per tutte), trovata con «Partito Liberaldemocratico proposta» e «Marattin proposta»; URL ritrovato con l'API WordPress di ilriformista.it (posts?search=Marattin&after=2026-10-31, HTTP 200). Doppioni: nessuna riga PLD sul fondo per le uscite anticipate. COFOG 10 (pensioni). Orizzonte/veicolo: legislatura_in_corso e richiesta_legge_bilancio. Pre-valutazione slogan: OK (fondo identificato e importo). Testo_letterale confrontato in automatico con il testo HTML scaricato il 2026-11-07 con curl GET semplice (HTTP 200): ogni segmento fra «[…]» ritrovato nell'ordine. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — intervista a domande e risposte di Marattin (segretario) su Il Riformista (03/11, GET 200, testo intero): fonte primaria (D-019); citazione ritrovata parola per parola nell'ordine, il «[…]» toglie solo la polemica su Quota 100 e i giovani destinatari restano; strumento identificato (eliminare il fondo da 2,55 miliardi in tre anni per le uscite anticipate), destinazioni indicate come esempi alternativi | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-PLD-019",
+    "partitoId": "PLD",
+    "dichiarante": "Luigi Marattin",
+    "ruoloDichiarante": "Segretario del Partito Liberaldemocratico, deputato (gruppo Misto)",
+    "data": "2026-11-04",
+    "testoLetterale": "Noi pensiamo che occorra la laurea abilitante, più il tirocinio.",
+    "parafrasiNeutra": "Formare i futuri docenti con una laurea abilitante seguita da un tirocinio.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0738/stenografico.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "09",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervento di Luigi Marattin (MISTO) nello svolgimento della sua interrogazione a risposta immediata 3-02995 al Ministro dell'istruzione e del merito (riforma del reclutamento e della retribuzione dei docenti), resoconto stenografico della seduta n. 738 della Camera del 04/11/2026, letto il 2026-11-07 con curl GET semplice, HTTP 200; livello atteso V2 (intervento in Aula, D-019). Marattin presenta le misure come proposta propria («Noi pensiamo che…», «con la nostra proposta, Ministro - che spero ci sarà modo di discutere nel finale di legislatura e, magari, più avanti -»). Il testo scritto dell'interrogazione (Allegato A della seduta 738) non è registrato, come le altre interrogazioni (atti di controllo). Orizzonte/veicolo: non_specificato (legislatura in corso «e, magari, più avanti»), dichiarazione. COFOG 09. Doppioni: nessuna riga PLD sulla scuola. Pre-valutazione slogan: OK (istituto nominato). Testo_letterale confrontato in automatico con il testo HTML scaricato il 2026-11-07 (estrattore html.parser, script e stili esclusi): ogni segmento fra «[…]» ritrovato nell'ordine, a meno di spazi e apostrofi tipografici. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — CONFERMATA: resoconto stenografico della seduta 738 della Camera (04/11/2026, GET 200), illustrazione dell'interrogazione a risposta immediata 3-02995 da parte di Luigi Marattin, frase ritrovata parola per parola; discorso in Aula V2 come C27-PLD-014…016; dichiarante ammesso (segretario PLD); proposta propria («Noi pensiamo che…», «Noi siamo per una rivoluzione radicale di questo tipo», in replica «con la nostra proposta»); istituto nominato (laurea abilitante più tirocinio); parafrasi fedele | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-PLD-020",
+    "partitoId": "PLD",
+    "dichiarante": "Luigi Marattin",
+    "ruoloDichiarante": "Segretario del Partito Liberaldemocratico, deputato (gruppo Misto)",
+    "data": "2026-11-04",
+    "testoLetterale": "Noi pensiamo che, poi, un docente futuro farà domanda direttamente alle scuole che bandiscono i posti.",
+    "parafrasiNeutra": "Far assumere i docenti con domanda diretta alle scuole che bandiscono i posti.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0738/stenografico.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "09",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervento di Luigi Marattin (MISTO) nello svolgimento della sua interrogazione a risposta immediata 3-02995 al Ministro dell'istruzione e del merito (riforma del reclutamento e della retribuzione dei docenti), resoconto stenografico della seduta n. 738 della Camera del 04/11/2026, letto il 2026-11-07 con curl GET semplice, HTTP 200; livello atteso V2 (intervento in Aula, D-019). Marattin presenta le misure come proposta propria («Noi pensiamo che…», «con la nostra proposta, Ministro - che spero ci sarà modo di discutere nel finale di legislatura e, magari, più avanti -»). Il testo scritto dell'interrogazione (Allegato A della seduta 738) non è registrato, come le altre interrogazioni (atti di controllo). Orizzonte/veicolo: non_specificato (legislatura in corso «e, magari, più avanti»), dichiarazione. COFOG 09. Doppioni: nessuna riga PLD sulla scuola. Pre-valutazione slogan: OK (meccanismo descritto). Testo_letterale confrontato in automatico con il testo HTML scaricato il 2026-11-07 (estrattore html.parser, script e stili esclusi): ogni segmento fra «[…]» ritrovato nell'ordine, a meno di spazi e apostrofi tipografici. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — CONFERMATA: resoconto stenografico della seduta 738 della Camera (04/11/2026, GET 200), illustrazione dell'interrogazione a risposta immediata 3-02995 da parte di Luigi Marattin, frase ritrovata parola per parola; discorso in Aula V2 come C27-PLD-014…016; dichiarante ammesso (segretario PLD); proposta propria («Noi pensiamo che…», «Noi siamo per una rivoluzione radicale di questo tipo», in replica «con la nostra proposta»); meccanismo descritto (domanda diretta alle scuole che bandiscono i posti); parafrasi fedele | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-PLD-021",
+    "partitoId": "PLD",
+    "dichiarante": "Luigi Marattin",
+    "ruoloDichiarante": "Segretario del Partito Liberaldemocratico, deputato (gruppo Misto)",
+    "data": "2026-11-04",
+    "testoLetterale": "Noi pensiamo che ci debba essere un comitato composto dal preside, dal tutor e da due docenti sorteggiati, che decide le assunzioni dirette.",
+    "parafrasiNeutra": "Affidare le assunzioni dirette dei docenti a un comitato di scuola formato da preside, tutor e due docenti sorteggiati.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0738/stenografico.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "09",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervento di Luigi Marattin (MISTO) nello svolgimento della sua interrogazione a risposta immediata 3-02995 al Ministro dell'istruzione e del merito (riforma del reclutamento e della retribuzione dei docenti), resoconto stenografico della seduta n. 738 della Camera del 04/11/2026, letto il 2026-11-07 con curl GET semplice, HTTP 200; livello atteso V2 (intervento in Aula, D-019). Marattin presenta le misure come proposta propria («Noi pensiamo che…», «con la nostra proposta, Ministro - che spero ci sarà modo di discutere nel finale di legislatura e, magari, più avanti -»). Il testo scritto dell'interrogazione (Allegato A della seduta 738) non è registrato, come le altre interrogazioni (atti di controllo). Orizzonte/veicolo: non_specificato (legislatura in corso «e, magari, più avanti»), dichiarazione. COFOG 09. Doppioni: nessuna riga PLD sulla scuola. Pre-valutazione slogan: OK (organismo e composizione). Testo_letterale confrontato in automatico con il testo HTML scaricato il 2026-11-07 (estrattore html.parser, script e stili esclusi): ogni segmento fra «[…]» ritrovato nell'ordine, a meno di spazi e apostrofi tipografici. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — CONFERMATA: resoconto stenografico della seduta 738 della Camera (04/11/2026, GET 200), illustrazione dell'interrogazione a risposta immediata 3-02995 da parte di Luigi Marattin, frase ritrovata parola per parola; discorso in Aula V2 come C27-PLD-014…016; dichiarante ammesso (segretario PLD); proposta propria («Noi pensiamo che…», «Noi siamo per una rivoluzione radicale di questo tipo», in replica «con la nostra proposta»); organismo con composizione definita (preside, tutor, due docenti sorteggiati); parafrasi fedele | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-PLD-022",
+    "partitoId": "PLD",
+    "dichiarante": "Luigi Marattin",
+    "ruoloDichiarante": "Segretario del Partito Liberaldemocratico, deputato (gruppo Misto)",
+    "data": "2026-11-04",
+    "testoLetterale": "Noi pensiamo che i docenti debbano progredire di carriera attraverso tre livelli.",
+    "parafrasiNeutra": "Organizzare la carriera dei docenti su tre livelli.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0738/stenografico.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "09",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervento di Luigi Marattin (MISTO) nello svolgimento della sua interrogazione a risposta immediata 3-02995 al Ministro dell'istruzione e del merito (riforma del reclutamento e della retribuzione dei docenti), resoconto stenografico della seduta n. 738 della Camera del 04/11/2026, letto il 2026-11-07 con curl GET semplice, HTTP 200; livello atteso V2 (intervento in Aula, D-019). Marattin presenta le misure come proposta propria («Noi pensiamo che…», «con la nostra proposta, Ministro - che spero ci sarà modo di discutere nel finale di legislatura e, magari, più avanti -»). Il testo scritto dell'interrogazione (Allegato A della seduta 738) non è registrato, come le altre interrogazioni (atti di controllo). Orizzonte/veicolo: non_specificato (legislatura in corso «e, magari, più avanti»), dichiarazione. COFOG 09. Doppioni: nessuna riga PLD sulla scuola. Pre-valutazione slogan: OK (numero di livelli). Testo_letterale confrontato in automatico con il testo HTML scaricato il 2026-11-07 (estrattore html.parser, script e stili esclusi): ogni segmento fra «[…]» ritrovato nell'ordine, a meno di spazi e apostrofi tipografici. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — CONFERMATA: resoconto stenografico della seduta 738 della Camera (04/11/2026, GET 200), illustrazione dell'interrogazione a risposta immediata 3-02995 da parte di Luigi Marattin, frase ritrovata parola per parola; discorso in Aula V2 come C27-PLD-014…016; dichiarante ammesso (segretario PLD); proposta propria («Noi pensiamo che…», «Noi siamo per una rivoluzione radicale di questo tipo», in replica «con la nostra proposta»); parametro numerico (tre livelli di carriera); parafrasi fedele | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-PLD-023",
+    "partitoId": "PLD",
+    "dichiarante": "Luigi Marattin",
+    "ruoloDichiarante": "Segretario del Partito Liberaldemocratico, deputato (gruppo Misto)",
+    "data": "2026-11-04",
+    "testoLetterale": "Noi pensiamo che la retribuzione ai docenti debba essere variabile per anzianità, ma anche per merito.",
+    "parafrasiNeutra": "Rendere la retribuzione dei docenti variabile in base all'anzianità e al merito.",
+    "tipoFonte": "discorso",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://documenti.camera.it/leg19/resoconti/assemblea/html/sed0738/stenografico.htm"
+    },
+    "archivioUrl": null,
+    "cofog": "09",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervento di Luigi Marattin (MISTO) nello svolgimento della sua interrogazione a risposta immediata 3-02995 al Ministro dell'istruzione e del merito (riforma del reclutamento e della retribuzione dei docenti), resoconto stenografico della seduta n. 738 della Camera del 04/11/2026, letto il 2026-11-07 con curl GET semplice, HTTP 200; livello atteso V2 (intervento in Aula, D-019). Marattin presenta le misure come proposta propria («Noi pensiamo che…», «con la nostra proposta, Ministro - che spero ci sarà modo di discutere nel finale di legislatura e, magari, più avanti -»). Il testo scritto dell'interrogazione (Allegato A della seduta 738) non è registrato, come le altre interrogazioni (atti di controllo). Orizzonte/veicolo: non_specificato (legislatura in corso «e, magari, più avanti»), dichiarazione. COFOG 09. Doppioni: nessuna riga PLD sulla scuola. Pre-valutazione slogan: LIM (criterio nominato, nessun valore). Testo_letterale confrontato in automatico con il testo HTML scaricato il 2026-11-07 (estrattore html.parser, script e stili esclusi): ogni segmento fra «[…]» ritrovato nell'ordine, a meno di spazi e apostrofi tipografici. Wayback archive.org/wayback/available (solo lettura, 2026-11-07): HTTP 200, nessuna copia.",
+    "verifica": {
+      "livello": "V2",
+      "dettaglio": "V2✓ verificatore L2 2026-11-07 — CONFERMATA: resoconto stenografico della seduta 738 della Camera (04/11/2026, GET 200), illustrazione dell'interrogazione a risposta immediata 3-02995 da parte di Luigi Marattin, frase ritrovata parola per parola; discorso in Aula V2 come C27-PLD-014…016; dichiarante ammesso (segretario PLD); proposta propria («Noi pensiamo che…», «Noi siamo per una rivoluzione radicale di questo tipo», in replica «con la nostra proposta»); caso limite superato: criterio di determinazione della retribuzione (componente legata al merito oltre all'anzianità), non un aumento su un aggregato come C27-CSX-020; da segnalare al titolare; parafrasi fedele | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
     "id": "C27-ORA-001",
     "partitoId": "ORA",
     "dichiarante": "ORA! (sito ufficiale)",
@@ -11154,7 +12494,24 @@
       "dettaglio": "V1 per D-019: intervista pubblicata da una testata, citazione verificata sul testo. Esito della verifica, quando le interviste valevano V2: V2✓ verificatore 2026-10-21 — CORRETTA: testata originale identificata (Il Foglio 07/09/2026); natura della proposta precisata in nota"
     },
     "effettoConti": "si",
-    "ribadita": []
+    "ribadita": [
+      {
+        "id": "C27-PCIT-015",
+        "dichiarante": "Alessandro Onorato",
+        "ruoloDichiarante": "segretario nazionale di Progetto Civico Italia; assessore ai Grandi eventi, Sport, Turismo e Moda di Roma Capitale (così la testata)",
+        "data": "2026-11-02",
+        "testoLetterale": "Io partirei da zero: gli asili nido devono essere gratuiti. Non l'hanno mai fatto",
+        "tipoFonte": "intervista",
+        "fonte": {
+          "url": "https://www.skuola.net/news/skuola-originals/alessandro-onorato-scuola-nido-gratis-diploma-18-anni.html"
+        },
+        "archivioUrl": null,
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore L2 2026-11-07 — intervista di Skuola.net a Onorato (segretario nazionale; «intervista a Skuola.net», 02/11, GET 200): fonte primaria (D-019); virgolettato ritrovato parola per parola, frase di Onorato; valore di arrivo (nido gratuito); la stima di costo (meno di 500 milioni) è in parole della testata («Secondo lui»); possibile ripetizione di C27-PCIT-001, «ribadisce» ai codificatori (D-031) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+        }
+      }
+    ]
   },
   {
     "id": "C27-PCIT-003",
@@ -11908,6 +13265,222 @@
     "verifica": {
       "livello": "V1",
       "dettaglio": "V1✓ verificatore 2026-10-31 — CONFERMATA: intervista a domande e risposte di QdS (D-019, GET 200, 31/10); citazione ritrovata, il \"[…]\" finale toglie solo \"e di conseguenza il ricorso al privato\"; caso limite superato: piano con oggetto definito (assunzioni di personale sanitario dove la carenza è strutturale), come C27-PD-009 e C27-M5S-027, senza numero | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-ORA-037",
+    "partitoId": "ORA",
+    "dichiarante": "ORA! (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale",
+    "data": "2026-11-04",
+    "testoLetterale": "Scrivere nella Costituzione che una nuova legge elettorale si applica solo dalla seconda legislatura successiva alla sua approvazione.",
+    "parafrasiNeutra": "Scrivere nella Costituzione che una nuova legge elettorale si applica solo a partire dalla seconda legislatura successiva alla sua approvazione.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "proposta_di_legge",
+    "fonte": {
+      "url": "https://ora-italia.it/ilvotoetuo/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Pagina «Il voto è tuo» di ora-italia.it (campagna per una proposta di legge costituzionale di iniziativa popolare, «Sostieni la proposta»; datePublished 2026-11-04T16:50:30+00:00, dateModified 2026-11-06T14:21:02+00:00), letta per intero il 2026-11-07 con curl GET semplice (HTTP 200). Canale: API WordPress ufficiale https://ora-italia.it/wp-json/wp/v2/pages?modified_after=2026-11-01T00:00:00 (HTTP 200: unica pagina nuova); /wp-json/wp/v2/posts?after=2026-11-01T00:00:00 (HTTP 200) dà solo due post del 01/11 alle 11:17-11:23 (ripubblicazione dell'intervista QdS già in C27-ORA-024…036 e un post con solo un embed Instagram, senza testo); /feed/ HTTP 200. La pagina collega il testo della proposta in PDF (https://ora-italia.it/wp-content/uploads/2026/11/IL-VOTO-E-TUO.pdf, HTTP 200, 1 pagina: «Garanzia della libertà di scelta degli elettori e della parità di accesso alle elezioni», modifiche agli artt. 48, 56, 57 e 134 Cost.). La citazione è dal riquadro «La proposta» della voce indicata. Pacchetto di cinque misure: righe C27-ORA-037…041. Livello atteso V1 (canale ufficiale). Confronto automatico come sottostringa del testo estratto dall'HTML: ritrovato. Orizzonte/veicolo: legislatura_in_corso e proposta_di_legge (proposta di legge costituzionale di iniziativa popolare annunciata con il testo, regola 1.1; la pagina critica la nuova legge elettorale «Stabilicum»). COFOG 01 (organi legislativi, elezioni). Wayback archive.org/wayback/available: nessuna copia (HTTP 200, 2026-11-07). Voce 1 «No alle leggi elettorali su misura». Il PDF aggiunge un'eccezione non scritta nella pagina: «salvo che siano approvate a maggioranza dei due terzi dei componenti di ciascuna Camera». Pre-valutazione slogan: OK (strumento: norma costituzionale; parametro: seconda legislatura successiva). Doppioni: nessuna riga ORA sulla decorrenza delle leggi elettorali.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — pagina «Il voto è tuo» del sito di ORA! (GET 200), riquadro «La proposta» della voce 1; citazione ritrovata parola per parola; norma costituzionale con parametro (seconda legislatura successiva); il PDF della proposta aggiunge l'eccezione dei due terzi, che la pagina non riporta | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-ORA-038",
+    "partitoId": "ORA",
+    "dichiarante": "ORA! (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale",
+    "data": "2026-11-04",
+    "testoLetterale": "Vietare nella Costituzione liste o posizioni bloccate e ogni meccanismo che faccia dipendere l’elezione dall’ordine in lista o da una designazione interna alla coalizione.",
+    "parafrasiNeutra": "Vietare nella Costituzione le liste o posizioni bloccate e ogni meccanismo per cui l’elezione dipende dall’ordine in lista o da una designazione interna alla coalizione.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "proposta_di_legge",
+    "fonte": {
+      "url": "https://ora-italia.it/ilvotoetuo/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Pagina «Il voto è tuo» di ora-italia.it (campagna per una proposta di legge costituzionale di iniziativa popolare, «Sostieni la proposta»; datePublished 2026-11-04T16:50:30+00:00, dateModified 2026-11-06T14:21:02+00:00), letta per intero il 2026-11-07 con curl GET semplice (HTTP 200). Canale: API WordPress ufficiale https://ora-italia.it/wp-json/wp/v2/pages?modified_after=2026-11-01T00:00:00 (HTTP 200: unica pagina nuova); /wp-json/wp/v2/posts?after=2026-11-01T00:00:00 (HTTP 200) dà solo due post del 01/11 alle 11:17-11:23 (ripubblicazione dell'intervista QdS già in C27-ORA-024…036 e un post con solo un embed Instagram, senza testo); /feed/ HTTP 200. La pagina collega il testo della proposta in PDF (https://ora-italia.it/wp-content/uploads/2026/11/IL-VOTO-E-TUO.pdf, HTTP 200, 1 pagina: «Garanzia della libertà di scelta degli elettori e della parità di accesso alle elezioni», modifiche agli artt. 48, 56, 57 e 134 Cost.). La citazione è dal riquadro «La proposta» della voce indicata. Pacchetto di cinque misure: righe C27-ORA-037…041. Livello atteso V1 (canale ufficiale). Confronto automatico come sottostringa del testo estratto dall'HTML: ritrovato. Orizzonte/veicolo: legislatura_in_corso e proposta_di_legge (proposta di legge costituzionale di iniziativa popolare annunciata con il testo, regola 1.1; la pagina critica la nuova legge elettorale «Stabilicum»). COFOG 01 (organi legislativi, elezioni). Wayback archive.org/wayback/available: nessuna copia (HTTP 200, 2026-11-07). Voce 2 «Scegli tu chi preferisci (in Parlamento)». Pre-valutazione slogan: OK (strumento: divieto costituzionale con oggetto definito). Possibile ripetizione di C27-ORA-020 (superare le liste bloccate nella legge elettorale, 23/07): qui cambia lo strumento (norma costituzionale) e si aggiunge il divieto delle designazioni di coalizione; la decisione «ribadisce» spetta ai codificatori.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — stessa pagina, voce 2 (GET 200); citazione ritrovata parola per parola; divieto costituzionale con oggetto definito (liste e posizioni bloccate, designazioni di coalizione), confermato dall'art. 1 del PDF; possibile ripetizione di C27-ORA-020 con strumento diverso, «ribadisce» ai codificatori (D-031) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-ORA-039",
+    "partitoId": "ORA",
+    "dichiarante": "ORA! (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale",
+    "data": "2026-11-04",
+    "testoLetterale": "Le firme richieste devono essere proporzionate al numero di elettori del collegio, non superiori all’1%, uguali per tutte le forze politiche senza gruppo parlamentare e raccoglibili anche con strumenti digitali pubblici e verificabili, non solo su carta.",
+    "parafrasiNeutra": "Firme per presentare le liste proporzionate agli elettori del collegio, non oltre l’1%, uguali per tutte le forze politiche senza gruppo parlamentare e raccoglibili anche in forma digitale.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "proposta_di_legge",
+    "fonte": {
+      "url": "https://ora-italia.it/ilvotoetuo/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Pagina «Il voto è tuo» di ora-italia.it (campagna per una proposta di legge costituzionale di iniziativa popolare, «Sostieni la proposta»; datePublished 2026-11-04T16:50:30+00:00, dateModified 2026-11-06T14:21:02+00:00), letta per intero il 2026-11-07 con curl GET semplice (HTTP 200). Canale: API WordPress ufficiale https://ora-italia.it/wp-json/wp/v2/pages?modified_after=2026-11-01T00:00:00 (HTTP 200: unica pagina nuova); /wp-json/wp/v2/posts?after=2026-11-01T00:00:00 (HTTP 200) dà solo due post del 01/11 alle 11:17-11:23 (ripubblicazione dell'intervista QdS già in C27-ORA-024…036 e un post con solo un embed Instagram, senza testo); /feed/ HTTP 200. La pagina collega il testo della proposta in PDF (https://ora-italia.it/wp-content/uploads/2026/11/IL-VOTO-E-TUO.pdf, HTTP 200, 1 pagina: «Garanzia della libertà di scelta degli elettori e della parità di accesso alle elezioni», modifiche agli artt. 48, 56, 57 e 134 Cost.). La citazione è dal riquadro «La proposta» della voce indicata. Pacchetto di cinque misure: righe C27-ORA-037…041. Livello atteso V1 (canale ufficiale). Confronto automatico come sottostringa del testo estratto dall'HTML: ritrovato. Orizzonte/veicolo: legislatura_in_corso e proposta_di_legge (proposta di legge costituzionale di iniziativa popolare annunciata con il testo, regola 1.1; la pagina critica la nuova legge elettorale «Stabilicum»). COFOG 01 (organi legislativi, elezioni). Wayback archive.org/wayback/available: nessuna copia (HTTP 200, 2026-11-07). Voce 3 «Firme uguali per tutti». ATTENZIONE: la pagina dice «non superiori all’1%» (soglia «indicata dalla Commissione di Venezia»), mentre il testo dell'articolo 2 nel PDF dice «non possono essere richieste sottoscrizioni in numero superiore a un millesimo degli elettori iscritti nelle liste elettorali del collegio» (0,1%): il verificatore segnala la differenza; la riga cita la pagina. Pre-valutazione slogan: OK (parametro: tetto all’1% degli elettori del collegio). Doppioni: nessuna riga ORA sulle firme.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — stessa pagina, voce 3 (GET 200); citazione ritrovata parola per parola; parametro (firme non oltre l'1% degli elettori del collegio) e raccolta digitale. Da segnalare: l'art. 2 del PDF della proposta fissa il tetto a «un millesimo degli elettori» (0,1%), la pagina all'1%; la riga cita la pagina | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-ORA-040",
+    "partitoId": "ORA",
+    "dichiarante": "ORA! (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale",
+    "data": "2026-11-04",
+    "testoLetterale": "La Corte costituzionale verifica la costituzionalità della legge elettorale prima che sia promulgata e applicata.",
+    "parafrasiNeutra": "Controllo preventivo della Corte costituzionale sulla legge elettorale, prima della promulgazione e dell’applicazione.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "proposta_di_legge",
+    "fonte": {
+      "url": "https://ora-italia.it/ilvotoetuo/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Pagina «Il voto è tuo» di ora-italia.it (campagna per una proposta di legge costituzionale di iniziativa popolare, «Sostieni la proposta»; datePublished 2026-11-04T16:50:30+00:00, dateModified 2026-11-06T14:21:02+00:00), letta per intero il 2026-11-07 con curl GET semplice (HTTP 200). Canale: API WordPress ufficiale https://ora-italia.it/wp-json/wp/v2/pages?modified_after=2026-11-01T00:00:00 (HTTP 200: unica pagina nuova); /wp-json/wp/v2/posts?after=2026-11-01T00:00:00 (HTTP 200) dà solo due post del 01/11 alle 11:17-11:23 (ripubblicazione dell'intervista QdS già in C27-ORA-024…036 e un post con solo un embed Instagram, senza testo); /feed/ HTTP 200. La pagina collega il testo della proposta in PDF (https://ora-italia.it/wp-content/uploads/2026/11/IL-VOTO-E-TUO.pdf, HTTP 200, 1 pagina: «Garanzia della libertà di scelta degli elettori e della parità di accesso alle elezioni», modifiche agli artt. 48, 56, 57 e 134 Cost.). La citazione è dal riquadro «La proposta» della voce indicata. Pacchetto di cinque misure: righe C27-ORA-037…041. Livello atteso V1 (canale ufficiale). Confronto automatico come sottostringa del testo estratto dall'HTML: ritrovato. Orizzonte/veicolo: legislatura_in_corso e proposta_di_legge (proposta di legge costituzionale di iniziativa popolare annunciata con il testo, regola 1.1; la pagina critica la nuova legge elettorale «Stabilicum»). COFOG 01 (organi legislativi, elezioni). Wayback archive.org/wayback/available: nessuna copia (HTTP 200, 2026-11-07). Voce 4 «Prima le verifiche, poi le elezioni» (nel PDF: modifica dell'art. 134 Cost.). Pre-valutazione slogan: OK (strumento: giudizio preventivo della Corte). Doppioni: nessuno.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — stessa pagina, voce 4 (GET 200); citazione ritrovata parola per parola; strumento definito (giudizio preventivo della Corte costituzionale sulla legge elettorale, art. 3 del PDF: modifica dell'art. 134 Cost.) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-ORA-041",
+    "partitoId": "ORA",
+    "dichiarante": "ORA! (sito ufficiale)",
+    "ruoloDichiarante": "Partito - canale ufficiale",
+    "data": "2026-11-04",
+    "testoLetterale": "Scrivere nella Costituzione che la Repubblica garantisce alle persone con disabilità l’esercizio autonomo del voto, e che la legge assicura l’esercizio del diritto di voto anche fuori dal comune di iscrizione elettorale per ragioni di salute, cura o assistenza.",
+    "parafrasiNeutra": "Garantire in Costituzione il voto autonomo delle persone con disabilità e il voto fuori dal comune di iscrizione per ragioni di salute, cura o assistenza.",
+    "tipoFonte": "sito_ufficiale",
+    "orizzonte": "legislatura_in_corso",
+    "veicolo": "proposta_di_legge",
+    "fonte": {
+      "url": "https://ora-italia.it/ilvotoetuo/"
+    },
+    "archivioUrl": null,
+    "cofog": "01",
+    "misurabile": "parziale",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Pagina «Il voto è tuo» di ora-italia.it (campagna per una proposta di legge costituzionale di iniziativa popolare, «Sostieni la proposta»; datePublished 2026-11-04T16:50:30+00:00, dateModified 2026-11-06T14:21:02+00:00), letta per intero il 2026-11-07 con curl GET semplice (HTTP 200). Canale: API WordPress ufficiale https://ora-italia.it/wp-json/wp/v2/pages?modified_after=2026-11-01T00:00:00 (HTTP 200: unica pagina nuova); /wp-json/wp/v2/posts?after=2026-11-01T00:00:00 (HTTP 200) dà solo due post del 01/11 alle 11:17-11:23 (ripubblicazione dell'intervista QdS già in C27-ORA-024…036 e un post con solo un embed Instagram, senza testo); /feed/ HTTP 200. La pagina collega il testo della proposta in PDF (https://ora-italia.it/wp-content/uploads/2026/11/IL-VOTO-E-TUO.pdf, HTTP 200, 1 pagina: «Garanzia della libertà di scelta degli elettori e della parità di accesso alle elezioni», modifiche agli artt. 48, 56, 57 e 134 Cost.). La citazione è dal riquadro «La proposta» della voce indicata. Pacchetto di cinque misure: righe C27-ORA-037…041. Livello atteso V1 (canale ufficiale). Confronto automatico come sottostringa del testo estratto dall'HTML: ritrovato. Orizzonte/veicolo: legislatura_in_corso e proposta_di_legge (proposta di legge costituzionale di iniziativa popolare annunciata con il testo, regola 1.1; la pagina critica la nuova legge elettorale «Stabilicum»). COFOG 01 (organi legislativi, elezioni). Wayback archive.org/wayback/available: nessuna copia (HTTP 200, 2026-11-07). Voce 5 «No a barriere fisiche al voto». Platea definita (persone con disabilità; chi è fuori comune per salute, cura o assistenza), strumenti rinviati alla legge (la pagina cita come esempi mascherine in braille e firme digitali). Pre-valutazione slogan: LIM/OK (norma costituzionale con platea definita, senza strumenti attuativi). Collegata a C27-ORA-011 (iscrizione temporanea dei fuorisede, 23/02), che riguarda un'altra platea: non è una ripetizione.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — stessa pagina, voce 5 (GET 200); citazione ritrovata parola per parola, identica all'art. 1 del PDF; caso limite superato: norma costituzionale con platea definita (persone con disabilità; chi vota fuori comune per salute, cura o assistenza), strumenti rinviati alla legge; non ripete C27-ORA-011 (altra platea) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "no",
+    "ribadita": []
+  },
+  {
+    "id": "C27-ORA-043",
+    "partitoId": "ORA",
+    "dichiarante": "Michele Boldrin",
+    "ruoloDichiarante": "leader di Ora! ed economista (così la testata: «L’economista e leader di Ora!»)",
+    "data": "2026-11-03",
+    "testoLetterale": "Una riforma seria dice: ci sono meno studenti, quindi non serve un corpo insegnante così grande, ma poiché è distribuito male sul territorio nazionale, lo redistribuisco e adeguo gli stipendi, in modo che le persone siano incentivate a spostarsi.",
+    "parafrasiNeutra": "Ridurre e redistribuire gli insegnanti sul territorio, adeguando gli stipendi per incentivare gli spostamenti verso le zone con meno docenti.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://mowmag.com/attualita/michele-boldrin-distrugge-la-nuova-legge-di-bilancio-il-governo-meloni-e-incapace-di-riformare-e-una-manovra-raffazzonata"
+    },
+    "archivioUrl": null,
+    "cofog": "09",
+    "misurabile": "no",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervista a Michele Boldrin di Michele Larosa su MOW - Mowmag.com (datePublished 2026-11-03T12:00:00+01:00), a domande e risposte sulla legge di bilancio 2027, letta per intero il 2026-11-07 con curl GET semplice (HTTP 200; URL ritrovato nella sitemap https://mowmag.com/sitemap.xml, HTTP 200; /feed 404). Canale: Google News RSS, query uniformi «\"Ora!\" intervista», «\"Ora!\" proposta», «Boldrin intervista», «Boldrin proposta» (when:7d, HTTP 200). Canale ufficiale ORA: vedi C27-ORA-037. Livello atteso V1 (intervista di una testata aperta, D-019). Le risposte sono un giudizio sulla manovra con indicazioni al condizionale («Bisognerebbe», «Una riforma seria dice»): il verificatore valuta se sono un impegno o un'analisi, come per C27-ORA-033…036. Confronto automatico come sottostringa del testo estratto dall'HTML: ritrovato. Orizzonte/veicolo: non_specificato e dichiarazione (giudizio sulla legge di bilancio 2027, ma nessuna richiesta di modificarla). Wayback archive.org/wayback/available: nessuna copia (HTTP 200, 2026-11-07). Contesto: risposta sul taglio di 6.974 posti nella scuola previsto dalla manovra («Va anche bene tagliarli, ma solo se si ha poi il coraggio di redistribuire»). Alla domanda successiva aggiunge: «richiederebbe di decentralizzare, di permettere l’assunzione a livello locale, di calibrare i salari sul mercato del lavoro locale» (non registrata a parte: è la spiegazione della stessa misura). Pre-valutazione slogan: LIM (strumento: redistribuzione con stipendi adeguati al costo della vita locale; nessun importo). Doppioni: C27-ORA-022 e 023 (pagare il lavoro aggiuntivo, figure intermedie) riguardano altro.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — intervista a domande e risposte di Boldrin (leader) su MOW (03/11, GET 200): fonte primaria (D-019); citazione ritrovata parola per parola, nessun taglio; caso limite superato: risposta alla domanda «Che cosa dovrebbe fare una riforma seria?», al condizionale come C27-ORA-034, con la leva descritta nel suo meccanismo (ridurre e redistribuire l'organico adeguando gli stipendi per incentivare gli spostamenti), senza importo | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-PCIT-016",
+    "partitoId": "PCIT",
+    "dichiarante": "Alessandro Onorato",
+    "ruoloDichiarante": "segretario nazionale di Progetto Civico Italia; assessore ai Grandi eventi, Sport, Turismo e Moda di Roma Capitale (così la testata)",
+    "data": "2026-11-02",
+    "testoLetterale": "il percorso curricolare deve durare un anno di meno",
+    "parafrasiNeutra": "Ridurre di un anno la durata del percorso scolastico, per finire a 18 anni come nel resto d’Europa.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.skuola.net/news/skuola-originals/alessandro-onorato-scuola-nido-gratis-diploma-18-anni.html"
+    },
+    "archivioUrl": null,
+    "cofog": "09",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervista ad Alessandro Onorato di Carla Ardizzone su Skuola.net (sezione Skuola Originals, «raccontata in un'intervista a Skuola.net», «come spiega ai nostri microfoni»; datePublished 2026-11-02T14:30:37+01:00), letta per intero il 2026-11-07 con curl GET semplice (HTTP 200). URL ritrovato nella sitemap https://www.skuola.net/sitemaps/skuola/news.xml (HTTP 200) dopo la notizia di Google News (query uniforme «Progetto Civico Italia proposta» e «Onorato proposta», when:7d, HTTP 200: ripresa di 361 Magazine del 03/11, che riassume l'intervista senza nuove citazioni). Il pezzo è un racconto dell'intervista con virgolettati, non un testo a domande e risposte. Canale ufficiale: progettocivicoitalia.it API WordPress (after=2026-11-01) HTTP 200 vuota, /feed/ HTTP 200 fermo al 07/09/2026. Livello atteso V1 o V2 (intervista di testata aperta, D-019; virgolettati dentro il racconto della redattrice). Nello stesso pezzo, solo in parole della testata e quindi non registrati: stipendi dei docenti «come la media europea» («il 30% in più»), scelta delle superiori a 15 anni, IA ed educazione finanziaria in classe, supporto psicologico a scuola, congedo paritario, sport «obbligatorio fino a 16 anni». Confronto automatico come sottostringa del testo estratto dall'HTML: ritrovato. Orizzonte/veicolo: non_specificato e dichiarazione. Wayback archive.org/wayback/available: nessuna copia (HTTP 200, 2026-11-07). Contesto: «Per Onorato \"il percorso curricolare deve durare un anno di meno\", e la motivazione è tutta nel confronto con il resto del continente: \"in tutta Europa si finisce a diciott'anni e in Italia a diciannove\"»; il sommario della testata dice «un anno di superiori in meno» (361 Magazine: «da cinque a quattro anni» la secondaria di secondo grado, in parole della redazione). Pre-valutazione slogan: OK (parametro: un anno in meno). Doppioni: nessuna riga PCIT sulla durata della scuola.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — stessa intervista (Skuola.net, 02/11, GET 200), D-019; virgolettato ritrovato parola per parola, frase di Onorato; parametro (un anno in meno); il riferimento ai 18 anni in parafrasi è nel virgolettato seguente («in tutta Europa si finisce a diciott'anni») | PERIMETRO: orizzonte/veicolo (vedi colonne)"
+    },
+    "effettoConti": "si",
+    "ribadita": []
+  },
+  {
+    "id": "C27-PCIT-017",
+    "partitoId": "PCIT",
+    "dichiarante": "Alessandro Onorato",
+    "ruoloDichiarante": "segretario nazionale di Progetto Civico Italia; assessore ai Grandi eventi, Sport, Turismo e Moda di Roma Capitale (così la testata)",
+    "data": "2026-11-02",
+    "testoLetterale": "La scuola deve essere aperta 11 mesi l'anno",
+    "parafrasiNeutra": "Tenere le scuole aperte 11 mesi all’anno.",
+    "tipoFonte": "intervista",
+    "orizzonte": "non_specificato",
+    "veicolo": "dichiarazione",
+    "fonte": {
+      "url": "https://www.skuola.net/news/skuola-originals/alessandro-onorato-scuola-nido-gratis-diploma-18-anni.html"
+    },
+    "archivioUrl": null,
+    "cofog": "09",
+    "misurabile": "si",
+    "costoDichiarato": null,
+    "stimaTerzi": null,
+    "note": "Intervista ad Alessandro Onorato di Carla Ardizzone su Skuola.net (sezione Skuola Originals, «raccontata in un'intervista a Skuola.net», «come spiega ai nostri microfoni»; datePublished 2026-11-02T14:30:37+01:00), letta per intero il 2026-11-07 con curl GET semplice (HTTP 200). URL ritrovato nella sitemap https://www.skuola.net/sitemaps/skuola/news.xml (HTTP 200) dopo la notizia di Google News (query uniforme «Progetto Civico Italia proposta» e «Onorato proposta», when:7d, HTTP 200: ripresa di 361 Magazine del 03/11, che riassume l'intervista senza nuove citazioni). Il pezzo è un racconto dell'intervista con virgolettati, non un testo a domande e risposte. Canale ufficiale: progettocivicoitalia.it API WordPress (after=2026-11-01) HTTP 200 vuota, /feed/ HTTP 200 fermo al 07/09/2026. Livello atteso V1 o V2 (intervista di testata aperta, D-019; virgolettati dentro il racconto della redattrice). Nello stesso pezzo, solo in parole della testata e quindi non registrati: stipendi dei docenti «come la media europea» («il 30% in più»), scelta delle superiori a 15 anni, IA ed educazione finanziaria in classe, supporto psicologico a scuola, congedo paritario, sport «obbligatorio fino a 16 anni». Confronto automatico come sottostringa del testo estratto dall'HTML: ritrovato. Orizzonte/veicolo: non_specificato e dichiarazione. Wayback archive.org/wayback/available: nessuna copia (HTTP 200, 2026-11-07). La frase continua: «dove già abbiamo perso una grande opportunità data dal PNRR. Se non rifai tutte le scuole italiane, quando hai 209 miliardi di euro, quando le rifai?»; la testata collega la misura allo sport e alla ristrutturazione delle scuole (aria condizionata, autosufficienza energetica). Irpiniaoggi (03/11, sintesi degli Stati Generali in parole della redazione) riporta la stessa misura come «apertura degli istituti scolastici per almeno undici mesi all’anno». Pre-valutazione slogan: OK (parametro: 11 mesi). Doppioni: nessuna riga PCIT; misura vicina a C27-PSI-004 (altro partito).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore L2 2026-11-07 — stessa intervista (Skuola.net, 02/11, GET 200), D-019; virgolettato ritrovato parola per parola, frase di Onorato; parametro (scuole aperte 11 mesi l'anno) | PERIMETRO: orizzonte/veicolo (vedi colonne)"
     },
     "effettoConti": "si",
     "ribadita": []

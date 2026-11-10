@@ -304,5 +304,65 @@
       "periodo": "non_indicato",
       "anni": null
     }
+  },
+  {
+    "id": "C27-LEGA-046",
+    "famiglia": null,
+    "costo": {
+      "natura": "spesa",
+      "minMln": 84,
+      "maxMln": 84,
+      "periodo": "annuo",
+      "anni": 1
+    }
+  },
+  {
+    "id": "C27-LEGA-047",
+    "famiglia": "pensionamento_anticipato",
+    "costo": null
+  },
+  {
+    "id": "C27-AVS-103",
+    "famiglia": null,
+    "costo": {
+      "natura": "riallocazione",
+      "minMln": 4600,
+      "maxMln": 4600,
+      "periodo": "non_indicato",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-AVS-104",
+    "famiglia": null,
+    "costo": {
+      "natura": "riallocazione",
+      "minMln": 252,
+      "maxMln": 252,
+      "periodo": "annuo",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-AVS-109",
+    "famiglia": null,
+    "costo": {
+      "natura": "non_strutturabile",
+      "minMln": null,
+      "maxMln": null,
+      "periodo": "non_indicato",
+      "anni": null
+    }
+  },
+  {
+    "id": "C27-PE-027",
+    "famiglia": null,
+    "costo": {
+      "natura": "maggior_gettito",
+      "minMln": 4000,
+      "maxMln": 7000,
+      "periodo": "non_indicato",
+      "anni": null
+    }
   }
 ]

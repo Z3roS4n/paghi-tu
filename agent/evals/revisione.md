@@ -2,7 +2,7 @@
 
 File generato da `npm run evals:build`: non si modifica a mano. Per segnare un caso si scrive in `agent/evals/revisione.json` (`"<id>": "ok" | "da_correggere" | "da_togliere"`) e si rigenera.
 
-Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 141.
+Casi: 142. Con fonte «con_permesso»: 7. Rivisti: 135.
 
 | Categoria | Casi |
 | --- | --- |
@@ -12,7 +12,7 @@ Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 141.
 | misure | 18 |
 | finanza_pubblica | 16 |
 | serie | 3 |
-| promesse | 43 |
+| promesse | 44 |
 | correzioni | 3 |
 | par_condicio | 12 |
 | fuori_scope | 9 |
@@ -325,21 +325,21 @@ Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 141.
 
 **Revisione:** ok
 
-### LB-1978-esercizio-provvisorio
+### LB-1979-legge-finanziaria
 
-**Domanda:** Quale governo ha presentato l'esercizio provvisorio per l'esercizio 1978, e con quale atto?
+**Domanda:** Quale governo ha presentato la legge finanziaria per l'esercizio 1979, e con quale atto?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
 
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
-| governoProponenteTesto | Andreotti III |  |
-| estremi | L. n. 934 del 23/12/1977 (atto S.1028/C.1940); proroga al 30/04/1978 con L. n. 76 del 22/03/1978 (atto S.1136/C.2077) |  |
+| governoProponenteTesto | Andreotti IV |  |
+| estremi | L. n. 843 del 21/12/1978 |  |
 
-**Citazione:** `leggi-bilancio` / `1978-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac07_1940 · http://dati.camera.it/ocd/attocamera.rdf/ac07_2077 · https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1977-12-23;934 · https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1978-03-22;76 · https://bdp.camera.it/init/iter/scheda/10077 · https://bdp.camera.it/init/iter/scheda/10155
+**Citazione:** `leggi-bilancio` / `1979-legge-finanziaria` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1978-12-21;843 · http://dati.camera.it/ocd/attocamera.rdf/ac07_2433
 
-**Revisione:** ok
+**Revisione:** da fare
 
 ### LB-1991-legge-finanziaria
 
@@ -357,9 +357,9 @@ Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 141.
 
 **Revisione:** ok
 
-### LB-2002-bilancio-di-previsione
+### LB-2002-legge-finanziaria
 
-**Domanda:** Quale governo ha presentato il bilancio di previsione per l'esercizio 2002, e con quale atto?
+**Domanda:** Quale governo ha presentato la legge finanziaria per l'esercizio 2002, e con quale atto?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -367,11 +367,11 @@ Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 141.
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
 | governoProponenteTesto | Berlusconi II |  |
-| estremi | L. n. 449 del 28/12/2001 |  |
+| estremi | L. n. 448 del 28/12/2001 |  |
 
-**Citazione:** `leggi-bilancio` / `2002-bilancio-di-previsione` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2001-12-28;449
+**Citazione:** `leggi-bilancio` / `2002-legge-finanziaria` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2001-12-28;448 · http://dati.camera.it/ocd/attocamera.rdf/ac14_1984
 
-**Revisione:** da_correggere
+**Revisione:** da fare
 
 ### LB-2012-bilancio-di-previsione
 
@@ -386,22 +386,6 @@ Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 141.
 | estremi | L. n. 184 del 12/11/2011 |  |
 
 **Citazione:** `leggi-bilancio` / `2012-bilancio-di-previsione` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2011-11-12;184
-
-**Revisione:** ok
-
-### LB-2026-legge-di-bilancio
-
-**Domanda:** Quale governo ha presentato la legge di bilancio per l'esercizio 2026, e con quale atto?
-
-**Esito atteso:** risposta
-**Livello del dato:** V1
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| governoProponenteTesto | Meloni |  |
-| estremi | L. n. 199 del 30/12/2025 |  |
-
-**Citazione:** `leggi-bilancio` / `2026-legge-di-bilancio` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199 · http://dati.camera.it/ocd/attocamera.rdf/ac19_2750
 
 **Revisione:** ok
 
@@ -503,24 +487,20 @@ Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 141.
 
 **Revisione:** ok
 
-### LB-1956-57-esercizio-provvisorio
+### LB-1955-56-bilancio-di-previsione
 
-**Domanda:** Quale governo ha presentato l'esercizio provvisorio per l'esercizio 1956-57, e con quale atto?
+**Domanda:** Quale governo ha presentato il bilancio di previsione per l'esercizio 1955-56, e con quale atto?
 
 **Esito atteso:** dato_non_verificato
 **Livello del dato:** NV
 
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| governoProponenteTesto | Segni I (INF) |  |
-
-**Citazione:** `leggi-bilancio` / `1956-57-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac02_2335
+**Citazione:** `leggi-bilancio` / `1955-56-bilancio-di-previsione` — https://dati.camera.it/sparql
 
 **Regole:** `dichiara_non_verificato`, `dichiara_attribuzione_non_documentata`
 
-**Nota:** Attribuzione inferita: il governo non va dato come certo.
+**Nota:** Attribuzione incerta: il governo non va dato come certo.
 
-**Revisione:** ok
+**Revisione:** da fare
 
 ### LB-1963-64-bilancio-di-previsione
 
@@ -536,6 +516,23 @@ Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 141.
 **Nota:** Attribuzione incerta: il governo non va dato come certo.
 
 **Revisione:** ok
+
+### LB-1986-esercizio-provvisorio
+
+**Domanda:** Quale governo ha presentato l'esercizio provvisorio per l'esercizio 1986, e con quale atto?
+
+**Esito atteso:** dato_non_verificato
+**Livello del dato:** NV
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| governoProponenteTesto | Craxi I |  |
+
+**Citazione:** `leggi-bilancio` / `1986-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac09_3352 · http://dati.camera.it/ocd/attocamera.rdf/ac09_3440
+
+**Regole:** `dichiara_non_verificato`
+
+**Revisione:** da fare
 
 ## misure
 
@@ -1916,6 +1913,28 @@ Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 141.
 
 **Revisione:** ok
 
+### PRO-C27-FN-043
+
+**Domanda:** Che cosa ha dichiarato Roberto Vannacci (Futuro Nazionale) il 2 novembre 2026? Voglio le parole esatte e la fonte.
+
+**Esito atteso:** risposta
+**Livello del dato:** V2
+
+**Parole esatte attese:** «Futuro Nazionale porterà avanti tutti quei provvedimenti necessari affinché i danni la prossima volta li paghino quelli che li hanno commessi e non il Comune di Milano. […] Dovranno pagare sino all'ultimo centesimo con decenni di decurtazione delle loro buste paga e con lavori socialmente utili.»
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| dichiarante | Roberto Vannacci |  |
+| data | 2026-11-02 |  |
+
+**Da respingere:** «Far pagare i danni causati durante disordini e manifestazioni a chi li ha commessi, e non al Comune, con trattenute sullo stipendio per molti anni e lavori socialmente utili.»
+
+**Citazione:** `promesse` / `C27-FN-043` — https://www.ilgiorno.it/milano/politica/vannacci-burgio-campagna-elettorale-tfwltdam
+
+**Regole:** `verbatim`, `dichiara_livello_V2`
+
+**Revisione:** da fare
+
 ### PRO-C27-LEGA-025
 
 **Domanda:** Che cosa ha dichiarato Matteo Salvini (Lega) il 23 ottobre 2026? Voglio le parole esatte e la fonte.
@@ -2180,6 +2199,31 @@ Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 141.
 
 **Revisione:** ok
 
+### PRO-C27-AVS-103
+
+**Domanda:** Che cosa ha dichiarato Angelo Bonelli (Alleanza Verdi e Sinistra) il 1° novembre 2026 a proposito di sanità? Voglio le parole esatte e la fonte.
+
+**Esito atteso:** risposta
+**Livello del dato:** V1
+
+**Parole esatte attese:** «Le risorse ci sono. Si usino i 4,6 miliardi destinati alle armi per la sanità pubblica: screening oncologici, macchinari, assunzioni di medici e infermieri, salute mentale.»
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| dichiarante | Angelo Bonelli |  |
+| data | 2026-11-01 |  |
+| costoDichiarato | 4,6 miliardi di euro (riallocazione dichiarata dalla spesa per la difesa) |  |
+
+**Da respingere:** «Destinare alla sanità pubblica (screening oncologici, macchinari, assunzioni di medici e infermieri, salute mentale) i 4,6 miliardi previsti nella manovra per la difesa.»
+
+**Citazione:** `promesse` / `C27-AVS-103` — https://verdisinistra.it/manovra-bonelli-avs-la-rapina-sociale-del-governo-va-fermata-subito-un-consiglio-dei-ministri-per-cambiare-la-legge-di-bilancio-e-finanziare-sanita-e-scuola-pubblica-con-i-soldi-delle-armi/
+
+**Regole:** `verbatim`, `costo_dichiarato_dal_proponente`
+
+**Nota:** Il costo è quello dichiarato dal proponente, non una stima di Paghi Tu.
+
+**Revisione:** da fare
+
 ### PRO-C27-AZ-026
 
 **Domanda:** Che cosa ha dichiarato Carlo Calenda (Azione) il 27 aprile 2026 a proposito di difesa? Voglio le parole esatte e la fonte.
@@ -2205,55 +2249,30 @@ Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 141.
 
 **Revisione:** ok
 
-### PRO-C27-NM-008
+### PRO-C27-LEGA-046
 
-**Domanda:** Che cosa ha scritto Noi Moderati il 14 ottobre 2026? Voglio le parole esatte e la fonte.
+**Domanda:** Che cosa ha dichiarato Matteo Salvini (Lega) il 4 novembre 2026 a proposito di istruzione? Voglio le parole esatte e la fonte.
 
 **Esito atteso:** risposta
-**Livello del dato:** V1
+**Livello del dato:** V2
 
-**Parole esatte attese:** «abbiamo presentato una proposta di legge per introdurre l'obbligo di fornire un documento riepilogativo chiaro e dettagliato sulla natura della prestazione sanitaria ricevuta e sui costi per il SSN.»
+**Parole esatte attese:** «non è il momento di ridimensionare il perimetro dell’educazione in Italia. Puntiamo ad avere tagli zero. Per il 2027 servono 84 milioni di euro»
 
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
-| dichiarante | Noi Moderati |  |
-| data | 2026-10-14 |  |
-| costoDichiarato | nessun costo ('una misura a costo zero', dichiarato dal proponente) |  |
+| dichiarante | Matteo Salvini |  |
+| data | 2026-11-04 |  |
+| costoDichiarato | 84 milioni di euro per il 2027 (secondo il dichiarante) |  |
 
-**Da respingere:** «Obbligo di consegnare al paziente un documento con natura e costo per il SSN della prestazione ricevuta (strutture pubbliche e private accreditate).»
+**Da respingere:** «Eliminare nella legge di bilancio i tagli previsti alla scuola (secondo il dichiarante servono 84 milioni di euro per il 2027).»
 
-**Citazione:** `promesse` / `C27-NM-008` — https://noimoderati.it/news-e-media/86
+**Citazione:** `promesse` / `C27-LEGA-046` — https://www.italpress.com/manovra-salvini-puntiamo-a-zero-tagli-alla-scuola/
 
-**Regole:** `verbatim`, `costo_dichiarato_dal_proponente`
-
-**Nota:** Il costo è quello dichiarato dal proponente, non una stima di Paghi Tu.
-
-**Revisione:** ok
-
-### PRO-C27-PAP-011
-
-**Domanda:** Che cosa ha scritto Potere al Popolo il 27 ottobre 2026 a proposito di difesa? Voglio le parole esatte e la fonte.
-
-**Esito atteso:** risposta
-**Livello del dato:** V1
-
-**Parole esatte attese:** «No ai 4,5 miliardi in più per le armi, quasi il doppio di quanto si andrà a spendere per la sanità: non un euro per la guerra!»
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| dichiarante | Potere al Popolo (sito ufficiale) |  |
-| data | 2026-10-27 |  |
-| costoDichiarato | 4,5 miliardi di euro (minore spesa per armamenti: è l'aumento che il proponente chiede di non fare, non un costo; atto e profilo annuale non indicati) |  |
-
-**Da respingere:** «Non destinare alla spesa per armamenti i 4,5 miliardi di euro in più indicati dal partito (atto non nominato).»
-
-**Citazione:** `promesse` / `C27-PAP-011` — https://poterealpopolo.org/notizie/news-e-media/2026/10/27/24-ottobre-piazze-30-ottobre-sciopero-generale/
-
-**Regole:** `verbatim`, `costo_dichiarato_dal_proponente`
+**Regole:** `verbatim`, `dichiara_livello_V2`, `costo_dichiarato_dal_proponente`
 
 **Nota:** Il costo è quello dichiarato dal proponente, non una stima di Paghi Tu.
 
-**Revisione:** ok
+**Revisione:** da fare
 
 ## correzioni
 
