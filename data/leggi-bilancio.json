@@ -3386,24 +3386,24 @@
     "annoInizio": 2027,
     "tipoAtto": "legge di bilancio",
     "tipoAttoOriginale": "legge di bilancio",
-    "estremi": "DDL non ancora presentato alle Camere al 20/10/2026 (DPB 2027 approvato dal CdM n. 192 del 13/10/2026)",
+    "estremi": "DDL A.C. 3174 presentato alla Camera il 30/10/2026; dopo lo stralcio è in esame come A.C. 3174-bis, assegnato alla Commissione V Bilancio (al 10/11/2026)",
     "governoProponenteId": "g202",
     "governoProponenteAttribuzione": "documentata",
     "governoProponenteTesto": "Meloni",
     "fonti": [
       {
-        "url": "https://pagellapolitica.it/articoli/governo-dpb-legge-bilancio-2027"
+        "url": "https://www.camera.it/leg19/126?tab=&leg=19&idDocumento=3174"
       },
       {
-        "url": "https://www.governo.it/it/articolo/consiglio-dei-ministri-n-192/32830"
+        "url": "http://dati.camera.it/ocd/attocamera.rdf/ac19_3174"
       },
       {
-        "url": "https://www.governo.it/it/articolo/convocazione-del-consiglio-dei-ministri-n-193/32876"
+        "url": "https://www.camera.it/leg19/126?tab=&leg=19&idDocumento=3174-bis"
       }
     ],
     "verifica": {
-      "livello": "NV",
-      "dettaglio": "NV (fonti secondarie); da riverificare dopo la presentazione || verificatore 2026-10-20: DPB 2027 approvato dal CdM n. 192 del 13/10/2026 = V1✓ (comunicato governo.it); DDL non presentato al 20/10/2026 = V1✓ (nessun atto \"anno finanziario 2027\" negli open data Camera leg. XIX e Senato; ordine del giorno del CdM n. 193 del 20/10/2026 senza DDL di bilancio); importo della manovra resta V2"
+      "livello": "V1",
+      "dettaglio": "V1 (scheda A.C. 3174 su camera.it, riletta il 10/11/2026: «Presentato il 30 ottobre 2026», «Iniziativa del Governo», «Altri progetti derivanti dallo stralcio: 3174-bis»; scheda A.C. 3174-bis: «Assegnato alla Commissione V Bilancio e Tesoro») || la riga del 20/10/2026 diceva «DDL non ancora presentato alle Camere»: aggiornata dopo la presentazione"
     }
   }
 ]

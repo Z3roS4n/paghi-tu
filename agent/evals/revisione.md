@@ -2,7 +2,7 @@
 
 File generato da `npm run evals:build`: non si modifica a mano. Per segnare un caso si scrive in `agent/evals/revisione.json` (`"<id>": "ok" | "da_correggere" | "da_togliere"`) e si rigenera.
 
-Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 141.
+Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 137.
 
 | Categoria | Casi |
 | --- | --- |
@@ -325,21 +325,21 @@ Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 141.
 
 **Revisione:** ok
 
-### LB-1978-esercizio-provvisorio
+### LB-1979-legge-finanziaria
 
-**Domanda:** Quale governo ha presentato l'esercizio provvisorio per l'esercizio 1978, e con quale atto?
+**Domanda:** Quale governo ha presentato la legge finanziaria per l'esercizio 1979, e con quale atto?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
 
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
-| governoProponenteTesto | Andreotti III |  |
-| estremi | L. n. 934 del 23/12/1977 (atto S.1028/C.1940); proroga al 30/04/1978 con L. n. 76 del 22/03/1978 (atto S.1136/C.2077) |  |
+| governoProponenteTesto | Andreotti IV |  |
+| estremi | L. n. 843 del 21/12/1978 |  |
 
-**Citazione:** `leggi-bilancio` / `1978-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac07_1940 · http://dati.camera.it/ocd/attocamera.rdf/ac07_2077 · https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1977-12-23;934 · https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1978-03-22;76 · https://bdp.camera.it/init/iter/scheda/10077 · https://bdp.camera.it/init/iter/scheda/10155
+**Citazione:** `leggi-bilancio` / `1979-legge-finanziaria` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1978-12-21;843 · http://dati.camera.it/ocd/attocamera.rdf/ac07_2433
 
-**Revisione:** ok
+**Revisione:** da fare
 
 ### LB-1991-legge-finanziaria
 
@@ -357,9 +357,9 @@ Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 141.
 
 **Revisione:** ok
 
-### LB-2002-bilancio-di-previsione
+### LB-2002-legge-finanziaria
 
-**Domanda:** Quale governo ha presentato il bilancio di previsione per l'esercizio 2002, e con quale atto?
+**Domanda:** Quale governo ha presentato la legge finanziaria per l'esercizio 2002, e con quale atto?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
@@ -367,11 +367,11 @@ Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 141.
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
 | governoProponenteTesto | Berlusconi II |  |
-| estremi | L. n. 449 del 28/12/2001 |  |
+| estremi | L. n. 448 del 28/12/2001 |  |
 
-**Citazione:** `leggi-bilancio` / `2002-bilancio-di-previsione` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2001-12-28;449
+**Citazione:** `leggi-bilancio` / `2002-legge-finanziaria` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2001-12-28;448 · http://dati.camera.it/ocd/attocamera.rdf/ac14_1984
 
-**Revisione:** da_correggere
+**Revisione:** da fare
 
 ### LB-2012-bilancio-di-previsione
 
@@ -386,22 +386,6 @@ Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 141.
 | estremi | L. n. 184 del 12/11/2011 |  |
 
 **Citazione:** `leggi-bilancio` / `2012-bilancio-di-previsione` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2011-11-12;184
-
-**Revisione:** ok
-
-### LB-2026-legge-di-bilancio
-
-**Domanda:** Quale governo ha presentato la legge di bilancio per l'esercizio 2026, e con quale atto?
-
-**Esito atteso:** risposta
-**Livello del dato:** V1
-
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| governoProponenteTesto | Meloni |  |
-| estremi | L. n. 199 del 30/12/2025 |  |
-
-**Citazione:** `leggi-bilancio` / `2026-legge-di-bilancio` — https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199 · http://dati.camera.it/ocd/attocamera.rdf/ac19_2750
 
 **Revisione:** ok
 
@@ -503,24 +487,20 @@ Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 141.
 
 **Revisione:** ok
 
-### LB-1956-57-esercizio-provvisorio
+### LB-1955-56-bilancio-di-previsione
 
-**Domanda:** Quale governo ha presentato l'esercizio provvisorio per l'esercizio 1956-57, e con quale atto?
+**Domanda:** Quale governo ha presentato il bilancio di previsione per l'esercizio 1955-56, e con quale atto?
 
 **Esito atteso:** dato_non_verificato
 **Livello del dato:** NV
 
-| Campo | Valore atteso | Unità |
-| --- | --- | --- |
-| governoProponenteTesto | Segni I (INF) |  |
-
-**Citazione:** `leggi-bilancio` / `1956-57-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac02_2335
+**Citazione:** `leggi-bilancio` / `1955-56-bilancio-di-previsione` — https://dati.camera.it/sparql
 
 **Regole:** `dichiara_non_verificato`, `dichiara_attribuzione_non_documentata`
 
-**Nota:** Attribuzione inferita: il governo non va dato come certo.
+**Nota:** Attribuzione incerta: il governo non va dato come certo.
 
-**Revisione:** ok
+**Revisione:** da fare
 
 ### LB-1963-64-bilancio-di-previsione
 
@@ -536,6 +516,23 @@ Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 141.
 **Nota:** Attribuzione incerta: il governo non va dato come certo.
 
 **Revisione:** ok
+
+### LB-1986-esercizio-provvisorio
+
+**Domanda:** Quale governo ha presentato l'esercizio provvisorio per l'esercizio 1986, e con quale atto?
+
+**Esito atteso:** dato_non_verificato
+**Livello del dato:** NV
+
+| Campo | Valore atteso | Unità |
+| --- | --- | --- |
+| governoProponenteTesto | Craxi I |  |
+
+**Citazione:** `leggi-bilancio` / `1986-esercizio-provvisorio` — http://dati.camera.it/ocd/attocamera.rdf/ac09_3352 · http://dati.camera.it/ocd/attocamera.rdf/ac09_3440
+
+**Regole:** `dichiara_non_verificato`
+
+**Revisione:** da fare
 
 ## misure
 
