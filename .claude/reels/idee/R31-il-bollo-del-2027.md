@@ -1,7 +1,7 @@
 # R31 — Il bollo che nel 2027 non si paga
 
 - **Uscita prevista:** mercoledì 11 novembre 2026 (casella «libera» del calendario)
-- **Stato:** idea (6/11/2026, routine, binario 4)
+- **Stato:** programmato su Instagram per l'11/11/2026 alle 13:00 (progetto Animatio paghi-tu/22-bollo-2027, montato il 10/11)
 - **Pagine:** https://www.paghitu.it/atti#dl-2026-162 (scheda «Carburanti, bollo auto 2027, borse di studio e
   Fondazione Milano-Cortina», intestazione e «Note di lavoro della ricerca»)
 - **Perché adesso:** il 5 novembre la Camera ha approvato la conversione del decreto-legge n. 162 del 17 settembre,
@@ -83,7 +83,7 @@ nelle scene 1 e 7.
 ## Voce (Giulio)
 ```
 Quanto costa il bollo auto che nel duemilaventisette non si paga? Duemilatrecentosessantadue milioni di euro.
-Il decreto sui carburanti l'ha approvato la Camera il cinque novembre. Ora tocca al Senato.
+Il decreto sui carburanti l'ha approvato la Camera il cinque novembre, poi è passato al Senato.
 Chi è esentato? Chi ha un'auto a benzina o a gasolio, anche ibrida, fino a ottanta kilowatt. Un solo veicolo a testa, per le scadenze del duemilaventisette.
 Sono tredici milioni di auto, con un bollo medio di centosessantotto euro. Poi moto e motorini, per chi non ha un'auto esentata.
 [pausa] Ma il bollo va alle regioni. E allora lo Stato le compensa… con quasi duemilatrecento milioni.

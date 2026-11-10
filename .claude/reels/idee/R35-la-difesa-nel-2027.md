@@ -1,7 +1,7 @@
 # R35 — Quanto cresce la spesa della Difesa nel 2027
 
 - **Uscita prevista:** giovedì 19 novembre 2026 (casella «libera» del calendario)
-- **Stato:** idea (10/11/2026, routine, binario 4)
+- **Stato:** idea (10/11/2026, routine, binario 4; tema approvato dal titolare il 10/11, maiuscolo spostato su una cifra)
 - **Pagine:** https://www.paghitu.it/spesa («Dove vanno i soldi», riga «Difesa»)
 - **Perché adesso:** la manovra 2027 è in commissione Bilancio alla Camera (assegnata in sede referente il 4 novembre). Il
   dossier del Servizio Studi del 9 novembre dice quanto cambia, con il disegno di legge, la spesa di ogni ministero:
@@ -84,16 +84,18 @@ Transizioni: tagli e dissolvenze brevi, nessun morph. Un solo conteggio, la cifr
 ```
 Quanto cresce la spesa della Difesa nel duemilaventisette? … Quattromilacinquecentoventicinque milioni di euro in più.
 Lo scrive il dossier della Camera sulla manovra, che adesso è in commissione Bilancio.
-Il ministero arriva così a quasi trentanove miliardi. Il tredici per cento in più: l'aumento più grande fra tutti i ministeri.
+Il ministero arriva così a quasi trentanove miliardi. Il TREDICI per cento in più: l'aumento più grande fra tutti i ministeri.
 Da dove arrivano? Quasi tutto dalla seconda sezione della manovra, quella che rifinanzia leggi già in vigore. La voce più grande: più di due miliardi e mezzo per i programmi di investimento pluriennali.
-[pausa] Per queste spese le regole europee fanno un'ECCEZIONE: nel duemilaventisette e nel duemilaventotto ammettono un deficit più alto, entro un limite.
+[pausa] Per queste spese, nel duemilaventisette e nel duemilaventotto, le regole europee ammettono un deficit più alto, entro un limite.
 Per confronto: nei conti europei, nel duemilaventiquattro, la difesa valeva quattrocentottanta euro a testa.
 Nella manovra duemilaventisette la Difesa è il ministero che cresce di più. Le cifre su paghitu punto it.
 ```
 Circa 130 parole, cinque cifre (4.525, 39, 13, 2,5, 480). La cifra che regge è 4.525 milioni, intera; 38.823, 13,2%
 e 2.630 a voce arrotondati e senza decimali; un «quasi» davanti a trentanove e un «più di» due cifre dopo (il secondo
 «quasi tutto» non è una cifra). Lo 0,3% del PIL resta a schermo e non si dice, per non leggere un decimale. Il
-maiuscolo è su «eccezione». Nessun nome di governo, ministro o partito, nessun giudizio sull'aumento.
+maiuscolo è sul «tredici» (correzione del titolare del 10/11: prima era su «eccezione», una parola che dava un tono
+alla regola; ora la frase dice solo cosa ammette). Nessun nome di governo, ministro o partito, nessun giudizio
+sull'aumento.
 
 ## Ritagli
 | Ritaglio | Scena | Immagine proposta | Fonte e licenza |
@@ -135,5 +137,7 @@ Per confronto, nei conti europei (tutte le amministrazioni pubbliche) la difesa 
   ministero. Mai accanto a 38.823 come se fossero la stessa misura; a schermo «medie per residente».
 - **Neutralità:** nessun nome di governo, ministro o partito; niente «riarmo», «spese militari alle stelle», «tagli
   altrove»; niente immagini di armi. Nessuna causa dell'aumento oltre a quelle scritte nel dossier.
-- Il sito non mostra ancora il disegno di legge 2027: nessuna schermata di /leggi-di-bilancio. Esce il giorno dopo R34
+- Dal 10/11 /leggi-di-bilancio mostra la riga 2027 («DDL A.C. 3174 presentato alla Camera il 30/10/2026; dopo lo
+  stralcio è in esame come A.C. 3174-bis, assegnato alla Commissione V Bilancio»): si può mostrare la riga 2027 nella
+  scena 2, inquadrando gli estremi e non la colonna «Governo proponente». Esce il giorno dopo R34
   (stesso dossier, altro articolo) e il giorno prima di R21 (promesse): la copertina del dossier compare solo qui.
