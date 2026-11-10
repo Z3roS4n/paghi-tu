@@ -24,9 +24,14 @@ dopo le riempie la routine con le notizie della settimana (binario 4 del runbook
 | R32 | ven 13/11/2026 | [Quanti laureati ha l'Italia](idee/R32-i-laureati-e-l-europa.md) | /spesa, /atti | idea (6/11, dalla notizia: report ISTAT del 3/11 sui livelli di istruzione) |
 | R20 | lun 16/11/2026 | [Terra dei fuochi: da dove vengono i 200 milioni](idee/R20-terra-dei-fuochi.md) | /atti | programmato (Instagram, 16/11 13:00) |
 | R33 | mar 17/11/2026 | [Quanto rendono le tasse allo Stato](idee/R33-le-tasse-dei-primi-nove-mesi.md) | /atti, /spesa | idea (7/11, dalla notizia: bollettino MEF delle entrate tributarie di gennaio-settembre, 5/11) |
-| — | mer 18/11/2026 | libera: un'idea dalla notizia della settimana | | libera |
-| — | gio 19/11/2026 | libera: R28 anticipato al 2/11 | | libera |
+| R34 | mer 18/11/2026 | [Il Superbonus in dieci rate](idee/R34-il-superbonus-in-dieci-rate.md) | /misure | idea (10/11, dalla notizia: dossier della Camera del 9/11 sul ddl di bilancio 2027, art. 37) |
+| R35 | gio 19/11/2026 | [Quanto cresce la spesa della Difesa nel 2027](idee/R35-la-difesa-nel-2027.md) | /spesa | idea (10/11, dalla notizia: dossier della Camera del 9/11, spesa dei ministeri nel ddl di bilancio 2027) |
 | R21 | ven 20/11/2026 | [Quante promesse toccano i conti](idee/R21-promesse-e-conti.md) | /promesse | programmato 20/11 13:00; entro il 18/11 ricontrollare che il DDL di bilancio 2027 sia in Parlamento («in discussione adesso») e che non ci sia un decreto di convocazione delle elezioni |
+| R36 | lun 23/11/2026 | [A chi va la carta da 300 euro](idee/R36-la-carta-dei-75-anni.md) | /spesa | idea (10/11, dalla notizia: ddl di bilancio 2027 alla Camera, art. 53, e dossier del 9/11) |
+| R37 | mar 24/11/2026 | [Cento euro al mese alle madri che lavorano](idee/R37-cento-euro-alle-madri.md) | /misure | idea (10/11, dalla notizia: ddl di bilancio 2027, artt. 57-59, e dossier del 9/11) |
+| R38 | mer 25/11/2026 | [Quanto si fa prestare lo Stato in un anno](idee/R38-il-debito-che-scade.md) | /spesa | idea (10/11, dalla notizia: comunicati MEF del 3, 6 e 9/11 su riacquisto, BOT e BTP; tetto del ricorso al mercato nel ddl di bilancio 2027) |
+| R39 | gio 26/11/2026 | [Dove vanno i soldi in più per l'energia](idee/R39-la-clausola-per-l-energia.md) | /spesa | idea (10/11, dalla notizia: decreto-legge sul costo dell'energia approvato dal CdM il 9/11; dossier della Camera sugli artt. 76-83 del ddl) |
+| — | ven 27/11/2026 | libera: un'idea da una notizia che non sia la manovra (R24 riscritta il 10/11 e respinta dal secondo agente: ripeteva dati già usati; torna in riserva) | | libera |
 
 Quando il titolare mette un video in coda su Instagram: stato `programmato`. Quando esce: stato `pubblicato`, data vera
 e link al post. Una casella `libera` la riempie la routine con una scheda nuova (numerazione dopo l'ultima) e lo stato
@@ -46,7 +51,7 @@ riallinea ai numeri del giorno.
 | R16 | [Metà del PIL, ma non una fetta](idee/R16-meta-del-pil.md) | /spesa | sostituita da R27 il 28/10: spiega solo cosa vuol dire «% del PIL» |
 | R06 | [Chi controlla i numeri](idee/R06-chi-controlla-i-numeri.md) | /metodo, /correzioni | sostituita da R28 il 28/10: video di metodo troppo vicino a R10; non prima del 20/11 |
 | R17 | [L'istruzione, a testa](idee/R17-la-scuola-a-testa.md) | /spesa | ripete R00 (istruzione quanto gli interessi, griglia dei 100 €): serve un fatto nuovo, per esempio una misura della legge di bilancio 2027 |
-| R24 | [La sanità, paese per paese](idee/R24-la-sanita-in-europa.md) | /spesa | non prima del 27/11, con un angolo diverso dal confronto UE (proposta nella scheda: la sanità dal 1995); è la base del prototipo D-032 |
+| R24 | [La sanità, paese per paese](idee/R24-la-sanita-in-europa.md) | /spesa | non prima del 27/11, con un angolo diverso dal confronto UE (proposta nella scheda: la sanità dal 1995); è la base del prototipo D-032. Il 10/11 una riscrittura sull'art. 69 del ddl 2027 è stata respinta: 2.478 € a testa e «13 ogni 100» ripetono R09 e R00; si salva solo con la domanda «dove vanno i 2.365 milioni» |
 
 ## Scartati
 | N. | Titolo | Motivo |
@@ -59,7 +64,8 @@ riallinea ai numeri del giorno.
 Spunti senza scheda:
 - **R29 La manovra 2027 è arrivata (seguito di R15)** (/leggi-di-bilancio): numero già assegnato, da scrivere quando il
   ddl di bilancio 2027 è presentato alle Camere e compare sul sito. Approvato dal Consiglio dei ministri (n. 195 del
-  28/10), presentato alla Camera il 30/10 (A.C. 3174, dati.camera.it; binario 5 del 6/11); il 4/11 è andato a R07.
+  28/10), presentato alla Camera il 30/10 (A.C. 3174, dati.camera.it; binario 5 del 6/11); il 4/11 è andato a R07. Il 10/11 /leggi-di-bilancio scriveva ancora «DDL non ancora presentato alle Camere al 20/10/2026»: R29 non
+  scritta; le schede R34-R39 e R24 usano singoli articoli del ddl (A.C. 3174-bis), non il racconto della manovra arrivata.
 - **Perché non confrontiamo il Superbonus:** previsto 35,0 mld €, consuntivo 131,6 mld €, ma le due cifre misurano
   cose diverse (/misure). Delicato: spiegare bene perché la differenza non si calcola.
 - **La spesa per funzione 2025:** quando Eurostat la pubblica (febbraio), rifare i 100 € con l'anno nuovo.
