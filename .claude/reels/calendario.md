@@ -18,7 +18,7 @@ dopo le riempie la routine con le notizie della settimana (binario 4 del runbook
 | R10 | ven 06/11/2026 | [Le regole per le promesse](idee/R10-come-contiamo-le-promesse.md) · [prompt](prompt/R10-come-contiamo-le-promesse.md) | /promesse, /metodo | programmato (Instagram, 6/11 13:00), video rimontato il 28/10 con le regole «meno movimento» |
 | R19 | lun 09/11/2026 | [Ex ILVA: cosa paga il decreto](idee/R19-ex-ilva.md) | /atti | programmato 09/11 13:00 |
 | R23 | mar 10/11/2026 | [Sotto il limite non è un risparmio](idee/R23-sotto-il-limite.md) | /misure | programmato (Instagram, 10/11 13:00) |
-| R31 | mer 11/11/2026 | [Il bollo che nel 2027 non si paga](idee/R31-il-bollo-del-2027.md) | /atti | idea (6/11, dalla notizia: DL 162 approvato dalla Camera il 5/11) |
+| R31 | mer 11/11/2026 | [Il bollo che nel 2027 non si paga](idee/R31-il-bollo-del-2027.md) | /atti | programmato 11/11 13:00 (progetto paghi-tu/22-bollo-2027; in voce «poi è passato al Senato», vero anche se il Senato vota prima dell'uscita) |
 | R22 | gio 12/11/2026 | [Di chi è la manovra dell'anno](idee/R22-di-chi-e-la-manovra.md) | /leggi-di-bilancio, /governi | programmato 12/11 13:00 |
 | R32 | ven 13/11/2026 | [Quanti laureati ha l'Italia](idee/R32-i-laureati-e-l-europa.md) | /spesa, /atti | idea (6/11, dalla notizia: report ISTAT del 3/11 sui livelli di istruzione; rivista il 10/11: la spesa per l'istruzione resta un dato a sé, senza legame con i laureati) |
 | R20 | lun 16/11/2026 | [Terra dei fuochi: da dove vengono i 200 milioni](idee/R20-terra-dei-fuochi.md) | /atti | programmato (Instagram, 16/11 13:00) |
