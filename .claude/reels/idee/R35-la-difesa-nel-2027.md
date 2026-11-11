@@ -2,6 +2,7 @@
 
 - **Uscita prevista:** giovedì 19 novembre 2026 (casella «libera» del calendario)
 - **Stato:** idea (10/11/2026, routine, binario 4; tema approvato dal titolare il 10/11, maiuscolo spostato su una cifra)
+- **Montaggio:** montato l'11/11/2026 con la voce nuova, progetto paghi-tu/26-difesa-2027; programmato su Instagram per il 19/11/2026 alle 13:00 (post sostituito lo stesso giorno: la cifra +4.525 compariva prima della sua barra). Tolta la scena con la copertina del dossier.
 - **Pagine:** https://www.paghitu.it/spesa («Dove vanno i soldi», riga «Difesa»)
 - **Perché adesso:** la manovra 2027 è in commissione Bilancio alla Camera (assegnata in sede referente il 4 novembre). Il
   dossier del Servizio Studi del 9 novembre dice quanto cambia, con il disegno di legge, la spesa di ogni ministero:

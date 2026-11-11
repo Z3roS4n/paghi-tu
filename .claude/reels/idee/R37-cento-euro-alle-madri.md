@@ -4,6 +4,7 @@
 - **Stato:** idea (10/11/2026, routine, binario 4; rivista il 10/11 su indicazione del titolare: i 100 euro ci sono già,
   la novità è che diventano stabili dal 2027 e arrivano a circa 993.000 lavoratrici; tolto il fondo «Valore nuovi
   nati», restano due misure)
+- **Montaggio:** montato l'11/11/2026 con la voce nuova, progetto paghi-tu/28-madri-100; programmato su Instagram per il 24/11/2026 alle 13:00. Cifre riaperte l'11/11 sul Tomo I (relazione tecnica, artt. 57 e 59) e sul dossier vol. I. Semplificazioni: righello disegnato senza l'asta di legno; tolta la scena «chi lo usa» (451.801, 149.404); niente registrazione dello schermo.
 - **Pagine:** https://www.paghitu.it/misure (scheda «Assegno unico universale», riga 2025: «Consuntivo 19,8 mld €»)
 - **Perché adesso:** il disegno di legge di bilancio 2027, in commissione Bilancio alla Camera, rende stabile dal 2027
   il contributo di 100 euro al mese per le madri lavoratrici con due o più figli (art. 57), che nel 2025 è andato a

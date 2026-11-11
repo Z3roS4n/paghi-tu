@@ -3,6 +3,7 @@
 - **Uscita prevista:** giovedì 26 novembre 2026
 - **Stato:** idea (10/11/2026, routine, binario 4; verificata il 10/11 su richiesta del titolare: i 2.790 milioni
   dell'art. 77 sono fra gli interventi della clausola per l'energia, vedi «Verifica dell'art. 77»; tolto «a sorpresa»)
+- **Montaggio:** montato l'11/11/2026 con la voce nuova, progetto paghi-tu/29-energia-2027; programmato su Instagram per il 26/11/2026 alle 13:00. Correzione: l'IRAP del comparto energetico è già al 5,9% nel 2026 e nel 2027 per il DL 21/2026 (dossier vol. I, art. 21): a schermo tre colonne, ordinaria 3,9%, 2026 5,9%, 2027 8,9%; «oggi 3,9%» della scheda era sbagliato. Semplificazioni: tolto il decreto del 9/11 (non in Gazzetta), niente morph, il paragone con 1.906 € solo in didascalia.
 - **Pagine:** https://www.paghitu.it/spesa («Dove vanno i soldi», riga «Affari economici»)
 - **Perché adesso:** il 9 novembre il Consiglio dei ministri ha approvato un decreto-legge «per la riduzione del costo
   dell'energia elettrica e del gas»; lo stesso giorno il Servizio Studi della Camera ha pubblicato i dossier sulla

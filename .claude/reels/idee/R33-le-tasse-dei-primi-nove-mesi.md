@@ -3,6 +3,7 @@
 - **Uscita prevista:** martedì 17 novembre 2026 (casella «libera» del calendario)
 - **Stato:** idea (7/11/2026, routine, binario 4; alleggerita il 10/11 su indicazione del titolare: tolta la parte su
   regioni e comuni, restano accise e decreti)
+- **Montaggio:** montato l'11/11/2026 con la voce nuova (ricetta naturale e sporcata, musica a 0,3), progetto paghi-tu/24-tasse; programmato su Instagram per il 17/11/2026 alle 13:00.
 - **Pagine:** https://www.paghitu.it/atti#dl-2026-133 · https://www.paghitu.it/atti#dl-2026-157 ·
   https://www.paghitu.it/atti#dl-2026-162 (le misure «Accisa sul gasolio carburante … rideterminata», etichette
   «Entrate in meno» e «Stima») · https://www.paghitu.it/spesa (riquadro «Entrate 2025»)

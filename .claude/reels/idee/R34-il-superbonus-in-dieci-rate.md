@@ -3,6 +3,7 @@
 - **Uscita prevista:** mercoledì 18 novembre 2026 (casella «libera» del calendario)
 - **Stato:** idea (10/11/2026, routine, binario 4; rivista il 10/11 su indicazione del titolare: tolta la scena
   sull'indebitamento netto e la frase sulle regole europee, il fatto resta in didascalia)
+- **Montaggio:** montato l'11/11/2026 con la voce nuova, progetto paghi-tu/25-superbonus-dieci-rate; programmato su Instagram per il 18/11/2026 alle 13:00. Tolta la scena del -66,3% (la voce non la dice). 20.537 e 2.053,7 ricontrollati l'11/11 sul Tomo I dell'A.C. 3174 (relazione tecnica, art. 37, e prospetto riepilogativo).
 - **Pagine:** https://www.paghitu.it/misure (scheda «Superbonus 110%»: «Costo previsto 35,0 mld €», «Consuntivo 131,6
   mld €», «Non calcolata: le due cifre misurano cose diverse»)
 - **Perché adesso:** il disegno di legge di bilancio 2027 è alla Camera (A.C. 3174, presentato il 30 ottobre; dopo lo

@@ -3,6 +3,7 @@
 - **Uscita prevista:** lunedì 23 novembre 2026
 - **Stato:** idea (10/11/2026, routine, binario 4; gancio rifatto il 10/11 su indicazione del titolare: prima la carta
   e i requisiti, «spetta anche a me?», poi quanti sono)
+- **Montaggio:** montato l'11/11/2026 con la voce nuova, progetto paghi-tu/27-carta-300; programmato su Instagram per il 23/11/2026 alle 13:00. Cifre riaperte l'11/11 sul Tomo I (relazione tecnica, art. 53). Semplificazioni: niente portapillole; il paragone con 6.099 € resta solo in didascalia; in voce «una pensione fino a 28.000 euro».
 - **Pagine:** https://www.paghitu.it/spesa («Dove vanno i soldi», riga «Vecchiaia e superstiti (soprattutto pensioni)» e
   la nota sotto la tabella)
 - **Perché adesso:** il disegno di legge di bilancio 2027, in commissione Bilancio alla Camera, crea una carta da 300
