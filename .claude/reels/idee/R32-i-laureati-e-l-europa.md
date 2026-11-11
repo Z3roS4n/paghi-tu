@@ -3,6 +3,12 @@
 - **Uscita prevista:** venerdì 13 novembre 2026 (casella «libera» del calendario)
 - **Stato:** idea (6/11/2026, routine, binario 4; rivista il 10/11 su indicazione del titolare: tolto il legame
   implicito fra laureati e spesa per l'istruzione, che resta un dato a sé dopo la notizia del decreto)
+- **Montaggio di prova (10/11/2026):** progetto Animatio paghi-tu/23-laureati, 66 s, non programmato. Voce di
+  Giulio più parlata (eleven_v3, stabilità «creativa», testo con «allora», «quindi, ricapitolando»), poi sporcata
+  in post (passa-alto e passa-basso, un po' di stanza, rumore di fondo leggero). La chiusura dice «le fonti le trovi
+  in didascalia». Voce approvata dal titolare l'11/11. Musica rialzata a 0,3 e allungata fino alla fine del video;
+  programmato su Instagram per l'11/11/2026 alle 13:00 (anticipato dal 13/11 su richiesta del titolare;
+  R31 va al 13/11).
 - **Pagine:** https://www.paghitu.it/spesa (sezione «L'Italia e gli altri paesi», selettore «Media UE», riga
   «Istruzione») · https://www.paghitu.it/ («Dove vanno 100 € di spesa pubblica», passo «Istruzione»: «Dalla scuola
   dell'infanzia all'università») · https://www.paghitu.it/atti#dl-2026-162 (misura «Incremento per il 2026 del fondo

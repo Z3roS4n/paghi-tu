@@ -1,7 +1,7 @@
 # R31 — Il bollo che nel 2027 non si paga
 
 - **Uscita prevista:** mercoledì 11 novembre 2026 (casella «libera» del calendario)
-- **Stato:** programmato su Instagram per l'11/11/2026 alle 13:00 (progetto Animatio paghi-tu/22-bollo-2027, montato il 10/11)
+- **Stato:** programmato su Instagram per il 13/11/2026 alle 13:00 (spostato l'11/11 su richiesta del titolare, per far uscire prima R32) (progetto Animatio paghi-tu/22-bollo-2027, montato il 10/11)
 - **Pagine:** https://www.paghitu.it/atti#dl-2026-162 (scheda «Carburanti, bollo auto 2027, borse di studio e
   Fondazione Milano-Cortina», intestazione e «Note di lavoro della ricerca»)
 - **Perché adesso:** il 5 novembre la Camera ha approvato la conversione del decreto-legge n. 162 del 17 settembre,
