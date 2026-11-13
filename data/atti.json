@@ -1,5 +1,516 @@
 [
   {
+    "id": "dl-2026-205",
+    "tipo": "decreto_legge",
+    "numero": 205,
+    "data": "2026-11-11",
+    "titoloUfficiale": "Piano straordinario per i Campi Flegrei nonché ulteriori disposizioni urgenti di protezione civile.",
+    "titolo": "Piano straordinario per i Campi Flegrei e protezione civile",
+    "governoId": "g202",
+    "gazzetta": {
+      "numero": 263,
+      "data": "2026-11-11",
+      "fonte": {
+        "url": "http://www.gazzettaufficiale.it/eli/id/2026/11/11/26G00225/SG"
+      }
+    },
+    "inVigoreDal": "2026-11-12",
+    "cdm": {
+      "url": "https://www.governo.it/it/articolo/comunicato-stampa-del-consiglio-dei-ministri-n-192/32836"
+    },
+    "stato": "in_conversione",
+    "conversione": null,
+    "relazioneTecnica": null,
+    "misure": [
+      {
+        "id": "dl-2026-205-m01",
+        "articolo": "art. 2, c. 7",
+        "descrizione": "Struttura di supporto del Commissario straordinario per gli interventi nell’area dei Campi Flegrei (fino a 93 unità di personale), fino al 2036",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "06",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 1.730303
+          },
+          {
+            "anno": 2027,
+            "mln": 10.333555
+          },
+          {
+            "anno": 2028,
+            "mln": 10.883891
+          },
+          {
+            "anno": 2029,
+            "mln": 10.883891
+          },
+          {
+            "anno": 2030,
+            "mln": 10.883891
+          },
+          {
+            "anno": 2031,
+            "mln": 10.883891
+          },
+          {
+            "anno": 2032,
+            "mln": 10.883891
+          },
+          {
+            "anno": 2033,
+            "mln": 10.883891
+          },
+          {
+            "anno": 2034,
+            "mln": 10.883891
+          },
+          {
+            "anno": 2035,
+            "mln": 10.883891
+          },
+          {
+            "anno": 2036,
+            "mln": 10.883891
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "Agli oneri derivanti dal presente articolo, quantificati nel limite massimo di euro 1.730.303 per l’anno 2026, di euro 10.333.555 per l’anno 2027 e di euro 10.883.891 per ciascuno degli anni dal 2028 al 2036",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/11/11/26G00225/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-11-13 — Normattiva (URN ~art2), art. 2, c. 7: «nel limite massimo» di 1.730.303 euro 2026, 10.333.555 euro 2027, 10.883.891 euro annui 2028-2036; importi, citazione, spesa e tetto coincidono."
+        }
+      },
+      {
+        "id": "dl-2026-205-m02",
+        "articolo": "art. 3, c. 5",
+        "descrizione": "Esperti (fino a sette) e due vicecommissari del Commissario straordinario per i Campi Flegrei",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "06",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 0.091667
+          },
+          {
+            "anno": 2027,
+            "mln": 0.55
+          },
+          {
+            "anno": 2028,
+            "mln": 0.55
+          },
+          {
+            "anno": 2029,
+            "mln": 0.55
+          },
+          {
+            "anno": 2030,
+            "mln": 0.55
+          },
+          {
+            "anno": 2031,
+            "mln": 0.55
+          },
+          {
+            "anno": 2032,
+            "mln": 0.55
+          },
+          {
+            "anno": 2033,
+            "mln": 0.55
+          },
+          {
+            "anno": 2034,
+            "mln": 0.55
+          },
+          {
+            "anno": 2035,
+            "mln": 0.55
+          },
+          {
+            "anno": 2036,
+            "mln": 0.55
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "Agli oneri derivanti dal presente articolo, quantificati nel limite massimo di euro 91.667 per l’anno 2026 e nel limite massimo di euro 550.000 per ciascuno degli anni dal 2027 al 2036",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/11/11/26G00225/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-11-13 — Normattiva (URN ~art3), art. 3, c. 5: «nel limite massimo» di 91.667 euro 2026 e 550.000 euro annui 2027-2036; importi, citazione, spesa e tetto coincidono."
+        }
+      },
+      {
+        "id": "dl-2026-205-m03",
+        "articolo": "art. 4, c. 1",
+        "descrizione": "Personale della struttura temporanea di supporto del Dipartimento della protezione civile (bradisismo) che resta al Dipartimento: contingente in comando o fuori ruolo aumentato fino al 2036",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "06",
+        "importi": [
+          {
+            "anno": 2027,
+            "mln": 1.13438
+          },
+          {
+            "anno": 2028,
+            "mln": 1.20132
+          },
+          {
+            "anno": 2029,
+            "mln": 1.20132
+          },
+          {
+            "anno": 2030,
+            "mln": 1.20132
+          },
+          {
+            "anno": 2031,
+            "mln": 1.20132
+          },
+          {
+            "anno": 2032,
+            "mln": 1.20132
+          },
+          {
+            "anno": 2033,
+            "mln": 1.20132
+          },
+          {
+            "anno": 2034,
+            "mln": 1.20132
+          },
+          {
+            "anno": 2035,
+            "mln": 1.20132
+          },
+          {
+            "anno": 2036,
+            "mln": 1.20132
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "Agli oneri pari a euro 1.134.380 per l’anno 2027 e a euro 1.201.320 per ciascuno degli anni dal 2028 al 2036, si provvede mediante corrispondente riduzione del Fondo per esigenze indifferibili",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/11/11/26G00225/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-11-13 — Normattiva (URN ~art4), art. 4, c. 1, ultimo periodo: oneri «pari a» 1.134.380 euro 2027 e 1.201.320 euro annui 2028-2036 (contingente aumentato sino al 31-12-2036); importi e citazione coincidono; tetto coerente con i precedenti «pari a» già confermati."
+        }
+      },
+      {
+        "id": "dl-2026-205-m04",
+        "articolo": "art. 5, c. 1, lett. a)",
+        "descrizione": "Fondo per la riduzione della vulnerabilità sismica, la riparazione e la riqualificazione sismica del patrimonio edilizio privato nell’area dei Campi Flegrei",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "06",
+        "importi": [
+          {
+            "anno": 2027,
+            "mln": 50
+          },
+          {
+            "anno": 2028,
+            "mln": 50
+          },
+          {
+            "anno": 2029,
+            "mln": 50
+          },
+          {
+            "anno": 2030,
+            "mln": 50
+          },
+          {
+            "anno": 2031,
+            "mln": 50
+          },
+          {
+            "anno": 2032,
+            "mln": 50
+          },
+          {
+            "anno": 2033,
+            "mln": 50
+          },
+          {
+            "anno": 2034,
+            "mln": 50
+          },
+          {
+            "anno": 2035,
+            "mln": 50
+          },
+          {
+            "anno": 2036,
+            "mln": 50
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "un fondo per interventi di riduzione della vulnerabilità sismica, riparazione e riqualificazione sismica del patrimonio edilizio privato per la zona di intervento di cui all’articolo 1, comma 5, ai sensi di quanto previsto dal comma 6, con una dotazione di 50 milioni di euro per ciascuno degli anni dal 2027 al 2036",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/11/11/26G00225/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-11-13 — Normattiva (URN ~art5), art. 5, c. 1, lett. a): dotazione di 50 milioni annui 2027-2036 (c. 9 e art. 8, c. 2: 100 milioni annui per i due fondi); importi, citazione, spesa e tetto coincidono. Il fondo è la misura, la riduzione dei fondi per la ricostruzione è copertura."
+        }
+      },
+      {
+        "id": "dl-2026-205-m05",
+        "articolo": "art. 5, c. 1, lett. b)",
+        "descrizione": "Fondo per la riduzione della vulnerabilità sismica e la riqualificazione del patrimonio edilizio pubblico, delle infrastrutture e dei servizi pubblici dei Campi Flegrei",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "06",
+        "importi": [
+          {
+            "anno": 2027,
+            "mln": 50
+          },
+          {
+            "anno": 2028,
+            "mln": 50
+          },
+          {
+            "anno": 2029,
+            "mln": 50
+          },
+          {
+            "anno": 2030,
+            "mln": 50
+          },
+          {
+            "anno": 2031,
+            "mln": 50
+          },
+          {
+            "anno": 2032,
+            "mln": 50
+          },
+          {
+            "anno": 2033,
+            "mln": 50
+          },
+          {
+            "anno": 2034,
+            "mln": 50
+          },
+          {
+            "anno": 2035,
+            "mln": 50
+          },
+          {
+            "anno": 2036,
+            "mln": 50
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "patrimonio edilizio pubblico, delle infrastrutture e dei servizi pubblici per la zona di intervento di cui all’articolo 1, comma 5, ai sensi di quanto previsto dal comma 7, con una dotazione di 50 milioni di euro per ciascuno degli anni dal 2027 al 2036",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/11/11/26G00225/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-11-13 — Normattiva (URN ~art5), art. 5, c. 1, lett. b): dotazione di 50 milioni annui 2027-2036; importi, citazione (parte finale della lettera) spesa e tetto coincidono."
+        }
+      },
+      {
+        "id": "dl-2026-205-m06",
+        "articolo": "art. 15, c. 1, lett. c) (art. 13-ter, cc. 1 e 3, DL 144/2026)",
+        "descrizione": "Delocalizzazione degli edifici di edilizia residenziale pubblica dell’ACER in via Coste d’Agnano Solfatara a Pozzuoli, sgomberati per inagibilità",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "06",
+        "importi": [
+          {
+            "anno": 2027,
+            "mln": 10
+          },
+          {
+            "anno": 2028,
+            "mln": 10
+          },
+          {
+            "anno": 2029,
+            "mln": 10.078
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "è autorizzata la spesa di euro 10 milioni per ciascuno degli anni 2027 e 2028 e 10,078 milioni di euro per l’anno 2029",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/11/11/26G00225/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-11-13 — Normattiva (URN ~art15), art. 15, c. 1, lett. c), art. 13-ter, cc. 1 e 3 inserito nel DL 144/2026: «è autorizzata la spesa» di 10 milioni 2027, 10 milioni 2028, 10,078 milioni 2029; importi, citazione, spesa e tetto coincidono."
+        }
+      },
+      {
+        "id": "dl-2026-205-m07",
+        "articolo": "art. 20, cc. 1 e 4",
+        "descrizione": "Ripristino e riduzione della vulnerabilità sismica di chiese ed edifici di culto danneggiati dal bradisismo nell’area dei Campi Flegrei",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "08",
+        "importi": [
+          {
+            "anno": 2027,
+            "mln": 5
+          },
+          {
+            "anno": 2028,
+            "mln": 5
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "è autorizzata la spesa di 5 milioni di euro annui per ciascuno degli anni 2027 e 2028",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/11/11/26G00225/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-11-13 — Normattiva (URN ~art20), art. 20, cc. 1 e 4: «è autorizzata la spesa di 5 milioni di euro annui» 2027 e 2028; importi, citazione, spesa e tetto coincidono."
+        }
+      },
+      {
+        "id": "dl-2026-205-m08",
+        "articolo": "art. 25, cc. 1-2",
+        "descrizione": "Proroga al 31-12-2027 del Commissario straordinario per i materiali acquisiti durante l’emergenza Covid-19 (art. 4, c. 3, DL 144/2026)",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "07",
+        "importi": [
+          {
+            "anno": 2027,
+            "mln": 0.03
+          }
+        ],
+        "continuaDopo": false,
+        "citazione": "Agli oneri derivanti dal comma 1, pari a 30.000 euro per l’anno 2027",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/11/11/26G00225/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-11-13 — Normattiva (URN ~art25), art. 25, c. 2: oneri del c. 1 (proroga al 31-12-2027) «pari a 30.000 euro per l’anno 2027»; importo e citazione coincidono; tetto coerente con dl-2026-144-m04."
+        }
+      }
+    ],
+    "note": "Trovato nel sommario GU n. 263 dell’11-11-2026 (pagina ELI del numero, pag. 71). Testo dal PDF https://www.gazzettaufficiale.it/eli/gu/2026/11/11/263/sg/pdf (pagg. 71-89). Deliberato nei CdM del 13 ottobre (n. 192) e del 5 novembre 2026 (come da premesse; il comunicato del CdM n. 196 non lo cita). Entrata in vigore il giorno successivo alla pubblicazione (art. 28; Normattiva e pagina dell’atto in GU: 12-11-2026). Ddl di conversione e RT non trovati: alla Camera l’ultimo progetto registrato al 13-11-2026 è l’A.C. 3176 del 4-11, quindi il ddl è presumibilmente al Senato (senato.it non risponde alle GET semplici). Scadenza conversione (calcolo mio): 10-1-2027. Le cifre del comunicato del CdM n. 192 (due fondi da 50 milioni annui per dieci anni, 10, 10 e 10,078 milioni per l’ERP di Pozzuoli, 5 milioni per il 2027 e il 2028 per gli edifici di culto, contributo fino a 30.000 euro per unità immobiliare) coincidono con la GU; il comunicato non cita l’art. 27. L’art. 8, c. 1 riporta il totale degli oneri degli artt. 2 e 3 (m01 e m02, registrati separatamente). Non registrati come misure: art. 1, c. 7 (rimborsi del Commissario fino a 25.000 euro annui, dentro i limiti dell’art. 8); art. 3, c. 1 (compenso degli esperti, dentro il limite del c. 5); art. 12, c. 3 e art. 15 (art. 13-bis, c. 10, DL 144/2026: contributi esclusi dal reddito IRPEF, senza importo); art. 15 (art. 13-bis DL 144/2026: contributo di pronto ripristino fino a 30.000 euro per unità immobiliare, nei limiti di risorse già stanziate); art. 16 (contributo per la vulnerabilità sismica al 100% per redditi sotto 28.000 euro, senza importo, nei limiti delle risorse esistenti); art. 21 (sospensione di versamenti tributari e contributivi e delle rate dei mutui, senza importo); art. 23 (proroga al 31-3-2027 della gestione commissariale per le alluvioni 2023-2024, nel limite di 1.143.817 e di 2.565.343 euro per il 2027 a valere sulla contabilità speciale del Commissario, con compensazione degli effetti su fabbisogno e indebitamento di 3.709.160 euro per il 2027 sul Fondo art. 1, c. 511, L. 296/2006: risorse già esistenti); art. 24 (strutture d’emergenza del sisma 2016, nei limiti di 38.452.000 euro trasferiti da contabilità speciali esistenti); art. 26 (Niscemi, fino a 2 milioni nell’ambito delle risorse già assegnate); art. 27, c. 1 (Bagnoli-Coroglio: l’autorizzazione dell’art. 14, c. 2, DL 60/2024 passa da «100 milioni di euro per l’anno 2026, 200 milioni di euro per l’anno 2027 e 400 milioni di euro per ciascuno degli anni 2028 e 2029» a «200 milioni di euro per l’anno 2026 e 300 milioni di euro per ciascuno degli anni 2027, 2028 e 2029», senza copertura nel decreto: spesa spostata fra gli anni con totale invariato, calcolo mio, da decidere se è una misura). Coperture: Fondo per esigenze indifferibili art. 1, c. 200, L. 190/2014 (artt. 2-4); Fondo per la ricostruzione art. 6, c. 1, L. 40/2025 per il 2027-2029 e fondo art. 1, c. 644, L. 207/2024 per il 2030-2036 (fondi dell’art. 5); autorizzazione art. 1, c. 140, L. 232/2016, quota Casa Italia (art. 15, per l’art. 13-ter DL 144/2026, e art. 20); Fondo di parte corrente art. 34-ter, c. 5, L. 196/2009 del Ministero della salute (art. 25).",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-11-13 — Normattiva (URN decreto.legge:2026-11-11;205, artt. 1-28) e pagina ELI GU 26G00225/SG: DL 11-11-2026 n. 205, titolo coincide, GU SG n. 263 dell’11-11-2026, entrata in vigore 12-11-2026 (art. 28), firme Meloni e Musumeci, premesse con CdM del 13 ottobre e 5 novembre 2026; in conversione. Letti tutti gli articoli: nessun altro importo con onere proprio oltre m01-m08 (art. 23 e 27 come da note)."
+    }
+  },
+  {
+    "id": "l-2026-204",
+    "tipo": "legge",
+    "numero": 204,
+    "data": "2026-10-29",
+    "titoloUfficiale": "Ratifica ed esecuzione dei Trattati di estradizione, trasferimento delle persone condannate e assistenza giudiziaria in materia penale tra la Repubblica italiana e la Repubblica Socialista del Vietnam, fatti a Roma il 18 e il 26 luglio 2023.",
+    "titolo": "Trattati con il Vietnam su estradizione, condannati e assistenza giudiziaria",
+    "governoId": "g202",
+    "gazzetta": {
+      "numero": 263,
+      "data": "2026-11-11",
+      "fonte": {
+        "url": "http://www.gazzettaufficiale.it/eli/id/2026/11/11/26G00220/SG"
+      }
+    },
+    "inVigoreDal": "2026-11-12",
+    "cdm": null,
+    "stato": "in_vigore",
+    "conversione": null,
+    "relazioneTecnica": null,
+    "misure": [
+      {
+        "id": "l-2026-204-m01",
+        "articolo": "art. 3, c. 1",
+        "descrizione": "Oneri degli artt. 17 e 19 del Trattato di estradizione Italia-Vietnam",
+        "natura": "spesa",
+        "tipoOnere": "stima",
+        "cofog": "03",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 0.031028
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "Gli oneri derivanti dalle spese di cui agli articoli 17 e 19 del Trattato di cui all’articolo 1, comma 1, lettera a), della presente legge sono valutati in euro 31.028 annui a decorrere dall’anno 2026",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/11/11/26G00220/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-11-13 — Normattiva (URN legge:2026-10-29;204~art3), art. 3, c. 1: «valutati in euro 31.028 annui a decorrere dall’anno 2026»; importo, a decorrere, citazione, spesa e stima coincidono."
+        }
+      },
+      {
+        "id": "l-2026-204-m02",
+        "articolo": "art. 3, c. 2",
+        "descrizione": "Oneri degli artt. 8 e 18 del Trattato sul trasferimento delle persone condannate Italia-Vietnam",
+        "natura": "spesa",
+        "tipoOnere": "stima",
+        "cofog": "03",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 0.021028
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "Gli oneri derivanti dalle spese di cui agli articoli 8 e 18 del Trattato di cui all’articolo 1, comma 1, lettera b), della presente legge sono valutati in euro 21.028 annui a decorrere dall’anno 2026",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/11/11/26G00220/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-11-13 — Normattiva (URN legge:2026-10-29;204~art3), art. 3, c. 2: «valutati in euro 21.028 annui a decorrere dall’anno 2026»; importo, a decorrere, citazione, spesa e stima coincidono."
+        }
+      },
+      {
+        "id": "l-2026-204-m03",
+        "articolo": "art. 3, c. 3",
+        "descrizione": "Oneri degli artt. 11, 12, 13, 15 e 20, par. 1, del Trattato di assistenza giudiziaria in materia penale Italia-Vietnam",
+        "natura": "spesa",
+        "tipoOnere": "stima",
+        "cofog": "03",
+        "importi": [
+          {
+            "anno": 2026,
+            "mln": 0.073355
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "Gli oneri derivanti dalle spese di cui agli articoli 11, 12, 13, 15 e 20, paragrafo 1, del Trattato di cui all’articolo 1, comma 1, lettera c), della presente legge sono valutati in euro 73.355 annui a decorrere dall’anno 2026",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/11/11/26G00220/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-11-13 — Normattiva (URN legge:2026-10-29;204~art3), art. 3, c. 3: «valutati in euro 73.355 annui a decorrere dall’anno 2026»; importo, a decorrere, citazione, spesa e stima coincidono."
+        }
+      }
+    ],
+    "note": "Trovata nel sommario GU n. 263 dell’11-11-2026 (pag. 1; i testi dei Trattati sono nell’allegato, pagg. 2-70). Testo dal PDF https://www.gazzettaufficiale.it/eli/gu/2026/11/11/263/sg/pdf (pag. 1). Entra in vigore il giorno successivo alla pubblicazione (art. 4; Normattiva e pagina dell’atto in GU: 12-11-2026). Disegno di legge del Governo (A.S. 1880, Ministro Tajani, presentato il 22-4-2026; poi A.C. 2958): RT non recuperata (atto presentato al Senato), comunicato CdM di approvazione del ddl non cercato. L’art. 3, c. 4 riporta il totale degli oneri dei cc. 1-3 (registrati separatamente come m01-m03); c. 5: per il resto invarianza. Copertura (art. 3, c. 4): fondo speciale di parte corrente, accantonamento MAECI.",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-11-13 — Normattiva (URN legge:2026-10-29;204, artt. 1-4) e pagina ELI GU 26G00220/SG: L. 29-10-2026 n. 204, titolo coincide, GU SG n. 263 dell’11-11-2026, entrata in vigore 12-11-2026 (art. 4), firme Meloni e Tajani; in vigore. Art. 3: tre oneri valutati (cc. 1-3), totale 125.411 euro annui al c. 4 non registrato come misura."
+    }
+  },
+  {
     "id": "dl-2026-193",
     "tipo": "decreto_legge",
     "numero": 193,
