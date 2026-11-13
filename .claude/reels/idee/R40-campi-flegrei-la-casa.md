@@ -31,7 +31,7 @@
   porta dal 70 al 100% il contributo dello Stato per ridurre la vulnerabilità sismica per chi ha un reddito imponibile
   sotto i 28.000 euro (art. 16) e aggiunge un contributo di pronto ripristino fino a 30.000 euro per le case con danni
   leggeri (art. 15).
-- **Fonte primaria:** Gazzetta Ufficiale, Serie generale n. 263 dell'11/11/2026, pp. 71-88 (testo del decreto); per
+- **Fonte primaria:** Gazzetta Ufficiale, Serie generale n. 263 dell'11/11/2026, pp. 71-89 (testo del decreto); per
   il paragone, il registro /atti di paghitu.it (DL 144/2026, art. 13).
 - **Data:** mercoledì 11 novembre 2026.
 - **Link:** sommario https://www.gazzettaufficiale.it/eli/gu/2026/11/11/263/SG/html · PDF del numero
@@ -54,12 +54,12 @@ l'incisione della Solfatara di Pietro Fabris (1776), a retino e in bicromia.
 | «il Presidente della regione Campania pro tempore è nominato sino al 31 dicembre 2036 «Commissario straordinario per gli interventi nell'area dei Campi Flegrei»» | chi gestisce, fino a quando | GU n. 263, DL 205, art. 1, c. 1 | p. 72 |
 | «un contingente massimo di personale pari a novantatré unità» | la struttura del commissario | GU n. 263, DL 205, art. 2, c. 2 | p. 73 |
 | «nel territorio dei comuni di Bacoli, Napoli e Pozzuoli ricompreso nella zona di intervento» (e Monte di Procida per alcuni contributi) | dove | GU n. 263, DL 205, art. 1, c. 5 | p. 73 |
-| «un contributo per la realizzazione degli interventi necessari a ripristinare in tempi rapidi le condizioni di agibilità degli immobili, nel limite economico massimo di euro 30.000 per unità immobiliare» · «entro il termine del 31 dicembre 2026» · «nei limiti delle risorse di cui all'articolo 13, comma 5, del presente decreto» | il pronto ripristino per le case sgomberate con danni leggeri (nuovo art. 13-bis del DL 144) e con quali soldi | GU n. 263, DL 205, art. 15, c. 1, lett. c) | pp. 82-83 |
+| «un contributo per la realizzazione degli interventi necessari a ripristinare in tempi rapidi le condizioni di agibilità degli immobili, nel limite economico massimo di euro 30.000 per unità immobiliare» · «entro il termine del 31 dicembre 2026» · «nei limiti delle risorse di cui all'articolo 13, comma 5, del presente decreto» | il pronto ripristino per le case sgomberate con danni leggeri (nuovo art. 13-bis del DL 144) e con quali soldi | GU n. 263, DL 205, art. 15, c. 1, lett. c) | p. 82 |
 | «Fondo per i contributi alla riparazione e riqualificazione sismica delle abitazioni principali sgomberate per i terremoti del 31-7 e 1-8-2026 ai Campi Flegrei» · 2026: 30 mln € · 2027: 70 mln € · «con una dotazione complessiva di 100 milioni di euro, di cui 30 milioni di euro per l'anno 2026 e 70 milioni di euro per l'anno 2027» · «Abitazioni e assetto territoriale» · «Limite di spesa» | il paragone: il fondo di agosto per le scosse di quest'estate | /atti | scheda DL 144 («Funzionalità della PA e degli enti territoriali, protezione civile e sismi»), misura `#dl-2026-144-m15`, art. 13, cc. 1 e 5 |
 | «I soldi presi da altri fondi per pagare una misura non sono una misura nuova: restano nelle note dell'atto.» | come il sito tratta le coperture | /atti | intestazione, riquadro «Le coperture a parte» |
 | «Gazzetta Ufficiale letta dal 13 maggio 2026 al 9 novembre 2026» | il DL 205 non è ancora nel registro | /atti | intestazione (al 13/11) |
 
-Restano fuori dal video: gli esperti, i vicecommissari e i loro compensi (artt. 2-3, oneri da 1.730.303 a 11.433.891
+Restano fuori dal video: gli esperti, i vicecommissari e i loro compensi (artt. 2-3, oneri da 1.821.970 a 11.433.891
 euro l'anno), la conferenza di servizi permanente (art. 10), il consumo di suolo (art. 9), la delocalizzazione di via
 Coste d'Agnano (art. 15, 10 milioni nel 2027 e nel 2028 e 10,078 nel 2029), gli edifici di culto (art. 20, 5 milioni nel
 2027 e nel 2028), le sospensioni di tributi e contratti (art. 21), le proroghe per le alluvioni dell'Emilia-Romagna, delle
@@ -83,13 +83,13 @@ Marche e della Toscana (art. 23), Niscemi (art. 26) e Bagnoli-Coroglio (art. 27,
 |---|---|---|---|---|
 | 1 | 0-4 s | Il gancio | fondo: incisione della Solfatara (Fabris, 1776) a retino, in bicromia, ferma; domanda 64 px in alto (y 320); cifra al centro (y 760); sotto «per i redditi sotto 28.000 €» 56 px | «100%» 300 px, l'unico conteggio del video |
 | 2 | 4-10 s | La notizia | taglio; fondo carta; titolo «11 novembre» 120 px; una scheda di carta 920 × 420 px: «Decreto-legge n. 205» 64 px, «Piano straordinario per i Campi Flegrei» 56 px, «Gazzetta Ufficiale n. 263» 48 px | «n. 205» dentro la scheda, 64 px (nessuna cifra grande nuova) |
-| 3 | 10-19 s | Prima e dopo | scena principale: titolo «Contributo dello Stato» 64 px; una barra orizzontale a tutta larghezza (920 × 220 px), asse da 0 a 100% con le tacche 0, 50, 100 a 48 px; la barra c'è già piena fino al 70% in ardesia con l'etichetta «prima: 70%» 64 px, poi si riempie fino al 100% nell'accento mentre Giulio dice «tutto»; sotto, l'etichetta «reddito imponibile sotto 28.000 €, senza la casa in cui abiti» 48 px | «100%» 220 px sopra la barra, stessa altezza (y 760) della scena 1 |
+| 3 | 10-19 s | Prima e dopo | scena principale: titolo «Contributo dello Stato» 64 px; una barra orizzontale a tutta larghezza (920 × 220 px), asse da 0 a 100% con le tacche 0, 50, 100 a 48 px; la barra c'è già piena fino al 70% in ardesia con l'etichetta «prima: 70%» 64 px, poi si riempie fino al 100% nell'accento mentre Giulio dice «cento per cento»; sotto, l'etichetta «reddito imponibile sotto 28.000 €, senza la casa in cui abiti» 48 px | «100%» 220 px sopra la barra, stessa altezza (y 760) della scena 1 |
 | 4 | 19-25 s | Per cosa | taglio; ritaglio della crepa sull'intonaco con il fessurimetro a 820 px, al centro; titolo «Ridurre la vulnerabilità sismica» 64 px in alto; sotto «anche per le domande già presentate» 48 px | nessuna cifra nuova: il ritaglio è il soggetto |
 | 5 | 25-33 s | I due fondi | titolo «Ogni anno, dal 2027 al 2036» 64 px; una colonna impilata 420 × 900 px al centro, asse da zero: sotto «case private · 50» nell'accento, sopra «edifici e servizi pubblici · 50» in ardesia, cifre 64 px dentro i pezzi; accanto, a destra, «100 mln € l'anno» 64 px (scritto nell'art. 5, c. 9); in basso «coperti riducendo fondi per la ricostruzione già previsti (art. 8)» 40 px | «50 mln €» 200 px in alto, sulla colonna |
 | 6 | 33-40 s | Chi li gestisce | taglio; fondo carta; ritaglio della striscia di sismogramma a tutta larghezza (1000 × 300 px) che attraversa il fotogramma a y 1150; titolo «Commissario straordinario» 64 px; sotto «il Presidente della regione Campania» 56 px e «struttura fino a 93 persone» 48 px | «2036» 240 px (y 760) |
 | 7 | 40-46 s | I danni leggeri | taglio; ritaglio del puntello metallico da cantiere a 700 px, in basso a destra, inclinato di 4°; titolo «Pronto ripristino» 80 px; sotto «per abitazione · domanda entro il 31/12/2026» 48 px | «30.000 €» 240 px (y 760) |
 | 8 | 46-54 s | Sul sito | registrazione dello schermo di paghitu.it/atti su telefono, a 760 px di larghezza al centro, ferma sulla misura `#dl-2026-144-m15` (titolo, «2026: 30 mln €», «2027: 70 mln €», «Limite di spesa»); sopra, titolo «Il fondo di agosto» 64 px; sotto la registrazione «scosse del 31 luglio e del 1° agosto 2026» 48 px | «100 mln €» 200 px sopra il telefono, a y 420 |
-| 9 | 54-60 s | Chiusura | torna l'incisione della Solfatara della scena 1, stesso punto e stessa misura; in alto «Campi Flegrei: fino al 100% fino al 2036» 56 px; il timbro «TU» si stampa | «paghitu.it» 64 px, «Hai visto un errore? Segnalalo» 40 px |
+| 9 | 54-60 s | Chiusura | torna l'incisione della Solfatara della scena 1, stesso punto e stessa misura; in alto «Contributo fino al 100%» 56 px; il timbro «TU» si stampa | «paghitu.it» 64 px, «Hai visto un errore? Segnalalo» 40 px |
 
 Transizioni: tagli e dissolvenze brevi, nessun morph (la barra della scena 3 che si riempie è lo stesso oggetto che
 cresce, non un cambio di forma). Un solo conteggio, la cifra della scena 1; nella scena 3 il 100% resta fermo mentre
@@ -107,14 +107,14 @@ fine. Traccia unica, mai spezzata.
 ```
 Campi Flegrei: se metti in sicurezza la casa, quanto paga lo Stato? … Fino al cento per cento.
 Allora: lo dice il decreto uscito in Gazzetta l'undici novembre.
-Finora, per i lavori che riducono il rischio sismico, lo Stato pagava il settanta per cento. Adesso paga TUTTO, se il tuo reddito imponibile è sotto i ventottomila euro.
+Finora, per i lavori che riducono il rischio sismico, lo Stato pagava il settanta per cento. Adesso arriva al CENTO per cento, se il tuo reddito imponibile è sotto i ventottomila euro.
 [pausa] I soldi? Due fondi, ogni anno fino al duemilatrentasei: cinquanta milioni per le case private, altrettanti per edifici e servizi pubblici. Li gestisce un commissario, il presidente della Campania.
 Per le case sgomberate con danni leggeri c'è un contributo fino a trentamila euro. Si paga con i fondi già stanziati, fra cui quello di agosto: cento milioni, nel nostro registro.
-Quindi, ricapitolando: sotto i ventottomila euro di reddito, lo Stato può pagare tutti i lavori. Le fonti le trovi in didascalia, i numeri su paghitu punto it.
+Quindi, ricapitolando: sotto i ventottomila euro di reddito, il contributo dello Stato può arrivare al cento per cento. Le fonti le trovi in didascalia, i numeri su paghitu punto it.
 ```
 Circa 140 parole, sei cifre (100%, 70%, 28.000, 50 milioni, 30.000, 100 milioni; l'11 novembre e il 2036 sono date).
 La cifra che regge è il 100%, detta intera; le altre sono già tonde come le scrive la norma, nessun «quasi» né «più
-di». Il maiuscolo è su «tutto». «Il rischio sismico» in voce accorcia «la vulnerabilità sismica» della norma, che resta
+di». Il maiuscolo è su «cento». «Il rischio sismico» in voce accorcia «la vulnerabilità sismica» della norma, che resta
 intera a schermo (scena 4); «senza contare il reddito della casa in cui abiti» e «anche per le domande già presentate»
 restano a schermo (scene 3 e 4) e in didascalia, non in voce, per stare nei 60 s. Nessun nome di governo, ministro o
 partito; il commissario è detto con il ruolo, come nella norma («il Presidente della regione Campania pro tempore»),
@@ -150,14 +150,14 @@ Incisione: Pietro Fabris, 1776, Wellcome Collection, CC BY 4.0.
 ```
 
 ## Da controllare prima del montaggio
-- **Testo del decreto:** riaprire il PDF della GU n. 263 (pp. 71-88) e ricontrollare artt. 1, 2, 5, 8, 15 e 16. Se il
+- **Testo del decreto:** riaprire il PDF della GU n. 263 (pp. 71-89) e ricontrollare artt. 1, 2, 5, 8, 15 e 16. Se il
   disegno di legge di conversione è già alla Camera o al Senato con la relazione tecnica, guardare se la relazione dà
   una stima di quante case o domande riguarda l'art. 16: in quel caso si può aggiungere a schermo nella scena 4, con la
   fonte, mai una stima di giornale.
 - **Base del 70%:** l'art. 16 cambia l'art. 1, c. 695, della L. 207/2024. Rileggere su Normattiva (testo vigente) i
   commi 694-695 per dire bene su cosa si calcola il contributo (costo dei lavori ammessi) e a quali edifici si applica
   (edifici privati con almeno un'abitazione principale nella zona di intervento). Se il comma pone un tetto in euro,
-  scriverlo nella scena 3 e in didascalia; in voce «paga tutto» resta solo se il comma dice che il 100% è del costo
+  scriverlo nella scena 3 e in didascalia; in voce si può tornare a «paga tutto» solo se il comma dice che il 100% è del costo
   ammesso, altrimenti «paga il cento per cento del contributo ammesso».
 - **Registro /atti:** la Gazzetta è letta fino al 9/11. Se la routine registra il DL 205 prima del 20/11, nella scena 8
   si può mostrare anche la sua scheda (ancora `#dl-2026-205`) e citare gli importi come li riporta il sito; la frase
