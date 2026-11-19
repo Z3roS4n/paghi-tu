@@ -2,7 +2,7 @@
 
 File generato da `npm run evals:build`: non si modifica a mano. Per segnare un caso si scrive in `agent/evals/revisione.json` (`"<id>": "ok" | "da_correggere" | "da_togliere"`) e si rigenera.
 
-Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 137.
+Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 136.
 
 | Categoria | Casi |
 | --- | --- |
@@ -1137,22 +1137,22 @@ Casi: 141. Con fonte «con_permesso»: 7. Rivisti: 137.
 
 **Revisione:** ok
 
-### FP-debito-2026-08
+### FP-debito-2026-09
 
-**Domanda:** A quanto ammontava il debito pubblico italiano a fine agosto 2026?
+**Domanda:** A quanto ammontava il debito pubblico italiano a fine settembre 2026?
 
 **Esito atteso:** risposta
 **Livello del dato:** V1
 
 | Campo | Valore atteso | Unità |
 | --- | --- | --- |
-| debito | 3.200.847,7 | milioni di euro correnti |
+| debito | 3.211.587,2 | milioni di euro correnti |
 
-**Citazione:** `finanza-pubblica` / `debitoMensile/2026-08` — https://a2a.bancaditalia.it/infostat/dataservices/export/IT/CSV/DATA/PUBLICATION/BANKITALIA/DIFF/FPI
+**Citazione:** `finanza-pubblica` / `debitoMensile/2026-09` — https://a2a.bancaditalia.it/infostat/dataservices/export/IT/CSV/DATA/PUBLICATION/BANKITALIA/DIFF/FPI
 
 **Regole:** `unita_di_misura`
 
-**Revisione:** ok
+**Revisione:** da fare
 
 ### FP-debito-pil-2025
 

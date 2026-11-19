@@ -1,6 +1,6 @@
 {
-  "domandeSha256": "0c7f721d77558e7f0e9b3c7cae63ab0952c01884a05cb783412d6613a26aadc5",
-  "verificatoIl": "2026-11-08",
+  "domandeSha256": "2babf16645836bde7a320143eef4ae4da0dbe01cf5479ec985b7b6894eddf560",
+  "verificatoIl": "2026-11-19",
   "fonti": [
     {
       "url": "http://dati.camera.it/ocd/attocamera.rdf/ac01_1391",
@@ -30,15 +30,6 @@
       "caratteri": 4347
     },
     {
-      "url": "http://dati.camera.it/ocd/attocamera.rdf/ac02_2335",
-      "esito": "ok",
-      "via": "diretto",
-      "http": 200,
-      "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac02_2335",
-      "tipo": "html",
-      "caratteri": 3711
-    },
-    {
       "url": "http://dati.camera.it/ocd/attocamera.rdf/ac02_70",
       "esito": "ok",
       "via": "diretto",
@@ -57,22 +48,13 @@
       "caratteri": 5033
     },
     {
-      "url": "http://dati.camera.it/ocd/attocamera.rdf/ac07_1940",
+      "url": "http://dati.camera.it/ocd/attocamera.rdf/ac07_2433",
       "esito": "ok",
       "via": "diretto",
       "http": 200,
-      "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac07_1940",
+      "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac07_2433",
       "tipo": "html",
-      "caratteri": 3839
-    },
-    {
-      "url": "http://dati.camera.it/ocd/attocamera.rdf/ac07_2077",
-      "esito": "ok",
-      "via": "diretto",
-      "http": 200,
-      "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac07_2077",
-      "tipo": "html",
-      "caratteri": 3911
+      "caratteri": 5627
     },
     {
       "url": "http://dati.camera.it/ocd/attocamera.rdf/ac08_3039",
@@ -93,6 +75,24 @@
       "caratteri": 4077
     },
     {
+      "url": "http://dati.camera.it/ocd/attocamera.rdf/ac09_3352",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac09_3352",
+      "tipo": "html",
+      "caratteri": 5172
+    },
+    {
+      "url": "http://dati.camera.it/ocd/attocamera.rdf/ac09_3440",
+      "esito": "ok",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac09_3440",
+      "tipo": "html",
+      "caratteri": 3803
+    },
+    {
       "url": "http://dati.camera.it/ocd/attocamera.rdf/ac10_5106",
       "esito": "ok",
       "via": "diretto",
@@ -102,13 +102,13 @@
       "caratteri": 6593
     },
     {
-      "url": "http://dati.camera.it/ocd/attocamera.rdf/ac19_2750",
+      "url": "http://dati.camera.it/ocd/attocamera.rdf/ac14_1984",
       "esito": "ok",
       "via": "diretto",
       "http": 200,
-      "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac19_2750",
+      "urlLetto": "https://dati.camera.it/ocd/attocamera.rdf/ac14_1984",
       "tipo": "html",
-      "caratteri": 15297
+      "caratteri": 4518
     },
     {
       "url": "http://dati.camera.it/ocd/governo.rdf/g11",
@@ -294,31 +294,13 @@
       "errore": "Fonte diretta non leggibile; copia verificata il 2026-11-01, sha256 28738e3314e28f459dd10adc3a6a1babb532b60a3818e38b26213a8999218f92"
     },
     {
-      "url": "https://bdp.camera.it/init/iter/scheda/10077",
-      "esito": "ok",
-      "via": "diretto",
-      "http": 200,
-      "urlLetto": "https://bdp.camera.it/init/iter/scheda/10077",
-      "tipo": "html",
-      "caratteri": 6769
-    },
-    {
-      "url": "https://bdp.camera.it/init/iter/scheda/10155",
-      "esito": "ok",
-      "via": "diretto",
-      "http": 200,
-      "urlLetto": "https://bdp.camera.it/init/iter/scheda/10155",
-      "tipo": "html",
-      "caratteri": 6680
-    },
-    {
       "url": "https://corrierelivornese.it/toscana/dalla-toscana/avs-lancia-bolletta-sociale-fratoianni-e-bonelli-in-italia-28-milioni-famiglie-in-poverta-energetica-che-meloni-non-vuole-vedere/",
       "esito": "ok",
       "via": "diretto",
       "http": 200,
       "urlLetto": "https://corrierelivornese.it/toscana/dalla-toscana/avs-lancia-bolletta-sociale-fratoianni-e-bonelli-in-italia-28-milioni-famiglie-in-poverta-energetica-che-meloni-non-vuole-vedere/",
       "tipo": "html",
-      "caratteri": 12189
+      "caratteri": 12174
     },
     {
       "url": "https://dati.camera.it/sparql",
@@ -336,7 +318,7 @@
       "http": 200,
       "urlLetto": "https://decidiamo.com/processes/energia-pulita-e-popolare/f/52/proposals/2003",
       "tipo": "html",
-      "caratteri": 24835
+      "caratteri": 24763
     },
     {
       "url": "https://demo.istat.it/app/?a=2026&i=POS&l=it",
@@ -345,7 +327,7 @@
       "http": 200,
       "urlLetto": "https://demo.istat.it/app/?a=2026&i=POS&l=it",
       "tipo": "html",
-      "caratteri": 19558
+      "caratteri": 19559
     },
     {
       "url": "https://documenti.camera.it/apps/nuovosito/attigoverno/Schedalavori/getTesto.ashx?file=0333_F001.pdf&leg=XVIII",
@@ -354,7 +336,7 @@
       "http": 200,
       "urlLetto": "https://documenti.camera.it/apps/nuovosito/attigoverno/Schedalavori/getTesto.ashx?file=0333_F001.pdf&leg=XVIII",
       "tipo": "pdf",
-      "caratteri": 84199
+      "caratteri": 83748
     },
     {
       "url": "https://documenti.camera.it/leg17/dossier/pdf/VQ2433.pdf",
@@ -363,7 +345,7 @@
       "http": 200,
       "urlLetto": "https://documenti.camera.it/leg17/dossier/pdf/VQ2433.pdf",
       "tipo": "pdf",
-      "caratteri": 511439
+      "caratteri": 506477
     },
     {
       "url": "https://documenti.camera.it/leg18/dossier/Testi/D19004c.htm",
@@ -478,7 +460,7 @@
       "esito": "ok",
       "via": "diretto",
       "http": 200,
-      "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_279_DF_DCIS_RICPOPRES1991_1,1.0/A.IT...?startPeriod=1982&endPeriod=1991\r",
+      "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_279_DF_DCIS_RICPOPRES1991_1,1.0/A.IT...?startPeriod=1982&endPeriod=1991",
       "tipo": "html",
       "caratteri": 15081
     },
@@ -512,12 +494,11 @@
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,22_289_DF_DCIS_POPRES1_1,1.0/A.IT....?startPeriod=2019&endPeriod=2026",
       "esito": "ok",
-      "via": "archivio",
-      "http": 0,
-      "urlLetto": "data/raw/agent-sources/istat-popres-20261031.txt.gz",
+      "via": "diretto",
+      "http": 200,
+      "urlLetto": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,22_289_DF_DCIS_POPRES1_1,1.0/A.IT....?startPeriod=2019&endPeriod=2026",
       "tipo": "html",
-      "caratteri": 60,
-      "errore": "Fonte diretta non leggibile; copia verificata il 2026-10-31, sha256 2baa4d3d35a53a0bc8246026f3df86e7f10784f072e2df79c922df09c988d03e"
+      "caratteri": 83619
     },
     {
       "url": "https://esploradati.istat.it/SDMXWS/rest/data/IT1,92_506_DF_DCCN_PILN_1,1.0/A.IT.B1GQ_B_W2_S1..../ALL/",
@@ -535,16 +516,16 @@
       "http": 200,
       "urlLetto": "https://finanzalocale.interno.gov.it/docum/studi/varie/soppressione_ici.pdf",
       "tipo": "pdf",
-      "caratteri": 10422
+      "caratteri": 10323
     },
     {
       "url": "https://futuronazionale.it/wp-content/uploads/2026/09/GIUSTIFICATO_SLOT-1-e-2_Base-Programmatica-di-Futuro-Nazionale-24-agosto-2026.pdf",
-      "esito": "ok",
+      "esito": "ko",
       "via": "diretto",
-      "http": 200,
+      "http": 202,
       "urlLetto": "https://futuronazionale.it/wp-content/uploads/2026/09/GIUSTIFICATO_SLOT-1-e-2_Base-Programmatica-di-Futuro-Nazionale-24-agosto-2026.pdf",
-      "tipo": "pdf",
-      "caratteri": 384331
+      "tipo": "html",
+      "caratteri": 0
     },
     {
       "url": "https://ildomaniditalia.eu/manovra-conte-la-targa-personalizzata-del-governo-e-carovita-me-ne-frego/",
@@ -553,7 +534,7 @@
       "http": 200,
       "urlLetto": "https://ildomaniditalia.eu/manovra-conte-la-targa-personalizzata-del-governo-e-carovita-me-ne-frego/",
       "tipo": "html",
-      "caratteri": 9847
+      "caratteri": 9892
     },
     {
       "url": "https://ivl24.it/calenda-a-potenza-gas-release-per-la-basilicata-stellantis-melfi-rischia-la-chiusura-critiche-anche-alla-giunta-bardi/",
@@ -562,7 +543,7 @@
       "http": 200,
       "urlLetto": "https://ivl24.it/calenda-a-potenza-gas-release-per-la-basilicata-stellantis-melfi-rischia-la-chiusura-critiche-anche-alla-giunta-bardi/",
       "tipo": "html",
-      "caratteri": 26092
+      "caratteri": 26003
     },
     {
       "url": "https://lapresse.it/politica/2026/10/25/lega-oggi-al-congresso-gli-interventi-di-salvini-e-garavaglia-poi-il-voto-sulla-segreteria-del-partito-la-diretta",
@@ -571,7 +552,7 @@
       "http": 200,
       "urlLetto": "https://www.lapresse.it/politica/2026/10/25/lega-oggi-al-congresso-gli-interventi-di-salvini-e-garavaglia-poi-il-voto-sulla-segreteria-del-partito-la-diretta/",
       "tipo": "html",
-      "caratteri": 90476
+      "caratteri": 90546
     },
     {
       "url": "https://legaonline.it/la-settimana-leghista-38/",
@@ -580,7 +561,7 @@
       "http": 200,
       "urlLetto": "https://legaonline.it/la-settimana-leghista-38/",
       "tipo": "html",
-      "caratteri": 28713
+      "caratteri": 28718
     },
     {
       "url": "https://legaonline.it/la-settimana-leghista-9/",
@@ -589,7 +570,7 @@
       "http": 200,
       "urlLetto": "https://legaonline.it/la-settimana-leghista-9/",
       "tipo": "html",
-      "caratteri": 16835
+      "caratteri": 16840
     },
     {
       "url": "https://lentepubblica.it/?p=386012",
@@ -598,7 +579,7 @@
       "http": 200,
       "urlLetto": "https://lentepubblica.it/wp-content/uploads/2024/10/Legge_di_Bilancio_relazione_tecnica.pdf",
       "tipo": "pdf",
-      "caratteri": 489076
+      "caratteri": 483070
     },
     {
       "url": "https://noimoderati.it/news-e-media/12",
@@ -607,7 +588,7 @@
       "http": 200,
       "urlLetto": "https://www.noimoderati.it/news-e-media/12",
       "tipo": "html",
-      "caratteri": 6654
+      "caratteri": 6717
     },
     {
       "url": "https://noimoderati.it/news-e-media/42",
@@ -616,7 +597,7 @@
       "http": 200,
       "urlLetto": "https://www.noimoderati.it/news-e-media/42",
       "tipo": "html",
-      "caratteri": 2826
+      "caratteri": 2890
     },
     {
       "url": "https://noimoderati.it/news-e-media/86",
@@ -625,7 +606,7 @@
       "http": 200,
       "urlLetto": "https://www.noimoderati.it/news-e-media/86",
       "tipo": "html",
-      "caratteri": 3191
+      "caratteri": 3256
     },
     {
       "url": "https://ora-italia.it/previdenza-complementare-e-venture-capital/",
@@ -652,7 +633,7 @@
       "http": 200,
       "urlLetto": "https://poterealpopolo.org/notizie/news-e-media/2026/09/04/rincorsa-mobilitazione-autunno-elezioni-politiche-2027/",
       "tipo": "html",
-      "caratteri": 16388
+      "caratteri": 16474
     },
     {
       "url": "https://poterealpopolo.org/notizie/news-e-media/2026/10/27/24-ottobre-piazze-30-ottobre-sciopero-generale/",
@@ -661,7 +642,7 @@
       "http": 200,
       "urlLetto": "https://poterealpopolo.org/notizie/news-e-media/2026/10/27/24-ottobre-piazze-30-ottobre-sciopero-generale/",
       "tipo": "html",
-      "caratteri": 12507
+      "caratteri": 12630
     },
     {
       "url": "https://progettocivicoitalia.it/2026/09/07/onorato-con-gli-amministratori-di-tutta-italia-aiutiamo-il-centrosinistra-a-vincere/",
@@ -670,7 +651,7 @@
       "http": 200,
       "urlLetto": "https://progettocivicoitalia.it/2026/09/07/onorato-con-gli-amministratori-di-tutta-italia-aiutiamo-il-centrosinistra-a-vincere/",
       "tipo": "html",
-      "caratteri": 20509
+      "caratteri": 20519
     },
     {
       "url": "https://storia.camera.it/deputato/antonio-bellocchio-19271109/leg-repubblica-VII",
@@ -697,16 +678,16 @@
       "http": 200,
       "urlLetto": "https://www.agenziagiornalisticaopinione.it/opinionews-tn-aa/scalfi-ora-segreteria-nazionale-delega-alla-scuola-docenti-trento-protesta-e-bolzano-aumenta-pagare-il-lavoro-in-piu-e-misurare-che-cosa-compra/",
       "tipo": "html",
-      "caratteri": 22038
+      "caratteri": 21096
     },
     {
       "url": "https://www.agi.it/vista-tv/video/2026-09-21/schlein-faremo-un-grande-piano-casa-come-ai-tempi-di-fanfani-39164621/",
-      "esito": "ok",
+      "esito": "ko",
       "via": "diretto",
-      "http": 200,
+      "http": 202,
       "urlLetto": "https://www.agi.it/vista-tv/video/2026-09-21/schlein-faremo-un-grande-piano-casa-come-ai-tempi-di-fanfani-39164621/",
       "tipo": "html",
-      "caratteri": 5755
+      "caratteri": 0
     },
     {
       "url": "https://www.alanews.it/2026/10/23/politica/bonus-ai-genitori-proposta-salvini",
@@ -715,7 +696,7 @@
       "http": 200,
       "urlLetto": "https://www.alanews.it/2026/10/23/politica/bonus-ai-genitori-proposta-salvini/",
       "tipo": "html",
-      "caratteri": 15086
+      "caratteri": 15120
     },
     {
       "url": "https://www.ansa.it/sito/notizie/politica/2026/10/29/ansa-box-vannacci-lancia-un-segnale-a-meloni-vuol-far-vincere-la-sinistra_4e83c538-b12b-48ba-994f-6a3b659ad59c.html",
@@ -724,7 +705,7 @@
       "http": 200,
       "urlLetto": "https://www.ansa.it/sito/notizie/politica/2026/10/29/ansa-box-vannacci-lancia-un-segnale-a-meloni-vuol-far-vincere-la-sinistra_4e83c538-b12b-48ba-994f-6a3b659ad59c.html",
       "tipo": "html",
-      "caratteri": 54818
+      "caratteri": 54730
     },
     {
       "url": "https://www.azione.it/le-nostre-proposte-immigrazione/",
@@ -742,7 +723,7 @@
       "http": 200,
       "urlLetto": "https://www.azione.it/meno-distrazione-piu-azione/",
       "tipo": "html",
-      "caratteri": 9501
+      "caratteri": 9500
     },
     {
       "url": "https://www.bancaditalia.it/statistiche/tematiche/stat-storiche/stat-storiche-economia/NA150_2.0.zip",
@@ -760,7 +741,7 @@
       "http": 200,
       "urlLetto": "https://www.bollettinoadapt.it/wp-content/uploads/2021/02/Report_sgravi.pdf",
       "tipo": "pdf",
-      "caratteri": 20626
+      "caratteri": 20155
     },
     {
       "url": "https://www.efficienzaenergetica.enea.it/images/detrazioni/Avvisi/Report_30_06_2026.pdf",
@@ -769,16 +750,16 @@
       "http": 200,
       "urlLetto": "https://www.efficienzaenergetica.enea.it/images/detrazioni/Avvisi/Report_30_06_2026.pdf",
       "tipo": "pdf",
-      "caratteri": 42580
+      "caratteri": 40256
     },
     {
       "url": "https://www.fanpage.it/politica/pensioni-forza-italia-vuole-alzare-le-minime-a-850-euro-nella-legge-di-bilancio-2027/",
-      "esito": "ok",
-      "via": "archivio",
+      "esito": "ko",
+      "via": "diretto",
       "http": 403,
-      "urlLetto": "http://web.archive.org/web/20260911101757/https://www.fanpage.it/politica/pensioni-forza-italia-vuole-alzare-le-minime-a-850-euro-nella-legge-di-bilancio-2027/",
+      "urlLetto": "https://www.fanpage.it/politica/pensioni-forza-italia-vuole-alzare-le-minime-a-850-euro-nella-legge-di-bilancio-2027/",
       "tipo": "html",
-      "caratteri": 21105
+      "caratteri": 0
     },
     {
       "url": "https://www.fratelli-italia.it/migranti-condannati-e-detenuti-sconteranno-pena-in-paesi-dorigine/",
@@ -796,7 +777,7 @@
       "http": 200,
       "urlLetto": "https://www.gazzettaufficiale.it/eli/gu/2022/07/21/169/sg/pdf",
       "tipo": "pdf",
-      "caratteri": 249576
+      "caratteri": 244659
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/governo-meloni/20727",
@@ -805,7 +786,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/governo-meloni/20727",
       "tipo": "html",
-      "caratteri": 15781
+      "caratteri": 15777
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/i-governi-nelle-legislature/192",
@@ -814,7 +795,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/i-governi-nelle-legislature/192",
       "tipo": "html",
-      "caratteri": 16698
+      "caratteri": 16694
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ii-legislatura-25-giugno-1953-14-marzo-1958/governo-pella/3223",
@@ -823,7 +804,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/ii-legislatura-25-giugno-1953-14-marzo-1958/governo-pella/3223",
       "tipo": "html",
-      "caratteri": 14228
+      "caratteri": 14230
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-fanfani-iii/3214",
@@ -832,7 +813,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-fanfani-iii/3214",
       "tipo": "html",
-      "caratteri": 14878
+      "caratteri": 14876
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/iii-legislatura-12-giugno-1958-18-febbraio-1963/governo-segni-ii/3216",
@@ -859,7 +840,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/v-legislatura-5-giugno-1968-28-febbraio-1972/governo-colombo/3202",
       "tipo": "html",
-      "caratteri": 15209
+      "caratteri": 15205
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/v-legislatura-5-giugno-1968-28-febbraio-1972/governo-rumor-ii/3204",
@@ -895,7 +876,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xi-legislatura-23-aprile-1992-16-gennaio-1994/governo-amato/3169",
       "tipo": "html",
-      "caratteri": 15180
+      "caratteri": 15182
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xvi-legislatura-dal-29-aprile-2008-al-23-dicembre-2012/governo-berlusconi",
@@ -904,7 +885,7 @@
       "http": 200,
       "urlLetto": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xvi-legislatura-dal-29-aprile-2008-al-23-dicembre-2012/governo-berlusconi",
       "tipo": "html",
-      "caratteri": 17857
+      "caratteri": 17859
     },
     {
       "url": "https://www.governo.it/it/i-governi-dal-1943-ad-oggi/xvii-legislatura-dal-15032013/governo-letta/330",
@@ -922,7 +903,7 @@
       "http": 200,
       "urlLetto": "https://www.hdmotori.it/bollo-tajani-estendere-esenzione-prime-auto/",
       "tipo": "html",
-      "caratteri": 29738
+      "caratteri": 30086
     },
     {
       "url": "https://www.ilgiornale.it/news/interni/fdi-reato-di-associazione-a-delinquere-per-chi-devasta-e-aggredisce-le-forze-dellordine/",
@@ -931,7 +912,7 @@
       "http": 200,
       "urlLetto": "https://www.ilgiornale.it/news/interni/fdi-reato-di-associazione-a-delinquere-per-chi-devasta-e-aggredisce-le-forze-dellordine/",
       "tipo": "html",
-      "caratteri": 8752
+      "caratteri": 8521
     },
     {
       "url": "https://www.ilmessaggero.it/politica/onorato_proposte_mutui_case_popolari_sport-9848214.html",
@@ -940,7 +921,7 @@
       "http": 200,
       "urlLetto": "https://www.ilmessaggero.it/politica/onorato_proposte_mutui_case_popolari_sport-9848214.html",
       "tipo": "html",
-      "caratteri": 38472
+      "caratteri": 37334
     },
     {
       "url": "https://www.ilmessaggero.it/politica/schlein_programma_governo_energia_sanita_lavoro_sicurezza_giorgia_meloni-9694413.html",
@@ -949,7 +930,7 @@
       "http": 200,
       "urlLetto": "https://www.ilmessaggero.it/politica/schlein_programma_governo_energia_sanita_lavoro_sicurezza_giorgia_meloni-9694413.html",
       "tipo": "html",
-      "caratteri": 46587
+      "caratteri": 45624
     },
     {
       "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/comunicati-stampa/2025/04/Allegati/3732_Cs_Osservatorio-Assegno-Unico-Universale.pdf",
@@ -958,7 +939,7 @@
       "http": 200,
       "urlLetto": "https://www.inps.it/content/dam/inps-site/it/scorporati/comunicati-stampa/2025/04/Allegati/3732_Cs_Osservatorio-Assegno-Unico-Universale.pdf",
       "tipo": "pdf",
-      "caratteri": 1392
+      "caratteri": 1397
     },
     {
       "url": "https://www.inps.it/content/dam/inps-site/pdf/dati-analisi-bilanci/osservatori-statistici/Report_trimestrale_RdC_Aprile_2019-Dicembre_2023.pdf",
@@ -967,7 +948,7 @@
       "http": 200,
       "urlLetto": "https://www.inps.it/content/dam/inps-site/pdf/dati-analisi-bilanci/osservatori-statistici/Report_trimestrale_RdC_Aprile_2019-Dicembre_2023.pdf",
       "tipo": "pdf",
-      "caratteri": 73903
+      "caratteri": 75406
     },
     {
       "url": "https://www.inps.it/content/dam/inps-site/pdf/dati-analisi-bilanci/osservatori-statistici/osservatorio-adi-sfl/Appendice%20Statistica%20ADI%20SFL%20Gennaio%202026.pdf",
@@ -976,7 +957,7 @@
       "http": 200,
       "urlLetto": "https://www.inps.it/content/dam/inps-site/pdf/dati-analisi-bilanci/osservatori-statistici/osservatorio-adi-sfl/Appendice%20Statistica%20ADI%20SFL%20Gennaio%202026.pdf",
       "tipo": "pdf",
-      "caratteri": 27885
+      "caratteri": 26384
     },
     {
       "url": "https://www.inps.it/content/dam/inps-site/pdf/dati-analisi-bilanci/osservatori-statistici/osservatorio-auu/Appendice_statistica_aprile_2026_anni_2025_2026.pdf",
@@ -985,7 +966,7 @@
       "http": 200,
       "urlLetto": "https://www.inps.it/content/dam/inps-site/pdf/dati-analisi-bilanci/osservatori-statistici/osservatorio-auu/Appendice_statistica_aprile_2026_anni_2025_2026.pdf",
       "tipo": "pdf",
-      "caratteri": 61827
+      "caratteri": 58632
     },
     {
       "url": "https://www.istat.it/comunicato-stampa/conti-economici-nazionali-anni-2010-2025/",
@@ -994,7 +975,7 @@
       "http": 200,
       "urlLetto": "https://www.istat.it/comunicato-stampa/conti-economici-nazionali-anni-2010-2025/",
       "tipo": "html",
-      "caratteri": 18562
+      "caratteri": 18585
     },
     {
       "url": "https://www.istat.it/notizia/bilancio-demografico-mensile-gennaio-dicembre-2025/",
@@ -1003,7 +984,7 @@
       "http": 200,
       "urlLetto": "https://www.istat.it/notizia/bilancio-demografico-mensile-gennaio-dicembre-2025/",
       "tipo": "html",
-      "caratteri": 16440
+      "caratteri": 16463
     },
     {
       "url": "https://www.istat.it/wp-content/uploads/2026/07/Nota-informativa30luglio2026.pdf",
@@ -1012,7 +993,7 @@
       "http": 200,
       "urlLetto": "https://www.istat.it/wp-content/uploads/2026/07/Nota-informativa30luglio2026.pdf",
       "tipo": "pdf",
-      "caratteri": 10192
+      "caratteri": 10275
     },
     {
       "url": "https://www.lasicilia.it/news/politica/3052972/mezzogiorno-protagonista-de-luca-rilancia-l-autonomia-e-la-super-zes-contro-il-romanocentrismo.html",
@@ -1021,7 +1002,7 @@
       "http": 200,
       "urlLetto": "https://www.lasicilia.it/news/politica/3052972/mezzogiorno-protagonista-de-luca-rilancia-l-autonomia-e-la-super-zes-contro-il-romanocentrismo.html",
       "tipo": "html",
-      "caratteri": 10133
+      "caratteri": 10134
     },
     {
       "url": "https://www.maiemondiale.com/index.php/2026/02/24/maie-svolta-sul-voto-estero-proposta-di-legge-per-piu-sicurezza-e-sostegno-al-si-al-referendum/",
@@ -1034,12 +1015,12 @@
     },
     {
       "url": "https://www.matteorenzi.it/renzi_centrosinistra_parli_dei_problemi_concreti_noi_e_m5s_diversi",
-      "esito": "ok",
+      "esito": "ko",
       "via": "diretto",
-      "http": 200,
+      "http": 403,
       "urlLetto": "https://www.matteorenzi.it/renzi_centrosinistra_parli_dei_problemi_concreti_noi_e_m5s_diversi",
       "tipo": "html",
-      "caratteri": 13781
+      "caratteri": 0
     },
     {
       "url": "https://www.milanofinanza.it/news/manovra-casasco-forza-italia-flat-tax-per-tutti-202608251910269198",
@@ -1048,7 +1029,7 @@
       "http": 200,
       "urlLetto": "https://www.milanofinanza.it/news/manovra-casasco-forza-italia-flat-tax-per-tutti-202608251910269198",
       "tipo": "html",
-      "caratteri": 45323
+      "caratteri": 45620
     },
     {
       "url": "https://www.movimento5stelle.eu/wp-content/uploads/2026/09/NOVA_20_PUNTI.pdf",
@@ -1057,7 +1038,7 @@
       "http": 200,
       "urlLetto": "https://www.movimento5stelle.eu/wp-content/uploads/2026/09/NOVA_20_PUNTI.pdf",
       "tipo": "pdf",
-      "caratteri": 26791
+      "caratteri": 26724
     },
     {
       "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2019-01-28;4~art12!vig=2019-04-15",
@@ -1078,22 +1059,13 @@
       "caratteri": 35583
     },
     {
-      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1977-12-23;934",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1978-12-21;843",
       "esito": "ok",
       "via": "diretto",
       "http": 200,
-      "urlLetto": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1977-12-23;934",
+      "urlLetto": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1978-12-21;843",
       "tipo": "html",
-      "caratteri": 23663
-    },
-    {
-      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1978-03-22;76",
-      "esito": "ok",
-      "via": "diretto",
-      "http": 200,
-      "urlLetto": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1978-03-22;76",
-      "tipo": "html",
-      "caratteri": 23914
+      "caratteri": 29094
     },
     {
       "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1990-12-29;405",
@@ -1105,13 +1077,13 @@
       "caratteri": 31335
     },
     {
-      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2001-12-28;449",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2001-12-28;448",
       "esito": "ok",
       "via": "diretto",
       "http": 200,
-      "urlLetto": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2001-12-28;449",
+      "urlLetto": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2001-12-28;448",
       "tipo": "html",
-      "caratteri": 25608
+      "caratteri": 34383
     },
     {
       "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2011-11-12;184",
@@ -1121,15 +1093,6 @@
       "urlLetto": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2011-11-12;184",
       "tipo": "html",
       "caratteri": 25999
-    },
-    {
-      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199",
-      "esito": "ok",
-      "via": "diretto",
-      "http": 200,
-      "urlLetto": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199",
-      "tipo": "html",
-      "caratteri": 83241
     },
     {
       "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2026-10-09;180",
@@ -1147,7 +1110,7 @@
       "http": 200,
       "urlLetto": "https://www.partitocapibara.it/it/istruzione-gratis",
       "tipo": "html",
-      "caratteri": 134353
+      "caratteri": 134237
     },
     {
       "url": "https://www.partitosocialista.it/firma-le-tre-petizioni-popolari-promosse-da-avanti-psi/",
@@ -1156,16 +1119,16 @@
       "http": 200,
       "urlLetto": "https://www.partitosocialista.it/firma-le-tre-petizioni-popolari-promosse-da-avanti-psi/",
       "tipo": "html",
-      "caratteri": 9929
+      "caratteri": 9912
     },
     {
       "url": "https://www.piueuropa.eu/cannabis_magi_legalizzazione_sia_in_programma_centrosinistra_in_svizzera_prosciugato_mercato_nero",
-      "esito": "ok",
+      "esito": "ko",
       "via": "diretto",
-      "http": 200,
+      "http": 403,
       "urlLetto": "https://www.piueuropa.eu/cannabis_magi_legalizzazione_sia_in_programma_centrosinistra_in_svizzera_prosciugato_mercato_nero",
       "tipo": "html",
-      "caratteri": 54485
+      "caratteri": 0
     },
     {
       "url": "https://www.pressenza.com/it/2026/10/casa-gratis-affitti-aboliti-il-partito-capibara-su-rete-4-lancia-la-rivoluzione-gratuitista/",
@@ -1183,7 +1146,7 @@
       "http": 200,
       "urlLetto": "https://www.upbilancio.it/wp-content/uploads/2014/11/Slides_Incontro_stampa_04_11_2014.pdf",
       "tipo": "pdf",
-      "caratteri": 5255
+      "caratteri": 5064
     },
     {
       "url": "https://www.upbilancio.it/wp-content/uploads/2016/02/Focus_2_20161.pdf",
@@ -1192,7 +1155,7 @@
       "http": 200,
       "urlLetto": "https://www.upbilancio.it/wp-content/uploads/2016/02/Focus_2_20161.pdf",
       "tipo": "pdf",
-      "caratteri": 101037
+      "caratteri": 99488
     },
     {
       "url": "https://www.upbilancio.it/wp-content/uploads/2022/06/Nota-di-lavoro_Quota-100_per-sito-UPB.pdf",
@@ -1201,7 +1164,7 @@
       "http": 200,
       "urlLetto": "https://www.upbilancio.it/wp-content/uploads/2022/06/Nota-di-lavoro_Quota-100_per-sito-UPB.pdf",
       "tipo": "pdf",
-      "caratteri": 155437
+      "caratteri": 153509
     },
     {
       "url": "https://www.upbilancio.it/wp-content/uploads/2023/03/Audizione-incentivi-fisc_edil.pdf",
@@ -1210,7 +1173,7 @@
       "http": 200,
       "urlLetto": "https://www.upbilancio.it/wp-content/uploads/2023/03/Audizione-incentivi-fisc_edil.pdf",
       "tipo": "pdf",
-      "caratteri": 101975
+      "caratteri": 101414
     },
     {
       "url": "https://www1.finanze.gov.it/finanze/analisi_stat/public/v_4_0_0/contenuti/analisi_dati_2014_irpef.pdf",
@@ -1219,7 +1182,7 @@
       "http": 200,
       "urlLetto": "https://www1.finanze.gov.it/finanze/analisi_stat/public/v_4_0_0/contenuti/analisi_dati_2014_irpef.pdf",
       "tipo": "pdf",
-      "caratteri": 126784
+      "caratteri": 125659
     },
     {
       "url": "https://www1.finanze.gov.it/finanze/analisi_stat/public/v_4_0_0/contenuti/analisi_dati_2015_irpef.pdf?d=1595352600",
@@ -1228,7 +1191,7 @@
       "http": 200,
       "urlLetto": "https://www1.finanze.gov.it/finanze/analisi_stat/public/v_4_0_0/contenuti/analisi_dati_2015_irpef.pdf?d=1595352600",
       "tipo": "pdf",
-      "caratteri": 127262
+      "caratteri": 126334
     }
   ],
   "casi": [
@@ -1293,7 +1256,7 @@
       ]
     },
     {
-      "id": "FP-debito-2026-08",
+      "id": "FP-debito-2026-09",
       "verbatim": null,
       "valori": [
         {
@@ -1663,14 +1626,9 @@
       ]
     },
     {
-      "id": "LB-1956-57-esercizio-provvisorio",
+      "id": "LB-1955-56-bilancio-di-previsione",
       "verbatim": null,
-      "valori": [
-        {
-          "campo": "governoProponenteTesto",
-          "esito": "non_trovato"
-        }
-      ]
+      "valori": []
     },
     {
       "id": "LB-1962-63-esercizio-provvisorio",
@@ -1688,7 +1646,7 @@
       "valori": []
     },
     {
-      "id": "LB-1978-esercizio-provvisorio",
+      "id": "LB-1979-legge-finanziaria",
       "verbatim": null,
       "valori": [
         {
@@ -1716,6 +1674,16 @@
       ]
     },
     {
+      "id": "LB-1986-esercizio-provvisorio",
+      "verbatim": null,
+      "valori": [
+        {
+          "campo": "governoProponenteTesto",
+          "esito": "non_trovato"
+        }
+      ]
+    },
+    {
       "id": "LB-1991-legge-finanziaria",
       "verbatim": null,
       "valori": [
@@ -1730,7 +1698,7 @@
       ]
     },
     {
-      "id": "LB-2002-bilancio-di-previsione",
+      "id": "LB-2002-legge-finanziaria",
       "verbatim": null,
       "valori": [
         {
@@ -1745,20 +1713,6 @@
     },
     {
       "id": "LB-2012-bilancio-di-previsione",
-      "verbatim": null,
-      "valori": [
-        {
-          "campo": "governoProponenteTesto",
-          "esito": "non_trovato"
-        },
-        {
-          "campo": "estremi",
-          "esito": "non_trovato"
-        }
-      ]
-    },
-    {
-      "id": "LB-2026-legge-di-bilancio",
       "verbatim": null,
       "valori": [
         {
@@ -2598,28 +2552,24 @@
     {
       "id": "PRO-C27-FI-009",
       "verbatim": {
-        "trovato": true,
-        "url": "https://www.fanpage.it/politica/pensioni-forza-italia-vuole-alzare-le-minime-a-850-euro-nella-legge-di-bilancio-2027/",
-        "mancanti": []
+        "trovato": false,
+        "url": null,
+        "mancanti": [
+          "Con un intervento mirato e selettivo possiamo portarle ad almeno 800/850 euro, con una spesa stimata in circa 1 miliardo di euro […] Vanno adeguate subito al costo della vita."
+        ]
       },
       "valori": [
         {
           "campo": "dichiarante",
-          "esito": "trovato",
-          "url": "https://www.fanpage.it/politica/pensioni-forza-italia-vuole-alzare-le-minime-a-850-euro-nella-legge-di-bilancio-2027/",
-          "forma": "alessandro cattaneo"
+          "esito": "non_trovato"
         },
         {
           "campo": "data",
-          "esito": "trovato",
-          "url": "https://www.fanpage.it/politica/pensioni-forza-italia-vuole-alzare-le-minime-a-850-euro-nella-legge-di-bilancio-2027/",
-          "forma": "2026-09-10"
+          "esito": "non_trovato"
         },
         {
           "campo": "costoDichiarato",
-          "esito": "trovato",
-          "url": "https://www.fanpage.it/politica/pensioni-forza-italia-vuole-alzare-le-minime-a-850-euro-nella-legge-di-bilancio-2027/",
-          "forma": "1 miliardo"
+          "esito": "non_trovato"
         }
       ]
     },
@@ -2648,16 +2598,16 @@
     {
       "id": "PRO-C27-FN-016",
       "verbatim": {
-        "trovato": true,
-        "url": "https://futuronazionale.it/wp-content/uploads/2026/09/GIUSTIFICATO_SLOT-1-e-2_Base-Programmatica-di-Futuro-Nazionale-24-agosto-2026.pdf",
-        "mancanti": []
+        "trovato": false,
+        "url": null,
+        "mancanti": [
+          "Rigettiamo con fermezza il piano di aumento della spesa militare al 5% del PIL su pressione NATO ed UE"
+        ]
       },
       "valori": [
         {
           "campo": "dichiarante",
-          "esito": "trovato",
-          "url": "https://futuronazionale.it/wp-content/uploads/2026/09/GIUSTIFICATO_SLOT-1-e-2_Base-Programmatica-di-Futuro-Nazionale-24-agosto-2026.pdf",
-          "forma": "futuro nazionale"
+          "esito": "non_trovato"
         },
         {
           "campo": "data",
@@ -2690,22 +2640,20 @@
     {
       "id": "PRO-C27-IV-001",
       "verbatim": {
-        "trovato": true,
-        "url": "https://www.matteorenzi.it/renzi_centrosinistra_parli_dei_problemi_concreti_noi_e_m5s_diversi",
-        "mancanti": []
+        "trovato": false,
+        "url": null,
+        "mancanti": [
+          "E dunque la prima proposta è lasciare una quattordicesima alle categorie del ceto medio che soffrono di più: insegnanti, infermieri, forze dell'ordine."
+        ]
       },
       "valori": [
         {
           "campo": "dichiarante",
-          "esito": "trovato",
-          "url": "https://www.matteorenzi.it/renzi_centrosinistra_parli_dei_problemi_concreti_noi_e_m5s_diversi",
-          "forma": "matteo renzi"
+          "esito": "non_trovato"
         },
         {
           "campo": "data",
-          "esito": "trovato",
-          "url": "https://www.matteorenzi.it/renzi_centrosinistra_parli_dei_problemi_concreti_noi_e_m5s_diversi",
-          "forma": "02-10-2026"
+          "esito": "non_trovato"
         }
       ]
     },
@@ -3136,22 +3084,20 @@
     {
       "id": "PRO-C27-PD-022",
       "verbatim": {
-        "trovato": true,
-        "url": "https://www.agi.it/vista-tv/video/2026-09-21/schlein-faremo-un-grande-piano-casa-come-ai-tempi-di-fanfani-39164621/",
-        "mancanti": []
+        "trovato": false,
+        "url": null,
+        "mancanti": [
+          "E poi gli affitti brevi: non vanno criminalizzati, ma regolati. […] Servono regole chiare e uguali per tutti, con il pieno coinvolgimento dei sindaci"
+        ]
       },
       "valori": [
         {
           "campo": "dichiarante",
-          "esito": "trovato",
-          "url": "https://www.agi.it/vista-tv/video/2026-09-21/schlein-faremo-un-grande-piano-casa-come-ai-tempi-di-fanfani-39164621/",
-          "forma": "schlein"
+          "esito": "non_trovato"
         },
         {
           "campo": "data",
-          "esito": "trovato",
-          "url": "https://www.agi.it/vista-tv/video/2026-09-21/schlein-faremo-un-grande-piano-casa-come-ai-tempi-di-fanfani-39164621/",
-          "forma": "2026-09-21"
+          "esito": "non_trovato"
         }
       ]
     },
@@ -3180,22 +3126,20 @@
     {
       "id": "PRO-C27-PE-002",
       "verbatim": {
-        "trovato": true,
-        "url": "https://www.piueuropa.eu/cannabis_magi_legalizzazione_sia_in_programma_centrosinistra_in_svizzera_prosciugato_mercato_nero",
-        "mancanti": []
+        "trovato": false,
+        "url": null,
+        "mancanti": [
+          "la coalizione che si candiderà a battere Giorgia Meloni nel 2027 dovrà avere il coraggio di inserire la legalizzazione della cannabis nel proprio programma elettorale."
+        ]
       },
       "valori": [
         {
           "campo": "dichiarante",
-          "esito": "trovato",
-          "url": "https://www.piueuropa.eu/cannabis_magi_legalizzazione_sia_in_programma_centrosinistra_in_svizzera_prosciugato_mercato_nero",
-          "forma": "riccardo magi"
+          "esito": "non_trovato"
         },
         {
           "campo": "data",
-          "esito": "trovato",
-          "url": "https://www.piueuropa.eu/cannabis_magi_legalizzazione_sia_in_programma_centrosinistra_in_svizzera_prosciugato_mercato_nero",
-          "forma": "06/05/2026"
+          "esito": "non_trovato"
         }
       ]
     },
