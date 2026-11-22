@@ -8,13 +8,13 @@
   https://www.paghitu.it/atti (intestazione: «I decreti-legge, le leggi e i decreti legislativi…»)
 - **Perché adesso:** i prezzi sono il tema della settimana. L'11 novembre l'ISTAT ha pubblicato la nota sulle
   prospettive dell'economia italiana: per il 2026 prevede che i prezzi di quello che comprano le famiglie salgano del
-  3,3%, dopo l'1,5% del 2025, soprattutto per l'energia; a ottobre l'inflazione (dato provvisorio del 30/10) era al 5,4%.
+  3,3%, dopo l'1,5% del 2025, soprattutto per l'energia; a ottobre l'inflazione (dato definitivo del 17/11) era al 5,5%.
   Il 9 novembre la Gazzetta ha pubblicato un decreto del Ministero dell'Economia che, per legge, usa una parte
   dell'IVA in più incassata a ottobre per abbassare l'accisa sul gasolio dal 10 al 23 novembre. La domanda che resta:
   quanto salgono i prezzi, e cosa fa lo Stato con l'IVA in più?
 - **Cosa c'è di nuovo rispetto ai video già fatti:** nessun video uscito o in lavorazione ha avuto al centro i prezzi
   (R07 e R08, in riserva, usano gli euro di oggi per confrontare gli anni, non l'inflazione di quest'anno). La cifra
-  protagonista (3,3%, previsione ISTAT dell'11/11) e le altre (1,5% e 2,8%, +31,4% dei beni energetici, −0,9% del potere
+  protagonista (3,3%, previsione ISTAT dell'11/11) e le altre (1,5% e 2,8%, +31,9% dei beni energetici, −0,9% del potere
   d'acquisto, 632,90 € per mille litri, 43,2 milioni di IVA) sono nuove. Nuovo anche il meccanismo dell'«accisa mobile»
   (L. 244/2007, art. 1, c. 290), mai raccontato: R33 (17/11) mostra le riduzioni delle accise decise per
   decreto-legge e il calo del gettito, R18 i crediti d'imposta per il gasolio. La misura del DL 162 del registro /atti,
@@ -29,13 +29,13 @@
   delle Finanze, di concerto con il Ministro dell'Ambiente e della Sicurezza energetica, del 9 novembre 2026,
   «Rideterminazione temporanea dell'aliquota d'accisa»: dal 10 al 23 novembre l'accisa sul gasolio usato come
   carburante è 632,90 euro per mille litri, e la riduzione è coperta con 43,2 milioni del maggior gettito IVA di ottobre.
-- **Fonte primaria:** ISTAT, comunicato e PDF della nota dell'11/11/2026; ISTAT, «Prezzi al consumo (dati provvisori)
-  – Ottobre 2026» del 30/10/2026 (contesto, dato definitivo il 17/11); Gazzetta Ufficiale n. 261 del 9/11/2026, p. 4.
+- **Fonte primaria:** ISTAT, comunicato e PDF della nota dell'11/11/2026; ISTAT, «Prezzi al consumo – Ottobre 2026»,
+  dati definitivi del 17/11/2026 (contesto; sostituisce il provvisorio del 30/10, che dava +5,4%); Gazzetta Ufficiale n. 261 del 9/11/2026, p. 4.
 - **Data:** lunedì 9 novembre 2026 (GU) e mercoledì 11 novembre 2026 (ISTAT).
 - **Link:** https://www.istat.it/comunicato-stampa/nota-sullandamento-e-prospettive-delleconomia-italiana-anni-2026-2027-aggiornamento-novembre/ ·
   PDF https://www.istat.it/wp-content/uploads/2026/11/Nota-sullandamento-e-prospettive-2026_2027.pdf ·
-  https://www.istat.it/comunicato-stampa/prezzi-al-consumo-dati-provvisori-ottobre-2026/ (PDF
-  https://www.istat.it/wp-content/uploads/2026/10/CS_Prezzi-al-consumo_Prov_Ottobre2026.pdf) ·
+  https://www.istat.it/comunicato-stampa/prezzi-al-consumo-ottobre-2026/ (PDF
+  https://www.istat.it/wp-content/uploads/2026/11/CS_Prezzi-al-consumo_Def_Ottobre2026.pdf) ·
   sommario GU https://www.gazzettaufficiale.it/eli/gu/2026/11/09/261/SG/html (PDF
   https://www.gazzettaufficiale.it/eli/gu/2026/11/09/261/sg/pdf) · https://www.paghitu.it/atti#dl-2026-162-m01
 
@@ -44,13 +44,13 @@ Domanda a 64 px in alto (y 320): «Quanto salgono i prezzi quest'anno?» (0-1,2 
 px con la maschera e il conteggio, sotto «previsione ISTAT per il 2026» a 56 px (1,2-4 s). In basso il ritaglio della
 cassetta di pomodori.
 
-## Numeri e fatti (letti sull'ISTAT, sulla Gazzetta e sul sito il 13/11/2026)
+## Numeri e fatti (letti sull'ISTAT, sulla Gazzetta e sul sito il 13/11/2026; ottobre riletto sul dato definitivo il 22/11)
 | Valore | Cosa | Pagina o fonte | Dove |
 |---|---|---|---|
 | «Deflatore della spesa delle famiglie residenti» · 2025 «1,5» · 2026 «3,3» · 2027 «2,8» | **cifra protagonista** (3,3) e le due colonne di confronto: di quanto salgono in media i prezzi di quello che comprano le famiglie, variazione % sull'anno prima | ISTAT, nota dell'11/11/2026 | p. 1, Prospetto 1; stesse cifre nel testo a p. 1 e p. 7 |
 | «nel 2026 ci si attende una forte accelerazione del deflatore dei consumi delle famiglie (+3,3%, dal +1,5% del 2025)» · «in considerazione delle attese sull'andamento dei prezzi internazionali delle materie prime» | il perché scritto dall'ISTAT | ISTAT, nota dell'11/11/2026 | p. 7, «Forte accelerazione dell'inflazione» |
-| «nel mese di ottobre 2026 l'indice nazionale dei prezzi al consumo per l'intera collettività (NIC), al lordo dei tabacchi, registra una variazione pari a […] +5,4% su base annua (da +4,2% del mese precedente)» | l'inflazione di ottobre, dato provvisorio | ISTAT, prezzi al consumo provvisori, 30/10/2026 | comunicato, p. 1 |
-| «beni energetici (da +22,6% a +31,4%)» · «Alimentari non lavorati (da +5,5% a +7,5%)» · «Servizi relativi ai trasporti (da +1,6% a +3,1%)» | cosa spinge, settembre → ottobre | ISTAT, prezzi al consumo provvisori, 30/10/2026 | comunicato, p. 1 («Il commento» per i beni energetici); +31,4 anche nella nota dell'11/11, p. 7 |
+| «nel mese di ottobre 2026 l'indice nazionale dei prezzi al consumo per l'intera collettività (NIC), al lordo dei tabacchi, registra una variazione pari a […] +5,5% su base annua (da +4,2% del mese precedente)» | l'inflazione di ottobre, dato definitivo (la stima preliminare era +5,4%) | ISTAT, prezzi al consumo, dati definitivi, 17/11/2026 | comunicato, p. 1 |
+| «Beni energetici (da +22,6% a +31,9%)» · «Alimentari non lavorati (da +5,5% a +7,5%)» · «Servizi relativi ai trasporti (da +1,6% a +3,2%)» | cosa spinge, settembre → ottobre | ISTAT, prezzi al consumo, dati definitivi, 17/11/2026 | comunicato, p. 1 («Il commento» per i beni energetici); la nota dell'11/11, p. 7, riporta ancora il provvisorio +31,4: in scena solo il definitivo |
 | «Il potere d'acquisto è diminuito dello 0,9%, dopo l'incremento dello 0,4% del primo trimestre, risentendo del marcato aumento dei prezzi» | il secondo trimestre 2026, sul trimestre prima | ISTAT, nota dell'11/11/2026 | p. 5, «Consumi sostenuti dai risparmi» |
 | «le misure delle aliquote di accisa sui prodotti energetici usati come carburanti […] sono diminuite al fine di compensare le maggiori entrate dell'imposta sul valore aggiunto derivanti dalle variazioni del prezzo internazionale, espresso in euro, del petrolio greggio» | la regola del 2007 (L. 244/2007, art. 1, c. 290), come la riassumono le premesse del decreto | GU n. 261, decreto MEF 9/11/2026 | p. 4, premesse |
 | «per il periodo dal 10 novembre al 23 novembre 2026, l'aliquota di accisa sugli oli da gas o gasolio, usato come carburante […] è rideterminata nella misura di 632,90 euro per mille litri» | la riduzione (titolo dell'art. 1: «Riduzione dell'aliquota di accisa sul gasolio usato come carburante») | GU n. 261, decreto MEF 9/11/2026 | p. 4, art. 1 |
@@ -59,14 +59,14 @@ cassetta di pomodori.
 | «I decreti-legge, le leggi e i decreti legislativi che autorizzano una spesa o cambiano un'entrata» | perché il decreto del 9/11 non è nel registro: è un decreto ministeriale | /atti | intestazione della pagina |
 
 Restano fuori dal video: il PIL (0,9% e 0,6%), la disoccupazione, gli investimenti e il PNRR, i prezzi di petrolio e
-gas del Prospetto 2, l'inflazione armonizzata (IPCA +5,6%), l'inflazione «acquisita» (+3,4%), il confronto con l'area
-euro, l'inflazione di fondo, gli energetici regolamentati (+59,5%). Restano fuori anche il livello ordinario
+gas del Prospetto 2, l'inflazione armonizzata (IPCA +5,6%, definitivo), l'inflazione «acquisita» (+3,4%), il confronto con l'area
+euro, l'inflazione di fondo, gli energetici regolamentati (+61,6%). Restano fuori anche il livello ordinario
 dell'accisa sul gasolio e la differenza con i 632,90 euro: il decreto non la scrive, e sarebbe un calcolo.
 
 ## Le tre informazioni utili
 1. **Quanto:** per l'ISTAT (nota dell'11 novembre) nel 2026 i prezzi di quello che comprano le famiglie salgono in
-   media del 3,3%, dopo l'1,5% del 2025, e nel 2027 del 2,8%. A ottobre l'inflazione era al 5,4% su un anno prima (dato
-   provvisorio), spinta dai beni energetici (+31,4%). Fra aprile e giugno il potere d'acquisto delle famiglie è sceso
+   media del 3,3%, dopo l'1,5% del 2025, e nel 2027 del 2,8%. A ottobre l'inflazione era al 5,5% su un anno prima (dato
+   definitivo), spinta dai beni energetici (+31,9%). Fra aprile e giugno il potere d'acquisto delle famiglie è sceso
    dello 0,9%.
 2. **Cosa fa lo Stato:** una legge del 2007 dice che, quando il prezzo del petrolio fa salire l'IVA incassata oltre la
    previsione, quell'IVA in più si usa per abbassare l'accisa sui carburanti. Con il decreto del 9 novembre l'accisa sul
@@ -80,8 +80,8 @@ dell'accisa sul gasolio e la differenza con i 632,90 euro: il decreto non la scr
 |---|---|---|---|---|
 | 1 | 0-4 s | Il gancio | fondo carta; ritaglio della cassetta di legno con i pomodori a 760 px, in basso al centro (y 1080-1560); domanda 64 px in alto; cifra al centro (y 760); sotto «previsione ISTAT per il 2026» 56 px | «+3,3%» 300 px, l'unico conteggio del video |
 | 2 | 4-11 s | Tre anni | scena principale: titolo «Prezzi di quello che comprano le famiglie» 56 px; tre colonne su asse 0-4%, 920 × 760 px, larghe 240 px, cifre 64 px sopra: «2025 · 1,5%» in ardesia, «2026 · 3,3%» nell'accento, «2027 · 2,8%» in ardesia a righe con l'etichetta «previsione» 48 px sopra le due ultime; la colonna 2026 c'è già al taglio, le altre crescono mentre Giulio dice «l'anno scorso» | «3,3%» 200 px sopra la colonna 2026 |
-| 3 | 11-17 s | Ottobre | taglio; fondo carta; titolo «Ottobre 2026, su un anno prima» 64 px; sotto «inflazione, dato provvisorio» 48 px | «+5,4%» 240 px (y 760) |
-| 4 | 17-25 s | Cosa spinge | titolo «Ottobre 2026, su un anno prima» resta fermo; barre orizzontali 920 × 760 px, spesse 140 px, asse da zero: «beni energetici · +31,4%» nell'accento, «alimentari non lavorati · +7,5%», «servizi di trasporto · +3,1%» e «indice generale · +5,4%» nel grigio di confronto, etichette 48 px e cifre 64 px sulle barre; ritaglio del barile a 380 px in basso a destra, fuori dalle barre | «+31,4%» 200 px sopra le barre |
+| 3 | 11-17 s | Ottobre | taglio; fondo carta; titolo «Ottobre 2026, su un anno prima» 64 px; sotto «inflazione, dato definitivo» 48 px | «+5,5%» 240 px (y 760) |
+| 4 | 17-25 s | Cosa spinge | titolo «Ottobre 2026, su un anno prima» resta fermo; barre orizzontali 920 × 760 px, spesse 140 px, asse da zero: «beni energetici · +31,9%» nell'accento, «alimentari non lavorati · +7,5%», «servizi di trasporto · +3,2%» e «indice generale · +5,5%» nel grigio di confronto, etichette 48 px e cifre 64 px sulle barre; ritaglio del barile a 380 px in basso a destra, fuori dalle barre | «+31,9%» 200 px sopra le barre |
 | 5 | 25-31 s | In tasca | taglio; fondo carta; titolo «Potere d'acquisto delle famiglie» 64 px; sotto «aprile-giugno 2026, sul trimestre prima» 48 px | «−0,9%» 260 px (y 760) |
 | 6 | 31-39 s | E lo Stato? | fondo carta; titolo «La regola del 2007» 96 px; la frase della norma in Figtree 64 px, centrata su 920 px, fra virgolette: «compensare le maggiori entrate dell'imposta sul valore aggiunto derivanti dalle variazioni del prezzo internazionale […] del petrolio greggio»; sotto «legge 244/2007, art. 1, c. 290» 40 px; ritaglio del cartello prezzi del distributore a 520 px in basso a sinistra | nessuna cifra nuova: la frase è il soggetto |
 | 7 | 39-46 s | Il decreto del 9 novembre | taglio; titolo «Gasolio, 10-23 novembre» 64 px; una scheda di carta 920 × 300 px: «accisa 632,90 € ogni mille litri» 64 px; il cartello del distributore resta nello stesso punto e alla stessa misura della scena 6 | «43,2 mln €» 220 px (y 760), sotto «dall'IVA in più di ottobre» 56 px |
@@ -91,7 +91,7 @@ dell'accisa sul gasolio e la differenza con i 632,90 euro: il decreto non la scr
 Transizioni: tagli e dissolvenze brevi, nessun morph. Un solo conteggio, la cifra della scena 1. Il titolo della scena 3
 resta fermo nella scena 4 (stesso punto, stessa misura). Fonte sempre a y 1500, 34 px in `testoTenue`: «ISTAT, Nota
 sull'andamento e prospettive dell'economia italiana, 11/11/2026» (scene 1, 2, 5), «ISTAT, prezzi al consumo, dati
-provvisori, 30/10/2026» (scene 3-4), «Gazzetta Ufficiale n. 261, decreto MEF 9/11/2026» (scene 6-7), «paghitu.it/atti ·
+definitivi, 17/11/2026» (scene 3-4), «Gazzetta Ufficiale n. 261, decreto MEF 9/11/2026» (scene 6-7), «paghitu.it/atti ·
 DL 162/2026» (scena 8). Le cifre protagoniste delle scene 1, 3, 5 e 7 stanno alla stessa altezza (y 760).
 
 ## Voce (Giulio)
@@ -102,17 +102,17 @@ fine. Traccia unica, mai spezzata.
 ```
 Quanto salgono i prezzi quest'anno? Per l'ISTAT… il tre virgola tre per cento.
 Allora: è la previsione dell'undici novembre, per quello che comprano le famiglie. L'anno scorso erano saliti molto meno.
-A ottobre, su un anno prima, più del cinque per cento. A spingere è soprattutto l'energia: TRENTUNO per cento in più.
+A ottobre, su un anno prima, più del cinque per cento. A spingere è soprattutto l'energia: TRENTADUE per cento in più.
 [pausa] E in tasca? Fra aprile e giugno il potere d'acquisto delle famiglie è sceso di quasi l'uno per cento.
 E lo Stato? Quando il petrolio rincara, incassa più IVA. E per una legge del duemilasette, a certe condizioni, quell'IVA in più abbassa l'accisa.
 Così, dal dieci al ventitré novembre, l'accisa sul gasolio è scesa: quarantatré milioni, dall'IVA in più di ottobre.
 Quindi, ricapitolando: i prezzi salgono soprattutto per l'energia, e una parte dell'IVA in più torna come accisa più bassa. Le fonti le trovi in didascalia, i numeri su paghitu punto it.
 ```
-Circa 140 parole, cinque cifre (3,3%, 5,4%, 31,4%, 0,9%, 43,2 milioni; il 2007 e le date del decreto non contano), sotto
-le sette del formato. La cifra che regge è il 3,3%, detta intera; 5,4%, 31,4%, 0,9% e 43,2 milioni arrotondati e senza
+Circa 140 parole, cinque cifre (3,3%, 5,5%, 31,9%, 0,9%, 43,2 milioni; il 2007 e le date del decreto non contano), sotto
+le sette del formato. La cifra che regge è il 3,3%, detta intera; 5,5%, 31,9%, 0,9% e 43,2 milioni arrotondati e senza
 decimali, un «più di» e un «quasi» separati da una cifra. L'1,5% del 2025 e il 2,8% del 2027 restano a schermo («molto
 meno» è un confronto detto a parole, senza un rapporto calcolato), come i 632,90 euro e i 111,8 milioni del DL 162. Il
-maiuscolo è sul «trentuno». «Il tre virgola tre» è il «+3,3%» del Prospetto 1; in voce «prezzi di quello che comprano
+maiuscolo è sul «trentadue» (31,9 arrotondato, senza «quasi»: il «quasi» resta sullo 0,9). «Il tre virgola tre» è il «+3,3%» del Prospetto 1; in voce «prezzi di quello che comprano
 le famiglie» spiega «deflatore della spesa delle famiglie» senza dire la parola tecnica. Il perché dei prezzi è quello
 scritto dall'ISTAT (beni energetici, materie prime); nessuna causa politica, nessun nome di governo, ministro o
 partito (le firme del decreto non compaiono).
@@ -131,7 +131,7 @@ fondo: il Ministero delle Finanze è già in R21, R23, R26 e R27. Nessun ritratt
 
 ## Didascalia (bozza)
 ```
-Per l'ISTAT nel 2026 i prezzi di quello che comprano le famiglie salgono in media del 3,3% (deflatore della spesa delle famiglie), dopo l'1,5% del 2025; nel 2027 la previsione è +2,8% (Nota sull'andamento e prospettive dell'economia italiana, 11 novembre 2026). A ottobre l'inflazione era +5,4% su un anno prima (dato provvisorio del 30 ottobre; il definitivo esce il 17 novembre), con i beni energetici a +31,4%. Nel secondo trimestre il potere d'acquisto delle famiglie è sceso dello 0,9%.
+Per l'ISTAT nel 2026 i prezzi di quello che comprano le famiglie salgono in media del 3,3% (deflatore della spesa delle famiglie), dopo l'1,5% del 2025; nel 2027 la previsione è +2,8% (Nota sull'andamento e prospettive dell'economia italiana, 11 novembre 2026). A ottobre l'inflazione era +5,5% su un anno prima (dato definitivo ISTAT del 17 novembre), con i beni energetici a +31,9%. Nel secondo trimestre il potere d'acquisto delle famiglie è sceso dello 0,9%.
 
 Quando il prezzo del petrolio fa crescere l'IVA incassata, la legge 244/2007 (art. 1, c. 290) permette di usare quell'IVA in più per ridurre l'accisa sui carburanti. Con il decreto MEF del 9 novembre (Gazzetta Ufficiale n. 261) l'accisa sul gasolio è 632,90 euro per mille litri dal 10 al 23 novembre 2026, coperta con 43,2 milioni del maggior gettito IVA di ottobre.
 
@@ -141,19 +141,20 @@ Le riduzioni delle accise decise per decreto-legge, con la stima del costo, sono
 ```
 
 ## Da controllare prima del montaggio
-- **Inflazione di ottobre:** il 17/11 l'ISTAT pubblica il dato definitivo. Rifare le scene 3-4, la voce e la didascalia
-  con le cifre definitive (NIC su base annua, beni energetici, alimentari non lavorati, servizi relativi ai trasporti) e
-  togliere «dato provvisorio». Se esce anche la stima di novembre prima del 25/11 (di solito a fine mese, dopo
-  l'uscita), non cambia nulla.
+- **Inflazione di ottobre:** fatto il 22/11 dalla routine sul comunicato ISTAT del 17/11 (dati definitivi): NIC +5,5%
+  (era +5,4%), beni energetici +31,9% (era +31,4%), servizi relativi ai trasporti +3,2% (era +3,1%), alimentari non
+  lavorati +7,5% (invariato); scene 3-4, voce e didascalia aggiornate. La stima di novembre esce il 30/11, dopo
+  l'uscita: non cambia nulla.
 - **Decreto sull'accisa:** l'uscita è dopo il 23 novembre, quindi in voce il passato («è scesa»). Controllare in
-  Gazzetta se un nuovo decreto MEF ha rideterminato l'accisa per il periodo dopo il 23/11 (con l'IVA di novembre): se sì,
+  Gazzetta se un nuovo decreto MEF ha rideterminato l'accisa per il periodo dopo il 23/11, con l'IVA di novembre (nei
+  sommari dei nn. 270-272, 19-21/11, nessuno: ricontrollare il n. 273 del 23/11 e i successivi): se sì,
   la scena 7 mostra quello nuovo (periodo, aliquota, milioni) e la voce dice «e da allora…». Mai una cifra di giornale.
 - **La regola:** la frase della scena 6 è quella delle premesse del decreto del 9/11, che riassumono la L. 244/2007,
   art. 1, c. 290. Se si vuole citare la legge parola per parola, rileggere il comma su Normattiva
   (https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2007-12-24;244~art1-com290) e il c. 291 sulle condizioni
   («a certe condizioni» in voce). Il decreto parla di «maggiori entrate dell'imposta sul valore aggiunto rispetto
   all'ultima previsione»: in voce «incassa più IVA», non «guadagna».
-- **3,3% e 5,4%:** sono due misure diverse (media prevista dell'anno contro mese di ottobre su ottobre 2025; deflatore
+- **3,3% e 5,5%:** sono due misure diverse (media prevista dell'anno contro mese di ottobre su ottobre 2025; deflatore
   dei consumi contro indice NIC). A schermo restano in due scene separate con i loro titoli, mai nello stesso grafico.
 - **DL 162:** riaprire /atti e controllare la misura `#dl-2026-162-m01` (111,8 mln €, «Entrate in meno», «Stima») e
   l'intestazione. È già in R33 (17/11, scena 8): qui una volta sola, come paragone, senza le altre due misure.
