@@ -1,5 +1,5 @@
 {
-  "scaricato": "2026-11-19T06:04:07.795Z",
+  "scaricato": "2026-11-26T17:29:25.425Z",
   "fonti": [
     {
       "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10a_main/A.MIO_NAC+PC_GDP.S13.TE+TR+B9+D41PAY.IT?format=SDMX-CSV",
@@ -5494,6 +5494,6 @@
   ],
   "verifica": {
     "livello": "V1",
-    "dettaglio": "Scaricati dalle fonti primarie il 2026-11-19 e incrociati in automatico: le dieci funzioni cofog sommano al totale della spesa per funzione; spesa totale uguale nelle due tavole eurostat (conti principali e spesa per funzione); saldo uguale a entrate meno spese; debito di fine anno: banca d'italia contro eurostat; i quattro trimestri sommano alla spesa e alle entrate dell'anno; nel confronto ue i valori dell'italia coincidono con le tavole nazionali; spesa in % del pil: valore eurostat contro spesa eurostat divisa per il pil istat della nostra serie. Tutti i controlli superati."
+    "dettaglio": "Scaricati dalle fonti primarie il 2026-11-26 e incrociati in automatico: le dieci funzioni cofog sommano al totale della spesa per funzione; spesa totale uguale nelle due tavole eurostat (conti principali e spesa per funzione); saldo uguale a entrate meno spese; debito di fine anno: banca d'italia contro eurostat; i quattro trimestri sommano alla spesa e alle entrate dell'anno; nel confronto ue i valori dell'italia coincidono con le tavole nazionali; spesa in % del pil: valore eurostat contro spesa eurostat divisa per il pil istat della nostra serie. Tutti i controlli superati."
   }
 }
