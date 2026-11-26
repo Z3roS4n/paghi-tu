@@ -1,5 +1,106 @@
 [
   {
+    "id": "l-2026-214",
+    "tipo": "legge",
+    "numero": 214,
+    "data": "2026-11-06",
+    "titoloUfficiale": "Disposizioni in materia di cinema.",
+    "titolo": "Riforma del cinema e Agenzia per il cinema e l’audiovisivo",
+    "governoId": "g202",
+    "gazzetta": {
+      "numero": 274,
+      "data": "2026-11-24",
+      "fonte": {
+        "url": "http://www.gazzettaufficiale.it/eli/id/2026/11/24/26G00230/SG"
+      }
+    },
+    "inVigoreDal": "2026-12-09",
+    "cdm": null,
+    "stato": "in_vigore",
+    "conversione": null,
+    "relazioneTecnica": null,
+    "misure": [
+      {
+        "id": "l-2026-214-m01",
+        "articolo": "art. 3, cc. 9-12 e 16",
+        "descrizione": "Agenzia per il cinema e l’audiovisivo: dotazione organica (fino a 197 unità), assunzioni, concorso e funzionamento",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "08",
+        "importi": [
+          {
+            "anno": 2028,
+            "mln": 6.86165
+          },
+          {
+            "anno": 2029,
+            "mln": 6.318974
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "è autorizzata la spesa di euro 6.861.650 per l’anno 2028, di cui euro 6.066.883 per le assunzioni a tempo indeterminato, euro 300.000 per le spese relative alla procedura concorsuale ed euro 494.767 per le spese di funzionamento, e la spesa di euro 6.318.974 annui a decorrere dall’anno 2029",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/11/24/26G00230/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-11-26 — riletto su Normattiva (URN per articolo): estremi, importi e citazione"
+        }
+      },
+      {
+        "id": "l-2026-214-m02",
+        "articolo": "art. 3, cc. 12 e 16",
+        "descrizione": "Agenzia per il cinema e l’audiovisivo: funzionamento degli organi",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "08",
+        "importi": [
+          {
+            "anno": 2028,
+            "mln": 0.294
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "È altresì autorizzata per il funzionamento degli organi la spesa di euro 294.000 annui a decorrere dall’anno 2028",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/11/24/26G00230/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-11-26 — riletto su Normattiva (URN per articolo): estremi, importi e citazione"
+        }
+      },
+      {
+        "id": "l-2026-214-m03",
+        "articolo": "art. 5, cc. 10-12",
+        "descrizione": "Commissione per la valutazione delle opere e dei progetti cinematografici e audiovisivi (venti esperti presso l’Agenzia)",
+        "natura": "spesa",
+        "tipoOnere": "tetto",
+        "cofog": "08",
+        "importi": [
+          {
+            "anno": 2028,
+            "mln": 0.63175
+          }
+        ],
+        "continuaDopo": true,
+        "citazione": "Per l’attuazione del presente articolo è autorizzata una spesa pari a euro 631.750 annui a decorrere dall’anno 2028",
+        "fonte": {
+          "url": "http://www.gazzettaufficiale.it/eli/id/2026/11/24/26G00230/SG"
+        },
+        "verifica": {
+          "livello": "V1",
+          "dettaglio": "V1✓ verificatore 2026-11-26 — riletto su Normattiva (URN per articolo): estremi, importi e citazione"
+        }
+      }
+    ],
+    "note": "Trovata nel sommario GU n. 274 del 24-11-2026 (pag. 1; nessun supplemento ordinario). Testo dal PDF https://www.gazzettaufficiale.it/eli/gu/2026/11/24/274/sg/pdf (pagg. 1-7; note fino a pag. 19). Nessun articolo sull’entrata in vigore: vacatio ordinaria; Normattiva e pagina dell’atto in GU: «Entrata in vigore del provvedimento: 09/12/2026». Proposta di legge di iniziativa parlamentare (A.C. 2360, poi A.S. 2035), non del Governo: nessun comunicato del CdM. RT: la V Commissione della Camera l’ha chiesta il 4-8-2026 ai sensi dell’art. 17, c. 5, L. 196/2009 (scheda https://www.camera.it/leg19/126?leg=19&idDocumento=2360); RT non recuperata, il seguito al Senato non è leggibile (senato.it risponde 202). L’art. 3, c. 16 riporta il totale degli oneri dell’art. 3 («pari a euro 7.155.650 per l’anno 2028 e a euro 6.612.974 annui a decorrere dall’anno 2029»), cioè m01 più m02, registrate separatamente. L’Agenzia entra in funzione dal 1-1-2028 (art. 3, c. 17). Non registrati come misure: art. 2, c. 9 (Forum del cinema e dell’audiovisivo, invarianza); art. 3, c. 11 (risorse del MiC trasferite all’Agenzia con il personale inquadrato, senza importo); art. 3, c. 14 (esenzione da bollo e da ogni tributo per gli atti di istituzione dell’Agenzia, senza importo); art. 4 (delega di riordino degli incentivi, senza nuovi o maggiori oneri, c. 5); art. 5, c. 10 (compenso di 29.000 euro lordi annui per componente della Commissione, a valere sul Fondo cinema); art. 6 (delega sull’indennità di discontinuità e sugli ammortizzatori dello spettacolo, finanziata anche con l’aumento dei contributi del c. 4, senza importo). Coperture: art. 3, c. 16, fondo speciale di parte corrente, accantonamento del Ministero della cultura; art. 5, c. 12, riduzione delle autorizzazioni di spesa dell’art. 26, c. 2-bis (451.250 euro) e dell’art. 27, c. 2-ter (180.500 euro), L. 220/2016. Normattiva: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2026-11-06;214",
+    "verifica": {
+      "livello": "V1",
+      "dettaglio": "V1✓ verificatore 2026-11-26 — riletto su Normattiva (URN per articolo): estremi, importi e citazione"
+    }
+  },
+  {
     "id": "dl-2026-205",
     "tipo": "decreto_legge",
     "numero": 205,
