@@ -151,3 +151,4 @@ Le leggi di bilancio dal 2023 a oggi sono su paghitu.it/leggi-di-bilancio. La ma
   anche se /promesse ha proposte sulle pensioni.
 - Il giorno dopo R44 (barre e linea della sanità), due giorni dopo R43 (colonne dei mesi del TFS): qui le colonne sono
   sei percentuali, con un'apertura e un ritaglio diversi. Il giorno prima di R46 (forfettario).
+- **DM perequazione:** il DM MEF del 13/11/2026 (GU n. 274 del 24/11, artt. 1 e 2) fissa al +1,4% definitivo la rivalutazione 2026 (art. 1) e al +3,2% provvisorio quella dal 1/1/2027 (art. 2); la scheda usa il 2,9% ipotizzato dall'UPB e va riallineata prima del montaggio: riallineare vuol dire citare il DM con la sua fonte (https://www.gazzettaufficiale.it/eli/gu/2026/11/24/274/sg/pdf, p. 89), senza ricalcolare gli esempi in euro dell'UPB.
