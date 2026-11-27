@@ -5,17 +5,18 @@ import { PageHead, Wrap } from "@/components/ui";
 import { agentEnvironment } from "@/server/agent/config";
 
 export const metadata: Metadata = {
-  title: "Assistente in anteprima",
+  title: "Paghi Tu Agent",
   robots: { index: false, follow: false },
 };
 
 export default function AssistantPage() {
-  if (!agentEnvironment(process.env)) notFound();
+  const environment = agentEnvironment(process.env);
+  if (!environment) notFound();
 
   return (
     <Wrap className="pb-20">
-      <PageHead kicker="Anteprima protetta" title="Chiedi ai dati di Paghi Tu">
-        <p>Un assistente AI cerca nei dati pubblicati sul sito e mostra le fonti usate. Se non trova una risposta verificabile, si astiene.</p>
+      <PageHead kicker={environment === "production" ? "In prova" : "Anteprima protetta"} title="Paghi Tu Agent">
+        <p>Chiedi ai dati di Paghi Tu. Un assistente AI cerca nei dati pubblicati sul sito e mostra le fonti usate. Se non trova una risposta verificabile, si astiene.</p>
       </PageHead>
       <AgentChat />
       <p className="mt-6 max-w-3xl text-sm text-ink-soft">
