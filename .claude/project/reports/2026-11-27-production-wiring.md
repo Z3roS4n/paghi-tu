@@ -2,7 +2,7 @@
 
 > Ultimo aggiornamento: 27 novembre 2026 · da: Claude (Code CLI, su mandato Giovanni)
 
-Decisione: [D-047](../02-tradeoffs.md). Il runbook Preview ([2026-10-31-preview-wiring](2026-10-31-preview-wiring.md)) resta valido per la Preview; qui solo le differenze. Nessun passo è stato eseguito nel cloud: tutto quello che segue è da fare e verificare dal vivo.
+Decisione: [D-047](../02-tradeoffs.md). Il runbook Preview ([2026-10-31-preview-wiring](2026-10-31-preview-wiring.md)) resta valido per la Preview; qui solo le differenze. Il 27 novembre Claude ha eseguito la parte GCP (§ Risorse GCP, su mandato Giovanni) e l'ha verificata con gcloud: database `paghi-tu-production` (europe-west1, PITR spento, protezione dalla cancellazione attiva), TTL `expiresAt` ACTIVE, pool `vercel-production` e provider `vercel-certalea` con condizione `environment == 'production'`, service account `paghi-runtime-prod` impersonabile solo dal principal `project_env/…:production`, `datastore.user` condizionato sul solo database di produzione per runtime e sync, `control` iniziale spento, segreto HMAC nuovo fuori dal repo. Restano da fare e verificare dal vivo Vercel, GitHub e accensione.
 
 ## Prima di cominciare
 
