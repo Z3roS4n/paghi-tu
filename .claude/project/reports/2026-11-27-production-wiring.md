@@ -9,6 +9,7 @@ Decisione: [D-047](../02-tradeoffs.md). Il runbook Preview ([2026-10-31-preview-
 - Decisioni di Giovanni (27 novembre): Vercel Firewall con un rate limit su `/api/agent`; limiti invariati per la prima settimana; pagina diretta `noindex`, fuori dal dock (già così nel codice); risorse GCP create da Claude con la conferma di Giovanni a ogni passo. Resta al titolare la privacy della persistenza effimera.
 - La PR della chat (#13) è unita in questo ramo; la pagina dice «In prova» in produzione e «Anteprima protetta» in Preview.
 - Next 16.4.6 (PR #15) unito prima di questa: con 16.4.3 la build può fermarsi su `SecurityFatalError`.
+- Registro delle fonti rigenerato (PR #16) unito prima di questa: sistema i 2 test rossi di main.
 
 ## Risorse GCP (Claude, con il sì di Giovanni a ogni `--apply`)
 
@@ -26,7 +27,7 @@ Decisione: [D-047](../02-tradeoffs.md). Il runbook Preview ([2026-10-31-preview-
 
 ## Sync notturna (Antonio)
 
-Il workflow `agent-index-sync` parte a ogni push su main che tocca dati o agente, e ogni notte alle 03:30 UTC. Serve la variabile di repository `AGENT_INDEX_SYNC_ENABLED=1`. Il job `validate` lancia `npm test`: finché `agent/evals/verifica-fonti.json` non è rigenerato per il golden set corrente, i 2 test di `verifica.test.ts` falliscono e la sync non parte.
+Il workflow `agent-index-sync` parte a ogni push su main che tocca dati o agente, e ogni notte alle 03:30 UTC. Serve la variabile di repository `AGENT_INDEX_SYNC_ENABLED=1`. Il job `validate` lancia `npm test`. Il registro `agent/evals/verifica-fonti.json` è legato all'impronta di `domande.jsonl`: una PR che cambia il golden set rigenera il registro con `npm run evals:verify` nello stesso ramo, altrimenti `verifica.test.ts` fallisce e la sync si ferma (l'agente resta sull'indice precedente e risponde 503 dopo il deploy). Con la PR #16 il registro è allineato al golden set del 27 novembre.
 
 ## Vercel (Antonio)
 
