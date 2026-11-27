@@ -4,7 +4,7 @@ import { AgentChat } from "@/components/agent/agent-chat";
 import { PageHead, Wrap } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "Assistente in anteprima",
+  title: "Paghi Tu Agent, anteprima",
   robots: { index: false, follow: false },
 };
 
@@ -13,8 +13,8 @@ export default function AssistantPage() {
 
   return (
     <Wrap className="pb-20">
-      <PageHead kicker="Anteprima protetta" title="Chiedi ai dati di Paghi Tu">
-        <p>Un assistente AI cerca nei dati pubblicati sul sito e mostra le fonti usate. Se non trova una risposta verificabile, si astiene.</p>
+      <PageHead kicker="Anteprima protetta" title="Paghi Tu Agent">
+        <p>Chiedi ai dati di Paghi Tu. Un assistente AI cerca nei dati pubblicati sul sito e mostra le fonti usate. Se non trova una risposta verificabile, si astiene.</p>
       </PageHead>
       <AgentChat />
       <p className="mt-6 max-w-3xl text-sm text-ink-soft">
