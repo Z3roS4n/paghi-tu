@@ -73,7 +73,9 @@ export async function refreshIndex(input: { snapshot: Snapshot; remote: SyncRemo
         if (record(c.sync).owner !== owner || c.version !== versions[i]) return { writes: {}, value: undefined };
         const next: Record<string, unknown> = { ...c, enabled: wasEnabled[i], version: versions[i] + 1 }; delete next.sync;
         return { writes: { control: next }, value: undefined };
-      }).catch(() => undefined);
+      }).catch((releaseError: unknown) => {
+        input.event?.({ phase: "RELEASE_FAILED", index: i, target: input.targets?.[i], error: releaseError instanceof Error ? releaseError.message : String(releaseError) });
+      });
     }
     throw error;
   }

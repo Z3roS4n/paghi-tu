@@ -149,6 +149,17 @@ describe("refresh across environments (D-047)", () => {
     expect(r.upsert).not.toHaveBeenCalled(); expect(r.remove).not.toHaveBeenCalled();
     expect(preview.docs.get("control")).toEqual({ enabled: true, version: 5, indexSha256: "old" });
   });
+  it("reports a failed release and leaves that state locked", async () => {
+    const preview = new State(); const production = new State();
+    let previewCalls = 0; // 1 = preflight read, 2 = lock, 3 = release: the release fails.
+    const failingRelease: SyncState = { transact: (keys, fn) => { if (++previewCalls === 3) return Promise.reject(new Error("release failed")); return preview.transact(keys, fn); } };
+    let productionCalls = 0;
+    const failingLock: SyncState = { transact: (keys, fn) => production.transact(keys, (values) => { const result = fn(values); if (++productionCalls === 2) throw new Error("lock failed"); return result; }) };
+    const events: Record<string, unknown>[] = [];
+    await expect(refreshIndex({ snapshot: snapshot(), states: [failingRelease, failingLock], targets: ["preview-db", "production-db"], remote: remote(), commit, event: (e) => events.push(e) })).rejects.toThrow("lock failed");
+    expect(events).toEqual([{ phase: "RELEASE_FAILED", index: 0, target: "preview-db", error: "release failed" }]);
+    expect(preview.docs.get("control")).toMatchObject({ enabled: false, sync: { commit } });
+  });
   it("refuses to narrow the targets stamped together last time", async () => {
     const preview = new State(); preview.docs.set("control", { enabled: true, version: 2, indexTargets: ["preview", "production"] });
     const r = remote(docs.slice(0, 21));
