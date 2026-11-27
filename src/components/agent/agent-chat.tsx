@@ -135,6 +135,7 @@ export function AgentChat() {
 
   return (
     <div className="mt-6 pb-32 lg:pb-0">
+      <p className="mb-4 text-sm font-semibold text-ink-soft">Risposte generate da AI, da controllare sulle fonti indicate.</p>
       <section aria-label="Conversazione con Paghi Tu Agent" aria-live="polite" className="flex flex-col gap-5">
         {turns.length === 0 && !busy ? (
           <div className="rounded-card border border-rule bg-paper-raised p-5">
@@ -193,7 +194,7 @@ export function AgentChat() {
           <div className="mt-1 flex items-center justify-between gap-3">
             <span className={`tabular text-[13px] ${near ? "font-bold text-level-v2" : "text-ink-faint"}`}>{question.length}/{MAX_LENGTH}</span>
             <div className="flex gap-2">
-              <button type="button" onClick={reset} disabled={!conversationId || resetting} aria-label="Azzera contesto" className="inline-flex min-h-12 min-w-12 items-center justify-center gap-2 rounded-ctl border-[1.5px] border-rule px-3 font-bold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:opacity-45 sm:px-4">
+              <button type="button" onClick={reset} disabled={!conversationId || resetting} aria-label="Azzera contesto" title="Azzera contesto" className="inline-flex min-h-12 min-w-12 items-center justify-center gap-2 rounded-ctl border-[1.5px] border-rule px-3 font-bold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:opacity-45 sm:px-4">
                 <ArrowCounterClockwiseIcon aria-hidden weight="bold" /><span className="hidden sm:inline">Azzera contesto</span>
               </button>
               <button type="submit" disabled={busy || resetting || !question.trim()} className="inline-flex min-h-12 items-center gap-2 rounded-ctl bg-accent px-5 font-bold text-accent-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:opacity-45">
