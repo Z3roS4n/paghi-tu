@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { gunzipSync } from "node:zlib";
 import { describe, expect, it, vi } from "vitest";
 import { IndexDocument, sha256, toJsonl } from "../ingest/export.ts";
-import { diffSnapshot, fingerprint, parseSnapshot, record, recoverSync, refreshIndex, type SyncRemote, type SyncState } from "./refresh.ts";
+import { diffSnapshot, fingerprint, parseSnapshot, record, recoverStates, recoverSync, refreshIndex, type SyncRemote, type SyncState } from "./refresh.ts";
 const fixture = new URL("../runtime/fixtures/recorded-runs.jsonl.gz", import.meta.url);
 const rows = JSON.parse(gunzipSync(readFileSync(fixture)).toString().split("\n", 1)[0]).index as unknown[];
 const docs = rows.slice(0, 22).map((d) => IndexDocument.parse(d));
@@ -127,12 +127,39 @@ describe("refresh across environments (D-047)", () => {
     expect(production.docs.get("control")).toMatchObject({ enabled: false, indexSha256: snapshot().hash });
     expect(out).toMatchObject({ enabled: false, enabledByState: [true, false] });
   });
-  it("touches no Vertex document when a later lock fails, and leaves the earlier state disabled", async () => {
+  it("stops on a blocked state before any lock", async () => {
     const preview = new State(); const production = new State(); production.docs.set("control", { enabled: true, sync: { owner: "other" } });
     const r = remote(docs.slice(0, 21));
     await expect(refreshIndex({ snapshot: snapshot(), states: [preview, production], remote: r, commit })).rejects.toThrow("sync blocked by state");
     expect(r.upsert).not.toHaveBeenCalled(); expect(r.remove).not.toHaveBeenCalled();
-    expect(preview.docs.get("control")).toMatchObject({ enabled: false, sync: { hash: snapshot().hash } });
+    expect(preview.docs.get("control")).toEqual({ enabled: true, version: 1 });
+  });
+  it("stops on a busy production lease before any lock, so Preview stays on", async () => {
+    const preview = new State(); const production = new State();
+    production.docs.set("global", { day: "2026-11-27", month: "2026-11", dayCount: 1, monthCount: 1, lease: { owner: "req", until: 10_000 } });
+    await expect(refreshIndex({ snapshot: snapshot(), states: [preview, production], remote: remote(), commit, now: () => 1 })).rejects.toThrow("global is not idle");
+    expect(preview.docs.get("control")).toEqual({ enabled: true, version: 1 });
+  });
+  it("releases the locks already taken when a later lock fails, keeping their stamps", async () => {
+    const preview = new State(); preview.docs.set("control", { enabled: true, version: 3, indexSha256: "old" }); const production = new State();
+    let calls = 0; // 1 = preflight read, 2 = lock: the lock write fails after the preflight passed.
+    const failingLock: SyncState = { transact: (keys, fn) => production.transact(keys, (values) => { const result = fn(values); if (++calls === 2) throw new Error("lock failed"); return result; }) };
+    const r = remote(docs.slice(0, 21));
+    await expect(refreshIndex({ snapshot: snapshot(), states: [preview, failingLock], remote: r, commit })).rejects.toThrow("lock failed");
+    expect(r.upsert).not.toHaveBeenCalled(); expect(r.remove).not.toHaveBeenCalled();
+    expect(preview.docs.get("control")).toEqual({ enabled: true, version: 5, indexSha256: "old" });
+  });
+  it("refuses to narrow the targets stamped together last time", async () => {
+    const preview = new State(); preview.docs.set("control", { enabled: true, version: 2, indexTargets: ["preview", "production"] });
+    const r = remote(docs.slice(0, 21));
+    await expect(refreshIndex({ snapshot: snapshot(), states: [preview], targets: ["preview"], remote: r, commit })).rejects.toThrow("sync targets narrowed");
+    expect(r.upsert).not.toHaveBeenCalled(); expect(preview.docs.get("control")).toMatchObject({ enabled: true, version: 2 });
+  });
+  it("records the targets of the run on every stamp", async () => {
+    const preview = new State(); const production = new State();
+    await refreshIndex({ snapshot: snapshot(), states: [preview, production], targets: ["preview", "production"], remote: remote(), commit });
+    for (const s of [preview, production]) expect(s.docs.get("control")).toMatchObject({ indexTargets: ["preview", "production"] });
+    await expect(refreshIndex({ snapshot: snapshot(), states: [preview], targets: ["preview", "production"], remote: remote(), commit })).rejects.toThrow("sync targets must match states");
   });
   it("keeps a state disabled when its own stamp fails", async () => {
     const preview = new State(); const production = new State();
@@ -153,5 +180,29 @@ describe("refresh across environments (D-047)", () => {
     const outB = await refreshIndex({ snapshot: snapshot(), states: [b], remote: rb, commit, owner: "o", now: () => 1 });
     expect(outB).toEqual(outA); expect(b.docs).toEqual(a.docs);
     for (const k of ["list", "upsert", "remove", "ready"] as const) expect(rb[k].mock.calls).toEqual(ra[k].mock.calls);
+  });
+});
+
+describe("recovery across environments (D-047)", () => {
+  const held = (owner: string) => ({ enabled: false, version: 4, indexSha256: "h", sync: { owner } });
+  it("recovers only the states held by the owner and reports each one", async () => {
+    const preview = new State(); preview.docs.set("control", held("me")); const production = new State(); production.docs.set("control", { enabled: false, version: 2 });
+    const seen: string[] = [];
+    expect(await recoverStates({ states: [preview, production], names: ["preview", "production"], owner: "me", acknowledged: true, onRecovered: (n) => seen.push(n) })).toEqual(["preview"]);
+    expect(seen).toEqual(["preview"]);
+    expect(preview.docs.get("control")).toEqual({ enabled: false, version: 5 });
+    expect(production.docs.get("control")).toEqual({ enabled: false, version: 2 });
+  });
+  it("writes nothing when another owner holds any marker", async () => {
+    const preview = new State(); preview.docs.set("control", held("me")); const production = new State(); production.docs.set("control", held("other"));
+    await expect(recoverStates({ states: [preview, production], names: ["preview", "production"], owner: "me", acknowledged: true })).rejects.toThrow("another owner");
+    expect(preview.docs.get("control")).toEqual(held("me"));
+  });
+  it("fails when no state carries the owner's marker", async () => {
+    await expect(recoverStates({ states: [new State()], names: ["preview"], owner: "me", acknowledged: true })).rejects.toThrow("no sync marker for owner");
+  });
+  it("still requires the operator acknowledgement", async () => {
+    const preview = new State(); preview.docs.set("control", held("me"));
+    await expect(recoverStates({ states: [preview], names: ["preview"], owner: "me", acknowledged: false })).rejects.toThrow("preconditions failed");
   });
 });

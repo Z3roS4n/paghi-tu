@@ -75,6 +75,22 @@ export function assertPreviewOnly(config) {
   if (config.environment !== "preview") throw new Error("Questo comando gira solo sulla Preview, mai sulla produzione.");
 }
 
+export function workloadPrincipal(config) {
+  const pool = `principalSet://iam.googleapis.com/projects/${config.gcpProjectNumber}/locations/global/workloadIdentityPools/${config.workloadIdentityPoolId}`;
+  return config.environment === "production" ? `${pool}/attribute.project_env/${config.vercelProjectId}:production` : `${pool}/attribute.project_id/${config.vercelProjectId}`;
+}
+
+// Production SA: the only workloadIdentityUser is the environment-bound principal. Any other member (a pool-wide
+// principalSet, the Preview attribute, a user) could impersonate it from outside production.
+export function assertWorkloadBindings(config, saPolicy) {
+  if (config.environment !== "production") return;
+  const expected = workloadPrincipal(config);
+  for (const binding of saPolicy?.bindings ?? []) {
+    if (binding.role !== "roles/iam.workloadIdentityUser" && binding.role !== "roles/iam.serviceAccountTokenCreator") continue;
+    if ((binding.members ?? []).some((member) => member !== expected)) throw new Error("La SA di produzione ha impersonatori diversi dal principal di produzione; nessuna modifica.");
+  }
+}
+
 export function assertTTLActive(fields, projectId, databaseId, environment = "preview") {
   const expected = `projects/${projectId}/databases/${databaseId}/collectionGroups/agent_${environment}/fields/expiresAt`;
   if (!Array.isArray(fields) || fields.length !== 1 || fields[0]?.name !== expected || fields[0]?.ttlConfig?.state !== "ACTIVE") throw new Error("TTL expiresAt non ancora ACTIVE o configurazione divergente: PENDING, attendere e ripetere il setup.");

@@ -1,5 +1,5 @@
 import { afterEach, expect, test } from "vitest";
-import { mkdtempSync, rmSync, writeFileSync } from "node:fs";
+import { mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { assertEphemeralStorageSettings, assertTTLActive, exactPreviewTarget, readConfig, recoverHaltedGlobal } from "./preview-common.mjs";
@@ -99,4 +99,24 @@ test("production config needs its own database and never runs Preview-only comma
   const name = "projects/paghi-tu-agent/databases/paghi-tu-production/collectionGroups/agent_production/fields/expiresAt";
   expect(() => assertTTLActive([{ name, ttlConfig: { state: "ACTIVE" } }], "paghi-tu-agent", "paghi-tu-production", "production")).not.toThrow();
   expect(() => assertTTLActive([{ name, ttlConfig: { state: "ACTIVE" } }], "paghi-tu-agent", "paghi-tu-production")).toThrow();
+});
+
+test("binds the production SA to an environment-bound principal and rejects wider impersonators (D-047)", async () => {
+  const { assertWorkloadBindings, workloadPrincipal } = await import("./preview-common.mjs");
+  const preview = readConfig(config());
+  const production = readConfig(config({ environment: "production", databaseId: "paghi-tu-production", previewOrigin: "" }));
+  const prod = workloadPrincipal(production);
+  expect(prod).toMatch(/\/attribute\.project_env\/[^/]+:production$/);
+  expect(workloadPrincipal(preview)).toMatch(/\/attribute\.project_id\/[^/:]+$/);
+  expect(() => assertWorkloadBindings(production, { bindings: [{ role: "roles/iam.workloadIdentityUser", members: [prod] }] })).not.toThrow();
+  expect(() => assertWorkloadBindings(production, {})).not.toThrow();
+  expect(() => assertWorkloadBindings(production, { bindings: [{ role: "roles/iam.workloadIdentityUser", members: [prod, workloadPrincipal(preview)] }] })).toThrow();
+  expect(() => assertWorkloadBindings(production, { bindings: [{ role: "roles/iam.serviceAccountTokenCreator", members: ["user:someone@example.com"] }] })).toThrow();
+  expect(() => assertWorkloadBindings(preview, { bindings: [{ role: "roles/iam.workloadIdentityUser", members: ["anything"] }] })).not.toThrow();
+});
+
+test("every Preview-only script calls assertPreviewOnly before acting", () => {
+  for (const file of ["stress-preview.mjs", "verify-preview.mjs", "stress-state.ts"]) {
+    expect(readFileSync(new URL(file, import.meta.url), "utf8")).toMatch(/assertPreviewOnly\(\w+\)/);
+  }
 });

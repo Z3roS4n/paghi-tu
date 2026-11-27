@@ -2,7 +2,7 @@ import { spawnSync } from "node:child_process";
 import { randomBytes } from "node:crypto";
 import { openSync, writeSync, closeSync, existsSync, readFileSync, writeFileSync, lstatSync } from "node:fs";
 import { resolve } from "node:path";
-import { argsMap, assertEphemeralStorageSettings, assertTTLActive, readConfig } from "./preview-common.mjs";
+import { argsMap, assertEphemeralStorageSettings, assertTTLActive, assertWorkloadBindings, readConfig, workloadPrincipal } from "./preview-common.mjs";
 
 function gcloud(...args) {
   const result = spawnSync("gcloud", [...args, "--format=json"], { encoding: "utf8", maxBuffer: 2_000_000 });
@@ -28,7 +28,7 @@ const plan = [
   "Preflight identità GCP, project number, SA esistente e IAM corrente",
   "Abilitare API firestore.googleapis.com, iam.googleapis.com, iamcredentials.googleapis.com, sts.googleapis.com se mancanti",
   `Creare o verificare Firestore Native Standard ${config.databaseId} in ${config.databaseLocation}; TTL su expiresAt, PITR e backup off`,
-  "Creare/verificare pool e provider OIDC con issuer, audience e claim esatti; binding WIF solo sulla SA runtime",
+  `Creare/verificare pool e provider OIDC con issuer, audience e claim esatti; binding WIF solo sulla SA runtime, principal ${config.environment === "production" ? "attribute.project_env/<project>:production (mai l'intero pool)" : "attribute.project_id"}`,
   "Concedere datastore.user alla SA solo con condizione sul database dedicato; nessun ruolo non condizionato",
   `Inizializzare control ${config.environment} a enabled:false; generare segreto HMAC fuori dal repo con permessi 0600`,
 ];
@@ -71,13 +71,17 @@ if (!(policy.bindings ?? []).some((binding) => binding.role === "roles/discovery
 const poolArgs = ["iam", "workload-identity-pools", "describe", config.workloadIdentityPoolId, `--project=${config.gcpProjectId}`, "--location=global"];
 const pool = gcloudOptional(...poolArgs);
 const attributeCondition = `assertion.owner_id == '${config.vercelOwnerId}' && assertion.project_id == '${config.vercelProjectId}' && assertion.environment == '${config.environment}'`;
-const mapping = "google.subject=assertion.sub,attribute.owner_id=assertion.owner_id,attribute.project_id=assertion.project_id,attribute.environment=assertion.environment";
+// A principalSet on attribute.project_id matches every provider of the pool, Preview included. Production binds
+// its SA to an attribute that carries the environment, which the Preview provider never maps (D-047).
+const expectedMapping = { "google.subject": "assertion.sub", "attribute.owner_id": "assertion.owner_id", "attribute.project_id": "assertion.project_id", "attribute.environment": "assertion.environment", ...(config.environment === "production" ? { "attribute.project_env": "assertion.project_id + ':' + assertion.environment" } : {}) };
+const mapping = Object.entries(expectedMapping).map(([key, value]) => `${key}=${value}`).join(",");
 const providerArgs = ["iam", "workload-identity-pools", "providers", "describe", config.workloadIdentityProviderId, `--workload-identity-pool=${config.workloadIdentityPoolId}`, `--project=${config.gcpProjectId}`, "--location=global"];
 const provider = pool ? gcloudOptional(...providerArgs) : null;
-if (provider && (provider.oidc?.issuerUri !== config.vercelIssuer || !provider.oidc?.allowedAudiences?.includes(config.vercelJwtAudience) || provider.attributeCondition !== attributeCondition || Object.entries({ "google.subject": "assertion.sub", "attribute.owner_id": "assertion.owner_id", "attribute.project_id": "assertion.project_id", "attribute.environment": "assertion.environment" }).some(([key, value]) => provider.attributeMapping?.[key] !== value))) throw new Error("Provider esistente divergente; nessun overwrite.");
-const principal = `principalSet://iam.googleapis.com/projects/${config.gcpProjectNumber}/locations/global/workloadIdentityPools/${config.workloadIdentityPoolId}/attribute.project_id/${config.vercelProjectId}`;
+if (provider && (provider.oidc?.issuerUri !== config.vercelIssuer || !provider.oidc?.allowedAudiences?.includes(config.vercelJwtAudience) || provider.attributeCondition !== attributeCondition || Object.entries(expectedMapping).some(([key, value]) => provider.attributeMapping?.[key] !== value))) throw new Error("Provider esistente divergente; nessun overwrite.");
+const principal = workloadPrincipal(config);
 const saPolicy = gcloud("iam", "service-accounts", "get-iam-policy", config.serviceAccountEmail, `--project=${config.gcpProjectId}`);
 if ((saPolicy.bindings ?? []).some((binding) => binding.role === "roles/iam.workloadIdentityUser" && binding.members?.includes(principal) && binding.condition)) throw new Error("Binding WIF condizionato inatteso; verificare manualmente.");
+assertWorkloadBindings(config, saPolicy);
 console.log("Preflight GCP completato; procedo solo con configurazioni mancanti e pin verificati.");
 if (!existingDatabase) {
   gcloud("firestore", "databases", "create", `--database=${config.databaseId}`, `--location=${config.databaseLocation}`, "--type=firestore-native", `--project=${config.gcpProjectId}`);
@@ -97,7 +101,7 @@ if (ttlFields.length === 0) {
 const ttlAfter = gcloud("firestore", "fields", "ttls", "list", `--collection-group=${collection}`, `--database=${config.databaseId}`, `--project=${config.gcpProjectId}`);
 assertTTLActive(ttlAfter, config.gcpProjectId, config.databaseId, config.environment);
 if (!pool) {
-  gcloud("iam", "workload-identity-pools", "create", config.workloadIdentityPoolId, `--project=${config.gcpProjectId}`, "--location=global", "--display-name=Paghi Tu Preview");
+  gcloud("iam", "workload-identity-pools", "create", config.workloadIdentityPoolId, `--project=${config.gcpProjectId}`, "--location=global", `--display-name=Paghi Tu ${config.environment}`);
   recordCreated("wif-pool", config.workloadIdentityPoolId);
 }
 if (!provider) {

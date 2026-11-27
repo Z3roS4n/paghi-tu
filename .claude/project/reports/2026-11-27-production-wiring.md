@@ -6,24 +6,27 @@ Decisione: [D-047](../02-tradeoffs.md). Il runbook Preview ([2026-10-31-preview-
 
 ## Prima di cominciare
 
-- Il titolare decide: limite davanti a `/api/agent` (Vercel Firewall o BotID), limiti, ingresso (pagina diretta `noindex` o dock) e privacy della persistenza effimera.
+- Decisioni di Giovanni (27 novembre): Vercel Firewall con un rate limit su `/api/agent`; limiti invariati per la prima settimana; pagina diretta `noindex`, fuori dal dock (già così nel codice); risorse GCP create da Claude con la conferma di Giovanni a ogni passo. Resta al titolare la privacy della persistenza effimera.
 - La PR della chat (#13) è su main: il copy della pagina dice ancora «Anteprima protetta» e va adattato alla produzione prima dell'accensione.
 - Next in versione corretta per le advisory note.
 
-## Risorse GCP (Antonio)
+## Risorse GCP (Claude, con il sì di Giovanni a ogni `--apply`)
 
 1. Config locale fuori dal repo, copiata da `scripts/agent/preview-config.example.json` con `"environment": "production"`, `"databaseId": "paghi-tu-production"`, il service account e il provider di produzione. `previewOrigin` non serve.
 2. `node scripts/agent/setup-preview.mjs --config <prod.json>` stampa il piano; con `--apply --secret-output … --manifest-output …` crea o verifica:
    - database `paghi-tu-production` nella stessa località UE, PITR e backup spenti;
    - TTL `expiresAt` su `agent_production` in stato ACTIVE;
-   - provider WIF con `assertion.environment == 'production'`, pool condiviso;
+   - pool WIF dedicato alla produzione e provider con `assertion.environment == 'production'`;
+   - binding `workloadIdentityUser` del service account solo su `attribute.project_env/<project>:production`. Il preflight si ferma se il service account ha altri impersonatori (un `principalSet` sull'intero pool, il principal Preview, un utente);
    - binding `datastore.user` del service account di produzione condizionato sul solo database di produzione;
    - documento `control` iniziale `{enabled:false}`;
    - un segreto HMAC nuovo.
-3. Il service account di produzione va creato prima e deve essere diverso da quello della Preview: lo script non può verificarlo. Ruoli: sola ricerca su Vertex e il binding sopra. Nessun binding del service account Preview sul database di produzione.
-4. Identità GitHub della sync: `datastore.user` condizionato anche su `paghi-tu-production`, poi variabile di repository `AGENT_SYNC_TARGETS=preview,production`. Senza la variabile la sync tocca solo la Preview.
+3. Il service account di produzione va creato prima e deve essere diverso da quello della Preview: lo script controlla i suoi impersonatori, non chi altro usa lo stesso indirizzo. Ruoli: sola ricerca su Vertex e il binding sopra. Nessun binding del service account Preview sul database di produzione.
+4. Identità GitHub della sync: `datastore.user` condizionato anche su `paghi-tu-production`, poi variabile di repository `AGENT_SYNC_TARGETS=preview,production` (la imposta Antonio). Senza la variabile la sync tocca solo la Preview; dopo la prima sync su due target, una sync che ne esclude uno si rifiuta (`sync targets narrowed`). Per togliere davvero un ambiente: spegnerlo con `control --disable`, poi togliere `indexTargets` dal `control` degli altri, con una scrittura manuale dichiarata.
 
 ## Vercel (Antonio)
+
+Prima dell'accensione: una regola Vercel Firewall con rate limit su `/api/agent`.
 
 Solo nell'ambiente Production:
 
@@ -49,8 +52,9 @@ Stress e verifica automatica restano solo Preview: con `environment: production`
 
 - A runtime: `control-preview.mjs --config <prod.json> --apply --disable`.
 - Definitivo: togliere `AGENT_PRODUCTION_ENABLED` e rifare il deploy.
-- Recupero di un halt o di una sync bloccata: come in Preview, con la config di produzione. `sync-index.ts --recover-sync OWNER` agisce solo sui target che portano quel marcatore.
+- Recupero di un halt: come in Preview, con la config di produzione.
+- Recupero di una sync bloccata: `sync-index.ts --apply --recover-sync OWNER --ack-remote-reconciled` con lo stesso `AGENT_SYNC_TARGETS` della sync bloccata (il report la elenca in `targets`). Legge tutti gli stati prima di scrivere, si ferma su un marcatore di un altro proprietario o se non ne trova, e scrive in `recovered` ogni target recuperato.
 
 ## Cosa non è stato provato
 
-Unit test e build provano la logica locale: config, claim, namespace, cache del token, lock e stamp su più stati, rifiuti degli script. Non provano WIF, IAM, TTL, Firestore reale, Firewall, protezione o costi.
+Unit test e build provano la logica locale: config, claim, namespace, cache del token, principal WIF e controllo degli impersonatori, preflight, rilascio dei lock, guardia sui target e recupero su più stati, rifiuti degli script. Non provano WIF, IAM, TTL, Firestore reale, Firewall, protezione o costi.

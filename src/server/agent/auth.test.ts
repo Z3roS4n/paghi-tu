@@ -31,6 +31,12 @@ describe("environment binding and token reuse (D-047)", () => {
     expect(await getRuntimeAccessToken(config, signal(), async () => token(claims("preview")), exchange, now)).toBe("token-preview-3");
     expect(exchange).toHaveBeenCalledTimes(3);
   });
+  it("keys the cached token on provider and service account, not only on the environment", async () => {
+    clearRuntimeTokenCache(); let n = 0; const exchange = vi.fn(async () => `token-${++n}`);
+    expect(await getRuntimeAccessToken(config, signal(), async () => token(claims("preview")), exchange)).toBe("token-1");
+    expect(await getRuntimeAccessToken({ ...config, serviceAccountEmail: "other@paghi-tu-agent.iam.gserviceaccount.com" }, signal(), async () => token(claims("preview")), exchange)).toBe("token-2");
+    expect(await getRuntimeAccessToken({ ...config, providerId: "other-provider" }, signal(), async () => token(claims("preview")), exchange)).toBe("token-3");
+  });
   it("does not cache a failed exchange", async () => {
     clearRuntimeTokenCache(); const exchange = vi.fn(async () => null);
     await expect(getRuntimeAccessToken(config, signal(), async () => token(claims("preview")), exchange)).rejects.toThrow();
