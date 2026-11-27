@@ -51,6 +51,12 @@
 
 Prove e limiti nel [report](reports/2026-10-31-preview-integration.md), procedura nel [runbook](reports/2026-10-31-preview-wiring.md).
 
+## Produzione assistente — 27 novembre 2026
+
+- [x] Interruttore di produzione spento di default, stato e identità separati, sync su più ambienti (D-047).
+- [ ] Antonio: database, service account, provider WIF e variabili di produzione secondo il [runbook](reports/2026-11-27-production-wiring.md).
+- [ ] Titolare: limite davanti alla route, limiti, ingresso e privacy prima dell'accensione.
+
 
 ## Aggiornamento indice — 31 ottobre 2026
 

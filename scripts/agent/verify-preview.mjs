@@ -1,4 +1,4 @@
-import { argsMap, exactPreviewTarget, readConfig } from "./preview-common.mjs";
+import { argsMap, assertPreviewOnly, exactPreviewTarget, readConfig } from "./preview-common.mjs";
 
 const args = argsMap(process.argv.slice(2));
 if (args.has("--help")) {
@@ -6,6 +6,7 @@ if (args.has("--help")) {
   process.exit(0);
 }
 const config = readConfig(args.get("--config"));
+assertPreviewOnly(config);
 const target = exactPreviewTarget(config.previewOrigin + "/", config.previewOrigin);
 if (!args.has("--apply")) {
   console.log(JSON.stringify({ mode: "PLAN_ONLY", target, checks: ["anonymous Vercel challenge on page and API", "bypass reaches route without redirect", "exact origin", "manual production-off and WIF negative checks pending"] }));

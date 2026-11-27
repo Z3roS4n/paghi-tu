@@ -32,26 +32,62 @@ export function assertIdleGlobal(value: unknown, now = Date.now()) {
   if (g.lease !== undefined && (typeof record(g.lease).owner !== "string" || !Number.isFinite(record(g.lease).until))) throw new Error("invalid global lease");
   if (g.halted || (g.lease && Number(record(g.lease).until) > now)) throw new Error("global is not idle");
 }
-export async function refreshIndex(input: { snapshot: Snapshot; remote: SyncRemote; state: SyncState; commit: string; owner?: string; now?: () => number; event?: (event: Record<string, unknown>) => void }) {
-  const { snapshot, remote, state } = input; const owner = input.owner ?? randomUUID(); const now = input.now ?? Date.now;
-  let version = 0; let wasEnabled = false;
+// One Vertex index serves every environment, so every environment state is locked before the index
+// changes and stamped after it. `state` alone keeps the single-environment behavior unchanged.
+export async function refreshIndex(input: { snapshot: Snapshot; remote: SyncRemote; state?: SyncState; states?: readonly SyncState[]; targets?: readonly string[]; commit: string; owner?: string; now?: () => number; event?: (event: Record<string, unknown>) => void }) {
+  const { snapshot, remote } = input; const owner = input.owner ?? randomUUID(); const now = input.now ?? Date.now;
+  const states = input.states ?? (input.state ? [input.state] : []);
+  if (states.length === 0 || (input.states && input.state)) throw new Error("sync states required");
+  const targets = input.targets;
+  if (targets && (targets.length !== states.length || new Set(targets).size !== targets.length)) throw new Error("sync targets must match states");
+  const versions: number[] = []; const wasEnabled: boolean[] = [];
   // Read-only preflight: a removal over the limit or an invalid remote listing stops here, before the
   // assistant is suspended and before a still-valid stamp could be lost in recovery.
   diffSnapshot(snapshot, await remote.list());
-  // No expiry unlock: a crashed worker may still have an import running remotely.
-  await state.transact(["control", "global"], (docs) => {
-    const c = record(docs.get("control")); assertIdleGlobal(docs.get("global"), now());
+  const lockable = (c: Record<string, unknown>) => {
     if (typeof c.enabled !== "boolean" || c.sync !== undefined || (c.version !== undefined && (!Number.isInteger(c.version) || Number(c.version) < 0))) throw new Error("sync blocked by state");
-    wasEnabled = c.enabled; version = Number.isInteger(c.version) ? Number(c.version) + 1 : 1;
-    return { writes: { control: { ...c, enabled: false, version, sync: { owner, startedAt: now(), hash: snapshot.hash, commit: input.commit } } }, value: undefined };
-  });
+    // A run that leaves out an environment stamped together last time would change the shared index under
+    // that environment's still-valid stamp. Narrowing the targets is an explicit operator step.
+    if (targets && Array.isArray(c.indexTargets) && c.indexTargets.some((name) => !targets.includes(String(name)))) throw new Error("sync targets narrowed");
+  };
+  // Read-only pass over every state first, so a busy or invalid environment stops the run before any lock.
+  if (states.length > 1) for (const state of states) await state.transact(["control", "global"], (docs) => { lockable(record(docs.get("control"))); assertIdleGlobal(docs.get("global"), now()); return { writes: {}, value: undefined }; });
+  // No expiry unlock: a crashed worker may still have an import running remotely.
+  const locked: boolean[] = [];
+  try {
+    for (const [i, state] of states.entries()) {
+      await state.transact(["control", "global"], (docs) => {
+        const c = record(docs.get("control")); assertIdleGlobal(docs.get("global"), now()); lockable(c);
+        wasEnabled[i] = c.enabled === true; versions[i] = Number.isInteger(c.version) ? Number(c.version) + 1 : 1;
+        return { writes: { control: { ...c, enabled: false, version: versions[i], sync: { owner, startedAt: now(), hash: snapshot.hash, commit: input.commit } } }, value: undefined };
+      });
+      locked[i] = true;
+    }
+  } catch (error) {
+    // Nothing reached the index yet: the confirmed locks of this run are released and their stamps kept. The lock
+    // that failed, whose outcome is unknown, and a release that fails stay disabled with the marker (fail-closed).
+    for (const [i, state] of states.entries()) {
+      if (!locked[i]) continue;
+      await state.transact(["control"], (docs) => {
+        const c = record(docs.get("control"));
+        if (record(c.sync).owner !== owner || c.version !== versions[i]) return { writes: {}, value: undefined };
+        const next: Record<string, unknown> = { ...c, enabled: wasEnabled[i], version: versions[i] + 1 }; delete next.sync;
+        return { writes: { control: next }, value: undefined };
+      }).catch((releaseError: unknown) => {
+        input.event?.({ phase: "RELEASE_FAILED", index: i, target: input.targets?.[i], error: releaseError instanceof Error ? releaseError.message : String(releaseError) });
+      });
+    }
+    throw error;
+  }
   input.event?.({ phase: "LOCKED", owner, hash: snapshot.hash });
   async function assertOwned() {
-    await state.transact(["control", "global"], (docs) => {
-      const c = record(docs.get("control")); assertIdleGlobal(docs.get("global"), now());
-      if (record(c.sync).owner !== owner || c.version !== version || c.enabled !== false) throw new Error("sync ownership changed");
-      return { writes: {}, value: undefined };
-    });
+    for (const [i, state] of states.entries()) {
+      await state.transact(["control", "global"], (docs) => {
+        const c = record(docs.get("control")); assertIdleGlobal(docs.get("global"), now());
+        if (record(c.sync).owner !== owner || c.version !== versions[i] || c.enabled !== false) throw new Error("sync ownership changed");
+        return { writes: {}, value: undefined };
+      });
+    }
   }
   // Before publication, failures leave the disabled control and persistent marker.
   // An uncertain final commit may already have published a fully verified snapshot.
@@ -61,20 +97,53 @@ export async function refreshIndex(input: { snapshot: Snapshot; remote: SyncRemo
   const stored = await remote.list(); const expected = new Map(snapshot.documents.map((d) => [d.id, fingerprint(d)]));
   if (stored.length !== expected.size || new Set(stored.map((d) => d.id)).size !== stored.length || stored.some((d) => expected.get(d.id) !== d.hash)) throw new Error("remote verification failed");
   await assertOwned();
-  // Readiness probes only what changed: unchanged documents were already verified by the previous stamp.
+  // Readiness probes only what changed: unchanged documents were verified by an earlier stamp of the shared index.
   if (!await remote.ready(changes.upserts, changes.removed)) throw new Error("search index not ready");
-  const enabled = await state.transact(["control", "global"], (docs) => {
-    const c = record(docs.get("control")); assertIdleGlobal(docs.get("global"), now());
-    if (record(c.sync).owner !== owner || !Number.isInteger(c.version) || c.enabled !== false) throw new Error("sync ownership changed");
-    const next: Record<string, unknown> = { ...c, indexSha256: snapshot.hash, indexCommit: input.commit, indexedAt: now(), enabled: wasEnabled && c.version === version, version: Number(c.version) + 1 };
-    delete next.sync;
-    return { writes: { control: next }, value: next.enabled === true };
-  });
-  return { phase: changes.upserts.length || changes.removed.length ? "UPDATED" : "UNCHANGED", owner, hash: snapshot.hash, upserted: changes.upserts.length, removed: changes.removed.length, count: snapshot.documents.length, enabled };
+  // Each stamp is independent: a failure leaves that state (and the ones after it) disabled with the marker.
+  const enabled: boolean[] = [];
+  for (const [i, state] of states.entries()) {
+    enabled[i] = await state.transact(["control", "global"], (docs) => {
+      const c = record(docs.get("control")); assertIdleGlobal(docs.get("global"), now());
+      if (record(c.sync).owner !== owner || !Number.isInteger(c.version) || c.enabled !== false) throw new Error("sync ownership changed");
+      const next: Record<string, unknown> = { ...c, indexSha256: snapshot.hash, indexCommit: input.commit, indexedAt: now(), enabled: wasEnabled[i] && c.version === versions[i], version: Number(c.version) + 1 };
+      if (targets) next.indexTargets = [...targets];
+      delete next.sync;
+      return { writes: { control: next }, value: next.enabled === true };
+    });
+  }
+  return { phase: changes.upserts.length || changes.removed.length ? "UPDATED" : "UNCHANGED", owner, hash: snapshot.hash, upserted: changes.upserts.length, removed: changes.removed.length, count: snapshot.documents.length, enabled: enabled.every(Boolean), enabledByState: enabled };
 }
 export function recoverSync(control: unknown, expectedOwner: string, acknowledged: boolean) {
   const c = record(control);
   if (!acknowledged || !Number.isInteger(c.version) || c.enabled !== false || !expectedOwner || record(c.sync).owner !== expectedOwner) throw new Error("sync recovery preconditions failed");
   const next: Record<string, unknown> = { ...c, version: Number(c.version) + 1 }; delete next.sync; delete next.indexSha256;
   return next;
+}
+
+// Recovery after a BLOCKED run: every state is read first, so a marker of another owner (or no marker at all)
+// stops before any write. Only states held by `owner` are touched; `onRecovered` lets the caller persist progress.
+export async function recoverStates(input: { states: readonly SyncState[]; names: readonly string[]; owner: string; acknowledged: boolean; onRecovered?: (name: string) => void }) {
+  const { states, names, owner } = input;
+  if (states.length === 0 || names.length !== states.length) throw new Error("sync states required");
+  const held: boolean[] = [];
+  for (const [i, state] of states.entries()) {
+    held[i] = await state.transact(["control", "global"], (docs) => {
+      assertIdleGlobal(docs.get("global"));
+      const sync = record(docs.get("control")).sync;
+      if (sync === undefined) return { writes: {}, value: false };
+      if (record(sync).owner !== owner) throw new Error("sync marker held by another owner");
+      return { writes: {}, value: true };
+    });
+  }
+  if (!held.some(Boolean)) throw new Error("no sync marker for owner");
+  const recovered: string[] = [];
+  for (const [i, state] of states.entries()) {
+    if (!held[i]) continue;
+    await state.transact(["control", "global"], (docs) => {
+      assertIdleGlobal(docs.get("global"));
+      return { writes: { control: recoverSync(docs.get("control"), owner, input.acknowledged) }, value: undefined };
+    });
+    recovered.push(names[i]); input.onRecovered?.(names[i]);
+  }
+  return recovered;
 }

@@ -4,15 +4,22 @@ export async function loadStateStore() {
   return import("../../src/server/agent/state.ts");
 }
 
+// Firestore IAM is per database: production state has its own database, never the Preview one (D-047).
+export const PRODUCTION_DATABASE_ID = "paghi-tu-production";
+
 export const EU_FIRESTORE_LOCATIONS = new Set(["europe-west1", "europe-west3", "europe-west4", "eur3"]);
 
 export function readConfig(path) {
   if (!path) throw new Error("Passare --config con un JSON locale verificato.");
   const config = JSON.parse(readFileSync(path, "utf8"));
-  const required = ["gcpProjectId", "gcpProjectNumber", "databaseId", "databaseLocation", "serviceAccountEmail", "workloadIdentityPoolId", "workloadIdentityProviderId", "vercelOwnerId", "vercelProjectId", "vercelIssuer", "vercelJwtAudience", "stsAudience", "previewOrigin"];
+  const environment = config.environment ?? "preview";
+  if (environment !== "preview" && environment !== "production") throw new Error("environment deve essere preview o production.");
+  config.environment = environment;
+  const required = ["gcpProjectId", "gcpProjectNumber", "databaseId", "databaseLocation", "serviceAccountEmail", "workloadIdentityPoolId", "workloadIdentityProviderId", "vercelOwnerId", "vercelProjectId", "vercelIssuer", "vercelJwtAudience", "stsAudience", ...(environment === "preview" ? ["previewOrigin"] : [])];
   for (const key of required) if (typeof config[key] !== "string" || !config[key] || /REQUIRED|PLACEHOLDER|CHANGEME/i.test(config[key])) throw new Error(`Pin mancante o placeholder: ${key}`);
   if (config.gcpProjectId !== "paghi-tu-agent") throw new Error("Il progetto GCP deve essere quello esistente: paghi-tu-agent.");
-  if (!/^https:\/\/[a-z0-9-]+\.vercel\.app$/.test(config.previewOrigin)) throw new Error("Origin Preview non ammessa.");
+  if (environment === "preview" && !/^https:\/\/[a-z0-9-]+\.vercel\.app$/.test(config.previewOrigin)) throw new Error("Origin Preview non ammessa.");
+  if ((environment === "production") !== (config.databaseId === PRODUCTION_DATABASE_ID)) throw new Error(`Il database ${PRODUCTION_DATABASE_ID} è riservato alla produzione, e la produzione usa solo quello.`);
   if (!/^\d+$/.test(config.gcpProjectNumber)) throw new Error("Project number non valido.");
   if (!EU_FIRESTORE_LOCATIONS.has(config.databaseLocation)) throw new Error("La regione DB deve essere nell'allowlist UE verificata.");
   if (!/^[a-z][a-z0-9-]{3,62}$/.test(config.databaseId)) throw new Error("Database ID non valido.");
@@ -64,8 +71,28 @@ export function assertEphemeralStorageSettings(database, backupSchedules) {
   if (backupSchedules.length !== 0) throw new Error("Backup schedules attivi: non accendere Preview.");
 }
 
-export function assertTTLActive(fields, projectId, databaseId) {
-  const expected = `projects/${projectId}/databases/${databaseId}/collectionGroups/agent_preview/fields/expiresAt`;
+export function assertPreviewOnly(config) {
+  if (config.environment !== "preview") throw new Error("Questo comando gira solo sulla Preview, mai sulla produzione.");
+}
+
+export function workloadPrincipal(config) {
+  const pool = `principalSet://iam.googleapis.com/projects/${config.gcpProjectNumber}/locations/global/workloadIdentityPools/${config.workloadIdentityPoolId}`;
+  return config.environment === "production" ? `${pool}/attribute.project_env/${config.vercelProjectId}:production` : `${pool}/attribute.project_id/${config.vercelProjectId}`;
+}
+
+// Production SA: the only workloadIdentityUser is the environment-bound principal. Any other member (a pool-wide
+// principalSet, the Preview attribute, a user) could impersonate it from outside production.
+export function assertWorkloadBindings(config, saPolicy) {
+  if (config.environment !== "production") return;
+  const expected = workloadPrincipal(config);
+  for (const binding of saPolicy?.bindings ?? []) {
+    if (binding.role !== "roles/iam.workloadIdentityUser" && binding.role !== "roles/iam.serviceAccountTokenCreator") continue;
+    if ((binding.members ?? []).some((member) => member !== expected)) throw new Error("La SA di produzione ha impersonatori diversi dal principal di produzione; nessuna modifica.");
+  }
+}
+
+export function assertTTLActive(fields, projectId, databaseId, environment = "preview") {
+  const expected = `projects/${projectId}/databases/${databaseId}/collectionGroups/agent_${environment}/fields/expiresAt`;
   if (!Array.isArray(fields) || fields.length !== 1 || fields[0]?.name !== expected || fields[0]?.ttlConfig?.state !== "ACTIVE") throw new Error("TTL expiresAt non ancora ACTIVE o configurazione divergente: PENDING, attendere e ripetere il setup.");
 }
 

@@ -15,7 +15,7 @@ import { StateUnavailable, type FirestoreStateStore } from "./state.ts";
 import { snapshotHash } from "../../../agent/sync/refresh.ts";
 import { IndexDocument } from "../../../agent/ingest/export.ts";
 
-const config: AgentConfig = { projectId: "paghi-tu-agent", projectNumber: "123456789012", poolId: "pool", providerId: "provider", serviceAccountEmail: "agent@paghi-tu-agent.iam.gserviceaccount.com", engineId: "engine", dataStoreId: "store", databaseId: "preview-db", allowedOrigin: "https://preview.example.vercel.app", ipHashSecret: "x".repeat(32), vercelOwnerId: "team_test", vercelProjectId: "prj_test", vercelAudience: "https://vercel.com/team_test", vercelIssuer: "https://oidc.vercel.com/team_test" };
+const config: AgentConfig = { environment: "preview", projectId: "paghi-tu-agent", projectNumber: "123456789012", poolId: "pool", providerId: "provider", serviceAccountEmail: "agent@paghi-tu-agent.iam.gserviceaccount.com", engineId: "engine", dataStoreId: "store", databaseId: "preview-db", allowedOrigin: "https://preview.example.vercel.app", ipHashSecret: "x".repeat(32), vercelOwnerId: "team_test", vercelProjectId: "prj_test", vercelAudience: "https://vercel.com/team_test", vercelIssuer: "https://oidc.vercel.com/team_test" };
 const body = JSON.stringify({ action: "ask", question: "Ciao", requestId: "11111111-1111-4111-8111-111111111111" });
 const request = (headers: Record<string, string>, payload = body) => new Request("https://preview.example.vercel.app/api/agent", { method: "POST", headers: { "content-type": "application/json", ...headers }, body: payload });
 describe("strict agent HTTP gate", () => {

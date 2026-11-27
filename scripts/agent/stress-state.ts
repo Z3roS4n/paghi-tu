@@ -1,6 +1,6 @@
 import { randomUUID } from "node:crypto";
 import { spawnSync } from "node:child_process";
-import { argsMap, loadStateStore, readConfig } from "./preview-common.mjs";
+import { argsMap, assertPreviewOnly, loadStateStore, readConfig } from "./preview-common.mjs";
 
 const args = argsMap(process.argv.slice(2));
 if (args.has("--help")) {
@@ -8,6 +8,7 @@ if (args.has("--help")) {
   process.exit(0);
 }
 const config = readConfig(args.get("--config"));
+assertPreviewOnly(config);
 if (!args.has("--apply")) {
   console.log(JSON.stringify({ mode: "PLAN_ONLY", scope: "real Firestore, two store instances", database: config.databaseId, namespace: "stress-<uuid>", writes: "one isolated global document", cleanup: "that document only" }));
   process.exit(0);
