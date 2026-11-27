@@ -23,13 +23,14 @@ if (args.has("--help")) {
   process.exit(0);
 }
 const config = readConfig(args.get("--config"));
+const collection = `agent_${config.environment}`;
 const plan = [
   "Preflight identità GCP, project number, SA esistente e IAM corrente",
   "Abilitare API firestore.googleapis.com, iam.googleapis.com, iamcredentials.googleapis.com, sts.googleapis.com se mancanti",
   `Creare o verificare Firestore Native Standard ${config.databaseId} in ${config.databaseLocation}; TTL su expiresAt, PITR e backup off`,
   "Creare/verificare pool e provider OIDC con issuer, audience e claim esatti; binding WIF solo sulla SA runtime",
   "Concedere datastore.user alla SA solo con condizione sul database dedicato; nessun ruolo non condizionato",
-  "Inizializzare control Preview a enabled:false; generare segreto HMAC fuori dal repo con permessi 0600",
+  `Inizializzare control ${config.environment} a enabled:false; generare segreto HMAC fuori dal repo con permessi 0600`,
 ];
 if (!args.has("--apply")) {
   console.log(JSON.stringify({ mode: "PLAN_ONLY", project: config.gcpProjectId, database: config.databaseId, location: config.databaseLocation, steps: plan }, null, 2));
@@ -69,7 +70,7 @@ for (const binding of policy.bindings ?? []) {
 if (!(policy.bindings ?? []).some((binding) => binding.role === "roles/discoveryengine.viewer" && binding.members?.includes(member))) throw new Error("La SA non risulta Discovery Engine viewer nel progetto; verificare i permessi esistenti.");
 const poolArgs = ["iam", "workload-identity-pools", "describe", config.workloadIdentityPoolId, `--project=${config.gcpProjectId}`, "--location=global"];
 const pool = gcloudOptional(...poolArgs);
-const attributeCondition = `assertion.owner_id == '${config.vercelOwnerId}' && assertion.project_id == '${config.vercelProjectId}' && assertion.environment == 'preview'`;
+const attributeCondition = `assertion.owner_id == '${config.vercelOwnerId}' && assertion.project_id == '${config.vercelProjectId}' && assertion.environment == '${config.environment}'`;
 const mapping = "google.subject=assertion.sub,attribute.owner_id=assertion.owner_id,attribute.project_id=assertion.project_id,attribute.environment=assertion.environment";
 const providerArgs = ["iam", "workload-identity-pools", "providers", "describe", config.workloadIdentityProviderId, `--workload-identity-pool=${config.workloadIdentityPoolId}`, `--project=${config.gcpProjectId}`, "--location=global"];
 const provider = pool ? gcloudOptional(...providerArgs) : null;
@@ -86,15 +87,15 @@ const database = gcloud("firestore", "databases", "describe", `--database=${conf
 if (database.locationId !== config.databaseLocation || database.type !== "FIRESTORE_NATIVE") throw new Error("Database mismatch dopo la creazione.");
 const backupSchedules = gcloud("firestore", "backups", "schedules", "list", `--database=${config.databaseId}`, `--project=${config.gcpProjectId}`);
 assertEphemeralStorageSettings(database, backupSchedules);
-const ttlFields = gcloud("firestore", "fields", "ttls", "list", `--collection-group=agent_preview`, `--database=${config.databaseId}`, `--project=${config.gcpProjectId}`);
+const ttlFields = gcloud("firestore", "fields", "ttls", "list", `--collection-group=${collection}`, `--database=${config.databaseId}`, `--project=${config.gcpProjectId}`);
 if (!Array.isArray(ttlFields)) throw new Error("Lettura TTL inconcludente; nessuna modifica ulteriore.");
 if (ttlFields.some((field) => !field.name?.endsWith("/fields/expiresAt"))) throw new Error("TTL esistente su campo diverso; nessun overwrite.");
 if (ttlFields.length === 0) {
-  gcloud("firestore", "fields", "ttls", "update", "expiresAt", "--collection-group=agent_preview", `--database=${config.databaseId}`, "--enable-ttl", `--project=${config.gcpProjectId}`);
-  recordCreated("ttl", "agent_preview/expiresAt");
+  gcloud("firestore", "fields", "ttls", "update", "expiresAt", `--collection-group=${collection}`, `--database=${config.databaseId}`, "--enable-ttl", `--project=${config.gcpProjectId}`);
+  recordCreated("ttl", `${collection}/expiresAt`);
 }
-const ttlAfter = gcloud("firestore", "fields", "ttls", "list", `--collection-group=agent_preview`, `--database=${config.databaseId}`, `--project=${config.gcpProjectId}`);
-assertTTLActive(ttlAfter, config.gcpProjectId, config.databaseId);
+const ttlAfter = gcloud("firestore", "fields", "ttls", "list", `--collection-group=${collection}`, `--database=${config.databaseId}`, `--project=${config.gcpProjectId}`);
+assertTTLActive(ttlAfter, config.gcpProjectId, config.databaseId, config.environment);
 if (!pool) {
   gcloud("iam", "workload-identity-pools", "create", config.workloadIdentityPoolId, `--project=${config.gcpProjectId}`, "--location=global", "--display-name=Paghi Tu Preview");
   recordCreated("wif-pool", config.workloadIdentityPoolId);
@@ -108,19 +109,19 @@ if (!(saPolicy.bindings ?? []).some((binding) => binding.role === "roles/iam.wor
   recordCreated("sa-binding", principal);
 }
 if (!(policy.bindings ?? []).some((binding) => binding.role === "roles/datastore.user" && binding.members?.includes(member) && binding.condition?.expression === expectedCondition)) {
-  gcloud("projects", "add-iam-policy-binding", config.gcpProjectId, "--role=roles/datastore.user", `--member=${member}`, `--condition=expression=${expectedCondition},title=paghi_tu_preview_database,description=Preview database only`);
+  gcloud("projects", "add-iam-policy-binding", config.gcpProjectId, "--role=roles/datastore.user", `--member=${member}`, `--condition=expression=${expectedCondition},title=paghi_tu_${config.environment}_database,description=${config.environment} database only`);
   recordCreated("database-binding", member);
 }
 const tokenResult = spawnSync("gcloud", ["auth", "print-access-token"], { encoding: "utf8" });
 if (tokenResult.status !== 0) throw new Error("Token operatore non disponibile.");
 const documentId = Buffer.from("control").toString("base64url");
-const root = `https://firestore.googleapis.com/v1/projects/${config.gcpProjectId}/databases/${config.databaseId}/documents/agent_preview`;
+const root = `https://firestore.googleapis.com/v1/projects/${config.gcpProjectId}/databases/${config.databaseId}/documents/${collection}`;
 const headers = { authorization: `Bearer ${tokenResult.stdout.trim()}`, "content-type": "application/json" };
 const current = await fetch(`${root}/${documentId}`, { headers, redirect: "error" });
 if (current.status === 404) {
   const created = await fetch(`${root}?documentId=${documentId}`, { method: "POST", headers, body: JSON.stringify({ fields: { payload: { stringValue: JSON.stringify({ enabled: false }) } } }), redirect: "error" });
   if (created.status !== 200) throw new Error("Control init non confermato; verificare manualmente prima di ripetere.");
-  recordCreated("control-document", "agent_preview/control");
+  recordCreated("control-document", `${collection}/control`);
 } else if (current.status === 200) {
   const doc = await current.json();
   const control = JSON.parse(doc.fields?.payload?.stringValue ?? "null");

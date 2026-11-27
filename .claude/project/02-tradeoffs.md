@@ -552,3 +552,15 @@ Revisione del 2026-11-01: la validazione (npm ci, test, build) gira in un job se
 - **Scelta:** dentro le virgolette dei frontespizi si trascrive con le maiuscole normali; parole, ordine e tagli («[…]») restano esattamente quelli della fonte. Vale solo per i frontespizi stampati tutti in maiuscolo, non per le citazioni delle promesse, che restano come nella fonte.
 - **Conseguenze:** nessuna riga cambia. Chi controlla una citazione di frontespizio la confronta senza distinguere maiuscole e minuscole.
 - **Data:** 2026-11-08
+
+
+## Produzione predisposta — 27 novembre 2026
+
+### D-047 — Produzione predisposta e spenta, con stato e identità separati
+- **Stato:** implementata da Claude il 2026-11-27 su mandato Giovanni; spenta. Accensione, privacy e limiti restano decisioni del titolare dopo la verifica live di Antonio. Aggiorna D-043 («produzione sempre disabilitata»): ora la produzione è predisposta ma resta disabilitata finché non si accendono due interruttori.
+- **Contesto:** in D-043 il ruolo `datastore.user` è condizionato sul database (`resource.name`) e l'identità Preview vale per ogni deploy Preview, di qualunque ramo. Un namespace `production` dentro `paghi-tu-preview` sarebbe scrivibile da qualsiasi ramo Preview: control, contatori, lease.
+- **Scelta:** l'ambiente arriva solo da `VERCEL_ENV`. La produzione richiede `AGENT_ENABLED=1` e `AGENT_PRODUCTION_ENABLED=1`; il secondo abilita e non sceglie. La produzione usa il database `paghi-tu-production` e solo quello, mentre la Preview non può usarlo. Il claim OIDC `environment` deve coincidere con l'ambiente della config e lo stato vive nel namespace omonimo. Service account e provider WIF di produzione sono dedicati (condizione `assertion.environment == 'production'`). Il token di accesso si riusa per 10 minuti per istanza e per ambiente; ogni richiesta controlla comunque l'asserzione OIDC.
+- **Indice:** l'indice Vertex resta uno solo. La sync blocca tutti i target in `AGENT_SYNC_TARGETS` (default `preview`, allow-list chiusa di coppie database e namespace) prima di toccare Vertex e marca ciascuno dopo. Un lock fallito a metà lascia spenti i target già bloccati, senza toccare Vertex. Uno stamp fallito lascia spento quel target. Il recupero agisce solo sui target che portano il marcatore del proprietario indicato.
+- **Limiti:** la pagina è statica e il gate si valuta al build: cambiare gli interruttori richiede un nuovo deploy, e il kill switch a runtime resta `control`. I limiti di D-043 valgono anche in produzione ma non fermano un abuso da IP diversi, che può esaurire il tetto giornaliero; serve un limite davanti alla route (Vercel Firewall o BotID), da decidere prima dell'accensione. Lo scambio di identità resta prima dei limiti: la cache lo riduce, non lo elimina. Stress e verifica restano solo Preview.
+- **Consegna:** [runbook di produzione](reports/2026-11-27-production-wiring.md).
+- **Data:** 2026-11-27

@@ -1,4 +1,5 @@
 {
+  "environment": "preview",
   "gcpProjectId": "paghi-tu-agent",
   "gcpProjectNumber": "REQUIRED_VERIFIED_PROJECT_NUMBER",
   "databaseId": "paghi-tu-preview",

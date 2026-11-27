@@ -12,7 +12,7 @@ const disable = args.has("--disable");
 const recover = args.has("--recover");
 if ([enable, disable, recover].filter(Boolean).length > 1) throw new Error("Scegliere una sola operazione.");
 if (!args.has("--read") && !args.has("--apply")) {
-  console.log(JSON.stringify({ mode: "PLAN_ONLY", project: config.gcpProjectId, database: config.databaseId, namespace: "preview", action: enable ? "enable" : disable ? "disable" : recover ? "recover" : "read" }));
+  console.log(JSON.stringify({ mode: "PLAN_ONLY", project: config.gcpProjectId, database: config.databaseId, namespace: config.environment, action: enable ? "enable" : disable ? "disable" : recover ? "recover" : "read" }));
   process.exit(0);
 }
 if (args.has("--apply") && !enable && !disable && !recover) throw new Error("--apply richiede --enable, --disable o --recover.");
@@ -20,7 +20,7 @@ if (recover && (!args.has("--apply") || !args.has("--ack-unknown-outcome") || !a
 const token = spawnSync("gcloud", ["auth", "print-access-token"], { encoding: "utf8" });
 if (token.status !== 0) throw new Error("Token operatore non disponibile.");
 const { FirestoreStateStore } = await loadStateStore();
-const state = new FirestoreStateStore({ projectId: config.gcpProjectId, databaseId: config.databaseId, namespace: "preview", accessToken: async () => token.stdout.trim() });
+const state = new FirestoreStateStore({ projectId: config.gcpProjectId, databaseId: config.databaseId, namespace: config.environment, accessToken: async () => token.stdout.trim() });
 const control = await state.transact(["control", "global"], (docs) => {
   const current = docs.get("control");
   const global = docs.get("global");

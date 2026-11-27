@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { AgentChat } from "@/components/agent/agent-chat";
 import { PageHead, Wrap } from "@/components/ui";
+import { agentEnvironment } from "@/server/agent/config";
 
 export const metadata: Metadata = {
   title: "Assistente in anteprima",
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 export default function AssistantPage() {
-  if (process.env.AGENT_ENABLED !== "1" || process.env.VERCEL_ENV !== "preview") notFound();
+  if (!agentEnvironment(process.env)) notFound();
 
   return (
     <Wrap className="pb-20">

@@ -78,3 +78,11 @@ describe("Firestore REST transaction adapter", () => {
     expect(requests[2].signal?.aborted).toBe(false);
   });
 });
+
+describe("namespaces (D-047)", () => {
+  const make = (namespace: string) => new FirestoreStateStore({ projectId: "paghi-tu-agent", databaseId: "paghi-tu-production", namespace, accessToken: async () => "test-token", fetch: (async () => new Response("{}")) as typeof fetch });
+  it("accepts production explicitly and nothing that only looks like it", () => {
+    expect(() => make("production")).not.toThrow();
+    for (const namespace of ["prod", "Production", "production-x", "production_", "preview production"]) expect(() => make(namespace)).toThrow();
+  });
+});

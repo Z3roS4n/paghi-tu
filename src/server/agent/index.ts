@@ -31,7 +31,7 @@ const config = loadAgentConfig();
 export const handleAgentPost = createAgentHandler({
   config,
   getToken: getRuntimeAccessToken,
-  state: (cfg, token, signal) => new FirestoreStateStore({ projectId: cfg.projectId, databaseId: cfg.databaseId, namespace: "preview", accessToken: async () => token, signal }),
+  state: (cfg, token, signal) => new FirestoreStateStore({ projectId: cfg.projectId, databaseId: cfg.databaseId, namespace: cfg.environment, accessToken: async () => token, signal }),
   index: loadAgentIndex,
   log: (audit) => console.info(JSON.stringify(audit)),
 });

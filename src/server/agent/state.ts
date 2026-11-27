@@ -14,7 +14,7 @@ export class FirestoreStateStore {
   private readonly fetcher: typeof fetch;
   constructor(options: StateOptions) {
     this.options = options;
-    if (!/^[a-z][a-z0-9-]{3,62}$/.test(options.projectId) || !/^[a-z][a-z0-9-]{3,62}$/.test(options.databaseId) || !/^(?:preview|stress-[a-z0-9-]{8,50})$/.test(options.namespace)) throw new StateUnavailable();
+    if (!/^[a-z][a-z0-9-]{3,62}$/.test(options.projectId) || !/^[a-z][a-z0-9-]{3,62}$/.test(options.databaseId) || !/^(?:preview|production|stress-[a-z0-9-]{8,50})$/.test(options.namespace)) throw new StateUnavailable();
     this.root = `projects/${options.projectId}/databases/${options.databaseId}/documents`;
     this.collection = `agent_${options.namespace.replaceAll("-", "_")}`;
     this.fetcher = options.fetch ?? fetch;

@@ -1,6 +1,6 @@
 import { randomUUID } from "node:crypto";
 import { spawnSync } from "node:child_process";
-import { argsMap, exactPreviewTarget, loadStateStore, readConfig } from "./preview-common.mjs";
+import { argsMap, assertPreviewOnly, exactPreviewTarget, loadStateStore, readConfig } from "./preview-common.mjs";
 
 const args = argsMap(process.argv.slice(2));
 if (args.has("--help")) {
@@ -8,6 +8,7 @@ if (args.has("--help")) {
   process.exit(0);
 }
 const config = readConfig(args.get("--config"));
+assertPreviewOnly(config);
 const target = exactPreviewTarget(config.previewOrigin + "/", config.previewOrigin);
 const paid = args.has("--paid-vertex");
 const count = args.has("--count") ? Number(args.get("--count")) : paid ? 3 : 50;

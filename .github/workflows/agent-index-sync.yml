@@ -78,6 +78,8 @@ jobs:
           AGENT_SYNC_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
           AGENT_SYNC_PROJECT: paghi-tu-agent
           AGENT_SYNC_DATABASE: paghi-tu-preview
+          # Default preview only; add production after its database, IAM and TTL exist (D-047).
+          AGENT_SYNC_TARGETS: ${{ vars.AGENT_SYNC_TARGETS || 'preview' }}
           AGENT_SYNC_STORE: ${{ vars.AGENT_SYNC_STORE }}
           AGENT_SYNC_ENGINE: ${{ vars.AGENT_SYNC_ENGINE }}
           AGENT_SYNC_COMMIT: ${{ github.sha }}

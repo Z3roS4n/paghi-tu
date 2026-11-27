@@ -39,3 +39,6 @@ Piano del team `msworks-project`. Sito statico senza funzioni a runtime.
 ## Preview protetta assistente — 31 ottobre 2026
 
 Integrazione implementata localmente, wiring PENDING ANTONIO. SDK `@vercel/oidc` 4.0.5; token server scambiato con Google STS, claim owner_id/project_id/environment fissati, issuer/audience esatti. Deployment Protection nativa obbligatoria su pagina e API; verifica anonima distinta dalla risposta applicativa 503. Solo env Preview, nessun seat aggiuntivo, nessun deploy `--prod`. UI di test, design finale Antonio. [Env, setup, stress e rollback](../project/reports/2026-10-31-preview-wiring.md). Nessun webhook nuovo.
+
+## Assistente (Preview e produzione)
+L'assistente usa il token OIDC di Vercel (claim `environment` legato all'ambiente, D-043 e D-047) e variabili per ambiente: in Preview `AGENT_ENABLED`, in produzione anche `AGENT_PRODUCTION_ENABLED` (spenta di default). `/assistente` è statica, quindi gli interruttori valgono dal deploy successivo. Elenco e procedura nel [runbook di produzione](../project/reports/2026-11-27-production-wiring.md).

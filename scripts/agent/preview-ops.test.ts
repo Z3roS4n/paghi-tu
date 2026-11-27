@@ -85,3 +85,18 @@ test("requires a verified index stamp and no sync marker before manual enable", 
   expect(() => assertIndexReadyControl({ indexSha256: "a".repeat(64), sync: { owner: "sync" } })).toThrow();
   expect(() => assertIndexReadyControl({ indexSha256: "a".repeat(64) })).not.toThrow();
 });
+
+test("production config needs its own database and never runs Preview-only commands (D-047)", async () => {
+  const { assertPreviewOnly } = await import("./preview-common.mjs");
+  const production = readConfig(config({ environment: "production", databaseId: "paghi-tu-production", previewOrigin: "" }));
+  expect(production.environment).toBe("production");
+  expect(() => assertPreviewOnly(production)).toThrow();
+  expect(readConfig(config()).environment).toBe("preview");
+  expect(() => assertPreviewOnly(readConfig(config()))).not.toThrow();
+  expect(() => readConfig(config({ environment: "production" }))).toThrow();
+  expect(() => readConfig(config({ databaseId: "paghi-tu-production" }))).toThrow();
+  expect(() => readConfig(config({ environment: "staging" }))).toThrow();
+  const name = "projects/paghi-tu-agent/databases/paghi-tu-production/collectionGroups/agent_production/fields/expiresAt";
+  expect(() => assertTTLActive([{ name, ttlConfig: { state: "ACTIVE" } }], "paghi-tu-agent", "paghi-tu-production", "production")).not.toThrow();
+  expect(() => assertTTLActive([{ name, ttlConfig: { state: "ACTIVE" } }], "paghi-tu-agent", "paghi-tu-production")).toThrow();
+});

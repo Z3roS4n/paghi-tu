@@ -114,3 +114,44 @@ it("probes readiness only on changed and removed documents", async () => {
   expect(changed.map((d) => d.id)).toEqual([docs[21].id]);
   expect(removed.map((d) => d.id)).toEqual([docs[0].id]);
 });
+
+describe("refresh across environments (D-047)", () => {
+  it("locks every state before Vertex and stamps each one", async () => {
+    const preview = new State(); const production = new State(); production.docs.set("control", { enabled: false, version: 4 });
+    const r = remote(docs.slice(0, 21)); const order: string[] = [];
+    const store = r.upsert.getMockImplementation()!;
+    r.upsert.mockImplementation(async (ds) => { await store(ds); order.push(`upsert:${record(preview.docs.get("control")).enabled}:${record(production.docs.get("control")).enabled}`); });
+    const out = await refreshIndex({ snapshot: snapshot(), states: [preview, production], remote: r, commit });
+    expect(order).toEqual(["upsert:false:false"]);
+    expect(preview.docs.get("control")).toMatchObject({ enabled: true, indexSha256: snapshot().hash });
+    expect(production.docs.get("control")).toMatchObject({ enabled: false, indexSha256: snapshot().hash });
+    expect(out).toMatchObject({ enabled: false, enabledByState: [true, false] });
+  });
+  it("touches no Vertex document when a later lock fails, and leaves the earlier state disabled", async () => {
+    const preview = new State(); const production = new State(); production.docs.set("control", { enabled: true, sync: { owner: "other" } });
+    const r = remote(docs.slice(0, 21));
+    await expect(refreshIndex({ snapshot: snapshot(), states: [preview, production], remote: r, commit })).rejects.toThrow("sync blocked by state");
+    expect(r.upsert).not.toHaveBeenCalled(); expect(r.remove).not.toHaveBeenCalled();
+    expect(preview.docs.get("control")).toMatchObject({ enabled: false, sync: { hash: snapshot().hash } });
+  });
+  it("keeps a state disabled when its own stamp fails", async () => {
+    const preview = new State(); const production = new State();
+    // Fails only the final stamp, the write that carries indexSha256.
+    const failingStamp: SyncState = { transact: (keys, fn) => production.transact(keys, (values) => { const result = fn(values); if (record(result.writes.control).indexSha256) throw new Error("stamp failed"); return result; }) };
+    await expect(refreshIndex({ snapshot: snapshot(), states: [preview, failingStamp], remote: remote(), commit })).rejects.toThrow("stamp failed");
+    expect(preview.docs.get("control")).toMatchObject({ enabled: true, indexSha256: snapshot().hash });
+    expect(production.docs.get("control")).toMatchObject({ enabled: false, sync: { hash: snapshot().hash } });
+  });
+  it("needs exactly one way to pass states", async () => {
+    await expect(refreshIndex({ snapshot: snapshot(), remote: remote(), commit })).rejects.toThrow("sync states required");
+    await expect(refreshIndex({ snapshot: snapshot(), state: new State(), states: [new State()], remote: remote(), commit })).rejects.toThrow("sync states required");
+    await expect(refreshIndex({ snapshot: snapshot(), states: [], remote: remote(), commit })).rejects.toThrow("sync states required");
+  });
+  it("gives the same calls with `state` and with a single-element `states`", async () => {
+    const a = new State(); const b = new State(); const ra = remote(docs.slice(0, 21)); const rb = remote(docs.slice(0, 21));
+    const outA = await refreshIndex({ snapshot: snapshot(), state: a, remote: ra, commit, owner: "o", now: () => 1 });
+    const outB = await refreshIndex({ snapshot: snapshot(), states: [b], remote: rb, commit, owner: "o", now: () => 1 });
+    expect(outB).toEqual(outA); expect(b.docs).toEqual(a.docs);
+    for (const k of ["list", "upsert", "remove", "ready"] as const) expect(rb[k].mock.calls).toEqual(ra[k].mock.calls);
+  });
+});
