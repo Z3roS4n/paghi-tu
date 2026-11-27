@@ -51,6 +51,12 @@ e nel piè di pagina. Un solo colore (terracotta, D-011), lettere del timbro in 
 caricano i caratteri del sito. L'ironia resta nel nome e nel timbro, mai nei contenuti: il timbro non compare accanto a
 partiti, persone o dati.
 
+## D-UI-09 — Paghi Tu Agent: chat della bozza D (2026-11-27)
+La pagina `/assistente` prende il nome «Paghi Tu Agent» e la grafica della bozza D: domanda in bolla scura a destra,
+risposta in scheda con fonti e livello V1/V2/NV (`LevelTag`), astensione con bordo tratteggiato, errori su fondo night.
+Sotto 1024 px il campo sta fisso sopra il dock. Le domande pronte vengono dal golden set con risposta attesa, così
+l'anteprima non suggerisce domande a cui l'agente deve astenersi. Logica di richiesta, timeout e reset invariata.
+
 <!--
 Template voce successiva:
 

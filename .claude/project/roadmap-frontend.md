@@ -33,8 +33,10 @@ per fase/sezione.
 | B5 | Elenco governi con debito durante il mandato | `/governi` | `GovernmentDebt` | ✅ |
 | B7 | Redesign C su tutte le pagine | tutte | `components/sections/finance.tsx` | ✅ |
 | B6 | Spesa 1946–1994 | `/spesa` | — | ⬜ (DI-01) |
+| B8 | Paghi Tu Agent (solo Preview) | `/assistente` | `components/agent/agent-chat.tsx` | ✅ (D-UI-09) |
 
 ## Log avanzamento
 - 2026-10-21 — Avvio. Creati `design/` (README, design-system, decisions, da-implementare) e questa roadmap.
 - 2026-10-21 — Home, `/spesa`, conti per governo e archivio implementati e verificati a 1280 e 500 px.
 - 2026-10-21 — Redesign C (D-UI-06, D-UI-07) su tutte le pagine: nuova palette, font, dock mobile, racconto dei 100 € a pannello unico, grafici interattivi, confronto UE, semestre 2026. Verificato a 390 e 1280 px, chiaro e scuro, con scroll reale.
+- 2026-11-27 — Paghi Tu Agent: chat di `/assistente` dalla bozza D (D-UI-09). Verificata a 390 e 1280 px, chiaro e scuro, con risposte simulate.
