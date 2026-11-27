@@ -12,6 +12,9 @@ on:
       - 'src/lib/domain/**'
       - 'package-lock.json'
       - '.github/workflows/agent-index-sync.yml'
+  # Nightly run: tests and build again, then a no-op sync when nothing changed (D-047).
+  schedule:
+    - cron: '30 3 * * *'
   workflow_dispatch:
 permissions:
   contents: read

@@ -22,7 +22,11 @@ Decisione: [D-047](../02-tradeoffs.md). Il runbook Preview ([2026-10-31-preview-
    - documento `control` iniziale `{enabled:false}`;
    - un segreto HMAC nuovo.
 3. Il service account di produzione va creato prima e deve essere diverso da quello della Preview: lo script controlla i suoi impersonatori, non chi altro usa lo stesso indirizzo. Ruoli: sola ricerca su Vertex e il binding sopra. Nessun binding del service account Preview sul database di produzione.
-4. Identità GitHub della sync: `datastore.user` condizionato anche su `paghi-tu-production`, poi variabile di repository `AGENT_SYNC_TARGETS=preview,production` (la imposta Antonio). Senza la variabile la sync tocca solo la Preview; dopo la prima sync su due target, una sync che ne esclude uno si rifiuta (`sync targets narrowed`). Per togliere davvero un ambiente: spegnerlo con `control --disable`, poi togliere `indexTargets` dal `control` degli altri, con una scrittura manuale dichiarata.
+4. Identità GitHub della sync (risorse GCP create il 27 novembre: service account `paghi-runtime-prod`, pool `vercel-production`, provider `vercel-certalea`, database `paghi-tu-production`): `datastore.user` condizionato anche su `paghi-tu-production`, poi variabile di repository `AGENT_SYNC_TARGETS=preview,production` (la imposta Antonio). Senza la variabile la sync tocca solo la Preview; dopo la prima sync su due target, una sync che ne esclude uno si rifiuta (`sync targets narrowed`). Per togliere davvero un ambiente: spegnerlo con `control --disable`, poi togliere `indexTargets` dal `control` degli altri, con una scrittura manuale dichiarata.
+
+## Sync notturna (Antonio)
+
+Il workflow `agent-index-sync` parte a ogni push su main che tocca dati o agente, e ogni notte alle 03:30 UTC. Serve la variabile di repository `AGENT_INDEX_SYNC_ENABLED=1`. Il job `validate` lancia `npm test`: finché `agent/evals/verifica-fonti.json` non è rigenerato per il golden set corrente, i 2 test di `verifica.test.ts` falliscono e la sync non parte.
 
 ## Vercel (Antonio)
 
