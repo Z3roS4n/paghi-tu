@@ -1,0 +1,324 @@
+<!doctype html>
+<!--
+  Bozza D, «Assistente»: la pagina /assistente nel design C2 (Piazza). Da implementare in
+  src/components/agent/ (vista presentazionale) e src/app/assistente/page.tsx, senza cambiare
+  il contratto di /api/agent (src/lib/agent-contract.ts) né la logica di AgentChat.
+  La barra «Stato della bozza» in alto serve solo a sfogliare gli stati: non va implementata.
+  Le cifre degli esempi vengono dal golden set (agent/evals/domande.jsonl, casi FP-debito-2026-08,
+  FP-ue-debito-2025, MAN-OUT-03): sono i valori attesi, non risposte generate dal modello.
+  Palette e caratteri come c2-piazza.html; nessun controllo nativo a vista.
+-->
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chiedi ai dati · Paghi Tu</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#ECEEEE" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14181A" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Figtree:ital,wght@0,400..800;1,400..600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+<style>
+:root{
+  --fondo:#ECEEEE; --sup:#F8F9F9; --sup-2:#E1E5E6; --ink:#1F2427; --ink-2:#465055; --ink-3:#5E686D; --filetto:#CDD3D5;
+  --acc:#A4461F; --acc-ink:#FFFFFF; --acc-chiaro:#F3DDD2; --notte:#232A2E; --notte-ink:#EEF0F0;
+  --v1:#3F474B; --v2:#7A5300; --v2-fondo:#F2E7CF; --nv:#B91C1C;
+  --ombra:0 1px 2px rgb(31 36 39 / .06), 0 14px 34px -18px rgb(31 36 39 / .3);
+  --r:6px; --r-s:4px;
+  --titoli:"Bricolage Grotesque", system-ui, sans-serif;
+  --testo:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --gutter:16px; --dock:64px; --testata:60px;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --fondo:#14181A; --sup:#1D2326; --sup-2:#262E32; --ink:#E9ECED; --ink-2:#B4BDC1; --ink-3:#939DA2; --filetto:#344045;
+    --acc:#E9875C; --acc-ink:#14181A; --acc-chiaro:#3D2A22; --notte:#0F1213; --notte-ink:#E9ECED;
+    --v1:#D4D9DB; --v2:#F2C66B; --v2-fondo:#3A2F17; --nv:#F87171;
+    --ombra:0 1px 2px rgb(0 0 0 / .3), 0 14px 34px -18px rgb(0 0 0 / .7);
+  }
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--fondo);color:var(--ink);font:400 17px/1.6 var(--testo);overflow-x:hidden}
+a{color:var(--acc);text-underline-offset:3px;text-decoration-thickness:1.5px}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:var(--r-s)}
+p{margin:0}
+h1,h2,h3{font-family:var(--titoli);font-weight:800;margin:0;line-height:1.08;letter-spacing:-.02em;text-wrap:balance}
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--gutter)}
+.num{font-variant-numeric:tabular-nums}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* barra della bozza (solo per sfogliare gli stati) */
+.bozza{background:var(--notte);color:var(--notte-ink);font-size:13px}
+.bozza .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding-top:8px;padding-bottom:8px}
+.bozza b{margin-right:6px}
+.bozza button{appearance:none;font:600 13px var(--testo);color:inherit;background:transparent;border:1px solid #4a555b;border-radius:var(--r-s);padding:4px 10px;min-height:32px;cursor:pointer}
+.bozza button[aria-pressed="true"]{background:var(--notte-ink);color:var(--notte)}
+
+/* testata e dock come C2 */
+.testata{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--fondo) 90%, transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--filetto)}
+.testata .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:var(--testata)}
+.marchio{display:inline-flex;align-items:center;gap:8px;min-height:44px;text-decoration:none;color:var(--ink);font-family:var(--titoli);font-weight:800;font-size:22px;letter-spacing:-.02em}
+.marchio i{color:var(--acc);font-size:26px}
+.nav-alto{display:none}
+.nav-alto a{display:inline-flex;align-items:center;min-height:40px;padding:0 12px;border-radius:var(--r-s);text-decoration:none;color:var(--ink);font-weight:600;font-size:15px}
+.nav-alto a:hover{background:var(--sup-2)}
+@media (min-width:1024px){.nav-alto{display:flex;gap:2px}}
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:4px 8px env(safe-area-inset-bottom);background:color-mix(in srgb, var(--sup) 94%, transparent);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-top:1px solid var(--filetto)}
+.dock ul{list-style:none;margin:0 auto;padding:0;display:grid;grid-template-columns:repeat(5,1fr);max-width:520px}
+.dock a{font:700 12px var(--testo);color:var(--ink-2);width:100%;min-height:var(--dock);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-decoration:none}
+.dock .ico{width:48px;height:30px;border-radius:var(--r-s);display:grid;place-items:center;font-size:22px}
+.dock [aria-current]{color:var(--ink)}
+.dock [aria-current] .ico{background:var(--acc-chiaro);color:var(--acc)}
+@media (min-width:1024px){.dock{display:none}}
+
+/* pagina */
+main{padding:28px 0 calc(var(--dock) + 150px + env(safe-area-inset-bottom))}
+@media (min-width:1024px){main{padding-bottom:48px}}
+.griglia{display:grid;gap:24px}
+@media (min-width:1024px){.griglia{grid-template-columns:minmax(0,1fr) 320px;gap:40px;align-items:start}}
+.occhiello{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--acc)}
+h1{font-size:clamp(2.1rem,5vw,3.8rem);margin-top:8px}
+.intro{margin-top:12px;color:var(--ink-2);max-width:60ch}
+.avviso-ai{margin-top:18px;display:flex;gap:10px;align-items:flex-start;background:var(--sup);border:1px solid var(--filetto);border-radius:var(--r);padding:12px 14px;font-size:15px;color:var(--ink-2)}
+.avviso-ai i{color:var(--acc);font-size:20px;margin-top:2px}
+
+/* conversazione */
+.chat{margin-top:24px;display:flex;flex-direction:column;gap:18px}
+.domanda{align-self:flex-end;max-width:min(86%,560px);background:var(--ink);color:var(--fondo);border-radius:var(--r) var(--r) var(--r-s) var(--r);padding:10px 14px;font-weight:600}
+.risposta{background:var(--sup);border-radius:var(--r);padding:16px 16px 14px;border:1px solid var(--filetto)}
+.risposta header{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:var(--ink-3);margin-bottom:8px}
+.risposta header i{color:var(--acc);font-size:18px}
+.risposta .testo{white-space:pre-wrap}
+.cifra{display:block;font-family:var(--titoli);font-weight:800;font-size:clamp(1.8rem,4vw,2.4rem);line-height:1.1;margin:4px 0 6px;letter-spacing:-.02em}
+.astensione{border-style:dashed;background:transparent}
+.astensione header{color:var(--ink-2)}
+.nota{margin-top:10px;font-size:14px;color:var(--ink-3)}
+.fonti{list-style:none;margin:14px 0 0;padding:12px 0 0;border-top:1px solid var(--filetto);display:grid;gap:8px}
+.fonti li{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;align-items:baseline;font-size:14px}
+.livello{font:800 11px/1 var(--testo);letter-spacing:.06em;border-radius:var(--r-s);padding:4px 6px;border:1.5px solid currentColor}
+.livello.v1{color:var(--v1)} .livello.v2{color:var(--v2);background:var(--v2-fondo);border-color:transparent} .livello.nv{color:var(--nv)}
+.fonti .tit{font-weight:700;color:var(--ink)}
+.fonti .link{grid-column:2;display:flex;flex-wrap:wrap;gap:4px 14px}
+.fonti .link a{display:inline-flex;align-items:center;gap:4px;min-height:32px;font-weight:600}
+.suggerimenti{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chip{appearance:none;font:600 15px var(--testo);color:var(--ink);background:var(--sup);border:1px solid var(--filetto);border-radius:var(--r-s);padding:8px 12px;min-height:44px;text-align:left;cursor:pointer}
+.chip:hover{border-color:var(--acc)}
+.vuoto{background:var(--sup);border-radius:var(--r);padding:20px;border:1px solid var(--filetto)}
+.vuoto h2{font-size:1.4rem}
+.vuoto p{color:var(--ink-2);margin-top:6px}
+.attesa{display:flex;align-items:center;gap:10px;color:var(--ink-2);font-weight:600}
+.puntini{display:inline-flex;gap:4px}
+.puntini span{width:7px;height:7px;border-radius:50%;background:var(--acc);opacity:.35}
+@media (prefers-reduced-motion:no-preference){
+  .puntini span{animation:batte 1.1s infinite ease-in-out}
+  .puntini span:nth-child(2){animation-delay:.15s} .puntini span:nth-child(3){animation-delay:.3s}
+  @keyframes batte{0%,80%,100%{opacity:.35;transform:none}40%{opacity:1;transform:translateY(-3px)}}
+}
+.errore{display:flex;gap:10px;align-items:flex-start;background:var(--notte);color:var(--notte-ink);border-radius:var(--r);padding:14px 16px;font-size:15px}
+.errore i{font-size:20px;margin-top:1px;color:#E9875C}
+.errore strong{display:block}
+
+/* compositore: in fondo alla colonna su desktop, sopra il dock su mobile */
+.compositore{position:fixed;left:0;right:0;bottom:calc(var(--dock) + env(safe-area-inset-bottom) + 8px);z-index:15;padding:10px var(--gutter) 10px;background:color-mix(in srgb, var(--fondo) 94%, transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-top:1px solid var(--filetto)}
+@media (min-width:1024px){.compositore{position:sticky;bottom:0;margin-top:24px;padding:16px 0 20px;background:var(--fondo);border:0;-webkit-backdrop-filter:none;backdrop-filter:none}}
+.campo{background:var(--sup);border:1.5px solid var(--filetto);border-radius:var(--r);padding:8px 10px 6px;box-shadow:var(--ombra)}
+.campo:focus-within{border-color:var(--acc)}
+.campo label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.campo textarea{display:block;width:100%;resize:none;border:0;background:transparent;color:var(--ink);font:400 17px/1.5 var(--testo);padding:4px 0;min-height:30px;max-height:160px;field-sizing:content}
+@media (min-width:1024px){.campo{padding:10px 12px 8px}.campo label{position:static;width:auto;height:auto;overflow:visible;clip:auto;display:block;font-size:13px;font-weight:700;color:var(--ink-2)}.campo textarea{min-height:52px}}
+.campo textarea:focus{outline:none}
+.campo textarea::placeholder{color:var(--ink-3)}
+.riga{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:4px}
+.conta{font-size:13px;color:var(--ink-3)}
+.conta.vicino{color:var(--v2);font-weight:700}
+.azioni{display:flex;gap:8px}
+.btn{appearance:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 18px;border-radius:var(--r-s);font:700 16px var(--testo);cursor:pointer;border:1.5px solid transparent}
+.btn.primario{background:var(--acc);color:var(--acc-ink)}
+.btn.secondario{background:transparent;color:var(--ink);border-color:var(--filetto)}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.btn.icona{width:48px;padding:0}
+@media (max-width:420px){.btn.secondario .et{display:none}.btn.secondario{width:48px;padding:0}}
+
+/* colonna laterale: da 1024 px a destra; sotto, gli stessi riquadri dentro «Come funziona» */
+.lato{display:none;gap:16px}
+@media (min-width:1024px){.lato{display:grid}.come{display:none}}
+.come{margin-top:12px;border:1px solid var(--filetto);border-radius:var(--r);background:var(--sup)}
+.come summary{display:flex;align-items:center;gap:8px;min-height:48px;padding:0 14px;font-weight:700;font-size:15px;cursor:pointer;list-style:none}
+.come summary::-webkit-details-marker{display:none}
+.come summary i{color:var(--acc);font-size:18px}
+.come-corpo{display:grid;gap:12px;padding:0 12px 12px}
+.come-corpo .box{background:var(--fondo)}
+.box{background:var(--sup);border-radius:var(--r);padding:16px;border:1px solid var(--filetto);font-size:15px}
+.box h2{font-size:1.1rem;margin-bottom:8px}
+.box ul{margin:0;padding-left:18px;color:var(--ink-2);display:grid;gap:6px}
+.box p{color:var(--ink-2)}
+.legenda{list-style:none;padding:0!important;display:grid;gap:8px}
+.legenda li{display:flex;gap:10px;align-items:baseline}
+</style>
+</head>
+<body>
+
+<div class="bozza" role="region" aria-label="Stato della bozza">
+  <div class="wrap">
+    <b>Stato della bozza</b>
+    <button type="button" data-stato="vuoto">Vuoto</button>
+    <button type="button" data-stato="conversazione" aria-pressed="true">Conversazione</button>
+    <button type="button" data-stato="attesa">Caricamento</button>
+    <button type="button" data-stato="astensione">Astensione</button>
+    <button type="button" data-stato="limite">Errore 429</button>
+    <button type="button" data-stato="incorso">Errore 409</button>
+    <button type="button" data-stato="timeout">Tempo scaduto</button>
+  </div>
+</div>
+
+<header class="testata">
+  <div class="wrap">
+    <a class="marchio" href="#"><i class="ph-fill ph-receipt" aria-hidden="true"></i>Paghi Tu</a>
+    <nav class="nav-alto" aria-label="Sezioni">
+      <a href="#">Spesa</a><a href="#">Governi</a><a href="#">Leggi di bilancio</a><a href="#">Promesse</a><a href="#">Misure</a><a href="#">Archivio</a><a href="#">Metodo</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap griglia">
+    <div>
+      <span class="occhiello"><i class="ph-bold ph-lock-simple" aria-hidden="true"></i>Anteprima protetta</span>
+      <h1>Chiedi ai dati di Paghi Tu</h1>
+      <p class="intro">Un assistente AI cerca nei dati pubblicati sul sito e mostra le fonti usate. Se non trova una risposta verificabile, si astiene.</p>
+      <p class="avviso-ai"><i class="ph-bold ph-sparkle" aria-hidden="true"></i><span>Risposte generate da AI, da controllare sulle fonti indicate. Non inserire dati personali.</span></p>
+
+      <details class="come">
+        <summary><i class="ph-bold ph-info" aria-hidden="true"></i>Come funziona: cosa chiedere, livelli di verifica, dati conservati</summary>
+        <div class="come-corpo" id="come-corpo"></div>
+      </details>
+
+      <section class="chat" id="chat" aria-label="Conversazione con l’assistente" aria-live="polite"></section>
+
+      <form class="compositore" id="compositore" onsubmit="return false">
+        <div class="campo">
+          <label for="domanda">La tua domanda</label>
+          <textarea id="domanda" rows="2" maxlength="300" placeholder="Per esempio: quanto è cambiato il debito pubblico?"></textarea>
+          <div class="riga">
+            <span class="conta num" id="conta">0/300</span>
+            <div class="azioni">
+              <button type="button" class="btn secondario" id="azzera"><i class="ph-bold ph-arrow-counter-clockwise" aria-hidden="true"></i><span class="et">Azzera contesto</span><span class="sr">Azzera contesto</span></button>
+              <button type="submit" class="btn primario" id="invia"><i class="ph-bold ph-paper-plane-right" aria-hidden="true"></i>Invia</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <aside class="lato" aria-label="Come funziona">
+      <div class="box">
+        <h2>Cosa puoi chiedere</h2>
+        <ul>
+          <li>Cifre di spesa, entrate, debito e saldo per anno</li>
+          <li>Confronti con Germania, Francia, Spagna e media UE</li>
+          <li>Leggi di bilancio, misure e promesse dei partiti, solo con il testo originale</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h2>Livelli di verifica</h2>
+        <ul class="legenda">
+          <li><span class="livello v1">V1</span><span>fonte primaria, doppio controllo</span></li>
+          <li><span class="livello v2">V2</span><span>verifica parziale o fonte secondaria</span></li>
+          <li><span class="livello nv">NV</span><span>da verificare</span></li>
+        </ul>
+      </div>
+      <div class="box">
+        <h2>Cosa conserviamo</h2>
+        <p>Le domande e un riferimento limitato alla conversazione, per permettere il seguito. Il contesto scade dopo 30 minuti.</p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<nav class="dock" aria-label="Navigazione principale">
+  <ul>
+    <li><a href="#"><span class="ico"><i class="ph ph-receipt" aria-hidden="true"></i></span>Spesa</a></li>
+    <li><a href="#"><span class="ico"><i class="ph ph-bank" aria-hidden="true"></i></span>Governi</a></li>
+    <li><a href="#"><span class="ico"><i class="ph ph-quotes" aria-hidden="true"></i></span>Promesse</a></li>
+    <li><a href="#"><span class="ico"><i class="ph ph-scales" aria-hidden="true"></i></span>Misure</a></li>
+    <li><a href="#"><span class="ico"><i class="ph ph-dots-three" aria-hidden="true"></i></span>Altro</a></li>
+  </ul>
+</nav>
+
+<script>
+const D1 = `<p class="domanda">A quanto ammontava il debito pubblico italiano a fine agosto 2026?</p>`;
+const R1 = `<article class="risposta">
+  <header><i class="ph-fill ph-receipt" aria-hidden="true"></i>Risposta dai dati</header>
+  <span class="cifra num">3.200.847,7 mln €</span>
+  <p class="testo">A fine agosto 2026 il debito delle amministrazioni pubbliche era di 3.200.847,7 milioni di euro correnti, secondo la Banca d’Italia.</p>
+  <ul class="fonti" aria-label="Fonti">
+    <li><span class="livello v1">V1</span><span class="tit">Debito delle amministrazioni pubbliche a fine agosto 2026</span>
+      <span class="link"><a href="#">Fonte <i class="ph-bold ph-arrow-square-out" aria-hidden="true"></i></a><a href="#">Pagina Paghi Tu</a></span></li>
+  </ul>
+</article>`;
+const D2 = `<p class="domanda">E rispetto alla media dell’Unione europea, in % del PIL?</p>`;
+const R2 = `<article class="risposta">
+  <header><i class="ph-fill ph-receipt" aria-hidden="true"></i>Risposta dai dati</header>
+  <p class="testo">Nel 2025 il debito pubblico italiano valeva il <strong class="num">136,7%</strong> del PIL, contro l’<strong class="num">81,5%</strong> della media UE a 27.</p>
+  <p class="nota">Il dato di agosto 2026 è mensile; il rapporto col PIL è annuale e l’ultimo disponibile è il 2025.</p>
+  <ul class="fonti" aria-label="Fonti">
+    <li><span class="livello v1">V1</span><span class="tit">Debito in % del PIL, confronto europeo, anno 2025</span>
+      <span class="link"><a href="#">Fonte <i class="ph-bold ph-arrow-square-out" aria-hidden="true"></i></a><a href="#">Pagina Paghi Tu</a></span></li>
+  </ul>
+</article>`;
+const D3 = `<p class="domanda">Il governo Meloni ha gestito bene i conti pubblici?</p>`;
+const R3 = `<article class="risposta astensione">
+  <header><i class="ph-bold ph-hand-palm" aria-hidden="true"></i>L’assistente si è astenuto</header>
+  <p class="testo">Non do giudizi su governi o partiti: Paghi Tu riporta dati e fonti, non valutazioni. Posso dirti cosa dicono i dati del periodo.</p>
+  <div class="suggerimenti">
+    <button type="button" class="chip">Spesa pubblica per anno dal 2022</button>
+    <button type="button" class="chip">Debito in % del PIL dal 2022</button>
+    <button type="button" class="chip">Saldo di bilancio dal 2022</button>
+  </div>
+</article>`;
+const VUOTO = `<div class="vuoto">
+  <h2>Da dove partiamo?</h2>
+  <p>Scrivi una domanda sui dati di Paghi Tu, oppure parti da una di queste.</p>
+  <div class="suggerimenti">
+    <button type="button" class="chip">Quanto spende lo Stato ogni 100 € di spesa?</button>
+    <button type="button" class="chip">Debito pubblico in % del PIL nel 2025</button>
+    <button type="button" class="chip">Cosa prevede l’ultima legge di bilancio?</button>
+  </div>
+</div>`;
+const ATTESA = `<p class="attesa" role="status"><span class="puntini" aria-hidden="true"><span></span><span></span><span></span></span>Sto cercando nei dati e verificando le fonti…</p>`;
+const err = (t, m, ico = "ph-warning-circle") => `<div class="errore" role="alert"><i class="ph-bold ${ico}" aria-hidden="true"></i><span><strong>${t}</strong>${m}</span></div>`;
+
+const stati = {
+  vuoto: { html: VUOTO, busy: false, ctx: false },
+  conversazione: { html: D1 + R1 + D2 + R2, busy: false, ctx: true },
+  attesa: { html: D1 + R1 + D2 + ATTESA, busy: true, ctx: true },
+  astensione: { html: D3 + R3, busy: false, ctx: true },
+  limite: { html: D1 + R1 + err("Limite temporaneo raggiunto.", "Riprova più tardi.", "ph-hourglass-medium"), busy: false, ctx: true },
+  incorso: { html: D1 + R1 + err("Una richiesta è ancora in corso.", "Attendi prima di continuare."), busy: false, ctx: true },
+  timeout: { html: D1 + R1 + D2 + err("Tempo scaduto.", "L’esito della richiesta è incerto: attendi prima di fare un’altra domanda.", "ph-clock-countdown"), busy: false, ctx: true },
+};
+const chat = document.getElementById("chat"), area = document.getElementById("domanda"), conta = document.getElementById("conta");
+function mostra(nome) {
+  const s = stati[nome];
+  chat.innerHTML = s.html;
+  area.disabled = s.busy;
+  document.getElementById("invia").disabled = s.busy || !area.value.trim();
+  document.getElementById("azzera").disabled = !s.ctx;
+  document.querySelectorAll("[data-stato]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.stato === nome)));
+}
+document.querySelectorAll("[data-stato]").forEach(b => b.addEventListener("click", () => mostra(b.dataset.stato)));
+area.addEventListener("input", () => {
+  const n = area.value.length;
+  conta.textContent = `${n}/300`;
+  conta.classList.toggle("vicino", n >= 260);
+  document.getElementById("invia").disabled = area.disabled || !area.value.trim();
+});
+document.getElementById("come-corpo").innerHTML = document.querySelector(".lato").innerHTML;
+mostra("conversazione");
+</script>
+</body>
+</html>

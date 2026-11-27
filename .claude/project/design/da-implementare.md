@@ -25,6 +25,13 @@
 - **UI ora:** solo COFOG.
 - **Priorità:** P2.
 
+### [DI-03] Domande suggerite dall'assistente — `/assistente`
+- **Design:** bozza `bozze/d-assistente.html`: tre domande pronte nello stato vuoto e, dopo un'astensione, tre domande sui dati del periodo.
+- **Backend attuale:** `AgentAskResponse` non porta suggerimenti; il testo dell'astensione arriva intero in `text`.
+- **Disposizione:** stato vuoto con domande fisse scritte nel componente (nessun backend); suggerimenti dopo l'astensione solo se il titolare li vuole, con un campo nuovo nel contratto. Non implementare senza conferma.
+- **UI ora:** nessun suggerimento dopo l'astensione.
+- **Priorità:** P3.
+
 <!--
 Template voce:
 
