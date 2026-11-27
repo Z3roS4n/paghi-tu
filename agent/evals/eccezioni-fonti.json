@@ -1,5 +1,7 @@
 {
-  "fonti": {},
+  "fonti": {
+    "https://esploradati.istat.it/SDMXWS/rest/data/IT1,164_279_DF_DCIS_RICPOPRES1991_1,1.0/A.IT...?startPeriod=1982&endPeriod=1991": "Il 27/11/2026 la query SDMX ISTAT non risponde (timeout a 90, 120 e 200 s da due IP diversi, con il resto di esploradati raggiungibile). L'unico caso che la cita, SER-popolazione-residente-2026, ha il valore trovato nel bilancio demografico ISTAT. Da togliere al primo evals:verify in cui la fonte risponde."
+  },
   "citazioni": {},
   "campi": {
     "consuntivoAssente": "Testo di Paghi Tu che spiega perché il consuntivo manca.",
