@@ -7,8 +7,8 @@ Decisione: [D-047](../02-tradeoffs.md). Il runbook Preview ([2026-10-31-preview-
 ## Prima di cominciare
 
 - Decisioni di Giovanni (27 novembre): Vercel Firewall con un rate limit su `/api/agent`; limiti invariati per la prima settimana; pagina diretta `noindex`, fuori dal dock (già così nel codice); risorse GCP create da Claude con la conferma di Giovanni a ogni passo. Resta al titolare la privacy della persistenza effimera.
-- La PR della chat (#13) è su main: il copy della pagina dice ancora «Anteprima protetta» e va adattato alla produzione prima dell'accensione.
-- Next in versione corretta per le advisory note.
+- La PR della chat (#13) è unita in questo ramo; la pagina dice «In prova» in produzione e «Anteprima protetta» in Preview.
+- Next 16.4.6 (PR #15) unito prima di questa: con 16.4.3 la build può fermarsi su `SecurityFatalError`.
 
 ## Risorse GCP (Claude, con il sì di Giovanni a ogni `--apply`)
 
