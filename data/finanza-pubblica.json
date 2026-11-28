@@ -1,5 +1,5 @@
 {
-  "scaricato": "2026-10-21T15:26:32.584Z",
+  "scaricato": "2026-11-28T06:04:11.426Z",
   "fonti": [
     {
       "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/gov_10a_main/A.MIO_NAC+PC_GDP.S13.TE+TR+B9+D41PAY.IT?format=SDMX-CSV",
@@ -39,7 +39,7 @@
     {
       "url": "https://a2a.bancaditalia.it/infostat/dataservices/export/IT/CSV/DATA/PUBLICATION/BANKITALIA/DIFF/FPI",
       "etichetta": "Banca d'Italia, Finanza pubblica: fabbisogno e debito, tavola TCCE0325",
-      "aggiornamentoFonte": "estrazione del 14/10/2026"
+      "aggiornamentoFonte": "estrazione del 10/11/2026"
     }
   ],
   "conti": [
@@ -5214,11 +5214,15 @@
     },
     {
       "mese": "2026-07",
-      "valore": 3206996.4
+      "valore": 3206929.8
     },
     {
       "mese": "2026-08",
-      "valore": 3200847.7
+      "valore": 3200781.9
+    },
+    {
+      "mese": "2026-09",
+      "valore": 3211587.2
     }
   ],
   "debitoPil": [
@@ -5490,6 +5494,6 @@
   ],
   "verifica": {
     "livello": "V1",
-    "dettaglio": "Scaricati dalle fonti primarie il 2026-10-21 e incrociati in automatico: le dieci funzioni cofog sommano al totale della spesa per funzione; spesa totale uguale nelle due tavole eurostat (conti principali e spesa per funzione); saldo uguale a entrate meno spese; debito di fine anno: banca d'italia contro eurostat; i quattro trimestri sommano alla spesa e alle entrate dell'anno; nel confronto ue i valori dell'italia coincidono con le tavole nazionali; spesa in % del pil: valore eurostat contro spesa eurostat divisa per il pil istat della nostra serie. Tutti i controlli superati."
+    "dettaglio": "Scaricati dalle fonti primarie il 2026-11-28 e incrociati in automatico: le dieci funzioni cofog sommano al totale della spesa per funzione; spesa totale uguale nelle due tavole eurostat (conti principali e spesa per funzione); saldo uguale a entrate meno spese; debito di fine anno: banca d'italia contro eurostat; i quattro trimestri sommano alla spesa e alle entrate dell'anno; nel confronto ue i valori dell'italia coincidono con le tavole nazionali; spesa in % del pil: valore eurostat contro spesa eurostat divisa per il pil istat della nostra serie. Tutti i controlli superati."
   }
 }
